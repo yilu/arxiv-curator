@@ -124,7 +124,7 @@ def update_archive():
 
         matching_keywords = find_matching_keywords(paper_text, KEYWORDS)
         if not matching_keywords:
-            continue # Strict keyword filtering
+            continue
 
         similarities = [(np.dot(embedding, v) / (np.linalg.norm(embedding) * np.linalg.norm(v)), k) for k, v in liked_vectors.items()]
         similarities.sort(key=lambda x: x[0], reverse=True)
@@ -146,7 +146,6 @@ def update_archive():
 
     print(f"✅ Added {len(newly_added_ids)} new papers to archive with initial vector scores.")
 
-    # LLM Re-ranking for top candidates based on initial vector score
     newly_added_papers = [archive[pid] for pid in newly_added_ids]
     newly_added_papers.sort(key=lambda p: p['score'], reverse=True)
     top_candidates_for_llm = newly_added_papers[:LLM_RE_RANK_LIMIT]
@@ -188,6 +187,9 @@ def generate_site(new_paper_ids):
     template = env.get_template('index.html')
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
 
+    # --- FIX: Generate timestamp and pass it to the template ---
+    generation_date_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
+
     output_dir = 'dist'
     if os.path.exists(output_dir): shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
@@ -198,7 +200,8 @@ def generate_site(new_paper_ids):
 
         html_content = template.render(
             papers=papers_to_render, current_month=month, all_months=sorted_months,
-            github_repo=github_repo, new_paper_ids=new_paper_ids, liked_paper_ids=liked_paper_ids
+            github_repo=github_repo, new_paper_ids=new_paper_ids,
+            liked_paper_ids=liked_paper_ids, generation_date=generation_date_str
         )
         with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f: f.write(html_content)
         print(f"  -> Created {output_dir}/{month}.html")
