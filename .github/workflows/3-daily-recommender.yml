@@ -36,33 +36,17 @@ jobs:
         run: python scripts/recommend.py
 
       - name: Commit and Push Updated Archive
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # Add the archive file to staging
-          git add archive.json
+        # --- FIX: Use a dedicated action for committing to handle race conditions ---
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: Update paper archive"
+          # Only commit the archive.json file
+          file_pattern: archive.json
+          # Use the bot user for the commit
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
 
-          # Only proceed if there are actual changes to commit
-          if ! git diff --staged --quiet; then
-            git commit -m "chore: Update paper archive"
-
-            # --- FIX: Retry loop to handle race conditions ---
-            # This will pull the latest changes and re-attempt the push if it fails.
-            for i in {1..5}; do
-              echo "Attempting to push changes (Attempt $i)..."
-              if git pull --rebase && git push; then
-                echo "Push successful!"
-                break
-              fi
-              if [ $i -eq 5 ]; then
-                echo "Failed to push changes after 5 attempts."
-                exit 1
-              fi
-              sleep 5
-            done
-          else
-            echo "No changes to archive.json to commit."
-          fi
 
       - name: Deploy to yilu.github.io
         uses: peaceiris/actions-gh-pages@v4
