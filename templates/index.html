@@ -61,11 +61,13 @@
                             </h3>
                             <div class="flex-shrink-0">
                                 {% if paper.id in liked_paper_ids %}
+                                    <!-- --- FIX: Add &labels=feedback to the URL --- -->
                                     <a href="https://github.com/{{ github_repo }}/issues/new?title=Unlike%3A+{{ paper.id }}&body=Title%3A+{{ paper.title | urlencode }}&labels=feedback" target="_blank" class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-red-200 transition-colors">
-                                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" /></svg>
+                                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3.433-1.172 14.605a4 4 0 005.656 5.656L10 14.343l5.516 5.918a4 4 0 005.656-5.656L10 3.433z" /></svg>
                                         Unlike
                                     </a>
                                 {% else %}
+                                    <!-- --- FIX: Add &labels=feedback to the URL --- -->
                                     <a href="https://github.com/{{ github_repo }}/issues/new?title=Like%3A+{{ paper.id }}&body=Title%3A+{{ paper.title | urlencode }}&labels=feedback" target="_blank" class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-200 transition-colors">
                                         <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" /></svg>
                                         Like
