@@ -9,19 +9,21 @@ from sentence_transformers import SentenceTransformer
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, KEYWORDS, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
-    GENERATED_HTML_PATH
+    GENERATED_HTML_PATH, SEEN_PAPERS_LIMIT
 )
+
+SEEN_PAPERS_PATH = 'seen_papers.json'
 
 def get_recent_papers():
     """Fetches papers from the last 2 days from specified arXiv categories."""
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
 
-    yesterday = (datetime.now() - timedelta(days=2)).strftime('%Y%m%d')
-    query = f"cat:({' OR '.join(ARXIV_CATEGORIES)}) AND submittedDate:[{yesterday} TO *]"
+    two_days_ago = (datetime.now() - timedelta(days=2)).strftime('%Y%m%d%H%M%S')
+    query = f"cat:({' OR '.join(ARXIV_CATEGORIES)}) AND submittedDate:[{two_days_ago} TO *]"
 
     search = arxiv.Search(
         query=query,
-        max_results=200, # Limit the number of initial results
+        max_results=300,
         sort_by=arxiv.SortCriterion.SubmittedDate
     )
 
@@ -51,36 +53,58 @@ def calculate_similarity(v1, v2):
 def generate_recommendations():
     """The main function to generate and save the recommendation HTML page."""
 
-    # 1. Load Taste Profile
-    if not os.path.exists(TASTE_PROFILE_PATH):
-        print(f"🔴 Error: Taste profile '{TASTE_PROFILE_PATH}' not found.")
-        print("Please run the bootstrap script first to create it from your Google Scholar profile.")
-        return
+    # 1. Load Taste Profile and Seen Papers
+    liked_paper_ids = set()
+    if os.path.exists(TASTE_PROFILE_PATH):
+        with open(TASTE_PROFILE_PATH, 'r') as f:
+            taste_profile = json.load(f)
+        liked_paper_ids = {item['id'] for item in taste_profile}
+        print(f"✅ Loaded taste profile with {len(taste_profile)} liked papers.")
+    else:
+        taste_profile = []
+        print("⚠️ Taste profile not found. It will be created on first like.")
 
-    with open(TASTE_PROFILE_PATH, 'r') as f:
-        taste_profile = json.load(f)
+    seen_paper_ids = set()
+    if os.path.exists(SEEN_PAPERS_PATH):
+        with open(SEEN_PAPERS_PATH, 'r') as f:
+            # Load as a list to preserve order, then convert to set for fast lookups
+            seen_paper_list = json.load(f)
+            seen_paper_ids = set(seen_paper_list)
+        print(f"✅ Loaded seen list with {len(seen_paper_ids)} papers.")
+    else:
+        seen_paper_list = []
 
-    if not taste_profile:
-        print("🔴 Error: Taste profile is empty.")
-        return
 
-    print(f"✅ Loaded taste profile with {len(taste_profile)} liked papers.")
+    # Create the taste vector for scoring
+    if taste_profile:
+        taste_vectors = np.array([item['vector'] for item in taste_profile])
+        taste_profile_vector = np.mean(taste_vectors, axis=0)
+    else:
+        taste_profile_vector = None
+        print("⚠️ Taste profile is empty. Recommendations will be based on keywords only.")
 
-    # Create an average "taste vector"
-    taste_vectors = np.array([item['vector'] for item in taste_profile])
-    taste_profile_vector = np.mean(taste_vectors, axis=0)
-
-    # 2. Fetch and Filter New Papers
+    # 2. Fetch and De-duplicate New Papers
     recent_papers = get_recent_papers()
-    filtered_papers = filter_papers_by_keywords(recent_papers)
+
+    papers_to_process = []
+    ignore_ids = liked_paper_ids.union(seen_paper_ids)
+
+    for paper in recent_papers:
+        paper_id = paper.entry_id.split('/abs/')[-1]
+        if paper_id not in ignore_ids:
+            papers_to_process.append(paper)
+
+    print(f"✅ {len(papers_to_process)} papers remain after removing seen and liked papers.")
+
+    # 3. Filter by Keywords
+    filtered_papers = filter_papers_by_keywords(papers_to_process)
 
     if not filtered_papers:
         print("No new papers to recommend today.")
-        # Still generate an empty page to show it ran
         render_page([])
         return
 
-    # 3. Generate Embeddings for New Papers
+    # 4. Generate Embeddings for New Papers
     print(f"🧠 Loading AI model '{EMBEDDING_MODEL}'...")
     model = SentenceTransformer(EMBEDDING_MODEL)
 
@@ -88,11 +112,14 @@ def generate_recommendations():
     new_paper_texts = [f"Title: {p.title}\nAbstract: {p.summary.replace(chr(10), ' ')}" for p in filtered_papers]
     new_paper_embeddings = model.encode(new_paper_texts, show_progress_bar=True)
 
-    # 4. Score and Rank Papers
+    # 5. Score and Rank Papers
     print("💯 Scoring and ranking papers...")
     scored_papers = []
     for i, paper in enumerate(filtered_papers):
-        score = calculate_similarity(new_paper_embeddings[i], taste_profile_vector)
+        score = 0.0
+        if taste_profile_vector is not None:
+            score = calculate_similarity(new_paper_embeddings[i], taste_profile_vector)
+
         paper_id = paper.entry_id.split('/abs/')[-1]
 
         scored_papers.append({
@@ -104,11 +131,26 @@ def generate_recommendations():
             'score': score
         })
 
-    # Sort papers by score in descending order
     ranked_papers = sorted(scored_papers, key=lambda p: p['score'], reverse=True)
 
-    # 5. Render HTML Page
+    # 6. Render HTML Page
     render_page(ranked_papers)
+
+    # 7. Update and save the seen list with a cap
+    newly_seen_ids = [p['id'] for p in ranked_papers]
+
+    # Append new IDs to the list of previously seen IDs
+    updated_seen_list = seen_paper_list + newly_seen_ids
+
+    # Trim the list to the specified limit, keeping the most recent entries
+    if len(updated_seen_list) > SEEN_PAPERS_LIMIT:
+        print(f"⚠️ Seen list exceeds limit of {SEEN_PAPERS_LIMIT}. Trimming oldest entries.")
+        updated_seen_list = updated_seen_list[-SEEN_PAPERS_LIMIT:]
+
+    print(f"💾 Saving updated seen list with {len(updated_seen_list)} papers...")
+    with open(SEEN_PAPERS_PATH, 'w') as f:
+        # Save as a list to maintain chronological order for trimming
+        json.dump(updated_seen_list, f)
 
 def render_page(papers):
     """Renders the HTML template with the list of papers."""
@@ -117,7 +159,7 @@ def render_page(papers):
     env = Environment(loader=FileSystemLoader('templates'))
     template = env.get_template('index.html')
 
-    github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
+    github_repo = os.environ.get('GITHUB_REPOSITORY', 'your_username/arxiv-curator')
 
     html_content = template.render(
         papers=papers,

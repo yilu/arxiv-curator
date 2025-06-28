@@ -42,3 +42,7 @@ TASTE_PROFILE_PATH = 'liked_vectors.json'
 # The path where the final HTML page will be generated.
 # The 'dist' directory is standard for distribution outputs.
 GENERATED_HTML_PATH = 'dist/index.html'
+
+# The maximum number of paper IDs to keep in the 'seen_papers.json' file.
+# This prevents the file from growing indefinitely.
+SEEN_PAPERS_LIMIT = 1000

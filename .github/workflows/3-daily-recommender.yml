@@ -1,3 +1,5 @@
+# .github/workflows/3-daily-recommender.yml
+
 name: 3 - Generate and Deploy Daily Recommendations
 
 on:
@@ -12,7 +14,10 @@ jobs:
 
     steps:
       - name: Checkout Repository
+        # We need to checkout with a PAT to be able to push back the seen list
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,6 +31,16 @@ jobs:
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scripts/recommend.py
+
+      - name: Commit and Push Updated Seen List
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          # Add both files; git will only commit if there are changes.
+          git add seen_papers.json
+          # Use a different commit message to distinguish from feedback commits.
+          git commit -m "chore: Update seen papers list" || echo "No new papers were seen."
+          git push
 
       - name: Deploy to yilu.github.io
         uses: peaceiris/actions-gh-pages@v4
