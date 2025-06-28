@@ -68,7 +68,3 @@ GENERATED_HTML_PATH = 'dist/index.html'
 
 # The maximum number of papers to display on each monthly archive page.
 RECOMMENDATION_LIMIT = 150
-
-# The maximum number of paper IDs to keep in the 'seen_papers.json' file.
-# This is now obsolete and no longer used, but kept for reference.
-SEEN_PAPERS_LIMIT = 2000

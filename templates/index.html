@@ -61,13 +61,11 @@
                             </h3>
                             <div class="flex-shrink-0">
                                 {% if paper.id in liked_paper_ids %}
-                                    <!-- --- FIX: Add &labels=feedback to the URL --- -->
                                     <a href="https://github.com/{{ github_repo }}/issues/new?title=Unlike%3A+{{ paper.id }}&body=Title%3A+{{ paper.title | urlencode }}&labels=feedback" target="_blank" class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-red-200 transition-colors">
                                         <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3.433-1.172 14.605a4 4 0 005.656 5.656L10 14.343l5.516 5.918a4 4 0 005.656-5.656L10 3.433z" /></svg>
                                         Unlike
                                     </a>
                                 {% else %}
-                                    <!-- --- FIX: Add &labels=feedback to the URL --- -->
                                     <a href="https://github.com/{{ github_repo }}/issues/new?title=Like%3A+{{ paper.id }}&body=Title%3A+{{ paper.title | urlencode }}&labels=feedback" target="_blank" class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-200 transition-colors">
                                         <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" /></svg>
                                         Like
@@ -97,6 +95,30 @@
                             <div id="abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}" class="hidden mt-3 text-sm text-gray-700 prose prose-sm max-w-none border-t border-gray-200 pt-3">
                                 <p>{{ paper.summary }}</p>
                             </div>
+                        </div>
+
+                        <!-- Keyword Tags -->
+                        <div class="mt-4 border-t border-gray-200 pt-4 space-y-3">
+                            {% if paper.matching_keywords %}
+                            <div>
+                                <h4 class="text-xs font-semibold text-gray-600 mb-2">Matching Keywords:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    {% for keyword in paper.matching_keywords %}
+                                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">{{ keyword }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if paper.suggested_keywords %}
+                            <div>
+                                <h4 class="text-xs font-semibold text-gray-600 mb-2">Suggested Keywords:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    {% for keyword in paper.suggested_keywords %}
+                                        <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">{{ keyword }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endif %}
                         </div>
 
                         <!-- Recommendation Reasons -->
