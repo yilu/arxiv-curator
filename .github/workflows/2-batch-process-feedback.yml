@@ -4,14 +4,14 @@ name: 2 - Batch Process Feedback Issues
 
 on:
   schedule:
+    # Runs once per day at 04:00 UTC, an hour before the recommender.
     - cron: '0 4 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual runs
 
 concurrency:
   group: archive-commit
   cancel-in-progress: true
 
-# --- FIX: Add permissions block to allow the job to close issues ---
 permissions:
   issues: write
   contents: write
@@ -47,9 +47,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Batch Feedback Manager
-        id: feedback_run # Give this step an ID to access its outputs
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
+          # The default GITHUB_TOKEN has permissions to read/write issues
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/feedback_manager.py
 
@@ -58,10 +58,3 @@ jobs:
         with:
           commit_message: "chore: Batch update taste profile from feedback"
           file_pattern: liked_vectors.json
-
-      - name: Close Processed Issues
-        uses: peter-evans/close-issue@v3
-        # --- FIX: Loop through the issue numbers output by the Python script ---
-        with:
-          issue-number: ${{ join(fromJson(steps.feedback_run.outputs.issue_numbers), ',') }}
-          comment: "✅ Feedback processed successfully and issue closed."
