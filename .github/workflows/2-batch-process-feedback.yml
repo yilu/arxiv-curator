@@ -1,0 +1,56 @@
+# .github/workflows/2-batch-process-feedback.yml
+
+name: 2 - Batch Process Feedback Issues
+
+on:
+  schedule:
+    # Runs once per day at 04:00 UTC, an hour before the recommender.
+    - cron: '0 4 * * *'
+  workflow_dispatch: # Allows manual runs
+
+concurrency:
+  group: archive-commit
+  cancel-in-progress: true
+
+jobs:
+  batch-process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+
+      - name: Cache Sentence Transformer models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/torch/sentence_transformers
+          key: ${{ runner.os }}-st-cache
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Batch Feedback Manager
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          # The default GITHUB_TOKEN has permissions to read/write issues
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/feedback_manager.py
+
+      - name: Commit Updated Taste Profile
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: Batch update taste profile from feedback"
+          file_pattern: liked_vectors.json
