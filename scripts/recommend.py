@@ -18,8 +18,12 @@ def get_recent_papers():
     """Fetches papers from the last 2 days from specified arXiv categories."""
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
 
-    two_days_ago = (datetime.now() - timedelta(days=2)).strftime('%Y%m%d%H%M%S')
+    # --- FIX: Use a simpler YYYYMMDD date format for the query ---
+    # This is more robust and correctly handles the arXiv API's date field.
+    two_days_ago = (datetime.now() - timedelta(days=2)).strftime('%Y%m%d')
+
     query = f"cat:({' OR '.join(ARXIV_CATEGORIES)}) AND submittedDate:[{two_days_ago} TO *]"
+    print(f"Constructed arXiv query: {query}")
 
     search = arxiv.Search(
         query=query,
@@ -27,9 +31,14 @@ def get_recent_papers():
         sort_by=arxiv.SortCriterion.SubmittedDate
     )
 
-    papers = list(search.results())
-    print(f"✅ Found {len(papers)} recent papers.")
-    return papers
+    try:
+        papers = list(search.results())
+        print(f"✅ Found {len(papers)} recent papers.")
+        return papers
+    except Exception as e:
+        print(f"🔴 An error occurred while fetching from arXiv: {e}")
+        return []
+
 
 def filter_papers_by_keywords(papers):
     """Filters a list of papers based on keywords in title or abstract."""
@@ -48,6 +57,8 @@ def filter_papers_by_keywords(papers):
 
 def calculate_similarity(v1, v2):
     """Calculates cosine similarity between two vectors."""
+    if np.linalg.norm(v1) == 0 or np.linalg.norm(v2) == 0:
+        return 0.0
     return np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2))
 
 def generate_recommendations():
@@ -64,16 +75,13 @@ def generate_recommendations():
         taste_profile = []
         print("⚠️ Taste profile not found. It will be created on first like.")
 
-    seen_paper_ids = set()
+    seen_paper_list = []
     if os.path.exists(SEEN_PAPERS_PATH):
         with open(SEEN_PAPERS_PATH, 'r') as f:
-            # Load as a list to preserve order, then convert to set for fast lookups
             seen_paper_list = json.load(f)
-            seen_paper_ids = set(seen_paper_list)
-        print(f"✅ Loaded seen list with {len(seen_paper_ids)} papers.")
-    else:
-        seen_paper_list = []
+        print(f"✅ Loaded seen list with {len(seen_paper_list)} papers.")
 
+    seen_paper_ids = set(seen_paper_list)
 
     # Create the taste vector for scoring
     if taste_profile:
@@ -101,35 +109,35 @@ def generate_recommendations():
 
     if not filtered_papers:
         print("No new papers to recommend today.")
-        render_page([])
-        return
 
-    # 4. Generate Embeddings for New Papers
-    print(f"🧠 Loading AI model '{EMBEDDING_MODEL}'...")
-    model = SentenceTransformer(EMBEDDING_MODEL)
+    # 4. Generate Embeddings for New Papers (handles empty list)
+    new_paper_embeddings = []
+    if filtered_papers:
+        print(f"🧠 Loading AI model '{EMBEDDING_MODEL}'...")
+        model = SentenceTransformer(EMBEDDING_MODEL)
+        print(f"🧬 Generating embeddings for {len(filtered_papers)} new papers...")
+        new_paper_texts = [f"Title: {p.title}\nAbstract: {p.summary.replace(chr(10), ' ')}" for p in filtered_papers]
+        new_paper_embeddings = model.encode(new_paper_texts, show_progress_bar=True)
 
-    print(f"🧬 Generating embeddings for {len(filtered_papers)} new papers...")
-    new_paper_texts = [f"Title: {p.title}\nAbstract: {p.summary.replace(chr(10), ' ')}" for p in filtered_papers]
-    new_paper_embeddings = model.encode(new_paper_texts, show_progress_bar=True)
-
-    # 5. Score and Rank Papers
-    print("💯 Scoring and ranking papers...")
+    # 5. Score and Rank Papers (handles empty list)
     scored_papers = []
-    for i, paper in enumerate(filtered_papers):
-        score = 0.0
-        if taste_profile_vector is not None:
-            score = calculate_similarity(new_paper_embeddings[i], taste_profile_vector)
+    if filtered_papers:
+        print("💯 Scoring and ranking papers...")
+        for i, paper in enumerate(filtered_papers):
+            score = 0.0
+            if taste_profile_vector is not None:
+                score = calculate_similarity(new_paper_embeddings[i], taste_profile_vector)
 
-        paper_id = paper.entry_id.split('/abs/')[-1]
+            paper_id = paper.entry_id.split('/abs/')[-1]
 
-        scored_papers.append({
-            'id': paper_id,
-            'title': paper.title,
-            'authors': [author.name for author in paper.authors],
-            'summary': paper.summary.replace('\n', ' '),
-            'published_date': paper.published.strftime('%Y-%m-%d'),
-            'score': score
-        })
+            scored_papers.append({
+                'id': paper_id,
+                'title': paper.title,
+                'authors': [author.name for author in paper.authors],
+                'summary': paper.summary.replace('\n', ' '),
+                'published_date': paper.published.strftime('%Y-%m-%d'),
+                'score': score
+            })
 
     ranked_papers = sorted(scored_papers, key=lambda p: p['score'], reverse=True)
 
@@ -139,17 +147,14 @@ def generate_recommendations():
     # 7. Update and save the seen list with a cap
     newly_seen_ids = [p['id'] for p in ranked_papers]
 
-    # Append new IDs to the list of previously seen IDs
     updated_seen_list = seen_paper_list + newly_seen_ids
 
-    # Trim the list to the specified limit, keeping the most recent entries
     if len(updated_seen_list) > SEEN_PAPERS_LIMIT:
         print(f"⚠️ Seen list exceeds limit of {SEEN_PAPERS_LIMIT}. Trimming oldest entries.")
         updated_seen_list = updated_seen_list[-SEEN_PAPERS_LIMIT:]
 
-    print(f"💾 Saving updated seen list with {len(updated_seen_list)} papers...")
+    print(f"💾 Saving seen list with {len(updated_seen_list)} papers...")
     with open(SEEN_PAPERS_PATH, 'w') as f:
-        # Save as a list to maintain chronological order for trimming
         json.dump(updated_seen_list, f)
 
 def render_page(papers):
@@ -157,7 +162,7 @@ def render_page(papers):
     print("📄 Rendering final HTML page...")
 
     env = Environment(loader=FileSystemLoader('templates'))
-    template = env.get_template('index.html')
+    template = env.get_tget_template('index.html')
 
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'your_username/arxiv-curator')
 
