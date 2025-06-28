@@ -1,3 +1,5 @@
+# .github/workflows/2-process-feedback.yml
+
 name: 2 - Process New Feedback
 
 on:
@@ -7,7 +9,10 @@ on:
 jobs:
   process-new-like:
     runs-on: ubuntu-latest
-    if: "startsWith(github.event.issue.title, 'Like:')"
+
+    # --- SECURITY FIX ---
+    # This job will only run if the issue was created by the repository owner.
+    if: "startsWith(github.event.issue.title, 'Like:') && github.actor == github.repository_owner"
 
     steps:
       - name: Checkout Repository
