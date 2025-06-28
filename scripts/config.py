@@ -55,8 +55,7 @@ EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
 # After the initial filtering, we send the top N most promising candidates
 # to the Gemini LLM for a more detailed and accurate re-ranking.
-# A value of 10-20 is a good starting point.
-LLM_RE_RANK_LIMIT = 15
+LLM_RE_RANK_LIMIT = 25
 
 # The file path for storing the vector embeddings of your liked papers.
 # This acts as your personal "taste" database.
