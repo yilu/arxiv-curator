@@ -8,15 +8,22 @@ on:
     - cron: '0 5 * * *'
   workflow_dispatch:
 
+# --- FIX: Add a concurrency group to prevent race conditions ---
+# This ensures that only one instance of this workflow (or any workflow
+# in the 'archive-commit' group) can run at a time.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
-        # We need to checkout with a PAT to be able to push back the archive
         uses: actions/checkout@v4
         with:
+          # Use the PAT for all checkout operations to ensure permissions
           token: ${{ secrets.PAT }}
 
       - name: Set up Python
@@ -30,38 +37,18 @@ jobs:
       - name: Run Recommender Script
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
-          # --- Pass the Gemini API key secret to the script ---
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-
         run: python scripts/recommend.py
 
-      - name: Commit and Push Updated Archive
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Commit Updated Archive
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: Update paper archive"
+          file_pattern: archive.json
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
 
-          # Only proceed if the archive file has actually been modified
-          if ! git diff --quiet archive.json; then
-            echo "Changes detected in archive.json. Proceeding to commit."
-            git add archive.json
-            git commit -m "chore: Update paper archive"
-
-            # Retry loop to handle race conditions with the feedback workflow
-            for i in {1..5}; do
-              echo "Attempting to push changes (Attempt $i)..."
-              if git pull --rebase && git push; then
-                echo "Push successful!"
-                exit 0
-              fi
-              echo "Push failed, waiting 5 seconds before retrying..."
-              sleep 5
-            done
-
-            echo "Error: Could not push changes after 5 attempts."
-            exit 1
-          else
-            echo "No changes to archive.json to commit."
-          fi
 
       - name: Deploy to yilu.github.io
         uses: peaceiris/actions-gh-pages@v4

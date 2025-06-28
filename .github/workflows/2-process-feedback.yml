@@ -6,17 +6,19 @@ on:
   issues:
     types: [opened]
 
+# --- FIX: Add a concurrency group to prevent race conditions ---
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   process-new-like:
     runs-on: ubuntu-latest
 
-    # --- SECURITY FIX ---
-    # This job will only run if the issue was created by the repository owner.
     if: "startsWith(github.event.issue.title, 'Like:') && github.actor == github.repository_owner"
 
     steps:
       - name: Checkout Repository
-        # We need to checkout with a PAT to be able to push back
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT }}
@@ -34,13 +36,14 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
         run: python scripts/feedback.py
 
-      - name: Commit and Push Updated Taste Profile
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add liked_vectors.json
-          git commit -m "feat: Update taste profile with new liked paper" || echo "No changes to commit"
-          git push
+      - name: Commit Updated Taste Profile
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat: Update taste profile with new liked paper"
+          file_pattern: liked_vectors.json
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
 
       - name: Close the Issue
         uses: peter-evans/close-issue@v3
