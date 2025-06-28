@@ -53,10 +53,21 @@ def calculate_similarity(v1, v2):
 
 def get_llm_score_and_reason(new_paper, liked_papers, api_key):
     """Gets a score and reasoning from the Gemini LLM."""
+
+    # --- FIX for f-string SyntaxError ---
+    # Construct the liked papers part of the prompt separately to avoid backslashes in the expression.
+    liked_papers_details = []
+    for p in liked_papers:
+        title = p['title']
+        abstract = p.get('summary', p.get('abstract', ''))[:500]
+        liked_papers_details.append(f"Liked Paper Title: {title}\nLiked Paper Abstract: {abstract}...")
+
+    liked_papers_prompt_part = "\n---\n".join(liked_papers_details)
+
     prompt = f"""
     You are a helpful research assistant. A user has previously liked the following papers:
     ---
-    {'---'.join([f"Liked Paper Title: {p['title']}\\nLiked Paper Abstract: {p.get('summary', p.get('abstract', ''))[:500]}..." for p in liked_papers])}
+    {liked_papers_prompt_part}
     ---
     Now, consider this new paper:
     New Paper Title: {new_paper['title']}
@@ -208,7 +219,7 @@ def generate_site(new_paper_ids):
         html_content = template.render(
             papers=papers_to_render, current_month=month,
             all_months=sorted_months, github_repo=github_repo,
-            new_paper_ids=new_paper_ids
+            new_paper_ids=newly_added_ids
         )
         with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f: f.write(html_content)
         print(f"  -> Created {output_dir}/{month}.html with {len(papers_to_render)} papers.")
