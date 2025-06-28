@@ -1,11 +1,16 @@
 # .github/ISSUE_TEMPLATE/feedback.yml
 name: Paper Feedback
 description: Create a feedback issue to like or unlike a paper.
-title: ""
+# This title will be overridden by the URL parameter, which is what we want.
+title: "[Feedback]"
+# This label is now guaranteed to be applied by the template.
 labels: [feedback]
 body:
-  - type: markdown
+  - type: textarea
+    id: paper_details
     attributes:
-      value: |
-        Thank you for providing feedback!
-        Please do not change the auto-generated title. Just click "Submit new issue".
+      label: Paper Details
+      description: "This is auto-generated. Please do not change the content below. Just click 'Submit new issue'."
+      value: "This will be auto-filled."
+    validations:
+      required: true
