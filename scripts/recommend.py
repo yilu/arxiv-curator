@@ -15,29 +15,41 @@ from config import (
 SEEN_PAPERS_PATH = 'seen_papers.json'
 
 def get_recent_papers():
-    """Fetches papers from the last 2 days from specified arXiv categories."""
+    """
+    Fetches the most recent papers from specified arXiv categories individually
+    by sorting, which is more reliable than date-range filtering.
+    """
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
+    all_papers = {}
 
-    # --- FIX: Use a simpler YYYYMMDD date format for the query ---
-    # This is more robust and correctly handles the arXiv API's date field.
-    two_days_ago = (datetime.now() - timedelta(days=2)).strftime('%Y%m%d')
+    client = arxiv.Client()
 
-    query = f"cat:({' OR '.join(ARXIV_CATEGORIES)}) AND submittedDate:[{two_days_ago} TO *]"
-    print(f"Constructed arXiv query: {query}")
+    for category in ARXIV_CATEGORIES:
+        print(f"Querying category '{category}' for most recent papers...")
 
-    search = arxiv.Search(
-        query=query,
-        max_results=300,
-        sort_by=arxiv.SortCriterion.SubmittedDate
-    )
+        # Sort by submittedDate and take the latest results.
+        search = arxiv.Search(
+            query=f"cat:{category}",
+            max_results=200, # Fetch the 100 most recent papers from this category
+            sort_by=arxiv.SortCriterion.SubmittedDate
+        )
 
-    try:
-        papers = list(search.results())
-        print(f"✅ Found {len(papers)} recent papers.")
-        return papers
-    except Exception as e:
-        print(f"🔴 An error occurred while fetching from arXiv: {e}")
-        return []
+        try:
+            results = client.results(search)
+
+            # Use a dictionary to automatically handle de-duplication
+            for paper in results:
+                paper_id = paper.entry_id.split('/abs/')[-1]
+                if paper_id not in all_papers:
+                    all_papers[paper_id] = paper
+            print(f"  -> Found {len(all_papers)} unique papers so far.")
+        except Exception as e:
+            print(f"🔴 An error occurred while fetching from category {category}: {e}")
+            continue
+
+    final_paper_list = list(all_papers.values())
+    print(f"✅ Found a total of {len(final_paper_list)} unique recent papers.")
+    return final_paper_list
 
 
 def filter_papers_by_keywords(papers):
@@ -107,9 +119,6 @@ def generate_recommendations():
     # 3. Filter by Keywords
     filtered_papers = filter_papers_by_keywords(papers_to_process)
 
-    if not filtered_papers:
-        print("No new papers to recommend today.")
-
     # 4. Generate Embeddings for New Papers (handles empty list)
     new_paper_embeddings = []
     if filtered_papers:
@@ -162,7 +171,7 @@ def render_page(papers):
     print("📄 Rendering final HTML page...")
 
     env = Environment(loader=FileSystemLoader('templates'))
-    template = env.get_tget_template('index.html')
+    template = env.get_template('index.html')
 
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'your_username/arxiv-curator')
 
