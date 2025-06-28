@@ -1,0 +1,44 @@
+name: 3 - Generate and Deploy Daily Recommendations
+
+on:
+  schedule:
+    # Runs at 05:00 UTC every day
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Recommender Script
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python scripts/recommend.py
+
+      - name: Deploy to yilu.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # This token needs write access to your yilu.github.io repo
+          personal_token: ${{ secrets.PAT }}
+          # The target repository
+          external_repository: yilu/yilu.github.io
+          # The branch to deploy to (usually main or master)
+          publish_branch: main
+          # The folder in this repo to deploy from
+          publish_dir: ./dist
+          # The target directory in the destination repo
+          destination_dir: ./arxiv
+          # A clean commit message
+          commit_message: 'docs: Update daily arXiv recommendations'
