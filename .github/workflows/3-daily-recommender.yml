@@ -42,12 +42,24 @@ jobs:
           # Add the archive file to staging
           git add archive.json
 
-          # Commit the changes if there are any
+          # Only proceed if there are actual changes to commit
           if ! git diff --staged --quiet; then
             git commit -m "chore: Update paper archive"
-            # --- FIX: Pull latest changes before pushing ---
-            git pull --rebase
-            git push
+
+            # --- FIX: Retry loop to handle race conditions ---
+            # This will pull the latest changes and re-attempt the push if it fails.
+            for i in {1..5}; do
+              echo "Attempting to push changes (Attempt $i)..."
+              if git pull --rebase && git push; then
+                echo "Push successful!"
+                break
+              fi
+              if [ $i -eq 5 ]; then
+                echo "Failed to push changes after 5 attempts."
+                exit 1
+              fi
+              sleep 5
+            done
           else
             echo "No changes to archive.json to commit."
           fi
