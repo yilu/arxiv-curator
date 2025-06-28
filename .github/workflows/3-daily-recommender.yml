@@ -30,7 +30,7 @@ jobs:
       - name: Run Recommender Script
         env:
           GITHUB_REPOSITORY: ${{ github.repository }}
-          # --- FIX: Pass the Gemini API key secret to the script ---
+          # --- Pass the Gemini API key secret to the script ---
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
         run: python scripts/recommend.py
@@ -39,14 +39,17 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # Add both files; git will only commit if there are changes.
+          # Add the archive file to staging
           git add archive.json
-          # Check if there are any changes to commit before committing.
-          if git diff --staged --quiet; then
-            echo "No changes to archive.json to commit."
-          else
+
+          # Commit the changes if there are any
+          if ! git diff --staged --quiet; then
             git commit -m "chore: Update paper archive"
+            # --- FIX: Pull latest changes before pushing ---
+            git pull --rebase
             git push
+          else
+            echo "No changes to archive.json to commit."
           fi
 
       - name: Deploy to yilu.github.io
