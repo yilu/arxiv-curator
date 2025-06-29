@@ -53,10 +53,6 @@ KEYWORDS = [
 # 'all-MiniLM-L6-v2' is a great default: fast, high-quality, and runs locally.
 EMBEDDING_MODEL = 'all-MiniLM-L6-v2'
 
-# After the initial filtering, we send the top N most promising candidates
-# to the Gemini LLM for a more detailed and accurate re-ranking.
-LLM_RE_RANK_LIMIT = 15
-
 # The file path for storing the vector embeddings of your liked papers.
 # This acts as your personal "taste" database.
 TASTE_PROFILE_PATH = 'liked_vectors.json'
@@ -67,3 +63,7 @@ GENERATED_HTML_PATH = 'dist/index.html'
 
 # The maximum number of papers to display on each monthly archive page.
 RECOMMENDATION_LIMIT = 150
+
+# The Requests Per Minute (RPM) limit for your Gemini API tier.
+# The script will automatically calculate the necessary delay based on this.
+LLM_RPM_LIMIT = 15

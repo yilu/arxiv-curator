@@ -13,7 +13,7 @@ from sentence_transformers import SentenceTransformer
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, KEYWORDS, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
-    RECOMMENDATION_LIMIT
+    RECOMMENDATION_LIMIT, LLM_RPM_LIMIT
 )
 
 ARCHIVE_PATH = 'archive.json'
@@ -89,7 +89,8 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
 
 def update_archive():
     """
-    Fetches new papers, scores them all with an LLM, and adds them to the archive.
+    Fetches new papers, identifies papers needing LLM analysis (new and previously
+    failed), scores them all with an LLM, and adds them to the archive.
     """
     gemini_api_key = os.environ.get('GEMINI_API_KEY')
     if not gemini_api_key:
@@ -100,6 +101,15 @@ def update_archive():
     if not taste_profile:
         print("🔴 Taste profile is empty."); return []
 
+    # 1. Find papers already in the archive that failed or were never analyzed by the LLM.
+    papers_to_retry = {
+        pid: p_data for pid, p_data in archive.items()
+        if p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None
+    }
+    if papers_to_retry:
+        print(f"🔍 Found {len(papers_to_retry)} existing papers to evaluate/re-evaluate.")
+
+    # 2. Find new papers that match keywords.
     recent_papers = get_recent_papers()
     unseen_papers = [p for p in recent_papers if p.entry_id.split('/abs/')[-1] not in archive]
 
@@ -108,45 +118,68 @@ def update_archive():
         if any(kw.lower() in (p.title + p.summary).lower() for kw in KEYWORDS)
     ]
 
-    if not keyword_filtered_papers:
-        print("✅ No new papers matching keywords to add to the archive."); return []
+    # 3. Combine them into a final list for the LLM.
+    papers_to_analyze_map = {p.entry_id.split('/abs/')[-1]: p for p in keyword_filtered_papers}
 
-    print(f"🤖 Found {len(keyword_filtered_papers)} new papers to analyze with LLM...")
+    for pid, p_data in papers_to_retry.items():
+        papers_to_analyze_map[pid] = arxiv.Result(
+            entry_id=f"http://arxiv.org/abs/{pid}",
+            title=p_data['title'],
+            summary=p_data['summary']
+        )
+
+    papers_to_analyze = list(papers_to_analyze_map.values())
+
+    if not papers_to_analyze:
+        print("✅ No new or failed papers to analyze with LLM."); return []
+
+    print(f"🤖 Total papers to analyze with LLM: {len(papers_to_analyze)}")
+
+    # 4. Smart rate-limiting logic.
+    delay_seconds = 0
+    if len(papers_to_analyze) > LLM_RPM_LIMIT:
+        delay_seconds = 60.0 / (LLM_RPM_LIMIT - 1)
+        print(f"⚠️ More than {LLM_RPM_LIMIT} papers to process. Adding a {delay_seconds:.2f}s delay between API calls.")
 
     liked_info = {item['id']: item for item in taste_profile}
     newly_added_ids = []
 
-    for i, paper in enumerate(keyword_filtered_papers):
+    for i, paper in enumerate(papers_to_analyze):
         paper_id = paper.entry_id.split('/abs/')[-1]
-        print(f"  -> ({i+1}/{len(keyword_filtered_papers)}) Analyzing '{paper.title[:50]}...'")
+        print(f"  -> ({i+1}/{len(papers_to_analyze)}) Analyzing '{paper.title[:50]}...'")
 
         llm_result = get_llm_analysis(
             {'title': paper.title, 'summary': paper.summary},
-            list(liked_info.values())[:5], # Provide context from up to 5 liked papers
+            list(liked_info.values())[:5],
             gemini_api_key
         )
+
+        is_new_paper = paper_id not in archive
 
         if llm_result:
             archive[paper_id] = {
                 'id': paper_id, 'title': paper.title,
-                'authors': [a.name for a in paper.authors],
+                'authors': [getattr(a, 'name', a) for a in paper.authors],
                 'summary': paper.summary.replace('\n', ' '),
-                'published_date': paper.published.strftime('%Y-%m-%d'),
-                'categories': paper.categories, 'doi': paper.doi,
+                'published_date': paper.published.strftime('%Y-%m-%d') if hasattr(paper, 'published') else archive.get(paper_id, {}).get('published_date', ''),
+                'categories': getattr(paper, 'categories', archive.get(paper_id, {}).get('categories', [])),
+                'doi': getattr(paper, 'doi', archive.get(paper_id, {}).get('doi')),
                 'score': llm_result.get('score', 0.0),
-                'reasoning': llm_result.get('reason', LLM_FAILURE_REASON),
+                'reasoning': llm_result.get('reason'),
                 'matching_keywords': [kw for kw in KEYWORDS if kw.lower() in (paper.title + paper.summary).lower()],
                 'suggested_keywords': llm_result.get('suggested_keywords', []),
-                'vector_matches': [] # This is no longer needed for ranking but can be repurposed later if desired
+                'vector_matches': []
             }
-            newly_added_ids.append(paper_id)
+            if is_new_paper:
+                newly_added_ids.append(paper_id)
         else:
-            print(f"  -> Skipping paper {paper_id} due to LLM analysis failure.")
+            if paper_id in archive:
+                archive[paper_id]['reasoning'] = LLM_FAILURE_REASON
+            print(f"  -> Skipping/marking paper {paper_id} for retry due to LLM analysis failure.")
 
-        # Rate limiting: wait 4 seconds between each call to stay under 15 RPM
-        if i < len(keyword_filtered_papers) - 1:
-            print("  -> Waiting 4 seconds to respect API rate limit...")
-            time.sleep(4)
+        if delay_seconds > 0 and i < len(papers_to_analyze) - 1:
+            print(f"  -> Waiting {delay_seconds:.2f} seconds...")
+            time.sleep(delay_seconds)
 
     print(f"💾 Saving archive with {len(archive)} total papers...")
     with open(ARCHIVE_PATH, 'w') as f: json.dump(archive, f, indent=2)
