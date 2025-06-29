@@ -217,12 +217,14 @@ def generate_site(new_paper_ids):
         papers_of_month = sorted(papers_by_month[month], key=lambda p: p['score'], reverse=True)
         total_in_month = len(papers_of_month)
 
-        # Calculate how many papers are not being shown due to the limit
         num_not_shown = 0
         if RECOMMENDATION_LIMIT > 0 and total_in_month > RECOMMENDATION_LIMIT:
             num_not_shown = total_in_month - RECOMMENDATION_LIMIT
 
         papers_to_render = papers_of_month[:RECOMMENDATION_LIMIT] if RECOMMENDATION_LIMIT > 0 else papers_of_month
+
+        # Collect all unique categories present in the papers for this month's page
+        unique_categories_in_month = sorted(list(set(cat for p in papers_to_render for cat in p['categories'])))
 
         # Render the page for this month
         html_content = template.render(
@@ -235,7 +237,9 @@ def generate_site(new_paper_ids):
             generation_date=generation_date_str,
             num_added=num_added_this_run,
             num_not_shown=num_not_shown,
-            total_in_month=total_in_month
+            total_in_month=total_in_month,
+            filter_categories=unique_categories_in_month, # Pass unique categories for filters
+            filter_keywords=KEYWORDS # Pass user-defined keywords for filters
         )
         with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f:
             f.write(html_content)

@@ -15,6 +15,7 @@
         .prose p { margin-top: 0; margin-bottom: 1em; }
         .reason-card { transition: background-color 0.2s ease-in-out; }
         .reason-card:hover { background-color: #f0f9ff; }
+        .filter-btn.active { background-color: #2563eb; color: white; }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,10 +61,34 @@
                     </div>
                 </header>
 
-                <div class="space-y-8">
+                <!-- Filter Section -->
+                <div id="filter-container" class="mb-8 p-4 bg-white rounded-lg shadow-sm border border-gray-200">
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Category:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            {% for category in filter_categories %}
+                                <button class="filter-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300" data-filter-type="category" data-filter-value="{{ category }}">{{ category }}</button>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Keyword:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            {% for keyword in filter_keywords %}
+                                <button class="filter-btn bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full hover:bg-blue-200" data-filter-type="keyword" data-filter-value="{{ keyword }}">{{ keyword }}</button>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <button id="clear-filters" class="mt-4 text-xs text-blue-600 hover:underline">Clear All Filters</button>
+                </div>
+
+
+                <div id="papers-list" class="space-y-8">
                     {% for paper in papers %}
-                    <article class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative overflow-hidden
-                                   {% if paper.id in new_paper_ids %} border-l-4 border-l-green-400 {% endif %}">
+                    <article class="paper-article bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative overflow-hidden
+                                   {% if paper.id in new_paper_ids %} border-l-4 border-l-green-400 {% endif %}"
+                             data-categories="{{ paper.categories | join(',') }}"
+                             data-keywords="{{ paper.matching_keywords | join(',') }}">
                         <!-- Paper Header -->
                         <div class="flex justify-between items-start gap-4">
                              <h3 class="text-xl font-semibold text-gray-900 mb-2 flex-1">
@@ -182,7 +207,9 @@
             }
         }
 
+        // --- Filter Logic ---
         document.addEventListener("DOMContentLoaded", function() {
+            // Render LaTeX formulas
             renderMathInElement(document.body, {
                 delimiters: [
                     {left: '$$', right: '$$', display: true},
@@ -192,6 +219,57 @@
                 ],
                 throwOnError : false
             });
+
+            // Filter functionality
+            const filterContainer = document.getElementById('filter-container');
+            const papersList = document.getElementById('papers-list');
+            const clearButton = document.getElementById('clear-filters');
+            const paperArticles = Array.from(papersList.getElementsByClassName('paper-article'));
+
+            let activeFilters = {
+                category: new Set(),
+                keyword: new Set()
+            };
+
+            filterContainer.addEventListener('click', function(event) {
+                const target = event.target;
+                if (!target.classList.contains('filter-btn')) return;
+
+                const filterType = target.dataset.filterType;
+                const filterValue = target.dataset.filterValue;
+
+                target.classList.toggle('active');
+
+                if (activeFilters[filterType].has(filterValue)) {
+                    activeFilters[filterType].delete(filterValue);
+                } else {
+                    activeFilters[filterType].add(filterValue);
+                }
+                applyFilters();
+            });
+
+            clearButton.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn.active').forEach(btn => btn.classList.remove('active'));
+                activeFilters.category.clear();
+                activeFilters.keyword.clear();
+                applyFilters();
+            });
+
+            function applyFilters() {
+                paperArticles.forEach(article => {
+                    const articleCategories = article.dataset.categories.split(',');
+                    const articleKeywords = article.dataset.keywords.split(',');
+
+                    const categoryMatch = activeFilters.category.size === 0 || Array.from(activeFilters.category).every(filter => articleCategories.includes(filter));
+                    const keywordMatch = activeFilters.keyword.size === 0 || Array.from(activeFilters.keyword).every(filter => articleKeywords.includes(filter));
+
+                    if (categoryMatch && keywordMatch) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            }
         });
     </script>
 </body>
