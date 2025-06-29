@@ -48,7 +48,16 @@
             <div class="max-w-4xl mx-auto">
                 <header class="mb-8">
                     <h2 class="text-3xl font-bold text-gray-900">Papers for {{ current_month }}</h2>
-                    <p class="text-sm text-gray-500 mt-2">Last updated: {{ generation_date }}</p>
+                    <div class="text-sm text-gray-500 mt-2 space-y-1">
+                        <p>Last updated: {{ generation_date }}.
+                           {% if num_added > 0 %}
+                                <span class="text-green-600 font-semibold">Added {{ num_added }} new paper{{'s' if num_added > 1}}.</span>
+                           {% endif %}
+                        </p>
+                        {% if num_not_shown > 0 %}
+                             <p>Displaying top {{ papers|length }} of {{ total_in_month }} papers for this month.</p>
+                        {% endif %}
+                    </div>
                 </header>
 
                 <div class="space-y-8">
@@ -78,6 +87,7 @@
                         <!-- Metadata -->
                         <div class="text-sm text-gray-600 mb-4">{{ paper.authors | join(', ') }}</div>
                         <div class="text-xs text-gray-500 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+                            <span class="font-mono">arXiv:{{ paper.id }}</span>
                             <span>Published: {{ paper.published_date }}</span>
                             <span class="font-semibold text-blue-700">LLM Score: {{ "%.3f"|format(paper.score) }}</span>
                             {% if paper.doi %}

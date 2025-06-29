@@ -19,7 +19,10 @@ ARCHIVE_PATH = 'archive.json'
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
 def get_recent_papers():
-    """Fetches the most recent papers from specified arXiv categories."""
+    """
+    Fetches the most recent papers from specified arXiv categories by querying
+    each category individually and combining the unique results.
+    """
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
     all_papers = {}
     client = arxiv.Client()
@@ -30,18 +33,25 @@ def get_recent_papers():
             results = client.results(search)
             for paper in results:
                 paper_id = paper.entry_id.split('/abs/')[-1]
-                if paper_id not in all_papers: all_papers[paper_id] = paper
+                if paper_id not in all_papers:
+                    all_papers[paper_id] = paper
         except Exception as e:
             print(f"🔴 Error fetching from {category}: {e}")
     print(f"✅ Found a total of {len(all_papers)} unique recent papers.")
     return list(all_papers.values())
 
 def find_matching_keywords(paper_text, keywords):
-    """Finds which of the user's keywords are in the paper text."""
+    """
+    Checks a paper's text for any of the user-defined keywords.
+    Returns a list of keywords that were found.
+    """
     return [kw for kw in keywords if kw.lower() in paper_text.lower()]
 
 def get_llm_analysis(new_paper, liked_papers, api_key):
-    """Gets score, reason, and new keyword suggestions from the Gemini LLM."""
+    """
+    Sends a paper's details to the Gemini LLM for advanced scoring,
+    reasoning, and keyword suggestion.
+    """
     liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
     prompt = f"""
     You are a helpful research assistant. A user has previously liked papers on these topics:
@@ -63,13 +73,10 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
         "generationConfig": {
             "responseMimeType": "application/json",
             "responseSchema": {
-                "type": "OBJECT",
-                "properties": {
-                    "score": {"type": "NUMBER"},
-                    "reason": {"type": "STRING"},
+                "type": "OBJECT", "properties": {
+                    "score": {"type": "NUMBER"}, "reason": {"type": "STRING"},
                     "suggested_keywords": {"type": "ARRAY", "items": {"type": "STRING"}}
-                },
-                "required": ["score", "reason", "suggested_keywords"]
+                }, "required": ["score", "reason", "suggested_keywords"]
             }
         }
     }
@@ -87,24 +94,23 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
         return {"score": 0.0, "reason": "Could not be analyzed by LLM.", "suggested_keywords": []}
 
 def update_archive():
+    """
+    Performs the main logic of fetching new papers, scoring them, and adding
+    them to the persistent archive file. Returns a list of newly added paper IDs.
+    """
     gemini_api_key = os.environ.get('GEMINI_API_KEY')
     if not gemini_api_key:
         print("🔴 GEMINI_API_KEY not set."); return []
 
-    if os.path.exists(ARCHIVE_PATH):
-        with open(ARCHIVE_PATH, 'r') as f: archive = json.load(f)
-    else: archive = {}
-
-    if os.path.exists(TASTE_PROFILE_PATH):
-        with open(TASTE_PROFILE_PATH, 'r') as f: taste_profile = json.load(f)
-    else: taste_profile = []
-
+    # Load existing archive and taste profile
+    archive = json.load(open(ARCHIVE_PATH)) if os.path.exists(ARCHIVE_PATH) else {}
+    taste_profile = json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else []
     if not taste_profile:
         print("🔴 Taste profile is empty."); return []
 
+    # Fetch new papers and filter out those already archived
     recent_papers = get_recent_papers()
     unseen_papers = [p for p in recent_papers if p.entry_id.split('/abs/')[-1] not in archive]
-
     if not unseen_papers:
         print("✅ No new papers found to add to the archive."); return []
 
@@ -119,17 +125,19 @@ def update_archive():
     newly_added_ids = []
     for i, paper in enumerate(unseen_papers):
         paper_id = paper.entry_id.split('/abs/')[-1]
-        embedding = new_paper_embeddings[i]
-        paper_text = new_paper_texts[i]
 
-        matching_keywords = find_matching_keywords(paper_text, KEYWORDS)
+        # Strict keyword filtering
+        matching_keywords = find_matching_keywords(new_paper_texts[i], KEYWORDS)
         if not matching_keywords:
             continue
 
+        # Calculate vector similarity for "because you liked" and initial score
+        embedding = new_paper_embeddings[i]
         similarities = [(np.dot(embedding, v) / (np.linalg.norm(embedding) * np.linalg.norm(v)), k) for k, v in liked_vectors.items()]
         similarities.sort(key=lambda x: x[0], reverse=True)
         top_liked = similarities[:3]
 
+        # Add the new paper to the archive with a base score
         archive[paper_id] = {
             'id': paper_id, 'title': paper.title,
             'authors': [a.name for a in paper.authors],
@@ -146,6 +154,7 @@ def update_archive():
 
     print(f"✅ Added {len(newly_added_ids)} new papers to archive with initial vector scores.")
 
+    # Re-rank the top candidates with the LLM for a more accurate score
     newly_added_papers = [archive[pid] for pid in newly_added_ids]
     newly_added_papers.sort(key=lambda p: p['score'], reverse=True)
     top_candidates_for_llm = newly_added_papers[:LLM_RE_RANK_LIMIT]
@@ -166,7 +175,12 @@ def update_archive():
     return newly_added_ids
 
 def generate_site(new_paper_ids):
-    if not os.path.exists(ARCHIVE_PATH): print("🔴 Archive file not found."); return
+    """
+    Generates the complete multi-page static site from the archive.json file,
+    passing all necessary data to the HTML template.
+    """
+    if not os.path.exists(ARCHIVE_PATH):
+        print("🔴 Archive file not found."); return
 
     with open(ARCHIVE_PATH, 'r') as f: archive = json.load(f)
     liked_paper_ids = set()
@@ -174,38 +188,60 @@ def generate_site(new_paper_ids):
         with open(TASTE_PROFILE_PATH, 'r') as f:
             liked_paper_ids = {item['id'] for item in json.load(f)}
 
+    # Group all archived papers by month
     papers_by_month = defaultdict(list)
     for paper in archive.values():
         papers_by_month[paper['published_date'][:7]].append(paper)
 
-    if not papers_by_month: print("No papers in archive to generate."); return
+    if not papers_by_month:
+        print("No papers in archive to generate."); return
 
     sorted_months = sorted(papers_by_month.keys(), reverse=True)
 
+    # Setup Jinja2 environment and custom filter
     env = Environment(loader=FileSystemLoader('templates'))
     env.filters['format_byl_authors'] = lambda authors: f"{authors[0]}, {authors[-1]} et al." if len(authors) > 1 else (f"{authors[0]} et al." if authors else "Unknown")
     template = env.get_template('index.html')
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
 
-    # --- FIX: Generate timestamp and pass it to the template ---
     generation_date_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
+    num_added_this_run = len(new_paper_ids)
 
+    # Prepare output directory
     output_dir = 'dist'
     if os.path.exists(output_dir): shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
 
+    print("📄 Generating monthly archive pages...")
     for month in sorted_months:
         papers_of_month = sorted(papers_by_month[month], key=lambda p: p['score'], reverse=True)
+        total_in_month = len(papers_of_month)
+
+        # Calculate how many papers are not being shown due to the limit
+        num_not_shown = 0
+        if RECOMMENDATION_LIMIT > 0 and total_in_month > RECOMMENDATION_LIMIT:
+            num_not_shown = total_in_month - RECOMMENDATION_LIMIT
+
         papers_to_render = papers_of_month[:RECOMMENDATION_LIMIT] if RECOMMENDATION_LIMIT > 0 else papers_of_month
 
+        # Render the page for this month
         html_content = template.render(
-            papers=papers_to_render, current_month=month, all_months=sorted_months,
-            github_repo=github_repo, new_paper_ids=new_paper_ids,
-            liked_paper_ids=liked_paper_ids, generation_date=generation_date_str
+            papers=papers_to_render,
+            current_month=month,
+            all_months=sorted_months,
+            github_repo=github_repo,
+            new_paper_ids=new_paper_ids,
+            liked_paper_ids=liked_paper_ids,
+            generation_date=generation_date_str,
+            num_added=num_added_this_run,
+            num_not_shown=num_not_shown,
+            total_in_month=total_in_month
         )
-        with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f: f.write(html_content)
+        with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f:
+            f.write(html_content)
         print(f"  -> Created {output_dir}/{month}.html")
 
+    # Create the main index.html by copying the latest month's page
     if sorted_months:
         shutil.copyfile(f"{output_dir}/{sorted_months[0]}.html", f"{output_dir}/index.html")
 
