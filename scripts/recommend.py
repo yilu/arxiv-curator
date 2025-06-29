@@ -4,6 +4,7 @@ import os
 import json
 import arxiv
 import shutil
+import time
 import requests
 import numpy as np
 from datetime import datetime
@@ -12,7 +13,7 @@ from sentence_transformers import SentenceTransformer
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, KEYWORDS, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
-    RECOMMENDATION_LIMIT, LLM_RE_RANK_LIMIT
+    RECOMMENDATION_LIMIT
 )
 
 ARCHIVE_PATH = 'archive.json'
@@ -21,8 +22,7 @@ LLM_FAILURE_REASON = "Could not be analyzed by LLM."
 
 def get_recent_papers():
     """
-    Fetches the most recent papers from specified arXiv categories by querying
-    each category individually and combining the unique results.
+    Fetches the most recent papers from specified arXiv categories.
     """
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
     all_papers = {}
@@ -41,17 +41,9 @@ def get_recent_papers():
     print(f"✅ Found a total of {len(all_papers)} unique recent papers.")
     return list(all_papers.values())
 
-def find_matching_keywords(paper_text, keywords):
-    """
-    Checks a paper's text for any of the user-defined keywords.
-    Returns a list of keywords that were found.
-    """
-    return [kw for kw in keywords if kw.lower() in paper_text.lower()]
-
 def get_llm_analysis(new_paper, liked_papers, api_key):
     """
-    Sends a paper's details to the Gemini LLM for advanced scoring,
-    reasoning, and keyword suggestion. Returns None on failure.
+    Sends a paper's details to the Gemini LLM for advanced scoring and reasoning.
     """
     liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
     prompt = f"""
@@ -63,10 +55,11 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
     Title: {new_paper['title']}
     Abstract: {new_paper['summary']}
 
-    Please provide three things in a JSON object:
-    1.  "score": A relevance score from 0.0 to 1.0.
-    2.  "reason": A concise, one-sentence justification for the score.
-    3.  "suggested_keywords": An array of up to 3 new, insightful keywords from this paper's abstract that are not in the user's original list.
+    Please provide a relevance score as a single number between 0.0 (not relevant) and 1.0 (highly relevant).
+    Also provide a concise, one-sentence justification for your score.
+    Finally, provide an array of up to 3 new, insightful keywords from this paper's abstract.
+
+    Return the result as a single JSON object with the keys "score", "reason", and "suggested_keywords".
     """
 
     payload = {
@@ -92,12 +85,11 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
         return json.loads(content)
     except Exception as e:
         print(f"🔴 LLM API call failed: {e}")
-        return None # Return None on failure
+        return None
 
 def update_archive():
     """
-    Performs the main logic of fetching new papers, scoring them, and adding
-    them to the persistent archive file. Returns a list of newly added paper IDs.
+    Fetches new papers, scores them all with an LLM, and adds them to the archive.
     """
     gemini_api_key = os.environ.get('GEMINI_API_KEY')
     if not gemini_api_key:
@@ -108,74 +100,53 @@ def update_archive():
     if not taste_profile:
         print("🔴 Taste profile is empty."); return []
 
-    # --- Add newly found papers to the archive with a vector score ---
     recent_papers = get_recent_papers()
     unseen_papers = [p for p in recent_papers if p.entry_id.split('/abs/')[-1] not in archive]
+
+    keyword_filtered_papers = [
+        p for p in unseen_papers
+        if any(kw.lower() in (p.title + p.summary).lower() for kw in KEYWORDS)
+    ]
+
+    if not keyword_filtered_papers:
+        print("✅ No new papers matching keywords to add to the archive."); return []
+
+    print(f"🤖 Found {len(keyword_filtered_papers)} new papers to analyze with LLM...")
+
+    liked_info = {item['id']: item for item in taste_profile}
     newly_added_ids = []
-    if unseen_papers:
-        print("🧠 Analyzing new papers for initial scoring...")
-        model = SentenceTransformer(EMBEDDING_MODEL)
-        new_paper_texts = [f"Title: {p.title}\nAbstract: {p.summary.replace(chr(10), ' ')}" for p in unseen_papers]
-        new_paper_embeddings = model.encode(new_paper_texts)
 
-        liked_info = {item['id']: item for item in taste_profile}
-        liked_vectors = {item['id']: np.array(item['vector']) for item in taste_profile}
-        taste_profile_vector = np.mean([item['vector'] for item in taste_profile], axis=0)
+    for i, paper in enumerate(keyword_filtered_papers):
+        paper_id = paper.entry_id.split('/abs/')[-1]
+        print(f"  -> ({i+1}/{len(keyword_filtered_papers)}) Analyzing '{paper.title[:50]}...'")
 
-        for i, paper in enumerate(unseen_papers):
-            paper_id = paper.entry_id.split('/abs/')[-1]
-            matching_keywords = find_matching_keywords(new_paper_texts[i], KEYWORDS)
-            if not matching_keywords:
-                continue
+        llm_result = get_llm_analysis(
+            {'title': paper.title, 'summary': paper.summary},
+            list(liked_info.values())[:5], # Provide context from up to 5 liked papers
+            gemini_api_key
+        )
 
-            embedding = new_paper_embeddings[i]
-            similarities = [(np.dot(embedding, v) / (np.linalg.norm(embedding) * np.linalg.norm(v)), k) for k, v in liked_vectors.items()]
-            similarities.sort(key=lambda x: x[0], reverse=True)
-            top_liked = similarities[:3]
-
+        if llm_result:
             archive[paper_id] = {
-                'id': paper_id, 'title': paper.title, 'authors': [a.name for a in paper.authors],
-                'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
+                'id': paper_id, 'title': paper.title,
+                'authors': [a.name for a in paper.authors],
+                'summary': paper.summary.replace('\n', ' '),
+                'published_date': paper.published.strftime('%Y-%m-%d'),
                 'categories': paper.categories, 'doi': paper.doi,
-                'score': top_liked[0][0] if top_liked else 0.0, 'reasoning': None,
-                'matching_keywords': matching_keywords, 'suggested_keywords': [],
-                'vector_matches': [{'score': lsim, **liked_info.get(lid, {})} for lsim, lid in top_liked]
+                'score': llm_result.get('score', 0.0),
+                'reasoning': llm_result.get('reason', LLM_FAILURE_REASON),
+                'matching_keywords': [kw for kw in KEYWORDS if kw.lower() in (paper.title + paper.summary).lower()],
+                'suggested_keywords': llm_result.get('suggested_keywords', []),
+                'vector_matches': [] # This is no longer needed for ranking but can be repurposed later if desired
             }
             newly_added_ids.append(paper_id)
-        print(f"✅ Added {len(newly_added_ids)} new papers to archive.")
-    else:
-        print("✅ No new papers found to add to the archive.")
+        else:
+            print(f"  -> Skipping paper {paper_id} due to LLM analysis failure.")
 
-    # --- Select candidates for LLM re-ranking ---
-    # Candidates are:
-    # 1. Newly added papers, sorted by vector score.
-    # 2. Old papers that previously failed LLM analysis.
-
-    newly_added_papers = [archive[pid] for pid in newly_added_ids]
-    newly_added_papers.sort(key=lambda p: p['score'], reverse=True)
-
-    failed_reranking_papers = [p for p in archive.values() if p.get('reasoning') == LLM_FAILURE_REASON]
-
-    candidates_for_llm = (failed_reranking_papers + newly_added_papers)[:LLM_RE_RANK_LIMIT]
-
-    if not candidates_for_llm:
-        print("✅ No candidates for LLM re-ranking.")
-    else:
-        print(f"🤖 Sending {len(candidates_for_llm)} candidates for LLM re-ranking...")
-        liked_papers_for_prompt = list(taste_profile)[:5]
-        for paper in candidates_for_llm:
-            print(f"  -> Re-ranking '{paper['title'][:50]}...'")
-            llm_result = get_llm_analysis(paper, liked_papers_for_prompt, gemini_api_key)
-
-            # --- New Failure Handling Logic ---
-            if llm_result:
-                # On success, update the score and reasoning
-                archive[paper['id']]['score'] = llm_result.get('score', paper['score'])
-                archive[paper['id']]['reasoning'] = llm_result.get('reason')
-                archive[paper['id']]['suggested_keywords'] = llm_result.get('suggested_keywords', [])
-            else:
-                # On failure, mark it for retry but keep the existing vector score
-                archive[paper['id']]['reasoning'] = LLM_FAILURE_REASON
+        # Rate limiting: wait 4 seconds between each call to stay under 15 RPM
+        if i < len(keyword_filtered_papers) - 1:
+            print("  -> Waiting 4 seconds to respect API rate limit...")
+            time.sleep(4)
 
     print(f"💾 Saving archive with {len(archive)} total papers...")
     with open(ARCHIVE_PATH, 'w') as f: json.dump(archive, f, indent=2)
@@ -184,11 +155,9 @@ def update_archive():
 
 def generate_site(new_paper_ids):
     """
-    Generates the complete multi-page static site from the archive.json file,
-    passing all necessary data to the HTML template.
+    Generates the complete multi-page static site from the archive.json file.
     """
-    if not os.path.exists(ARCHIVE_PATH):
-        print("🔴 Archive file not found."); return
+    if not os.path.exists(ARCHIVE_PATH): print("🔴 Archive file not found."); return
 
     with open(ARCHIVE_PATH, 'r') as f: archive = json.load(f)
     liked_paper_ids = set()
@@ -200,8 +169,7 @@ def generate_site(new_paper_ids):
     for paper in archive.values():
         papers_by_month[paper['published_date'][:7]].append(paper)
 
-    if not papers_by_month:
-        print("No papers in archive to generate."); return
+    if not papers_by_month: print("No papers in archive to generate."); return
 
     sorted_months = sorted(papers_by_month.keys(), reverse=True)
 
@@ -211,7 +179,7 @@ def generate_site(new_paper_ids):
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
 
     generation_date_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
-    num_added_this_run = len(new_paper_ids)
+    num_added_this_run = len(newly_added_ids)
 
     output_dir = 'dist'
     if os.path.exists(output_dir): shutil.rmtree(output_dir)
@@ -225,15 +193,19 @@ def generate_site(new_paper_ids):
         num_not_shown = 0
         if RECOMMENDATION_LIMIT > 0 and total_in_month > RECOMMENDATION_LIMIT:
             num_not_shown = total_in_month - RECOMMENDATION_LIMIT
-
         papers_to_render = papers_of_month[:RECOMMENDATION_LIMIT] if RECOMMENDATION_LIMIT > 0 else papers_of_month
+
+        unique_categories_in_month = sorted(list(set(cat for p in papers_to_render for cat in p['categories'])))
+        unique_keywords_in_month = sorted(list(set(kw for p in papers_to_render for kw in p['matching_keywords'])))
 
         html_content = template.render(
             papers=papers_to_render, current_month=month, all_months=sorted_months,
-            github_repo=github_repo, new_paper_ids=new_paper_ids,
+            github_repo=github_repo, new_paper_ids=newly_added_ids,
             liked_paper_ids=liked_paper_ids, generation_date=generation_date_str,
             num_added=num_added_this_run, num_not_shown=num_not_shown,
-            total_in_month=total_in_month
+            total_in_month=total_in_month,
+            filter_categories=unique_categories_in_month,
+            filter_keywords=unique_keywords_in_month
         )
         with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f:
             f.write(html_content)
