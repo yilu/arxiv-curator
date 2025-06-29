@@ -17,6 +17,7 @@ from config import (
 
 ARCHIVE_PATH = 'archive.json'
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+LLM_FAILURE_REASON = "Could not be analyzed by LLM."
 
 def get_recent_papers():
     """
@@ -50,7 +51,7 @@ def find_matching_keywords(paper_text, keywords):
 def get_llm_analysis(new_paper, liked_papers, api_key):
     """
     Sends a paper's details to the Gemini LLM for advanced scoring,
-    reasoning, and keyword suggestion.
+    reasoning, and keyword suggestion. Returns None on failure.
     """
     liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
     prompt = f"""
@@ -91,7 +92,7 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
         return json.loads(content)
     except Exception as e:
         print(f"🔴 LLM API call failed: {e}")
-        return {"score": 0.0, "reason": "Could not be analyzed by LLM.", "suggested_keywords": []}
+        return None # Return None on failure
 
 def update_archive():
     """
@@ -102,72 +103,79 @@ def update_archive():
     if not gemini_api_key:
         print("🔴 GEMINI_API_KEY not set."); return []
 
-    # Load existing archive and taste profile
     archive = json.load(open(ARCHIVE_PATH)) if os.path.exists(ARCHIVE_PATH) else {}
     taste_profile = json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else []
     if not taste_profile:
         print("🔴 Taste profile is empty."); return []
 
-    # Fetch new papers and filter out those already archived
+    # --- Add newly found papers to the archive with a vector score ---
     recent_papers = get_recent_papers()
     unseen_papers = [p for p in recent_papers if p.entry_id.split('/abs/')[-1] not in archive]
-    if not unseen_papers:
-        print("✅ No new papers found to add to the archive."); return []
-
-    print("🧠 Analyzing all new papers...")
-    model = SentenceTransformer(EMBEDDING_MODEL)
-    new_paper_texts = [f"Title: {p.title}\nAbstract: {p.summary.replace(chr(10), ' ')}" for p in unseen_papers]
-    new_paper_embeddings = model.encode(new_paper_texts)
-
-    liked_info = {item['id']: item for item in taste_profile}
-    liked_vectors = {item['id']: np.array(item['vector']) for item in taste_profile}
-
     newly_added_ids = []
-    for i, paper in enumerate(unseen_papers):
-        paper_id = paper.entry_id.split('/abs/')[-1]
+    if unseen_papers:
+        print("🧠 Analyzing new papers for initial scoring...")
+        model = SentenceTransformer(EMBEDDING_MODEL)
+        new_paper_texts = [f"Title: {p.title}\nAbstract: {p.summary.replace(chr(10), ' ')}" for p in unseen_papers]
+        new_paper_embeddings = model.encode(new_paper_texts)
 
-        # Strict keyword filtering
-        matching_keywords = find_matching_keywords(new_paper_texts[i], KEYWORDS)
-        if not matching_keywords:
-            continue
+        liked_info = {item['id']: item for item in taste_profile}
+        liked_vectors = {item['id']: np.array(item['vector']) for item in taste_profile}
+        taste_profile_vector = np.mean([item['vector'] for item in taste_profile], axis=0)
 
-        # Calculate vector similarity for "because you liked" and initial score
-        embedding = new_paper_embeddings[i]
-        similarities = [(np.dot(embedding, v) / (np.linalg.norm(embedding) * np.linalg.norm(v)), k) for k, v in liked_vectors.items()]
-        similarities.sort(key=lambda x: x[0], reverse=True)
-        top_liked = similarities[:3]
+        for i, paper in enumerate(unseen_papers):
+            paper_id = paper.entry_id.split('/abs/')[-1]
+            matching_keywords = find_matching_keywords(new_paper_texts[i], KEYWORDS)
+            if not matching_keywords:
+                continue
 
-        # Add the new paper to the archive with a base score
-        archive[paper_id] = {
-            'id': paper_id, 'title': paper.title,
-            'authors': [a.name for a in paper.authors],
-            'summary': paper.summary.replace('\n', ' '),
-            'published_date': paper.published.strftime('%Y-%m-%d'),
-            'categories': paper.categories, 'doi': paper.doi,
-            'score': top_liked[0][0] if top_liked else 0.0,
-            'reasoning': None,
-            'matching_keywords': matching_keywords,
-            'suggested_keywords': [],
-            'vector_matches': [{'score': lsim, **liked_info.get(lid, {})} for lsim, lid in top_liked]
-        }
-        newly_added_ids.append(paper_id)
+            embedding = new_paper_embeddings[i]
+            similarities = [(np.dot(embedding, v) / (np.linalg.norm(embedding) * np.linalg.norm(v)), k) for k, v in liked_vectors.items()]
+            similarities.sort(key=lambda x: x[0], reverse=True)
+            top_liked = similarities[:3]
 
-    print(f"✅ Added {len(newly_added_ids)} new papers to archive with initial vector scores.")
+            archive[paper_id] = {
+                'id': paper_id, 'title': paper.title, 'authors': [a.name for a in paper.authors],
+                'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
+                'categories': paper.categories, 'doi': paper.doi,
+                'score': top_liked[0][0] if top_liked else 0.0, 'reasoning': None,
+                'matching_keywords': matching_keywords, 'suggested_keywords': [],
+                'vector_matches': [{'score': lsim, **liked_info.get(lid, {})} for lsim, lid in top_liked]
+            }
+            newly_added_ids.append(paper_id)
+        print(f"✅ Added {len(newly_added_ids)} new papers to archive.")
+    else:
+        print("✅ No new papers found to add to the archive.")
 
-    # Re-rank the top candidates with the LLM for a more accurate score
+    # --- Select candidates for LLM re-ranking ---
+    # Candidates are:
+    # 1. Newly added papers, sorted by vector score.
+    # 2. Old papers that previously failed LLM analysis.
+
     newly_added_papers = [archive[pid] for pid in newly_added_ids]
     newly_added_papers.sort(key=lambda p: p['score'], reverse=True)
-    top_candidates_for_llm = newly_added_papers[:LLM_RE_RANK_LIMIT]
 
-    print(f"🤖 Sending {len(top_candidates_for_llm)} top candidates for LLM re-ranking...")
-    for paper in top_candidates_for_llm:
-        print(f"  -> Re-ranking '{paper['title'][:50]}...'")
-        llm_result = get_llm_analysis(paper, list(liked_info.values())[:5], gemini_api_key)
+    failed_reranking_papers = [p for p in archive.values() if p.get('reasoning') == LLM_FAILURE_REASON]
 
-        if llm_result:
-            archive[paper['id']]['score'] = llm_result.get('score', paper['score'])
-            archive[paper['id']]['reasoning'] = llm_result.get('reason')
-            archive[paper['id']]['suggested_keywords'] = llm_result.get('suggested_keywords', [])
+    candidates_for_llm = (failed_reranking_papers + newly_added_papers)[:LLM_RE_RANK_LIMIT]
+
+    if not candidates_for_llm:
+        print("✅ No candidates for LLM re-ranking.")
+    else:
+        print(f"🤖 Sending {len(candidates_for_llm)} candidates for LLM re-ranking...")
+        liked_papers_for_prompt = list(taste_profile)[:5]
+        for paper in candidates_for_llm:
+            print(f"  -> Re-ranking '{paper['title'][:50]}...'")
+            llm_result = get_llm_analysis(paper, liked_papers_for_prompt, gemini_api_key)
+
+            # --- New Failure Handling Logic ---
+            if llm_result:
+                # On success, update the score and reasoning
+                archive[paper['id']]['score'] = llm_result.get('score', paper['score'])
+                archive[paper['id']]['reasoning'] = llm_result.get('reason')
+                archive[paper['id']]['suggested_keywords'] = llm_result.get('suggested_keywords', [])
+            else:
+                # On failure, mark it for retry but keep the existing vector score
+                archive[paper['id']]['reasoning'] = LLM_FAILURE_REASON
 
     print(f"💾 Saving archive with {len(archive)} total papers...")
     with open(ARCHIVE_PATH, 'w') as f: json.dump(archive, f, indent=2)
@@ -188,7 +196,6 @@ def generate_site(new_paper_ids):
         with open(TASTE_PROFILE_PATH, 'r') as f:
             liked_paper_ids = {item['id'] for item in json.load(f)}
 
-    # Group all archived papers by month
     papers_by_month = defaultdict(list)
     for paper in archive.values():
         papers_by_month[paper['published_date'][:7]].append(paper)
@@ -198,7 +205,6 @@ def generate_site(new_paper_ids):
 
     sorted_months = sorted(papers_by_month.keys(), reverse=True)
 
-    # Setup Jinja2 environment and custom filter
     env = Environment(loader=FileSystemLoader('templates'))
     env.filters['format_byl_authors'] = lambda authors: f"{authors[0]}, {authors[-1]} et al." if len(authors) > 1 else (f"{authors[0]} et al." if authors else "Unknown")
     template = env.get_template('index.html')
@@ -207,7 +213,6 @@ def generate_site(new_paper_ids):
     generation_date_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
     num_added_this_run = len(new_paper_ids)
 
-    # Prepare output directory
     output_dir = 'dist'
     if os.path.exists(output_dir): shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
@@ -223,29 +228,17 @@ def generate_site(new_paper_ids):
 
         papers_to_render = papers_of_month[:RECOMMENDATION_LIMIT] if RECOMMENDATION_LIMIT > 0 else papers_of_month
 
-        # Collect all unique categories present in the papers for this month's page
-        unique_categories_in_month = sorted(list(set(cat for p in papers_to_render for cat in p['categories'])))
-
-        # Render the page for this month
         html_content = template.render(
-            papers=papers_to_render,
-            current_month=month,
-            all_months=sorted_months,
-            github_repo=github_repo,
-            new_paper_ids=new_paper_ids,
-            liked_paper_ids=liked_paper_ids,
-            generation_date=generation_date_str,
-            num_added=num_added_this_run,
-            num_not_shown=num_not_shown,
-            total_in_month=total_in_month,
-            filter_categories=unique_categories_in_month, # Pass unique categories for filters
-            filter_keywords=KEYWORDS # Pass user-defined keywords for filters
+            papers=papers_to_render, current_month=month, all_months=sorted_months,
+            github_repo=github_repo, new_paper_ids=new_paper_ids,
+            liked_paper_ids=liked_paper_ids, generation_date=generation_date_str,
+            num_added=num_added_this_run, num_not_shown=num_not_shown,
+            total_in_month=total_in_month
         )
         with open(f"{output_dir}/{month}.html", 'w', encoding='utf-8') as f:
             f.write(html_content)
         print(f"  -> Created {output_dir}/{month}.html")
 
-    # Create the main index.html by copying the latest month's page
     if sorted_months:
         shutil.copyfile(f"{output_dir}/{sorted_months[0]}.html", f"{output_dir}/index.html")
 
