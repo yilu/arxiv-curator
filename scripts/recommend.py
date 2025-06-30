@@ -118,19 +118,16 @@ def update_archive():
     liked_vectors = torch.tensor([item['vector'] for item in taste_profile]) if taste_profile_exists else None
     print("✅ Model loaded.")
 
-    # --- NEW LOGIC START ---
-
-    # 1. Identify all paper IDs that need to be processed.
-    # Find papers needing an update (missing LLM reasoning OR missing vector matches)
+    # Identify papers in the archive that need to be re-processed.
     retry_ids = {
         pid for pid, p_data in archive.items()
         if (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or \
-           (taste_profile_exists and p_data.get('vector_matches') is None)
+           (taste_profile_exists and not p_data.get('vector_matches'))
     }
     if retry_ids:
         print(f"🔍 Found {len(retry_ids)} existing papers to evaluate/re-evaluate.")
 
-    # Find new papers that match keywords
+    # Identify new papers from the feed that match keywords.
     recent_papers = get_recent_papers()
     new_paper_ids = {
         p.entry_id.split('/abs/')[-1] for p in recent_papers
@@ -140,22 +137,21 @@ def update_archive():
     if new_paper_ids:
         print(f"🔍 Found {len(new_paper_ids)} new papers matching keywords.")
 
-    # Combine into a single set of unique IDs
+    # Combine new and retry IDs into a single set for processing.
     ids_to_process = retry_ids.union(new_paper_ids)
 
     if not ids_to_process:
         print("✅ No new or failed papers to process. Exiting."); return []
 
-    # 2. Fetch fresh, up-to-date data for all identified papers in one batch.
+    # Fetch fresh, up-to-date data for all identified papers in one batch.
     print(f"📡 Fetching fresh data for {len(ids_to_process)} papers from arXiv...")
     client = arxiv.Client()
     papers_to_analyze = list(client.results(arxiv.Search(id_list=list(ids_to_process))))
     print(f"✅ Received fresh data for {len(papers_to_analyze)} papers.")
 
-    # --- NEW LOGIC END ---
-
     print(f"🤖 Total papers to analyze: {len(papers_to_analyze)}")
 
+    # Set up rate limiting for the LLM API.
     delay_seconds = 0
     if len(papers_to_analyze) > LLM_RPM_LIMIT:
         delay_seconds = 60.0 / (LLM_RPM_LIMIT - 1)
@@ -171,7 +167,7 @@ def update_archive():
         existing_data = archive.get(paper_id)
         llm_result = None
 
-        # If LLM reasoning is already good, don't call the API again.
+        # If LLM reasoning is already good, skip the expensive API call.
         if existing_data and existing_data.get('reasoning') and existing_data.get('reasoning') != LLM_FAILURE_REASON:
             print(f"  -> LLM data already exists for {paper_id}. Skipping LLM API call.")
             llm_result = {
@@ -204,6 +200,7 @@ def update_archive():
                         'url': liked_paper.get('url', '#')
                     })
 
+            # Overwrite the archive entry with the latest, freshest data.
             archive[paper_id] = {
                 'id': paper_id,
                 'title': paper.title,
@@ -221,9 +218,10 @@ def update_archive():
             if is_new_paper:
                 newly_added_ids.append(paper_id)
         else:
+            # If all analysis fails, create or update a placeholder entry.
             if paper_id in archive:
                 archive[paper_id]['reasoning'] = LLM_FAILURE_REASON
-            else: # Create a placeholder for new papers that fail immediately
+            else:
                 archive[paper_id] = {
                     'id': paper_id, 'title': paper.title, 'authors': [a.name for a in paper.authors if a],
                     'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
@@ -259,6 +257,7 @@ def generate_site(new_paper_ids):
 
     if not papers_by_month: print("No papers in archive to generate."); return
 
+    # Filter out any months with an invalid format to prevent broken pages.
     valid_months = [m for m in papers_by_month.keys() if re.match(r'^\d{4}-\d{2}$', m)]
     sorted_months = sorted(valid_months, reverse=True)
 
@@ -276,6 +275,7 @@ def generate_site(new_paper_ids):
 
     print("📄 Generating monthly archive pages...")
     for month in sorted_months:
+        # Sort by LLM score primarily, then by the sum of vector match scores as a tie-breaker.
         papers_of_month = sorted(
             papers_by_month[month],
             key=lambda p: (p.get('score', 0), sum(match['score'] for match in p.get('vector_matches', []))),
