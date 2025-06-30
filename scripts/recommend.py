@@ -8,9 +8,10 @@ import time
 import requests
 import numpy as np
 import re
+import torch
 from datetime import datetime
 from collections import defaultdict
-from sentence_transformers import SentenceTransformer
+from sentence_transformers import SentenceTransformer, util
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, KEYWORDS, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
@@ -111,14 +112,26 @@ def update_archive():
 
     archive = json.load(open(ARCHIVE_PATH)) if os.path.exists(ARCHIVE_PATH) else {}
     taste_profile = json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else []
-    if not taste_profile:
-        print("🔴 Taste profile is empty."); return []
+    taste_profile_exists = bool(taste_profile)
+    if not taste_profile_exists:
+        print("🔴 Taste profile is empty. Skipping vector search.");
 
-    # 1. Find papers already in the archive that failed or were never analyzed by the LLM.
+    # --- Load model and taste profile for vector search ---
+    print("🧠 Loading embedding model for similarity search...")
+    model = SentenceTransformer(EMBEDDING_MODEL)
+    liked_vectors = torch.tensor([item['vector'] for item in taste_profile]) if taste_profile_exists else None
+    print("✅ Model loaded.")
+
+
+    # --- MODIFICATION START ---
+    # 1. Find papers needing an update (missing LLM reasoning OR missing vector matches)
     papers_to_retry = {
         pid: p_data for pid, p_data in archive.items()
-        if p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None
+        if (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or \
+           (taste_profile_exists and not p_data.get('vector_matches'))
     }
+    # --- MODIFICATION END ---
+
     if papers_to_retry:
         print(f"🔍 Found {len(papers_to_retry)} existing papers to evaluate/re-evaluate.")
 
@@ -138,7 +151,11 @@ def update_archive():
         papers_to_analyze_map[pid] = arxiv.Result(
             entry_id=f"http://arxiv.org/abs/{pid}",
             title=p_data['title'],
-            summary=p_data['summary']
+            summary=p_data['summary'],
+            authors=p_data.get('authors', []),
+            published=datetime.fromisoformat(p_data.get('published_date')) if p_data.get('published_date') else datetime.now(),
+            categories=p_data.get('categories', []),
+            doi=p_data.get('doi')
         )
 
     papers_to_analyze = list(papers_to_analyze_map.values())
@@ -161,31 +178,68 @@ def update_archive():
         paper_id = paper.entry_id.split('/abs/')[-1]
         print(f"  -> ({i+1}/{len(papers_to_analyze)}) Analyzing '{paper.title[:50]}...'")
 
-        llm_result = get_llm_analysis(
-            {'title': paper.title, 'summary': paper.summary},
-            list(liked_info.values())[:5],
-            gemini_api_key
-        )
+        existing_data = archive.get(paper_id)
+        llm_result = None
+
+        # --- MODIFICATION START ---
+        # If LLM reasoning is already good, don't call the API again.
+        if existing_data and existing_data.get('reasoning') and existing_data.get('reasoning') != LLM_FAILURE_REASON:
+            print(f"  -> LLM data already exists for {paper_id}. Skipping LLM API call.")
+            llm_result = {
+                "score": existing_data.get('score', 0.0),
+                "reason": existing_data.get('reasoning'),
+                "suggested_keywords": existing_data.get('suggested_keywords', [])
+            }
+        else:
+            llm_result = get_llm_analysis(
+                {'title': paper.title, 'summary': paper.summary},
+                list(liked_info.values())[:5],
+                gemini_api_key
+            )
+        # --- MODIFICATION END ---
+
 
         is_new_paper = paper_id not in archive
 
         if llm_result:
+            vector_matches = []
+            # --- Vector Similarity Search ---
+            if liked_vectors is not None:
+                print(f"  -> Performing vector similarity search...")
+                # Encode the new paper
+                new_paper_embedding = model.encode(f"Title: {paper.title}\nAbstract: {paper.summary}", convert_to_tensor=True)
+
+                # Compute cosine similarity
+                cosine_scores = util.cos_sim(new_paper_embedding, liked_vectors)[0]
+
+                # Get top 3 results
+                top_results = torch.topk(cosine_scores, k=min(3, len(taste_profile)))
+
+                for score, idx in zip(top_results[0], top_results[1]):
+                    liked_paper = taste_profile[idx]
+                    vector_matches.append({
+                        'score': score.item(),
+                        'title': liked_paper['title'],
+                        'authors': liked_paper.get('authors', []),
+                        'url': liked_paper.get('url', '#')
+                    })
+
             # Get raw categories and filter them
             raw_categories = getattr(paper, 'categories', archive.get(paper_id, {}).get('categories', []))
             filtered_categories = filter_arxiv_categories(raw_categories)
 
             archive[paper_id] = {
                 'id': paper_id, 'title': paper.title,
-                'authors': [getattr(a, 'name', a) for a in paper.authors],
+                'authors': [getattr(a, 'name', a) for a in paper.authors if a],
                 'summary': paper.summary.replace('\n', ' '),
                 'published_date': paper.published.strftime('%Y-%m-%d') if hasattr(paper, 'published') else archive.get(paper_id, {}).get('published_date', ''),
-                'categories': filtered_categories, # <--- Use the filtered list here
+                'categories': filtered_categories,
                 'doi': getattr(paper, 'doi', archive.get(paper_id, {}).get('doi')),
                 'score': llm_result.get('score', 0.0),
                 'reasoning': llm_result.get('reason'),
                 'matching_keywords': [kw for kw in KEYWORDS if kw.lower() in (paper.title + paper.summary).lower()],
                 'suggested_keywords': llm_result.get('suggested_keywords', []),
-                'vector_matches': []
+                'vector_matches': vector_matches
             }
             if is_new_paper:
                 newly_added_ids.append(paper_id)
@@ -217,14 +271,17 @@ def generate_site(new_paper_ids):
 
     papers_by_month = defaultdict(list)
     for paper in archive.values():
-        papers_by_month[paper['published_date'][:7]].append(paper)
+        date_key = (paper.get('published_date') or '0000-00-00')[:7]
+        papers_by_month[date_key].append(paper)
 
     if not papers_by_month: print("No papers in archive to generate."); return
 
-    sorted_months = sorted(papers_by_month.keys(), reverse=True)
+    # Remove any invalid month keys before sorting
+    valid_months = [m for m in papers_by_month.keys() if re.match(r'^\d{4}-\d{2}$', m)]
+    sorted_months = sorted(valid_months, reverse=True)
 
     env = Environment(loader=FileSystemLoader('templates'))
-    env.filters['format_byl_authors'] = lambda authors: f"{authors[0]}, {authors[-1]} et al." if len(authors) > 1 else (f"{authors[0]} et al." if authors else "Unknown")
+    env.filters['format_byl_authors'] = lambda authors: f"{authors[0]}, {authors[-1]} et al." if len(authors) > 2 else (' and '.join(authors) if authors else "Unknown")
     template = env.get_template('index.html')
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
 
@@ -237,7 +294,12 @@ def generate_site(new_paper_ids):
 
     print("📄 Generating monthly archive pages...")
     for month in sorted_months:
-        papers_of_month = sorted(papers_by_month[month], key=lambda p: p['score'], reverse=True)
+        # Sort by LLM score primarily, then by the sum of vector match scores as a tie-breaker
+        papers_of_month = sorted(
+            papers_by_month[month],
+            key=lambda p: (p.get('score', 0), sum(match['score'] for match in p.get('vector_matches', []))),
+            reverse=True
+        )
         total_in_month = len(papers_of_month)
 
         num_not_shown = 0
@@ -246,7 +308,7 @@ def generate_site(new_paper_ids):
         papers_to_render = papers_of_month[:RECOMMENDATION_LIMIT] if RECOMMENDATION_LIMIT > 0 else papers_of_month
 
         unique_categories_in_month = sorted(list(set(cat for p in papers_to_render for cat in p['categories'])))
-        unique_keywords_in_month = sorted(list(set(kw for p in papers_to_render for kw in p['matching_keywords'])))
+        unique_keywords_in_month = sorted(list(set(kw for p in papers_to_render for kw in p.get('matching_keywords', []))))
 
         html_content = template.render(
             papers=papers_to_render, current_month=month, all_months=sorted_months,
