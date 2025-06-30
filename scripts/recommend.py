@@ -7,6 +7,7 @@ import shutil
 import time
 import requests
 import numpy as np
+import re
 from datetime import datetime
 from collections import defaultdict
 from sentence_transformers import SentenceTransformer
@@ -19,6 +20,18 @@ from config import (
 ARCHIVE_PATH = 'archive.json'
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 LLM_FAILURE_REASON = "Could not be analyzed by LLM."
+
+def filter_arxiv_categories(categories):
+    """
+    Filters a list of strings to only include valid arXiv category formats.
+    Example valid format: 'cs.LG', 'cond-mat.str-el'
+    Example invalid format: 'I.2.5; I.2.11', '68T07'
+    """
+    if not categories:
+        return []
+    # This regex matches the standard 'archive.subject_class' format.
+    arxiv_category_pattern = re.compile(r'^[a-z\-]+\.[A-Za-z\-]+$')
+    return [cat for cat in categories if arxiv_category_pattern.match(cat)]
 
 def get_recent_papers():
     """
@@ -157,12 +170,16 @@ def update_archive():
         is_new_paper = paper_id not in archive
 
         if llm_result:
+            # Get raw categories and filter them
+            raw_categories = getattr(paper, 'categories', archive.get(paper_id, {}).get('categories', []))
+            filtered_categories = filter_arxiv_categories(raw_categories)
+
             archive[paper_id] = {
                 'id': paper_id, 'title': paper.title,
                 'authors': [getattr(a, 'name', a) for a in paper.authors],
                 'summary': paper.summary.replace('\n', ' '),
                 'published_date': paper.published.strftime('%Y-%m-%d') if hasattr(paper, 'published') else archive.get(paper_id, {}).get('published_date', ''),
-                'categories': getattr(paper, 'categories', archive.get(paper_id, {}).get('categories', [])),
+                'categories': filtered_categories, # <--- Use the filtered list here
                 'doi': getattr(paper, 'doi', archive.get(paper_id, {}).get('doi')),
                 'score': llm_result.get('score', 0.0),
                 'reasoning': llm_result.get('reason'),
