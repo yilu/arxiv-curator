@@ -31536,5 +31536,190 @@
       "material characterization"
     ],
     "vector_matches": []
+  },
+  "2506.22435v1": {
+    "id": "2506.22435v1",
+    "title": "Correlation Enhanced Electron-Phonon Coupling in FeSe/SrTiO$_3$ at a Magic Angle",
+    "authors": [
+      "Qiang Zou",
+      "Antik Sihi",
+      "Basu Dev Oli",
+      "Merc\u00e8 Roig",
+      "Daniel Agterberg",
+      "Michael Weinert",
+      "Lian Li",
+      "Subhasish Mandal"
+    ],
+    "summary": "While a predictive theory for unconventional superconductivity in Fe-based superconductors remains elusive, an extensively debated aspect is the interaction between phonons and strongly correlated electrons, and its potential role in the pairing mechanism. Here, through the combination of first principles dynamical mean field theory calculations and epitaxial growth of the single-layer FeX (X=Se, S, Te) on SrTiO$_3$ (STO)(001) substrate, which facilitates the controlled distortion of the FeX$_4$ tetrahedron, we demonstrate an unique superconducting dome where the superconducting gap peaks at a `magic' angle of the FeX$_4$ tetrahedron and the electron-phonon coupling (EPC) for the A$_{1g}$ mode is maximized for the FeSe film. Our findings uncover a significant role of electronic correlations in strengthening Cooper pairing in unconventional superconductors by enhancing EPC.",
+    "published_date": "2025-06-27",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "This paper investigates the interplay of electron-phonon coupling and electronic correlations in Fe-based superconductors, a topic related to the user's interest in unconventional superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "dynamical mean field theory"
+    ],
+    "suggested_keywords": [
+      "electron-phonon coupling",
+      "FeSe/SrTiO3",
+      "dynamical mean field theory"
+    ],
+    "vector_matches": []
+  },
+  "2506.22302v1": {
+    "id": "2506.22302v1",
+    "title": "Dissipative Kondo physics in the Anderson Impurity Model with two-body losses",
+    "authors": [
+      "Matthieu Vanhoecke",
+      "Naoto Tsuji",
+      "Marco Schir\u00f2"
+    ],
+    "summary": "We study a dissipative version of the Anderson Impurity model, where an interacting impurity is coupled to a fermionic reservoir and exposed to Markovian dissipation in the form of two-body losses. Using a self-consistent hybridization expansion based on the Non-Crossing Approximation (NCA) we compute the dynamics of the impurity, its steady-state and spectral function. We show that the interplay between strong Coulomb repulsion and correlated dissipation gives rise to robust signatures of Kondo physics both at weak and strong losses. These include a strongly suppressed spin relaxation rate, displaying a characteristic Kondo-Zeno crossover and a spectral function where doublon band is quickly destroyed by dissipation while the coherent Kondo peak remains visible for weak losses, then disappears at intermediate values and finally re-emerge as the system enters in the Kondo-Zeno regime. As compared to the case of single particle losses we show that two-body dissipation protects Kondo physics. The picture obtained with NCA is confirmed by numerical simulations of exact dynamics on finite-size chains. We interpret these results using a dissipative Schrieffer-Wolff transformation, which leads to an effective Kondo model with residual impurity-bath losses which are suppressed by strong correlations or strong losses.",
+    "published_date": "2025-06-27",
+    "categories": [
+      "cond-mat.str-el",
+      "quant-ph"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses Kondo physics and strong correlations, aligning with the user's interest in unconventional superconductivity and strongly correlated materials.",
+    "matching_keywords": [
+      "anderson impurity model"
+    ],
+    "suggested_keywords": [
+      "Dissipative Kondo physics",
+      "Anderson Impurity Model",
+      "Kondo-Zeno crossover"
+    ],
+    "vector_matches": []
+  },
+  "2506.22025v1": {
+    "id": "2506.22025v1",
+    "title": "Dipoles and Anyonic Directional Confinement via Twisted Toric Codes",
+    "authors": [
+      "Jose Garre Rubio"
+    ],
+    "summary": "We introduce a modified 2D toric code Hamiltonian that exhibits explicit anyon confinement along a single spatial direction. By bounding the motion of these confined anyons, we obtain dipolar excitations with restricted mobility. We analyze the resulting logical operators, whose existence depends on the system size, as well as the structure of gapped boundaries and a tensor network representation of the ground state. Furthermore, when confinement is enforced in both directions, fractal-like excitations emerge, resulting in unpaired logical operators.   We extend our construction to 3D models, such as the surface code and the X-cube model, leading to novel dipole-loop and dipole-planon excitations that arise from bounding confined excitations. These modifications are implemented through group cohomological twistings--projective representations of finite groups--with most examples based on Z2xZ2.",
+    "published_date": "2025-06-27",
+    "categories": [
+      "quant-ph",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has previously liked papers on superconductivity and correlated electron systems, this paper's focus on topological codes and anyons makes it less directly relevant.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Toric Codes",
+      "Anyon Confinement",
+      "Topological Order"
+    ],
+    "vector_matches": []
+  },
+  "2506.21908v1": {
+    "id": "2506.21908v1",
+    "title": "Spin non-Collinear Real-Time Time-Dependent Density-Functional Theory and Implementation in the Modern GPU-Accelerated INQ code",
+    "authors": [
+      "Jacopo Simoni",
+      "Xavier Andrade",
+      "Wuzhang Fang",
+      "Andrew C. Grieder",
+      "Alfredo A. Correa",
+      "Tadashi Ogitsu",
+      "Yuan Ping"
+    ],
+    "summary": "Time-dependent density functional theory (TDDFT) is a theory that describes the time evolution of quantum mechanical many-electron systems under the influence of external time-dependent electric and magnetic fields. INQ is a specially designed software to efficiently solve the real-time TDDFT equations on graphics processing units (GPUs), which aim to overcome the computational limitation of time and size scales of non-equilibrium quantum dynamics. In this work we will present an implementation of non-collinear TDDFT for the INQ code to simulate spin dynamics in real time and discuss the implementation of non-collinear magnetic effects into the code. We will discuss the implementation of exchange-correlation magnetic fields, spin-orbit coupling, and the interaction between the electronic system and external magnetic fields. We will then consider several prototypical examples of spin dynamics in magnetic clusters and solids after light excitation. Potential applications range from the study of real-time dynamics of magnons to ultrafast spin dynamics under linear and circularly polarized laser excitation, as well as spectroscopic signatures such as magnetic circular dichroism and pump-probe Kerr rotation.",
+    "published_date": "2025-06-27",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper discusses real-time simulations of spin dynamics using time-dependent density functional theory (TDDFT), which aligns with the user's interest in electronic structure calculations and related phenomena like magnetism and superconductivity.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "non-collinear TDDFT",
+      "spin dynamics",
+      "GPU-accelerated computation"
+    ],
+    "vector_matches": []
+  },
+  "2506.21788v1": {
+    "id": "2506.21788v1",
+    "title": "Multi-task parallelism for robust pre-training of graph foundation models on multi-source, multi-fidelity atomistic modeling data",
+    "authors": [
+      "Massimiliano Lupo Pasini",
+      "Jong Youl Choi",
+      "Pei Zhang",
+      "Kshitij Mehta",
+      "Rylie Weaver",
+      "Ashwin M. Aji",
+      "Karl W. Schulz",
+      "Jorda Polo",
+      "Prasanna Balaprakash"
+    ],
+    "summary": "Graph foundation models using graph neural networks promise sustainable, efficient atomistic modeling. To tackle challenges of processing multi-source, multi-fidelity data during pre-training, recent studies employ multi-task learning, in which shared message passing layers initially process input atomistic structures regardless of source, then route them to multiple decoding heads that predict data-specific outputs. This approach stabilizes pre-training and enhances a model's transferability to unexplored chemical regions. Preliminary results on approximately four million structures are encouraging, yet questions remain about generalizability to larger, more diverse datasets and scalability on supercomputers. We propose a multi-task parallelism method that distributes each head across computing resources with GPU acceleration. Implemented in the open-source HydraGNN architecture, our method was trained on over 24 million structures from five datasets and tested on the Perlmutter, Aurora, and Frontier supercomputers, demonstrating efficient scaling on all three highly heterogeneous super-computing architectures.",
+    "published_date": "2025-06-26",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "physics.atm-clus",
+      "68T07, 68T09",
+      "I.2; I.2.5; I.2.11"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While not directly related to superconductivity or topological materials, the paper focuses on efficient atomistic modeling using graph neural networks, a technique that could be valuable in materials science research, including the study of novel electronic structures.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "graph neural networks",
+      "atomistic modeling",
+      "multi-task learning"
+    ],
+    "vector_matches": []
+  },
+  "2506.21726v1": {
+    "id": "2506.21726v1",
+    "title": "Scalable Dip-Coated Bragg Mirrors for Strong Light-Matter Coupling with 2D Perovskites",
+    "authors": [
+      "Melissa M\u00e9ndez-Galv\u00e1n",
+      "Zaira Saucedo-Ch\u00e1vez",
+      "Diana Medrano",
+      "Michael Zuarez-Chamba",
+      "Yesenia A. Garc\u00eda-Jomaso",
+      "C\u00e9sar L. Ord\u00f3\u00f1ez-Romero",
+      "Giuseppe Pirruccio",
+      "Arturo Camacho-Guardian",
+      "Galo J. A. A. Soler-Illia",
+      "Hugo A. Lara-Garc\u00eda"
+    ],
+    "summary": "We report a scalable and cost-effective method for fabricating high-performance Bragg mirrors using a bottom-up approach that combines evaporation-induced self-assembly (EISA) and dip-coating. The photonic crystals are composed of alternating mesoporous SiO$_2$ and dense TiO$_2$ layers, providing a high refractive index contrast ($\\sim$0.8). This enables strong reflectance (up to 96%) with as few as five bilayers and precise control of the photonic stop band across the visible spectrum by simply adjusting the deposition parameters. Integration of a thin film of the two-dimensional perovskite (PEA)$_2$PbI$_4$ leads to strong light--matter coupling at room temperature. Angle-resolved reflectance and photoluminescence measurements reveal the formation of upper and lower polariton branches, with a Rabi splitting of 90 meV. The observed polaritonic dispersion is well described by a two-level system and Green's function formalism. This work demonstrates an efficient strategy for constructing tunable optical cavities using simple solution-based methods. The combination of high optical quality, spectral tunability, and strong coupling performance positions this platform as a promising candidate for low-threshold polariton lasers, nonlinear optics, and integrated optoelectronic devices.",
+    "published_date": "2025-06-26",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "physics.optics"
+    ],
+    "doi": null,
+    "score": 0.15,
+    "reasoning": "While the user's liked papers focus on superconductivity and electronic structure in materials like cuprates and nickelates, this paper explores light-matter coupling in 2D perovskites using Bragg mirrors, a different area of materials science, resulting in a low relevance score.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "Bragg mirrors",
+      "2D Perovskites",
+      "Light-matter coupling"
+    ],
+    "vector_matches": []
   }
 }
