@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arXiv Curator | {{ current_month }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- KaTeX for LaTeX Rendering -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" xintegrity="sha384-n8MVd4RsNIU0KOVEMcAXPbeZQMNlbAEQZdjeEqQeeyLSpPDayciONa03urlgXHzX" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" xintegrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" xintegrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0KOVEMcAXPbeZQMNlbAEQZdjeEqQeeyLSpPDayciONa03urlgXHzX" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
         .prose { max-width: 65ch; }
@@ -27,195 +26,198 @@
 </head>
 <body class="text-gray-800">
 
-    <div class="flex flex-col md:flex-row min-h-screen">
-        <!-- Sidebar Navigation -->
-        <nav class="w-full md:w-64 bg-white border-r border-gray-200 p-4 md:p-6 md:sticky top-0 h-screen overflow-y-auto">
-            <h1 class="text-2xl font-bold text-gray-900 mb-6">arXiv Curator</h1>
-            <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Archives</h2>
-            <ul class="space-y-2">
-                {% for month in all_months %}
-                <li>
-                    <a href="{{ 'index.html' if loop.first else month + '.html' }}" class="block px-3 py-2 rounded-md text-sm font-medium
-                        {% if month == current_month %}
-                            bg-blue-100 text-blue-700 font-semibold
-                        {% else %}
-                            text-gray-600 hover:bg-gray-100 hover:text-gray-900
-                        {% endif %}">
-                        {{ month }}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
+    <div>
+        <div class="sticky top-0 z-10 flex items-center justify-between bg-white p-4 border-b border-gray-200 md:hidden">
+            <h1 class="text-xl font-bold text-gray-900">arXiv Curator</h1>
+            <button id="hamburger-btn" class="p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
 
-        <!-- Main Content -->
-        <main class="flex-1 p-4 md:p-10">
-            <div class="max-w-4xl mx-auto">
-                <header class="mb-8">
-                    <h2 class="text-3xl font-bold text-gray-900">Papers for {{ current_month }}</h2>
-                    <div class="text-sm text-gray-500 mt-2 space-y-1">
-                        <p>Last updated: {{ generation_date }}.
-                           {% if num_added > 0 %}
-                                <span class="text-green-600 font-semibold">Added {{ num_added }} new paper{{'s' if num_added > 1}}.</span>
-                           {% endif %}
-                        </p>
-                        {% if num_not_shown > 0 %}
-                             <p>Displaying top {{ papers|length }} of {{ total_in_month }} papers for this month.</p>
-                        {% endif %}
-                    </div>
-                </header>
 
-                <!-- Controls Section -->
-                <div id="controls-container" class="mb-8 p-4 bg-white rounded-lg shadow-sm border border-gray-200 space-y-4">
-                    <!-- Search Bar -->
-                    <div>
-                        <label for="search-input" class="text-sm font-semibold text-gray-700 mb-2 block">Search Papers</label>
-                        <input type="text" id="search-input" placeholder="Search by title, author, abstract..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    </div>
-
-                    <!-- Sorting -->
-                    <div id="sort-container">
-                        <h4 class="text-sm font-semibold text-gray-700 mb-2">Sort by:</h4>
-                        <div class="flex flex-wrap gap-2">
-                             <button class="control-btn sort-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300 active" data-sort-by="score">LLM Score</button>
-                             <button class="control-btn sort-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300" data-sort-by="date">Date</button>
-                        </div>
-                    </div>
-
-                    <!-- Filters -->
-                    <div id="filter-container">
-                        <div class="mb-4">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Category:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                {% for category in filter_categories %}
-                                    <button class="control-btn filter-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300" data-filter-type="category" data-filter-value="{{ category }}">{{ category }}</button>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div>
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Keyword:</h4>
-                            <div class="flex flex-wrap gap-2">
-                                {% for keyword in filter_keywords %}
-                                    <button class="control-btn filter-btn bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full hover:bg-blue-200" data-filter-type="keyword" data-filter-value="{{ keyword }}">{{ keyword }}</button>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                    <button id="clear-filters" class="mt-4 text-xs text-blue-600 hover:underline">Clear All Filters</button>
+        <div class="relative flex min-h-screen">
+            <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden md:hidden"></div>
+            <nav id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 bg-white border-r border-gray-200 p-4 md:p-6 transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:flex-shrink-0">
+                <div class="flex items-center justify-between mb-6">
+                    <h1 class="text-2xl font-bold text-gray-900 hidden md:block">arXiv Curator</h1>
+                    <button id="close-sidebar-btn" class="p-2 md:hidden">
+                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
                 </div>
+                <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Archives</h2>
+                <ul class="space-y-2">
+                    {% for month in all_months %}
+                    <li>
+                        <a href="{{ 'index.html' if loop.first else month + '.html' }}" class="block px-3 py-2 rounded-md text-sm font-medium
+                            {% if month == current_month %}
+                                bg-blue-100 text-blue-700 font-semibold
+                            {% else %}
+                                text-gray-600 hover:bg-gray-100 hover:text-gray-900
+                            {% endif %}">
+                            {{ month }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+
+            <main class="flex-1 p-4 md:p-10">
+                <div class="max-w-4xl mx-auto">
+                    <header class="mb-8">
+                        <h2 class="text-3xl font-bold text-gray-900">Papers for {{ current_month }}</h2>
+                        <div class="text-sm text-gray-500 mt-2 space-y-1">
+                            <p>Last updated: {{ generation_date }}.
+                               {% if num_added > 0 %}
+                                    <span class="text-green-600 font-semibold">Added {{ num_added }} new paper{{'s' if num_added > 1}}.</span>
+                               {% endif %}
+                            </p>
+                            {% if num_not_shown > 0 %}
+                                 <p>Displaying top {{ papers|length }} of {{ total_in_month }} papers for this month.</p>
+                            {% endif %}
+                        </div>
+                    </header>
+
+                    <div id="controls-container" class="mb-8 p-4 bg-white rounded-lg shadow-sm border border-gray-200 space-y-4">
+                        <div>
+                            <label for="search-input" class="text-sm font-semibold text-gray-700 mb-2 block">Search Papers</label>
+                            <input type="text" id="search-input" placeholder="Search by title, author, abstract..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div id="sort-container">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Sort by:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                 <button class="control-btn sort-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300 active" data-sort-by="score">LLM Score</button>
+                                 <button class="control-btn sort-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300" data-sort-by="date">Date</button>
+                            </div>
+                        </div>
+
+                        <div id="filter-container">
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Category:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    {% for category in filter_categories %}
+                                        <button class="control-btn filter-btn bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1 rounded-full hover:bg-gray-300" data-filter-type="category" data-filter-value="{{ category }}">{{ category }}</button>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Keyword:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    {% for keyword in filter_keywords %}
+                                        <button class="control-btn filter-btn bg-blue-100 text-blue-800 text-xs font-medium px-3 py-1 rounded-full hover:bg-blue-200" data-filter-type="keyword" data-filter-value="{{ keyword }}">{{ keyword }}</button>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                        <button id="clear-filters" class="mt-4 text-xs text-blue-600 hover:underline">Clear All Filters</button>
+                    </div>
 
 
-                <div id="papers-list" class="space-y-8">
-                    {% for paper in papers %}
-                    <article class="paper-article bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative overflow-hidden
-                                   {% if paper.id in new_paper_ids %} border-l-4 border-l-green-400 {% endif %}"
-                             data-categories="{{ paper.categories | join(',') }}"
-                             data-keywords="{{ paper.matching_keywords | join(',') }}"
-                             data-score="{{ paper.score }}"
-                             data-date="{{ paper.published_date }}">
-                        <!-- Paper Header -->
-                        <div class="flex justify-between items-start gap-4">
-                             <h3 class="text-xl font-semibold text-gray-900 mb-2 flex-1">
-                                <a href="https://arxiv.org/abs/{{ paper.id }}" target="_blank" class="hover:text-blue-600">{{ paper.title }}</a>
-                            </h3>
-                            <div class="flex-shrink-0">
-                                {% if paper.id in liked_paper_ids %}
-                                    <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Unlike%3A+{{ paper.id }}&paper_details=Unlike%20paper%3A%20{{ paper.title | urlencode }}" target="_blank" class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-red-200 transition-colors">
-                                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3.433-1.172 14.605a4 4 0 005.656 5.656L10 14.343l5.516 5.918a4 4 0 005.656-5.656L10 3.433z" /></svg>
-                                        Unlike
-                                    </a>
-                                {% else %}
-                                    <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Like%3A+{{ paper.id }}&paper_details=Like%20paper%3A%20{{ paper.title | urlencode }}" target="_blank" class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-200 transition-colors">
-                                        <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" /></svg>
-                                        Like
-                                    </a>
+                    <div id="papers-list" class="space-y-8">
+                        {% for paper in papers %}
+                        <article class="paper-article bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative overflow-hidden
+                                       {% if paper.id in new_paper_ids %} border-l-4 border-l-green-400 {% endif %}"
+                                 data-categories="{{ paper.categories | join(',') }}"
+                                 data-keywords="{{ paper.matching_keywords | join(',') }}"
+                                 data-score="{{ paper.score }}"
+                                 data-date="{{ paper.published_date }}">
+                            <div class="flex justify-between items-start gap-4">
+                                 <h3 class="text-xl font-semibold text-gray-900 mb-2 flex-1">
+                                    <a href="https://arxiv.org/abs/{{ paper.id }}" target="_blank" class="hover:text-blue-600">{{ paper.title }}</a>
+                                </h3>
+                                <div class="flex-shrink-0">
+                                    {% if paper.id in liked_paper_ids %}
+                                        <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Unlike%3A+{{ paper.id }}&paper_details=Unlike%20paper%3A%20{{ paper.title | urlencode }}" target="_blank" class="inline-flex items-center gap-2 bg-red-100 text-red-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-red-200 transition-colors">
+                                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3.433-1.172 14.605a4 4 0 005.656 5.656L10 14.343l5.516 5.918a4 4 0 005.656-5.656L10 3.433z" /></svg>
+                                            Unlike
+                                        </a>
+                                    {% else %}
+                                        <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Like%3A+{{ paper.id }}&paper_details=Like%20paper%3A%20{{ paper.title | urlencode }}" target="_blank" class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-semibold hover:bg-green-200 transition-colors">
+                                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" /></svg>
+                                            Like
+                                        </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <div class="text-sm text-gray-600 mb-4">{{ paper.authors | join(', ') }}</div>
+                            <div class="text-xs text-gray-500 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+                                <span class="font-mono">arXiv:{{ paper.id }}</span>
+                                <span>Published: {{ paper.published_date }}</span>
+                                <span class="font-semibold text-blue-700">LLM Score: {{ "%.3f"|format(paper.score) }}</span>
+                                {% if paper.doi %}
+                                    <a href="https://doi.org/{{ paper.doi }}" target="_blank" class="text-blue-600 hover:underline">DOI</a>
+                                {% endif %}
+                                <div class="flex flex-wrap gap-1">
+                                    {% for category in paper.categories %}
+                                        <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">{{ category }}</span>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <button onclick="toggleAbstract('abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}')" class="text-xs text-blue-600 font-semibold hover:underline">Show Abstract</button>
+                                <div id="abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}" class="hidden mt-3 text-sm text-gray-700 prose prose-sm max-w-none border-t border-gray-200 pt-3">
+                                    <p>{{ paper.summary }}</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 border-t border-gray-200 pt-4 space-y-3">
+                                {% if paper.matching_keywords %}
+                                <div>
+                                    <h4 class="text-xs font-semibold text-gray-600 mb-2">Matching Keywords:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        {% for keyword in paper.matching_keywords %}
+                                            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">{{ keyword }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if paper.suggested_keywords %}
+                                <div>
+                                    <h4 class="text-xs font-semibold text-gray-600 mb-2">Suggested Keywords:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        {% for keyword in paper.suggested_keywords %}
+                                            <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">{{ keyword }}</span>
+                                        {% endfor %}
+                                    </div>
+                                </div>
                                 {% endif %}
                             </div>
-                        </div>
 
-                        <!-- Metadata -->
-                        <div class="text-sm text-gray-600 mb-4">{{ paper.authors | join(', ') }}</div>
-                        <div class="text-xs text-gray-500 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
-                            <span class="font-mono">arXiv:{{ paper.id }}</span>
-                            <span>Published: {{ paper.published_date }}</span>
-                            <span class="font-semibold text-blue-700">LLM Score: {{ "%.3f"|format(paper.score) }}</span>
-                            {% if paper.doi %}
-                                <a href="https://doi.org/{{ paper.doi }}" target="_blank" class="text-blue-600 hover:underline">DOI</a>
-                            {% endif %}
-                            <div class="flex flex-wrap gap-1">
-                                {% for category in paper.categories %}
-                                    <span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">{{ category }}</span>
-                                {% endfor %}
-                            </div>
-                        </div>
-
-                        <!-- Abstract Section -->
-                        <div class="mt-4">
-                            <button onclick="toggleAbstract('abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}')" class="text-xs text-blue-600 font-semibold hover:underline">Show Abstract</button>
-                            <div id="abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}" class="hidden mt-3 text-sm text-gray-700 prose prose-sm max-w-none border-t border-gray-200 pt-3">
-                                <p>{{ paper.summary }}</p>
-                            </div>
-                        </div>
-
-                        <!-- Keyword Tags -->
-                        <div class="mt-4 border-t border-gray-200 pt-4 space-y-3">
-                            {% if paper.matching_keywords %}
-                            <div>
-                                <h4 class="text-xs font-semibold text-gray-600 mb-2">Matching Keywords:</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    {% for keyword in paper.matching_keywords %}
-                                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">{{ keyword }}</span>
-                                    {% endfor %}
+                            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {% if paper.reasoning %}
+                                <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                                    <h4 class="text-xs font-semibold text-blue-800 mb-2">LLM Reasoning</h4>
+                                    <p class="text-sm text-blue-900 italic">"{{ paper.reasoning }}"</p>
                                 </div>
-                            </div>
-                            {% endif %}
-                            {% if paper.suggested_keywords %}
-                            <div>
-                                <h4 class="text-xs font-semibold text-gray-600 mb-2">Suggested Keywords:</h4>
-                                <div class="flex flex-wrap gap-2">
-                                    {% for keyword in paper.suggested_keywords %}
-                                        <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">{{ keyword }}</span>
+                                {% endif %}
+
+                                {% if paper.vector_matches %}
+                                <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                                    <h4 class="text-xs font-semibold text-gray-600 mb-2">Because you liked:</h4>
+                                    <div class="space-y-1">
+                                    {% for reason in paper.vector_matches %}
+                                        <div class="reason-card text-xs text-gray-500 p-2 rounded-md">
+                                            <span class="font-medium text-gray-700">Similarity: {{ "%.3f"|format(reason.score) }}</span> -
+                                            <span class="italic text-gray-600">{{ reason.authors | format_byl_authors }},</span>
+                                            <a href="{{ reason.url }}" target="_blank" class="text-blue-600 hover:underline">{{ reason.title | truncate(60) }}</a>
+                                        </div>
                                     {% endfor %}
-                                </div>
-                            </div>
-                            {% endif %}
-                        </div>
-
-                        <!-- Recommendation Reasons -->
-                        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <!-- LLM Reasoning -->
-                            {% if paper.reasoning %}
-                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
-                                <h4 class="text-xs font-semibold text-blue-800 mb-2">LLM Reasoning</h4>
-                                <p class="text-sm text-blue-900 italic">"{{ paper.reasoning }}"</p>
-                            </div>
-                            {% endif %}
-
-                            <!-- Vector Similarity Matches -->
-                            {% if paper.vector_matches %}
-                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
-                                <h4 class="text-xs font-semibold text-gray-600 mb-2">Because you liked:</h4>
-                                <div class="space-y-1">
-                                {% for reason in paper.vector_matches %}
-                                    <div class="reason-card text-xs text-gray-500 p-2 rounded-md">
-                                        <span class="font-medium text-gray-700">Similarity: {{ "%.3f"|format(reason.score) }}</span> -
-                                        <span class="italic text-gray-600">{{ reason.authors | format_byl_authors }},</span>
-                                        <a href="{{ reason.url }}" target="_blank" class="text-blue-600 hover:underline">{{ reason.title | truncate(60) }}</a>
                                     </div>
-                                {% endfor %}
                                 </div>
+                                {% endif %}
                             </div>
-                            {% endif %}
+                        </article>
+                        {% else %}
+                        <div class="text-center py-10 bg-white rounded-lg shadow-sm">
+                            <p class="text-gray-600">No papers found for this month.</p>
                         </div>
-                    </article>
-                    {% else %}
-                    <div class="text-center py-10 bg-white rounded-lg shadow-sm">
-                        <p class="text-gray-600">No papers found for this month.</p>
+                        {% endfor %}
                     </div>
-                    {% endfor %}
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
 
     <script>
@@ -243,6 +245,26 @@
                 throwOnError : false
             });
 
+            // --- Mobile Sidebar Logic ---
+            const sidebar = document.getElementById('sidebar');
+            const hamburgerBtn = document.getElementById('hamburger-btn');
+            const closeSidebarBtn = document.getElementById('close-sidebar-btn');
+            const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+            function showSidebar() {
+                sidebar.classList.remove('-translate-x-full');
+                sidebarOverlay.classList.remove('hidden');
+            }
+
+            function hideSidebar() {
+                sidebar.classList.add('-translate-x-full');
+                sidebarOverlay.classList.add('hidden');
+            }
+
+            hamburgerBtn.addEventListener('click', showSidebar);
+            closeSidebarBtn.addEventListener('click', hideSidebar);
+            sidebarOverlay.addEventListener('click', hideSidebar);
+
             // --- Enhanced Controls Logic ---
             const searchInput = document.getElementById('search-input');
             const sortContainer = document.getElementById('sort-container');
@@ -262,8 +284,8 @@
             });
 
             sortContainer.addEventListener('click', (e) => {
-                const target = e.target;
-                if (!target.classList.contains('sort-btn')) return;
+                const target = e.target.closest('.sort-btn');
+                if (!target) return;
 
                 document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
                 target.classList.add('active');
@@ -272,8 +294,8 @@
             });
 
             filterContainer.addEventListener('click', (e) => {
-                const target = e.target;
-                if (!target.classList.contains('filter-btn')) return;
+                const target = e.target.closest('.filter-btn');
+                if (!target) return;
 
                 const filterType = target.dataset.filterType;
                 const filterValue = target.dataset.filterValue;
