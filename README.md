@@ -2,7 +2,7 @@
 
 **arXiv Curator** is an automated system for curating personalized lists of research papers from arXiv. It generates daily recommendations by analyzing your research interests and adapting to your feedback.
 
-This project utilized the Gemini advanced model during its development, particularly for aspects involving advanced AI capabilities for paper analysis and recommendation. It also drew inspiration from [ArxRec](https://pppoe.github.io/ArxRec/).
+This project utilized the Gemini advanced model during its development, particularly for aspects involving advanced AI capabilities for paper analysis and recommendation. It also drew inspiration from [ArxRec](https://pppoe.github.io/ArxRec/). An example can be found [here](https://yilu.me/arxiv/).
 
 ### Workflow Status
   * **Bootstrap from Scholar**: [![Bootstrap from Scholar](https://github.com/yilu/arxiv-curator/actions/workflows/1-bootstrap-from-scholar.yml/badge.svg)](https://github.com/yilu/arxiv-curator/actions/workflows/1-bootstrap-from-scholar.yml)
