@@ -357,6 +357,15 @@
                 paginationContainer.innerHTML = '';
                 if (totalPages <= 1) return;
 
+                function changePage(newPage) {
+                    currentPage = newPage;
+                    updateDisplay();
+                    const papersList = document.getElementById('papers-list');
+                    if(papersList) {
+                        papersList.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+
                 // Previous Button
                 const prevBtn = document.createElement('button');
                 prevBtn.innerHTML = '&laquo;';
@@ -364,8 +373,7 @@
                 prevBtn.disabled = currentPage === 1;
                 prevBtn.addEventListener('click', () => {
                     if (currentPage > 1) {
-                        currentPage--;
-                        updateDisplay();
+                        changePage(currentPage - 1);
                     }
                 });
                 paginationContainer.appendChild(prevBtn);
@@ -379,8 +387,7 @@
                         pageBtn.classList.add('active');
                     }
                     pageBtn.addEventListener('click', () => {
-                        currentPage = i;
-                        updateDisplay();
+                        changePage(i);
                     });
                     paginationContainer.appendChild(pageBtn);
                 }
@@ -392,8 +399,7 @@
                 nextBtn.disabled = currentPage === totalPages;
                 nextBtn.addEventListener('click', () => {
                     if (currentPage < totalPages) {
-                        currentPage++;
-                        updateDisplay();
+                        changePage(currentPage + 1);
                     }
                 });
                 paginationContainer.appendChild(nextBtn);
