@@ -15,38 +15,6 @@ ARXIV_CATEGORIES = [
     'cond-mat.mtrl-sci'
 ]
 
-# A list of keywords to perform an initial filtering on new papers.
-# The script will check if any of these keywords (case-insensitive)
-# are in the paper's title or abstract.
-KEYWORDS = [
-    # materials
-    'nickelate',
-    'cuprate',
-
-    # models
-    'hubbard model',
-    'anderson impurity model',
-    't-J model',
-
-    #theory methods
-    'matrix product state',
-    'tensor network',
-    'numerical renormalization group',
-    'density matrix renormalization group',
-    'green\'s function',
-    'dynamical mean field theory',
-    'machine learning',
-    'neural network',
-    'neural quantum state',
-    'quantum monte carlo'
-
-    #experiment methods
-    'resonant inelastic x-ray scattering',
-    'RIXS',
-    'pump-probe',
-    'nonequilibrium'
-]
-
 # --- AI Model and System Configuration ---
 
 # The name of the Sentence Transformer model to use for embeddings.

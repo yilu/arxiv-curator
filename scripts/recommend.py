@@ -14,7 +14,7 @@ from collections import defaultdict
 from sentence_transformers import SentenceTransformer, util
 from jinja2 import Environment, FileSystemLoader
 from config import (
-    ARXIV_CATEGORIES, KEYWORDS, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
+    ARXIV_CATEGORIES, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
     RECOMMENDATION_LIMIT, LLM_RPM_LIMIT
 )
 
@@ -112,6 +112,14 @@ def update_archive():
     taste_profile_exists = bool(taste_profile)
     if not taste_profile_exists:
         print("🔴 Taste profile is empty. Skipping vector search.");
+
+    # Load keywords from the JSON file
+    try:
+        with open('keywords.json', 'r') as f:
+            KEYWORDS = json.load(f)
+    except FileNotFoundError:
+        print("🔴 keywords.json not found. Please create it. Exiting.")
+        return []
 
     print("🧠 Loading embedding model for similarity search...")
     model = SentenceTransformer(EMBEDDING_MODEL)
