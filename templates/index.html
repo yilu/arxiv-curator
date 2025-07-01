@@ -139,7 +139,33 @@
                                 </div>
                             </div>
 
-                            <div class="text-sm text-gray-600 mb-4">{{ paper.authors | join(', ') }}</div>
+                            <div class="text-sm text-gray-600 mb-4" id="authors-{{ paper.id | replace('.', '-') }}">
+                                {% set authors = paper.authors %}
+                                {% set author_count = authors | length %}
+                                {% if author_count > 5 %}
+                                    <span class="author-list-collapsed">
+                                        {{ authors[:3] | map(attribute='name') | join(', ') }},
+                                        <button onclick="toggleAuthors('authors-{{ paper.id | replace('.', '-') }}')" class="text-blue-600 hover:underline text-xs mx-1">... (view all {{ author_count }}) ...</button>
+                                        {{ authors[-2:] | map(attribute='name') | join(', ') }}
+                                    </span>
+                                    <span class="author-list-expanded hidden">
+                                        {% for author in authors %}<span class="inline-block mr-2">
+                                            {{ author.name }}{% if author.affiliation %} ({{ author.affiliation }}){% endif %}
+                                            <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Follow+Author%3A+{{ author.name | urlencode }}%7C{{ author.affiliation | urlencode if author.affiliation else 'None' }}"
+                                               target="_blank" title="Follow {{ author.name }}" class="inline-block align-middle text-blue-400 hover:text-blue-600">
+                                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 12c0-1.1.9-2 2-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zM17 12a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                                            </a></span>{% endfor %}<button onclick="toggleAuthors('authors-{{ paper.id | replace('.', '-') }}')" class="text-blue-600 hover:underline text-xs ml-1">(show less)</button>
+                                    </span>
+                                {% else %}
+                                    {% for author in authors %}<span class="inline-block mr-2">
+                                        {{ author.name }}
+                                        <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Follow+Author%3A+{{ author.name | urlencode }}%7C{{ author.affiliation | urlencode if author.affiliation else 'None' }}"
+                                           target="_blank" title="Follow {{ author.name }}" class="inline-block align-middle text-blue-400 hover:text-blue-600">
+                                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 12c0-1.1.9-2 2-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zM17 12a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+                                        </a></span>{% endfor %}
+                                {% endif %}
+                            </div>
+
                             <div class="text-xs text-gray-500 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
                                 <span class="font-mono">arXiv:{{ paper.id }}</span>
                                 <span>Published: {{ paper.published_date }}</span>
@@ -160,7 +186,7 @@
                                 <button class="export-bibtex-btn text-xs text-purple-600 font-semibold hover:underline ml-4"
                                         data-id="{{ paper.id }}"
                                         data-title="{{ paper.title | e | replace('{', '\\{') | replace('}', '\\}') }}"
-                                        data-authors="{{ paper.authors | join(' and ') }}"
+                                        data-authors="{{ paper.authors | map(attribute='name') | join(' and ') }}"
                                         data-date="{{ paper.published_date }}">
                                     Export to BibTeX
                                 </button>
@@ -249,143 +275,90 @@
             }
         }
 
+        function toggleAuthors(id) {
+            const container = document.getElementById(id);
+            const collapsed = container.querySelector('.author-list-collapsed');
+            const expanded = container.querySelector('.author-list-expanded');
+
+            collapsed.classList.toggle('hidden');
+            expanded.classList.toggle('hidden');
+        }
+
         document.addEventListener("DOMContentLoaded", function() {
-            // --- Manual LaTeX Rendering Logic ---
+            // Manual LaTeX Rendering Logic
             function renderLatexInElement(element) {
-                // Find text nodes that are not inside script/style tags.
                 const treeWalker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, {
                     acceptNode: function(node) {
                         return node.parentElement.tagName !== 'SCRIPT' && node.parentElement.tagName !== 'STYLE' ?
                                NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
                     }
                 });
-
                 const nodes = [];
-                while (treeWalker.nextNode()) {
-                    nodes.push(treeWalker.currentNode);
-                }
-
+                while (treeWalker.nextNode()) { nodes.push(treeWalker.currentNode); }
                 nodes.forEach((node) => {
                     const text = node.nodeValue;
-                    // Use a regex that does not greedily match across multiple formulas.
                     const regex = /\$(.+?)\$/g;
                     if (text.match(regex)) {
                         const span = document.createElement('span');
                         let lastIndex = 0;
                         let match;
-
                         while ((match = regex.exec(text)) !== null) {
-                            // Add text before the match
                             span.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
-                            // Render the math and add it
                             const mathSpan = document.createElement('span');
                             try {
                                 katex.render(match[1], mathSpan, { throwOnError: false, displayMode: false });
                                 span.appendChild(mathSpan);
                             } catch (e) {
                                 console.error('KaTeX error:', e);
-                                span.appendChild(document.createTextNode(match[0])); // On error, show original text
+                                span.appendChild(document.createTextNode(match[0]));
                             }
                             lastIndex = regex.lastIndex;
                         }
-                        // Add any remaining text after the last match
                         span.appendChild(document.createTextNode(text.slice(lastIndex)));
-                        // Replace the original text node with the new span
                         node.parentNode.replaceChild(span, node);
                     }
                 });
             }
-            // Run the manual renderer on the entire page body.
             renderLatexInElement(document.body);
 
-
-            // --- Mobile Sidebar Logic ---
+            // Mobile Sidebar Logic
             const sidebar = document.getElementById('sidebar');
             const hamburgerBtn = document.getElementById('hamburger-btn');
             const closeSidebarBtn = document.getElementById('close-sidebar-btn');
             const sidebarOverlay = document.getElementById('sidebar-overlay');
-
             function showSidebar() {
                 sidebar.classList.remove('-translate-x-full');
                 sidebarOverlay.classList.remove('hidden');
             }
-
             function hideSidebar() {
                 sidebar.classList.add('-translate-x-full');
                 sidebarOverlay.classList.add('hidden');
             }
-
             hamburgerBtn.addEventListener('click', showSidebar);
             closeSidebarBtn.addEventListener('click', hideSidebar);
             sidebarOverlay.addEventListener('click', hideSidebar);
 
-            // --- Enhanced Controls Logic ---
+            // Enhanced Controls Logic
             const searchInput = document.getElementById('search-input');
             const sortContainer = document.getElementById('sort-container');
             const filterContainer = document.getElementById('filter-container');
             const clearButton = document.getElementById('clear-filters');
             const papersList = document.getElementById('papers-list');
             const paperArticles = Array.from(papersList.getElementsByClassName('paper-article'));
-
             let activeFilters = { category: new Set(), keyword: new Set() };
             let searchTerm = '';
             let currentSortBy = 'score';
-
-            searchInput.addEventListener('input', (e) => {
-                searchTerm = e.target.value.toLowerCase();
-                updateDisplay();
-            });
-
-            sortContainer.addEventListener('click', (e) => {
-                const target = e.target.closest('.sort-btn');
-                if (!target) return;
-
-                document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
-                target.classList.add('active');
-                currentSortBy = target.dataset.sortBy;
-                updateDisplay();
-            });
-
-            filterContainer.addEventListener('click', (e) => {
-                const target = e.target.closest('.filter-btn');
-                if (!target) return;
-
-                const filterType = target.dataset.filterType;
-                const filterValue = target.dataset.filterValue;
-                target.classList.toggle('active');
-
-                if (activeFilters[filterType].has(filterValue)) {
-                    activeFilters[filterType].delete(filterValue);
-                } else {
-                    activeFilters[filterType].add(filterValue);
-                }
-                updateDisplay();
-            });
-
-            clearButton.addEventListener('click', () => {
-                document.querySelectorAll('.control-btn.active').forEach(btn => btn.classList.remove('active'));
-                document.querySelector('.sort-btn[data-sort-by="score"]').classList.add('active');
-                activeFilters.category.clear();
-                activeFilters.keyword.clear();
-                searchInput.value = '';
-                searchTerm = '';
-                currentSortBy = 'score';
-                updateDisplay();
-            });
 
             function updateDisplay() {
                 const visibleArticles = paperArticles.filter(article => {
                     const articleCategories = article.dataset.categories.split(',');
                     const articleKeywords = article.dataset.keywords.split(',');
                     const articleText = article.textContent.toLowerCase();
-
                     const categoryMatch = activeFilters.category.size === 0 || Array.from(activeFilters.category).every(f => articleCategories.includes(f));
                     const keywordMatch = activeFilters.keyword.size === 0 || Array.from(activeFilters.keyword).every(f => articleKeywords.includes(f));
                     const searchMatch = searchTerm === '' || articleText.includes(searchTerm);
-
                     return categoryMatch && keywordMatch && searchMatch;
                 });
-
                 visibleArticles.sort((a, b) => {
                     if (currentSortBy === 'score') {
                         return parseFloat(b.dataset.score) - parseFloat(a.dataset.score);
@@ -394,12 +367,41 @@
                     }
                     return 0;
                 });
-
                 papersList.innerHTML = '';
                 visibleArticles.forEach(article => papersList.appendChild(article));
             }
 
-            // --- BibTeX Export Logic ---
+            searchInput.addEventListener('input', (e) => { searchTerm = e.target.value.toLowerCase(); updateDisplay(); });
+            sortContainer.addEventListener('click', (e) => {
+                const target = e.target.closest('.sort-btn');
+                if (!target) return;
+                document.querySelectorAll('.sort-btn').forEach(btn => btn.classList.remove('active'));
+                target.classList.add('active');
+                currentSortBy = target.dataset.sortBy;
+                updateDisplay();
+            });
+            filterContainer.addEventListener('click', (e) => {
+                const target = e.target.closest('.filter-btn');
+                if (!target) return;
+                const filterType = target.dataset.filterType;
+                const filterValue = target.dataset.filterValue;
+                target.classList.toggle('active');
+                if (activeFilters[filterType].has(filterValue)) {
+                    activeFilters[filterType].delete(filterValue);
+                } else {
+                    activeFilters[filterType].add(filterValue);
+                }
+                updateDisplay();
+            });
+            clearButton.addEventListener('click', () => {
+                document.querySelectorAll('.control-btn.active').forEach(btn => btn.classList.remove('active'));
+                document.querySelector('.sort-btn[data-sort-by="score"]').classList.add('active');
+                activeFilters.category.clear(); activeFilters.keyword.clear();
+                searchInput.value = ''; searchTerm = ''; currentSortBy = 'score';
+                updateDisplay();
+            });
+
+            // BibTeX Export Logic
             function downloadFile(filename, content) {
                 const element = document.createElement('a');
                 element.setAttribute('href', 'data:application/x-bibtex;charset=utf-8,' + encodeURIComponent(content));
@@ -409,14 +411,12 @@
                 element.click();
                 document.body.removeChild(element);
             }
-
             document.getElementById('papers-list').addEventListener('click', function(event) {
                 if (event.target.classList.contains('export-bibtex-btn')) {
                     const button = event.target;
                     const data = button.dataset;
                     const year = data.date.substring(0, 4);
                     const bibtexKey = `arXiv:${data.id}`;
-
                     const bibtexContent = `@misc{${bibtexKey},\n` +
                                         `      title        = {${data.title}},\n` +
                                         `      author       = {${data.authors}},\n` +
@@ -425,7 +425,6 @@
                                         `      archivePrefix = {arXiv},\n` +
                                         `      primaryClass = {${button.closest('.paper-article').dataset.categories.split(',')[0]}}\n`+
                                         `}`;
-
                     downloadFile(`${data.id}.bib`, bibtexContent);
                 }
             });
