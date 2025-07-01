@@ -238,7 +238,7 @@ def update_archive():
 
     return newly_added_ids
 
-def generate_site(new_paper_ids):
+def generate_site(newly_added_ids):
     """
     Generates the complete multi-page static site from the archive.json file.
     """
