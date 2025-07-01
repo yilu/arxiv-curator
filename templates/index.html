@@ -234,8 +234,11 @@
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            // Render LaTeX formulas
-            renderMathInElement(document.body, {
+            // --- MODIFICATION START: Targeted LaTeX Rendering ---
+            // Instead of rendering the whole body, render each paper article individually.
+            // This can prevent rendering bugs in complex layouts.
+            const articles = document.querySelectorAll('.paper-article');
+            const katex_options = {
                 delimiters: [
                     {left: '$$', right: '$$', display: true},
                     {left: '$', right: '$', display: false},
@@ -243,7 +246,12 @@
                     {left: '\\[', right: '\\]', display: true}
                 ],
                 throwOnError : false
+            };
+            articles.forEach(article => {
+                renderMathInElement(article, katex_options);
             });
+            // --- MODIFICATION END ---
+
 
             // --- Mobile Sidebar Logic ---
             const sidebar = document.getElementById('sidebar');
