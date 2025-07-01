@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>arXiv Curator | {{ current_month }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0KOVEMcAXPbeZQMNlbAEQZdjeEqQeeyLSpPDayciONa03urlgXHzX" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+    <!-- KaTeX for LaTeX Rendering (Core Library Only) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" xintegrity="sha384-n8MVd4RsNIU0KOVEMcAXPbeZQMNlbAEQZdjeEqQeeyLSpPDayciONa03urlgXHzX" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" xintegrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
         .prose { max-width: 65ch; }
@@ -26,6 +27,7 @@
 <body class="text-gray-800">
 
     <div>
+        <!-- Mobile header with Hamburger Menu -->
         <div class="sticky top-0 z-10 flex items-center justify-between bg-white p-4 border-b border-gray-200 md:hidden">
             <h1 class="text-xl font-bold text-gray-900">arXiv Curator</h1>
             <button id="hamburger-btn" class="p-2">
@@ -35,6 +37,7 @@
 
 
         <div class="relative flex min-h-screen">
+            <!-- Sidebar Navigation -->
             <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden md:hidden"></div>
             <nav id="sidebar" class="fixed inset-y-0 left-0 z-30 w-64 bg-white border-r border-gray-200 p-4 md:p-6 transform -translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:flex-shrink-0">
                 <div class="flex items-center justify-between mb-6">
@@ -60,6 +63,7 @@
                 </ul>
             </nav>
 
+            <!-- Main Content -->
             <main class="flex-1 p-4 md:p-10">
                 <div class="max-w-4xl mx-auto">
                     <header class="mb-8">
@@ -76,12 +80,15 @@
                         </div>
                     </header>
 
+                    <!-- Controls Section -->
                     <div id="controls-container" class="mb-8 p-4 bg-white rounded-lg shadow-sm border border-gray-200 space-y-4">
+                        <!-- Search Bar -->
                         <div>
                             <label for="search-input" class="text-sm font-semibold text-gray-700 mb-2 block">Search Papers</label>
                             <input type="text" id="search-input" placeholder="Search by title, author, abstract..." class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
 
+                        <!-- Sorting -->
                         <div id="sort-container">
                             <h4 class="text-sm font-semibold text-gray-700 mb-2">Sort by:</h4>
                             <div class="flex flex-wrap gap-2">
@@ -90,6 +97,7 @@
                             </div>
                         </div>
 
+                        <!-- Filters -->
                         <div id="filter-container">
                             <div class="mb-4">
                                 <h4 class="text-sm font-semibold text-gray-700 mb-2">Filter by Category:</h4>
@@ -120,6 +128,7 @@
                                  data-keywords="{{ paper.matching_keywords | join(',') }}"
                                  data-score="{{ paper.score }}"
                                  data-date="{{ paper.published_date }}">
+                            <!-- Paper Header -->
                             <div class="flex justify-between items-start gap-4">
                                  <h3 class="text-xl font-semibold text-gray-900 mb-2 flex-1">
                                     <a href="https://arxiv.org/abs/{{ paper.id }}" target="_blank" class="hover:text-blue-600">{{ paper.title }}</a>
@@ -139,6 +148,7 @@
                                 </div>
                             </div>
 
+                            <!-- Author List -->
                             <div class="text-sm text-gray-600 mb-4" id="authors-{{ paper.id | replace('.', '-') }}">
                                 {% set authors = paper.authors %}
                                 {% set author_count = authors | length %}
@@ -150,8 +160,8 @@
                                     </span>
                                     <span class="author-list-expanded hidden">
                                         {% for author in authors %}<span class="inline-block mr-2">
-                                            {{ author.name }}{% if author.affiliation %} ({{ author.affiliation }}){% endif %}
-                                            <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Follow+Author%3A+{{ author.name | urlencode }}%7C{{ author.affiliation | urlencode if author.affiliation else 'None' }}"
+                                            {{ author.name }}
+                                            <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Follow+Author%3A+{{ author.name | urlencode }}"
                                                target="_blank" title="Follow {{ author.name }}" class="inline-block align-middle text-blue-400 hover:text-blue-600">
                                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 12c0-1.1.9-2 2-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zM17 12a1 1 0 100-2 1 1 0 000 2z"></path></svg>
                                             </a></span>{% endfor %}<button onclick="toggleAuthors('authors-{{ paper.id | replace('.', '-') }}')" class="text-blue-600 hover:underline text-xs ml-1">(show less)</button>
@@ -159,13 +169,14 @@
                                 {% else %}
                                     {% for author in authors %}<span class="inline-block mr-2">
                                         {{ author.name }}
-                                        <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Follow+Author%3A+{{ author.name | urlencode }}%7C{{ author.affiliation | urlencode if author.affiliation else 'None' }}"
+                                        <a href="https://github.com/{{ github_repo }}/issues/new?template=feedback.yml&title=Follow+Author%3A+{{ author.name | urlencode }}"
                                            target="_blank" title="Follow {{ author.name }}" class="inline-block align-middle text-blue-400 hover:text-blue-600">
                                             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zM2 12c0-1.1.9-2 2-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zM17 12a1 1 0 100-2 1 1 0 000 2z"></path></svg>
                                         </a></span>{% endfor %}
                                 {% endif %}
                             </div>
 
+                            <!-- Metadata -->
                             <div class="text-xs text-gray-500 mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
                                 <span class="font-mono">arXiv:{{ paper.id }}</span>
                                 <span>Published: {{ paper.published_date }}</span>
@@ -180,6 +191,7 @@
                                 </div>
                             </div>
 
+                            <!-- Abstract & BibTeX Section -->
                             <div class="mt-4">
                                 <button onclick="toggleAbstract('abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}')" class="text-xs text-blue-600 font-semibold hover:underline">Show Abstract</button>
 
@@ -196,6 +208,7 @@
                                 </div>
                             </div>
 
+                            <!-- Keyword Tags -->
                             <div class="mt-4 border-t border-gray-200 pt-4 space-y-3">
                                 {% if paper.matching_keywords %}
                                 <div>
@@ -227,7 +240,9 @@
                                 {% endif %}
                             </div>
 
+                            <!-- Recommendation Reasons -->
                             <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- LLM Reasoning -->
                                 {% if paper.reasoning %}
                                 <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
                                     <h4 class="text-xs font-semibold text-blue-800 mb-2">LLM Reasoning</h4>
@@ -235,6 +250,7 @@
                                 </div>
                                 {% endif %}
 
+                                <!-- Vector Similarity Matches -->
                                 {% if paper.vector_matches %}
                                 <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
                                     <h4 class="text-xs font-semibold text-gray-600 mb-2">Because you liked:</h4>
