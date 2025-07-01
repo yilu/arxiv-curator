@@ -1,0 +1,49 @@
+# .github/workflows/4-regenerate-site-only.yml
+
+name: 4 - Regenerate Website Only
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: archive-commit
+  cancel-in-progress: true
+
+jobs:
+  regenerate-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install Python Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Regenerate Website from Archive
+        run: python -c "from scripts.recommend import generate_site; generate_site([])"
+
+      - name: Deploy to yilu.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PAT }}
+          external_repository: yilu/yilu.github.io
+          publish_branch: main
+          publish_dir: ./dist
+          destination_dir: ./arxiv
+          commit_message: 'docs: Regenerate website from existing archive'
