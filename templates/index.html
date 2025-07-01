@@ -157,6 +157,15 @@
 
                             <div class="mt-4">
                                 <button onclick="toggleAbstract('abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}')" class="text-xs text-blue-600 font-semibold hover:underline">Show Abstract</button>
+
+                                <button class="export-bibtex-btn text-xs text-purple-600 font-semibold hover:underline ml-4"
+                                        data-id="{{ paper.id }}"
+                                        data-title="{{ paper.title | e | replace('{', '\\{') | replace('}', '\\}') }}"
+                                        data-authors="{{ paper.authors | join(' and ') }}"
+                                        data-date="{{ paper.published_date }}">
+                                    Export to BibTeX
+                                </button>
+
                                 <div id="abstract-{{ paper.id | replace(".", "-") | replace("v", "-") }}" class="hidden mt-3 text-sm text-gray-700 prose prose-sm max-w-none border-t border-gray-200 pt-3">
                                     <p>{{ paper.summary }}</p>
                                 </div>
@@ -360,6 +369,37 @@
                 papersList.innerHTML = '';
                 visibleArticles.forEach(article => papersList.appendChild(article));
             }
+
+            // --- BibTeX Export Logic ---
+            function downloadFile(filename, content) {
+                const element = document.createElement('a');
+                element.setAttribute('href', 'data:application/x-bibtex;charset=utf-8,' + encodeURIComponent(content));
+                element.setAttribute('download', filename);
+                element.style.display = 'none';
+                document.body.appendChild(element);
+                element.click();
+                document.body.removeChild(element);
+            }
+
+            document.getElementById('papers-list').addEventListener('click', function(event) {
+                if (event.target.classList.contains('export-bibtex-btn')) {
+                    const button = event.target;
+                    const data = button.dataset;
+                    const year = data.date.substring(0, 4);
+                    const bibtexKey = `arXiv:${data.id}`;
+
+                    const bibtexContent = `@misc{${bibtexKey},\n` +
+                                          `      title        = {${data.title}},\n` +
+                                          `      author       = {${data.authors}},\n` +
+                                          `      year         = {${year}},\n` +
+                                          `      eprint       = {${data.id}},\n` +
+                                          `      archivePrefix = {arXiv},\n` +
+                                          `      primaryClass = {${button.closest('.paper-article').dataset.categories.split(',')[0]}}\n`+
+                                          `}`;
+
+                    downloadFile(`${data.id}.bib`, bibtexContent);
+                }
+            });
         });
     </script>
 </body>
