@@ -199,6 +199,9 @@
                                 <span class="font-mono">arXiv:{{ paper.id }}</span>
                                 <span>Published: {{ paper.published_date }}</span>
                                 <span class="font-semibold text-blue-700">LLM Score: {{ "%.3f"|format(paper.score) }}</span>
+                                {% if dmrg_source_tag in paper.discovery_sources %}
+                                <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">{{ dmrg_source_tag }}</span>
+                                {% endif %}
                                 {% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}" target="_blank" class="text-blue-600 hover:underline">DOI</a>{% endif %}
                                 <div class="flex flex-wrap gap-1">{% for category in paper.categories %}<span class="inline-block bg-gray-200 text-gray-700 text-xs px-2 py-0.5 rounded">{{ category }}</span>{% endfor %}</div>
                             </div>

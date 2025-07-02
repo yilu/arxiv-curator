@@ -113,7 +113,6 @@ def get_papers_from_dmrg_site():
                 if paper_id.startswith(current_month_prefix) or paper_id.startswith(previous_month_prefix):
                     paper_ids.append(paper_id)
 
-        # Sort by ID descending to get the newest papers first, then apply the limit.
         paper_ids.sort(reverse=True)
         limited_ids = paper_ids[:DMRG_SITE_LIMIT]
 
@@ -184,24 +183,23 @@ def update_archive():
     liked_vectors = torch.tensor([item['vector'] for item in taste_profile]) if taste_profile_exists else None
     print("✅ Model loaded.")
 
+    dmrg_paper_ids = get_papers_from_dmrg_site()
+
     retry_ids = {
         pid for pid, p_data in archive.items()
         if (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or \
-           (taste_profile_exists and not p_data.get('vector_matches'))
+           (taste_profile_exists and not p_data.get('vector_matches')) or \
+           (pid in dmrg_paper_ids and DMRG_SOURCE_TAG not in p_data.get('discovery_sources', []))
     }
     if retry_ids:
         print(f"🔍 Found {len(retry_ids)} papers in archive to re-evaluate.")
 
-    # Get papers from all sources
     category_papers = get_recent_papers()
     author_papers = get_papers_from_followed_authors()
-    dmrg_paper_ids = get_papers_from_dmrg_site()
 
-    # Create a unified map of all potential papers
     all_candidate_papers = {p.entry_id.split('/abs/')[-1]: p for p in category_papers}
     all_candidate_papers.update({p.entry_id.split('/abs/')[-1]: p for p in author_papers})
 
-    # Identify new papers to process
     new_paper_ids = {
         pid: p for pid, p in all_candidate_papers.items()
         if pid not in archive and (
@@ -210,13 +208,11 @@ def update_archive():
             pid in dmrg_paper_ids
         )
     }
-    # Add any papers from the DMRG site that might not be in the recent feed
     new_from_dmrg = dmrg_paper_ids - set(all_candidate_papers.keys())
 
     if new_paper_ids:
         print(f"🔍 Found {len(new_paper_ids)} new papers to process from feeds.")
 
-    # Combine all IDs that need processing
     ids_to_process = retry_ids.union(new_paper_ids.keys()).union(new_from_dmrg)
 
     if not ids_to_process:
@@ -265,10 +261,9 @@ def update_archive():
                         'authors': taste_profile[idx].get('authors', []), 'url': taste_profile[idx].get('url', '#')
                     })
 
-            # Determine the sources for this paper
-            paper_sources = existing_data.get('sources', []) if existing_data else []
-            if paper_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in paper_sources:
-                paper_sources.append(DMRG_SOURCE_TAG)
+            discovery_sources = existing_data.get('discovery_sources', []) if existing_data else []
+            if paper_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
+                discovery_sources.append(DMRG_SOURCE_TAG)
 
             archive[paper_id] = {
                 'id': paper_id, 'title': paper.title,
@@ -279,7 +274,7 @@ def update_archive():
                 'matching_keywords': [kw for kw in KEYWORDS if kw.lower() in (paper.title + paper.summary).lower()],
                 'suggested_keywords': llm_result.get('suggested_keywords', []),
                 'vector_matches': vector_matches,
-                'sources': paper_sources
+                'discovery_sources': discovery_sources
             }
             if is_new_paper:
                 newly_added_ids.append(paper_id)
@@ -291,7 +286,7 @@ def update_archive():
                     'id': paper_id, 'title': paper.title,
                     'authors': [{'name': a.name, 'affiliation': getattr(a, 'affiliation', None)} for a in paper.authors if a],
                     'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
-                    'reasoning': LLM_FAILURE_REASON, 'vector_matches': [], 'score': 0, 'sources': []
+                    'reasoning': LLM_FAILURE_REASON, 'vector_matches': [], 'score': 0, 'discovery_sources': []
                 }
             print(f"  -> Marking paper {paper_id} for retry due to LLM analysis failure.")
 
