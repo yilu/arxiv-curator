@@ -109,6 +109,7 @@ def get_papers_from_dmrg_site():
         for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
             if 'arxiv.org/abs/' in href:
+                # The scraped ID is already versionless
                 paper_id = href.split('/abs/')[-1]
                 if paper_id.startswith(current_month_prefix) or paper_id.startswith(previous_month_prefix):
                     paper_ids.append(paper_id)
@@ -189,7 +190,7 @@ def update_archive():
         pid for pid, p_data in archive.items()
         if (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or \
            (taste_profile_exists and not p_data.get('vector_matches')) or \
-           (pid in dmrg_paper_ids and DMRG_SOURCE_TAG not in p_data.get('discovery_sources', []))
+           (pid.split('v')[0] in dmrg_paper_ids and DMRG_SOURCE_TAG not in p_data.get('discovery_sources', []))
     }
     if retry_ids:
         print(f"🔍 Found {len(retry_ids)} papers in archive to re-evaluate.")
@@ -204,11 +205,11 @@ def update_archive():
         pid: p for pid, p in all_candidate_papers.items()
         if pid not in archive and (
             any(kw.lower() in (p.title + p.summary).lower() for kw in KEYWORDS) or
-            pid in {ap.entry_id.split('/abs/')[-1] for ap in author_papers} or
-            pid in dmrg_paper_ids
+            pid.split('v')[0] in {ap.entry_id.split('/abs/')[-1].split('v')[0] for ap in author_papers} or
+            pid.split('v')[0] in dmrg_paper_ids
         )
     }
-    new_from_dmrg = dmrg_paper_ids - set(all_candidate_papers.keys())
+    new_from_dmrg = dmrg_paper_ids - {pid.split('v')[0] for pid in all_candidate_papers.keys()}
 
     if new_paper_ids:
         print(f"🔍 Found {len(new_paper_ids)} new papers to process from feeds.")
@@ -218,9 +219,11 @@ def update_archive():
     if not ids_to_process:
         print("✅ No new or failed papers to process. Exiting."); return []
 
-    print(f"📡 Fetching fresh data for {len(ids_to_process)} papers from arXiv...")
+    # Normalize all IDs to be versionless for the API call
+    versionless_ids = {pid.split('v')[0] for pid in ids_to_process}
+    print(f"📡 Fetching fresh data for {len(versionless_ids)} papers from arXiv...")
     client = arxiv.Client()
-    papers_to_analyze = list(client.results(arxiv.Search(id_list=list(ids_to_process))))
+    papers_to_analyze = list(client.results(arxiv.Search(id_list=list(versionless_ids))))
     print(f"✅ Received fresh data for {len(papers_to_analyze)} papers.")
 
     delay_seconds = 0
@@ -232,14 +235,14 @@ def update_archive():
 
     for i, paper in enumerate(papers_to_analyze):
         paper_id = paper.entry_id.split('/abs/')[-1]
-        print(f"  -> ({i+1}/{len(papers_to_analyze)}) Analyzing '{paper.title[:50]}...'")
+        base_id = paper_id.split('v')[0]
+        print(f"  -> ({i+1}/{len(papers_to_analyze)}) Analyzing '{paper.title[:50]}...' ({paper_id})")
 
         existing_data = archive.get(paper_id)
         is_new_paper = paper_id not in archive
 
-        # Determine discovery sources *before* any analysis
         discovery_sources = existing_data.get('discovery_sources', []) if existing_data else []
-        if paper_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
+        if base_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
             discovery_sources.append(DMRG_SOURCE_TAG)
 
         llm_result = None
@@ -279,7 +282,6 @@ def update_archive():
             if is_new_paper:
                 newly_added_ids.append(paper_id)
         else:
-            # If analysis fails, still save the paper with its sources
             archive[paper_id] = {
                 'id': paper_id, 'title': paper.title,
                 'authors': [{'name': a.name, 'affiliation': getattr(a, 'affiliation', None)} for a in paper.authors if a],
