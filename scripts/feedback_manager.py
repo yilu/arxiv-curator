@@ -17,6 +17,7 @@ HEADERS = {
     "Accept": "application/vnd.github.v3+json"
 }
 FOLLOWED_AUTHORS_PATH = 'followed_authors.json'
+KEYWORDS_PATH = 'keywords.json'
 
 def get_open_feedback_issues():
     """Fetches all open 'feedback' labeled issues from the repo."""
@@ -34,6 +35,7 @@ def get_open_feedback_issues():
 def process_issues(issues):
     """Processes issues for paper actions, keyword promotions, and author follows."""
     paper_actions = {}
+    keywords_to_add = set()
     authors_to_follow = set()
     issues_to_close = []
 
@@ -49,52 +51,77 @@ def process_issues(issues):
             paper_id = title.replace('Unlike: ', '').strip()
             paper_actions[paper_id] = 'unlike'
             issues_to_close.append(issue_number)
+        elif title.startswith('Promote Keyword: '):
+            keyword = title.replace('Promote Keyword: ', '').strip()
+            if keyword:
+                keywords_to_add.add(keyword.lower())
+            issues_to_close.append(issue_number)
         elif title.startswith('Follow Author: '):
-            author_str = title.replace('Follow Author: ', '').strip()
-            if author_str:
-                authors_to_follow.add(author_str)
+            author_name = title.replace('Follow Author: ', '').strip()
+            if author_name:
+                authors_to_follow.add(author_name)
             issues_to_close.append(issue_number)
 
-    print(f"Found {len(paper_actions)} paper actions and {len(authors_to_follow)} authors to follow.")
-    return paper_actions, list(authors_to_follow), issues_to_close
+    print(f"Found {len(paper_actions)} paper actions, {len(keywords_to_add)} keywords, and {len(authors_to_follow)} authors.")
+    return paper_actions, list(keywords_to_add), list(authors_to_follow), issues_to_close
 
-def update_followed_authors(new_authors_str):
-    """Updates the followed_authors.json file."""
-    if not new_authors_str:
+def update_keywords(new_keywords):
+    """Updates the keywords.json file with new keywords."""
+    if not new_keywords:
         return
 
-    try:
-        with open(FOLLOWED_AUTHORS_PATH, 'r+') as f:
-            followed = json.load(f)
-            followed_set = {f"{a['name']}|{a['affiliation']}" for a in followed}
-            added_count = 0
+    keywords = []
+    if os.path.exists(KEYWORDS_PATH) and os.path.getsize(KEYWORDS_PATH) > 0:
+        try:
+            with open(KEYWORDS_PATH, 'r') as f:
+                keywords = json.load(f)
+        except json.JSONDecodeError:
+            print(f"⚠️  Could not decode {KEYWORDS_PATH}, starting fresh.")
+            keywords = []
 
-            for author_str in new_authors_str:
-                if author_str not in followed_set:
-                    name, _, affiliation = author_str.partition('|')
-                    if affiliation == 'None':
-                        affiliation = None
-                    followed.append({'name': name, 'affiliation': affiliation})
-                    added_count += 1
+    added_count = 0
+    for keyword in new_keywords:
+        if keyword not in keywords:
+            keywords.append(keyword)
+            added_count += 1
 
-            if added_count > 0:
-                print(f"👤 Following {added_count} new author(s)...")
-                followed.sort(key=lambda x: x['name'])
-                f.seek(0)
-                json.dump(followed, f, indent=2)
-                f.truncate()
-            else:
-                print("✅ No new authors to follow.")
-    except FileNotFoundError:
-        print(f"🔴 {FOLLOWED_AUTHORS_PATH} not found. Creating it.")
+    if added_count > 0:
+        print(f"🔑 Promoting {added_count} new keyword(s)...")
+        keywords.sort()
+        with open(KEYWORDS_PATH, 'w') as f:
+            json.dump(keywords, f, indent=2)
+    else:
+        print("✅ No new keywords to add.")
+
+def update_followed_authors(new_authors):
+    """Updates the followed_authors.json file."""
+    if not new_authors:
+        return
+
+    followed = []
+    if os.path.exists(FOLLOWED_AUTHORS_PATH) and os.path.getsize(FOLLOWED_AUTHORS_PATH) > 0:
+        try:
+            with open(FOLLOWED_AUTHORS_PATH, 'r') as f:
+                followed = json.load(f)
+        except json.JSONDecodeError:
+            print(f"⚠️  Could not decode {FOLLOWED_AUTHORS_PATH}, starting fresh.")
+            followed = []
+
+    followed_names = {author.get('name') for author in followed}
+    added_count = 0
+
+    for author_name in new_authors:
+        if author_name not in followed_names:
+            followed.append({'name': author_name})
+            added_count += 1
+
+    if added_count > 0:
+        print(f"👤 Following {added_count} new author(s)...")
+        followed.sort(key=lambda x: x['name'])
         with open(FOLLOWED_AUTHORS_PATH, 'w') as f:
-            new_authors_list = []
-            for author_str in new_authors_str:
-                name, _, affiliation = author_str.partition('|')
-                if affiliation == 'None':
-                    affiliation = None
-                new_authors_list.append({'name': name, 'affiliation': affiliation})
-            json.dump(sorted(new_authors_list, key=lambda x: x['name']), f, indent=2)
+            json.dump(followed, f, indent=2)
+    else:
+        print("✅ No new authors to follow.")
 
 def update_taste_profile(actions):
     """Updates the liked_vectors.json file based on the processed actions."""
@@ -129,7 +156,7 @@ def update_taste_profile(actions):
             taste_profile.append({
                 'id': paper.entry_id.split('/abs/')[-1],
                 'title': paper.title,
-                'authors': [{'name': a.name, 'affiliation': a.affiliation} for a in paper.authors],
+                'authors': [{'name': a.name, 'affiliation': getattr(a, 'affiliation', None)} for a in paper.authors],
                 'vector': embedding,
                 'source': 'arxiv',
                 'url': paper.entry_id
@@ -162,8 +189,9 @@ if __name__ == "__main__":
     if not open_issues:
         print("✅ No open feedback issues to process. Exiting."); sys.exit(0)
 
-    paper_actions, new_authors, issues_to_close = process_issues(open_issues)
+    paper_actions, new_keywords, new_authors, issues_to_close = process_issues(open_issues)
 
+    update_keywords(new_keywords)
     update_followed_authors(new_authors)
     update_taste_profile(paper_actions)
 
