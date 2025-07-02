@@ -53,8 +53,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/feedback_manager.py
 
-      - name: Commit Updated Taste Profile
+      - name: Commit Updated Feedback Files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: Batch update taste profile from feedback"
-          file_pattern: liked_vectors.json
+          commit_message: "chore: Batch update feedback files"
+          file_pattern: liked_vectors.json keywords.json followed_authors.json
