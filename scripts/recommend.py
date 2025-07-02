@@ -235,8 +235,14 @@ def update_archive():
         print(f"  -> ({i+1}/{len(papers_to_analyze)}) Analyzing '{paper.title[:50]}...'")
 
         existing_data = archive.get(paper_id)
-        llm_result = None
+        is_new_paper = paper_id not in archive
 
+        # Determine discovery sources *before* any analysis
+        discovery_sources = existing_data.get('discovery_sources', []) if existing_data else []
+        if paper_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
+            discovery_sources.append(DMRG_SOURCE_TAG)
+
+        llm_result = None
         if existing_data and existing_data.get('reasoning') and existing_data.get('reasoning') != LLM_FAILURE_REASON:
             print(f"  -> LLM data exists. Skipping API call.")
             llm_result = {
@@ -246,8 +252,6 @@ def update_archive():
             }
         else:
             llm_result = get_llm_analysis({'title': paper.title, 'summary': paper.summary}, taste_profile[:5], gemini_api_key)
-
-        is_new_paper = paper_id not in archive
 
         if llm_result:
             vector_matches = []
@@ -260,10 +264,6 @@ def update_archive():
                         'score': score.item(), 'title': taste_profile[idx]['title'],
                         'authors': taste_profile[idx].get('authors', []), 'url': taste_profile[idx].get('url', '#')
                     })
-
-            discovery_sources = existing_data.get('discovery_sources', []) if existing_data else []
-            if paper_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
-                discovery_sources.append(DMRG_SOURCE_TAG)
 
             archive[paper_id] = {
                 'id': paper_id, 'title': paper.title,
@@ -279,15 +279,14 @@ def update_archive():
             if is_new_paper:
                 newly_added_ids.append(paper_id)
         else:
-            if paper_id in archive:
-                archive[paper_id]['reasoning'] = LLM_FAILURE_REASON
-            else:
-                archive[paper_id] = {
-                    'id': paper_id, 'title': paper.title,
-                    'authors': [{'name': a.name, 'affiliation': getattr(a, 'affiliation', None)} for a in paper.authors if a],
-                    'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
-                    'reasoning': LLM_FAILURE_REASON, 'vector_matches': [], 'score': 0, 'discovery_sources': []
-                }
+            # If analysis fails, still save the paper with its sources
+            archive[paper_id] = {
+                'id': paper_id, 'title': paper.title,
+                'authors': [{'name': a.name, 'affiliation': getattr(a, 'affiliation', None)} for a in paper.authors if a],
+                'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
+                'reasoning': LLM_FAILURE_REASON, 'vector_matches': [], 'score': 0,
+                'discovery_sources': discovery_sources
+            }
             print(f"  -> Marking paper {paper_id} for retry due to LLM analysis failure.")
 
         if delay_seconds > 0 and i < len(papers_to_analyze) - 1:
