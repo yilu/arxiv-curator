@@ -51,11 +51,16 @@ def get_recent_papers():
 
 def get_papers_from_followed_authors():
     """Fetches recent papers from authors in followed_authors.json."""
+    # First, check if the file exists and is not empty.
+    if not os.path.exists(FOLLOWED_AUTHORS_PATH) or os.path.getsize(FOLLOWED_AUTHORS_PATH) == 0:
+        return []
+
     try:
         with open(FOLLOWED_AUTHORS_PATH, 'r') as f:
             followed_authors = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        # If file is missing or empty/invalid, assume no authors are followed.
+    except json.JSONDecodeError:
+        # This handles cases where the file might contain only whitespace or is otherwise malformed.
+        print(f"⚠️  Could not decode {FOLLOWED_AUTHORS_PATH}, treating as empty.")
         return []
 
     if not followed_authors:
