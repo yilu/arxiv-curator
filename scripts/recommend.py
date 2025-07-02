@@ -54,7 +54,8 @@ def get_papers_from_followed_authors():
     try:
         with open(FOLLOWED_AUTHORS_PATH, 'r') as f:
             followed_authors = json.load(f)
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError):
+        # If file is missing or empty/invalid, assume no authors are followed.
         return []
 
     if not followed_authors:
@@ -82,7 +83,6 @@ def get_papers_from_dmrg_site():
     """
     print(f" scraping {DMRG_URL} for recent paper IDs...")
 
-    # Calculate current and previous month prefixes (e.g., '2507.' and '2506.')
     today = datetime.now()
     current_month_prefix = today.strftime('%y%m.')
 
@@ -105,7 +105,6 @@ def get_papers_from_dmrg_site():
             href = a_tag['href']
             if 'arxiv.org/abs/' in href:
                 paper_id = href.split('/abs/')[-1]
-                # Check if the paper ID matches the desired date prefixes
                 if paper_id.startswith(current_month_prefix) or paper_id.startswith(previous_month_prefix):
                     paper_ids.add(paper_id)
 
