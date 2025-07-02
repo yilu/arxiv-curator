@@ -42,3 +42,4 @@ DMRG_URL = 'http://quattro.phys.sci.kobe-u.ac.jp/dmrg/condmat.html'
 
 # The tag to display on the website for papers from this source.
 DMRG_SOURCE_TAG = 'dmrg_preprints'
+DMRG_SITE_LIMIT = 30

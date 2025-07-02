@@ -16,7 +16,8 @@ from sentence_transformers import SentenceTransformer, util
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
-    RECOMMENDATION_LIMIT, LLM_RPM_LIMIT, DMRG_URL, DMRG_SOURCE_TAG
+    RECOMMENDATION_LIMIT, LLM_RPM_LIMIT, DMRG_URL, DMRG_SOURCE_TAG,
+    DMRG_SITE_LIMIT
 )
 
 ARCHIVE_PATH = 'archive.json'
@@ -51,7 +52,6 @@ def get_recent_papers():
 
 def get_papers_from_followed_authors():
     """Fetches recent papers from authors in followed_authors.json."""
-    # First, check if the file exists and is not empty.
     if not os.path.exists(FOLLOWED_AUTHORS_PATH) or os.path.getsize(FOLLOWED_AUTHORS_PATH) == 0:
         return []
 
@@ -59,7 +59,6 @@ def get_papers_from_followed_authors():
         with open(FOLLOWED_AUTHORS_PATH, 'r') as f:
             followed_authors = json.load(f)
     except json.JSONDecodeError:
-        # This handles cases where the file might contain only whitespace or is otherwise malformed.
         print(f"⚠️  Could not decode {FOLLOWED_AUTHORS_PATH}, treating as empty.")
         return []
 
@@ -84,7 +83,8 @@ def get_papers_from_followed_authors():
 
 def get_papers_from_dmrg_site():
     """
-    Scrapes the DMRG site for arXiv paper IDs from the current and previous month.
+    Scrapes the DMRG site for arXiv paper IDs from the current and previous month,
+    and caps the result to the most recent ones.
     """
     print(f" scraping {DMRG_URL} for recent paper IDs...")
 
@@ -105,16 +105,20 @@ def get_papers_from_dmrg_site():
         response.raise_for_status()
         soup = BeautifulSoup(response.content, 'html.parser')
 
-        paper_ids = set()
+        paper_ids = []
         for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
             if 'arxiv.org/abs/' in href:
                 paper_id = href.split('/abs/')[-1]
                 if paper_id.startswith(current_month_prefix) or paper_id.startswith(previous_month_prefix):
-                    paper_ids.add(paper_id)
+                    paper_ids.append(paper_id)
 
-        print(f"✅ Found {len(paper_ids)} unique paper IDs from DMRG site for the last two months.")
-        return paper_ids
+        # Sort by ID descending to get the newest papers first, then apply the limit.
+        paper_ids.sort(reverse=True)
+        limited_ids = paper_ids[:DMRG_SITE_LIMIT]
+
+        print(f"✅ Found {len(limited_ids)} most recent paper IDs from DMRG site (capped at {DMRG_SITE_LIMIT}).")
+        return set(limited_ids)
     except requests.exceptions.RequestException as e:
         print(f"🔴 Failed to scrape DMRG site: {e}")
         return set()
@@ -150,7 +154,11 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
         response.raise_for_status()
         result = response.json()
         content = result['candidates'][0]['content']['parts'][0]['text']
-        return json.loads(content)
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError as e:
+            print(f"🔴 LLM returned invalid JSON, likely due to unescaped characters: {e}")
+            return None
     except Exception as e:
         print(f"🔴 LLM API call failed: {e}")
         return None
@@ -295,6 +303,24 @@ def update_archive():
 
     return newly_added_ids
 
+def format_authors_filter(authors):
+    """
+    A robust Jinja2 filter to format author lists, handling both
+    old (list of strings) and new (list of dicts) formats.
+    """
+    if not authors:
+        return "Unknown"
+
+    if isinstance(authors[0], dict):
+        names = [a.get('name', '') for a in authors]
+    else:
+        names = authors
+
+    if len(names) > 2:
+        return f"{names[0]}, {names[-1]} et al."
+    else:
+        return ' and '.join(names)
+
 def generate_site(new_paper_ids):
     """Generates the static site from the archive.json file."""
     if not os.path.exists(ARCHIVE_PATH): print("🔴 Archive file not found."); return
@@ -313,7 +339,7 @@ def generate_site(new_paper_ids):
     sorted_months = sorted(valid_months, reverse=True)
 
     env = Environment(loader=FileSystemLoader('templates'))
-    env.filters['format_byl_authors'] = lambda authors: f"{authors[0]['name']}, {authors[-1]['name']} et al." if len(authors) > 2 else (' and '.join([a['name'] for a in authors]) if authors else "Unknown")
+    env.filters['format_byl_authors'] = format_authors_filter
     template = env.get_template('index.html')
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
 
