@@ -35,3 +35,10 @@ RECOMMENDATION_LIMIT = 150
 # The Requests Per Minute (RPM) limit for your Gemini API tier.
 # The script will automatically calculate the necessary delay based on this.
 LLM_RPM_LIMIT = 15
+
+# --- External Paper Sources ---
+# URL for the manually curated list of DMRG-related preprints.
+DMRG_URL = 'http://quattro.phys.sci.kobe-u.ac.jp/dmrg/condmat.html'
+
+# The tag to display on the website for papers from this source.
+DMRG_SOURCE_TAG = 'dmrg_preprints'
