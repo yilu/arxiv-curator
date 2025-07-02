@@ -109,7 +109,6 @@ def get_papers_from_dmrg_site():
         for a_tag in soup.find_all('a', href=True):
             href = a_tag['href']
             if 'arxiv.org/abs/' in href:
-                # The scraped ID is already versionless
                 paper_id = href.split('/abs/')[-1]
                 if paper_id.startswith(current_month_prefix) or paper_id.startswith(previous_month_prefix):
                     paper_ids.append(paper_id)
@@ -201,25 +200,29 @@ def update_archive():
     all_candidate_papers = {p.entry_id.split('/abs/')[-1]: p for p in category_papers}
     all_candidate_papers.update({p.entry_id.split('/abs/')[-1]: p for p in author_papers})
 
+    author_paper_base_ids = {p.entry_id.split('/abs/')[-1].split('v')[0] for p in author_papers}
+
     new_paper_ids = {
-        pid: p for pid, p in all_candidate_papers.items()
+        pid for pid, p in all_candidate_papers.items()
         if pid not in archive and (
             any(kw.lower() in (p.title + p.summary).lower() for kw in KEYWORDS) or
-            pid.split('v')[0] in {ap.entry_id.split('/abs/')[-1].split('v')[0] for ap in author_papers} or
+            pid.split('v')[0] in author_paper_base_ids or
             pid.split('v')[0] in dmrg_paper_ids
         )
     }
-    new_from_dmrg = dmrg_paper_ids - {pid.split('v')[0] for pid in all_candidate_papers.keys()}
+
+    archive_base_ids = {pid.split('v')[0] for pid in archive.keys()}
+    candidate_base_ids = {pid.split('v')[0] for pid in all_candidate_papers.keys()}
+    new_from_dmrg = dmrg_paper_ids - archive_base_ids - candidate_base_ids
 
     if new_paper_ids:
         print(f"🔍 Found {len(new_paper_ids)} new papers to process from feeds.")
 
-    ids_to_process = retry_ids.union(new_paper_ids.keys()).union(new_from_dmrg)
+    ids_to_process = retry_ids.union(new_paper_ids).union(new_from_dmrg)
 
     if not ids_to_process:
         print("✅ No new or failed papers to process. Exiting."); return []
 
-    # Normalize all IDs to be versionless for the API call
     versionless_ids = {pid.split('v')[0] for pid in ids_to_process}
     print(f"📡 Fetching fresh data for {len(versionless_ids)} papers from arXiv...")
     client = arxiv.Client()
@@ -263,9 +266,10 @@ def update_archive():
                 cosine_scores = util.cos_sim(new_paper_embedding, liked_vectors)[0]
                 top_results = torch.topk(cosine_scores, k=min(3, len(taste_profile)))
                 for score, idx in zip(top_results[0], top_results[1]):
+                    # Store the optimized format: score and liked paper's ID
                     vector_matches.append({
-                        'score': score.item(), 'title': taste_profile[idx]['title'],
-                        'authors': taste_profile[idx].get('authors', []), 'url': taste_profile[idx].get('url', '#')
+                        'score': score.item(),
+                        'liked_paper_id': taste_profile[idx]['id']
                     })
 
             archive[paper_id] = {
@@ -322,7 +326,11 @@ def generate_site(new_paper_ids):
     if not os.path.exists(ARCHIVE_PATH): print("🔴 Archive file not found."); return
 
     with open(ARCHIVE_PATH, 'r') as f: archive = json.load(f)
-    liked_paper_ids = {item['id'] for item in (json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else [])}
+
+    # Load taste profile and create a lookup map for rendering vector matches
+    taste_profile = json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else []
+    liked_paper_details = {item['id']: item for item in taste_profile}
+    liked_paper_ids = set(liked_paper_details.keys())
 
     papers_by_month = defaultdict(list)
     for paper in archive.values():
@@ -361,7 +369,9 @@ def generate_site(new_paper_ids):
         html_content = template.render(
             papers=papers_to_render, current_month=month, all_months=sorted_months,
             github_repo=github_repo, new_paper_ids=new_paper_ids,
-            liked_paper_ids=liked_paper_ids, generation_date=generation_date_str,
+            liked_paper_ids=liked_paper_ids,
+            liked_paper_details=liked_paper_details, # Pass the lookup map to the template
+            generation_date=generation_date_str,
             num_added=len(new_paper_ids), num_not_shown=max(0, total_in_month - len(papers_to_render)),
             total_in_month=total_in_month,
             filter_categories=unique_categories_in_month,
