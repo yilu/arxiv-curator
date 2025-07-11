@@ -10791,5 +10791,1531 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2506.24036v2": {
+    "id": "2506.24036v2",
+    "title": "Combine effect of site dilution and long-range interaction on magnetic and transport properties in the half-filled Hubbard model",
+    "authors": [
+      {
+        "name": "Sudip Mandal",
+        "affiliation": null
+      },
+      {
+        "name": "Sourav Chakraborty",
+        "affiliation": null
+      },
+      {
+        "name": "Kalpataru Pradhan",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the magnetotransport properties of a diluted half-filled one-band Hubbard model with second-nearest-neighbor hopping on a simple cubic lattice, aiming to explore the possibility of metallicity in diluted antiferromagnetic systems. Our semiclassical Monte Carlo calculations reveal an antiferromagnetic metallic regime in diluted correlated materials. This unexpected metallic regime naturally leads to a central question: how does the introduction of dilution into an antiferromagnetic material, especially with long-range magnetic interactions, induce metallicity -- a feature not commonly associated with antiferromagnets? To address this question, we demonstrate that when the on-site repulsive Hubbard interaction strength is set to zero on a percentage of the sites (site dilution), the insulating state weakens due to percolative conduction among the diluted sites at low temperatures. Remarkably, this occurs without any significant alteration to the underlying long-range antiferromagnetic ordering in the system, thereby providing a pathway to realize antiferromagnetic metals. In addition, we show how the sublattice-dependent hopping can be exploited to engineer spin-polarized half-metallic antiferromagnets. Overall, our numerical results collectively provide a basis for understanding the combined effect of site dilution and competing interactions, which will assist in the design of new antiferromagnetic metals for future spintronic applications.",
+    "published_date": "2025-06-30",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the paper focuses on correlated materials and antiferromagnetism, which aligns with some of the user's interests, the specific focus on site dilution and transport properties is a bit of a deviation from the prior papers.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Site dilution",
+      "Antiferromagnetic metal",
+      "Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6209416389465332,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6194754242897034,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5986531376838684,
+        "liked_paper_id": "2506.16503v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07249v1": {
+    "id": "2507.07249v1",
+    "title": "Kubo-Martin-Schwinger relation for energy eigenstates of SU(2)-symmetric quantum many-body systems",
+    "authors": [
+      {
+        "name": "Jae Dong Noh",
+        "affiliation": null
+      },
+      {
+        "name": "Aleksander Lasek",
+        "affiliation": null
+      },
+      {
+        "name": "Jade LeSchack",
+        "affiliation": null
+      },
+      {
+        "name": "Nicole Yunger Halpern",
+        "affiliation": null
+      }
+    ],
+    "summary": "The fluctuation-dissipation theorem (FDT) is a fundamental result in statistical mechanics. It stipulates that, if perturbed out of equilibrium, a system responds at a rate proportional to a thermal-equilibrium property. Applications range from particle diffusion to electrical-circuit noise. To prove the FDT, one must prove that common thermal states obey a symmetry property, the Kubo-Martin-Schwinger (KMS) relation. Energy eigenstates of certain quantum many-body systems were recently proved to obey the KMS relation. The proof relies on the eigenstate thermalization hypothesis (ETH), which explains how such systems thermalize internally. This KMS relation contains a finite-size correction that scales as the inverse system size. Non-Abelian symmetries conflict with the ETH, so a non-Abelian ETH was proposed recently. Using it, we derive a KMS relation for SU(2)-symmetric quantum many-body systems' energy eigenstates. The finite-size correction scales as usual under certain circumstances but can be polynomially larger in others, we argue. We support the ordinary-scaling result numerically, simulating a Heisenberg chain of 16-24 qubits. The numerics, limited by computational capacity, indirectly support the larger correction. This work helps extend into nonequilibrium physics the effort, recently of interest across quantum physics, to identify how non-Abelian symmetries may alter conventional thermodynamics.",
+    "published_date": "2025-07-09",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in quantum systems and symmetries, this paper focuses on a specific symmetry (SU(2)) and the Kubo-Martin-Schwinger relation, which is somewhat tangential to the user's previous interests in materials and topological physics.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Kubo-Martin-Schwinger relation",
+      "SU(2) symmetry",
+      "Non-Abelian eigenstate thermalization hypothesis"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5058419704437256,
+        "liked_paper_id": "2506.22302v1"
+      },
+      {
+        "score": 0.4510178864002228,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4348635971546173,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.04279v2": {
+    "id": "2507.04279v2",
+    "title": "Solving the Gross-Pitaevskii Equation with Quantic Tensor Trains: Ground States and Nonlinear Dynamics",
+    "authors": [
+      {
+        "name": "Qian-Can Chen",
+        "affiliation": null
+      },
+      {
+        "name": "I-Kang Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Jheng-Wei Li",
+        "affiliation": null
+      },
+      {
+        "name": "Chia-Min Chung",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a tensor network framework based on the quantic tensor train (QTT) format to efficiently solve the Gross-Pitaevskii equation (GPE), which governs Bose-Einstein condensates under mean-field theory. By adapting time-dependent variational principle (TDVP) and gradient descent methods, we accurately handle the GPE's nonlinearities within the QTT structure. Our approach enables high-resolution simulations with drastically reduced computational cost. We benchmark ground states and dynamics of BECs--including vortex lattice formation and breathing modes--demonstrating superior performance over conventional grid-based methods and stable long-time evolution due to saturating bond dimensions. This establishes QTT as a powerful tool for nonlinear quantum simulations.",
+    "published_date": "2025-07-06",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in quantum materials and simulations, this paper focuses on Bose-Einstein condensates and tensor network methods, which are somewhat related but not a direct match to the user's previous interests.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantic Tensor Trains",
+      "Gross-Pitaevskii Equation",
+      "Bose-Einstein Condensates"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5479284524917603,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5170296430587769,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5079206228256226,
+        "liked_paper_id": "2506.16068v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07611v1": {
+    "id": "2507.07611v1",
+    "title": "Emergent QED$_3$ at the bosonic Laughlin state to superfluid transition",
+    "authors": [
+      {
+        "name": "Taige Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Xue-Yang Song",
+        "affiliation": null
+      },
+      {
+        "name": "Michael P. Zaletel",
+        "affiliation": null
+      },
+      {
+        "name": "T. Senthil",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum phase transitions between topologically ordered and symmetry-broken phases lie beyond Landau theory. A prime example is the conjectured continuous transition from the bosonic $\\nu = 1/2$ Laughlin state to a superfluid, proposed to be governed by a QED$_3$--Chern--Simons (CS) critical point whose stability remains uncertain. We study half-filled bosons in the lowest Landau level subject to a lattice potential. Infinite-cylinder DMRG reveals a single continuous Laughlin--to--superfluid transition. Adiabatic flux insertion collapses the many-body gap and exposes massless Dirac quasiparticles, while momentum-resolved correlation lengths show that three lattice-related density modes share the same critical exponent, evidencing an emergent $SO(3)$ symmetry. The joint appearance of Dirac dispersion and symmetry enlargement provides microscopic support for a stable QED$_3$--CS fixed point. Our numerical strategy also offers a blueprint for exploring Landau-forbidden transitions in fractional Chern insulators and composite Fermi liquids realised in moire and cold-atom systems.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses emergent quantum electrodynamics in a bosonic system, which aligns with the user's interest in topological phases and unconventional electronic states, although the specific materials and phenomena differ.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "QED3",
+      "Laughlin state",
+      "bosonic superfluid"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6190080046653748,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5287677049636841,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5230439305305481,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07679v1": {
+    "id": "2507.07679v1",
+    "title": "Extracting Nonlinear Dynamical Response Functions from Time Evolution",
+    "authors": [
+      {
+        "name": "Atsushi Ono",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a general framework based on the functional derivative to extract nonlinear dynamical response functions from the temporal evolution of physical quantities, without explicitly computing multipoint correlation functions. We validate our approach by calculating the second- and third-order optical responses in the Rice-Mele model and further apply it to a many-body interacting system using a tensor network method. This framework is broadly applicable to any method that can compute real-time dynamics, offering a powerful and versatile tool for investigating nonlinear responses in dynamical systems.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.stat-mech",
+      "physics.optics"
+    ],
+    "doi": "10.1103/qsxr-c2pq",
+    "score": 0.3,
+    "reasoning": "While the paper discusses dynamical systems, it is focused on a general method and does not connect to the specific materials or phenomena (superconductivity, nickelates, topological materials) that were present in the user's liked papers.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "nonlinear response",
+      "dynamical response functions",
+      "real-time dynamics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4667990207672119,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.42579054832458496,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.40403950214385986,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07533v1": {
+    "id": "2507.07533v1",
+    "title": "Dark states of electrons in a quantum system with two pairs of sublattices",
+    "authors": [
+      {
+        "name": "Yoonah Chung",
+        "affiliation": null
+      },
+      {
+        "name": "Minsu Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Yeryn Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Seyeong Cha",
+        "affiliation": null
+      },
+      {
+        "name": "Joon Woo Park",
+        "affiliation": null
+      },
+      {
+        "name": "Jeehong Park",
+        "affiliation": null
+      },
+      {
+        "name": "Yeonjin Yi",
+        "affiliation": null
+      },
+      {
+        "name": "Dongjoon Song",
+        "affiliation": null
+      },
+      {
+        "name": "Jung Hyun Ryu",
+        "affiliation": null
+      },
+      {
+        "name": "Kimoon Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Timur K. Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Cephise Cacho",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Denlinger",
+        "affiliation": null
+      },
+      {
+        "name": "Chris Jozwiak",
+        "affiliation": null
+      },
+      {
+        "name": "Eli Rotenberg",
+        "affiliation": null
+      },
+      {
+        "name": "Aaron Bostwick",
+        "affiliation": null
+      },
+      {
+        "name": "Keun Su Kim",
+        "affiliation": null
+      }
+    ],
+    "summary": "A quantum state of matter that is forbidden to interact with photons and is therefore undetectable by spectroscopic means is called a dark state. This basic concept can be applied to condensed matter where it suggests that a whole band of quantum states could be undetectable across a full Brillouin zone. Here we report the discovery of such condensed matter dark states in palladium diselenide as a model system that has two pairs of sublattices in the primitive cell. By using angle-resolved photoemission spectroscopy, we find valence bands that are practically unobservable over the whole Brillouin zone at any photon energy, polarisation, and scattering plane. Our model shows that two pairs of sublattices located at half-translation positions and related by multiple glide-mirror symmetries make their relative quantum phases polarised into only four kinds, three of which become dark due to double destructive interference. This mechanism is generic to other systems with two pairs of sublattices, and we show how the phenomena observed in cuprates, lead-halide perovskites, and density wave systems can be resolved by the mechanism of dark states. Our results suggest that the sublattice degree of freedom, which has been overlooked so far, should be considered in the study of correlated phenomena and optoelectronic characteristics.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1038/s41567-024-02586-x",
+    "score": 0.6,
+    "reasoning": "The paper discusses electronic states and their properties in a material with interesting symmetries, which relates to the user's interest in electronic structure, topological materials, and correlated electron systems.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "Dark states",
+      "Sublattice interference",
+      "Angle-resolved photoemission spectroscopy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4779755473136902,
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C"
+      },
+      {
+        "score": 0.4676159620285034,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.4675252139568329,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07463v1": {
+    "id": "2507.07463v1",
+    "title": "Breakdown of the conventional spin-wave dynamics and its double-constraint modification in the spin-$\\mathbf{\\frac{1}{2}}$ triangular-prism Heisenberg antiferromagnet",
+    "authors": [
+      {
+        "name": "Shoji Yamamoto",
+        "affiliation": null
+      },
+      {
+        "name": "Jun Ohara",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spontaneous magnon decays in an $S=\\frac{1}{2}$ Heisenberg antiferromagnet on the equilateral triangular prism are investigated in terms of modified magnon Green's functions. In one dimension, the so-called infrared divergence prevents us from calculating any -- whether static or dynamic -- structure factor within the conventional spin-wave theory even at zero temperature. The well-known modified spin-wave theory initiated by Takahashi completely fails to treat anharmonicities to cause transverse-to-longitudinal coupling which are quite characteristic of noncollinear antiferromagnets. We propose imposing a double-constraint condition on spin waves to solve all these difficulties and get a full view of the nonlinear spin-wave dynamics in one-dimensional frustrated noncollinear antiferromagnets. We reveal a novel instability of the single-particle spectrum in the absence of any well-defined magnetically ordered ground state.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses antiferromagnets, a topic that can relate to correlated electron systems and unconventional superconductivity, the focus on spin-wave dynamics and a specific lattice geometry makes it less directly relevant than the previous papers.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "spin-wave dynamics",
+      "triangular-prism antiferromagnet",
+      "magnon decay"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.623784065246582,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5911543369293213,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5899285078048706,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07646v1": {
+    "id": "2507.07646v1",
+    "title": "Tangent Space Excitation Ansatz for Quantum Circuits",
+    "authors": [
+      {
+        "name": "Ji-Yao Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Bochen Huang",
+        "affiliation": null
+      },
+      {
+        "name": "D. L. Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Norbert Schuch",
+        "affiliation": null
+      },
+      {
+        "name": "Chenfeng Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Muchun Yang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Computing the excitation spectra of quantum many-body systems on noisy quantum devices is a promising avenue to demonstrate the practical utility of current quantum processors, especially as we move toward the ``megaquop'' regime. For this task, here we introduce a \\textit{tangent-space excitation ansatz} for quantum circuits, motivated by the quasi-particle picture of many-body systems and the structural similarity between quantum circuits and classical tensor networks. Increasing the circuit depth by one layer to construct the tangent space around the variational optimum of a parametrized quantum circuit, we show that a large number of low-energy states can be accurately captured. We demonstrate this ansatz using various models in both one and two spatial dimensions, including the challenging kagome Heisenberg antiferromagnet. We further provide evidence that this approach, implementable using Hadamard test, is stable in the presence of measurement noise and scalable to large system size.",
+    "published_date": "2025-07-10",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing techniques for simulating many-body systems, which is only tangentially related to the user's interest in condensed matter physics and material science, specifically oxides and superconductivity.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum circuits",
+      "excitation spectra",
+      "variational quantum algorithms"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5994867086410522,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5718417167663574,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.566888689994812,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07293v1": {
+    "id": "2507.07293v1",
+    "title": "Thermodynamic Prediction Enabled by Automatic Dataset Building and Machine Learning",
+    "authors": [
+      {
+        "name": "Juejing Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Haydn Anderson",
+        "affiliation": null
+      },
+      {
+        "name": "Noah I. Waxman",
+        "affiliation": null
+      },
+      {
+        "name": "Vsevolod Kovalev",
+        "affiliation": null
+      },
+      {
+        "name": "Byron Fisher",
+        "affiliation": null
+      },
+      {
+        "name": "Elizabeth Li",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaofeng Guo",
+        "affiliation": null
+      }
+    ],
+    "summary": "New discoveries in chemistry and materials science, with increasingly expanding volume of requisite knowledge and experimental workload, provide unique opportunities for machine learning (ML) to take critical roles in accelerating research efficiency. Here, we demonstrate (1) the use of large language models (LLMs) for automated literature reviews, and (2) the training of an ML model to predict chemical knowledge (thermodynamic parameters). Our LLM-based literature review tool (LMExt) successfully extracted chemical information and beyond into a machine-readable structure, including stability constants for metal cation-ligand interactions, thermodynamic properties, and other broader data types (medical research papers, and financial reports), effectively overcoming the challenges inherent in each domain. Using the autonomous acquisition of thermodynamic data, an ML model was trained using the CatBoost algorithm for accurately predicting thermodynamic parameters (e.g., enthalpy of formation) of minerals. This work highlights the transformative potential of integrated ML approaches to reshape chemistry and materials science research.",
+    "published_date": "2025-07-09",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in correlated electron systems and superconductivity, this paper focuses on machine learning applications in materials science for thermodynamic property prediction, which is a different area, although still potentially relevant for materials discovery.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Large Language Models",
+      "Thermodynamic Parameters Prediction",
+      "Automated Literature Review"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42969459295272827,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.34550800919532776,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.26827380061149597,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07447v1": {
+    "id": "2507.07447v1",
+    "title": "Topological electronic structures of non-collinear magnetic phases in a multi-orbital Hubbard model with spin-orbit interactions",
+    "authors": [
+      {
+        "name": "Ying-Lin Li",
+        "affiliation": null
+      },
+      {
+        "name": "Po-Hao Chou",
+        "affiliation": null
+      },
+      {
+        "name": "Chung-Yu Mou",
+        "affiliation": null
+      }
+    ],
+    "summary": "We explore topological electronic structure of magnetic phases in a multi-orbital Hubbard model with spin-orbit interactions. To account for more general antiferromagnetic orders that go beyond the collinear N\\'eel order, two different spin-orbit interactions, Dresselhaus and Rashba spin-orbit interactions, are considered. By performing the canonical transformation, we derive the corresponding generalized t-J model. At half filling, employing self-consistent magnetic order calculations, we find distinctive spin arrangements under Dresselhaus or Rashba spin-orbit interactions. For the Dresselhaus spin-orbit interaction, the spin configuration exhibits collinear antiferromagnetic order. On the other hand, Rashba interaction results in spins antiferromagnetically aligning in xy-plane and a small interaction controlled by hopping parameter induces spin tilting, causing antiferromagnetic alignment in xy-plane but ferromagnetic alignment in z-direction. We categorize topological properties of these phases for low doping in the generalized t-J model.: for 3D collinear antiferromagnetic order, the system possesses a modified time-reversal symmetry, characterized by the Z2 index. In contrast, for systems with tilted antiferromagnetic orders, it is protected by inversion symmetry and characterized by the Z4 index. We further examine the bulk-edge correspondence for non-collinear magnetic phases, revealing that the surface state becomes gapless when the surface is parallel to the ferromagnetic component of tilted antiferromagnetic order; otherwise, the surface state exhibits a gap. Our findings offer a comprehensive topological characterization for doped and canted antiferromagnetic insulators with spin-orbit interactions, providing valuable insights into the interplay between spin arrangements, symmetries, and topological properties in systems governed by the multi-orbital Hubbard model.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological electronic structures and spin-orbit interactions, which aligns with the user's interest in topological materials and related phenomena like Dirac fermions and symmetries.",
+    "matching_keywords": [
+      "hubbard model",
+      "t-J model"
+    ],
+    "suggested_keywords": [
+      "Non-collinear magnetism",
+      "Topological characterization",
+      "Multi-orbital Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6803356409072876,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6084519028663635,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5972949862480164,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07540v1": {
+    "id": "2507.07540v1",
+    "title": "NNQS-AFQMC: Neural network quantum states enhanced fermionic quantum Monte Carlo",
+    "authors": [
+      {
+        "name": "Zhi-Yu Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Bowen Kan",
+        "affiliation": null
+      },
+      {
+        "name": "Huan Ma",
+        "affiliation": null
+      },
+      {
+        "name": "Bowen Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Honghui Shang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce an efficient approach to implement neural network quantum states (NNQS) as trial wavefunctions in auxiliary-field quantum Monte Carlo (AFQMC). NNQS are a recently developed class of variational ans\\\"atze capable of flexibly representing many-body wavefunctions, though they often incur a high computational cost during optimization. AFQMC, on the other hand, is a powerful stochastic projector approach for ground-state calculations, but it normally requires an approximate constraint via a trial wavefunction or trial density matrix, whose quality affects the accuracy. Recent progress has shown that a broad class of highly correlated wavefunctions can be integrated into AFQMC through stochastic sampling techniques. In this work, we present a direct integration of NNQS with AFQMC, allowing NNQS to serve as high-quality trial wavefunctions for AFQMC with manageable computational cost. We test the NNQS-AFQMC method on the challenging nitrogen molecule (N$_2$) at stretched geometries. Our results demonstrate that AFQMC with an NNQS trial wavefunction can attain near-exact total energies, highlighting the potential of AFQMC with NNQS to overcome longstanding challenges in strongly correlated electronic structure calculations. We also outline future research directions for improving this promising methodology.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "While the paper focuses on computational methods (NNQS-AFQMC) for electronic structure calculations, it aligns with the user's interest in strongly correlated materials and novel computational techniques in quantum physics, such as DMFT.",
+    "matching_keywords": [
+      "neural network",
+      "neural network quantum states",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Neural network quantum states",
+      "Auxiliary-field quantum Monte Carlo",
+      "Strongly correlated electronic structure"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5741097331047058,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5707122683525085,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5556397438049316,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07456v1": {
+    "id": "2507.07456v1",
+    "title": "General purpose models for the chemical sciences",
+    "authors": [
+      {
+        "name": "Nawaf Alampara",
+        "affiliation": null
+      },
+      {
+        "name": "Anagha Aneesh",
+        "affiliation": null
+      },
+      {
+        "name": "Marti\u00f1o R\u00edos-Garc\u00eda",
+        "affiliation": null
+      },
+      {
+        "name": "Adrian Mirza",
+        "affiliation": null
+      },
+      {
+        "name": "Mara Schilling-Wilhelmi",
+        "affiliation": null
+      },
+      {
+        "name": "Ali Asghar Aghajani",
+        "affiliation": null
+      },
+      {
+        "name": "Meiling Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Gordan Prastalo",
+        "affiliation": null
+      },
+      {
+        "name": "Kevin Maik Jablonka",
+        "affiliation": null
+      }
+    ],
+    "summary": "Data-driven techniques have a large potential to transform and accelerate the chemical sciences. However, chemical sciences also pose the unique challenge of very diverse, small, fuzzy datasets that are difficult to leverage in conventional machine learning approaches completely. A new class of models, general-purpose models (GPMs) such as large language models, have shown the ability to solve tasks they have not been directly trained on, and to flexibly operate with low amounts of data in different formats. In this review, we discuss fundamental building principles of GPMs and review recent applications of those models in the chemical sciences across the entire scientific process. While many of these applications are still in the prototype phase, we expect that the increasing interest in GPMs will make many of them mature in the coming years.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has demonstrated an interest in materials science, this paper is about machine learning models applicable to chemistry, making it tangentially relevant at best.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "general-purpose models",
+      "chemical sciences",
+      "data-driven techniques"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.27183401584625244,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.2578805685043335,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.24831299483776093,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07336v1": {
+    "id": "2507.07336v1",
+    "title": "Origin of insulating-like behavior of Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ under pressure: A first-principles study",
+    "authors": [
+      {
+        "name": "Xin Du",
+        "affiliation": null
+      },
+      {
+        "name": "Jian-Feng Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhong-Yi Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Kai Liu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recent experimental study on Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ superconductors has revealed an unexpected quantum phase transition from superconducting state to insulatinglike state under pressure [Zhou et al., Nat. Phys. 18, 406 (2022)]. To better understand the physical origin of this pressure-induced phenomenon, here we have studied the structural, electronic, and magnetic properties of undoped and O-doped Bi$_2$Sr$_2$CaCu$_2$O$_{8+x}$ (Bi2212) under pressures based on density-functional theory calculations. We first identified the crystal structure of undoped Bi2212 with the armchair distortions in the BiO layers and reproduced the insulating feature of the parent compound. Then we added an extra O atom to the parent compound to simulate the hole-doping effect and found that the structure with O dopant located in the van der Waals (vdW) gap is energetically the most stable. Further calculations on O-doped (0.125 holes/Cu) Bi2212 revealed that the pressure can induce charge redistributions between CuO$_2$ planes and BiO layers; specifically, Cu-$d_{x^2-y^2}$ orbitals gain electrons and Cu atoms rather than O atoms dominate around the Fermi level under high pressure. Along with the increasing pressure, the density of states at the Fermi level first reaches the maximum at $\\sim$ 10 GPa and then shows a valley near the Fermi level above 20 GPa, which may be responsible for the insulatinglike state observed in recent experiments. We suggest that the competition among several factors, such as the increase of electrons in the CuO$_2$ plane, the variation of in-plane hopping due to the shortened Cu-O distance, and the enhanced Coulomb repulsion among the Cu-3$d$ electrons, could lead to the exotic transition under pressure. Our work provides an explanation of the high-pressure behaviors of Bi2212, which may facilitate a comprehensive understanding of cuprate superconductors.",
+    "published_date": "2025-07-09",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1103/6btw-jk8n",
+    "score": 0.7,
+    "reasoning": "The paper discusses the electronic structure and behavior of a cuprate superconductor, which aligns with the user's interest in superconductivity and related materials.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "pressure-induced transition",
+      "charge redistribution",
+      "Bi2Sr2CaCu2O8+x"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6236062049865723,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.5766324996948242,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.5674562454223633,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07287v1": {
+    "id": "2507.07287v1",
+    "title": "Finitely Correlated States Driven by Topological Dynamics",
+    "authors": [
+      {
+        "name": "Eric B. Roon",
+        "affiliation": null
+      },
+      {
+        "name": "Jeffrey H. Schenker",
+        "affiliation": null
+      }
+    ],
+    "summary": "Let $(\\Omega, \\P)$ be a standard probability space and let $\\vartheta:\\Omega \\to \\Omega$ be a measure preserving ergodic homeomorphism. Let $\\mathcal{A}$ be a $C^*$-algebra with a unit and let $\\mathcal{A}_{\\mathbb{Z}}$ be the quasi-local algebra associated to the spin chain with one-site algebra $\\mathcal{A}$. Equip $\\mathcal{A}_{\\mathbb{Z}}$ with the group action of translation by $k$-units, $\\tau_k\\in Aut(\\mathcal{A}_{\\mathbb{Z}})$ for $k\\in \\mathbb{Z}$. We study the problem of finding a disordered matrix product state decomposition for disordered states $\\psi(\\omega)$ on $\\mathcal{A}_{\\mathbb{Z}}$ with the covariance symmetry condition $\\psi(\\omega) \\circ \\tau_k = \\psi(\\vartheta^k \\omega)$. This can be seen as an ergodic generalization of the results of Fannes, Nachtergaele, and Werner \\cite{FannesNachtergaeleWerner}. To reify our structure theory, we present a disordered state $\\nu_\\omega$ obtained by sampling the AKLT model \\cite{AKLT} in parameter space. We go on to show that $\\nu_\\omega$ has a nearest-neighbor parent Hamiltonian, its bulk spectral gap closes, but it has almost surely exponentially decaying correlations, and finally, that $\\nu_\\omega$ is time-reversal symmetry protected with a Tasaki index of $-1$.",
+    "published_date": "2025-07-09",
+    "categories": [
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper discusses disordered matrix product states and their properties, which is not closely related to the user's liked papers on superconductivity, nickelates, and Dirac semimetals.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "matrix product states",
+      "ergodic homeomorphism",
+      "Tasaki index"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.44106096029281616,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.38990259170532227,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.3811127841472626,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07191v1": {
+    "id": "2507.07191v1",
+    "title": "Energy Spectra of Compressed Quantum States",
+    "authors": [
+      {
+        "name": "Daochen Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum algorithms for estimating the ground state energy of a quantum system often operate by preparing a classically accessible quantum state and then applying quantum phase estimation. Whether this approach yields quantum advantage hinges on the state's energy spectrum, that is, the sequence of the state's overlaps with the energy eigenstates of the system Hamiltonian. For any entanglement-compressed quantum state with minimal expected energy, it is shown that its energy spectrum decays at most with the inverse-squared energy eigenvalues. This explains the main empirical finding of Silvester, Carleo, and White (Physical Review Letters, 2025) that the energy spectra of matrix product states do not decay exponentially. It also reduces the question of quantum advantage to the energy and entanglement profile of the Hamiltonian's eigenstates.",
+    "published_date": "2025-07-09",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum algorithms and energy spectra of quantum states, which is a departure from the user's interest in condensed matter physics topics like superconductivity and nickelates, resulting in a low relevance score.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "energy spectra",
+      "quantum phase estimation",
+      "entanglement-compressed states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5084320306777954,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4876410663127899,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.43893349170684814,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07545v1": {
+    "id": "2507.07545v1",
+    "title": "Evolution from intralayer to interlayer superconductivity in a bilayer $t$-$J$ model",
+    "authors": [
+      {
+        "name": "Yuan Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Xin Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Yuan Wan",
+        "affiliation": null
+      },
+      {
+        "name": "Wei-Qiang Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Shou-Shu Gong",
+        "affiliation": null
+      }
+    ],
+    "summary": "Motivated by the bilayer cuprate superconductors and nickelate superconductor La$_3$Ni$_2$O$_7$, we investigate the evolution from intralayer to interlayer superconductivity based on a bilayer two-leg $t$-$J$-$J_{\\bot}$ model, where $t$ is the in-plane electron hopping, $J$ is the in-plane spin interaction, and $J_{\\bot}$ is the inter-plane spin interaction. By means of the density matrix renormalization group calculations, we obtain the quantum phase diagram of the system by tuning $J_{\\bot}$ in a large doping range $\\delta = 1/8 - 1/2$. We find that a large $J_{\\bot}$ can always drive an interlayer superconductivity by coupling the two layers in both the Luther-Emery liquid and Luttinger liquid states. By coupling two Luther-Emery liquid states, the in-plane superconductivity evolves to inter-plane superconductivity either through an intermediate charge density wave (CDW) phase or directly, depending on doping ratio. This emergent CDW phase, which exists over a finite doping range, appears to develop from the CDW state of the two-leg ladder at $\\delta = 1/4$. By coupling two Luttinger liquids, the in-plane Luttinger liquids show a transition to the inter-plane superconducting phase at large $J_{\\bot}$, as reported in previous literature. Interestingly, in the intermediate $J_{\\bot}$ regime we find that while the in-plane Luttinger-liquid features remain stable, the inter-plane superconductivity can develop an enhanced quasi-long-range order with the power exponent $K^{zz}_{\\rm SC} \\sim 1$. At last, we show that the interlayer superconductivity is also stable by coupling the bilayer three-leg $t$-$J$ ladders by a strong $J_{\\bot}$ interaction, from both the Luther-Emery liquid and Luttinger-liquid states.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper directly relates to superconductivity, particularly in layered materials like cuprates and nickelates, which aligns with the user's previous interests in superconductivity and related materials.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "interlayer superconductivity",
+      "charge density wave",
+      "bilayer t-J model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6653940677642822,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.6574923396110535,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.6516090631484985,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.06361v1": {
+    "id": "2507.06361v1",
+    "title": "Experimental Ground-State Energy of a 125-Site Flat Kagome Antiferromagnet via Hamiltonian Engineering on Quantum Computer",
+    "authors": [
+      {
+        "name": "Muhammad Ahsan",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present an instance of utility-grade quantum computation by calculating the ground-state energy of a 125-site flat Kagome lattice under the antiferromagnetic Heisenberg model (KAFH), using IBM's Falcon and Hummingbird quantum processors. For spin-1/2 KAFH, our best per-site ground-state energy estimate reaches -0.417J, and after applying open-boundary corrections, it closely approaches the established thermodynamic value of -0.438J. To achieve this, we propose a hybrid approach that splits the variational quantum eigensolver (VQE) into local (classical) and global (quantum) components for efficient hardware utilization. We further introduce a Hamiltonian engineering strategy that increases coupling on defect triangles to mimic loop-flip dynamics, allowing us to simplify the ansatz while retaining physical accuracy. Using a single-repetition, hardware-efficient ansatz, we entangle up to 103 qubits with high fidelity to determine the Hamiltonian's lowest eigenvalue. This work demonstrates the scalability of VQE for frustrated 2D systems and lays the foundation for future studies using deeper ansatz circuits and larger lattices.",
+    "published_date": "2025-07-08",
+    "categories": [
+      "cs.ET"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While this paper involves quantum computation for a Kagome lattice, it doesn't overlap strongly with the user's interests in superconductivity, oxygen vacancies, or topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Kagome Antiferromagnet",
+      "Variational Quantum Eigensolver",
+      "Hamiltonian Engineering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.564082145690918,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5485486388206482,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.518977165222168,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07699v1": {
+    "id": "2507.07699v1",
+    "title": "Quench spectroscopy for Lieb-Liniger bosons in the presence of harmonic trap",
+    "authors": [
+      {
+        "name": "Jiachen Yu",
+        "affiliation": null
+      },
+      {
+        "name": "Yuanzhe Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Wenhan Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Jianing Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Xuzong Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Hepeng Yao",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quench spectroscopy has emerged as a novel and powerful technique for probing the energy spectrum of various quantum phases for quantum systems from out-of-equilibrium dynamics. While its efficacy has been demonstrated in the homogeneous systems theoretically, most experimental setups feature a confining potential, such as a harmonic trap, which complicates the practical implementations. In this work, we experimentally probe the quench spectroscopy for one-dimensional bosons in optical lattices with the presence of a harmonic trap, and comparing our results with the density matrix renormalization group simulation. For the Mott insulator phase, although a gap is still observed, the band signal is broadened along the frequency space and cut at the half Brillouin zone, which can be explained by the excitations under harmonic confinement. Comparing with the superfluid spectrum, we can see a clear distinction between the two phases and find the inverse quench with larger amplitude yields the clearest spectrum. Our work offers pivotal insights into conducting quench spectroscopy effectively in practical systems.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quench spectroscopy of bosons in optical lattices, a topic significantly different from the user's liked papers on superconductivity, nickelates, Dirac fermions, and DMFT solvers.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "quench spectroscopy",
+      "Lieb-Liniger bosons",
+      "harmonic trap"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5724684596061707,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.509110689163208,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.4866306185722351,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07921v1": {
+    "id": "2507.07921v1",
+    "title": "Chiral superconductivity near a fractional Chern insulator",
+    "authors": [
+      {
+        "name": "Taige Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Michael P. Zaletel",
+        "affiliation": null
+      }
+    ],
+    "summary": "Superconductivity arising from fully spin-polarized, repulsively interacting electrons can host intrinsically chiral Cooper pairs and Majorana zero modes, yet no concrete microscopic route to such a state has been established. Motivated by recent observations in twisted MoTe$_2$ and rhombohedral pentalayer graphene, where fractional Chern insulators (FCIs) appear adjacent to spin-valley-polarized superconductors, we investigate a minimal model: spinless electrons in the lowest Landau level subject to a tunable moire potential. Large-scale density-matrix renormalization group (DMRG) calculations show that, as the FCI gap closes, two nearly degenerate phases emerge before a metallic state forms. A chiral $f+if$ superconductor and a commensurate $\\sqrt{3} \\times \\sqrt{3}$ charge-density wave (CDW) differ in energy by less than $1\\%$, reproducing the distinct superconducting and re-entrant integer quantum Hall (RIQH) phases experimentally observed near the FCI regime. The superconducting dome remains robust against realistic Coulomb screening, light doping, and variations in lattice geometry. Melting the FCI therefore provides a new mechanism for realizing spin-polarized chiral superconductivity and RIQH order. We predict that twisted MoTe$_2$ at larger twist angles will develop a superconducting dome even at filling $\\nu = 2/3$, and suppressing this superconductivity with a magnetic field should drive the system into an RIQH state.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses superconductivity and topological phases, aligning with the user's interest in superconductivity, topological materials, and related electronic properties.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "chiral superconductivity",
+      "fractional Chern insulator",
+      "moire potential"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6075450778007507,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.603026807308197,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5889764428138733,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07500v1": {
+    "id": "2507.07500v1",
+    "title": "Pseudogap in a crystalline insulator doped by disordered metals",
+    "authors": [
+      {
+        "name": "Sae Hee Ryu",
+        "affiliation": null
+      },
+      {
+        "name": "Minjae Huh",
+        "affiliation": null
+      },
+      {
+        "name": "Do Yun Park",
+        "affiliation": null
+      },
+      {
+        "name": "Chris Jozwiak",
+        "affiliation": null
+      },
+      {
+        "name": "Eli Rotenberg",
+        "affiliation": null
+      },
+      {
+        "name": "Aaron Bostwick",
+        "affiliation": null
+      },
+      {
+        "name": "Keun Su Kim",
+        "affiliation": null
+      }
+    ],
+    "summary": "A key to understand how electrons behave in crystalline solids is the band structure that connects the energy of electron waves to their wavenumber (k). Even in the phase of matter with only short-range order (liquid or amorphous solid), the coherent part of electron waves still possesses a band structure. Theoretical models for the band structure of liquid metals were formulated more than 5 decades ago, but thus far, bandstructure renormalization and pseudogap induced by resonance scattering have remained unobserved. Here, we report the observation of this unusual band structure at the interface of a crystalline insulator (black phosphorus) and disordered dopants (alkali metals). We find that a conventional parabolic band structure of free electrons bends back towards zero k with the pseudogap of 30-240 meV from the Fermi level. This is k renormalization caused by resonance scattering that leads to the formation of quasi-bound states in the scattering potential of alkali-metal ions. The depth of this potential tuned by different kinds of alkali metal (Na, K, Rb, and Cs) allows to classify the pseudogap of p-wave and d-wave resonance. Our results may provide a clue to the puzzling spectrum of various crystalline insulators doped by disordered dopants, such as the waterfall dispersion in cuprates.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.supr-con"
+    ],
+    "doi": "10.1038/s41586-021-03683-0",
+    "score": 0.6,
+    "reasoning": "The paper discusses pseudogaps and band structure renormalization, which are phenomena relevant to understanding the electronic structure of complex materials, similar to the user's interest in correlated electron systems and superconductivity.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "Pseudogap",
+      "Band structure renormalization",
+      "Resonance scattering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5515748858451843,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.5402653217315674,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.5214706659317017,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07409v1": {
+    "id": "2507.07409v1",
+    "title": "Observation of superconductivity-induced leading-edge gap in Sr-doped $\\mathrm{La}_{3}\\mathrm{Ni}_{2}\\mathrm{O}_{7}$ thin films",
+    "authors": [
+      {
+        "name": "Wenjie Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Zhicheng Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Hao",
+        "affiliation": null
+      },
+      {
+        "name": "Shengjun Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Hongyi Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Maosen Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Haoying Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengtai Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Dianxiang Ji",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengbin Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Jian Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Dawei Shen",
+        "affiliation": null
+      },
+      {
+        "name": "Donglai Feng",
+        "affiliation": null
+      },
+      {
+        "name": "Yuefeng Nie",
+        "affiliation": null
+      }
+    ],
+    "summary": "The discovery of high-temperature superconductivity in pressurized bulk $\\mathrm{La}_{3}\\mathrm{Ni}_{2}\\mathrm{O}_{7}$ has ignited significant interest in nickelate superconductors. Unlike cuprates, where superconductivity predominantly originates from the $\\mathrm{3}d_{x^2-y^2}$ orbital, nickelates exhibit additional complexities involving contributions from the $\\mathrm{3}d_{z^2}$ orbital, prompting fundamental questions about their pairing mechanisms. Despite recent progress in stabilizing superconductivity in $\\mathrm{La}_{3}\\mathrm{Ni}_{2}\\mathrm{O}_{7}$ thin films at ambient pressure, direct spectroscopic evidence of the superconducting gap opening remains elusive. Here, we present an in-situ angle-resolved photoemission spectroscopy study of Sr-doped superconducting $\\mathrm{La}_{3}\\mathrm{Ni}_{2}\\mathrm{O}_{7}$ thin films. Fermi surface mapping reveals Ni-$\\mathrm{3}d_{x^2-y^2}$-derived $\\alpha$ and $\\beta$ pockets, with orbital fillings of 0.11$\\pm$0.02 electrons and 0.66$\\pm$0.03 holes per Ni, respectively, resulting in a total of 0.45$\\pm$0.04 electrons for each Ni. These bands exhibit moderate electron correlations, characterized by a band renormalization factor of 3-4. Notably, both $\\alpha$ and $\\beta$ bands exhibit leading-edge shifts across the superconducting transition, with gap magnitude of ~1-2 meV at Fermi momenta along the Brillouin zone diagonal and slightly away from the zone diagonal, deviating from the conventional $d_{x^2-y^2}$-wave gap structure. Additionally, the Ni-$\\mathrm{3}d_{z^2}$-derived $\\gamma$ band lies ~75 meV below the Fermi level, indicating a $\\mathrm{3}d_{x^2-y^2}$-dominated fermiology in this compound.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper is highly relevant as it focuses on superconductivity in nickelates, specifically La3Ni2O7, which aligns with the user's interest in nickelate superconductors and related electronic properties.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "nickelate superconductivity",
+      "angle-resolved photoemission spectroscopy",
+      "leading-edge gap"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.8540602326393127,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.7402738332748413,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      },
+      {
+        "score": 0.7258531451225281,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07161v1": {
+    "id": "2507.07161v1",
+    "title": "Majorana edge reconstruction and the $\u03bd=5/2$ non-Abelian thermal Hall puzzle",
+    "authors": [
+      {
+        "name": "Tev\u017e Lotri\u010d",
+        "affiliation": null
+      },
+      {
+        "name": "Taige Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Michael P. Zaletel",
+        "affiliation": null
+      },
+      {
+        "name": "Steven H. Simon",
+        "affiliation": null
+      },
+      {
+        "name": "S. A. Parameswaran",
+        "affiliation": null
+      }
+    ],
+    "summary": "Pioneering thermal transport measurements on two-dimensional electron gases in high magnetic fields have demonstrated that the quantized Hall state at filling factor $\\nu=5/2$ has a thermal Hall conductance $\\kappa$ quantized in half-integer multiples of $\\kappa_0 = {\\pi^2 k_B^2 T}/{3h}$. Half-integer $\\kappa/\\kappa_0$ is a signature of neutral Majorana edge modes, in turn linked to the presence of non-Abelian anyon excitations in the bulk. However, the experimentally observed value of $\\kappa$ corresponds to the 'PH-Pfaffian' state, in tension with numerical studies which instead favor either the Pfaffian or the AntiPfaffian. A variety of mechanisms have been invoked to explain this discrepancy, but have been either ruled out by further experiments or else involve fine-tuning. Building on density-matrix-renormalization group studies of physically realistic edges and analytic calculations of edge structure, we propose an alternative resolution of this puzzle involving an 'edge reconstruction' solely involving the neutral Majorana sector of the theory. Such a Majorana edge reconstruction can \"screen'' a Pfaffian or AntiPfaffian bulk, so that transport signatures become indistinguishable from those of the PH-Pfaffian. We argue that this physically natural scenario is consistent with experiment.",
+    "published_date": "2025-07-09",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on fractional quantum Hall effect and Majorana edge modes, which are distinct from the user's interest in superconductivity, nickelates, and topological semimetals.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Majorana edge modes",
+      "fractional quantum Hall effect",
+      "edge reconstruction"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4972807466983795,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.46127068996429443,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.4515317380428314,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.07178v1": {
+    "id": "2507.07178v1",
+    "title": "Triplet Exciton-driven Topological Mott insulator at Finite Temperature",
+    "authors": [
+      {
+        "name": "Peizhi Mai",
+        "affiliation": null
+      }
+    ],
+    "summary": "Motivated by experiments in which the quantum anomalous Hall (QAH) charge gap greatly exceeds the Curie temperature, we apply determinantal quantum Monte Carlo to two complementary lattice models with different geometries: the checkerboard quantum-spin-Hall-Hubbard model and the generalized Kane-Mele-Hubbard model. In both cases an incompressible QAH phase with total Chern number $C=\\pm 1$ emerges at quarter filling well above the Curie temperature. Each spin channel carries its own nonquantized Chern number while remaining only partly filled, revealing a topological Mott insulator where Mottness opens the charge gap before magnetic order appears. Charge excitations bind triplet excitons that suppress net magnetization, a many-body dynamical effect absent in mean-field theory. The concurrence of these results on two very different models shows that coupling Mottness with band topology generically yields a high-temperature QAH insulator whose charge excitations are dressed by triplet excitons.",
+    "published_date": "2025-07-09",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological phases and Mott insulators, which have some overlap with previous interests in topological materials and correlated electron systems like nickelates and cuprates.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Topological Mott Insulator",
+      "Triplet Excitons",
+      "Quantum Anomalous Hall"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6088557243347168,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.5598479509353638,
+        "liked_paper_id": "2506.16362v1"
+      },
+      {
+        "score": 0.5580189824104309,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07926v1": {
+    "id": "2507.07926v1",
+    "title": "Phase Stability and Transformations in Lead Mixed Halide Perovskites from Machine Learning Force Fields",
+    "authors": [
+      {
+        "name": "Xia Liang",
+        "affiliation": null
+      },
+      {
+        "name": "Johan Klarbring",
+        "affiliation": null
+      },
+      {
+        "name": "Aron Walsh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Lead halide perovskites (APbX$_3$) offer tunable optoelectronic properties but feature an intricate phase-stability landscape. Here we employ on-the-fly data collection and an equivariant message-passing neural-network potential to perform large-scale molecular dynamics of three prototypical perovskite systems: CsPbX$_3$, MAPbX$_3$, and FAPbX$_3$. Integrating these simulations with the PDynA analysis toolkit, we resolve both equilibrium phase diagrams and dynamic structural evolution under varying temperature and halide-mixing conditions. Our findings reveal that the A-site cation strongly modulates octahedral tilt modes and phase pathways: MA$^+$ effectively \"forbids\" the beta-to-gamma transition in MAPbX$_3$ by requiring extensive molecular rearrangements and crystal rotation, whereas the debated low-temperature phase in FAPbX$_3$ is best represented as an Im$\\bar{3}$ cubic phase with $a^+a^+a^+$ tilts. Additionally, small changes in halide composition and arrangement $\\unicode{x2013}$ from uniform mixing to partial segregation $\\unicode{x2013}$ alter tilt correlations. Segregated domains can even foster anomalous tilting modes that impede uniform phase transformations. These results highlight the multi-scale interplay between cation environment and halide distribution, offering a rational basis for tuning perovskite architectures toward improved phase stability.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses phase stability in lead halide perovskites, which is a different topic than the user's liked papers on superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Lead halide perovskites",
+      "Phase stability",
+      "Machine learning force fields"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5054623484611511,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4735219180583954,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4644164443016052,
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.07648v1": {
+    "id": "2507.07648v1",
+    "title": "Summing Real Time Feynman Paths of Lattice Polaron with Matrix Product States",
+    "authors": [
+      {
+        "name": "Qi Gao",
+        "affiliation": null
+      },
+      {
+        "name": "Yuan Wan",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study numerically the real time dynamics of lattice polarons by combining the Feynman path integral and the matrix product state (MPS) approach. By constructing and solving a flow equation, we show that the integrand, viewed as a multivariable function of polaron world line parameters, can be compressed as a low bond dimension MPS, thereby allowing for efficient evaluation of various dynamical observables. We establish the effectiveness of our method by benchmarking the calculated polaron spectral function in one dimension against available results. We further demonstrate its potential by presenting the polaron spectral function in two dimensions and simulating polaron diffusion in both one and two dimensions.",
+    "published_date": "2025-07-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in correlated electron systems, this paper focuses on a specific numerical method (MPS) applied to lattice polarons, which is a more specialized topic than the user's general interest in superconductivity and related materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Lattice polaron",
+      "Matrix product states",
+      "Feynman path integral"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5019984245300293,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4821853041648865,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.46909934282302856,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.02644v2": {
+    "id": "2507.02644v2",
+    "title": "Solving the Hubbard model with Neural Quantum States",
+    "authors": [
+      {
+        "name": "Yuntian Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Wenrui Li",
+        "affiliation": null
+      },
+      {
+        "name": "Heng Lin",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Zhan",
+        "affiliation": null
+      },
+      {
+        "name": "Ruichen Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yifei Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Di He",
+        "affiliation": null
+      },
+      {
+        "name": "Yantao Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Tao Xiang",
+        "affiliation": null
+      },
+      {
+        "name": "Mingpu Qin",
+        "affiliation": null
+      },
+      {
+        "name": "Liwei Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Dingshun Lv",
+        "affiliation": null
+      }
+    ],
+    "summary": "The rapid development of neural quantum states (NQS) has established it as a promising framework for studying quantum many-body systems. In this work, by leveraging the cutting-edge transformer-based architectures and developing highly efficient optimization algorithms, we achieve the state-of-the-art results for the doped two-dimensional (2D) Hubbard model, arguably the minimum model for high-Tc superconductivity. Interestingly, we find different attention heads in the NQS ansatz can directly encode correlations at different scales, making it capable of capturing long-range correlations and entanglements in strongly correlated systems. With these advances, we establish the half-filled stripe in the ground state of 2D Hubbard model with the next nearest neighboring hoppings, consistent with experimental observations in cuprates. Our work establishes NQS as a powerful tool for solving challenging many-fermions systems.",
+    "published_date": "2025-07-03",
+    "categories": [
+      "cond-mat.str-el",
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "The paper focuses on solving the Hubbard model, a key model in understanding high-Tc superconductivity and strongly correlated systems, which aligns with the user's interest in cuprates and related electronic structure topics.",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model",
+      "neural quantum state"
+    ],
+    "suggested_keywords": [
+      "Neural Quantum States",
+      "Hubbard model",
+      "transformer-based architectures"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6693018674850464,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.6158493161201477,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.6133992075920105,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
