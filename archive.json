@@ -15261,5 +15261,440 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2507.12430v1": {
+    "id": "2507.12430v1",
+    "title": "Electron-phonon-dominated charge-density-wave fluctuations in TiSe$_2$ accessed by ultrafast nonequilibrium dynamics",
+    "authors": [
+      {
+        "name": "Sotirios Fragkos",
+        "affiliation": null
+      },
+      {
+        "name": "Hibiki Orio",
+        "affiliation": null
+      },
+      {
+        "name": "Nina Girotto Erhardt",
+        "affiliation": null
+      },
+      {
+        "name": "Akib Jabed",
+        "affiliation": null
+      },
+      {
+        "name": "Sarath Sasi",
+        "affiliation": null
+      },
+      {
+        "name": "Quentin Courtade",
+        "affiliation": null
+      },
+      {
+        "name": "Muthu P. T. Masilamani",
+        "affiliation": null
+      },
+      {
+        "name": "Maximilian \u00dcnzelmann",
+        "affiliation": null
+      },
+      {
+        "name": "Florian Diekmann",
+        "affiliation": null
+      },
+      {
+        "name": "Baptiste Hildebrand",
+        "affiliation": null
+      },
+      {
+        "name": "Dominique Descamps",
+        "affiliation": null
+      },
+      {
+        "name": "St\u00e9phane Petit",
+        "affiliation": null
+      },
+      {
+        "name": "Fabio Boschini",
+        "affiliation": null
+      },
+      {
+        "name": "J\u00e1n Min\u00e1r",
+        "affiliation": null
+      },
+      {
+        "name": "Yann Mairesse",
+        "affiliation": null
+      },
+      {
+        "name": "Friedrich Reinert",
+        "affiliation": null
+      },
+      {
+        "name": "Kai Rossnagel",
+        "affiliation": null
+      },
+      {
+        "name": "Dino Novko",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel Beaulieu",
+        "affiliation": null
+      },
+      {
+        "name": "Jakub Schusser",
+        "affiliation": null
+      }
+    ],
+    "summary": "1T-TiSe$_2$ exhibits a charge-density-wave (CDW) transition below 200 K, which is believed to be driven by a hybrid exciton-phonon mechanism, making it a versatile platform for investigating the interplay between electronic and lattice degrees of freedom. Although the corresponding band structure modifications below the CDW transition temperature are well established, only a few reports discuss the occurrence of the CDW fluctuating phase and its spectral features well above the transition temperature. Here, we report the direct observation of spectral features associated with CDW fluctuations at 295 K, using time-resolved extreme ultraviolet momentum microscopy. We investigated the transient melting and recovery of CDW fluctuations upon nonresonant ultrafast photoexcitation. Surprisingly, our results reveal that the coherent amplitude mode modulating the ultrafast CDW recovery persists at these elevated temperatures. The time-, energy- and momentum-resolved photoemission data supported by density functional perturbation theory further confirm that CDW fluctuations at these elevated temperatures are dominated by electron-phonon interaction. The analysis of these very localized microscopic fluctuations consequently provides new insights into the complex interplay between the electronic and lattice degrees of freedom at elevated temperatures and, therefore, on the nature of this quantum phase transition.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses charge density waves and electron-phonon interactions, relating to the user's interest in charge correlations, electronic structure, and quantum phase transitions.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "charge-density-wave fluctuations",
+      "ultrafast nonequilibrium dynamics",
+      "electron-phonon interaction"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5690640211105347,
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C"
+      },
+      {
+        "score": 0.5513518452644348,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.5353817939758301,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12404v1": {
+    "id": "2507.12404v1",
+    "title": "Neural Network-Guided Symbolic Regression for Interpretable Descriptor Discovery in Perovskite Catalysts",
+    "authors": [
+      {
+        "name": "Yeming Xian",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaoming Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yanfa Yan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding and predicting the activity of oxide perovskite catalysts for the oxygen evolution reaction (OER) requires descriptors that are both accurate and physically interpretable. While symbolic regression (SR) offers a path to discover such formulas, its performance degrades with high-dimensional inputs and small datasets. We present a two-phase framework that combines neural networks (NN), feature importance analysis, and symbolic regression (SR) to discover interpretable descriptors for OER activity in oxide perovskites. In Phase I, using a small dataset and seven structural features, we reproduce and improve the known {\\mu}/t descriptor by engineering composite features and applying symbolic regression, achieving training and validation MAEs of 22.8 and 20.8 meV, respectively. In Phase II, we expand to 164 features, reduce dimensionality, and identify LUMO energy as a key electronic descriptor. A final formula using {\\mu}/t, {\\mu}/RA, and LUMO energy achieves improved accuracy (training and validation MAEs of 22.1 and 20.6 meV) with strong physical interpretability. Our results demonstrate that NN-guided symbolic regression enables accurate, interpretable, and physically meaningful descriptor discovery in data-scarce regimes, indicating interpretability need not sacrifice accuracy for materials informatics.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "physics.data-an",
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in superconductivity and oxides, this paper focuses on catalyst discovery using neural networks, which is only weakly related.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Symbolic regression",
+      "Perovskite catalysts",
+      "Materials informatics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.41173315048217773,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.39850661158561707,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3476337194442749,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12437v1": {
+    "id": "2507.12437v1",
+    "title": "Ground and excited-state properties of the extended Hubbard dimer from the multichannel Dyson equation",
+    "authors": [
+      {
+        "name": "Stefano Paggi",
+        "affiliation": null
+      },
+      {
+        "name": "J. Arjan Berger",
+        "affiliation": null
+      },
+      {
+        "name": "Pina Romaniello",
+        "affiliation": null
+      }
+    ],
+    "summary": "We have recently presented the multichannel Dyson equation as an alternative to the standard single-channel Dyson equation. While the latter involves a single many-body Green's function, the former uses a multichannel Green's function in which two or more many-body Green's functions are coupled. Quasiparticles and satellites are thus naturally treated on equal footing in the multichannel Dyson equation. To assess the accuracy of our approach we apply it here to the ground- and excited-state properties of the extended Hubbard dimer, an exactly solvable model for $H_2$. In particular, we focus on the potential energy surface as well as the corresponding spectral functions and HOMO-LUMO gaps, which are well-known challenges for many-body approximations such as second Born and $GW$. We show that the multichannel Dyson equation gives overall very good results for all properties considered and outperforms both $GW$ and second Born. In particular, the multichannel Dyson equation yields the correct ground-state energy and HOMO-LUMO gap in the dissociation limit contrary to $GW$.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the extended Hubbard model and many-body Green's functions, which are related to the theoretical methods used in some of the user's liked papers.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "multichannel Dyson equation",
+      "extended Hubbard dimer",
+      "HOMO-LUMO gap"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5779750943183899,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.5474892258644104,
+        "liked_paper_id": "2507.01280v1"
+      },
+      {
+        "score": 0.5441389083862305,
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.11806v1": {
+    "id": "2507.11806v1",
+    "title": "MOFSimBench: Evaluating Universal Machine Learning Interatomic Potentials In Metal--Organic Framework Molecular Modeling",
+    "authors": [
+      {
+        "name": "Hendrik Kra\u00df",
+        "affiliation": null
+      },
+      {
+        "name": "Ju Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Seyed Mohamad Moosavi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Universal machine learning interatomic potentials (uMLIPs) have emerged as powerful tools for accelerating atomistic simulations, offering scalable and efficient modeling with accuracy close to quantum calculations. However, their reliability and effectiveness in practical, real-world applications remain an open question. Metal-organic frameworks (MOFs) and related nanoporous materials are highly porous crystals with critical relevance in carbon capture, energy storage, and catalysis applications. Modeling nanoporous materials presents distinct challenges for uMLIPs due to their diverse chemistry, structural complexity, including porosity and coordination bonds, and the absence from existing training datasets. Here, we introduce MOFSimBench, a benchmark to evaluate uMLIPs on key materials modeling tasks for nanoporous materials, including structural optimization, molecular dynamics (MD) stability, the prediction of bulk properties, such as bulk modulus and heat capacity, and guest-host interactions. Evaluating over 20 models from various architectures on a chemically and structurally diverse materials set, we find that top-performing uMLIPs consistently outperform classical force fields and fine-tuned machine learning potentials across all tasks, demonstrating their readiness for deployment in nanoporous materials modeling. Our analysis highlights that data quality, particularly the diversity of training sets and inclusion of out-of-equilibrium conformations, plays a more critical role than model architecture in determining performance across all evaluated uMLIPs. We release our modular and extendable benchmarking framework at https://github.com/AI4ChemS/mofsim-bench, providing an open resource to guide the adoption for nanoporous materials modeling and further development of uMLIPs.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on metal-organic frameworks and machine learning potentials, which are distinct from the user's interest in superconductivity and related electronic properties of materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Metal-organic frameworks",
+      "Machine learning interatomic potentials",
+      "Nanoporous materials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4578191041946411,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.43616983294487,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.35670316219329834,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12349v1": {
+    "id": "2507.12349v1",
+    "title": "Combinatorial Summation of Feynman Diagrams (CoS): Several Extensions",
+    "authors": [
+      {
+        "name": "Boyuan Shi",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present several generalizations of the recently proposed combinatorial summation of Feynman diagrams with more interaction vertices and symmetry-broken cases. For $m$ interaction vertices, we reduce the exponential base in complexity from $3m$ to $m+2$. The generalizations encompass many models of significant physical interest, including the SU(4) Hubbard model on a honeycomb lattice, spinless fermions with frustrated interactions, SU(2) Hubbard model on Kagome lattices, \\textit{etc}.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el",
+      "math.CO"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a theoretical method (combinatorial summation of Feynman diagrams) with no clear connection to the user's liked papers on superconductivity and nickelates.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Feynman diagrams",
+      "Combinatorial summation",
+      "Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49109387397766113,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4777849018573761,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.45792388916015625,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.11820v1": {
+    "id": "2507.11820v1",
+    "title": "Fractal Path Strategies for Efficient 2D DMRG Simulations",
+    "authors": [
+      {
+        "name": "Oliver R. Bellwood",
+        "affiliation": null
+      },
+      {
+        "name": "Heitor P. Casagrande",
+        "affiliation": null
+      },
+      {
+        "name": "William J. Munro",
+        "affiliation": null
+      }
+    ],
+    "summary": "Numerical simulations of quantum magnetism in two spatial dimensions are often constrained by the area law of entanglement entropy, which heavily limits the accessible system sizes in tensor network methods. In this work, we investigate how the choice of mapping from a two-dimensional lattice to a one-dimensional path affects the accuracy of the two-dimensional Density Matrix Renormalization Group algorithm. We systematically evaluate all mappings corresponding to a subset of the Hamiltonian paths of the $N \\cross N$ grid graphs up to $N=8$ and demonstrate that the fractal space-filling curves generally lead to faster convergence in ground state searches compared to the commonly used ``snake\" path. To explain this performance gain, we analyze various locality metrics and propose a scalable method for constructing high-performing paths on larger lattices by tiling smaller optimal paths. Our results show that such paths consistently improve simulation convergence, with the advantage increasing with system size.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in condensed matter physics and superconductivity, this paper focuses on numerical methods (DMRG) and simulation techniques, making it less directly relevant to their prior interests.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "DMRG",
+      "Tensor Networks",
+      "Fractal space-filling curves"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5797730684280396,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.5319119691848755,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5207787156105042,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.11627v1": {
+    "id": "2507.11627v1",
+    "title": "Dynamic competition between phason and amplitudon observed by ultrafast multimodal scanning tunneling microscopy",
+    "authors": [
+      {
+        "name": "Seokjin Bae",
+        "affiliation": null
+      },
+      {
+        "name": "Arjun Raghavan",
+        "affiliation": null
+      },
+      {
+        "name": "Kejian Qu",
+        "affiliation": null
+      },
+      {
+        "name": "Chengxi Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel P. Shoemaker",
+        "affiliation": null
+      },
+      {
+        "name": "Fahad Mahmood",
+        "affiliation": null
+      },
+      {
+        "name": "Ziqiang Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Barry Bradlyn",
+        "affiliation": null
+      },
+      {
+        "name": "Vidya Madhavan",
+        "affiliation": null
+      }
+    ],
+    "summary": "The intertwining between two ordered states that arise from the same interactions is reflected in the dynamics of their coupled collective excitations. While the equilibrium phase diagram resulting from such intertwined orders has been extensively studied, the dynamic competition between non-equilibrium modes is a largely unexplored territory. Here, we introduce a novel multimodal STM-based pump-probe technique, which enables the measurement of time-resolved tunneling (trSTM), time-resolved point-contact (trPC), and optical pump-probe reflectance (OPPR) on femtosecond timescales-all within a single instrument. We apply these techniques to investigate the collective excitations of the unconventional charge density wave insulator (TaSe4)2I. Our trSTM and trPC measurements reveal charge oscillations at 0.22 THz, with a temperature dependence that matches the theoretically predicted behavior of the long-sought massive phason gaining mass through the Higgs mechanism. Unexpectedly, the data also reveals a second mode at 0.11 THz exhibiting similar temperature and polarization dependence with comparable mode intensity. These features, along with the robust 1/2 frequency ratio locking suggest that the 0.11 THz phason is a 'daughter mode' that arises from the splitting of the 0.22 THz massive phason into two massless phasons via parametric amplification-analogous to the decay of a neutral pion into two photons. Strikingly, comparison with OPPR data reveals that the daughter phason competes with and suppresses the amplitudon at the same frequency. Our studies reveal an unexplored mechanism for the generation and extinction of collective excitations and pave the way for a microscopic understanding of ultrafast phenomena.",
+    "published_date": "2025-07-15",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in unconventional superconductivity and correlated electron systems, this paper focuses on the dynamics of charge density waves and their collective excitations in (TaSe4)2I, which is a different, though related, phenomenon.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "charge density wave dynamics",
+      "phason-amplitudon competition",
+      "ultrafast scanning tunneling microscopy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4842461943626404,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.46100908517837524,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      },
+      {
+        "score": 0.44646722078323364,
+        "liked_paper_id": "2506.16068v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
