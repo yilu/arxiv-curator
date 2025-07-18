@@ -15620,7 +15620,9 @@
         "liked_paper_id": "2506.11227v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.11627v1": {
     "id": "2507.11627v1",
@@ -15696,5 +15698,681 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2507.12722v1": {
+    "id": "2507.12722v1",
+    "title": "Scalable tensor network algorithm for quantum impurity problems",
+    "authors": [
+      {
+        "name": "Zhijie Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Ruofan Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zhenyu Li",
+        "affiliation": null
+      },
+      {
+        "name": "Chu Guo",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Grassmann time-evolving matrix product operator method has shown great potential as a general-purpose quantum impurity solver, as its numerical errors can be well-controlled and it is flexible to be applied on both the imaginary- and real-time axis. However, a major limitation of it is that its computational cost grows exponentially with the number of impurity flavors. In this work, we propose a multi-flavor extension of it to overcome this limitation. The key insight is that to calculate multi-time correlation functions on one or a few impurity flavors, one could integrate out the degrees of freedom of the rest flavors before hand, which could greatly simplify the calculation. The idea is particularly effective for quantum impurity problems with diagonal hybridization function, i.e., each impurity flavor is coupled to an independent bath, a setting which is commonly used in the field. We demonstrate the accuracy and scalability of our method for the imaginary time evolution of impurity problems with up to three impurity orbitals, i.e., 6 flavors, and benchmark our results against continuous-time quantum Monte Carlo calculations. Our method paves the way of scaling up tensor network algorithms to solve large-scale quantum impurity problems.",
+    "published_date": "2025-07-17",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum impurity solvers, which are relevant to dynamical mean-field theory, a topic previously liked by the user.",
+    "matching_keywords": [
+      "quantum monte carlo",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tensor network algorithm",
+      "quantum impurity problem",
+      "Grassmann time-evolving matrix product operator"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6298743486404419,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.6187480688095093,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.6105787754058838,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.13246v1": {
+    "id": "2507.13246v1",
+    "title": "The carbon cost of materials discovery: Can machine learning really accelerate the discovery of new photovoltaics?",
+    "authors": [
+      {
+        "name": "Matthew Walker",
+        "affiliation": null
+      },
+      {
+        "name": "Keith T. Butler",
+        "affiliation": null
+      }
+    ],
+    "summary": "Computational screening has become a powerful complement to experimental efforts in the discovery of high-performance photovoltaic (PV) materials. Most workflows rely on density functional theory (DFT) to estimate electronic and optical properties relevant to solar energy conversion. Although more efficient than laboratory-based methods, DFT calculations still entail substantial computational and environmental costs. Machine learning (ML) models have recently gained attention as surrogates for DFT, offering drastic reductions in resource use with competitive predictive performance. In this study, we reproduce a canonical DFT-based workflow to estimate the maximum efficiency limit and progressively replace its components with ML surrogates. By quantifying the CO$_2$ emissions associated with each computational strategy, we evaluate the trade-offs between predictive efficacy and environmental cost. Our results reveal multiple hybrid ML/DFT strategies that optimize different points along the accuracy--emissions front. We find that direct prediction of scalar quantities, such as maximum efficiency, is significantly more tractable than using predicted absorption spectra as an intermediate step. Interestingly, ML models trained on DFT data can outperform DFT workflows using alternative exchange--correlation functionals in screening applications, highlighting the consistency and utility of data-driven approaches. We also assess strategies to improve ML-driven screening through expanded datasets and improved model architectures tailored to PV-relevant features. This work provides a quantitative framework for building low-emission, high-throughput discovery pipelines.",
+    "published_date": "2025-07-17",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in materials discovery, this paper focuses on the computational and environmental costs of materials discovery using machine learning and DFT, which is a different focus than the user's previous interests in novel materials and electronic properties.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "carbon footprint",
+      "machine learning",
+      "photovoltaics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4063442349433899,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3812999129295349,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.35924068093299866,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12525v1": {
+    "id": "2507.12525v1",
+    "title": "Higher Structures on Boundary Conformal Manifolds: Higher Berry Phase and Boundary Conformal Field Theory",
+    "authors": [
+      {
+        "name": "Yichul Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Hyunsoo Ha",
+        "affiliation": null
+      },
+      {
+        "name": "Dongyeob Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Yuya Kusuki",
+        "affiliation": null
+      },
+      {
+        "name": "Shuhei Ohyama",
+        "affiliation": null
+      },
+      {
+        "name": "Shinsei Ryu",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce the notion of higher Berry connection and curvature in the space of conformal boundary conditions in (1+1)d conformal field theories (CFT), related to each other by exactly marginal boundary deformations, forming a \"boundary conformal manifold.\" Our definition builds upon previous works on tensor networks, such as matrix product states (MPS), where the triple inner product or multi-wavefunction overlap plays the key geometric role. On the one hand, our boundary conformal field theory (BCFT) formulation of higher Berry phase provides a new analytic tool to study families of invertible phases in condensed matter systems. On the other hand, it uncovers a new geometric structure on the moduli space of conformal boundary conditions, beyond the usual Riemannian structure defined through the Zamolodchikov metric. When the boundary conformal manifold has an interpretation as the position moduli space of a D-brane, our higher Berry connection coincides with the NS-NS $B$-field in string theory. The general definition does not require such an interpretation and is formulated purely field-theoretically, in terms of correlation functions of boundary-condition-changing (bcc) operators. We also explore a connection between higher Berry connections and functional Berry connections in the loop spaces of boundary conformal manifolds.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on theoretical aspects of conformal field theories and string theory, which is a departure from the user's interests in condensed matter experiments and materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Boundary Conformal Field Theory",
+      "Higher Berry Phase",
+      "Boundary Conformal Manifold"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5224106907844543,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5202803015708923,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.469391793012619,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.13308v1": {
+    "id": "2507.13308v1",
+    "title": "Simple ways of preparing qudit Dicke states",
+    "authors": [
+      {
+        "name": "Noah B. Kerzner",
+        "affiliation": null
+      },
+      {
+        "name": "Federico Galeazzi",
+        "affiliation": null
+      },
+      {
+        "name": "Rafael I. Nepomechie",
+        "affiliation": null
+      }
+    ],
+    "summary": "Dicke states are permutation-invariant superpositions of qubit computational basis states, which play a prominent role in quantum information science. We consider here two higher-dimensional generalizations of these states: $SU(2)$ spin-$s$ Dicke states and $SU(d)$ Dicke states. We present various ways of preparing both types of qudit Dicke states on a qudit quantum computer, using two main approaches: a deterministic approach, based on exact canonical matrix product state representations; and a probabilistic approach, based on quantum phase estimation. The quantum circuits are explicit and straightforward, and are arguably simpler than those previously reported.",
+    "published_date": "2025-07-17",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum information and qudit states, a departure from the user's interest in condensed matter physics, superconductivity, and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "qudit Dicke states",
+      "quantum phase estimation",
+      "qudit quantum computer"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5522463917732239,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.53904789686203,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5183770060539246,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.12013v1": {
+    "id": "2507.12013v1",
+    "title": "QAS-QTNs: Curriculum Reinforcement Learning-Driven Quantum Architecture Search for Quantum Tensor Networks",
+    "authors": [
+      {
+        "name": "Siddhant Dutta",
+        "affiliation": null
+      },
+      {
+        "name": "Nouhaila Innan",
+        "affiliation": null
+      },
+      {
+        "name": "Sadok Ben Yahia",
+        "affiliation": null
+      },
+      {
+        "name": "Muhammad Shafique",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum Architecture Search (QAS) is an emerging field aimed at automating the design of quantum circuits for optimal performance. This paper introduces a novel QAS framework employing hybrid quantum reinforcement learning with quantum curriculum learning strategies, enabling learning agents to tackle increasingly complex quantum circuit design tasks. We benchmark four state-of-the-art classical reinforcement learning algorithms (A2C, PPO, DDQN, TD3) against their quantum-enhanced counterparts (QA2C, QPPO, QDDQN, QTD3) for optimizing variational quantum circuits (VQCs). Our approach progressively increases circuit depth and gate complexity during training, leveraging parameterized quantum circuits as function approximations. To improve learning efficiency and stability, all algorithms, both classical and quantum, are augmented with Prioritized Experience Replay (PER). Experimental results show that quantum-enhanced RL significantly outperforms classical methods. In a 2-qubit environment, PERQDDQN achieves a success probability of 0.46 with ~3,000 optimal successes, surpassing classical PERDDQN (0.42, ~2,400). In the more complex 3-qubit setting, PERQDDQN and PERQTD3 reach success probabilities of ~0.47, with optimal success counts of ~3,800 and ~3,600, respectively, outperforming their classical counterparts. Additionally, we apply our QAS-QTN approach to a classification problem, where the optimized quantum circuit achieves an accuracy of 90.33\\%, outperforming quantum models consisting of random ansatz. This hybrid classical-quantum approach leads to faster convergence and more efficient quantum circuit designs, demonstrating its potential for advancing automated quantum architecture search.",
+    "published_date": "2025-07-16",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in quantum materials, this paper focuses on quantum computing and quantum architecture search, which are distinct fields.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum Architecture Search",
+      "Quantum Reinforcement Learning",
+      "Variational Quantum Circuits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5186165571212769,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4584404230117798,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.45366623997688293,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.13322v1": {
+    "id": "2507.13322v1",
+    "title": "Artificial Intelligence for Quantum Matter: Finding a Needle in a Haystack",
+    "authors": [
+      {
+        "name": "Khachatur Nazaryan",
+        "affiliation": null
+      },
+      {
+        "name": "Filippo Gaggioli",
+        "affiliation": null
+      },
+      {
+        "name": "Yi Teng",
+        "affiliation": null
+      },
+      {
+        "name": "Liang Fu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural networks (NNs) have great potential in solving the ground state of various many-body problems. However, several key challenges remain to be overcome before NNs can tackle problems and system sizes inaccessible with more established tools. Here, we present a general and efficient method for learning the NN representation of an arbitrary many-body complex wave function. Having reached overlaps as large as $99.9\\%$ for as many as $25$ particles, we employ our neural wave function for pre-training to effortlessly solve the fractional quantum Hall problem for $20$ electrons with Coulomb interactions and realistic Landau-level mixing.",
+    "published_date": "2025-07-17",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in superconductivity and oxides, this paper focuses on a computational method (neural networks) for solving quantum many-body problems, which has no direct relationship to the user's known interests.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "neural networks",
+      "many-body problems",
+      "quantum Hall effect"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6041120290756226,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.580846905708313,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5795453786849976,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12565v1": {
+    "id": "2507.12565v1",
+    "title": "Kinetics of Vacancy-Assisted Reversible Phase Transition in Monolayer MoTe$_2$",
+    "authors": [
+      {
+        "name": "Fei Shuang",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Ocampo",
+        "affiliation": null
+      },
+      {
+        "name": "Reza Namakian",
+        "affiliation": null
+      },
+      {
+        "name": "Arman Ghasemi",
+        "affiliation": null
+      },
+      {
+        "name": "Poulumi Dey",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Gao",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the kinetics of phase transition between the 2H and 1T$^\\prime$ phases in monolayer MoTe$_2$ using atomistic simulations based on a machine learning interatomic potential trained on SCAN-DFT data, combined with mean field kinetic theory to interpret the underlying mechanisms. The transition is found to involve both diffusive and diffusionless mechanisms. Nucleation of 1T$^\\prime$ phase is initiated by the coalescence of neighboring Te monovacancies into divacancies, which are found to be mobile and can interact with other Te vacancies to form small triangular 1T$^\\prime$ islands. Growth of these islands proceeds either by incorporating pre-existing vacancies at the phase boundaries or, in their absence, by absorbing divacancies that migrate from the surrounding lattice. Once a critical island size is reached, vacancy-free growth becomes possible although with a higher activation barrier. Upon removal of external stimuli, the system reverts to 2H phase, during which Te vacancies reorganize into three-fold spoke-like vacancy lines at the island center. This reverse process and the subsequent 1T$^\\prime$$\\leftrightarrow$2H reversible transitions are diffusionless, rapid, do not require additional vacancies and can be driven by mild external stimuli. Although our analysis focuses on strain-induced transitions, the kinetic mechanisms are expected to be generalizable to other types of stimuli.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses vacancies and phase transitions in a material (MoTe$_2$), which is relevant to the user's interest in vacancies and materials with interesting electronic properties, though the specific material and focus are different.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "MoTe2",
+      "phase transition kinetics",
+      "vacancy-assisted transition"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.538062572479248,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.44458046555519104,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.42949527502059937,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12554v1": {
+    "id": "2507.12554v1",
+    "title": "Self-learning Monte Carlo Method: A Review",
+    "authors": [
+      {
+        "name": "Gaopei Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Chuang Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zi Yang Meng",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Self-Learning Monte Carlo (SLMC) method is a Monte Carlo approach that has emerged in recent years by integrating concepts from machine learning with conventional Monte Carlo techniques. Designed to accelerate the numerical study of interacting many-body systems, SLMC significantly improves sampling efficiency by constructing an effective model -- via machine learning methods -- based on configurations generated by conventional Monte Carlo methods and then proposes global updates based on the effective model. This enhancement leads to a substantial reduction in autocorrelation time, especially near the critical region, where traditional methods typically suffer from critical slowing down and increased computation complexity. Moreover, SLMC maintains statistical accuracy by implementing a cumulative update scheme that rigorously satisfies the detailed balance condition. And more recent applications have extended the SLMC to convolutional neural networks with applications not only in condensed matter physics but also high-energy physics, quantum chemistry, and quantum simulations. The generic applicability and high computational efficiency make SLMC a powerful and scalable framework for quantum Monte Carlo simulations of strongly correlated electron systems, extending the reach of numerical investigations beyond the limitations of conventional techniques.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "While the paper focuses on a computational method (SLMC), its application to strongly correlated electron systems and quantum simulations aligns with the user's interest in condensed matter physics and materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Self-Learning Monte Carlo",
+      "quantum Monte Carlo simulations",
+      "strongly correlated electron systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6622722744941711,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.5857678055763245,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5796716809272766,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12902v1": {
+    "id": "2507.12902v1",
+    "title": "Robustness of Magic in the quantum Ising chain via Quantum Monte Carlo tomography",
+    "authors": [
+      {
+        "name": "Hari Timsina",
+        "affiliation": null
+      },
+      {
+        "name": "Yi-Ming Ding",
+        "affiliation": null
+      },
+      {
+        "name": "Emanuele Tirrito",
+        "affiliation": null
+      },
+      {
+        "name": "Poetri Sonya Tarabunga",
+        "affiliation": null
+      },
+      {
+        "name": "Bin-Bin Mao",
+        "affiliation": null
+      },
+      {
+        "name": "Mario Collura",
+        "affiliation": null
+      },
+      {
+        "name": "Zheng Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Marcello Dalmonte",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the behavior of magic as a bipartite correlation in the quantum Ising chain across its quantum phase transition, and at finite temperature. In order to quantify the magic of partitions rigorously, we formulate a hybrid scheme that combines stochastic sampling of reduced density matrices via quantum Monte Carlo, with state-of-the-art estimators for the robustness of magic - a {\\it bona fide} measure of magic for mixed states. This allows us to compute the mutual robustness of magic for partitions up to 8 sites, embedded into a much larger system. We show how mutual robustness is directly related to critical behaviors: at the critical point, it displays a power law decay as a function of the distance between partitions, whose exponent is related to the partition size. Once finite temperature is included, mutual magic retains its low temperature value up to an effective critical temperature, whose dependence on size is also algebraic. This suggests that magic, differently from entanglement, does not necessarily undergo a sudden death.",
+    "published_date": "2025-07-17",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum information theory and quantum phase transitions in the Ising chain, which deviates significantly from the user's interest in superconductivity, correlated electron systems, and materials science.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Magic",
+      "Quantum Ising chain",
+      "Quantum Monte Carlo"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4874188303947449,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.461010605096817,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.4535267949104309,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.13288v1": {
+    "id": "2507.13288v1",
+    "title": "Suppression of the charge fluctuations by nonlocal correlations close to the Mott transition",
+    "authors": [
+      {
+        "name": "Irakli Titvinidze",
+        "affiliation": null
+      },
+      {
+        "name": "Julian Stobbe",
+        "affiliation": null
+      },
+      {
+        "name": "Marvin Leusch",
+        "affiliation": null
+      },
+      {
+        "name": "Georg Rohringer",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this paper, we investigate the impact of nonlocal correlations on charge fluctuations in the two-dimensional single-band Hubbard model close to the Mott metal-to-insulator transition. At half-filling and for interaction strengths and temperatures where the system is in the Mott insulating phase, charge fluctuations are strongly suppressed. Under these conditions, dynamical mean-field theory (DMFT) calculations predict a strong enhancement of the charge susceptibility at small (electron or hole) doping. However, these DMFT results include only the effects of purely local correlations despite the importance of nonlocal correlations in two-dimensional systems. We have, hence, carried out dynamical vertex approximation (D$\\Gamma$A) simulations which allow for the inclusion of such nonlocal correlation effects while retaining the local ones of DMFT. Our numerical data show that close to half-filling the large uniform charge susceptibility of DMFT is strongly suppressed by nonlocal fluctuations but gradually increases with (electron) doping. At a certain doping value charge fluctuations become eventually larger in D$\\Gamma$A with respect to DMFT indicating that the absence of nonlocal correlations underestimates the mobility of the charge carriers in this parameter regime. This metallization effect is also reflected in an enhancement of the D$\\Gamma$A kinetic and potential energies and a corresponding reduction of the (absolute value of the) D$\\Gamma$A Matsubara self-energy with respect to DMFT.",
+    "published_date": "2025-07-17",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses Mott transitions and charge fluctuations in the Hubbard model, connecting to the user's interest in correlated electron systems and unconventional superconductivity, particularly in materials like nickelates and cuprates where Mott physics can be relevant.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "dynamical vertex approximation",
+      "nonlocal correlations",
+      "Mott transition"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6538933515548706,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.6179804801940918,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      },
+      {
+        "score": 0.5914839506149292,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.12550v1": {
+    "id": "2507.12550v1",
+    "title": "Learning mixed quantum states in large-scale experiments",
+    "authors": [
+      {
+        "name": "Matteo Votto",
+        "affiliation": null
+      },
+      {
+        "name": "Marko Ljubotina",
+        "affiliation": null
+      },
+      {
+        "name": "C\u00e9cilia Lancien",
+        "affiliation": null
+      },
+      {
+        "name": "J. Ignacio Cirac",
+        "affiliation": null
+      },
+      {
+        "name": "Peter Zoller",
+        "affiliation": null
+      },
+      {
+        "name": "Maksym Serbyn",
+        "affiliation": null
+      },
+      {
+        "name": "Lorenzo Piroli",
+        "affiliation": null
+      },
+      {
+        "name": "Beno\u00eet Vermersch",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present and test a protocol to learn the matrix-product operator (MPO) representation of an experimentally prepared quantum state. The protocol takes as an input classical shadows corresponding to local randomized measurements, and outputs the tensors of a MPO which maximizes a suitably-defined fidelity with the experimental state. The tensor optimization is carried out sequentially, similarly to the well-known density matrix renormalization group algorithm. Our approach is provably efficient under certain technical conditions which are expected to be met in short-range correlated states and in typical noisy experimental settings. Under the same conditions, we also provide an efficient scheme to estimate fidelities between the learned and the experimental states. We experimentally demonstrate our protocol by learning entangled quantum states of up to $N = 96$ qubits in a superconducting quantum processor. Our method upgrades classical shadows to large-scale quantum computation and simulation experiments.",
+    "published_date": "2025-07-16",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in superconductivity and correlated electron systems, this paper focuses on quantum information processing and learning quantum states, making it only tangentially related.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "classical shadows",
+      "matrix-product operator",
+      "superconducting quantum processor"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6019726991653442,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5675559043884277,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5602189898490906,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.12523v1": {
+    "id": "2507.12523v1",
+    "title": "Spacetime duality between sequential and measurement-feedback circuits",
+    "authors": [
+      {
+        "name": "Tsung-Cheng Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Sarang Gopalakrishnan",
+        "affiliation": null
+      },
+      {
+        "name": "Yizhi You",
+        "affiliation": null
+      }
+    ],
+    "summary": "Two prevalent approaches for preparing long-range entangled quantum states are (i) linear-depth sequential unitary (SU) circuits, which apply local unitary gates sequentially, and (ii) constant-depth measurement-feedback (MF) circuits, which employ mid-circuit measurements and conditional feedback based on measurement outcomes. Here, we establish that a broad class of SU and MF circuits are dual to each other under a spacetime rotation. We investigate this spacetime duality in the preparation of various long-range entangled states, including GHZ states, topologically ordered states, and fractal symmetry-breaking states. As an illustration, applying a spacetime rotation to a linear-depth SU circuit that implements a non-invertible Kramers-Wannier duality, originally used to prepare a 1D GHZ state, yields a constant-depth MF circuit that implements a $\\mathbb{Z}_2$ symmetry gauging map, which equivalently prepares the GHZ state. Leveraging this duality, we further propose experimental protocols that require only a constant number of qubits to measure unconventional properties of 1D many-body states. These include (i) measurement of disorder operators, which diagnose the absence of spontaneous symmetry breaking, and (ii) postselection-free detection of measurement-induced long-range order, which emerges in certain symmetry-protected topological phases. We also show that measurement-induced long-range order provides a lower bound for strange correlators, which may be of independent interest.",
+    "published_date": "2025-07-16",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum circuits and entanglement, which is a departure from the user's previous interests in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Spacetime duality",
+      "Measurement-feedback circuits",
+      "Measurement-induced long-range order"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.416288286447525,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.40730375051498413,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4021680951118469,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
