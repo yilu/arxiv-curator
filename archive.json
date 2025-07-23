@@ -16855,7 +16855,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2503.19027v2": {
     "id": "2503.19027v2",
@@ -17176,7 +17178,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.15400v1": {
     "id": "2507.15400v1",
@@ -17435,6 +17439,1064 @@
       {
         "score": 0.5535173416137695,
         "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14128v1": {
+    "id": "2507.14128v1",
+    "title": "Exploring near critical lattice gauge simulators with Rydberg atoms facilities",
+    "authors": [
+      {
+        "name": "Avi Kaufman",
+        "affiliation": null
+      },
+      {
+        "name": "James Corona",
+        "affiliation": null
+      },
+      {
+        "name": "Zane Ozzello",
+        "affiliation": null
+      },
+      {
+        "name": "Blake Senseman",
+        "affiliation": null
+      },
+      {
+        "name": "Muhammad Asaduzzaman",
+        "affiliation": null
+      },
+      {
+        "name": "Yannick Meurice",
+        "affiliation": null
+      }
+    ],
+    "summary": "We motivate the use of a ladder of Rydberg atoms as an analog simulator for a lattice gauge theory version of scalar electrodynamics also called the compact Abelian Higgs model. We demonstrate that by using a few thousand shots from a single copy of the ladder simulator it is possible to estimate the bipartite quantum von Neumann entanglement entropy $S^{vN}_A$. The estimation relies on an optimized filtration of the mutual information associated with the bitstrings obtained from public facilities of configurable Rydberg arrays named Aquila. We discuss the limitations associated with finite sampling, sorting fidelity, adiabatic preparation, ramp-down of the Rabi frequency before measurement, and readout errors. We use cumulative probability distribution to compare Aquila results with high accuracy density matrix renormalization group (DMRG) or exact results. The state preparation appears to be the main source of error. We discuss the large volume behavior of the cumulative probability distribution and show examples where for a finite number of shots, there appears to be some large enough size for which any given state is seen at most once with high probability. We show that the results presented can be extended to multipartite entanglement. We briefly discuss the cost of the calculations for large square arrays in the context of obtaining quantum advantage in the near future.",
+    "published_date": "2025-07-18",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on Rydberg atom-based quantum simulation of lattice gauge theories, which is distant from the user's interest in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Rydberg atoms",
+      "Lattice gauge theory",
+      "Quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5115258097648621,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5078761577606201,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5034884214401245,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14732v1": {
+    "id": "2507.14732v1",
+    "title": "Spiral renormalization group flow and universal entanglement spectrum of the non-Hermitian 5-state Potts model",
+    "authors": [
+      {
+        "name": "Vic Vander Linden",
+        "affiliation": null
+      },
+      {
+        "name": "Boris De Vos",
+        "affiliation": null
+      },
+      {
+        "name": "Kevin Vervoort",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Verstraete",
+        "affiliation": null
+      },
+      {
+        "name": "Atsushi Ueda",
+        "affiliation": null
+      }
+    ],
+    "summary": "The quantum $5$-state Potts model is known to possess a perturbative description using complex conformal field theory (CCFT), the analytic continuation of ``theory space\" to a complex plane. To study the corresponding complex fixed point on the lattice, the model must be deformed by an additional non-Hermitian term due to its complex coefficient $\\lambda$. Although the variational principle breaks down in this case, we demonstrate that tensor network algorithms are still capable of simulating these non-Hermitian theories. We access system sizes up to $L = 28$, which enable the observation of the theoretically predicted spiral flow of the running couplings. Moreover, we reconstruct the full boundary CCFT spectrum through the entanglement Hamiltonian encoded in the ground state. Our work demonstrates how tensor networks are the correct approach to capturing the approximate conformal invariance of weakly first-order phase transitions.",
+    "published_date": "2025-07-19",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "The paper focuses on a non-Hermitian 5-state Potts model and uses tensor networks, which is a different area than the user's previous interests in superconductors and Dirac fermions, although non-Hermitian physics may have some overlap.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "non-Hermitian systems",
+      "tensor networks",
+      "complex conformal field theory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5527050495147705,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.5191231966018677,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5025060772895813,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.15262v1": {
+    "id": "2507.15262v1",
+    "title": "Multipartite Markov Gaps and Entanglement Wedge Multiway Cuts",
+    "authors": [
+      {
+        "name": "Norihiro Iizuka",
+        "affiliation": null
+      },
+      {
+        "name": "Akihiro Miyata",
+        "affiliation": null
+      },
+      {
+        "name": "Mitsuhiro Nishida",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Markov gap, defined as the difference between reflected entropy and mutual information, serves as a diagnostic for quantum recoverability and multipartite entanglement. In holographic settings, it admits a geometric interpretation as the deviation between entanglement wedge cross-sections and RT surfaces. Motivated by this holographic perspective, we propose a generalization of the Markov gap to multipartite systems by using a reflected multi-entropy. The resulting Multipartite Markov gap can capture geometric obstructions to bulk reconstruction. We investigate the properties of this quantity from both information-theoretic and holographic viewpoints, and examine its potential operational significance through candidate recovery maps. We further introduce the genuine reflected multi-entropy, which is designed to vanish for states containing only lower-partite entanglement. Together, these quantities offer complementary probes of recoverability and multipartite structure in holographic quantum systems.",
+    "published_date": "2025-07-21",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on theoretical quantum information theory and holographic entanglement, which is a significant departure from the user's interest in condensed matter physics, superconductivity, and material science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Multipartite entanglement",
+      "Markov gap",
+      "Holographic quantum systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.38919755816459656,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3533112406730652,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.3388463854789734,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.16558v1": {
+    "id": "2507.16558v1",
+    "title": "Thermal Hall transport in Kitaev spin liquids",
+    "authors": [
+      {
+        "name": "Tsuyoshi Okubo",
+        "affiliation": null
+      },
+      {
+        "name": "Joji Nasu",
+        "affiliation": null
+      },
+      {
+        "name": "Takahiro Misawa",
+        "affiliation": null
+      },
+      {
+        "name": "Yukitoshi Motome",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the thermal Hall conductivity in the Kitaev model with additional interactions under a magnetic field, employing a finite-temperature tensor network method benchmarked by a thermal pure quantum state technique. We find that the thermal Hall conductivity divided by temperature, $\\kappa_{xy}/T$, significantly overshoots the value of the half-integer quantization and exhibits a pronounced hump while decreasing temperature. Moreover, we show that the field-direction dependence of $\\kappa_{xy}/T$ is consistent with the sign of the Chern number associated with the Majorana fermions across a wide range of magnetic fields. We also demonstrate that the additional off-diagonal interactions, known as the $\\Gamma$ and $\\Gamma^{\\prime}$ terms, considerably affect $\\kappa_{xy}/T$. In particular, we show that positive $\\Gamma$ and negative $\\Gamma^{\\prime}$ lead to a remarkable enhancement in the intermediate temperature region. From the comparison with the classical counterpart, we reveal that the effects of the $\\Gamma$ term go beyond the classical picture, indicating significant quantum fluctuation effects, while those of the $\\Gamma^\\prime$ term are well captured at the classical level. These comprehensive analyses indicate that the enhanced thermal Hall response is consistently explained by dominant contributions from topological Majorana fermions, even within the polarized regime beyond the critical field. Our approach not only establishes a robust theoretical framework for understanding the thermal Hall transport in Kitaev materials such as $\\alpha$-RuCl$_{3}$, but also offers a promising pathway to bridge the gap between theories and experiments across a wide range of strongly correlated materials.",
+    "published_date": "2025-07-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the user's liked papers focus on superconductivity, oxides, and topological materials, this paper discusses the Kitaev model and thermal Hall transport, sharing some overlap in the area of topological phases and strongly correlated materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Kitaev model",
+      "Thermal Hall effect",
+      "Majorana fermions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5851520895957947,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5194374322891235,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5023854374885559,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.15166v1": {
+    "id": "2507.15166v1",
+    "title": "Planted Solutions in Quantum Chemistry: Generating Non-Trivial Hamiltonians with Known Ground States",
+    "authors": [
+      {
+        "name": "Linjun Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Joshua T. Cantin",
+        "affiliation": null
+      },
+      {
+        "name": "Smik Patel",
+        "affiliation": null
+      },
+      {
+        "name": "Ignacio Loaiza",
+        "affiliation": null
+      },
+      {
+        "name": "Rick Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Artur F. Izmaylov",
+        "affiliation": null
+      }
+    ],
+    "summary": "Generating large, non-trivial quantum chemistry test problems with known ground-state solutions remains a core challenge for benchmarking electronic structure methods. Inspired by planted-solution techniques from combinatorial optimization, we introduce four classes of Hamiltonians with embedded, retrievable ground states. These Hamiltonians mimic realistic electronic structure problems, support adjustable complexity, and are derived from reference systems. Crucially, their ground-state energies can be computed exactly, provided the construction parameters are known. To obscure this structure and control perceived complexity, we introduce techniques such as killer operators, balance operators, and random orbital rotations. We showcase this framework using examples based on homogeneous catalysts of industrial relevance and validate tunable difficulty through density matrix renormalization group (DMRG) convergence behavior. Beyond enabling scalable, ground-truth benchmark generation, our approach offers a controlled setting to explore the limitations of electronic structure methods and investigate how Hamiltonian structure influences ground state solution difficulty.",
+    "published_date": "2025-07-21",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum chemistry and generating test problems, which is distinct from the user's previous interest in superconductivity and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum chemistry",
+      "benchmark problems",
+      "Hamiltonian generation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5780585408210754,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5445219278335571,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.5217788219451904,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.16475v1": {
+    "id": "2507.16475v1",
+    "title": "On two-dimensional tensor network group symmetries",
+    "authors": [
+      {
+        "name": "Jos\u00e9 Garre-Rubio",
+        "affiliation": null
+      },
+      {
+        "name": "Andr\u00e1s Moln\u00e1r",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce two-dimensional tensor network representations of finite groups carrying a 4-cocycle index. We characterize the associated gapped (2+1)D phases that emerge when these anomalous symmetries act on tensor network ground states. We further develop related tensor network unitaries that generate symmetric states representing (3+1)D symmetry protected topological phases. Although aspects of these constructions have been previously addressed, our contribution unifies them within a single tensor network framework and emphasizes the explicit formulation of local tensor equations encoding global consistency conditions.",
+    "published_date": "2025-07-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in topological phases and symmetry in materials, this paper focuses on the mathematical formalism of tensor networks and group symmetries, which is a more abstract and theoretical topic.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tensor networks",
+      "finite groups",
+      "symmetry protected topological phases"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5236369371414185,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.43214720487594604,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.428379088640213,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14496v1": {
+    "id": "2507.14496v1",
+    "title": "Quantum State Preparation Based on LimTDD",
+    "authors": [
+      {
+        "name": "Xin Hong",
+        "affiliation": null
+      },
+      {
+        "name": "Chenjian Li",
+        "affiliation": null
+      },
+      {
+        "name": "Aochu Dai",
+        "affiliation": null
+      },
+      {
+        "name": "Sanjiang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Shenggang Ying",
+        "affiliation": null
+      },
+      {
+        "name": "Mingsheng Ying",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum state preparation is a fundamental task in quantum computing and quantum information processing. With the rapid advancement of quantum technologies, efficient quantum state preparation has become increasingly important. This paper proposes a novel approach for quantum state preparation based on the Local Invertible Map Tensor Decision Diagram (LimTDD). LimTDD combines the advantages of tensor networks and decision diagrams, enabling efficient representation and manipulation of quantum states. Compared with the state-of-the-art quantum state preparation method, LimTDD demonstrates substantial improvements in efficiency when dealing with complex quantum states, while also reducing the complexity of quantum circuits. Examples indicate that, in the best-case scenario, our method can achieve exponential efficiency gains over existing methods. This study not only highlights the potential of LimTDD in quantum state preparation but also provides a robust theoretical and practical foundation for the future development of quantum computing technologies.",
+    "published_date": "2025-07-19",
+    "categories": [
+      "cs.DS"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and quantum information processing, which is a distinct area from the user's previous interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum state preparation",
+      "Tensor networks",
+      "Quantum circuits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5577427744865417,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5122357606887817,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5034105777740479,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.16673v1": {
+    "id": "2507.16673v1",
+    "title": "Non-Local Correlation Effects in DC and Optical Conductivity of the Hubbard Model",
+    "authors": [
+      {
+        "name": "Nagamalleswararao Dasari",
+        "affiliation": null
+      },
+      {
+        "name": "Hugo U. R. Strand",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Eckstein",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander I. Lichtenstein",
+        "affiliation": null
+      },
+      {
+        "name": "Evgeny A. Stepanov",
+        "affiliation": null
+      }
+    ],
+    "summary": "Conductivity is one of the most direct probes of electronic systems, yet its theoretical description remains challenging in the presence of strong non-local correlations. In this Letter, we analyze the conductivity of the half-filled single-band Hubbard model and identify the role of spatial correlations across the Mott transition. We show that in the correlated metallic regime, an accurate description of the conductivity requires not only the correct spectral function but also the inclusion of complex multi-electron processes encoded in vertex corrections. The crossover to the Mott insulating regime is marked by a vanishing contribution of vertex corrections to the DC conductivity. However, in the Mott insulating case, vertex corrections remain significant for the optical conductivity.",
+    "published_date": "2025-07-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses correlation effects in the Hubbard model, which is relevant to the user's interest in correlated electron systems and superconductivity, as seen in previous papers on nickelates and cuprates.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Hubbard Model",
+      "Optical Conductivity",
+      "Vertex Corrections"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6689578294754028,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.6108270287513733,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      },
+      {
+        "score": 0.5975656509399414,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.15938v1": {
+    "id": "2507.15938v1",
+    "title": "Trimer superfluidity of antiparallel dipolar excitons in a bilayer heterostructure",
+    "authors": [
+      {
+        "name": "Pradyumna P. Belgaonkar",
+        "affiliation": null
+      },
+      {
+        "name": "Michal Zimmerman",
+        "affiliation": null
+      },
+      {
+        "name": "Snir Gazit",
+        "affiliation": null
+      },
+      {
+        "name": "Dror Orgad",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the phase diagram of a bilayer of antiparallel dipolar excitons with a 1:2 density ratio between the layers, as a function of temperature and density. Using quantum Monte Carlo simulations, we show that such a system supports the formation of trimers, namely, three-exciton bound states consisting of a single dipole in one layer and two dipoles in the second layer. At sufficiently low temperatures and densities, these trimers condense into a trimer superfluid phase. Increasing the excitonic density induces a quantum phase transition into a phase in which condensates of independent dipoles exist in both layers, in parallel to the trimers. We also study the thermal transitions out of these phases, and find that while the normal state is reached directly from the trimer superfluid, the thermal disordering of the two-superfluid phase involves an intermediate state which is either a trimer superfluid or a single excitonic condensate in the denser layer. A potential experimental realization using transition metal dichalcogenide heterostructures is discussed.",
+    "published_date": "2025-07-21",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses excitons and superfluidity in a heterostructure, a topic distinct from the user's interests in correlated electron systems, nickelates, and topological semimetals.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "trimer superfluidity",
+      "dipolar excitons",
+      "heterostructure"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5142236948013306,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.4981948733329773,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.4798007607460022,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.15462v1": {
+    "id": "2507.15462v1",
+    "title": "One-point functions in AdS/dCFT: MPS and twisted Yangian",
+    "authors": [
+      {
+        "name": "Xin Qian",
+        "affiliation": null
+      }
+    ],
+    "summary": "I focus on the scalar one-point functions in SO(6) sector of D5-D3 probe-brane set-up. Start with a general introduction of integrability, I explore both coordinate Bethe ansatz and algebraic Bethe ansatz, with possible generalization. I then shortly review how to use the Bethe ansatz in $N = 4$ super Yang-Mills theory, and then apply such procedure to the D5-D3 system. The dual field theory of such system corresponds to a defected version of $N = 4$ super Yang-Mills theory, where the one-point functions of certain scalars are non-zero. The calculation of one-point functions is mapped to the overlap between matrix product states and Bethe states. The matrix product states are found to be solutions of the twisted Boundary Yang-Baxter equation, and equivalently the representations of extended twisted Yangian. By dressing procedure or coproduct property, we can connect the scalar matrix product state and higher dimension matrix product states. We have used the branching rules to find the connection with some detailed parameters needed to be fixed. Such method can not only be used for calculations of one-point functions in probe-branes system, but also shed some light on non-equilibrium system.",
+    "published_date": "2025-07-21",
+    "categories": [
+      "math.MP",
+      "nlin.SI"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on theoretical aspects of AdS/dCFT and integrable systems, which is a departure from the user's previous interests in condensed matter physics, superconductivity, and material science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "AdS/dCFT correspondence",
+      "Matrix product states",
+      "Twisted Yangian"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.41418635845184326,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.39577382802963257,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.3710717558860779,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.16523v1": {
+    "id": "2507.16523v1",
+    "title": "\"Odd\" Toric Code in a tilted field: Higgs-confinement multicriticality, spontaneous self-duality symmetry breaking, and valence bond solids",
+    "authors": [
+      {
+        "name": "Umberto Borla",
+        "affiliation": null
+      },
+      {
+        "name": "Ayush De",
+        "affiliation": null
+      },
+      {
+        "name": "Snir Gazit",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the quantum phase diagram of an ``odd'' variant of the two-dimensional Ising Fradkin--Shenker model, characterized by a uniform background of static $e$ and $m$ charges. Using large-scale tensor network and exact diagonalization methods, we determine the topology of the phase diagram, identifying an ``odd'' deconfined phase, confinement- and Higgs-induced valence bond solids (VBS), and a trivial paramagnet. Most notably, we uncover an exotic multicritical point along the self-dual line, where electric and magnetic excitations are related by an enriched $\\mathbb{Z}_2$ duality. This transition is marked by the simultaneous onset of confinement, Higgs condensation, translational symmetry breaking, and spontaneous duality symmetry breaking. Within our numerical accuracy, the transition appears continuous, involving the softening of excitation gaps for $e$ and $m$ anyons at finite momentum. At intermediate couplings, we further identify VBS phases with enlarged unit cells, potentially indicating frustration-induced crystalline order beyond commensurate limits.",
+    "published_date": "2025-07-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper deals with quantum phases and exotic excitations, it focuses on a specific model (toric code) and phenomena (Higgs-confinement) that are not strongly related to the user's previously liked papers on superconductivity and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "toric code",
+      "Higgs-confinement transition",
+      "self-duality symmetry breaking"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5614385604858398,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5109788775444031,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.507355809211731,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14133v1": {
+    "id": "2507.14133v1",
+    "title": "Learning the non-Markovian features of subsystem dynamics",
+    "authors": [
+      {
+        "name": "Michele Coppola",
+        "affiliation": null
+      },
+      {
+        "name": "Mari Carmen Ba\u00f1uls",
+        "affiliation": null
+      },
+      {
+        "name": "Zala Lenar\u010di\u010d",
+        "affiliation": null
+      }
+    ],
+    "summary": "The dynamics of local observables in a quantum many-body system can be formally described in the language of open systems. The problem is that the bath representing the complement of the local subsystem generally does not allow the common simplifications often crucial for such a framework. Leveraging tensor network calculations and optimization tools from machine learning, we extract and characterize the dynamical maps for single- and two-site subsystems embedded in an infinite quantum Ising chain after a global quench. We consider three paradigmatic regimes: integrable critical, integrable non-critical, and chaotic. For each we find the optimal time-local representation of the subsystem dynamics at different times. We explore the properties of the learned time-dependent Liouvillians and whether they can be used to forecast the long-time dynamics of local observables beyond the times accessible through direct quantum many-body numerical simulation. Our procedure naturally suggests a novel measure of non-Markovianity based on the distance between the quasi-exact dynamical map and the closest CP-divisible form and reveals that criticality leads to the closest Markovian representation at large times.",
+    "published_date": "2025-07-18",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in quantum many-body systems and unconventional materials, this paper focuses primarily on machine learning techniques applied to quantum dynamics, a topic somewhat removed from the user's prior interests.",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "non-Markovian dynamics",
+      "tensor networks",
+      "quantum Ising chain"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5967425107955933,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.530982255935669,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.48900604248046875,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14329v1": {
+    "id": "2507.14329v1",
+    "title": "Quantum $1/f^\u03b7$ Noise Induced Relaxation in the Spin-Boson Model",
+    "authors": [
+      {
+        "name": "Florian Otterpohl",
+        "affiliation": null
+      },
+      {
+        "name": "Peter Nalbach",
+        "affiliation": null
+      },
+      {
+        "name": "Elisabetta Paladino",
+        "affiliation": null
+      },
+      {
+        "name": "Giuseppe A. Falci",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Thorwart",
+        "affiliation": null
+      }
+    ],
+    "summary": "We extend the spin-boson model of open quantum systems to the regime of quantum $1/f^\\eta$ noise characterized by negative exponents of its spectral distribution. Using the numerically exact time-evolving matrix product operator, we find the dynamic regime diagram, including pseudocoherent dynamics controlled by quantum $1/f^\\eta$ noise. We determine the dephasing rate and find for it an empirical formula valid at zero temperature. The bath reorganization energy depends on the infrared bath cutoff frequency, revealing an increased sensitivity of the dephasing on the measurement time of an experiment. \\ep{Our results apply to a qubit as an elementary building block of a quantum computer and pave the way towards a quantum treatment of low-frequency noise in more complex architectures.",
+    "published_date": "2025-07-18",
+    "categories": [],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While the paper deals with quantum systems, it focuses on noise and dephasing mechanisms in qubits, which is somewhat related to open quantum systems but less directly connected to the user's preferred topics of superconductivity, oxides, and Dirac fermions.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum 1/f noise",
+      "spin-boson model",
+      "dephasing rate"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4869729280471802,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.4607822597026825,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      },
+      {
+        "score": 0.45633670687675476,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.15955v1": {
+    "id": "2507.15955v1",
+    "title": "Impact of finite squeezing on near-term quantum computations using GKP qubits",
+    "authors": [
+      {
+        "name": "Frederik K. Marqversen",
+        "affiliation": null
+      },
+      {
+        "name": "Andreas B. Michelsen",
+        "affiliation": null
+      },
+      {
+        "name": "Janus H. Wesenberg",
+        "affiliation": null
+      },
+      {
+        "name": "Nikolaj T. Zinner",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present the first detailed simulation of a measurement based quantum computation based on Gottesman-Kitaev-Preskill (GKP) qubits within a quad-rail lattice (QRL) cluster state involving over 100 GKP modes. This was enabled by the recently developed functional matrix product states (FMPS) framework, with which we simulate continuous-variable (CV) quantum circuits while explicitly modelling intrinsic coherent error sources due to finite squeezing. We perform simulated randomised benchmarking across squeezing levels between 5 and 15 dB and find strong agreement with analytical estimates for high quality GKP qubits. As a demonstration of practical computation, we simulate a three-qubit Grover's algorithm within the QRL and identify a fundamental squeezing threshold -- approximately 10 dB -- beyond which the algorithm outperforms classical probability bounds.",
+    "published_date": "2025-07-21",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computation using GKP qubits, a topic distinct from the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "GKP qubits",
+      "Quantum computation",
+      "FMPS framework"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.573527991771698,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.511082649230957,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.49820220470428467,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2505.06298v2": {
+    "id": "2505.06298v2",
+    "title": "Quantum Entrepreneurship Lab: Training a Future Workforce for the Quantum Industry",
+    "authors": [
+      {
+        "name": "Aaron Sander",
+        "affiliation": null
+      },
+      {
+        "name": "Rosaria Cercola",
+        "affiliation": null
+      },
+      {
+        "name": "Andrea Capogrosso",
+        "affiliation": null
+      },
+      {
+        "name": "Stefan Filipp",
+        "affiliation": null
+      },
+      {
+        "name": "Bernhard Jobst",
+        "affiliation": null
+      },
+      {
+        "name": "Christian B. Mendl",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Pollmann",
+        "affiliation": null
+      },
+      {
+        "name": "Christopher Trummer",
+        "affiliation": null
+      },
+      {
+        "name": "Isabell Welpe",
+        "affiliation": null
+      },
+      {
+        "name": "Max Werninghaus",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Wille",
+        "affiliation": null
+      },
+      {
+        "name": "Christian Wimmer",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Quantum Entrepreneurship Lab (QEL) is a one-semester, project-based course at the Technical University of Munich (TUM), designed to bridge the gap between academic research and industrial application in the quantum sector. As part of the Munich Quantum Valley (MQV) ecosystem, the course fosters interdisciplinary collaboration between technical and business students, equipping them with the skills necessary to contribute to or lead in the emerging quantum industry. The QEL curriculum integrates two complementary tracks. First, technical students form teams where they engage in cutting-edge, industry-relevant research topics under academic supervision. Meanwhile business students in a parallel course explore commercialization strategies, risks, and opportunities within the quantum technology landscape. Midway through the semester, a selection of the business students join the technical course to form interdisciplinary teams which assess the feasibility of transforming scientific concepts into viable business solutions. The course culminates in three key deliverables: a publication-style technical report, a white paper analyzing the business potential and financial requirements, and a startup pitch presented to the quantum community at a Demo Day. This work outlines the course structure, objectives, and outcomes, providing a model for other institutions seeking to cultivate a highly skilled, innovation-driven workforce in quantum science and technology.",
+    "published_date": "2025-05-07",
+    "categories": [
+      "physics.ed-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum education and entrepreneurship, which is not directly related to the previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum education",
+      "quantum entrepreneurship",
+      "workforce development"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.27898746728897095,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.21333228051662445,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.19623777270317078,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.16042v1": {
+    "id": "2507.16042v1",
+    "title": "Beyond fragmented dopant dynamics in quantum spin lattices: Robust localization and sub-diffusion",
+    "authors": [
+      {
+        "name": "Mingru Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Sajant Anand",
+        "affiliation": null
+      },
+      {
+        "name": "Kristian Knakkergaard Nielsen",
+        "affiliation": null
+      }
+    ],
+    "summary": "The motion of dopants in magnetic spin lattices has received tremendous attention for at least four decades due to its connection to high-temperature superconductivity. Despite these efforts, we lack a complete understanding of their behavior, especially out-of-equilibrium and at nonzero temperatures. In this Article, we take a significant step towards a much deeper understanding based on state-of-the-art matrix-product-state calculations. In particular, we investigate the non-equilibrium dynamics of a dopant in two-leg $t$--$J$ ladders with antiferromagnetic XXZ spin interactions. In the Ising limit, we find that the dopant is \\emph{localized} for all investigated \\emph{nonzero} temperatures due to an emergent disordered potential, with a localization length controlled by the underlying correlation length of the spin lattice, whereby it only delocalizes asymptotically in the zero temperature limit. This greatly generalizes the localization effect discovered recently in Hilbert space fragmented models. In the presence of spin-exchange processes, the dopant delocalizes according to a power-law behavior, which is strongly sub-diffusive for weak spin-exchange but which eventually becomes diffusive for strong enough exchange. Moreover, we show that the underlying spin dynamics at infinite temperature behaves qualitatively the same, albeit with important quantitative differences. We substantiate these findings by showing that the dynamics shows self-similar scaling behavior, which strongly deviates from the Gaussian behavior of regular diffusion. Finally, we show that the diffusion coefficient follows an Arrhenius relation at high temperatures, whereby it exponentially decreases for decreasing temperatures.",
+    "published_date": "2025-07-21",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses dopant dynamics in spin lattices, which is related to high-temperature superconductivity, a theme present in some of the user's liked papers.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "dopant dynamics",
+      "quantum spin lattices",
+      "sub-diffusion"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6069840788841248,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.6050933599472046,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5827727317810059,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14668v1": {
+    "id": "2507.14668v1",
+    "title": "Rec-AD: An Efficient Computation Framework for FDIA Detection Based on Tensor Train Decomposition and Deep Learning Recommendation Model",
+    "authors": [
+      {
+        "name": "Yunfeng Li",
+        "affiliation": null
+      },
+      {
+        "name": "Junhong Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhaohui Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Guofu Liao",
+        "affiliation": null
+      },
+      {
+        "name": "Chuyun Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Deep learning models have been widely adopted for False Data Injection Attack (FDIA) detection in smart grids due to their ability to capture unstructured and sparse features. However, the increasing system scale and data dimensionality introduce significant computational and memory burdens, particularly in large-scale industrial datasets, limiting detection efficiency. To address these issues, this paper proposes Rec-AD, a computationally efficient framework that integrates Tensor Train decomposition with the Deep Learning Recommendation Model (DLRM). Rec-AD enhances training and inference efficiency through embedding compression, optimized data access via index reordering, and a pipeline training mechanism that reduces memory communication overhead. Fully compatible with PyTorch, Rec-AD can be integrated into existing FDIA detection systems without code modifications. Experimental results show that Rec-AD significantly improves computational throughput and real-time detection performance, narrowing the attack window and increasing attacker cost. These advancements strengthen edge computing capabilities and scalability, providing robust technical support for smart grid security.",
+    "published_date": "2025-07-19",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on cybersecurity in smart grids, which is a departure from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "False Data Injection Attack",
+      "Tensor Train Decomposition",
+      "Smart Grid Security"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.29004889726638794,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.2851128876209259,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.2726895213127136,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.14280v1": {
+    "id": "2507.14280v1",
+    "title": "Irrational CFTs from coupled anyon chains with non-invertible symmetries?",
+    "authors": [
+      {
+        "name": "Ant\u00f3nio Antunes",
+        "affiliation": null
+      },
+      {
+        "name": "Junchen Rong",
+        "affiliation": null
+      }
+    ],
+    "summary": "Irrational CFTs in 1+1d with a discrete spectrum and no conserved currents other than the stress-tensor are expected to be generic, unsolvable by standard methods, and hard to construct explicitly. We introduce a lattice model that realizes a candidate for such a CFT as a conformal phase of matter without fine-tuning. The model is constructed by coupling $N\\geq2$ golden anyon chains together, preserving $N$ copies of the Fibonacci non-invertible symmetry. We use the MPS/DMRG approach to study this model numerically, which allows us to calculate the corresponding conformal data, obtaining hints of its irrationality. As a byproduct of our analysis, we provide an extensive list of rational CFTs with $1<c<2.1$.",
+    "published_date": "2025-07-18",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper discusses conformal field theories and anyon chains, which are not closely related to the user's previous interests in superconductivity, oxygen vacancies, Dirac fermions, or dynamical mean-field theory.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "irrational CFTs",
+      "anyon chains",
+      "non-invertible symmetries"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49214601516723633,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.4628698229789734,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.4164828062057495,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.16021v1": {
+    "id": "2507.16021v1",
+    "title": "Hamiltonian parameter inference from RIXS spectra with active learning",
+    "authors": [
+      {
+        "name": "Marton K. Lajer",
+        "affiliation": null
+      },
+      {
+        "name": "Xin Dai",
+        "affiliation": null
+      },
+      {
+        "name": "Kipton Barros",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew R. Carbone",
+        "affiliation": null
+      },
+      {
+        "name": "S. Johnston",
+        "affiliation": null
+      },
+      {
+        "name": "M. P. M. Dean",
+        "affiliation": null
+      }
+    ],
+    "summary": "Identifying model Hamiltonians is a vital step toward creating predictive models of materials. Here, we combine Bayesian optimization with the EDRIXS numerical package to infer Hamiltonian parameters from resonant inelastic X-ray scattering (RIXS) spectra within the single atom approximation. To evaluate the efficacy of our method, we test it on experimental RIXS spectra of NiPS3, NiCl2, Ca3LiOsO6, and Fe2O3, and demonstrate that it can reproduce results obtained from hand-fitted parameters to a precision similar to expert human analysis while providing a more systematic mapping of parameter space. Our work provides a key first step toward solving the inverse scattering problem to extract effective multi-orbital models from information-dense RIXS measurements, which can be applied to a host of quantum materials. We also propose atomic model parameter sets for two materials, Ca3LiOsO6 and Fe2O3, that were previously missing from the literature.",
+    "published_date": "2025-07-21",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper focuses on using RIXS spectra to infer Hamiltonian parameters in quantum materials, which connects to the user's interest in RIXS and related materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "RIXS"
+    ],
+    "suggested_keywords": [
+      "Hamiltonian parameter inference",
+      "Resonant inelastic X-ray scattering (RIXS)",
+      "Bayesian optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5299010276794434,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5027846097946167,
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
+      },
+      {
+        "score": 0.49057647585868835,
+        "liked_paper_id": "2506.11227v1"
       }
     ],
     "discovery_sources": []
