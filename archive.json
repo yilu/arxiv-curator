@@ -19054,5 +19054,770 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2507.18540v1": {
+    "id": "2507.18540v1",
+    "title": "Deep Variational Free Energy Calculation of Hydrogen Hugoniot",
+    "authors": [
+      {
+        "name": "Zihang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Hao Xie",
+        "affiliation": null
+      },
+      {
+        "name": "Xinyang Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Lei Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a deep variational free energy framework to compute the equation of state of hydrogen in the warm dense matter region. This method parameterizes the variational density matrix of hydrogen nuclei and electrons at finite temperature using three deep generative models: a normalizing flow model that represents the Boltzmann distribution of the classical nuclei, an autoregressive transformer that models the distribution of electrons in excited states, and a permutational equivariant flow model that constructs backflow coordinates for electrons in Hartree-Fock orbitals. By jointly optimizing the three neural networks to minimize the variational free energy, we obtain the equation of state and related thermodynamic properties of dense hydrogen. We compare our results with other theoretical and experimental results on the deuterium Hugoniot curve, aiming to resolve existing discrepancies. The calculated results provide a valuable benchmark for deuterium in the warm dense matter region.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.str-el",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on computational methods for calculating the equation of state of hydrogen, which is a different area than the user's preferred topics of superconductivity, correlated electron systems, and topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Warm Dense Matter",
+      "Equation of State",
+      "Variational Free Energy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4934786558151245,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.46711623668670654,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.43889930844306946,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18373v1": {
+    "id": "2507.18373v1",
+    "title": "Persistent paramagnons in high-temperature infinite-layer nickelate superconductors",
+    "authors": [
+      {
+        "name": "Yujie Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Ying Chan",
+        "affiliation": null
+      },
+      {
+        "name": "Xunyang Hong",
+        "affiliation": null
+      },
+      {
+        "name": "S. Lin Er Chow",
+        "affiliation": null
+      },
+      {
+        "name": "Zhaoyang Luo",
+        "affiliation": null
+      },
+      {
+        "name": "Yuehong Li",
+        "affiliation": null
+      },
+      {
+        "name": "Tianren Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yuetong Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Izabela Bia\u0142o",
+        "affiliation": null
+      },
+      {
+        "name": "Nurul Fitriyah",
+        "affiliation": null
+      },
+      {
+        "name": "Saurav Prakash",
+        "affiliation": null
+      },
+      {
+        "name": "Xing Gao",
+        "affiliation": null
+      },
+      {
+        "name": "King Yau Yip",
+        "affiliation": null
+      },
+      {
+        "name": "Qiang Gao",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaolin Ren",
+        "affiliation": null
+      },
+      {
+        "name": "Jaewon Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Ganesha Channagowdra",
+        "affiliation": null
+      },
+      {
+        "name": "Jun Okamoto",
+        "affiliation": null
+      },
+      {
+        "name": "Xingjiang Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Zhihai Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Liang Si",
+        "affiliation": null
+      },
+      {
+        "name": "Mirian Garcia-Fernandez",
+        "affiliation": null
+      },
+      {
+        "name": "Ke-Jin Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Hsiao-Yu Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Di-Jing Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Johan Chang",
+        "affiliation": null
+      },
+      {
+        "name": "A. Ariando",
+        "affiliation": null
+      },
+      {
+        "name": "Qisi Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "The recent discovery of high-temperature superconductivity in hole-doped SmNiO$_2$, exhibiting the record-high transition temperature $T_c$ among infinite-layer (IL) nickelates, has opened a new avenue for exploring design principles of superconductivity. Experimentally determining the electronic structure and magnetic interactions in this new system is crucial to elucidating the mechanism behind the enhanced superconductivity. Here, we report a Ni $L$-edge resonant inelastic x-ray scattering (RIXS) study of superconducting Sm-based IL nickelate thin films Sm$_{1-x-y-z}$Eu$_x$Ca$_y$Sr$_z$NiO$_2$ (SECS). Dispersive paramagnonic excitations are observed in both optimally and overdoped SECS samples, supporting a spin-fluctuation-mediated pairing scenario. However, despite the two-fold enhancement of $T_c$ in the Sm-based nickelates compared to their Pr-based counterparts, the effective exchange coupling strength is reduced by approximately $20\\%$. This behavior contrasts with hole-doped cuprates, where magnetic interactions correlate positively with $T_c$, highlighting essential differences in their superconducting mechanisms.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper investigates superconductivity in nickelates using RIXS, a technique similar to one used in a previously liked paper, and focuses on magnetic interactions in the context of superconductivity, a recurring theme in the user's liked papers.",
+    "matching_keywords": [
+      "RIXS",
+      "cuprate",
+      "nickelate",
+      "resonant inelastic x-ray scattering"
+    ],
+    "suggested_keywords": [
+      "nickelate superconductors",
+      "resonant inelastic x-ray scattering",
+      "paramagnons"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7120105624198914,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.7011393308639526,
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC"
+      },
+      {
+        "score": 0.6947851181030273,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18485v1": {
+    "id": "2507.18485v1",
+    "title": "Active \u0394-learning with universal potentials for global structure optimization",
+    "authors": [
+      {
+        "name": "Joe Pitfield",
+        "affiliation": null
+      },
+      {
+        "name": "Mads-Peter Verner Christiansen",
+        "affiliation": null
+      },
+      {
+        "name": "Bj\u00f8rk Hammer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Universal machine learning interatomic potentials (uMLIPs) have recently been formulated and shown to generalize well. When applied out-of-sample, further data collection for improvement of the uMLIPs may, however, be required. In this work we demonstrate that, whenever the envisaged use of the MLIPs is global optimization, the data acquisition can follow an active learning scheme in which a gradually updated uMLIP directs the finding of new structures, which are subsequently evaluated at the density functional theory (DFT) level. In the scheme, we augment foundation models using a {\\Delta}-model based on this new data using local SOAP-descriptors, Gaussian kernels, and a sparse Gaussian Process Regression model. We compare the efficacy of the approach with different global optimization algorithms, Random Structure Search, Basin Hopping, a Bayesian approach with competitive candidates (GOFEE), and a replica exchange formulation (REX). We further compare several foundation models, CHGNet, MACE-MP0, and MACE-MPA. The test systems are silver-sulfur clusters and sulfur-induced surface reconstructions on Ag(111) and Ag(100). Judged by the fidelity of identifying global minima, active learning with GPR-based {\\Delta}-models appears to be a robust approach. Judged by the total CPU time spent, the REX approach stands out as being the most efficient.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning techniques for materials structure optimization, which is not closely aligned with the user's preference for superconductivity, correlated electron systems, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "active learning",
+      "global structure optimization",
+      "machine learning interatomic potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.33817386627197266,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.31777477264404297,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3062126934528351,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.17170v1": {
+    "id": "2507.17170v1",
+    "title": "Advancing Quantum State Preparation using LimTDD",
+    "authors": [
+      {
+        "name": "Xin Hong",
+        "affiliation": null
+      },
+      {
+        "name": "Aochu Dai",
+        "affiliation": null
+      },
+      {
+        "name": "Chenjian Li",
+        "affiliation": null
+      },
+      {
+        "name": "Sanjiang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Shenggang Ying",
+        "affiliation": null
+      },
+      {
+        "name": "Mingsheng Ying",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum state preparation (QSP) is a fundamental task in quantum computing and quantum information processing. It is critical to the execution of many quantum algorithms, including those in quantum machine learning. In this paper, we propose a family of efficient QSP algorithms tailored to different numbers of available ancilla qubits - ranging from no ancilla qubits, to a single ancilla qubit, to a sufficiently large number of ancilla qubits. Our algorithms are based on a novel decision diagram that is fundamentally different from the approaches used in previous QSP algorithms. Specifically, our approach exploits the power of Local Invertible Map Tensor Decision Diagrams (LimTDDs) - a highly compact representation of quantum states that combines tensor networks and decision diagrams to reduce quantum circuit complexity. Extensive experiments demonstrate that our methods significantly outperform existing approaches and exhibit better scalability for large-scale quantum states, both in terms of runtime and gate complexity. Furthermore, our method shows exponential improvement in best-case scenarios. This paper is an extended version of [1], with three more algorithms proposed.",
+    "published_date": "2025-07-23",
+    "categories": [
+      "cs.DS"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing algorithms, which is distinct from the user's previous interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum state preparation",
+      "Tensor decision diagrams",
+      "Quantum algorithms"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5325750708580017,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5203834772109985,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.491362065076828,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.18435v1": {
+    "id": "2507.18435v1",
+    "title": "Surface growth scheme for bulk reconstruction and $T\\bar T$ deformation",
+    "authors": [
+      {
+        "name": "Hao-Chun Liang",
+        "affiliation": null
+      },
+      {
+        "name": "Jia-Rui Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Yuan Sun",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this paper, we study the dynamical connection between the surface growth scheme and the conformal field theory with $T\\bar{T}$ deformation. By utilizing the extended one-shot entanglement distillation tensor network, we find that the iterative growth, i.e. radial evolution of homogenous and isotropic bulk minimal surfaces in asymptotically anti-de Sitter (AdS) spacetime can be mapped to the $T\\bar{T}$ operator flow driven by the deformation parameter. Our results show that the $T\\bar{T}$ deformation can provide a dynamical mechanism for the surface growth in asymptotically AdS spacetime, which may shed light on reconstructing bulk gravitational dynamics from the surface growth scheme.",
+    "published_date": "2025-07-24",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on theoretical physics and AdS/CFT correspondence, which is significantly different from the user's previous interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "surface growth",
+      "T T deformation",
+      "AdS/CFT correspondence"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3805537223815918,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.28466159105300903,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.2761736214160919,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.17421v1": {
+    "id": "2507.17421v1",
+    "title": "Instability of explicit time integration for strongly quenched dynamics with neural quantum states",
+    "authors": [
+      {
+        "name": "Hrvoje Vrcan",
+        "affiliation": null
+      },
+      {
+        "name": "Johan H. Mentink",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural quantum states have recently demonstrated significant potential for simulating quantum dynamics beyond the capabilities of existing variational ans\\\"atze. However, studying strongly driven quantum dynamics with neural networks has proven challenging so far. Here, we focus on assessing several sources of numerical instabilities that can appear in the simulation of quantum dynamics based on the time-dependent variational principle (TDVP) with the computationally efficient explicit time integration scheme. Using the restricted Boltzmann machine architecture, we compare solutions obtained by TDVP with analytical solutions and implicit methods as a function of the quench strength. Interestingly, we uncover a quenching strength that leads to a numerical breakdown in the absence of Monte Carlo noise, despite the fact that physical observables don't exhibit irregularities. This breakdown phenomenon appears consistently across several different TDVP formulations, even those that eliminate small eigenvalues of the Fisher matrix or use geometric properties to recast the equation of motion. We conclude that alternative methods need to be developed to leverage the computational efficiency of explicit time integration of the TDVP equations for simulating strongly nonequilibrium quantum dynamics with neural-network quantum states.",
+    "published_date": "2025-07-23",
+    "categories": [
+      "cond-mat.dis-nn",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in quantum materials and superconductivity, this paper focuses on numerical methods for simulating quantum dynamics, a topic only tangentially related to the user's interests.",
+    "matching_keywords": [
+      "neural quantum state",
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "neural quantum states",
+      "time-dependent variational principle",
+      "explicit time integration"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5700424313545227,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5635091066360474,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5596766471862793,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.18112v1": {
+    "id": "2507.18112v1",
+    "title": "Parameter-Efficient Fine-Tuning of 3D DDPM for MRI Image Generation Using Tensor Networks",
+    "authors": [
+      {
+        "name": "Binghua Li",
+        "affiliation": null
+      },
+      {
+        "name": "Ziqing Chang",
+        "affiliation": null
+      },
+      {
+        "name": "Tong Liang",
+        "affiliation": null
+      },
+      {
+        "name": "Chao Li",
+        "affiliation": null
+      },
+      {
+        "name": "Toshihisa Tanaka",
+        "affiliation": null
+      },
+      {
+        "name": "Shigeki Aoki",
+        "affiliation": null
+      },
+      {
+        "name": "Qibin Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Zhe Sun",
+        "affiliation": null
+      }
+    ],
+    "summary": "We address the challenge of parameter-efficient fine-tuning (PEFT) for three-dimensional (3D) U-Net-based denoising diffusion probabilistic models (DDPMs) in magnetic resonance imaging (MRI) image generation. Despite its practical significance, research on parameter-efficient representations of 3D convolution operations remains limited. To bridge this gap, we propose Tensor Volumetric Operator (TenVOO), a novel PEFT method specifically designed for fine-tuning DDPMs with 3D convolutional backbones. Leveraging tensor network modeling, TenVOO represents 3D convolution kernels with lower-dimensional tensors, effectively capturing complex spatial dependencies during fine-tuning with few parameters. We evaluate TenVOO on three downstream brain MRI datasets-ADNI, PPMI, and BraTS2021-by fine-tuning a DDPM pretrained on 59,830 T1-weighted brain MRI scans from the UK Biobank. Our results demonstrate that TenVOO achieves state-of-the-art performance in multi-scale structural similarity index measure (MS-SSIM), outperforming existing approaches in capturing spatial dependencies while requiring only 0.3% of the trainable parameters of the original model. Our code is available at: https://github.com/xiaovhua/tenvoo",
+    "published_date": "2025-07-24",
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.CV"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on MRI image generation using deep learning techniques, a field quite distinct from the user's prior interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "MRI image generation",
+      "Denoising Diffusion Probabilistic Models",
+      "Parameter-Efficient Fine-Tuning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.36454981565475464,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3386436402797699,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.32914796471595764,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.17832v1": {
+    "id": "2507.17832v1",
+    "title": "Resource-Efficient Simulations of Particle Scattering on a Digital Quantum Computer",
+    "authors": [
+      {
+        "name": "Yahui Chai",
+        "affiliation": null
+      },
+      {
+        "name": "Joe Gibbs",
+        "affiliation": null
+      },
+      {
+        "name": "Vincent R. Pascuzzi",
+        "affiliation": null
+      },
+      {
+        "name": "Zo\u00eb Holmes",
+        "affiliation": null
+      },
+      {
+        "name": "Stefan K\u00fchn",
+        "affiliation": null
+      },
+      {
+        "name": "Francesco Tacchino",
+        "affiliation": null
+      },
+      {
+        "name": "Ivano Tavernelli",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop and demonstrate methods for simulating the scattering of particle wave packets in the interacting Thirring model on digital quantum computers, with hardware implementations on up to 80 qubits. We identify low-entanglement time slices of the scattering dynamics and exploit their efficient representation by tensor networks. Circuit compression based on matrix product state techniques yields on average a reduction by a factor of 3.2 in circuit depth compared to conventional approaches, allowing longer evolution times to be evaluated with higher fidelity on contemporary quantum processors. Utilizing zero-noise extrapolation in combination with Pauli twirling, on quantum hardware we accurately simulate the full scattering dynamics on 40 qubits, and further demonstrate the wave packet state-preparation on 80 qubits.",
+    "published_date": "2025-07-23",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing simulations of particle scattering, a topic distinct from the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum simulation",
+      "Thirring model",
+      "quantum computing"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4971538186073303,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.49672555923461914,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4815555810928345,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.18093v1": {
+    "id": "2507.18093v1",
+    "title": "Advancing the hBN Defects Database through Photophysical Characterization of Bulk hBN",
+    "authors": [
+      {
+        "name": "Chanaprom Cholsuk",
+        "affiliation": null
+      },
+      {
+        "name": "Sujin Suwanna",
+        "affiliation": null
+      },
+      {
+        "name": "Tobias Vogl",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum emitters in hexagonal boron nitride (hBN) have gained significant attention due to a wide range of defects that offer high quantum efficiency and single-photon purity at room temperature. Most theoretical studies on hBN defects simulate monolayers, as this is computationally cheaper than calculating bulk structures. However, most experimental studies are carried out on multilayer to bulk hBN, which creates additional possibilities for discrepancies between theory and experiment. In this work, we present an extended database of hBN defects that includes a comprehensive set of bulk hBN defects along with their excited-state photophysical properties. The database features over 120 neutral defects, systematically evaluated across charge states ranging from -2 to 2 (600 defects in total). For each defect, the most stable charge and spin configurations are identified and used to compute the zero-phonon line, photoluminescence spectrum, absorption spectrum, Huang-Rhys (HR) factor, interactive radiative lifetimes, transition dipole moments, and polarization characteristics. Our analysis reveals that the electron-phonon coupling strength is primarily influenced by the presence of vacancies, which tend to induce stronger lattice distortions and broaden phonon sidebands. Additionally, correlation analysis shows that while most properties are independent, the HR factor strongly correlates with the configuration coordinates. All data are publicly available at https://h-bn.info, along with a new application programming interface (API) to facilitate integration with machine learning workflows. This database is therefore designed to bridge the gap between theory and experiment, aid in the reliable identification of quantum emitters, and support the development of machine-learning-driven approaches in quantum materials research.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph",
+      "physics.optics"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in novel materials, this paper focuses on defects in hBN which is a slightly different area than the user's previous interests.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "hBN defects",
+      "photoluminescence",
+      "quantum emitters"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5892888307571411,
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C"
+      },
+      {
+        "score": 0.49684345722198486,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.49263501167297363,
+        "liked_paper_id": "2506.16360v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.17822v1": {
+    "id": "2507.17822v1",
+    "title": "Magnon topology driven by altermagnetism",
+    "authors": [
+      {
+        "name": "Subhankar Khatua",
+        "affiliation": null
+      },
+      {
+        "name": "Volodymyr P. Kravchuk",
+        "affiliation": null
+      },
+      {
+        "name": "Kostiantyn V. Yershov",
+        "affiliation": null
+      },
+      {
+        "name": "Jeroen van den Brink",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnets present a new class of fully compensated collinear magnetic order, where the two sublattices are not related merely by time-reversal combined with lattice translation or inversion, but require an additional lattice rotation. This distinctive symmetry leads to a characteristic splitting of the magnon bands; however the splitting is only partial -- residual degeneracies persist along certain lines in the Brillouin zone as a consequence of the underlying altermagnetic rotation. We consider a two-dimensional $d$-wave altermagnetic spin model on the checkerboard lattice and introduce additional interactions such as an external magnetic field and Dzyaloshinskii-Moriya interactions, that lift these degeneracies. The resulting magnon bands become fully gapped and acquire non-trivial topology, characterized by nonzero Chern numbers. We demonstrate the crucial role of altermagnetism for the generation of the Berry curvature. As a direct consequence of the topological magnons, we find finite thermal Hall conductivity $\\kappa_{xy}$, which exhibits a characteristic low-temperature scaling, $\\kappa_{xy}\\propto T^4$. Moreover, $\\kappa_{xy}$ changes sign under reversal of the magnetic field, exhibiting a sharp jump across zero field at low temperatures. We also demonstrate topologically protected chiral edge modes in a finite strip geometry.",
+    "published_date": "2025-07-23",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses magnetic order and topology, which connects to the user's interest in topological materials and correlated electron systems.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "altermagnetism",
+      "magnon topology",
+      "thermal Hall conductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6047232151031494,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5822111368179321,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5690845251083374,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18018v1": {
+    "id": "2507.18018v1",
+    "title": "Out-of-plane ferroelectricity, magnetoelectric coupling and persistent spin texture in two-dimensional multiferroics",
+    "authors": [
+      {
+        "name": "Ying Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Cheng-Ao Ji",
+        "affiliation": null
+      },
+      {
+        "name": "Shuai Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Xuezeng Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Two dimensional multiferroics with out of plane ferroelectricity hold significant promise for miniaturized magnetoelectric spin-orbit transistors, yet systems combining robust ferroelectricity and strong magnetoelectric coupling are exceedingly rare. Here, we demonstrate that epitaxial strain stabilizes out of plane ferroelectricity in exfoliated two dimensional Ruddlesden Popper derivatives. The hybrid improper ferroelectric Pc phase transitions to a competing P21 phase with purely in plane polarization upon switching, accompanied by a 90 degree rotation of weak ferromagnetism. Crucially, the Pc phase exhibits altermagnetism, while P21 displays full Brillouin zone band splitting, with persistent spin textures rotating 90 degree at the phase boundary. This work establishes a pathway to engineer two dimensional multiferroics that integrate vertical polarization, magnetoelectric coupling, and switchable spin textures, key features for next generation spintronic devices.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in correlated electron materials and superconductivity, this paper focuses on 2D multiferroics and magnetoelectric coupling, a somewhat related but distinct area.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "2D multiferroics",
+      "magnetoelectric coupling",
+      "spin textures"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5348864197731018,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5192172527313232,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      },
+      {
+        "score": 0.5185230374336243,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18582v1": {
+    "id": "2507.18582v1",
+    "title": "Variational Monte Carlo Optimization of Topological Chiral Superconductors",
+    "authors": [
+      {
+        "name": "Minho Luke Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Abigail Timmel",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao-Gang Wen",
+        "affiliation": null
+      }
+    ],
+    "summary": "We perform the variational Monte Carlo calculation for recently proposed chiral superconducting states driven by strong Coulomb interactions. We compare the resulting energetics of these electronic phases for the electron dispersion relation $E_k = c_2 k^2+c_4 k^4$. Motivated by the recent discovery of chiral superconductivity in rhombohedral graphene systems, we apply our analysis to relevant parameter regimes. We demonstrate that topological chiral superconducting phases (including a spin-unpolarized state) can be energetically favored over the spin-valley polarized Fermi liquid above the density of Wigner crystal phase. Our results show that the preference for chiral superconductivity is strongest when $c_2$ lies between zero and a negative value, corresponding to a system on the verge of forming a hole pocket around $k=0$. This finding suggests that superconductivity can arise from pure repulsive Coulomb interactions in systems with an almost flat band bottom, without relying on the pairing instability of a Fermi surface. This mechanism opens a new pathway to superconductivity beyond the conventional BCS mechanism.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses chiral superconductivity and uses variational Monte Carlo methods, which connects to previous papers on superconductivity and computational methods in correlated electron systems.",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "suggested_keywords": [
+      "chiral superconductivity",
+      "variational Monte Carlo",
+      "flat band"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6127084493637085,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5861071348190308,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5616790056228638,
+        "liked_paper_id": "2506.13399v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
