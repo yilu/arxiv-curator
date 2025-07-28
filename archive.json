@@ -19819,5 +19819,644 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2507.19189v1": {
+    "id": "2507.19189v1",
+    "title": "Machine Learning Band Gap Predictions: Linking Quasiparticle Self-Consistent GW and LDA-Derived Partial Density of States",
+    "authors": [
+      {
+        "name": "Shota Tankano",
+        "affiliation": null
+      },
+      {
+        "name": "Takao Kotani",
+        "affiliation": null
+      },
+      {
+        "name": "Masao Obata",
+        "affiliation": null
+      },
+      {
+        "name": "Kazunori Sato",
+        "affiliation": null
+      },
+      {
+        "name": "Harutaka Saito",
+        "affiliation": null
+      },
+      {
+        "name": "Tatsuki Oda",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurately calculating band gaps for given crystal structures is highly desirable. However, conventional first-principles calculations based on density functional theory (DFT) within the local density approximation (LDA) fail to predict band gaps accurately. To address this issue, the quasi-particle self-consistent GW (QSGW) method is often employed as it is one of the most reliable theoretical approaches for predicting band gaps. Despite its accuracy, QSGW requires significant computational resources. To overcome this limitation, we propose combining QSGW with machine learning. In this study, we applied QSGW to 1,516 materials from the Materials Project [https://materialsproject.org/] and used machine learning to predict QSGW band gaps as a function of the partial density of states (PDOS) in LDA. Our results demonstrate that the proposed model significantly outperforms linear regression approaches with linearly-independent descriptor generation [https://github.com/Hitoshi-FUJII/LIDG]. This model is a prototype for predicting material properties based on PDOS.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in superconductivity and related materials, this paper focuses on machine learning methods for predicting band gaps, a topic only tangentially related.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Machine Learning",
+      "Band Gap Prediction",
+      "QSGW"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4868544340133667,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.467337429523468,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.46206796169281006,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18892v1": {
+    "id": "2507.18892v1",
+    "title": "Spinon Singlet: Microscopic Mechanism of $d$-Wave Pairing in a Partially-Filled Stripe",
+    "authors": [
+      {
+        "name": "Jia-Long Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Shi-Jie Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Xue-Feng Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Significant research advances have led to a consensus that the Fermi-Hubbard model and its extended variants are archetypal frameworks for elucidating the intertwined relationship between stripe orders and superconductivity in hole-doped high-$T_c$ materials. Notably, the Hubbard quantum simulator has recently achieved several remarkable breakthroughs, e.g., being successfully cooled down to the cryogenic regime and enabling the observation of stable fluctuating stripes. However, the microscopic mechanism behind $d$-wave pairing of electrons in the presence of stripes at low temperatures remains poorly understood due to the intricate interplay among the strongly correlated effects and non-negligible thermal fluctuations. Here, we conduct a close investigation of a partially-filled stripe in the representative $t$-$J$ and Fermi-Hubbard models with both numerical and analytical methods. Analogous to quantum gas microscopy, the perfect sampling technique allows us to obtain the high-confidence statistics of the Fock basis states appearing in the ground-state wavefunction. In a refreshing physical paradigm, these data demonstrate that two spinons with opposite chiralities tend to spontaneously pair into a singlet state, which naturally gives rise to the $d$-wave pairing pattern. Then, using the effective theory of quantum colored string, we reconstruct the wavefunction and determine the nature of spinon pairing and its connection to the $d$-wave pairing pattern. Furthermore, spinon singlet pairs enable the establishment of a long-range pair-pair correlation between double stripes. Our work offers new insights into the role of stripe orders in mediating $d$-wave superconductivity and paves the way for further exploration of multi-stripe-mediated pairing mechanisms in the Fermi-Hubbard model.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "This paper explores the relationship between stripe orders and d-wave superconductivity in Hubbard models, which aligns with the user's interest in high-Tc superconductors and correlated electron systems.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "spinon singlet",
+      "stripe order",
+      "d-wave pairing"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.643852710723877,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.6217179298400879,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6057594418525696,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.19412v1": {
+    "id": "2507.19412v1",
+    "title": "From weakly interacting spinons to tightly bound triplons in the frustrated quantum spin-Peierls chain",
+    "authors": [
+      {
+        "name": "Pyeongjae Park",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Karolina G\u00f3rnicka",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew F. May",
+        "affiliation": null
+      },
+      {
+        "name": "Jiaqiang Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Ryoichi Kajimoto",
+        "affiliation": null
+      },
+      {
+        "name": "Mitsutaka Nakamura",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew B. Stone",
+        "affiliation": null
+      },
+      {
+        "name": "G\u00e1bor B. Hal\u00e1sz",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew D. Christianson",
+        "affiliation": null
+      }
+    ],
+    "summary": "Fractionalized quasiparticles and their confinement into emergent bound states lie at the heart of modern quantum magnetism. While the evolution into magnonic bound states has been well characterized, experimental insight into the analogous transition to triplons remains limited. Here, using high-resolution neutron spectroscopy and state-of-the-art spin dynamics simulations, we uncover the transformation from weakly interacting spinons to tightly bound triplons in the spin-Peierls compound CuGeO3. Quantitative comparisons between the measured spectra and tensor network simulations reveal substantial next-nearest-neighbor frustration and weak external dimerization, placing the system deep within the spontaneously dimerized regime and near the exactly solvable Majumdar-Ghosh point. We further show an energy- and temperature-dependent evolution between two contrasting quasiparticle regimes: deconfined spinons with markedly suppressed interactions by frustration, and coherent triplonic bound states with no observable spinon degrees of freedom. Remarkably, triplon character persists into the two-particle regime, forming a structured two-triplon continuum with a spectral feature associated with a van Hove singularity at its lower boundary. These findings challenge the conventional view that robust triplons require strong external dimerization and demonstrate how the interplay between frustration and dimerization can reshape fractionalization and confinement.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has liked papers related to superconductivity and novel materials, this paper focuses on spinons and triplons in a frustrated quantum spin-Peierls chain, which is only tangentially related to the user's interests.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "spinons",
+      "triplons",
+      "quantum spin-Peierls chain"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.617194414138794,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.6166917681694031,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5679538249969482,
+        "liked_paper_id": "2506.16360v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.19276v1": {
+    "id": "2507.19276v1",
+    "title": "Hybrid tensor network and neural network quantum states for quantum chemistry",
+    "authors": [
+      {
+        "name": "Zibo Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Bohan Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Wei-Hai Fang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhendong Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural network quantum states (NQS) have emerged as a powerful and flexible framework for addressing quantum many-body problems. While successful for model Hamiltonians, their application to molecular systems remains challenging for several reasons. In this work, we introduce three innovations to overcome some of the key limitations. (1) We propose two novel ans\\\"atzet hat hybridize tensor network and neural network states for addressing initialization challenges and enhancing the expressivity of tensor networks. First, we develop a bounded-degree graph recurrent neural network (BDG-RNN) ansatz that leverages graph-based updates, enabling applications to molecular electronic structure problems. Second, we introduce restricted Boltzmann machine (RBM) inspired correlators to further enhance expressivity and improve accuracy, without dramatically modifying the underlying variational Monte Carlo (VMC) optimization framework. (2) We introduce a semi-stochastic algorithm for local energy evaluation, which significantly reduces computational cost while maintaining high accuracy. Combining these advances, we demonstrate that our approaches can achieve chemical accuracy in challenging systems, including the one-dimensional hydrogen chain H50, the iron-sulfur cluster [Fe2S2(SCH3)4]^{2-}, and a three-dimensional $3 \\times 3 \\times 2$ hydrogen cluster H18. These methods are implemented in an open-source package - PyNQS (https://github.com/Quantum-Chemistry-Group-BNU/PyNQS) to advance NQS methodologies for quantum chemistry.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in quantum materials, this paper focuses on quantum chemistry methods using neural networks and tensor networks, a different area of quantum research.",
+    "matching_keywords": [
+      "neural network",
+      "neural network quantum states",
+      "tensor network",
+      "variational monte carlo"
+    ],
+    "suggested_keywords": [
+      "neural network quantum states",
+      "tensor network",
+      "quantum chemistry"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6350144147872925,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.6276892423629761,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5882928967475891,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18786v1": {
+    "id": "2507.18786v1",
+    "title": "Towards Accurate Thermal Property Predictions in Uranium Nitride using Machine Learning Interatomic Potential",
+    "authors": [
+      {
+        "name": "Beihan Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zilong Hua",
+        "affiliation": null
+      },
+      {
+        "name": "Jennifer K. Watkins",
+        "affiliation": null
+      },
+      {
+        "name": "Linu Malakkal",
+        "affiliation": null
+      },
+      {
+        "name": "Marat Khafizov",
+        "affiliation": null
+      },
+      {
+        "name": "David H. Hurley",
+        "affiliation": null
+      },
+      {
+        "name": "Miaomiao Jin",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a combined computational and experimental investigation of the thermal properties of uranium nitride (UN), focusing on the development of a machine learning interatomic potential (MLIP) using the moment tensor potential (MTP) framework. The MLIP was trained on density functional theory (DFT) data and validated against various quantities including energies, forces, elastic constants, phonon dispersion, and defect formation energies, achieving excellent agreement with DFT calculations, prior experimental results and our thermal conductivity measurement. The potential was then employed in molecular dynamics (MD) simulations to predict key thermal properties such as melting point, thermal expansion, specific heat, and thermal conductivity. To further assess model accuracy, we fabricated a UN sample and performed new thermal conductivity measurements representative of single-crystal properties, which show strong agreement with the MLIP predictions. This work confirms the reliability and predictive capability of the developed potential for determining the thermal properties of UN.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on uranium nitride and machine learning potentials, which is a departure from the user's interest in superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "uranium nitride",
+      "machine learning interatomic potential",
+      "thermal properties"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5666168332099915,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4761047661304474,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4153663218021393,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.19069v1": {
+    "id": "2507.19069v1",
+    "title": "Entanglement across scales: Quantics tensor trains as a natural framework for renormalization",
+    "authors": [
+      {
+        "name": "Stefan Rohshap",
+        "affiliation": null
+      },
+      {
+        "name": "Jheng-Wei Li",
+        "affiliation": null
+      },
+      {
+        "name": "Alena Lorenz",
+        "affiliation": null
+      },
+      {
+        "name": "Serap Hasil",
+        "affiliation": null
+      },
+      {
+        "name": "Karsten Held",
+        "affiliation": null
+      },
+      {
+        "name": "Anna Kauch",
+        "affiliation": null
+      },
+      {
+        "name": "Markus Wallerberger",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding entanglement remains one of the most intriguing problems in physics. While particle and site entanglement have been studied extensively, the investigation of length or energy scale entanglement, quantifying the information exchange between different length scales, has received far less attention. Here, we identify the quantics tensor train (QTT) technique, a matrix product state-inspired approach for overcoming computational bottlenecks in resource-intensive numerical calculations, as a renormalization group method by analytically expressing an exact cyclic reduction-based real-space renormalization scheme in QTT language, which serves as a natural formalism for the method. In doing so, we precisely match the QTT bond dimension, a measure of length scale entanglement, to the number of rescaled couplings generated in each coarse-graining renormalization step. While QTTs have so far been applied almost exclusively to numerical problems in physics, our analytical calculations demonstrate that they are also powerful tools for mitigating computational costs in semi-analytical treatments. We present our results for the one-dimensional tight-binding model with n-th-nearest-neighbor hopping, where the 2n rescaled couplings generated in the renormalization procedure precisely match the QTT bond dimension of the one-particle Green's function.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.str-el",
+      "math.MP",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper discusses a technique (Quantics Tensor Trains) applied to a tight-binding model, which has some overlap with the user's interest in correlated electron systems and unconventional superconductivity, but the focus on computational methods is less directly aligned with the other papers.",
+    "matching_keywords": [
+      "green's function",
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Quantics tensor trains",
+      "Renormalization group",
+      "Length scale entanglement"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5737038850784302,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5707640647888184,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.5468772649765015,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18935v1": {
+    "id": "2507.18935v1",
+    "title": "Accuracy and Limitations of Machine-Learned Interatomic Potentials for Magnetic Systems: A Case Study on Fe-Cr-C",
+    "authors": [
+      {
+        "name": "E. O. Khazieva",
+        "affiliation": null
+      },
+      {
+        "name": "N. M. Chtchelkatchev",
+        "affiliation": null
+      },
+      {
+        "name": "R. E. Ryltsev",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine-learned interatomic potentials (MLIPs) have become the gold standard for atomistic simulations, yet their extension to magnetic materials remains challenging because spin fluctuations must be captured either explicitly or implicitly. We address this problem for the technologically vital Fe-Cr-C system by constructing two deep machine learning potentials in DeePMD realization: one trained on non-magnetic DFT data (DP-NM) and one on spin-polarised DFT data (DP-M). Extensive validation against experiments reveals a striking dichotomy. The dynamic, collective properties, viscosity and melting temperatures are reproduced accurately by DP-NM but are incorrectly estimated by DP-M. Static, local properties, density, and lattice parameters are captured excellently by DP-M, especially in Fe-rich alloys, whereas DP-NM fails. This behaviour is explained by general properties of paramagnetic state: at high temperature, local magnetic moments self-average in space and time, so their explicit treatment is unnecessary for transport properties but essential for equilibrium volumes. Exploiting this insight, we show that a transfer-learning protocol, pre-training on non-magnetic DFT and fine-tuning on a small set of spin-polarised data, reduces the computational cost to develop magnetic MLIPs by more than an order of magnitude. Developing general-purpose potentials that capture static and dynamic behaviors throughout the whole composition space requires proper accounting for temperature-induced spin fluctuations in DFT calculations and correctly incorporating spin degrees of freedom into classical force fields.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user has shown interest in materials science and computation, this paper's focus on machine-learned potentials for magnetic systems in Fe-Cr-C seems too specific and deviates from the user's prior interests in superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine-learned interatomic potentials",
+      "magnetic materials",
+      "Fe-Cr-C system"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5655602812767029,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5343215465545654,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.45695140957832336,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.19471v1": {
+    "id": "2507.19471v1",
+    "title": "Interplay of non-Hermitian skin effect and electronic correlations in the non-Hermitian Hubbard model via Real-space dynamical mean field theory",
+    "authors": [
+      {
+        "name": "Chakradhar Rangi",
+        "affiliation": null
+      },
+      {
+        "name": "Juana Moreno",
+        "affiliation": null
+      },
+      {
+        "name": "Ka-Ming Tam",
+        "affiliation": null
+      }
+    ],
+    "summary": "Non-Hermitian quantum systems, characterized by their ability to model open systems with gain and loss, have unveiled striking phenomena such as the non-Hermitian skin effect (NHSE), where eigenstates localize at boundaries under open boundary conditions. While extensively studied in non-interacting systems, the interplay between NHSE and strong electron correlations remains largely unexplored. Here, we investigate the non-Hermitian Hubbard model with asymmetric hopping, employing real-space dynamical mean-field theory (R-DMFT), a novel extension to such non-Hermitian correlated models-to capture both local correlations and spatial inhomogeneities. By analyzing the end-to-end Green's function as probes of directional amplification, we demonstrate that strong correlations can suppress the skin effect, leading to a crossover from boundary-dominated to correlation-driven dynamics. Our systematic study reveals that correlations dominate at small to intermediate strength of asymmetric hopping, inducing exponential decay in the end-to-end Green's function, but higher strength of asymmetric hopping can restore amplification even at strong interaction. These results illuminate the tunable interplay between correlations and non-Hermitian physics, suggesting avenues for engineering non-reciprocal transport in correlated open quantum systems.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "This paper is highly relevant due to the use of dynamical mean-field theory (DMFT) and its exploration of electronic correlations, topics present in the user's liked papers.",
+    "matching_keywords": [
+      "dynamical mean field theory",
+      "green's function",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "non-Hermitian skin effect",
+      "real-space DMFT",
+      "non-reciprocal transport"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5715423822402954,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5676726698875427,
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
+      },
+      {
+        "score": 0.5661331415176392,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.19435v1": {
+    "id": "2507.19435v1",
+    "title": "Equivariant machine learning of Electric Field Gradients -- Predicting the quadrupolar coupling constant in the MAPbI$_3$ phase transition",
+    "authors": [
+      {
+        "name": "Bernhard Schmiedmayer",
+        "affiliation": null
+      },
+      {
+        "name": "J. W. Wolffs",
+        "affiliation": null
+      },
+      {
+        "name": "Gilles A. de Wijs",
+        "affiliation": null
+      },
+      {
+        "name": "Arno P. M. Kentgens",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Lahnsteiner",
+        "affiliation": null
+      },
+      {
+        "name": "Georg Kresse",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a strategy combining machine learning and first-principles calculations to achieve highly accurate nuclear quadrupolar coupling constant predictions. Our approach employs two distinct machine-learning frameworks: a machine-learned force field to generate molecular dynamics trajectories and a second model for electric field gradients that preserves rotational and translational symmetries. By incorporating thermostat-driven molecular dynamics sampling, we enable the prediction of quadrupolar coupling constants in highly disordered materials at finite temperatures. We validate our method by predicting the tetragonal-to-cubic phase transition temperature of the organic-inorganic halide perovskite MAPbI$_3$, obtaining results that closely match experimental data.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on machine learning to predict material properties (quadrupolar coupling) in perovskites, which has some connection to the user's interest in novel materials and computational methods but is not a primary focus.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning",
+      "quadrupolar coupling constant",
+      "halide perovskite"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5537892580032349,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5381200313568115,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5269364714622498,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.18700v1": {
+    "id": "2507.18700v1",
+    "title": "Adaptive Neural Quantum States: A Recurrent Neural Network Perspective",
+    "authors": [
+      {
+        "name": "Jake McNaughton",
+        "affiliation": null
+      },
+      {
+        "name": "Mohamed Hibat-Allah",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural-network quantum states (NQS) are powerful neural-network ans\\\"atzes that have emerged as promising tools for studying quantum many-body physics through the lens of the variational principle. These architectures are known to be systematically improvable by increasing the number of parameters. Here we demonstrate an Adaptive scheme to optimize NQSs, through the example of recurrent neural networks (RNN), using a fraction of the computation cost while reducing training fluctuations and improving the quality of variational calculations targeting ground states of prototypical models in one- and two-spatial dimensions. This Adaptive technique reduces the computational cost through training small RNNs and reusing them to initialize larger RNNs. This work opens up the possibility for optimizing graphical processing unit (GPU) resources deployed in large-scale NQS simulations.",
+    "published_date": "2025-07-24",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "While the paper focuses on neural networks applied to quantum many-body physics, a connection to previous papers on correlated electron systems (nickelates, cuprates) exists through the shared quantum many-body context, justifying a moderate relevance score.",
+    "matching_keywords": [
+      "neural network",
+      "neural quantum state"
+    ],
+    "suggested_keywords": [
+      "Neural-network quantum states",
+      "Recurrent neural networks",
+      "Variational principle"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6511780023574829,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.6502547264099121,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.6146069169044495,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.19438v1": {
+    "id": "2507.19438v1",
+    "title": "Gradient-based grand canonical optimization enabled by graph neural networks with fractional atomic existence",
+    "authors": [
+      {
+        "name": "Mads-Peter Verner Christiansen",
+        "affiliation": null
+      },
+      {
+        "name": "Bj\u00f8rk Hammer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning interatomic potentials have become an indispensable tool for materials science, enabling the study of larger systems and longer timescales. State-of-the-art models are generally graph neural networks that employ message passing to iteratively update atomic embeddings that are ultimately used for predicting properties. In this work we extend the message passing formalism with the inclusion of a continuous variable that accounts for fractional atomic existence. This allows us to calculate the gradient of the Gibbs free energy with respect to both the Cartesian coordinates of atoms and their existence. Using this we propose a gradient-based grand canonical optimization method and document its capabilities for a Cu(110) surface oxide.",
+    "published_date": "2025-07-25",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses machine learning potentials and graph neural networks in the context of materials science, connecting to the user's interest in novel materials and computational methods.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "graph neural networks",
+      "grand canonical optimization",
+      "fractional atomic existence"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.481719970703125,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4241860508918762,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.4153398275375366,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
