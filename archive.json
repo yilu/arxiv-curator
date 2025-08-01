@@ -23088,7 +23088,9 @@
         "liked_paper_id": "2507.00837v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.22735v1": {
     "id": "2507.22735v1",
@@ -23137,7 +23139,9 @@
         "liked_paper_id": "2507.00386v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.22137v1": {
     "id": "2507.22137v1",
@@ -23238,7 +23242,9 @@
         "liked_paper_id": "2506.20106v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.22269v1": {
     "id": "2507.22269v1",
@@ -23341,7 +23347,9 @@
         "liked_paper_id": "2506.13431v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.22320v1": {
     "id": "2507.22320v1",
@@ -23577,6 +23585,675 @@
       {
         "score": 0.649032473564148,
         "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23232v1": {
+    "id": "2507.23232v1",
+    "title": "Altermagnetism in 6H perovskites",
+    "authors": [
+      {
+        "name": "S. V. Streltsov",
+        "affiliation": null
+      },
+      {
+        "name": "S. -W. Cheong",
+        "affiliation": null
+      }
+    ],
+    "summary": "The combination of a centrosymmetric crystallographic structure with local structural alternations and collinear antiferromagnetism can lead to broken PT (Parity $\\times$ Time-reversal) symmetry, resulting in altermagnets with non-relativistic spin-split bands. The 6H perovskites with composition A$_3$BB'$_2$O$_9$ exhibit unique layered structural alternations and typically adopt an antiferromagnetic ground state. Here, we report the discovery that several 6H perovskites are indeed altermagnets exhibiting non-relativistic spin-split bands. We also explore the possible presence of net magnetization due to spin-orbit coupling in these materials, as well as the manifestation of giant piezomagnetism. Since the single crystals of 6H perovskites can be readily grown and cleavable, our findings provide a new avenue to study the cleaved atomically-flat surfaces of altermagnets with advanced experimental techniques such as spin-resolved scanning tunneling microscopy (STM) or spin-resolved angle-resolved photoemission spectroscopy (ARPES) to explore their spin splitting nature.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper deals with magnetism in perovskites, which relates to the user's interest in unconventional superconductivity and correlated electron systems, particularly in nickelates and cuprates.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "6H perovskites",
+      "Spin-split bands"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5843791961669922,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5687210559844971,
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC"
+      },
+      {
+        "score": 0.555266797542572,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23077v1": {
+    "id": "2507.23077v1",
+    "title": "A Foundation Model for Material Fracture Prediction",
+    "authors": [
+      {
+        "name": "Agnese Marcato",
+        "affiliation": null
+      },
+      {
+        "name": "Aleksandra Pachalieva",
+        "affiliation": null
+      },
+      {
+        "name": "Ryley G. Hill",
+        "affiliation": null
+      },
+      {
+        "name": "Kai Gao",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaoyu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Esteban Rougier",
+        "affiliation": null
+      },
+      {
+        "name": "Zhou Lei",
+        "affiliation": null
+      },
+      {
+        "name": "Vinamra Agrawal",
+        "affiliation": null
+      },
+      {
+        "name": "Janel Chua",
+        "affiliation": null
+      },
+      {
+        "name": "Qinjun Kang",
+        "affiliation": null
+      },
+      {
+        "name": "Jeffrey D. Hyman",
+        "affiliation": null
+      },
+      {
+        "name": "Abigail Hunter",
+        "affiliation": null
+      },
+      {
+        "name": "Nathan DeBardeleben",
+        "affiliation": null
+      },
+      {
+        "name": "Earl Lawrence",
+        "affiliation": null
+      },
+      {
+        "name": "Hari Viswanathan",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel O'Malley",
+        "affiliation": null
+      },
+      {
+        "name": "Javier E. Santos",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurately predicting when and how materials fail is critical to designing safe, reliable structures, mechanical systems, and engineered components that operate under stress. Yet, fracture behavior remains difficult to model across the diversity of materials, geometries, and loading conditions in real-world applications. While machine learning (ML) methods show promise, most models are trained on narrow datasets, lack robustness, and struggle to generalize. Meanwhile, physics-based simulators offer high-fidelity predictions but are fragmented across specialized methods and require substantial high-performance computing resources to explore the input space. To address these limitations, we present a data-driven foundation model for fracture prediction, a transformer-based architecture that operates across simulators, a wide range of materials (including plastic-bonded explosives, steel, aluminum, shale, and tungsten), and diverse loading conditions. The model supports both structured and unstructured meshes, combining them with large language model embeddings of textual input decks specifying material properties, boundary conditions, and solver settings. This multimodal input design enables flexible adaptation across simulation scenarios without changes to the model architecture. The trained model can be fine-tuned with minimal data on diverse downstream tasks, including time-to-failure estimation, modeling fracture evolution, and adapting to combined finite-discrete element method simulations. It also generalizes to unseen materials such as titanium and concrete, requiring as few as a single sample, dramatically reducing data needs compared to standard ML. Our results show that fracture prediction can be unified under a single model architecture, offering a scalable, extensible alternative to simulator-specific workflows.",
+    "published_date": "2025-07-30",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.geo-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in materials, this paper focuses on a machine learning model for fracture prediction across a diverse range of materials, a topic somewhat orthogonal to the user's previous interests in superconductivity and electronic structure.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Fracture prediction",
+      "Foundation model",
+      "Material failure"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42230093479156494,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3472282290458679,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.2961665391921997,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23748v1": {
+    "id": "2507.23748v1",
+    "title": "Applying the Worldvolume Hybrid Monte Carlo method to the Hubbard model away from half filling",
+    "authors": [
+      {
+        "name": "Masafumi Fukuma",
+        "affiliation": null
+      },
+      {
+        "name": "Yusuke Namekawa",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Worldvolume Hybrid Monte Carlo (WV-HMC) method [arXiv:2012.08468] is an efficient and low-cost algorithm for addressing the sign problem. It mitigates the sign problem while avoiding the ergodicity issues that are intrinsic to algorithms based on Lefschetz thimbles. In this study, we apply the WV-HMC method to the Hubbard model away from half filling, which is known to suffer from a severe sign problem. We compute the number density on lattices of spatial size $6 \\times 6$ and $8 \\times 8$ at inverse temperature $\\beta = 6.4$ using $N_t = 20$ Trotter steps. Our results show that the WV-HMC method remains effective even in parameter regions where non-thimble Monte Carlo methods fail due to severe sign problems. In this work, we employ direct solvers for fermion matrix inversion, with a computational cost of $O(N^3)$, where $N$ is the number of degrees of freedom and proportional to the spacetime lattice volume. An alternative algorithm employing pseudofermions and iterative solvers, which reduces the cost to $O(N^2)$ at the expense of careful parameter tuning, will be discussed in a separate publication.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses the Hubbard model, a key concept in strongly correlated electron systems which is relevant to the user's interest in unconventional superconductivity and related materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Worldvolume Hybrid Monte Carlo",
+      "Hubbard model",
+      "sign problem"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6190044283866882,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.5878025889396667,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.5501722097396851,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23383v1": {
+    "id": "2507.23383v1",
+    "title": "Low energy excitations in A-site ordered SmBaMn2O6",
+    "authors": [
+      {
+        "name": "Mirian Garcia Fernandez",
+        "affiliation": null
+      },
+      {
+        "name": "Abhishek Nag",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano Agrestini",
+        "affiliation": null
+      },
+      {
+        "name": "Sahil Tippireddy",
+        "affiliation": null
+      },
+      {
+        "name": "Dirk Backes",
+        "affiliation": null
+      },
+      {
+        "name": "Urs Staub",
+        "affiliation": null
+      },
+      {
+        "name": "Taka-hisa Arima",
+        "affiliation": null
+      },
+      {
+        "name": "Kejin Zhou",
+        "affiliation": null
+      }
+    ],
+    "summary": "The electron in a solid can be considered a bound state of the three independent, fundamental degrees of freedom creating quasi-particles: spinons, carrying the electron spin; plasmons carrying the collective charge mode and orbitons carrying its orbital degree of freedom. These fundamental degrees of freedom could form ordering states in which dynamics or collective motions could occurr and manifest as low-energy excitations. The exotic properties that appear in the materials exhibiting these electronic orderings are associated with these low-energy excitations. Although the orbital order (OO) and its coupling to the spin system creates very interesting phenomena, the microscopic origin of OO has been much less explored than other electronic properties as it is very difficult to directly access experimental information from OO. Due to the recent improvement in energy resolution and flux, soft x-ray resonant inelastic scattering (RIXS) allows for a re-examination of orbital excitations in manganites. Here, we present a study of low energy excitations in half doped A-site ordered SmBaMn_{2}O_{6} through a combination of RIXS and soft x-ray resonant elastic scattering (REXS) measurements. The obtained experimental data confirm the OO at \\mathbf{q} = (0.25, 0.25, 0) and find various low energy excitations below 200 meV. while several excitations can be assigned to be of magnetic and phononic origin, a group of excitations between 80 and 200 meV show a temperature dependence distinctively following that of the OO making them possible candidates for orbital excitations.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses low energy excitations in manganites, particularly orbital excitations, which connects to the user's interest in correlated electron systems and exotic phenomena in materials.",
+    "matching_keywords": [
+      "RIXS"
+    ],
+    "suggested_keywords": [
+      "orbital order",
+      "low energy excitations",
+      "resonant inelastic scattering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6433075666427612,
+        "liked_paper_id": "yBtX0C4AAAAJ:dfsIfKJdRG4C"
+      },
+      {
+        "score": 0.6321938633918762,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.6289718747138977,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23369v1": {
+    "id": "2507.23369v1",
+    "title": "Machine learning Landau free energy potentials",
+    "authors": [
+      {
+        "name": "Mauro Pulzone",
+        "affiliation": null
+      },
+      {
+        "name": "Natalya S. Fedorova",
+        "affiliation": null
+      },
+      {
+        "name": "Hugo Aramberri",
+        "affiliation": null
+      },
+      {
+        "name": "Jorge \u00cd\u00f1iguez-Gonz\u00e1lez",
+        "affiliation": null
+      }
+    ],
+    "summary": "We show how to construct Landau-like free energy potentials using a machine-learning approach. For concreteness, we focus on perovskite oxide PbTiO$_{3}$. We work with a training set obtained from Monte Carlo simulations based on an atomistic ''second-principles'' potential for PbTiO$_{3}$. We rely exclusively on data that would be experimentally accessible -- i.e., temperature-dependent polarization and strain, both with and without external electric fields and stresses applied --, to explore scenarios where the training set could be obtained from laboratory measurements. We introduce a scheme that allows us to identify optimal polynomial models of the temperature-dependent free energy surface, mapped as a function of the homogeneous electric polarization and homogeneous strain. Our results for PbTiO$_{3}$ show that a very simple polynomial -- where only two parameters depend linearly on temperature -- is sufficient to yield a correct description of the material's behavior. Remarkably, the obtained models also capture the subtle couplings by which elastic strain controls key features of ferroelectricity in PbTiO$_{3}$ -- i.e., the symmetry of the polar phase and the discontinuous character of the transition --, despite the fact that no effort was made to include such information in the training set. We emphasize the distinctive aspects of our methodology (which relies on an original form of validation step) by comparing it with the usual machine-learning approach for model construction. Our results illustrate how physically motivated models can have remarkable predictive power, even if they are derived from a limited amount of data. We argue that such ''third-principles'' models can be the basis for predictive macroscopic or mesoscopic simulations of ferroelectrics and other materials undergoing non-reconstructive structural transitions.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the user has shown interest in perovskite oxides and their properties, this paper focuses on a machine learning approach to modeling Landau free energy, which is only tangentially related to the user's previous interests.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Landau free energy",
+      "machine learning",
+      "PbTiO3"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5521721839904785,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5468801259994507,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4532893896102905,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23233v1": {
+    "id": "2507.23233v1",
+    "title": "Altermagnetism and anomalous Hall effect in LaMn2Si2",
+    "authors": [
+      {
+        "name": "S. V. Streltsov",
+        "affiliation": null
+      },
+      {
+        "name": "D. M. Korotin",
+        "affiliation": null
+      }
+    ],
+    "summary": "By combining symmetry analysis and direct density functional calculations including the spin-orbit coupling, we demonstrate that LaMn2Si2 is an M-type altermagnet. Our results predict a large anomalous Hall effect, with a non-zero xy component of -360 S/cm, accompanied by a pronounced magneto-optical response. Remarkably, electron doping of LaMn2Si2 is predicted to substantially enhance the Hall conductivity, with values reaching up to -650 S/cm. These results suggest that silicates with general formula RM2Si2 can be an interesting platform for studying both altermagnetism and anomalous Hall effect.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism, which relates to the previous papers on topological materials and unconventional electronic states, although the specific materials are different.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Anomalous Hall effect",
+      "LaMn2Si2"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46538031101226807,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "score": 0.4564668834209442,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.44976383447647095,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.23260v1": {
+    "id": "2507.23260v1",
+    "title": "Superconducting coherence boosted by outer-layer metallic screening in multilayered cuprates",
+    "authors": [
+      {
+        "name": "Junhyeok Jeong",
+        "affiliation": null
+      },
+      {
+        "name": "Kifu Kurokawa",
+        "affiliation": null
+      },
+      {
+        "name": "Shiro Sakai",
+        "affiliation": null
+      },
+      {
+        "name": "Tomotaka Nakayama",
+        "affiliation": null
+      },
+      {
+        "name": "Kotaro Ando",
+        "affiliation": null
+      },
+      {
+        "name": "Naoshi Ogane",
+        "affiliation": null
+      },
+      {
+        "name": "Soonsang Huh",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew D. Watson",
+        "affiliation": null
+      },
+      {
+        "name": "Timur K. Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Cephise Cacho",
+        "affiliation": null
+      },
+      {
+        "name": "Chun Lin",
+        "affiliation": null
+      },
+      {
+        "name": "Makoto Hashimoto",
+        "affiliation": null
+      },
+      {
+        "name": "Donghui Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Takami Tohyama",
+        "affiliation": null
+      },
+      {
+        "name": "Kazuyasu Tokiwa",
+        "affiliation": null
+      },
+      {
+        "name": "Takeshi Kondo",
+        "affiliation": null
+      }
+    ],
+    "summary": "In multilayered high-Tc cuprates with three or more CuO2 layers per unit cell, the inner CuO2 planes (IPs) are spatially separated from the dopant layers and thus remain cleaner than the outer planes (OPs). While both interlayer coupling and the presence of clean IPs have been proposed as key factors enhancing superconductivity, their individual roles have been difficult to disentangle, as IPs and OPs typically become superconducting simultaneously. Here we investigate five-layer (Cu,C)Ba2Ca4Cu5Oy (Cu1245) with Tc = 78 K and three-layer Ba2Ca2Cu3O6(F,O)2 (F0223) with Tc = 100 K using ARPES, and uncover an unprecedented situation, in which only the IPs become superconducting while the OPs remain metallic at low temperatures. Model calculations indicate that more than 95% of the OP wavefunction remains confined to OP itself, with minimal hybridization from the superconducting IPs. In particular, we experimentally realize an ideal configuration: a single superconducting CuO2 layer sandwiched between heavily overdoped metallic outer layers, which screen disorder originating from the dopant layers. Strikingly, this clean CuO2 layer exhibits the largest superconducting gap among all known cuprates and coherent Bogoliubov peaks extending beyond the antiferromagnetic zone boundary -- long regarded as the boundary beyond which coherence vanishes in heavily underdoped cuprates. Furthermore, a widely extended coherent flat band emerges at the Brillouin zone edge, overcoming the pseudogap damping effect. Our results introduce a new physical parameter, the degree of screening, to investigate the competition between superconductivity and the pseudogap, potentially shedding new light on its origin. The nearly disorder-free superconducting CuO2 layers offer a model platform for bridging the gap between disordered real materials and idealized theoretical models, which generally neglect disorder effects.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses superconductivity in cuprates, a topic overlapping with previous papers on high-temperature superconductors and related materials.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "Multilayered cuprates",
+      "Metallic screening",
+      "Coherent Bogoliubov peaks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6157534122467041,
+        "liked_paper_id": "2506.22435v1"
+      },
+      {
+        "score": 0.5873395204544067,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.5873337388038635,
+        "liked_paper_id": "yBtX0C4AAAAJ:e5wmG9Sq2KIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.22119v1": {
+    "id": "2507.22119v1",
+    "title": "What is the topological dual of the XXZ spin Chain?",
+    "authors": [
+      {
+        "name": "Yicheng Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Pradip Kattel",
+        "affiliation": null
+      },
+      {
+        "name": "Natan Andrei",
+        "affiliation": null
+      }
+    ],
+    "summary": "We construct a dual symmetry-protected topological (SPT) Hamiltonian for the $U(1)$ symmetric anisotropic spin-$\\frac{1}{2}$ Heisenberg chain-a model that has traditionally been used to study spontaneous symmetry breaking (SSB) in both ferromagnetic and antiferromagnetic phases, with an intervening extended Luttinger liquid phase. By performing a non-local unitary transformation, we explicitly construct a local fermionic Hamiltonian that exhibits two nontrivial topological phases separated by an extended Luttinger liquid regime. We demonstrate the topological nature of these phases by analyzing the entanglement structure, deriving a non-local string order parameter, and constructing an exact zero mode operator that connects states in different fermionic parity sectors.",
+    "published_date": "2025-07-29",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological phases and symmetries in spin chains, which aligns with the user's interest in topological materials and symmetry-protected topological phases, but is less directly related to superconductivity or specific materials like nickelates or cuprates.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "SPT Hamiltonian",
+      "spin chain",
+      "topological phases"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6838010549545288,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5614309310913086,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.5465500950813293,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.22989v1": {
+    "id": "2507.22989v1",
+    "title": "Tensor Network Representations for Intrinsically Mixed-State Topological Orders",
+    "authors": [
+      {
+        "name": "Bader Aldossari",
+        "affiliation": null
+      },
+      {
+        "name": "Sergey Blinov",
+        "affiliation": null
+      },
+      {
+        "name": "Zhu-Xi Luo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Tensor networks are an efficient platform to represent interesting quantum states of matter as well as to compute physical observables and information-theoretic quantities. We present a general protocol to construct fixed-point tensor network representations for intrinsically mixed-state topological phases, which exhibit nontrivial topological phenomena and do not have pure-state counterparts. The method exploits the power of anyon condensation in Choi states and is applicable to the cases where the target states arise from pure-state topological phases subject to strong decoherence/disorders in the Abelian sectors. Representative examples include $m^a e^b$ decoherence of $\\mathbb{Z}_N$ toric code, decohered non-Abelian $S_3$ quantum double as well as pure $Z$/$X$ decoherence of arbitrary CSS codes. An example of chiral topological phases which cannot arise from local commuting projector models are also presented.",
+    "published_date": "2025-07-30",
+    "categories": [
+      "cond-mat.str-el",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in topological materials, this paper focuses on tensor network representations and mixed states, which are not a direct match to the user's previous interests in electronic structure calculations, oxygen vacancies, and Dirac semimetals.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor networks",
+      "Mixed-state topological order",
+      "Anyon condensation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5219095349311829,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.4870259463787079,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4757218658924103,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.22562v1": {
+    "id": "2507.22562v1",
+    "title": "Minimizing entanglement entropy for enhanced quantum state preparation",
+    "authors": [
+      {
+        "name": "Oskari Kerppo",
+        "affiliation": null
+      },
+      {
+        "name": "William Steadman",
+        "affiliation": null
+      },
+      {
+        "name": "Ossi Niemim\u00e4ki",
+        "affiliation": null
+      },
+      {
+        "name": "Valtteri Lahtinen",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum state preparation is an important subroutine in many quantum algorithms. The goal is to encode classical information directly to the quantum state so that it is possible to leverage quantum algorithms for data processing. However, quantum state preparation of arbitrary states scales exponentially in the number of two-qubit gates, and this makes quantum state preparation a very difficult task on quantum computers, especially on near-term noisy devices. This represents a major challenge in achieving quantum advantage. We present and analyze a novel two-step state preparation method where we first minimize the entanglement entropy of the target quantum state, thus transforming the state to one that is easier to prepare. The state with reduced entanglement entropy is then represented as a matrix product state, resulting in a high accuracy preparation of the target state. Our method is suitable for NISQ devices and we give rigorous lower bounds on the accuracy of the prepared state in terms of the entanglement entropy and demonstrate cutting-edge performance across a collection of benchmark states.",
+    "published_date": "2025-07-30",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum state preparation and entanglement entropy minimization, which are not directly related to the user's previous interests in condensed matter physics and materials science, specifically superconductors and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "quantum state preparation",
+      "entanglement entropy",
+      "matrix product state"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4812907874584198,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.44891056418418884,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4394201934337616,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.23173v1": {
+    "id": "2507.23173v1",
+    "title": "Model Hamiltonian for Altermagnetic Topological Insulators",
+    "authors": [
+      {
+        "name": "Rafael Gonzalez-Hernandez",
+        "affiliation": null
+      },
+      {
+        "name": "Bernardo Uribe",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present models of topological insulating Hamiltonians exhibiting intrinsic altermagnetic features, protected by combined three-fold or four-fold rotational symmetries with time-reversal. We demonstrate that the spin Chern number serves as a robust topological invariant in two-dimensional systems, while for three-dimensional structures, the topological nature is characterized by the spin Chern numbers computed on the $k_z$=$0$ and $k_z$=$\\pi$ planes. The resulting phases support symmetry-protected boundary modes, including corner, hinges and surface states, whose structure is determined by the magnetic symmetry and the local magnetic moments. Our findings bridge the fields of altermagnetism and topological quantum matter, and establish a theoretical framework for engineering spintronic topological systems without net magnetization.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological materials with specific magnetic symmetries, which aligns with the user's interest in topological materials and Dirac fermions.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Topological Insulators",
+      "Spin Chern Number"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.624382495880127,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.560938835144043,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.5344669222831726,
+        "liked_paper_id": "2507.00837v1"
       }
     ],
     "discovery_sources": []
