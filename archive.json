@@ -24157,7 +24157,9 @@
         "liked_paper_id": "2506.20106v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2507.22562v1": {
     "id": "2507.22562v1",
@@ -24257,5 +24259,256 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2507.23346v1": {
+    "id": "2507.23346v1",
+    "title": "Transfer entropy and O-information to detect grokking in tensor network multi-class classification problems",
+    "authors": [
+      {
+        "name": "Domenico Pomarico",
+        "affiliation": null
+      },
+      {
+        "name": "Roberto Cilli",
+        "affiliation": null
+      },
+      {
+        "name": "Alfonso Monaco",
+        "affiliation": null
+      },
+      {
+        "name": "Loredana Bellantuono",
+        "affiliation": null
+      },
+      {
+        "name": "Marianna La Rocca",
+        "affiliation": null
+      },
+      {
+        "name": "Tommaso Maggipinto",
+        "affiliation": null
+      },
+      {
+        "name": "Giuseppe Magnifico",
+        "affiliation": null
+      },
+      {
+        "name": "Marlis Ontivero Ortega",
+        "affiliation": null
+      },
+      {
+        "name": "Ester Pantaleo",
+        "affiliation": null
+      },
+      {
+        "name": "Sabina Tangaro",
+        "affiliation": null
+      },
+      {
+        "name": "Sebastiano Stramaglia",
+        "affiliation": null
+      },
+      {
+        "name": "Roberto Bellotti",
+        "affiliation": null
+      },
+      {
+        "name": "Nicola Amoroso",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum-enhanced machine learning, encompassing both quantum algorithms and quantum-inspired classical methods such as tensor networks, offers promising tools for extracting structure from complex, high-dimensional data. In this work, we study the training dynamics of Matrix Product State (MPS) classifiers applied to three-class problems, using both fashion MNIST and hyper-spectral satellite imagery as representative datasets. We investigate the phenomenon of grokking, where generalization emerges suddenly after memorization, by tracking entanglement entropy, local magnetization, and model performance across training sweeps. Additionally, we employ information theory tools to gain deeper insights: transfer entropy is used to reveal causal dependencies between label-specific quantum masks, while O-information captures the shift from synergistic to redundant correlations among class outputs. Our results show that grokking in the fashion MNIST task coincides with a sharp entanglement transition and a peak in redundant information, whereas the overfitted hyper-spectral model retains synergistic, disordered behavior. These findings highlight the relevance of high-order information dynamics in quantum-inspired learning and emphasize the distinct learning behaviors that emerge in multi-class classification, offering a principled framework to interpret generalization in quantum machine learning architectures.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "physics.data-an"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum-inspired machine learning and tensor networks, which is a significant departure from the user's interest in condensed matter physics and materials science, specifically related to superconductivity and electronic structure.",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "grokking",
+      "tensor network",
+      "transfer entropy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5067540407180786,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.45845088362693787,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4442445933818817,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.23262v1": {
+    "id": "2507.23262v1",
+    "title": "AC/DC spin current in ferromagnet/superconductor/normal metal trilayer systems",
+    "authors": [
+      {
+        "name": "Koki Mizuno",
+        "affiliation": null
+      },
+      {
+        "name": "Hirone Ishida",
+        "affiliation": null
+      },
+      {
+        "name": "Manato Teranishi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spin pumping with superconductors has been extensively studied, particularly in double-layer systems. In this study, we investigate spin pumping in a trilayer system comprising a ferromagnetic insulator (FMI), a superconductor (SC), and a normal metal (NM). We derive the AC and DC spin currents in the NM layer induced by spin motion in the FMI under circularly polarized microwave irradiation. If we treat the spin motion as classical, the AC spin current is expressed. On the other hand, if we treat the spin motion as quantum quasiparticles, the DC spin current is derived. After these derivations, while the computational cost of evaluating the spin current is extremely high, we mitigate this using the Quantics Tensor Cross Interpolation (QTCI) method. We present numerical results showing the dependence of the spin current on temperature, microwave frequency, and superconductor layer thickness. Notably, the temperature dependence of AC and DC spin currents exhibits a coherence peak. Furthermore, we have discovered a transition structure in the dependence of the spin current on the thickness of the superconductor layer, where the dependence changes after a particular frequency.",
+    "published_date": "2025-07-31",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mes-hall",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses superconductivity and its interaction with other materials, specifically spin transport in a ferromagnet/superconductor system, aligning with the user's interest in superconductivity and related phenomena like electronic correlations and topological phases.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "spin pumping",
+      "trilayer system",
+      "Quantics Tensor Cross Interpolation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5393091440200806,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.4857344329357147,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.47672802209854126,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2507.20160v2": {
+    "id": "2507.20160v2",
+    "title": "Polarized Houston State Framework for Nonequilibrium Driven Open Quantum Systems",
+    "authors": [
+      {
+        "name": "Shunsuke A. Sato",
+        "affiliation": null
+      },
+      {
+        "name": "Hannes H\u00fcbener",
+        "affiliation": null
+      },
+      {
+        "name": "Umberto De Giovannini",
+        "affiliation": null
+      },
+      {
+        "name": "Angel Rubio",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a new theoretical framework -- the polarized Houston basis -- to model nonequilibrium dynamics in driven open quantum systems, formulated for use within the quantum master equation. This basis extends conventional Houston states by incorporating field-induced polarization effects, enabling a more accurate description of excitation dynamics under external driving. Using a one-dimensional dimer-chain model, we examine band population dynamics through projections onto polarized Houston states, original Houston states, and naive Bloch states. We find that the polarized Houston basis significantly suppresses spurious Bloch-state excitations and virtual transitions present in standard Houston approaches, allowing for a cleaner extraction of real excitations. When implemented in the relaxation time approximation of the quantum master equation, this formalism also yields a substantial reduction of unphysical DC currents in insulating systems. Our results highlight the polarized Houston basis as a powerful tool for simulating nonequilibrium phenomena in light-driven open quantum materials.",
+    "published_date": "2025-07-27",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.optics"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "The paper discusses a theoretical framework for modeling nonequilibrium dynamics in driven open quantum systems, which is somewhat related to the user's interest in quantum materials and condensed matter physics, but the specific focus on light-driven systems and the Houston basis is not directly aligned with the previous papers.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Polarized Houston basis",
+      "Nonequilibrium dynamics",
+      "Open quantum systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49303990602493286,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.484645813703537,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.47105029225349426,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2507.22984v1": {
+    "id": "2507.22984v1",
+    "title": "Field digitization scaling in a $\\mathbb{Z}_N \\subset U(1)$ symmetric model",
+    "authors": [
+      {
+        "name": "Gabriele Calliari",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Ott",
+        "affiliation": null
+      },
+      {
+        "name": "Hannes Pichler",
+        "affiliation": null
+      },
+      {
+        "name": "Torsten V. Zache",
+        "affiliation": null
+      }
+    ],
+    "summary": "The simulation of quantum field theories, both classical and quantum, requires regularization of infinitely many degrees of freedom. However, in the context of field digitization (FD) -- a truncation of the local fields to $N$ discrete values -- a comprehensive framework to obtain continuum results is currently missing. Here, we propose to analyze FD by interpreting the parameter $N$ as a coupling in the renormalization group (RG) sense. As a first example, we investigate the two-dimensional classical $N$-state clock model as a $\\mathbb{Z}_N$ FD of the $U(1)$-symmetric $XY$-model. Using effective field theory, we employ the RG to derive generalized scaling hypotheses involving the FD parameter $N$, which allows us to relate data obtained for different $N$-regularized models in a procedure that we term $\\textit{field digitization scaling}$ (FDS). Using numerical tensor-network calculations at finite bond dimension $\\chi$, we further uncover an unconventional universal crossover around a low-temperature phase transition induced by finite $N$, demonstrating that FDS can be extended to describe the interplay of $\\chi$ and $N$. Finally, we analytically prove that our calculations for the 2D classical-statistical $\\mathbb{Z}_N$ clock model are directly related to the quantum physics in the ground state of a (2+1)D $\\mathbb{Z}_N$ lattice gauge theory which serves as a FD of compact quantum electrodynamics. Our study thus paves the way for applications of FDS to quantum simulations of more complex models in higher spatial dimensions, where it could serve as a tool to analyze the continuum limit of digitized quantum field theories.",
+    "published_date": "2025-07-30",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper discusses the simulation of quantum field theories using field digitization, which is not strongly related to the user's liked papers on superconductivity and topological materials, except for a very broad connection to quantum materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "field digitization",
+      "renormalization group",
+      "clock model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5196517705917358,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.4657886028289795,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.46055006980895996,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
