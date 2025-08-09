@@ -27683,5 +27683,740 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2508.04773v1": {
+    "id": "2508.04773v1",
+    "title": "Spin-resolved quasiparticle interference patterns on altermagnets via non-spin-resolved scanning tunneling microscopy",
+    "authors": [
+      {
+        "name": "Eric Petermann",
+        "affiliation": null
+      },
+      {
+        "name": "Kristian M\u00e6land",
+        "affiliation": null
+      },
+      {
+        "name": "Bj\u00f6rn Trauzettel",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate quasiparticle interference on an altermagnetic Lieb-like lattice and show how a non-spin-polarized scanning tunneling microscopy measurement can yield effectively spin-resolved information. Within a four-site tight-binding model, which can be tuned between an antiferromagnetic and a Lieb-type altermagnetic state, we introduce on-site impurities at distinct sublattice sites and compute the real space local density of states (LDOS) via a Green's function approach. A Fourier transformation of the impurity-induced LDOS yields the characteristic $d$-wave spin-split Fermi surface contours of the altermagnetic phase. Notably, by choosing which sublattice the impurity is placed upon, we show that the scattering amplitudes effectively encode spin-dependent contrasts: Impurities on one of the magnetic sublattices highlights predominantly spin-up contributions along one crystallographic direction, while impurities on the other one favor the complementary spin-down channel and orientation.",
+    "published_date": "2025-08-06",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "The paper discusses altermagnets and their electronic properties, which has some overlap with previous papers on unconventional superconductivity and topological materials but is not a direct match.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Quasiparticle interference",
+      "Spin-resolved STM"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.560859203338623,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.54947829246521,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.5477850437164307,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.04774v1": {
+    "id": "2508.04774v1",
+    "title": "Universal quantum phase classification on quantum computers from machine learning",
+    "authors": [
+      {
+        "name": "Weicheng Ye",
+        "affiliation": null
+      },
+      {
+        "name": "Shuwei Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Shiyu Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Yijian Zou",
+        "affiliation": null
+      }
+    ],
+    "summary": "The classification of quantum phases of matter remains a fundamental challenge in condensed matter physics. We present a novel framework that combines shadow tomography with modern time-series machine learning models to enable efficient and practical quantum phase classification. Our approach leverages the definition of quantum phases based on connectivity through finite-depth local unitary circuits, generating abundant training data by applying Haar random evolution to representative quantum states for a given phase. In this way, the training data can be efficiently obtained from a quantum simulator. Additionally, we demonstrate that advanced time-series models can be used to process the training data and achieve universal quantum phase classification that does not rely on local order parameters. To validate the universality and versatility of our method, we test the model against one-dimensional quantum spin chains such as the Ising model and the axial next-nearest-neighbor Ising (ANNNI) model, showing excellent agreement with known phase boundaries.",
+    "published_date": "2025-08-06",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum phase classification using machine learning on quantum computers, which is a departure from the user's interest in condensed matter physics, specifically related to oxides and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "quantum phase classification",
+      "shadow tomography",
+      "time-series machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5760535001754761,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5450592041015625,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5302063226699829,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05406v1": {
+    "id": "2508.05406v1",
+    "title": "Global Tensor Network Renormalization for 2D Quantum systems: A new window to probe universal data from thermal transitions",
+    "authors": [
+      {
+        "name": "Atsushi Ueda",
+        "affiliation": null
+      },
+      {
+        "name": "Sander De Meyer",
+        "affiliation": null
+      },
+      {
+        "name": "Adwait Naravane",
+        "affiliation": null
+      },
+      {
+        "name": "Victor Vanthilt",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Verstraete",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose a new tensor network renormalization group (TNR) scheme based on global optimization and introduce a new method for constructing the finite-temperature density matrix of two-dimensional quantum systems. Combining these two into a new algorithm called thermal tensor network renormalization (TTNR), we obtain highly accurate conformal field theory (CFT) data at thermal transition points. This provides a new and efficient route for numerically identifying phase transitions, offering an alternative to the conventional analysis via critical exponents.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in quantum materials, this paper focuses on a tensor network method with potential application to 2D quantum systems, but the connection to specific materials or phenomena observed in the user's liked papers is weak.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor network renormalization",
+      "Thermal transitions",
+      "Conformal field theory data"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5613476037979126,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.5601075887680054,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.5343760251998901,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.04765v1": {
+    "id": "2508.04765v1",
+    "title": "Hyperbolic tiling neighborhoods in O(1) time",
+    "authors": [
+      {
+        "name": "Yanick Thurn",
+        "affiliation": null
+      },
+      {
+        "name": "Manuel Schrauth",
+        "affiliation": null
+      },
+      {
+        "name": "Johanna Erdmenger",
+        "affiliation": null
+      }
+    ],
+    "summary": "Tilings of the hyperbolic plane are of significant interest among many branches of mathematics, physics and computer science. Yet, their construction remains a non-trivial task. Current approaches primarily use tree-based recursive algorithms, which are fundamentally limited: they do not readily yield the neighborhood graph representing cell adjacencies, which is however required for many applications. We introduce a novel approach that allows to build hyperbolic tilings and their associated graph structure simultaneously, using only combinatoric rules without requiring an explicit coordinate representation. This allows to generate arbitrarily large, exact hyperbolic graphs, with an algorithmic complexity that does not depend on the lattice size. We provide an easy-to-use implementation which substantially outperforms existing methods, hence rendering ultra large-scale numerical simulations on these geometric structures accessible for the scientific community.",
+    "published_date": "2025-08-06",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on hyperbolic tilings and graph generation, a topic distant from the user's interest in superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "hyperbolic tilings",
+      "geometric graph generation",
+      "combinatorial tiling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3816213607788086,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.33098822832107544,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.2727079391479492,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05133v1": {
+    "id": "2508.05133v1",
+    "title": "Symmetry breaking and competing valence bond states in the star lattice Heisenberg antiferromagnet",
+    "authors": [
+      {
+        "name": "Pratyay Ghosh",
+        "affiliation": null
+      },
+      {
+        "name": "Jan Koziol",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel Nyckees",
+        "affiliation": null
+      },
+      {
+        "name": "Kai Phillip Schmidt",
+        "affiliation": null
+      },
+      {
+        "name": "Fr\u00e9d\u00e9ric Mila",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the ground state phase diagram of the spin-$1/2$ antiferromagnetic Heisenberg model on the star lattice using infinite projected entangled pair states (iPEPS) and high-order series expansions. The model includes two distinct couplings: $J_d$ on the dimer bonds and $J_t$ on the trimer bonds. While it is established that the system hosts a valence bond solid (VBS) phase for $J_d \\ge J_t$, the ground state phase diagram for $J_d < J_t$ has remained unsettled. Our iPEPS simulations uncover a first-order phase transition at $J_d/J_t \\approx 0.18$, significantly lower than previously reported estimates. Beyond this transition, we identify a close competition between two valence bond crystal (VBC) states: a columnar VBC and a $\\sqrt{3} \\times \\sqrt{3}$ VBC, with the latter consistently exhibiting lower energy across all finite bond dimensions. The high-order series expansion supports this by finding that the $\\sqrt{3} \\times \\sqrt{3}$ VBC state indeed becomes energetically favorable, but only at sixth order in perturbation theory, revealing the subtle nature of the competition between candidate states.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in superconductivity and related materials, this paper focuses on a theoretical model (Heisenberg antiferromagnet) and valence bond states, representing a shift away from the user's experimental focus.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "star lattice",
+      "valence bond solid",
+      "iPEPS simulations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6332162618637085,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.621492862701416,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.6081095933914185,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.04777v1": {
+    "id": "2508.04777v1",
+    "title": "Absolutely maximally entangled pure states of multipartite quantum systems",
+    "authors": [
+      {
+        "name": "Grzegorz Rajchel-Mieldzio\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "Rafa\u0142 Bistro\u0144",
+        "affiliation": null
+      },
+      {
+        "name": "Albert Rico",
+        "affiliation": null
+      },
+      {
+        "name": "Arul Lakshminarayan",
+        "affiliation": null
+      },
+      {
+        "name": "Karol \u017byczkowski",
+        "affiliation": null
+      }
+    ],
+    "summary": "Absolutely maximally entangled (AME) pure states of a system composed of $N$ parties are distinguished by the property that for any splitting at least one partial trace is maximally mixed. Due to maximal possible correlations between any two selected subsystems these states have numerous applications in various fields of quantum information processing including multi-user teleportation, quantum error correction and secret sharing. We present an updated survey of various techniques to generate such strongly entangled states, including those going beyond the standard construction of graph and stabilizer states. Our contribution includes, in particular, analysis of the degree of entanglement of reduced states obtained by partial trace of AME projectors, states obtained by a symmetric superposition of GHZ states, an orthogonal frequency square representation of the \"golden\" AME state and an updated summary of the number of local unitary equivalence classes.",
+    "published_date": "2025-08-06",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses quantum entanglement, which is not closely related to the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Absolutely maximally entangled states",
+      "Multipartite quantum systems",
+      "Quantum information processing"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4242074489593506,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.394155889749527,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.38158857822418213,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05632v1": {
+    "id": "2508.05632v1",
+    "title": "Partial projected ensembles and spatiotemporal structure of information scrambling",
+    "authors": [
+      {
+        "name": "Saptarshi Mandal",
+        "affiliation": null
+      },
+      {
+        "name": "Pieter W. Claeys",
+        "affiliation": null
+      },
+      {
+        "name": "Sthitadhi Roy",
+        "affiliation": null
+      }
+    ],
+    "summary": "Thermalisation and information scrambling in out-of-equilibrium quantum many-body systems are deeply intertwined: local subsystems dynamically approach thermal density matrices while their entropies track information spreading. Projected ensembles--ensembles of pure states conditioned on measurement outcomes of complementary subsystems--provide higher-order probes of thermalisation, converging at late times to universal maximum-entropy ensembles. In this work, we introduce the partial projected ensemble (PPE) as a framework to study how the spatiotemporal structure of scrambling is imprinted on projected ensembles. The PPE consists of an ensemble of mixed states induced on a subsystem by measurements on a spatially separated part of its complement, tracing out the remainder, naturally capturing scenarios involving discarded outcomes or noise-induced losses. We show that statistical fluctuations of the PPE faithfully track the causal lightcone of information spreading, revealing how scrambling dynamics are encoded in ensemble structure. In addition, we demonstrate that the probabilities of bit-string probabilities (PoPs) associated with the PPE exhibit distinct dynamical regimes and provide an experimentally accessible probe of scrambling. Both PPE fluctuations and PoPs display exponential sensitivity to the size of the discarded region, reflecting exponential degradation of quantum correlations under erasure. We substantiate these findings using the non-integrable kicked Ising chain, combining numerics in the ergodic regime with exact results at its self-dual point. We extend our analysis to a many-body localised (MBL) regime numerically, along with analytic results for the $\\ell$-bit model. The linear and logarithmic lightcones characteristic of ergodic and MBL regimes emerge naturally from PPE dynamics, establishing it as a powerful tool for probing scrambling and deep thermalisation.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum information scrambling and thermalization, which is quite different from the user's liked papers on superconductivity, nickelates, and topological semimetals.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "information scrambling",
+      "projected ensembles",
+      "quantum thermalization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3773741126060486,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.37308475375175476,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.36939775943756104,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05063v1": {
+    "id": "2508.05063v1",
+    "title": "Quantum State Preparation for Medical Data: Comprehensive Methods, Implementation Challenges, and Clinical Prospects",
+    "authors": [
+      {
+        "name": "Nikhil Kumar Rajput",
+        "affiliation": null
+      },
+      {
+        "name": "Riya Bansal",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum computing holds transformative potential for medical applications, yet efficiently preparing quantum states from complex medical data remains a fundamental challenge. This survey provides a comprehensive examination of current approaches for encoding medical information into quantum systems, analyzing theoretical principles, algorithmic advancements, and practical limitations. It discusses tensor network decomposition, variational quantum algorithms, quantum machine learning techniques, and specialized error mitigation strategies for medical computing. The findings indicate that quantum advantages in medicine rely on leveraging inherent data structures such as spatial correlations in imaging, temporal patterns in physiological signals, and hierarchical biological organization. While current hardware restricts implementations to small-scale problems, emerging methods show potential for near-term use. The study provides a structured framework for assessing when quantum state preparation outperforms classical approaches in medicine, along with implementation guidelines and performance benchmarks.",
+    "published_date": "2025-08-07",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing applications in medicine, which is a completely different field from the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum computing",
+      "Medical data",
+      "Quantum state preparation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5726064443588257,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5640171766281128,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5147581100463867,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05196v1": {
+    "id": "2508.05196v1",
+    "title": "Electronic mean free path of the cuprate superconductor Bi$_2$Sr$_2$CaCu$_2$O$_{8+\u03b4}$ from thermal Hall conductivity",
+    "authors": [
+      {
+        "name": "Emma Campillo",
+        "affiliation": null
+      },
+      {
+        "name": "Manel Mezidi",
+        "affiliation": null
+      },
+      {
+        "name": "Lu Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Ashvini Vallipuram",
+        "affiliation": null
+      },
+      {
+        "name": "Jordan Baglo",
+        "affiliation": null
+      },
+      {
+        "name": "Munkhtuguldur Altangerel",
+        "affiliation": null
+      },
+      {
+        "name": "Ga\u00ebl Grissonnanche",
+        "affiliation": null
+      },
+      {
+        "name": "Genda Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Louis Taillefer",
+        "affiliation": null
+      }
+    ],
+    "summary": "We use thermal transport to access the electronic mean free path of $d$-wave quasiparticles in one of the most widely studied cuprate superconductors, Bi$_2$Sr$_2$CaCu$_2$O$_{8+\\delta}$ (Bi2212). We have measured the thermal conductivity $\\kappa_{\\rm xx}$ and the thermal Hall conductivity $\\kappa_{\\rm xy}$ of three single crystals across a range of dopings. In the overdoped and optimally-doped samples, a clear enhancement is observed in both $\\kappa_{\\rm xx}$ and $\\kappa_{\\rm xy}$ upon cooling below the critical temperature $T_{\\rm c}$, due to a suppression of the inelastic electron-electron scattering as electrons condense into pairs. The underdoped sample shows no enhancement in either, pointing to a high degree of disorder in that sample. For the two highest dopings, the magnitude of the enhancement in $\\kappa_{\\rm xy}$ is controlled by the strength of the elastic impurity scattering. Using a prior model to estimate the mean free path from $\\kappa_{\\rm xy}$ data, we find that the mean free path in Bi2212 is approximately 7 times shorter than in YBa$_2$Cu$_3$O$_7$, considered to be one of the least disordered cuprates. We conclude that the thermal Hall technique is a good way to compare the mean free path of $d$-wave quasiparticles in various cuprate materials.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses cuprate superconductors, specifically Bi$_2$Sr$_2$CaCu$_2$O$_{8+\u03b4}$, which aligns with the user's interest in related materials like YBa$_2$Cu$_3$O$_{6+\u03b4}$ and nickelate superconductors, and explores electronic properties relevant to understanding these materials.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "thermal Hall conductivity",
+      "electronic mean free path",
+      "Bi2212"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6433687210083008,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.6417831182479858,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.6276533603668213,
+        "liked_paper_id": "2506.18363v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05216v1": {
+    "id": "2508.05216v1",
+    "title": "Quantum criticality and emergent orders in the spin-1 bilinear-biquadratic-Kitaev chain",
+    "authors": [
+      {
+        "name": "Zhiling Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengzhong Du",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaodong Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Wen-Long You",
+        "affiliation": null
+      },
+      {
+        "name": "Yi Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Higher-spin quantum magnets with competing interactions offer a rich platform for exploring quantum phases that transcend the paradigms of spin-1/2 systems, owing to their enlarged local Hilbert spaces and the emergence of multipolar correlations. We investigate a one-dimensional spin-1 chain where quadrupolar order is promoted by two distinct mechanisms: conventional bilinear-biquadratic exchange and bond-directional antiferromagnetic Kitaev frustration. Using density matrix renormalization group calculations, we determine the complete ground-state phase diagram and uncover two emergent phases induced by the Kitaev interaction: a Kitaev nematic phase and a Kitaev-dimer phase. The Kitaev nematic phase emerges from a fragile biquadratic dimer state via a continuous quantum phase transition in the Ising universality class. The Kitaev dimer phase spontaneously breaks a screw symmetry to favor either $x$- or $y$-spin bonding, forming a gapped state that coexists with a crystalline order of alternating $\\mathbb{Z}_2$ fluxes.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on a spin-1 chain model with Kitaev interactions, which is somewhat related to the user's interest in quantum materials and unconventional phases but lacks a direct connection to superconductivity, nickelates, or topological materials.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "spin-1 chain",
+      "Kitaev interaction",
+      "quantum criticality"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6425989866256714,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.6253674030303955,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5791995525360107,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05494v1": {
+    "id": "2508.05494v1",
+    "title": "Symmetry Resolved Entanglement Entropy in a Non-Abelian Fractional Quantum Hall State",
+    "authors": [
+      {
+        "name": "Mark J. Arildsen",
+        "affiliation": null
+      },
+      {
+        "name": "Valentin Cr\u00e9pel",
+        "affiliation": null
+      },
+      {
+        "name": "Nicolas Regnault",
+        "affiliation": null
+      },
+      {
+        "name": "Benoit Estienne",
+        "affiliation": null
+      }
+    ],
+    "summary": "Symmetry-resolved entanglement entropy provides a powerful framework for probing the internal structure of quantum many-body states by decomposing entanglement into contributions from distinct symmetry sectors. In this work, we apply matrix product state techniques to study the bosonic, non-Abelian Moore-Read quantum Hall state, enabling precise numerical evaluation of both the full counting statistics and symmetry-resolved entanglement entropies. Our results reveal an approximate equipartition of entanglement among symmetry sectors, consistent with theoretical expectations and subject to finite-size corrections. The results also show that these expectations for symmetry-resolved entanglement entropy remain valid in the case of a non-Abelian state where the topological sectors cannot be distinguished by the Abelian $\\mathrm{U}(1)$ symmetry alone, and where neutral and charged modes possess distinct velocities. We additionally perform a detailed comparison of the entanglement spectrum with predictions from the Li-Haldane conjecture, finding remarkable agreement, and enabling a more precise understanding of the effects of the distinct neutral and charged velocities. This not only provides a stringent test of the conjecture but also highlights its explanatory power in understanding the origin and structure of finite-size effects across different symmetry sectors.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on entanglement entropy and quantum Hall states, which are not directly related to the user's previous interests in nickelates, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Symmetry-resolved entanglement entropy",
+      "Moore-Read quantum Hall state",
+      "Li-Haldane conjecture"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5051238536834717,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.48563724756240845,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.46146517992019653,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.04973v1": {
+    "id": "2508.04973v1",
+    "title": "Extraordinary surface critical behavior induced by a topological dimer phase in a two-dimensional Heisenberg quantum magnet",
+    "authors": [
+      {
+        "name": "Zhe Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Longye Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Shang-Qiang Ning",
+        "affiliation": null
+      },
+      {
+        "name": "Zenan Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Yan-Cheng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Zheng Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Wenan Guo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Using quantum Monte Carlo simulations, we study the dimerized spin-1/2 Heisenberg model on a square lattice, focusing on the paramagnetic dimer phase and its edge states, and associated surface criticality behavior. The model can also be viewed as two-dimensional antiferromagnetically (AF) coupled usual ladders with AF rungs. We demonstrate that the dimer phase of the model, previously considered topologically trivial, is actually a quasi-one-dimensional (Q1D) Haldane phase belonging to a symmetry-protected topological (SPT) state. This is established by measuring generalized strange correlators introduced in this work and further confirmed by showing that the nontrivial edge state on a zigzag cut in the dimer phase is ferromagnetically ordered, resulting from effective ferromagnetic interactions between degenerate spinons generated on each side of the zigzag cut. Furthermore, we show that the ordered edge state gives rise to an extraordinary surface critical behavior at the (2+1)-dimensional O(3) bulk critical points of the model, which contradicts theoretical predictions based on classical-quantum mapping.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "The paper discusses quantum magnetism and topological phases, which are somewhat related to previous interests in topological materials and correlated electron systems, although the specific materials and techniques differ.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "quantum Monte Carlo simulations",
+      "symmetry-protected topological state",
+      "surface critical behavior"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6622198224067688,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.6389373540878296,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.6359603404998779,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05169v1": {
+    "id": "2508.05169v1",
+    "title": "Hybrid quantum tensor networks for aeroelastic applications",
+    "authors": [
+      {
+        "name": "M. Lautaro Hickmann",
+        "affiliation": null
+      },
+      {
+        "name": "Pedro Alves",
+        "affiliation": null
+      },
+      {
+        "name": "David Quero",
+        "affiliation": null
+      },
+      {
+        "name": "Friedhelm Schwenker",
+        "affiliation": null
+      },
+      {
+        "name": "Hans-Martin Rieser",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the application of hybrid quantum tensor networks to aeroelastic problems, harnessing the power of Quantum Machine Learning (QML). By combining tensor networks with variational quantum circuits, we demonstrate the potential of QML to tackle complex time series classification and regression tasks. Our results showcase the ability of hybrid quantum tensor networks to achieve high accuracy in binary classification. Furthermore, we observe promising performance in regressing discrete variables. While hyperparameter selection remains a challenge, requiring careful optimisation to unlock the full potential of these models, this work contributes significantly to the development of QML for solving intricate problems in aeroelasticity. We present an end-to-end trainable hybrid algorithm. We first encode time series into tensor networks to then utilise trainable tensor networks for dimensionality reduction, and convert the resulting tensor to a quantum circuit in the encoding step. Then, a tensor network inspired trainable variational quantum circuit is applied to solve either a classification or a multivariate or univariate regression task in the aeroelasticity domain.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum machine learning applied to aeroelasticity, which is a significant departure from the previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum Machine Learning",
+      "Aeroelasticity",
+      "Tensor Networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5468478798866272,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5241327285766602,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.46254971623420715,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
