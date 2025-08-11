@@ -28418,5 +28418,1198 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2508.06251v1": {
+    "id": "2508.06251v1",
+    "title": "Synthetic Data Generation and Differential Privacy using Tensor Networks' Matrix Product States (MPS)",
+    "authors": [
+      {
+        "name": "Alejandro Moreno R.",
+        "affiliation": null
+      },
+      {
+        "name": "Desale Fentaw",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel Palmer",
+        "affiliation": null
+      },
+      {
+        "name": "Ra\u00fal Salles de Padua",
+        "affiliation": null
+      },
+      {
+        "name": "Ninad Dixit",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel Mugel",
+        "affiliation": null
+      },
+      {
+        "name": "Roman Or\u00fas",
+        "affiliation": null
+      },
+      {
+        "name": "Manuel Radons",
+        "affiliation": null
+      },
+      {
+        "name": "Josef Menter",
+        "affiliation": null
+      },
+      {
+        "name": "Ali Abedi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Synthetic data generation is a key technique in modern artificial intelligence, addressing data scarcity, privacy constraints, and the need for diverse datasets in training robust models. In this work, we propose a method for generating privacy-preserving high-quality synthetic tabular data using Tensor Networks, specifically Matrix Product States (MPS). We benchmark the MPS-based generative model against state-of-the-art models such as CTGAN, VAE, and PrivBayes, focusing on both fidelity and privacy-preserving capabilities. To ensure differential privacy (DP), we integrate noise injection and gradient clipping during training, enabling privacy guarantees via R\\'enyi Differential Privacy accounting. Across multiple metrics analyzing data fidelity and downstream machine learning task performance, our results show that MPS outperforms classical models, particularly under strict privacy constraints. This work highlights MPS as a promising tool for privacy-aware synthetic data generation. By combining the expressive power of tensor network representations with formal privacy mechanisms, the proposed approach offers an interpretable and scalable alternative for secure data sharing. Its structured design facilitates integration into sensitive domains where both data quality and confidentiality are critical.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CR"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on synthetic data generation and differential privacy using tensor networks, which is a significant departure from the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Synthetic Data Generation",
+      "Differential Privacy",
+      "Tensor Networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.31479012966156006,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.30501505732536316,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3016599416732788,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05738v1": {
+    "id": "2508.05738v1",
+    "title": "A quantum computing approach to efficiently simulating correlated materials using impurity models and dynamical mean field theory",
+    "authors": [
+      {
+        "name": "Norman Hogan",
+        "affiliation": null
+      },
+      {
+        "name": "Efekan K\u00f6kc\u00fc",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas Steckmann",
+        "affiliation": null
+      },
+      {
+        "name": "Liam P. Doak",
+        "affiliation": null
+      },
+      {
+        "name": "Carlos Mejuto-Zaera",
+        "affiliation": null
+      },
+      {
+        "name": "Daan Camps",
+        "affiliation": null
+      },
+      {
+        "name": "Roel Van Beeumen",
+        "affiliation": null
+      },
+      {
+        "name": "Wibe A. de Jong",
+        "affiliation": null
+      },
+      {
+        "name": "A. F. Kemper",
+        "affiliation": null
+      }
+    ],
+    "summary": "The accurate theoretical description of materials with strongly correlated electrons is a formidable challenge, at the forefront of condensed matter physics and computational chemistry alike, and it is one of the targets for quantum computing. Dynamical Mean Field Theory (DMFT) is a successful approach that predicts behaviors of such systems by incorporating some correlated behavior, but it is limited by the need to calculate the Green's function for the impurity model. This work proposes a framework for DMFT calculations on quantum computers, focusing on near-term applications. It leverages the structure of the impurity problem, combining a low-rank Gaussian subspace representation of the ground state and a compressed, short-depth quantum circuit that joins the Gaussian state preparation with the time evolution to compute the necessary Green's functions. We demonstrate the convergence of the DMFT algorithm using the Gaussian subspace in a noise-free setting, and show the hardware viability of the circuit compression by extracting the impurity Green's function on IBM quantum processors for a single impurity coupled to three bath orbitals (8 physical qubits and 1 ancilla). We discuss the potential paths forward towards realizing this use case of quantum computing in materials science.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper directly addresses dynamical mean-field theory and correlated materials, topics strongly aligned with the user's past interests in DMFT solvers and strongly correlated electron systems.",
+    "matching_keywords": [
+      "dynamical mean field theory",
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "quantum computing",
+      "impurity models",
+      "Gaussian subspace"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7226336002349854,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.6862658262252808,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "score": 0.6835386753082275,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.06436v1": {
+    "id": "2508.06436v1",
+    "title": "Leveraging transfer learning for accurate estimation of ionic migration barriers in solids",
+    "authors": [
+      {
+        "name": "Reshma Devi",
+        "affiliation": null
+      },
+      {
+        "name": "Keith T. Butler",
+        "affiliation": null
+      },
+      {
+        "name": "Gopalakrishnan Sai Gautam",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ionic mobility determines the rate performance of several applications, such as batteries, fuel cells, and electrochemical sensors and is exponentially dependent on the migration barrier ($E_m$), a difficult to measure/calculate quantity. Previous approaches to identify materials with high ionic mobility have relied on imprecise descriptors given the lack of generalizable models to predict $E_m$. Here, we present a graph neural network based architecture that leverages principles of transfer learning to efficiently and accurately predict $E_m$ across a diverse set of materials. We use a model pre-trained simultaneously on seven distinct bulk properties (labeled MPT), modify the MPT model to classify different migration pathways in a structure, and fine-tune (FT) on a manually-curated literature-derived dataset of 619 $E_m$ data points calculated with density functional theory. Importantly, our best-performing FT model (labeled MODEL-3) demonstrates substantial improvements in prediction accuracy compared to classical machine learning methods, graph models trained from scratch, and a universal machine learned interatomic potential, with a R$^2$ score of 0.703 and a mean absolute error of 0.261 eV on the test set. Notably, MODEL-3 is able to distinguish different migration pathways within a structure and also demonstrates excellent ability to generalize across intercalant compositions and chemistries. As a classifier, MODEL-3 exhibits 80\\% accuracy and 82.8\\% precision in identifying materials that are `good' ionic conductors (i.e., structures with $E_m <$0.65~eV). Thus, our work demonstrates the effective use of FT strategies and architectural modifications necessary for making swift and accurate $E_m$ predictions, which will be useful for materials discovery in batteries and for predicting other data-scarce material properties.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has liked papers on superconductivity and correlated electron systems, this paper focuses on ionic conductivity and machine learning methods for predicting ionic migration barriers, making it only tangentially relevant.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "ionic migration barriers",
+      "transfer learning",
+      "graph neural networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42957907915115356,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.41972899436950684,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3836458921432495,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05737v1": {
+    "id": "2508.05737v1",
+    "title": "Quantum criticality and nonequilibrium dynamics on a Lieb lattice of Rydberg atoms",
+    "authors": [
+      {
+        "name": "Mark R. Hirsbrunner",
+        "affiliation": null
+      },
+      {
+        "name": "Milan Kornja\u010da",
+        "affiliation": null
+      },
+      {
+        "name": "Rhine Samajdar",
+        "affiliation": null
+      },
+      {
+        "name": "Siva Darbha",
+        "affiliation": null
+      },
+      {
+        "name": "Majd Hamdan",
+        "affiliation": null
+      },
+      {
+        "name": "Jan Balewski",
+        "affiliation": null
+      },
+      {
+        "name": "Ermal Rrapaj",
+        "affiliation": null
+      },
+      {
+        "name": "Sheng-Tao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Daan Camps",
+        "affiliation": null
+      },
+      {
+        "name": "Fangli Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Pedro L. S. Lopes",
+        "affiliation": null
+      },
+      {
+        "name": "Katherine Klymko",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neutral-atom quantum simulators offer a promising approach to the exploration of strongly interacting many-body systems, with applications spanning condensed matter, statistical mechanics, and high-energy physics. Through a combination of quantum experiments, numerical calculations, and analytical methods, we demonstrate a rich set of phenomena accessible on such quantum simulators by studying an array of Rydberg atoms placed on the Lieb lattice. First, we map out the ground states and phase diagram of the system, identifying a range of density-wave-ordered phases,and find excellent agreement between theory and experiment. Allowing for local control of the detuning field thereafter, we discover a quantum analog of the classical liquid--vapor transition and probe its underlying hysteretic dynamics. Furthermore, we study out-of-equilibrium quantum quenches and observe anomalously slow relaxation dynamics arising from kinetic constraints. These results highlight how geometric control offered by neutral-atom simulators can extend the frontiers of programmable quantum matter, enabling access to complex phases, metastability, and thermalization dynamics in many-body quantum systems.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el",
+      "physics.atom-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum simulation and many-body physics, connecting to the user's interest in strongly correlated materials and unconventional superconductivity, although the specific materials and techniques differ.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Rydberg atoms",
+      "Lieb lattice",
+      "Quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7036341428756714,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.557927131652832,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5013048648834229,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.06303v1": {
+    "id": "2508.06303v1",
+    "title": "A Tensor Train Approach for Deterministic Arithmetic Operations on Discrete Representations of Probability Distributions",
+    "authors": [
+      {
+        "name": "Gerhard Kirsten",
+        "affiliation": null
+      },
+      {
+        "name": "Bilgesu Bilgin",
+        "affiliation": null
+      },
+      {
+        "name": "Janith Petangoda",
+        "affiliation": null
+      },
+      {
+        "name": "Phillip Stanley-Marbell",
+        "affiliation": null
+      }
+    ],
+    "summary": "Computing with discrete representations of high-dimensional probability distributions is fundamental to uncertainty quantification, Bayesian inference, and stochastic modeling. However, storing and manipulating such distributions suffers from the curse of dimensionality, as memory and computational costs grow exponentially with dimension. Monte Carlo methods require thousands to billions of samples, incurring high computational costs and producing inconsistent results due to stochasticity. We present an efficient tensor train method for performing exact arithmetic operations on discretizations of continuous probability distributions while avoiding exponential growth. Our approach leverages low-rank tensor train decomposition to represent latent random variables compactly using Dirac deltas, enabling deterministic addition, subtraction and multiplication operations directly in the compressed format. We develop an efficient implementation using sparse matrices and specialized data structures that further enhances performance. Theoretical analysis demonstrates polynomial scaling of memory and computational complexity under rank assumptions, and shows how statistics of latent variables can be computed with polynomial complexity. Numerical experiments spanning randomized linear algebra to stochastic differential equations demonstrate orders-of-magnitude improvements in memory usage and computational time compared to conventional approaches, enabling tractable deterministic computations on discretized random variables in previously intractable dimensions.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses a tensor train approach for probability distributions, which is not related to the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "tensor train",
+      "probability distributions",
+      "deterministic arithmetic"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.45011043548583984,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.43495693802833557,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4128856062889099,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05883v1": {
+    "id": "2508.05883v1",
+    "title": "MPS-JuliQAOA: User-friendly, Scalable MPS-based Simulation for Quantum Optimization",
+    "authors": [
+      {
+        "name": "Sean Feeney",
+        "affiliation": null
+      },
+      {
+        "name": "Reuben Tate",
+        "affiliation": null
+      },
+      {
+        "name": "John Golden",
+        "affiliation": null
+      },
+      {
+        "name": "Stephan Eidenbenz",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present the MPS-JuliQAOA simulator, a user-friendly, open-source tool to simulate the Quantum Approximate Optimization Algorithm (QAOA) of any optimization problem that can be expressed as diagonal Hamiltonian. By leveraging Julia-language constructs and the ITensor package to implement a Matrix Product State (MPS) approach to simulating QAOA, MPS-Juli-QAOA effortlessly scales to 512 qubits and 20 simulation rounds on the standard de-facto benchmark 3-regular MaxCut QAOA problem. MPS-JuliQAOA also has built-in parameter finding capabilities, which is a crucial performance aspect of QAOA. We illustrate through examples that the user does not need to know MPS principles or complex automatic differentiation techniques to use MPS-JuliQAOA. We study the scalability of our tool with respect to runtime, memory usage and accuracy tradeoffs. Code available at https://github.com/lanl/JuliQAOA.jl/tree/mps.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cs.ET",
+      "cs.SE"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing simulation, a topic distinct from the user's interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Quantum Approximate Optimization Algorithm",
+      "Matrix Product State simulation",
+      "Scalable quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5282496809959412,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5239734053611755,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.4545479118824005,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.06156v1": {
+    "id": "2508.06156v1",
+    "title": "Revealing the Staging Structural Evolution and Li (De)Intercalation Kinetics in Graphite Anodes via Machine Learning Potential",
+    "authors": [
+      {
+        "name": "Liqi Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Xuhe Gong",
+        "affiliation": null
+      },
+      {
+        "name": "Zicun Li",
+        "affiliation": null
+      },
+      {
+        "name": "Ruijuan Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Hong Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "Revealing the dynamic structural evolution and lithium transport properties during the charge/discharge processes is crucial for optimizing graphite anodes in lithium-ion batteries, enabling high stability and fast-charging performance. However, the dynamic coupling mechanisms among carbon layer kinetics, lithium (de)intercalation/diffusion, and defects regulation remain insufficiently understood. In this study, we developed a universal automated workflow based on machine learning potentials to simulate the dynamic lithium (de)intercalation process. With this approach, the staging structural evolution of lithium-graphite intercalation compounds and their lithium transport behavior were resolved through molecular dynamics simulations. By introducing stacking faults into the graphite structure, we successfully simulated stage transitions driven by carbon layer sliding and reorganization, accompanied by stress release and structural stabilization. The dynamics of carbon layers regulate the lithium (de)intercalation positional selectivity, producing intermediate states with varying lithium concentrations and distributions during cycling. This facilitates the formation and transformation of stage structures while mitigating residual stress accumulation. A fundamental kinetic asymmetry arises between lithium intercalation and deintercalation, driven by the continuous and heterogeneous lithium transport and carbon layer sliding during charge/discharge processes. The carbon defects regulate lithium transport, in which the atomic-scale defects confine intralayer lithium transport and carbon sliding while enabling interlayer transport via dynamic lithium trapping/release mechanisms. Accordingly, for the future design, it is critical to construct structural units with controllable carbon layer sliding/reorganization, and tunable defects to enhance lithium-ion transport.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on lithium-ion batteries and graphite anodes, which are distinct from the user's interests in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "lithium intercalation",
+      "graphite anodes",
+      "machine learning potential"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4536891281604767,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.34696337580680847,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.3328063488006592,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05745v1": {
+    "id": "2508.05745v1",
+    "title": "Classical simulation of noisy quantum circuits via locally entanglement-optimal unravelings",
+    "authors": [
+      {
+        "name": "Simon Cichy",
+        "affiliation": null
+      },
+      {
+        "name": "Paul K. Faehrmann",
+        "affiliation": null
+      },
+      {
+        "name": "Lennart Bittel",
+        "affiliation": null
+      },
+      {
+        "name": "Jens Eisert",
+        "affiliation": null
+      },
+      {
+        "name": "Hakop Pashayan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Classical simulations of noisy quantum circuits is instrumental to our understanding of the behavior of real world quantum systems and the identification of regimes where one expects quantum advantage. In this work, we present a highly parallelizable tensor-network-based classical algorithm -- equipped with rigorous accuracy guarantees -- for simulating $n$-qubit quantum circuits with arbitrary single-qubit noise. Our algorithm represents the state of a noisy quantum system by a particular ensemble of matrix product states from which we stochastically sample. Each single qubit noise process acting on a pure state is then represented by the ensemble of states that achieve the minimal average entanglement (the entanglement of formation) between the noisy qubit and the remainder. This approach lets us use a more compact representation of the quantum state for a given accuracy requirement and noise level. For a given maximum bond dimension $\\chi$ and circuit, our algorithm comes with an upper bound on the simulation error, runs in poly$(n,\\chi)$-time and improves upon related prior work (1) in scope: by extending from the three commonly considered noise models to general single qubit noise (2) in performance: by employing a state-dependent locally-entanglement-optimal unraveling and (3) in conceptual contribution: by showing that the fixed unraveling used in prior work becomes equivalent to our choice of unraveling in the special case of depolarizing and dephasing noise acting on a maximally entangled state.",
+    "published_date": "2025-08-07",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum circuit simulation, which is a different area than the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "noisy quantum circuits",
+      "tensor-network simulation",
+      "entanglement-optimal unraveling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6154879927635193,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5176562070846558,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5065072178840637,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.06184v1": {
+    "id": "2508.06184v1",
+    "title": "Scalable Quantum State Preparation for Encoding Genomic Data with Matrix Product States",
+    "authors": [
+      {
+        "name": "Floyd M. Creevey",
+        "affiliation": null
+      },
+      {
+        "name": "Hitham T. Hassan",
+        "affiliation": null
+      },
+      {
+        "name": "James McCafferty",
+        "affiliation": null
+      },
+      {
+        "name": "Lloyd C. L. Hollenberg",
+        "affiliation": null
+      },
+      {
+        "name": "Sergii Strelchuk",
+        "affiliation": null
+      }
+    ],
+    "summary": "As quantum computing hardware advances, the need for algorithms that facilitate the loading of classical data into the quantum states of these devices has become increasingly important. This study presents a method for producing scalable quantum circuits to encode genomic data using the Matrix Product State (MPS) formalism. The method is illustrated by encoding the genome of the bacteriophage $\\Phi X174$ into a 15-qubit state, and analysing the trade-offs between MPS bond dimension, reconstruction error, and the resulting circuit complexity. This study proposes methods for optimising encoding circuits with standard benchmark datasets for the emerging field of quantum bioinformatics. The results for circuit generation and simulation on HPC and on current quantum hardware demonstrate the viability and utility of the encoding.",
+    "published_date": "2025-08-08",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and bioinformatics, which are not directly related to the user's previous interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "quantum state preparation",
+      "matrix product states",
+      "quantum bioinformatics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49480563402175903,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.4760982394218445,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.471203476190567,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.05796v1": {
+    "id": "2508.05796v1",
+    "title": "Observing Differential Spin Currents by Resonant Inelastic X-ray Scattering",
+    "authors": [
+      {
+        "name": "Yanhong Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Joseph Barker",
+        "affiliation": null
+      },
+      {
+        "name": "Jiemin Li",
+        "affiliation": null
+      },
+      {
+        "name": "Takashi Kikkawa",
+        "affiliation": null
+      },
+      {
+        "name": "Fernando Camino",
+        "affiliation": null
+      },
+      {
+        "name": "Kim Kisslinger",
+        "affiliation": null
+      },
+      {
+        "name": "John Sinsheimer",
+        "affiliation": null
+      },
+      {
+        "name": "Lukas Lienhard",
+        "affiliation": null
+      },
+      {
+        "name": "Jackson J. Bauer",
+        "affiliation": null
+      },
+      {
+        "name": "Caroline A. Ross",
+        "affiliation": null
+      },
+      {
+        "name": "Dmitri N. Basov",
+        "affiliation": null
+      },
+      {
+        "name": "Eiji Saitoh",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Pelliciari",
+        "affiliation": null
+      },
+      {
+        "name": "Gerrit E. W. Bauer",
+        "affiliation": null
+      },
+      {
+        "name": "Valentina Bisogni",
+        "affiliation": null
+      }
+    ],
+    "summary": "Controlling spin currents, i.e., the flow of spin angular momentum, in small magnetic devices is the principal objective of spin electronics, a main contender for future energy efficient information technologies. Surprisingly, a pure spin current has never been measured directly since the associated electric stray fields and/or shifts in the non-equilibrium spin-dependent distribution functions are too small for conventional experimental detection methods optimized for charge transport. Here we report that resonant inelastic x-ray scattering (RIXS) can bridge this gap by measuring the spin current carried by magnons -- the quanta of the spin wave excitations of the magnetic order -- in the presence of temperature gradients across a magnetic insulator. This is possible due to the sensitivity of the momentum- and energy-resolved RIXS intensity to minute changes in the magnon distribution under non-equilibrium conditions. We use the Boltzmann equation in the relaxation time approximation to extract transport parameters, such as the magnon lifetime at finite momentum, essential for the realization of magnon spintronics.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses resonant inelastic x-ray scattering (RIXS) which is a technique used in one of the liked papers, and also touches on magnetic materials, though not high-Tc superconductors.",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "suggested_keywords": [
+      "Spin currents",
+      "Resonant inelastic x-ray scattering",
+      "Magnon spintronics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5897656679153442,
+        "liked_paper_id": "yBtX0C4AAAAJ:70eg2SAEIzsC"
+      },
+      {
+        "score": 0.5761193633079529,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.561962902545929,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.06459v1": {
+    "id": "2508.06459v1",
+    "title": "A literature-derived dataset of migration barriers for quantifying ionic transport in battery materials",
+    "authors": [
+      {
+        "name": "Reshma Devi",
+        "affiliation": null
+      },
+      {
+        "name": "Avaneesh Balasubramanian",
+        "affiliation": null
+      },
+      {
+        "name": "Keith T. Butler",
+        "affiliation": null
+      },
+      {
+        "name": "Gopalakrishnan Sai Gautam",
+        "affiliation": null
+      }
+    ],
+    "summary": "The rate performance of any electrode or solid electrolyte material used in a battery is critically dependent on the migration barrier ($E_m$) governing the motion of the intercalant ion, which is a difficult-to-estimate quantity both experimentally and computationally. The foundation for constructing and validating accurate machine learning (ML) models that are capable of predicting $E_m$, and hence accelerating the discovery of novel electrodes and solid electrolytes, lies in the availability of high-quality dataset(s) containing $E_m$. Addressing this critical requirement, we present a comprehensive dataset comprising 619 distinct literature-reported $E_m$ values calculated using density functional theory based nudged elastic band computations, across 443 compositions and 27 structural groups consisting of various compounds that have been explored as electrodes or solid electrolytes in batteries. Our dataset includes compositions that correspond to fully charged and/or discharged states of electrode materials, with intermediate compositions incorporated in select instances. Crucially, for each compound, our dataset provides structural information, including the initial and final positions of the migrating ion, along with its corresponding $E_m$ in easy-to-use .xlsx and JSON formats. We envision our dataset to be a highly useful resource for the scientific community, facilitating the development of advanced ML models that can predict $E_m$ precisely and accelerate materials discovery.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on battery materials and ionic transport, which is a departure from the user's interests in superconductivity, electronic structure, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "migration barriers",
+      "battery materials",
+      "ionic transport"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42371317744255066,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3837363123893738,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.3590351641178131,
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05762v1": {
+    "id": "2508.05762v1",
+    "title": "Evaluating Universal Machine Learning Force Fields Against Experimental Measurements",
+    "authors": [
+      {
+        "name": "Sajid Mannan",
+        "affiliation": null
+      },
+      {
+        "name": "Vaibhav Bihani",
+        "affiliation": null
+      },
+      {
+        "name": "Carmelo Gonzales",
+        "affiliation": null
+      },
+      {
+        "name": "Kin Long Kelvin Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Nitya Nand Gosvami",
+        "affiliation": null
+      },
+      {
+        "name": "Sayan Ranu",
+        "affiliation": null
+      },
+      {
+        "name": "Santiago Miret",
+        "affiliation": null
+      },
+      {
+        "name": "N M Anoop Krishnan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Universal machine learning force fields (UMLFFs) promise to revolutionize materials science by enabling rapid atomistic simulations across the periodic table. However, their evaluation has been limited to computational benchmarks that may not reflect real-world performance. Here, we present UniFFBench, a comprehensive framework for evaluating UMLFFs against experimental measurements of ~1,500 carefully curated mineral structures spanning diverse chemical environments, bonding types, structural complexity, and elastic properties. Our systematic evaluation of six state-of-the-art UMLFFs reveals a substantial reality gap: models achieving impressive performance on computational benchmarks often fail when confronted with experimental complexity. Even the best-performing models exhibit higher density prediction error than the threshold required for practical applications. Most strikingly, we observe disconnects between simulation stability and mechanical property accuracy, with prediction errors correlating with training data representation rather than the modeling method. These findings demonstrate that while current computational benchmarks provide valuable controlled comparisons, they may overestimate model reliability when extrapolated to experimentally complex chemical spaces. Altogether, UniFFBench establishes essential experimental validation standards and reveals systematic limitations that must be addressed to achieve truly universal force field capabilities.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on the evaluation of machine learning force fields against experimental data, which is a different area than the user's liked papers on superconductivity, nickelates, and Dirac fermions.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Machine learning force fields",
+      "Experimental validation",
+      "Materials simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49989864230155945,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4956143796443939,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4550167918205261,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.06159v1": {
+    "id": "2508.06159v1",
+    "title": "Diagonalizing large-scale quantum many-body Hamiltonians using variational quantum circuit and tensor network",
+    "authors": [
+      {
+        "name": "Peng-Fei Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Shuang Qiao",
+        "affiliation": null
+      },
+      {
+        "name": "An-Chun Ji",
+        "affiliation": null
+      },
+      {
+        "name": "Shi-Ju Ran",
+        "affiliation": null
+      }
+    ],
+    "summary": "Exact diagonalization (ED) is an essential tool for exploring quantum many-body physics but is fundamentally limited by the exponentially-scaled computational complexity. Here, we propose tensor network variational diagonalization (TNVD), which encodes the full eigenenergy spectrum of a quantum many-body Hamiltonian into a matrix product state, and encodes the eigenstates as the evolutions of product states using variational quantum circuit (VQC). Thereby, TNVD reduces the computational complexity of diagonalization from exponential to polynomial in system size $N$. Numerical benchmarks up to $N=100$ spins are provided, which far surpass the computational limit of ED. We further consider quantum Ising model in a random field to reveal the underlying reliance between the efficiency of TNVD and entanglement properties of eigenstates. Typical signs, including the distribution of entanglement entropy (EE) versus eigenenergy and the density of state versus EE, are suggested to indicate area law of entanglement entropy or its violation, which are essential to the TNVD efficiency. Our work establishes TNVD as a powerful and scalable diagonalization approach for large-scale quantum many-body Hamiltonians. The incorporation of VQC lays a promising pathway to applying quantum computation to address the volume-law-EE Hamiltonians that lack efficient classical approaches.",
+    "published_date": "2025-08-08",
+    "categories": [],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum many-body systems and computational methods, aligning with the user's interest in materials simulation and potentially exotic electronic phases, although the primary focus is on a computational technique.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tensor network",
+      "variational quantum circuit",
+      "exact diagonalization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6798057556152344,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.6532094478607178,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.6451747417449951,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.06456v1": {
+    "id": "2508.06456v1",
+    "title": "Comparative study of ensemble-based uncertainty quantification methods for neural network interatomic potentials",
+    "authors": [
+      {
+        "name": "Yonatan Kurniawan",
+        "affiliation": null
+      },
+      {
+        "name": "Mingjian Wen",
+        "affiliation": null
+      },
+      {
+        "name": "Ellad B. Tadmor",
+        "affiliation": null
+      },
+      {
+        "name": "Mark K. Transtrum",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) enable atomistic simulations with near first-principles accuracy at substantially reduced computational cost, making them powerful tools for large-scale materials modeling. The accuracy of MLIPs is typically validated on a held-out dataset of \\emph{ab initio} energies and atomic forces. However, accuracy on these small-scale properties does not guarantee reliability for emergent, system-level behavior -- precisely the regime where atomistic simulations are most needed, but for which direct validation is often computationally prohibitive. As a practical heuristic, predictive precision -- quantified as inverse uncertainty -- is commonly used as a proxy for accuracy, but its reliability remains poorly understood, particularly for system-level predictions. In this work, we systematically assess the relationship between predictive precision and accuracy in both in-distribution (ID) and out-of-distribution (OOD) regimes, focusing on ensemble-based uncertainty quantification methods for neural network potentials, including bootstrap, dropout, random initialization, and snapshot ensembles. We use held-out cross-validation for ID assessment and calculate cold curve energies and phonon dispersion relations for OOD testing. These evaluations are performed across various carbon allotropes as representative test systems. We find that uncertainty estimates can behave counterintuitively in OOD settings, often plateauing or even decreasing as predictive errors grow. These results highlight fundamental limitations of current uncertainty quantification approaches and underscore the need for caution when using predictive precision as a stand-in for accuracy in large-scale, extrapolative applications.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.data-an"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning interatomic potentials, which is not closely related to the user's preferred topics of superconductivity, nickelates, and topological semimetals.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "MLIPs",
+      "Uncertainty quantification",
+      "Carbon allotropes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5406442880630493,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5265993475914001,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.48911648988723755,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.06311v1": {
+    "id": "2508.06311v1",
+    "title": "On-the-Fly Machine Learning of Interatomic Potentials for Elastic Property Modeling in Al-Mg-Zr Solid Solutions",
+    "authors": [
+      {
+        "name": "Lukas Volkmer",
+        "affiliation": null
+      },
+      {
+        "name": "Leonardo Medrano Sandonas",
+        "affiliation": null
+      },
+      {
+        "name": "Philip Grimm",
+        "affiliation": null
+      },
+      {
+        "name": "Julia Kristin Hufenbach",
+        "affiliation": null
+      },
+      {
+        "name": "Gianaurelio Cuniberti",
+        "affiliation": null
+      }
+    ],
+    "summary": "The development of resilient and lightweight Aluminum alloys is central to advancing structural materials for energy-efficient engineering applications. To address this challenge, in this study, we explore the elastic properties of Al-Mg-Zr solid solutions by integrating advanced machine learning (ML) techniques with quantum-mechanical (QM) atomistic simulations. For this purpose, we develop accurate and transferable machine-learned interatomic potentials (MLIPs) using two complementary approaches: (i) an on-the-fly learning scheme combined with Bayesian linear regression during ab initio molecular dynamics simulations, and (ii) the equivariant neural network architecture MACE. Both MLIPs facilitate the prediction of composition-dependent elastic properties while drastically reducing the computational cost compared to conventional QM methods. Comparison with ultrasonic measurements shows that the deviation between simulation and experiment remains within a few GPa across all Al-Mg-Zr systems investigated. These potentials also enable the systematic exploration of the Al-Mg-Zr solid solution phase space and provide insights into the elastic behavior as a function of alloying element concentration. Hence, our findings demonstrate the reliability and transferability of the parameterized on-the-fly MLIPs, making them valuable for accelerating the design of Al alloys with tailored physicomechanical properties in complex compositional spaces. While the present study focuses on homogeneous phases, it establishes a foundation for future multiscale simulations that include microstructural features such as precipitates and grain boundaries.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning for materials science, specifically related to aluminum alloys, which is a departure from the user's interest in superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Machine-learned interatomic potentials",
+      "Al-Mg-Zr alloys",
+      "Elastic property modeling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5674229264259338,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5143731832504272,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.501785397529602,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05736v1": {
+    "id": "2508.05736v1",
+    "title": "Role of Plaquette Term in Genuine $2+1$D String Dynamics on Quantum Simulators",
+    "authors": [
+      {
+        "name": "Yizhuo Tian",
+        "affiliation": null
+      },
+      {
+        "name": "N. S. Srivatsa",
+        "affiliation": null
+      },
+      {
+        "name": "Kaidi Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Jesse J. Osborne",
+        "affiliation": null
+      },
+      {
+        "name": "Umberto Borla",
+        "affiliation": null
+      },
+      {
+        "name": "Jad C. Halimeh",
+        "affiliation": null
+      }
+    ],
+    "summary": "With the advent of quantum simulators of $2+1$D lattice gauge theories (LGTs), a fundamental open question is under what circumstances the observed physics is genuinely $2+1$D rather than effectively $1+1$D. Here, we address this question in the ongoing strong effort to quantum-simulate string dynamics in $2+1$D LGTs on state-of-the-art quantum hardware. Through tensor network simulations and analytic derivations, we show that the plaquette term, which represents a magnetic field and only emerges in $d>1$ spatial dimensions, plays a crucial role in \\textit{genuine} $2+1$D string dynamics deep in the confined regime. In its absence and for minimal-length (Manhattan-distance) strings, we demonstrate how string breaking, although on a lattice in $d=2$ spatial dimensions, can be effectively mapped to a $1+1$D dynamical process independently of lattice geometry. Our findings not only answer the question of what qualifies as genuine $2+1$D string dynamics, but also serve as a clear guide for future quantum simulation experiments of $2+1$D LGTs.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum simulation of lattice gauge theories and string dynamics, a topic that doesn't directly align with the user's past interests in superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Lattice gauge theories",
+      "String dynamics",
+      "Quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5000547170639038,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.4868633449077606,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4645582437515259,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.06440v1": {
+    "id": "2508.06440v1",
+    "title": "Multiorbital character of the density wave instability in La$_4$Ni$_3$O$_{10}$",
+    "authors": [
+      {
+        "name": "A. Suthar",
+        "affiliation": null
+      },
+      {
+        "name": "V. Sundaramurthy",
+        "affiliation": null
+      },
+      {
+        "name": "M. Bejas",
+        "affiliation": null
+      },
+      {
+        "name": "Congcong Le",
+        "affiliation": null
+      },
+      {
+        "name": "P. Puphal",
+        "affiliation": null
+      },
+      {
+        "name": "P. Sosa-Lizama",
+        "affiliation": null
+      },
+      {
+        "name": "A. Schulz",
+        "affiliation": null
+      },
+      {
+        "name": "J. Nuss",
+        "affiliation": null
+      },
+      {
+        "name": "M. Isobe",
+        "affiliation": null
+      },
+      {
+        "name": "P. A. van Aken",
+        "affiliation": null
+      },
+      {
+        "name": "Y. E. Suyolcu",
+        "affiliation": null
+      },
+      {
+        "name": "M. Minola",
+        "affiliation": null
+      },
+      {
+        "name": "A. P. Schnyder",
+        "affiliation": null
+      },
+      {
+        "name": "Xianxin Wu",
+        "affiliation": null
+      },
+      {
+        "name": "B. Keimer",
+        "affiliation": null
+      },
+      {
+        "name": "G. Khaliullin",
+        "affiliation": null
+      },
+      {
+        "name": "A. Greco",
+        "affiliation": null
+      },
+      {
+        "name": "M. Hepting",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ruddlesden-Popper nickelates exhibit high-temperature superconductivity closely intertwined with charge and spin density wave order. However, fundamental questions persist regarding the interplay between the associated density wave (DW) fluctuations and superconductivity, as well as the orbital character and symmetry underlying the DW instabilities. Here we utilize polarized Raman scattering to investigate the phononic and electronic Raman responses of the trilayer nickelate La$_4$Ni$_3$O$_{10}$ across its concomitant charge and spin density wave transitions. In addition to distinct phonon anomalies occurring below the transition temperature, we observe a depletion of continuum spectral weight up to 114 meV and a pronounced peak centered at this energy. By combining momentum-selective information from polarized electronic Raman scattering with model calculations involving both Ni-3$d_{x^2 - y^2}$ and Ni-3$d_{z^2}$ orbitals, we identify 114 meV as the energy scale $2\\Delta_\\mathrm{DW}$ of the DW gap, characterized by incoherent opening and non-mean-field behavior. Furthermore, the model calculations reveal that the corresponding $2\\Delta_\\mathrm{DW}$ peak exhibits a multiorbital origin, thus shedding light on the nature of the DW instabilities in La$_4$Ni$_3$O$_{10}$.",
+    "published_date": "2025-08-08",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses density wave order in nickelates, which connects to previous papers on nickelate superconductors and charge correlations.",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "Density wave instability",
+      "Multiorbital character",
+      "Raman scattering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6889303922653198,
+        "liked_paper_id": "2506.23823v1"
+      },
+      {
+        "score": 0.648895263671875,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      },
+      {
+        "score": 0.6315236687660217,
+        "liked_paper_id": "2506.16360v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.04628v2": {
+    "id": "2508.04628v2",
+    "title": "Simulations of dielectric permittivity of water by Machine Learned Potentials with long-range Coulombic interactions",
+    "authors": [
+      {
+        "name": "Kehan Cai",
+        "affiliation": null
+      },
+      {
+        "name": "Chunyi Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Xifan Wu",
+        "affiliation": null
+      }
+    ],
+    "summary": "The dielectric permittivity of liquid water is a fundamental property that underlies its distinctive behaviors in numerious physical, biological, and chemical processes. Within a machine learning framework, we present a unified approach to compute the dielectric permittivity of water, systematically incorporating various electric boundary conditions. Our method employs a long-range-inclusive deep potential trained on data from hybrid density functional theory calculations. Dielectric response is evaluated using an auxiliary deep neural network that predicts the centers of maximally localized Wannier functions. We investigate three types of electric boundary conditions--metallic, insulating, and Kirkwood-Frohlich--to assess their influence on correlated dipole fluctuations and dielectric relaxation dynamics. In particular, we demonstrate a consistent methodology for computing the Kirkwood correlation factor, correlation length, and dielectric permittivity under each boundary condition, where long-range electrostatics play a critical role. This work establishes a robust and generalizable machine-learning framework for modeling the dielectric properties of polar liquids under diverse electrostatic environments.",
+    "published_date": "2025-08-06",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on simulations of water's dielectric permittivity using machine learning, which is a significant departure from the user's interest in superconductivity, topological materials, and oxides.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Dielectric permittivity",
+      "Machine learning potential",
+      "Long-range electrostatics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4093768894672394,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.38121989369392395,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.36201223731040955,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
