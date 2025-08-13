@@ -30232,5 +30232,128 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2508.05738v2": {
+    "id": "2508.05738v2",
+    "title": "A quantum computing approach to efficiently simulating correlated materials using impurity models and dynamical mean field theory",
+    "authors": [
+      {
+        "name": "Norman Hogan",
+        "affiliation": null
+      },
+      {
+        "name": "Efekan K\u00f6kc\u00fc",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas Steckmann",
+        "affiliation": null
+      },
+      {
+        "name": "Liam P. Doak",
+        "affiliation": null
+      },
+      {
+        "name": "Carlos Mejuto-Zaera",
+        "affiliation": null
+      },
+      {
+        "name": "Daan Camps",
+        "affiliation": null
+      },
+      {
+        "name": "Roel Van Beeumen",
+        "affiliation": null
+      },
+      {
+        "name": "Wibe A. de Jong",
+        "affiliation": null
+      },
+      {
+        "name": "A. F. Kemper",
+        "affiliation": null
+      }
+    ],
+    "summary": "The accurate theoretical description of materials with strongly correlated electrons is a formidable challenge, at the forefront of condensed matter physics and computational chemistry alike, and it is one of the targets for quantum computing. Dynamical Mean Field Theory (DMFT) is a successful approach that predicts behaviors of such systems by incorporating some correlated behavior, but it is limited by the need to calculate the Green's function for the impurity model. This work proposes a framework for DMFT calculations on quantum computers, focusing on near-term applications. It leverages the structure of the impurity problem, combining a low-rank Gaussian subspace representation of the ground state and a compressed, short-depth quantum circuit that joins the Gaussian state preparation with the time evolution to compute the necessary Green's functions. We demonstrate the convergence of the DMFT algorithm using the Gaussian subspace in a noise-free setting, and show the hardware viability of the circuit compression by extracting the impurity Green's function on IBM quantum processors for a single impurity coupled to three bath orbitals (8 physical qubits and 1 ancilla). We discuss the potential paths forward towards realizing this use case of quantum computing in materials science.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper directly addresses the efficient simulation of correlated materials, which aligns with the user's interest in Dynamical Mean-Field Theory (DMFT) and strongly correlated electron systems, and it also explores the use of quantum computing for materials science.",
+    "matching_keywords": [
+      "dynamical mean field theory",
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "quantum computing",
+      "dynamical mean-field theory",
+      "correlated materials simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7226336002349854,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.6862658262252808,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "score": 0.6835386753082275,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09113v1": {
+    "id": "2508.09113v1",
+    "title": "Machine Learning Phonon Spectra for Fast and Accurate Optical Lineshapes of Defects",
+    "authors": [
+      {
+        "name": "Mark E. Turiansky",
+        "affiliation": null
+      },
+      {
+        "name": "John L. Lyons",
+        "affiliation": null
+      },
+      {
+        "name": "Noam Bernstein",
+        "affiliation": null
+      }
+    ],
+    "summary": "The optical properties of defects in solids produce rich physics, from gemstone coloration to single-photon emission for quantum networks. Essential to describing optical transitions is electron-phonon coupling, which can be predicted from first principles but requires computationally expensive evaluation of all phonon modes in simulation cells containing hundreds of atoms. We demonstrate that this bottleneck can be overcome using machine learning interatomic potentials with negligible accuracy loss. A key finding is that atomic relaxation data from routine first-principles calculations suffice as a dataset for fine-tuning, though additional data can further improve models. The efficiency of this approach enables studies of defect vibrational properties with high-level theory. We fine-tune to hybrid functional calculations to obtain highly accurate spectra, comparing with explicit calculations and experiments for various defects. Notably, we resolve fine details of local vibrational mode coupling in the luminescence spectrum of the T center in Si, a prominent quantum defect.",
+    "published_date": "2025-08-12",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in materials science and computation, this paper focuses on machine learning applied to phonon spectra which is not a primary focus of the user's previously liked papers.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning",
+      "phonon spectra",
+      "optical lineshapes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5539034008979797,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5266566276550293,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.522395133972168,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
