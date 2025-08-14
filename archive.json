@@ -29857,7 +29857,9 @@
         "liked_paper_id": "2506.18973v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.03580v2": {
     "id": "2508.03580v2",
@@ -30352,6 +30354,902 @@
       {
         "score": 0.522395133972168,
         "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.08160v1": {
+    "id": "2508.08160v1",
+    "title": "Quantum Circuit Complexity of Matrix-Product Unitaries",
+    "authors": [
+      {
+        "name": "Georgios Styliaris",
+        "affiliation": null
+      },
+      {
+        "name": "Rahul Trivedi",
+        "affiliation": null
+      },
+      {
+        "name": "J. Ignacio Cirac",
+        "affiliation": null
+      }
+    ],
+    "summary": "Matrix-product unitaries (MPUs) are many-body unitary operators that, as a consequence of their tensor-network structure, preserve the entanglement area law in 1D systems. However, it is unknown how to implement an MPU as a quantum circuit since the individual tensors describing the MPU are not unitary. In this paper, we show that a large class of MPUs can be implemented with a polynomial-depth quantum circuit. For an $N$-site MPU built from a repeated bulk tensor with open boundary, we explicitly construct a quantum circuit of polynomial depth $T = O(N^{\\alpha})$ realizing the MPU, where the constant $\\alpha$ depends only on the bulk and boundary tensor and not the system size $N$. We show that this class includes nontrivial unitaries that generate long-range entanglement and, in particular, contains a large class of unitaries constructed from representations of $C^*$-weak Hopf algebras. Furthermore, we also adapt our construction to nonuniform translationally-varying MPUs and show that they can be implemented by a circuit of depth $O(N^{\\beta} \\, \\mathrm{poly}\\, D)$ where $\\beta \\le 1 + \\log_2 \\sqrt{D}/ s_{\\min}$, with $D$ being the bond dimension and $s_{\\min}$ is the smallest nonzero Schmidt value of the normalized Choi state corresponding to the MPU.",
+    "published_date": "2025-08-11",
+    "categories": [
+      "cond-mat.str-el",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in condensed matter physics and superconductivity, this paper focuses on quantum circuit complexity and tensor networks, which are less directly related.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Matrix-product unitaries",
+      "Quantum circuit complexity",
+      "Tensor network"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5581024289131165,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4787940979003906,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.43103641271591187,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.08528v1": {
+    "id": "2508.08528v1",
+    "title": "Emergent gauge flux in QED$_3$ with flavor chemical potential: application to magnetized U(1) Dirac spin liquids",
+    "authors": [
+      {
+        "name": "Chuang Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Urban F. P. Seifert",
+        "affiliation": null
+      },
+      {
+        "name": "Kexin Feng",
+        "affiliation": null
+      },
+      {
+        "name": "Oleg A. Starykh",
+        "affiliation": null
+      },
+      {
+        "name": "Leon Balents",
+        "affiliation": null
+      },
+      {
+        "name": "Zi Yang Meng",
+        "affiliation": null
+      }
+    ],
+    "summary": "We design a lattice model of non-compact U(1) gauge field coupled to fermions with a flavor chemical potential and solve it with large-scale determinant quantum Monte Carlo simulations. For zero flavor chemical potential, the model realizes three-dimensional quantum electrodynamics (QED$_3$) which has been argued to describe the ground state and low-energy excitations of the Dirac spin liquid phase of quantum antiferromagnets. At finite flavor chemical potential, corresponding to a Zeeman field perturbing the Dirac spin liquid, we find a ''chiral flux'' phase which is characterized by the generation of a finite mean emergent gauge flux and, accordingly, the formation of relativistic Landau levels for the Dirac fermions. In this state, the U(1)$_m$ magnetic symmetry is spontaneously broken, leading to a gapless free photon mode which, due to spin-flux-attachment, is observable in the longitudinal spin structure factor. We numerically compute longitudinal and transverse spin structure factors which match our continuum and lattice mean-field theory predictions. Further, sufficiently strong fluctuations of the emergent gauge field give rise to an antiferromagnetically ordered state with gapped Dirac fermions coexisting with a deconfined gauge field. We also find an interesting intermediate phase where the chiral flux phase and the antiferromagnetic phase coexist. We argue that our results pave the way to testable predictions for magnetized Dirac spin liquids in frustrated quantum antiferromagnets.",
+    "published_date": "2025-08-11",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses Dirac fermions and quantum antiferromagnets, which aligns with previous interests in Dirac semimetals and related quantum materials.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Dirac spin liquids",
+      "emergent gauge flux",
+      "flavor chemical potential"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6630972027778625,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5645738244056702,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5534026622772217,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.04385v2": {
+    "id": "2508.04385v2",
+    "title": "Ultrafast Raman probe of the photoinduced superconducting to normal state transition in the cuprate Bi$_2$Sr$_2$CaCu$_2$O$_{8+\u03b4}$",
+    "authors": [
+      {
+        "name": "Laur\u00e8ne Gatuingt",
+        "affiliation": null
+      },
+      {
+        "name": "Alexandr Alekhin",
+        "affiliation": null
+      },
+      {
+        "name": "Niloufar Nilforoushan",
+        "affiliation": null
+      },
+      {
+        "name": "Sarah Houver",
+        "affiliation": null
+      },
+      {
+        "name": "Alain Sacuto",
+        "affiliation": null
+      },
+      {
+        "name": "Genda Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Yann Gallais",
+        "affiliation": null
+      }
+    ],
+    "summary": "We report an ultrafast Time-Resolved Raman scattering study of the out-of-equilibrium photoinduced dynamics across the superconducting to normal state phase transition of the cuprate Bi$_2$Sr$_2$CaCu$_2$O$_{8+\\delta}$. Using the polarization-resolved momentum space selectivity of Raman scattering, we track the superconducting condensate destruction and recovery dynamics with sub-picoseconds time resolution in the anti-nodal region of the Fermi surface where the superconducting gap is maximum. Leveraging ultrafast Raman thermometry, we find a significant dichotomy between the superconducting condensate and the quasiparticle temperature dynamics near the anti-nodes, which cannot be framed in terms of a single effective electron temperature. The present work demonstrates the ability of Time-Resolved Raman scattering to selectively probe out-of-equilibrium pathways of different electronic sub-degrees of freedom during a photoinduced phase transition.",
+    "published_date": "2025-08-06",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses superconductivity in cuprates and uses experimental techniques relevant to understanding the electronic structure and phase transitions, aligning with the user's interest in superconductivity and experimental characterization of complex materials.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "Ultrafast Raman spectroscopy",
+      "Cuprate superconductors",
+      "Photoinduced phase transition"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7487659454345703,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.6187119483947754,
+        "liked_paper_id": "2506.18363v1"
+      },
+      {
+        "score": 0.5725632905960083,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09881v1": {
+    "id": "2508.09881v1",
+    "title": "Doping Evolution of Nodal Electron Dynamics in Trilayer Cuprate Superconductor Bi$_2$Sr$_2$Ca$_2$Cu$_3$O$_{10+\u03b4}$ Revealed by Laser-Based Angle-Resolved Photoemission Spectroscopy",
+    "authors": [
+      {
+        "name": "Hao Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Jumin Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Xiangyu Luo",
+        "affiliation": null
+      },
+      {
+        "name": "Yinghao Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yiwen Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Chaohui Yin",
+        "affiliation": null
+      },
+      {
+        "name": "Yingjie Shu",
+        "affiliation": null
+      },
+      {
+        "name": "Jiuxiang Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Taimin Miao",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Liang",
+        "affiliation": null
+      },
+      {
+        "name": "Wenpei Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Neng Cai",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaolin Ren",
+        "affiliation": null
+      },
+      {
+        "name": "Chengtian Lin",
+        "affiliation": null
+      },
+      {
+        "name": "Shenjin Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhimin Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Fengfeng Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Feng Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Qinjun Peng",
+        "affiliation": null
+      },
+      {
+        "name": "Zuyan Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Guodong Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Hanqing Mao",
+        "affiliation": null
+      },
+      {
+        "name": "Xintong Li",
+        "affiliation": null
+      },
+      {
+        "name": "Lin Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "X. J. Zhou",
+        "affiliation": null
+      }
+    ],
+    "summary": "The doping evolution of the nodal electron dynamics in the trilayer cuprate superconductor Bi$_2$Sr$_2$Ca$_2$Cu$_3$O$_{10+\\delta}$ (Bi2223) is investigated using high-resolution laser-based angle-resolved photoemission spectroscopy (ARPES). Bi2223 single crystals with different doping levels are prepared by controlled annealing which cover the underdoped, optimally-doped and overdoped regions. The electronic phase diagram of Bi2223 is established which describes the T$_\\mathrm{c}$ dependence on the sample doping level. The doping dependence of the nodal Fermi momentum for the outer (OP) and inner (IP) CuO$_2$ planes is determined. Charge distribution imbalance between the OP and IP CuO$_2$ planes is quantified, showing enhanced disparity with increasing doping. Nodal band dispersions demonstrate a prominent kink at $\\sim$94$\\,$meV in the IP band, attributed to the unique Cu coordination in the IP plane, while a weaker $\\sim$60$\\,$meV kink is observed in the OP band. The nodal Fermi velocity of both OP and IP bands is nearly constant at $\\sim$1.62$\\,$eV\\r{A} independent of doping. These results provide important information to understand the origin of high T$_\\mathrm{c}$ and superconductivity mechanism in high temperature cuprate superconductors.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1088/1674-1056/addcc6",
+    "score": 0.7,
+    "reasoning": "The paper focuses on the electronic structure and doping effects in a trilayer cuprate superconductor, a topic closely related to the user's interest in superconductivity and materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "Trilayer cuprate",
+      "Nodal electron dynamics",
+      "Angle-resolved photoemission spectroscopy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6147128939628601,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.5737051367759705,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.571691632270813,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09542v1": {
+    "id": "2508.09542v1",
+    "title": "Discovery and Synthesis of a Family of Boride Altermagnets",
+    "authors": [
+      {
+        "name": "Zhen Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Eranga H. Gamage",
+        "affiliation": null
+      },
+      {
+        "name": "Genevieve Amobi",
+        "affiliation": null
+      },
+      {
+        "name": "Subhadip Pradhan",
+        "affiliation": null
+      },
+      {
+        "name": "Andrey Kutepov",
+        "affiliation": null
+      },
+      {
+        "name": "Kirill D. Belashchenko",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Kirill Kovnir",
+        "affiliation": null
+      },
+      {
+        "name": "Vladimir Antropov",
+        "affiliation": null
+      }
+    ],
+    "summary": "Borides are a rich material family. To push the boundaries of borides' properties and applications into broader fields, we have conducted systematic theoretical and experimental searches for synthesizable phases in ternary borides TM$_2$B$_2$ (T = 3d, M = 4d/5d transition metals). We find that TM$_2$B$_2$ in the FeMo$_2$B$_2$-type and CoW$_2$B$_2$-type structures form a large family of stable/metastable materials of 120 members. Among them, we identify 40 materials with stable magnetic solutions. Further, we discover 11 altermagnets in the FeMo$_2$B$_2$-type structure. So far, boride altermagnets are rare. In these altermagnets, T = Fe or Mn atoms are arranged in parallel T-chains with strong ferromagnetic intrachain couplings and antiferromagnetic interchain couplings. They simultaneously exhibit electronic band spin splitting, typical of ferromagnetism, and zero net magnetization, typical of antiferromagnetism. They also exhibit magnonic band chiral splitting. Both effects originate from the unique altermagnetic symmetries crucially constrained by the nonmagnetic atoms in the structure. Transport properties of relevance to spintronic applications, including the strain-induced spin-splitter effect and anomalous Hall effect, are predicted. An iodine-assisted synthesis method for TM$_2$B$_2$ is developed, using which 7 of the predicted low-energy phases are experimentally synthesized and characterized, including 4 altermagnets. This work expands the realm of borides by offering new opportunities for studying altermagnetism and altermagnons in borides. It also provides valuable insights into the discovery and design of altermagnets. By demonstrating that altermagnets can exist as families sharing a common motif, this work paves a feasible route for discovering altermagnets by elemental substitutions and high-throughput computations.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": "10.1021/jacs.5c07874",
+    "score": 0.2,
+    "reasoning": "While the user is interested in unconventional superconductivity and correlated electron systems, this paper focuses on a different class of materials (borides) and a different magnetic order (altermagnetism), making it only weakly relevant.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Boride altermagnets",
+      "Altermagnon",
+      "Spintronic applications"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5496518611907959,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5167837738990784,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      },
+      {
+        "score": 0.5154384970664978,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.07610v1": {
+    "id": "2508.07610v1",
+    "title": "Tomography-assisted noisy quantum circuit simulator using matrix product density operators",
+    "authors": [
+      {
+        "name": "Wei-guo Ma",
+        "affiliation": null
+      },
+      {
+        "name": "Yun-Hao Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Kai Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Heng Fan",
+        "affiliation": null
+      }
+    ],
+    "summary": "In recent years, efficient quantum circuit simulations incorporating ideal noise assumptions have relied on tensor network simulators, particularly leveraging the matrix product density operator (MPDO) framework. However, experiments on real noisy intermediate-scale quantum (NISQ) devices often involve complex noise profiles, encompassing uncontrollable elements and instrument-specific effects such as crosstalk. To address these challenges, we employ quantum process tomography (QPT) techniques to directly capture the operational characteristics of the experimental setup and integrate them into numerical simulations using MPDOs. Our QPT-assisted MPDO simulator is then applied to explore a variational approach for generating noisy entangled states, comparing the results with standard noise numerical simulations and demonstrations conducted on the Quafu cloud quantum computation platform. Additionally, we investigate noisy MaxCut problems, as well as the effects of crosstalk and noise truncation. Our results provide valuable insights into the impact of noise on NISQ devices and lay the foundation for enhanced design and assessment of quantum algorithms in complex noise environments.",
+    "published_date": "2025-08-11",
+    "categories": [],
+    "doi": "10.1103/PhysRevA.110.032604",
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing simulations and noise mitigation in quantum circuits, a topic that deviates significantly from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum process tomography",
+      "matrix product density operators",
+      "NISQ devices"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5115125179290771,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4851270318031311,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.480235755443573,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.07491v1": {
+    "id": "2508.07491v1",
+    "title": "A Method for Constructing Quasi-Random Peaked Quantum Circuits",
+    "authors": [
+      {
+        "name": "O. G. Udalov",
+        "affiliation": null
+      }
+    ],
+    "summary": "An algorithm is proposed for constructing quasi-random \"peaked\" quantum circuits, i.e., circuits whose final qubit state exhibits a high probability concentration on a specific computational basis state. These circuits consist of random gates arranged in a brick-wall architecture. While the multiqubit state in the middle of the circuit can exhibit significant entanglement, the final state is, with high probability, a predetermined pure bitstring. A technique is introduced to obscure the final bitstring in the structure of the quantum circuit. The algorithm allows precise control over the probability of the final peaked state. A modified version of the algorithm enables the construction of double- or multi-peaked quantum circuits. The matrix product state (MPS) method is evaluated for simulating such circuits; it performs effectively for shallow peaked circuits but offers no significant advantage for deeper ones.",
+    "published_date": "2025-08-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum circuits and algorithms, which are unrelated to the user's previous interests in condensed matter physics and materials science, resulting in a low relevance score.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "peaked quantum circuits",
+      "quasi-random circuits",
+      "matrix product state simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48544085025787354,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4400998651981354,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4245355725288391,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.08734v1": {
+    "id": "2508.08734v1",
+    "title": "Digital Quantum Simulation of Flat-Band and All-Bands-Flat Dynamics for Tunable Quantum Transport",
+    "authors": [
+      {
+        "name": "Mrinal Kanti Giri",
+        "affiliation": null
+      },
+      {
+        "name": "Pochung Chen",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the dynamics on the flat-band (FB) and all-bands-flat (AFB) lattices using a digital quantum computer. By utilizing an advanced tensor network method to compress the quantum circuit, we overcome the intrinsic limitations of current noisy intermediate-scale quantum (NISQ) computers. This enables high-fidelity simulations of time evolution over extended timescales and various interesting dynamical behaviours are observed in our digital quantum simulation. We start from the quantum simulation of the single-particle quantum walk on the FB and AFB lattices, which are realized by tuning the magnetic flux per plaquette to $\\phi=0$ and $\\phi=\\pi$ respectively. With compressed quantum circuit, we are able to simulate the delocalization in FB lattice and the Aharonov-Bohm caging in AFB lattice. Next, we integrate FB and ABF lattices within a one-dimensional lattice structure and study how these lattices can be utilized to control quantum transport. Moreover, we investigate the effectiveness of a single ABF lattice in controlling the two particles dynamics without and with interaction. We find that the hopping amplitude remains an effective and tunable parameter for controlling particle transport even in the presence of interactions. Our results show that digital quantum simulations of flat-band physics are feasible on current digital NISQ devices through circuit compression. Moreover, this capability enables us to study the potential applications of flat-band systems in quantum control and emerging quantum technologies.",
+    "published_date": "2025-08-12",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in correlated electron systems and superconductivity, this paper focuses on quantum simulation of flat-band physics, which is a different area of research, though potentially related through the study of exotic quantum phenomena.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Digital quantum simulation",
+      "Flat-band lattices",
+      "Quantum transport"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5555639266967773,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.537438690662384,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5327481031417847,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.08410v1": {
+    "id": "2508.08410v1",
+    "title": "Nagaoka Instability and Quantum Phase Transition via Kinetic Frustration Control",
+    "authors": [
+      {
+        "name": "Prakash Sharma",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Peng",
+        "affiliation": null
+      },
+      {
+        "name": "Donna N. Sheng",
+        "affiliation": null
+      },
+      {
+        "name": "Hitesh J. Changlani",
+        "affiliation": null
+      },
+      {
+        "name": "Yao Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the Nagaoka-Thouless (NT) ferromagnetic instability in the strongly interacting $t$-$t'$ Hubbard model by continuously breaking particle-hole symmetry on a tunable square-triangular lattice geometry. We use an analytic approach to show that the fully spin-polarized state becomes unstable to a metastable spin-polaron when the kinetic frustration $t'/t$ exceeds a critical, dimension-dependent value. Large-scale density matrix renormalization group (DMRG) simulations reveal a quantum phase transition from the NT ferromagnet to a spiral spin-density wave, which evolves continuously into the Haerter-Shastry antiferromagnet in the large-frustration limit. Remarkably, this transition remains robust at low but finite hole density, making it accessible in cold-atom and moir\\'e Hubbard platforms under strong interactions. A variational analysis further captures the instability mechanism at finite density via frustration-induced magnon band deformation.",
+    "published_date": "2025-08-11",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses strongly correlated electron systems and quantum phase transitions in the Hubbard model, which aligns with the user's interest in unconventional superconductivity and electronic structure in complex oxides, particularly with a focus on magnetism and competing orders.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Nagaoka instability",
+      "kinetic frustration",
+      "spiral spin-density wave"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6386095285415649,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5946474075317383,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5845632553100586,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.08885v1": {
+    "id": "2508.08885v1",
+    "title": "The doping evolution of the charge density wave and charge density fluctuations in La$_{2-x}$Sr$_x$CuO$_4$",
+    "authors": [
+      {
+        "name": "Charles C. Tam",
+        "affiliation": null
+      },
+      {
+        "name": "Mengze Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Maud C. Barth\u00e9lemy",
+        "affiliation": null
+      },
+      {
+        "name": "Lauren J. Cane",
+        "affiliation": null
+      },
+      {
+        "name": "Oliver J. Lipscombe",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano Agrestini",
+        "affiliation": null
+      },
+      {
+        "name": "Jaewon Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Mirian Garcia-Fernandez",
+        "affiliation": null
+      },
+      {
+        "name": "Ke-Jin Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Stephen M. Hayden",
+        "affiliation": null
+      }
+    ],
+    "summary": "Cuprate superconductors show various collective charge correlations that are intimately connected with their electronic properties. In particular, charge order in the form of an incommensurate charge density wave (CDW) order with an in-plane wavevector $\\delta_{\\text{CDW}} \\approx $ 0.23--0.35~r.l.u. appears to be universally present. In addition to CDW, dynamic charge density fluctuations (CDF) are also present with wavevectors comparable to $\\delta_{\\text{CDW}}$. CDFs are present up to $\\sim300\\;$K and have relatively short correlation lengths of $\\xi \\sim 20$\\;\\AA. Here we use Cu-$L_3$ and O-$K$ resonant inelastic X-ray scattering (RIXS) to study the doping dependence of CDW and CDFs in La$_{2-x}$Sr$_x$CuO$_4$. We fit our data with (quasi)elastic peaks resulting from the CDW and up to four inelastic modes associated with oxygen phonons that can be strongly coupled to the CDFs. Our analysis allows us to separate the charge correlations into three components: the CDW with wavevector $\\delta_{4a-\\text{CDW}} \\approx 0.24$ and two CDF components with $\\delta_{4a-\\text{CDF}} \\approx 0.24$ and $\\delta_{3a-\\text{CDF}} \\approx 0.30$. We find that for $T \\approx T_c$ the CDW coexists with the CDFs for dopings near $x=p \\sim 1/8$. The $4a$-CDW disappears beyond $x=0.16$ and the $4a$-CDF beyond $x=0.19$, leaving only a weak $3a$-CDF at the highest doping studied, $x=0.22$. Our data suggest that low-energy charge fluctuations exist up to doping $x=0.19=p^{\\star}$, where the pseudogap disappears, however, we find no evidence that they are associated with a quantum critical point.",
+    "published_date": "2025-08-12",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper discusses charge density waves and fluctuations in cuprates, a topic related to superconductivity and electronic properties, aligning with the user's interest in related materials and phenomena.",
+    "matching_keywords": [
+      "RIXS",
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "charge density wave",
+      "resonant inelastic X-ray scattering",
+      "cuprate superconductors"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6848658323287964,
+        "liked_paper_id": "2506.18363v1"
+      },
+      {
+        "score": 0.673970103263855,
+        "liked_paper_id": "yBtX0C4AAAAJ:e5wmG9Sq2KIC"
+      },
+      {
+        "score": 0.6616294980049133,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09748v1": {
+    "id": "2508.09748v1",
+    "title": "Altermagnetic spintronics",
+    "authors": [
+      {
+        "name": "T. Jungwirth",
+        "affiliation": null
+      },
+      {
+        "name": "J. Sinova",
+        "affiliation": null
+      },
+      {
+        "name": "P. Wadley",
+        "affiliation": null
+      },
+      {
+        "name": "D. Kriegner",
+        "affiliation": null
+      },
+      {
+        "name": "H. Reichlova",
+        "affiliation": null
+      },
+      {
+        "name": "F. Krizek",
+        "affiliation": null
+      },
+      {
+        "name": "H. Ohno",
+        "affiliation": null
+      },
+      {
+        "name": "L. Smejkal",
+        "affiliation": null
+      }
+    ],
+    "summary": "The research landscape of magnetism has been recently enriched by the discovery of altermagnetism. It is an unconventional phase of matter characterized by a d-wave (or higher even-parity-wave) collinear compensated spin ordering, which enables strongly spin-polarized currents in the absence of magnetization, and features fast spin dynamics. Simultaneously, on the applied magnetism front, spintronic memories based on conventional ferromagnets are currently turning from a niche to a mass produced integrated-circuit technology as they start to complement semiconductors on advanced-node microprocessor chips. Our review connects these two rapidly developing science and technology fields by discussing how the unique signatures of altermagnetism can impact the functionality and scalability of future spintronic devices. As a reference, we first briefly recall the merits and physical limitations of the present ferromagnetic spintronic technology, and of proof-of-concept spintronic devices based on conventional collinear antiferromagnets and non-collinear compensated magnets. The main part of the review then focuses on physical concepts of the altermagnetic spintronics, and its potential interplay with ferroelectricity or superconductivity. We conclude with an outlook on the nascent experimental research of altermagnetic spintronics, and on the role of relativistic phenomena.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism and its potential applications in spintronic devices, which is related to correlated electron systems and magnetism, aligning with the user's interests in superconductivity and novel electronic phases.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "altermagnetism",
+      "spintronics",
+      "spin-polarized currents"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5385960936546326,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.4819831848144531,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.45698994398117065,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09870v1": {
+    "id": "2508.09870v1",
+    "title": "Learning complexity of many-body quantum sign structures through the lens of Boolean Fourier analysis",
+    "authors": [
+      {
+        "name": "Ilya Schurov",
+        "affiliation": null
+      },
+      {
+        "name": "Anna Kravchenko",
+        "affiliation": null
+      },
+      {
+        "name": "Mikhail I. Katsnelson",
+        "affiliation": null
+      },
+      {
+        "name": "Andrey A. Bagrov",
+        "affiliation": null
+      },
+      {
+        "name": "Tom Westerhout",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study sign structures of the ground states of spin-$1/2$ magnetic systems using the methods of Boolean Fourier analysis. Previously it was shown that the sign structures of frustrated systems are of complex nature: specifically, neural networks of popular architectures lack the generalization ability necessary to effectively reconstruct sign structures in supervised learning settings. This is believed to be an obstacle for applications of neural quantum states to frustrated systems. In the present work, we develop an alternative language for the analysis of sign structures based on representing them as polynomial functions defined on the Boolean hypercube - an approach called Boolean Fourier analysis. We discuss the relations between the properties of the Boolean Fourier series and the learning complexity of sign structures, and demonstrate that such polynomials can potentially serve as variational ans\\\"atze for the complex sign structures that dramatically outperform neural networks in terms of generalization ability. While ans\\\"atze of this type cannot yet be directly used in the context of variational optimization, they indicate that the complexity of sign structures is not an insurmountable curse, and can potentially be learned with better designed NQS architectures. Finally, we show how augmenting data with Boolean functions can aid sign prediction by neural networks.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "cs.DM"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses many-body quantum systems, the focus on Boolean Fourier analysis and neural networks for learning sign structures is a departure from the user's previous interests in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Boolean Fourier analysis",
+      "neural quantum states",
+      "sign structures"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5778453350067139,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5568773746490479,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5136197805404663,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09436v1": {
+    "id": "2508.09436v1",
+    "title": "Ultrafast Optical Evidence of Split Density Waves in Bilayer Nickelate La$_3$Ni$_2$O$_7$",
+    "authors": [
+      {
+        "name": "Qi-Yi Wu",
+        "affiliation": null
+      },
+      {
+        "name": "De-Yuan Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Chen Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Mengwu Huo",
+        "affiliation": null
+      },
+      {
+        "name": "Hao Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Ying Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Zhong-Tuo Fu",
+        "affiliation": null
+      },
+      {
+        "name": "Chun-Hui Lv",
+        "affiliation": null
+      },
+      {
+        "name": "Zi-Jie Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Hai-Long Deng",
+        "affiliation": null
+      },
+      {
+        "name": "H. Y. Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Jun Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Yu-Xia Duan",
+        "affiliation": null
+      },
+      {
+        "name": "Meng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Jian-Qiao Meng",
+        "affiliation": null
+      }
+    ],
+    "summary": "Utilizing ultrafast optical pump-probe spectroscopy, we investigated the quasiparticle and spin dynamics in single crystals of bilayer nickelate La$_3$Ni$_2$O$_7$. Our experimental results unequivocally demonstrate the presence of two distinct density wave (DW)-like orders, manifesting with onset temperatures at $\\sim$140 K and $\\sim$115 K. Through time-resolved ellipticity measurements, we identified the higher-temperature order at 140 K ($T_{\\rm SDW}$) as the onset of a spin density wave (SDW) with associated electronic nematicity. In contrast, the lower-temperature order is attributed to a charge order. A key finding is the differential response of these orders to photoexcitation: the charge order is entirely suppressed at a pump fluence of approximately 40 $\\mu$J/cm$^2$, whereas the SDW order persists up to 200 $\\mu$J/cm$^2$, albeit with its characteristic temperature suppressed to approximately 70 K. These compelling experimental observations provide critical insights into the coexistence and manipulability of density wave phenomena in La$_3$Ni$_2$O$_7$, laying a foundation for future research into their optical control.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper investigates the density wave order in La$_3$Ni$_2$O$_7$, a topic closely related to previously liked papers on nickelate superconductors and charge order phenomena.",
+    "matching_keywords": [
+      "nickelate",
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "ultrafast spectroscopy",
+      "spin density wave",
+      "charge order"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6606267690658569,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      },
+      {
+        "score": 0.6434944272041321,
+        "liked_paper_id": "2506.16360v1"
+      },
+      {
+        "score": 0.6373743414878845,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
       }
     ],
     "discovery_sources": []
