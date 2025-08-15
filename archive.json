@@ -31253,5 +31253,486 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2508.10503v1": {
+    "id": "2508.10503v1",
+    "title": "Superconductivity in imbalanced bilayer Hubbard model",
+    "authors": [
+      {
+        "name": "Ziying Jia",
+        "affiliation": null
+      },
+      {
+        "name": "Xun Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Mi Jiang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the bilayer model with two layers of imbalanced densities coupled by the interlayer hybridization. Using the large-scale dynamical cluster quantum Monte Carlo simulation, we discovered that increased hybridization induces a transition in the superconducting pairing from $d$-wave to $s^{\\pm}$-wave and the superconducting $T_c$ of $d$-wave pairing exhibits a non-monotonic dependence on the density imbalance. Remarkably, the optimal SC occurs at a moderate imbalance, whose SC is solely hosted by the layer with higher density (lower hole doping). Our results support the possibility of $T_c$ enhancement in composite picture where the underdoped layer provides the pairing strength while the overdoped layer promotes the phase coherence. The uncovered SC hosted by a single layer is reminiscent of our recent exploration on the trilayer Hubbard model. Our present study thus provides new insight that the SC can be enhanced via the layer differentiation.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses superconductivity in a Hubbard model, which connects to the user's interest in superconductivity and related electronic structures.",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Bilayer Hubbard model",
+      "Density imbalance",
+      "Layer differentiation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5895432233810425,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5875115394592285,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      },
+      {
+        "score": 0.5800005197525024,
+        "liked_paper_id": "2506.16068v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10718v1": {
+    "id": "2508.10718v1",
+    "title": "Symmetry-Constrained Multi-Scale Physics-Informed Neural Networks for Graphene Electronic Band Structure Prediction",
+    "authors": [
+      {
+        "name": "Wei Shan Lee",
+        "affiliation": null
+      },
+      {
+        "name": "I Hang Kwok",
+        "affiliation": null
+      },
+      {
+        "name": "Kam Ian Leong",
+        "affiliation": null
+      },
+      {
+        "name": "Chi Kiu Althina Chau",
+        "affiliation": null
+      },
+      {
+        "name": "Kei Chon Sio",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurate prediction of electronic band structures in two-dimensional materials remains a fundamental challenge, with existing methods struggling to balance computational efficiency and physical accuracy. We present the Symmetry-Constrained Multi-Scale Physics-Informed Neural Network (SCMS-PINN) v35, which directly learns graphene band structures while rigorously enforcing crystallographic symmetries through a multi-head architecture. Our approach introduces three specialized ResNet-6 pathways -- K-head for Dirac physics, M-head for saddle points, and General head for smooth interpolation -- operating on 31 physics-informed features extracted from k-points. Progressive Dirac constraint scheduling systematically increases the weight parameter from 5.0 to 25.0, enabling hierarchical learning from global topology to local critical physics. Training on 10,000 k-points over 300 epochs achieves 99.99\\% reduction in training loss (34.597 to 0.003) with validation loss of 0.0085. The model predicts Dirac point gaps within 30.3 $\\mu$eV of theoretical zero and achieves average errors of 53.9 meV (valence) and 40.5 meV (conduction) across the Brillouin zone. All twelve C$_{6v}$ operations are enforced through systematic averaging, guaranteeing exact symmetry preservation. This framework establishes a foundation for extending physics-informed learning to broader two-dimensional materials for accelerated discovery.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses electronic band structures and Dirac physics in graphene, connecting to the user's interest in Dirac fermions, electronic structure calculations, and 2D materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Physics-informed neural networks",
+      "Graphene band structure",
+      "Crystallographic symmetries"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5410172939300537,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.48104825615882874,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.47302567958831787,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10822v1": {
+    "id": "2508.10822v1",
+    "title": "Gauging the variational optimization of projected entangled-pair states",
+    "authors": [
+      {
+        "name": "Wei Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Laurens Vanderstraeten",
+        "affiliation": null
+      },
+      {
+        "name": "Jutho Haegeman",
+        "affiliation": null
+      }
+    ],
+    "summary": "Projected entangled-pair states (PEPS) constitute a powerful variational ansatz for capturing ground state physics of two-dimensional quantum systems. However, accurately computing and minimizing the energy expectation value remains challenging, in part because the impact of the gauge degrees of freedom that are present in the tensor network representation is poorly understood. We analyze the role of gauge transformations for the case of a U(1)-symmetric PEPS with point group symmetry, thereby reducing the gauge degrees of freedom to a single class. We show how gradient-based optimization strategies exploit the gauge freedom, causing the tensor network contraction to become increasingly inaccurate and to produce artificially low variational energies. Furthermore, we develop a gauge-fixed optimization strategy that largely suppresses this effect, resulting in a more robust optimization. Our study underscores the need for gauge-aware optimization strategies to guarantee reliability of variational PEPS in general settings.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in unconventional superconductivity and correlated electron systems, this paper focuses on tensor network methods (PEPS), a specific numerical technique, making it only weakly relevant.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "PEPS",
+      "tensor networks",
+      "variational optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6082723140716553,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4740704596042633,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.46814268827438354,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10505v1": {
+    "id": "2508.10505v1",
+    "title": "FastTrack: a fast method to evaluate mass transport in solid leveraging universal machine learning interatomic potential",
+    "authors": [
+      {
+        "name": "Hanwen Kang",
+        "affiliation": null
+      },
+      {
+        "name": "Tenglong Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhanbin Qi",
+        "affiliation": null
+      },
+      {
+        "name": "Jiandong Guo",
+        "affiliation": null
+      },
+      {
+        "name": "Sheng Meng",
+        "affiliation": null
+      },
+      {
+        "name": "Miao Liu",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a rapid, accurate framework for computing atomic migration barriers in crystals by combining universal machine learning force fields (MLFFs) with 3D potential energy surface sampling and interpolation. Our method suppresses periodic self interactions via supercell expansion, builds a continuous PES from MLFF energies on a spatial grid, and extracts minimum energy pathways without predefined NEB images. Across twelve benchmark electrode and electrolyte materials including LiCoO2, LiFePO4, and LGPS our MLFF-derived barriers lie within tens of meV of DFT and experiment, while achieving ~10^2 x speedups over DFT-NEB. We benchmark GPTFF, CHGNet, and MACE, show that fine-tuning on PBE/PBE+U data further enhances accuracy, and provide an open-source package for high-throughput materials screening and interactive PES visualization.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on computational methods for materials science, specifically atomic migration barriers, which is not closely aligned with the user's interests in superconductivity, electronic structure, and oxygen vacancies.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Machine learning force fields",
+      "Atomic migration barriers",
+      "Materials screening"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46721920371055603,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.46654194593429565,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4524202048778534,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10418v1": {
+    "id": "2508.10418v1",
+    "title": "Variational boundary based tensor network renormalization group",
+    "authors": [
+      {
+        "name": "Feng-Feng Song",
+        "affiliation": null
+      },
+      {
+        "name": "Naoki Kawashima",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose a real-space renormalization group algorithm for accurately coarse-graining two-dimensional tensor networks. The central innovation of our method lies in utilizing variational boundary tensors as a globally optimized environment for the entire system. Based on this optimized environment, we construct renormalization projectors that significantly enhance accuracy. By leveraging the canonical form of tensors, our algorithm maintains the same computational complexity as the original tensor renormalization group (TRG) method, yet achieves higher accuracy than existing approaches that do not incorporate entanglement filtering. Our work offers a practical pathway for extending TRG methods to higher dimensions while keeping computational costs manageable.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a numerical method for tensor networks, which is quite different from the user's past interest in superconductivity, oxygen vacancies, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tensor network renormalization group",
+      "variational boundary tensors",
+      "entanglement filtering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5567284822463989,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5048866271972656,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.4907921552658081,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10735v1": {
+    "id": "2508.10735v1",
+    "title": "Machine-Learning-enabled ab initio study of quantum phase transitions in SrTiO$_3$",
+    "authors": [
+      {
+        "name": "Jonathan Schmidt",
+        "affiliation": null
+      },
+      {
+        "name": "Nicola A. Spaldin",
+        "affiliation": null
+      }
+    ],
+    "summary": "We use the self-consistent harmonic approximation (SSCHA) with machine learning interatomic potentials to calculate the effect of $^{18}$O substitution on the properties of quantum paraelectric SrTiO$_3$ (STO). We find that calculations including both quantum and anharmonic effects are able to reproduce the experimentally observed isotope effect, in which replacement of $^{16}$O by $^{18}$O induces the ferroelectric state, and demonstrate that the ferroelectric phase transition in ST$^{18}$O can be reproduced in a purely displacive manner. We calculate the ferroelectric soft mode frequency as a function of volume, lattice parameters and temperature for ST$^{16}$O and ST$^{18}$O, and find that the phase space in which ST$^{16}$O shows quantum paraelectric behaviour, while ST$^{18}$O becomes ferroelectric is narrow. Our study shows that machine learning interatomic potentials enable temperature-dependent simulations that include quantum and anharmonic phonon effects, however quantitative prediction of phase diagrams remains challenging due to a lack of universally accurate electronic structure methods.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum phase transitions and calculations using machine learning in SrTiO3, a perovskite material that relates to the user's interest in oxides and unconventional superconductivity.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Quantum paraelectricity",
+      "Isotope effect",
+      "Machine learning interatomic potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.51161789894104,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4955253005027771,
+        "liked_paper_id": "yBtX0C4AAAAJ:vV6vV6tmYwMC"
+      },
+      {
+        "score": 0.4588644504547119,
+        "liked_paper_id": "2506.22435v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10270v1": {
+    "id": "2508.10270v1",
+    "title": "Data-Driven Topological Analysis of Polymorphic Crystal Structures",
+    "authors": [
+      {
+        "name": "Sourin Dey",
+        "affiliation": null
+      },
+      {
+        "name": "Nicholas Miklaucic",
+        "affiliation": null
+      },
+      {
+        "name": "Sadman Sadeed Omee",
+        "affiliation": null
+      },
+      {
+        "name": "Rongzhi Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Lai Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Qinyang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Nihang Fu",
+        "affiliation": null
+      },
+      {
+        "name": "Jianjun Hu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Polymorphism, the ability of a compound to crystallize in multiple distinct structures, plays a vital role in determining the physical, chemical, and functional properties of materials. Accurate identification and prediction of polymorphic structures are critical for materials design, drug development, and device optimization, as unknown or overlooked polymorphs may lead to unexpected performance or stability issues. Despite its significance, predicting polymorphism directly from a chemical composition remains a challenging problem due to the complex interplay between molecular conformations, crystal packing, and symmetry constraints. In this study, we conduct a comprehensive data-driven analysis of polymorphic materials from the Materials Project database, uncovering key statistical patterns in their composition, space group distributions, and polyhedral building blocks. We discover that frequent polymorph pairs across space groups, such as (71, 225), display recurring topological motifs that persist across different compounds, highlighting topology not symmetry alone as a key factor in polymorphic recurrence. We reveal that many polymorphs exhibit consistent local polyhedral environments despite differences in their symmetry or packing. Additionally, by constructing polyhedron connectivity graphs and embedding their topology, we successfully cluster polymorphs and structurally similar materials even across different space groups, demonstrating that topological similarity serves as a powerful descriptor for polymorphic behavior. Our findings provide new insights into the structural characteristics of polymorphic materials and demonstrate the potential of data mining and machine learning for accelerating polymorph discovery and design.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses crystal structures, it primarily focuses on data-driven analysis and topological motifs in polymorphs, lacking a direct connection to superconductivity, magnetism, or specific materials like nickelates, which are central to the user's liked papers.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "polymorphism",
+      "data-driven analysis",
+      "crystal structure topology"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.33243802189826965,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3243991732597351,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3166874051094055,
+        "liked_paper_id": "yBtX0C4AAAAJ:ZHo1McVdvXMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10526v1": {
+    "id": "2508.10526v1",
+    "title": "Variational Time Evolution Compression for Solving Impurity Models on Quantum Hardware",
+    "authors": [
+      {
+        "name": "Stefan Wolf",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Eckstein",
+        "affiliation": null
+      },
+      {
+        "name": "Michael J. Hartmann",
+        "affiliation": null
+      }
+    ],
+    "summary": "Dynamical mean-field theory (DMFT) is a useful tool to analyze models of strongly correlated fermions like the Hubbard model. In DMFT, the lattice of the model is replaced by a single impurity site embedded in an effective bath. The resulting single impurity Anderson model (SIAM) can then be solved self-consistently with a quantum-classical hybrid algorithm. This procedure involves repeatedly preparing the ground state on a quantum computer and evolving it in time to measure the Greens function. We here develop an approximation of the time evolution operator for this setting by training a Hamiltonian variational ansatz. The parameters of the ansatz are obtained via a variational quantum algorithm that utilizes a small number of time steps, given by the Suzuki- Trotter expansion of the time evolution operator, to guide the evolution of the parameters. The resulting circuit has constant depth for the time evolution and is significantly shallower than a comparable Suzuki-Trotter expansion.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses solving impurity models, specifically the SIAM, which is relevant to dynamical mean-field theory, a topic found in previously liked papers.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Variational quantum algorithm",
+      "Impurity models",
+      "Hamiltonian variational ansatz"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6755332946777344,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.661841094493866,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.6433286666870117,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.10384v1": {
+    "id": "2508.10384v1",
+    "title": "EDIS: A Simulation Software for Dynamic Ion Intercalation/Deintercalation Processes in Electrode Materials",
+    "authors": [
+      {
+        "name": "Liqi Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Ruijuan Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Hong Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "As the core determinant of lithium-ion battery performance, electrode materials play a crucial role in defining the battery's capacity, cycling stability, and durability. During charging and discharging, electrode materials undergo complex ion intercalation and deintercalation processes, accompanied by defect formation and structural evolution. However, the microscopic mechanisms underlying processes such as cation disordering, lattice oxygen loss, and stage structure formation phenomena are still not fully understood. To address these challenges, we have developed the Electrode Dynamic Ion Intercalation/Deintercalation Simulator (EDIS), a software platform designed to simulate the dynamic processes of ion intercalation and deintercalation in electrode materials. Leveraging high-precision machine learning potentials, EDIS can efficiently model structural evolution and lithium-ion diffusion behavior under various states of charge and discharge, achieving accuracy approaching that of quantum mechanical methods in relevant chemical spaces. The software supports quantitative analysis of how variations in lithium-ion concentration and distribution affect lithium-ion transport properties, enables evaluation of the impact of structural defects, and allows for tracking of both structural evolution and transport characteristics during continuous cycling. EDIS is versatile and can be extended to sodium-ion batteries and related systems. By enabling in-depth analysis of these microscopic processes, EDIS provides a robust theoretical tool for mechanistic studies and the rational design of high-performance electrode materials for next-generation lithium-ion batteries.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in nickelates and related materials, this paper focuses on simulation software for lithium-ion batteries, a different area of materials science.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "ion intercalation/deintercalation",
+      "electrode materials",
+      "machine learning potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4764358103275299,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.40090274810791016,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3615845739841461,
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
