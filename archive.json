@@ -30885,7 +30885,9 @@
         "liked_paper_id": "2507.01856v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.08410v1": {
     "id": "2508.08410v1",
@@ -30942,7 +30944,9 @@
         "liked_paper_id": "2506.15516v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.08885v1": {
     "id": "2508.08885v1",
@@ -31412,7 +31416,9 @@
         "liked_paper_id": "2507.01856v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.10505v1": {
     "id": "2508.10505v1",
@@ -31521,7 +31527,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.10735v1": {
     "id": "2508.10735v1",
@@ -31734,5 +31742,737 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2508.10076v1": {
+    "id": "2508.10076v1",
+    "title": "TensorKit.jl: A Julia package for large-scale tensor computations, with a hint of category theory",
+    "authors": [
+      {
+        "name": "Lukas Devos",
+        "affiliation": null
+      },
+      {
+        "name": "Jutho Haegeman",
+        "affiliation": null
+      }
+    ],
+    "summary": "TensorKit.jl is a Julia-based software package for tensor computations, especially focusing on tensors with internal symmetries. This paper introduces the design philosophy, core functionalities, and distinctive features, including how to handle abelian, non-abelian, and anyonic symmetries through the ``TensorMap'' type. We highlight the software's flexibility, performance, and its capability to extend to new tensor types and symmetries, illustrating its practical applications through select case studies.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cs.MS",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a computational tool for tensor operations with symmetries, a topic distinct from the user's interests in condensed matter physics and materials with specific electronic and structural properties.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "tensor computations",
+      "internal symmetries",
+      "Julia package"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4070439040660858,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.36999228596687317,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3680303990840912,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.10873v1": {
+    "id": "2508.10873v1",
+    "title": "QB Ground State Energy Estimation Benchmark",
+    "authors": [
+      {
+        "name": "Nicole Bellonzi",
+        "affiliation": null
+      },
+      {
+        "name": "Joshua T. Cantin",
+        "affiliation": null
+      },
+      {
+        "name": "Mohammad Reza Jangrouei",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander Kunitsa",
+        "affiliation": null
+      },
+      {
+        "name": "Jason Necaise",
+        "affiliation": null
+      },
+      {
+        "name": "Nam Nguyen",
+        "affiliation": null
+      },
+      {
+        "name": "John Penuel",
+        "affiliation": null
+      },
+      {
+        "name": "Maxwell D. Radin",
+        "affiliation": null
+      },
+      {
+        "name": "Jhonathan Romero Fontalvo",
+        "affiliation": null
+      },
+      {
+        "name": "Rashmi Sundareswara",
+        "affiliation": null
+      },
+      {
+        "name": "Linjun Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas Watts",
+        "affiliation": null
+      },
+      {
+        "name": "Yanbing Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Michael C. Garrett",
+        "affiliation": null
+      },
+      {
+        "name": "Adam Holmes",
+        "affiliation": null
+      },
+      {
+        "name": "Artur F. Izmaylov",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew Otten",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ground State Energy Estimation (GSEE) is a central problem in quantum chemistry and condensed matter physics, demanding efficient algorithms to solve complex electronic structure calculations. This work introduces a structured benchmarking framework for evaluating the performance of both classical and quantum solvers on diverse GSEE problem instances. We assess three prominent methods -- Semistochastic Heat-Bath Configuration Interaction (SHCI), Density Matrix Renormalization Group (DMRG), and Double-Factorized Quantum Phase Estimation (DF QPE) -- ighlighting their respective strengths and limitations. Our results show that fully optimized SHCI achieves near-universal solvability on the benchmark set, DMRG excels for low-entanglement systems, and DF QPE is currently constrained by hardware and algorithmic limitations. However, we observe that many benchmark Hamiltonians are drawn from datasets tailored to SHCI and related approaches, introducing a bias that favors classical solvers. To mitigate this, we propose expanding the benchmark suite to include more challenging, strongly correlated systems to enable a more balanced and forward-looking evaluation of solver capabilities. As quantum hardware and algorithms improve, this benchmarking framework will serve as a vital tool for tracking progress and identifying domains where quantum methods may surpass classical techniques. The QB-GSEE benchmark repository is openly available at https://github.com/isi-usc-edu/qb-gsee-benchmark [1]. By maintaining a scalable and open resource, we aim to accelerate innovation in computational quantum chemistry and quantum computing.",
+    "published_date": "2025-08-14",
+    "categories": [],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the user has liked papers on condensed matter physics, this paper primarily focuses on benchmarking quantum algorithms for ground state energy estimation, which is only tangentially related to the user's interests.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Ground State Energy Estimation",
+      "Quantum Benchmarking",
+      "Electronic Structure Calculations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6023070812225342,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5807016491889954,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5673389434814453,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.08964v1": {
+    "id": "2508.08964v1",
+    "title": "Neural quantum states for emitter dynamics in waveguide QED",
+    "authors": [
+      {
+        "name": "Tatiana Vovk",
+        "affiliation": null
+      },
+      {
+        "name": "Anka Van de Walle",
+        "affiliation": null
+      },
+      {
+        "name": "Hannes Pichler",
+        "affiliation": null
+      },
+      {
+        "name": "Annabelle Bohrdt",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum emitters coupled to one-dimensional waveguides constitute a paradigmatic quantum-optical platform for exploring collective phenomena in open quantum many-body systems. For appropriately spaced emitters, they realize the Dicke model, whose characteristic permutation symmetry allows for efficient exact solutions featuring superradiance. When the emitters are arbitrarily spaced, however, this symmetry is lost and general analytical solutions are no longer available. In this work, we introduce a novel numerical method to study the dynamics of such systems by extending the time-dependent neural quantum state (t-NQS) framework to open quantum systems. We benchmark our approach across a range of waveguide QED settings and compare its performance with tensor-network calculations. Our results demonstrate that the t-NQS approach is competitive with other numerical methods and highlight the potential of t-NQSs for studying open quantum many-body systems out of equilibrium.",
+    "published_date": "2025-08-12",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum optics and waveguide QED, which is a departure from the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "neural quantum state"
+    ],
+    "suggested_keywords": [
+      "waveguide QED",
+      "neural quantum states",
+      "open quantum systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6224141120910645,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5977274775505066,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5679422616958618,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.09891v1": {
+    "id": "2508.09891v1",
+    "title": "Tensor-network formulation of QCD in the strong-coupling expansion",
+    "authors": [
+      {
+        "name": "Thomas Samberger",
+        "affiliation": null
+      },
+      {
+        "name": "Jacques Bloch",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Lohmayer",
+        "affiliation": null
+      },
+      {
+        "name": "Tilo Wettig",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a tensor-network formulation for the strong-coupling expansion of QCD with staggered quarks at non-zero chemical potential, for arbitrary number of dimensions, colors, and flavors. We integrate out the gauge and quark degrees of freedom and rewrite the partition function as the complete trace of a tensor network. This network consists of local tensors that contain a numerical and a Grassmann part. We truncate the initial tensor at a fixed order in the inverse coupling $\\beta$ and compute analytical results for the partition function, the free energy, and the chiral condensate on a $2\\times2$ lattice up to order $\\beta^4$. In a follow-up paper we will introduce an enhanced tensor-network method, order-separated GHOTRG, to explicitly compute the expansion coefficients of the partition function for larger lattices.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on a theoretical approach to QCD, which is distant from the user's previous interests in superconductivity and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tensor network",
+      "strong-coupling expansion",
+      "QCD"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5283539295196533,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.52247154712677,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.5061831474304199,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.09092v2": {
+    "id": "2508.09092v2",
+    "title": "Robust quantum computational advantage with programmable 3050-photon Gaussian boson sampling",
+    "authors": [
+      {
+        "name": "Hua-Liang Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Hao Su",
+        "affiliation": null
+      },
+      {
+        "name": "Si-Qiu Gong",
+        "affiliation": null
+      },
+      {
+        "name": "Yi-Chao Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Hao-Yang Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Meng-Hao Jia",
+        "affiliation": null
+      },
+      {
+        "name": "Qian Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Yukun Song",
+        "affiliation": null
+      },
+      {
+        "name": "Dongzhou Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Mingyang Zheng",
+        "affiliation": null
+      },
+      {
+        "name": "Faxi Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Libo Li",
+        "affiliation": null
+      },
+      {
+        "name": "Siyu Ren",
+        "affiliation": null
+      },
+      {
+        "name": "Xuezhi Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Meihong Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yaojian Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Yanfei Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Longsheng Song",
+        "affiliation": null
+      },
+      {
+        "name": "Pengyu Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Junshi Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Hong An",
+        "affiliation": null
+      },
+      {
+        "name": "Lei Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Lin Gan",
+        "affiliation": null
+      },
+      {
+        "name": "Guangwen Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Jia-Min Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Yu-Ming He",
+        "affiliation": null
+      },
+      {
+        "name": "Hui Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Han-Sen Zhong",
+        "affiliation": null
+      },
+      {
+        "name": "Ming-Cheng Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Li Li",
+        "affiliation": null
+      },
+      {
+        "name": "Nai-Le Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Yu-Hao Deng",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao-Long Su",
+        "affiliation": null
+      },
+      {
+        "name": "Qiang Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Chao-Yang Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Jian-Wei Pan",
+        "affiliation": null
+      }
+    ],
+    "summary": "The creation of large-scale, high-fidelity quantum computers is not only a fundamental scientific endeavour in itself, but also provides increasingly robust proofs of quantum computational advantage (QCA) in the presence of unavoidable noise and the dynamic competition with classical algorithm improvements. To overcome the biggest challenge of photon-based QCA experiments, photon loss, we report new Gaussian boson sampling (GBS) experiments with 1024 high-efficiency squeezed states injected into a hybrid spatial-temporal encoded, 8176-mode, programmable photonic quantum processor, Jiuzhang 4.0, which produces up to 3050 photon detection events. Our experimental results outperform all classical spoofing algorithms, particularly the matrix product state (MPS) method, which was recently proposed to utilise photon loss to reduce the classical simulation complexity of GBS. Using the state-of-the-art MPS algorithm on the most powerful supercomputer EI Capitan, it would take > $10^{42}$ years to construct the required tensor network for simulation, while our Jiuzhang 4.0 quantum computer takes 25.6 $\\mu$s to produce a sample. This work establishes a new frontier of QCA and paves the way to fault-tolerant photonic quantum computing hardware.",
+    "published_date": "2025-08-12",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user has liked papers on quantum materials, superconductivity, and topological phases, this paper focuses on quantum computing with photons, a different area of physics.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Gaussian boson sampling",
+      "quantum computational advantage",
+      "photonic quantum processor"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4607829451560974,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.43386998772621155,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.42177096009254456,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.08376v1": {
+    "id": "2508.08376v1",
+    "title": "Continuous topological phase transition between $\\mathbb{Z}_2$ topologically ordered phases",
+    "authors": [
+      {
+        "name": "Qi Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Wen-Tao Xu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Topological phase transitions beyond anyon condensation remain poorly understood. A notable example is the transition between the toric code (TC) and double semion (DS) phases, which has two distinct $\\mathbb{Z}_2$ topological orders in (2 + 1)D. Previous studies reveal that the transition between them can be either first order or via an intermediate phase, thus the existence of a directly continuous transition between them remains a long-standing problem. Motivated by the fact that both phases can arise from condensing distinct anyons in the $\\mathbb{Z}_4$ topological order, we introduce a perturbed $\\mathbb{Z}_4$ quantum double (QD) model to study the TC-DS transition. We confirm the existence of a continuous (2 + 1)D XY* transition between the TC and DS phases by mapping it to a two-coupled quantum Ising model. Importantly, using the condensation order parameters and the area law coefficients of the Wilson loops, we further reveal that $\\mathbb{Z}_4$ anyons, fractionalized from the $\\mathbb{Z}_2$ topological orders, become deconfined at the transition between $\\mathbb{Z}_2$ topologically ordered phases. Our results open a path toward developing a theoretical framework for topological phase transitions beyond anyon condensation.",
+    "published_date": "2025-08-11",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological phase transitions and topological order, which relates to the previous paper on Dirac Fermions and Semimetals, which can exhibit topological properties.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "topological phase transition",
+      "anyon condensation",
+      "Z4 quantum double model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5219900608062744,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5081853270530701,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.49594753980636597,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.10890v1": {
+    "id": "2508.10890v1",
+    "title": "Random Permutation Circuits are Quantum Chaotic",
+    "authors": [
+      {
+        "name": "Bruno Bertini",
+        "affiliation": null
+      },
+      {
+        "name": "Katja Klobas",
+        "affiliation": null
+      },
+      {
+        "name": "Pavel Kos",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Malz",
+        "affiliation": null
+      }
+    ],
+    "summary": "Random permutation circuits were recently introduced as minimal models for local many-body dynamics that can be interpreted both as classical and quantum. Standard indicators of chaos such as damage spreading, show that these systems exhibit sensitivity to initial conditions in the classical setting. Here, we address their quantum chaoticity by studying the time evolution of local operator entanglement (LOE). We show that the behaviour of LOE in random permutation circuits depends on the dimension of the local configuration space q. When q = 2, i.e. the circuits act on qubits, random permutations are Clifford and the LOE of any local operator is bounded by a constant, indicating that they are not truly chaotic. On the other hand, when the dimension of the local configuration space exceeds two, the LOE grows linearly in time. We prove this in the limit of large dimensions and present numerical evidence that a three-dimensional local configuration space is sufficient for a linear growth of LOE. Our findings highlight that quantum chaos can be produced by essentially classical dynamics. Moreover, we show that LOE can be defined also in the classical realm and put it forward as a universal indicator chaos, both quantum and classical.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.stat-mech",
+      "math.MP",
+      "nlin.CD",
+      "nlin.CG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum chaos and random permutation circuits, which is a departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Quantum chaos",
+      "Random permutation circuits",
+      "Local operator entanglement"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42157456278800964,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3850422501564026,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.3833133578300476,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.10726v1": {
+    "id": "2508.10726v1",
+    "title": "Edge Reconstruction in a Quantum Spin Hall Insulator",
+    "authors": [
+      {
+        "name": "Rahul Soni",
+        "affiliation": null
+      },
+      {
+        "name": "Matthias Thamm",
+        "affiliation": null
+      },
+      {
+        "name": "Gonzalo Alvarez",
+        "affiliation": null
+      },
+      {
+        "name": "Bernd Rosenow",
+        "affiliation": null
+      },
+      {
+        "name": "Adrian Del Maestro",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study interaction-driven edge reconstruction in a quantum spin Hall insulator described by the Bernevig-Hughes-Zhang model with Kanamori-Hubbard interactions using the real-space density matrix renormalization group method in both the grand-canonical and canonical ensembles. For a two-dimensional cylinder with a smooth edge, we identify discrete particle-number transitions that lead to a spin-polarized edge state stabilized by an emergent ferromagnetic exchange interaction. The reconstruction is orbital-selective, occurring predominantly in the $s$-orbital channel. Our results reveal a fully microscopic mechanism for emergent spin polarization at the edge that could compromise the topological protection of helical edge states by time reversal symmetry.",
+    "published_date": "2025-08-14",
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in topological materials and correlated electron systems, this paper focuses on edge reconstruction and spin polarization, which is not a direct match to the previous topics.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "quantum spin Hall insulator",
+      "edge reconstruction",
+      "spin-polarized edge state"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6064972877502441,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5728898048400879,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5435253977775574,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.09261v1": {
+    "id": "2508.09261v1",
+    "title": "Entropy Measures for Transition Matrices in Random Systems",
+    "authors": [
+      {
+        "name": "Zhaohui Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Rene Meyer",
+        "affiliation": null
+      },
+      {
+        "name": "Zhuo-Yu Xian",
+        "affiliation": null
+      }
+    ],
+    "summary": "A transition matrix can be constructed through the partial contraction of two given quantum states. We analyze and compare four different definitions of entropy for transition matrices, including (modified) pseudo entropy, SVD entropy, and ABB entropy. We examine the probabilistic interpretation of each entropy measure and show that only the distillation interpretation of ABB entropy corresponds to the joint success probability of distilling entanglement between the two quantum states used to construct the transition matrix. Combining the transition matrix with preceding measurements and subsequent non-unitary operations, the ABB entropy either decreases or remains unchanged, whereas the pseudo-entropy and SVD entropy may increase or decrease. We further apply these entropy measures to transition matrices constructed from several ensembles: (i) pairs of independent Haar-random states; (ii) bi-orthogonal eigenstates of non-Hermitian random systems; and (iii) bi-orthogonal states in $PT$-symmetric systems near their exceptional points. Across all cases considered, the SVD and ABB entropies of the transition matrix closely mirror the behavior of the subsystem entanglement entropy of a single random state, in contrast to the (modified) pseudo entropy, which can be unbounded or fails to scale with system size.",
+    "published_date": "2025-08-12",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum information and entropy measures in random systems, which is a departure from the user's previously liked papers on condensed matter physics, superconductivity, and topological materials, though there is overlap with non-Hermitian systems.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "transition matrices",
+      "entropy measures",
+      "non-Hermitian systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.43158209323883057,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3882852792739868,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.3691997528076172,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.10096v1": {
+    "id": "2508.10096v1",
+    "title": "Quantum circuit simulation with a local time-dependent variational principle",
+    "authors": [
+      {
+        "name": "Aaron Sander",
+        "affiliation": null
+      },
+      {
+        "name": "Maximilian Fr\u00f6hlich",
+        "affiliation": null
+      },
+      {
+        "name": "Mazen Ali",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Eigel",
+        "affiliation": null
+      },
+      {
+        "name": "Jens Eisert",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Hinterm\u00fcller",
+        "affiliation": null
+      },
+      {
+        "name": "Christian B. Mendl",
+        "affiliation": null
+      },
+      {
+        "name": "Richard M. Milbradt",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Wille",
+        "affiliation": null
+      }
+    ],
+    "summary": "Classical simulations of quantum circuits are vital for assessing potential quantum advantage and benchmarking devices, yet they require sophisticated methods to avoid the exponential growth of resources. Tensor network approaches, in particular matrix product states (MPS) combined with the time-evolving block decimation (TEBD) algorithm, currently dominate large-scale circuit simulations. These methods scale efficiently when entanglement is limited but suffer rapid bond dimension growth with increasing entanglement and handle long-range gates via costly SWAP insertions. Motivated by the success of the time-dependent variational principle (TDVP) in many-body physics, we reinterpret quantum circuits as a series of discrete time evolutions, using gate generators to construct an MPS-based circuit simulation via a local TDVP formulation. This addresses TEBD's key limitations by (1) naturally accommodating long-range gates and (2) optimally representing states on the MPS manifold. By diffusing entanglement more globally, the method suppresses local bond growth and reduces memory and runtime costs. We benchmark the approach on five 49-qubit circuits: three Hamiltonian circuits (1D open and periodic Heisenberg, 2D 7x7 Ising) and two algorithmic ones (quantum approximate optimization, hardware-efficient ansatz). Across all cases, our method yields substantial resource reductions over standard tools, establishing a new state-of-the-art for circuit simulation and enabling advances across quantum computing, condensed matter, and beyond.",
+    "published_date": "2025-08-13",
+    "categories": [
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in condensed matter physics and novel materials, this paper focuses on quantum circuit simulation, which is a different area, although it mentions applications in condensed matter.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum circuit simulation",
+      "Time-dependent variational principle",
+      "Matrix product states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6211041212081909,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5529466271400452,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5444216728210449,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
