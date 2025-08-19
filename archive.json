@@ -32626,7 +32626,9 @@
         "liked_paper_id": "2506.13431v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.10503v2": {
     "id": "2508.10503v2",
@@ -32676,6 +32678,910 @@
       {
         "score": 0.5977761745452881,
         "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.11967v1": {
+    "id": "2508.11967v1",
+    "title": "Persistence is All You Need -- A Topological Lens on Microstructural Characterization",
+    "authors": [
+      {
+        "name": "Maksym Szemer",
+        "affiliation": null
+      },
+      {
+        "name": "Szymon Buchaniec",
+        "affiliation": null
+      },
+      {
+        "name": "Grzegorz Brus",
+        "affiliation": null
+      }
+    ],
+    "summary": "The microstructure critically governs the properties of materials used in energy and chemical engineering technologies, from catalysts and filters to thermal insulators and sensors. Therefore, accurate design is based on quantitative descriptors of microstructural features. Here we show that eight key descriptors can be extracted by a single workflow that fuses computational topology with assembly-learning-based regression. First, 1312 synthetic three-dimensional microstructures were generated and evaluated using established algorithms, and a labeled data set of ground-truth parameters was built. Converting every structure into a persistence image allowed us to train a deep neural network that predicts the eight descriptors. In an independent test set, the model achieved on average R^2 ~ 0.84 and Pearson r ~ 0.92, demonstrating both precision and generality. The approach provides a unified and scalable tool for rapid characterization of functional porous materials.",
+    "published_date": "2025-08-16",
+    "reasoning": "Could not be analyzed by LLM.",
+    "vector_matches": [],
+    "score": 0,
+    "discovery_sources": []
+  },
+  "2508.13036v1": {
+    "id": "2508.13036v1",
+    "title": "Quantum Many-Body Simulations of Catalytic Metal Surfaces",
+    "authors": [
+      {
+        "name": "Changsu Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Hung Q. Pham",
+        "affiliation": null
+      },
+      {
+        "name": "Zhen Guo",
+        "affiliation": null
+      },
+      {
+        "name": "Yutan Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zigeng Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Xuelan Wen",
+        "affiliation": null
+      },
+      {
+        "name": "Ji Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Dingshun Lv",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurate quantum simulations of catalysis on metal surfaces are critical for advancing energy and materials science. Yet most existing methods fall short: density functional theory (DFT), although widely used for its computational efficiency, often lacks the accuracy needed for adsorption and reaction energetics at heterogeneous metal surfaces. Wavefunction-based theories, in contrast, are more accurate in principle but remain prohibitively costly when applied to realistic catalytic systems. Here we introduce FEMION (Fragment Embedding for Metals and Insulators with Onsite and Nonlocal correlation), a quantum embedding framework that resolves the long-standing challenge of accurately describing partially filled electronic states in metals while retaining accuracy for insulators. FEMION combines highly accurate solvers such as auxiliary-field quantum Monte Carlo to capture many-body effects at catalytic sites, together with a global random phase approximation treatment of nonlocal screening, providing a scalable and systematically improvable framework for accurate quantum simulations. We demonstrate chemical accuracy for two long-standing challenges in heterogeneous catalysis: the preference site of CO adsorption and the H2 desorption barrier on the Cu(111) surface, where conventional methods have struggled for decades. Beyond achieving quantitative accuracy, FEMION offers a many-body bonding analysis that reveals why DFT fails to capture the CO adsorption preference, highlighting the critical role of electron correlation in governing surface energetics. FEMION thus establishes a robust route to predictive, first-principles modeling of complex catalytic systems.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses quantum simulations and many-body effects, it focuses on catalysis and metal surfaces, which are not directly related to the user's prior interests in superconductivity, topological materials, and dynamical mean-field theory.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "quantum embedding",
+      "catalytic metal surfaces",
+      "many-body simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5503523349761963,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5359929800033569,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5323487520217896,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.11139v1": {
+    "id": "2508.11139v1",
+    "title": "Goal-Oriented Low-Rank Tensor Decompositions for Numerical Simulation Data",
+    "authors": [
+      {
+        "name": "Daniel M. Dunlavy",
+        "affiliation": null
+      },
+      {
+        "name": "Eric T. Phipps",
+        "affiliation": null
+      },
+      {
+        "name": "Hemanth Kolla",
+        "affiliation": null
+      },
+      {
+        "name": "John N. Shadid",
+        "affiliation": null
+      },
+      {
+        "name": "Edward Phillips",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a new low-dimensional model of high-dimensional numerical simulation data based on low-rank tensor decompositions. Our new model aims to minimize differences between the model data and simulation data as well as functions of the model data and functions of the simulation data. This novel approach to dimensionality reduction of simulation data provides a means of directly incorporating quantities of interests and invariants associated with conservation principles associated with the simulation data into the low-dimensional model, thus enabling more accurate analysis of the simulation without requiring access to the full set of high-dimensional data. Computational results of applying this approach to two standard low-rank tensor decompositions of data arising from simulation of combustion and plasma physics are presented.",
+    "published_date": "2025-08-15",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on numerical methods and dimensionality reduction, a departure from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor decomposition",
+      "Dimensionality reduction",
+      "Numerical simulation data"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.38777652382850647,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.35996606945991516,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.3092409372329712,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.08376v2": {
+    "id": "2508.08376v2",
+    "title": "Continuous topological phase transition between $\\mathbb{Z}_2$ topologically ordered phases",
+    "authors": [
+      {
+        "name": "Qi Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Wen-Tao Xu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Topological phase transitions beyond anyon condensation remain poorly understood. A notable example is the transition between the toric code (TC) and double semion (DS) phases, which has two distinct $\\mathbb{Z}_2$ topological orders in (2 + 1)D. Previous studies reveal that the transition between them can be either first order or via an intermediate phase, thus the existence of a directly continuous transition between them remains a long-standing problem. Motivated by the fact that both phases can arise from condensing distinct anyons in the $\\mathbb{Z}_4$ topological order, we introduce a perturbed $\\mathbb{Z}_4$ quantum double (QD) model to study the TC-DS transition. We confirm the existence of a continuous (2 + 1)D XY* transition between the TC and DS phases by mapping it to a two-coupled quantum Ising model. Importantly, using the condensation order parameters and the area law coefficients of the Wilson loops, we further reveal that $\\mathbb{Z}_4$ anyons, fractionalized from the $\\mathbb{Z}_2$ topological orders, become deconfined at the transition between $\\mathbb{Z}_2$ topologically ordered phases. Our results open a path toward developing a theoretical framework for topological phase transitions beyond anyon condensation.",
+    "published_date": "2025-08-11",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological phase transitions and topological order, which is related to the user's interest in topological materials and Dirac semimetals, although the specific focus on Z2 topological orders is somewhat distinct from previous papers.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Topological phase transition",
+      "Toric code",
+      "Double semion"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5219900608062744,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5081853270530701,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.49594753980636597,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.12363v1": {
+    "id": "2508.12363v1",
+    "title": "Structural contribution to light-induced gap suppression in Ta$_2$NiSe$_5$",
+    "authors": [
+      {
+        "name": "Chen Zijing",
+        "affiliation": null
+      },
+      {
+        "name": "Xu Chenhang",
+        "affiliation": null
+      },
+      {
+        "name": "Xie Chendi",
+        "affiliation": null
+      },
+      {
+        "name": "Tang Weichen",
+        "affiliation": null
+      },
+      {
+        "name": "Liu Qiaomei",
+        "affiliation": null
+      },
+      {
+        "name": "Wu Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Xu Qing",
+        "affiliation": null
+      },
+      {
+        "name": "Jiang Tao",
+        "affiliation": null
+      },
+      {
+        "name": "Zhu Pengfei",
+        "affiliation": null
+      },
+      {
+        "name": "Zou Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Li Jun",
+        "affiliation": null
+      },
+      {
+        "name": "Wang Zhiwei",
+        "affiliation": null
+      },
+      {
+        "name": "Wang Nanlin",
+        "affiliation": null
+      },
+      {
+        "name": "Qian Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Zong Alfred",
+        "affiliation": null
+      },
+      {
+        "name": "Xiang Dao",
+        "affiliation": null
+      }
+    ],
+    "summary": "An excitonic insulator is a material that hosts an exotic ground state, where an energy gap opens due to spontaneous condensation of bound electron-hole pairs. Ta$_2$NiSe$_5$ is a promising candidate for this type of material, but the coexistence of a structural phase transition with the gap opening has led to a long-standing debate regarding the origin of the insulating gap. Here we employ MeV ultrafast electron diffraction to obtain quantitative insights into the atomic displacements in Ta$_2$NiSe$_5$ following photoexcitation, which has been overlooked in previous time-resolved spectroscopy studies. In conjunction with first-principles calculations using the measured atomic displacements, we find that the structural change can largely account for the photoinduced reduction in the energy gap without considering excitonic effects. Our work illustrates the importance of a quantitative reconstruction of individual atomic pathways during nonequilibrium phase transitions, paving the way for a mechanistic understanding of a diverse array of phase transitions in correlated materials where lattice dynamics can play a pivotal role.",
+    "published_date": "2025-08-17",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses phase transitions and correlated materials, which aligns with the user's interest in superconductivity and related electronic structures like Dirac semimetals, as well as materials with exotic order.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "excitonic insulator",
+      "ultrafast electron diffraction",
+      "nonequilibrium phase transitions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5306699872016907,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.5116615891456604,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      },
+      {
+        "score": 0.5069136619567871,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.11989v1": {
+    "id": "2508.11989v1",
+    "title": "Accelerating Amorphous Alloy Discovery: Data-Driven Property Prediction via General-Purpose Machine Learning Interatomic Potential",
+    "authors": [
+      {
+        "name": "Xuhe Gong",
+        "affiliation": null
+      },
+      {
+        "name": "Hengbo Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao Fu",
+        "affiliation": null
+      },
+      {
+        "name": "Jingchen Lian",
+        "affiliation": null
+      },
+      {
+        "name": "Qifan Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Ran Li",
+        "affiliation": null
+      },
+      {
+        "name": "Ruijuan Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Tao Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Hong Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "While traditional trial-and-error methods for designing amorphous alloys are costly and inefficient, machine learning approaches based solely on composition lack critical atomic structural information. Machine learning interatomic potentials, trained on data from first-principles calculations, offer a powerful alternative by efficiently approximating the complex three-dimensional potential energy surface with near-DFT accuracy. In this work, we develop a general-purpose machine learning interatomic potential for amorphous alloys by using a dataset comprising 20400 configurations across representative binary and ternary amorphous alloys systems. The model demonstrates excellent predictive performance on an independent test set, with a mean absolute error of 5.06 meV/atom for energy and 128.51 meV/\\r{A} for forces. Through extensive validation, the model is shown to reliably capture the trends in macroscopic property variations such as density, Young's modulus and glass transition temperature across both the original training systems and the compositionally modified systems derived from them. It can be directly applied to composition-property mapping of amorphous alloys. Furthermore, the developed interatomic potential enables access to the atomic structures of amorphous alloys, allowing for microscopic analysis and interpretation of experimental results, particularly those deviating from empirical trends.This work breaks the long-standing computational bottleneck in amorphous alloys research by developing the first general-purpose machine learning interatomic potential for amorphous alloy systems. The resulting framework provides a robust foundation for data-driven design and high-throughput composition screening in a field previously constrained by traditional simulation limitations.",
+    "published_date": "2025-08-16",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses materials science and computational methods, it focuses on amorphous alloys and machine learning potentials, which are distinct from the user's previously liked papers on superconductivity, correlated electron systems, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "amorphous alloys",
+      "machine learning interatomic potential",
+      "high-throughput screening"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6509075164794922,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4609423279762268,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.43164169788360596,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12370v1": {
+    "id": "2508.12370v1",
+    "title": "Charge-4$e$ Anyon Superconductor from Doping $\\text{SU}(4)_1$ chiral spin liquid",
+    "authors": [
+      {
+        "name": "Lu Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Ya-Hui Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Xue-Yang Song",
+        "affiliation": null
+      }
+    ],
+    "summary": "Previous studies have shown that $\\text{SU}(4)_1$ chiral spin liquid can emerge in the SU($4$) Hubbard model on triangular lattice. A natural question then arises: What is the phase upon doping? In this work, we show the possibility that hole doping can give rise to an anyon superconductor and propose that both spinons and holons form integer quantum Hall states with opposite chiralities. Using topological field theory we demonstrate that the phase is a topological charge-$4e$ superconductor with chiral central charge $c_-=4$. We further identify the deconfined excitations and anyonic excitations bound to the vortex. This unusual superconductor may be realized in moir'e bilayer and detected through quantized thermal Hall effect and spin quantum Hall effect.",
+    "published_date": "2025-08-17",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses unconventional superconductivity and topological phases, relating to previously liked papers on similar topics like nickelate superconductors and topological materials.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Anyon superconductor",
+      "SU(4) chiral spin liquid",
+      "Topological field theory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6306938529014587,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5848713517189026,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.5653241872787476,
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12239v1": {
+    "id": "2508.12239v1",
+    "title": "Ultrafast Nonequilibrium Enhancement of Electron-Phonon Interaction in 2H-MoTe$_2$",
+    "authors": [
+      {
+        "name": "Nina Girotto Erhardt",
+        "affiliation": null
+      },
+      {
+        "name": "Sotirios Fragkos",
+        "affiliation": null
+      },
+      {
+        "name": "Dominique Descamps",
+        "affiliation": null
+      },
+      {
+        "name": "St\u00e9phane Petit",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Sch\u00fcler",
+        "affiliation": null
+      },
+      {
+        "name": "Dino Novko",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel Beaulieu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding nonequilibrium electron-phonon interactions at the microscopic level and on ultrafast timescales is a central goal of modern condensed matter physics. Combining time- and angle-resolved extreme ultraviolet photoemission spectroscopy with constrained density functional perturbation theory, we demonstrate that photoexcited carrier density can serve as a tuning knob to enhance electron-phonon interactions in nonequilibrium conditions. Specifically, nonequilibrium band structure mapping and valley-resolved ultrafast population dynamics in semiconducting transition-metal dichalcogenide 2H-MoTe$_2$ reveal band-gap renormalizations and reduced population lifetimes as photoexcited carrier densities increase. Through theoretical analysis of photoinduced electron and phonon energy and linewidth renormalizations, we attribute these transient features to nonequilibrium modifications of electron-phonon coupling matrix elements. The present study advances our understanding of microscopic coupling mechanisms enabling control over relaxation pathways in driven solids.",
+    "published_date": "2025-08-17",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall",
+      "cond-mat.str-el",
+      "physics.optics"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses electron-phonon interactions which are relevant to superconductivity, the focus on 2H-MoTe$_2$ and ultrafast dynamics is a departure from the user's interests in nickelates, cuprates, and topological materials.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "electron-phonon interaction",
+      "ultrafast dynamics",
+      "transition-metal dichalcogenides"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5568684339523315,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.5448116064071655,
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C"
+      },
+      {
+        "score": 0.5406845808029175,
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.11322v1": {
+    "id": "2508.11322v1",
+    "title": "Fermi-liquid-like phase driven by next-nearest-neighbor couplings in a lightly doped kagome-lattice $t$-$J$ model",
+    "authors": [
+      {
+        "name": "Xu-Yan Jia",
+        "affiliation": null
+      },
+      {
+        "name": "Fan Yang",
+        "affiliation": null
+      },
+      {
+        "name": "D. N. Sheng",
+        "affiliation": null
+      },
+      {
+        "name": "Shou-Shu Gong",
+        "affiliation": null
+      }
+    ],
+    "summary": "Due to the interplay between charge fluctuation and geometry frustration, the doped kagome-lattice Mott insulator is a fascinating platform to realize exotic quantum states. Through the state-of-the-art density matrix renormalization group calculation, we explore the quantum phases of the lightly doped kagome-lattice $t$-$J$ model in the presence of the next-nearest-neighbor electron hopping $t_2$ and spin interaction $J_2$. On the $L_y = 3$ cylinder ($L_y$ is the number of unit cells along the circumference direction), we establish a quantum phase diagram with tuning $t_2 > 0$ and $J_2 > 0$, showing an emergent Fermi-liquid-like phase driven by increased $t_2$ and $J_2$, which sits at the neighbor of the previously identified charge density wave (CDW) phase. Compared with the CDW phase, the charge order is significantly suppressed in the Fermi-liquid-like phase, and most correlation functions are greatly enhanced with power-law decay. In particular, we find the absence of hole pairing and a strong three-sublattice magnetic correlation. On the wider $L_y = 4$ cylinder, this Fermi-liquid-like phase persists at low doping levels, strongly suggesting that this state might be stable in the two-dimensional kagome system.",
+    "published_date": "2025-08-15",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the behavior of electrons in a kagome lattice, which while not directly related to the previous topics, does involve correlated electron systems and quantum materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "kagome lattice",
+      "Fermi-liquid-like phase",
+      "density matrix renormalization group"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5749847888946533,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5749521255493164,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5748140215873718,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.11003v1": {
+    "id": "2508.11003v1",
+    "title": "Spontaneously Broken Non-Invertible Symmetries in Transverse-Field Ising Qudit Chains",
+    "authors": [
+      {
+        "name": "Kristian Tyn Kai Chung",
+        "affiliation": null
+      },
+      {
+        "name": "Umberto Borla",
+        "affiliation": null
+      },
+      {
+        "name": "Andriy H. Nevidomskyy",
+        "affiliation": null
+      },
+      {
+        "name": "Sergej Moroz",
+        "affiliation": null
+      }
+    ],
+    "summary": "\\usepackage{iopams} Recent developments have revealed that symmetries need not form a group, but instead can be non-invertible. Here we use analytical arguments and numerical evidence to illuminate how spontaneous symmetry breaking of a non-invertible symmetry is similar yet distinct from ordinary, invertible, symmetry breaking. We consider one-dimensional chains of group-valued qudits, whose local Hilbert space is spanned by elements of a finite group $G$ (reducing to ordinary qubits when $G=\\mathbb{Z}_2$). We construct Ising-type transverse-field Hamiltonians with Rep($G$) symmetry whose generators multiply according to the tensor product of irreducible representations (irreps) of the group $G$. For non-Abelian $G$, the symmetry is non-invertible. In the symmetry broken phase there is one ground state per irrep on a closed chain. The symmetry breaking can be detected by local order parameters but, unlike the invertible case, different ground states have distinct entanglement patterns. We show that for each irrep of dimension greater than one the corresponding ground state exhibits string order, entanglement spectrum degeneracies, and has gapless edge modes on an open chain -- features usually associated with symmetry-protected topological order. Consequently, domain wall excitations behave as one-dimensional non-Abelian anyons with non-trivial internal Hilbert spaces and fusion rules. Our work identifies properties of non-invertible symmetry breaking that existing quantum hardware can probe.",
+    "published_date": "2025-08-14",
+    "reasoning": "Could not be analyzed by LLM.",
+    "vector_matches": [],
+    "score": 0,
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.12033v1": {
+    "id": "2508.12033v1",
+    "title": "Load-Balanced Diffusion Monte Carlo Method with Lattice Regularization",
+    "authors": [
+      {
+        "name": "Kousuke Nakano",
+        "affiliation": null
+      },
+      {
+        "name": "Sandro Sorella",
+        "affiliation": null
+      },
+      {
+        "name": "Michele Casula",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ab initio quantum Monte Carlo (QMC) is a stochastic approach for solving the many-body Schr\\\"odinger equation without resorting to one-body approximations. QMC algorithms are readily parallelizable via ensembles of $N_w$ walkers, making them well suited to large-scale high-performance computing. Among the QMC techniques, Diffusion Monte Carlo (DMC) is widely regarded as the most reliable, since it provides the projection onto the ground state of a given Hamiltonian under the fixed-node approximation. One practical realization of DMC is the Lattice Regularized Diffusion Monte Carlo (LRDMC) method, which discretizes the Hamiltonian within the Green's Function Monte Carlo framework. DMC methods - including LRDMC - employ the so-called branching technique to stabilize walker weights and populations. At the branching step, walkers must be synchronized globally; any imbalance in per-walker workload can leave CPU or GPU cores idle, thereby degrading overall hardware utilization. The conventional LRDMC algorithm intrinsically suffers from such load imbalance, which grows as $\\log(N_w)$, rendering it less efficient on modern parallel architectures. In this work, we present an LRDMC algorithm that inherently addresses the load imbalance issue and achieves significantly improved weak-scaling parallel efficiency. Using the binding energy calculation of a water-methane complex as a test case, we demonstrated that the conventional and load-balanced LRDMC algorithms yield consistent results. Furthermore, by utilizing the Leonardo supercomputer equipped with NVIDIA A100 GPUs, we demonstrated that the load-balanced LRDMC algorithm can maintain extremely high parallel efficiency ($\\sim$98\\%) up to 512 GPUs (corresponding to $N_{\\rm w}= 51200$), together with a speedup of $\\times~1.24$ if directly compared with the conventional LRDMC algorithm with the same number of walkers.",
+    "published_date": "2025-08-16",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in computational methods and materials science, this paper focuses on a specific quantum Monte Carlo technique (LRDMC) and its optimization, making it less directly relevant to the user's previous interests.",
+    "matching_keywords": [
+      "green's function",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Diffusion Monte Carlo",
+      "Load balancing",
+      "High-performance computing"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.568267822265625,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.4744347035884857,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.46130168437957764,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12985v1": {
+    "id": "2508.12985v1",
+    "title": "Observation of Altermagnetic Spin Splitting in an Intercalated Transition Metal Dichalcogenide",
+    "authors": [
+      {
+        "name": "Milo Sprague",
+        "affiliation": null
+      },
+      {
+        "name": "Mazharul Islam Mondal",
+        "affiliation": null
+      },
+      {
+        "name": "Anup Pradhan Sakhya",
+        "affiliation": null
+      },
+      {
+        "name": "Resham Babu Regmi",
+        "affiliation": null
+      },
+      {
+        "name": "Surasree Sadhukhan",
+        "affiliation": null
+      },
+      {
+        "name": "Arun K. Kumay",
+        "affiliation": null
+      },
+      {
+        "name": "Himanshu Sheokand",
+        "affiliation": null
+      },
+      {
+        "name": "Igor I. Mazin",
+        "affiliation": null
+      },
+      {
+        "name": "Nirmal J. Ghimire",
+        "affiliation": null
+      },
+      {
+        "name": "Madhab Neupane",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetism is a novel magnetic phase combining characteristics of both antiferromagnetism and ferromagnetic ordering. Despite growing theoretical interest in altermagnetic materials, reports of experimentally verified high Neel temperature layered compounds are limited or remain to be firmly established. Here, we present an angle resolved photoemission spectroscopy (ARPES) and density functional theory (DFT) study of Co1/4TaSe2, a compound we identify as a layered altermagnetic material. Magnetic susceptibility measurements confirm type A antiferromagnetic ordering with a Neel temperature of 178 K. Our ARPES measurements reveal an electronic band structure in excellent agreement with DFT calculations, demonstrating clear signatures of altermagnetic spin splitting at the Fermi surface. Furthermore, temperature dependent ARPES reveals a reconstructed valence band structure, with observable band shifts and the closing of energy gaps upon heating above the Neel temperature (TN), consistent with the suppression of altermagnetic order. These findings establish Co1/4TaSe2 as a promising platform for exploring altermagnetic phenomena.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses a novel magnetic phase in a layered material, which aligns with the user's interest in correlated electron systems and novel materials, although the specific focus on superconductivity is less prominent.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spin Splitting",
+      "Transition Metal Dichalcogenide"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5705422163009644,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      },
+      {
+        "score": 0.5677067041397095,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5665795803070068,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12974v1": {
+    "id": "2508.12974v1",
+    "title": "Thermoelectricity evidence for quantum criticality in clean infinite-layer nickelate films",
+    "authors": [
+      {
+        "name": "Xu Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Chihao Li",
+        "affiliation": null
+      },
+      {
+        "name": "Mingwei Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Yan Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Zhitong An",
+        "affiliation": null
+      },
+      {
+        "name": "Danfeng Li",
+        "affiliation": null
+      },
+      {
+        "name": "Liang Qiao",
+        "affiliation": null
+      },
+      {
+        "name": "Haichao Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Rui Peng",
+        "affiliation": null
+      },
+      {
+        "name": "Donglai Feng",
+        "affiliation": null
+      },
+      {
+        "name": "Shiyan Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the Seebeck coefficient ($S$) in infinite-layer nickelate films with different disorder levels. The disordered NdNiO$_{2}$ film exhibits a flat $S/T$ curve, whereas cleaner samples display a logarithmic divergence with decreasing temperature, followed by a pronounced ``hump'' near 25 K. These distinct behaviors reveal a disorder-driven transition from band-structure-dominated transport to quantum-critical-dominated transport. Below the ``hump'' temperature, four-fold symmetry breaking is observed in the in-plane angular magnetoresistance, indicating the presence of short-range antiferromagnetic order in parent infinite-layer nickelate films. Furthermore, the logarithmic divergence in $S/T$ is also observed in a clean superconducting Sm$_{0.73}$Ca$_{0.05}$Eu$_{0.22}$NiO$_{2}$ film, where it coexists with linear-in-temperature resistivity over the same temperature range. These findings demonstrate the existence of quantum criticality over a wide doping range in clean infinite-layer nickelate films, similar to cuprates, which highlights the central role of antiferromagnetic spin correlations in their superconducting pairing mechanisms.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper is highly relevant because it discusses infinite-layer nickelates, a topic directly related to several of the user's previously liked papers, and explores their electronic properties and potential quantum criticality.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "quantum criticality",
+      "thermoelectricity",
+      "nickelate films"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6587883830070496,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.6295568346977234,
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC"
+      },
+      {
+        "score": 0.6161179542541504,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12406v1": {
+    "id": "2508.12406v1",
+    "title": "Machine Learning Prediction of Magnetic Proximity Effect in van der Waals Heterostructures: From Atoms to Moir\u00e9",
+    "authors": [
+      {
+        "name": "Lukas Cvitkovich",
+        "affiliation": null
+      },
+      {
+        "name": "Klaus Zollner",
+        "affiliation": null
+      },
+      {
+        "name": "Jaroslav Fabian",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a machine learning framework that efficiently predicts large-scale proximity-induced magnetism in van der Waals heterostructures, overcoming the high computational cost of density functional theory (DFT). We apply it to graphene/Cr$_2$Ge$_2$Te$_6$, which exhibits a previously unrecognized dichotomy. Unlike the spin polarization at the Fermi level, which follows the pseudospin, the proximity-induced magnetic moments vary across carbon atoms, defying analytical modeling. To address this, we develop a Random Forest model trained on DFT data and employ Smooth Overlap of Atomic Positions descriptors to map the local ($\\sim 2\\,$nm$^2$) atomic-scale geometry to the carbon magnetic moments. Besides demonstrating locality, the model reveals rich magnetic moir\\'e textures. Crucially, this method can be broadly applied to orbital and spin proximity effects that are highly sensitive to local atomic environments and are beyond analytical description.",
+    "published_date": "2025-08-17",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in correlated electron systems and superconductivity, this paper focuses on machine learning applied to magnetic proximity effects in van der Waals heterostructures, a topic that is only tangentially related.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "van der Waals heterostructures",
+      "magnetic proximity effect",
+      "machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5024314522743225,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4962379038333893,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.4860824942588806,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.11997v1": {
+    "id": "2508.11997v1",
+    "title": "Domain Wall-mediated Interfacial Ferroelectric Switching",
+    "authors": [
+      {
+        "name": "Hao-Wen Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Wen-Cheng Fan",
+        "affiliation": null
+      },
+      {
+        "name": "Jun-Ding Zheng",
+        "affiliation": null
+      },
+      {
+        "name": "Cheng-Shi Yao",
+        "affiliation": null
+      },
+      {
+        "name": "Ni Zhong",
+        "affiliation": null
+      },
+      {
+        "name": "Wen-Yi Tong",
+        "affiliation": null
+      },
+      {
+        "name": "Chun-Gang Duan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Interfacial ferroelectricity offers a promising platform for ultrafast, low-power memory devices. While previous studies have attributed polarization switching to full-layer sliding, the symmetry constraints pose fundamental limitations. By integrating first-principles calculations, machine learning methods, and experimental validations, we show that domain walls within in-plane polarization break C3 symmetry, enabling polarization switching under out-of-plane electric fields. Local polarization vectors deviate to response to the field, leading to local reconstruction, and ultimately drives the migration of domain walls. This mechanism bears clear resemblance to that in traditional ferroelectrics. Notably, different domain wall types result in distinct switching behaviors, which play a crucial role in determining the reversibility of polarization switching. We then propose strategies beyond ideal conditions to achieve non-volatile ferroelectric switching, successfully realized by our experiments. These insights clarify the microscopic switching mechanism in hexagonal interfacial ferroelectrics, providing a basis for future nanoelectronics applications.",
+    "published_date": "2025-08-16",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on ferroelectric switching mechanisms, a topic distinct from the user's previous interests in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "ferroelectric switching",
+      "domain walls",
+      "interfacial ferroelectricity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47472843527793884,
+        "liked_paper_id": "yBtX0C4AAAAJ:35N4QoGY0k4C"
+      },
+      {
+        "score": 0.4628017544746399,
+        "liked_paper_id": "yBtX0C4AAAAJ:vV6vV6tmYwMC"
+      },
+      {
+        "score": 0.44002485275268555,
+        "liked_paper_id": "yBtX0C4AAAAJ:9yKSN-GCB0IC"
       }
     ],
     "discovery_sources": []
