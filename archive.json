@@ -32701,9 +32701,35 @@
     ],
     "summary": "The microstructure critically governs the properties of materials used in energy and chemical engineering technologies, from catalysts and filters to thermal insulators and sensors. Therefore, accurate design is based on quantitative descriptors of microstructural features. Here we show that eight key descriptors can be extracted by a single workflow that fuses computational topology with assembly-learning-based regression. First, 1312 synthetic three-dimensional microstructures were generated and evaluated using established algorithms, and a labeled data set of ground-truth parameters was built. Converting every structure into a persistence image allowed us to train a deep neural network that predicts the eight descriptors. In an independent test set, the model achieved on average R^2 ~ 0.84 and Pearson r ~ 0.92, demonstrating both precision and generality. The approach provides a unified and scalable tool for rapid characterization of functional porous materials.",
     "published_date": "2025-08-16",
-    "reasoning": "Could not be analyzed by LLM.",
-    "vector_matches": [],
-    "score": 0,
+    "categories": [
+      "cs.CE",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on microstructural characterization using computational topology, which is not closely related to the user's liked papers on superconductivity, nickelates, and topological semimetals.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "microstructure characterization",
+      "computational topology",
+      "persistence images"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3554762005805969,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.35314035415649414,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3034641742706299,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
     "discovery_sources": []
   },
   "2508.13036v1": {
@@ -33251,9 +33277,32 @@
     ],
     "summary": "\\usepackage{iopams} Recent developments have revealed that symmetries need not form a group, but instead can be non-invertible. Here we use analytical arguments and numerical evidence to illuminate how spontaneous symmetry breaking of a non-invertible symmetry is similar yet distinct from ordinary, invertible, symmetry breaking. We consider one-dimensional chains of group-valued qudits, whose local Hilbert space is spanned by elements of a finite group $G$ (reducing to ordinary qubits when $G=\\mathbb{Z}_2$). We construct Ising-type transverse-field Hamiltonians with Rep($G$) symmetry whose generators multiply according to the tensor product of irreducible representations (irreps) of the group $G$. For non-Abelian $G$, the symmetry is non-invertible. In the symmetry broken phase there is one ground state per irrep on a closed chain. The symmetry breaking can be detected by local order parameters but, unlike the invertible case, different ground states have distinct entanglement patterns. We show that for each irrep of dimension greater than one the corresponding ground state exhibits string order, entanglement spectrum degeneracies, and has gapless edge modes on an open chain -- features usually associated with symmetry-protected topological order. Consequently, domain wall excitations behave as one-dimensional non-Abelian anyons with non-trivial internal Hilbert spaces and fusion rules. Our work identifies properties of non-invertible symmetry breaking that existing quantum hardware can probe.",
     "published_date": "2025-08-14",
-    "reasoning": "Could not be analyzed by LLM.",
-    "vector_matches": [],
-    "score": 0,
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses symmetry breaking and quantum systems, which are broad concepts present in the user's liked papers, the focus on non-invertible symmetries and qudit chains is not directly related to the user's specific interests in superconductivity, nickelates, or Dirac semimetals.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "non-invertible symmetry",
+      "qudit chains",
+      "topological order"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4678986072540283,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.43856287002563477,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.40985482931137085,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ]
@@ -33582,6 +33631,1191 @@
       {
         "score": 0.44002485275268555,
         "liked_paper_id": "yBtX0C4AAAAJ:9yKSN-GCB0IC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12191v1": {
+    "id": "2508.12191v1",
+    "title": "Simulating Quantum Turbulence with Matrix Product States",
+    "authors": [
+      {
+        "name": "Felipe G\u00f3mez-Lozada",
+        "affiliation": null
+      },
+      {
+        "name": "Nicolas Perico-Garc\u00eda",
+        "affiliation": null
+      },
+      {
+        "name": "Nikita Gourianov",
+        "affiliation": null
+      },
+      {
+        "name": "Hayder Salman",
+        "affiliation": null
+      },
+      {
+        "name": "Juan Jos\u00e9 Mendoza-Arenas",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum turbulence spans length scales from the system size $L$ to the healing length $\\xi$, making direct numerical simulations (DNS) of the Gross-Pitaevskii (GP) equation computationally expensive when $L \\gg \\xi$. We present a matrix product state (MPS) solver for the GP equation that efficiently compresses the wavefunction by truncating weak interlength-scale correlations. This approach reduces memory use by factors ranging from 10x to over 10,000x compared to DNS. We benchmark our approach on nonlinear excitations, namely dark solitons (1D) and quantized vortices (2D, 3D), capturing key dynamics like Kelvin wave propagation and vortex ring emission in the case of vortex line reconnection. For turbulent states composed of multiple nonlinear excitations, we find that the memory compression of the MPS representation is directly proportional to the soliton or vortex densities. We also accurately reproduce established results from two-point correlation functions and energy spectra, where we recover the incompressible kinetic energy spectrum with little memory overhead. These results demonstrate the representative capabilities of the MPS ansatz for quantum turbulence and pave the way for studying this nonequilibrium state using previously-prohibited system sizes to uncover possible new physics.",
+    "published_date": "2025-08-17",
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on quantum turbulence and numerical simulation techniques, which are not directly related to the previously liked papers on superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [
+      "matrix product state",
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Quantum Turbulence",
+      "Matrix Product States",
+      "Gross-Pitaevskii equation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47976094484329224,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4595394730567932,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4233078956604004,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.12821v1": {
+    "id": "2508.12821v1",
+    "title": "Quantum State Preparation by Improved MPS Method",
+    "authors": [
+      {
+        "name": "Chao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Pengrui Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Xi-Ning Zhuang",
+        "affiliation": null
+      },
+      {
+        "name": "Ziwei Cui",
+        "affiliation": null
+      },
+      {
+        "name": "Menghan Dou",
+        "affiliation": null
+      },
+      {
+        "name": "Zhao-Yun Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Guo-Ping Guo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Efficient encoding of classical information plays a fundamental role in numerous practical quantum algorithms. However, the preparation of an arbitrary amplitude-encoded state has been proven to be time-consuming, and its deployment on current noisy devices can be challenging. In this work, we propose an improved Matrix Product State(MPS) method preparation protocol with an exponential reduction on the circuit depth, as well as topological adaptability. By refined utilization of the disentangling principle, we also reduce approximately 33% two-qubit gate count. To validate our method, we study various families of functions and distributions with provably bounded MPS rank. Numerical experiments show that our method significantly reduces circuit depth while achieving higher fidelity for states arising in financial and other applications.",
+    "published_date": "2025-08-18",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and state preparation, which is a departure from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Quantum State Preparation",
+      "Matrix Product State",
+      "Amplitude Encoding"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5541406273841858,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5465652346611023,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5352529287338257,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.13389v1": {
+    "id": "2508.13389v1",
+    "title": "Expanding the search space of high entropy oxides and predicting synthesizability using machine learning interatomic potentials",
+    "authors": [
+      {
+        "name": "Oliver A. Dicks",
+        "affiliation": null
+      },
+      {
+        "name": "Solveig S. Aamlid",
+        "affiliation": null
+      },
+      {
+        "name": "Alannah M. Hallas",
+        "affiliation": null
+      },
+      {
+        "name": "Joerg Rottler",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose an efficient computational methodology for predicting the synthesizability of high entropy oxides (HEOs) in a large space of possible candidate compounds. HEOs are a growing field with an enormous potential chemical composition space, and yet the discovery of new HEOs is slow and driven by experimental trial-and-error. In this work, we attempt to speed up this process by using a machine learned interatomic potential offering DFT-level accuracy. Our methodology starts by identifying a set of crystal structures and elements for screening, building a large random unit cell of each composition and structure, then relaxing this structure. The most promising candidates are distinguished based on the variance of the individual cation energies, which we introduce as our entropy descriptor, and the enthalpy of mixing, which is used as the enthalpy descriptor. The approach is applied to tetravalent HEOs, and its validity is confirmed by comparison to alternative descriptors and DFT calculations for a set of 7 elements. The search is then extended to a set of 14 elements and three crystal structures, where it successfully identifies the only known stable 4-component HEO in the $\\alpha$-PbO$_2$ structure, as well as predicting several new 5-component candidate systems. This approach can straightforwardly be applied to new sets of elements and structures, allowing for the accelerated discovery of new HEOs.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has liked papers on oxides, this paper focuses on the computational prediction of high entropy oxide synthesis rather than the novel electronic or structural properties explored in the user's previously liked papers.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "high entropy oxides",
+      "machine learning interatomic potentials",
+      "materials synthesis prediction"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4390094578266144,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4336361885070801,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      },
+      {
+        "score": 0.4055062532424927,
+        "liked_paper_id": "yBtX0C4AAAAJ:isC4tDSrTZIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.11870v1": {
+    "id": "2508.11870v1",
+    "title": "AdaRing: Towards Ultra-Light Vision-Language Adaptation via Cross-Layer Tensor Ring Decomposition",
+    "authors": [
+      {
+        "name": "Ying Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Yuanbin Man",
+        "affiliation": null
+      },
+      {
+        "name": "Wenqi Jia",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengzhong Tu",
+        "affiliation": null
+      },
+      {
+        "name": "Junzhou Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Miao Yin",
+        "affiliation": null
+      }
+    ],
+    "summary": "Adapter-based fine-tuning has gained remarkable attention in adapting large pre-trained vision language models (VLMs) for a wide range of downstream tasks efficiently. In this paradigm, only the inserted adapters are fine-tuned, without the need for training the original VLM backbone. Existing works scale adapters by integrating them into every layer of VLMs to increase the capacity of adapters. However, these methods face two primary limitations: 1) limited compression rate due to ignoring cross-layer redundancy, and 2) limited representational capacity across homogeneous adapters. In this paper, we propose a novel vision-language fine-tuning framework based on cross-layer tensor ring decomposition (TRD) with the integration and collaboration of diverse adapters, called AdaRing, achieving ultra-light parameter-efficient adaptation of VLMs on various tasks. To remove the high redundancy that exists among adapters across layers, we exploit the tensor-level low-rankness to formulate adapters as layer-shared tensor cores and layer-specific slices. Moreover, guided by generalization-aware fine-tuning, diverse rank-driven adapters cooperate to handle tasks that require different representations. Our experiments show that the proposed AdaRing achieves the state-of-the-art performance while reducing average training parameters by 90%.",
+    "published_date": "2025-08-16",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on vision-language models and efficient fine-tuning techniques, which is significantly different from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "vision-language models",
+      "tensor ring decomposition",
+      "adapter-based fine-tuning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3309227228164673,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.23182865977287292,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.2309303730726242,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.13790v1": {
+    "id": "2508.13790v1",
+    "title": "Large-scale cooperative sulfur vacancy dynamics in two-dimensional MoS2 from machine learning interatomic potentials",
+    "authors": [
+      {
+        "name": "Aaron Fl\u00f6totto",
+        "affiliation": null
+      },
+      {
+        "name": "Benjamin Spetzler",
+        "affiliation": null
+      },
+      {
+        "name": "Rose von Stackelberg",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Ziegler",
+        "affiliation": null
+      },
+      {
+        "name": "Erich Runge",
+        "affiliation": null
+      },
+      {
+        "name": "Christian Dre\u00dfler",
+        "affiliation": null
+      }
+    ],
+    "summary": "The formation of extended sulfur vacancies in MoS2 monolayers is closely associated with catalytic activity and may also be the basis for its memristive behavior. Nanosecond-scale molecular dynamics simulations using machine learning interatomic potentials (MLIPs) reveal key mechanisms of cooperative vacancy transport, including incorporation of vacancies into clusters of arbitrary size. The simulations provide a coherent atomistic explanation for irradiation-induced vacancy patterns observed experimentally, especially the formation of line defects spanning tens of nanometers. Results and performance are compared of two MLIP frameworks: (i) on-the-fly learning with Gaussian approximation potential, and (ii) fine-tuning of an equivariant foundation model.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in correlated electron materials and defects, this paper focuses on vacancy dynamics in MoS2, which is a different material system and application area (catalysis, memristive behavior) than the user's previous interests.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "sulfur vacancies",
+      "MoS2",
+      "machine learning interatomic potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5620490908622742,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.45708799362182617,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4409109055995941,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13063v1": {
+    "id": "2508.13063v1",
+    "title": "Generalized Symmetries From Fusion Actions",
+    "authors": [
+      {
+        "name": "Chongying Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Siu-Hung Ng",
+        "affiliation": null
+      },
+      {
+        "name": "Li Ren",
+        "affiliation": null
+      },
+      {
+        "name": "Feng Xu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Let $A$ be a condensable algebra in a modular tensor category $\\EuScript{C}$. We define an action of the fusion category $\\EuScript{C}_A$ of $A$-modules in $\\EuScript{C}$ on the morphism space $\\mbox{Hom}_{\\EuScript{C}}(x,A)$ for any $x$ in $\\EuScript{C}$, whose characters are generalized Frobenius-Schur indicators. This fusion action can be considered on $A$, and we prove a categorical generalization of Schur-Weyl duality for this action. For any fusion subcategory $\\EuScript{B}$ of $\\EuScript{C}_A$ containing all the local $A$-modules, we prove the invariant subobject $B=A^\\EuScript{B}$ is a condensable subalgebra of $A$. The assignment of $\\EuScript{B}$ to $A^\\EuScript{B}$ defines a Galois correspondence between this kind of fusion subcategories of $\\EuScript{C}_A$ and the condensable subalgebras of $A$. In the context of VOA, we prove for any nice VOAs $U \\subset A$, $U=A^{\\EuScript{C}_A}$ where $\\EuScript{C}=\\EuScript{M}_U$ is the $U$-module category. In particular, if $U = A^G$ for some finite automorphism group $G$ of $A,$ the fusion action of $\\EuScript{C}_A$ on $A$ is equivalent to the $G$-action on $A.$",
+    "published_date": "2025-08-18",
+    "categories": [
+      "math.QA",
+      "cond-mat.str-el",
+      "math.RT"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on abstract mathematical concepts like fusion categories and Galois correspondence, which are not directly related to the user's previous interests in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Fusion categories",
+      "Galois correspondence",
+      "Vertex operator algebra"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.19327227771282196,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.1675722599029541,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.14343011379241943,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.13002v1": {
+    "id": "2508.13002v1",
+    "title": "Computing Exchange Coupling constants in Transition metal complexes with Tensor Product Selected Configuration Interaction",
+    "authors": [
+      {
+        "name": "Arnab Bachhar",
+        "affiliation": null
+      },
+      {
+        "name": "Nicholas J. Mayhall",
+        "affiliation": null
+      }
+    ],
+    "summary": "Transition metal complexes present significant challenges for electronic structure theory due to strong electron correlation arising from partially filled $d$-orbitals. We compare our recently developed Tensor Product Selected Configuration Interaction (TPSCI) with Density Matrix Renormalization Group (DMRG) for computing exchange coupling constants in six transition metal systems, including dinuclear Cr, Fe, and Mn complexes and a tetranuclear Ni-cubane. TPSCI uses a locally correlated tensor product state basis to capture electronic structure efficiently while maintaining interpretability. From calculations on active spaces ranging from (22e,29o) to (42e,49o), we find that TPSCI consistently yields higher variational energies than DMRG due to truncation of local cluster states, but provides magnetic exchange coupling constants (J) generally within 10-30 cm$^{-1}$ of DMRG results. Key advantages include natural multistate capability enabling direct J extrapolation with smaller statistical errors, and computational efficiency for challenging systems. However, cluster state truncation represents a fundamental limitation requiring careful convergence testing, particularly for large local cluster dimensions. We identify specific failure cases where current truncation schemes break down, highlighting the need for improved cluster state selection methods and distributed memory implementations to realize TPSCI's full potential for strongly correlated systems.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses transition metal complexes and computational methods for studying them, which relates to strongly correlated electron systems, a topic touched upon in the user's liked papers on nickelates and Dirac fermions.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Tensor Product Selected Configuration Interaction",
+      "Exchange Coupling Constants",
+      "Transition Metal Complexes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5629714727401733,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5485813617706299,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.5151957273483276,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.13779v1": {
+    "id": "2508.13779v1",
+    "title": "Uniform electron benchmark for the first-principles $GW_{0}$-Eliashberg theory",
+    "authors": [
+      {
+        "name": "Ryosuke Akashi",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Shinaoka",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the numerical behavior of the Eliashberg equations for phonon-mediated superconductivity, incorporating normal-state self-energy calculations within the consistent $GW_{0}$ approximation. We account for the full wavenumber and frequency dependences of both the screened Coulomb interaction and phonon-mediated attraction. We present results for the prototypical uniform electron gas system with model Einstein phonons at temperatures of a few kelvin. At extremely low temperatures, we efficiently execute the required convolutions of Green's functions and interactions in Matsubara frequency and wavenumber using intermediate representation and Fourier convolution techniques. In particular, we elucidate the interplay between electron-phonon $\\omega$-mass and $k$-mass renormalizations of the electronic self-energy in determining the normal-state effective mass, spectral weight and the superconducting transition temperature. The electron density regimes where the plasmon effect enhances or suppresses the phonon-mediated superconductivity on top of the static Coulomb effect are revealed. We compare our comprehensive Eliashberg calculation results with those from density functional theory for superconductors, where the functionals have been constructed with reference to Eliashberg theory. Our model, methods, and results provide a valuable benchmark for first-principles superconducting calculations that treat screened Coulomb interaction effects non-empirically.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses superconductivity calculations and methods, particularly focusing on the Eliashberg equations and the electron-phonon interaction, which aligns with the user's interest in superconductivity and related materials.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "GW0-Eliashberg theory",
+      "Electron-phonon interaction",
+      "Uniform electron gas"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5406973361968994,
+        "liked_paper_id": "2506.22435v1"
+      },
+      {
+        "score": 0.5251940488815308,
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C"
+      },
+      {
+        "score": 0.5209437608718872,
+        "liked_paper_id": "2506.13399v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13391v1": {
+    "id": "2508.13391v1",
+    "title": "Towards Routine Condensed Phase Simulations with Delta-Learned Coupled Cluster Accuracy: Application to Liquid Water",
+    "authors": [
+      {
+        "name": "Niamh O'Neill",
+        "affiliation": null
+      },
+      {
+        "name": "Benjamin X. Shi",
+        "affiliation": null
+      },
+      {
+        "name": "William Baldwin",
+        "affiliation": null
+      },
+      {
+        "name": "William C. Witt",
+        "affiliation": null
+      },
+      {
+        "name": "G\u00e1bor Cs\u00e1nyi",
+        "affiliation": null
+      },
+      {
+        "name": "Julian D. Gale",
+        "affiliation": null
+      },
+      {
+        "name": "Angelos Michaelides",
+        "affiliation": null
+      },
+      {
+        "name": "Christoph Schran",
+        "affiliation": null
+      }
+    ],
+    "summary": "Simulating liquid water to an accuracy that matches its wealth of available experimental data requires both precise electronic structure methods and reliable sampling of nuclear (quantum) motion. This is challenging because applying the electronic structure method of choice - coupled cluster theory with single, double and perturbative triple excitations [CCSD(T)] - to condensed phase systems is currently limited by its computational cost and complexity. Recent tour-de-force efforts have demonstrated that this accuracy can indeed bring simulated liquid water into close agreement with experiment using machine learning potentials (MLPs). However, achieving this remains far from routine, requiring large datasets and significant computational cost. In this work, we introduce a practical approach that combines developments in MLPs with local correlation approximations to enable routine CCSD(T)-level simulations of liquid water. When combined with nuclear quantum effects, we achieve agreement to experiments for structural and transport properties. Crucially, this approach extends beyond constant volume to constant pressure simulations, allowing fundamental properties such as the density to now be predicted by MLP-based CCSD(T) models. Importantly, the approach also handles constant pressure simulations, enabling MLP-based CCSD(T) models to predict isothermal-isobaric bulk properties, such as water's density maximum in close agreement with experiment. Encompassing tests across electronic structure, datasets and MLP architecture, this work provides a practical blueprint towards routinely developing CCSD(T)-based MLPs for the condensed phase.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on computational methods for simulating liquid water, which is distinct from the user's interest in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Liquid water simulation",
+      "Coupled cluster theory",
+      "Machine learning potential"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5531370639801025,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5312319993972778,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4854256510734558,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13952v1": {
+    "id": "2508.13952v1",
+    "title": "Piezomagnetism-driven magnetoelectric coupling in altermagnetic multiferroic K3Cr2F7",
+    "authors": [
+      {
+        "name": "Ying Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Hui-Min Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Cheng-Ao Ji",
+        "affiliation": null
+      },
+      {
+        "name": "Hongjun Xiang",
+        "affiliation": null
+      },
+      {
+        "name": "Shuai Dong",
+        "affiliation": null
+      },
+      {
+        "name": "James M. Rondinelli",
+        "affiliation": null
+      },
+      {
+        "name": "Xue-Zeng Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ferroelectric control of altermagnetism in momentum space has been studied widely, while the control of magnetism in real space of altermagnets are still rare. We present a design rule to identify multiferroicity in n=2 Ruddlesden-Popper halides. Our results show that a Jahn-Teller distortion can cooperate with oxygen octahedral rotations to break inversion symmetry, which we demonstrate in K3Cr2F7 and cation-ordered KAg2Cu2Cl7, and leads to a ferrielectric-to-ferroelectric phase transition in K3Cr2F7. Altermagnetic spin order in the ferrielectric phase of K3Cr2F7 transforms into a conventional antiferromagnetic order in the ferroelectric phase, at which strain/pressure engineered sizable changes of weak ferromagnetism can occur. Our study is not only conducive to realize strong magnetoelectric coupling in multiferroics, but also reveals more functionalities in altermagnetic materials.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in unconventional superconductivity and related electronic structure, this paper focuses on multiferroicity and magnetoelectric coupling in altermagnetic materials, a somewhat distinct area.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Multiferroicity",
+      "Magnetoelectric coupling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.545752227306366,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      },
+      {
+        "score": 0.530749499797821,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.4892449676990509,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13720v1": {
+    "id": "2508.13720v1",
+    "title": "Evidence for single variant in altermagnetic RuO2(101) thin films",
+    "authors": [
+      {
+        "name": "Cong He",
+        "affiliation": null
+      },
+      {
+        "name": "Zhenchao Wen",
+        "affiliation": null
+      },
+      {
+        "name": "Jun Okabayashi",
+        "affiliation": null
+      },
+      {
+        "name": "Yoshio Miura",
+        "affiliation": null
+      },
+      {
+        "name": "Tianyi Ma",
+        "affiliation": null
+      },
+      {
+        "name": "Tadakatsu Ohkubo",
+        "affiliation": null
+      },
+      {
+        "name": "Takeshi Seki",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroaki Sukegawa",
+        "affiliation": null
+      },
+      {
+        "name": "Seiji Mitani",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetism presents intriguing possibilities for spintronic devices due to its unique combination of strong spin-splitting and zero net magnetization. However, realizing its full potential hinges on fabricating single-variant altermagnetic thin films. In this work, we present definitive evidence for the formation of single-variant altermagnetic RuO2(101) thin films with fully epitaxial growth on Al2O3(1-102) r-plane substrates, confirmed through rigorous structural analyses using X-ray diffraction, atomic-resolution transmission electron microscopy and X-ray magnetic linear dichroism. The mutual correspondence of the occupancy of oxygen atoms on the surfaces of RuO2(101)[010] and Al2O3(1-102)[11-20] plays a decisive role in the formation of the single-variant RuO2, which is also supported by our first-principles density functional theory calculations. We further observed spin-splitting magnetoresistance in the single-variant RuO2(101)/CoFeB bilayers, highlighting the characteristic effect of single variant on spin transport. The demonstration of single-variant RuO2(101) films marks a significant advancement in the field of altermagnetism and paves the way for exploring their potential applications.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses RuO2, an oxide material, and the user has shown interest in other oxide materials and unconventional electronic properties, connecting to potential applications in spintronics.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Single-variant thin films",
+      "Spin-splitting magnetoresistance"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6279001235961914,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      },
+      {
+        "score": 0.6159501075744629,
+        "liked_paper_id": "yBtX0C4AAAAJ:isC4tDSrTZIC"
+      },
+      {
+        "score": 0.5649455189704895,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13314v1": {
+    "id": "2508.13314v1",
+    "title": "Engineering Hubbard models with gated two-dimensional moir\u00e9 systems",
+    "authors": [
+      {
+        "name": "Yiqi Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Yubo Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Miguel A. Morales",
+        "affiliation": null
+      },
+      {
+        "name": "Shiwei Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Lattice models are powerful tools for studying strongly correlated quantum many-body systems, but their general lack of exact solutions motivates efforts to simulate them in tunable platforms. Recently, a promising new candidate has emerged for such platforms from two-dimensional materials. A subset of moir\\'e systems can be effectively described as a two-dimensional electron gas (2D EG) subject to a moir\\'e potential, with electron-electron interactions screened by nearby metallic gates. In this paper, we investigate the realization of lattice models in such systems. We show that, by controlling the gate separation, a 2D EG in a square moir\\'e potential can be systematically tuned into a system whose ground state exhibits orders analogous to those of the square lattice Hubbard model, including the stripe phase. Furthermore, we study how variations in gate separation and moir\\'e potential depth affect the ground-state orders. A number of antiferromagnetic phases, as well as a ferromagnetic phase and a paramagnetic phase, are identified. We then apply our quantitative downfolding approach to triangular moir\\'e systems closer to current experimental conditions, compare them with the square lattice parameters studied, and outline routes for experimental realization of the phases.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses Hubbard models and strongly correlated systems, which align with the user's interest in unconventional superconductivity and electronic structure.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Moir\u00e9 systems",
+      "Hubbard model simulation",
+      "2D electron gas"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6804838180541992,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.6625193357467651,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.6473410725593567,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13645v1": {
+    "id": "2508.13645v1",
+    "title": "Real-time bubble nucleation and growth for false vacuum decay on the lattice",
+    "authors": [
+      {
+        "name": "Daan Maertens",
+        "affiliation": null
+      },
+      {
+        "name": "Jutho Haegeman",
+        "affiliation": null
+      },
+      {
+        "name": "Karel Van Acoleyen",
+        "affiliation": null
+      }
+    ],
+    "summary": "We revisit quantum false vacuum decay for the one-dimensional Ising model, focusing on the real-time nucleation and growth of true vacuum bubbles. Via matrix product state simulations, we demonstrate that for a wide range of parameters, the full time-dependent quantum state is well described by a Gaussian ansatz in terms of domain wall operators, with the associated vacuum bubble wave function evolving according to the linearized time-dependent variational principle. The emerging picture shows three different stages of evolution: an initial nucleation of small bubbles, followed by semi-classical bubble growth, which in turn is halted by the lattice phenomenon of Bloch oscillations. Furthermore, we find that the resonant bubble only plays a significant role in a certain region of parameter-space. However, when significant, it does lead to an approximately constant decay rate during the intermediate stage. Moreover, this rate is in quantitative agreement with the analytical result of Rutkevich (Phys. Rev. B 60, 14525) for which we provide an independent derivation based on the Gaussian ansatz.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum false vacuum decay and bubble nucleation, a topic significantly different from the user's previously liked papers on superconductivity, electronic structure, and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "False vacuum decay",
+      "Bubble nucleation",
+      "Ising model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4076124429702759,
+        "liked_paper_id": "2506.16068v1"
+      },
+      {
+        "score": 0.3997233211994171,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.39385414123535156,
+        "liked_paper_id": "2507.01280v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.05796v2": {
+    "id": "2508.05796v2",
+    "title": "Observing Differential Spin Currents by Resonant Inelastic X-ray Scattering",
+    "authors": [
+      {
+        "name": "Yanhong Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Joseph Barker",
+        "affiliation": null
+      },
+      {
+        "name": "Jiemin Li",
+        "affiliation": null
+      },
+      {
+        "name": "Takashi Kikkawa",
+        "affiliation": null
+      },
+      {
+        "name": "Fernando Camino",
+        "affiliation": null
+      },
+      {
+        "name": "Kim Kisslinger",
+        "affiliation": null
+      },
+      {
+        "name": "John Sinsheimer",
+        "affiliation": null
+      },
+      {
+        "name": "Lukas Lienhard",
+        "affiliation": null
+      },
+      {
+        "name": "Jackson J. Bauer",
+        "affiliation": null
+      },
+      {
+        "name": "Caroline A. Ross",
+        "affiliation": null
+      },
+      {
+        "name": "Dmitri N. Basov",
+        "affiliation": null
+      },
+      {
+        "name": "Eiji Saitoh",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Pelliciari",
+        "affiliation": null
+      },
+      {
+        "name": "Gerrit E. W. Bauer",
+        "affiliation": null
+      },
+      {
+        "name": "Valentina Bisogni",
+        "affiliation": null
+      }
+    ],
+    "summary": "Controlling spin currents, i.e., the flow of spin angular momentum, in small magnetic devices is the principal objective of spin electronics, a main contender for future energy efficient information technologies. Surprisingly, a pure spin current has never been measured directly since the associated electric stray fields and/or shifts in the non-equilibrium spin-dependent distribution functions are too small for conventional experimental detection methods optimized for charge transport. Here we report that resonant inelastic x-ray scattering (RIXS) can bridge this gap by measuring the spin current carried by magnons -- the quanta of the spin wave excitations of the magnetic order -- in the presence of temperature gradients across a magnetic insulator. This is possible due to the sensitivity of the momentum- and energy-resolved RIXS intensity to minute changes in the magnon distribution under non-equilibrium conditions. We use the Boltzmann equation in the relaxation time approximation to extract transport parameters, such as the magnon lifetime at finite momentum, essential for the realization of magnon spintronics.",
+    "published_date": "2025-08-07",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses resonant inelastic x-ray scattering (RIXS), which aligns with the user's interest in momentum-dependent charge correlations probed by resonant x-ray scattering and visualization of oxygen vacancies.",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "suggested_keywords": [
+      "spin currents",
+      "magnon spintronics",
+      "resonant inelastic x-ray scattering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5897656679153442,
+        "liked_paper_id": "yBtX0C4AAAAJ:70eg2SAEIzsC"
+      },
+      {
+        "score": 0.5761193633079529,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.561962902545929,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.12596v1": {
+    "id": "2508.12596v1",
+    "title": "Constructing Invariant and Equivariant Operations by Symmetric Tensor Network",
+    "authors": [
+      {
+        "name": "Meng Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Chao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Hao Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Shaojun Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Lixin He",
+        "affiliation": null
+      }
+    ],
+    "summary": "Design of neural networks that incorporate symmetry is crucial for geometric deep learning. Central to this effort is the development of invariant and equivariant operations. This works presents a systematic method for constructing valid invariant and equivariant operations. It can handle inputs and outputs in the form of Cartesian tensors with different rank, as well as spherical tensors with different types. In addition, our method features a graphical representation utilizing the symmetric tensor network, which simplifies both the proofs and constructions related to invariant and equivariant functions. We also apply this approach to design the equivariant interaction message for the geometry graph neural network, and equivariant machine learning model to learn the constitutive law of materials.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on neural network design and equivariant operations, which is a departure from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "invariant operations",
+      "equivariant operations",
+      "symmetric tensor network"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4014468193054199,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.34886813163757324,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.3394600450992584,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.13484v1": {
+    "id": "2508.13484v1",
+    "title": "Dislocation-mediated short-range order evolution during thermomechanical processing",
+    "authors": [
+      {
+        "name": "Mahmudul Islam",
+        "affiliation": null
+      },
+      {
+        "name": "Killian Sheriff",
+        "affiliation": null
+      },
+      {
+        "name": "Rodrigo Freitas",
+        "affiliation": null
+      }
+    ],
+    "summary": "Thermomechanical processing alters the microstructure of metallic alloys through coupled plastic deformation and thermal exposure, with dislocation motion driving plasticity and microstructural evolution. Our previous work showed that the same dislocation motion both creates and destroys chemical short-range order (SRO), driving alloys into far-from-equilibrium SRO states. However, the connection between this dislocation-mediated SRO evolution and processing parameters remains largely unexplored. Here, we perform large-scale atomistic simulations of thermomechanical processing of equiatomic TiTaVW to determine how temperature and strain rate control SRO via competing creation ($\\Gamma$) and annihilation ($\\lambda$) rates. Using machine learning interatomic potentials and information-theoretic metrics, we quantify that the magnitude and chemical character of SRO vary systematically with these parameters. We identify two regimes: a low-temperature regime with weak strain-rate sensitivity, and a high-temperature regime in which reduced dislocation density and increased screw character amplify chemical bias and accelerate SRO formation. The resulting steady-state SRO is far-from-equilibrium and cannot be produced by equilibrium thermal annealing. Together, these results provide a mechanistic and predictive link between processing parameters, dislocation physics, and SRO evolution in chemically complex alloys.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on dislocation-mediated short-range order evolution in metallic alloys, which is outside the user's interest in superconductivity, Dirac fermions, and oxygen vacancies in oxides.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "thermomechanical processing",
+      "short-range order",
+      "dislocation physics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.559171199798584,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.48920494318008423,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.43107178807258606,
+        "liked_paper_id": "yBtX0C4AAAAJ:mVmsd5A6BfQC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13114v1": {
+    "id": "2508.13114v1",
+    "title": "SO(n) Affleck-Kennedy-Lieb-Tasaki states as conformal boundary states of integrable SU(n) spin chains",
+    "authors": [
+      {
+        "name": "Yueshui Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Ying-Hai Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Meng Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Hong-Hao Tu",
+        "affiliation": null
+      }
+    ],
+    "summary": "We construct a class of conformal boundary states in the $\\mathrm{SU}(n)_1$ Wess-Zumino-Witten (WZW) conformal field theory (CFT) using the symmetry embedding $\\mathrm{Spin}(n)_2 \\subset \\mathrm{SU}(n)_1$. These boundary states are beyond the standard Cardy construction and possess $\\mathrm{SO}(n)$ symmetry. The $\\mathrm{SU}(n)$ Uimin-Lai-Sutherland (ULS) spin chains, which realize the $\\mathrm{SU}(n)_1$ WZW model on the lattice, allow us to identify these boundary states as the ground states of the $\\mathrm{SO}(n)$ Affleck-Kennedy-Lieb-Tasaki spin chains. Using the integrability of the $\\mathrm{SU}(n)$ ULS model, we analytically compute the corresponding Affleck-Ludwig boundary entropy using exact overlap formulas. Our results unveil intriguing connections between exotic boundary states in CFT and integrable lattice models, thus providing deep insights into the interplay of symmetry, integrability, and boundary critical phenomena.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on mathematical physics and conformal field theory, which is significantly different from the user's liked papers on condensed matter physics, superconductivity, and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "conformal boundary states",
+      "integrable spin chains",
+      "Affleck-Kennedy-Lieb-Tasaki states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4321109652519226,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.4300916790962219,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.39300546050071716,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.12363v2": {
+    "id": "2508.12363v2",
+    "title": "Structural contribution to light-induced gap suppression in Ta$_2$NiSe$_5$",
+    "authors": [
+      {
+        "name": "Zijing Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Chenhang Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Chendi Xie",
+        "affiliation": null
+      },
+      {
+        "name": "Weichen Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Qiaomei Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Dong Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Qing Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Tao Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Pengfei Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao Zou",
+        "affiliation": null
+      },
+      {
+        "name": "Jun Li",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiwei Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Nanlin Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Dong Qian",
+        "affiliation": null
+      },
+      {
+        "name": "Alfred Zong",
+        "affiliation": null
+      },
+      {
+        "name": "Dao Xiang",
+        "affiliation": null
+      }
+    ],
+    "summary": "An excitonic insulator is a material that hosts an exotic ground state, where an energy gap opens due to spontaneous condensation of bound electron-hole pairs. Ta$_2$NiSe$_5$ is a promising candidate for this type of material, but the coexistence of a structural phase transition with the gap opening has led to a long-standing debate regarding the origin of the insulating gap. Here we employ MeV ultrafast electron diffraction to obtain quantitative insights into the atomic displacements in Ta$_2$NiSe$_5$ following photoexcitation, which has been overlooked in previous time-resolved spectroscopy studies. In conjunction with first-principles calculations using the measured atomic displacements, we find that the structural change can largely account for the photoinduced reduction in the energy gap without considering excitonic effects. Our work illustrates the importance of a quantitative reconstruction of individual atomic pathways during nonequilibrium phase transitions, paving the way for a mechanistic understanding of a diverse array of phase transitions in correlated materials where lattice dynamics can play a pivotal role.",
+    "published_date": "2025-08-17",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses phase transitions and correlated materials, with a focus on the structural aspects influencing electronic properties, similar to some of the user's liked papers on nickelates and related materials.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Ultrafast electron diffraction",
+      "Excitonic insulator",
+      "Lattice dynamics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5306699872016907,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.5116615891456604,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      },
+      {
+        "score": 0.5069136619567871,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13780v1": {
+    "id": "2508.13780v1",
+    "title": "Many-body theory of false vacuum decay in quantum spin chains",
+    "authors": [
+      {
+        "name": "Christian Johansen",
+        "affiliation": null
+      },
+      {
+        "name": "Alessio Recati",
+        "affiliation": null
+      },
+      {
+        "name": "Iacopo Carusotto",
+        "affiliation": null
+      },
+      {
+        "name": "Alberto Biella",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this work we theoretically investigate the false vacuum decay process in a ferromagnetic quantum spin-1/2 chain. We develop a many-body theory describing the nucleation and the coherent dynamics of true-vacuum bubbles that is analytically tractable and agrees with numerical matrix product state calculations in all parameter regimes up to intermediate times. This bosonic theory allows us to identify different regimes in the parameter space and unravel the underlying physical mechanisms. In particular, regimes that closely correspond to the cosmological false vacuum decay picture are highlighted and characterized in terms of observable quantities.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in quantum materials and many-body physics, this paper focuses on a more abstract theoretical problem (false vacuum decay) within quantum spin chains, which is a deviation from the user's demonstrated interests.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "false vacuum decay",
+      "quantum spin chains",
+      "many-body theory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4721262454986572,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.4218292236328125,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.42179399728775024,
+        "liked_paper_id": "2507.00386v1"
       }
     ],
     "discovery_sources": []
