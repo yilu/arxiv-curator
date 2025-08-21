@@ -34396,7 +34396,9 @@
         "liked_paper_id": "2507.01280v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.05796v2": {
     "id": "2508.05796v2",
@@ -34818,6 +34820,830 @@
         "liked_paper_id": "2507.00386v1"
       }
     ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.14127v1": {
+    "id": "2508.14127v1",
+    "title": "Comparison of derivative-free and gradient-based minimization for multi-objective compositional design of shape memory alloys",
+    "authors": [
+      {
+        "name": "S. Josyula",
+        "affiliation": null
+      },
+      {
+        "name": "Y. Noiman",
+        "affiliation": null
+      },
+      {
+        "name": "E. J. Payton",
+        "affiliation": null
+      },
+      {
+        "name": "T. Giovannelli",
+        "affiliation": null
+      }
+    ],
+    "summary": "Designing shape memory alloys (SMAs) that meet performance targets while remaining affordable and sustainable is a complex challenge. In this work, we focus on optimizing SMA compositions to achieve a desired martensitic start temperature (Ms) while minimizing cost. To do this, we use machine learning models as surrogate predictors and apply numerical optimization methods to search for suitable alloy combinations. We trained two types of machine learning models, a tree-based ensemble and a neural network, using a dataset of experimentally characterized alloys and physics-informed features. The tree-based model was used with a derivative-free optimizer (COBYLA), while the neural network, which provides gradient information, was paired with a gradient-based optimizer (TRUST-CONSTR). Our results show that while both models predict Ms with similar accuracy, the optimizer paired with the neural network finds better solutions more consistently. COBYLA often converged to suboptimal results, especially when the starting guess was far from the target. The TRUST-CONSTR method showed more stable behavior and was better at reaching alloy compositions that met both objectives. This study demonstrates a practical approach to exploring new SMA compositions by combining physics-informed data, machine learning models, and optimization algorithms. Although the scale of our dataset is smaller than simulation-based efforts, the use of experimental data improves the reliability of the predictions. The approach can be extended to other materials where design trade-offs must be made with limited data.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "math.OC"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on materials design and optimization of shape memory alloys, a topic dissimilar to the user's interest in superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "shape memory alloys",
+      "materials design",
+      "multi-objective optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.40888887643814087,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.31716012954711914,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.2822225093841553,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
     "discovery_sources": []
+  },
+  "2508.14110v1": {
+    "id": "2508.14110v1",
+    "title": "Mott transition from the non-analyticity of the one-body reduced density-matrix functional",
+    "authors": [
+      {
+        "name": "Zhengqian Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Chris A. Marianetti",
+        "affiliation": null
+      }
+    ],
+    "summary": "One-body reduced density-matrix functional (1RDMF) theory has yielded promising results for small systems such as molecules, but has not addressed quantum phase transitions such as the Mott transition. Here we explicitly execute the constrained search within a variational ansatz to construct a 1RDMF for the multi-orbital Hubbard model with up to seven orbitals in the thermodynamic limit. The variational ansatz is the \\mathcal{N}=3 ansatz of the variational discrete action theory (VDAT), which can be exactly evaluated in d=\\infty. The resulting 1RDMF exactly encapsulates the \\mathcal{N}=3 VDAT results, which accurately captures Mott and Hund physics. We find that non-analytic behavior emerges in our 1RDMF at fixed integer filling, which gives rise to the Mott transition. We explain this behavior by separating the constrained search into multiple stages, illustrating how a nonzero Hund exchange drives the continuous Mott transition to become first-order. Our approach creates a new path forward for constructing an accurate 1RDMF for strongly correlated electron materials.",
+    "published_date": "2025-08-18",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses Mott transitions in strongly correlated electron materials using a density-matrix functional approach, which aligns with the user's interest in correlated materials and unconventional superconductivity.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Mott transition",
+      "1RDMF theory",
+      "Hund physics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5961257219314575,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5844687223434448,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      },
+      {
+        "score": 0.5646946430206299,
+        "liked_paper_id": "2506.16503v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14145v1": {
+    "id": "2508.14145v1",
+    "title": "Matrix Product Operator Constructions for Gauge Theories in the Thermodynamic Limit",
+    "authors": [
+      {
+        "name": "Nicholas Godfrey",
+        "affiliation": null
+      },
+      {
+        "name": "Ian P. McCulloch",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a general method for simulating lattice gauge theories in low dimensions using infinite matrix product states (iMPS). A central challenge in Hamiltonian formulations of gauge theories is the unbounded local Hilbert space associated with gauge degrees of freedom. In one spatial dimension, Gauss's law permits these gauge fields to be integrated out, yielding an effective Hamiltonian with long-range interactions among matter fields. We construct efficient matrix product operator (MPO) representations of these Hamiltonians directly in the thermodynamic limit. Our formulation naturally includes background fields and $\\theta$-terms, requiring no modifications to the standard iDMRG algorithm. This provides a broadly applicable framework for 1+1D gauge theories and can be extended to quasi-two-dimensional geometries such as infinite cylinders, where tensor-network methods remain tractable. As a benchmark, we apply our construction to the Schwinger model, reproducing expected features including confinement, string breaking, and the critical behavior at finite mass. Because the method alters only the MPO structure, it can be incorporated with little effort into a wide range of iMPS and infinite-boundary-condition algorithms, opening the way to efficient studies of both equilibrium and non-equilibrium gauge dynamics.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in condensed matter physics and unconventional materials, this paper focuses on lattice gauge theories and computational methods, which are not directly related to the user's past interests.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Matrix Product States",
+      "Lattice Gauge Theories",
+      "Schwinger Model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48526686429977417,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4803619384765625,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.478593647480011,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13455v1": {
+    "id": "2508.13455v1",
+    "title": "Autoregressive Typical Thermal States",
+    "authors": [
+      {
+        "name": "Tarun Advaith Kumar",
+        "affiliation": null
+      },
+      {
+        "name": "Leon Balents",
+        "affiliation": null
+      },
+      {
+        "name": "Timothy H. Hsieh",
+        "affiliation": null
+      },
+      {
+        "name": "Roger G. Melko",
+        "affiliation": null
+      }
+    ],
+    "summary": "A variety of generative neural networks recently adopted from machine learning have provided promising strategies for studying quantum matter. In particular, the success of autoregressive models in natural language processing has motivated their use as variational ans\\\"atze, with the hope that their demonstrated ability to scale will transfer to simulations of quantum many-body systems. In this paper, we introduce an autoregressive framework to calculate finite-temperature properties of a quantum system based on the imaginary-time evolution of an ensemble of pure states. We find that established approaches based on minimally entangled typical thermal states (METTS) have numerical instabilities when an autoregressive recurrent neural network is used as the variational ans\\\"atz. We show that these instabilities can be mitigated by evolving the initial ensemble states with a unitary operation, along with applying a threshold to curb runaway evolution of ensemble members. By comparing our algorithm to exact results for the spin 1/2 quantum XY chain, we demonstrate that autoregressive typical thermal states are capable of accurately calculating thermal observables.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.dis-nn"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on a machine learning technique for simulating quantum systems at finite temperatures, which is a methodological departure from the user's previously liked papers primarily focused on material science and specific electronic properties of quantum materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "autoregressive models",
+      "quantum many-body systems",
+      "thermal states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5748542547225952,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5697248578071594,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5354436039924622,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.14613v1": {
+    "id": "2508.14613v1",
+    "title": "A Simple and Scalable Kernel Density Approach for Reliable Uncertainty Quantification in Atomistic Machine Learning",
+    "authors": [
+      {
+        "name": "Daniel Willimetz",
+        "affiliation": null
+      },
+      {
+        "name": "Luk\u00e1\u0161 Grajciar",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning models are increasingly used to predict material properties and accelerate atomistic simulations, but the reliability of their predictions depends on the representativeness of the training data. We present a scalable, GPU-accelerated uncertainty quantification framework based on $k$-nearest-neighbor kernel density estimation (KDE) in a PCA-reduced descriptor space. This method efficiently detects sparsely sampled regions in large, high-dimensional datasets and provides a transferable, model-agnostic uncertainty metric without requiring retraining costly model ensembles. The framework is validated across diverse case studies varying in: i) chemistry, ii) prediction models (including foundational neural network), iii) descriptors used for KDE estimation, and iv) properties whose uncertainty is sought. In all cases, the KDE-based score reliably flags extrapolative configurations, correlates well with conventional ensemble-based uncertainties, and highlights regions of reduced prediction trustworthiness. The approach offers a practical route for improving the interpretability, robustness, and deployment readiness of ML models in materials science.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning techniques for materials science, which is a different area than the user's previously liked papers on superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Uncertainty quantification",
+      "Kernel density estimation",
+      "Atomistic machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4225759506225586,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.37496986985206604,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.34689971804618835,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14513v1": {
+    "id": "2508.14513v1",
+    "title": "Dynamic Vacancy Levels in CsPbCl3 Obey Equilibrium Defect Thermodynamics",
+    "authors": [
+      {
+        "name": "Irea Mosquera-Lois",
+        "affiliation": null
+      },
+      {
+        "name": "Aron Walsh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Halide vacancies are the dominant point defects in perovskites with $V_\\mathrm{Cl}$ identified as a detrimental trap for the optoelectronic performance of CsPbCl$_3$, with applications ranging from photodetectors to solar cells. Understanding these defects under operating conditions is key since their electronic levels exhibit large thermal fluctuations that challenge the validity of static 0 K models. However, quantitative modelling of defect processes requires hybrid density functional theory with spin-orbit coupling, which is too expensive for direct molecular dynamic simulations. To address this, we train a multi-task machine learning force field to study $V_\\mathrm{Cl}$ in orthorhombic CsPbCl$_3$ at 300 K.While we observe strong oscillations in the optical transition level arising from the soft potential energy surface, neither the non-radiative capture barriers nor the thermodynamic charge transition levels are affected. Our results reveal that $V_\\mathrm{Cl}$ is not responsible for the non-radiative losses previously assumed. Instead, its impact on performance arises from other mechanisms, such as limiting the open-circuit voltage and promoting ionic migration. Our findings demonstrate that, despite strong dynamical effects in halide perovskites, the conventional static formalism of defect theory remains valid for predicting thermodynamic behavior, providing a sound basis for the design of high-performance energy materials.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses vacancies, which were present in one of the liked papers, the focus on halide perovskites (CsPbCl3) is significantly different from the user's interest in nickelates and cuprates.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "halide perovskites",
+      "vacancy dynamics",
+      "defect thermodynamics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5261526703834534,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5000337958335876,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4693135917186737,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14270v1": {
+    "id": "2508.14270v1",
+    "title": "Real-space first-principles approach to orbitronic phenomena in metallic multilayers",
+    "authors": [
+      {
+        "name": "Ramon Cardias",
+        "affiliation": null
+      },
+      {
+        "name": "Hugo U. R. Strand",
+        "affiliation": null
+      },
+      {
+        "name": "Anders Bergman",
+        "affiliation": null
+      },
+      {
+        "name": "A. B. Klautau",
+        "affiliation": null
+      },
+      {
+        "name": "Tatiana G. Rappoport",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a real-space first-principles method based on density functional theory to investigate orbitronic phenomena in complex materials. Using the Real-Space Linear Muffin-Tin Orbital method within the Atomic Sphere Approximation (RS-LMTO-ASA) combined with a Chebyshev polynomial expansion of the Green's functions, we compute orbital (spin) Hall transport and orbital (spin) accumulation directly in real space. The approach scales linearly with system size and naturally incorporates disorder, finite-size effects, and interface roughness. We apply the method to transition-metal-based heterostructures and demonstrate the emergence of substantial orbital (spin) accumulation, even in centrosymmetric systems. Our methodology provides a scalable and flexible framework for realistic simulations of orbital transport phenomena in complex heterostructures.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper focuses on computational methods for studying electronic properties in materials, which aligns with the user's interest in computational physics and electronic structure, though the specific focus on orbitronics is a slightly different subfield.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "orbitronics",
+      "real-space methods",
+      "metallic multilayers"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5431705713272095,
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC"
+      },
+      {
+        "score": 0.5155634880065918,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "score": 0.5133683681488037,
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14666v1": {
+    "id": "2508.14666v1",
+    "title": "Robust field re-entrant superconductivity in ferromagnetic infinite-layer rare-earth nickelates",
+    "authors": [
+      {
+        "name": "Mingwei Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Jiayin Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Xianfeng Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Heng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Wenjing Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Haoliang Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhicheng Pei",
+        "affiliation": null
+      },
+      {
+        "name": "Wenjie Meng",
+        "affiliation": null
+      },
+      {
+        "name": "Guangli Kuang",
+        "affiliation": null
+      },
+      {
+        "name": "Jinfeng Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Sixia Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Chuanying Xi",
+        "affiliation": null
+      },
+      {
+        "name": "Li Pi",
+        "affiliation": null
+      },
+      {
+        "name": "Qingyou Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Ziqiang Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Qikun Xue",
+        "affiliation": null
+      },
+      {
+        "name": "Zhuoyu Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Danfeng Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "Superconductivity and ferromagnetism are naturally competing, while their interplay can give rise to exotic quantum phases, such as triplet pairing, exemplified by heavy-fermion compounds like UTe$_2$, where magnetic fluctuations stabilise multiple superconducting states. However, such phenomena have remained elusive in high-temperature superconductors. Here we report the discovery of robust field-induced re-entrant superconductivity in heavily Eu-doped infinite-layer nickelate Sm$_{0.95-x}$Ca$_{0.05}$Eu$_x$NiO$_2$. In the heavily over-doped regime, we observe a remarkable superconducting state that emerges under high magnetic fields ($>$ 6 Tesla) after the initial suppression of zero-field superconductivity. Both zero-resistance transport and Meissner diamagnetic effect confirm the superconducting nature of this high-field phase, which persists up to at least 45 Tesla. This re-entrant behaviour is featured by the coexistence of ferromagnetism and superconductivity on distinct sublattices -- magnetic Eu$^{2+}$ ions and the Ni-O planes, respectively. Such an exotic state may arise from the compensation between external and internal exchange fields (Jaccarino-Peter effect) combined with magnetic fluctuation-enhanced pairing near quantum criticality. Our findings establish infinite-layer nickelates as a unique platform for high-temperature ferromagnetic superconductivity, opening new avenues for discovering and manipulating unconventional quantum phases in strongly correlated materials.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper discusses superconductivity in nickelates, a topic found in several of the user's liked papers, and specifically investigates the interplay between superconductivity and ferromagnetism, a theme that could be of interest given the user's preferences.",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "re-entrant superconductivity",
+      "ferromagnetic superconductivity",
+      "infinite-layer nickelates"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.703682541847229,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.6745893955230713,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.6703115105628967,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14834v1": {
+    "id": "2508.14834v1",
+    "title": "Electron coherent phonon coupling in Pr$_{0.5}$Ca$_{1.5}$MnO$_4$ measured with ultrafast broadband spectroscopy",
+    "authors": [
+      {
+        "name": "Emmanuel B. Amuah",
+        "affiliation": null
+      },
+      {
+        "name": "Khalid M. Siddiqui",
+        "affiliation": null
+      },
+      {
+        "name": "Maurizio Monti",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel P\u00e9rez-Salinas",
+        "affiliation": null
+      },
+      {
+        "name": "Hanna Strojecka",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas H. Meyland",
+        "affiliation": null
+      },
+      {
+        "name": "Allan S. Johnson",
+        "affiliation": null
+      },
+      {
+        "name": "Simon E. Wall",
+        "affiliation": null
+      }
+    ],
+    "summary": "Photoexcitation of single-layered La$_{0.5}$Mn$_{1.5}$MnO$_4$ has played a key role in understanding orbital ordering and non-thermal states in the manganites. However, while orbital ordering in La$_{0.5}$Sr$_{1.5}$MnO$_4$ breaks the in-plane C$_4$ symmetry, many layered manganites show much more complex phase diagrams in which orbital ordering emerges from an already symmetry-broken high-temperature phase and also exhibit additional low-temperature phases. In this work, we examine the role of these phases in relation to orbital ordering in the single-layered manganite Pr$_{0.5}$Ca$_{1.5}$MnO$_4$ with a combination of optical reflection anisotropy and ultrafast broadband pump-probe spectroscopy. We find that the reflection anisotropy, measured in equilibrium, is strongly sensitive to charge and orbital-ordering transition only. However, the ultrafast response, measuring the non-equilibrium state is sensitive to all phases. In particular, we deduce that coherent phonons modulate unoccupied electronic states that are sensitive to the different phases of the material. This gives rise to a non-linear scaling of the phonon signal with pump fluence at specific probe wavelengths.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "The paper discusses manganites and orbital ordering, which are related to the user's interest in correlated electron systems and novel materials, but the specific focus on Pr$_{0.5}$Ca$_{1.5}$MnO$_4$ and ultrafast spectroscopy is somewhat distant from the previous topics.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "coherent phonons",
+      "ultrafast spectroscopy",
+      "orbital ordering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.527825117111206,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      },
+      {
+        "score": 0.5220311880111694,
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC"
+      },
+      {
+        "score": 0.49813777208328247,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2504.05910v2": {
+    "id": "2504.05910v2",
+    "title": "Testing the parquet equations and the U(1) Ward identity for real-frequency correlation functions from the multipoint numerical renormalization group",
+    "authors": [
+      {
+        "name": "Nepomuk Ritz",
+        "affiliation": null
+      },
+      {
+        "name": "Anxiang Ge",
+        "affiliation": null
+      },
+      {
+        "name": "Markus Frankenbach",
+        "affiliation": null
+      },
+      {
+        "name": "Mathias Pelz",
+        "affiliation": null
+      },
+      {
+        "name": "Jan von Delft",
+        "affiliation": null
+      },
+      {
+        "name": "Fabian B. Kugler",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recently, it has become possible to compute real-frequency four-point correlation functions of quantum impurity models using a multipoint extension of the numerical renormalization group (mpNRG). In this work, we perform several numerical consistency checks of the output of mpNRG by investigating exact relations between two- and four-point functions. This includes the Bethe-Salpeter equations and the Schwinger-Dyson equation from the parquet formalism, which we evaluate in two formally identical but numerically nonequivalent ways. We also study the first-order U(1) Ward identity between the vertex and the self-energy, which we derive for the first time in full generality in the real-frequency Keldysh formalism. We generally find good agreement of all relations, often up to a few percent, both at weak and at strong interaction.",
+    "published_date": "2025-04-08",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1103/3jtq-5wf5",
+    "score": 0.6,
+    "reasoning": "The paper discusses real-frequency correlation functions and numerical renormalization group, which aligns with the user's interest in real-frequency solvers and related theoretical methods.",
+    "matching_keywords": [
+      "numerical renormalization group"
+    ],
+    "suggested_keywords": [
+      "multipoint numerical renormalization group",
+      "parquet equations",
+      "U(1) Ward identity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.608630359172821,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.5938884019851685,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.5528461933135986,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.09261v2": {
+    "id": "2508.09261v2",
+    "title": "Entropy Measures for Transition Matrices in Random Systems",
+    "authors": [
+      {
+        "name": "Zhaohui Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Rene Meyer",
+        "affiliation": null
+      },
+      {
+        "name": "Zhuo-Yu Xian",
+        "affiliation": null
+      }
+    ],
+    "summary": "A transition matrix can be constructed through the partial contraction of two given quantum states. We analyze and compare four different definitions of entropy for transition matrices, including (modified) pseudo entropy, SVD entropy, and ABB entropy. We examine the probabilistic interpretation of each entropy measure and show that only the distillation interpretation of ABB entropy corresponds to the joint success probability of distilling entanglement between the two quantum states used to construct the transition matrix. Combining the transition matrix with preceding measurements and subsequent non-unitary operations, the ABB entropy either decreases or remains unchanged, whereas the pseudo-entropy and SVD entropy may increase or decrease. We further apply these entropy measures to transition matrices constructed from several ensembles: (i) pairs of independent Haar-random states; (ii) bi-orthogonal eigenstates of non-Hermitian random systems; and (iii) bi-orthogonal states in $PT$-symmetric systems near their exceptional points. Across all cases considered, the SVD and ABB entropies of the transition matrix closely mirror the behavior of the subsystem entanglement entropy of a single random state, in contrast to the (modified) pseudo entropy, which can exceed the bound of subsystem size, fail to scale with system size, or even take complex values.",
+    "published_date": "2025-08-12",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum information theory and entropy measures in random systems, which is a departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "transition matrices",
+      "entropy measures",
+      "random systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.43158209323883057,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3882852792739868,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.3691997528076172,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.14428v1": {
+    "id": "2508.14428v1",
+    "title": "Orbital magnetic moments in FeCr2S4 studied by x-ray magnetic circular dichroism",
+    "authors": [
+      {
+        "name": "V. K. Verma",
+        "affiliation": null
+      },
+      {
+        "name": "J. Patra",
+        "affiliation": null
+      },
+      {
+        "name": "V. R. Singh",
+        "affiliation": null
+      },
+      {
+        "name": "Y. Nonaka",
+        "affiliation": null
+      },
+      {
+        "name": "G. Shibata",
+        "affiliation": null
+      },
+      {
+        "name": "K. Ishigami",
+        "affiliation": null
+      },
+      {
+        "name": "K. Ohgushi",
+        "affiliation": null
+      },
+      {
+        "name": "Y. Tokura",
+        "affiliation": null
+      },
+      {
+        "name": "T. Koide",
+        "affiliation": null
+      },
+      {
+        "name": "A. Fujimori",
+        "affiliation": null
+      }
+    ],
+    "summary": "We have investigated the element specific magnetic characteristics of single-crystal FeCr2S4 using x-ray absorption spectroscopy (XAS) and x-ray magnetic circular dichroism (XMCD). We have found that the Fe L2,3-edge XAS spectra do not exhibit clear multiplet structures, indicating strong hybridization between the Fe 3d and S 3p orbitals, leading to delocalized rather than localized electronic states. The Fe 3d and Cr 3d spin moments are antiferromagnetically coupled, consistent with the Goodenough-Kanamori rule. The orbital magnetic moments of Fe and Cr are determined to be -0.23 and -0.017 {\\mu}B/ion, respectively. The large orbital magnetic moment of Fe is due to the d6 configuration under the relatively weak tetrahedra crystal field at the Fe site, and the delocalized Fe electrons maintain the orbital degree of freedom in spite of their itinerant nature. To understand phenomena such as the gigantic Kerr rotation, it is essential to consider not only the orbital degrees of freedom but also the role of spin-orbit coupling, which induces a finite orbital magnetic moment through t2 and e level hybridization under the tetrahedral crystal field. This finite orbital moment serves as a direct indicator of spin-orbit interaction strength and links element-specific orbital magnetism to the large Kerr rotation. On the other hand, the octahedral crystal-field splitting of the Cr 3d level is large enough to result in the quenching of the orbital moment of the Cr ion in FeCr2S4.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper utilizes X-ray techniques (similar to one liked paper), the focus on orbital magnetic moments in FeCr2S4 is a departure from the user's liked papers on superconductivity and related electronic structures in nickelates and cuprates.",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "suggested_keywords": [
+      "orbital magnetic moments",
+      "X-ray magnetic circular dichroism",
+      "spin-orbit coupling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5722712278366089,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.5500953197479248,
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC"
+      },
+      {
+        "score": 0.5393707752227783,
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14152v1": {
+    "id": "2508.14152v1",
+    "title": "Importance of Correlations for Neural Quantum States",
+    "authors": [
+      {
+        "name": "Fabian D\u00f6schl",
+        "affiliation": null
+      },
+      {
+        "name": "Annabelle Bohrdt",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural quantum states (NQS) have emerged as a powerful variational ansatz for representing quantum many-body wave functions. Their internal mechanisms, however, remain poorly understood. We investigate the role of correlations for NQS-like quantum state representation by employing a correlation-based interpretable neural network architecture and thereafter proving our observations based on Boolean function theory. The correlator neural network demonstrates that, even for simple product states, up to all system-size correlation orders in the chosen computational basis are required to represent a quantum state faithfully. We explain these observations using the Fourier expansion, which reveals the correlator basis as the effective basis of the internal NQS structure, the resulting necessity for high-order correlations, potential linear dependencies in constrained Hilbert spaces, and connections between spin basis-rotations and the correlator basis. Furthermore, we analyze how activation functions, network architectures, and choice of reference basis influence correlation requirements. Our results provide new insights and a better understanding of the internal structure and requirements of NQS, enabling a more systematic use of NQS in future research.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in correlated electron systems, this paper primarily focuses on the properties and representation of quantum states using neural networks, a topic distinct from the user's established interests.",
+    "matching_keywords": [
+      "neural network",
+      "neural quantum state"
+    ],
+    "suggested_keywords": [
+      "neural quantum states",
+      "quantum correlations",
+      "correlator neural network"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6446087956428528,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.6060459017753601,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5487001538276672,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.13063v2": {
+    "id": "2508.13063v2",
+    "title": "Generalized Symmetries From Fusion Actions",
+    "authors": [
+      {
+        "name": "Chongying Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Siu-Hung Ng",
+        "affiliation": null
+      },
+      {
+        "name": "Li Ren",
+        "affiliation": null
+      },
+      {
+        "name": "Feng Xu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Let $A$ be a condensable algebra in a modular tensor category $\\mathcal{C}$. We define an action of the fusion category $\\mathcal{C}_A$ of $A$-modules in $\\mathcal{C}$ on the morphism space Hom$_{\\mathcal{C}}(x,A)$ for any $x$ in $\\mathcal{C}$, whose characters are generalized Frobenius-Schur indicators. This fusion action can be considered on $A$, and we prove a categorical generalization of Schur-Weyl duality for this action. For any fusion subcategory $\\mathcal{B}$ of $\\mathcal{C}_A$ containing all the local $A$-modules, we prove the invariant subobject $B=A^\\mathcal{B}$ is a condensable subalgebra of $A$. The assignment of $\\mathcal{B}$ to $A^\\mathcal{B}$ defines a Galois correspondence between this kind of fusion subcategories of $\\mathcal{C}_A$ and the condensable subalgebras of $A$. In the context of VOA, we prove for any nice VOAs $U \\subset A$, $U=A^{\\mathcal{C}_A}$ where $\\mathcal{C}=\\mathcal{M}_U$ is the $U$-module category. In particular, if $U = A^G$ for some finite automorphism group $G$ of $A,$ the fusion action of $\\mathcal{C}_A$ on $A$ is equivalent to the $G$-action on $A.$",
+    "published_date": "2025-08-18",
+    "categories": [
+      "math.QA",
+      "cond-mat.str-el",
+      "math.RT"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses abstract mathematical concepts (fusion categories, algebras, Galois correspondence) that are not directly related to the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Fusion categories",
+      "Galois correspondence",
+      "Condensable algebra"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.21318024396896362,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.18089333176612854,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.15875670313835144,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
