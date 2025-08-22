@@ -34968,7 +34968,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.13455v1": {
     "id": "2508.13455v1",
@@ -35645,5 +35647,678 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2508.15592v1": {
+    "id": "2508.15592v1",
+    "title": "Predictive models for strain energy in condensed phase reactions",
+    "authors": [
+      {
+        "name": "Baptiste Martin",
+        "affiliation": null
+      },
+      {
+        "name": "Shukai Yao",
+        "affiliation": null
+      },
+      {
+        "name": "Chunyu Li",
+        "affiliation": null
+      },
+      {
+        "name": "Anthony Bocahut",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew Jackson",
+        "affiliation": null
+      },
+      {
+        "name": "Alejandro Strachan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Molecular modeling of thermally activated chemistry in condensed phases is essential to understand polymerization, depolymerization, and other processing steps of molecular materials. Current methods typically combine molecular dynamics (MD) simulations to describe short-time relaxation with a stochastic description of predetermined chemical reactions. Possible reactions are often selected on the basis of geometric criteria, such as a capture distance between reactive atoms. Although these simulations have provided valuable insight, the approximations used to determine possible reactions often lead to significant molecular strain and unrealistic structures. We show that the local molecular environment surrounding the reactive site plays a crucial role in determining the resulting molecular strain energy and, in turn, the associated reaction rates. We develop a graph neural network capable of predicting the strain energy associated with a cyclization reaction from the pre-reaction, local, molecular environment surrounding the reactive site. The model is trained on a large dataset of condensed-phase reactions during the activation of polyacrylonitrile (PAN) obtained from MD simulations and can be used to adjust relative reaction rates in condensed systems and advance our understanding of thermally activated chemical processes in complex materials",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on molecular dynamics and graph neural networks for predicting strain energy in condensed phase reactions, which is a departure from the user's interest in superconductivity and topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Molecular dynamics",
+      "Graph neural network",
+      "Strain energy prediction"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48103925585746765,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.45970189571380615,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.37646806240081787,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15525v1": {
+    "id": "2508.15525v1",
+    "title": "Revisiting thermal transport in CuCl: First-principles calculations and machine learning force fields",
+    "authors": [
+      {
+        "name": "Ashis Kundu",
+        "affiliation": null
+      },
+      {
+        "name": "Florian Knoop",
+        "affiliation": null
+      },
+      {
+        "name": "Igor A. Abrikosov",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurate prediction of lattice thermal conductivity ($\\kappa_l$) in strongly anharmonic materials requires renormalized interatomic force constants (IFCs) and appropriate incorporation of diagonal and off-diagonal contributions and higher-order scattering. We investigate CuCl, a highly anharmonic system with a simple zincblende structure and ultralow $\\kappa_l$. Our calculations, including IFC renormalization and four-phonon scattering, show excellent agreement with the experiment, underscoring the critical role of both effects in the accurate estimation of $\\kappa_l$. Furthermore, the unusual pressure dependence of $\\kappa_l$ is explored using a rigorously validated machine-learned force field, with the predicted values showing good agreement with the experimentally observed trend of monotonic decrease. This behavior is primarily driven by a significant increase in four-phonon scattering and a reduction in the group velocity of transverse acoustic modes. Overall, this study establishes a robust framework for modeling thermal transport in strongly anharmonic materials.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on thermal transport in CuCl, which is not directly related to the user's liked papers on nickelates, superconductivity, or topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "thermal conductivity",
+      "anharmonic materials",
+      "four-phonon scattering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5516762733459473,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5217793583869934,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4080943465232849,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15710v1": {
+    "id": "2508.15710v1",
+    "title": "End-to-End Analysis of Charge Stability Diagrams with Transformers",
+    "authors": [
+      {
+        "name": "Rahul Marchand",
+        "affiliation": null
+      },
+      {
+        "name": "Lucas Schorling",
+        "affiliation": null
+      },
+      {
+        "name": "Cornelius Carlsson",
+        "affiliation": null
+      },
+      {
+        "name": "Jonas Schuff",
+        "affiliation": null
+      },
+      {
+        "name": "Barnaby van Straaten",
+        "affiliation": null
+      },
+      {
+        "name": "Taylor L. Patti",
+        "affiliation": null
+      },
+      {
+        "name": "Federico Fedele",
+        "affiliation": null
+      },
+      {
+        "name": "Joshua Ziegler",
+        "affiliation": null
+      },
+      {
+        "name": "Parth Girdhar",
+        "affiliation": null
+      },
+      {
+        "name": "Pranav Vaidhyanathan",
+        "affiliation": null
+      },
+      {
+        "name": "Natalia Ares",
+        "affiliation": null
+      }
+    ],
+    "summary": "Transformer models and end-to-end learning frameworks are rapidly revolutionizing the field of artificial intelligence. In this work, we apply object detection transformers to analyze charge stability diagrams in semiconductor quantum dot arrays, a key task for achieving scalability with spin-based quantum computing. Specifically, our model identifies triple points and their connectivity, which is crucial for virtual gate calibration, charge state initialization, drift correction, and pulse sequencing. We show that it surpasses convolutional neural networks in performance on three different spin qubit architectures, all without the need for retraining. In contrast to existing approaches, our method significantly reduces complexity and runtime, while enhancing generalizability. The results highlight the potential of transformer-based end-to-end learning frameworks as a foundation for a scalable, device- and architecture-agnostic tool for control and tuning of quantum dot devices.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum computing and machine learning techniques for device control, which is a significant departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "charge stability diagrams",
+      "transformer models",
+      "quantum dot arrays"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6152330636978149,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4347548484802246,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4251207411289215,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15614v1": {
+    "id": "2508.15614v1",
+    "title": "Universal Machine Learning Potential for Systems with Reduced Dimensionality",
+    "authors": [
+      {
+        "name": "Giulio Benedini",
+        "affiliation": null
+      },
+      {
+        "name": "Antoine Loew",
+        "affiliation": null
+      },
+      {
+        "name": "Matti Hellstrom",
+        "affiliation": null
+      },
+      {
+        "name": "Silvana Botti",
+        "affiliation": null
+      },
+      {
+        "name": "Miguel A. L. Marques",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a benchmark designed to evaluate the predictive capabilities of universal machine learning interatomic potentials across systems of varying dimensionality. Specifically, our benchmark tests zero- (molecules, atomic clusters, etc.), one- (nanowires, nanoribbons, nanotubes, etc.), two- (atomic layers and slabs) and three-dimensional (bulk materials) compounds. The benchmark reveals that while all tested models demonstrate excellent performance for three-dimensional systems, accuracy degrades progressively for lower-dimensional structures. The best performing models for geometry optimization are orbital version 2, equiformerV2, and the equivariant Smooth Energy Network, with the equivariant Smooth Energy Network also providing the most accurate energies. Our results indicate that the best models yield, on average, errors in the atomic positions in the range of 0.01-0.02 angstrom and errors in the energy below 10~meV/atom across all dimensionalities. These results demonstrate that state-of-the-art universal machine learning interatomic potentials have reached sufficient accuracy to serve as direct replacements for density functional theory calculations, at a small fraction of the computational cost, in simulations spanning the full range from isolated atoms to bulk solids. More significantly, the best performing models already enable efficient simulations of complex systems containing subsystems of mixed dimensionality, opening new possibilities for modeling realistic materials and interfaces.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning potentials and their application to materials of varying dimensionality, which is a departure from the user's established interest in superconductivity and electronic structure of specific materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Machine learning interatomic potentials",
+      "Dimensionality benchmark",
+      "Geometry optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5259810090065002,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5227367281913757,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5159218311309814,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15493v1": {
+    "id": "2508.15493v1",
+    "title": "Attention-Based Explainability for Structure-Property Relationships",
+    "authors": [
+      {
+        "name": "Boris N. Slautin",
+        "affiliation": null
+      },
+      {
+        "name": "Utkarsh Pratiush",
+        "affiliation": null
+      },
+      {
+        "name": "Yongtao Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Funakubo",
+        "affiliation": null
+      },
+      {
+        "name": "Vladimir V. Shvartsman",
+        "affiliation": null
+      },
+      {
+        "name": "Doru C. Lupascu",
+        "affiliation": null
+      },
+      {
+        "name": "Sergei V. Kalinin",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning methods are emerging as a universal paradigm for constructing correlative structure-property relationships in materials science based on multimodal characterization. However, this necessitates development of methods for physical interpretability of the resulting correlative models. Here, we demonstrate the potential of attention-based neural networks for revealing structure-property relationships and the underlying physical mechanisms, using the ferroelectric properties of PbTiO3 thin films as a case study. Through the analysis of attention scores, we disentangle the influence of distinct domain patterns on the polarization switching process. The attention-based Transformer model is explored both as a direct interpretability tool and as a surrogate for explaining representations learned via unsupervised machine learning, enabling the identification of physically grounded correlations. We compare attention-derived interpretability scores with classical SHapley Additive exPlanations (SHAP) analysis and show that, in contrast to applications in natural language processing, attention mechanisms in materials science exhibit high efficiency in highlighting meaningful structural features.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "This paper focuses on machine learning interpretability in materials science, which is a departure from the user's interest in condensed matter physics, superconductivity, and electronic structure, although there is some overlap in materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Attention-based neural networks",
+      "Interpretability",
+      "Structure-property relationships"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4340420961380005,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.412264347076416,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.39372050762176514,
+        "liked_paper_id": "2506.22435v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15284v1": {
+    "id": "2508.15284v1",
+    "title": "Electron-Hole Crossover in $\\mathrm{La}_{3-x}\\mathrm{Sr}_{x}\\mathrm{Ni}_{2}\\mathrm{O}_{7-\u03b4}$ Thin Films",
+    "authors": [
+      {
+        "name": "Maosen Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Bo Hao",
+        "affiliation": null
+      },
+      {
+        "name": "Wenjie Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Shengjun Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Shengwang Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Hongyi Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengbin Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Yuefeng Nie",
+        "affiliation": null
+      }
+    ],
+    "summary": "The ambient-pressure superconductivity in $\\mathrm{La}_{3}\\mathrm{Ni}_{2}\\mathrm{O}_{7}$ thin films via compressive epitaxial strain provides a highly accessible platform for diverse characterization techniques, facilitating the studies of high-temperature superconductivity. Here, we systematically map the superconducting dome in compressively strained $\\mathrm{La}_{3-x}\\mathrm{Sr}_{x}\\mathrm{Ni}_{2}\\mathrm{O}_{7-\\delta}$ thin films by simultaneously tuning Sr doping and oxygen content and reveal an electron-hole crossover associated with the maximum transition temperature (${T}_{c}$). This electron-hole crossover, marked by an anomalous sign change in the Hall coefficient (${R}_{H}$), is reminiscent of electron-doped cuprates, which may signal a Fermi surface reconstruction. Beyond the superconducting dome, a $\\ln1/T$ insulating regime and a $T$-linear resistivity regime are also resolved, resembling behaviors observed in cuprates and infinite-layer nickelates. This work reveals a dome-shaped relationship between ${T}_{c}$ and ${R}_{H}$ and establishes a key framework for understanding unconventional superconductivity in nickelate systems.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper focuses on the superconducting dome and electron-hole crossover in nickelate thin films, a topic closely related to the user's interest in nickelate superconductors and their electronic properties.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "Electron-hole crossover",
+      "Nickelate thin films",
+      "Superconducting dome"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6989376544952393,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.6985249519348145,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.6897260546684265,
+        "liked_paper_id": "2508.03414v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15108v1": {
+    "id": "2508.15108v1",
+    "title": "Equivariant Electronic Hamiltonian Prediction with Many-Body Message Passing",
+    "authors": [
+      {
+        "name": "Chen Qian",
+        "affiliation": null
+      },
+      {
+        "name": "Valdas Vitartas",
+        "affiliation": null
+      },
+      {
+        "name": "James Kermode",
+        "affiliation": null
+      },
+      {
+        "name": "Reinhard J. Maurer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning surrogates of Kohn-Sham Density Functional Theory Hamiltonians offer a powerful tool to accelerate the prediction of electronic properties of materials, such as electronic band structures and densities-of-states. For large-scale applications, an ideal model would exhibit high generalization ability and computational efficiency. Here, we introduce the MACE-H graph neural network, which combines high body-order message passing with a node-order expansion to efficiently obtain all relevant $O(3)$ irreducible representations. The model achieves high accuracy and computational efficiency and captures the full local chemical environment features of, currently, up to $f$ orbital matrix interaction blocks. We demonstrate the model's accuracy and transferability on several open materials benchmark datasets of two-dimensional materials and a new dataset for bulk gold, achieving sub-meV prediction errors on matrix elements and eigenvalues across all systems. We further analyse the interplay of high body order message passing and locality that makes this model a good candidate for high-throughput material screening.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in superconductivity and electronic structure, this paper focuses on machine learning methods for predicting electronic Hamiltonians, which is a methodological rather than a directly related topic.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "graph neural networks",
+      "equivariant machine learning",
+      "materials screening"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5939096212387085,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5458343029022217,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5305197834968567,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15702v1": {
+    "id": "2508.15702v1",
+    "title": "Classification of Magnetism and Altermagnetism in Quasicrystals",
+    "authors": [
+      {
+        "name": "Zhi-Yan Shao",
+        "affiliation": null
+      },
+      {
+        "name": "Chen Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiming Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Yu-Bo Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Fan Yang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetism, an unconventional magnetic phase characterized by zero net magnetism and a spin-split electronic band, has been studied exclusively in conventional crystalline materials. In this work, we extend the theoretical framework of altermagnetism to quasicrystals (QCs), which lack translational symmetry. We classify magnetic phases in 2D QCs with $n$-fold rotational symmetry without spin-orbit coupling, by using the irreducible representation (IRRP) of the $D_n$ point group. Based on symmetry analysis, we propose the conjecture that magnetic phases corresponding to 1D non-identity IRRPs are generally altermagnetic, with the exception of those possessing parity-time symmetry. To verify our conjecture, we take the Hubbard model as an example and develop a systematic approach to determine the magnetic pattern in the QC, which effectively avoids getting trapped at local energy minima. Consequently, our tests for the Hubbard model on various QCs with different symmetries are unexceptionally consistent with our proposal. Our work highlights the QC as a platform where the altermagnetism is common among magnetic phases.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism, which is related to the previous paper on -Symmetric Real Dirac Fermions and Semimetals, but the focus on quasicrystals makes it less directly relevant.",
+    "matching_keywords": [
+      "altermagnetism",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Quasicrystals",
+      "Magnetic phases"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6715553998947144,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6323692798614502,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5789951086044312,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14513v2": {
+    "id": "2508.14513v2",
+    "title": "Dynamic Vacancy Levels in CsPbCl3 Obey Equilibrium Defect Thermodynamics",
+    "authors": [
+      {
+        "name": "Irea Mosquera-Lois",
+        "affiliation": null
+      },
+      {
+        "name": "Aron Walsh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Halide vacancies are the dominant point defects in perovskites with VCl identified as a detrimental trap for the optoelectronic performance of CsPbCl3, with applications ranging from photodetectors to solar cells. Understanding these defects under operating conditions is key since their electronic levels exhibit large thermal fluctuations that challenge the validity of static 0 K models. However, quantitative modelling of defect processes requires hybrid density functional theory with spin-orbit coupling, which is too expensive for direct molecular dynamic simulations. To address this, we train a multi-task machine learning force field to study VCl in orthorhombic CsPbCl3 at 300 K. While we observe strong oscillations in the optical transition level arising from the soft potential energy surface, neither the non-radiative capture barriers nor the thermodynamic charge transition levels are affected. Our results reveal that VCl is not responsible for the non-radiative losses previously assumed. Instead, its impact on performance arises from other mechanisms, such as limiting the open-circuit voltage and promoting ionic migration. Our findings demonstrate that, despite strong dynamical effects in halide perovskites, the conventional static formalism of defect theory remains valid for predicting thermodynamic behavior, providing a sound basis for the design of high-performance energy materials.",
+    "published_date": "2025-08-20",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on halide vacancies in CsPbCl3 perovskites, a topic distinct from the user's previously liked papers on nickelates and other correlated electron systems.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Halide vacancies",
+      "CsPbCl3",
+      "Defect thermodynamics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5218089818954468,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.505266010761261,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4450402855873108,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15681v1": {
+    "id": "2508.15681v1",
+    "title": "Assessing the Reliability of Truncated Coupled Cluster Wavefunction: Estimating the Distance from the Exact Solution",
+    "authors": [
+      {
+        "name": "\u00c1d\u00e1m Ganyecz",
+        "affiliation": null
+      },
+      {
+        "name": "Zsolt Benedek",
+        "affiliation": null
+      },
+      {
+        "name": "Kl\u00e1ra Petrov",
+        "affiliation": null
+      },
+      {
+        "name": "Gergely Barcza",
+        "affiliation": null
+      },
+      {
+        "name": "Andr\u00e1s Olasz",
+        "affiliation": null
+      },
+      {
+        "name": "Mikl\u00f3s A. Werner",
+        "affiliation": null
+      },
+      {
+        "name": "\u00d6rs Legeza",
+        "affiliation": null
+      }
+    ],
+    "summary": "A new approach is proposed to assess the reliability of the truncated wavefunction methods by estimating the deviation from the full configuration interaction (FCI) wavefunction. While typical multireference diagnostics compare some derived property of the solution with the ideal picture of a single determinant, we try to answer a more practical question, how far is the solution from the exact one. Using the density matrix renormalization group (DMRG) method to provide an approximate FCI solution for the self-consistently determined relevant active space, we compare the low-level CI expansions and one-body reduced density matrixes to determine the distance of the two solutions ($\\tilde{d}_\\Phi$, $\\tilde{d}_\\gamma$). We demonstrate the applicability of the approach for the CCSD method by benchmarking on the W4-17 dataset, as well as on transition metal-containing species. We also show that the presented moderate-cost, purely wavefunction-based metric is truly unique in the sense that it does not correlate with any popular multireference measures. We also explored the usage of CCSD natural orbitals ($\\tilde{d}_{\\gamma,\\mathrm{NO}}$) and its effect on the active space size and the metric. The proposed diagnostic can also be applied to other wavefunction approximations, and it has the potential to provide a quality measure for post-Hartree-Fock procedures in general.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum chemistry methods (coupled cluster) and diagnostics for wavefunction accuracy, which is a different area than the user's liked papers on condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Coupled cluster",
+      "Wavefunction diagnostics",
+      "DMRG"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.512561559677124,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.45978981256484985,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4321289360523224,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.15572v1": {
+    "id": "2508.15572v1",
+    "title": "Automated Modeling of Polarons: Defects and Reactivity on TiO$_2$(110) Surfaces",
+    "authors": [
+      {
+        "name": "Firat Yalcin",
+        "affiliation": null
+      },
+      {
+        "name": "Carla Verdi",
+        "affiliation": null
+      },
+      {
+        "name": "Viktor C. Birschitzky",
+        "affiliation": null
+      },
+      {
+        "name": "Matthias Meier",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Wolloch",
+        "affiliation": null
+      },
+      {
+        "name": "Michele Reticcioli",
+        "affiliation": null
+      }
+    ],
+    "summary": "Polarons are widespread in functional materials and are key to device performance in several technological applications. However, their effective impact on material behavior remains elusive, as condensed matter studies struggle to capture their intricate interplay with atomic defects in the crystal. In this work, we present an automated workflow for modeling polarons within density functional theory (DFT). Our approach enables a fully automatic identification of the most favorable polaronic configurations in the system. Machine learning techniques accelerate predictions, allowing for an efficient exploration of the defect-polaron configuration space. We apply this methodology to Nb-doped TiO$_2$(110) surfaces, providing new insights into the role of defects in surface reactivity. Using CO adsorbates as a probe, we find that Nb doping has minimal impact on reactivity, whereas oxygen vacancies contribute significantly depending on their local arrangement via the stabilization of polarons on the surface atomic layer. Our package streamlines the modeling of charge trapping and polaron localization with high efficiency, enabling systematic, large-scale investigations of polaronic effects across complex material systems.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper touches on defects in materials and the application of DFT, which aligns somewhat with the user's interest in correlated electron systems and novel materials, but the focus on polarons and surface reactivity is less directly related.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Polarons",
+      "Defect-polaron interaction",
+      "Surface reactivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5787268877029419,
+        "liked_paper_id": "yBtX0C4AAAAJ:NaGl4SEjCO4C"
+      },
+      {
+        "score": 0.4928969144821167,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.4873315095901489,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
