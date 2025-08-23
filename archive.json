@@ -36258,7 +36258,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.15572v1": {
     "id": "2508.15572v1",
@@ -36320,5 +36322,110 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2508.15759v1": {
+    "id": "2508.15759v1",
+    "title": "Evaluating classical simulations with a quantum processor",
+    "authors": [
+      {
+        "name": "Alberto Nocera",
+        "affiliation": null
+      },
+      {
+        "name": "Jack Raymond",
+        "affiliation": null
+      },
+      {
+        "name": "William Bernoudy",
+        "affiliation": null
+      },
+      {
+        "name": "Mohammad H. Amin",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew D. King",
+        "affiliation": null
+      }
+    ],
+    "summary": "As simulations of quantum systems cross the limits of classical computability, both quantum and classical approaches become hard to verify. Scaling predictions are therefore based on local structure and asymptotic assumptions, typically with classical methods being used to evaluate quantum simulators where possible. Here, in contrast, we use a quantum annealing processor to produce a ground truth for evaluating classical tensor-network methods whose scaling has not yet been firmly established. Our observations run contrary to previous scaling predictions, demonstrating the need for caution when extrapolating the accuracy of classical simulations of quantum dynamics. Our results demonstrate that the virtuous cycle of competition between classical and quantum simulations can lend insight in both directions.",
+    "published_date": "2025-08-21",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum computing and classical simulations, a different area than the user's liked papers which are on superconductivity and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum annealing",
+      "tensor-network methods",
+      "classical simulation verification"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6084425449371338,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5430197715759277,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5409396886825562,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.15320v1": {
+    "id": "2508.15320v1",
+    "title": "Reduced basis solvers for unfitted methods on parameterized domains",
+    "authors": [
+      {
+        "name": "Nicholas Mueller",
+        "affiliation": null
+      },
+      {
+        "name": "Santiago Badia",
+        "affiliation": null
+      },
+      {
+        "name": "Yiran Zhao",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this paper, we present a unified framework for reduced basis approximations of parametrized partial differential equations defined on parameter-dependent domains. Our approach combines unfitted finite element methods with both classical and tensor-based reduced basis techniques -- particularly the tensor-train reduced basis method -- to enable efficient and accurate model reduction on general geometries. To address the challenge of reconciling geometric variability with fixed-dimensional snapshot representations, we adopt a deformation-based strategy that maps a reference configuration to each parameterized domain. Furthermore, we introduce a localization procedure to construct dictionaries of reduced subspaces and hyper-reduction approximations, which are obtained via matrix discrete empirical interpolation in our work. We extend the proposed framework to saddle-point problems by adapting the supremizer enrichment strategy to unfitted methods and deformed configurations, demonstrating that the supremizer operator can be defined on the reference configuration without loss of stability. Numerical experiments on two- and three-dimensional problems -- including Poisson, linear elasticity, incompressible Stokes and Navier-Stokes equations -- demonstrate the flexibility, accuracy and efficiency of the proposed methodology.",
+    "published_date": "2025-08-21",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on numerical methods for partial differential equations, which is a different area than the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Reduced basis method",
+      "Unfitted finite element method",
+      "Parametrized PDEs"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.44857022166252136,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.32696375250816345,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "score": 0.3192194104194641,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
