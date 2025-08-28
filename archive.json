@@ -39019,5 +39019,604 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2508.18465v1": {
+    "id": "2508.18465v1",
+    "title": "Scalable Effective Models for Superconducting Nanostructures: Applications to Double, Triple, and Quadruple Quantum Dots",
+    "authors": [
+      {
+        "name": "Daniel Bobok",
+        "affiliation": null
+      },
+      {
+        "name": "Luk\u00e1\u0161 Frk",
+        "affiliation": null
+      },
+      {
+        "name": "Vladislav Pokorn\u00fd",
+        "affiliation": null
+      },
+      {
+        "name": "Martin \u017donda",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a versatile and scalable framework for constructing effective models of superconducting (SC) nanostructures described by the generalized SC Anderson impurity model with multiple quantum dots and leads. Our Chain Expansion (ChE) method maps each SC lead onto a finite tight-binding chain with parameters obtained from Pad\\'e approximants of the tunneling self-energy. We provide an explicit algorithm for the general case as well as simple analytical expressions for the chain parameters in the wide-band and infinite-chain limits. This mapping preserves low-energy physics while enabling efficient simulations: short chains are tractable with exact diagonalization, and longer ones with density matrix renormalization group methods. The approach remains reliable and computationally efficient across diverse geometries, both in and out of equilibrium. We use ChE to map the ground-state phase diagrams of double, triple, and quadruple quantum dots coupled to a single SC lead. While half-filled symmetric systems show similar overall diagrams, the particular phases differ substantially with dot number. Here, large parameter regions are entirely missed by the widely used zero-bandwidth approximation but are captured by ChE. Away from half-filling, additional dots markedly increase diagram complexity, producing a rich variety of stable phases. These results demonstrate ChE as a fast, accurate, and systematically improvable tool for exploring complex SC nanostructures.",
+    "published_date": "2025-08-25",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses superconductivity and effective models which aligns with the user's interest in superconductivity and topological materials, but focuses on nanostructures which is less directly related to the user's previous likes.",
+    "matching_keywords": [
+      "anderson impurity model",
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Chain Expansion method",
+      "superconducting nanostructures",
+      "quantum dots"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5221211314201355,
+        "liked_paper_id": "2506.13399v1"
+      },
+      {
+        "score": 0.5205466151237488,
+        "liked_paper_id": "2506.16360v1"
+      },
+      {
+        "score": 0.5200084447860718,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.19334v1": {
+    "id": "2508.19334v1",
+    "title": "Thermodynamics in a split Hilbert space: Quantum impurity at the edge of the Heisenberg chain",
+    "authors": [
+      {
+        "name": "Abay Zhakenov",
+        "affiliation": null
+      },
+      {
+        "name": "Pradip Kattel",
+        "affiliation": null
+      },
+      {
+        "name": "Natan Andrei",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the isotropic spin-$\\frac{1}{2}$ Heisenberg chain with a single edge-coupled impurity of arbitrary exchange strength $J$. The model exhibits four impurity phases. For antiferromagnetic couplings ($J>0$): a \\textit{Kondo phase} at weak $J$, where the impurity is screened by many-body excitations and the impurity entropy decreases monotonically from $\\ln 2$ at $T \\to \\infty$ to $0$ at $T\\to 0$; and an \\textit{antiferromagnetic bound-mode (ABM) phase} at strong $J$, where the impurity screened by an exponentially localized bound mode drives $S_{\\mathrm{imp}}(T)$ nonmonotonically, with undershoots below zero at intermediate temperatures, while tending to $\\ln 2$ as $T \\to \\infty$ and to $0$ as $T \\to 0$. For ferromagnetic couplings ($J<0$): a local-moment (LM) phase at weak $|J|$, where the impurity remains unscreened with $S_{\\mathrm{imp}}\\to \\ln 2$ as $T \\to 0$ but exhibits shallow undershoots at intermediate scales; and a \\textit{ferromagnetic bound-mode (FBM) phase} at strong $|J|$, where $S_{\\mathrm{imp}}=\\ln 2$ in both UV and IR limits, yet develops an intermediate-temperature undershoot. We provide an analytic understanding of this behavior, showing that the undershoots originate from the fractionalization of the Hilbert space into several towers of states: for antiferromagnetic couplings this occurs only at strong $J$, driven by boundary-localized bound modes, while for ferromagnetic couplings undershoots occur for all $J<0$, becoming deeper with increasing $|J|$ and vanishing as $J\\to 0^{-}$. These bound modes screen the impurity. Incorporating the bound modes and edge states provides a complete analytic understanding of this phenomenon and yields closed expressions for the impurity contribution to free energy and entropy that are valid across all phases. These are checked and found to be in excellent agreement with tensor network and exact diagonalization results.",
+    "published_date": "2025-08-26",
+    "categories": [
+      "cond-mat.str-el",
+      "math.MP",
+      "nlin.SI"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper deals with quantum systems and edge effects, it focuses on a specific impurity model in a Heisenberg chain, which is less directly related to the user's previous interests in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Heisenberg chain",
+      "Quantum impurity",
+      "Bound modes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6362775564193726,
+        "liked_paper_id": "2506.22302v1"
+      },
+      {
+        "score": 0.5503467321395874,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5403661727905273,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.19084v1": {
+    "id": "2508.19084v1",
+    "title": "Tunneling spectroscopy of the spinon-Kondo effect in one-dimensional Mott insulators",
+    "authors": [
+      {
+        "name": "Rodrigo G. Pereira",
+        "affiliation": null
+      },
+      {
+        "name": "Bruno F. Marquez",
+        "affiliation": null
+      },
+      {
+        "name": "Karen Hallberg",
+        "affiliation": null
+      },
+      {
+        "name": "Tim Bauer",
+        "affiliation": null
+      },
+      {
+        "name": "Reinhold Egger",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the tunneling density of states (TDOS) in one-dimensional Mott insulators at energies below the charge gap. By employing nonlinear Luttinger liquid theory and density-matrix renormalization group (DMRG) simulations, we predict that in the presence of a magnetic impurity at the boundary, characteristic Fermi-edge singularity features can appear at subgap energies in the TDOS near the boundary. In contrast to the Kondo effect in a metal, these resonances are strongly asymmetric and of power-law form. The power-law exponent is universal and determined by the spinon-Kondo effect.",
+    "published_date": "2025-08-26",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in correlated electron systems, this paper focuses on 1D Mott insulators and the spinon-Kondo effect, which are somewhat tangential to the user's previous interests in superconductivity and nickelates.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "spinon-Kondo effect",
+      "Mott insulators",
+      "tunneling density of states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5771979093551636,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.5628753900527954,
+        "liked_paper_id": "2506.22302v1"
+      },
+      {
+        "score": 0.5215544104576111,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.19969v1": {
+    "id": "2508.19969v1",
+    "title": "Unlocking Doping Effects on Altermagnetism in MnTe",
+    "authors": [
+      {
+        "name": "Nayana Devaraj",
+        "affiliation": null
+      },
+      {
+        "name": "Anumita Bose",
+        "affiliation": null
+      },
+      {
+        "name": "Arindom Das",
+        "affiliation": null
+      },
+      {
+        "name": "Md Afsar Reja",
+        "affiliation": null
+      },
+      {
+        "name": "Arijit Mandal",
+        "affiliation": null
+      },
+      {
+        "name": "Awadhesh Narayan",
+        "affiliation": null
+      },
+      {
+        "name": "B. R. K. Nanda",
+        "affiliation": null
+      }
+    ],
+    "summary": "Governed by specific symmetries, altermagnetism is an emerging field in condensed matter physics, characterized by unique spin-splitting of the bands in the momentum space co-existing with the compensated magnetization as in antiferromagnets. As crystals can have tailored and unintended defects, it is important to gain insights on how altermagnets are affected by the defects-driven symmetry-breaking which, in turn, can build promising perspectives on potential applications. In this study, considering the widely investigated MnTe as a prototype altermagnet, defects are introduced through substitutional doping to create a large configuration space of spin space groups. With the aid of density functional theory calculations, symmetry analysis, and model studies in this configuration space, we demonstrate the generic presence of spin-split of the antiferromagnetic bands in the momentum space. This is indicative of a wider class of quasi-altermagnetic materials, augmenting the set of ideal altermagnetic systems. Furthermore, we show that while pristine MnTe does not show anomalous Hall conductivity (AHC) with out-of-plane magnetization, suitable doping can be carried out to obtain finite and varied AHC. Our predictions of quasi-altermagnetism and doping driven tailored AHC have the potential to open up as-yet-unexplored directions in this developing field.",
+    "published_date": "2025-08-27",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism and doping in MnTe, connecting to previous interests in unconventional magnetism, materials with unique electronic properties, and defect-driven phenomena in correlated materials.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Doping effects",
+      "Anomalous Hall conductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6025567054748535,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5863224864006042,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      },
+      {
+        "score": 0.5758360624313354,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.19674v1": {
+    "id": "2508.19674v1",
+    "title": "Atomistic insights into hydrogen migration in IGZO from machine-learning interatomic potential: linking atomic diffusion to device performance",
+    "authors": [
+      {
+        "name": "Hyunsung Cho",
+        "affiliation": null
+      },
+      {
+        "name": "Minseok Moon",
+        "affiliation": null
+      },
+      {
+        "name": "Jaehoon Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Eunkyung Koh",
+        "affiliation": null
+      },
+      {
+        "name": "Hyeon-Deuk Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Rokyeon Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Gyehyun Park",
+        "affiliation": null
+      },
+      {
+        "name": "Seungwu Han",
+        "affiliation": null
+      },
+      {
+        "name": "Youngho Kang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding hydrogen diffusion is critical for improving the reliability and performance of oxide thin-film transistors (TFTs), where hydrogen plays a key role in carrier modulation and bias instability. In this work, we investigate hydrogen diffusion in amorphous IGZO ($a$-IGZO) and $c$-axis aligned crystalline IGZO (CAAC-IGZO) using machine learning interatomic potential molecular dynamics (MLIP-MD) simulations. We construct accurate phase-specific MLIPs by fine-tuning SevenNet-0, a universal pretrained MLIP, and validate the models against a comprehensive dataset covering hydrogen-related configurations and diffusion environments. Hydrogen diffusivity is evaluated over 650--1700 K, revealing enhanced mobility above 750 K in $a$-IGZO due to the glassy matrix, while diffusion at lower temperatures is constrained by the rigid network. Arrhenius extrapolation of the diffusivity indicates that hydrogen in $a$-IGZO can reach the channel/insulator interface within $10^{4}$ seconds at 300--400 K, likely contributing to negative bias stress-induced device degradation. Trajectory analysis reveals that long-range diffusion in $a$-IGZO is enabled by a combination of hydrogen hopping and flipping mechanisms. In CAAC-IGZO, hydrogen exhibits high in-plane diffusivity but severely restricted out-of-plane transport due to a high energy barrier along the $c$-axis. This limited vertical diffusion in CAAC-IGZO suggests minimal impact on bias instability. This work bridges the atomic-level hydrogen transport mechanism and device-level performance in oxide TFTs by leveraging large-scale MLIP-MD simulations.",
+    "published_date": "2025-08-27",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user has shown interest in oxides, superconductivity, and electronic structure, this paper's focus on hydrogen diffusion in IGZO for thin-film transistor applications is not directly aligned with those interests.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "hydrogen diffusion",
+      "oxide TFTs",
+      "MLIP-MD simulations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5073125958442688,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4463067054748535,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.43802493810653687,
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.18408v1": {
+    "id": "2508.18408v1",
+    "title": "Low-Rank Tensor Decompositions for the Theory of Neural Networks",
+    "authors": [
+      {
+        "name": "Ricardo Borsoi",
+        "affiliation": null
+      },
+      {
+        "name": "Konstantin Usevich",
+        "affiliation": null
+      },
+      {
+        "name": "Marianne Clausel",
+        "affiliation": null
+      }
+    ],
+    "summary": "The groundbreaking performance of deep neural networks (NNs) promoted a surge of interest in providing a mathematical basis to deep learning theory. Low-rank tensor decompositions are specially befitting for this task due to their close connection to NNs and their rich theoretical results. Different tensor decompositions have strong uniqueness guarantees, which allow for a direct interpretation of their factors, and polynomial time algorithms have been proposed to compute them. Through the connections between tensors and NNs, such results supported many important advances in the theory of NNs. In this review, we show how low-rank tensor methods--which have been a core tool in the signal processing and machine learning communities--play a fundamental role in theoretically explaining different aspects of the performance of deep NNs, including their expressivity, algorithmic learnability and computational hardness, generalization, and identifiability. Our goal is to give an accessible overview of existing approaches (developed by different communities, ranging from computer science to mathematics) in a coherent and unified way, and to open a broader perspective on the use of low-rank tensor decompositions for the theory of deep NNs.",
+    "published_date": "2025-08-25",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on neural networks and tensor decompositions, which is a significant departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "low-rank tensor decompositions",
+      "deep neural networks",
+      "algorithmic learnability"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4785667955875397,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4025881886482239,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3966490924358368,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.17668v2": {
+    "id": "2508.17668v2",
+    "title": "Non-Fermi-liquid transport phenomena in bilayer nickelates: Impact of quasi-quantum metric",
+    "authors": [
+      {
+        "name": "Seiichiro Onari",
+        "affiliation": null
+      },
+      {
+        "name": "Daisuke Inoue",
+        "affiliation": null
+      },
+      {
+        "name": "Rina Tazai",
+        "affiliation": null
+      },
+      {
+        "name": "Youichi Yamakawa",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Kontani",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recently discovered high-$T_c$ superconductivity in thin-film bilayer nickelates La$_3$Ni$_2$O$_7$ under ambient pressure has attracted great interest. Non-Fermi-liquid transport behaviors, such as $T$-linear resistivity and positive Hall coefficient increasing at low temperatures, have been reported in this system. In this study, we analyze the non-Fermi-liquid transport phenomena in the thin-film bilayer nickelate La$_3$Ni$_2$O$_7$ using a multiorbital tight-binding model. In La$_3$Ni$_2$O$_7$, the orbital-selective cold spots composed of Ni $d_{x^2-y^2}$ orbital emerge since the spin fluctuations cause stronger quasi-particle damping $\\gamma$ in the Ni $d_{z^2}$ orbital. Notably, in the present study, we derive a rigorous formula for the Hall coefficient $R_H$ incorporating the $\\gamma$ in the quasi-quantum metric (qQM) term. We discover that the $T$-dependence of $\\gamma$ in the qQM term is important in determining $R_H$, and that the qQM term is inevitably enhanced by the nearly degenerate bands at the orbital-selective cold spots located around $(\\pi/4,\\pi/4)$. Moreover, the qQM term plays an essential role in describing the Nernst coefficient and other transport phenomena involving the second derivative velocity $v^{\\mu\\nu}$. La$_3$Ni$_2$O$_7$ provides a novel platform for exploring the physics of the qQM.",
+    "published_date": "2025-08-25",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper is highly relevant because it focuses on the electronic properties of La$_3$Ni$_2$O$_7$, a material similar to those in previously liked papers, and investigates non-Fermi-liquid behavior, which is a common theme in correlated electron systems.",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "quasi-quantum metric",
+      "orbital-selective cold spots",
+      "non-Fermi-liquid transport"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6890127658843994,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      },
+      {
+        "score": 0.6868427991867065,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.6811921000480652,
+        "liked_paper_id": "2506.16360v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.19536v1": {
+    "id": "2508.19536v1",
+    "title": "Theory of superconductivity and mass enhancement near CDW critical point based on Bethe-Salpeter equation method: application to cuprates",
+    "authors": [
+      {
+        "name": "Youichi Yamakawa",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Kontani",
+        "affiliation": null
+      }
+    ],
+    "summary": "In recent years, charge-channel orders in strongly correlated metals have attracted great attention. Famous examples are the electronic nematic orders in cuprates and iron-based superconductors, and Star-of-David order in kagome metals. Critical phenomena and unconventional superconductivity arising from fluctuations of such charge-channel orders are central issues today; however, the essential role is played by the vertex corrections, which are the many-body effects that are dropped in conventional mean-field type approximations. To solve this difficulty, in this study, we propose the Bethe-Salpeter equation theory to evaluate electron-electron interactions in two dimensional Hubbard models. This method satisfies the criteria of the Baym-Kadanoff conserving approximation. Here, we find that an attractive interaction in the charge channel emerges from the Aslamazov-Larkin vertex corrections that describe the interference processes among spin fluctuations. Applying this method to the square-lattice Hubbard model, we reveal that the cooperation of attractive charge fluctuations and repulsive spin fluctuations yields high-$T_c$ $d$-wave superconductivity together with enhanced effective mass. These results naturally explain the phase diagram of cuprate superconductors, where strong-coupling $d$-wave superconductivity appears near the charge-order quantum critical point. The theory can also be applied to multi-orbital Hubbard models, like iron-based and nickelate superconductors, suggesting broad potential for future applications.",
+    "published_date": "2025-08-27",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper focuses on superconductivity and charge-channel orders, specifically in cuprates, which aligns with the user's interest in unconventional superconductivity, oxygen vacancies in nickelates, and charge correlations in cuprates.",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "Bethe-Salpeter equation",
+      "charge-channel orders",
+      "Aslamazov-Larkin vertex corrections"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5804681777954102,
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC"
+      },
+      {
+        "score": 0.5779112577438354,
+        "liked_paper_id": "2506.13399v1"
+      },
+      {
+        "score": 0.5769098997116089,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.14034v1": {
+    "id": "2508.14034v1",
+    "title": "Photoinduced Frustration Modulation in $\u03ba$-type Quantum Spin Liquid Candidates",
+    "authors": [
+      {
+        "name": "M. Tepie",
+        "affiliation": null
+      },
+      {
+        "name": "F. Glerean",
+        "affiliation": null
+      },
+      {
+        "name": "J. Ov\u010dar",
+        "affiliation": null
+      },
+      {
+        "name": "S. Priya",
+        "affiliation": null
+      },
+      {
+        "name": "K. Miyagawa",
+        "affiliation": null
+      },
+      {
+        "name": "H. Taniguchi",
+        "affiliation": null
+      },
+      {
+        "name": "K. Kanoda",
+        "affiliation": null
+      },
+      {
+        "name": "I. Lon\u010dari\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "M. Dressel",
+        "affiliation": null
+      },
+      {
+        "name": "M. Mitrano",
+        "affiliation": null
+      }
+    ],
+    "summary": "Geometric frustration is a key parameter controlling electronic and magnetic properties of quantum spin liquid systems, yet remains challenging to tune. Here, we coherently drive molecular vibrations with midinfrared pulses in two organic quantum spin liquid candidates, the insulating $\\kappa$-(BEDT-TTF)$_2$Cu$_2$(CN)$_3$ and the metallic $\\kappa$-(BEDT-TTF)$_4$Hg$_{2.89}$Br$_8$, and probe their electronic response through ultrafast reflectivity measurements. We observe a nonlinear coupling between local molecular vibrations and nonlocal phonons, which is expected to directly modulate the geometric frustration of their triangular lattice. Our findings establish a promising route to dynamically control frustration in nonbipartite quantum materials.",
+    "published_date": "2025-08-19",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on organic quantum spin liquids and modulation of geometric frustration using photoexcitation, which is a different area than the user's previously liked papers focusing on nickelates, cuprates, and topological semimetals.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "quantum spin liquid",
+      "geometric frustration",
+      "ultrafast reflectivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5482755303382874,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5229844450950623,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.4870780408382416,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2508.18361v2": {
+    "id": "2508.18361v2",
+    "title": "Odd-Parity Altermagnetism Originated from Orbital Orders",
+    "authors": [
+      {
+        "name": "Zheng-Yang Zhuang",
+        "affiliation": null
+      },
+      {
+        "name": "Di Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Dongling Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhigang Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhongbo Yan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Odd-parity spin-splitting plays a central role in spintronics and unconventional superconductivity, yet its microscopic realization in collinear magnetic systems remains elusive. We propose a general symmetry-based strategy for realizing odd-parity altermagnetism by stacking two noncentrosymmetric monolayers in an interlayer antiferromagnetic configuration and applying an in-plane layer-flip operation. In this setting, odd-parity spin-splitting originates from nonrelativistic orbital orders rather than spin-orbit coupling, and is protected by an effective time-reversal symmetry despite the explicit time-reversal symmetry being broken. By exploiting lattice symmetries, our framework enables the realization of both $p$- and $f$-wave altermagnets. The resulting models generically host quantum spin Hall insulator phases, featuring topologically protected helical edge states and quantized spin Hall conductance. Our work expands the landscape of altermagnetic phases and opens a pathway toward spintronics and unconventional superconductivity in altermagnetic systems.",
+    "published_date": "2025-08-25",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses unconventional superconductivity and spin-splitting in magnetic systems, which aligns with the user's interest in superconductivity, Dirac fermions, and oxides.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Odd-parity spin-splitting",
+      "Orbital orders"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6263487935066223,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5790923833847046,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5530976057052612,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
