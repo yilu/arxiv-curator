@@ -40544,7 +40544,9 @@
         "liked_paper_id": "2506.15770v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.20010v1": {
     "id": "2508.20010v1",
@@ -40587,6 +40589,203 @@
       {
         "score": 0.33604469895362854,
         "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.20974v1": {
+    "id": "2508.20974v1",
+    "title": "Classical fractional time series from quantum XXZ spin chains",
+    "authors": [
+      {
+        "name": "Zolt\u00e1n Udvarnoki",
+        "affiliation": null
+      },
+      {
+        "name": "G\u00e1bor F\u00e1th",
+        "affiliation": null
+      },
+      {
+        "name": "Mikl\u00f3s Werner",
+        "affiliation": null
+      },
+      {
+        "name": "\u00d6rs Legeza",
+        "affiliation": null
+      }
+    ],
+    "summary": "Entangled quantum mechanical states in one dimension can be used to represent and simulate classical stochastic processes with nontrivial statistical properties. Long-range quantum correlations translate into fractional processes with their asymptotic Hurst exponents characterizing roughness and persistence. We explore this analogy in the case of the spin-1/2 XXZ chain and investigate properties of four different classical two-state processes that this quantum system can generate. These processes show fractional characteristics with varying Hurst exponents. We argue that the continuous quantum symmetries such as U(1) or SU(2) of the XXZ chain give rise to $H=0$ with logarithmic scaling. Processes generated without these symmetries can produce $H \\geq0.5$ but likely not $H < 0.5$ unless the dominant term responsible for $H=0.5$ gets canceled. This does not seem to happen for the XXZ model. We use standard quantum methods, including MERA and TEBD, to numerically substantiate our findings.",
+    "published_date": "2025-08-28",
+    "categories": [],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses quantum systems, it focuses on their classical stochastic process analogies and time series analysis, differing from the user's liked papers on superconductivity, electronic structure, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "fractional time series",
+      "XXZ spin chain",
+      "quantum stochastic processes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.43314671516418457,
+        "liked_paper_id": "2508.17834v1"
+      },
+      {
+        "score": 0.4099620282649994,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.4063347578048706,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.20252v1": {
+    "id": "2508.20252v1",
+    "title": "Classical Simulations of Low Magic Quantum Dynamics",
+    "authors": [
+      {
+        "name": "Kemal Aziz",
+        "affiliation": null
+      },
+      {
+        "name": "Haining Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Michael J. Gullans",
+        "affiliation": null
+      },
+      {
+        "name": "J. H. Pixley",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop classical simulation algorithms for adaptive quantum circuits that produce states with low levels of ``magic'' (i.e., non-stabilizerness). These algorithms are particularly well-suited to circuits with high rates of Pauli measurements, such as those encountered in quantum error correction and monitored quantum circuits. The measurements serve to limit the buildup of magic induced by non-Clifford operations arising from generic noise processes or unitary gates, respectively. Our algorithms also allow a systematic truncation procedure to achieve approximate simulation. To benchmark our approach, we study the dynamics of all-to-all monitored quantum circuits with a sub-extensive rate of $T$-gates per unit of circuit depth, where we can simulate previously inaccessible system sizes and depths. We characterize measurement-induced phase transitions in the output wavefunction, including in the entanglement, purification, and magic. We outline the utility of our algorithms to simulate dynamics with low magic and high entanglement, complementary to the leading matrix-product state approaches.",
+    "published_date": "2025-08-27",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on classical simulation algorithms for quantum circuits with low magic, a topic unrelated to the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "classical simulation",
+      "quantum circuits",
+      "magic"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5209125280380249,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.48347029089927673,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.47733598947525024,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.20928v1": {
+    "id": "2508.20928v1",
+    "title": "Optimization on the Extended Tensor-Train Manifold with Shared Factors",
+    "authors": [
+      {
+        "name": "Alexander Molozhavenko",
+        "affiliation": null
+      },
+      {
+        "name": "Maxim Rakhuba",
+        "affiliation": null
+      }
+    ],
+    "summary": "This paper studies tensors that admit decomposition in the Extended Tensor Train (ETT) format, with a key focus on the case where some decomposition factors are constrained to be equal. This factor sharing introduces additional challenges, as it breaks the multilinear structure of the decomposition. Nevertheless, we show that Riemannian optimization methods can naturally handle such constraints and prove that the underlying manifold is indeed smooth. We develop efficient algorithms for key Riemannian optimization components, including a retraction operation based on quasi-optimal approximation in the new format, as well as tangent space projection using automatic differentiation. Finally, we demonstrate the practical effectiveness of our approach through tensor approximation tasks and multidimensional eigenvalue problem.",
+    "published_date": "2025-08-28",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on tensor optimization and algorithms, which is not related to the user's past interests in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor-Train",
+      "Riemannian optimization",
+      "Shared factors"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3565654754638672,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3325253129005432,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.3285638093948364,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.20770v1": {
+    "id": "2508.20770v1",
+    "title": "Equally entangled multiqubit states",
+    "authors": [
+      {
+        "name": "Francisco Albarr\u00e1n-Arriagada",
+        "affiliation": null
+      },
+      {
+        "name": "Guillermo Romero",
+        "affiliation": null
+      },
+      {
+        "name": "Juan Carlos Retamal",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a protocol for generating multiqubit quantum states with translationally invariant pairwise entanglement. Our approach is tailored for digital quantum computers with restricted qubit connectivity, a common limitation in state-of-the-art hardware platforms. We examine two configurations: star connectivity, which enables rotationally invariant entanglement, and linear connectivity, which achieves translationally invariant entanglement. For the linear configuration, we use a variant of the time-dependent density matrix renormalization group (tDMRG) algorithm to demonstrate that our protocol is independent of the qubits' number. A slight modification of the protocol reveals the presence of quantum states that exhibit periodicity of entanglement among nearest-neighbor qubits. The configurations and protocols of this work are well-suited for near-term quantum devices, offering a feasible route for the experimental realization of symmetric entangled states.",
+    "published_date": "2025-08-28",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and multiqubit entanglement, a domain distinct from the user's past interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Multiqubit entanglement",
+      "Quantum computing",
+      "tDMRG algorithm"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48117566108703613,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.466921329498291,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.42819544672966003,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
       }
     ],
     "discovery_sources": [
