@@ -41109,7 +41109,9 @@
         "liked_paper_id": "2506.11222v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.21142v1": {
     "id": "2508.21142v1",
@@ -41186,7 +41188,9 @@
         "liked_paper_id": "2508.17834v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2508.21670v1": {
     "id": "2508.21670v1",
@@ -41580,5 +41584,160 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2508.21253v1": {
+    "id": "2508.21253v1",
+    "title": "Reinforcement Learning for Optimizing Large Qubit Array based Quantum Sensor Circuits",
+    "authors": [
+      {
+        "name": "Laxmisha Ashok Attisara",
+        "affiliation": null
+      },
+      {
+        "name": "Sathish Kumar",
+        "affiliation": null
+      }
+    ],
+    "summary": "As the number of qubits in a sensor increases, the complexity of designing and controlling the quantum circuits grows exponentially. Manually optimizing these circuits becomes infeasible. Optimizing entanglement distribution in large-scale quantum circuits is critical for enhancing the sensitivity and efficiency of quantum sensors [5], [6]. This paper presents an engineering integration of reinforcement learning with tensor-network-based simulation (MPS) for scalable circuit optimization for optimizing quantum sensor circuits with up to 60 qubits. To enable efficient simulation and scalability, we adopt tensor network methods, specifically the Matrix Product State (MPS) representation, instead of traditional state vector or density matrix approaches. Our reinforcement learning agent learns to restructure circuits to maximize Quantum Fisher Information (QFI) and entanglement entropy while reducing gate counts and circuit depth. Experimental results show consistent improvements, with QFI values approaching 1, entanglement entropy in the 0.8-1.0 range, and up to 90% reduction in depth and gate count. These results highlight the potential of combining quantum machine learning and tensor networks to optimize complex quantum circuits under realistic constraints.",
+    "published_date": "2025-08-28",
+    "categories": [
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and reinforcement learning for circuit optimization, which is a different domain from the user's liked papers on condensed matter physics and material science.",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum sensor circuits",
+      "reinforcement learning",
+      "tensor network optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.569879412651062,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5479015707969666,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.538548469543457,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.21544v1": {
+    "id": "2508.21544v1",
+    "title": "Remote spin control in Haldane spin chains",
+    "authors": [
+      {
+        "name": "Y. del Castillo",
+        "affiliation": null
+      },
+      {
+        "name": "A. Ferr\u00f3n",
+        "affiliation": null
+      },
+      {
+        "name": "J. Fern\u00e1ndez-Rossier",
+        "affiliation": null
+      }
+    ],
+    "summary": "We consider the remote manipulation of the quantum state of the edge fractional spins of Haldane spin chains using a weak local perturbation on the other edge. We derive an effective four-level model that correctly captures the response of the local magnetization to local perturbations and we use it to show that applying a small local field on one edge of the chain induces a strong variation of the magnetization on the opposite edge. Using a Landau-Zener protocol, we show how local control of the field on one edge of the chain, implemented for instance with a spin-polarized scanning tunnel microscope tip, can adiabatically switch the magnetization direction on the other side of the chain.",
+    "published_date": "2025-08-29",
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in materials and electronic properties, this paper focuses on spin chains and remote control of magnetization, a somewhat different area.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Haldane spin chains",
+      "remote spin control",
+      "edge magnetization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4312925338745117,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.41194888949394226,
+        "liked_paper_id": "2508.17834v1"
+      },
+      {
+        "score": 0.40056324005126953,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2508.21122v1": {
+    "id": "2508.21122v1",
+    "title": "Quantum algorithms for equational reasoning",
+    "authors": [
+      {
+        "name": "Davide Rattacaso",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Jaschke",
+        "affiliation": null
+      },
+      {
+        "name": "Marco Ballarin",
+        "affiliation": null
+      },
+      {
+        "name": "Ilaria Siloi",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Montangero",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce quantum normal form reduction, a quantum computational framework for analyzing abstract symbolic expressions - such as strings, algebraic formulas, or quantum circuits - that are equivalent under a given set of transformation rules. These rules form a term rewriting system, a formal method for deriving equivalences by repeatedly applying substitutions. We construct an efficiently implementable quantum Hamiltonian whose ground state encodes the entire class of equivalent expressions - potentially exponentially many - in a quantum superposition. By preparing and manipulating these ground states, we address fundamental problems in equational reasoning, including the word problem, i.e., determining whether two expressions are equivalent, counting the number of equivalent expressions, and identifying structural properties of equivalence classes. We demonstrate a quantum-inspired version of the algorithm using tensor network simulations by solving instances involving up to $10^{28}$ equivalent expressions, well beyond the reach of standard classical graph exploration techniques. This framework opens the path for quantum symbolic computation in areas ranging from quantum and logical circuit design to data compression, computational group theory, linguistics, polymers and biomolecular modeling, enabling the investigation of problems previously out of reach.",
+    "published_date": "2025-08-28",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum algorithms and equational reasoning, which are distinct from the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum normal form reduction",
+      "equational reasoning",
+      "quantum symbolic computation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4837733507156372,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4718308448791504,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.46489620208740234,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
