@@ -44703,5 +44703,380 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2509.05017v1": {
+    "id": "2509.05017v1",
+    "title": "Deep Learning-Assisted Weak Beam Identification in Dark-Field X-ray Microscopy",
+    "authors": [
+      {
+        "name": "A. Benhadjira",
+        "affiliation": null
+      },
+      {
+        "name": "C. Detlefs",
+        "affiliation": null
+      },
+      {
+        "name": "S. Borgi",
+        "affiliation": null
+      },
+      {
+        "name": "V. Favre-Nicolin",
+        "affiliation": null
+      },
+      {
+        "name": "C. Yildirim",
+        "affiliation": null
+      }
+    ],
+    "summary": "Dislocations control the mechanical behavior of crystalline materials, yet their quantitative characterization in bulk has remained elusive. Transmission Electron Microscopy provides atomic-scale resolution but is restricted to thin foils, limiting relevance to structural performance. Dark-field X-ray microscopy (DFXM) has recently opened access to three-dimensional, non-destructive imaging of dislocations in macroscopic crystals. A critical bottleneck, however, is the reliable identification of weak- versus strong-beam conditions. Weak-beam imaging enhances dislocation contrast, while strong-beam conditions are dominated by multiple scattering and obscure interpretation. Current practice depends on manual classification by specialists, which is subjective, slow, and incompatible with the scale of modern experiments. Here, we introduce a deep learning framework that automates this task using a lightweight convolutional neural network trained on small, hand-labeled datasets. By enabling robust, rapid, and scalable identification of imaging conditions, this approach transforms DFXM into a high-throughput tool, unlocking statistically significant studies of dislocation dynamics in bulk materials.",
+    "published_date": "2025-09-05",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in materials science and X-ray techniques, this paper focuses on a specific microscopy technique and machine learning, making it only moderately relevant.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Dark-field X-ray microscopy",
+      "Dislocation characterization",
+      "Deep learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4861176609992981,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4460623264312744,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.35568708181381226,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.05090v1": {
+    "id": "2509.05090v1",
+    "title": "Efficient iPEPS Simulation on the Honeycomb Lattice via QR-based CTMRG",
+    "authors": [
+      {
+        "name": "Qi Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Philippe Corboz",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a QR-based corner transfer matrix renormalization group (CTMRG) framework for contracting infinite projected entangled-pair states (iPEPS) on honeycomb lattices. Our method explicitly uses the lattice's native C3v symmetry at each site, generalizing QR-based acceleration (previously limited to square lattices) to enable efficient and stable contractions. This approach achieves order-of-magnitude speedups over conventional singular value decomposition (SVD)-based CTMRG while maintaining high numerical precision. Comprehensive benchmark calculations for the spin-1/2 Heisenberg and Kitaev models demonstrate higher computational efficiency without sacrificing accuracy. We further employ our method to study the Kitaev-Heisenberg model, where we provide numerical evidence for the universal 1/r^4 decay of the dimer-dimer correlation function within the quantum spin liquid (QSL) phase. Our work establishes a framework for extending QR-based CTMRG to other lattice geometries, opening new avenues for studying exotic quantum phases with tensor networks.",
+    "published_date": "2025-09-05",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in condensed matter physics and novel materials, this paper focuses on a numerical method (iPEPS) with only indirect connection to the user's interests.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "iPEPS",
+      "CTMRG",
+      "Honeycomb Lattice"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6370431184768677,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5668973326683044,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5550812482833862,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.03574v2": {
+    "id": "2509.03574v2",
+    "title": "A new rung on the ladder: exploring topological frustration towards two dimensions",
+    "authors": [
+      {
+        "name": "Alberto Giuseppe Catalano",
+        "affiliation": null
+      },
+      {
+        "name": "Nora Reini\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "Gianpaolo Torre",
+        "affiliation": null
+      },
+      {
+        "name": "Sven Benjamin Ko\u017ei\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "Karlo Deli\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Montangero",
+        "affiliation": null
+      },
+      {
+        "name": "Fabio Franchini",
+        "affiliation": null
+      },
+      {
+        "name": "Salvatore Marco Giampaolo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Topological frustration arises when boundary conditions impose geometric frustration in a quantum system, creating delocalized defects in the ground states and profoundly altering the low-energy properties. While previous studies have been concerned with one-dimensional systems, showing that the ground state structure can be described in terms of quasiparticle excitations, the two-dimensional setting remains unexplored. We address this gap by studying a three-legged antiferromagnetic quantum Ising ladder on a torus using tensor network methods, where topological frustration is induced by an odd number of spins along both spatial directions. Our results reveal the first instance in which topological frustration shifts the position of the quantum critical point. By studying the entanglement structure, we find that the ground state can be characterized as hosting three delocalized quasiparticles. This work builds the quasiparticle picture of topological frustration toward higher dimensions and more complex systems than those considered so far.",
+    "published_date": "2025-09-03",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum systems and frustration, which aligns with the user's interest in quantum materials and topological phenomena.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "topological frustration",
+      "quantum Ising ladder",
+      "quasiparticle excitations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5640621185302734,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5580207109451294,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.5197506546974182,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.04875v1": {
+    "id": "2509.04875v1",
+    "title": "Hot-Ham: an accurate and efficient E(3)-equivariant machine-learning electronic structures calculation framework",
+    "authors": [
+      {
+        "name": "Zhixin Liang",
+        "affiliation": null
+      },
+      {
+        "name": "Yunlong Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Chi Ding",
+        "affiliation": null
+      },
+      {
+        "name": "Junjie Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Hui-Tian Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Dingyu Xing",
+        "affiliation": null
+      },
+      {
+        "name": "Jian Sun",
+        "affiliation": null
+      }
+    ],
+    "summary": "The combinations of machine learning with ab initio methods have attracted much attention for their potential to resolve the accuracy-efficiency dilemma and facilitate calculations for large-scale systems. Recently, equivariant message passing neural networks (MPNNs) that explicitly incorporate symmetry constraints have demonstrated promise for interatomic potential and density functional theory (DFT) Hamiltonian predictions. However, the high-order tensors used to represent node and edge information are coupled through the Clebsch-Gordan tensor product (CGTP), leading to steep increases in computational complexity and seriously hindering the performance of equivariant MPNNs. Here, we develop High-order Tensor machine-learning Hamiltonian (Hot-Ham), an E(3) equivariant MPNN framework that combines two advanced technologies local coordinate transformation and Gaunt tensor product (GTP) to efficiently model DFT Hamiltonians. These two innovations significantly reduce the complexity of tensor products from O(L^6) to O(L^3) or O(L^2 log^2 L) for the max tensor order L, and enhance the performance of MPNNs. Benchmarks on several public datasets demonstrate its state-of-the-art accuracy with relatively few parameters, and the applications to multilayer twisted moir\\'e systems, heterostructures and allotropes showcase its generalization ability and high efficiency. Our Hot-Ham method provides a new perspective for developing efficient equivariant neural networks and would be a promising approach for investigating the electronic properties of large-scale materials systems.",
+    "published_date": "2025-09-05",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "While the user previously liked papers on superconductivity, oxygen vacancies, and topological materials, this paper focuses on a machine-learning framework for electronic structure calculations, which is a methodological tool that could be applied to those topics, making it moderately relevant.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "E(3)-equivariant neural networks",
+      "electronic structure calculation",
+      "Gaunt tensor product"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5599828958511353,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5237176418304443,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4842692017555237,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.03547v2": {
+    "id": "2509.03547v2",
+    "title": "Combining feature-based approaches with graph neural networks and symbolic regression for synergistic performance and interpretability",
+    "authors": [
+      {
+        "name": "Rog\u00e9rio Almeida Gouv\u00eaa",
+        "affiliation": null
+      },
+      {
+        "name": "Pierre-Paul De Breuck",
+        "affiliation": null
+      },
+      {
+        "name": "Tatiane Pretto",
+        "affiliation": null
+      },
+      {
+        "name": "Gian-Marco Rignanese",
+        "affiliation": null
+      },
+      {
+        "name": "Marcos Jos\u00e9 Leite Santos",
+        "affiliation": null
+      }
+    ],
+    "summary": "This study introduces MatterVial, an innovative hybrid framework for feature-based machine learning in materials science. MatterVial expands the feature space by integrating latent representations from a diverse suite of pretrained graph neural network (GNN) models including: structure-based (MEGNet), composition-based (ROOST), and equivariant (ORB) graph networks, with computationally efficient, GNN-approximated descriptors and novel features from symbolic regression. Our approach combines the chemical transparency of traditional feature-based models with the predictive power of deep learning architectures. When augmenting the feature-based model MODNet on Matbench tasks, this method yields significant error reductions and elevates its performance to be competitive with, and in several cases superior to, state-of-the-art end-to-end GNNs, with accuracy increases exceeding 40% for multiple tasks. An integrated interpretability module, employing surrogate models and symbolic regression, decodes the latent GNN-derived descriptors into explicit, physically meaningful formulas. This unified framework advances materials informatics by providing a high-performance, transparent tool that aligns with the principles of explainable AI, paving the way for more targeted and autonomous materials discovery.",
+    "published_date": "2025-09-02",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has liked papers on materials science, this paper focuses on machine learning techniques applied to materials, a slightly tangential area.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "graph neural networks",
+      "materials informatics",
+      "explainable AI"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.37535467743873596,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3403184413909912,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.32812100648880005,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.04900v1": {
+    "id": "2509.04900v1",
+    "title": "Ultrafast Dynamics of Spin-Orbit Entangled Excitons Coupled to Magnetic Ordering in van der Waals Antiferromagnet NiPS3",
+    "authors": [
+      {
+        "name": "Sidhanta Sahu",
+        "affiliation": null
+      },
+      {
+        "name": "Anupama Chauhan",
+        "affiliation": null
+      },
+      {
+        "name": "Poulami Ghosh",
+        "affiliation": null
+      },
+      {
+        "name": "Sayan Routh",
+        "affiliation": null
+      },
+      {
+        "name": "Ruturaj Puranik",
+        "affiliation": null
+      },
+      {
+        "name": "Setti Thirupathaiah",
+        "affiliation": null
+      },
+      {
+        "name": "Siddhartha Lal",
+        "affiliation": null
+      },
+      {
+        "name": "Shriganesh Prabhu S",
+        "affiliation": null
+      },
+      {
+        "name": "Chiranjib Mitra",
+        "affiliation": null
+      },
+      {
+        "name": "N. Kamaraju",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spin-orbit entangled excitons (SOEE) in two-dimensional (2D) antiferromagnets provide a direct access to explore unconventional many body interactions in correlated electron systems. In this work, we carry out a detailed investigation using non-degenerate isotropic and anisotropic pump-probe reflection spectroscopy to probe the ultrafast dynamics of SOEE and their coupling to spin fluctuations in NiPS3. Transient reflectivity data reveals acoustic phonon oscillations at ~ 27 GHz, along with two distinct relaxation timescales: fast (1-9 ps) and slower components (1-4 ns) associated with SOEE coherence and spin reordering, respectively. Both timescales exhibit pronouns temperature dependence near the exciton dissociation (TED = 120 K) and Neel TN = 155 K) temperatures. The SOEE coherence shortens from ~ 8-9 ps at T < TED to ~ 3 ps at T > TED with a finite tail persisting beyond TN. The spin reordering time grows near 120 K, and shows critical slowing down around TN. Pump fluence studies further corroborate their spin origin. Our findings uncover the direct interplay between the excitonic and spin degrees of freedom across ultrafast and longer timescales, offering new opportunities to probe and engineer emergent many-body interactions in 2D antiferromagnets.",
+    "published_date": "2025-09-05",
+    "categories": [
+      "cond-mat.other",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses spin dynamics and correlated electron systems, which aligns with the user's interest in unconventional many-body interactions and novel materials, especially given the mention of nickel-based materials in the user's liked papers.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "Spin-orbit entangled excitons",
+      "Ultrafast dynamics",
+      "NiPS3"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5661225914955139,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.552570641040802,
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC"
+      },
+      {
+        "score": 0.5487786531448364,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
