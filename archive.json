@@ -47440,5 +47440,1000 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2509.07963v1": {
+    "id": "2509.07963v1",
+    "title": "Customizing the Inductive Biases of Softmax Attention using Structured Matrices",
+    "authors": [
+      {
+        "name": "Yilun Kuang",
+        "affiliation": null
+      },
+      {
+        "name": "Noah Amsel",
+        "affiliation": null
+      },
+      {
+        "name": "Sanae Lotfi",
+        "affiliation": null
+      },
+      {
+        "name": "Shikai Qiu",
+        "affiliation": null
+      },
+      {
+        "name": "Andres Potapczynski",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew Gordon Wilson",
+        "affiliation": null
+      }
+    ],
+    "summary": "The core component of attention is the scoring function, which transforms the inputs into low-dimensional queries and keys and takes the dot product of each pair. While the low-dimensional projection improves efficiency, it causes information loss for certain tasks that have intrinsically high-dimensional inputs. Additionally, attention uses the same scoring function for all input pairs, without imposing a distance-dependent compute bias for neighboring tokens in the sequence. In this work, we address these shortcomings by proposing new scoring functions based on computationally efficient structured matrices with high ranks, including Block Tensor-Train (BTT) and Multi-Level Low Rank (MLR) matrices. On in-context regression tasks with high-dimensional inputs, our proposed scoring functions outperform standard attention for any fixed compute budget. On language modeling, a task that exhibits locality patterns, our MLR-based attention method achieves improved scaling laws compared to both standard attention and variants of sliding window attention. Additionally, we show that both BTT and MLR fall under a broader family of efficient structured matrices capable of encoding either full-rank or distance-dependent compute biases, thereby addressing significant shortcomings of standard attention. Finally, we show that MLR attention has promising results for long-range time-series forecasting.",
+    "published_date": "2025-09-09",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on improving the efficiency of attention mechanisms in machine learning, which is unrelated to the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Structured matrices",
+      "Attention mechanism",
+      "In-context regression"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.2958340644836426,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.27924206852912903,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.2762506306171417,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08143v1": {
+    "id": "2509.08143v1",
+    "title": "Electronic Fluctuations and Ionic Dynamics in Molten Silver Iodide",
+    "authors": [
+      {
+        "name": "Harender S. Dhattarwal",
+        "affiliation": null
+      },
+      {
+        "name": "Richard C. Remsing",
+        "affiliation": null
+      }
+    ],
+    "summary": "Molten salts are high-temperature ionic liquids whose unique combination of strong Coulombic interactions, large polarizabilities, and high ionic conductivities makes them central to energy storage, metallurgy, and nuclear technology. Understanding their delicate balance of Coulomb forces, short-range repulsion, and electronic polarization, particularly regarding the role that electronic fluctuations play in their structure and dynamics, is critical to predictively designing molten salts for applications of interest. We investigate the importance of electronic fluctuations in molten AgI using density functional theory, a universal machine learning model (Orb), and a classical, empirical pairwise model of interionic interactions. We find that directional polarization fluctuations of iodide ions enhance Ag+ diffusion, manifesting as enhanced force fluctuations and structure in the time-dependent friction experienced by the cations. The coupling between iodide polarization fluctuations and silver diffusion creates a dynamic asymmetry; Ag+ motion is tightly linked to the instantaneous polarization of neighboring I-, whereas I- dynamics are relatively unperturbed by electronic fluctuations. For all structural and dynamic quantities investigated, the Orb model is in excellent agreement with density functional theory-based simulations, highlighting the ability of this universal neural network potential to capture many-body polarization effects. In contrast, the empirical force field fails to reproduce key structural and dynamic quantities involving cations, ultimately because it neglects dynamic electronic fluctuations. Our findings connect liquid=state ionic dynamics with the \"electronic paddle-wheel\" mechanism of ionic diffusion in superionic solids and motivate further exploration of polarization fluctuation effects in complex electrolytes and ionic liquids.",
+    "published_date": "2025-09-09",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in materials with unique electronic properties, this paper focuses on ionic dynamics and electronic fluctuations in a molten salt (AgI), a topic only tangentially related to the user's interests.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "molten salts",
+      "ionic dynamics",
+      "electronic fluctuations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5405788421630859,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.45357123017311096,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "score": 0.4407714903354645,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08174v1": {
+    "id": "2509.08174v1",
+    "title": "Comparing Machine Learning and Physics-Based Nanoparticle Geometry Determinations Using Far-Field Spectral Properties",
+    "authors": [
+      {
+        "name": "Mengqi Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Zixu Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Muammer Y. Yaman",
+        "affiliation": null
+      },
+      {
+        "name": "Maxim Ziatdinov",
+        "affiliation": null
+      },
+      {
+        "name": "Sergei V. Kalinin",
+        "affiliation": null
+      },
+      {
+        "name": "David S. Ginger",
+        "affiliation": null
+      }
+    ],
+    "summary": "Anisotropic metal nanostructures exhibit polarization-dependent light scattering. This property has been widely exploited to determine geometries of subwavelength structures using far-field microscopy. Here, we explore the use of variational autoencoders (VAEs) to determine the geometries of gold nanorods (NRs) such as in-plane orientation and aspect ratio under linearly polarized dark-field illumination in an optical microscope. We input polarized dark-field scattering spectra and electron microscopy images into a dual-branch multimodal VAE with a single shared latent space trained on paired spectra-image data, using a learnable linear adapter. We achieve prediction of Au NRs using only polarized dark-field scattering spectra input. We determine geometrical parameters of orientational angle and aspect ratio quantitatively via both dual-VAE and physics-based analysis. We show that orientational angle prediction by dual-VAE performs well with only a small (300 particle) training set, yielding a mean absolute error (MAE) of 14.4 and a concordance correlation coefficient (CCC) of 0.95. This performance is only marginally worse than the physics-based cos(2theta) fitting approach between the scattering intensity and the polarizing angle, which achieves MAE of 8.78 and CCC of 0.99. Aspect ratio determination is also similar for the dual-VAE and physics-based fitting comparison (MAE of 0.21 vs. 0.23 and CCC of 0.53 vs. 0.68). By learning a shared latent manifold linking spectra and morphology, the model can generate NR images with accurate orientation and aspect ratio with spectra-only input in the small-data regime (300 particles), suggesting a general recipe for inverse nano-optical problems requiring both structure and orientation information.",
+    "published_date": "2025-09-09",
+    "categories": [
+      "physics.optics",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning for nanoparticle geometry determination, which is a departure from the user's interest in superconductivity, strongly correlated materials, and topological semimetals.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "variational autoencoders",
+      "nanoparticle geometry",
+      "far-field spectroscopy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.38064253330230713,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3471895456314087,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.3157939910888672,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08821v1": {
+    "id": "2509.08821v1",
+    "title": "Kitaev-derived Gapless Spin Liquid in the $K$-$J$-$\u0393$-$\u0393'$ Quantum Magnet Na$_2$Co$_2$TeO$_6$",
+    "authors": [
+      {
+        "name": "Han Li",
+        "affiliation": null
+      },
+      {
+        "name": "Xu-Guang Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Gang Su",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "The realization of quantum spin liquids (QSLs) in Kitaev magnets represents an intriguing topic in frustrated quantum magnetism. Despite prediction in the pure Kitaev honeycomb model, realization of QSLs in realistic systems and materials remain scarce. The recent discovery of cobalt-based compound Na$_2$Co$_2$TeO$_6$ has raised significant research interest. By establishing a realistic $K$-$J$-$\\Gamma$-$\\Gamma'$ model for Na$_2$Co$_2$TeO$_6$ -- with a dominant antiferromagnetic (AFM) Kitaev interaction ($K>0$) that quantitatively explains its thermodynamics measurements -- we reveal an intermediate gapless QSL phase under [111] magnetic fields with tensor-network calculations. We confirm the QSL nature of this phase by demonstrating its adiabatic connection to the intensively studied intermediate QSL of the pure AFM Kitaev model under out-of-plane fields. Our results show excellent agreement with recent high-field experiments, thereby explaining the intermediate-field phase in Na$_2$Co$_2$TeO$_6$. These findings bridge the gap between theoretical proposals for a Kitaev-derived QSL and experimental realization, opening new avenues for exploring exotic quantum states of matter in realistic Kitaev materials.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum spin liquids and Kitaev interactions, which aligns with the user's interest in novel quantum materials and electronic structure.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "Kitaev magnet",
+      "quantum spin liquid",
+      "tensor-network calculations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6078869104385376,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5246959924697876,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5143900513648987,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08370v1": {
+    "id": "2509.08370v1",
+    "title": "Terahertz nonlinear response in cuprate superconductors and the Higgs field in doped Mott insulators",
+    "authors": [
+      {
+        "name": "Xiang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Zheng-Yu Weng",
+        "affiliation": null
+      }
+    ],
+    "summary": "A puzzling phenomenon has been recently revealed in terahertz nonlinear optical response experiments: A third harmonic generation (THG) signal, identified only in the superconducting (SC) phase in a conventional BCS superconductor, is found to persist into a wide pseudogap regime in the underdoped cuprate, accompanied by a $\\pi$ phase shift in the THG signal across the SC transition. In this paper, we offer a consistent understanding of such an unconventional phenomenon based on an emergent Higgs mode of the condensed holons in the doped Mott insulator. Specifically, in the lower pseudogap phase (LPP) where, although the holons still remain Bose condensed, the SC phase coherence gets disordered by excited spinons, which induce vortex-like responses from the holon condensate. By coupling to such internal fluctuations described by a mutual Chern-Simons gauge theory, we show that an external electromagnetic field can indeed produce the optical THG response in both the SC and LPP states, which are distinguished by a $\\pi$ phase shift with a substantial suppression of the THG signal in the latter regime at higher temperatures.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "The paper discusses cuprate superconductors and their unconventional behavior, linking it to the Higgs mode and Mott insulators, which aligns with the user's interest in superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "terahertz nonlinear response",
+      "Higgs mode",
+      "pseudogap phase"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5451982021331787,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.5406739711761475,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5156115889549255,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.07709v1": {
+    "id": "2509.07709v1",
+    "title": "A Tensor Network Framework for Lindbladian Spectra and Steady States",
+    "authors": [
+      {
+        "name": "Philipp Westhoff",
+        "affiliation": null
+      },
+      {
+        "name": "Mattia Moroder",
+        "affiliation": null
+      },
+      {
+        "name": "Ulrich Schollw\u00f6ck",
+        "affiliation": null
+      },
+      {
+        "name": "Sebastian Paeckel",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum systems coupled to (non-)Markovian environments attract increasing attention due to their peculiar physical properties. Exciting prospects such as unconventional non-equilibrium phases beyond the Mermin-Wagner limit, or the environment-assisted, robust preparation of highly entangled states, demand a systematic analysis of quantum many-body phases out of equilibrium. Akin to the equilibrium case, this requires the computation of the low-lying eigenstates of Lindbladians, a problem challenging conventional approaches for simulating quantum many-body systems. Here, we undertake a first step to overcome this limitation and introduce a tensor-network-based framework to compute systematically not only steady states, but also low-lying excited states with unprecedented precision for large, driven quantum many-body systems. Our framework is based on recent advances utilizing complex-time Krylov spaces, and we leverage these ideas to create a toolbox tailored to solve the challenging non-Hermitian eigenvalue problem ubiquitous in open quantum systems. At the example of the interacting Bose-Hubbard model driven by dissipation-assisted hopping, we demonstrate the high efficiency and accuracy, enabling us to perform a reliable finite-size scaling analysis of the spectral gap and demonstrating the existence of anomalous relaxation. This method unlocks the capability of spectral analysis of generic open quantum many-body systems, suitable also for non-Markovian environments.",
+    "published_date": "2025-09-09",
+    "categories": [
+      "cond-mat.quant-gas",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in quantum many-body systems, this paper focuses on open quantum systems and tensor network methods, which are not directly related to the user's previous interests in superconductivity and topological materials.",
+    "matching_keywords": [
+      "hubbard model",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Lindbladian Spectra",
+      "Open Quantum Systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7230044603347778,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.6396093964576721,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.6236424446105957,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08823v1": {
+    "id": "2509.08823v1",
+    "title": "Absence of two-orbital superconductivity in cuprate family: A DFT+DMFT perspective",
+    "authors": [
+      {
+        "name": "Jian-Hong She",
+        "affiliation": null
+      },
+      {
+        "name": "Jing-Xuan Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Rong-Qiang He",
+        "affiliation": null
+      },
+      {
+        "name": "Zhong-Yi Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "The recent discovery of high-temperature superconductivity in the bilayer nickelate La$_3$Ni$_2$O$_7$ has spurred intense interest in exploring analogous mechanisms in other transition metal oxides. This raises a pivotal question: can cuprates, as neighbors to nickelates in the periodic table, host similar two-orbital superconductivity? Here, we systematically investigate the electronic structure of a series of designed Ruddlesden-Popper cuprates. Our calculations reveal that the parent compound La$_3$Cu$_2$O$_7$ is a weakly correlated metal, and hole-doping fails to induce strong correlation. We find that the actual valence of the copper cations becomes strikingly pinned around +2.3, far away from the targeted $d^8$ configuration. This valence pinning is attributed to the inherent charge-transfer nature of cuprates. We propose this mechanism as a general principle explaining the robust single-orbital physics consistently observed in the cuprate family, holding true even in materials like the high-$T_c$ superconductor Ba$_2$CuO$_{3+\\delta}$ that appear structurally primed for two-orbital activity. Our results therefore conclude that the route towards two-orbital superconductivity is fundamentally obstructed in cuprates, providing a crucial constraint for the future design of high-temperature superconductors.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper discusses cuprates and their electronic structure in relation to superconductivity, similar to topics in previously liked papers about nickelates and other superconducting materials.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "two-orbital superconductivity",
+      "cuprates",
+      "charge-transfer"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6952036619186401,
+        "liked_paper_id": "2506.23823v1"
+      },
+      {
+        "score": 0.6950790882110596,
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC"
+      },
+      {
+        "score": 0.6939749717712402,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08254v1": {
+    "id": "2509.08254v1",
+    "title": "Nonlinear opto-magnetic signuature of d-wave altermagnets",
+    "authors": [
+      {
+        "name": "Lijun Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Long Liang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetism, a recently discovered collinear magnetic order with net zero magnetization but exhibits spin-splitting band structure, has attracted much research interest due to the rich fundamental physics and possible applications. In this work, we investigate the opto-magnetic response of $d$-wave altermagnets, focusing on the inverse Cotton-Mouton effect--the induction of static magnetization via linearly polarized light. We find that the direction of the induced magnetization is determined by the N\\'eel vector. Moreover, its magnitude exhibits a periodic dependence on the polarization angle of the incident light, a hallmark of the system's symmetry. Our findings demonstrate that the inverse Cotton-Mouton effect provides both a method of manipulating altermagnetic magnetization in altemagnets and a probe of their intrinsic properties.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses a novel magnetic order and its properties, connecting to the user's interest in unconventional superconductivity and correlated electron systems through its exploration of electronic and magnetic phenomena.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Inverse Cotton-Mouton effect",
+      "Opto-magnetic response"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49710798263549805,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.4712524116039276,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.4408807158470154,
+        "liked_paper_id": "yBtX0C4AAAAJ:hqOjcs7Dif8C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08662v1": {
+    "id": "2509.08662v1",
+    "title": "A Local-Phase Framework for the BaTi_{1-x}Zr_xO_3$ Phase Diagram: From Ferroelectricity to Dipolar Glass",
+    "authors": [
+      {
+        "name": "M. Sepliarsky",
+        "affiliation": null
+      },
+      {
+        "name": "F. Aquistapace",
+        "affiliation": null
+      },
+      {
+        "name": "F. Di Rino",
+        "affiliation": null
+      },
+      {
+        "name": "R. Machado",
+        "affiliation": null
+      },
+      {
+        "name": "M. G. Stachiotti",
+        "affiliation": null
+      }
+    ],
+    "summary": "We apply a first-principles-based atomistic model to investigate the BaTi(1-x)Zr(x)O3 phase diagram, focusing on both macroscopic and local structural changes. Our approach, which combines molecular dynamics with machine learning techniques, accurately captures the influence of Ti and Zr cations on their local environment and its evolution with composition and temperature. The computed phase diagram shows excellent agreement with existing experimental and theoretical data. Beyond reproducing known results, our analysis reveals that the behavior of the solid solution across different compositions and temperatures can be understood in terms of coexisting Ti cells with different symmetries, whose stability depends on the local B-site configuration. This local-phase-based approach provides a unified description of the distinct regions of the solid solution, including ferroelectric, relaxor, and dipolar glass phases, and captures the continuous evolution from one regime to another. Our findings demonstrate how atomic-level distortions drive the complex macroscopic behavior of the material.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on the phase diagram of BaTi(1-x)Zr(x)O3, which is distinct from the user's previously liked papers on nickelates, cuprates, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Ferroelectricity",
+      "Dipolar glass",
+      "Phase diagram"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5592561960220337,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4780788719654083,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.466823548078537,
+        "liked_paper_id": "yBtX0C4AAAAJ:vV6vV6tmYwMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.07228v1": {
+    "id": "2509.07228v1",
+    "title": "Time evolution of controlled many-body quantum systems with matrix product operators",
+    "authors": [
+      {
+        "name": "Lloren\u00e7 Balada Gaggioli",
+        "affiliation": null
+      },
+      {
+        "name": "Jakub Mare\u010dek",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a method for describing the time evolution of many-body controlled quantum systems using matrix product operators (MPOs). Existing techniques for solving the time-dependent Schr\\\"odinger equation (TDSE) with an MPO Hamiltonian often rely on time discretization. In contrast, our approach uses the Magnus expansion and Chebyshev polynomials to model the time evolution, and the MPO representation to efficiently encode the system's dynamics. This results in a scalable method that can be used efficiently for many-body controlled quantum systems. We apply this technique to quantum optimal control, specifically for a gate synthesis problem, demonstrating that it can be used for large-scale optimization problems that are otherwise impractical to formulate in a dense matrix representation.",
+    "published_date": "2025-09-08",
+    "categories": [],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses many-body quantum systems, it focuses on computational methods using matrix product operators, which is a different focus than the user's previous interests in materials and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Matrix product operators",
+      "Magnus expansion",
+      "Quantum optimal control"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5081778764724731,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4842860698699951,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.45942363142967224,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08418v1": {
+    "id": "2509.08418v1",
+    "title": "Facet: highly efficient E(3)-equivariant networks for interatomic potentials",
+    "authors": [
+      {
+        "name": "Nicholas Miklaucic",
+        "affiliation": null
+      },
+      {
+        "name": "Lai Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Rongzhi Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Nihang Fu",
+        "affiliation": null
+      },
+      {
+        "name": "Sadman Sadeed Omee",
+        "affiliation": null
+      },
+      {
+        "name": "Qingyang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Sourin Dey",
+        "affiliation": null
+      },
+      {
+        "name": "Victor Fung",
+        "affiliation": null
+      },
+      {
+        "name": "Jianjun Hu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Computational materials discovery is limited by the high cost of first-principles calculations. Machine learning (ML) potentials that predict energies from crystal structures are promising, but existing methods face computational bottlenecks. Steerable graph neural networks (GNNs) encode geometry with spherical harmonics, respecting atomic symmetries -- permutation, rotation, and translation -- for physically realistic predictions. Yet maintaining equivariance is difficult: activation functions must be modified, and each layer must handle multiple data types for different harmonic orders. We present Facet, a GNN architecture for efficient ML potentials, developed through systematic analysis of steerable GNNs. Our innovations include replacing expensive multi-layer perceptrons (MLPs) for interatomic distances with splines, which match performance while cutting computational and memory demands. We also introduce a general-purpose equivariant layer that mixes node information via spherical grid projection followed by standard MLPs -- faster than tensor products and more expressive than linear or gate layers. On the MPTrj dataset, Facet matches leading models with far fewer parameters and under 10% of their training compute. On a crystal relaxation task, it runs twice as fast as MACE models. We further show SevenNet-0's parameters can be reduced by over 25% with no accuracy loss. These techniques enable more than 10x faster training of large-scale foundation models for ML potentials, potentially reshaping computational materials discovery.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in novel materials and computational methods, this paper focuses primarily on machine learning techniques for interatomic potentials, a topic somewhat distant from the user's past interests in superconductivity, oxygen vacancies, and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "E(3)-equivariant networks",
+      "machine learning potentials",
+      "steerable graph neural networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5046995878219604,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4859248995780945,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.46113771200180054,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08498v1": {
+    "id": "2509.08498v1",
+    "title": "Benchmarking CHGNet Universal Machine Learning Interatomic Potential Against DFT and EXAFS: Case of Layered WS2 and MoS2",
+    "authors": [
+      {
+        "name": "Pjotrs \u017dguns",
+        "affiliation": null
+      },
+      {
+        "name": "Inga Pudza",
+        "affiliation": null
+      },
+      {
+        "name": "Alexei Kuzmin",
+        "affiliation": null
+      }
+    ],
+    "summary": "Universal machine learning interatomic potentials (uMLIPs) deliver near ab initio accuracy in energy and force calculations at low computational cost, making them invaluable for materials modeling. Although uMLIPs are pre-trained on vast ab initio datasets, rigorous validation remains essential for their ongoing adoption. In this study, we use the CHGNet uMLIP to model thermal disorder in isostructural layered 2Hc-WS2 and 2Hc-MoS2, benchmarking it against ab initio data and extended X-ray absorption fine structure (EXAFS) spectra, which capture thermal variations in bond lengths and angles. Fine-tuning CHGNet with compound-specific ab initio (DFT) data mitigates the systematic softening (i.e., force underestimation) typical of uMLIPs and simultaneously improves alignment between molecular dynamics-derived and experimental EXAFS spectra. While fine-tuning with a single DFT structure is viable, using ~100 structures is recommended to accurately reproduce EXAFS spectra and achieve DFT-level accuracy. Benchmarking the CHGNet uMLIP against both DFT and experimental EXAFS data reinforces confidence in its performance and provides guidance for determining optimal fine-tuning dataset sizes.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": "10.1021/acs.jctc.5c00955",
+    "score": 0.1,
+    "reasoning": "This paper focuses on benchmarking a machine learning interatomic potential for layered materials, a topic that doesn't strongly align with the user's previously liked papers on superconductivity, oxygen vacancies, or topological semimetals.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "CHGNet",
+      "Machine learning interatomic potential",
+      "EXAFS"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5321999192237854,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5079278349876404,
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC"
+      },
+      {
+        "score": 0.4846956729888916,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.07661v1": {
+    "id": "2509.07661v1",
+    "title": "Process Tensor Approaches to Non-Markovian Quantum Dynamics",
+    "authors": [
+      {
+        "name": "Jonathan Keeling",
+        "affiliation": null
+      },
+      {
+        "name": "E. Miles Stoudenmire",
+        "affiliation": null
+      },
+      {
+        "name": "Mari-Carmen Ba\u00f1uls",
+        "affiliation": null
+      },
+      {
+        "name": "David R. Reichman",
+        "affiliation": null
+      }
+    ],
+    "summary": "The paradigm of considering open quantum systems -- i.e. focusing only on the system of interest, and treating the rest of the world as an effective environment -- has proven to be a highly effective way to understand a range of quantum systems, across areas of study such as quantum optics, cold atoms, superconducting qubits, and impurities in solid-state systems. A common approach in many of these contexts has been to consider simplified approaches based on the Born and Markov approximations. While these approximations are indeed often appropriate in contexts such as quantum optics, the widespread application of these approximations has been driven more by simplicity than by accuracy. In particular, these Markovian treatments will fail in many cases, such as when coupling to the environment is not weak, when the environment is structured and has resonances, when the system couples to low-frequency modes of the environment, or when the questions of interest involve the propagation of information through the environment. Despite the fact that many real problems are non-Markovian, the Markov approximation is still widely used, as it is often assumed that a fully non-Markovian treatment is too complex to be practical. In this perspective we discuss a recently developed set of techniques that address this challenge. Centering our discussion around the notion of the process tensor, we demonstrate that the generality of the process tensor concept, coupled with efficient tensor-network methods, opens the door to the description of a wide range of observable non-Markovian processes in a wide range of open quantum systems.",
+    "published_date": "2025-09-09",
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on open quantum systems and non-Markovian dynamics, which is distinct from the user's previous interests in superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "process tensor",
+      "non-Markovian dynamics",
+      "open quantum systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5108715295791626,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5026852488517761,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.46812501549720764,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08319v1": {
+    "id": "2509.08319v1",
+    "title": "Comparative study of terbium tellurides Tb2Te5 and TbTe3",
+    "authors": [
+      {
+        "name": "I. Shamova",
+        "affiliation": null
+      },
+      {
+        "name": "V. Popova",
+        "affiliation": null
+      },
+      {
+        "name": "D. Chareev",
+        "affiliation": null
+      },
+      {
+        "name": "L. Shvanskaya",
+        "affiliation": null
+      },
+      {
+        "name": "D. Ksenofontov",
+        "affiliation": null
+      },
+      {
+        "name": "A. Demidov",
+        "affiliation": null
+      },
+      {
+        "name": "C-W. Luo",
+        "affiliation": null
+      },
+      {
+        "name": "P. Monceau",
+        "affiliation": null
+      },
+      {
+        "name": "E. Pachaud",
+        "affiliation": null
+      },
+      {
+        "name": "E. Lorenzo",
+        "affiliation": null
+      },
+      {
+        "name": "A. Sinchenko",
+        "affiliation": null
+      },
+      {
+        "name": "A. Vasiliev",
+        "affiliation": null
+      },
+      {
+        "name": "O. Volkova",
+        "affiliation": null
+      }
+    ],
+    "summary": "Two terbium tellurides, TbTe3 and Tb2Te5, were studied by means of thermodynamics, ultrafast pump-probe spectroscopy and torque magnetometry. While crystal structure and some physical properties of TbTe3 were established previously, the crystal structure of Tb2Te5 was solved only in this work in the orthorhombic space group Cmcm with the parameters of unit cell a = 4.3120(5), b = 41.0305(76) and c = 4.2979(8) {\\AA}. In contrast to TbTe3, which experiences three successive magnetic phase transitions, Tb2Te5 orders antiferromagnetically in two steps at TN1 = 9.0 K and TN2 = 6.8 K, both readily suppressed by an external magnetic field. The third transition in TbTe3 is due to the interaction of the magnetic subsystem with the charge density waves. The interaction of magnetic and electronic subsystems in Tb2Te5 has been revealed by the pump probe. Torque measurements of TbTe3 show that the magnetic moments of Tb are oriented predominantly in the ac plane at high temperatures and switch to the b axis at low temperatures. In Tb2Te5, the magnetic moments of Tb are oriented predominantly in the ac plane at low temperatures.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": "10.1103/rm6p-8hzd",
+    "score": 0.1,
+    "reasoning": "This paper primarily focuses on the magnetic and structural properties of terbium tellurides, which doesn't strongly align with the user's interest in superconductivity, oxygen vacancies, or Dirac fermions.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "Terbium tellurides",
+      "Magnetic phase transitions",
+      "Charge density waves"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5211515426635742,
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC"
+      },
+      {
+        "score": 0.5150762796401978,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "score": 0.4645034074783325,
+        "liked_paper_id": "yBtX0C4AAAAJ:rO6llkc54NcC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08352v1": {
+    "id": "2509.08352v1",
+    "title": "Comprehensive Structure Exploration and Thermodynamics of Heteroatom Doped Graphene Superstructures",
+    "authors": [
+      {
+        "name": "Benedict Saunders",
+        "affiliation": null
+      },
+      {
+        "name": "Lukas H\u00f6rmann",
+        "affiliation": null
+      },
+      {
+        "name": "Reinhard J. Maurer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Graphene has been studied in detail due to its mechanical, electrical, and thermal properties. It is well documented that the introduction of dopants or defects in the lattice can be used to tune material properties for a specific application, such as in electronics, sensors, or catalysis. To design graphene with specific properties, one must achieve control over the composition and concentration of defects. This requires a fundamental understanding of the stability of defects and their interaction in a superstructure. We present a comprehensive defect structure determination approach that enables close to exhaustive enumeration of all relevant defect structures. The approach uses a combination of Density Functional Theory and machine learning to build a transferable energy model for defect formation. Henceforth, we show the capabilities of our approach for a proof-of-principle application on free-standing graphene with heteroatom defects. This allows us to provide physical insights into defect interactions and to establish a thermodynamic model to investigate how temperature affects the configuration space of doped graphene.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on defect engineering in graphene, which is distinct from the user's interest in superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "defect engineering",
+      "graphene superstructures",
+      "thermodynamic modeling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5026184320449829,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.41752302646636963,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.40499240159988403,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.07460v1": {
+    "id": "2509.07460v1",
+    "title": "Large-scale Efficient Molecule Geometry Optimization with Hybrid Quantum-Classical Computing",
+    "authors": [
+      {
+        "name": "Yajie Hao",
+        "affiliation": null
+      },
+      {
+        "name": "Qiming Ding",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaoting Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Xiao Yuan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurately and efficiently predicting the equilibrium geometries of large molecules remains a central challenge in quantum computational chemistry, even with hybrid quantum-classical algorithms. Two major obstacles hinder progress: the large number of qubits required and the prohibitive cost of conventional nested optimization. In this work, we introduce a co-optimization framework that combines Density Matrix Embedding Theory (DMET) with Variational Quantum Eigensolver (VQE) to address these limitations. This approach substantially reduces the required quantum resources, enabling the treatment of molecular systems significantly larger than previously feasible. We first validate our framework on benchmark systems, such as H4 and H2O2, before demonstrating its efficacy in determining the equilibrium geometry of glycolic acid C2H4O3, a molecule of a size previously considered intractable for quantum geometry optimization. Our results show the method achieves high accuracy while drastically lowering computational cost. This work thus represents a significant step toward practical, scalable quantum simulations, moving beyond the small, proof-of-concept molecules that have historically dominated the field. More broadly, our framework establishes a tangible path toward leveraging quantum advantage for the in silico design of complex catalysts and pharmaceuticals.",
+    "published_date": "2025-09-09",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing for molecular geometry optimization, which is significantly different from the user's previous interests in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum computational chemistry",
+      "molecule geometry optimization",
+      "hybrid quantum-classical algorithms"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5099611282348633,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4861103594303131,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4821382761001587,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08011v1": {
+    "id": "2509.08011v1",
+    "title": "Machine learning applications in cold atom quantum simulators",
+    "authors": [
+      {
+        "name": "Henning Schl\u00f6mer",
+        "affiliation": null
+      },
+      {
+        "name": "Annabelle Bohrdt",
+        "affiliation": null
+      }
+    ],
+    "summary": "As ultracold atom experiments become highly controlled and scalable quantum simulators, they require sophisticated control over high-dimensional parameter spaces and generate increasingly complex measurement data that need to be analyzed and interpreted efficiently. Machine learning (ML) techniques have been established as versatile tools for addressing these challenges, offering strategies for data interpretation, experimental control, and theoretical modeling. In this review, we provide a perspective on how machine learning is being applied across various aspects of quantum simulation, with a focus on cold atomic systems. Emphasis is placed on practical use cases -- from classifying many-body phases to optimizing experimental protocols and representing quantum states -- highlighting the specific contexts in which different ML approaches prove effective. Rather than presenting algorithmic details, we focus on the physical insights enabled by ML and the kinds of problems in quantum simulation where these methods offer tangible benefits.",
+    "published_date": "2025-09-08",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in quantum materials and unconventional superconductivity, this paper focuses on machine learning applications within cold atom quantum simulators, which is a different area of physics.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "cold atom quantum simulators",
+      "machine learning",
+      "quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6254739165306091,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.6030583381652832,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5996459722518921,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08497v1": {
+    "id": "2509.08497v1",
+    "title": "Visualizing phonon edge states on molybdenum disulphide",
+    "authors": [
+      {
+        "name": "Patrick Giese",
+        "affiliation": null
+      },
+      {
+        "name": "Mathias Stokkebye Nissen",
+        "affiliation": null
+      },
+      {
+        "name": "Stig Helveg",
+        "affiliation": null
+      },
+      {
+        "name": "Jakob Schi\u00f8tz",
+        "affiliation": null
+      }
+    ],
+    "summary": "We employ Molecular Dynamics (MD) simulations to study atom vibrational amplitudes in carbon-supported Molybdenum Disulphide (MoS2) nanoparticles. Enhanced and correlated atom vibrational amplitudes are observed as the nanoparticle edges are approached from the bulk, consistent with recent experimental High-Resolution Transmission Electron Microscopy (HR-TEM) observations by Chen et al (Nature Communications 12, 5007 (2021). Analysis of phonon modes in finite systems explains the experimental observation by low-energy phonon modes confined at the nanoparticle edge, underscoring the need of full MD modeling for accurate HR-TEM image interpretation. Noticeably, we introduce a workflow for training Equivariant Neural Network-based machine learning potentials using limited Density Functional Theory (DFT) calculations. This approach effectively captures both covalent and van der Waals interactions, enabling accurate extrapolations of DFT calculations to larger systems with built-in error estimation.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on materials science, specifically the vibrational properties of molybdenum disulfide nanoparticles, which is a departure from the user's interest in superconductivity, topological materials, and nickelates.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Molybdenum Disulfide",
+      "Phonon Edge States",
+      "Molecular Dynamics Simulations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5825892090797424,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5195348262786865,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.49317842721939087,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
