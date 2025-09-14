@@ -48528,9 +48528,32 @@
     ],
     "summary": "Topological phases are expected to carry enhanced computational power, stemming from the long-range entanglement that characterizes them. Here we investigate whether this advantage is reflected in quantum magic, quantified through stabilizer R\\'enyi entropies (SREs). We analyze one-dimensional models with an exact duality between a symmetry-protected topological phase and a trivial one. Surprisingly, a finite (parameters dependent) asymmetry appears only when boundary conditions break the duality, and emerges as well in the transverse-field Ising chain, which lacks topological order. These results show that magic is unable to detect topological phases, indicating that either an additional resource is required to capture their unique quantum contribution, or that not all forms of long-range entanglement constitute a genuine computational resource.",
     "published_date": "2025-09-09",
-    "reasoning": "Could not be analyzed by LLM.",
-    "vector_matches": [],
-    "score": 0,
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper discusses topological phases and quantum entanglement, which are related to previous interests in topological materials and electronic structure, but the focus on quantum complexity and computational power is a significant departure.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum complexity",
+      "topological phases",
+      "quantum magic"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.507224977016449,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.4995597004890442,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.4753139615058899,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ]
@@ -48685,7 +48708,9 @@
         "liked_paper_id": "2508.17292v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.09399v1": {
     "id": "2509.09399v1",
@@ -49064,5 +49089,291 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2509.09083v1": {
+    "id": "2509.09083v1",
+    "title": "Bosonic realization of SU(3) chiral Haldane phases",
+    "authors": [
+      {
+        "name": "Linpu Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Junjun Xu",
+        "affiliation": null
+      }
+    ],
+    "summary": "We give a bosonic realization of the SU(3) antiferromagnetic Heisenberg (AFH) chain in the alternating conjugate representation, and study its phase diagram as a function of staggered interactions and anisotropy along the $T^3$ and $T^8$ directions. Unlike the SU(2) case, we observe a chiral-reversed quantum phase transition, where each competing phase is adiabatically connected to one of the chiral Haldane phases predicted in the SU(3) AFH chain with local adjoint representation. In the vicinity of the Heisenberg point, we identify a symmetry-protected topological state that appears at the first excited energy level. We also study the spontaneous $\\mathbb{Z}_3$ symmetry breaking of the system, and provide a variational wavefunction that captures the transition from the topological phase to the trivial phase. Finally, we propose an experimental realization of our bosonic model by two spin-1/2 bosons in an optical lattice.",
+    "published_date": "2025-09-11",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on a bosonic realization of SU(3) antiferromagnetic Heisenberg chains and chiral Haldane phases, which is not closely aligned with the user's previous interests in superconductivity, oxygen vacancies, and Dirac fermions.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "SU(3) antiferromagnetic Heisenberg chain",
+      "chiral Haldane phases",
+      "bosonic realization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6326635479927063,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5957173705101013,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5938396453857422,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.09463v1": {
+    "id": "2509.09463v1",
+    "title": "Minimality of Tree Tensor Network Ranks",
+    "authors": [
+      {
+        "name": "Jana Jovcheva",
+        "affiliation": null
+      },
+      {
+        "name": "Tim Seynnaeve",
+        "affiliation": null
+      },
+      {
+        "name": "Nick Vannieuwenhoven",
+        "affiliation": null
+      }
+    ],
+    "summary": "For a given tree tensor network $G$, we call a tuple of bond dimensions minimal if there exists a tensor $T$ that can be represented by this network but not on the same tree topology with strictly smaller bond dimensions. We establish necessary and sufficient conditions on the bond dimensions of a tree tensor network to be minimal, generalizing a characterization of Carlini and Kleppe about existence of tensors with a given multilinear rank. We also show that in a minimal tree tensor network, the non-minimal tensors form a Zariski closed subset, so minimality is a generic property in this sense.",
+    "published_date": "2025-09-11",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses tree tensor networks and their mathematical properties, which is a very different topic from the user's liked papers on superconductivity, quantum materials, and topological physics.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tree tensor networks",
+      "bond dimensions",
+      "multilinear rank"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.30917608737945557,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.26625800132751465,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.2543300688266754,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08868v1": {
+    "id": "2509.08868v1",
+    "title": "Real-Time String Dynamics in a $2+1$D Non-Abelian Lattice Gauge Theory: String Breaking, Glueball Formation, Baryon Blockade, and Tension Reduction",
+    "authors": [
+      {
+        "name": "Giovanni Cataldi",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Orlando",
+        "affiliation": null
+      },
+      {
+        "name": "Jad C. Halimeh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding flux string dynamics can provide insight into quark confinement and hadronization. First-principles quantum and numerical simulations have mostly focused on toy-model Abelian lattice gauge theories (LGTs). With the advent of state-of-the-art quantum simulation experiments, it is important to bridge this gap and study string dynamics in non-Abelian LGTs beyond one spatial dimension. Using tensor network methods, we simulate the real-time string dynamics of a $2\\!+\\!1$D SU$(2)$ Yang--Mills LGT with dynamical matter. In the strong-coupling regime and at resonance, string breaking occurs through sharp Casimir reduction along with meson and baryon-antibaryon formation, a distinctively non-Abelian feature. At finite baryon density, we discover a \\textit{baryon blockade} mechanism that delays string breaking. Away from resonance, the magnetic term drives purely non-Abelian fluctuations: glueball loops and self-crossed strings that resolve two SU$(2)$ intertwiners with distinct dynamics. For higher-energy strings, we uncover representation-dependent tension-reduction resonances. Our findings serve as a guide for upcoming quantum simulators of non-Abelian LGTs.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on theoretical high-energy physics and quantum simulation of gauge theories, which is a departure from the user's previously liked papers on condensed matter physics, superconductivity, and material science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Non-Abelian Lattice Gauge Theory",
+      "String Breaking",
+      "Baryon Blockade"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.502378523349762,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.44473713636398315,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.4279177188873291,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.08877v1": {
+    "id": "2509.08877v1",
+    "title": "Demystifying quantum escapism on the honeycomb lattice",
+    "authors": [
+      {
+        "name": "A. L. Chernyshev",
+        "affiliation": null
+      }
+    ],
+    "summary": "We demonstrate the versatility, simplicity, and power of the minimally-augmented spin-wave theory in studying phase diagrams of the quantum spin models in which unexpected magnetically ordered phases occur or the existing ones expand beyond their classical stability regions. We use this method to obtain approximate phase diagrams of the two paradigmatic spin-$\\frac{1}{2}$ models on the honeycomb lattice: the $J_1$-$J_3$ ferro-antiferromagnetic and $J_1$-$J_2$ antiferromagnetic $XXZ$ models. For the $J_1$-$J_3$ case, various combinations of the $XXZ$ anisotropies are analyzed. In a dramatic deviation from their classical phase diagrams, which host significant regions of the noncollinear spiral phases, quantum fluctuations stabilize several unconventional collinear phases and significantly extend conventional ones to completely supersede spiral states. These results are in close agreement with the available density-matrix renormalization group calculations. The applicability of this approach to the other models and its potential extension to different types of orders are discussed.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum spin models and magnetic ordering on a honeycomb lattice, which is somewhat related to the user's interest in correlated electron systems and unconventional superconductivity but lacks a direct connection to the previously liked topics.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "spin-wave theory",
+      "honeycomb lattice",
+      "quantum magnetism"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6978873610496521,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.6570578813552856,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.6522892713546753,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.09434v1": {
+    "id": "2509.09434v1",
+    "title": "A Low-Rank tensor framework for THB-Splines",
+    "authors": [
+      {
+        "name": "Tom-Christian Riemer",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Stoll",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a low-rank framework for adaptive isogeometric analysis with truncated hierarchical B-splines (THB-splines) that targets the main bottleneck of local refinement: memory- and time-intensive matrix assembly once the global tensor-product structure is lost. The method interpolates geometry-induced weight and source terms in separable spline spaces and computes their tensor-train (TT) representations via the alternating minimal energy (AMEn) solver, enabling level-wise assembly of system operators using univariate quadrature. To recover separability in the adaptive setting, we reduce the active basis to tensor-product domains and partition active/non-active cells into a small number of Cartesian cuboids, so each contributes a Kronecker factor that is accumulated and rounded in TT. We realize the two-scale relation with truncation in low rank and assemble the global hierarchical operators in a block TT format suitable for iterative solvers. A prototype MATLAB implementation built on the GeoPDEs package and the TT-Toolbox demonstrates that, for model problems with moderately complex refinement regions, the approach reduces memory footprint and assembly time while maintaining accuracy; we also discuss limitations when ranks grow with geometric or refinement complexity. This framework advances scalable adaptive IgA with THB-splines, particularly in three dimensions.",
+    "published_date": "2025-09-11",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on numerical methods and tensor approximations for isogeometric analysis, which is a different domain than the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor-train decomposition",
+      "Isogeometric analysis",
+      "Hierarchical B-splines"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49780967831611633,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3904423713684082,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.3779774010181427,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.09587v1": {
+    "id": "2509.09587v1",
+    "title": "PT symmetry-enriched non-unitary criticality",
+    "authors": [
+      {
+        "name": "Kuang-Hung Chou",
+        "affiliation": null
+      },
+      {
+        "name": "Xue-Jia Yu",
+        "affiliation": null
+      },
+      {
+        "name": "Po-Yao Chang",
+        "affiliation": null
+      }
+    ],
+    "summary": "The interplay between topology and quantum criticality gives rise to the notion of symmetry-enriched criticality, which has attracted considerable attention in recent years. However, its non-Hermitian counterpart remains largely unexplored. In this Letter, we show how parity-time (PT) symmetry enriches non-Hermitian critical points, giving rise to a topologically distinct non-unitary universality class. By analytically investigating non-Hermitian free fermion models with $PT$ symmetry, we uncover a new class of conformally invariant non-unitary critical points that host robust topological edge modes. Remarkably, the associated topological degeneracy is surprisingly encoded in the purely imaginary part of the entanglement entropy scaling-a feature absent in Hermitian systems. The underlying mechanism for the emergence of edge states at non-Hermitian criticality is traced to a generalized mass inversion that is absent in Hermitian systems.",
+    "published_date": "2025-09-11",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses PT symmetry and non-Hermitian systems, connecting to the user's interest in PT-symmetric real Dirac fermions.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Non-Hermitian criticality",
+      "PT symmetry",
+      "Topological edge modes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5941895246505737,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5409974455833435,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.4461499750614166,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
