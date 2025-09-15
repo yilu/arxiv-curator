@@ -49375,5 +49375,534 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2509.09275v2": {
+    "id": "2509.09275v2",
+    "title": "Neural Transformer Backflow for Solving Momentum-Resolved Ground States of Strongly Correlated Materials",
+    "authors": [
+      {
+        "name": "Lixing Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Di Luo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Strongly correlated materials, such as twisted transition-metal dichalcogenide homobilayers, host a variety of exotic quantum phases but remain notoriously difficult to solve due to strong interactions. We introduce a powerful neural network ansatz, Neural Transformer Backflow (NTB), formulated within a multi-band projection framework. It naturally enforces momentum conservation and enables efficient calculations of momentum-resolved ground states. NTB attains high accuracy on small systems and scales to higher bands and larger system sizes far beyond the reach of exact diagonalization. By evaluating observables such as the structure factor and momentum distribution, we show that NTB captures diverse correlated states in tMoTe$_2$, including charge density waves, fractional Chern insulators, and anomalous Hall Fermi liquids, within a unified framework. Our approach paves the way for understanding and discovering novel phases of matter in strongly correlated materials.",
+    "published_date": "2025-09-11",
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper addresses strongly correlated materials and utilizes advanced computational methods, aligning with the user's interest in materials science and computational physics.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Neural Transformer Backflow",
+      "Strongly Correlated Materials",
+      "Momentum-Resolved Ground States"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5608617067337036,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5436877608299255,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5111122131347656,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.10170v1": {
+    "id": "2509.10170v1",
+    "title": "Coarse-Grained BCFT Tensor Networks and Holographic Reflected Entropy in 3D Gravity",
+    "authors": [
+      {
+        "name": "Ning Bao",
+        "affiliation": null
+      },
+      {
+        "name": "Jinwei Chu",
+        "affiliation": null
+      },
+      {
+        "name": "Yikun Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Jacob March",
+        "affiliation": null
+      }
+    ],
+    "summary": "We use the framework of $\\textit{BCFT tensor networks}$ to present a microscopic CFT derivation of the correspondence between reflected entropy (RE) and entanglement wedge cross section (EW) in AdS$_3$/CFT$_2$, for both bipartite and multipartite settings. These fixed-point tensor networks, obtained by triangulating Euclidean CFT path integrals, allow us to explicitly construct the canonical purification via cutting-and-gluing CFT path integrals. Employing modular flow in the large-$c$ limit, we demonstrate that these intrinsic CFT manipulations reproduce bulk geometric prescriptions, without assuming the AdS/CFT dictionary. The emergence of bulk geometry is traced to coarse-graining over heavy states in the large-$c$ limit. Universal coarse-grained BCFT data for compact 2D CFTs, through the relation to Liouville theory with ZZ boundary conditions, yields hyperbolic geometry on the Cauchy slice. The corresponding averaged replica partition functions reproduce all candidate EWs, arising from different averaging patterns, with the dominant one providing the correct RE and EW. In this way, many heuristic tensor-network intuitions in toy models are made precise and established directly from intrinsic CFT data.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on theoretical high-energy physics (BCFT, tensor networks, AdS/CFT correspondence) which is a significant departure from the user's previous interests in condensed matter physics, superconductivity, and material science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "BCFT tensor networks",
+      "Holographic reflected entropy",
+      "AdS/CFT correspondence"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4272382855415344,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.41512811183929443,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.4087983965873718,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.10398v1": {
+    "id": "2509.10398v1",
+    "title": "Disorder-driven Weyl-Kondo Semimetal Phase in WTe$_2$",
+    "authors": [
+      {
+        "name": "Arpan Manna",
+        "affiliation": null
+      },
+      {
+        "name": "Sunit Das",
+        "affiliation": null
+      },
+      {
+        "name": "Amit Agarwal",
+        "affiliation": null
+      },
+      {
+        "name": "Soumik Mukhopadhyay",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this Letter, we report the observation of disorder-driven anisotropic Kondo screening and spontaneous Hall effect in bulk WTe${_2}$, a nonmagnetic type-II Weyl semimetal. We show that Kondo scattering emerges more prominently in disordered samples and produces magnetoresistance that is strongly anisotropic with respect to both current and magnetic field orientation, reflecting the underlying type-II Weyl dispersion. Strikingly, we find a spontaneous Hall effect in zero magnetic field, whose magnitude is enhanced with disorder, together with a large second-harmonic Hall signal exhibiting quadratic current scaling. Our analysis indicates that disorder-driven Kondo interactions pin the Fermi level near the Weyl nodes. This enhances the Berry curvature-driven nonequilibrium transport, accounting for both the second-order and spontaneous Hall responses. These findings establish disordered WTe${_2}$ as a platform hosting Weyl-Kondo fermions and highlight disorder as an effective control knob for inducing correlated topological phases in weakly correlated Weyl semimetals.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "The paper discusses Weyl semimetals, which aligns with the user's interest in topological materials and Dirac fermions, and also touches upon disorder-driven effects which relate to material properties and defects.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Weyl-Kondo semimetal",
+      "Disorder-driven Kondo screening",
+      "Spontaneous Hall effect"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5383591651916504,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5273797512054443,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5154837369918823,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.10293v1": {
+    "id": "2509.10293v1",
+    "title": "OpenCSP: A Deep Learning Framework for Crystal Structure Prediction from Ambient to High Pressure",
+    "authors": [
+      {
+        "name": "Yinan Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaoyang Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhenyu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Jing Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Jian Lv",
+        "affiliation": null
+      },
+      {
+        "name": "Han Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "High-pressure crystal structure prediction (CSP) underpins advances in condensed matter physics, planetary science, and materials discovery. Yet, most large atomistic models are trained on near-ambient, equilibrium data, leading to degraded stress accuracy at tens to hundreds of gigapascals and sparse coverage of pressure-stabilized stoichiometries and dense coordination motifs. Here, we introduce OpenCSP, a machine learning framework for CSP tasks spanning ambient to high-pressure conditions. This framework comprises an open-source pressure-resolved dataset alongside a suite of publicly available atomistic models that are jointly optimized for accuracy in energy, force, and stress predictions. The dataset is constructed via randomized high-pressure sampling and iteratively refined through an uncertainty-guided concurrent learning strategy, which enriches underrepresented compression regimes while suppressing redundant DFT labeling. Despite employing a training corpus one to two orders of magnitude smaller than those of leading large models, OpenCSP achieves comparable or superior performance in high-pressure enthalpy ranking and stability prediction. Across benchmark CSP tasks spanning a wide pressure window, our models match or surpass MACE-MPA-0, MatterSim v1 5M, and GRACE-2L-OAM, with the largest gains observed at elevated pressures. These results demonstrate that targeted, pressure-aware data acquisition coupled with scalable architectures enables data-efficient, high-fidelity CSP, paving the way for autonomous materials discovery under ambient and extreme conditions.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in materials like nickelates and cuprates, this paper focuses on a machine learning framework for crystal structure prediction generally, making it only tangentially relevant.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "crystal structure prediction",
+      "high-pressure materials",
+      "machine learning framework"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.569094717502594,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.491555392742157,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4496012330055237,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.09978v1": {
+    "id": "2509.09978v1",
+    "title": "Elemental Frequency-Based Supervised Classification Approach for the Search of Novel Topological Materials",
+    "authors": [
+      {
+        "name": "Zodinpuia Ralte",
+        "affiliation": null
+      },
+      {
+        "name": "Ramesh Kumar",
+        "affiliation": null
+      },
+      {
+        "name": "Mukhtiyar Singh",
+        "affiliation": null
+      }
+    ],
+    "summary": "The machine learning based approaches efficiently solves the goal of searching the best materials candidate for the targeted properties. The search for topological materials using traditional first-principles and symmetry-based methods often requires lots of computing power or is limited by the crystalline symmetries. In this study, we present frequency-based statistical descriptors for machine learning-driven topological material's classification that is independent of crystallographic symmetry of wave functions. This approach predicts the topological nature of a material based on its chemical formula. With a balanced dataset of 3910 materials, we have achieved classification accuracies of 82\\% with the Support Vector Machine (SVM) model and 83\\% with the Random Forest (RF) model, where both models have trained on common frequency based features. We have checked the performances of the models using $5-fold$ cross-validation approach. Further, we have validated the models on a dataset of unseen binary compounds and have efficiently identified 22 common materials using both the models. Next, we implemented the $first-principles$ approach to confirm the topological nature of these predicted materials and found the topological signatures of Dirac, Weyl, and nodal-line semimetallic phases. Therefore, we have demonstrated that the implications of frequency-based descriptors is a practical and less complex way to find novel topological materials with certain physical post-processing filters. This approach lays the groundwork for scalable, data-driven topological property screening of complex materials.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses topological materials and uses a data-driven approach, connecting to the user's interest in topological phases and computational methods.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Frequency-based descriptors",
+      "Topological material classification",
+      "Machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4026682376861572,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3435247540473938,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3185173273086548,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.09983v1": {
+    "id": "2509.09983v1",
+    "title": "Entanglement architecture of beyond-Landau quantum criticality",
+    "authors": [
+      {
+        "name": "Menghan Song",
+        "affiliation": null
+      },
+      {
+        "name": "Ting-Tung Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Liuke Lyu",
+        "affiliation": null
+      },
+      {
+        "name": "William Witczak-Krempa",
+        "affiliation": null
+      },
+      {
+        "name": "Zi Yang Meng",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum critical points beyond the Landau paradigm exhibit fractionalized excitations and emergent gauge fields. Here, we use entanglement microscopy--full tomography of the reduced density matrix of small subregions and subsequent extraction of their quantum correlations--to resolve the entanglement architecture near such exotic critical points. We focus on genuine multipartite entanglement (GME). Through unbiased quantum Monte Carlo sampling of RDMs across conventional O(2)/O(3) Wilson-Fisher transitions, and unconventional XY$^*$, and N\\'eel-VBS transitions in (2+1)d, we discover a dichotomy: Landau criticality amplifies GME within compact subregions, while non-Landau criticality redistributes entanglement into larger, loopy configurations. Key signatures at non-Landau criticality include the absence of three-spin GME, and the loss of non-loopy entanglement in unicursal regions. Similar results in a critical resonating valence bond wavefunction confirm this multipartite entanglement structure as a common feature of emergent gauge theories. Our findings reveal a distinct entanglement architecture in beyond-Landau quantum critical theories.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in unconventional superconductivity and exotic electronic states, this paper focuses primarily on theoretical quantum criticality and entanglement, a somewhat tangential area.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "multipartite entanglement",
+      "quantum criticality",
+      "entanglement microscopy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6149065494537354,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5959492325782776,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5891199707984924,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.10101v1": {
+    "id": "2509.10101v1",
+    "title": "Intrinsic disorder in the candidate quantum spin ice Pr$_2$Zr$_2$O$_7$",
+    "authors": [
+      {
+        "name": "T. J. Hicken",
+        "affiliation": null
+      },
+      {
+        "name": "P. Meadows",
+        "affiliation": null
+      },
+      {
+        "name": "D. Prabhakaran",
+        "affiliation": null
+      },
+      {
+        "name": "A. Szab\u00f3",
+        "affiliation": null
+      },
+      {
+        "name": "S. E. Dutton",
+        "affiliation": null
+      },
+      {
+        "name": "C. Castelnovo",
+        "affiliation": null
+      },
+      {
+        "name": "K. Moovendaran",
+        "affiliation": null
+      },
+      {
+        "name": "T. S. Northam de la Fuente",
+        "affiliation": null
+      },
+      {
+        "name": "L. Mangin-Thro",
+        "affiliation": null
+      },
+      {
+        "name": "G. B. G. Stenning",
+        "affiliation": null
+      },
+      {
+        "name": "M. J. Gutmann",
+        "affiliation": null
+      },
+      {
+        "name": "G. Sala",
+        "affiliation": null
+      },
+      {
+        "name": "M. B. Stone",
+        "affiliation": null
+      },
+      {
+        "name": "P. F. Henry",
+        "affiliation": null
+      },
+      {
+        "name": "D. J. Voneshen",
+        "affiliation": null
+      },
+      {
+        "name": "J. P. Goff",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum spin liquids with long-range entanglement are of great interest for applications in quantum technology. The quantum spin ice Pr$_2$Zr$_2$O$_7$ is a promising example, where it is believed that structural disorder plays a key role in enhancing quantum mechanical effects by introducing strains that split the ground state doublet akin to the effect of a local disordered transverse field. However, the precise defect structure responsible for this behaviour is unknown. Here we have determined the intrinsic defect structure of Pr$_2$Zr$_2$O$_7$ using neutron and x-ray scattering techniques supported by density functional theory. We find the main defect is the stuffing of Zr$^{4+}$ sites by Pr$^{3+}$ ions, accompanied by charge compensating O$^{2-}$ vacancies, and the relaxation of a neighbouring O$^{2-}$ ion to an interstitial site. Our results explain the single-ion magnetism by considering the non-magnetic singlets that arise on neighbouring sites as a result of the defect structure. These singlets account for additional features in the crystal electric field excitations. The effects caused by this low level of structural disorder are magnified since several neighbouring Pr sites are affected. This makes a significant contribution towards the observed broadening of pinch points in the magnetic diffuse scattering, which was previously attributed purely to quantum effects.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper discusses material defects and their impact on magnetic properties, which connects to the previous papers on oxygen vacancies and material structure, but it focuses on a different material system and phenomenon (quantum spin ice vs. superconductivity/Dirac fermions).",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "quantum spin ice",
+      "structural disorder",
+      "point defects"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6041545867919922,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5856227874755859,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5786948800086975,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.09783v1": {
+    "id": "2509.09783v1",
+    "title": "Pseudogap-induced change in the nature of the Lifshitz transition in the two-dimensional Hubbard model",
+    "authors": [
+      {
+        "name": "Maria C. O. Aguiar",
+        "affiliation": null
+      },
+      {
+        "name": "Helena Bragan\u00e7a",
+        "affiliation": null
+      },
+      {
+        "name": "Indranil Paul",
+        "affiliation": null
+      },
+      {
+        "name": "Marcello Civelli",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the behavior of the density of states and the $B_{1g}$ nematic susceptibility extracted from Raman response data across the doping-driven Lifshitz transition comparing the weak and strong interaction cases. Our results were obtained using cluster dynamical mean field theory for the two-dimensional Hubbard model. In the weakly correlated Fermi liquid regime, both quantities are approximately symmetric around the Lifshitz transition doping $p_{LT}$. In the strongly correlated regime, the low-doping pseudogap leads to an asymmetric, discontinuous evolution when the Fermi surface changes from hole-like to electron-like at $p_{LT}$. The Lifshitz transition thus changes character because it is tied to the pseudogap-Fermi-liquid transition. These results are consistent with available observations and should foster further experimental investigations.",
+    "published_date": "2025-09-11",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper uses cluster dynamical mean field theory, which is related to dynamical mean-field theory from the user's liked papers, and also studies strongly correlated materials.",
+    "matching_keywords": [
+      "dynamical mean field theory",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Lifshitz transition",
+      "Pseudogap",
+      "Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.649006724357605,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.5853460431098938,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5847359895706177,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.09938v1": {
+    "id": "2509.09938v1",
+    "title": "Predicting void nucleation in microstructure with convolutional neural networks",
+    "authors": [
+      {
+        "name": "Abhijith Thoopul Anantharanga",
+        "affiliation": null
+      },
+      {
+        "name": "Jackson Plummer",
+        "affiliation": null
+      },
+      {
+        "name": "Saryu Fensin",
+        "affiliation": null
+      },
+      {
+        "name": "Brandon Runnels",
+        "affiliation": null
+      }
+    ],
+    "summary": "Void nucleation in ductile materials subjected to high strain-rate loading remains a critical yet elusive phenomenon to understand. Traditional methods to understand void nucleation typically rely on experiments and molecular dynamics and do not capture the underlying factors leading to void nucleation. In this study, a convolutional neural network, specifically a U-Net enhanced with attention gates is developed, to predict void nucleation probability in pristine tantalum microstructures. The approach leverages a multi-channel input, incorporating four channels of grain orientations and an additional channel of grain boundary energy calculated via the lattice matching method. Void nucleation probability fields are determined from post-mortem micrographs and serve as ground truth, distinguishing void from no-void regions at the pixel level. Pixel-level class imbalance, commen in such images, is addressed by using Focal loss to guide the network's training to predict void nucleation sites more effectively. The model not only predicts void nucleation sites consistent with ground-truth but also reveals additional potential void nucleation sites, capturing the stochastic nature of void nucleation. This study shows that CNN-based models can predict void nucleation sites while considering combined interplay of factors such as grain boundary energy and grain orientation. In this way, machine learning can serve as a means to understand the underlying factors leading to void nucleation thereby contributing to a fundamental understanding of failure due to spallation in ductile materials.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on material science and machine learning techniques for void nucleation, which is distinct from the user's interest in condensed matter physics and superconductivity.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Void nucleation",
+      "Convolutional neural network",
+      "Materials failure"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.40119966864585876,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3579856753349304,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.2860909104347229,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
