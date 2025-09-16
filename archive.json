@@ -49904,5 +49904,560 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2509.11874v1": {
+    "id": "2509.11874v1",
+    "title": "Descriptor and Graph-based Molecular Representations in Prediction of Copolymer Properties Using Machine Learning",
+    "authors": [
+      {
+        "name": "Elaheh Kazemi-Khasragh",
+        "affiliation": null
+      },
+      {
+        "name": "Roc\u00edo Mercado",
+        "affiliation": null
+      },
+      {
+        "name": "Carlos Gonzalez",
+        "affiliation": null
+      },
+      {
+        "name": "Maciej Haranczyk",
+        "affiliation": null
+      }
+    ],
+    "summary": "Copolymers are highly versatile materials with a vast range of possible chemical compositions. By using computational methods for property prediction, the design of copolymers can be accelerated, allowing for the prioritization of candidates with favorable properties. In this study, we utilized two distinct representations of molecular ensembles to predict the seven different physical polymer properties copolymers using machine learning: we used a random forest (RF) model to predict polymer properties from molecular descriptors, and a graph neural network (GNN) to predict the same properties from 2D polymer graphs under both a single- and multi-task setting. To train and evaluate the models, we constructed a data set from molecular dynamic simulations for 140 binary copolymers with varying monomer compositions and configurations. Our results demonstrate that descriptors-based RFs excel at predicting density and specific heat capacities at constant pressure (Cp) and volume (Cv) because these properties are strongly tied to specific molecular features captured by molecular descriptors. In contrast, graph representations better predict expansion coefficients ({\\gamma}, {\\alpha}) and bulk modulus (K), which depend more on complex structural interactions better captured by graph-based models. This study underscores the importance of choosing appropriate representations for predicting molecular properties. Our findings demonstrate how machine learning models can expedite copolymer discovery with learnable structure-property relationships, streamlining polymer design and advancing the development of high-performance materials for diverse applications.",
+    "published_date": "2025-09-15",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning for copolymer property prediction, which is unrelated to the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Copolymer property prediction",
+      "Machine learning",
+      "Graph neural networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3719062805175781,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.36473169922828674,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.3252639174461365,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.10985v1": {
+    "id": "2509.10985v1",
+    "title": "Bridging Structure and Activity in Nanocatalysts via Machine Learning and Global Structure Representations",
+    "authors": [
+      {
+        "name": "Sofia Zinzani",
+        "affiliation": null
+      },
+      {
+        "name": "Francesca Baletto",
+        "affiliation": null
+      },
+      {
+        "name": "Kevin Rossi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Establishing a mapping between nanocatalysts structure and their catalytic properties is essential for efficient design. To this end, we demonstrate the accuracy of a general machine learning framework on a representative and challenging application: predicting the mass activity of Pt nanoparticles for the electrochemical oxygen reduction reaction, estimated via a microkinetic model. Accurate models are obtained when leveraging either a nanocatalyst's structure representation accessible at the computational level, namely the surface site generalized coordination number distributions, or one accessible experimentally, namely the nanoparticle's pair distance distribution function. Building on this result, we demonstrate that our machine learning model, in tandem with Bayesian optimization, efficiently identifies the Top-10 and Top-100 most active structures out of a large pool of candidates comprising more than 50000 different structures, after probing the activity only of a few thousand structures. These findings provide a robust blueprint for accelerated theoretical and experimental identification of active nanocatalysts.",
+    "published_date": "2025-09-13",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in materials science, this paper focuses on machine learning applied to nanocatalysis, a somewhat distant field.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "nanocatalysis",
+      "machine learning",
+      "oxygen reduction reaction"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3624398410320282,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3622768521308899,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3573443591594696,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.11028v1": {
+    "id": "2509.11028v1",
+    "title": "Interplay between Hubbard interaction and charge transfer energy in three-orbital Emery model",
+    "authors": [
+      {
+        "name": "Yan Peng",
+        "affiliation": null
+      },
+      {
+        "name": "Mi Jiang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We use the numerically unbiased determinant quantum Monte Carlo (DQMC) method to systematically investigate the three-orbital Emery model in the normal state in a wide range of local interactions, charge transfer energy, and doping levels. We focus on the influence of the onsite Hubbard $U_{dd}$ and charge transfer energy scale $\\epsilon_p$ on the electronic properties via the orbital occupancies, local moments, spin correlations, and spectral properties. Rich features of the orbital-resolved local and momentum-dependent spectra are revealed to associate with the possible Zhang-Rice singlet (ZRS) breakdown reflected by the peak splitting near the Fermi level in the heavily overdoped regime. Moreover, the pseudogap features at small charge transfer energy scale (relevant to cuprates) are shown to diminish at larger $\\epsilon_p$, which implies the weakening or absence of the pseudogap in the infinite-layer nickelates. Besides, an optimal value of $\\epsilon_p$ is identified for maximizing the antiferromagnetic (AFM) spin correlations. Our large-scale simulations provide new insights on the well-established Emery model, particularly in the regime of heavily overdoped and/or large charge transfer energy scale.",
+    "published_date": "2025-09-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses Hubbard interaction, charge transfer energy, and spectral properties in the context of cuprates and nickelates, connecting to the user's interest in superconductivity and electronic structure.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Emery model",
+      "Charge transfer energy",
+      "Zhang-Rice singlet"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7069368958473206,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.6279433965682983,
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC"
+      },
+      {
+        "score": 0.6253682374954224,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.11703v1": {
+    "id": "2509.11703v1",
+    "title": "Automated training of neural-network interatomic potentials",
+    "authors": [
+      {
+        "name": "Davide Bidoggia",
+        "affiliation": null
+      },
+      {
+        "name": "Nataliia Manko",
+        "affiliation": null
+      },
+      {
+        "name": "Maria Peressi",
+        "affiliation": null
+      },
+      {
+        "name": "Antimo Marrazzo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural-network interatomic potentials (NNIPs) have transformed atomistic simulations, by enabling molecular dynamics simulations with near ab initio accuracy at reduced computational costs and improved scalability. Despite these advances, crafting NNIPs remains complex, demanding specialized expertise in both machine learning and electronic-structure calculations. Here, we introduce an automated, open-source, and user-friendly workflow that streamlines the creation of accurate NNIPs. Our approach integrates density-functional theory, data augmentation strategies and classical molecular dynamics to systematically explore the potential energy landscape. Our active-learning strategy leverages on-the-fly calibration of committee disagreement against true errors to ensure reliable uncertainty estimates. We use electronic-structure descriptors and dimensionality reduction to analyze the efficiency of our active learning strategy, which is shown to minimize both false positives and false negatives when deciding what to relabel with ab initio calculations. The method is validated on the fully automated training of a NNIP for a diverse set of carbon allotropes, reaching state-of-the-art accuracy and data efficiency. This platform democratizes NNIP development, empowering users to achieve high-precision simulations with minimal human intervention.",
+    "published_date": "2025-09-15",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on automated training of neural network interatomic potentials, which is not directly related to the user's previously liked papers on condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "neural-network interatomic potentials",
+      "active learning",
+      "automated workflow"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5492479801177979,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5141943693161011,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5010522603988647,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.12184v1": {
+    "id": "2509.12184v1",
+    "title": "From hidden order to skyrmions: Quantum Hall states in an extended Hofstadter-Fermi-Hubbard model",
+    "authors": [
+      {
+        "name": "Fabian J. Pauw",
+        "affiliation": null
+      },
+      {
+        "name": "Ulrich Schollw\u00f6ck",
+        "affiliation": null
+      },
+      {
+        "name": "Nathan Goldman",
+        "affiliation": null
+      },
+      {
+        "name": "Sebastian Paeckel",
+        "affiliation": null
+      },
+      {
+        "name": "Felix A. Palm",
+        "affiliation": null
+      }
+    ],
+    "summary": "The interplay between topology and strong interactions gives rise to a variety of exotic quantum phases, including fractional quantum Hall (FQH) states and their lattice analogs - fractional Chern insulators (FCIs). Such topologically ordered states host fractionalized excitations, which for spinful systems are often accompanied by ferromagnetism and skyrmions. Here, we study a Hofstadter-Hubbard model of spinful fermions on a square lattice, extended by nearest-neighbor interactions. Using large-scale density matrix renormalization group (DMRG) simulations, we demonstrate the emergence of a spin-polarized $\\frac{1}{3}$-Laughlin-like FCI phase, characterized by a quantized many-body Chern number, a finite charge gap, and hidden off-diagonal long-range order. We further investigate the quantum Hall ferromagnet at $\\nu=1$ and its skyrmionic excitations upon doping. In particular, we find that nearest-neighbor repulsion is sufficient to stabilize both particle- and hole-skyrmions in the ground state around $\\nu=1$, whereas we do not find such textures around $\\nu=\\frac{1}{3}$. The diagnostic toolbox presented in this work, based on local densities, correlation functions, and spin-resolved observables, is directly applicable in quantum gas microscopy experiments. Our results open new pathways for experimental exploration of FCIs with spin textures in both ultracold atom and electronic systems.",
+    "published_date": "2025-09-15",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper discusses quantum phases and topological order in a Hubbard model, which relates to strongly correlated electron systems and potentially connects to the user's interest in unconventional superconductivity and topological materials.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "fractional Chern insulator",
+      "skyrmions",
+      "Hofstadter-Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6203370690345764,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.6193513870239258,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5992783308029175,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.11813v1": {
+    "id": "2509.11813v1",
+    "title": "Effects of training machine-learning potentials for radiation damage simulations using different pseudopotentials",
+    "authors": [
+      {
+        "name": "A. Fellman",
+        "affiliation": null
+      },
+      {
+        "name": "J. Byggm\u00e4star",
+        "affiliation": null
+      },
+      {
+        "name": "F. Granberg",
+        "affiliation": null
+      },
+      {
+        "name": "F. Djurabekova",
+        "affiliation": null
+      },
+      {
+        "name": "K. Nordlund",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning (ML) has become a commonplace approach in the development of interatomic potentials for molecular dynamics simulations, and its use also for radiation effect modelling is increasing. In this work, we investigate the effects of training ML potentials to density functional theory data calculated with different pseudopotentials in nickel. We look in detail at the differences that appear in radiation damage simulations. The use of a \"harder\" pseudopotential with semicore electrons has a direct impact on the short-range interactions, which in turn has implications on the radiation damage simulations. We find that despite these differences, the average threshold displacement energy is quite similar (40-50 eV for Ni). However, we find significant differences in the cumulative damage predicted by massively overlapping cascade simulations and compare them with Rutherford Backscattering Spectroscopy/channeling experiments. We also investigate approaches to modify the repulsive pair interactions after training the potentials and discuss the feasibility of such approaches.",
+    "published_date": "2025-09-15",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on computational materials science and machine learning applied to radiation damage in nickel, which is a departure from the user's interests in superconductivity, topological materials, and specific oxides.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning potentials",
+      "radiation damage",
+      "molecular dynamics simulations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5181585550308228,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4916878640651703,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4846270978450775,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08053v2": {
+    "id": "2509.08053v2",
+    "title": "Quantum complexity of topological phases. Or lack thereof",
+    "authors": [
+      {
+        "name": "Alberto Giuseppe Catalano",
+        "affiliation": null
+      },
+      {
+        "name": "Sven Benjamin Ko\u017ei\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "Gianpaolo Torre",
+        "affiliation": null
+      },
+      {
+        "name": "Carola Ciaramelletti",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Paganelli",
+        "affiliation": null
+      },
+      {
+        "name": "Fabio Franchini",
+        "affiliation": null
+      },
+      {
+        "name": "Salvatore Marco Giampaolo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Topological phases are expected to carry enhanced computational power, stemming from the long-range entanglement that characterizes them. Here we investigate whether this advantage is reflected in quantum magic, quantified through stabilizer R\\'enyi entropies (SREs). We analyze one-dimensional models with an exact duality between a symmetry-protected topological phase and a trivial one. Surprisingly, a finite (parameters dependent) asymmetry appears only when boundary conditions break the duality, and emerges as well in the transverse-field Ising chain, which lacks topological order. These results complement recent analysis in the literature and show that the total magic of a state is unable to detect topological phases, indicating either that a different property is required to capture their unique quantum contribution, or that not all forms of long-range entanglement constitute a genuine computational resource.",
+    "published_date": "2025-09-09",
+    "reasoning": "Could not be analyzed by LLM.",
+    "vector_matches": [],
+    "score": 0,
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.10741v1": {
+    "id": "2509.10741v1",
+    "title": "Direct Observation of the Lindhard Continuum using Resonant Inelastic X-ray Scattering",
+    "authors": [
+      {
+        "name": "Eder G. Lomeli",
+        "affiliation": null
+      },
+      {
+        "name": "Sarbajaya Kundu",
+        "affiliation": null
+      },
+      {
+        "name": "Yi-De Chuang",
+        "affiliation": null
+      },
+      {
+        "name": "Zengqing Zhuo",
+        "affiliation": null
+      },
+      {
+        "name": "Ke Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaoxing Xi",
+        "affiliation": null
+      },
+      {
+        "name": "Lingjia Shen",
+        "affiliation": null
+      },
+      {
+        "name": "Georgi L. Dakovski",
+        "affiliation": null
+      },
+      {
+        "name": "Stephan Gepr\u00e4gs",
+        "affiliation": null
+      },
+      {
+        "name": "Brian Moritz",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas P. Devereaux",
+        "affiliation": null
+      },
+      {
+        "name": "John Vinson",
+        "affiliation": null
+      },
+      {
+        "name": "Matthias F. Kling",
+        "affiliation": null
+      },
+      {
+        "name": "Edwin W. Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Jost",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding the excitations of quantum materials is essential for unraveling how their microscopic constituents interact. Among these, particle-hole excitations form a particularly important class, as they govern fundamental processes such as screening, dissipation, and transport. In metals, the continuum of electron-hole excitations is described by the Lindhard function. Although central to the theory of Fermi liquids, the corresponding Lindhard continuum has remained experimentally elusive. Here, we report its direct observation in the weakly correlated metal MgB$_{2}$ using ultra-soft resonant inelastic X-ray scattering (RIXS). We resolve a linearly dispersing excitation with velocity comparable to the Fermi velocity and find quantitative agreement with simulations of the non-interacting charge susceptibility. A detailed analysis and decomposition of the simulations reveal the intra-band origin of this low-energy excitation, confirming it as the Lindhard continuum. Our results establish ultra-soft RIXS as a momentum-resolved probe of the fermiology in metals and call for deeper investigations of continuum features in RIXS and related spectroscopy of other materials beyond MgB$_{2}$.",
+    "published_date": "2025-09-12",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper's use of resonant inelastic X-ray scattering (RIXS) overlaps with a previously liked paper, but the focus on MgB2 and the Lindhard continuum is distinct from the other topics.",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "suggested_keywords": [
+      "Lindhard continuum",
+      "MgB2",
+      "Resonant inelastic X-ray scattering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.551750898361206,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.5453275442123413,
+        "liked_paper_id": "yBtX0C4AAAAJ:70eg2SAEIzsC"
+      },
+      {
+        "score": 0.5418591499328613,
+        "liked_paper_id": "2507.00542v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.11537v1": {
+    "id": "2509.11537v1",
+    "title": "Generalization of the Affleck-Kennedy-Lieb-Tasaki Model for Quantum Ferromagnetism",
+    "authors": [
+      {
+        "name": "Isao Maruyama",
+        "affiliation": null
+      },
+      {
+        "name": "Shin Miyahara",
+        "affiliation": null
+      }
+    ],
+    "summary": "We generalize the Affleck-Kennedy-Lieb-Tasaki model to a spin-\\(S\\) ferromagnetic model with exactly-written ground states, known as the partially-magnetized valence bond solid (VBS) states with magnetization $m=(S-1)/S$.   We find that the VBS state and an antiferromagnetic ground state with magnetization $m=0$ are degenerate for $S=3/2$ and $S=2$ by using the Lanczos method and the density matrix renormalization group method (DMRG).   However, increasing $S$, the magnetization of the ground states is uniquely determined as the fraction $m=(S-1)/S$.   This is not just a ferromagnet, but a quantum ferromagnet due to quantum entanglement inherent in VBS states.   In the low-energy excitation spectrum, we find the coexistence of the Haldane gap and Goldstone-like ferromagnetic magnon excitation.   This ``magnetic chimera'' clearly appears under a finite magnetic field.   Finally, we discuss an application to the measurement-based quantum computation and an extension of the Haldane's conjecture.",
+    "published_date": "2025-09-15",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper primarily focuses on quantum ferromagnetism and the Affleck-Kennedy-Lieb-Tasaki model, which is a different area than the user's previously liked papers on superconductivity, electronic structure, and oxygen vacancies in nickelates and related materials.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Affleck-Kennedy-Lieb-Tasaki model",
+      "quantum ferromagnetism",
+      "valence bond solid states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6001086831092834,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5404099822044373,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5268364548683167,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.08254v2": {
+    "id": "2509.08254v2",
+    "title": "Nonlinear opto-magnetic signature of d-wave altermagnets",
+    "authors": [
+      {
+        "name": "Lijun Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Long Liang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetism, a recently discovered collinear magnetic order with net zero magnetization but exhibits spin-splitting band structure, has attracted much research interest due to the rich fundamental physics and possible applications. In this work, we investigate the opto-magnetic response of $d$-wave altermagnets, focusing on the inverse Cotton-Mouton effect--the induction of static magnetization via linearly polarized light. We find that the direction of the induced magnetization is determined by the N\\'eel vector. Moreover, its magnitude exhibits a periodic dependence on the polarization angle of the incident light, a hallmark of the system's symmetry. Our findings demonstrate that the inverse Cotton-Mouton effect provides both a method of manipulating altermagnetic magnetization in altemagnets and a probe of their intrinsic properties.",
+    "published_date": "2025-09-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper explores novel magnetic materials and their properties, which connects to the user's interest in unconventional electronic states and materials like nickelates and Dirac semimetals.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Opto-magnetic effect",
+      "Inverse Cotton-Mouton effect"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5100315809249878,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.4848068952560425,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.45175158977508545,
+        "liked_paper_id": "yBtX0C4AAAAJ:hqOjcs7Dif8C"
+      }
+    ],
+    "discovery_sources": []
   }
 }
