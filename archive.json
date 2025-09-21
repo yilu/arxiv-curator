@@ -53235,7 +53235,9 @@
         "liked_paper_id": "2506.15516v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.15028v1": {
     "id": "2509.15028v1",
@@ -53293,6 +53295,81 @@
         "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.14470v1": {
+    "id": "2509.14470v1",
+    "title": "Scaling Hybrid Quantum-HPC Applications with the Quantum Framework",
+    "authors": [
+      {
+        "name": "Srikar Chundury",
+        "affiliation": null
+      },
+      {
+        "name": "Amir Shehata",
+        "affiliation": null
+      },
+      {
+        "name": "Seongmin Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Muralikrishnan Gopalakrishnan Meena",
+        "affiliation": null
+      },
+      {
+        "name": "Chao Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Kalyana Gottiparthi",
+        "affiliation": null
+      },
+      {
+        "name": "Eduardo Antonio Coello Perez",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Mueller",
+        "affiliation": null
+      },
+      {
+        "name": "In-Saeng Suh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Hybrid quantum-high performance computing (Q-HPC) workflows are emerging as a key strategy for running quantum applications at scale in current noisy intermediate-scale quantum (NISQ) devices. These workflows must operate seamlessly across diverse simulators and hardware backends since no single simulator offers the best performance for every circuit type. Simulation efficiency depends strongly on circuit structure, entanglement, and depth, making a flexible and backend-agnostic execution model essential for fair benchmarking, informed platform selection, and ultimately the identification of quantum advantage opportunities. In this work, we extend the Quantum Framework (QFw), a modular and HPC-aware orchestration layer, to integrate multiple local backends (Qiskit Aer, NWQ-Sim, QTensor, and TN-QVM) and a cloud-based quantum backend (IonQ) under a unified interface. Using this integration, we execute a number of non-variational as well as variational workloads. The results highlight workload-specific backend advantages: while Qiskit Aer's matrix product state excels for large Ising models, NWQ-Sim not only leads on large-scale entanglement and Hamiltonian but also shows the benefits of concurrent subproblem execution in a distributed manner for optimization problems. These findings demonstrate that simulator-agnostic, HPC-aware orchestration is a practical path toward scalable, reproducible, and portable Q-HPC ecosystems, thereby accelerating progress toward demonstrating quantum advantage.",
+    "published_date": "2025-09-17",
+    "categories": [
+      "cs.DC"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum computing and high-performance computing integration, a distinct area from the user's previously liked materials science papers on superconductivity, oxygen vacancies, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Quantum-HPC workflows",
+      "Backend-agnostic execution",
+      "Quantum Framework"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.38116610050201416,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.35296887159347534,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.3426007628440857,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
