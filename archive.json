@@ -53577,5 +53577,1204 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2509.16916v1": {
+    "id": "2509.16916v1",
+    "title": "Nonadiabatic H-Atom Scattering Channels on Ge(111) Elucidated by the Hierarchical Equations of Motion",
+    "authors": [
+      {
+        "name": "Xiaohan Dan",
+        "affiliation": null
+      },
+      {
+        "name": "Zhuoran Long",
+        "affiliation": null
+      },
+      {
+        "name": "Tianyin Qiu",
+        "affiliation": null
+      },
+      {
+        "name": "Jan Paul Menzel",
+        "affiliation": null
+      },
+      {
+        "name": "Qiang Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Victor Batista",
+        "affiliation": null
+      }
+    ],
+    "summary": "Atomic and molecular scattering at semiconductor interfaces plays a central role in surface chemistry and catalysis, yet predictive simulations remain challenging due to strong nonadiabatic effects causing the breakdown of the Born-Oppenheimer approximation. Here, we present fully quantum simulations of H-atom scattering from the Ge(111)c(2x8) rest site using the hierarchical equations of motion (HEOM) with matrix product states (MPS). The system is modeled by mapping a density functional theory (DFT) potential energy surface onto a Newns-Anderson Hamiltonian. Our simulations reproduce the experimentally observed bimodal kinetic energy distributions, capturing both elastic and energy-loss channels. By systematically examining atom-surface coupling, incident energy, and isotope substitution, we identify the strong-coupling regime required to recover the experimental energy-loss profile. This regime suppresses the elastic peak, implying additional site-specific scattering channels in the observed elastic peak. Deuterium substitution further produces a subtle shift in the energy-loss peak, consistent with experiment. These results establish HEOM as a rigorous framework for quantum surface scattering, capable of capturing nonadiabatic dynamics beyond electronic friction and perturbative approaches.",
+    "published_date": "2025-09-21",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on surface chemistry and nonadiabatic effects in H-atom scattering on Ge(111), which is a departure from the user's previous interests in superconductivity, correlated electron systems, and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "nonadiabatic dynamics",
+      "surface scattering",
+      "hierarchical equations of motion"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5468756556510925,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5146334171295166,
+        "liked_paper_id": "yBtX0C4AAAAJ:NaGl4SEjCO4C"
+      },
+      {
+        "score": 0.4963374137878418,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.16775v1": {
+    "id": "2509.16775v1",
+    "title": "pyRMG: A Python Framework for High-Throughput, Large-Cell Real-Space MultiGrid DFT Calculations",
+    "authors": [
+      {
+        "name": "R. J. Morelock",
+        "affiliation": null
+      },
+      {
+        "name": "S. Bagchi",
+        "affiliation": null
+      },
+      {
+        "name": "E. L. Briggs",
+        "affiliation": null
+      },
+      {
+        "name": "W. Lu",
+        "affiliation": null
+      },
+      {
+        "name": "J. Bernholc",
+        "affiliation": null
+      },
+      {
+        "name": "P. Ganesh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Computational materials science has evolved toward materials informatics, where large datasets of complex, multispecies compounds are generated and evaluated using density functional theory (DFT). Materials genome projects mine these datasets for candidates with breakthrough properties, but existing databases remain limited to compounds with relatively small unit cells due to computational cost. Exascale computers now provide the power to simulate larger and more chemically realistic systems, but fully realizing this potential requires DFT codes that can efficiently scale to thousands of processors. Our real-space multigrid (RMG) DFT code's grid-decomposition approach scales nearly linearly with the number of GPUs, even for simulations exceeding thousands of atoms. This scalability makes RMG a compelling tool for high-throughput DFT studies of materials that would otherwise be bottlenecked in other codes (for example, by global Fast Fourier Transforms in plane-wave DFT). In this work, we present pyRMG, a Python package designed to streamline the setup and execution of RMG DFT calculations. Built on the pymatgen and ASE Python packages, pyRMG automates input generation and convergence checking, and integrates with modern job schedulers (e.g., Flux) on leadership-class platforms such as Frontier and Perlmutter. We demonstrate pyRMG for a high-throughput study of interfacial strain and twist-angle effects in lattice-matched, 2D Bi$_2$Se$_3$/NbSe$_2$ heterostructures, which form large, anisotropic supercells. Our results link strain and twist angle to material informatics properties, including stability and band gap, and show that pyRMG can initialize and converge challenging RMG-based workflows with limited user intervention.",
+    "published_date": "2025-09-20",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper describes a Python framework for DFT calculations, which is relevant to computational materials science and could be useful for studying materials with complex structures, similar to the user's interest in nickelates and superconductors.",
+    "matching_keywords": [
+      "XAS"
+    ],
+    "suggested_keywords": [
+      "Real-space multigrid DFT",
+      "High-throughput DFT",
+      "Materials informatics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42948251962661743,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.40452444553375244,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3770206570625305,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17843v1": {
+    "id": "2509.17843v1",
+    "title": "Machine Learning Approach to Predict Curie Temperature in Binary Alloys",
+    "authors": [
+      {
+        "name": "Svitlana Ponomarova",
+        "affiliation": null
+      },
+      {
+        "name": "Oleksandr Ponomarov",
+        "affiliation": null
+      },
+      {
+        "name": "Yurii Koval",
+        "affiliation": null
+      }
+    ],
+    "summary": "This study presents a machine learning approach to predict the Curie temperature in binary alloys, specifically focusing on the Fe-Pt, Fe-Ni, Fe-Pd, and Co-Pt compounds within a concentration range of 10 to 90 atomic percent. The optimal mathematical algorithm for this task is the Voting Ensemble algorithm, which combines the predictions from multiple individual models to produce a final prediction. The results are validated against classical methods for calculating Curie temperatures. The experimental findings indicate that factors such as external pressure, atomic ordering, and alloy composition have a significant influence on the Curie temperatures in all examined binary systems. These factors can be leveraged to design alloys with specific Curie temperatures. Moreover, the proposed features, feature analysis algorithms, and computational methods pave the way for advancements across various materials, including ternary alloys, bulk materials, and nanomaterials, inspiring innovation in the field.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning prediction of Curie temperature in binary alloys, a topic distinct from the user's prior interests in correlated electron systems, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Curie temperature prediction",
+      "Machine learning in materials science",
+      "Binary alloys"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47214341163635254,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3391747772693634,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3094977140426636,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17414v1": {
+    "id": "2509.17414v1",
+    "title": "Dimensionality effect on exceptional fermionic superfluidity with spin-dependent asymmetric hopping",
+    "authors": [
+      {
+        "name": "Soma Takemori",
+        "affiliation": null
+      },
+      {
+        "name": "Kazuki Yamamoto",
+        "affiliation": null
+      },
+      {
+        "name": "Akihisa Koga",
+        "affiliation": null
+      }
+    ],
+    "summary": "Non-Hermitian (NH) quantum systems host exceptional points (EPs), where eigenstates and eigenvalues coalesce, leading to unconventional many-body phenomena absent in Hermitian systems. While NH fermionic systems with complex interactions exhibit superfluid (SF) breakdown with EPs, spin-dependent asymmetric hopping can stabilize a NH superfluid (NH-SF) that coexists with EPs. In this work, we investigate the quasi-one-dimensional NH attractive Fermi-Hubbard model by using NH BCS theory. We demonstrate that, when the system is regarded as weakly-coupled chains, the exceptional SF phase becomes unstable and metastable (exceptional) SF state appears between the stable SF and normal states. In the one-dimensional limit, the exceptional SF disappear entirely and EPs only appear on the phase boundary between the normal and SF states. These results reveal how dimensional crossover governs the stability of the exceptional SF, providing the insights into the interplay between dimensionality and dissipation, with potential relevance for experimental implications in ultracold atoms.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "The paper discusses non-Hermitian systems and superfluidity, which has a weak connection to superconductivity and topological materials in the user's liked papers.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Non-Hermitian superfluidity",
+      "Exceptional points",
+      "Dimensional crossover"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.611609697341919,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5725605487823486,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.556358277797699,
+        "liked_paper_id": "2507.01280v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.16758v1": {
+    "id": "2509.16758v1",
+    "title": "Error stabilized logical qubits in qudit generalizations of the monitored Kitaev model",
+    "authors": [
+      {
+        "name": "Aayush Vijayvargia",
+        "affiliation": null
+      },
+      {
+        "name": "Ezra Day-Roberts",
+        "affiliation": null
+      },
+      {
+        "name": "Onur Erten",
+        "affiliation": null
+      }
+    ],
+    "summary": "Monitored dynamics in quantum circuits provide tunable platforms for the realization of novel non-equilibrium phases. Motivated by recent advances in monitored Kitaev circuits, we investigate the monitored dynamics of the qudit ($d=4$) generalizations of the Kitaev model on the honeycomb and square lattices. In the absence of additional perturbations, the measurement-only dynamics of these models map onto multi-flavor loop models and display either critical or area-law entanglement scaling. Magnetic field terms couple different flavors and when measured with sufficiently large probability, they enhance the stability of the area-law phase that hosts the logical qubits. In a circuit picture, these terms correspond to single-qubit measurements and can be interpreted as errors. We also examine the impact of two-qubit measurements that commute with the plaquette operator, which induce effective non-quadratic interactions between Majorana fermions. These interactions can drive a transition to a volume-law-entangled phase and, for sufficiently strong coupling, stabilize a distinct area-law phase with an additional logical qubit for the square lattice model. Our results reveal a rich interplay between quantum spin liquids and monitored circuit dynamics, highlighting new mechanisms for engineering and controlling entanglement phases in multi-flavor Majorana systems.",
+    "published_date": "2025-09-20",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user's interests involve unconventional superconductivity and topological materials, this paper focuses on quantum error correction and monitored quantum circuits, which are somewhat distant from the user's previously liked papers.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "monitored quantum circuits",
+      "qudit Kitaev model",
+      "error-stabilized qubits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5034980177879333,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.49246087670326233,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4718981385231018,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.15483v1": {
+    "id": "2509.15483v1",
+    "title": "Dispersion Relations in Two- and Three-Dimensional Quantum Systems",
+    "authors": [
+      {
+        "name": "Valeriia Bilokon",
+        "affiliation": null
+      },
+      {
+        "name": "Elvira Bilokon",
+        "affiliation": null
+      },
+      {
+        "name": "Illya Lukin",
+        "affiliation": null
+      },
+      {
+        "name": "Andrii Sotnikov",
+        "affiliation": null
+      },
+      {
+        "name": "Denys Bondar",
+        "affiliation": null
+      }
+    ],
+    "summary": "Extracting momentum-resolved excitation spectra in strongly correlated quantum systems remains a major challenge, especially beyond one spatial dimension. We present an efficient tensor-network approach to compute dispersion relations via imaginary-time evolution within the infinite projected entangled-pair states (iPEPS) framework. Benchmarking on the transverse-field Ising model, the method successfully captures dispersion relations in both paramagnetic and ferromagnetic phases for two- and three-dimensional lattices, achieving strong agreement with series expansion methods, where these are applicable. Crucially, this work presents the first demonstration of dispersion relation calculations for three-dimensional quantum lattice models - a long-standing computational challenge that opens entirely new research frontiers. The method demonstrates remarkable efficiency, requiring only modest computational resources while maintaining high accuracy across wide parameter ranges. Its broad applicability makes it a powerful tool for quantum simulation, photonic material design, and quantum information platforms requiring precise momentum-resolved spectra.",
+    "published_date": "2025-09-18",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses momentum-resolved excitation spectra in quantum systems, which is relevant to the user's interest in correlated electron systems and electronic structure.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Dispersion relations",
+      "Tensor-network approach",
+      "iPEPS"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5920250415802002,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.583311140537262,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5735860466957092,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.17840v1": {
+    "id": "2509.17840v1",
+    "title": "The promise of high-resolution valence band RIXS at the actinide M$_{4,5}$-edges",
+    "authors": [
+      {
+        "name": "Martin Sundermann",
+        "affiliation": null
+      },
+      {
+        "name": "Henrik Hahn",
+        "affiliation": null
+      },
+      {
+        "name": "Denise S. Christovam",
+        "affiliation": null
+      },
+      {
+        "name": "Maurits W. Haverkort",
+        "affiliation": null
+      },
+      {
+        "name": "Roberto Caciuffo",
+        "affiliation": null
+      },
+      {
+        "name": "Bernhard Keimer",
+        "affiliation": null
+      },
+      {
+        "name": "Liu Hao Tjeng",
+        "affiliation": null
+      },
+      {
+        "name": "Andrea Severing",
+        "affiliation": null
+      },
+      {
+        "name": "Hlynur Gretarsson",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding the electronic structure of actinide materials is crucial for both fundamental research and nuclear applications. The partially filled 5f shells exhibit complex behavior due to strong correlations and ligand hybridization, requiring advanced spectroscopic techniques. Here, we report on the development and application of high-resolution valence-band resonant inelastic x-ray spectroscopy (VB-RIXS) experiments at the uranium M$_{4,5}$ edges (3551 and 3725\\,eV). We present data of UO$_2$, a well-established model actinide compound. VB-RIXS is particularly well suited for probing the 5f-shell electronic structure, as it probes, in contrast to core-to-core RIXS, excitations without leaving a high-energy core hole in the final state. In VB-RIXS, we achieve energy resolutions of 50\\,meV (M$_5$) and 90\\,meV (M$_4$), enabling the resolution of multiplet excitations and crystal-field effects, as well as charge-transfer and fluorescence-like features with unprecedented clarity. As such, high resolution VB-RIXS offers direct insights into both low-energy, near ground-state properties and high-energy hybridization and covalency effects. Our results demonstrate the power of VB-RIXS as a versatile and powerful tool for probing the strongly correlated electronic structure of actinide materials, providing essential input for quantitative modeling and the validation of theoretical concepts.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper focuses on a specific application of resonant inelastic x-ray spectroscopy (RIXS) to study the electronic structure of actinide materials, which is related to the user's interest in correlated electron systems and advanced spectroscopic techniques, though the specific materials differ from previous papers.",
+    "matching_keywords": [
+      "RIXS"
+    ],
+    "suggested_keywords": [
+      "valence-band RIXS",
+      "actinide materials",
+      "uranium dioxide"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5339658260345459,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.4954558312892914,
+        "liked_paper_id": "yBtX0C4AAAAJ:dfsIfKJdRG4C"
+      },
+      {
+        "score": 0.4848713278770447,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17419v1": {
+    "id": "2509.17419v1",
+    "title": "Topical review: the nature of the ground state and possibility of a quantum spin liquid in 1T metal dichalcogenides",
+    "authors": [
+      {
+        "name": "C. J. Butler",
+        "affiliation": null
+      },
+      {
+        "name": "M. Naritsuka",
+        "affiliation": null
+      },
+      {
+        "name": "T. Hanaguri",
+        "affiliation": null
+      }
+    ],
+    "summary": "The compounds 1T-TaX2 (X = S, Se) and 1T-NbSe2 have been considered as potential hosts of a quantum spin liquid phase. This is based on the widely held view that the Mott-Hubbard mechanism drives the insulating behaviour of its charge density wave ground state, resulting in localized spins, interacting antiferromagnetically, on a geometrically frustrated lattice. However this assumes layer-wise independent behaviour. A growing body of evidence shows not only that inter-layer interactions are very significant in 1T-TaS2, but also that they mediate some of its most interesting functional properties. Here we offer a perspective from the point of view of scanning tunnelling microscopy that helps to visualize the microscopic degrees of freedom of inter-layer interactions in bulk 1T-TaS2, and the associated impact on the local density-of-states, including the occurrence of multiple distinct insulating phases. We consider to what extent the bulk of 1T-TaS2, and its surface terminations can be considered as Mott insulating and whether, or where, quantum spin liquid behaviour might persist. To better understand the bulk behaviour we also draw insights from measurements on isolated monolayers of 1T-TaX2 and 1T-NbSe2, where the confounding complications of inter-layer interactions are absent. We highlight some outstanding questions raised by a comprehensive evaluation of the experimental results, and finally suggest future experiments that could address them.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": "10.1088/1361-648X/ae0779",
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in correlated electron systems and unconventional phenomena, this paper focuses on charge density waves and Mott insulating behavior in transition metal dichalcogenides, which are somewhat related but not a primary focus.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "charge density wave",
+      "Mott insulator",
+      "quantum spin liquid"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5926810503005981,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5480457544326782,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5442888736724854,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.15907v1": {
+    "id": "2509.15907v1",
+    "title": "Incorporating Coulomb interactions with fixed charges in Moment Tensor Potentials and Equivariant Tensor Network Potentials",
+    "authors": [
+      {
+        "name": "Dmitry Korogod",
+        "affiliation": null
+      },
+      {
+        "name": "Olga Chalykh",
+        "affiliation": null
+      },
+      {
+        "name": "Max Hodapp",
+        "affiliation": null
+      },
+      {
+        "name": "Nikita Rybin",
+        "affiliation": null
+      },
+      {
+        "name": "Ivan S. Novikov",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander V. Shapeev",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this work, we incorporate long-range electrostatic interactions in the form of the Coulomb model with fixed charges into the functional form of short-range machine-learning interatomic potentials (MLIPs), particularly in the Moment Tensor Potential and Equivariant Tensor Network potential. We show that explicit incorporation of the Coulomb interactions with fixed charges leads to a significant reduction of energy fitting errors, namely, more than four times, of short-range MLIPs trained on organic dimers of charged molecules. Furthermore, with our long-range models we demonstrate a significant improvement in the prediction of the binding curves of the organic dimers of charged molecules. Finally, we show that the results calculated with MLIPs are in good correspondence with those obtained with density functional theory for organic dimers of charged molecules.",
+    "published_date": "2025-09-19",
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in correlated electron systems and novel materials, this paper focuses on improving machine learning potentials for molecular systems, which is a somewhat tangential application.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Machine-learning interatomic potentials",
+      "Coulomb interactions",
+      "Equivariant Tensor Network potential"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49381378293037415,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.4480957090854645,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.42614203691482544,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.16271v1": {
+    "id": "2509.16271v1",
+    "title": "Application of X-ray Absorption Spectroscopy with a laboratory X-ray powder diffractometer",
+    "authors": [
+      {
+        "name": "Milen Gateshki",
+        "affiliation": null
+      },
+      {
+        "name": "Charalampos Zarkadas",
+        "affiliation": null
+      },
+      {
+        "name": "Detlef Beckers",
+        "affiliation": null
+      }
+    ],
+    "summary": "A novel method and experimental configuration are proposed that allow the collection of high-quality X-ray absorption spectroscopy (XAS) data in transmission mode on a standard laboratory diffractometer. This configuration makes use of components that have been developed for application in modern laboratory diffractometers, such as X-ray tubes with enhanced stability, accurate goniometers and position-sensitive photon-counting detectors with improved energy resolution. Such approach may extend the application of XAS in materials research, particularly for users of diffraction methods.",
+    "published_date": "2025-09-18",
+    "categories": [
+      "physics.ins-det",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses X-ray absorption spectroscopy, a technique related to X-ray scattering which was used in one of the liked papers, making it potentially relevant.",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "suggested_keywords": [
+      "X-ray absorption spectroscopy",
+      "Laboratory diffractometer",
+      "Transmission mode"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48162397742271423,
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC"
+      },
+      {
+        "score": 0.46018338203430176,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      },
+      {
+        "score": 0.4082942605018616,
+        "liked_paper_id": "yBtX0C4AAAAJ:70eg2SAEIzsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17825v1": {
+    "id": "2509.17825v1",
+    "title": "Role of Oxygen during Methane Oxidation on Pd$_1$/PdO$_1$@CeO$_2$ Surface: A Combined Density Functional Theory, Microkinetic, and Machine Learning Approach",
+    "authors": [
+      {
+        "name": "Shalini Tomar",
+        "affiliation": null
+      },
+      {
+        "name": "Hojin Jeong",
+        "affiliation": null
+      },
+      {
+        "name": "Joon Hwan Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Seung-Cheol Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Satadeep Bhattacharjee",
+        "affiliation": null
+      }
+    ],
+    "summary": "This work explores the role of oxygen in industrial methane oxidation. Oxygen, a well-known oxidizing agent, drives CH$_4$ conversion to CO$_2$ and H$_2$O. We report how oxygen influences oxidation on single Pd and PdO clusters supported on CeO$_2$(111). Oxygen is introduced by (1) lattice O in PdO and (2) O$_2$ adsorption on an isolated Pd atom, forming PdO$_x$ clusters. Density-functional theory (DFT) mapped multiple reaction pathways on the Pd$_1$/PdO$_1$@CeO$_2$(111) surface; both Pd and PdO clusters were found to thermodynamically favour methane activation. The computed barrier for CH$_4$ activation is 0.63 eV on PdO$_1$@CeO$_2$(111). A single Pd atom markedly accelerates O$_2$ dissociation to PdO$_2$, and the presence of lattice oxygen lowers this barrier by 0.36 eV relative to an oxygen-deficient surface, enhancing catalytic efficiency. Reaction selectivity, coverage-dependent production rates, degree of rate control (DRC), and intrinsic turnover frequency (TOF) were quantified through steady-state microkinetic modelling. The simulations predict full conversion of CH$_4$ to CO$_2$ and H$_2$O above 600 K, whereas partial-oxidation intermediates dominate at lower temperature and high O coverage. Rate constants for all elementary steps were derived via the Sure Independence Screening and Sparsifying Operator (SISSO) symbolic-regression method, yielding a concise predictive expression based on charge, coordination number, and key Pd-O/C-H distances. These combined DFT-microkinetic-SISSO results clarify oxygen's mechanistic participation and provide practical guidelines for designing Pd/CeO$_2$ catalysts with improved activity toward methane oxidation, a reaction of pressing environmental and industrial importance.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on methane oxidation and catalyst design, which is a different area than the user's liked papers on superconductivity and electronic structure of materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Methane oxidation",
+      "Pd/CeO2 catalysts",
+      "Microkinetic modeling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46806466579437256,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      },
+      {
+        "score": 0.4239221513271332,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      },
+      {
+        "score": 0.4183615446090698,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17023v1": {
+    "id": "2509.17023v1",
+    "title": "Magnetic Frustration in CuYbSe$_2$: an Yb-Based Triangular Lattice Selenide",
+    "authors": [
+      {
+        "name": "Barkha Khattar",
+        "affiliation": null
+      },
+      {
+        "name": "Anzar Ali",
+        "affiliation": null
+      },
+      {
+        "name": "Masahiko Isobe",
+        "affiliation": null
+      },
+      {
+        "name": "Yogesh Singh",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Yb based triangular lattice delafossites $A$Yb$X_2$ ($A$ = alkali metal, $X$ = O, S, Se) have recently been studied as quantum spin liquid candidates. We report the synthesis of powders and single crystals of CuYbSe$_2$ with a perfect triangular lattice of Yb$^{3+}$ moments. Magnetic susceptibility and heat capacity measurements reveal no evidence of long-range magnetic ordering down to $1.8$~K in spite of a significant antiferromagnetic exchange between Yb$^{3+}$ moments, suggesting a frustrated magnetic system. Electrical resistivity measurements indicate insulating behavior, consistent with the localized nature of magnetic moments. Heat capacity reveals that CuYbSe$_2$ can be treated as an effective spin $S = 1/2$ triangular lattice antiferromagnet below $\\sim 50$~K. Magnetic susceptibility measurements on single crystals reveals weak magnetic anisotropy. These properties position CuYbSe$_2$ as a promising candidate for a quantum spin liquid state and as a new platform for exploring exotic magnetic ground states in triangular lattice systems.",
+    "published_date": "2025-09-21",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on magnetic frustration in a specific material (CuYbSe$_2$) which is not directly related to the user's liked papers on superconductivity, oxygen vacancies, Dirac fermions, or DMFT solvers.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "Magnetic Frustration",
+      "Quantum Spin Liquid",
+      "Triangular Lattice Antiferromagnet"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6370079517364502,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "score": 0.5488218069076538,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5341516733169556,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17464v1": {
+    "id": "2509.17464v1",
+    "title": "Predicting the Curie Temperature of Magnetic Materials with Machine Learning: Descriptor Engineering, Graph Neural Networks, and the Role of Curated Data",
+    "authors": [
+      {
+        "name": "Akram Abedi Orang",
+        "affiliation": null
+      },
+      {
+        "name": "Mojtaba Alaei",
+        "affiliation": null
+      },
+      {
+        "name": "Artem R. Oganov",
+        "affiliation": null
+      }
+    ],
+    "summary": "Predicting the Curie temperature ($T_\\mathrm{C}$) of magnetic materials is crucial for advancing applications in data storage, spintronics, and sensors. We present a machine learning (ML) framework to predict $T_{\\mathrm{C}}$ using a curated dataset of 2,500 ferromagnetic compounds, employing two types of elemental descriptor-based features: one based on stoichiometry-weighted descriptors, and the other leveraging Graph Neural Networks (GNNs). CatBoost trained on the stoichiometry-weighted descriptors achieved an $R^2$ score of 0.87, while the use of GNN-based representations led to a further improvement, with CatBoost reaching an $R^2$ of 0.91, highlighting the effectiveness of graph-based feature learning. We also demonstrated that using an uncurated dataset available online leads to poor predictions, resulting in a low $R^2$ score of 0.66 for the CatBoost model. We analyzed feature importance using tools such as Recursive Feature Elimination (RFE), which revealed that ionization energies are a key physicochemical factor influencing $T_\\mathrm{C}$. Notably, the use of only the first 10 ionization energies as input features resulted in high predictive accuracy, with $R^2$ scores of up to 0.85 for statistical models and 0.89 for the GNN-based approach. These results highlight that combining robust ML models with thoughtful feature engineering and high-quality data, can accelerate the discovery of magnetic materials. Our curated dataset is publicly available on GitHub.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in materials and electronic properties, this paper focuses on machine learning applications in predicting magnetic material properties, a different area than the user's prior interests.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Curie temperature prediction",
+      "Machine learning for materials",
+      "Magnetic materials discovery"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4157133102416992,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.39696359634399414,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.33068254590034485,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17862v1": {
+    "id": "2509.17862v1",
+    "title": "The Open Catalyst 2025 (OC25) Dataset and Models for Solid-Liquid Interfaces",
+    "authors": [
+      {
+        "name": "Sushree Jagriti Sahoo",
+        "affiliation": null
+      },
+      {
+        "name": "Mikael Maraschin",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel S. Levine",
+        "affiliation": null
+      },
+      {
+        "name": "Zachary Ulissi",
+        "affiliation": null
+      },
+      {
+        "name": "C. Lawrence Zitnick",
+        "affiliation": null
+      },
+      {
+        "name": "Joel B Varley",
+        "affiliation": null
+      },
+      {
+        "name": "Joseph A. Gauthier",
+        "affiliation": null
+      },
+      {
+        "name": "Nitish Govindarajan",
+        "affiliation": null
+      },
+      {
+        "name": "Muhammed Shuaibi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Catalysis at solid-liquid interfaces plays a central role in the advancement of energy storage and sustainable chemical production technologies. By enabling accurate, long-time scale simulations, machine learning (ML) models have the potential to accelerate the discovery of (electro)catalysts. While prior Open Catalyst datasets (OC20 and OC22) have advanced the field by providing large-scale density functional theory (DFT) data of adsorbates on surfaces at solid-gas interfaces, they do not capture the critical role of solvent and electrolyte effects at solid-liquid interfaces. To bridge this gap, we introduce the Open Catalyst 2025 (OC25) dataset, consisting of 7,801,261 calculations across 1,511,270 unique explicit solvent environments. OC25 constitutes the largest and most diverse solid-liquid interface dataset that is currently available and provides configurational and elemental diversity: spanning 88 elements, commonly used solvents/ions, varying solvent layers, and off-equilibrium sampling. State-of-the-art models trained on the OC25 dataset exhibit energy, force, and solvation energy errors as low as 0.1 eV, 0.015 eV/\\r{A}, and 0.04 eV, respectively; significantly lower than than the recently released Universal Models for Atoms (UMA-OC20). Additionally, we discuss the impact of the quality of DFT-calculated forces on model training and performance. The dataset and accompanying baseline models are made openly available for the community. We anticipate the dataset to facilitate large length-scale and long-timescale simulations of catalytic transformations at solid-liquid interfaces, advancing molecular-level insights into functional interfaces and enabling the discovery of next-generation energy storage and conversion technologies.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on computational materials science and catalysis at solid-liquid interfaces, which is a departure from the user's interests in superconductivity, Dirac fermions, and nickelates.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "solid-liquid interfaces",
+      "catalysis",
+      "machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4267326593399048,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.38610488176345825,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      },
+      {
+        "score": 0.36349430680274963,
+        "liked_paper_id": "yBtX0C4AAAAJ:NaGl4SEjCO4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.18075v1": {
+    "id": "2509.18075v1",
+    "title": "Pseudogap in a Fermi-Hubbard quantum simulator",
+    "authors": [
+      {
+        "name": "Lev Haldar Kendrick",
+        "affiliation": null
+      },
+      {
+        "name": "Anant Kale",
+        "affiliation": null
+      },
+      {
+        "name": "Youqi Gang",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander Dennisovich Deters",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Lebrat",
+        "affiliation": null
+      },
+      {
+        "name": "Aaron W. Young",
+        "affiliation": null
+      },
+      {
+        "name": "Markus Greiner",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding doped Mott insulators is a fundamental goal in condensed matter physics, with relevance to cuprate superconductors and other quantum materials. The doped Hubbard model minimally describes such systems, and has explicated some of their complex behavior. However, many open questions remain concerning the anomalous metallic states which emerge at low temperatures and intermediate doping and which, in cuprates, give rise to high-temperature superconductivity upon cooling. Here we observe a crossover between a normal metal and a pseudogapped metal in the Hubbard model by performing thermodynamic and spectroscopic measurements in a cold atom quantum simulator, leveraging a recent several-fold reduction in experimentally achievable temperatures. Measurements of the compressibility show a maximum versus doping that develops upon cooling, signaling an inflection point in the equation of state. We track this maximum versus interaction strength, revealing a line of thermodynamic anomalies in the phase diagram that separates an underdoped from an overdoped metal at large interactions. Lattice modulation spectroscopy shows a loss of spectral weight at low energies in the underdoped regime which is non-uniform in the Brillouin zone, indicating the formation of a pseudogap. We use this signal to establish a pseudogap phase diagram as a function of interactions and doping. Our results experimentally demonstrate the existence of a pseudogapped metal in the Hubbard model, partially characterize the pseudogap regime, and suggest a link between the pseudogap and charge order which can be probed in future work. Furthermore, this work demonstrates the utility of quantum simulation in addressing frontier problems in correlated electron physics.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el",
+      "physics.atom-ph"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "This paper investigates the pseudogap phase in the Hubbard model, a key topic in understanding doped Mott insulators and cuprate superconductors, aligning strongly with the user's interest in superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Fermi-Hubbard model",
+      "pseudogap",
+      "quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7344663143157959,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.6174132823944092,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.6005029082298279,
+        "liked_paper_id": "2506.16503v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.16601v1": {
+    "id": "2509.16601v1",
+    "title": "The Good, the Bad, and the Ugly of Atomistic Learning for \"Clusters-to-Bulk\" Generalization",
+    "authors": [
+      {
+        "name": "Miko\u0142aj J. Gawkowski",
+        "affiliation": null
+      },
+      {
+        "name": "Mingjia Li",
+        "affiliation": null
+      },
+      {
+        "name": "Benjamin X. Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Venkat Kapil",
+        "affiliation": null
+      }
+    ],
+    "summary": "Training machine learning interatomic potentials (MLIPs) on total energies of molecular clusters using differential or transfer learning is becoming a popular route to extend the accuracy of correlated wave-function theory to condensed phases. A key challenge, however, lies in validation, as reference observables in finite-temperature ensembles are not available at the reference level. Here, we construct synthetic reference data from pretrained MLIPs and evaluate the generalizability of cluster-trained models on ice-Ih, considering scenarios where both energies and forces and where only energies are available for training. We study the accuracy and data-efficiency of differential, single-fidelity transfer, and multi-fidelity transfer learning against ground-truth thermodynamic observables. We find that transferring accuracy from clusters to bulk requires regularization, which is best achieved through multi-fidelity transfer learning when training on both energies and forces. By contrast, training only on energies introduces artefacts: stable trajectories and low energy errors conceal large force errors, leading to inaccurate microscopic observables. More broadly, we show that accurate reproduction of microscopic structure correlates strongly with low force errors but only weakly with energy errors, whereas global properties such as energies and densities correlate with low energy errors. This highlights the need to incorporate forces during training or to apply careful validation before production. Our results highlight the promise and pitfalls of cluster-trained MLIPs for condensed phases and provide guidelines for developing - and critically, validating - robust and data-efficient MLIPs.",
+    "published_date": "2025-09-20",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning interatomic potentials and their application to condensed phases, which is not directly related to the user's interests in superconductivity, electronic structure, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "MLIPs",
+      "Transfer learning",
+      "Atomistic learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5368144512176514,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5212944149971008,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.492684543132782,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.16200v1": {
+    "id": "2509.16200v1",
+    "title": "Exploring confinement transitions in $\\mathbb{Z}_2$ lattice gauge theories with dipolar atoms beyond one dimension",
+    "authors": [
+      {
+        "name": "Matja\u017e Kebri\u010d",
+        "affiliation": null
+      },
+      {
+        "name": "Lin Su",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander Douglas",
+        "affiliation": null
+      },
+      {
+        "name": "Michal Szurek",
+        "affiliation": null
+      },
+      {
+        "name": "Ognjen Markovi\u0107",
+        "affiliation": null
+      },
+      {
+        "name": "Ulrich Schollw\u00f6ck",
+        "affiliation": null
+      },
+      {
+        "name": "Annabelle Bohrdt",
+        "affiliation": null
+      },
+      {
+        "name": "Markus Greiner",
+        "affiliation": null
+      },
+      {
+        "name": "Fabian Grusdt",
+        "affiliation": null
+      }
+    ],
+    "summary": "Confinement of particles into bound states is a phenomenon spanning from high-energy to condensed matter physics, which can be studied in the framework of lattice gauge theories (LGTs). Achieving a comprehensive understanding of confinement continues to pose a major challenge, in particular at finite matter density and in the presence of strong quantum fluctuations. State-of-the-art quantum simulators constitute a promising platform to address this problem. Here we study confinement in coupled chains of $\\mathbb{Z}_2$ LGTs coupled to matter fields, that can be mapped to a mixed-dimensional (mixD) XXZ model. We perform large-scale numerical matrix-product state calculations to obtain the phase diagram of this model, in which we uncover striped phases formed by the $\\mathbb{Z}_2$ charges that can be melted at finite temperature or by increasing the tunneling rate. To explore this setting experimentally, we use our quantum simulator constituted by erbium atoms with dipolar interactions in a quantum gas microscope, and observe the predicted melting of a stripe phase by increasing the particle tunneling rate. Our explorative experimental studies of thermal deconfinement of $\\mathbb{Z}_2$ charges motivate our further theoretical study of the mixD $\\mathbb{Z}_2$ LGT, in which we predict a confined meson gas at finite temperature and low magnetization where thermal fluctuations destroy stripes but enable spontaneous commensurate spin order. Overall, we demonstrate that our platform can be used to study confinement in $\\mathbb{Z}_2$ LGTs coupled to matter fields, including long-range interactions and beyond one dimension, paving the way for future research of confinement in the quantum many-body regime.",
+    "published_date": "2025-09-19",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el",
+      "physics.atom-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses quantum many-body systems and simulations, it focuses on lattice gauge theories and confinement transitions, which are not directly aligned with the user's previous interests in superconductivity and electronic structure of specific materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "lattice gauge theories",
+      "confinement transitions",
+      "quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.61455899477005,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.6138067245483398,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.591215193271637,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.17833v1": {
+    "id": "2509.17833v1",
+    "title": "How Realistic are Idealized Copper Surfaces? A Machine Learning Study of Rough Copper-Water Interfaces",
+    "authors": [
+      {
+        "name": "Linus C. Erhard",
+        "affiliation": null
+      },
+      {
+        "name": "Johannes Sch\u00f6rghuber",
+        "affiliation": null
+      },
+      {
+        "name": "Aleix Comas-Vives",
+        "affiliation": null
+      },
+      {
+        "name": "Georg K. H. Madsen",
+        "affiliation": null
+      }
+    ],
+    "summary": "Copper is a highly promising catalyst for the electrochemical CO$_2$ reduction reaction (CO2RR) since it is the only pure metal that can form highly added-value products such as ethylene and ethanol. Since the CO2RR takes place in aqueous solution, the detailed atomic structure of the water-copper interface is essential for unraveling the key reaction mechanisms. In this study, we investigate copper-water interfaces exhibiting nanometer-scale roughnesses. We introduce two molecular dynamics protocols to create rough copper surfaces, which are subsequently brought into contact with water. From these interfaces, we sample additional training configurations from machine-learning-interatomic-potential-driven molecular dynamics simulations containing hundreds of thousands of atoms. An active learning workflow is developed to identify regions with high spatially resolved uncertainty and convert them into DFT-feasible cells through a modified amorphous matrix embedding approach. Finally, we analyze the local environments at the interface using unsupervised machine-learning techniques. Unique environments emerge on the rough copper surfaces absent from model systems, including stacking-fault-induced configurations and undercoordinated corner atoms. Notably, corner atoms consistently feature chemisorbed water molecules in our simulations, indicating their potential importance in catalytic processes.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in superconductivity and oxides, this paper focuses on copper interfaces with water and CO2RR, which are distinct topics.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "copper-water interface",
+      "electrochemical CO2 reduction",
+      "rough copper surfaces"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4571884274482727,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.45331454277038574,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.417171448469162,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.15295v1": {
+    "id": "2509.15295v1",
+    "title": "Living on the edge: a non-perturbative resolution to the negativity of bulk entropies",
+    "authors": [
+      {
+        "name": "Stefano Antonini",
+        "affiliation": null
+      },
+      {
+        "name": "Luca V. Iliesiu",
+        "affiliation": null
+      },
+      {
+        "name": "Pratik Rath",
+        "affiliation": null
+      },
+      {
+        "name": "Patrick Tran",
+        "affiliation": null
+      }
+    ],
+    "summary": "Lin, Maldacena, Rozenberg, and Shan (LMRS) presented a new information paradox in black hole physics by noticing that the entanglement and R\\'enyi entropies in a two-sided black hole can become negative when the geometry contains a very large number of matter excitations behind the black hole horizon. While originally this puzzle was presented in the context of BPS two-sided black holes in two-dimensional supergravity, the negativity in fact persists for more general two-sided black holes in the presence of a large number of matter excitations. Since the entanglement and R\\'enyi entropies in ordinary quantum systems cannot be negative, resolving this puzzle is a necessary step towards understanding the quantum mechanical description of black holes. In this paper, we explain how to address the entanglement negativity puzzle, both in the original setting discussed by LMRS and in more general non-supersymmetric settings, by summing over all non-perturbative contributions to the gravitational path integral. We then interpret this result from the point of view of a dual matrix integral, which we use to extend our analysis beyond the regime of validity of the genus re-summation performed in the gravitational path integral. In this regime, positivity is rescued by new saddles of the matrix integral, a one-eigenvalue instanton and a two-eigenvalue instanton. Finally, we formulate a similar puzzle and its resolution using random tensor network techniques.",
+    "published_date": "2025-09-18",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on theoretical black hole physics and quantum gravity, a departure from the user's previous interests in condensed matter physics, superconductivity, and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "entanglement negativity",
+      "black hole information paradox",
+      "matrix integral"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3348575234413147,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.30754873156547546,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.29399406909942627,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.17362v1": {
+    "id": "2509.17362v1",
+    "title": "Universal Scaling Functions of the Gr{\u00fc}neisen Ratio near Quantum Critical Points",
+    "authors": [
+      {
+        "name": "Xuan Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Enze Lv",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Qi",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Gr\\\"uneisen ratio, defined as $\\Gamma_g \\equiv (1/T) (\\partial T/\\partial g)_S$, serves as a highly sensitive probe for detecting quantum critical points (QCPs) driven by an external feild $g$ and for characterizing the magnetocaloric effect (MCE). Near a QCP, the Gr\\\"uneisen ratio displays a universal divergence which is governed by a universality-class-dependent scaling function stemming from the scale invariance. In this work, we systematically investigate the universal scaling functions of Gr\\\"uneisen ratio in both one-dimensional (1D) and two-dimensional (2D) quantum spin systems, including the transverse-field Ising model, the spin-1/2 Heisenberg model, the quantum $q$-state Potts model ($q=3,4$) and the $J_1$-$J_2$ columnar dimer model. Our approach employs the thermal tensor-network method for infinite-size 1D systems and the stochastic series expansion quantum Monte Carlo (SSE QMC) simulations for 2D systems, enabling precise calculations of the Gr\\\"uneisen ratio near QCPs. Through data collapse analysis, we extract the corresponding scaling functions, which establish quantitative frameworks to interpret magnetocaloric experiments and guide the development of ultralow-temperature refrigeration.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in quantum materials and phenomena, this paper focuses on theoretical calculations and universal scaling functions near quantum critical points, which is a more general condensed matter physics topic and less directly related to the user's previous interests.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Gr\u00fcneisen ratio",
+      "quantum critical points",
+      "magnetocaloric effect"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5035165548324585,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5025864839553833,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.4886495769023895,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.17648v1": {
+    "id": "2509.17648v1",
+    "title": "Emergent Composite Particles from the Universal Exact Identities in Quantum Many-Body Systems with Generic Bilinear Interactions",
+    "authors": [
+      {
+        "name": "Hui Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "A fundamental challenge in quantum many-body physics is to understand the universal properties of strongly correlated systems. In this work, we establish a universal and exact identity from the Dyson-Schwinger equations within the Keldysh-Schwinger field theory for systems with generic bilinear interactions. Our derivation demonstrates the emergence of composite particles as \"elementary excitations\", whose Green's functions definitively determine the original single-particle Green's function. This universal relation uniquely identifies the composite particles governing correlations and rigorously connects their spectra to the observable single-particle spectrum. Thus, our exact identity reveals a new pathway toward a paradigm for understanding many-body correlated systems.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the paper deals with quantum many-body systems, the connection to the user's interests in specific materials and methods like DMFT or specific compounds like nickelates is not strong, suggesting moderate relevance.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "composite particles",
+      "Dyson-Schwinger equations",
+      "Keldysh-Schwinger field theory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49619895219802856,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.44003498554229736,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.43158650398254395,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
