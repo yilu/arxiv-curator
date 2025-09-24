@@ -53638,7 +53638,9 @@
         "liked_paper_id": "2507.01856v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.16775v1": {
     "id": "2509.16775v1",
@@ -54734,7 +54736,9 @@
         "liked_paper_id": "2506.15516v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.17648v1": {
     "id": "2509.17648v1",
@@ -54776,5 +54780,911 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2509.19180v1": {
+    "id": "2509.19180v1",
+    "title": "Bayesian Neural Networks versus deep ensembles for uncertainty quantification in machine learning interatomic potentials",
+    "authors": [
+      {
+        "name": "Riccardo Farris",
+        "affiliation": null
+      },
+      {
+        "name": "Emanuele Telari",
+        "affiliation": null
+      },
+      {
+        "name": "Nongnuch Artrith",
+        "affiliation": null
+      },
+      {
+        "name": "Konstantin Neyman",
+        "affiliation": null
+      },
+      {
+        "name": "Albert Bruix",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neural-network-based machine learning interatomic potentials have emerged as powerful tools for predicting atomic energies and forces, enabling accurate and efficient simulations in atomistic modeling. A key limitation of traditional deep learning approaches, however, is their inability to provide reliable estimates of predictive uncertainty. Such uncertainty quantification is critical for assessing model reliability, especially in materials science, where often the model is applied on out-of-distribution data. Different strategies have been proposed to address this challenge, with deep ensembles and Bayesian neural networks being among the most widely used. In this work, we introduce an implementation of Bayesian neural networks with variational inference in the aenet-PyTorch framework. To evaluate their applicability to machine learning interatomic potentials, we systematically compare the performance of variational BNNs and deep ensembles on a dataset of 7,815 TiO$_{2}$ structures. The models are trained on both the full dataset and a subset to assess how variations in data representation influence predictive accuracy and uncertainty estimation. This analysis provides insights into the strengths and limitations of each approach, offering practical guidance for the development of uncertainty-aware machine learning interatomic potentials.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning interatomic potentials, a topic not directly related to the user's liked papers on superconductivity, Dirac fermions, and oxygen vacancies.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Bayesian neural networks",
+      "Uncertainty quantification",
+      "Interatomic potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5856190919876099,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5004570484161377,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4792850613594055,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.18870v1": {
+    "id": "2509.18870v1",
+    "title": "Chemistry and physics of layered oxychalcogenides containing an anti-cuprate type square lattice",
+    "authors": [
+      {
+        "name": "Nicola Kelly",
+        "affiliation": null
+      }
+    ],
+    "summary": "There has been significant recent interest in layered solid-state materials containing an [M2O] square lattice layer (M = transition metal), particularly because [M2O] is the anti-type of the [CuO2] planes in the layered cuprate superconductors. In addition to the superconducting titanium oxypnictides, the [M2O] anti-cuprate layer also occurs in a wide range of layered oxychalcogenide compounds with M spanning early (Ti, V) to later transition metals (Mn, Co, Fe). The chalcogenide in question - which sandwiches the anti-cuprate layer - may be S, Se or Te, and in combination with a wide range of intervening \"spacer\" layers, many different structural families have been investigated. This review surveys the structures and physical properties of all these oxychalcogenide materials and relates these properties to their common anti-cuprate square lattice [M2O] layer. It is organised around the different oxidation states of the metal ion M, in order to explore the effects of the electronic configuration of M on the physical properties of each compound as a whole. A key part of the review highlights the use of soft-chemical modifications to alter physical properties of these materials, in the synthesis of novel van der Waals materials and other metastable compounds. Future avenues for these materials in the bulk, few- and single-layer limits are discussed.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.75,
+    "reasoning": "The paper discusses materials with similarities to cuprate superconductors and involves transition metal oxides and their electronic configurations, aligning with previous interests in superconductivity and related materials.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "oxychalcogenides",
+      "anti-cuprate",
+      "square lattice"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5334769487380981,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.5267342925071716,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "score": 0.522710382938385,
+        "liked_paper_id": "yBtX0C4AAAAJ:MXK_kJrjxJIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.18500v1": {
+    "id": "2509.18500v1",
+    "title": "A scalable route to first-order response properties with correlated sampling phaseless auxiliary-field quantum Monte Carlo",
+    "authors": [
+      {
+        "name": "Leon Otis",
+        "affiliation": null
+      },
+      {
+        "name": "Sri Gudivada",
+        "affiliation": null
+      },
+      {
+        "name": "Marvin Friede",
+        "affiliation": null
+      },
+      {
+        "name": "James Shee",
+        "affiliation": null
+      }
+    ],
+    "summary": "To make useful connections with experimental measurements, correlated electronic structure theories must accurately predict chemical properties in addition to energies. We present a finite-difference based algorithm to compute first-order response properties with phaseless auxiliary-field quantum Monte Carlo (ph-AFQMC) that relies on a branching correlated sampling approach. Focusing on electric dipole moments, we show that mean-field trial wave functions are sufficient to obtain high accuracy relative to CCSD(T) and experimental measurements for a set of 21 molecules, ranging in size from 2 to 18 atoms in their equilibrium geometries. As with energies, the quality of predicted dipole moments can be systematically improved with the use of correlated trial wave functions, even (or especially) in strongly correlated regimes. We show that the challenges faced by low-order perturbation theories in predicting the dipole moment of hydrogen fluoride across its dissociation coordinate are overcome with ph-AFQMC when using relatively simple trials. The key advantage of our approach over those previously reported for ph-AFQMC is its scalability to large system sizes with a phaseless bias no worse than that of a typical ground-state energy calculation; we routinely converge dipole moments for systems with more than one thousand basis functions.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on computational methods in quantum chemistry, which is somewhat related to the user's interest in electronic structure and materials, but the specific focus on method development and scalability is less aligned with the user's prior interests in specific materials and phenomena.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "correlated sampling",
+      "phaseless auxiliary-field quantum Monte Carlo",
+      "first-order response properties"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5740723013877869,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5217090845108032,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.47373661398887634,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.18951v1": {
+    "id": "2509.18951v1",
+    "title": "A Methodological Study on Data Representation for Machine Learning Modelling of Thermal Conductivity of Rare-Earth Oxides",
+    "authors": [
+      {
+        "name": "Amiya Chowdhury",
+        "affiliation": null
+      },
+      {
+        "name": "Acacio Rinc\u00f3n Romero",
+        "affiliation": null
+      },
+      {
+        "name": "Eduardo Aguilar-Bejarano",
+        "affiliation": null
+      },
+      {
+        "name": "Halar Memon",
+        "affiliation": null
+      },
+      {
+        "name": "Grazziela Figueredo",
+        "affiliation": null
+      },
+      {
+        "name": "Tanvir Hussain",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantitative structure-activity relationship (QSAR) modelling is widely employed in materials sci- ence to predict properties of interest and extract useful descriptors for measured properties. In thermal barrier coatings (TBC), QSAR can significantly shorten the experimental discovery cycle, which can take years. Although machine learning methods are commonly employed for QSAR, their performance depends on the data quality and how instances are represented. Traditional, hand-crafted descriptors based on known material properties are limited to represent materials that share the same basic crystal structure, limited the size of the dataset. By contrast, graph neural networks offer a more expressive representation, encoding atomic positions and bonds in the crystal lattice. In this study, we compare Random Forest (RF) and Gaussian Process (GP) models trained on hand-crafted descriptors from the literature with graph-based representations for high-entropy, rare-earth pyrochlore oxides using the Crystal Graph Convolutional Neural Network (CGCNN). Two different types of augmentation methods are also explored to account for the limited data size, one of which is only applicable to graph-based representations. Our findings show that the CGCNN model substantially outperforms the RF and GP models, underscoring the potential of graph-based representations for enhanced QSAR modelling in TBC research.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning methods for predicting thermal conductivity in rare-earth oxides, which is not directly related to the user's liked papers on superconductivity and electronic structure.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "QSAR modeling",
+      "graph neural networks",
+      "thermal barrier coatings"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42661839723587036,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3870137333869934,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.37462079524993896,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.18321v1": {
+    "id": "2509.18321v1",
+    "title": "All-magnonic neurons for analog artificial neural networks",
+    "authors": [
+      {
+        "name": "David Breitbach",
+        "affiliation": null
+      },
+      {
+        "name": "Moritz Bechberger",
+        "affiliation": null
+      },
+      {
+        "name": "Hanadi Mortada",
+        "affiliation": null
+      },
+      {
+        "name": "Bj\u00f6rn Heinz",
+        "affiliation": null
+      },
+      {
+        "name": "Roman Verba",
+        "affiliation": null
+      },
+      {
+        "name": "Qi Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Carsten Dubs",
+        "affiliation": null
+      },
+      {
+        "name": "Mario Carpentieri",
+        "affiliation": null
+      },
+      {
+        "name": "Giovanni Finocchio",
+        "affiliation": null
+      },
+      {
+        "name": "Davi Rodrigues",
+        "affiliation": null
+      },
+      {
+        "name": "Alexandre Abbass Hamadeh",
+        "affiliation": null
+      },
+      {
+        "name": "Philipp Pirro",
+        "affiliation": null
+      }
+    ],
+    "summary": "Analog neuromorphic hardware is gaining traction as conventional digital systems struggle to keep pace with the growing energy and scalability demands of modern neural networks. Here, we present analog, fully magnonic, artificial neurons, which exploit a nonlinear magnon excitation mechanism based on the nonlinear magnonic frequency shift. This yields a sharp trigger response and tunable fading memory, as well as synaptic connections to other neurons via propagating magnons. Using micro-focused Brillouin light scattering spectroscopy on a Gallium-substituted yttrium iron garnet thin film, we show multi-neuron triggering, cascadability, and multi-input integration across interconnected neurons. Finally, we implement the experimentally verified neuron activation function in a neural network simulation, yielding high classification accuracy on standard benchmarks. The results establish all-magnonic neurons as promising devices for scalable, low-power, wave-based neuromorphic computing, highlighting their potential as building blocks for future physical neural networks.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on magnonic neurons and artificial neural networks, a topic significantly different from the user's previous interests in superconductivity, Dirac fermions, and oxygen vacancies in materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "magnonic neurons",
+      "neuromorphic computing",
+      "artificial neural networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.39751946926116943,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.37047770619392395,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.32602494955062866,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.19262v1": {
+    "id": "2509.19262v1",
+    "title": "Photo-Induced Enhancement of Critical Temperature in a Phase Competing Spin-Fermion System",
+    "authors": [
+      {
+        "name": "Sankha Subhra Bakshi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ultrafast optical excitation is known to destabilize long-range order in correlated systems, yet experiments have also reported the emergence of metastable phases, in some cases with enhanced critical temperatures. The microscopic origin of such light-induced stabilization remains unresolved. Here we investigate this problem within a minimal spin-fermion framework: a double-exchange model at half filling, augmented by ferromagnetic superexchange on a square lattice. In equilibrium, at half-filling the ordering temperature is set by the competition between kinetic-energy-driven antiferromagnetism and superexchange-induced ferromagnetism. Using quantum Landau-Lifshitz-Gilbert-Brown dynamics for localized spins combined with mean-field evolution of itinerant electrons, we demonstrate a nonthermal mechanism for stabilizing ordered phases. Photoexcitation creates a long-lived nonequilibrium carrier population that resists thermalization and reshapes the low-energy landscape, converting kinetic-energy-driven antiferromagnetism into ferromagnetism and enhancing the critical temperature. While model-specific, our results reveal a general microscopic pathway by which light can tip the balance between competing orders, suggesting routes toward optically engineered magnetism, charge-density-wave order, and superconductivity.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses competing orders, magnetism, and potentially superconductivity in a correlated system, aligning with the user's interest in unconventional superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Photo-induced phase transition",
+      "Spin-fermion model",
+      "Nonthermal stabilization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.597623348236084,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5870137810707092,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5659117102622986,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.15028v2": {
+    "id": "2509.15028v2",
+    "title": "A causality-based divide-and-conquer algorithm for nonequilibrium Green's function calculations with quantics tensor trains",
+    "authors": [
+      {
+        "name": "Ken Inayoshi",
+        "affiliation": null
+      },
+      {
+        "name": "Maksymilian \u015aroda",
+        "affiliation": null
+      },
+      {
+        "name": "Anna Kauch",
+        "affiliation": null
+      },
+      {
+        "name": "Philipp Werner",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Shinaoka",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose a causality-based divide-and-conquer algorithm for nonequilibrium Green's function calculations with quantics tensor trains. This algorithm enables stable and efficient extensions of the simulated time domain by exploiting the causality of Green's functions. We apply this approach within the framework of nonequilibrium dynamical mean-field theory to the simulation of quench dynamics in symmetry-broken phases, where long-time simulations are often required to capture slow relaxation dynamics. We demonstrate that our algorithm allows to extend the simulated time domain without a significant increase in the cost of storing the Green's function.",
+    "published_date": "2025-09-18",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses nonequilibrium Green's function calculations and dynamical mean-field theory, both of which align with the user's interest in efficient solvers and electronic structure calculations.",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "nonequilibrium Green's function",
+      "quantics tensor trains",
+      "divide-and-conquer algorithm"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49256160855293274,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.4882853031158447,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      },
+      {
+        "score": 0.48675328493118286,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.17579v1": {
+    "id": "2509.17579v1",
+    "title": "Noise robustness of problem-to-simulator mappings for quantum many-body physics",
+    "authors": [
+      {
+        "name": "Rahul Trivedi",
+        "affiliation": null
+      },
+      {
+        "name": "J. Ignacio Cirac",
+        "affiliation": null
+      }
+    ],
+    "summary": "Simulating quantum dynamics on digital or analog quantum simulators often requires ``problem-to-simulator\" mappings such as trotterization, floquet-magnus expansion or perturbative expansions. When the simulator is noiseless, it is well understood that these problem-to-simulator mappings can be made as accurate as desired at the expense of simulator run-time. However, precisely because the simulator has to be run for a longer time to increase its accuracy, it is expected that noise in the quantum simulator catastrophically effects the simulator output. We show that, contrary to this expectation, these mappings remain stable to noise when considering the task of simulating dynamics of local observables in quantum lattice models. Specifically, we prove that in all of these mappings, local observables can be determined to a system-size independent, precision that scales sublinearly with the noise-rate in the simulator. Our results provide theoretical evidence that quantum simulators can be used for solving problems in many-body physics without or with modest error correction.",
+    "published_date": "2025-09-22",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper discusses quantum simulations and noise robustness, which is somewhat related to quantum many-body physics but not directly aligned with the user's interest in superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum simulation",
+      "noise robustness",
+      "problem-to-simulator mappings"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5380179286003113,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.5254719853401184,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4997575283050537,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.17975v1": {
+    "id": "2509.17975v1",
+    "title": "Optimal local basis truncation of lattice quantum many-body systems",
+    "authors": [
+      {
+        "name": "Peter Majcen",
+        "affiliation": null
+      },
+      {
+        "name": "Giovanni Cataldi",
+        "affiliation": null
+      },
+      {
+        "name": "Pietro Silvi",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Montangero",
+        "affiliation": null
+      }
+    ],
+    "summary": "We show how to optimally reduce the local Hilbert basis of lattice quantum many-body (QMB) Hamiltonians. The basis truncation exploits the most relevant eigenvalues of the estimated single-site reduced density matrix (RDM). It is accurate and numerically stable across different model phases, even close to quantum phase transitions. We apply this procedure to different models, such as the Sine-Gordon model, the $\\varphi^{4}$ theory, and lattice gauge theories, namely Abelian $\\mathrm{U}(1)$ and non-Abelian $\\mathrm{SU}(2)$, in one and two spatial dimensions. Our results reduce state-of-the-art estimates of computational resources for classical and quantum simulations.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses quantum many-body systems, it focuses on numerical methods and basis truncation, which is a methodological approach rather than a specific material or phenomenon seen in the user's liked papers.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "basis truncation",
+      "quantum many-body systems",
+      "reduced density matrix"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5881751775741577,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.568946361541748,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "score": 0.560505747795105,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.17837v1": {
+    "id": "2509.17837v1",
+    "title": "Fast and Accurate Decoder for the XZZX code Using Simulated Annealing",
+    "authors": [
+      {
+        "name": "Tatsuya Sakashita",
+        "affiliation": null
+      }
+    ],
+    "summary": "The XZZX code is a variant of the surface code designed to address biased noise in realistic quantum devices. For the XZZX code, we propose a decoder based on simulated annealing (SA). Our SA decoder can be readily and efficiently parallelized, by virtue of its simple MCMC-based algorithm. To prepare an initial configuration of SA, we propose to employ recovery chains obtained by a decoder which utilizes a kind of greedy matching graph algorithm. Although $Z$-biased noise is commonly assumed in real quantum devices, we focus on $Y$-biased noise, for which the minimum-weight perfect matching (MWPM) algorithm fails to decode accurately. Our numerical simulation for the code capacity noise model, where only data qubits suffer errors, confirmed that our SA decoder is more accurate than the MWPM decoder. Furthermore, our SA decoder attained the accuracy equivalent to that of the optimal decoder formulated by integer programming, called CPLEX decoder. In our greedy matching decoder, we randomly determine order of matching pairs of incorrect syndromes that have the same distance. This randomness brings about a variety of initial configurations of SA, which leads to faster convergence of our SA decoder. By comparing decoding times of our SA decoder, the CPLEX decoder, and matrix product state (MPS) decoder, all of which can handle $Y$-biased noise appropriately, we confirmed that our SA decoder is fastest if parallelized. This result implies a potential for combining of our greedy matching and SA decoder for practical use in quantum computing.",
+    "published_date": "2025-09-22",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum error correction and decoding algorithms, which is significantly different from the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "XZZX code",
+      "simulated annealing decoder",
+      "Y-biased noise"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3826119899749756,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.3767540454864502,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3700404465198517,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.16311v1": {
+    "id": "2509.16311v1",
+    "title": "Entanglement Asymmetry for Higher and Noninvertible Symmetries",
+    "authors": [
+      {
+        "name": "Francesco Benini",
+        "affiliation": null
+      },
+      {
+        "name": "Pasquale Calabrese",
+        "affiliation": null
+      },
+      {
+        "name": "Michele Fossati",
+        "affiliation": null
+      },
+      {
+        "name": "Amartya Harsh Singh",
+        "affiliation": null
+      },
+      {
+        "name": "Marco Venuti",
+        "affiliation": null
+      }
+    ],
+    "summary": "Entanglement asymmetry is an observable in quantum systems, constructed using quantum-information methods, suited to detecting symmetry breaking in states -- possibly out of equilibrium -- relative to a subsystem. In this paper we define the asymmetry for generalized finite symmetries, including higher-form and noninvertible ones. To this end, we introduce a \"symmetrizer\" of (reduced) density matrices with respect to the $C^*$-algebra of symmetry operators acting on the subsystem Hilbert space. We study in detail applications to (1+1)-dimensional theories: First, we analyze spontaneous symmetry breaking of noninvertible symmetries, confirming that distinct vacua can exhibit different physical properties. Second, we compute the asymmetry of certain excited states in conformal field theories (including the Ising CFT), when the subsystem is either the full circle or an interval therein. The relevant symmetry algebras to consider are the fusion, tube, and strip algebras. Finally, we comment on the case that the symmetry algebra is a (weak) Hopf algebra.",
+    "published_date": "2025-09-19",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper primarily explores entanglement asymmetry and generalized finite symmetries in quantum systems, a topic dissimilar to the user's interest in condensed matter physics, superconductivity, and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Entanglement asymmetry",
+      "Noninvertible symmetries",
+      "Symmetrizer"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.40852677822113037,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.37802600860595703,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.37790200114250183,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.18317v1": {
+    "id": "2509.18317v1",
+    "title": "The Frenkel line and the pseudogap: an analogy between classical and electronic fluids",
+    "authors": [
+      {
+        "name": "J. Fournier",
+        "affiliation": null
+      },
+      {
+        "name": "P. -O. Downey",
+        "affiliation": null
+      },
+      {
+        "name": "O. Gingras",
+        "affiliation": null
+      },
+      {
+        "name": "C. -D. H\u00e9bert",
+        "affiliation": null
+      },
+      {
+        "name": "M. Charlebois",
+        "affiliation": null
+      },
+      {
+        "name": "A. -M. S. Tremblay",
+        "affiliation": null
+      }
+    ],
+    "summary": "Asymptotically close to critical end-points of first-order transitions, maxima in thermodynamic quantities occur along a line called the Widom line, a concept first introduced in classical fluids. This concept has been extended to strongly correlated electronic fluids in the context of the Mott transition. Namely, upon increasing interaction strength in the Hubbard model at half-filling, one finds a first-order Mott metal-insulator transition with a critical end-point at high temperature above which a number of crossover lines are observable. Using the dynamical cluster approximation for the triangular-lattice Hubbard model, we compute the Frenkel line, another concept borrowed from classical fluids, useful to define a sharp crossover between the pseudogap and the correlated Fermi liquid. The Frenkel line in the electron fluid is defined by the appearance of back-scattering when entering the pseudogap. The signature of back-scattering is the existence of a negative value in the time-domain optical conductivity.",
+    "published_date": "2025-09-22",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper discusses strongly correlated electron systems and the Mott transition, which overlaps with previous interests in correlated oxides and superconductivity, but the focus on classical fluid analogies and the Frenkel line introduces a somewhat different direction.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Frenkel line",
+      "Pseudogap",
+      "Dynamical cluster approximation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.629152774810791,
+        "liked_paper_id": "2507.01280v1"
+      },
+      {
+        "score": 0.6248898506164551,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.6217647194862366,
+        "liked_paper_id": "2506.16503v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.16852v1": {
+    "id": "2509.16852v1",
+    "title": "Quantum State Tomography for Tensor Networks in Two Dimensions",
+    "authors": [
+      {
+        "name": "Zhen Qin",
+        "affiliation": null
+      },
+      {
+        "name": "Zhihui Zhu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recent work has shown that for one-dimensional quantum states that can be effectively approximated by matrix product operators (MPOs), a polynomial number of copies of the state suffices for reconstruction. Compared to MPOs in one dimension, projected entangled-pair states (PEPSs) and projected entangled-pair operators (PEPOs), which represent typical low-dimensional structures in two dimensions, are more prevalent as a looped tensor network. However, a formal analysis of the sample complexity required for estimating PEPS or PEPO has yet to be established. In this paper, we aim to address this gap by providing theoretical guarantees for the stable recovery of PEPS and PEPO. Our analysis primarily focuses on two quantum measurement schemes: $(i)$ informationally complete positive operator valued measures (IC-POVMs), specifically the spherical $t$-designs ($t \\geq 3$), and $(ii)$ projective rank-one measurements, in particular Haar random projective measurements. We first establish stable embeddings for PEPSs (or PEPOs) to ensure that the information contained in the states can be preserved under these two measurement schemes. We then show that a constrained least-squares estimator achieves stable recovery for PEPSs (or PEPOs), with the recovery error bounded when the number of state copies scales linearly under spherical $t$-designs and polynomially under Haar-random projective measurements with respect to the number of qudits. These results provide theoretical support for the reliable use of PEPS and PEPO in practical quantum information processing.",
+    "published_date": "2025-09-21",
+    "categories": [
+      "cs.IT",
+      "eess.SP",
+      "math.IT"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on quantum state tomography and tensor networks (PEPS/PEPO), which is a different area than the user's interests in superconductivity, nickelates, and Dirac materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum state tomography",
+      "Projected entangled-pair states (PEPS)",
+      "Tensor networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5504504442214966,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.46243980526924133,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.42354118824005127,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.19075v1": {
+    "id": "2509.19075v1",
+    "title": "Layer controlled orbital selective Mott transition in monolayer nickelate",
+    "authors": [
+      {
+        "name": "Byungmin Sohn",
+        "affiliation": null
+      },
+      {
+        "name": "Minjae Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Sangjae Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Wenzheng Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Juan Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Fengmiao Li",
+        "affiliation": null
+      },
+      {
+        "name": "Sergey Gorovikov",
+        "affiliation": null
+      },
+      {
+        "name": "Marta Zonno",
+        "affiliation": null
+      },
+      {
+        "name": "Tor Pedersen",
+        "affiliation": null
+      },
+      {
+        "name": "Sergey Zhdanovich",
+        "affiliation": null
+      },
+      {
+        "name": "Ying Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Huikai Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Ke Zou",
+        "affiliation": null
+      },
+      {
+        "name": "Yu He",
+        "affiliation": null
+      },
+      {
+        "name": "Sohrab Ismail-Beigi",
+        "affiliation": null
+      },
+      {
+        "name": "Frederick J. Walker",
+        "affiliation": null
+      },
+      {
+        "name": "Charles H. Ahn",
+        "affiliation": null
+      }
+    ],
+    "summary": "Dimensionality and electronic correlations are crucial elements of many quantum material properties. An example is the change of the electronic structure accompanied by the loss of quasiparticles when a metal is reduced from three dimensions to a lower dimension, where the Coulomb interaction between carriers becomes poorly screened. Here, using angle-resolved photoemission spectroscopy (ARPES), we report an orbital-selective decoherence of spectral density in the perovskite nickelate LaNiO3 towards the monolayer limit. The spectral weight of the dz2 band vanishes much faster than that of the dx2-y2 band as the thickness of the LaNiO3 layer is decreased to a single unit cell, indicating a stronger correlation effect for the former upon dimensional confinement. Dynamical mean-field theory (DMFT) calculations show an orbital-selective Mott transition largely due to the localization of dz2 electrons along the c axis in the monolayer limit. This orbital-selective correlation effect underpins many macroscopic properties of nickelates, such as metal-to-insulator transition and superconductivity, where most theories are built upon a dx2-y2-dz2 two-band model.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": "10.1103/n92p-xrhl",
+    "score": 0.85,
+    "reasoning": "This paper discusses nickelates, electronic correlations, and utilizes dynamical mean-field theory (DMFT), aligning with the user's interest in nickelate superconductors, DMFT, and electronic structure.",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "orbital-selective Mott transition",
+      "dimensional confinement",
+      "ARPES"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7332943677902222,
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC"
+      },
+      {
+        "score": 0.6458436846733093,
+        "liked_paper_id": "2506.16360v1"
+      },
+      {
+        "score": 0.6409505605697632,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.16439v1": {
+    "id": "2509.16439v1",
+    "title": "Locally Purified Maximally Mixed States At Scale: Entanglement Pruning and Symmetries",
+    "authors": [
+      {
+        "name": "Amit Jamadagni",
+        "affiliation": null
+      },
+      {
+        "name": "Eugene Dumitrescu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Locally Purified Density Operators (LPDOs) are state-of-the-art tensor network ansatze candidates that efficiently represent mixed quantum states at scale. However, given their non-uniqueness, their representational complexity is generally sub-optimal in practical computations. In this work we perform a comprehensive numerical and analytical analysis and resolve this issue in the experimentally relevant limit where noise depolarizes the density operator into a maximally mixed state. To resolve the sub-optimality issue, we analyze two numerical tools, one analytic method, and detail the relations between them. The numerical tools used are fidelity-preserving truncations and isometric gauge transformations leveraging Riemannian optimizations over entropic objective functions. In addition, by invoking the injectivity and symmetry constraints of the maximally mixed LPDO, we also present analytical closed-form expressions for the disentangler and discuss their relation to numerical optimizers. Our work shows how, by minimizing the resources required to represent key states of practical interest in experiment, the efficiency of tensor network algorithms can be substantially increased. This paves the path for uncovering tensor network's fundamental scalability limits and latent potential in representing the wide locus of mixed quantum states that are accessible on near-term quantum devices.",
+    "published_date": "2025-09-19",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses quantum states and optimization, it focuses on tensor networks and computational methods, which are not directly related to the user's interest in superconductivity, oxides, or topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Locally Purified Density Operators",
+      "Tensor Networks",
+      "Entanglement Pruning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5720025300979614,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5045946836471558,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.47953665256500244,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.16455v1": {
+    "id": "2509.16455v1",
+    "title": "Mixtures, Markov bridges and the matrix product ansatz",
+    "authors": [
+      {
+        "name": "Davide Gabrielli",
+        "affiliation": null
+      },
+      {
+        "name": "Federica Iacovissi",
+        "affiliation": null
+      }
+    ],
+    "summary": "We give a probabilistic characterization of the set of measures that can be represented by the matrix product ansatz. By suitably enlarging the state space, we show that a probability measure can be described in terms of non negative matrices by the {\\it Matrix Product Ansatz}, if and only if it can be written as a mixture of inhomogeneous product measures where the mixing law is a Markov bridge. We give a constructive procedure to identify such probabilistic features. We illustrate the result by examples and show that existing probabilistic representations of the invariant measures of non equilibrium interacting particle systems can be obtained from the matrix product ansatz by this general procedure.",
+    "published_date": "2025-09-19",
+    "categories": [
+      "math.PR",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper discusses probabilistic characterizations and the matrix product ansatz, which doesn't align with the user's interest in condensed matter physics, superconductivity, or topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Matrix Product Ansatz",
+      "Markov Bridge",
+      "Mixture of Product Measures"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.40951675176620483,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3231474459171295,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.30343908071517944,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
