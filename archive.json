@@ -55686,5 +55686,622 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2509.19006v1": {
+    "id": "2509.19006v1",
+    "title": "BatchTNMC: Efficient sampling of two-dimensional spin glasses using tensor network Monte Carlo",
+    "authors": [
+      {
+        "name": "Tao Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Jingtong Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Jing Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Youjin Deng",
+        "affiliation": null
+      },
+      {
+        "name": "Pan Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Efficient sampling of two-dimensional statistical physics systems remains a central challenge in computational statistical physics. Traditional Markov chain Monte Carlo (MCMC) methods, including cluster algorithms, provide only partial solutions, as their efficiency collapses for large systems in the presence of frustration and quenched disorder. The recently proposed Tensor Network Monte Carlo (TNMC) method offers a promising alternative, yet its original implementation suffers from inefficiencies due to the lack of scalable parallel sampling. In this work, we introduce BatchTNMC, a GPU-optimized and parallelized implementation of TNMC tailored for large-scale simulations of two-dimensional spin glasses. By leveraging batch processing and parallel sampling across multiple disorder realizations, our implementation achieves speedups of up to five orders of magnitude compared with the original serial scheme. Benchmarking on two-dimensional spin glasses demonstrates dramatic gains in efficiency: for instance, on a single GPU, BatchTNMC concurrently produces 1000 uncorrelated and unbiased samples across 1000 disorder realizations on $1024\\times 1024$ lattices in just 3.3 hours, with an acceptance probability of 37%. These results establish BatchTNMC as a scalable and powerful computational framework for the study of two-dimensional disordered spin glass systems.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in correlated electron systems, this paper focuses on a computational method (Tensor Network Monte Carlo) applied to spin glasses, a topic somewhat distinct from the user's prior interests in superconductivity and electronic structure.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor Network Monte Carlo",
+      "spin glasses",
+      "parallel sampling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5782090425491333,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.5670915842056274,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5209684371948242,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.18149v1": {
+    "id": "2509.18149v1",
+    "title": "Tensor Train Completion from Fiberwise Observations Along a Single Mode",
+    "authors": [
+      {
+        "name": "Shakir Showkat Sofi",
+        "affiliation": null
+      },
+      {
+        "name": "Lieven De Lathauwer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Tensor completion is an extension of matrix completion aimed at recovering a multiway data tensor by leveraging a given subset of its entries (observations) and the pattern of observation. The low-rank assumption is key in establishing a relationship between the observed and unobserved entries of the tensor. The low-rank tensor completion problem is typically solved using numerical optimization techniques, where the rank information is used either implicitly (in the rank minimization approach) or explicitly (in the error minimization approach). Current theories concerning these techniques often study probabilistic recovery guarantees under conditions such as random uniform observations and incoherence requirements. However, if an observation pattern exhibits some low-rank structure that can be exploited, more efficient algorithms with deterministic recovery guarantees can be designed by leveraging this structure. This work shows how to use only standard linear algebra operations to compute the tensor train decomposition of a specific type of ``fiber-wise\" observed tensor, where some of the fibers of a tensor (along a single specific mode) are either fully observed or entirely missing, unlike the usual entry-wise observations. From an application viewpoint, this setting is relevant when it is easier to sample or collect a multiway data tensor along a specific mode (e.g., temporal). The proposed completion method is fast and is guaranteed to work under reasonable deterministic conditions on the observation pattern. Through numerical experiments, we showcase interesting applications and use cases that illustrate the effectiveness of the proposed approach.",
+    "published_date": "2025-09-16",
+    "categories": [
+      "math.NA",
+      "cs.LG",
+      "cs.NA",
+      "eess.SP",
+      "math.OC",
+      "stat.CO",
+      "stat.ML"
+    ],
+    "doi": null,
+    "score": 0.0,
+    "reasoning": "The paper focuses on tensor completion and numerical optimization, which are not related to the user's interests in condensed matter physics and material science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "tensor completion",
+      "tensor train decomposition",
+      "fiber-wise observations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.32810741662979126,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3211575746536255,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3169347047805786,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.19983v1": {
+    "id": "2509.19983v1",
+    "title": "Scalable Machine Learning Model for Energy Decomposition Analysis in Aqueous Systems",
+    "authors": [
+      {
+        "name": "Hossein Tahmasbi",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Beerbaum",
+        "affiliation": null
+      },
+      {
+        "name": "Bartosz Brzoza",
+        "affiliation": null
+      },
+      {
+        "name": "Attila Cangi",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas D. K\u00fchne",
+        "affiliation": null
+      }
+    ],
+    "summary": "Energy decomposition analysis (EDA) based on absolutely localized molecular orbitals provides detailed insights into intermolecular bonding by decomposing the total molecular binding energy into physically meaningful components. Here, we develop a neural network EDA model capable of predicting the electron delocalization energy component of water molecules, which captures the stabilization arising from charge transfer between occupied absolutely localized molecular orbitals of one molecule and the virtual orbitals of another. Exploiting the locality assumption of the electronic structure, our model enables accurate prediction of electron delocalization energies for molecular systems far beyond the size accessible to conventional density functional theory calculations, while maintaining its accuracy. We demonstrate the applicability of our approach by modeling hydration effects in large molecular complexes, specifically in metal-organic frameworks.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning for energy decomposition in aqueous systems, which is a departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Energy Decomposition Analysis",
+      "Machine Learning",
+      "Aqueous Systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48795753717422485,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4665014147758484,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.465801477432251,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.19093v1": {
+    "id": "2509.19093v1",
+    "title": "Regularity estimate and sparse approximation of pathwise robust Duncan-Mortensen-Zakai equation",
+    "authors": [
+      {
+        "name": "Yuhua Meng",
+        "affiliation": null
+      },
+      {
+        "name": "Zhongjian Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Stephen S. T. Yau",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiwen Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this paper, we establish an \\textit{a priori} estimate for arbitrary-order derivatives of the solution to the pathwise robust Duncan-Mortensen-Zakai (DMZ) equation within the framework of weighted Sobolev spaces. The weight function, which vanishes on the physical boundary, is crucial for the \\textit{a priori} estimate, but introduces a loss of regularity near the boundary. Therefore, we employ the Sobolev inequalities and their weighted analogues to sharpen the regularity bound, providing improvements in both classical Sobolev spaces and H{\\\"o}lder continuity estimates. The refined regularity estimate reinforces the plausibility of the quantized tensor train (QTT) method in [S. Li, Z. Wang, S. S.-T. Yau, and Z. Zhang, IEEE Trans. Automat. Control, 68 (2023), pp. 4405--4412] and provides convergence guarantees of the method. To further enhance the capacity of the method to solve the nonlinear filtering problem in a real-time manner, we reduce the complexity of the method under the assumption of a functional polyadic state drift $f$ and observation $h$. Finally, we perform numerical simulations to reaffirm our theory. For high-dimensional cubic sensor problems, our method demonstrates superior efficiency and accuracy in comparison to the particle filter (PF) and the extended Kalman filter (EKF). Beyond this, for multi-mode problems, while the PF exhibits a lack of precision due to its stochastic nature and the EKF is constrained by its Gaussian assumption, the enhanced method provides an accurate reconstruction of the multi-mode conditional density function.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.05,
+    "reasoning": "This paper focuses on mathematical methods for solving a stochastic filtering problem, which is quite different from the user's interests in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Duncan-Mortensen-Zakai equation",
+      "Sparse approximation",
+      "Nonlinear filtering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.2839762270450592,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.2702353000640869,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.2661798298358917,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.19675v1": {
+    "id": "2509.19675v1",
+    "title": "Quantum criticality in cuprate superconductors revealed by optical conductivity measurement",
+    "authors": [
+      {
+        "name": "Hwiwoo Park",
+        "affiliation": null
+      },
+      {
+        "name": "Sung-Sik Lee",
+        "affiliation": null
+      },
+      {
+        "name": "G. D. Gu",
+        "affiliation": null
+      },
+      {
+        "name": "Jungseek Hwang",
+        "affiliation": null
+      }
+    ],
+    "summary": "The ubiquitous temperature ($T$)-linear behaviour of the transport scattering rate in the normal state of strongly correlated electron systems is called strange metallicity \\cite{zaanen:2004,phillips:2022,hartnoll:2022,chowdhury:2022,yuan:2022}. Although strange metallicity is crucial to understanding superconductivity in correlated electron systems, its origin remains elusive to date \\cite{hussey:2023}. Here, we present the doping-, temperature-, and frequency ($\\omega$)-dependent transport properties of overdoped Bi$_2$Sr$_2$CaCu$_2$O$_{8+\\delta}$ in a wide doping range of 0.183 to 0.231. We observe that the optical scattering rate and effective mass exhibit an $\\omega/T$ scaling behaviour at a critical doping of $p_{c} \\simeq$ 0.231. Away from the critical doping, the $\\omega/T$ scaling behaviour is destroyed below a doping-dependent crossover temperature $T_\\Delta(p) \\sim |p-p_{c}|^{0.24}$. Furthermore, the optical coherence mode (OCM) observed within the superconducting dome rapidly broadens and eventually disappears as the critical doping is approached. The emergence of the $\\omega/T$ scaling behaviour of the transport scattering rate and broadening of the OCM near the critical doping strongly suggests that strange metallic behaviour is caused by quantum critical fluctuations. Our results provide compelling spectroscopic evidence for quantum criticality in cuprate superconductors.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper discusses quantum criticality and strange metallicity in cuprate superconductors, which aligns with the user's interest in correlated electron systems and superconductivity.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "quantum criticality",
+      "strange metallicity",
+      "optical conductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.684586226940155,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      },
+      {
+        "score": 0.6604019999504089,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      },
+      {
+        "score": 0.649255633354187,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20179v1": {
+    "id": "2509.20179v1",
+    "title": "A follow-up on the sulphur atom popping model for MoS$_2$ memristor",
+    "authors": [
+      {
+        "name": "Sanchali Mitra",
+        "affiliation": null
+      },
+      {
+        "name": "Santanu Mahapatra",
+        "affiliation": null
+      }
+    ],
+    "summary": "The mechanism of resistive switching in two-dimensional (2D) semiconductor-based memristors is intriguing, and our conventional knowledge of bulk-oxide based memristors does not apply to these devices. Experimental data indicate that the genesis of resistive switching may be intrinsic to the 2D semiconducting active layer, as well as resulting from the movement of electrode atoms. Employing reactive-force field (ReaxFF) molecular dynamics simulations, we introduced the \"sulphur atom popping model\" [npj 2D Mater. Appl. 5, 33 (2021)] to elucidate the intrinsic nature of non-volatile resistive switching in 2D molybdenum disulfide-based memristors. In this paper we provide additional perspective to this model using density functional theory. We also discuss the limitations of universal machine learning interatomic potentials in reproducing ReaxFF simulation results.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on memristors and molybdenum disulfide, which are not closely related to the user's previous interests in superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "memristor",
+      "molybdenum disulfide",
+      "resistive switching"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.45555418729782104,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4502194821834564,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "score": 0.43181657791137695,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20224v1": {
+    "id": "2509.20224v1",
+    "title": "Inelastic scattering and transient localization from coupling to two-level systems",
+    "authors": [
+      {
+        "name": "Hadi Rammal",
+        "affiliation": null
+      },
+      {
+        "name": "Sergio Ciuchi",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Fratini",
+        "affiliation": null
+      }
+    ],
+    "summary": "We consider an electron interacting locally with two-level systems (TLSs) as an archetypal model for charge transport in the presence of inelastic scatterers. To assess the importance of quantum effects in the optical and d.c. conductivity we solve the model numerically without approximations using the finite temperature Lanczos method (FTLM), and compare the results with Dynamical Mean Field Theory (DMFT). In the slow fluctuation limit, the coupling to the TLSs causes transient localization of the carriers analogous to the one recently found in the electron-boson scattering problem, featuring enhanced resistivities and displaced Drude peaks. Fast inelastic scatterers suppress localization, restoring a more conventional regime where transport and optical properties are governed by independent scattering events.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the paper explores charge transport and scattering, it doesn't directly overlap with the user's previous interests in superconductivity, nickelates, or topological materials, although it does share a connection to dynamical mean-field theory.",
+    "matching_keywords": [
+      "dynamical mean field theory"
+    ],
+    "suggested_keywords": [
+      "two-level systems",
+      "inelastic scattering",
+      "transient localization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4953245520591736,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      },
+      {
+        "score": 0.491473525762558,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      },
+      {
+        "score": 0.4878789782524109,
+        "liked_paper_id": "2506.16068v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.19704v1": {
+    "id": "2509.19704v1",
+    "title": "Holographic Aspects of Dynamical Mean-Field Theory",
+    "authors": [
+      {
+        "name": "Kouichi Okunishi",
+        "affiliation": null
+      },
+      {
+        "name": "Akihisa Koga",
+        "affiliation": null
+      }
+    ],
+    "summary": "Dynamical mean-field theory (DMFT) is one of the most standard theoretical frameworks for addressing strongly correlated electron systems. Meanwhile, the concept of holography, developed in the field of quantum gravity, provides an intrinsic relationship between quantum many-body systems and space-time geometry. In this study, we demonstrate that these two theories are closely related to each other by shedding light on holographic aspects of DMFT, particularly for electrons with a semicircle density of states. We formulate a holographic renormalization group for the branch Green's function from the outer edge to the interior of the Bethe lattice network, and then find that its fixed point can be interpreted as a self-consistent solution of Green's function in DMFT. By introducing an effective two-dimensional anti-de Sitter space, moreover, we clarify that the scaling dimensions for the branch Green's function and the boundary correlation functions of electrons at the outer edge of the Bethe lattice network are characterized by the fixed-point Green's function. We also perform DMFT computations for the Bethe-lattice Hubbard model, which illustrate that the scaling dimensions capture the Mott transition in the deep interior.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "The paper explicitly connects Dynamical Mean-Field Theory (DMFT) to holography, a topic related to strongly correlated electron systems, aligning with the user's interest in DMFT and novel electronic phenomena.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "holographic renormalization group",
+      "Bethe lattice",
+      "scaling dimensions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6199764609336853,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.5710161924362183,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "score": 0.5614702701568604,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.19932v1": {
+    "id": "2509.19932v1",
+    "title": "Exploration of Altermagnetism in $\\mathrm{RuO_{2}}$",
+    "authors": [
+      {
+        "name": "Yu-Xin Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yiyuan Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Liqing Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Shuai Li",
+        "affiliation": null
+      },
+      {
+        "name": "Song-Bo Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Hai-Zhou Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "The fundamental role of magnetic materials in modern science and technology has driven a rapid surge in research on unconventional magnetism in recent years. In particular, altermagnets, which simultaneously exhibit zero net magnetization in real space and anisotropic spin splitting in momentum space, have garnered significant interest for both fundamental physics and technological applications. Among these, $\\mathrm{RuO_{2}}$ stands as the pioneering and most extensively studied altermagnet. While the intrinsic magnetic order of $\\mathrm{RuO_{2}}$ is still a subject of active debate, numerous exotic phenomena characteristic of altermagnetism have been observed in $\\mathrm{RuO_{2}}$ samples. In this review, we explore each facet of the altermagnetism through specific case studies in $\\mathrm{RuO_{2}}$, systematically surveying its crystal and magnetic structures, electronic band properties, and transport phenomena. We critically assess the debate surrounding the intrinsic magnetism in $\\mathrm{RuO_{2}}$, incorporating evidence from altermagnetic signatures in transport, as well as contrasting results from magnetic and spectroscopic measurements. Finally, possible future research directions in this field are discussed.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses unconventional magnetism in RuO2, focusing on altermagnetism, which has some overlap with the user's interest in novel electronic properties and materials, particularly in oxides.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Ruthenium Dioxide",
+      "Spin Splitting"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5604227781295776,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.5465183854103088,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "score": 0.5389615297317505,
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20337v1": {
+    "id": "2509.20337v1",
+    "title": "Spin-polaron fingerprints in the optical conductivity of iridates",
+    "authors": [
+      {
+        "name": "Francesco Cassol",
+        "affiliation": null
+      },
+      {
+        "name": "L\u00e9o Gaspard",
+        "affiliation": null
+      },
+      {
+        "name": "Cyril Martins",
+        "affiliation": null
+      },
+      {
+        "name": "Michele Casula",
+        "affiliation": null
+      },
+      {
+        "name": "Benjamin Lenz",
+        "affiliation": null
+      }
+    ],
+    "summary": "As a consequence of their spin-orbit entangled ground state, many $5d^{5}$ iridate materials display a peculiar double peak structure in optical transport quantities, such as absorption and conductivity. Their common interpretation is based on the presence of Hubbard subbands in the half-filled $j_{\\mathrm{eff}}=1/2$ manifold. Herein, we challenge this picture, proposing a scenario based on the presence of spin-polaron (SP) quasiparticles, and assigning a dominant SP character to the first peak. We illustrate it by taking the materials Ba$_2$IrO$_4$ and Sr$_2$IrO$_4$ as paradigmatic examples, which we investigate within the dynamical mean-field theory and the self-consistent Born approximation. Both theories reproduce nontrivial features revealed by angle-resolved photoemission spectroscopy and optical transport measurements, supporting our interpretation. In the case of Sr$_2$IrO$_4$, we show how the SP scenario survives in the low-doped regime. Similar optical transport fingerprints are expected to be found in the wider class of $5d^5$ iridates and more generally in strongly correlated antiferromagnetic regimes, such as those found in cuprates.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper utilizes dynamical mean-field theory, a method present in previously liked papers, and discusses correlated electron systems like cuprates, although the focus is on iridates.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "spin-polaron",
+      "iridates",
+      "optical conductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5720162987709045,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.5688164830207825,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5627337694168091,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.18259v1": {
+    "id": "2509.18259v1",
+    "title": "Order from chaos with adaptive circuits on quantum hardware",
+    "authors": [
+      {
+        "name": "Bibek Pokharel",
+        "affiliation": null
+      },
+      {
+        "name": "Haining Pan",
+        "affiliation": null
+      },
+      {
+        "name": "Kemal Aziz",
+        "affiliation": null
+      },
+      {
+        "name": "Luke C. G. Govia",
+        "affiliation": null
+      },
+      {
+        "name": "Sriram Ganeshan",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas Iadecola",
+        "affiliation": null
+      },
+      {
+        "name": "Justin H. Wilson",
+        "affiliation": null
+      },
+      {
+        "name": "Barbara A. Jones",
+        "affiliation": null
+      },
+      {
+        "name": "Abhinav Deshpande",
+        "affiliation": null
+      },
+      {
+        "name": "Jedediah H. Pixley",
+        "affiliation": null
+      },
+      {
+        "name": "Maika Takita",
+        "affiliation": null
+      }
+    ],
+    "summary": "Programmable quantum devices provide a platform to control the coherent dynamics of quantum wavefunctions. Here we experimentally realize adaptive monitored quantum circuits, which incorporate conditional feedback into non-unitary evolution, to control quantum chaotic dynamics using a combination of local mid-circuit measurements and resets. The experiments are performed with an IBM superconducting quantum processor using up to 100 qubits that samples a quantum version of the classically chaotic Bernoulli map. This map scrambles quantum information, while local measurements and feedback attempt to steer the dynamics toward a state that is a fixed point of the map. This competition drives a dynamical phase transition between quantum and classical dynamics that we observe experimentally and describe theoretically using noisy simulations, matrix product states, and mappings to statistical mechanics models. Estimates of the universal critical properties are obtained to high accuracy on the quantum computer thanks to the large number of qubits utilized in the calculation. By successfully applying up to nearly 5000 entangling gates and 5000 non-unitary mid-circuit operations on systems up to 100 qubits, this experiment serves as a signpost on the route towards fault tolerance.",
+    "published_date": "2025-09-22",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in superconductivity and correlated electron systems, this paper focuses on quantum computing and chaotic dynamics, a different area of research.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "adaptive quantum circuits",
+      "quantum chaos",
+      "Bernoulli map"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4243878126144409,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4198402166366577,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.41851750016212463,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
