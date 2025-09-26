@@ -56303,5 +56303,781 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2509.20504v1": {
+    "id": "2509.20504v1",
+    "title": "Hot but Coherent: Doublons at Infinite Temperature in the Hubbard chain",
+    "authors": [
+      {
+        "name": "C\u0103t\u0103lin Pa\u015fcu Moca",
+        "affiliation": null
+      },
+      {
+        "name": "Bal\u00e1zs D\u00f3ra",
+        "affiliation": null
+      },
+      {
+        "name": "Gergely Zar\u00e1nd",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the spectral properties and the dynamics of doublons in the one-dimensional Hubbard model at infinite temperature. Using a Chebyshev expansion approach formulated in the superfermionic representation, we compute the momentum- and frequency-resolved doublon spectral function across a wide range of interaction strengths $U$ and in the presence of an external electric field. Increasing the interaction, the spectrum gradually splits into separate bands associated with two-hole and two-particle excitations. Despite the presence of strong correlations, we find that doublons retain their coherence and undergo long-lived Bloch oscillations, as well as rich quantum walk dynamics characterized by light-cone spreadings at strong coupling, which we analyze through the time-and space-resolved Green's function.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the Hubbard model and strongly correlated systems, which aligns with the user's interest in correlated electron materials and unconventional superconductivity, although it focuses on a specific aspect (doublons) and a simplified model (1D Hubbard chain).",
+    "matching_keywords": [
+      "green's function",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Doublons",
+      "Hubbard model",
+      "Superfermionic representation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.60860276222229,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5926709175109863,
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
+      },
+      {
+        "score": 0.5820931196212769,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.19963v1": {
+    "id": "2509.19963v1",
+    "title": "Computational complexity of injective projected entangled pair states",
+    "authors": [
+      {
+        "name": "Dylan Harley",
+        "affiliation": null
+      },
+      {
+        "name": "Freek Witteveen",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Malz",
+        "affiliation": null
+      }
+    ],
+    "summary": "Projected entangled pair states (PEPS) constitute a variational family of quantum states with area-law entanglement. PEPS are particularly relevant and successful for studying ground states of spatially local Hamiltonians. However, computing local expectation values in these states is known to be postBQP-hard. Injective PEPS, where all constituent tensors fulfil an injectivity constraint, are generally believed to be better behaved, because they are unique ground states of spatially local Hamiltonians. In this work, we therefore examine how the computational hardness of contraction depends on the injectivity. We establish that below a constant positive injectivity threshold, evaluating local observables remains postBQP-complete, while above a different constant nontrivial threshold there exists an efficient classical algorithm for the task. This resolves an open question from (Anshu et al., STOC `24).",
+    "published_date": "2025-09-24",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on the computational complexity of quantum states, which is a different area than the user's previously liked papers on superconductivity and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "projected entangled pair states",
+      "computational complexity",
+      "injectivity threshold"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5426216125488281,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4504285454750061,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.42648541927337646,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.20662v1": {
+    "id": "2509.20662v1",
+    "title": "Atomistic Insights into Cu/amorphous-Ta$_x$N Interfacial Adhesion via Machine Learning Interatomic Potentials: Effects of Stoichiometry and Interface Construction",
+    "authors": [
+      {
+        "name": "Jeong Min Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Jaehoon Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Ji-Hwan Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Won-Joon Son",
+        "affiliation": null
+      },
+      {
+        "name": "Seungwu Han",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurate understanding and control of interfacial adhesion between Cu and Ta$_x$N diffusion barriers are essential for ensuring the mechanical reliability and integrity of Cu interconnect systems in semiconductor devices. Amorphous tantalum nitride (a-Ta$_x$N) barriers are particularly attractive due to their superior barrier performance, attributed to the absence of grain boundaries. However, a systematic atomistic investigation of how varying Ta stoichiometries influences adhesion strength at Cu/a-Ta$_x$N interfaces remains lacking, hindering a comprehensive understanding of interface optimization strategies. In this study, we employ machine learning interatomic potentials (MLIPs) to perform steered molecular dynamics (SMD) simulations of Cu/a-Ta$_x$N interfaces. We simultaneously evaluate three distinct interface construction approaches--static relaxation, high-temperature annealing, and simulated Cu deposition--to comprehensively investigate their influence on adhesion strength across varying Ta compositions ($x=1, 2, 4$). Peak force and work of adhesion values from SMD simulations quantitatively characterize interface strength, while atomic stress and strain analyses elucidate detailed deformation behavior, highlighting the critical role of interfacial morphologies. Additionally, we explore the atomistic mechanisms underlying cohesive failure, revealing how targeted incorporation of Ta atoms into Cu layers enhances the cohesive strength of the interface. This study demonstrates how MLIP-driven simulations can elucidate atomic-scale relationships between interface morphology and adhesion behavior, providing insights that can guide future atomistic engineering strategies toward enhancing intrinsic barrier adhesion, potentially enabling liner-free interconnect technologies.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on Cu/TaN interfaces and their adhesion, which is materially different from the user's interests in superconductivity, Dirac fermions, and nickelates.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Cu/TaN interface",
+      "interfacial adhesion",
+      "MLIP simulations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5135831832885742,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.47720837593078613,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4114292562007904,
+        "liked_paper_id": "yBtX0C4AAAAJ:mVmsd5A6BfQC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20431v1": {
+    "id": "2509.20431v1",
+    "title": "Multicriticality between Purely Gapless SPT Phases with Unitary Symmetry",
+    "authors": [
+      {
+        "name": "Saranesh Prembabu",
+        "affiliation": null
+      },
+      {
+        "name": "Ruben Verresen",
+        "affiliation": null
+      }
+    ],
+    "summary": "Symmetry-protected topological (SPT) phases are commonly required to have an energy gap, but recent work has extended the concept to gapless settings. This raises a natural question: what happens at transitions between inequivalent gapless SPTs? We address this for the simplest known case among gapless SPTs protected by a unitary symmetry group acting faithfully on the low-energy theory. To this end, we consider a qutrit version of the nearest-neighbor XX chain. Trimerizing the chain explicitly breaks an anomalous symmetry and produces three distinct gapped SPT phases protected by a unitary $\\mathbb{Z}_3 \\times \\mathbb{Z}_3$ symmetry. Their phase boundaries are given by three inequivalent gapless SPTs without any gapped symmetry sectors, each described by a symmetry-enriched version of an orbifolded Potts$^2$ conformal field theory with central charge $c=\\frac{8}{5}$. We provide an analytic derivation of this critical theory in a particular regime and confirm its stability using tensor network simulations. Remarkably, the three gapless SPTs meet at a $c = 2$ multicritical point, where the protecting $\\mathbb{Z}_3 \\times \\mathbb{Z}_3$ symmetry exhibits a mixed anomaly with the $\\mathbb Z_3$ entangler symmetry that permutes the SPT classes. We further explore how discrete gauging gives dipole-symmetric models, offering insights into dipole symmetry-breaking and SPTs, as well as symmetry-enriched multiversality. Altogether, this work uncovers a rich phase diagram of a minimal qutrit chain, whose purely nearest-neighbor interactions make it a promising candidate for experimental realization, including the prospect of critical phases with stable edge modes.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on symmetry-protected topological phases and transitions between gapless SPTs, which is distinct from the user's interests in superconductivity, oxygen vacancies, and Dirac materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "gapless SPT phases",
+      "multicriticality",
+      "unitary symmetry"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5095366835594177,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.4855906367301941,
+        "liked_paper_id": "2506.16360v1"
+      },
+      {
+        "score": 0.4811285138130188,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20687v1": {
+    "id": "2509.20687v1",
+    "title": "Intrinsic antiferromagnetic half-metal and topological phases in the ferrovalley states of the sliding bilayer altermagnets",
+    "authors": [
+      {
+        "name": "Shihao Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetism is characterized by non-relativistic spin splitting and zero total magnetic moments. In this work, intrinsic antiferromagnetic half-metallic and topological phases were discovered within the ferrovalley states of sliding bilayer altermagnets. We construct the bilayer system by utilizing altermagnet monolayers with a small bandgap. The inter-layer hopping phenomenon leads to a reduction in bandgaps, and sliding engineering induces ferrovalley states. Taking the V$_2$OSSe system for example, first-principles calculations indicate that the spin-dependent inter-layer hopping in the ferrovalley state ensures a direct gap in one valley (one spin channel) and band inversion in the other valley (opposite spin channel), which is manifested as an intrinsic antiferromagnetic half-metal. The microscopic model and effective Hamiltonian employed in this research confirm the universal spin-dependent inter-layer hopping in the sliding altermagnet bilayer. Further calculations imply the existence of Chern insulator and gapless surface states in the sliding altermagnet bilayer. Adjusting the sliding direction can achieve the transition between different half-metals with conducting electrons of different spins, accompanied by the switching of gapless surface states of opposite spins. This research lays a foundation for the potential applications of intrinsic antiferromagnetic half-metals and topological phases in spintronics.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism and topological phases, which connect to previous papers on topological materials and symmetry, but the focus on spintronics makes it less directly relevant to the other papers.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Half-metal",
+      "Sliding bilayer"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6412777900695801,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5757731199264526,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      },
+      {
+        "score": 0.5120198726654053,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20759v1": {
+    "id": "2509.20759v1",
+    "title": "Anomalous Quantum Relaxation in the Infinite Temperature Hubbard Chain",
+    "authors": [
+      {
+        "name": "Catalin Pascu Moca",
+        "affiliation": null
+      },
+      {
+        "name": "Bal\u00e1zs D\u00f3ra",
+        "affiliation": null
+      }
+    ],
+    "summary": "The self-energy encodes the fundamental lifetime of quasiparticle excitations. In one dimension, it is known to display anomalous behavior at zero temperature for interacting fermions, reflecting the breakdown of Fermi-liquid theory. Here we show that the self-energy is also anomalous in the infinite temperature Hubbard chain, where thermal fluctuations are maximal. Focusing on the second order ring diagram, we find that the imaginary part of the self-energy diverges non-perturbatively: as a power law with exponent $-1/3$ near half filling, and logarithmically away from it. These divergences imply anomalous temporal relaxation of Green's functions, confirmed by infinite temperature tensor-network simulations. Our results demonstrate that anomalous relaxation and the breakdown of perturbation theory survive even at maximal entropy, which can be observed in cold-atom experiments probing the Hubbard chain at high temperatures.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses interacting fermions and the Hubbard model, which aligns with the user's interest in correlated electron systems and unconventional superconductivity.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "Hubbard chain",
+      "self-energy",
+      "quantum relaxation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6365386247634888,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5938782691955566,
+        "liked_paper_id": "2507.01280v1"
+      },
+      {
+        "score": 0.5919780731201172,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21133v1": {
+    "id": "2509.21133v1",
+    "title": "Preformed Cooper Pairing and the Uncondensed Normal-State Component in Phase-Fluctuating Cuprate Superconductivity",
+    "authors": [
+      {
+        "name": "F. Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Y. Shi",
+        "affiliation": null
+      },
+      {
+        "name": "L. Q. Chen",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a self-consistent microscopic framework beyond mean-field theory for superconductivity in cuprates. It couples fermionic quasiparticles with collective phase dynamics to treat the superconducting gap and superfluid stiffness. The phase sector explicitly incorporates both smooth bosonic Nambu-Goldstone phase fluctuations, renormalized by long-range Coulomb interactions, and topological Berezinskii-Kosterlitz-Thouless-type vortex-antivortex fluctuations. The required input is the correlated single-particle spectral function, enabling direct interfacing with Hubbard-type models. The framework provides quantitative access to key superconducting observables, including $T$-dependent gap and phase stiffness, gap-closing temperature $T_{\\rm os}$, and transition temperature $T_c$, across wide ranges of doping. Using a recently proposed solvable interaction model as input, our simulations reveal several important features consistent with experimental observations in the cuprates: a $d$-wave superconducting dome in the $T$-$p$ phase diagram with a shoulder-like anomaly in the underdoped regime, a pronounced separation between $T_c$ and $T_{\\rm os}$ signaling preformed Cooper pairing, a finite uncondensed normal component persisting even at $T=0$, and the onset temperature $T_{\\rm on,vortex}$ of vortex signals, offering a consistent understanding of how strong correlations and phase fluctuations cooperate to shape high-$T_c$ superconductivity.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.8,
+    "reasoning": "This paper is highly relevant as it focuses on cuprate superconductivity, preformed Cooper pairing, and phase fluctuations, aligning with the user's interest in unconventional superconductivity, nickelates, and related electronic structure topics.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "Preformed Cooper Pairing",
+      "Phase Fluctuations",
+      "Cuprate Superconductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6284332275390625,
+        "liked_paper_id": "2506.16068v1"
+      },
+      {
+        "score": 0.6230150461196899,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.6141438484191895,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20630v1": {
+    "id": "2509.20630v1",
+    "title": "MLIP Arena: Advancing Fairness and Transparency in Machine Learning Interatomic Potentials via an Open, Accessible Benchmark Platform",
+    "authors": [
+      {
+        "name": "Yuan Chiang",
+        "affiliation": null
+      },
+      {
+        "name": "Tobias Kreiman",
+        "affiliation": null
+      },
+      {
+        "name": "Christine Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew C. Kuner",
+        "affiliation": null
+      },
+      {
+        "name": "Elizabeth Weaver",
+        "affiliation": null
+      },
+      {
+        "name": "Ishan Amin",
+        "affiliation": null
+      },
+      {
+        "name": "Hyunsoo Park",
+        "affiliation": null
+      },
+      {
+        "name": "Yunsung Lim",
+        "affiliation": null
+      },
+      {
+        "name": "Jihan Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Daryl Chrzan",
+        "affiliation": null
+      },
+      {
+        "name": "Aron Walsh",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel M. Blau",
+        "affiliation": null
+      },
+      {
+        "name": "Mark Asta",
+        "affiliation": null
+      },
+      {
+        "name": "Aditi S. Krishnapriyan",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) have revolutionized molecular and materials modeling, but existing benchmarks suffer from data leakage, limited transferability, and an over-reliance on error-based metrics tied to specific density functional theory (DFT) references. We introduce MLIP Arena, a benchmark platform that evaluates force field performance based on physics awareness, chemical reactivity, stability under extreme conditions, and predictive capabilities for thermodynamic properties and physical phenomena. By moving beyond static DFT references and revealing the important failure modes of current foundation MLIPs in real-world settings, MLIP Arena provides a reproducible framework to guide the next-generation MLIP development toward improved predictive accuracy and runtime efficiency while maintaining physical consistency. The Python package and online leaderboard are available at https://github.com/atomind-ai/mlip-arena.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cs.CE"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning interatomic potentials and benchmark platforms, which is not directly related to the user's liked papers on superconductivity, oxygen vacancies, Dirac fermions, or dynamical mean-field theory.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "MLIP Arena",
+      "interatomic potentials",
+      "benchmark platform"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4534001350402832,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4490397572517395,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3983443081378937,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20498v1": {
+    "id": "2509.20498v1",
+    "title": "Quantum Coherence in a Maximally Hot Hubbard Chain",
+    "authors": [
+      {
+        "name": "C\u0103t\u0103lin Pa\u015fcu Moca",
+        "affiliation": null
+      },
+      {
+        "name": "Ovidiu I. Patu",
+        "affiliation": null
+      },
+      {
+        "name": "Bal\u00e1zs D\u00f3ra",
+        "affiliation": null
+      },
+      {
+        "name": "Gergely Zar\u00e1nd",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a detailed study of the real-time dynamics and spectral properties of the one-dimensional fermionic Hubbard model at infinite temperature. Using tensor network simulations in Liouville space, we compute the single-particle Green's function and analyze its dynamics across a broad range of interaction strengths. To complement the time-domain approach, we develop a high-resolution Chebyshev expansion method within the density matrix formalism, enabling direct access to spectral functions in the frequency domain. In the non-interacting limit, we derive exact analytical expressions for the Green's function, providing a benchmark for our numerical methods. As interactions are introduced, we observe a transition in the spectral function from a sharp peak at the free dispersion to a broadened two-band structure associated with hole and doublon excitations. These features are well captured by a Hubbard-I mean-field approximation, even at intermediate coupling. At infinite interaction strength ($U = \\infty$), we exploit a determinant representation of the Green's function to access both real-time and spectral properties. In this regime, the system retains a sharp, cosine-like momentum dispersion in frequency space, while the dynamics display nontrivial light-cone spreading with sub-ballistic scaling. Our results demonstrate that strong correlations and nontrivial quantum coherence can persist even at infinite temperature.",
+    "published_date": "2025-09-24",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the Hubbard model and strongly correlated systems, which aligns with the user's interest in correlated electron systems and high-temperature superconductivity research, although it does not directly relate to superconductivity itself.",
+    "matching_keywords": [
+      "green's function",
+      "hubbard model",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Hubbard model",
+      "Quantum coherence",
+      "Infinite temperature"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6597519516944885,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.6582019329071045,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.6537244319915771,
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.20727v1": {
+    "id": "2509.20727v1",
+    "title": "Distinct orbital contributions to electronic and magnetic structures in La$_{4}$Ni$_{3}$O$_{10}$",
+    "authors": [
+      {
+        "name": "Shilong Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Hengyuang Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zehao Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Jie Li",
+        "affiliation": null
+      },
+      {
+        "name": "Qian Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Mengwu Huo",
+        "affiliation": null
+      },
+      {
+        "name": "Hsiao-Yu Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Di-Jing Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Yayu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yi Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhen Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Meng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yingying Peng",
+        "affiliation": null
+      }
+    ],
+    "summary": "High-T$_c$ superconductivity has recently been discovered in Ruddlesden-Popper phase nickelates under pressure, where the low-energy electronic structure is dominated by Ni $d_{x^2 - y^2}$ and $d_{z^2}$ orbitals. However, the respective roles of these orbitals in superconductivity remain unclear. Here, by combining X-ray absorption, electron energy loss spectroscopy, and density functional theory calculations on La$_{4}$Ni$_{3}$O$_{10}$ single crystals, we identify ligand holes in the $p_{x,y}$ orbitals of planar oxygen and the $p_z$ orbitals of apical oxygen, which hybridize with the Ni $d_{x^2-y^2}$ and $d_{z^2}$ orbitals, respectively. These ligand holes enable orbital-selective O K-edge resonant inelastic X-ray scattering (RIXS) study, which reveals that $d_{x^2-y^2}$ states dominate the low-energy charge excitations and are more itinerant. We also observe a $\\sim$0.1 eV bimagnon through RIXS and Raman spectroscopy, which leads to an interlayer superexchange interaction J$_z$ of $\\sim$50 meV. Our results reveal distinct contributions of Ni $d_{x^2-y^2}$ and $d_{z^2}$ orbitals to the electronic and magnetic structure and provide direct experimental insights to understand the RP-phase nickelate superconductors.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper investigates the electronic and magnetic structure of a Ruddlesden-Popper phase nickelate, La$_{4}$Ni$_{3}$O$_{10}$, which is relevant due to the user's interest in nickelate superconductors and related materials, particularly the role of oxygen vacancies and topotactic hydrogen.",
+    "matching_keywords": [
+      "RIXS",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "orbital-selective RIXS",
+      "interlayer superexchange interaction",
+      "ligand holes"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7122951745986938,
+        "liked_paper_id": "2506.23823v1"
+      },
+      {
+        "score": 0.7000061869621277,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.6804556846618652,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21303v1": {
+    "id": "2509.21303v1",
+    "title": "Topological nontrivial berry phase in altermagnet CrSb",
+    "authors": [
+      {
+        "name": "Jianhua Du",
+        "affiliation": null
+      },
+      {
+        "name": "Xin Peng",
+        "affiliation": null
+      },
+      {
+        "name": "Yuzhi Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Shengnan Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Yuran Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Chunxiang Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Tingyu Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Le Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Hangdong Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Jinhu Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Bin Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Chuanying Xi",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiwei Jiao",
+        "affiliation": null
+      },
+      {
+        "name": "Quansheng Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Minghu Fang",
+        "affiliation": null
+      }
+    ],
+    "summary": "The study of topological properties in magnetic materials has long been one of the forefront research areas in condensed matter physics. CrSb, as a prototypical candidate material for altermagnetism, has attracted significant attention due to its unique magnetic properties. This system provides a novel platform for exploring the intrinsic relationship between altermagnetic order and exotic topological states. In this study, we combine systematic electrical transport experiments with first-principles calculations to investigate the possible realization mechanisms of topological semimetal states in CrSb and their manifestations in quantum transport phenomena. Our high field magneto-transport measurements reveal that the magnetoresistance of CrSb exhibits no sign of saturation up to 35 T, following a distinct power-law dependence with an exponent of 1.48. The nonlinear Hall resistivity further indicates a multiband charge transport mechanism. Under high magnetic fields, we observe pronounced Shubnikov-de Haas (SdH) quantum oscillations and discernible Zeeman-effect-induced band splitting at 1.6 K. Systematic Fermi surface and band calculations combined with Berry phase analysis confirm the nontrivial topological character of this material (with a Berry phase approaching {\\pi}). These findings not only provide crucial experimental evidence for understanding the electronic structure of CrSb, but also establish an important foundation for investigating topological quantum states in altermagnets.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological properties and quantum transport in a magnetic material (CrSb), which aligns with the user's interest in topological materials and electronic structure, albeit with a weaker direct connection to superconductivity or vacancy-related topics.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Berry phase",
+      "Quantum oscillations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.530764102935791,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.524814784526825,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5190432071685791,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21034v1": {
+    "id": "2509.21034v1",
+    "title": "Luttinger surface and exchange splitting induced by ferromagnetic fluctuations",
+    "authors": [
+      {
+        "name": "Motoharu Kitatani",
+        "affiliation": null
+      },
+      {
+        "name": "Yusuke Nomura",
+        "affiliation": null
+      },
+      {
+        "name": "Shiro Sakai",
+        "affiliation": null
+      },
+      {
+        "name": "Ryotaro Arita",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ferromagnetism in the single-orbital Hubbard model, which contains only local Coulomb repulsion and no explicit ferromagnetic exchange interactions, has been extensively studied. However, how the associated fluctuations influence the electronic properties near the transition remains a fundamental issue. Here, by applying the dynamical vertex approximation (D$\\Gamma$A) to single-orbital systems with a partially flat band dispersion, we demonstrate that finite-correlation-length ferromagnetic fluctuations generate an emergent Luttinger surface and drive a Fermi surface expansion reminiscent of exchange splitting, even without magnetic order. We further derive an analytical expression that reproduces these effects, clarifying the microscopic origin for fluctuation-driven exchange splitting in correlated electron systems.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the Hubbard model and correlated electron systems, which aligns with the user's interest in dynamical mean-field theory and unconventional superconductivity in materials like nickelates and cuprates, indicating moderate relevance.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Luttinger surface",
+      "Ferromagnetic fluctuations",
+      "Dynamical vertex approximation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6529428362846375,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5701254606246948,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5370839834213257,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.19627v1": {
+    "id": "2509.19627v1",
+    "title": "Automatic Structure Identification for Highly Nonlinear MIMO Volterra Tensor Networks",
+    "authors": [
+      {
+        "name": "Eva Memmel",
+        "affiliation": null
+      },
+      {
+        "name": "Kim Batselier",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Volterra Tensor Network lifts the curse of dimensionality for truncated, discrete times Volterra models, enabling scalable representation of highly nonlinear system. This scalability comes at the cost of introducing randomness through initialization, and leaves open the challenge of how to efficiently determine the hyperparameters model order and memory length. In this paper, we present a unified framework that simultaneously addresses both challenges: We derive two algorithms that incrementally increase the model order and memory length along. Further we proof that the updates are performed along conjugate directions by establishing a mathematical equivalence between our proposed algorithms and equality constrained least squares systems. We present several strategies how to use our proposed algorithms for initialization and hyperparameter selection. In numerical experiments, we demonstrate that our proposed algorithms are more accurate and efficient than the state-of-the-art Volterra Tensor Network and achieve competitive results to several state-of-the-art Volterra models.",
+    "published_date": "2025-09-23",
+    "categories": [
+      "math.OC"
+    ],
+    "doi": null,
+    "score": 0.05,
+    "reasoning": "This paper focuses on Volterra Tensor Networks and system identification, which are unrelated to the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Volterra Tensor Networks",
+      "System Identification",
+      "Hyperparameter Selection"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4270097315311432,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4093402922153473,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.3723118305206299,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
