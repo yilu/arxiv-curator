@@ -56502,7 +56502,9 @@
         "liked_paper_id": "2506.20727v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.20687v1": {
     "id": "2509.20687v1",
@@ -56590,7 +56592,9 @@
         "liked_paper_id": "2507.00837v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.21133v1": {
     "id": "2509.21133v1",
@@ -56789,7 +56793,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2509.20727v1": {
     "id": "2509.20727v1",
@@ -57076,6 +57082,100 @@
         "liked_paper_id": "2506.13359v1"
       }
     ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.21287v1": {
+    "id": "2509.21287v1",
+    "title": "DisCoCLIP: A Distributional Compositional Tensor Network Encoder for Vision-Language Understanding",
+    "authors": [
+      {
+        "name": "Kin Ian Lo",
+        "affiliation": null
+      },
+      {
+        "name": "Hala Hawashin",
+        "affiliation": null
+      },
+      {
+        "name": "Mina Abbaszadeh",
+        "affiliation": null
+      },
+      {
+        "name": "Tilen Limback-Stokin",
+        "affiliation": null
+      },
+      {
+        "name": "Hadi Wazni",
+        "affiliation": null
+      },
+      {
+        "name": "Mehrnoosh Sadrzadeh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recent vision-language models excel at large-scale image-text alignment but often neglect the compositional structure of language, leading to failures on tasks that hinge on word order and predicate-argument structure. We introduce DisCoCLIP, a multimodal encoder that combines a frozen CLIP vision transformer with a novel tensor network text encoder that explicitly encodes syntactic structure. Sentences are parsed with a Combinatory Categorial Grammar parser to yield distributional word tensors whose contractions mirror the sentence's grammatical derivation. To keep the model efficient, high-order tensors are factorized with tensor decompositions, reducing parameter count from tens of millions to under one million. Trained end-to-end with a self-supervised contrastive loss, DisCoCLIP markedly improves sensitivity to verb semantics and word order: it raises CLIP's SVO-Probes verb accuracy from 77.6% to 82.4%, boosts ARO attribution and relation scores by over 9% and 4%, and achieves 93.7% on a newly introduced SVO-Swap benchmark. These results demonstrate that embedding explicit linguistic structure via tensor networks yields interpretable, parameter-efficient representations that substantially improve compositional reasoning in vision-language tasks.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on vision-language understanding and tensor networks, which is a departure from the user's previous interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Vision-language understanding",
+      "Tensor networks",
+      "Compositional reasoning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.2892304062843323,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.2649157643318176,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.2301011085510254,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2509.20604v1": {
+    "id": "2509.20604v1",
+    "title": "Numerically exact quantum dynamics with tensor networks: Predicting the decoherence of interacting spin systems",
+    "authors": [
+      {
+        "name": "Tianchu Li",
+        "affiliation": null
+      },
+      {
+        "name": "Pranay Venkatesh",
+        "affiliation": null
+      },
+      {
+        "name": "Nanako Shitara",
+        "affiliation": null
+      },
+      {
+        "name": "Andr\u00e9s Montoya-Castillo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Predicting the quantum dynamics of promising solid-state and molecular quantum technology candidates remains a formidable challenge. Yet, accessing these dynamics is key to understanding and controlling decoherence mechanisms -- a prerequisite for designing better qubits, sensors, and memories. We leverage a matrix product state representation to introduce a numerically exact and scalable method to achieve this goal. We demonstrate that our method accurately predicts coherence and population dynamics of spin networks across a wide range of parameter regimes, encompassing nuclear spin sensors and qubits in solid-state semiconductors and molecular magnets. Our method further predicts spin dynamics under the influence of repeated light pulses, which are commonly used to mitigate decoherence and perform quantum sensing experiments. Our method thus provides reliable results for moderately-sized spin platforms spanning molecular magnets and solid-state spins that can guide the development of approximate but efficient quantum dynamics methods and enable principled inquiry into decoherence mechanisms.",
+    "published_date": "2025-09-24",
+    "reasoning": "Could not be analyzed by LLM.",
+    "vector_matches": [],
+    "score": 0,
     "discovery_sources": [
       "dmrg_preprints"
     ]
