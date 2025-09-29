@@ -57205,5 +57205,466 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2509.21540v1": {
+    "id": "2509.21540v1",
+    "title": "Critical dynamics and superconducting state preparation in the quenched Kitaev chain with pairing imbalance",
+    "authors": [
+      {
+        "name": "Y. B. Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Y. X. Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "S. W. Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Z. Song",
+        "affiliation": null
+      }
+    ],
+    "summary": "The dynamical balance of the pairing term plays a crucial role in the emergence of topological superconductivity in the p-wave spinless Kitaev chain, particularly in the non-Hermitian regime. In this work, we systematically investigate the effects of non-Hermitian pairing terms on both equilibrium and nonequilibrium phenomena in the Kitaev chain. Our analysis focuses on two representative forms of pairing imbalance: uniform and staggered. We demonstrate that a uniform imbalance induces only minor perturbations to the spectrum and dynamical properties, without significantly affecting its equilibrium phase or nonequilibrium steady behavior. In contrast, even a slight staggered imbalance leads to drastic changes. At the symmetry point, it enables the resonant generation of two distinct superconducting states through critical dynamics, with the realized state determined by the direction of the bias. Both states exhibit exact off-diagonal long-range order (ODLRO) in the thermodynamic limit. Our results emphasize the fragility of coherent dynamics in non-Hermitian topological systems and elucidate the interplay among non-Hermiticity, topology, and dynamical criticality in quench processes.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses superconductivity, it focuses on the Kitaev chain and non-Hermitian effects, which are not prominent in the user's liked papers, making it moderately relevant.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Kitaev chain",
+      "non-Hermitian systems",
+      "topological superconductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.56615149974823,
+        "liked_paper_id": "2506.16068v1"
+      },
+      {
+        "score": 0.5651712417602539,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5433779358863831,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.22177v1": {
+    "id": "2509.22177v1",
+    "title": "Predictor-corrector method based on dynamic mode decomposition for tensor-train nonequilibrium Green's function calculations",
+    "authors": [
+      {
+        "name": "Maksymilian \u015aroda",
+        "affiliation": null
+      },
+      {
+        "name": "Ken Inayoshi",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Sch\u00fcler",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Shinaoka",
+        "affiliation": null
+      },
+      {
+        "name": "Philipp Werner",
+        "affiliation": null
+      }
+    ],
+    "summary": "The nonequilibrium Green's function (NEGF) formalism is a powerful tool to study the nonequilibrium dynamics of correlated lattice systems, but its applicability to realistic system sizes and long timescales is limited by unfavorable memory scaling. While compressed representations, such as the recently introduced quantics tensor train (QTT) format, alleviate the memory bottleneck, the efficiency of QTT-NEGF calculations is hindered by poor initializations and slow or unstable convergence of globally updated self-consistent iterations. Here, we introduce a predictor-corrector solver for QTT-NEGF simulations that combines dynamic mode decomposition (DMD) extrapolation with the recently proposed causality-preserving block-time-stepping updates. The DMD predictor supplies accurate initial guesses that reduce the iteration count of the calculation, while the block-time-stepping correction ensures stable convergence even for long propagation intervals. Applying this method to the Hubbard model on a $32\\times 32$ lattice within the nonequilibrium $GW$ approximation, we demonstrate stable propagation up to times of $t_\\mathrm{max}=512$ inverse hoppings, surpassing the capabilities of both matrix-based implementations and previous QTT solvers. Our contribution is twofold. (i) We integrate tensor dynamic mode decomposition with the QTT representation, which establishes a general framework that is not limited to NEGFs. (ii) We demonstrate its practical benefits in NEGF simulations, where it enables stable and efficient access to unprecedented timescales at high momentum resolution, thereby advancing controlled studies of long-time dynamics and nonequilibrium steady states in correlated lattice systems.",
+    "published_date": "2025-09-26",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While the paper focuses on computational methods for studying correlated lattice systems, a topic related to some user interests, it is primarily a method development paper, making it less directly relevant to the user's specific interests in superconductivity and specific materials.",
+    "matching_keywords": [
+      "green's function",
+      "hubbard model",
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Nonequilibrium Green's function",
+      "Dynamic mode decomposition",
+      "Tensor train format"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5362915396690369,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      },
+      {
+        "score": 0.5235321521759033,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      },
+      {
+        "score": 0.5210557579994202,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21901v1": {
+    "id": "2509.21901v1",
+    "title": "Gapless and ordered phases in spin-1/2 Kitaev-XX-Gamma chain",
+    "authors": [
+      {
+        "name": "Zebin Zhuang",
+        "affiliation": null
+      },
+      {
+        "name": "Wang Yang",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this work, we study the spin-1/2 Kitaev chain with additional XX and symmetric off-diagonal Gamma interactions. By a combination of Jordan-Wigner transformation and density matrix renormalization group (DMRG) numerical simulations, we obtain the exact solution of the model and map out the phase diagram containing six distinct phases. The four gapped phases display ferromagnetic and antiferromagnetic magnetic orders along the (1, 1, 0)- and (1, -1, 0)-spin directions, whereas in the gapless phases, the low energy spectrum consists of two branches of helical Majorana fermions with unequal velocities. Transition lines separating different phases include deconfined quantum critical lines with dynamical critical exponent z = 1 and quadratic critical lines with z = 2. Our work reveals the rich interplay among symmetry, magnetic order, and quantum criticality in the Kitaev-XX-Gamma chain",
+    "published_date": "2025-09-26",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the paper deals with quantum criticality and exotic phases which are of general interest based on the user's prior papers, it focuses on a specific Kitaev-XX-Gamma chain model which is not directly related to the materials or techniques in the previous papers.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Kitaev chain",
+      "Majorana fermions",
+      "Quantum criticality"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.654110848903656,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.6433881521224976,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.6329517364501953,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21778v1": {
+    "id": "2509.21778v1",
+    "title": "Beyond Structure: Invariant Crystal Property Prediction with Pseudo-Particle Ray Diffraction",
+    "authors": [
+      {
+        "name": "Bin Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Longhan Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Yifan Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhixun Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yuyu Luo",
+        "affiliation": null
+      },
+      {
+        "name": "Hong Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Ren",
+        "affiliation": null
+      },
+      {
+        "name": "Tong-Yi Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Crystal property prediction, governed by quantum mechanical principles, is computationally prohibitive to solve exactly for large many-body systems using traditional density functional theory. While machine learning models have emerged as efficient approximations for large-scale applications, their performance is strongly influenced by the choice of atomic representation. Although modern graph-based approaches have progressively incorporated more structural information, they often fail to capture long-term atomic interactions due to finite receptive fields and local encoding schemes. This limitation leads to distinct crystals being mapped to identical representations, hindering accurate property prediction. To address this, we introduce PRDNet that leverages unique reciprocal-space diffraction besides graph representations. To enhance sensitivity to elemental and environmental variations, we employ a data-driven pseudo-particle to generate a synthetic diffraction pattern. PRDNet ensures full invariance to crystallographic symmetries. Extensive experiments are conducted on Materials Project, JARVIS-DFT, and MatBench, demonstrating that the proposed model achieves state-of-the-art performance.",
+    "published_date": "2025-09-26",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper deals with materials and uses computational methods, it focuses on property prediction and machine learning rather than the specific electronic structure or superconductivity themes present in the user's preferred papers.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "crystal property prediction",
+      "pseudo-particle ray diffraction",
+      "invariant crystal properties"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5395963191986084,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5271228551864624,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4657104015350342,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.22473v1": {
+    "id": "2509.22473v1",
+    "title": "Competing $s$-wave pairing in overdoped $t$-$J$ model",
+    "authors": [
+      {
+        "name": "Wayne Zheng",
+        "affiliation": null
+      },
+      {
+        "name": "Tao Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Zheng-Yuan Yue",
+        "affiliation": null
+      },
+      {
+        "name": "Fu-Chun Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Wei-Qiang Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zheng-Cheng Gu",
+        "affiliation": null
+      }
+    ],
+    "summary": "The $d$-wave pairing symmetry has long been considered a defining feature of high-temperature superconductivity in cuprates. In this work, we reveal that $s$-wave pairing states exhibit variational energies comparable to the $d$-wave state in a square $t$-$J$ model, particularly at high doping levels ($\\delta\\gtrsim 15\\%$) by using the state-of-the-art tensor network simulation. This surprising result suggests that $s$-wave pairing may play an important role in the cuprate phase diagram, especially for the overdoped region. Our findings provide a potential resolution to discrepancies in recent Josephson tunneling experiments on twisted bilayer cuprates and offer new insights into the evolution of pairing symmetry with doping.",
+    "published_date": "2025-09-26",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses superconductivity and pairing symmetries in cuprates, aligning with the user's interest in superconductivity and related materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "cuprate",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "s-wave pairing",
+      "tensor network simulation",
+      "overdoped cuprates"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6681653261184692,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.6224368214607239,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.6066216230392456,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21647v1": {
+    "id": "2509.21647v1",
+    "title": "Automated Machine Learning Pipeline for Training and Analysis Using Large Language Models",
+    "authors": [
+      {
+        "name": "Adam Lahouari",
+        "affiliation": null
+      },
+      {
+        "name": "Jutta Rogal",
+        "affiliation": null
+      },
+      {
+        "name": "Mark E. Tuckerman",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) have become powerful tools to extend molecular simulations beyond the limits of quantum methods, offering near-quantum accuracy at much lower computational cost. Yet, developing reliable MLIPs remains difficult because it requires generating high-quality datasets, preprocessing atomic structures, and carefully training and validating models. In this work, we introduce an Automated Machine Learning Pipeline (AMLP) that unifies the entire workflow from dataset creation to model validation. AMLP employs large-language-model agents to assist with electronic-structure code selection, input preparation, and output conversion, while its analysis suite (AMLP-Analysis), based on ASE supports a range of molecular simulations. The pipeline is built on the MACE architecture and validated on acridine polymorphs, where, with a straightforward fine-tuning of a foundation model, mean absolute errors of ~1.7 meV/atom in energies and ~7.0 meV/{\\AA} in forces are achieved. The fitted MLIP reproduces DFT geometries with sub-{\\AA} accuracy and demonstrates stability during molecular dynamics simulations in the microcanonical and canonical ensembles.",
+    "published_date": "2025-09-25",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning interatomic potentials, which is a different area than the user's liked papers on superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "interatomic potentials",
+      "machine learning pipeline",
+      "molecular dynamics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4644274413585663,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.4519110321998596,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4508384168148041,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.21813v1": {
+    "id": "2509.21813v1",
+    "title": "Low-energy photoexcitation inside the Mott gap in doped Hubbard and t-J ladders",
+    "authors": [
+      {
+        "name": "Sumal Chandra",
+        "affiliation": null
+      },
+      {
+        "name": "Kazuya Shinjo",
+        "affiliation": null
+      },
+      {
+        "name": "Shigetoshi Sota",
+        "affiliation": null
+      },
+      {
+        "name": "Seiji Yunoki",
+        "affiliation": null
+      },
+      {
+        "name": "Takami Tohyama",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate changes in the optical conductivity of doped Mott insulators by tuning ultrashort pump pulses to target either the Drude or low-energy absorption regions. Using a hole-doped two-leg Hubbard ladder and a four-leg t-J ladders, we calculate the optical conductivity after pump by employing the time-dependent density matrix renormalization group. We find that a monocycle electric field pulse tuned to the Drude absorption reduces the Drude weight, accompanied by a slight enhancement in the mid-infrared (mid-IR) spectral weight. However, this enhancement diminishes as the pulse intensity increases. In contrast, a pump pulse tuned to the mid-IR absorption only affects the Drude weight. This behavior arises because the mid-IR absorption originates from magnetic excitations that do not couple directly to photons. These predictions can be tested experimentally by applying ultrashort low-energy pump pulses to cuprate materials.",
+    "published_date": "2025-09-26",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper investigates doped Mott insulators and their optical conductivity, which relates to the user's interest in cuprate materials and correlated electron systems.",
+    "matching_keywords": [
+      "cuprate",
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "Mott insulator",
+      "optical conductivity",
+      "time-dependent DMRG"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5266607999801636,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.48435088992118835,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      },
+      {
+        "score": 0.4715421795845032,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.22183v1": {
+    "id": "2509.22183v1",
+    "title": "Molecular Dynamics Simulations of Collision Cascades in Niobium: Comparing Interatomic Potentials",
+    "authors": [
+      {
+        "name": "S. Mondal",
+        "affiliation": null
+      },
+      {
+        "name": "U. Bhardwaj",
+        "affiliation": null
+      },
+      {
+        "name": "A. Majalee",
+        "affiliation": null
+      },
+      {
+        "name": "V. Mishra",
+        "affiliation": null
+      },
+      {
+        "name": "M. Warrier",
+        "affiliation": null
+      }
+    ],
+    "summary": "Radiation damage in structural materials is a major challenge for advanced nuclear energy systems, and niobium is of particular interest due to its high melting point, mechanical strength, and corrosion resistance. To better understand its radiation response, we carried out large-scale molecular dynamics simulations of collision cascades in pure niobium at 300 K over a primary knock-on atom (PKA) energy range of 1-75 keV, employing four interatomic potentials: an embedded atom method (EAM), two Finnis-Sinclair models (FS-1 and FS-2), and a machine learning-based spectral neighbor analysis potential (SNAP) we developed. All reproduce the general features of cascade formation but differ significantly in defect production, clustering, and morphology. At low energies, defect generation follows trends governed by threshold displacement energy (TDE) and the stiffness-to-range ratio (|S/R|). At higher energies, subcascade formation makes defect evolution dependent on the combined effects of |S/R|, average TDE, and other material-specific factors. Vacancy clustering dominates over interstitial clustering across all cases: EAM produces the largest vacancy clusters and the highest clustering fraction, while SNAP shows the strongest interstitial clustering. Morphological analysis indicates that EAM forms a balanced mix of 1/2<111>, 1/2<110> loops, C15 rings, and hybrid structures; FS-2 favors extended 1/2<111> dumbbells, crowdions, and dislocation loops; whereas FS-1 and SNAP generate more compact or disordered clusters, with SNAP produces a high fraction of C15-like rings (maximum size up to nine atoms) that may evolve into dislocation loops of 1/2<111> and <100>. These findings give clear insights into how niobium reacts when exposed to irradiation, especially at high energies.",
+    "published_date": "2025-09-26",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on radiation damage in niobium using molecular dynamics, which is not closely related to the user's liked papers on superconductivity and electronic structure.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "radiation damage",
+      "molecular dynamics",
+      "niobium"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5288032293319702,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5113874673843384,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4118598997592926,
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
