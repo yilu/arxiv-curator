@@ -62577,7 +62577,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.04164v1": {
     "id": "2510.04164v1",
@@ -62636,7 +62638,9 @@
         "liked_paper_id": "2506.21431v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.04907v1": {
     "id": "2510.04907v1",
@@ -62685,7 +62689,9 @@
         "liked_paper_id": "2506.14703v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.04756v1": {
     "id": "2510.04756v1",
@@ -62810,7 +62816,9 @@
         "liked_paper_id": "2507.01856v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.04224v1": {
     "id": "2510.04224v1",
@@ -62902,6 +62910,686 @@
       {
         "score": 0.2633620798587799,
         "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05897v1": {
+    "id": "2510.05897v1",
+    "title": "Hybrid quantum-classical analog simulation of two-dimensional Fermi-Hubbard models with neutral atoms",
+    "authors": [
+      {
+        "name": "Sergi Juli\u00e0-Farr\u00e9",
+        "affiliation": null
+      },
+      {
+        "name": "Antoine Michel",
+        "affiliation": null
+      },
+      {
+        "name": "Christophe Domain",
+        "affiliation": null
+      },
+      {
+        "name": "Joseph Mikael",
+        "affiliation": null
+      },
+      {
+        "name": "Jacques-Charles Lafoucriere",
+        "affiliation": null
+      },
+      {
+        "name": "Joseph Vovrosh",
+        "affiliation": null
+      },
+      {
+        "name": "Ahmed Chahlaoui",
+        "affiliation": null
+      },
+      {
+        "name": "Dorian Claveau",
+        "affiliation": null
+      },
+      {
+        "name": "Guillaume Villaret",
+        "affiliation": null
+      },
+      {
+        "name": "Julius de Hond",
+        "affiliation": null
+      },
+      {
+        "name": "Lo\u00efc Henriet",
+        "affiliation": null
+      },
+      {
+        "name": "Antoine Browaeys",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas Ayral",
+        "affiliation": null
+      },
+      {
+        "name": "Alexandre Dauphin",
+        "affiliation": null
+      }
+    ],
+    "summary": "We experimentally study the two-dimensional Fermi-Hubbard model using a Rydberg-based quantum processing unit in the analog mode. Our approach avoids encoding directly the original fermions into qubits and instead relies on reformulating the original model onto a system of fermions coupled to spins and then decoupling them in a self-consistent manner. We then introduce the auxiliary spin solver: this hybrid quantum-classical algorithm handles a free-fermion problem, which can be solved efficiently with a few classical resources, and an interacting spin problem, which can be naturally encoded in the analog quantum computer. This algorithm can be used to study both the equilibrium Mott transition as well as non-equilibrium properties of the original Fermi-Hubbard model, highlighting the potential of quantum-classical hybrid approaches to study strongly correlated matter.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the Fermi-Hubbard model, a strongly correlated system, which connects to the user's interest in correlated electron systems and unconventional superconductivity, though it uses a quantum simulation approach rather than focusing on specific materials.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Fermi-Hubbard model",
+      "quantum-classical hybrid algorithm",
+      "Rydberg-based quantum processing unit"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6213991045951843,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.6185929775238037,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5863828659057617,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.04047v1": {
+    "id": "2510.04047v1",
+    "title": "Operator dependence and robustness of spacetime-localized response in a quantum critical spin chain",
+    "authors": [
+      {
+        "name": "Daichi Imagawa",
+        "affiliation": null
+      },
+      {
+        "name": "Keiju Murata",
+        "affiliation": null
+      },
+      {
+        "name": "Daisuke Yamamoto",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the phenomenon of spacetime-localized response in a quantum critical spin system, with particular attention to how it depends on the spatial profile and operator content of the applied perturbation, as well as its robustness against increase of amplitude and temporal discretization. Motivated by recent theoretical proposals linking such response patterns to the anti-de Sitter/conformal field theory correspondence, we numerically analyze the real-time dynamics of the one-dimensional transverse-field Ising model at criticality using the time-evolving block decimation algorithm. We find that sharply localized and periodically recurring responses emerge only for specific types of perturbations, namely those that correspond to local density fields in the continuum limit. In contrast, perturbations involving other spin components produce conventional propagating excitations without localization. Furthermore, we demonstrate that the response remains qualitatively robust when the time-dependent perturbation is approximated by a piecewise-linear function, highlighting the practical relevance of our findings for quantum simulation platforms with limited temporal resolution. Our results clarify the operator dependence of emergent bulk-like dynamics in critical spin chains and offer guidance for probing holographic physics in experimental settings.",
+    "published_date": "2025-10-05",
+    "categories": [
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper involves quantum criticality and real-time dynamics, it focuses on spin chains and operator dependence, differing from the user's interests in superconductivity, oxygen vacancies, and Dirac fermions.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "spacetime-localized response",
+      "quantum critical spin chain",
+      "time-evolving block decimation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5372775793075562,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5293135046958923,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5144493579864502,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.05227v1": {
+    "id": "2510.05227v1",
+    "title": "TeMFpy: a Python library for converting fermionic mean-field states into tensor networks",
+    "authors": [
+      {
+        "name": "Simon H. Hille",
+        "affiliation": null
+      },
+      {
+        "name": "Attila Szab\u00f3",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce TeMFpy, a Python library for converting fermionic mean-field states to finite or infinite matrix product state (MPS) form. TeMFpy includes new, efficient, and easy-to-understand algorithms for both Slater determinants and Pfaffian states. Together with Gutzwiller projection, these also allow the user to build variational wave functions for various strongly correlated electron systems, such as quantum spin liquids. We present all implemented algorithms in detail and describe how they can be accessed through TeMFpy, including full example workflows. TeMFpy is built on top of TeNPy and, therefore, integrates seamlessly with existing MPS-based algorithms.",
+    "published_date": "2025-10-06",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.supr-con",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses methods and a library for dealing with fermionic systems and correlated electrons, which relates to the user's interest in correlated materials and electronic structure calculations, but it is more focused on computational techniques.",
+    "matching_keywords": [
+      "matrix product state",
+      "quantum spin liquid",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "matrix product states",
+      "fermionic mean-field",
+      "quantum spin liquids"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.631353497505188,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5912059545516968,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5608522891998291,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05226v1": {
+    "id": "2510.05226v1",
+    "title": "Spin-spiral instability of the Nagaoka ferromagnet in the crossover between square and triangular lattices",
+    "authors": [
+      {
+        "name": "Darren Pereira",
+        "affiliation": null
+      },
+      {
+        "name": "Erich J. Mueller",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the hard-core Fermi-Hubbard model in the crossover between square and triangular lattices near half-filling. As was recognized by Nagaoka in the 1960s, on the square lattice the presence of a single hole leads to ferromagnetic spin ordering. On the triangular lattice, geometric frustration instead leads to a spin-singlet ground state, which can be associated with a 120-degree spiral order. On lattices which interpolate between square and triangular, there is a phase transition at which the ferromagnetic order becomes unstable to a spin spiral. We model this instability, finding the exact critical point.",
+    "published_date": "2025-10-06",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper deals with correlated electron systems and magnetism like some of the liked papers, it focuses on the Fermi-Hubbard model and spin spirals in a different lattice geometry, making it less directly relevant to the specific topics of superconductivity and vacancy ordering.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Fermi-Hubbard model",
+      "spin spiral",
+      "geometric frustration"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5765382051467896,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.54500812292099,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5314491391181946,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05230v1": {
+    "id": "2510.05230v1",
+    "title": "Boundary criticality in two-dimensional correlated topological superconductors",
+    "authors": [
+      {
+        "name": "Yang Ge",
+        "affiliation": null
+      },
+      {
+        "name": "Huan Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Hong Yao",
+        "affiliation": null
+      },
+      {
+        "name": "Shao-Kai Jian",
+        "affiliation": null
+      }
+    ],
+    "summary": "The presence of a boundary enriches the nature of quantum phase transitions. However, the boundary critical phenomena in topological superconductors remain underexplored so far. Here, we investigate the boundary criticality in a two-dimensional correlated time-reversal-invariant topological superconductor tuned through a quantum phase transition into a trivial time-reversal-breaking superconductor. Using sign-problem-free determinant quantum Monte Carlo simulations, we chart the quantum phase diagram and reveal the boundary criticalities encompassing ordinary, special, and extraordinary transitions. Additionally, using renormalization group analysis, we compute the boundary critical exponent up to two loops. Remarkably, the simulations and two-loop renormalization group calculations consistently demonstrate that the presence of the boundary Majorana fermion at the special transition gives rise to a new type of boundary Gross-Neveu-Yukawa fixed point. We conclude with a discussion of possible experimental realizations in iron-based superconductors.",
+    "published_date": "2025-10-06",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological superconductors and their phase transitions, which relates to the user's interest in superconductivity and topological materials, although the specific focus on boundary criticality is a slightly narrower subtopic.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "boundary criticality",
+      "topological superconductor",
+      "Gross-Neveu-Yukawa fixed point"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5993934869766235,
+        "liked_paper_id": "2506.16068v1"
+      },
+      {
+        "score": 0.5769895315170288,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5545729398727417,
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2509.25130v2": {
+    "id": "2509.25130v2",
+    "title": "Coupling induced emergent topology in a two-leg fermionic ladder",
+    "authors": [
+      {
+        "name": "Rajashri Parida",
+        "affiliation": null
+      },
+      {
+        "name": "Biswajit Paul",
+        "affiliation": null
+      },
+      {
+        "name": "Soumya Ranjan Padhi",
+        "affiliation": null
+      },
+      {
+        "name": "Tapan Mishra",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the ground state properties of spinless fermions on a two leg ladder, by allowing the nearest-neighbour hopping dimerization in one leg and uniform hopping in the other. In the non-interacting limit, we find that, at half-filling, the system exhibits robust topological behavior if the inter-leg hopping is allowed. Though depending on the dimerization pattern, the dimerized leg can be either topological or trivial in nature, here we show that by connecting such a leg to a uniform leg through inter-chain coupling, the overall system becomes topological irrespective of the dimerization pattern in the dimerized leg. As a result, a topological phase transition occurs as a function of the inter-leg hopping. When the inter-leg interaction is turned on, the topological phase survives, and we obtain an interaction induced topological phase transition. Finally, we reveal that when uniform interactions are included on all the bonds of the ladder, the topological phase transitions to a symmetry-broken charge-density wave (CDW) phase.",
+    "published_date": "2025-09-29",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.other",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological phases and phase transitions in a fermionic system, which relates to previous interests in topological materials and correlated electron systems, although the specific system and focus differ.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Fermionic ladder",
+      "Topological phase transition",
+      "Charge-density wave"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5724321007728577,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5482222437858582,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.5317887663841248,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.04756v2": {
+    "id": "2510.04756v2",
+    "title": "Finite temperature dopant-induced spin reorganization explored via tensor networks in the two-dimensional $t$-$J$ model",
+    "authors": [
+      {
+        "name": "Yintai Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Aritra Sinha",
+        "affiliation": null
+      },
+      {
+        "name": "Marek M. Rams",
+        "affiliation": null
+      },
+      {
+        "name": "Jacek Dziarmaga",
+        "affiliation": null
+      }
+    ],
+    "summary": "Doped Mott insulators host intertwined spin-charge phenomena that evolve with temperature and can culminate in stripe order or superconductivity at low temperatures. The two-dimensional $t$-$J$ model captures this interplay yet finite-temperature, infinite-size calculations remain difficult. Using purification represented by a tensor network - an infinite projected entangled-pair state (iPEPS) ansatz - we simulate the $t$-$J$ model at finite temperature directly in the thermodynamic limit, reaching temperatures down to one tenth of the hopping rate and hole concentrations up to one quarter of the lattice sites. Beyond specific heat, uniform susceptibility, and compressibility, we introduce dopant-conditioned multi-point correlators that map how holes reshape local exchange. Nearest-neighbor hole pairs produce a strong cooperative response that reinforces antiferromagnetism on the adjacent parallel bonds, and single holes weaken nearby antiferromagnetic bonds; d-wave pairing correlations remain short-ranged over the same window. These results provide experiment-compatible thermodynamic-limit benchmarks and establish dopant-conditioned correlators as incisive probes of short-range spin-texture reorganization at finite temperature.",
+    "published_date": "2025-10-06",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper explores the interplay of spin and charge in doped Mott insulators, relevant to the user's interest in unconventional superconductivity and related materials like nickelates and cuprates.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "t-J model",
+      "tensor networks",
+      "dopant-conditioned correlators"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6270319223403931,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.6018229722976685,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.586761474609375,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.05142v1": {
+    "id": "2510.05142v1",
+    "title": "Reliable End-to-End Material Information Extraction from the Literature with Source-Tracked Multi-Stage Large Language Models",
+    "authors": [
+      {
+        "name": "Xin Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Anshu Raj",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew Luebbe",
+        "affiliation": null
+      },
+      {
+        "name": "Haiming Wen",
+        "affiliation": null
+      },
+      {
+        "name": "Shuozhi Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Kun Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Data-driven materials discovery requires large-scale experimental datasets, yet most of the information remains trapped in unstructured literature. Existing extraction efforts often focus on a limited set of features and have not addressed the integrated composition-processing-microstructure-property relationships essential for understanding materials behavior, thereby posing challenges for building comprehensive databases. To address this gap, we propose a multi-stage information extraction pipeline powered by large language models, which captures 47 features spanning composition, processing, microstructure, and properties exclusively from experimentally reported materials. The pipeline integrates iterative extraction with source tracking to enhance both accuracy and reliability. Evaluations at the feature level (independent attributes) and tuple level (interdependent features) yielded F1 scores around 0.96. Compared with single-pass extraction without source tracking, our approach improved F1 scores of microstructure category by 10.0% (feature level) and 13.7% (tuple level), and reduced missed materials from 49 to 13 out of 396 materials in 100 articles on precipitate-containing multi-principal element alloys (miss rate reduced from 12.4% to 3.3%). The pipeline enables scalable and efficient literature mining, producing databases with high precision, minimal omissions, and zero false positives. These datasets provide trustworthy inputs for machine learning and materials informatics, while the modular design generalizes to diverse material classes, enabling comprehensive materials information extraction.",
+    "published_date": "2025-10-01",
+    "categories": [
+      "cs.CL",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper focuses on materials information extraction, it doesn't directly overlap with the user's interests in superconductivity, oxygen vacancies, or topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "materials information extraction",
+      "large language models",
+      "materials databases"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.27299660444259644,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.24904954433441162,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.2327507734298706,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05616v1": {
+    "id": "2510.05616v1",
+    "title": "Field Free Spin-Orbit Torque Controlled Synapse and Stochastic Neuron Devices for Spintronic Boltzmann Neural Networks",
+    "authors": [
+      {
+        "name": "Aijaz H. Lone",
+        "affiliation": null
+      },
+      {
+        "name": "Meng Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Camelia Florica",
+        "affiliation": null
+      },
+      {
+        "name": "Bin He",
+        "affiliation": null
+      },
+      {
+        "name": "Jingkai Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Xixiang Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Gianluca Setti",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spintronics offers a promising approach to energy efficient neuromorphic computing by integrating the functionalities of synapses and neurons within a single platform. A major challenge, however, is achieving field-free spin orbit torque SOT control over both synaptic and neuronal devices using an industry-adopted spintronic materials stack. In this study, we present field-free SOT spintronic synapses utilizing a CoFeB ferromagnetic thin film system, where asymmetrical device design and specifically added lateral notches in the CoFeB thin film facilitate effective domain wall DW nucleation, movement, and pinning and depinning. This method yields multiple analog, nonvolatile resistance states with enhanced linearity and symmetry, resulting in programmable and stable synaptic weights. We provide a systematic measurement approach to improve the linearity and symmetry of the synapses. Additionally, we demonstrate nanoscale magnetic tunnel junctions MTJs that function as SOT-driven stochastic neurons, exhibiting current-tunable, Boltzmann-like probabilistic switching behavior, which provides an intrinsic in-hardware Gibbs sampling capability. By integrating these synapses and neurons into a Boltzmann machine complemented by a classifier layer, we achieve recognition accuracies greater than 98 percent on the MNIST dataset and 86 percent on Fashion MNIST. This work establishes a framework for field free synaptic and neuronal devices, setting the stage for practical, materials-compatible, and all spintronic neuromorphic computing hardware.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "physics.app-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user's liked papers focus on superconductivity and novel materials, this paper explores spintronics and neuromorphic computing, representing a significant domain shift.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "spintronic synapses",
+      "Boltzmann machine",
+      "field-free SOT"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.473312109708786,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      },
+      {
+        "score": 0.4602728486061096,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.426996111869812,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05339v1": {
+    "id": "2510.05339v1",
+    "title": "Machine Learning Interatomic Potentials Enable Molecular Dynamics Simulations of Doped MoS2",
+    "authors": [
+      {
+        "name": "Abrar Faiyad",
+        "affiliation": null
+      },
+      {
+        "name": "Ashlie Martini",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present the first computational framework for molecular dynamics simulation of MoS2 doped with 25 elements spanning metals, non-metals, and transition metals using Meta's Universal Model for Atoms machine learning interatomic potential (MLIP). Benchmarking against density functional theory calculations demonstrates the accuracy of the MLIP for simulating doped-MoS2 systems and highlights opportunities for improvement. Using the MLIP, we perform heating-cooling simulations of doped-MoS2 supercells. The simulations capture complex phenomena including dopant clustering, MoS2 layer fracturing, interlayer diffusion, and chemical compound formation at orders-of-magnitude reduced computational cost compared to density functional theory. This work provides an open-source computational workflow for application-oriented design of doped-MoS2, enabling high-throughput screening of dopant candidates and optimization of compositions for targeted tribological, electronic, and optoelectronic performance. The MLIP bridges the accuracy-efficiency gap between first-principles methods and empirical potentials, and the framework offers unprecedented opportunities for large-scale materials discovery in two-dimensional doped material systems.",
+    "published_date": "2025-10-06",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning potentials for simulating doped MoS2, which is distinct from the user's interest in superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Machine Learning Interatomic Potentials",
+      "Doped MoS2",
+      "Molecular Dynamics Simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5722838640213013,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.507259726524353,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.48483651876449585,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05938v1": {
+    "id": "2510.05938v1",
+    "title": "Autonomous interpretation of atomistic scattering data",
+    "authors": [
+      {
+        "name": "Andy S. Anker",
+        "affiliation": null
+      },
+      {
+        "name": "John L. A. Gardner",
+        "affiliation": null
+      },
+      {
+        "name": "Louise A. M. Rosset",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew L. Goodwin",
+        "affiliation": null
+      },
+      {
+        "name": "Volker L. Deringer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Materials with bespoke properties have long been identified by computational searches, and their experimental realisation is now coming within reach through autonomous laboratories. Scattering experiments are central to verifying the atomic structures of autonomously synthesised materials. Yet, interpreting these measurements typically requires user expertise and manual processing, or machine learning (ML) models trained on predefined datasets, limiting fully autonomous materials discovery. Here, we introduce a differentiable optimisation framework that treats scattering calculations, energetics, and chemical constraints as a unified refinement problem. Capability demonstrations across molecules, crystal structures, nanoparticles, and amorphous matter show that this data-driven approach resolves structural degeneracies with multi-modal inputs - suggesting its usefulness for informing, and ultimately guiding, the operation of autonomous laboratories.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the autonomous interpretation of atomistic scattering data, which is relevant to the user's interest in material characterization and structure determination, particularly in the context of novel materials and oxides.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "atomistic scattering data",
+      "autonomous laboratories",
+      "differentiable optimisation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47231560945510864,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.46379950642585754,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4450797736644745,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.05988v1": {
+    "id": "2510.05988v1",
+    "title": "Commensurate-incommensurate Mott transition without magnetic field: emergence of nematic Luttinger liquid in XXZ chain",
+    "authors": [
+      {
+        "name": "Julien Fitouchi",
+        "affiliation": null
+      },
+      {
+        "name": "Natalia Chepiga",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the zero-magnetization phase diagram of a spin-1/2 chain with competing ferromagnetic nearest-neighbor and antiferromagnetic next-nearest-neighbor exchange couplings in the strongly interacting regime. Using density matrix renormalization group (DMRG) simulations, we discover two successive commensurate-incommensurate transitions of the non-conformal Pokrovsky-Talapov universality class, occurring (even) at zero magnetic field. The first transition marks the condensation of bound pairs of magnons into a critical phase with central charge $c=2$, emerging from a gapped period-4 phase. At the second transition, an incommensurate quadrupolar (or nematic) Luttinger liquid forms out of a gapped phase separation state, via the pairwise condensation of domain walls. We argue that both transitions involve the same underlying incommensurate nematic Luttinger liquid, and that the $c=2$ phase can be understood as a coexistence of a conventional (single-magnon type) and quadrupolar (two-magnon type) Luttinger liquids. Our results demonstrate that frustration alone is sufficient to drive continuous commensurate-incommensurate transitions of Mott type and stabilise incommensurate quasi-long-range order without doping.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on spin chains and commensurate-incommensurate transitions, which is somewhat related to strongly correlated materials but less directly connected to the user's previous interests in superconductivity, oxygen vacancies, and Dirac fermions.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "commensurate-incommensurate transition",
+      "nematic Luttinger liquid",
+      "XXZ chain"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6304826736450195,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.60699462890625,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5716173648834229,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
       }
     ],
     "discovery_sources": []
