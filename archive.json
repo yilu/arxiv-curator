@@ -63695,7 +63695,9 @@
         "liked_paper_id": "2508.17292v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.07125v1": {
     "id": "2510.07125v1",
@@ -63756,7 +63758,9 @@
         "liked_paper_id": "2506.20106v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.06407v1": {
     "id": "2510.06407v1",
@@ -63919,7 +63923,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.06904v1": {
     "id": "2510.06904v1",
@@ -64060,5 +64066,1091 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2510.06938v1": {
+    "id": "2510.06938v1",
+    "title": "Expressive and Scalable Quantum Fusion for Multimodal Learning",
+    "authors": [
+      {
+        "name": "Tuyen Nguyen",
+        "affiliation": null
+      },
+      {
+        "name": "Trong Nghia Hoang",
+        "affiliation": null
+      },
+      {
+        "name": "Phi Le Nguyen",
+        "affiliation": null
+      },
+      {
+        "name": "Hai L. Vu",
+        "affiliation": null
+      },
+      {
+        "name": "Truong Cong Thang",
+        "affiliation": null
+      }
+    ],
+    "summary": "The aim of this paper is to introduce a quantum fusion mechanism for multimodal learning and to establish its theoretical and empirical potential. The proposed method, called the Quantum Fusion Layer (QFL), replaces classical fusion schemes with a hybrid quantum-classical procedure that uses parameterized quantum circuits to learn entangled feature interactions without requiring exponential parameter growth. Supported by quantum signal processing principles, the quantum component efficiently represents high-order polynomial interactions across modalities with linear parameter scaling, and we provide a separation example between QFL and low-rank tensor-based methods that highlights potential quantum query advantages. In simulation, QFL consistently outperforms strong classical baselines on small but diverse multimodal tasks, with particularly marked improvements in high-modality regimes. These results suggest that QFL offers a fundamentally new and scalable approach to multimodal fusion that merits deeper exploration on larger systems.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing for multimodal learning, a topic distant from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Quantum Fusion",
+      "Multimodal Learning",
+      "Parameterized Quantum Circuits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5277539491653442,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.46602314710617065,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.39172375202178955,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.06531v1": {
+    "id": "2510.06531v1",
+    "title": "Approximate maximum likelihood decoding with $K$ minimum weight matchings",
+    "authors": [
+      {
+        "name": "Mao Lin",
+        "affiliation": null
+      }
+    ],
+    "summary": "The minimum weight matching (MWM) and maximum likelihood decoding (MLD) are two widely used and distinct decoding strategies for quantum error correction. For a given syndrome, the MWM decoder finds the most probable physical error corresponding to the MWM of the decoding graph, whereas MLD aims to find the most probable logical error. Although MLD is the optimal error correction strategy, it is typically more computationally expensive compared to the MWM decoder. In this work, we introduce an algorithm that approximates MLD with $K$ MWMs from the decoding graph. Taking the surface code subject to graphlike errors as an example, we show that it is possible to efficiently find the first $K$ MWMs by systematically modifying the original decoding graph followed by finding the MWMs of the modified graphs. For the case where the $X$ and $Z$ errors are correlated, despite the MWM of the decoding hypergraph cannot be found efficiently, we present a heuristic approach to approximate the MLD by finding the $K$ MWMs in the $X$ and $Z$ subgraphs. We benchmark the efficacy of our algorithm for the surface code subject to graphlike errors, the surface-square Gottesman-Kitaev-Preskill (GKP) code and surface-hexagonal GKP code subject to the Gaussian random displacement errors, showing that the fidelity approaches that of the exact MLD (for the first two cases) or the tensor-network decoder (for the last case) as $K$ increases.",
+    "published_date": "2025-10-08",
+    "categories": [],
+    "doi": "10.1103/vf9r-z5qg",
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum error correction and decoding algorithms, which are unrelated to the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Minimum weight matching",
+      "Maximum likelihood decoding",
+      "Quantum error correction"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3793222904205322,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.37454450130462646,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.3736823797225952,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.06318v1": {
+    "id": "2510.06318v1",
+    "title": "An efficient algorithm to compute entanglement in states with low magic",
+    "authors": [
+      {
+        "name": "ChunJun Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Gong Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Tianci Zhou",
+        "affiliation": null
+      }
+    ],
+    "summary": "A bottleneck for analyzing the interplay between magic and entanglement is the computation of these quantities in highly entangled quantum many-body magic states. Efficient extraction of entanglement can also inform our understanding of dynamical quantum processes such as measurement-induced phase transition and approximate unitary designs. We develop an efficient classical algorithm to compute the von Neumann entropy and entanglement spectrum for such states under the condition that they have low stabilizer nullity. The algorithm exploits the property of stabilizer codes to separate entanglement into two pieces: one generated by the common stabilizer group and the other from the logical state. The low-nullity constraint ensures both pieces can be computed efficiently. Our algorithm can be applied to study the entanglement in sparsely $T$-doped circuits with possible Pauli measurements as well as certain classes of states that have both high entanglement and magic. Combining with stabilizer learning subroutines, it also enables the efficient learning of von Neumann entropies for low-nullity states prepared on quantum devices.",
+    "published_date": "2025-10-07",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum entanglement and computational algorithms, a departure from the user's interests in condensed matter physics, superconductivity, and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "entanglement entropy",
+      "stabilizer nullity",
+      "quantum many-body states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5128307342529297,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.48835936188697815,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.48228007555007935,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.06328v1": {
+    "id": "2510.06328v1",
+    "title": "Classical simulation of noisy random circuits from exponential decay of correlation",
+    "authors": [
+      {
+        "name": "Su-un Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Soumik Ghosh",
+        "affiliation": null
+      },
+      {
+        "name": "Changhun Oh",
+        "affiliation": null
+      },
+      {
+        "name": "Kyungjoo Noh",
+        "affiliation": null
+      },
+      {
+        "name": "Bill Fefferman",
+        "affiliation": null
+      },
+      {
+        "name": "Liang Jiang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the classical simulability of noisy random quantum circuits under general noise models. While various classical algorithms for simulating noisy random circuits have been proposed, many of them rely on the anticoncentration property, which can fail when the circuit depth is small or under realistic noise models. We propose a new approach based on the exponential decay of conditional mutual information (CMI), a measure of tripartite correlations. We prove that exponential CMI decay enables a classical algorithm to sample from noisy random circuits -- in polynomial time for one dimension and quasi-polynomial time for higher dimensions -- even when anticoncentration breaks down. To this end, we show that exponential CMI decay makes the circuit depth effectively shallow, and it enables efficient classical simulation for sampling. We further provide extensive numerical evidence that exponential CMI decay is a universal feature of noisy random circuits across a wide range of noise models. Our results establish CMI decay, rather than anticoncentration, as the fundamental criterion for classical simulability, and delineate the boundary of quantum advantage in noisy devices.",
+    "published_date": "2025-10-07",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and classical simulation algorithms, which is a departure from the user's previously liked papers that focus on condensed matter physics, superconductivity, and material science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "noisy random circuits",
+      "classical simulation",
+      "conditional mutual information"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47184234857559204,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.4470810890197754,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4209248125553131,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.02872v2": {
+    "id": "2510.02872v2",
+    "title": "A physics-informed neural network approach to the point defect model for electrochemical oxide film growth",
+    "authors": [
+      {
+        "name": "Mohid Farooqi",
+        "affiliation": null
+      },
+      {
+        "name": "Ingmar B\u00f6sing",
+        "affiliation": null
+      },
+      {
+        "name": "Conrard G. Tetsassi Feugmo",
+        "affiliation": null
+      }
+    ],
+    "summary": "Physics-informed neural networks (PINNs) offer a novel AI-driven framework for integrating physical laws directly into neural network models, facilitating the solution of complex multiphysics problems in materials engineering. This study systematically explores the application of PINNs to simulate oxide film layer growth in halide-free solutions using the point defect model (PDM). We identify and analyze four key failure modes in this context: imbalanced loss components across different physical processes, numerical instabilities due to variable scale disparities, challenges in enforcing boundary conditions within multiphysics systems, and convergence to mathematically valid but physically meaningless solutions. To overcome these challenges, we implement and validate established techniques including nondimensionalization for training stabilization, Neural Tangent Kernel-based adaptive loss balancing, robust enforcement of boundary conditions and hybrid training with sparse data. Our results demonstrate the effectiveness of these strategies in enhancing the reliability and physical fidelity of PINNs, achieving sub $1\\%$ relative error as compared to Finite Element Benchmarks with the hybrid model. Thereby showing that PINNs can be used for high fidelity electrochemical simulations with minimal data requirements and highlight necesary factors for fully autonomous PINN simulations.",
+    "published_date": "2025-10-03",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on physics-informed neural networks and electrochemical simulations, which doesn't directly align with the user's interest in superconductivity, correlated electron systems, or topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "physics-informed neural networks",
+      "electrochemical simulation",
+      "point defect model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46607598662376404,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4191140830516815,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.40634316205978394,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.06775v1": {
+    "id": "2510.06775v1",
+    "title": "Breaking the Treewidth Barrier in Quantum Circuit Simulation with Decision Diagrams",
+    "authors": [
+      {
+        "name": "Bin Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Ziyuan Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Ruixuan Deng",
+        "affiliation": null
+      },
+      {
+        "name": "Jianxin Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengfeng Ji",
+        "affiliation": null
+      }
+    ],
+    "summary": "Classical simulation of quantum circuits is a critical tool for validating quantum hardware and probing the boundary between classical and quantum computational power. Existing state-of-the-art methods, notably tensor network approaches, have computational costs governed by the treewidth of the underlying circuit graph, making circuits with large treewidth intractable. This work rigorously analyzes FeynmanDD, a decision diagram-based simulation method proposed in CAV 2025 by a subset of the authors, and shows that the size of the multi-terminal decision diagram used in FeynmanDD is exponential in the linear rank-width of the circuit graph. As linear rank-width can be substantially smaller than treewidth and is at most larger than the treewidth by a logarithmic factor, our analysis demonstrates that FeynmanDD outperforms all tensor network-based methods for certain circuit families. We also show that the method remains efficient if we use the Solovay-Kitaev algorithm to expand arbitrary single-qubit gates to sequences of Hadamard and T gates, essentially removing the gate-set restriction posed by the method.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.DS"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum circuit simulation using decision diagrams, which is a different area than the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum circuit simulation",
+      "decision diagrams",
+      "linear rank-width"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5139843225479126,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5072704553604126,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.466115802526474,
+        "liked_paper_id": "2506.13359v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.02256v2": {
+    "id": "2510.02256v2",
+    "title": "Fate of entanglement in open quantum spin liquid: Time evolution of its genuine multipartite negativity upon sudden coupling to a dissipative bosonic environment",
+    "authors": [
+      {
+        "name": "Federico Garcia-Gaitan",
+        "affiliation": null
+      },
+      {
+        "name": "Branislav K. Nikolic",
+        "affiliation": null
+      }
+    ],
+    "summary": "Topological properties of many-body entanglement in quantum spin liquids (QSLs), persisting at arbitrarily long distances, have been intensely explored over the past two decades, but mostly for QSLs viewed as {\\em closed} quantum systems. However, in experiments and potential quantum computing applications, candidate materials for this exotic phase of quantum matter will always interact with a dissipative environment, such as the one generated by bosonic quasiparticles in solids at finite temperature. Here we investigate the spatial structure and stability of entanglement in the Kitaev model of QSL made {\\em open} by sudden coupling to an infinite bosonic bath of Caldeira-Leggett type and time-evolved using the Lindblad quantum master equation in the Markovian regime (i.e., for weak coupling) or tensor network methods for open quantum systems in the non-Markovian regime (i.e., for strong coupling). From the time-evolved density matrix of QSL and its subregions, we extract genuine multipartite negativity (GMN), quantum Fisher information, spin-spin correlators, and expectation value (EV) of the Wilson loop operator. In particular, time-dependence of GMN offers the most penetrating insights: (i) in the Markovian regime, it remains non-zero in larger loopy subregions of QSL (as also discovered very recently for closed QSLs) up to temperatures comparable to Kitaev exchange interaction at which other quantities, such as EV of the Wilson loop operator, vanish; (ii) in the non-Markovian regime with pronounced memory effects, GMN remains non-zero up to even higher temperatures, while also acquiring non-zero value in smaller non-loopy subregions. The non-Markovian dynamics can also generate emergent interactions between spins, thereby opening avenues for tailoring properties of QSL via environmental engineering.",
+    "published_date": "2025-10-02",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on open quantum spin liquids and their entanglement properties, which is a distinct topic from the user's liked papers on superconductivity, oxygen vacancies, and Dirac semimetals.",
+    "matching_keywords": [
+      "quantum spin liquid",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum spin liquid",
+      "multipartite entanglement",
+      "open quantum systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5360087156295776,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5287465453147888,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5096027851104736,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.05938v2": {
+    "id": "2510.05938v2",
+    "title": "Autonomous interpretation of atomistic scattering data",
+    "authors": [
+      {
+        "name": "Andy S. Anker",
+        "affiliation": null
+      },
+      {
+        "name": "John L. A. Gardner",
+        "affiliation": null
+      },
+      {
+        "name": "Louise A. M. Rosset",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew L. Goodwin",
+        "affiliation": null
+      },
+      {
+        "name": "Volker L. Deringer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Materials with bespoke properties have long been identified by computational searches, and their experimental realisation is now coming within reach through autonomous laboratories. Scattering experiments are central to verifying the atomic structures of autonomously synthesised materials. Yet, interpreting these measurements typically requires user expertise and manual processing, or machine learning (ML) models trained on predefined datasets, limiting fully autonomous materials discovery. Here, we introduce a differentiable optimisation framework that treats scattering calculations, energetics, and chemical constraints as a unified refinement problem. Capability demonstrations across molecules, crystal structures, nanoparticles, and amorphous matter show that this data-driven approach resolves structural degeneracies with multi-modal inputs - suggesting its usefulness for informing, and ultimately guiding, the operation of autonomous laboratories.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "The paper discusses the interpretation of atomistic scattering data in the context of autonomous materials discovery, which has a tangential connection to the user's interest in material characterization but lacks a direct link to superconductivity or specific electronic structure calculations.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Atomistic scattering",
+      "Autonomous materials discovery",
+      "Differentiable optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47231560945510864,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.46379950642585754,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4450797736644745,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.07698v1": {
+    "id": "2510.07698v1",
+    "title": "Chromium-doped uranium dioxide fuels: A review",
+    "authors": [
+      {
+        "name": "Mack Wesley Cleveland",
+        "affiliation": null
+      },
+      {
+        "name": "Andrew Nelson",
+        "affiliation": null
+      },
+      {
+        "name": "Ericmoore Jossou",
+        "affiliation": null
+      }
+    ],
+    "summary": "UO2 doped with parts per million Cr2O3 powder is considered a potential near term accident tolerant fuel candidate. Here, the results of decades of industry and academic research into Cr-doped UO2 are analyzed and their shortcomings are critiqued. Focusing on the incorporation mechanisms of Cr into the fuel matrix, we explore a mechanistic understanding of the characteristic properties of Cr-doped UO2, notably, enhanced fission gas retention attributed to enlarged grain sizes following sintering, along with marginal improvements in the thermophysical properties. The findings of recent X-ray Adsorption Near Edge Spectroscopy studies were compared and put into conversation with historic data regarding the incorporation of Cr in UO2. On the basis of defect mechanisms, the case is made for the substitutional incorporation of Cr governing the lattice solubility but not the enhanced U diffusivity. Instead, Cr/Cr2O3 redox chemistry in a well-defined oxygen potential explains the differences in the U diffusivity and O/M ratio. The primary mechanism of doping-enhanced grain growth is found to be liquid assisted sintering due to a CrO(l) eutectic phase at the grain boundaries. The role of inhomogeneities in Cr concentration in UO2 at various length scales across the materials microstructure is highlighted and connected to promising experimental and modeling work to fill in the gaps in the current understanding of Cr-doped UO2. The review ends with an outline of future works that combine meticulous irradiation studies and high resolution experiments with next generation modeling and simulations techniques empowered by machine learning advances to accelerate the fabrication and adoption of Cr-doped UO2 light water reactors.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on chromium-doped uranium dioxide fuels, which is distinct from the user's liked papers on superconductivity, oxygen vacancies, and topological semimetals.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Cr-doped UO2",
+      "accident tolerant fuel",
+      "liquid assisted sintering"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4544977843761444,
+        "liked_paper_id": "yBtX0C4AAAAJ:HoB7MX3m0LUC"
+      },
+      {
+        "score": 0.4186380207538605,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.41766810417175293,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.06361v1": {
+    "id": "2510.06361v1",
+    "title": "Diffusion-Guided Renormalization of Neural Systems via Tensor Networks",
+    "authors": [
+      {
+        "name": "Nathan X. Kodama",
+        "affiliation": null
+      }
+    ],
+    "summary": "Far from equilibrium, neural systems self-organize across multiple scales. Exploiting multiscale self-organization in neuroscience and artificial intelligence requires a computational framework for modeling the effective non-equilibrium dynamics of stochastic neural trajectories. Non-equilibrium thermodynamics and representational geometry offer theoretical foundations, but we need scalable data-driven techniques for modeling collective properties of high-dimensional neural networks from partial subsampled observations. Renormalization is a coarse-graining technique central to studying emergent scaling properties of many-body and nonlinear dynamical systems. While widely applied in physics and machine learning, coarse-graining complex dynamical networks remains unsolved, affecting many computational sciences. Recent diffusion-based renormalization, inspired by quantum statistical mechanics, coarse-grains networks near entropy transitions marked by maximal changes in specific heat or information transmission. Here I explore diffusion-based renormalization of neural systems by generating symmetry-breaking representations across scales and offering scalable algorithms using tensor networks. Diffusion-guided renormalization bridges microscale and mesoscale dynamics of dissipative neural systems. For microscales, I developed a scalable graph inference algorithm for discovering community structure from subsampled neural activity. Using community-based node orderings, diffusion-guided renormalization generates renormalization group flow through metagraphs and joint probability functions. Towards mesoscales, diffusion-guided renormalization targets learning the effective non-equilibrium dynamics of dissipative neural trajectories occupying lower-dimensional subspaces, enabling coarse-to-fine control in systems neuroscience and artificial intelligence.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "q-bio.NC",
+      "cond-mat.stat-mech",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses renormalization, a concept found in physics, its focus on neural networks and machine learning makes it less relevant to the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "diffusion-based renormalization",
+      "neural systems",
+      "tensor networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.529558539390564,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.491830050945282,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.48656830191612244,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.06602v1": {
+    "id": "2510.06602v1",
+    "title": "Hyperinvariant Spin Network States -- An AdS/CFT Model from First Principles",
+    "authors": [
+      {
+        "name": "Fynn Otto",
+        "affiliation": null
+      },
+      {
+        "name": "Refik Mansuroglu",
+        "affiliation": null
+      },
+      {
+        "name": "Norbert Schuch",
+        "affiliation": null
+      },
+      {
+        "name": "Otfried G\u00fchne",
+        "affiliation": null
+      },
+      {
+        "name": "Hanno Sahlmann",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the existence and limitations for hyperinvariant tensor networks incorporating a local SU(2) symmetry. As discrete implementations of the anti de-Sitter/conformal field theory (AdS/CFT) correspondence, such networks have created bridges between the fields of quantum information theory and quantum gravity. Adding SU(2) symmetry to the tensor network allows a direct connection to spin network states, a basis of the kinematic Hilbert space of loop quantum gravity (LQG). We consider a particular situation where the states can be interpreted as kinematic quantum states for three-dimensional quantum gravity. We show that important aspects of the AdS/CFT correspondence are realized in certain quantum states of the gravitational field in LQG, thus justifying, from first principles, a class of models introduced by [F. Pastawski et al., JHEP 06, 149 (2015)]. We provide examples of hyperinvariant tensor networks, but also prove constraints on their existence in the form of no-go theorems that exclude absolutely maximally entangled states as well as general holographic codes from local SU(2)-invariance. We calculate surface areas as expectation values of the LQG area operator and discuss further possible constraints as a consequence of a decay of correlations on the boundary.",
+    "published_date": "2025-10-08",
+    "categories": [],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in quantum materials, superconductivity and topological phases, this paper's focus on AdS/CFT correspondence and loop quantum gravity is a significant departure, meriting a low relevance score.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "AdS/CFT correspondence",
+      "loop quantum gravity",
+      "tensor networks"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.44532471895217896,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.387920081615448,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      },
+      {
+        "score": 0.3871850073337555,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.06851v1": {
+    "id": "2510.06851v1",
+    "title": "Randomized Quantum Singular Value Transformation",
+    "authors": [
+      {
+        "name": "Xinzhao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yuxin Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Soumyabrata Hazra",
+        "affiliation": null
+      },
+      {
+        "name": "Tongyang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Changpeng Shao",
+        "affiliation": null
+      },
+      {
+        "name": "Shantanav Chakraborty",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce the first randomized algorithms for Quantum Singular Value Transformation (QSVT), a unifying framework for many quantum algorithms. Standard implementations of QSVT rely on block encodings of the Hamiltonian, which are costly to construct, requiring a logarithmic number of ancilla qubits, intricate multi-qubit control, and circuit depth scaling linearly with the number of Hamiltonian terms. In contrast, our algorithms use only a single ancilla qubit and entirely avoid block encodings. We develop two methods: (i) a direct randomization of QSVT, where block encodings are replaced by importance sampling, and (ii) an approach that integrates qDRIFT into the generalized quantum signal processing framework, with the dependence on precision exponentially improved through classical extrapolation. Both algorithms achieve gate complexity independent of the number of Hamiltonian terms, a hallmark of randomized methods, while incurring only quadratic dependence on the degree of the target polynomial. We identify natural parameter regimes where our methods outperform even standard QSVT, making them promising for early fault-tolerant quantum devices. We also establish a fundamental lower bound showing that the quadratic dependence on the polynomial degree is optimal within this framework. We apply our framework to two fundamental tasks: solving quantum linear systems and estimating ground-state properties of Hamiltonians, obtaining polynomial advantages over prior randomized algorithms. Finally, we benchmark our ground-state property estimation algorithm on electronic structure Hamiltonians and the transverse-field Ising model with long-range interactions. In both cases, our approach outperforms prior work by several orders of magnitude in circuit depth, establishing randomized QSVT as a practical and resource-efficient alternative for early fault-tolerant quantum devices.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.DS"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum algorithms, specifically Quantum Singular Value Transformation, which is quite distinct from the user's previously liked papers on condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Quantum Singular Value Transformation",
+      "Randomized Algorithms",
+      "Quantum Linear Systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4827805757522583,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.46186259388923645,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.451050728559494,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.08194v1": {
+    "id": "2510.08194v1",
+    "title": "Electronic structures and superconductivity in Nd-doped La$_3$Ni$_2$O$_7$",
+    "authors": [
+      {
+        "name": "Cui-Qun Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Wenyuan Qiu",
+        "affiliation": null
+      },
+      {
+        "name": "Zhihui Luo",
+        "affiliation": null
+      },
+      {
+        "name": "Meng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Dao-Xin Yao",
+        "affiliation": null
+      }
+    ],
+    "summary": "The recent discovery of high-$T_c$ superconductivity in Ruddlesden-Popper (RP) nickelates has motivated extensive efforts to explore higher $T_c$ superconductors. Here, we systematically investigate Nd-doped La$_3$Ni$_2$O$_7$ using density functional theory (DFT) and renormalized mean-field theory (RMFT). DFT calculations reveal that both the lattice constants and interlayer spacing decrease upon Nd substitution, similar to the effect of physical pressure. However, the in-plane Ni-O-Ni bond angle evolves non-monotonically with doping, increasing to a maximum at 70% (~2/3) Nd doping level and then falling sharply at 80%, which leads to a reduction in orbital overlap. Moreover, Nd doping has a more pronounced effect on the Ni-$d{_{z^2}}$ orbital, demonstrating an orbital-dependent effect of rare-earth substitution. Through the bilayer two-orbital t-J model, RMFT analysis further shows an $s\\pm$-wave pairing symmetry, with $T_c$ rising to a maximum at about 70% Nd substitution before declining, in agreement with the transport measurements. The variation in $T_c$ can be traced to the competition between continuously enhanced interlayer superexchange coupling $J_\\perp^z$ and a gradual decrease in particle density. These results highlight the delicate interplay among structural tuning, orbital hybridization, and superconductivity, providing important clues to design higher-$T_c$ RP nickelate superconductors.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper investigates the electronic structure and superconductivity in Nd-doped La3Ni2O7, which directly relates to the user's interest in nickelate superconductors and similar materials like La3Ni2O7\u2212\u03b4.",
+    "matching_keywords": [
+      "nickelate",
+      "t-J model"
+    ],
+    "suggested_keywords": [
+      "Nd-doping",
+      "Renormalized mean-field theory",
+      "orbital-dependent effect"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7496854662895203,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.7430428266525269,
+        "liked_paper_id": "2506.23823v1"
+      },
+      {
+        "score": 0.734932005405426,
+        "liked_paper_id": "2508.03414v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.06624v1": {
+    "id": "2510.06624v1",
+    "title": "Phase structure analysis of 2d lattice CP(1) model with $\u03b8$ term using tensor renormalization group method",
+    "authors": [
+      {
+        "name": "Hayato Aizawa",
+        "affiliation": null
+      },
+      {
+        "name": "Shinji Takeda",
+        "affiliation": null
+      },
+      {
+        "name": "Yusuke Yoshimura",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the phase structure of a two-dimensional lattice CP(1) model with a $\\theta$ term. In particular, we aim to identify a critical region expected to exist along a $\\theta=\\pi$ line. To explore the phase structure non-perturbatively and avoid the sign problem, we employ the tensor renormalization group method. We make two improvements compared to previous tensor network studies. The first improvement involves refining the initial tensor. Specifically, we construct it using a quadrature method, which achieves higher accuracy compared to the conventional approach. The second improvement consists of analyzing the phase structure using the information of the conformal field theory, namely the central charge and the scaling dimensions, which can be accessed relatively easily via the tensor renormalization group method. Thanks to these improvements, we identify both the onset of the critical region, $\\beta_{\\rm c}=0.5952(8)$ and its universality class as the SU(2)${}_{k=1}$ Wess-Zumino-Witten model.",
+    "published_date": "2025-10-08",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a theoretical model in condensed matter physics, specifically the CP(1) model, which is distinct from the user's previous interests in superconductivity and real materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "CP(1) model",
+      "Tensor renormalization group",
+      "Conformal field theory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.557157039642334,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5375174283981323,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.5315850377082825,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.02544v2": {
+    "id": "2510.02544v2",
+    "title": "Active-Learning Inspired $\\textit{Ab Initio}$ Theory-Experiment Loop Approach for Management of Material Defects: Application to Superconducting Qubits",
+    "authors": [
+      {
+        "name": "Sarvesh Chaudhari",
+        "affiliation": null
+      },
+      {
+        "name": "Crist\u00f3bal M\u00e9ndez",
+        "affiliation": null
+      },
+      {
+        "name": "Rushil Choudhary",
+        "affiliation": null
+      },
+      {
+        "name": "Tathagata Banerjee",
+        "affiliation": null
+      },
+      {
+        "name": "Maciej W. Olszewski",
+        "affiliation": null
+      },
+      {
+        "name": "Jadrien T. Paustian",
+        "affiliation": null
+      },
+      {
+        "name": "Jaehong Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Zhaslan Baraissov",
+        "affiliation": null
+      },
+      {
+        "name": "Raul Hernandez",
+        "affiliation": null
+      },
+      {
+        "name": "David A. Muller",
+        "affiliation": null
+      },
+      {
+        "name": "B. L. T. Plourde",
+        "affiliation": null
+      },
+      {
+        "name": "Gregory D. Fuchs",
+        "affiliation": null
+      },
+      {
+        "name": "Valla Fatemi",
+        "affiliation": null
+      },
+      {
+        "name": "Tom\u00e1s A. Arias",
+        "affiliation": null
+      }
+    ],
+    "summary": "Surface oxides are associated with two-level systems (TLSs) that degrade the performance of niobium-based superconducting quantum computing devices. To address this, we introduce a predictive framework for selecting metal capping layers that inhibit niobium oxide formation. Using DFT-calculated oxygen interstitial and vacancy energies as thermodynamic descriptors, we train a logistic regression model on a limited set of experimental outcomes to successfully predict the likelihood of oxide formation beneath different capping materials. This approach identifies Zr, Hf, and Ta as effective diffusion barriers. Our analysis further reveals that the oxide formation energy per oxygen atom serves as an excellent standalone descriptor for predicting barrier performance. By combining this new descriptor with lattice mismatch as a secondary criterion to promote structurally coherent interfaces, we identify Zr, Ta, and Sc as especially promising candidates. This closed-loop strategy integrates first-principles theory, machine learning, and limited experimental data to enable rational design of next-generation materials.",
+    "published_date": "2025-10-02",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses material defects in superconducting qubits and uses DFT calculations, touching on superconductivity and computational materials science, which aligns with the user's interests in superconductivity and related computational methods.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Superconducting qubits",
+      "Metal capping layers",
+      "DFT calculations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5923450589179993,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.517204761505127,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.5164249539375305,
+        "liked_paper_id": "2506.13399v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.07771v1": {
+    "id": "2510.07771v1",
+    "title": "Dimension- and Facet-Dependent Altermagnetic Triferroics and Biferroics in CrSb",
+    "authors": [
+      {
+        "name": "Long Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Guoying Gao",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnets have recently garnered significant interest due to their vanishing net magnetic moment and non-relativistic momentum-dependent spin splitting. However, altermagnetic (AM) multiferroics especially triferroics remain scarce. We investigate the experimentally synthesized non-van der Waals CrSb as a model system to explore the effects of dimensionality and facet orientation on its ferroic properties. NiAs, MnP, wurtzite (WZ), zincblende (ZB), and rocksalt (RS) phases are considered. Using first-principles calculations, we predict the altermagnetism of CrSb in MnP phase which has comparable stability with experimental NiAs phase. Both NiAs- and MnP-phase (110) facets exhibit AM-ferroelastic (FC) biferroics, while the WZ-phase bulk and (001) facets host ferromagnetic (FM) or AM-ferroelectric (FE) biferroics. Notably, the WZ-phase (110) facets are identified as FM/AM-FE-FC triferroics, with moderate energy barriers of 0.129 and 0.363 eV atom-1 for FE and FC switching, respectively. Both FE and FC switching can reverse the AM spin splitting in antiferromagnetic (AFM) configurations while preserving the high spin polarization in FM states. The magnetic anisotropy is highly tunable, exhibiting either uniaxial or in-plane behavior depending on the phase, dimension, and facet. This work establishes a framework for designing AM multiferroics through polymorphic, dimensional, and facet engineering, offering promising avenues for multifunctional spintronic applications.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism, which relates to -Symmetric Real Dirac Fermions and Semimetals, and mentions tunable magnetic anisotropy, which overlaps with the user's interest in related materials.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Multiferroics",
+      "Spintronic applications"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.521886944770813,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5103520154953003,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5079007148742676,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.07421v1": {
+    "id": "2510.07421v1",
+    "title": "Bayesian Optimization of Multi-Bit Pulse Encoding in In2O3/Al2O3 Thin-film Transistors for Temporal Data Processing",
+    "authors": [
+      {
+        "name": "Javier Meza-Arroyo",
+        "affiliation": null
+      },
+      {
+        "name": "Benius Dunn",
+        "affiliation": null
+      },
+      {
+        "name": "Weijie Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Yu-Chieh Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Jen-Sue Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Julia W. P. Hsu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Utilizing the intrinsic history-dependence and nonlinearity of hardware, physical reservoir computing is a promising neuromorphic approach to encode time-series data for in-sensor computing. The accuracy of this encoding critically depends on the distinguishability of multi-state outputs, which is often limited by suboptimal and empirically chosen reservoir operation conditions. In this work, we demonstrate a machine learning approach, Bayesian optimization, to improve the encoding fidelity of solution-processed Al2O3/In2O3 thin-film transistors (TFTs). We show high-fidelity 6-bit temporal encoding by exploring five key pulse parameters and using the normalized degree of separation (nDoS) as the metric of output state separability. Additionally, we show that a model trained on simpler 4-bit data can effectively guide optimization of more complex 6-bit encoding tasks, reducing experimental cost. Specifically, for the encoding and reconstruction of binary-patterned images of a moving car across 6 sequential frames, we demonstrate that the encoding is more accurate when operating the TFT using optimized pulse parameters and the 4-bit optimized operating condition performs almost as well as the 6-bit optimized condition. Finally, interpretability analysis via Shapley Additive Explanations (SHAP) reveals that gate pulse amplitude and drain voltage are the most influential parameters in achieving higher state separation. This work presents the first systematic method to identify optimal operating conditions for reservoir devices, and the approach can be extended to other physical reservoir implementations across different material platforms.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on optimizing thin-film transistors for temporal data processing using Bayesian optimization, a topic that is not directly related to the user's liked papers on superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Bayesian optimization",
+      "thin-film transistors",
+      "physical reservoir computing"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.40864330530166626,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.3610295355319977,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3592219352722168,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.06796v1": {
+    "id": "2510.06796v1",
+    "title": "On the complexity of estimating ground state entanglement and free energy",
+    "authors": [
+      {
+        "name": "Sevag Gharibian",
+        "affiliation": null
+      },
+      {
+        "name": "Jonas Kamminga",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding the entanglement structure of local Hamiltonian ground spaces is a physically motivated problem, with applications ranging from tensor network design to quantum error-correcting codes. To this end, we study the complexity of estimating ground state entanglement, and more generally entropy estimation for low energy states and Gibbs states. We find, in particular, that the classes qq-QAM [Kobayashi, le Gall, Nishimura, SICOMP 2019] (a quantum analogue of public-coin AM) and QMA(2) (QMA with unentangled proofs) play a crucial role for such problems, showing: (1) Detecting a high-entanglement ground state is qq-QAM-complete, (2) computing an additive error approximation to the Helmholtz free energy (equivalently, a multiplicative error approximation to the partition function) is in qq-QAM, (3) detecting a low-entanglement ground state is QMA(2)-hard, and (4) detecting low energy states which are close to product states can range from QMA-complete to QMA(2)-complete. Our results make progress on an open question of [Bravyi, Chowdhury, Gosset and Wocjan, Nature Physics 2022] on free energy, and yield the first QMA(2)-complete Hamiltonian problem using local Hamiltonians (cf. the sparse QMA(2)-complete Hamiltonian problem of [Chailloux, Sattath, CCC 2012]).",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.CC"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on the computational complexity of estimating ground state entanglement and free energy, which is a theoretical computer science topic, and not directly related to the user's interest in condensed matter physics and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "ground state entanglement",
+      "free energy estimation",
+      "quantum complexity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5314048528671265,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5171234011650085,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5097485780715942,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.07211v1": {
+    "id": "2510.07211v1",
+    "title": "Efficient tensor-network simulations of weakly-measured quantum circuits",
+    "authors": [
+      {
+        "name": "Darren Pereira",
+        "affiliation": null
+      },
+      {
+        "name": "Leonardo Banchi",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a tensor-network-based method for simulating a weakly-measured quantum circuit. In particular, we use a Markov chain to efficiently sample measurements and contract the tensor network, propagating their effect forward along the spatial direction. Applications of our algorithm include validating quantum computers (capable of mid-circuit measurements) in regimes of easy classical simulability, and studying generative-machine-learning applications, where sampling from complex stochastic processes is the main task. As a demonstration of our algorithm, we consider a (1+1)-dimensional brickwall circuit of Haar-random unitaries, interspersed with generalized single-qubit measurements of variable strength. We simulate the dynamics for tens to hundreds of qubits if the circuit exhibits area-law entanglement (under strong measurements), and tens of qubits if it exhibits volume-law entanglement (under weak measurements). We observe signatures of a measurement-induced phase transition between the two regimes as a function of measurement strength.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum circuit simulation using tensor networks, which is quite different from the previously liked papers on superconductivity, nickelates, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "tensor networks",
+      "quantum circuit simulation",
+      "measurement-induced phase transition"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.621080756187439,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5182321667671204,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5173028111457825,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.06945v1": {
+    "id": "2510.06945v1",
+    "title": "Fisher Information, Training and Bias in Fourier Regression Models",
+    "authors": [
+      {
+        "name": "Lorenzo Pastori",
+        "affiliation": null
+      },
+      {
+        "name": "Veronika Eyring",
+        "affiliation": null
+      },
+      {
+        "name": "Mierk Schwabe",
+        "affiliation": null
+      }
+    ],
+    "summary": "Motivated by the growing interest in quantum machine learning, in particular quantum neural networks (QNNs), we study how recently introduced evaluation metrics based on the Fisher information matrix (FIM) are effective for predicting their training and prediction performance. We exploit the equivalence between a broad class of QNNs and Fourier models, and study the interplay between the \\emph{effective dimension} and the \\emph{bias} of a model towards a given task, investigating how these affect the model's training and performance. We show that for a model that is completely agnostic, or unbiased, towards the function to be learned, a higher effective dimension likely results in a better trainability and performance. On the other hand, for models that are biased towards the function to be learned a lower effective dimension is likely beneficial during training. To obtain these results, we derive an analytical expression of the FIM for Fourier models and identify the features controlling a model's effective dimension. This allows us to construct models with tunable effective dimension and bias, and to compare their training. We furthermore introduce a tensor network representation of the considered Fourier models, which could be a tool of independent interest for the analysis of QNN models. Overall, these findings provide an explicit example of the interplay between geometrical properties, model-task alignment and training, which are relevant for the broader machine learning community.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.LG",
+      "cond-mat.dis-nn",
+      "physics.data-an"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper primarily focuses on Fourier regression models and Fisher information in the context of quantum machine learning, which is a departure from the user's previous interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Fisher information matrix",
+      "Fourier regression",
+      "Quantum machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5086591839790344,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.46123671531677246,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4233919680118561,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
