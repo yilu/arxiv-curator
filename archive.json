@@ -65152,5 +65152,514 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2510.08520v1": {
+    "id": "2510.08520v1",
+    "title": "Tripartite entanglement in the HaPPY code is not holographic",
+    "authors": [
+      {
+        "name": "Sriram Akella",
+        "affiliation": null
+      }
+    ],
+    "summary": "Holographic states satisfy several entropic inequalities owing to the Ryu-Takayangi formula. A drawback of these inequalities is that they only use bipartite entanglement in their formulation. We investigate a recently proposed \"GHZ-forbidding\" inequality, built out of the reflected entropy and the tripartite multi-entropy, that holds for holographic states. We show that the inequality is either violated or saturated, but never strictly satisfied, by stabilizer states, thereby showing that stabilizer states are not holographic. As a consequence, we show that tripartite entanglement in the HaPPY code is not holographic.",
+    "published_date": "2025-10-09",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on theoretical physics and quantum entanglement, a departure from the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Holographic states",
+      "Tripartite entanglement",
+      "Reflected entropy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3460979759693146,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.30714648962020874,
+        "liked_paper_id": "2507.01280v1"
+      },
+      {
+        "score": 0.29307079315185547,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.08210v1": {
+    "id": "2510.08210v1",
+    "title": "Hyper-optimized Quantum Lego Contraction Schedules",
+    "authors": [
+      {
+        "name": "Balint Pato",
+        "affiliation": null
+      },
+      {
+        "name": "June Vanlerberghe",
+        "affiliation": null
+      },
+      {
+        "name": "Kenneth R. Brown",
+        "affiliation": null
+      }
+    ],
+    "summary": "Calculating the quantum weight enumerator polynomial (WEP) is a valuable tool for characterizing quantum error-correcting (QEC) codes, but it is computationally hard for large or complex codes. The Quantum LEGO (QL) framework provides a tensor network approach for WEP calculation, in some cases offering superpolynomial speedups over brute-force methods, provided the code exhibits area law entanglement, that a good QL layout is used, and an efficient tensor network contraction schedule is found. We analyze the performance of a hyper-optimized contraction schedule framework across QL layouts for diverse stabilizer code families. We find that the intermediate tensors in the QL networks for stabilizer WEPs are often highly sparse, invalidating the dense-tensor assumption of standard cost functions. To address this, we introduce an exact, polynomial-time Sparse Stabilizer Tensor (SST) cost function based on the rank of the parity check matrices for intermediate tensors. The SST cost function correlates perfectly with the true contraction cost, providing a significant advantage over the default cost function, which exhibits large uncertainty. Optimizing contraction schedules using the SST cost function yields substantial performance gains, achieving up to orders of magnitude improvement in actual contraction cost compared to using the dense tensor cost function. Furthermore, the precise cost estimation from the SST function offers an efficient metric to decide whether the QL-based WEP calculation is computationally superior to brute force for a given QL layout. These results, enabled by PlanqTN, a new open-source QL implementation, validate hyper-optimized contraction as a crucial technique for leveraging the QL framework to explore the QEC code design space.",
+    "published_date": "2025-10-09",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum error correction and tensor networks, which is a different area than the user's liked papers on superconductivity and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum error correction",
+      "tensor network contraction",
+      "sparse tensors"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4805399179458618,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.46030017733573914,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.45503923296928406,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.08174v1": {
+    "id": "2510.08174v1",
+    "title": "Structured covariance estimation via tensor-train decomposition",
+    "authors": [
+      {
+        "name": "Artsiom Patarusau",
+        "affiliation": null
+      },
+      {
+        "name": "Nikita Puchkin",
+        "affiliation": null
+      },
+      {
+        "name": "Maxim Rakhuba",
+        "affiliation": null
+      },
+      {
+        "name": "Fedor Noskov",
+        "affiliation": null
+      }
+    ],
+    "summary": "We consider a problem of covariance estimation from a sample of i.i.d. high-dimensional random vectors. To avoid the curse of dimensionality we impose an additional assumption on the structure of the covariance matrix $\\Sigma$. To be more precise we study the case when $\\Sigma$ can be approximated by a sum of double Kronecker products of smaller matrices in a tensor train (TT) format. Our setup naturally extends widely known Kronecker sum and CANDECOMP/PARAFAC models but admits richer interaction across modes. We suggest an iterative polynomial time algorithm based on TT-SVD and higher-order orthogonal iteration (HOOI) adapted to Tucker-2 hybrid structure. We derive non-asymptotic dimension-free bounds on the accuracy of covariance estimation taking into account hidden Kronecker product and tensor train structures. The efficiency of our approach is illustrated with numerical experiments.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "math.ST",
+      "stat.TH"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on statistical methods for covariance estimation, which is unrelated to the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "covariance estimation",
+      "tensor train decomposition",
+      "high-dimensional data"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4134676456451416,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4019199013710022,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.39599376916885376,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.07396v1": {
+    "id": "2510.07396v1",
+    "title": "Spectral properties and coding transitions of Haar-random quantum codes",
+    "authors": [
+      {
+        "name": "Grace M. Sommers",
+        "affiliation": null
+      },
+      {
+        "name": "J. Alexander Jacoby",
+        "affiliation": null
+      },
+      {
+        "name": "Zack Weinstein",
+        "affiliation": null
+      },
+      {
+        "name": "David A. Huse",
+        "affiliation": null
+      },
+      {
+        "name": "Sarang Gopalakrishnan",
+        "affiliation": null
+      }
+    ],
+    "summary": "A quantum error-correcting code with a nonzero error threshold undergoes a mixed-state phase transition when the error rate reaches that threshold. We explore this phase transition for Haar-random quantum codes, in which the logical information is encoded in a random subspace of the physical Hilbert space. We focus on the spectrum of the encoded system density matrix as a function of the rate of uncorrelated, single-qudit errors. For low error rates, this spectrum consists of well-separated bands, representing errors of different weights. As the error rate increases, the bands for high-weight errors merge. The evolution of these bands with increasing error rate is well described by a simple analytic ansatz. Using this ansatz, as well as an explicit calculation, we show that the threshold for Haar-random quantum codes saturates the hashing bound, and thus coincides with that for random \\emph{stabilizer} codes. For error rates that exceed the hashing bound, typical errors are uncorrectable, but postselected error correction remains possible until a much higher \\emph{detection} threshold. Postselection can in principle be implemented by projecting onto subspaces corresponding to low-weight errors, which remain correctable past the hashing bound.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum error correction and random quantum codes, a domain distinct from the user's interests in condensed matter physics and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum error correction",
+      "Haar-random quantum codes",
+      "mixed-state phase transition"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46505290269851685,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.41127926111221313,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4068736732006073,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.07913v1": {
+    "id": "2510.07913v1",
+    "title": "Hamiltonian Decoded Quantum Interferometry",
+    "authors": [
+      {
+        "name": "Alexander Schmidhuber",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Z. Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Noah Shutty",
+        "affiliation": null
+      },
+      {
+        "name": "Stephen Jordan",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander Poremba",
+        "affiliation": null
+      },
+      {
+        "name": "Yihui Quek",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce Hamiltonian Decoded Quantum Interferometry (HDQI), a quantum algorithm that utilizes coherent Bell measurements and the symplectic representation of the Pauli group to reduce Gibbs sampling and Hamiltonian optimization to classical decoding. For a signed Pauli Hamiltonian $H$ and any degree-$\\ell$ polynomial ${P}$, HDQI prepares a purification of the density matrix $\\rho_{P}(H) \\propto {P}^2(H)$ by solving a combination of two tasks: decoding $\\ell$ errors on a classical code defined by $H$, and preparing a pilot state that encodes the anti-commutation structure of $H$. Choosing $P(x)$ to approximate $\\exp(-\\beta x/2)$ yields Gibbs states at inverse temperature $\\beta$; other choices prepare approximate ground states, microcanonical ensembles, and other spectral filters.   For local Hamiltonians, the corresponding decoding problem is that of LDPC codes. Preparing the pilot state is always efficient for commuting Hamiltonians, but highly non-trivial for non-commuting Hamiltonians. Nevertheless, we prove that this state admits an efficient matrix product state representation for Hamiltonians whose anti-commutation graph decomposes into connected components of logarithmic size.   We show that HDQI efficiently prepares Gibbs states at arbitrary temperatures for a class of physically motivated commuting Hamiltonians -- including the toric code and Haah's cubic code -- but we also develop a matching efficient classical algorithm for this task. For a non-commuting semiclassical spin glass and commuting stabilizer Hamiltonians with quantum defects, HDQI prepares Gibbs states up to a constant inverse-temperature threshold using polynomial quantum resources and quasi-polynomial classical pre-processing. These results position HDQI as a versatile algorithmic primitive and the first extension of Regev's reduction to non-abelian groups.",
+    "published_date": "2025-10-09",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum algorithms and quantum information theory, a departure from the user's liked papers which concern condensed matter physics, superconductivity, and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Quantum Interferometry",
+      "Hamiltonian Decoding",
+      "Gibbs Sampling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4825980067253113,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.47007736563682556,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.45297548174858093,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.07561v1": {
+    "id": "2510.07561v1",
+    "title": "Correlation Lengths for Stochastic Matrix Product States",
+    "authors": [
+      {
+        "name": "Lubashan Pathirana",
+        "affiliation": null
+      },
+      {
+        "name": "Albert H. Werner",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a general model of stochastically generated matrix product states (MPS) in which the local tensors share a common distribution and form a strictly stationary sequence, without requiring spatial independence. Under natural conditions on the associated transfer operators, we prove the existence of thermodynamic limits of expectations of local observables and establish almost-sure exponential decay of two-point correlations. In the homogeneous (random translation-invariant) case, for any error tolerance in probability, the two-point function decays exponentially in the distance between the two sites, with a deterministic rate. In the i.i.d. case, the exponential decay still holds with a deterministic rate, with the probability approaching one exponentially fast in the distance. For strictly stationary ensembles with decaying spatial dependence, the correlation decay quantitatively reflects the mixing profile: ($\\rho$)-mixing yields polynomial bounds with high probability, while stretched-exponential (resp. exponential) decay in ($\\rho$) (resp. ($\\beta$)) yields stretched-exponential (resp. exponential) decay of the two-point function, again with correspondingly strong high-probability guarantees. Altogether, the framework unifies and extends recent progress on stationary ergodic and Gaussian translation-invariant ensembles, providing a transfer-operator route to typical correlation decay in random MPS.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on the mathematical properties of stochastic matrix product states, a topic that is not directly related to the user's interests in superconductivity, correlated electron systems, and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "stochastic matrix product states",
+      "correlation decay",
+      "transfer operators"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4225808084011078,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.415664941072464,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.3873772919178009,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.07798v1": {
+    "id": "2510.07798v1",
+    "title": "Efficient Closest Matrix Product State Learning in Logarithmic Depth",
+    "authors": [
+      {
+        "name": "Chia-Ying Lin",
+        "affiliation": null
+      },
+      {
+        "name": "Nai-Hui Chia",
+        "affiliation": null
+      },
+      {
+        "name": "Shih-Han Hung",
+        "affiliation": null
+      }
+    ],
+    "summary": "Learning the closest matrix product state (MPS) representation of a quantum state is known to enable useful tools for prediction and analysis of complex quantum systems.   In this work, we study the problem of learning MPS in following setting: given many copies of an input MPS, the task is to recover a classical description of the state. The best known polynomial-time algorithm, introduced by [LCLP10, CPF+10], requires linear circuit depth and $O(n^5)$ samples, and has seen no improvement in over a decade. The strongest known lower bound is only $\\Omega(n)$. The combination of linear depth and high sample complexity renders existing algorithms impractical for near-term or even early fault-tolerant quantum devices.   We show a new efficient MPS learning algorithm that runs in $O(\\log n)$ depth and has sample complexity $O(n^3)$. Also, we can generalize our algorithm to learn closest MPS state, in which the input state is not guaranteed to be close to the MPS with a fixed bond dimension. Our algorithms also improve both sample complexity and circuit depth of previous known algorithm.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "cs.CC"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and machine learning techniques for representing quantum states, which is a departure from the user's previous interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Matrix Product State",
+      "Quantum State Learning",
+      "Logarithmic Depth Algorithm"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5285589098930359,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5042985677719116,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4899340271949768,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.08292v1": {
+    "id": "2510.08292v1",
+    "title": "Exponential Speed-ups for Structured Goemans-Williamson relaxations via Quantum Gibbs States and Pauli Sparsity",
+    "authors": [
+      {
+        "name": "Haomu Yuan",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Stilck Fran\u00e7a",
+        "affiliation": null
+      },
+      {
+        "name": "Ilia Luchnikov",
+        "affiliation": null
+      },
+      {
+        "name": "Egor Tiunov",
+        "affiliation": null
+      },
+      {
+        "name": "Tobias Haug",
+        "affiliation": null
+      },
+      {
+        "name": "Leandro Aolita",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quadratic Unconstrained Binary Optimization (QUBO) problems are prevalent in various applications and are known to be NP-hard. The seminal work of Goemans and Williamson introduced a semidefinite programming (SDP) relaxation for such problems, solvable in polynomial time that upper bounds the optimal value. Their approach also enables randomized rounding techniques to obtain feasible solutions with provable performance guarantees.   In this work, we identify instances of QUBO problems where matrix multiplicative weight methods lead to quantum and quantum-inspired algorithms that approximate the Goemans-Williamson SDP exponentially faster than existing methods, achieving polylogarithmic time complexity relative to the problem dimension. This speedup is attainable under the assumption that the QUBO cost matrix is sparse when expressed as a linear combination of Pauli strings satisfying certain algebraic constraints, and leverages efficient quantum and classical simulation results for quantum Gibbs states.   We demonstrate how to verify these conditions efficiently given the decomposition. Additionally, we explore heuristic methods for randomized rounding procedures and extract the energy of a feasible point of the QUBO in polylogarithmic time. While the practical relevance of instances where our methods excel remains to be fully established, we propose heuristic algorithms with broader applicability and identify Kronecker graphs as a promising class for applying our techniques. We conduct numerical experiments to benchmark our methods. Notably, by utilizing tensor network methods, we solve an SDP with $D = 2^{50}$ variables and extract a feasible point which is certifiably within $0.15\\%$ of the optimum of the QUBO through our approach on a desktop, reaching dimensions millions of times larger than those handled by existing SDP or QUBO solvers, whether heuristic or rigorous.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "math.OC"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum algorithms and optimization, which is a different area from the user's liked papers on materials science and condensed matter physics.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "QUBO",
+      "Goemans-Williamson relaxation",
+      "Quantum Gibbs states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4849485456943512,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4772665500640869,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4524284601211548,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.08518v1": {
+    "id": "2510.08518v1",
+    "title": "Randomized truncation of quantum states",
+    "authors": [
+      {
+        "name": "Aram W. Harrow",
+        "affiliation": null
+      },
+      {
+        "name": "Angus Lowe",
+        "affiliation": null
+      },
+      {
+        "name": "Freek Witteveen",
+        "affiliation": null
+      }
+    ],
+    "summary": "A fundamental task in quantum information is to approximate a pure quantum state in terms of sparse states or, for a bipartite system, states of bounded Schmidt rank. The optimal deterministic approximation in each case is straightforward, and maximizes the fidelity: keep the largest entries or singular values. On the other hand, random mixtures of sparse states can achieve quadratically improved trace distances, and yield nontrivial bounds on other distance measures like the robustness. In this work, we give efficient algorithms for finding mixtures of sparse states that optimally approximate a given pure state in either trace distance or robustness. These algorithms also yield descriptions of efficiently samplable ensembles of sparse, or less-entangled, states that correspond to these optimal mixed approximations. This can be used for the truncation step of algorithms for matrix product states, improving their accuracy while using no extra memory, and we demonstrate this improvement numerically. Our proofs use basic facts about convex optimization and zero-sum games, as well as rigorous guarantees for computing maximum-entropy distributions.",
+    "published_date": "2025-10-09",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum information and approximation of quantum states, which doesn't align with the user's past interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum state approximation",
+      "sparse states",
+      "trace distance"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4912916123867035,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4749677777290344,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.46145129203796387,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.07498v1": {
+    "id": "2510.07498v1",
+    "title": "Dissipative Generation of Currents by Nonreciprocal Local and Global Environments",
+    "authors": [
+      {
+        "name": "Catalin-Mihai Halati",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the mechanisms necessary for the stabilization of complex quantum correlations by exploring dissipative couplings to nonreciprocal reservoirs. We analyze the role of locality in the coupling to the environment of the quantum system of interest, as we consider either local couplings throughout the system, or a single global coupling. We contrast the results obtained for two scenarios in which a chain of strongly interacting hardcore bosonic atoms is coupled directly to Markovian kinetic dissipative processes, or experiences effective dissipation through the mediation of the field of a lossy optical cavity. To investigate the dissipative dynamics of the many-body quantum systems considered we perform numerical simulations employing matrix product states numerical methods. We show that by coupling atomic tunneling terms to the global field of a dissipative cavity we can stabilize at long times both finite currents and current-current correlations throughout the atomic chain. This is in contrast to the setup in which dissipation acts directly via local tunneling processes, where currents arise in a small portion of the system and the current-current correlations are rapidly decaying.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on dissipative quantum systems and nonreciprocal environments, which is a departure from the user's interests in superconductivity, electronic structure, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "nonreciprocal reservoirs",
+      "dissipative dynamics",
+      "matrix product states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5073691606521606,
+        "liked_paper_id": "2506.22302v1"
+      },
+      {
+        "score": 0.4907872974872589,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4638044238090515,
+        "liked_paper_id": "2507.01280v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
