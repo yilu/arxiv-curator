@@ -65661,5 +65661,1282 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2510.11260v1": {
+    "id": "2510.11260v1",
+    "title": "A Large-Language-Model Assisted Automated Scale Bar Detection and Extraction Framework for Scanning Electron Microscopic Images",
+    "authors": [
+      {
+        "name": "Yuxuan Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Ruotong Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengyang Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Mehreen Ahmed",
+        "affiliation": null
+      },
+      {
+        "name": "Yanming Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Microscopic characterizations, such as Scanning Electron Microscopy (SEM), are widely used in scientific research for visualizing and analyzing microstructures. Determining the scale bars is an important first step of accurate SEM analysis; however, currently, it mainly relies on manual operations, which is both time-consuming and prone to errors. To address this issue, we propose a multi-modal and automated scale bar detection and extraction framework that provides concurrent object detection, text detection and text recognition with a Large Language Model (LLM) agent. The proposed framework operates in four phases; i) Automatic Dataset Generation (Auto-DG) model to synthesize a diverse dataset of SEM images ensuring robust training and high generalizability of the model, ii) scale bar object detection, iii) information extraction using a hybrid Optical Character Recognition (OCR) system with DenseNet and Convolutional Recurrent Neural Network (CRNN) based algorithms, iv) an LLM agent to analyze and verify accuracy of the results. The proposed model demonstrates a strong performance in object detection and accurate localization with a precision of 100%, recall of 95.8%, and a mean Average Precision (mAP) of 99.2% at IoU=0.5 and 69.1% at IoU=0.5:0.95. The hybrid OCR system achieved 89% precision, 65% recall, and a 75% F1 score on the Auto-DG dataset, significantly outperforming several mainstream standalone engines, highlighting its reliability for scientific image analysis. The LLM is introduced as a reasoning engine as well as an intelligent assistant that suggests follow-up steps and verifies the results. This automated method powered by an LLM agent significantly enhances the efficiency and accuracy of scale bar detection and extraction in SEM images, providing a valuable tool for microscopic analysis and advancing the field of scientific imaging.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cs.CV",
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "physics.data-an"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on image analysis and scale bar detection in SEM images using large language models, which is not directly related to the user's previous interests in superconductivity, correlated electron systems, and topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "SEM image analysis",
+      "scale bar detection",
+      "large language model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.287940114736557,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.2414625585079193,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.19696271419525146,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11134v1": {
+    "id": "2510.11134v1",
+    "title": "Spinon band flattening by its emergent gauge field in quantum kagome ice",
+    "authors": [
+      {
+        "name": "Masafumi Udagawa",
+        "affiliation": null
+      },
+      {
+        "name": "Roderich Moessner",
+        "affiliation": null
+      }
+    ],
+    "summary": "Fractional excitations provide a key to identifying sought-after topological quantum spin liquid states in realistic materials. Their single-particle dynamics already presents a challenging many-body problem on account of the coupling to their emergent gauge field. Here, we study the spinon excitations of kagome ice, realized at the $2/3$ magnetization plateau of spin ice, by combining up-to-$63$-site exact diagonalization with an analytical state graph mapping. We find a macroscopically degenerate mode in the spinon spectrum. It originates from the destructive interference due to the interaction with surrounding gauge fields, a form of many-body caging. We explicitly construct, and count, the concomitant many-body wave functions. Finally, we discuss the possible role of these flat modes in the magnetization process of kagome antiferromagnets, in particular with regard to the asymmetric termination of the kagome ice magnetisation plateau.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses interesting quantum phenomena, it is focused on spin systems and emergent gauge fields, deviating from the user's previous interests in superconductivity, vacancies, and Dirac materials.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "Kagome ice",
+      "Spinons",
+      "Emergent gauge field"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6056296229362488,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.6041030287742615,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5885345339775085,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.10525v1": {
+    "id": "2510.10525v1",
+    "title": "Time domain braiding of anyons revealed through a nonequilibrium fluctuation dissipation theorem",
+    "authors": [
+      {
+        "name": "Ines Safi",
+        "affiliation": null
+      }
+    ],
+    "summary": "We derive a novel fluctuation--dissipation theorem (FDT) valid for nonequilibrium initial states that imprint the braiding of anyons in the time domain. The derivation is carried out within the Unifying Nonequilibrium Perturbative Theory (UNEPT), which applies to both standard reservoir geometries and configurations with one or two quantum point contacts (QPCs) injecting dilute anyonic fluxes. Based on this FDT, we propose complementary methods to determine the time-domain braiding phase. The first method relates the DC backscattering noise to the integral of the current with respect to DC drives, while the second connects the AC current phase shift to the DC noise. The latter provides a particularly robust probe of the statistical angle $\\theta$, offering an intrinsic calibration and cancelling certain nonuniversal renormalization effects. Specializing to a thermalized Tomonaga--Luttinger liquid (TLL), we further show that in the quantum regime the phase shift enables a direct determination of the scaling dimension $\\delta$ when $\\delta > 1/2$. These results define experimentally accessible schemes to extract either $\\theta$ or $\\delta$ in minimal single-QPC setups, without relying on interferometry or cross-correlation measurements.",
+    "published_date": "2025-10-12",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user has shown interest in topological phases and novel materials, this paper focuses on theoretical methods for detecting anyonic braiding, making it only somewhat relevant.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Nonequilibrium fluctuation-dissipation theorem",
+      "Anyonic braiding",
+      "Time-domain braiding"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42453426122665405,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.3931364417076111,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.38574814796447754,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.08680v1": {
+    "id": "2510.08680v1",
+    "title": "Tensor-network representation of excitations in Josephson junction arrays",
+    "authors": [
+      {
+        "name": "Emilio Rui",
+        "affiliation": null
+      },
+      {
+        "name": "Joachim Cohen",
+        "affiliation": null
+      },
+      {
+        "name": "Alexandru Petrescu",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a nonperturbative tensor-network approach to the excitation spectra of superconducting circuits based on Josephson junction arrays. These arrays provide the large lumped inductances required for qubit designs, yet their intrinsically many-body nature is typically reduced to effective single-mode descriptions. Perturbative treatments attempt to include the collective array modes neglected in these approximations, but a fully nonperturbative analysis is challenging due to the many-body structure and the collective character of these modes. We overcome this difficulty using the DMRG-X algorithm, which extends tensor-network methods to excited states. Our key advance is a construction of trial states from the linearized mode structure, enabling direct computation of excitations, even in degenerate manifolds, which was previously inaccessible. Our results reveal significant deviations from, and allow us to improve upon, previous perturbative treatments in the regime of low array junction impedance.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has liked superconductivity papers, this paper focuses on Josephson junction arrays and tensor network methods, which are related but distinct topics, making it only somewhat relevant.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Josephson junction arrays",
+      "tensor-network approach",
+      "superconducting circuits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6569074392318726,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5661622285842896,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5604203343391418,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.11431v1": {
+    "id": "2510.11431v1",
+    "title": "A minimal and universal representation of fermionic wavefunctions (fermions = bosons + one)",
+    "authors": [
+      {
+        "name": "Liang Fu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Representing fermionic wavefunctions efficiently is a central problem in quantum physics, chemistry and materials science. In this work, we introduce a universal and exact representation of continuous antisymmetric functions by lifting them to continuous symmetric functions defined on an enlarged space. Building on this lifting, we obtain a \\emph{parity-graded representation} of fermionic wavefunctions, expressed in terms of symmetric feature variables that encode particle configuration and antisymmetric feature variables that encode exchange statistics. This representation is both exact and minimal: the number of required features scales as $D\\sim N^d$ ($d$ is spatial dimension) or $D\\sim N$ depending on the symmetric feature maps employed. Our results provide a rigorous mathematical foundation for efficient representations of fermionic wavefunctions and enable scalable and systematically improvable neural network solvers for many-electron systems.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.str-el",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the paper addresses efficient representations of fermionic wavefunctions, which is relevant to materials science, it's more focused on the mathematical and computational aspects rather than specific materials or phenomena seen in the user's liked papers.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "fermionic wavefunctions",
+      "parity-graded representation",
+      "many-electron systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5260275602340698,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5099280476570129,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5091618299484253,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11459v1": {
+    "id": "2510.11459v1",
+    "title": "Efficient and accurate tensor network algorithm for Anderson impurity problems",
+    "authors": [
+      {
+        "name": "Zhijie Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Zhenyu Li",
+        "affiliation": null
+      },
+      {
+        "name": "Chu Guo",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Anderson impurity model (AIM) is of fundamental importance in condensed matter physics to study strongly correlated effects. However, accurately solving its long-time dynamics still remains a great numerical challenge. An emergent and rapidly developing numerical strategy to solve the AIM is to represent the Feynman-Vernon influence functional (IF), which encodes all the bath effects on the impurity dynamics, as a matrix product state (MPS) in the temporal domain. The computational cost of this strategy is basically determined by the bond dimension $\\chi$ of the temporal MPS. In this work, we propose an efficient and accurate method which, when the hybridization function in the IF can be approximated as the summation of $n$ exponential functions, can systematically build the IF as a MPS by multiplying $O(n)$ small MPSs, each with bond dimension $2$. Our method gives a worst case scaling of $\\chi$ as $2^{8n}$ and $2^{2n}$ for real- and imaginary-time evolution respectively. We demonstrate the performance of our method for two commonly used bath spectral functions, where we show that the actually required $\\chi$s are much smaller than the worst case.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses the Anderson impurity model, a key concept in studying strongly correlated electron systems, which aligns with the user's interest in unconventional superconductors and related materials.",
+    "matching_keywords": [
+      "anderson impurity model",
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Anderson impurity model",
+      "tensor network algorithm",
+      "matrix product state"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7219225764274597,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.6532266139984131,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      },
+      {
+        "score": 0.6372386813163757,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11710v1": {
+    "id": "2510.11710v1",
+    "title": "Comparing Symmetrized Determinant Neural Quantum States for the Hubbard Model",
+    "authors": [
+      {
+        "name": "Louis Sharma",
+        "affiliation": null
+      },
+      {
+        "name": "Ahmedeo Shokry",
+        "affiliation": null
+      },
+      {
+        "name": "Rajah Nutakki",
+        "affiliation": null
+      },
+      {
+        "name": "Olivier Simard",
+        "affiliation": null
+      },
+      {
+        "name": "Michel Ferrero",
+        "affiliation": null
+      },
+      {
+        "name": "Filippo Vicentini",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurate simulations of the Hubbard model are crucial to understanding strongly correlated phenomena, where small energy differences between competing orders demand high numerical precision. In this work, Neural Quantum States are used to probe the strongly coupled and underdoped regime of the square-lattice Hubbard model. We systematically compare the Hidden Fermion Determinant State and the Jastrow-Backflow ansatz, parametrized by a Vision Transformer, finding that in practice, their accuracy is similar. We also test different symmetrization strategies, finding that output averaging yields the lowest energies, though it becomes costly for larger system sizes. On cylindrical systems, we consistently observe filled stripes. On the torus, our calculations display features consistent with a doped Mott insulator, including antiferromagnetic correlations and suppressed density fluctuations. Our results demonstrate both the promise and current challenges of neural quantum states for correlated fermions.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses the Hubbard model and strongly correlated phenomena, which aligns with the user's interest in correlated electron systems and superconductivity, albeit using a different computational method.",
+    "matching_keywords": [
+      "hubbard model",
+      "neural quantum state"
+    ],
+    "suggested_keywords": [
+      "Neural Quantum States",
+      "Hubbard Model",
+      "Strongly Correlated Phenomena"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6748570203781128,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.6533066034317017,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.6482158899307251,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09670v1": {
+    "id": "2510.09670v1",
+    "title": "A physics-aware deep learning model for shear band formation around collapsing pores in shocked reactive materials",
+    "authors": [
+      {
+        "name": "Xinlun Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Bingzhe Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Joseph Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Yen T. Nguyen",
+        "affiliation": null
+      },
+      {
+        "name": "Pradeep Seshadri",
+        "affiliation": null
+      },
+      {
+        "name": "Mayank Verma",
+        "affiliation": null
+      },
+      {
+        "name": "H. S. Udaykumar",
+        "affiliation": null
+      },
+      {
+        "name": "Stephen Baek",
+        "affiliation": null
+      }
+    ],
+    "summary": "Modeling shock-to-detonation phenomena in energetic materials (EMs) requires capturing complex physical processes such as strong shocks, rapid changes in microstructural morphology, and nonlinear dynamics of chemical reaction fronts. These processes participate in energy localization at hotspots, which initiate chemical energy release leading to detonation. This study addresses the formation of hotspots in crystalline EMs subjected to weak-to-moderate shock loading, which, despite its critical relevance to the safe storage and handling of EMs, remains underexplored compared to the well-studied strong shock conditions. To overcome the computational challenges associated with direct numerical simulations, we advance the Physics-Aware Recurrent Convolutional Neural Network (PARCv2), which has been shown to be capable of predicting strong shock responses in EMs. We improved the architecture of PARCv2 to rapidly predict shear localizations and plastic heating, which play important roles in the weak-to-moderate shock regime. PARCv2 is benchmarked against two widely used physics-informed models, namely, Fourier neural operator and neural ordinary differential equation; we demonstrate its superior performance in capturing the spatiotemporal dynamics of shear band formation. While all models exhibit certain failure modes, our findings underscore the importance of domain-specific considerations in developing robust AI-accelerated simulation tools for reactive materials.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": "10.1063/5.0294397",
+    "score": 0.1,
+    "reasoning": "This paper focuses on shock physics and material science, specifically in energetic materials, which is a departure from the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Shock-to-detonation",
+      "Shear band formation",
+      "Physics-aware deep learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4654744267463684,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4343121647834778,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.41861194372177124,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.10696v1": {
+    "id": "2510.10696v1",
+    "title": "Ultra-transient grating spectroscopy for visualization of surface acoustics",
+    "authors": [
+      {
+        "name": "Tom\u00e1\u0161 Grabec",
+        "affiliation": null
+      },
+      {
+        "name": "Pavla Stoklasov\u00e1",
+        "affiliation": null
+      },
+      {
+        "name": "Krist\u00fdna Rep\u010dek",
+        "affiliation": null
+      },
+      {
+        "name": "Jakub Ku\u0161n\u00edr",
+        "affiliation": null
+      },
+      {
+        "name": "David Mare\u0161",
+        "affiliation": null
+      },
+      {
+        "name": "Martin \u0160ev\u010d\u00edk",
+        "affiliation": null
+      },
+      {
+        "name": "Petr Sedl\u00e1k",
+        "affiliation": null
+      },
+      {
+        "name": "Hanu\u0161 Seiner",
+        "affiliation": null
+      }
+    ],
+    "summary": "Ultrasonic wave propagation across material surfaces reveals essential information about the materials' elastic behavior. The elastodynamic response of the surface is characterized by the Green's function that fully captures all its direction-dependent and frequency-dependent features. Here we present the first direct experimental visualization of the Green's function, including all its complex details resulting from elastic anisotropy. We achieve this visualization using a dedicated modification of transient grating spectroscopy (TGS), which is a method otherwise well established for measuring Rayleigh-type surface acoustic waves. To overcome the limitations of conventional TGS, we explore near-field thermoacoustic phenomena occurring within TGS experiments. We reveal that, along with the transient standing-wave patterns that diminish within hundreds of nanoseconds, there also emerge ultra-transient oscillations with lifetimes at least an order of magnitude shorter. These ultra-transient effects enable capturing the surface acoustic response with exceptional detail, and the resulting experimental angular dispersion maps strikingly replicate the theoretical Green's functions. By utilizing this feature, ultra-transient grating spectroscopy (UTGS) becomes a powerful new tool for detailed contactless characterization of anisotropic solids, opening new pathways for studying single-crystalline materials utilized in diverse modern application fields, including solid-state cooling via the elastocaloric effect, magnetoelastic devices, or nanoscale electromechanical systems.",
+    "published_date": "2025-10-12",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on surface acoustics and a specific spectroscopic technique, which is a departure from the user's interest in superconductivity, correlated electron systems, and nickelates.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "Surface acoustics",
+      "Transient grating spectroscopy",
+      "Elastodynamic Green's function"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3587169349193573,
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C"
+      },
+      {
+        "score": 0.3569478392601013,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.3220934271812439,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.08718v1": {
+    "id": "2510.08718v1",
+    "title": "The charge-singlet measurement toolbox",
+    "authors": [
+      {
+        "name": "Abhijit Chakraborty",
+        "affiliation": null
+      },
+      {
+        "name": "Randy Lewis",
+        "affiliation": null
+      },
+      {
+        "name": "Christine A. Muschik",
+        "affiliation": null
+      }
+    ],
+    "summary": "Symmetry is fundamental to physical laws across different scales$\\unicode{x2014}$from spacetime structure in general relativity to particle interactions in quantum field theory. Local symmetries, described by gauge theories, are central to phenomena such as superconductivity, topological phases, and the Standard Model of particle physics. Emerging simulation techniques using tensor network states or quantum computers offer exciting new possibilities of exploring the physics of these gauge theories, but require careful implementation of gauge symmetry and charge-neutrality constraints. This is especially challenging for non-Abelian gauge theories such as quantum chromodynamics (QCD), which governs the strong interaction between quarks and gluons. In a recent article (arXiv:2501.00579), we introduced \"charge-singlet measurements\" for quantum simulations, consisting of a projection based technique from group representation theory that allowed us to probe for the first time the phase diagram of (1+1)-dimensional QCD on a quantum computer. In this article, we show more broadly how to apply charge-singlet measurements as a flexible tool for both classical and quantum simulations of discrete and continuous gauge theories. Our approach extends the use of charge-singlet measurements beyond state preparation in the charge neutral (charge-singlet) sector to include noise mitigation in symmetry-preserving time-evolution circuits. We further demonstrate how this method enables the computation of thermodynamic observables$\\unicode{x2014}$such as entropy$\\unicode{x2014}$within the charge-singlet subspace, providing a new tool for exploring the connection between quantum thermodynamics and gauge symmetry.",
+    "published_date": "2025-10-09",
+    "categories": [],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper discusses gauge theories and symmetry, which are related to the user's interest in topological phases and Dirac fermions, but the specific focus on quantum simulations of QCD is somewhat distant from the other topics.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "charge-singlet measurements",
+      "gauge theories",
+      "quantum simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46932947635650635,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.43797174096107483,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.42753857374191284,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.09861v1": {
+    "id": "2510.09861v1",
+    "title": "Predicting Crystal Structures and Ionic Conductivity in Li$_{3}$YCl$_{6-x}$Br$_{x}$ Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential",
+    "authors": [
+      {
+        "name": "Jonas B\u00f6hm",
+        "affiliation": null
+      },
+      {
+        "name": "Aur\u00e9lie Champagne",
+        "affiliation": null
+      }
+    ],
+    "summary": "This work demonstrates the effectiveness of fine-tuning the CHGNet universal machine learning interatomic potential (uMLIP) to investigate ionic transport mechanisms in ternary halide solid electrolytes of the Li$_{3}$YCl$_{6-x}$Br$_{x}$ family (x = 0 to 6), which are promising candidates for solid-state battery applications. We present a strategy for generating ordered structural models from experimentally derived disordered Li$_{3}$YCl$_{6}$ (LYC) and Li$_{3}$YBr$_{6}$ (LYB) structures. These serve as initial configurations for an iterative fine-tuning workflow that couples molecular dynamics (MD) simulations with static density functional theory (DFT) calculations. The fine-tuning process and the resulting improvements in predictive accuracy are benchmarked across energy predictions, structure optimizations, and diffusion coefficient calculations. Finally, we analyze the influence of composition (varied x) on the predicted ionic conductivity in Li$_{3}$YCl$_{6-x}$Br$_{x}$, demonstrating the robustness of our approach for modeling transport properties in complex solid electrolytes.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in superconductivity and exotic electronic states, this paper focuses on solid-state electrolytes and battery materials, making the connection relatively weak, but the use of computational methods and materials science concepts provides some relevance.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Halide Solid Electrolytes",
+      "Machine Learning Interatomic Potential",
+      "Ionic Conductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4959820508956909,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.48917192220687866,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.48675045371055603,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09755v1": {
+    "id": "2510.09755v1",
+    "title": "Conformal Data for the O(3) Wilson-Fisher CFT from Fuzzy Sphere Realization of Quantum Rotor Model",
+    "authors": [
+      {
+        "name": "Arjun Dey",
+        "affiliation": null
+      },
+      {
+        "name": "Loic Herviou",
+        "affiliation": null
+      },
+      {
+        "name": "Christopher Mudry",
+        "affiliation": null
+      },
+      {
+        "name": "Andreas Martin L\u00e4uchli",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a model for strongly interacting fermions with internal O(3) symmetry on the fuzzy-sphere that (i) preserves the rotational symmetry of the fuzzy sphere and (ii) undergoes a quantum phase transition in the (2+1)-dimensional O(3) Wilson-Fisher universality class. Using exact diagonalization (ED) and density matrix renormalization group (DMRG), we locate the quantum critical point via conformal perturbation theory and obtain scaling dimensions from finite-size spectra. We identify 24 primary operators and determine some of their operator product expansion coefficients through first-order conformal perturbation theory. The results are benchmarked against conformal bootstrap and large quantum-number expansions and reveal a weakly irrelevant operator that plays a role in dimerized antiferromagnets. Our work establishes the fuzzy sphere as a general framework for quantitatively accessing conformal data in non-Abelian conformal field theories (CFTs).",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper deals with quantum phase transitions and strongly interacting systems, which are themes in the user's liked papers, it focuses on conformal field theory and the O(3) Wilson-Fisher universality class, a more specific area not directly represented in the user's history.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "fuzzy sphere",
+      "conformal field theory",
+      "quantum rotor model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4896443486213684,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.4373389482498169,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.4301392436027527,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09170v1": {
+    "id": "2510.09170v1",
+    "title": "Altermagnetism and Superconductivity: A Short Historical Review",
+    "authors": [
+      {
+        "name": "Zhao Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Hui Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Xia-Ji Liu",
+        "affiliation": null
+      }
+    ],
+    "summary": "This article explores the deep interconnections among three seemingly unrelated concepts in condensed matter physics: electronic liquid crystal phases, multipole expansions, and altermagnetism. At the heart of these phenomena lies a shared foundation: spin-momentum locking in the nonrelativistic regime. Originally proposed in the context of electronic liquid crystal phases, spin-momentum locking was later elegantly incorporated into the formalism of multipole expansions. This framework can be further extended across multiple atomic sites, making it particularly effective for describing altermagnets, which feature localized magnetic moments distributed over at least two sublattices. In the second part of the article, we examine superconducting phenomena that stem from this shared mechanism, focusing on superconductivity in systems with spin-momentum locked Fermi surfaces. We highlight a rich variety of unconventional superconducting states, including finite-momentum pairing, $d$-wave and spin-triplet superconductivity, and topological Bogoliubov Fermi surfaces, among others. Additional related topics are addressed in the concluding section. Overall, this work offers both an accessible introduction to the newly identified magnetic order known as altermagnetism and a conceptual guide for researchers aiming to harness the ensuing unconventional superconductivity in the development of future quantum technologies.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses unconventional superconductivity and altermagnetism, which are related to previously liked topics like superconductivity in nickelates and topological materials.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spin-momentum locking",
+      "Unconventional superconductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6813690662384033,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.6164876818656921,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5904531478881836,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09386v1": {
+    "id": "2510.09386v1",
+    "title": "Non-Hermitian Bethe-Salpeter Equation for Open Systems: Emergence of Exceptional Points in Excitonic Spectra from First Principles",
+    "authors": [
+      {
+        "name": "Zhenlin Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Enrico Perfetto",
+        "affiliation": null
+      },
+      {
+        "name": "Gianluca Stefanucci",
+        "affiliation": null
+      }
+    ],
+    "summary": "In open quantum systems hosting excitons, dissipation mechanisms critically shape the excitonic dynamics, band-structure and topological properties. A microscopic understanding of excitons in such non-Hermitian settings demands a first-principles generalization of the Bethe-Salpeter equation (BSE). Building on a recently introduced nonequilibrium Green's function formalism compatible with Lindbladian dynamics, we derive a non-Hermitian BSE from diagrammatic perturbation theory on the Keldysh contour, and obtain a microscopic excitonic Hamiltonian that incorporates dissipation while preserving causality. We apply the formalism to valley excitons in transition metal dichalcogenides coupled to structured photon baths. We uncover a rich landscape of exceptional points in momentum space, forming either discrete sets or continuous manifolds, depending on bath structure. The exceptional points give rise to nonanalytic valley-polarization, unusual polarization pattern in photoluminescence, and nontrivial topological signatures. Our results establish a first-principles framework for predicting and controlling excitonic behavior in open quantum materials, showing how engineered environments can be leveraged to induce and manipulate non-Hermitian and topological properties.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While the paper deals with quantum materials and excitons, its focus on non-Hermitian physics and open systems is not directly aligned with the user's previous interests in superconductivity, oxygen vacancies, and Dirac fermions, making it moderately relevant.",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Non-Hermitian physics",
+      "Exceptional points",
+      "Open quantum systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49193859100341797,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.485051691532135,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.4703618884086609,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09515v1": {
+    "id": "2510.09515v1",
+    "title": "A microscopic approach to nonlinear theory of spin-charge separation",
+    "authors": [
+      {
+        "name": "Oleksandr Tsyplyatyev",
+        "affiliation": null
+      },
+      {
+        "name": "Yiqing Jin",
+        "affiliation": null
+      },
+      {
+        "name": "Mar\u00eda Moreno",
+        "affiliation": null
+      },
+      {
+        "name": "Wooi Kiat Tan",
+        "affiliation": null
+      },
+      {
+        "name": "Christopher J. B. Ford",
+        "affiliation": null
+      }
+    ],
+    "summary": "The fate of spin-charge separation beyond the low energy remains elusive up to now. Here we develop a microscopic theory of the correlation functions using the strong coupling expansion of the Hubbard model and demonstrate its validity down to the experimentally relevant $r_{\\rm s}>1$. Evaluating the spectral function, we show the general stability of the nonlinear spin-charge modes in whole energy band and investigate all the nonlinear features systematically. We confirm the general prediction experimentally in semiconductor quantum wires. Furthermore, we observe a signal consistent with a continuum of the nonlinear excitations and with a final spectral density around the $3 k_{\\rm F}$ point, indicating the robustness of the Hubbard model predictions for a finite range interaction.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper explores the Hubbard model and spin-charge separation, topics relevant to previously liked papers on correlated electron systems and superconductivity.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "spin-charge separation",
+      "Hubbard model",
+      "spectral function"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5747120976448059,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5731883645057678,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5551651120185852,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09352v1": {
+    "id": "2510.09352v1",
+    "title": "LR-WaveHoltz: A Low-Rank Helmholtz Solver",
+    "authors": [
+      {
+        "name": "Andreas Granath",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Appel\u00f6",
+        "affiliation": null
+      },
+      {
+        "name": "Siyang Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose a low-rank method for solving the Helmholtz equation. Our approach is based on the WaveHoltz method, which computes Helmholtz solutions by applying a time-domain filter to the solution of a related wave equation. The wave equation is discretized by high-order multiblock summation-by-parts finite differences. In two dimensions we use the singular value decomposition and in three dimensions we use tensor trains to compress the numerical solution. To control rank growth we use step-truncation during time stepping and a low-rank Anderson acceleration for the WaveHoltz fixed point iteration. We have carried out extensive numerical experiments demonstrating the convergence and efficacy of the iterative scheme for free- and half-space problems in two and three dimensions with constant and piecewise constant wave speeds.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a numerical method for solving the Helmholtz equation, which is unrelated to the user's interests in condensed matter physics and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Helmholtz equation",
+      "low-rank methods",
+      "numerical solver"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3760509788990021,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.2844577431678772,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.2680736184120178,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.09662v1": {
+    "id": "2510.09662v1",
+    "title": "Assessment of different loss functions for fitting equivalent circuit models to electrochemical impedance spectroscopy data",
+    "authors": [
+      {
+        "name": "Ali Jaberi",
+        "affiliation": null
+      },
+      {
+        "name": "Amin Sadeghi",
+        "affiliation": null
+      },
+      {
+        "name": "Runze Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhaoyang Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Qiuyu Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Black",
+        "affiliation": null
+      },
+      {
+        "name": "Zoya Sadighi",
+        "affiliation": null
+      },
+      {
+        "name": "Jason Hattrick-Simpers",
+        "affiliation": null
+      }
+    ],
+    "summary": "Electrochemical impedance spectroscopy (EIS) data is typically modeled using an equivalent circuit model (ECM), with parameters obtained by minimizing a loss function via nonlinear least squares fitting. This paper introduces two new loss functions, log-B and log-BW, derived from the Bode representation of EIS. Using a large dataset of generated EIS data, the performance of proposed loss functions was evaluated alongside existing ones in terms of R2 scores, chi-squared, computational efficiency, and the mean absolute percentage error (MAPE) between the predicted component values and the original values. Statistical comparisons revealed that the choice of loss function impacts convergence, computational efficiency, quality of fit, and MAPE. Our analysis showed that X2 loss function (squared sum of residuals with proportional weighting) achieved the highest performance across multiple quality of fit metrics, making it the preferred choice when the quality of fit is the primary goal. On the other hand, log-B offered a slightly lower quality of fit while being approximately 1.4 times faster and producing lower MAPE for most circuit components, making log-B as a strong alternative. This is a critical factor for large-scale least squares fitting in data-driven applications, such as training machine learning models on extensive datasets or iterations.",
+    "published_date": "2025-10-07",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on electrochemical impedance spectroscopy and equivalent circuit modeling, which are distinct from the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Electrochemical impedance spectroscopy",
+      "Loss functions",
+      "Equivalent circuit models"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.23466812074184418,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      },
+      {
+        "score": 0.23295284807682037,
+        "liked_paper_id": "yBtX0C4AAAAJ:NaGl4SEjCO4C"
+      },
+      {
+        "score": 0.23224814236164093,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.08738v1": {
+    "id": "2510.08738v1",
+    "title": "Accelerated prediction of dielectric functions in solar cell materials with graph neural networks",
+    "authors": [
+      {
+        "name": "Caden Ginter",
+        "affiliation": null
+      },
+      {
+        "name": "Kamal Choudhary",
+        "affiliation": null
+      },
+      {
+        "name": "Subhasish Mandal",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present an atomistic line graph neural network (ALIGNN) model for predicting dielectric functions directly from crystal structures. Trained on $\\sim$7000 dielectric functions from the JARVIS-DFT database computed with a meta-GGA exchange-correlation functional, the model accurately reproduces spectral features, including peak intensities and overall line shapes, while enabling efficient high-throughput screening. Applied to the recently developed Alexandria materials database, containing over four hundred thousand insulating materials, we uncover a clear elemental trend, with vanadium emerging as a strong indicator of materials with high-spectroscopic limited maximum efficiency (SLME). In particular, vanadium-based perovskite materials show a substantially higher fraction of high-SLME compounds compared to the database average, underscoring their promise for optoelectronic applications.",
+    "published_date": "2025-10-09",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in correlated electron materials, this paper focuses on the application of machine learning to predict dielectric functions in solar cell materials.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "graph neural networks",
+      "dielectric functions",
+      "solar cell materials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4863852262496948,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4027872085571289,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.37442952394485474,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09363v1": {
+    "id": "2510.09363v1",
+    "title": "Superconductivity in the repulsive Hubbard model on different geometries induced by density-assisted hopping",
+    "authors": [
+      {
+        "name": "Franco T. Lisandrini",
+        "affiliation": null
+      },
+      {
+        "name": "Edmond Orignac",
+        "affiliation": null
+      },
+      {
+        "name": "Roberta Citro",
+        "affiliation": null
+      },
+      {
+        "name": "Ameneh Sheikhan",
+        "affiliation": null
+      },
+      {
+        "name": "Corinna Kollath",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the effect of density-assisted hopping on different dimerized lattice geometries, such as bilayers and ladder structures. We show analytically that the density-assisted hopping induces an attractive interaction in the lower (bonding) band of the dimer structure and a repulsion in the upper (anti-bonding) band. Overcoming the onsite repulsion, this can lead to the appearance of superconductivity. The superconductivity depends strongly on the filling, and present a pairing structure more complex than s-wave pairing. Combining numerical and analytical methods such as the matrix product states ansatz, bosonization and perturbative calculations we map out the phase diagram of the two-leg ladder system and identify its superconducting phase. We characterize the transition from the non-density-assisted repulsive regime to the spin-gapped superconducting regime as a Berezinskii-Kosterlitz-Thouless transition.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses superconductivity and the Hubbard model, which are related to the user's interest in superconductivity and correlated electron systems.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "density-assisted hopping",
+      "dimerized lattices",
+      "Berezinskii-Kosterlitz-Thouless transition"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6093418598175049,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.588171124458313,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5767590403556824,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.11241v1": {
+    "id": "2510.11241v1",
+    "title": "Optimizing Cross-Domain Transfer for Universal Machine Learning Interatomic Potentials",
+    "authors": [
+      {
+        "name": "Jaesun Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Jinmu You",
+        "affiliation": null
+      },
+      {
+        "name": "Yutack Park",
+        "affiliation": null
+      },
+      {
+        "name": "Yunsung Lim",
+        "affiliation": null
+      },
+      {
+        "name": "Yujin Kang",
+        "affiliation": null
+      },
+      {
+        "name": "Jisu Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Haekwan Jeon",
+        "affiliation": null
+      },
+      {
+        "name": "Deokgi Hong",
+        "affiliation": null
+      },
+      {
+        "name": "Seung Yul Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Saerom Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Yongdeok Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Jae W. Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Seungwu Han",
+        "affiliation": null
+      }
+    ],
+    "summary": "Accurate yet transferable machine-learning interatomic potentials (MLIPs) are essential for accelerating materials and chemical discovery. However, most universal MLIPs overfit to narrow datasets or computational protocols, limiting their reliability across chemical and functional domains. We introduce a transferable multi-domain training strategy that jointly optimizes universal and task-specific parameters through selective regularization, coupled with a domain-bridging set (DBS) that aligns potential-energy surfaces across datasets. Systematic ablation experiments show that small DBS fractions (0.1%) and targeted regularization synergistically enhance out-of-distribution generalization while preserving in-domain fidelity. Trained on fifteen open databases spanning molecules, crystals, and surfaces, our model, SevenNet-Omni, achieves state-of-the-art cross-domain accuracy, including adsorption-energy errors below 0.06 eV on metallic surfaces and 0.1 eV on metal-organic frameworks. Despite containing only 0.5% r$^2$SCAN data, SevenNet-Omni reproduces high-fidelity r$^2$SCAN energetics, demonstrating effective cross-functional transfer from large PBE datasets. This framework offers a scalable route toward universal, transferable MLIPs that bridge quantum-mechanical fidelities and chemical domains.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning interatomic potentials, a topic distinct from the user's interests in superconductivity, correlated electron systems, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "MLIPs",
+      "Cross-domain transfer",
+      "Interatomic potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.42340168356895447,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3967836797237396,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3912535011768341,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.10128v1": {
+    "id": "2510.10128v1",
+    "title": "Material combination optimization for brazed ceramic-metal composites using Artificial Intelligence",
+    "authors": [
+      {
+        "name": "Sunita Khod",
+        "affiliation": null
+      },
+      {
+        "name": "Vinay Kamma",
+        "affiliation": null
+      },
+      {
+        "name": "Ravi Kumar Verma",
+        "affiliation": null
+      },
+      {
+        "name": "Mayank Goswami",
+        "affiliation": null
+      }
+    ],
+    "summary": "This study proposes an Artificial Intelligence (AI) driven methodology for predicting a combination of brazed ceramic-metal composite materials. Multiple machine learning (ML) algorithms are compared with the deep learning (DL) model. The developed models are tested using k-fold validation. Nine different input-output feature configurations are evaluated to assess the model performance. The input-output feature comprises material properties, namely, the coefficient of thermal expansion (CTE) and molecular mass of brazed ceramic-metal composite materials obtained from literature and the strength parameter (average Von Mises Stress (VMS)) estimated from Finite Element Method (FEM) simulation for joint assembly structure. A multi-output model, Autoencoder (AE), has also been developed and tested to predict various features. The ML model, namely the polynomial regression (PR), outperforms the other ML/DL models with a Mean square Error (MSE) of 0.01 for the test data. The autoencoder model with a 32-16-32 structure outperforms LR, PR, RF, and ANN with an MSE of 0.04% for the prediction of unseen data. The developed multi-output model accurately predicts all the features (single and multiple), while PR fails to accurately predict multi-output features of low importance. The developed AE model predicts the different material properties with an average error of ~0.16-3.78% with literature-reported values.",
+    "published_date": "2025-10-11",
+    "categories": [
+      "physics.app-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on material science and AI-driven optimization of ceramic-metal composites, which is not related to the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "brazed ceramic-metal composites",
+      "Artificial Intelligence",
+      "Finite Element Method"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3586916923522949,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.2505304515361786,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.225797638297081,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11678v1": {
+    "id": "2510.11678v1",
+    "title": "Spinon Mediation of Witness-Spin Dynamics and Ground State in Herbertsmithite",
+    "authors": [
+      {
+        "name": "Hiroto Takahashi",
+        "affiliation": null
+      },
+      {
+        "name": "Jack Murphy",
+        "affiliation": null
+      },
+      {
+        "name": "Mitikorn Wood-Thanan",
+        "affiliation": null
+      },
+      {
+        "name": "Pascal Puphal",
+        "affiliation": null
+      },
+      {
+        "name": "Miguel Angel Sanchez-Martinez",
+        "affiliation": null
+      },
+      {
+        "name": "Fabian Jerzembeck",
+        "affiliation": null
+      },
+      {
+        "name": "Chun-Chih Hsu",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Ward",
+        "affiliation": null
+      },
+      {
+        "name": "Masahiko Isobe",
+        "affiliation": null
+      },
+      {
+        "name": "Yosuke Matsumoto",
+        "affiliation": null
+      },
+      {
+        "name": "Hidenori Takagi",
+        "affiliation": null
+      },
+      {
+        "name": "Stephen J. Blundell",
+        "affiliation": null
+      },
+      {
+        "name": "Michael R. Norman",
+        "affiliation": null
+      },
+      {
+        "name": "Felix Flicker",
+        "affiliation": null
+      },
+      {
+        "name": "J. C. S\u00e9amus Davis",
+        "affiliation": null
+      }
+    ],
+    "summary": "The kagome lattice of spin-1/2 Cu atoms in herbertsmithite (ZnCu3(OH)6Cl2) may sustain a quantum spin liquid (QSL) state with spinon quasiparticles. Each kagome plane is separated from its homologues by a layer of spinless Zn atoms. Providentially, however, some spin-1/2 Cu atoms substitute randomly onto these inter-kagome Zn sites. We reconceptualize these 'impurity' atoms as quantum 'witness-spins', an exceptional new interrogative of the conjectured Z2-gauge-symmetric QSL state. Thus we introduce spin-noise spectroscopy to explore herbertsmithite witness-spin dynamics for QSL studies. It reveals the existence, slowing and intensification of spin noise, prefatory to a sharp transition at T* {\\approx} 260 mK. Below T* the spin-noise power spectral density S_M({\\omega},T) {\\propto} {\\omega}^{-{\\alpha}(T)} stabilizes at {\\alpha} {\\approx} 1; the spin noise variance {\\sigma}_M^2(T) diminishes precipitously; the ultra-low-field magnetic susceptibility {\\chi}(T) undergoes a sharp transition into a phase exhibiting an Edwards-Anderson order-parameter and ultra-slow spin-state relaxation. A Z2 QSL theory of spinon-mediated witness-spin interactions corresponds best to all these experimental observations, predicting slowing and intensification of witness-spin fluctuations and noise spectrum S_M({\\omega},T) with cooling, with a transition into a unique spinon-mediated phase signified by rapidly diminishing spin noise, with S_M({\\omega},T) {\\propto} {\\omega}^{-1}, a sharp cusp in the DC magnetic susceptibility {\\chi}(T), and the appearance of an Edwards-Anderson order-parameter. We rule out numerous other mechanisms for these effects, so that only spinon-mediation by either a Z2 or U(1) QSL is consistent with all present herbertsmithite empirics, with the former model providing a closer match to data.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses quantum spin liquids and related phenomena, which aligns with the user's interest in unconventional superconductivity and correlated electron systems, although not directly related to the user's previous topics.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "Quantum spin liquid",
+      "Witness-spin dynamics",
+      "Herbertsmithite"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5648485422134399,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5426892042160034,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.516326904296875,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
