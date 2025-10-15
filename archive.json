@@ -65950,7 +65950,9 @@
         "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.11710v1": {
     "id": "2510.11710v1",
@@ -66301,7 +66303,9 @@
         "liked_paper_id": "2506.15516v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.09170v1": {
     "id": "2510.09170v1",
@@ -66935,6 +66939,761 @@
       {
         "score": 0.516326904296875,
         "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.10167v1": {
+    "id": "2510.10167v1",
+    "title": "Features of preparable entangled states in Gaussian quantum networks",
+    "authors": [
+      {
+        "name": "Shuanping Du",
+        "affiliation": null
+      },
+      {
+        "name": "Zhaofang Bai",
+        "affiliation": null
+      }
+    ],
+    "summary": "Large-scale quantum networks have been employed to overcome practical constraints on transmission and storage for single entangled systems. The deterministic preparation of entangled states is one of the key factors for realization of quantum networks. There is no efficient method to verify whether single multipartite entanglement can be prepared by multisource quantum networks. Here, we theoretically analysize under what conditions entangled states can be prepared in three kinds of basic Gaussian quantum networks, named triangle networks, star-shaped networks and chain-type networks. Some necessity criteria are derived for all preparable entangled Gaussian states in such networks. It shows that the network structure imposes strong constraints on the set of preparable entangled Gaussian states, which is fundamentally different with the standard single multipartite entanglement. This takes the first step towards understanding network mechanism for preparing entangled Gaussian states.",
+    "published_date": "2025-10-11",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum networks and entanglement, which is a departure from the user's previously liked papers on condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Gaussian quantum networks",
+      "entangled states",
+      "quantum network mechanism"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.46171835064888,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4400697648525238,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4343591034412384,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.09813v1": {
+    "id": "2510.09813v1",
+    "title": "Efficient Emulation of Neutral Atom Quantum Hardware",
+    "authors": [
+      {
+        "name": "Kemal Bidzhiev",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano Grava",
+        "affiliation": null
+      },
+      {
+        "name": "Pablo le Henaff",
+        "affiliation": null
+      },
+      {
+        "name": "Mauro Mendizabal",
+        "affiliation": null
+      },
+      {
+        "name": "Elie Merhej",
+        "affiliation": null
+      },
+      {
+        "name": "Anton Quelle",
+        "affiliation": null
+      }
+    ],
+    "summary": "Simulating the dynamics of neutral atom arrays is a challenging problem. To address this, we introduce two emulators, emu-sv and emu-mps, as computational backends for Pasqal's pulser package. Emu-sv is designed for high-precision state-vector simulations, giving the possibility to emulate systems of up to $\\thicksim 27$ qubits on an A100 40GB GPU, making it perfect for cases where numerically exact results are needed. In contrast, emu-mps uses a Matrix Product State representation and other controlled approximations to efficiently simulate much larger arrays of atoms with manageable errors. We show through benchmark comparisons that both emulators provide significant speed-ups over generic solvers such as QuTiP. In addition, we provide practical guidance on choosing between the two emulators. These quantum software tools are designed to support researchers and developers aiming to simulate quantum systems either as a precursor to full hardware implementation or as a means of benchmarking hardware performance.",
+    "published_date": "2025-10-10",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum computing simulation, a different area than the user's liked papers which are mostly about condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum simulation",
+      "neutral atom arrays",
+      "Matrix Product State"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5182591080665588,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4999220371246338,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4663074016571045,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.12748v1": {
+    "id": "2510.12748v1",
+    "title": "Two-Dimensional Altermagnetic Iron Oxyhalides: Real Chern topology and Valley-Spin-Lattice coupling",
+    "authors": [
+      {
+        "name": "Yong-Kun Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Si Li",
+        "affiliation": null
+      },
+      {
+        "name": "Shengyuan A. Yang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnets, a novel class of collinear magnetic materials, exhibit unique spin-split band structures, yet topological insulating states in intrinsic altermagnetic systems are rare. Here, we identify monolayer Fe$_2X_2$O ($X$ = Cl, Br, I) as a new family of 2D altermagnetic real Chern insulators. These materials display robust $d$-wave altermagnetic ordering, semiconducting band gaps, and nontrivial real Chern numbers per spin channel, yielding spin-polarized topological corner modes. They also feature spin-polarized valleys with strong altermagnetism-valley-spin-lattice coupling, enabling valley-selective excitation via linear dichroism and strain-induced valley polarization. In multiferroic Fe$_2$Cl$_2$O, magnetism coexists with ferroelasticity, and an applied strain can switche the N\\'eel vector. These findings position 2D iron oxyhalides as a promising platform for exploring altermagnetism and magnetic topological states for spintronics and valleytronics.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism and topological states, which relate to previous interests in topological materials and correlated electron systems, though the specific materials are different.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Real Chern Insulators",
+      "Valley-Spin-Lattice Coupling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5895436406135559,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5741232633590698,
+        "liked_paper_id": "2506.16360v1"
+      },
+      {
+        "score": 0.5603981018066406,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11200v1": {
+    "id": "2510.11200v1",
+    "title": "Tensor-Network-Based Unraveling of Non-Markovian Dynamics in Large Spin Chains via the Influence Martingale Approach",
+    "authors": [
+      {
+        "name": "Sujay Mondal",
+        "affiliation": null
+      },
+      {
+        "name": "Siddhartha Dutta",
+        "affiliation": null
+      },
+      {
+        "name": "Abhijit Bandyopadhyay",
+        "affiliation": null
+      }
+    ],
+    "summary": "Classical simulation of open quantum system dynamics remains challenging due to the exponential growth of the Hilbert space, the need to accurately capture dissipation and decoherence, and the added complexity of memory effects in the non-Markovian regime. We develop an efficient algorithm for simulating both Markovian and non-Markovian dynamics in large one-dimensional quantum systems. Extending the Tensor Jump Method, which combines TDVP-based tensor-network evolution with a Suzuki-Trotter decomposition of stochastic trajectories, our approach incorporates time-dependent decay rates-treating positive rates as time-inhomogeneous Markovian processes and negative rates via the Influence Martingale formalism to unravel time-local non-Markovian dynamics. This resource-efficient framework enables scalable simulations of open-system dynamics in the non-Markovian regime, as demonstrated for a one-dimensional transverse-field Ising chain comprising up to 100 spin qubits.",
+    "published_date": "2025-10-13",
+    "categories": [],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses quantum systems and simulations, it lacks direct connection to superconductivity, correlated electron systems, or specific materials like nickelates, which are prominent in the user's liked papers.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor Network",
+      "Non-Markovian Dynamics",
+      "Open Quantum Systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5910846590995789,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5838780403137207,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.562786877155304,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.11727v1": {
+    "id": "2510.11727v1",
+    "title": "Multi-objective Bayesian Optimization with Human-in-the-Loop for Flexible Neuromorphic Electronics Fabrication",
+    "authors": [
+      {
+        "name": "Benius Dunn",
+        "affiliation": null
+      },
+      {
+        "name": "Javier Meza-Arroyo",
+        "affiliation": null
+      },
+      {
+        "name": "Armi Tiihonen",
+        "affiliation": null
+      },
+      {
+        "name": "Mark Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Julia W. P. Hsu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neuromorphic computing hardware enables edge computing and can be implemented in flexible electronics for novel applications. Metal oxide materials are promising candidates for fabricating flexible neuromorphic electronics, but suffer from processing constraints due to the incompatibilities between oxides and polymer substrates. In this work, we use photonic curing to fabricate flexible metal-insulator-metal capacitors with solution-processible aluminum oxide dielectric tailored for neuromorphic applications. Because photonic curing outcomes depend on many input parameters, identifying an optimal processing condition through a traditional grid-search approach is unfeasible. Here, we apply multi-objective Bayesian optimization (MOBO) to determine photonic curing conditions that optimize the trade-off between desired electrical properties of large capacitance-frequency dispersion and low leakage current. Furthermore, we develop a human-in-the-loop (HITL) framework for incorporating failed experiments into the MOBO machine learning workflow, demonstrating that this framework accelerates optimization by reducing the number of experimental rounds required. Once optimization is concluded, we analyze different Pareto-optimal conditions to tune the dielectrics properties and provide insight into the importance of different inputs through Shapley Additive exPlanations analysis. The demonstrated framework of combining MOBO with HITL feedback can be adapted to a wide range of multi-objective experimental problems that have interconnected inputs and high experimental failure rates to generate usable results for machine learning models.",
+    "published_date": "2025-10-08",
+    "categories": [
+      "cs.ET",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on neuromorphic computing hardware fabrication using metal oxide materials, which is a different area than the user's interest in superconductivity, oxygen vacancies, and Dirac fermions.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Multi-objective Bayesian Optimization",
+      "Neuromorphic computing",
+      "Flexible electronics fabrication"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.33302372694015503,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.32011890411376953,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.3077617883682251,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12344v1": {
+    "id": "2510.12344v1",
+    "title": "Two-Dimensional Altermagnetism in Epitaxial CrSb Ultrathin Films",
+    "authors": [
+      {
+        "name": "Keren Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yuzhong Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Yue Li",
+        "affiliation": null
+      },
+      {
+        "name": "Ruohang Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Heping Li",
+        "affiliation": null
+      },
+      {
+        "name": "Kun Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Chen Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Jincheng Zhuang",
+        "affiliation": null
+      },
+      {
+        "name": "Yee Sin Ang",
+        "affiliation": null
+      },
+      {
+        "name": "Jiaou Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Haifeng Feng",
+        "affiliation": null
+      },
+      {
+        "name": "Weichang Hao",
+        "affiliation": null
+      },
+      {
+        "name": "Yi Du",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnets constitute an emerging class of collinear magnets that exhibit zero net magnetization yet host spin-split electronic bands arising from non-relativistic spin-space-group symmetries. Realization of altermagnetism in the two-dimensional (2D) limit remains an outstanding challenge because dimensional reduction suppresses kZ dispersion and destabilizes the symmetry operations essential for spin compensation. Here, we demonstrate genuine 2D altermagnetism in epitaxial unit-cell-thin films of CrSb grown on Bi2Te3. It reveals a thickness-driven transition from a ferrimagnetic state in 1-unit-cell films to an altermagnetic state above a critical thickness of 7/4 unit cell. The transition originates from interfacial symmetry breaking at the Cr-terminated layer that induces local moment imbalance. With increasing thickness the key spin-space-group symmetries [C2||C6Zt] and [C2||MZ] restores, which leads to altermagnetism with zero net magnetization and momentum-dependent spin splitting. Our results provide the first experimental realization of altermagnetism in the 2D regime and establish a route for integrating stray-field-free spin order into nanoscale spintronic architectures.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper relates to magnetism and materials science, which aligns with the user's interest in unconventional superconductivity and topological materials, particularly the search for new quantum materials and emergent phenomena.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "2D materials",
+      "Spintronics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5618621110916138,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5476248264312744,
+        "liked_paper_id": "yBtX0C4AAAAJ:isC4tDSrTZIC"
+      },
+      {
+        "score": 0.5261536240577698,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09778v1": {
+    "id": "2510.09778v1",
+    "title": "Tensor-based compression of the sea temperature data",
+    "authors": [
+      {
+        "name": "Ilya Kosolapov",
+        "affiliation": null
+      },
+      {
+        "name": "Tatiana Sheloput",
+        "affiliation": null
+      },
+      {
+        "name": "Sergey Matveev",
+        "affiliation": null
+      }
+    ],
+    "summary": "In this work we investigate efficient data compression for spatiotemporal Black, Azov and Marmara Seas temperature tensors that contain significant number of missing values. These tensors have a complex structure influenced by the coastlines and bathymetry, as well as temporal temperature changes. While such missing data typically provokes utilization of tensor completion algorithms, we demonstrate that standard SVD-based compression approaches (including the Tucker, Tensor-Train (TT) and Quantized-TT formats) are remarkably effective and yield comparable results. We propose a greedy spatial data partitioning algorithm enhancing their performance. We divide the data into the smaller subtensors before compression via exploitation of this trick.   Furthermore, our analysis reveals a strong temporal dependency in the data's compressibility caused by its nature. Fixing the level of precision we observe a significant seasonal variation. Investigating this, we find that a temporal partitioning on a scale of approximately two days is nearly optimal for all tested tensor based formats. The combined application of these spatial and temporal strategies with tensor methods ultimately achieves a robust compression ratio of 5 times across the entire dataset.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on tensor-based compression of sea temperature data, which is unrelated to the user's interest in condensed matter physics and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor compression",
+      "Sea temperature data",
+      "Data partitioning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.40784913301467896,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.29047539830207825,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.28658509254455566,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.12473v1": {
+    "id": "2510.12473v1",
+    "title": "Two-Dimensional Na2LiAlP2 crystal for high-performance field-effect transistors",
+    "authors": [
+      {
+        "name": "Run-Jie Peng",
+        "affiliation": null
+      },
+      {
+        "name": "Xing-Yu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Jun-Hui Yuan",
+        "affiliation": null
+      },
+      {
+        "name": "Nian-Nian Yu",
+        "affiliation": null
+      },
+      {
+        "name": "Kan-Hao Xue",
+        "affiliation": null
+      },
+      {
+        "name": "Jiafu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Pan Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "High-performance, low-power transistors are core components of advanced integrated circuits, and the ultimate limitation of Moore's law has made the search for new alternative pathways an urgent priority. Two-dimensional (2D) materials have become the most promising exploration target due to their exceptional electronic properties and scalability. In this work, we conducted device transport research on the previously proposed 2D quaternary semiconductor Na2LiAlP2 using the non-equilibrium Green's function method. The results demonstrate that even with a channel length of 5.7 nm, Na2LiAlP2 still exhibits excellent n-type transistor characteristics, fully meeting and surpassing the technical specifications outlined in the International Roadmap for Devices and Systems (IRDS). Encouragingly, the device can easily achieve the required on-state current of 900 {\\mu}A/{\\mu}m under low operating voltages of 0.1 V and 0.2 V. Moreover, at 0.1 V operating voltage, the device's subthreshold swing breaks through the theoretical limit of 60 mV/dec, reaching an astonishing value 30.33 mV/dec. Additionally, its p-type transistor performance also stands out with a subthreshold swing of ~50 mV/dec when the channel length is 7.9 nm. Our research not only showcases the exceptional transistor properties of Na2LiAlP2 but also further expands the research scope of 2D high-performance transistors.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on transistors using a specific 2D material, which is a departure from the user's previous interests in superconductivity, oxygen vacancies, and topological materials.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "2D materials",
+      "field-effect transistors",
+      "Na2LiAlP2"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.438198447227478,
+        "liked_paper_id": "2506.16362v1"
+      },
+      {
+        "score": 0.43037474155426025,
+        "liked_paper_id": "yBtX0C4AAAAJ:HoB7MX3m0LUC"
+      },
+      {
+        "score": 0.4089395999908447,
+        "liked_paper_id": "2506.16360v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12786v1": {
+    "id": "2510.12786v1",
+    "title": "Quantum criticality at the end of a pseudogap phase in superconducting infinite-layer nickelates",
+    "authors": [
+      {
+        "name": "C. Iorio-Duval",
+        "affiliation": null
+      },
+      {
+        "name": "E. Beauchesne-Blanchet",
+        "affiliation": null
+      },
+      {
+        "name": "F. Perreault",
+        "affiliation": null
+      },
+      {
+        "name": "J. L. Santana Gonz\u00e1lez",
+        "affiliation": null
+      },
+      {
+        "name": "W. Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Y. F. Nie",
+        "affiliation": null
+      },
+      {
+        "name": "A. Gourgout",
+        "affiliation": null
+      },
+      {
+        "name": "G. Grissonnanche",
+        "affiliation": null
+      }
+    ],
+    "summary": "In many unconventional superconductors, the strange-metal regime is thought to emerge from quantum criticality, yet in cuprates this link is obscured by the enigmatic pseudogap. Superconducting infinite-layer nickelates provide a new arena to test this paradigm but are constrained to thin films, precluding calorimetry. We use the Seebeck coefficient as a low-temperature proxy for entropy per carrier and uncover a clear quantum-critical thermodynamic signature: in La$_{1-x}$Sr$_x$NiO$_2$ at the onset of $T$-linear resistivity ($x=0.20$), $S/T$ diverges logarithmically upon cooling, $S/T \\propto \\log T$. Boltzmann transport based on ARPES-derived band structure reproduces the high-temperature magnitude and sign of $S/T$ and reveals a threefold mass renormalization at the Fermi level. To identify the terminating phase, we analyze Hall data across Nd$_{1-x}$Sr$_x$NiO$_2$ and show that its temperature evolution is quantitatively captured by a minimal two-band model in which a strongly correlated Ni-$d_{x^2-y^2}$ Fermi surface exhibits Planckian $T$-linear scattering while the rare-earth Nd-$s$ pocket remains Fermi-liquid-like. Inverting the zero-temperature Hall response reveals a collapse of the Ni-$d_{x^2-y^2}$ band carrier density from $1+p$ to $p$ holes across the critical doping, without long-range magnetic order -- mirroring the cuprate pseudogap transition in cuprates. These results establish a quantum critical point at the end of a pseudogap-like phase in infinite-layer nickelates and unify the broader paradigm among correlated superconductors that strange metal behaviour is intimately linked to quantum criticality.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "This paper is highly relevant because it investigates quantum criticality and pseudogap phenomena in nickelate superconductors, connecting to previous interests in nickelates, superconductivity, and correlated electron systems.",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "quantum criticality",
+      "pseudogap phase",
+      "infinite-layer nickelates"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6847913265228271,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.6339194774627686,
+        "liked_paper_id": "2506.13399v1"
+      },
+      {
+        "score": 0.6041017770767212,
+        "liked_paper_id": "2506.20727v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.09749v1": {
+    "id": "2510.09749v1",
+    "title": "Vari-Cool: a non-unitary quantum variational protocol for simulated cooling",
+    "authors": [
+      {
+        "name": "Jeffrey Z. Song",
+        "affiliation": null
+      },
+      {
+        "name": "Gilad Kishony",
+        "affiliation": null
+      },
+      {
+        "name": "Erez Berg",
+        "affiliation": null
+      },
+      {
+        "name": "Mark S. Rudner",
+        "affiliation": null
+      }
+    ],
+    "summary": "We introduce a variational approach for preparing low energy states of arbitrary target Hamiltonians. The protocol is defined in terms of a repeated cycle consisting of p layers of unitary gates applied to the system and ancilla \"bath\" qubits, followed by reset of the bath qubits. The gate parameters within each cycle are optimized such that the steady state achieved after many cycles has a low energy expectation value with respect to the target Hamiltonian, and that the energy converges toward the steady state value in as few cycles as possible. We illustrate the protocol for the transverse field Ising model, and study its systematic behaviors with respect to system size, model parameters, and noise using tensor network based classical simulations. We then experimentally demonstrate its operation on IBM's ibm_kingston quantum processor for up to 28 system qubits coupled to 14 bath sites. Classical training on small system sizes and with few unitary layers per cycle gives robust results that transfer well to larger system sizes and to noisy hardware.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on a variational quantum algorithm and its experimental implementation, which is a departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "variational quantum algorithm",
+      "simulated cooling",
+      "quantum processor"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5596636533737183,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5519599914550781,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5417478084564209,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.12009v1": {
+    "id": "2510.12009v1",
+    "title": "Visualizing the Impact of Quenched Disorder on 2D Electron Wigner Solids",
+    "authors": [
+      {
+        "name": "Zhehao Ge",
+        "affiliation": null
+      },
+      {
+        "name": "Conor Smith",
+        "affiliation": null
+      },
+      {
+        "name": "Zehao He",
+        "affiliation": null
+      },
+      {
+        "name": "Yubo Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Qize Li",
+        "affiliation": null
+      },
+      {
+        "name": "Ziyu Xiang",
+        "affiliation": null
+      },
+      {
+        "name": "Jianghan Xiao",
+        "affiliation": null
+      },
+      {
+        "name": "Wenjie Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Salman Kahn",
+        "affiliation": null
+      },
+      {
+        "name": "Melike Erdi",
+        "affiliation": null
+      },
+      {
+        "name": "Rounak Banerjee",
+        "affiliation": null
+      },
+      {
+        "name": "Takashi Taniguchi",
+        "affiliation": null
+      },
+      {
+        "name": "Kenji Watanabe",
+        "affiliation": null
+      },
+      {
+        "name": "Seth Ariel Tongay",
+        "affiliation": null
+      },
+      {
+        "name": "Miguel A. Morales",
+        "affiliation": null
+      },
+      {
+        "name": "Shiwei Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Feng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Michael F. Crommie",
+        "affiliation": null
+      }
+    ],
+    "summary": "Electron Wigner solids (WSs)1-12 provide an ideal system for understanding the competing effects of electron-electron and electron-disorder interactions, a central unsolved problem in condensed matter physics. Progress in this topic has been limited by a lack of single-defect-resolved experimental measurements as well as accurate theoretical tools to enable realistic experiment-theory comparison. Here we overcome these limitations by combining atomically-resolved scanning tunneling microscopy (STM) with quantum Monte Carlo (QMC) simulation of disordered 2D electron WSs. STM was used to image the electron density ($n_e$) dependent evolution of electron WSs in gate-tunable bilayer MoSe$_2$ devices with varying long-range ($n_\\mathrm{LR}$) and short-range ($n_\\mathrm{SR}$) disorder densities. These images were compared to QMC simulations using realistic disorder maps extracted from experiment, thus allowing the roles of different disorder types to be disentangled. We identify two distinct physical regimes for disordered electron WSs that depend on the magnitude of $n_\\mathrm{SR}$. For $n_\\mathrm{SR} \\lesssim n_e$ the WS behavior is dominated by long-range disorder and features extensive mixed solid-liquid phases, a new type of re-entrant melting-crystallization, and prominent Friedel oscillations. In contrast, when $n_\\mathrm{SR} \\gg n_e$ these features are suppressed and a more robust amorphous WS phase emerges that persists to higher $n_e$, highlighting the importance of short-range disorder in this regime. Our work establishes a new framework for studying disordered quantum solids via a combined experimental-theoretical approach.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user's previous papers focus on superconductivity, oxides, and topological materials, this paper discusses Wigner solids and disorder in 2D electron systems, representing a somewhat different area of condensed matter physics.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Wigner solids",
+      "disorder effects",
+      "STM"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5579739809036255,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.5292822122573853,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.4989174008369446,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12602v1": {
+    "id": "2510.12602v1",
+    "title": "The spin Hall conductivity in the hole-doped bilayer Haldane-Hubbard model with odd-parity ALM",
+    "authors": [
+      {
+        "name": "Minghuan Zeng",
+        "affiliation": null
+      },
+      {
+        "name": "Ling Qin",
+        "affiliation": null
+      },
+      {
+        "name": "Shiping Feng",
+        "affiliation": null
+      },
+      {
+        "name": "Dong-Hui Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Rui Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spin current generated electrically is among the core phenomena of spintronics for driving high-performance spin device applications. Here, on the basis of systematic investigations for the hole doped single-layer Haldane-Hubbard(HH) model, we propose a new bilayer HH model to realize the compensated odd-parity spin splitting and the $T$-even spin Hall conductivity where the two layers are connected by the time reversal transformation. Our results show that the vanishing layer-dependent electric potential $V_{L}$ gives rise to odd-parity ALM protected by the combined symmetry $TM_{xy}$ with $T$ and $M_{xy}$ being the time reversal and mirror reflection perpendicular to $z$ axis, and the $T$-even spin Hall conductivity simultaneously. In addition, though the staggered magnetization within each layer is substantially impacted by the layer-dependent electric potential, small $V_{L}$'s only bring negligible changes to the net magnetization and the spin Hall conductivity, indicating that the alternating spin splitting in momentum space and the spin Hall conductivity are insusceptible to external elements. Most importantly, our work provides a general framework for the simultaneous realization of the compensated odd-parity spin splitting in momentum space and the spin Hall conductivity in collinear magnets, in terms of stacked multi-layer systems.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses spin Hall conductivity and topological properties in a Hubbard model, which relates to the user's interest in topological materials and unconventional superconductivity, though the connection is not direct.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "spin Hall conductivity",
+      "Haldane-Hubbard model",
+      "odd-parity ALM"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6447252035140991,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5247867107391357,
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC"
+      },
+      {
+        "score": 0.5136004686355591,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
       }
     ],
     "discovery_sources": []
