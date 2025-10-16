@@ -67697,5 +67697,1173 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2510.12880v1": {
+    "id": "2510.12880v1",
+    "title": "The Kitaev-AKLT model",
+    "authors": [
+      {
+        "name": "Alwyn Jose Raja",
+        "affiliation": null
+      },
+      {
+        "name": "R. Ganesh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Inspired by the Affleck-Kennedy-Lieb-Tasaki (AKLT) model, we present exact solutions for a spin-1 chain with Kitaev-like couplings. We consider an expanded Kitaev model with bilinear and biquadratic terms. At an exactly solvable point, the Hamiltonian can be reexpressed as a sum of projection operators. Unlike the AKLT model where projectors act on total spin, we project onto components of spin along the bond direction. This leads to exponential ground state degeneracy, expressed in terms of fractionalized spin-$\\frac{1}{2}$ objects. Each ground state can be expressed concisely as a matrix product state. We construct a phase diagram by varying the relative strength of bilinear and biquadratic terms. The fractionalized states provide a qualitative picture for the spin-1 Kitaev model, yielding approximate forms for the ground state and low-lying excitations.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses a theoretical model with potential connections to topological phases (like the Dirac semimetals), it primarily focuses on spin models and lacks a direct link to the user's interests in superconductivity, oxygen vacancies, or experimental techniques.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Kitaev model",
+      "AKLT model",
+      "Fractionalized spins"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4766395688056946,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.45710960030555725,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.43157050013542175,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13055v1": {
+    "id": "2510.13055v1",
+    "title": "Reciprocal Space Attention for Learning Long-Range Interactions",
+    "authors": [
+      {
+        "name": "Hariharan Ramasubramanian",
+        "affiliation": null
+      },
+      {
+        "name": "Alvaro Vazquez-Mayagoitia",
+        "affiliation": null
+      },
+      {
+        "name": "Ganesh Sivaraman",
+        "affiliation": null
+      },
+      {
+        "name": "Atul C. Thakur",
+        "affiliation": null
+      }
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) have revolutionized the modeling of materials and molecules by directly fitting to ab initio data. However, while these models excel at capturing local and semi-local interactions, they often prove insufficient when an explicit and efficient treatment of long-range interactions is required. To address this limitation, we introduce Reciprocal-Space Attention (RSA), a framework designed to capture long-range interactions in the Fourier domain. RSA can be integrated with any existing local or semi-local MLIP framework. The central contribution of this work is the mapping of a linear-scaling attention mechanism into Fourier space, enabling the explicit modeling of long-range interactions such as electrostatics and dispersion without relying on predefined charges or other empirical assumptions. We demonstrate the effectiveness of our method as a long-range correction to the MACE backbone across diverse benchmarks, including dimer binding curves, dispersion-dominated layered phosphorene exfoliation, and the molecular dipole density of bulk water. Our results show that RSA consistently captures long-range physics across a broad range of chemical and materials systems. The code and datasets for this work is available at https://github.com/rfhari/reciprocal_space_attention",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on machine learning interatomic potentials and long-range interactions in materials, which is a different area than the user's previously liked papers on superconductivity, nickelates, and Dirac fermions.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning interatomic potentials",
+      "long-range interactions",
+      "reciprocal space attention"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.45260339975357056,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.4288089871406555,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.4251871407032013,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12667v1": {
+    "id": "2510.12667v1",
+    "title": "The anisotropic Heisenberg model close to the Ising limit: triangular lattice vs. effective models",
+    "authors": [
+      {
+        "name": "Martin Ulaga",
+        "affiliation": null
+      },
+      {
+        "name": "Jure Kokalj",
+        "affiliation": null
+      },
+      {
+        "name": "Takami Tohyama",
+        "affiliation": null
+      },
+      {
+        "name": "Peter Prelov\u0161ek",
+        "affiliation": null
+      }
+    ],
+    "summary": "Stimulated by recent experiments on materials representing the realization of the anisotropic Heisenberg spin-$1/2$ model on the triangular lattice, we explore further properties of such a model in the easy-axis regime $\\alpha = J_\\perp/J_z < 1$, as well as effective models that also capture such physics. We show that anisotropic Heisenberg models on the honeycomb lattice and even on the square lattice reveal similarities to the full triangular lattice in the magnetization curve as well as in the transverse magnetization (superfluid) order parameter $m_\\perp$ at finite fields. Still, at $\\alpha \\ll 1$, results reveal gapless excitations and small but finite $m_\\perp >0 $ at effective fields corresponding to the triangular case without the field. In contrast, several additional numerical studies of the full model on the triangular lattice confirm the existence of the gap at $\\alpha \\ll 1$. In particular, the magnetization curve $m(h)$ as well as the spin stiffness $\\rho_s$ indicate (at zero field) a transition/crossover from gapped to gapless regime at $\\alpha \\sim \\alpha^*$ with $\\alpha^* \\lesssim 0.5$. We also show that deviations from the linear spin-wave theory and the emergence of the gap can be traced back to the strong effective repulsion between magnon excitations, having similarity to strongly correlated systems.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in superconductivity and related materials, this paper focuses on the anisotropic Heisenberg model and magnetism, showing some thematic overlap but not a strong connection to the user's primary interests.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "anisotropic Heisenberg model",
+      "triangular lattice",
+      "magnon excitations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6058522462844849,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5833495855331421,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5754562616348267,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.11773v1": {
+    "id": "2510.11773v1",
+    "title": "Qiboml: towards the orchestration of quantum-classical machine learning",
+    "authors": [
+      {
+        "name": "Matteo Robbiati",
+        "affiliation": null
+      },
+      {
+        "name": "Andrea Papaluca",
+        "affiliation": null
+      },
+      {
+        "name": "Andrea Pasquale",
+        "affiliation": null
+      },
+      {
+        "name": "Edoardo Pedicillo",
+        "affiliation": null
+      },
+      {
+        "name": "Renato M. S. Farias",
+        "affiliation": null
+      },
+      {
+        "name": "Alejandro Sopena",
+        "affiliation": null
+      },
+      {
+        "name": "Mattia Robbiano",
+        "affiliation": null
+      },
+      {
+        "name": "Ghaith Alramahi",
+        "affiliation": null
+      },
+      {
+        "name": "Simone Bordoni",
+        "affiliation": null
+      },
+      {
+        "name": "Alessandro Candido",
+        "affiliation": null
+      },
+      {
+        "name": "Niccol\u00f2 Laurora",
+        "affiliation": null
+      },
+      {
+        "name": "Jogi Suda Neto",
+        "affiliation": null
+      },
+      {
+        "name": "Yuanzheng Paul Tan",
+        "affiliation": null
+      },
+      {
+        "name": "Michele Grossi",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano Carrazza",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present Qiboml, an open-source software library for orchestrating quantum and classical components in hybrid machine learning workflows. Building on Qibo's quantum computing capabilities and integrating with popular machine learning frameworks such as TensorFlow and PyTorch, Qiboml enables the construction of quantum and hybrid models that can run on a broad range of backends: (i) multi-threaded CPUs, GPUs, and multi-GPU systems for simulation with statevector or tensor network methods; (ii) quantum processing units, both on-premise and through cloud providers. In this paper, we showcase its functionalities, including diverse simulation options, noise-aware simulations, and real-time error mitigation and calibration.",
+    "published_date": "2025-10-13",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum machine learning software, which is distinct from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Quantum machine learning",
+      "Hybrid quantum-classical algorithms",
+      "Quantum computing software"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47062063217163086,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4398774206638336,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4284546375274658,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.13581v1": {
+    "id": "2510.13581v1",
+    "title": "Yang-Lee edge singularity and quantum criticality in non-Hermitian PXP model",
+    "authors": [
+      {
+        "name": "Wen-Yi Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Meng-Yun Mao",
+        "affiliation": null
+      },
+      {
+        "name": "Qing-Min Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Xinzhi Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Gaoyong Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Wen-Long You",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a comprehensive theoretical framework for quantum criticality in the non-Hermitian detuned PXP model, and establish the complete phase diagram, which had remained elusive in previous studies. Starting from a numerically identified phase transition point, we construct an exact second-order phase transition boundary through a similarity transformation in the real-energy regime. By introducing the biorthogonal entanglement entropy and biorthogonal Loschmidt echo, we demonstrate from both equilibrium and nonequilibrium perspectives that this transition belongs to the Ising universality class. Using the correlation function, we further distinguish between confined and deconfined phases within the $\\mathcal{PT}$-symmetric region. In the complex-energy regime, we identify both a full $\\mathcal{PT}$ transition and a first-excited-state $\\mathcal{PT}$ transition, respectively. Moreover, we identify the location of the Yang-Lee edge singularity (YLES) using both the associated-biorthogonal and self-normal Loschmidt echoes, and extract the corresponding critical exponent, which agrees with the predictions of non-unitary conformal field theory. Finally, we propose an experimental scheme to observe the YLES in Rydberg atomic arrays, which offers a promising route to exploring non-Hermitian critical phenomena and singularities in future experimental settings.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1103/vlfm-jfq5",
+    "score": 0.6,
+    "reasoning": "The paper discusses non-Hermitian systems and quantum criticality, which relates to previous papers on topological materials and unconventional superconductivity via the physics of quantum phase transitions and emergent phenomena.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "non-Hermitian quantum mechanics",
+      "Yang-Lee edge singularity",
+      "Rydberg atomic arrays"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4902379512786865,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.4877251088619232,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.4780237078666687,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13207v1": {
+    "id": "2510.13207v1",
+    "title": "Towards Universal Material Property Prediction with Deep Learning and Single-Descriptor electronic Density",
+    "authors": [
+      {
+        "name": "Feng Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Shu Li",
+        "affiliation": null
+      },
+      {
+        "name": "Xin Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Dennis Wong",
+        "affiliation": null
+      },
+      {
+        "name": "Biplab Sanyal",
+        "affiliation": null
+      },
+      {
+        "name": "Duo Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Owing to its high scalability and computational efficiency, machine learning methods have been increasingly integrated into various scientific research domains, including ab initio-based materials design. It has been demonstrated that, by incorporating modern machine learning algorithms, one can predict material properties with practically acceptable accuracy. However, one of the most significant limitations that restrict the widespread application of machine learning is its lack of transferability, as a given framework is typically applicable only to a specific property. The origin of this limitation is rooted in the fact that a material's properties are determined by multiple degrees of freedom -- and their complex interplay -- associated with nuclei and electrons, such as atomic type, structural symmetry, and the number and quantum states of the valence electrons, among others. The inherent complexity rules out the possibility of a single machine learning framework providing a full description of these critical quantities. In this paper, we develop a universal machine learning framework based solely on a physically grounded and theoretically rigorous descriptor -- electronic charge density. Our framework not only enables accurate prediction of eight different material properties (with R$^2$ values up to 0.94), but also demonstrates outstanding multi-task learning capability, as prediction accuracy improves when more target properties are incorporated into a single training process, thereby indicating excellent transferability. These results represent a significant step toward realizing the long-standing goal of a universal machine learning framework for the unified prediction of all material properties.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While the user has liked papers on correlated electron systems and novel materials, this paper focuses on machine learning techniques for material property prediction, representing a tangential but not directly overlapping interest.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Universal material property prediction",
+      "Deep learning",
+      "Electronic charge density"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5949676036834717,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5318863391876221,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.498548686504364,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13530v1": {
+    "id": "2510.13530v1",
+    "title": "Interplay of magnetic and thermodynamic responses in the kagome-triangular system",
+    "authors": [
+      {
+        "name": "Zixuan Jia",
+        "affiliation": null
+      },
+      {
+        "name": "Lufeng Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Qingzhuo Duan",
+        "affiliation": null
+      },
+      {
+        "name": "Zenghui Fan",
+        "affiliation": null
+      },
+      {
+        "name": "Jingyao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Bing Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Tianxing Ma",
+        "affiliation": null
+      }
+    ],
+    "summary": "Inspired by the recent experimental progress in pyrochlore derivative \\ce{RE3Sb3A2O14 (A=Mg, Zn)}, we investigate the Hubbard model on the kagome lattice with an additional hopping $t'/t$, which enables continuous interpolation between the kagome and triangular lattices by using determinant quantum Monte Carlo simulations. We analyze the evolution of magnetic correlations and thermodynamic responses across different values of $t'/t$ and on-site interaction $U$. It is found that increasing $t'/t$ suppresses short-range antiferromagnetic correlations, while the next-nearest-neighbor correlations exhibit a sign change near $t'/t \\approx 0.3 \\text{--} 0.4$. Within this regime, the specific heat shows a pronounced low-temperature peak, indicating an emergent spin-related energy scale. Increasing $U$ enhances magnetic correlations and shifts the associated $t'/t$ crossover points to larger values. We also discuss the sign problem to clarify which parameter region of our numerical simulations is accessible and reliable. Our results uncover the competition between frustration and correlations and the interplay of magnetic and thermodynamic responses in the kagome lattice, providing insights into correlated states in frustrated materials.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While the paper touches on correlated materials, a theme present in the user's liked papers, the focus on a specific lattice structure (kagome-triangular) and magnetic properties differs from the superconductivity and vacancy-related topics that the user has shown interest in.",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "kagome lattice",
+      "frustrated magnetism",
+      "quantum Monte Carlo"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.64478600025177,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.630978524684906,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6205385327339172,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12743v1": {
+    "id": "2510.12743v1",
+    "title": "Measurement-induced entanglement in noisy 2D random Clifford circuits",
+    "authors": [
+      {
+        "name": "Zhi-Yuan Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Jon Nelson",
+        "affiliation": null
+      },
+      {
+        "name": "Joel Rajakumar",
+        "affiliation": null
+      },
+      {
+        "name": "Esther Cruz",
+        "affiliation": null
+      },
+      {
+        "name": "Alexey V. Gorshkov",
+        "affiliation": null
+      },
+      {
+        "name": "Michael J. Gullans",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Malz",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study measurement-induced entanglement generated by column-by-column sampling of noisy 2D random Clifford circuits of size $N$ and depth $T$. Focusing on the operator entanglement $S_{\\rm op}$ of the sampling-induced boundary state, first, we reproduce in the noiseless limit a finite-depth transition from area- to volume-law scaling. With on-site probablistic trace noise at any constant rate $p>0$, the maximal $S_{\\rm op}$ attained along the sampling trajectory obeys an area law in the boundary length and scales approximately linearly with $T/p$. By analyzing the spatial distribution of stabilizer generators, we observe exponential localization of stabilizer generators; this both accounts for the scaling of the maximal $S_{\\rm op}$ and implies an exponential decay of conditional mutual information across buffered tripartitions, which we also confirm numerically. Together, these results indicate that constant local noise destroys long-range, volume-law measurement-induced entanglement in 2D random Clifford circuits. Finally, based on the observed scaling, we conjecture that a tensor-network-based algorithm can efficiently sample from noisy 2D random Clifford circuits (i) at sub-logarithmic depths $T = o(\\log N)$ for any constant noise rate $p = \\Omega(1)$, and (ii) at constant depths $T = O(1)$ for noise rates $p = \\Omega(\\log^{-1}N)$.",
+    "published_date": "2025-10-14",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper primarily focuses on quantum information and entanglement in quantum circuits, which deviates significantly from the user's interest in condensed matter physics, superconductivity, and electronic structure calculations.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "measurement-induced entanglement",
+      "random Clifford circuits",
+      "probabilistic trace noise"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4130282998085022,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.36430275440216064,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.36113160848617554,
+        "liked_paper_id": "2507.01280v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.13667v1": {
+    "id": "2510.13667v1",
+    "title": "Excitonic correlations in the equilibrium and voltage-biased bilayer Hubbard model: multi-orbital two-particle self-consistent approach",
+    "authors": [
+      {
+        "name": "Jiawei Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Jonas B. Profe",
+        "affiliation": null
+      },
+      {
+        "name": "Yuta Murakami",
+        "affiliation": null
+      },
+      {
+        "name": "Philipp Werner",
+        "affiliation": null
+      }
+    ],
+    "summary": "We develop a nonequilibrium multi-orbital extension of the two-particle self-consistent theory and apply it to the bilayer Hubbard model as a minimal platform to investigate correlation effects in the presence of interlayer interactions and tunneling. The method determines vertex corrections in the spin and charge channels self-consistently at the two-particle level, thereby avoiding the spurious finite-temperature phase transitions that limit dynamical mean-field theory in two dimensions. We derive the spectral self-energy and implement the framework directly on the real-frequency axis within the Keldysh nonequilibrium Green's function formalism, enabling the treatment of both equilibrium and non-equilibrium steady states without relying on numerical analytic continuation. As an application, we demonstrate that a pseudogap can emerge in the bilayer Hubbard model when spin, charge, or excitonic fluctuations become sufficiently strong. Instabilities in different channels are also evaluated in an unbiased manner across the parameter space. Remarkably, we find that the excitonic susceptibility grows with increasing interlayer bias, before it gets suppressed at large biases by the charge imbalance between the layers. This work establishes a versatile and computationally efficient framework for investigating correlated multi-orbital systems under nonequilibrium conditions.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses correlation effects in the Hubbard model and introduces a real-frequency approach, aligning with previous interests in real-frequency solvers and correlated materials.",
+    "matching_keywords": [
+      "green's function",
+      "hubbard model",
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Excitonic correlations",
+      "Bilayer Hubbard model",
+      "Nonequilibrium Green's function"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6420658230781555,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6151135563850403,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.6083461046218872,
+        "liked_paper_id": "2506.16503v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11735v1": {
+    "id": "2510.11735v1",
+    "title": "Mathematical aspects of the decomposition of diagonal U(N) operators",
+    "authors": [
+      {
+        "name": "M. M. Fedin",
+        "affiliation": null
+      },
+      {
+        "name": "A. A. Morozov",
+        "affiliation": null
+      }
+    ],
+    "summary": "We prove the decomposition of arbitrary diagonal operators into tensor and matrix products of smaller matrices, focusing on the analytic structure of the resulting formulas and their inherent symmetries. Diagrammatic representations are introduced, providing clear visualizations of the structure of these decompositions. We also discuss symmetries of the suggested decomposition. Methods and representations developed in this paper can be applied in different areas, including optimization of quantum computing algorithms, complex biological analysis, crystallography, optimization of AI models, and others.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "math.GR"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on mathematical decomposition of operators with potential applications in quantum computing and other fields, which is not directly related to the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Operator decomposition",
+      "Diagrammatic representation",
+      "Tensor product"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47385185956954956,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.42887142300605774,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.4120049476623535,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.13781v1": {
+    "id": "2510.13781v1",
+    "title": "Resonant diffraction and photoemission inconsistent with altermagnetism in epitaxial RuO$_2$ films",
+    "authors": [
+      {
+        "name": "Benjamin Z. Gregory",
+        "affiliation": null
+      },
+      {
+        "name": "Neha Wadehra",
+        "affiliation": null
+      },
+      {
+        "name": "Shuyuan Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Yi Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Samuel Poage",
+        "affiliation": null
+      },
+      {
+        "name": "J\u00f6rg Strempfer",
+        "affiliation": null
+      },
+      {
+        "name": "Asish K. Kundu",
+        "affiliation": null
+      },
+      {
+        "name": "Anil Rajapitamahuni",
+        "affiliation": null
+      },
+      {
+        "name": "Elio Vescovo",
+        "affiliation": null
+      },
+      {
+        "name": "Anita Verma",
+        "affiliation": null
+      },
+      {
+        "name": "Bet\u00fcl Pamuk",
+        "affiliation": null
+      },
+      {
+        "name": "Jacob Ruf",
+        "affiliation": null
+      },
+      {
+        "name": "Hari Nair",
+        "affiliation": null
+      },
+      {
+        "name": "Nathaniel J. Schreiber",
+        "affiliation": null
+      },
+      {
+        "name": "Kaveh Ahadi",
+        "affiliation": null
+      },
+      {
+        "name": "Kyle M. Shen",
+        "affiliation": null
+      },
+      {
+        "name": "Darrell G. Schlom",
+        "affiliation": null
+      },
+      {
+        "name": "Andrej Singer",
+        "affiliation": null
+      }
+    ],
+    "summary": "Excitement about the magnetic and electronic properties of RuO$_2$ is growing, fueled by reports of antiferromagnetism, strain-induced superconductivity, and its recent classification as a member of a newly proposed magnetic class, altermagnets, with RuO$_2$ widely regarded as the paradigmatic example. Nevertheless, the magnetic ground state of RuO$_2$ remains contentious, as several recent experiments report no evidence of magnetic order. To address this discrepancy, we performed resonant elastic scattering measurements on a series of epitaxial RuO$_2$ thin films grown on the (100)-plane of TiO$_2$ substrates across a range of strain states. Leveraging full polarization control and azimuthal scans of the structurally forbidden 100 Bragg reflection, we systematically tested for signatures of colinear antiferromagnetic order. We found that the resonant elastic scattering signal in RuO$_2$ thin films likely originates from anisotropic charge scattering, not long-range antiferromagnetic order. Using angle-resolved photoemission spectroscopy we uncover a band structure without altermagnetic band splitting that is consistent with a nonmagnetic phase. Similarly, anisotropic magnetoresistance results show no evidence of magnetism. The combination of three independent measurements suggests the absence of altermagnetism in RuO$_2$.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses RuO$_2$, which has been investigated for superconductivity and novel magnetic properties like altermagnetism, connecting to the user's interest in unconventional superconductivity and materials with unique electronic structures, even though the paper ultimately argues against altermagnetism in RuO$_2$.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "RuO$_2$ films",
+      "Resonant elastic scattering",
+      "Altermagnetism"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.545318067073822,
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC"
+      },
+      {
+        "score": 0.5331177711486816,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.519166111946106,
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13319v1": {
+    "id": "2510.13319v1",
+    "title": "Spin-Selective Second-Order Topological Insulators Enabling Cornertronics in 2D Altermagnets",
+    "authors": [
+      {
+        "name": "Ning-Jing Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhigao Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Jian-Min Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recent progress in spintronics within the paradigm of altermagnets (AMs) opens new avenues for next-generation electronic device design. Here, we establish a spin-corner locking mechanism that generates second-order topological states in two-dimensional (2D) altermagnetic systems, through effective model analysis. Remarkably, the breaking of Mxy symmetry under uniaxial strain creates spin-resolved corner modes, driving the system into a corner-polarized second-order topological insulator (CPSOTI). Beyond critical strain, a topological phase transition to quantum anomalous Hall insulator occurs with quantized conductance. Through first-principles calculations, we identify two experimentally viable candidates for 2D intrinsic AM CrO and Cr$_2$Se$_2$O -- which host robust CPSOTI. Moreover, we construct the topological phase diagram of CrO and predict the existence of an altermagnetic Weyl semimetal phase. Our findings open technological avenues in altermagnetism and higher-order topology, while providing opportunities for coupling topological spintronics with cornertronics.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper discusses topological insulators and altermagnets, which have a connection to the previous papers on topological materials and correlated electron systems.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "altermagnetism",
+      "corner-polarized second-order topological insulator",
+      "spin-corner locking"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6082288026809692,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5896791815757751,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5729236602783203,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12613v1": {
+    "id": "2510.12613v1",
+    "title": "Quantum Spin Singlet and Classical N\u00e9el-Ordered Ground States in MoX3 (X = I, Br) Spin-3/2 Dimerized Antiferromagnetic Chain Crystals",
+    "authors": [
+      {
+        "name": "Jordan Teeter",
+        "affiliation": null
+      },
+      {
+        "name": "Topojit Debnath",
+        "affiliation": null
+      },
+      {
+        "name": "Harshil Goyal",
+        "affiliation": null
+      },
+      {
+        "name": "Md Sabbir Hossen Bijoy",
+        "affiliation": null
+      },
+      {
+        "name": "Maedeh Taheri",
+        "affiliation": null
+      },
+      {
+        "name": "Nicholas Sesing",
+        "affiliation": null
+      },
+      {
+        "name": "Fariborz Kargar",
+        "affiliation": null
+      },
+      {
+        "name": "Kirill Shtengel",
+        "affiliation": null
+      },
+      {
+        "name": "Tina Salguero",
+        "affiliation": null
+      },
+      {
+        "name": "Roger K. Lake",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander A. Balandin",
+        "affiliation": null
+      }
+    ],
+    "summary": "We report that MoX3 (X = I, Br) are rare van der Waals materials that exhibit signatures of both quantum spin chains with a spin singlet ground state and classical Neel order. Bulk single crystals grown by chemical vapor transport exhibit classical antiferromagnetic ground states with a transition temperature of ~40 K as revealed by susceptibility and specific heat measurements. Above 40 K, the susceptibilities show the large, broad peaks associated with a quantum spin-singlet ground state and large singlet-triplet gaps of 21 meV and 25 meV. Monte Carlo simulations, density matrix renormalization-group calculations for finite spin-3/2 chains, and density functional theory reproduce the experimental behavior, confirming the interplay between strong one-dimensional intrachain and weak three-dimensional interchain couplings. MoX3 offers a unique platform for exploring quantum magnetism and magnetic excitations at the atomic chain limit, as these materials combine a 1D van der Waals motif, spin chain behavior, and classical interchain order.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on quantum magnetism and spin chains in MoX3 materials, which is a departure from the user's previous interests in superconductivity, oxygen vacancies, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "quantum spin chains",
+      "van der Waals materials",
+      "antiferromagnetic order"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6290920376777649,
+        "liked_paper_id": "2506.16362v1"
+      },
+      {
+        "score": 0.5985144376754761,
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC"
+      },
+      {
+        "score": 0.5764725804328918,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.13119v1": {
+    "id": "2510.13119v1",
+    "title": "Melting phase relation of seifertite and pyrite-type SiO2 determined by machine learning potentials",
+    "authors": [
+      {
+        "name": "Doyoon Park",
+        "affiliation": null
+      },
+      {
+        "name": "Xin Deng",
+        "affiliation": null
+      },
+      {
+        "name": "Jie Deng",
+        "affiliation": null
+      }
+    ],
+    "summary": "Silica (SiO2) is fundamental to both industrial technology and planetary science, yet the phase relations of its high-pressure polymorphs remain poorly constrained. Here, we develop two machine learning potentials (MLPs) for SiO2 that faithfully represent the SCAN and PBEsol exchange-correlation functionals over a wide temperature (1000-10000 K) and pressure (100-400 GPa) range using deep neural networks. With large-scale two-phase simulations powered by these potentials, we determine the melting curves of seifertite and pyrite-type SiO2 and infer the solid-solid phase boundary between these two phases. The SCAN functional, which captures intermediate-range van der Waals interactions, reproduces structural and thermodynamic properties with high fidelity, predicting melting temperatures 6-10 % higher and a seifertite to pyrite-type transition pressure 22 % higher than the PBEsol. The strongly negative Clapeyron slope (-6.1 MPa/K) of this transition suggests that mantle convection could be highly layered in super-Earth exoplanets, potentially affecting their long-term thermal evolution and habitability.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.geo-ph"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on material science (silica) and geophysics, which is not closely related to the user's liked papers about superconductivity, electronic structure, and oxygen vacancies in nickelates.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Machine learning potentials",
+      "High-pressure silica",
+      "Mantle convection"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6169353723526001,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.43498554825782776,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.4052022397518158,
+        "liked_paper_id": "2506.23823v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12748v2": {
+    "id": "2510.12748v2",
+    "title": "Two-Dimensional Altermagnetic Iron Oxyhalides: Real Chern topology and Valley-Spin-Lattice coupling",
+    "authors": [
+      {
+        "name": "Yong-Kun Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Si Li",
+        "affiliation": null
+      },
+      {
+        "name": "Shengyuan A. Yang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnets, a novel class of collinear magnetic materials, exhibit unique spin-split band structures, yet topological insulating states in intrinsic altermagnetic systems are rare. Here, we identify monolayer Fe$_2X_2$O ($X$ = Cl, Br, I) as a new family of 2D altermagnetic real Chern insulators. These materials display robust $d$-wave altermagnetic ordering, semiconducting band gaps, and nontrivial real Chern numbers per spin channel, yielding spin-polarized topological corner modes. They also feature spin-polarized valleys with strong altermagnetism-valley-spin-lattice coupling, enabling valley-selective excitation via linear dichroism and strain-induced valley polarization. In multiferroic Fe$_2$Cl$_2$O, magnetism coexists with ferroelasticity, and an applied strain can switche the N\\'eel vector. These findings position 2D iron oxyhalides as a promising platform for exploring altermagnetism and magnetic topological states for spintronics and valleytronics.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses altermagnetism and topological states, which relates to previous papers on real Dirac fermions and novel materials, though the specific material focus differs.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Real Chern Insulator",
+      "Valley-Spin-Lattice Coupling"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5895436406135559,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5741232633590698,
+        "liked_paper_id": "2506.16360v1"
+      },
+      {
+        "score": 0.5603981018066406,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13577v1": {
+    "id": "2510.13577v1",
+    "title": "Emergent Discrete Time Crystals on Digital Quantum Computers: Boundary-Protected and Ancilla-Induced Disorder Mechanisms of Thermalization Slowdown",
+    "authors": [
+      {
+        "name": "Kazuya Shinjo",
+        "affiliation": null
+      },
+      {
+        "name": "Kazuhiro Seki",
+        "affiliation": null
+      },
+      {
+        "name": "Seiji Yunoki",
+        "affiliation": null
+      }
+    ],
+    "summary": "Periodically driven (Floquet) systems typically evolve toward an infinite-temperature thermal state due to continuous energy absorption. Before reaching equilibrium, however, they can transiently exhibit long-lived prethermal states that host exotic nonequilibrium phenomena, such as discrete time crystals (DTCs). In this study, we investigate the relaxation dynamics of periodically driven product states in a kicked Ising model implemented on the IBM Quantum Eagle and Heron processors. By using ancilla qubits to mediate interactions, we construct Kagome and Lieb lattices on superconducting qubits with heavy-hex connectivity. We identify two distinct types of noise-induced DTCs on Kagome and Lieb lattices, both arising from quantum noise in ancilla qubits. Type-I DTCs originate from robust boundary-mode period-doubling oscillations, stabilized by symmetry charge pumping, that are redistributed into the bulk due to ancilla noise. Type-II DTCs, in contrast, emerge in systems without charge-pumped qubits, where quantum noise unexpectedly stabilizes period-doubling oscillations that would otherwise rapidly decay. On the noisier Eagle device (ibm_kyiv), we observe both type-I and type-II DTCs on 53-qubit Kagome lattices with and without charge-pumped qubits, respectively. In contrast, on the lower-noise Heron device (ibm_marrakesh), period-doubling oscillations are confined to boundary-localized oscillations on 82-qubit Kagome and 40-qubit Lieb lattices, as redistribution into the bulk is suppressed. These experimental findings are supported by noisy matrix-product-state simulations, in which ancilla noise is modeled as random sign flips in the two-qubit gate rotation angles. Our results demonstrate that quantum noise in ancilla qubits can give rise to novel classes of prethermal dynamical phases, including boundary-protected and noise-induced DTCs.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and time crystals, which are not closely related to the user's past interests in superconductivity and electronic structure.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "discrete time crystals",
+      "quantum noise",
+      "prethermal states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5323631167411804,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.46321380138397217,
+        "liked_paper_id": "2506.22302v1"
+      },
+      {
+        "score": 0.4386049211025238,
+        "liked_paper_id": "2506.16068v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13342v1": {
+    "id": "2510.13342v1",
+    "title": "Evolution of the superconductivity in pressurized La3-xSmxNi2O7",
+    "authors": [
+      {
+        "name": "Qingyi Zhong",
+        "affiliation": null
+      },
+      {
+        "name": "Junfeng Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengyang Qiu",
+        "affiliation": null
+      },
+      {
+        "name": "Jingyuan Li",
+        "affiliation": null
+      },
+      {
+        "name": "Xing Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Peiyue Ma",
+        "affiliation": null
+      },
+      {
+        "name": "Mengwu Huo",
+        "affiliation": null
+      },
+      {
+        "name": "Hongliang Dong",
+        "affiliation": null
+      },
+      {
+        "name": "Hualei Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Meng Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Motivated by the discovery of superconductivity in bilayer La$_3$Ni$_2$O$_7$ at 80 K and the increased superconducting transition temperature, $T_\\text{c}$, up to 92 K in single crystals of La$_2$SmNi$_2$O$_7$ under pressure, we systematically study the effect of Sm doping on the superconductivity and structure of La$_{3-x}$Sm$_x$Ni$_2$O$_7$ (0 $\\leq$ x $\\leq$ 1.5) under pressure. Experimental investigations in polycrystalline samples reveal that Sm doping monotonically decreases the lattice constants $c$ and $a$, thereby enhancing crystal structure distortion and leading to an evolution of the metallic ground state in La$_3$Ni$_2$O$_7$ to an insulating state in La$_{1.5}$Sm$_{1.5}$Ni$_2$O$_7$. The maximum onset $T_\\text{c}$ in compounds $x=0.9$ and 1.5 is 89 K, while the pressure that drives the emergence of superconductivity is higher for higher doping levels. The results suggest that the enhancement of $T_\\text{c}$ in La$_{3-x}$Sm$_x$Ni$_2$O$_7$ is mainly affected by the compressed $c$ lattice before saturation, and the structure transition is critical for the emergence of superconductivity. Our experimental results provide insight into the influence of elemental substitution on nickelate superconductors, offering a means to increase the transition temperature further.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper investigates the superconductivity in Sm-doped La3Ni2O7 under pressure, which is directly related to the user's interest in nickelate superconductors and high-temperature superconductivity.",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "suggested_keywords": [
+      "Sm doping",
+      "nickelate superconductors",
+      "pressure-induced superconductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.7403843998908997,
+        "liked_paper_id": "2508.03414v1"
+      },
+      {
+        "score": 0.713231086730957,
+        "liked_paper_id": "2506.20727v1"
+      },
+      {
+        "score": 0.6947207450866699,
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.12891v1": {
+    "id": "2510.12891v1",
+    "title": "Polarization dependency in Resonant Inelastic X-Ray Scattering",
+    "authors": [
+      {
+        "name": "Michelangelo Tagliavini",
+        "affiliation": null
+      },
+      {
+        "name": "Fabian Wenzel",
+        "affiliation": null
+      },
+      {
+        "name": "Maurits W. Haverkort",
+        "affiliation": null
+      }
+    ],
+    "summary": "Resonant Inelastic X-Ray Scattering (RIXS) is a well-established tool for probing excitations in a wide range of materials. The measured spectra strongly depend on the scattering geometry, via its influence on the polarization of the incoming and outgoing light. By employing a tensor representation of the 4-point response function that governs the RIXS intensity, we disentangle the experimental geometry from the intrinsic material properties. In dipole-dipole RIXS processes and low-symmetry crystals, up to 81 linearly independent fundamental spectra can be measured as a function of light polarization. However, for crystals or molecules with symmetry, the number of independent fundamental spectra that define the RIXS tensor is significantly reduced.   This work presents a systematic framework for determining the number of fundamental spectra and expressing the RIXS tensor in terms of these fundamental components. Given a specific experimental geometry, the measured spectrum can be represented as a linear combination of these fundamental spectra. To validate our approach, we performed calculations for different point group symmetries, both with and without an applied magnetic field. Within the same framework, we derived expressions for powder spectra in momentum-independent processes and spectra obtained using Bragg spectrometers. This formalism provides a valuable toolkit for optimizing experiment planning, data interpretation, and RIXS simulation.",
+    "published_date": "2025-10-14",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses Resonant Inelastic X-Ray Scattering (RIXS), a technique used in one of the previously liked papers to study momentum-dependent charge correlations in superconductors.",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "suggested_keywords": [
+      "RIXS tensor",
+      "polarization dependency",
+      "point group symmetries"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5378308892250061,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.5070204138755798,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      },
+      {
+        "score": 0.5039575099945068,
+        "liked_paper_id": "yBtX0C4AAAAJ:70eg2SAEIzsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.11797v1": {
+    "id": "2510.11797v1",
+    "title": "Bound on entanglement in neural quantum states",
+    "authors": [
+      {
+        "name": "Nisarga Paul",
+        "affiliation": null
+      }
+    ],
+    "summary": "Variational wavefunctions offer a practical route around the exponential complexity of many-body Hilbert spaces, but their expressive power is often sharply constrained. Matrix product states, for instance, are efficient but limited to area law entangled states. Neural quantum states (NQS) are widely believed to overcome such limitations, yet little is known about their fundamental constraints. Here we prove that feed-forward neural quantum states acting on $n$ spins with $k$ scalar nonlinearities, under certain analyticity assumptions, obey a bound on entanglement entropy for any subregion: $S \\leq c k\\log n$, for a constant $c$. This establishes an NQS analog of the area law constraint for matrix product states and rules out volume law entanglement for NQS with $O(1)$ nonlinearities. We demonstrate analytically and numerically that the scaling with $n$ is tight for a wide variety of NQS. Our work establishes a fundamental constraint on NQS that applies broadly across different network designs, while reinforcing their substantial expressive power.",
+    "published_date": "2025-10-13",
+    "categories": [
+      "cond-mat.dis-nn"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on neural quantum states and entanglement, which is a departure from the user's previously liked papers on superconductivity, oxides, and Dirac fermions.",
+    "matching_keywords": [
+      "matrix product state",
+      "neural quantum state"
+    ],
+    "suggested_keywords": [
+      "Neural quantum states",
+      "Entanglement entropy",
+      "Variational wavefunctions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5570635795593262,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5501875877380371,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5414855480194092,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
