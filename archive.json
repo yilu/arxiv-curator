@@ -69615,5 +69615,404 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2510.15397v1": {
+    "id": "2510.15397v1",
+    "title": "Unravelling the Catalytic Activity of Dual-Metal Doped N6-Graphene for Sulfur Reduction via Machine Learning-Accelerated First-Principles Calculations",
+    "authors": [
+      {
+        "name": "Sahil Kumar",
+        "affiliation": null
+      },
+      {
+        "name": "Adithya Maurya K R",
+        "affiliation": null
+      },
+      {
+        "name": "Mudit Dixit",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding and optimizing polysulfide adsorption and conversion processes are critical to mitigating shuttle effects and sluggish redox kinetics in lithium-sulfur batteries (LSBs). Here, we introduce a machine-learning-accelerated framework, Precise and Accurate Configuration Evaluation (PACE), that integrates Machine Learning Interatomic Potentials (MLIPs) with Density Functional Theory (DFT) to systematically explore adsorption configurations and energetics of a series of N6-coordinated dual-atom catalysts (DACs). Our results demonstrate that, compared with single-atom catalysts, DACs exhibit improved LiPS adsorption and redox conversion through cooperative metal-sulfur interactions and electronic coupling between adjacent metal centers. Among all DACs, Fe-Ni and Fe-Pt show optimal catalytic performance, due to their optimal adsorption energies (-1.0 to -2.3 eV), low free-energy barriers (<=0.4 eV) for the Li2S2 to Li2S conversion, and facile Li2S decomposition barriers (<=1.0 eV). To accelerate catalyst screening, we further developed a machine learning (ML) regression model trained on DFT-calculated data to predict the Gibbs free energy (\\Delta G) of Li2Sn adsorption using physically interpretable descriptors. The Gradient Boosting Regression (GBR) model yields an R^2 of 0.85 and an MAE of 0.26 eV, enabling the rapid prediction of \\Delta G for unexplored DACs. Electronic-structure analyses reveal that the superior performance originates from the optimal d-band alignment and S-S bond polarization induced by the cooperative effect of dual metal centres. This dual ML-DFT framework demonstrates a generalizable, data-driven design strategy for the rational discovery of efficient catalysts for next-generation LSBs.",
+    "published_date": "2025-10-17",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on catalytic activity and battery technology, which are distinct from the user's previous interests in condensed matter physics, superconductivity, and electronic structure.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Dual-atom catalysts",
+      "Lithium-sulfur batteries",
+      "Machine learning interatomic potentials"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4800841808319092,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.400668740272522,
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC"
+      },
+      {
+        "score": 0.35419702529907227,
+        "liked_paper_id": "2507.00542v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.15167v1": {
+    "id": "2510.15167v1",
+    "title": "Advancing AI-Driven Analysis in X-ray Absorption Spectroscopy: Spectral Domain Mapping and Universal Models",
+    "authors": [
+      {
+        "name": "Nina Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Pavan Ravindra",
+        "affiliation": null
+      },
+      {
+        "name": "Shubha R. Kharel",
+        "affiliation": null
+      },
+      {
+        "name": "Chuntian Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Boyang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Xuance Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Matthew R. Carbone",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaohui Qu",
+        "affiliation": null
+      },
+      {
+        "name": "Deyu Lu",
+        "affiliation": null
+      }
+    ],
+    "summary": "In recent years, rapid progress has been made in developing artificial intelligence (AI) and machine learning (ML) methods for x-ray absorption spectroscopy (XAS) analysis. Compared to traditional XAS analysis methods, AI/ML approaches offer dramatic improvements in efficiency and help eliminate human bias. To advance this field, we advocate an AI-driven XAS analysis pipeline that features several inter-connected key building blocks: benchmarks, workflows, databases, and AI/ML models. Specifically, we present two case studies for XAS ML. In the first study, we demonstrate the importance of reconciling the discrepancies between simulation and experiment using spectral domain mapping (SDM). Our ML model, which is trained solely on simulated spectra, predicts an incorrect oxidation state trend for Ti atoms in a combinatorial zinc titanate film. After transforming the experimental spectra into a simulation-like representation using SDM, the same model successfully recovers the correct oxidation state trend. In the second study, we explore the development of universal XAS ML models that are trained on the entire periodic table, which enables them to leverage common trends across elements. Looking ahead, we envision that an AI-driven pipeline can unlock the potential of real-time XAS analysis to accelerate scientific discovery.",
+    "published_date": "2025-10-16",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses X-ray absorption spectroscopy, which aligns with previous papers on resonant X-ray scattering and material characterization, but its primary focus on AI/ML is a deviation.",
+    "matching_keywords": [
+      "XAS",
+      "machine learning",
+      "x-ray absorption spectroscopy"
+    ],
+    "suggested_keywords": [
+      "AI-driven XAS analysis",
+      "spectral domain mapping",
+      "universal XAS ML models"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4721045196056366,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.44193923473358154,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      },
+      {
+        "score": 0.3919461667537689,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.13319v2": {
+    "id": "2510.13319v2",
+    "title": "Spin-Selective Second-Order Topological Insulators Enabling Cornertronics in 2D Altermagnets",
+    "authors": [
+      {
+        "name": "Ning-Jing Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhigao Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Jian-Min Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Recent progress in spintronics within the paradigm of altermagnets (AMs) opens new avenues for next-generation electronic device design. Here, we establish a spin-corner locking mechanism that generates second-order topological states in two-dimensional (2D) altermagnetic systems, through effective model analysis. Remarkably, the breaking of Mxy symmetry under uniaxial strain creates spin-resolved corner modes, driving the system into a corner-polarized second-order topological insulator (CPSOTI). Beyond critical strain, a topological phase transition to quantum anomalous Hall insulator occurs with quantized conductance. Through first-principles calculations, we identify two experimentally viable candidates for 2D intrinsic AM CrO and Cr$_2$Se$_2$O -- which host robust CPSOTI. Moreover, we construct the topological phase diagram of CrO and predict the existence of an altermagnetic Weyl semimetal phase. Our findings open technological avenues in altermagnetism and higher-order topology, while providing opportunities for coupling topological spintronics with cornertronics.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": "10.1021/acs.nanolett.5c03191",
+    "score": 0.4,
+    "reasoning": "While the paper deals with topological materials and spintronics, which might have some overlap with previous interests in Dirac fermions and topological phases, the focus on altermagnets and cornertronics represents a shift away from the user's demonstrated interests in superconductivity and oxides.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Cornertronics",
+      "Topological Insulator"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6082288026809692,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5896791815757751,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5729236602783203,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.15472v1": {
+    "id": "2510.15472v1",
+    "title": "Fractional Quantum Hall Wedding Cakes",
+    "authors": [
+      {
+        "name": "Chlo\u00e9 Van Bastelaere",
+        "affiliation": null
+      },
+      {
+        "name": "Felix A. Palm",
+        "affiliation": null
+      },
+      {
+        "name": "Botao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Nathan Goldman",
+        "affiliation": null
+      },
+      {
+        "name": "Laurens Vanderstraeten",
+        "affiliation": null
+      }
+    ],
+    "summary": "This work investigates the coexistence of distinct topologically ordered phases within a single setup. We demonstrate this concept through tensor network simulations of the Hofstadter-Bose-Hubbard model under a spatially modulated chemical potential. Focusing on cylindrical geometries, we realize regions exhibiting the Laughlin-1/2 phase and its particle-hole conjugate, and confirm their topological character via the local St\\v{r}eda's response and Laughlin's flux insertion protocol. Our approach offers a new pathway for experimentally and numerically charting entire phase diagrams within a single system, possibly eliminating the need for independent parameter scans.",
+    "published_date": "2025-10-17",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses fractional quantum Hall effect and topological phases, which are not closely related to the user's liked papers on superconductivity, nickelates, and Dirac fermions.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Fractional quantum Hall effect",
+      "Topological order",
+      "Hofstadter-Bose-Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5684044361114502,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5166255831718445,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.49473658204078674,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.15357v1": {
+    "id": "2510.15357v1",
+    "title": "Altermagnetism induced surface Chern insulator",
+    "authors": [
+      {
+        "name": "Xuance Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Sayed Ali Akbar Ghorashi",
+        "affiliation": null
+      },
+      {
+        "name": "Deyu Lu",
+        "affiliation": null
+      },
+      {
+        "name": "Jennifer Cano",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose a new pathway to the quantized anomalous Hall effect (QAHE) by coupling an altermagnet to a topological crystalline insulator (TCI). The former gaps the topological surface states of the TCI, thereby realizing the QAHE in a robust and switchable platform with near- vanishing magnetization. We demonstrate the feasibility of this approach by studying a slab of the TCI SnTe coupled to an altermagnetic RuO2 layer. Our first-principles calculations reveal that the d-wave altermagnetism in RuO2 induces a 7 meV gap to the Dirac surface states on the (110) surface of SnTe, producing a finite anomalous Hall effect. Our approach generalizes to broader classes of altermagnetic materials and TCIs, thereby providing a family of topological altermagnetic heterostructures with small or vanishing magnetization that support nontrivial Chern numbers. Our results highlight a promising new topological platform with great tunability and applications to spintronics.",
+    "published_date": "2025-10-17",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological materials and heterostructures, which aligns with the user's interest in topological phases, Dirac materials, and unconventional superconductivity, although the specific focus on altermagnetism is a new direction.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "altermagnetism",
+      "topological crystalline insulator",
+      "quantized anomalous Hall effect"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5740113258361816,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5704613924026489,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5328681468963623,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.15360v1": {
+    "id": "2510.15360v1",
+    "title": "Friction-controlled reentrant aging and fluidization in granular materials",
+    "authors": [
+      {
+        "name": "Ye Yuan",
+        "affiliation": null
+      },
+      {
+        "name": "Walter Kob",
+        "affiliation": null
+      },
+      {
+        "name": "Hajime Tanaka",
+        "affiliation": null
+      }
+    ],
+    "summary": "Granular materials densify under repeated mechanical perturbations, a nonequilibrium dynamics that underlies many natural and industrial processes. Because granular relaxation is governed by frictional contacts and energy dissipation, this aging behavior fundamentally differs from that of thermal glasses despite their apparent similarities. Here, we uncover how friction controls the compaction dynamics of granular packings subjected to cyclic shear. Using discrete element simulations, we construct a dynamic state diagram as a function of strain amplitude and friction, revealing a rich interplay between jamming marginality, stabilization, and fluidization. We identify a friction-dependent crossover strain that separates aging and fluidized regimes, showing reentrant, non-monotonic behavior: Increasing friction first suppresses fluidization, then promotes it through smooth, creep-like rearrangements. This transition is marked by a shift from intermittent, avalanche-like rearrangements to continuous, diffusive motion. Our findings demonstrate that friction exerts a dual role in granular aging -- both stabilizing and fluidizing -- thereby uncovering the fundamental nonequilibrium mechanisms that govern compaction, rheology, and aging in athermal disordered systems. More broadly, our results reveal a general principle for how friction governs metastability and flow in athermal matter -- from granular and frictional colloids to soils and seismic faults -- linking microscopic contact mechanics to macroscopic dynamics.",
+    "published_date": "2025-10-17",
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper's focus on granular materials and friction-controlled dynamics significantly diverges from the user's interest in superconductivity, electronic structures, and materials like nickelates.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Granular materials",
+      "Friction dynamics",
+      "Athermal systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.39180245995521545,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.30621421337127686,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      },
+      {
+        "score": 0.27427297830581665,
+        "liked_paper_id": "2506.21480v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2506.13359v3": {
+    "id": "2506.13359v3",
+    "title": "Compressing local vertex functions from the multipoint numerical renormalization group using quantics tensor cross interpolation",
+    "authors": [
+      {
+        "name": "Markus Frankenbach",
+        "affiliation": null
+      },
+      {
+        "name": "Marc Ritter",
+        "affiliation": null
+      },
+      {
+        "name": "Mathias Pelz",
+        "affiliation": null
+      },
+      {
+        "name": "Nepomuk Ritz",
+        "affiliation": null
+      },
+      {
+        "name": "Jan von Delft",
+        "affiliation": null
+      },
+      {
+        "name": "Anxiang Ge",
+        "affiliation": null
+      }
+    ],
+    "summary": "The multipoint numerical renormalization group (mpNRG) is a powerful impurity solver that provides accurate spectral data useful for computing local, dynamic correlation functions in imaginary or real frequencies non-perturbatively across a wide range of interactions and temperatures. It gives access to a local, non-perturbative four-point vertex in imaginary and real frequencies, which can be used as input for subsequent computations such as diagrammatic extensions of dynamical mean--field theory. However, computing and manipulating the real-frequency four-point vertex on large, dense grids quickly becomes numerically challenging when the density and/or the extent of the frequency grid is increased. In this paper, we compute four-point vertices in a strongly compressed quantics tensor train format using quantics tensor cross interpolation, starting from discrete partial spectral functions obtained from mpNRG. This enables evaluations of the vertex on frequency grids with resolutions far beyond the reach of previous implementations. We benchmark this approach on the four-point vertex of the single-impurity Anderson model across a wide range of physical parameters, both in its full form and its asymptotic decomposition. For imaginary frequencies, the full vertex can be represented to an accuracy on the order of $2\\cdot 10^{-3}$ with maximum bond dimensions not exceeding 120. The more complex full real-frequency vertex requires maximum bond dimensions not exceeding 170 for an accuracy of $\\lesssim 2\\%$. Our work marks another step toward tensor-train-based diagrammatic calculations for correlated electronic lattice models starting from a local, non-perturbative mpNRG vertex.",
+    "published_date": "2025-06-16",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1103/jx7h-lsqk",
+    "score": 0.6,
+    "reasoning": "The paper discusses computational methods for solving complex quantum many-body problems, which is relevant to the general area of computational condensed matter physics represented in the user's liked papers.",
+    "matching_keywords": [
+      "numerical renormalization group"
+    ],
+    "suggested_keywords": [
+      "multipoint numerical renormalization group",
+      "quantics tensor cross interpolation",
+      "four-point vertex"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.9934173226356506,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.609571099281311,
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC"
+      },
+      {
+        "score": 0.5993672609329224,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
