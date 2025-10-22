@@ -70184,7 +70184,9 @@
         "liked_paper_id": "2507.00837v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.12009v2": {
     "id": "2510.12009v2",
@@ -70433,7 +70435,9 @@
         "liked_paper_id": "2506.11222v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.16993v1": {
     "id": "2510.16993v1",
@@ -70919,6 +70923,431 @@
       {
         "score": 0.46590590476989746,
         "liked_paper_id": "2506.16360v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.18613v1": {
+    "id": "2510.18613v1",
+    "title": "Hamiltonian learning quantum magnets with dynamical impurity tomography",
+    "authors": [
+      {
+        "name": "Netta Karjalainen",
+        "affiliation": null
+      },
+      {
+        "name": "Greta Lupi",
+        "affiliation": null
+      },
+      {
+        "name": "Rouven Koch",
+        "affiliation": null
+      },
+      {
+        "name": "Adolfo O. Fumega",
+        "affiliation": null
+      },
+      {
+        "name": "Jose L. Lado",
+        "affiliation": null
+      }
+    ],
+    "summary": "Nanoscale engineered spin systems, ranging from spins on surfaces to nanographenes, provide flexible platforms to realize entangled quantum magnets from a bottom up approach. However, assessing the quantum many-body Hamiltonian realized in a specific experiment remains an exceptional open challenge, due to the difficulty of disentangling competing terms accounting for the many-body excitations. Here, we demonstrate a machine learning strategy to learn a quantum many-body spin Hamiltonian from scanning spectroscopy measurements of spin excitations. Our methodology leverages the spatially-resolved reconstruction of the many-body excitations induced by depositing quantum impurities next to the quantum magnet. We demonstrate that our algorithm allows us to predict long-range Heisenberg exchange interactions, anisotropic exchange, as well as antisymmetric Dzyaloshinskii-Moriya interaction, including in the presence of sizable noise. Our methodology establishes defect-induced spatially-resolved dynamical excitations in quantum magnets as a powerful strategy to understand the nature of quantum spin many-body models.",
+    "published_date": "2025-10-21",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "The paper focuses on machine learning techniques for studying quantum magnets, which is a departure from the user's previous interests in superconductivity, oxygen vacancies, and Dirac fermions.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Hamiltonian learning",
+      "quantum magnets",
+      "dynamical impurity tomography"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6670148372650146,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5902460813522339,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5424236059188843,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.17734v1": {
+    "id": "2510.17734v1",
+    "title": "Efficient Tensor Completion Algorithms for Highly Oscillatory Operators",
+    "authors": [
+      {
+        "name": "Navjot Singh",
+        "affiliation": null
+      },
+      {
+        "name": "Edgar Solomonik",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaoye Sherry Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yang Liu",
+        "affiliation": null
+      }
+    ],
+    "summary": "This paper presents low-complexity tensor completion algorithms and their efficient implementation to reconstruct highly oscillatory operators discretized as $n\\times n$ matrices. The underlying tensor decomposition is based on the reshaping of the input matrix and its butterfly decomposition into an order $\\mathcal{O} (\\log n)$ tensor. The reshaping of the input matrix into a tensor allows for representation of the butterfly decomposition as a tensor decomposition with dense tensors. This leads to efficient utilization of the existing software infrastructure for dense and sparse tensor computations. We propose two tensor completion algorithms in the butterfly format, using alternating least squares and gradient-based optimization, as well as a novel strategy that uses low-rank matrix completion to efficiently generate an initial guess for the proposed algorithms. To demonstrate the efficiency and applicability of our proposed algorithms, we perform three numerical experiments using simulated oscillatory operators in seismic applications. In these experiments, we use $\\mathcal {O} (n \\log n)$ observed entries in the input matrix and demonstrate an $\\mathcal{O}(n\\log^3 n)$ computational cost of the proposed algorithms, leading to a speedup of orders of magnitudes per iteration for large matrices compared to the low-rank matrix and quantized tensor-train completion. Moreover, the proposed butterfly completion algorithms, equipped with the novel initial guess generation strategy, achieve reconstruction errors that are smaller by an order of magnitude, enabling accurate recovery of the underlying structure compared to the state-of-the-art completion algorithms.",
+    "published_date": "2025-10-20",
+    "categories": [
+      "math.NA",
+      "cs.LG",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on efficient tensor completion algorithms for oscillatory operators, which is a different domain than the user's liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "tensor completion",
+      "butterfly decomposition",
+      "oscillatory operators"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.44232141971588135,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.4376342296600342,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4361880123615265,
+        "liked_paper_id": "2506.22574v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.16884v2": {
+    "id": "2510.16884v2",
+    "title": "Temperature Dependence of the Momentum-Resolved Static Spin Susceptibility in a Mott-Proximate Cuprate Model",
+    "authors": [
+      {
+        "name": "Keishichiro Tanaka",
+        "affiliation": null
+      }
+    ],
+    "summary": "This paper presents the temperature dependence of the static spin susceptibility at $\\mathbf{q} = (\\pi, \\pi)$ and $\\mathbf{q} = (\\pi, 0)$ in a Mott-proximate cuprate model with an antinodal pseudogap -- a model system for high-temperature superconducting (HTSC) cuprates.   The results show the susceptibility onset temperature tracks the critical temperature ($T_c$) of HTSCs with a comparable scale across the electron filling factor. Also, as the electron filling decreases and the chemical potential approaches the antinodal van Hove region, the susceptibility at $\\mathbf{q}=(\\pi,0)$ -- the axial particle-hole response -- grows markedly.   The emergence of cuprate superconductivity correlates with a suppression of low-energy antinodal spin response and associated particle-hole excitations, which would otherwise dephase $d$-wave pairing, commonly attributed to spin fluctuations. In this context, the pseudogap partially suppresses antinodal spectral weight near $\\omega = 0$, thereby reducing the low-$\\omega$ particle-hole phase space.",
+    "published_date": "2025-10-19",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.85,
+    "reasoning": "The paper focuses on a cuprate model relevant to high-temperature superconductivity, aligning with the user's interest in cuprates and related phenomena like pseudogaps and spin fluctuations.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "static spin susceptibility",
+      "Mott-proximate cuprate model",
+      "antinodal pseudogap"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6684223413467407,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.63460373878479,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.6247313618659973,
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.18144v1": {
+    "id": "2510.18144v1",
+    "title": "Probing Hidden Symmetry and Altermagnetism with Sub-Picometer Sensitivity via Nonlinear Transport",
+    "authors": [
+      {
+        "name": "Subin Mali",
+        "affiliation": null
+      },
+      {
+        "name": "Yufei Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Yu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Saugata Sarker",
+        "affiliation": null
+      },
+      {
+        "name": "Yangyang Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Zixuan Li",
+        "affiliation": null
+      },
+      {
+        "name": "Jun Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Ying Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Venkatraman Gopalan",
+        "affiliation": null
+      },
+      {
+        "name": "Binghai Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiqiang Mao",
+        "affiliation": null
+      }
+    ],
+    "summary": "X-ray and neutron diffraction are foundational tools for determining crystal structures, but their resolution limits can lead to misassignments, especially in materials with subtle distortions or competing phases. Here, we demonstrate the use of nonlinear transport as a complementary approach to uncover hidden crystal symmetries, using the strongly correlated Ca$_3$Ru$_2$O$_7$ as a case study. Below 48 K (T$_S$), where the magnetic moments of the antiferromagnetic phase reorient from the a- to the b-axis, leading to a pseudogap opening, our measurements, with support of DFT, reveal a previously overlooked lower-symmetry phase. This is manifested by the emergence of longitudinal nonlinear resistance (NLR) along the b-axis below T$_S$, providing direct evidence of combined translational and time-reversal symmetry breaking. This response also suggests a transformation from a conventional antiferromagnet into an altermagnet. The lower-symmetry phase arises from a subtle lattice distortion (~0.1 pm) associated with the magnetic transition at T$_S$, below the detection limit of conventional diffraction. Moreover, this NLR below T$_S$ is accompanied by a nonlinear Hall effect, both of which are enhanced by the large quantum metric associated with Weyl chains near the Fermi surface. Our findings demonstrate nonlinear transport as a sensitive probe of hidden symmetry breaking and altermagnetism, complementing and extending beyond the reach of traditional diffraction and spectroscopic techniques.",
+    "published_date": "2025-10-20",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses competing phases and hidden symmetries in a correlated material, similar to topics in the user's liked papers on correlated electron systems and unconventional superconductivity.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "nonlinear transport",
+      "altermagnetism",
+      "symmetry breaking"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5319627523422241,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.5126219391822815,
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC"
+      },
+      {
+        "score": 0.5099719166755676,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.18449v1": {
+    "id": "2510.18449v1",
+    "title": "Robust Material Properties in Epitaxial In$_2$Te$_3$ Thin Films Across Varying Thicknesses",
+    "authors": [
+      {
+        "name": "Maximilian Buchta",
+        "affiliation": null
+      },
+      {
+        "name": "Felix Hoff",
+        "affiliation": null
+      },
+      {
+        "name": "Lucas Bothe",
+        "affiliation": null
+      },
+      {
+        "name": "Niklas Penner",
+        "affiliation": null
+      },
+      {
+        "name": "Christoph Ringkamp",
+        "affiliation": null
+      },
+      {
+        "name": "Thomas Schmidt",
+        "affiliation": null
+      },
+      {
+        "name": "Timo Veslin",
+        "affiliation": null
+      },
+      {
+        "name": "Ka Lei Mak",
+        "affiliation": null
+      },
+      {
+        "name": "Jonathan Frank",
+        "affiliation": null
+      },
+      {
+        "name": "Dasol Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Matthias Wuttig",
+        "affiliation": null
+      }
+    ],
+    "summary": "Sesqui-chalcogenides serve as a critical bridge between traditional semiconductors and quantum materials, offering significant potential in applications such as thermoelectrics, phase change memory, and topological insulators. While considerable attention has been focused on antimony- and bismuth-based compounds, characterized by substantial property changes upon reduction in film thickness, indium containing sesqui-chalcogenides like In$_2$Te$_3$ are emerging as promising candidates for photovoltaics and electronic devices. However, the effects of film thickness on the properties of In$_2$Te$_3$ remain largely unexplored. In this study, we investigate high-quality In$_2$Te$_3$ thin films grown by molecular beam epitaxy on Si(111) substrates across a thickness range from 2.7 nm to 24 nm. We employ X-ray diffraction, reflective high-energy electron diffraction and atomic force microscopy to analyze both the crystal structure and film morphology. Additionally, we utilize broadband optical spectroscopy alongside femtosecond pump-probe measurements and Raman spectroscopy to assess optical and vibrational properties, respectively. Our analysis reveals that material properties exhibit minimal dependence on film thickness, contrasting sharply with behavior observed in other chalcogenides such as Sb$_2$Te$_3$, Bi$_2$Se$_3$, or GeTe. This phenomenon can be attributed to covalent bonding present in In$_2$Te$_3$, which differs from those in its antimony- and bismuth-containing counterparts.",
+    "published_date": "2025-10-21",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in chalcogenides and topological materials, the paper focuses on the material properties of In2Te3 thin films, which does not align closely with the user's demonstrated interests in superconductivity, oxygen vacancies, or Dirac fermions.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "Indium telluride",
+      "Thin films",
+      "Molecular beam epitaxy"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5701541304588318,
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC"
+      },
+      {
+        "score": 0.5362246632575989,
+        "liked_paper_id": "yBtX0C4AAAAJ:MXK_kJrjxJIC"
+      },
+      {
+        "score": 0.5269216299057007,
+        "liked_paper_id": "yBtX0C4AAAAJ:pqnbT2bcN3wC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.18860v1": {
+    "id": "2510.18860v1",
+    "title": "An Encoder-Decoder Foundation Chemical Language Model for Generative Polymer Design",
+    "authors": [
+      {
+        "name": "Harikrishna Sahu",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Xiong",
+        "affiliation": null
+      },
+      {
+        "name": "Anagha Savit",
+        "affiliation": null
+      },
+      {
+        "name": "Shivank S Shukla",
+        "affiliation": null
+      },
+      {
+        "name": "Rampi Ramprasad",
+        "affiliation": null
+      }
+    ],
+    "summary": "Traditional machine learning has advanced polymer discovery, yet direct generation of chemically valid and synthesizable polymers without exhaustive enumeration remains a challenge. Here we present polyT5, an encoder-decoder chemical language model based on the T5 architecture, trained to understand and generate polymer structures. polyT5 enables both property prediction and the targeted generation of polymers conditioned on desired property values. We demonstrate its utility for dielectric polymer design, seeking candidates with dielectric constant >3, bandgap >4 eV, and glass transition temperature >400 K, alongside melt-processability and solubility requirements. From over 20,000 generated promising candidates, one was experimentally synthesized and validated, showing strong agreement with predictions. To further enhance usability, we integrated polyT5 within an agentic AI framework that couples it with a general-purpose LLM, allowing natural language interaction for property prediction and generative design. Together, these advances establish a versatile and accessible framework for accelerated polymer discovery.",
+    "published_date": "2025-10-21",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on polymer design using machine learning, which is a departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "chemical language model",
+      "polymer design",
+      "generative AI"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3936499357223511,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3194010555744171,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.28310486674308777,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.18469v1": {
+    "id": "2510.18469v1",
+    "title": "Uncovering critical temperature dependence in Heusler magnets via explicit machine learning",
+    "authors": [
+      {
+        "name": "Jean-Baptiste Mor\u00e9e",
+        "affiliation": null
+      },
+      {
+        "name": "Juba Bouaziz",
+        "affiliation": null
+      },
+      {
+        "name": "Ryotaro Arita",
+        "affiliation": null
+      }
+    ],
+    "summary": "We employ interpretable explicit machine learning to analyze the material dependence of the magnetic transition temperature $T_c$ in ferromagnetic and ferrimagnetic Heusler compounds. For around 200 compounds, we consider both experimental $T_c$ and calculated $T_c$ using \\textit{ab initio} determination of magnetic interactions together with a Monte-Carlo solution. We use the hierarchical dependence extraction (HDE) procedure [Mor\\'ee and Arita, Phys. Rev. B 110, 014502 (2024)] to extract the dependencies of $T_c$ on chemical proportions and magnetic moments from the main order to the higher order, and construct an explicit expression of $T_c$ from these dependencies. The main results are: (a) $T_c$ is mainly controlled by the proportions of Fe, Co, and Mn, and increases with these proportions, consistent with previous machine learning analyses of ferromagnetic materials. (b) The HDE describes $T_c$ with an accuracy that is comparable to that of other machine learning procedures. (c) The HDE expression of $T_c$ can be interpreted as a generalized order parameter that increases with increasing magnetization amplitude, in qualitative agreement with various theories of phase transitions. These results strengthen our understanding of the material dependence of $T_c$ in collinear Heusler magnets and motivate the further use of HDE in material design.",
+    "published_date": "2025-10-21",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on Heusler magnets and machine learning analysis of transition temperatures, which is a departure from the user's previously liked papers on superconductivity and topological materials.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Heusler magnets",
+      "Machine learning",
+      "Transition temperature"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.38960349559783936,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3783874809741974,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.34589678049087524,
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC"
       }
     ],
     "discovery_sources": []
