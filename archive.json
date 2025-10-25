@@ -72660,7 +72660,9 @@
         "liked_paper_id": "2506.14703v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.20502v1": {
     "id": "2510.20502v1",
@@ -73158,5 +73160,204 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2510.20613v1": {
+    "id": "2510.20613v1",
+    "title": "Temperley-Lieb categories with coloured regions and Jones-Wenzl projectors",
+    "authors": [
+      {
+        "name": "Cameron Howat",
+        "affiliation": null
+      },
+      {
+        "name": "Robert Laugwitz",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Ray",
+        "affiliation": null
+      }
+    ],
+    "summary": "Generalised Temperley-Lieb categories with regions labelled by elements of a commutative algebra were introduced by M. Khovanov and the second author in [Pure Appl. Math. Q. 19 (2023), no. 5]. We consider the case where the regions are labelled by colours, corresponding to a complete set of orthogonal idempotents of a semisimple commutative algebra. We determine when these generalised Temperley-Lieb categories are semisimple and find the direct sum decompositions of tensor products of simple objects. As the main tool we introduce two-variable versions of Chebychev polynomials and construct analogues of Jones-Wenzl projectors. As a consequence, we prove a conjecture of M. Khovanov and the second author on Gram determinants and non-degeneracy of trace pairings for the associated Temperley-Lieb algebras with coloured regions.",
+    "published_date": "2025-10-23",
+    "categories": [
+      "math.QA",
+      "math.CT",
+      "math.RT"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses Temperley-Lieb categories, Chebyshev polynomials, and Jones-Wenzl projectors, which are mathematical concepts with no clear overlap with the user's liked papers on condensed matter physics and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Temperley-Lieb categories",
+      "Chebyshev polynomials",
+      "Jones-Wenzl projectors"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.2855282425880432,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.2829691767692566,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.26015549898147583,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.19835v1": {
+    "id": "2510.19835v1",
+    "title": "A Quantum-Inspired Algorithm for Solving Sudoku Puzzles and the MaxCut Problem",
+    "authors": [
+      {
+        "name": "Max B. Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Fei Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose and evaluate a quantum-inspired algorithm for solving Quadratic Unconstrained Binary Optimization (QUBO) problems, which are mathematically equivalent to finding ground states of Ising spin-glass Hamiltonians. The algorithm employs Matrix Product States (MPS) to compactly represent large superpositions of spin configurations and utilizes a discrete driving schedule to guide the MPS toward the ground state. At each step, a driver Hamiltonian -- incorporating a transverse magnetic field -- is combined with the problem Hamiltonian to enable spin flips and facilitate quantum tunneling. The MPS is updated using the standard Density Matrix Renormalization Group (DMRG) method, which iteratively minimizes the system's energy via multiple sweeps across the spin chain. Despite its heuristic nature, the algorithm reliably identifies global minima, not merely near-optimal solutions, across diverse QUBO instances. We first demonstrate its effectiveness on intermediate-level Sudoku puzzles from publicly available sources, involving over $200$ Ising spins with long-range couplings dictated by constraint satisfaction. We then apply the algorithm to MaxCut problems from the Biq Mac library, successfully solving instances with up to $251$ nodes and $3,265$ edges. We discuss the advantages of this quantum-inspired approach, including its scalability, generalizability, and suitability for industrial-scale QUBO applications.",
+    "published_date": "2025-10-10",
+    "categories": [
+      "cs.AI",
+      "cs.ET",
+      "cs.NE"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a quantum-inspired algorithm for optimization problems, a different area than the user's liked papers which are related to condensed matter physics and materials science.",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Quantum-inspired algorithm",
+      "Quadratic Unconstrained Binary Optimization (QUBO)",
+      "Matrix Product States (MPS)"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5547298192977905,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5512510538101196,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5239156484603882,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.20063v1": {
+    "id": "2510.20063v1",
+    "title": "Computing excited states with isometric tensor networks in two-dimensions",
+    "authors": [
+      {
+        "name": "Alec Dektor",
+        "affiliation": null
+      },
+      {
+        "name": "Runze Chi",
+        "affiliation": null
+      },
+      {
+        "name": "Roel Van Beeumen",
+        "affiliation": null
+      },
+      {
+        "name": "Chao Yang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a new subspace iteration method for computing low-lying eigenpairs (excited states) of high-dimensional quantum many-body Hamiltonians with nearest neighbor interactions on two-dimensional lattices. The method is based on a new block isometric projected entangled pair state (block-isoPEPS) ansatz that generalizes the block matrix product state (MPS) framework, widely used for Hamiltonians defined on one-dimensional chains, to two-dimensions. The proposed block-isoPEPS ansatz offers several attractive features for PEPS-based algorithms, including exact block orthogonalization, controlled local truncation via singular value decompositions, and efficient evaluation of observables. We demonstrate the proposed inexact subspace iteration for block-isoPEPS by computing excitations of the two-dimensional transverse-field Ising and Heisenberg models and compare our results with existing PEPS methods. Our results demonstrate that block isometric tensor networks provide a scalable framework for studying excitations in quantum many-body systems beyond one dimension.",
+    "published_date": "2025-10-22",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in correlated electron systems and materials, this paper focuses on a computational method (tensor networks) with no immediately obvious connection to the user's specified interests.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "isometric tensor networks",
+      "excited states",
+      "quantum many-body Hamiltonians"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6684053540229797,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.6264090538024902,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5778575539588928,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.20633v1": {
+    "id": "2510.20633v1",
+    "title": "Systematic study of multi-magnon binding energies in the FM-AFM $J_1$-$J_2$ chain",
+    "authors": [
+      {
+        "name": "Satoshi Nishimoto",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a systematic study of multi-magnon bound states (MBSs) in the spin-$\\tfrac{1}{2}$ FM-AFM $J_1$-$J_2$ chain under magnetic fields using the density-matrix renormalization group method. As a quantitative measure of stability, we compute the magnon binding energy $E_{\\rm b}(M,p)$ for bound clusters of size $p$ over wide ranges of the frustration ratio $J_2/|J_1|$ and the normalized magnetization $M/M_{\\rm s}$. Near saturation, we benchmark our data against the analytic two-magnon result and map out a clear hierarchy of $p$-magnon states, whose phase boundaries follow an empirical scaling $J_{2,{\\rm c}}(p;p\\!+\\!1)/|J_1|\\!\\approx\\!0.34\\,p^{-2.3}$ for large $p$. We further quantify the relation between the most stable $p$ and the zero-field pitch angle $\\theta$, verifying the conjectured inequality $1/p>\\theta/\\pi>1/(p+1)$ up to $p \\lesssim 9$. The binding energy shows pronounced suppression as $J_2/|J_1|\\!\\to\\!1/4^+$ and, for some frustration values, attains a maximum below full saturation, indicating that partial depolarization enhances bound-magnon mobility. Close to the FM instability, $E_{\\rm b}(M_{\\rm s},p)$ exhibits an empirical power-law vanishing consistent with a quantum-Lifshitz scenario. Our results provide a comprehensive, experimentally relevant map of MBS stability across field and frustration, offering concrete guidance for inelastic probes in quasi-one-dimensional magnets.",
+    "published_date": "2025-10-23",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on magnons and magnetism, which are not directly related to the user's previous interests in superconductivity, oxygen vacancies, and topological materials, hence the low relevance score.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "multi-magnon bound states",
+      "spin chains",
+      "frustration ratio"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6738202571868896,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5168274641036987,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5024856328964233,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
