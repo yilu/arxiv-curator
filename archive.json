@@ -73359,5 +73359,106 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2510.20362v1": {
+    "id": "2510.20362v1",
+    "title": "ComProScanner: A multi-agent based framework for composition-property structured data extraction from scientific literature",
+    "authors": [
+      {
+        "name": "Aritra Roy",
+        "affiliation": null
+      },
+      {
+        "name": "Enrico Grisan",
+        "affiliation": null
+      },
+      {
+        "name": "John Buckeridge",
+        "affiliation": null
+      },
+      {
+        "name": "Chiara Gattinoni",
+        "affiliation": null
+      }
+    ],
+    "summary": "Since the advent of various pre-trained large language models, extracting structured knowledge from scientific text has experienced a revolutionary change compared with traditional machine learning or natural language processing techniques. Despite these advances, accessible automated tools that allow users to construct, validate, and visualise datasets from scientific literature extraction remain scarce. We therefore developed ComProScanner, an autonomous multi-agent platform that facilitates the extraction, validation, classification, and visualisation of machine-readable chemical compositions and properties, integrated with synthesis data from journal articles for comprehensive database creation. We evaluated our framework using 100 journal articles against 10 different LLMs, including both open-source and proprietary models, to extract highly complex compositions associated with ceramic piezoelectric materials and corresponding piezoelectric strain coefficients (d33), motivated by the lack of a large dataset for such materials. DeepSeek-V3-0324 outperformed all models with a significant overall accuracy of 0.82. This framework provides a simple, user-friendly, readily-usable package for extracting highly complex experimental data buried in the literature to build machine learning or deep learning datasets.",
+    "published_date": "2025-10-23",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a computational tool for data extraction from scientific literature, which is not directly related to the user's interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "data extraction",
+      "large language models",
+      "scientific literature"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.31409743428230286,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.28584742546081543,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.270152747631073,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.21291v1": {
+    "id": "2510.21291v1",
+    "title": "Altermagnetism in an interacting model of Kagome materials",
+    "authors": [
+      {
+        "name": "Alejandro Blanco Peces",
+        "affiliation": null
+      },
+      {
+        "name": "Jaime Merino",
+        "affiliation": null
+      }
+    ],
+    "summary": "The Hubbard model on the Kagome lattice is a widely used interacting model for describing the electronic properties of various transition metal-based Kagome materials. We find altermagnetism driven by Coulomb interaction in the Kagome Hubbard model at Dirac filling with no spin-orbit coupling nor explicit spatial symmetry breaking present. We show how this insulating altermagnet is relevant to other lattices with larger unit cells such as the Lieb-Kagome lattice. The ALM found displays a characteristic magnon splitting which can be detected in inelastic neutron scattering experiments on interacting Kagome materials.",
+    "published_date": "2025-10-24",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses Kagome materials and their electronic properties, which aligns with the user's interest in correlated electron systems and unconventional superconductivity, particularly in transition metal oxides.",
+    "matching_keywords": [
+      "altermagnetism",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Kagome lattice",
+      "Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5748511552810669,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5465969443321228,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5463016033172607,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
   }
 }
