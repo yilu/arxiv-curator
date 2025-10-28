@@ -73460,5 +73460,1503 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2510.21913v1": {
+    "id": "2510.21913v1",
+    "title": "Intertwined Orders, Quantum Criticality and Skyrmions in Tunable Topological Bands",
+    "authors": [
+      {
+        "name": "Xuepeng Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Johannes S. Hofmann",
+        "affiliation": null
+      },
+      {
+        "name": "Debanjan Chowdhury",
+        "affiliation": null
+      }
+    ],
+    "summary": "Skyrmions are emergent many-body excitations that lie at the heart of both multi-component quantum Hall-like systems and deconfined quantum criticality. In a companion article (X. Wang et al., arXiv:2507.22971), we studied a microscopic time-reversal symmetric model of tunable interacting Chern bands using numerically exact determinant quantum Monte Carlo calculations, and presented evidence for the emergence of robust skyrmion excitations. These charged excitations emerge in the vicinity of a many-body insulator at a commensurate filling of the Chern bands, and lead to the onset of superconductivity when doped away from the insulating phase. Here, we present quantum Monte-Carlo results and a complementary field-theoretical analysis for the quantum phase transition(s) that arise between the intertwined phases as a function of two distinct tuning parameters. Our numerical results are consistent with a single continuous quantum phase transition between an insulating Chern antiferromagnet and a fully gapped superconductor, with an emergent SO(5) symmetry at the putative critical point, highly suggestive of deconfined quantum (pseudo-)criticality. We also present a detailed comparison between the momentum-resolved spectral functions associated with the neutral collective modes, single electron and composite spin-polaron excitations obtained using a combination of Monte-Carlo computations and a Bethe-Salpeter analysis built on top of the self-consistent Hartree-Fock calculation. We end with a brief outlook on some of the interesting open problems.",
+    "published_date": "2025-10-24",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses intertwined orders, quantum criticality, and superconductivity, which are relevant to the user's interest in superconductivity and quantum materials.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Skyrmions",
+      "Quantum criticality",
+      "Chern bands"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5772662162780762,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5662317872047424,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5511724948883057,
+        "liked_paper_id": "2506.16068v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23514v1": {
+    "id": "2510.23514v1",
+    "title": "DeFecT-FF: Accelerated Modeling of Defects in Cd-Zn--Te-Se-S Compounds Combining High-Throughput DFT and Machine Learning Force Fields",
+    "authors": [
+      {
+        "name": "Md Habibur Rahman",
+        "affiliation": null
+      },
+      {
+        "name": "Arun Mannodi-Kanakkithodi",
+        "affiliation": null
+      }
+    ],
+    "summary": "We developed DeFecT-FF, a framework for predicting the energies and ground-state configurations of native point defects, extrinsic dopants, impurities, and defect complexes in zincblende-phase Cd/Zn-Te/Se/S compounds relevant to CdTe-based solar cells. The framework combines high-throughput DFT data with crystal graph-based machine learning force fields (MLFFs) trained to reproduce DFT energies and forces. Alloying at Cd or Te sites offers a route to tune the electronic and defect properties of CdTe absorbers for improved solar efficiency. Given the vast number of possible defect types, charge states, and symmetry-breaking configurations, traditional DFT approaches are computationally prohibitive. Our dataset includes GGA-PBE and HSE06-optimized structures for bulk, alloyed, interface, and grain-boundary systems. Using active learning, we expanded the dataset and trained MLFFs to accurately predict energies across charge states. The model enabled rapid screening and discovery of new low-energy defect configurations, validated through HSE06 calculations with spin-orbit coupling. The DeFecT-FF framework is publicly available as a nanoHUB tool, allowing users to upload crystallographic files, automatically generate defects, and compute defect formation energies versus Fermi level and chemical potentials, greatly reducing the need for expensive DFT simulations.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in superconductivity and related materials, this paper focuses on defect modeling in CdTe-based solar cell materials, a topic with limited overlap.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Defect modeling",
+      "CdTe solar cells",
+      "Machine learning force fields"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.518754780292511,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.43905794620513916,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.41118648648262024,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.22138v1": {
+    "id": "2510.22138v1",
+    "title": "Tractable Shapley Values and Interactions via Tensor Networks",
+    "authors": [
+      {
+        "name": "Farzaneh Heidari",
+        "affiliation": null
+      },
+      {
+        "name": "Chao Li",
+        "affiliation": null
+      },
+      {
+        "name": "Farzaneh Heidari",
+        "affiliation": null
+      }
+    ],
+    "summary": "We show how to replace the O(2^n) coalition enumeration over n features behind Shapley values and Shapley-style interaction indices with a few-evaluation scheme on a tensor-network (TN) surrogate: TN-SHAP. The key idea is to represent a predictor's local behavior as a factorized multilinear map, so that coalitional quantities become linear probes of a coefficient tensor. TN-SHAP replaces exhaustive coalition sweeps with just a small number of targeted evaluations to extract order-k Shapley interactions. In particular, both order-1 (single-feature) and order-2 (pairwise) computations have cost O(n*poly(chi) + n^2), where chi is the TN's maximal cut rank. We provide theoretical guarantees on the approximation error and tractability of TN-SHAP. On UCI datasets, our method matches enumeration on the fitted surrogate while reducing evaluation by orders of magnitude and achieves 25-1000x wall-clock speedups over KernelSHAP-IQ at comparable accuracy, while amortizing training across local cohorts.",
+    "published_date": "2025-10-25",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning and explainability techniques (Shapley values, tensor networks), which are not related to the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Shapley values",
+      "Tensor networks",
+      "Explainable AI"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3738476634025574,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.32946494221687317,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.3111581802368164,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.22999v1": {
+    "id": "2510.22999v1",
+    "title": "Benchmarking Universal Machine Learning Interatomic Potentials for Elastic Property Prediction",
+    "authors": [
+      {
+        "name": "Pengfei Gao",
+        "affiliation": null
+      },
+      {
+        "name": "Haidi Wang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Universal machine learning interatomic potentials have emerged as efficient tool for material simulation fields,yet their reliability for elastic property prediction remains unclear. Here we present a systematic benchmark of four uMLIPs-MatterSim, MACE, SevenNet, and CHGNet-against theoretical data for nearly 11,000 elastically stable materials from the Materials Project database. The results show SevenNet achieves the highest accuracy,MACE and MatterSim balance accuracy with efficiency, while CHGNet performs less effectively overall. This benchmark establishes a framework for guiding model selection and advancing uMLIPs in mechanical property applications.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning potentials for materials science, which is a different area than the user's liked papers on superconductivity, oxygen vacancies, and Dirac fermions.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning interatomic potentials",
+      "elastic property prediction",
+      "materials simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.428029328584671,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.31659412384033203,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.30661749839782715,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23376v1": {
+    "id": "2510.23376v1",
+    "title": "Ground-state phase diagram of S = 1/2 Heisenberg model on 2D square-hexagon-octagon lattice",
+    "authors": [
+      {
+        "name": "Yumeng Luo",
+        "affiliation": null
+      },
+      {
+        "name": "Yuehong Li",
+        "affiliation": null
+      },
+      {
+        "name": "Mengfan Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Muwei Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Jian-Jian Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Dao-Xin Yao",
+        "affiliation": null
+      },
+      {
+        "name": "Han-Qing Wu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Using stochastic series expansion quantum Monte Carlo method and density matrix renormalization group, we study the ground-state phase diagram of $S=1/2$ Heisenberg model on 2D square-hexagon-octagon (SHO) lattice. In this model, we consider two kinds of nearest-neighbor interaction (intra-hexagon interaction $J_1$ and inter-hexagon $J_2$) and the selected third nearest-neighbor interaction $J_3$ along $x$ direction. From our calculations, there are five phases in the parameters regime $0<\\lambda_1=J_2/J_1<4, 0<\\lambda_2=J_3/J_1<4$, including a N\\'eel antiferromagentic phase, a Haldane-like symmetry protected topological phase, a hexagon phase and two dimer phases. In the Haldane-like SPT phase, we characterized its topological nature using the degeneracy of ground-state energy under open boundary condition and the entanglement spectrum. To characterize the phase boundaries, we use spin stiffness and Binder cumulant to do the comprehensive finite-size scalings. From data collapse, the critical behaviors of all the nonmagnetic phases to the antiferromagnetic phase belong to the 3D $O(3)$ Heisenberg universality class. As a theoretical exploration, our work establishes a foundational framework for understanding 2D magnetism on the SHO lattice.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on a specific 2D Heisenberg model on a square-hexagon-octagon lattice, which is not closely aligned with the user's liked papers on superconductivity, oxygen vacancies, or topological semimetals.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Heisenberg model",
+      "square-hexagon-octagon lattice",
+      "quantum Monte Carlo"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6001672744750977,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5454970598220825,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5412005186080933,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.22121v1": {
+    "id": "2510.22121v1",
+    "title": "Machine Learning Enables Optimization of Diamond for Quantum Applications",
+    "authors": [
+      {
+        "name": "Dane W. deQuilettes",
+        "affiliation": null
+      },
+      {
+        "name": "Eden Price",
+        "affiliation": null
+      },
+      {
+        "name": "Linh M. Pham",
+        "affiliation": null
+      },
+      {
+        "name": "Arthur Kurlej",
+        "affiliation": null
+      },
+      {
+        "name": "Swaroop Vattam",
+        "affiliation": null
+      },
+      {
+        "name": "Alexander Melville",
+        "affiliation": null
+      },
+      {
+        "name": "Tom Osadchy",
+        "affiliation": null
+      },
+      {
+        "name": "Boning Li",
+        "affiliation": null
+      },
+      {
+        "name": "Guoqing Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Collin N. Muniz",
+        "affiliation": null
+      },
+      {
+        "name": "Paola Cappellaro",
+        "affiliation": null
+      },
+      {
+        "name": "Jennifer M. Schloss",
+        "affiliation": null
+      },
+      {
+        "name": "Justin L. Mallek",
+        "affiliation": null
+      },
+      {
+        "name": "Danielle A. Braje",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spins in solid-state materials, molecules, and other chemical systems have the potential to impact the fields of quantum sensing, communication, simulation, and computing. In particular, color centers in diamond, such as negatively charged nitrogen vacancy (NV$^-$) and silicon vacancy centers (SiV$^-$), are emerging as quantum platforms poised for transition to commercial devices. A key enabler stems from the semiconductor-like platform that can be tailored at the time of growth. The large growth parameter space makes it challenging to use intuition to optimize growth conditions for quantum performance. In this paper, we use supervised machine learning to train regression models using different synthesis parameters in over 100 quantum diamond samples. We train models to optimize NV$^-$ defects in diamond for high sensitivity magnetometry. Importantly, we utilize a magnetic-field sensitivity figure of merit (FOM) for NV magnetometry and use Bayesian optimization to identify critical growth parameters that lead to a 300% improvement over an average sample and a 55% improvement over the previous champion sample. Furthermore, using Shapley importance rankings, we gain new physical insights into the most impactful growth and post-processing parameters, namely electron irradiation dose, diamond seed depth relative to the plasma, seed miscut angle, and reactor nitrogen concentration. As various quantum devices can have significantly different material requirements, advanced growth techniques such as plasma-enhanced chemical vapor deposition (PE-CVD) can provide the ability to tailor material development specifically for quantum applications.",
+    "published_date": "2025-10-25",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in materials science topics, this paper focuses on quantum computing applications and machine learning optimization within the specific context of diamond color centers, making it only marginally relevant.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "quantum diamond",
+      "NV center optimization",
+      "Bayesian optimization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5443116426467896,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5122154355049133,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.47636061906814575,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.20592v2": {
+    "id": "2510.20592v2",
+    "title": "Unexpected non-universality of the time braiding phase of anyons tied by the scaling dimension",
+    "authors": [
+      {
+        "name": "Aleksander Latyshev",
+        "affiliation": null
+      },
+      {
+        "name": "Ines Safi",
+        "affiliation": null
+      }
+    ],
+    "summary": "We use a braiding nonequilibrium fluctuation dissipation relation linking the DC noise to the response function inferred from the braiding constraint in the time-domain with a phase $\\theta$ within the UNEPT (Unified Non equilibrium Perturbative Theory). By applying the Kramers-Kr\\\"onig relations, we obtain an integral equation connecting DC current and noise that involves $\\theta$. By specifying to thermal states so that noise is Poissonian, we find an analytical solution for the DC current via the Wiener-Hopf technique. It reveals that the time-braiding phase is determined by the scaling dimension~$\\delta$. This questions the universality of $\\theta$ that can reflect the microscopic edge dynamics, in contrast to the topologically protected braiding phase in the space domain.",
+    "published_date": "2025-10-23",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses theoretical physics, it focuses on anyons and time braiding, a departure from the previous papers which centered on materials science, superconductivity, and electronic structure.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "time braiding",
+      "anyons",
+      "scaling dimension"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.39725762605667114,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.3947724401950836,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.3705357313156128,
+        "liked_paper_id": "2506.22302v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23546v1": {
+    "id": "2510.23546v1",
+    "title": "Variational Thermal State Preparation on Digital Quantum Processors Assisted by Matrix Product States",
+    "authors": [
+      {
+        "name": "Rui-Hao Li",
+        "affiliation": null
+      },
+      {
+        "name": "Semeon Valgushev",
+        "affiliation": null
+      },
+      {
+        "name": "Khadijeh Najafi",
+        "affiliation": null
+      }
+    ],
+    "summary": "The preparation of quantum Gibbs states at finite temperatures is a cornerstone of quantum computation, enabling applications in quantum simulation of many-body systems, machine learning via quantum Boltzmann machines, and optimization through thermal sampling techniques. In this work, we introduce a variational framework that leverages matrix product states for the efficient classical evaluation of the Helmholtz free energy, combining scalable entanglement entropy computation with a hardware efficient ansatz to accurately approximate thermal states in one- and two-dimensional systems. We conduct extensive benchmarking on key observables, including energy density, susceptibility, specific heat, and two-point correlations, comparing against exact analytical results for 1D systems and quantum Monte Carlo simulations for 2D lattices across various temperatures and ansatz configurations. Our large-scale numerical simulations demonstrate the capability to prepare high-quality Gibbs states for 1D lattice models with up to 30 sites and 2D systems with up to 6x6 sites, using up to 42 qubits. Finally, we demonstrate the framework's practical viability on a 156-qubit IBM Heron processor by preparing the approximate Gibbs state of a 30-site transverse-field Ising model. Leveraging a combination of error mitigation techniques, we reduce the relative errors in energy and susceptibility measurements by over 50% compared to unmitigated results.",
+    "published_date": "2025-10-27",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing techniques for preparing thermal states, which is a significant departure from the user's interest in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Variational quantum algorithms",
+      "Quantum Gibbs states",
+      "Matrix product states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5944815874099731,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5655339956283569,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.5620509386062622,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.20939v1": {
+    "id": "2510.20939v1",
+    "title": "Tensor-Network study of Ising model on infinite hyperbolic dodecahedral lattice",
+    "authors": [
+      {
+        "name": "Matej Mosko",
+        "affiliation": null
+      },
+      {
+        "name": "Andrej Gendiar",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose a tensor-network-based algorithm to study the classical Ising model on an infinitely large hyperbolic lattice with a regular 3D tesselation of identical dodecahedra. We reformulate the corner transfer matrix renormalization group (CTMRG) algorithm from 2D to 3D to reproduce the known results on the cubic lattice. Consequently, we generalize the CTMRG to the hyperbolic dodecahedral lattice, which is an infinite-dimensional lattice. We analyze the spontaneous magnetization, von Neumann entropy, and correlation length to find a continuous non-critical phase transition on the dodecahedral lattice. The phase transition temperature is estimated to be $T_{\\rm pt} \\approx 4.66$. We find the magnetic critical exponents $\\beta= 0.4999$ and $\\delta=3.007$ that confirm the mean-field universality class in accord with predictions of Monte Carlo and high-temperature series expansions. The algorithm can be applied to arbitrary multi-state spin models.",
+    "published_date": "2025-10-23",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on the Ising model and tensor network methods, which are not strongly related to the user's interests in superconductivity, nickelates, or topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor network",
+      "Ising model",
+      "Hyperbolic lattice"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5759629607200623,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5550510287284851,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5429495573043823,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.23089v1": {
+    "id": "2510.23089v1",
+    "title": "Tensor network methods for quantum-inspired image processing and classical optics",
+    "authors": [
+      {
+        "name": "Nicolas Allegra",
+        "affiliation": null
+      }
+    ],
+    "summary": "Tensor network methods strike a middle ground between fully-fledged quantum computing and classical computing, as they take inspiration from quantum systems to significantly speed up certain classical operations. Their strength lies in their compressive power and the wide variety of efficient algorithms that operate within this compressed space. In this work, we focus on applying these methods to fundamental problems in image processing and classical optics such as wave-front propagation and optical image formation, by using directly or indirectly parallels with quantum mechanics and computation. These quantum-inspired methods are expected to yield faster algorithms with applications ranging from astronomy and earth observation to microscopy and classical imaging more broadly.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "physics.optics",
+      "astro-ph.IM",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on image processing and classical optics using tensor networks, which is a departure from the user's interest in condensed matter physics and superconductivity.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor networks",
+      "Image processing",
+      "Classical optics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5157005190849304,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4539233148097992,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.4508090019226074,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.23555v1": {
+    "id": "2510.23555v1",
+    "title": "Prediction of a topological phase transition in exchange alternating spin-1 nanographene chains",
+    "authors": [
+      {
+        "name": "Jo\u00e3o C. G. Henriques",
+        "affiliation": null
+      },
+      {
+        "name": "Yelko del Castillo",
+        "affiliation": null
+      },
+      {
+        "name": "Ricardo Segundo",
+        "affiliation": null
+      },
+      {
+        "name": "Jan Phillips",
+        "affiliation": null
+      },
+      {
+        "name": "Joaqu\u00edn Fern\u00e1ndez-Rossier",
+        "affiliation": null
+      }
+    ],
+    "summary": "The use of magnetic nanographenes as building blocks for artificial spin lattices is enabling the exploration of flagship model Hamiltonians of one-dimensional quantum magnetism with an unprecedented degree of control. The spin-1 Heisenberg model, incorporating both linear and quadratic exchange interactions, was first realized using [3]-triangulenes, where the hallmark Haldane phase with spin fractionalization was observed. Later, the spin-1/2 Heisenberg Hamiltonian with exchange alternation was realized with Clar's goblets, where two additional topological phases were identified. Here we show that spin-1 nanographenes can also be used to explore the topological phase transition between the Haldane phase and a dimerized phase predicted for spin-1 chains with bond-alternation. We first study how the boundary of the phase transition is modified by non-linear exchange, known to be present in spin-1 nanographenes, using density matrix renormalization group (DMRG). Combining multiconfigurational with first-principles calculations, we propose two candidates to realize different topological phases of the model: a recently synthesized extended Clar's goblet, and a passivated [4]-triangulene. Moreover, we show how these two phases can be identified experimentally using inelastic electron tunneling spectroscopy (IETS). This work paves the way for the experimental realization of these topological phases, which can be locally probed with scanning tunneling microscopy.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses topological phases and quantum magnetism, connecting to the user's interest in topological materials and potentially to strongly correlated electron systems through magnetism.",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "suggested_keywords": [
+      "spin-1 nanographenes",
+      "topological phase transition",
+      "exchange alternation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6648644208908081,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5822904706001282,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5805908441543579,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.22506v1": {
+    "id": "2510.22506v1",
+    "title": "Accelerated Tensor Completion via Trace-Regularized Fully-Connected Tensor Network",
+    "authors": [
+      {
+        "name": "Wenchao Xie",
+        "affiliation": null
+      },
+      {
+        "name": "Qingsong Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Chengcheng Yan",
+        "affiliation": null
+      },
+      {
+        "name": "Zheng Peng",
+        "affiliation": null
+      }
+    ],
+    "summary": "The fully-connected tensor network (FCTN) decomposition has gained prominence in the field of tensor completion owing to its powerful capacity to capture the low-rank characteristics of tensors. Nevertheless, the recovery of local details in the reconstructed tensor still leaves scope for enhancement. In this paper, we propose efficient tensor completion model that incorporates trace regularization within the FCTN decomposition framework. The trace regularization is constructed based on the mode-$k$ unfolding of the FCTN factors combined with periodically modified negative laplacian. The trace regularization promotes the smoothness of the FCTN factors through discrete second-order derivative penalties, thereby enhancing the continuity and local recovery performance of the reconstructed tensor. To solve the proposed model, we develop an efficient algorithm within the proximal alternating minimization (PAM) framework and theoretically prove its convergence. To reduce the runtime of the proposed algorithm, we design an intermediate tensor reuse mechanism that can decrease runtime by 10\\%-30\\% without affecting image recovery, with more significant improvements for larger-scale data. A comprehensive complexity analysis reveals that the mechanism attains a reduced computational complexity. Numerical experiments demonstrate that the proposed method outperforms existing approaches.",
+    "published_date": "2025-10-26",
+    "categories": [
+      "math.NA",
+      "cs.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on tensor completion and optimization techniques, which is a departure from the user's interests in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor completion",
+      "Trace regularization",
+      "Fully-connected tensor network"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4078427255153656,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3684229850769043,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.3398953080177307,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.23412v1": {
+    "id": "2510.23412v1",
+    "title": "Quantum fluctuations determine the spin-flop transition in hematite",
+    "authors": [
+      {
+        "name": "Tobias Dannegger",
+        "affiliation": null
+      },
+      {
+        "name": "Imre Hagym\u00e1si",
+        "affiliation": null
+      },
+      {
+        "name": "Levente R\u00f3zsa",
+        "affiliation": null
+      },
+      {
+        "name": "Ulrich Nowak",
+        "affiliation": null
+      }
+    ],
+    "summary": "Magnetic phase transitions between ordered phases are often understood on the basis of semi-classical spin models. Deviations from the classical description due to the quantum nature of the atomic spins as well as quantum fluctuations are usually treated as negligible if long-range order is preserved, and are rarely quantified for actual materials. Here, we demonstrate that a fully quantum-mechanical framework is required for a quantitatively correct description of the spin-flop transition in the insulating altermagnet hematite between the collinear antiferromagnetic and the weakly ferromagnetic spin-flop phase at low temperature. By applying both exact diagonalization and density-matrix renormalization group theory to the quantum Heisenberg Hamiltonian, we show how a quantum-mechanical treatment of an ab initio parametrized spin model can significantly improve the predicted low-temperature spin-flop field over a classical description when compared to measurements. Our results imply that quantum fluctuations have a measurable influence on selecting the ground state of a system out of competing ordered magnetic phases at low temperature.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the user has shown interest in magnetism and quantum phenomena, this paper focuses on a specific material (hematite) and a specific type of magnetic transition (spin-flop), making the connection less direct than some previous papers.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "spin-flop transition",
+      "quantum fluctuations",
+      "hematite"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6206036806106567,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.6138768792152405,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.6095148324966431,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.21767v1": {
+    "id": "2510.21767v1",
+    "title": "Quantum-inspired space-time PDE solver and dynamic mode decomposition",
+    "authors": [
+      {
+        "name": "Raghavendra Dheeraj Peddinti",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano Pisoni",
+        "affiliation": null
+      },
+      {
+        "name": "Narsimha Rapaka",
+        "affiliation": null
+      },
+      {
+        "name": "Mohamed K. Riahi",
+        "affiliation": null
+      },
+      {
+        "name": "Egor Tiunov",
+        "affiliation": null
+      },
+      {
+        "name": "Leandro Aolita",
+        "affiliation": null
+      }
+    ],
+    "summary": "Numerical solutions of partial differential equations (PDEs) are central to the understanding of dynamical systems. Standard approaches involving time-stepping schemes compute the solution at each time step, which becomes too costly when simulating long-term dynamics. Alternatively, space-time methods that treat the combined space-time domain simultaneously promise better stability and accuracy. Interestingly, data-driven approaches for learning and predicting dynamics, such as dynamic mode decomposition (DMD), also employ a combined space-time representation. However, the curse of dimensionality often limits the practical benefits of space-time methods. In this work, we investigate quantum-inspired methods for space-time approaches, both for solving PDEs and for making DMD predictions. We achieve this goal by treating both spatial and temporal dimensions within a single matrix product state (MPS) encoding. First, we benchmark our MPS space-time solver for both linear and nonlinear PDEs, observing that the MPS ansatz accurately captures the underlying spatio-temporal correlations while having significantly fewer degrees of freedom. Second, we develop an MPS-DMD algorithm to make accurate long-term predictions of nonlinear systems, with runtime scaling logarithmically in both spatial and temporal resolution. This research highlights the role of tensor networks in developing effective and interpretable models, bridging the gap between numerical methods and data-driven approaches.",
+    "published_date": "2025-10-15",
+    "categories": [
+      "physics.comp-ph",
+      "cs.NA",
+      "math.NA"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on numerical methods for PDEs and dynamic mode decomposition, which is distinct from the user's interest in condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "space-time PDE solver",
+      "dynamic mode decomposition",
+      "matrix product state"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.48240330815315247,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4592044949531555,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.43261295557022095,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.23275v1": {
+    "id": "2510.23275v1",
+    "title": "Analytic $G_0W_0$ gradients based on a double-similarity transformation equation-of-motion coupled-cluster treatment",
+    "authors": [
+      {
+        "name": "Marios-Petros Kitsaras",
+        "affiliation": null
+      },
+      {
+        "name": "Johannes T\u00f6lle",
+        "affiliation": null
+      },
+      {
+        "name": "Pierre-Fran\u00e7ois Loos",
+        "affiliation": null
+      }
+    ],
+    "summary": "The accurate prediction of ionization potentials (IPs) is central to understanding molecular reactivity, redox behavior, and spectroscopic properties. While vertical IPs can be accessed directly from electronic excitations at fixed nuclear geometries, the computation of adiabatic IPs requires nuclear gradients of the ionized states, posing a major theoretical and computational challenge, especially within correlated frameworks. Among the most promising approaches for IP calculations is the many-body Green's function $GW$ method, which provides a balanced compromise between accuracy and computational efficiency. Furthermore, it is applicable to both finite and extended systems. Recent work has established formal connections between $GW$ and coupled-cluster doubles (CCD) theory, leading to the first derivation of analytic $GW$ nuclear gradients via a unitary CCD framework. In this work, we present an alternative, fully analytic formulation of $GW$ nuclear gradients based on a modified version of the traditional equation-of-motion CCD formalism, enabling the inclusion of missing correlation effects in the traditional CCD methods.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "This paper focuses on computational methods for calculating ionization potentials using GW methods, which is not directly related to the user's previously liked papers on superconductivity and correlated electron systems in nickelates and cuprates.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "GW method",
+      "ionization potentials",
+      "analytic gradients"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5163843035697937,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.5026178956031799,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      },
+      {
+        "score": 0.4797118306159973,
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23064v1": {
+    "id": "2510.23064v1",
+    "title": "LightPFP: A Lightweight Route to Ab Initio Accuracy at Scale",
+    "authors": [
+      {
+        "name": "Wenwen Li",
+        "affiliation": null
+      },
+      {
+        "name": "Nontawat Charoenphakdee",
+        "affiliation": null
+      },
+      {
+        "name": "Yong-Bin Zhuang",
+        "affiliation": null
+      },
+      {
+        "name": "Ryuhei Okuno",
+        "affiliation": null
+      },
+      {
+        "name": "Yuta Tsuboi",
+        "affiliation": null
+      },
+      {
+        "name": "So Takamoto",
+        "affiliation": null
+      },
+      {
+        "name": "Junichi Ishida",
+        "affiliation": null
+      },
+      {
+        "name": "Ju Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "Atomistic simulation methods have evolved through successive computational levels, each building upon more fundamental approaches: from quantum mechanics to density functional theory (DFT), and subsequently, to machine learning interatomic potentials (MLIPs). While universal MLIPs (u-MLIPs) offer broad transferability, their computational overhead limits large-scale applications. Task-specific MLIPs (ts-MLIPs) achieve superior efficiency but require prohibitively expensive DFT data generation for each material system. In this paper, we propose LightPFP, a data-efficient knowledge distillation framework. Instead of using costly DFT calculations, LightPFP generates a distilled ts-MLIP by leveraging u-MLIP to generate high-quality training data tailored for specific materials and utilizing a pre-trained light-weight MLIP to further enhance data efficiency. Across a broad spectrum of materials, including solid-state electrolytes, high-entropy alloys, and reactive ionic systems, LightPFP delivers three orders of magnitude faster model development than conventional DFT-based methods, while maintaining accuracy on par with first-principles predictions. Moreover, the distilled ts-MLIPs further sustain the computational efficiency essential for large-scale molecular dynamics, achieving 1-2 orders of magnitude faster inference than u-MLIPs. The framework further enables efficient precision transfer learning, where systematic errors from the u-MLIP can be corrected using as few as 10 high-accuracy DFT data points, as demonstrated for MgO melting point prediction. This u-MLIP-driven distillation approach enables rapid development of high-fidelity, efficient MLIPs for materials science applications.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses computational methods in materials science, it does not directly relate to the user's previously liked papers on superconductivity, oxygen vacancies, topological materials, or dynamical mean-field theory.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning interatomic potentials",
+      "knowledge distillation",
+      "materials science applications"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5194759368896484,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      },
+      {
+        "score": 0.48899561166763306,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.46321994066238403,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.21599v1": {
+    "id": "2510.21599v1",
+    "title": "SHAP Meets Tensor Networks: Provably Tractable Explanations with Parallelism",
+    "authors": [
+      {
+        "name": "Reda Marzouk",
+        "affiliation": null
+      },
+      {
+        "name": "Shahaf Bassan",
+        "affiliation": null
+      },
+      {
+        "name": "Guy Katz",
+        "affiliation": null
+      }
+    ],
+    "summary": "Although Shapley additive explanations (SHAP) can be computed in polynomial time for simple models like decision trees, they unfortunately become NP-hard to compute for more expressive black-box models like neural networks - where generating explanations is often most critical. In this work, we analyze the problem of computing SHAP explanations for *Tensor Networks (TNs)*, a broader and more expressive class of models than those for which current exact SHAP algorithms are known to hold, and which is widely used for neural network abstraction and compression. First, we introduce a general framework for computing provably exact SHAP explanations for general TNs with arbitrary structures. Interestingly, we show that, when TNs are restricted to a *Tensor Train (TT)* structure, SHAP computation can be performed in *poly-logarithmic* time using *parallel* computation. Thanks to the expressiveness power of TTs, this complexity result can be generalized to many other popular ML models such as decision trees, tree ensembles, linear models, and linear RNNs, therefore tightening previously reported complexity results for these families of models. Finally, by leveraging reductions of binarized neural networks to Tensor Network representations, we demonstrate that SHAP computation can become *efficiently tractable* when the network's *width* is fixed, while it remains computationally hard even with constant *depth*. This highlights an important insight: for this class of models, width - rather than depth - emerges as the primary computational bottleneck in SHAP computation.",
+    "published_date": "2025-10-24",
+    "categories": [
+      "cs.LG",
+      "cs.CC",
+      "cs.FL"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on explainable AI and tensor networks, which is not aligned with the user's interest in condensed matter physics and superconductivity.",
+    "matching_keywords": [
+      "neural network",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Shapley additive explanations",
+      "Tensor Networks",
+      "Parallel computation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.34482282400131226,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3287809491157532,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.3043029308319092,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.23135v1": {
+    "id": "2510.23135v1",
+    "title": "Universal Relations in Long-range Quantum Spin Chains",
+    "authors": [
+      {
+        "name": "Ning Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Lei Feng",
+        "affiliation": null
+      },
+      {
+        "name": "Pengfei Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding the emergence of novel collective behaviors in strongly interacting systems lies at the heart of quantum many-body physics. Valuable insight comes from examining how few-body correlations manifest in many-body systems, embodying the ``from few to many'' philosophy. An intriguing example is the set of universal relations in ultracold atomic gases, which connect a wide range of observables to a single quantity known as the contact. In this Letter, we demonstrate that universal relations manifest in a distinct class of quantum many-body systems, long-range quantum spin chains, which belong to a completely new universality class. Using effective field theory and the operator product expansion, we establish connections between the asymptotic behavior of equal-time spin correlation functions, the dynamical structure factor, and the contact density. The theoretical predictions for equal-time correlators are explicitly verified through numerical simulations based on matrix product states. Our results could be readily tested in state-of-the-art trapped-ion systems.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum spin chains and universal relations, a departure from the user's previous interests in superconductivity, correlated electron systems, and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "quantum spin chains",
+      "universal relations",
+      "operator product expansion"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5172876119613647,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.51397705078125,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      },
+      {
+        "score": 0.5049763917922974,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.21844v1": {
+    "id": "2510.21844v1",
+    "title": "KARIPAP: Quantum-Inspired Tensor Network Compression of Large Language Models Using Infinite Projected Entangled Pair States and Tensor Renormalization Group",
+    "authors": [
+      {
+        "name": "Azree Nazri",
+        "affiliation": null
+      }
+    ],
+    "summary": "Large Language Models (LLMs) like ChatGPT and LLaMA drive rapid progress in generative AI, yet their huge parameter scales create severe computational and environmental burdens. High training costs, energy use, and limited device deployment hinder accessibility. Existing compression - pruning, distillation, low-rank, and quantization - reduces size but ignores complex inter-layer correlations. We propose KARIPAP, a quantum-inspired tensor network compression using Infinite Projected Entangled Pair States (iPEPS) and Tensor Renormalization Group (TRG) contraction. Unlike 1D Matrix Product States, iPEPS captures multi-directional entanglement in attention and deep transformer layers. TRG ensures polynomial-time contraction, making tensorization feasible while preserving key correlation geometry. Experiments on LLaMA-2 7B show up to 93% memory and 70% parameter reduction, with 50% faster training, 25% faster inference, and only 2-3% accuracy loss. Layer-wise entanglement profiling reveals redundancy in deeper layers, confirming their suitability for tensor factorization. KARIPAP demonstrates that modern LLMs occupy low-dimensional entanglement manifolds, enabling scalable, energy-efficient, and quantum-aware AI architectures.",
+    "published_date": "2025-10-22",
+    "categories": [
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum-inspired tensor network compression for large language models, which is a different area than the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Tensor Network Compression",
+      "Large Language Models",
+      "Quantum-Inspired AI"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4895144999027252,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4832735061645508,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4815838038921356,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.22668v1": {
+    "id": "2510.22668v1",
+    "title": "Hilbert Space Fragmentation in Hardcore Bose and Fermi Hubbard Models on Generalized Lieb Lattices",
+    "authors": [
+      {
+        "name": "D. K. He",
+        "affiliation": null
+      },
+      {
+        "name": "Z. Song",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the Hilbert space fragmentation (HSF) in hardcore Bose and Fermi Hubbard models in the framework of the restricted spectrum generating algebra (RSGA). We present a family of hardcore Bose-Hubbard models with repulsive density-density interactions on a generalized Lieb lattice. We show that this system possesses the RSGA structure in the large interaction strength limit, exhibiting quantum HSF. It allows us to construct a set of exact condensate eigenstates, possessing off diagonal long-range order. Based on numerical simulations conducted on several representative lattices, we demonstrate the existence of weak fragmentations when the constraints are not exact. As applications, we also studied the connection between HSF and RSGA in modified fermionic Hubbard models, where the {\\eta}-pairing states are shown to be energy towers, acting as quantum scars.",
+    "published_date": "2025-10-26",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper deals with Hubbard models, a topic broadly related to the user's interests in correlated electron systems and superconductivity, the focus on Hilbert space fragmentation and specific lattice geometries makes it less directly relevant.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Hilbert space fragmentation",
+      "Hardcore Bose-Hubbard model",
+      "Lieb lattice"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5598832368850708,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5534735918045044,
+        "liked_paper_id": "2507.01280v1"
+      },
+      {
+        "score": 0.5501023530960083,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.22938v1": {
+    "id": "2510.22938v1",
+    "title": "AQCat25: Unlocking spin-aware, high-fidelity machine learning potentials for heterogeneous catalysis",
+    "authors": [
+      {
+        "name": "Omar Allam",
+        "affiliation": null
+      },
+      {
+        "name": "Brook Wander",
+        "affiliation": null
+      },
+      {
+        "name": "Aayush R. Singh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Large-scale datasets have enabled highly accurate machine learning interatomic potentials (MLIPs) for general-purpose heterogeneous catalysis modeling. There are, however, some limitations in what can be treated with these potentials because of gaps in the underlying training data. To extend these capabilities, we introduce AQCat25, a complementary dataset of 13.5 million density functional theory (DFT) single point calculations designed to improve the treatment of systems where spin polarization and/or higher fidelity are critical. We also investigate methodologies for integrating new datasets, such as AQCat25, with the broader Open Catalyst 2020 (OC20) dataset to create spin-aware models without sacrificing generalizability. We find that directly tuning a general model on AQCat25 leads to catastrophic forgetting of the original dataset's knowledge. Conversely, joint training strategies prove effective for improving accuracy on the new data without sacrificing general performance. This joint approach introduces a challenge, as the model must learn from a dataset containing both mixed-fidelity calculations and mixed-physics (spin-polarized vs. unpolarized). We show that explicitly conditioning the model on this system-specific metadata, for example by using Feature-wise Linear Modulation (FiLM), successfully addresses this challenge and further enhances model accuracy. Ultimately, our work establishes an effective protocol for bridging DFT fidelity domains to advance the predictive power of foundational models in catalysis.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning potentials for catalysis, a topic distinct from the user's previous interests in superconductivity, topological materials, and oxygen vacancies in oxides.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning interatomic potentials",
+      "heterogeneous catalysis",
+      "spin-aware models"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4650612473487854,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.42381566762924194,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4075799584388733,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.21269v1": {
+    "id": "2510.21269v1",
+    "title": "Tensor Renormalization-Group study of the surface critical behavior of a frustrated two-layer Ising model",
+    "authors": [
+      {
+        "name": "Christophe Chatelain",
+        "affiliation": null
+      }
+    ],
+    "summary": "Two replicas of a 2D Ising model are coupled by frustrated spin-spin interactions. It is known that this inter-layer coupling is marginal and that the bulk critical behavior belongs to the Ashkin-Teller (AT) universality class, as the $J_1$-$J_2$ Ising model. In this work, the surface critical behavior is studied numerically by Tensor Renormalization-Group calculations. The Bond-Weight Tensor Renormalization Group algorithm is extended to tackle systems with boundaries. It is observed that the two-fold degeneracy of the surface magnetic scaling dimension of the AT model is lifted in the frustrated two-layer Ising model (F2LIM). The splitting is explained by the breaking of the ${\\mathbb Z}_2$-symmetry under spin reversal of a single Ising replica in the F2LIM. The two distinct surface magnetic scaling dimensions $x_1^s$ and $x_2^s$ of the F2LIM satisfies a simple duality relation $x_1^s=1/4x_2^s$.",
+    "published_date": "2025-10-24",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on a frustrated two-layer Ising model and tensor renormalization group methods, which are not closely aligned with the user's previously liked papers on superconductivity, electronic structure, and Dirac materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Tensor Renormalization Group",
+      "Surface Critical Behavior",
+      "Frustrated Ising Model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5767724514007568,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5551170706748962,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.49387869238853455,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.22596v1": {
+    "id": "2510.22596v1",
+    "title": "Pinched geometries in $\\mathbf{2}$D Lorentzian quantum Regge calculus",
+    "authors": [
+      {
+        "name": "Yoshiyasu Ito",
+        "affiliation": null
+      },
+      {
+        "name": "Daisuke Kadoh",
+        "affiliation": null
+      },
+      {
+        "name": "Yuki Sato",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate pinched geometries in a two-dimensional Lorentzian model of quantum Regge calculus (QRC) using the tensor renormalization group (TRG) method. A pinched geometry refers to a configuration with an infinitely long temporal extent, even when the total spacetime area is fixed. We examine several choices of integration measures and triangulations to study whether such geometries can dominate in the limit of infinitely many triangles. Our results indicate that pinched geometries are strongly suppressed, and this suppression is observed across different integral measures and triangulations. These results suggest the possible emergence of smooth geometries as well as a sort of universality for infinitely many triangles.",
+    "published_date": "2025-10-26",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on quantum Regge calculus and Lorentzian geometries, a topic unrelated to the user's previously liked papers on superconductivity, nickelates, and Dirac fermions.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Quantum Regge Calculus",
+      "Lorentzian Geometry",
+      "Tensor Renormalization Group"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4122065603733063,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.38232842087745667,
+        "liked_paper_id": "2506.13359v1"
+      },
+      {
+        "score": 0.3320090174674988,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2505.00767v2": {
+    "id": "2505.00767v2",
+    "title": "Anisotropic Spin Ice on a Breathing Pyrochlore Lattice",
+    "authors": [
+      {
+        "name": "Gloria Isbrandt",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Pollmann",
+        "affiliation": null
+      },
+      {
+        "name": "Michael Knap",
+        "affiliation": null
+      }
+    ],
+    "summary": "Spin ice systems represent a prime example of constrained spin systems and exhibit rich low-energy physics. In this study, we explore how introducing a tunable anisotropic spin coupling to the conventional Ising spin ice Hamiltonian on the breathing pyrochlore lattice affects the ground state properties of the system. Significant changes are observed in the ground state structure, reflected in the spin structure factor and in a reduction of residual entropy at low temperatures. We theoretically uncover a rich phase diagram by varying the anisotropy and demonstrate how this modification reduces the ground state degeneracy across different phases. Numerical simulations reveal that, at sufficiently low temperatures, the system either undergoes a crossover into a constrained spin ice manifold, characterized by an entropy density that drops below the Pauling entropy of conventional spin ice, or a phase transition into a symmetry-broken state, depending on the perturbations. Additionally, we compute the spin structure factors for the anisotropic model and compare these results to analytical predictions from a large-$N$ expansion, finding good agreement. This work develops the understanding of spin ice in anisotropic limits, which may be experimentally realized by strain, providing, among others, key signatures in entropy and specific heat.",
+    "published_date": "2025-05-01",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1103/gyf7-nm5v",
+    "score": 0.1,
+    "reasoning": "The paper focuses on spin ice systems and their properties, a topic distinct from the user's liked papers on superconductivity, oxygen vacancies, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Anisotropic Spin Ice",
+      "Breathing Pyrochlore Lattice",
+      "Constrained Spin Systems"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5953716039657593,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5803159475326538,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.5656387805938721,
+        "liked_paper_id": "2507.00386v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.22311v1": {
+    "id": "2510.22311v1",
+    "title": "Pauli Propagation: Simulating Quantum Spin Dynamics via Operator Complexity",
+    "authors": [
+      {
+        "name": "Yuguo Shao",
+        "affiliation": null
+      },
+      {
+        "name": "Song Cheng",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengwei Liu",
+        "affiliation": null
+      }
+    ],
+    "summary": "Simulating real-time quantum dynamics in interacting spin systems is a fundamental challenge, where exact diagonalization suffers from exponential Hilbert-space growth and tensor-network methods face entanglement barriers. In this work, we introduce a scalable Pauli propagation approach that evolves local observables directly in the Heisenberg picture. Theoretically, we derive a priori error bounds governed by the Operator Stabilizer R\\'enyi entropy (OSE) $\\mathcal{S}^\\alpha(O)$, which explicitly links the truncation accuracy to operator complexity and prescribes a suitable Top-$K$ truncation strategy. For the 1D Heisenberg model with $J_z = 0$, we prove the number of non-zero Pauli coefficients scales quadratically in Trotter steps, establishing the compressibility of Heisenberg-evolved operators. Numerically, we validate the framework on XXZ Heisenberg chain benchmarks, showing high accuracy with small $K$ in free regimes ($J_z = 0$) and competitive performance against tensor-network methods (e.g., TDVP) in interacting cases ($J_z = 0.5$). These results establish an observable-centric simulator whose cost is governed by operator complexity rather than entanglement, offering a practical alternative for studying non-equilibrium dynamics in quantum many-body systems.",
+    "published_date": "2025-10-25",
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in superconductivity and related electronic structures, this paper focuses on a new computational method for simulating quantum spin dynamics, which is a different area, although it could potentially be applied to studying such materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Pauli propagation",
+      "Operator complexity",
+      "Quantum spin dynamics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5170279741287231,
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C"
+      },
+      {
+        "score": 0.4982224702835083,
+        "liked_paper_id": "2506.22574v1"
+      },
+      {
+        "score": 0.495791494846344,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.21968v1": {
+    "id": "2510.21968v1",
+    "title": "Altermagnetism, Kagome Flat Band, and Weyl Fermion States in Magnetically Intercalated Transition Metal Dichalcogenides",
+    "authors": [
+      {
+        "name": "Avinash Sah",
+        "affiliation": null
+      },
+      {
+        "name": "Ting-Yong Lim",
+        "affiliation": null
+      },
+      {
+        "name": "Clayton Conner",
+        "affiliation": null
+      },
+      {
+        "name": "Amarnath Chakraborty",
+        "affiliation": null
+      },
+      {
+        "name": "Giovanni Vignale",
+        "affiliation": null
+      },
+      {
+        "name": "Tay-Rong Chang",
+        "affiliation": null
+      },
+      {
+        "name": "Pavlo Sukhachov",
+        "affiliation": null
+      },
+      {
+        "name": "Guang Bian",
+        "affiliation": null
+      }
+    ],
+    "summary": "Altermagnetic (AM) compounds have recently emerged as a promising platform for realizing unconventional quantum phases, enabled by their unique spin-split band structure at zero net magnetization. Here, we present a first-principles investigation of magnetically intercalated transition metal dichalcogenides (TMDs) of the form XY$_4$Z$_8$ (X $=$ Mn, Fe, Co, Ni, Cr, or V; Y $=$ Nb or Ta; and Z $=$ Se or S), identifying a subset of new versatile AM candidates. Our results establish a direct correlation between interatomic geometry, quantified by the ratio of interlayer to intralayer spacing, and the selection of magnetic ground states. Systems with A-type antiferromagnetic order exhibit momentum-dependent spin splitting consistent with AM behavior. Crucially, the combination of the AM spin-splitting and the spin-orbit coupling leads to the emergence of Weyl nodes together with the corresponding topological Fermi arc surface states. Moreover, we identify flat bands near the Fermi level that originate from the intercalant-induced formation of an effective kagome-like sublattice in the TMD layer. These results collectively establish magnetically intercalated TMDs as a promising platform for engineering altermagnetism, flat bands, and Weyl fermions within a single material family, facilitating the development of topological and spintronic applications.",
+    "published_date": "2025-10-24",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses unconventional quantum phases and materials with specific magnetic orders, which aligns with the user's interest in novel electronic and magnetic properties of materials, although it does not directly relate to superconductivity or oxygen vacancies.",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Kagome Flat Band",
+      "Weyl Fermions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.610037624835968,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5823348164558411,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5696268081665039,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.21927v1": {
+    "id": "2510.21927v1",
+    "title": "Temporal Complexity Hierarchies in Solvable Quantum Many-Body Dynamics",
+    "authors": [
+      {
+        "name": "He-Ran Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Ilya Vilkoviskiy",
+        "affiliation": null
+      },
+      {
+        "name": "Dmitry A. Abanin",
+        "affiliation": null
+      }
+    ],
+    "summary": "The influence matrix (IM) provides a powerful framework for characterizing nonequilibrium quantum many-body dynamics by encoding multitime correlations into tensor-network states. Understanding how its computational complexity relates to underlying dynamics is crucial for both theoretical insight and practical utility, yet remains largely unexplored despite a few case studies. Here, we address this question for a family of brickwork quantum circuits ranging from integrable to chaotic regimes. Using tools from geometric group theory, we identify three qualitatively distinct scalings of temporal entanglement entropy, establishing a hierarchy of computational resources required for accurate tensor-network representations of the IM for these models. We further analyze the memory structure of the IM and distinguish between classical and quantum temporal correlations. In particular, for certain examples, we identify effectively classical IMs that admit an efficient Monte Carlo algorithm for computing multitime correlations. In more generic settings without an explicit classical description of the IM, we introduce an operational measure of quantum memory with an experimental protocol, and discuss examples exhibiting long-time genuinely quantum correlations. Our results establish a new connection between quantum many-body dynamics and group theory, providing fresh insights into the complexity of the IM and its intricate connection to the physical characteristics of the dynamics.",
+    "published_date": "2025-10-24",
+    "categories": [
+      "cond-mat.stat-mech",
+      "nlin.SI"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on quantum many-body dynamics and computational complexity, which is a different area than the user's interest in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "influence matrix",
+      "temporal entanglement entropy",
+      "quantum memory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5792661905288696,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5476326942443848,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.5386791229248047,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.20908v1": {
+    "id": "2510.20908v1",
+    "title": "Local-to-Global Entanglement Dynamics by Periodically Driving Impurities",
+    "authors": [
+      {
+        "name": "Zhi-Xing Lin",
+        "affiliation": null
+      },
+      {
+        "name": "Abhinav Prem",
+        "affiliation": null
+      },
+      {
+        "name": "Shinsei Ryu",
+        "affiliation": null
+      },
+      {
+        "name": "Bastien Lapierre",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study the entanglement dynamics of a one-dimensional spin chain subject to a local Floquet drive of a two-site impurity. We uncover a sharp transition in the entanglement dynamics as a function of the driving frequency. For large drive periods $T$, we observe a linear growth in entanglement entropy (EE), indicating a heating phase with volume law entanglement. Surprisingly, for driving periods below a critical value $T_\\ast$, the EE grows subextensively with time, characteristic of a local quantum quench. In the non-interacting limit, we analytically trace the origin of this phenomenon to a transition in the single-particle Floquet quasi-energy spectrum. We also find that for $T>T_*$, the so-called ``average energy\" operator develops non-local, rainbow-like couplings that are responsible for the rapid entanglement growth in the heating phase, but remains local for $T<T_*$. Using extensive matrix-product-state simulations, we show that the non-heating phase and the subextensive entanglement growth persist in the presence of weak interactions for numerically accessible timescales. Our results establish that local Floquet engineering can generate emergent bulk phenomena, shedding new light on energy localization and thermalization in driven many-body systems.",
+    "published_date": "2025-10-23",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on entanglement dynamics in driven spin chains, which is significantly different from the user's interests in superconductivity, oxides, and topological materials.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Floquet drive",
+      "entanglement entropy",
+      "thermalization"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5522508025169373,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5419806241989136,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.5383749008178711,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
