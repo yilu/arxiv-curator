@@ -74958,5 +74958,511 @@
     "discovery_sources": [
       "dmrg_preprints"
     ]
+  },
+  "2510.24405v1": {
+    "id": "2510.24405v1",
+    "title": "Charge stripe and superconductivity tuned by interlayer interaction in a sign-problem-free bilayer extended Hubbard model",
+    "authors": [
+      {
+        "name": "Runyu Ma",
+        "affiliation": null
+      },
+      {
+        "name": "Zenghui Fan",
+        "affiliation": null
+      },
+      {
+        "name": "Hongxin Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Tianxing Ma",
+        "affiliation": null
+      },
+      {
+        "name": "Hai-Qing Lin",
+        "affiliation": null
+      }
+    ],
+    "summary": "Competing orders represent a central challenge in understanding strongly correlated systems. In this work, we employ projector quantum Monte Carlo simulations to study a sign-problem-free bilayer extended Hubbard model. In this model, a charge stripe phase, characterized by a peak at momentum $k_x=2\\pi\\delta$ is induced by highly anisotropic interlayer spin-exchange coupling $J_z$, and strongly suppressed upon introducing the spin-flip term $J_\\bot$; in contrast, \\(J_\\perp\\) favors the emergence of interlayer pairing superconductivity. We further demonstrate that the anisotropy of the interlayer spin-exchange directly governs the competition between these two phases, while the on-site interaction \\(U\\) plays a complex role in tuning both the charge stripe and superconductivity. Our work identifies the key factors driving charge stripe formation, highlights the sensitivity of both the charge stripe and superconducting phases to interaction parameters, and thereby provides valuable insights into competing orders in strongly correlated systems.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses charge stripe order and superconductivity in a correlated system, which aligns with the user's interest in unconventional superconductivity and correlated electron physics, particularly given their previous interest in charge correlations and nickelates.",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "charge stripe order",
+      "interlayer interaction",
+      "quantum Monte Carlo"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6511036157608032,
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC"
+      },
+      {
+        "score": 0.6392870545387268,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.6237320303916931,
+        "liked_paper_id": "2506.14703v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24523v1": {
+    "id": "2510.24523v1",
+    "title": "Unsupervised Machine-Learning Pipeline for Data-Driven Defect Detection and Characterisation: Application to Displacement Cascades",
+    "authors": [
+      {
+        "name": "Samuel Del Fr\u00e9",
+        "affiliation": null
+      },
+      {
+        "name": "Andr\u00e9e de Backer",
+        "affiliation": null
+      },
+      {
+        "name": "Christophe Domain",
+        "affiliation": null
+      },
+      {
+        "name": "Ludovic Thuinet",
+        "affiliation": null
+      },
+      {
+        "name": "Charlotte S. Becquart",
+        "affiliation": null
+      }
+    ],
+    "summary": "Neutron irradiation produces, within a few picoseconds, displacement cascades that are sequences of atomic collisions generating point and extended defects which subsequently affects the long-term evolution of materials. The diversity of these defects, characterized morphologically and statistically, defines what is called the \"primary damage\". In this work, we present a fully unsupervised machine learning (ML) workflow that detects and classifies these defects directly from molecular dynamics data. Local environments are encoded by the Smooth Overlap of Atomic Positions (SOAP) vector, anomalous atoms are isolated with autoencoder neural networks (AE), embedded with Uniform Manifold Approximation and Projection (UMAP) and clustered using Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN). Applied to 80 keV displacement cascades in Ni, Fe$_7$0Ni$_{10}$Cr$_{20}$, and Zr, the AE successfully identify the small fraction of outlier atoms that participate in defect formation. HDBSCAN then partitions the UMAP latent space of AE-flagged SOAP descriptors into well defined groups representing vacancy- and interstitial-dominated regions and, within each, separates small from large aggregates, assigning 99.7 % of outliers to compact physical motifs. A signed cluster-identification score confirms this separation, and cluster size scales with net defect counts (R2 > 0.89). Statistical cross analyses between the ML outlier map and several conventional detectors (centrosymmetry, dislocation extraction, etc.) reveal strong overlap and complementary coverage, all achieved without template or threshold tuning. This ML workflow thus provides an efficient tool for the quantitative mapping of structural anomalies in materials, particularly those arising from irradiation damage in displacement cascades.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in materials and defects, this paper focuses on using machine learning to identify defects, which is a methodological rather than a materials-specific focus.",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "displacement cascades",
+      "machine learning",
+      "defect detection"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4545443654060364,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.4428919553756714,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.33177536725997925,
+        "liked_paper_id": "2506.11222v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24322v1": {
+    "id": "2510.24322v1",
+    "title": "Non-equilibrium correlation effects in spin transport through the 2D ferromagnet Fe$_4$GeTe$_2$",
+    "authors": [
+      {
+        "name": "Declan Nell",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano Sanvito",
+        "affiliation": null
+      },
+      {
+        "name": "Andrea Droghetti",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding non-equilibrium spin transport through 2D ferromagnets is a theoretical challenge, as correlations produce a complex electronic structure with coexisting itinerant and localized electrons. We have developed a fully non-equilibrium ab initio method, combining density functional theory, dynamical mean-field theory, and non-equilibrium Green's functions to investigate the transport in Fe$_4$GeTe$_2$, a prototypical high-temperature 2D ferromagnet. We show that, while spin transport remains essentially single-particle under moderate bias, inelastic spin-dependent scattering of carriers with particle-hole excitations drives a distinctive hot-correlated electron regime beyond a critical voltage. This regime is marked by incoherent features in both the electronic spectrum and the conductance, which are experimentally accessible. Our results demonstrates that material-specific many-body non-equilibrium methods are essential for a complete understanding of spin transport in 2D ferromagnets.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper uses dynamical mean-field theory and discusses correlated electron systems, which aligns with the user's interest in DMFT and related materials.",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "suggested_keywords": [
+      "2D ferromagnet",
+      "spin transport",
+      "non-equilibrium Green's functions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5777418613433838,
+        "liked_paper_id": "2506.18973v1"
+      },
+      {
+        "score": 0.5645652413368225,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5573786497116089,
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23061v1": {
+    "id": "2510.23061v1",
+    "title": "Effects of particle-hole fluctuations on the superfluid transition in two-dimensional atomic Fermi gases",
+    "authors": [
+      {
+        "name": "Junru Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Zongpu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Lin Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Kaichao Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Chuping Li",
+        "affiliation": null
+      },
+      {
+        "name": "Yuxuan Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Pengyi Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Dingli Yuan",
+        "affiliation": null
+      },
+      {
+        "name": "Qijin Chen",
+        "affiliation": null
+      }
+    ],
+    "summary": "Proper treatment of the many-body interactions is of paramount importance in our understanding of strongly correlated systems. Here we investigate the effects of particle-hole fluctuations on the Berezinskii-Kosterlitz-Thouless (BKT) transition in two-dimensional Fermi gases throughout the entire BCS-BEC crossover. We include self-consistently in the self energy treatment the entire particle-hole $T$ matrix, which constitutes a renormalization of the bare interaction that appears in the particle-particle scattering $T$ matrix, leading to a screening of the pairing interaction and hence a dramatic reduction of the pairing gap and the transition temperature. The BKT transition temperature $T_\\text{BKT}$ is determined by the critical phase space density, for which the pair density and pair mass are determined using a pairing fluctuation theory, which accommodates self-consistently the important self-energy feedback in the treatment of finite-momentum pairing fluctuations. The screening strength varies continuously from its maximum in the BCS limit to essentially zero in BEC limit. In the unitary regime, it leads to an interaction-dependent shift of $T_\\text{BKT}$ towards the BEC regime. This shift is crucial in an attempt to explain experimental data quantitatively, which often depends on the interaction strength. Our findings are consistent with available experimental results in the unitary and BEC regimes and with quantum Monte Carlo simulations in the BCS and unitary regimes.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses many-body interactions in Fermi gases, it doesn't directly overlap with the user's liked papers on nickelates, cuprates, or topological semimetals, though it does share some overlap with strongly correlated systems.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Fermi gases",
+      "BCS-BEC crossover",
+      "Particle-hole fluctuations"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5619192719459534,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5495582222938538,
+        "liked_paper_id": "2506.16503v1"
+      },
+      {
+        "score": 0.5333796739578247,
+        "liked_paper_id": "2507.00837v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24270v1": {
+    "id": "2510.24270v1",
+    "title": "Signatures of superconducting pairing driven by electron-electron interactions in moir\u00e9 WSe$_2$/WSe$_2$ homobilayer modelled by Hubbard Hamiltonian",
+    "authors": [
+      {
+        "name": "Andrzej Biborski",
+        "affiliation": null
+      },
+      {
+        "name": "Micha\u0142 Zegrodnik",
+        "affiliation": null
+      }
+    ],
+    "summary": "Strong evidence of unconventional superconductivity has been very recently reported experimentally in twisted transition metal dichalcogenide bilayer and gathered a significant amount of interest. Here we consider the Hubbard model on a triangular lattice describing the hole-doped moir\\'e superlattice emerging in WSe$_{2}$/WSe$_{2}$ twisted homobilayer in the moderately correlated regime. By applying the Density Matrix Renormalization Group, we diagonalize the spin-valley-polarized Hamiltonian and show signatures of coexisting singlet and triplet pairings in the range of hole dopings and displacement fields reported in the experiments. In this view, we show that the superconductivity in the WSe$_{2}$/WSe$_{2}$ twisted homobilayer is likely to be induced by electronic correlations and has a mixed-symmetry character. These predictions can shed light on the nature of the superconducting state observed in the twisted homobilayer of WSe$_{2}$/WSe$_{2}$. We also identify the emerging superconducting orders, which are $d_{xy}(d_{x^2-y^2} \\pm id_{xy} )$ and $p_y(p_{x}\\mp ip_{y})$ for the singlet and triplet channels in the cylinder of width three(four), respectively.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1103/kdpn-5g9d",
+    "score": 0.7,
+    "reasoning": "The paper explores unconventional superconductivity in a moir\u00e9 system, which aligns with previous interests in superconductivity, correlated electron systems, and novel materials.",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Moir\u00e9 Superlattice",
+      "Unconventional Superconductivity",
+      "Hubbard Model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6165246367454529,
+        "liked_paper_id": "2506.22435v1"
+      },
+      {
+        "score": 0.6117163896560669,
+        "liked_paper_id": "2506.13399v1"
+      },
+      {
+        "score": 0.6103712916374207,
+        "liked_paper_id": "2506.18973v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24686v1": {
+    "id": "2510.24686v1",
+    "title": "A light-induced charge order mode in a metastable cuprate ladder",
+    "authors": [
+      {
+        "name": "Hari Padma",
+        "affiliation": null
+      },
+      {
+        "name": "Prakash Sharma",
+        "affiliation": null
+      },
+      {
+        "name": "Sophia F. R. TenHuisen",
+        "affiliation": null
+      },
+      {
+        "name": "Filippo Glerean",
+        "affiliation": null
+      },
+      {
+        "name": "Antoine Roll",
+        "affiliation": null
+      },
+      {
+        "name": "Pan Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Sarbajaya Kundu",
+        "affiliation": null
+      },
+      {
+        "name": "Arnau Romaguera",
+        "affiliation": null
+      },
+      {
+        "name": "Elizabeth Skoropata",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroki Ueda",
+        "affiliation": null
+      },
+      {
+        "name": "Biaolong Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Eugenio Paris",
+        "affiliation": null
+      },
+      {
+        "name": "Yu Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Seng Huat Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiqiang Mao",
+        "affiliation": null
+      },
+      {
+        "name": "Mark P. M. Dean",
+        "affiliation": null
+      },
+      {
+        "name": "Edwin W. Huang",
+        "affiliation": null
+      },
+      {
+        "name": "Elia Razzoli",
+        "affiliation": null
+      },
+      {
+        "name": "Yao Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Matteo Mitrano",
+        "affiliation": null
+      }
+    ],
+    "summary": "We report the observation of an emergent charge order mode in the optically-excited cuprate ladder Sr$_{14}$Cu$_{24}$O$_{41}$. Near-infrared light in the ladder plane drives a symmetry-protected electronic metastable state together with a partial melting of the equilibrium charge order. Our time-resolved resonant inelastic x-ray scattering measurements at the upper Hubbard band reveal a gapless collective excitation dispersing from the charge-order wavevector up to 0.8 eV with a slope on the order of the quasiparticle velocity. These findings reveal a regime where correlated carriers acquire itinerant character at finite momentum, and charge order becomes dynamically fluctuating, offering a platform to explore light-induced pairing instabilities.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses charge order and collective excitations in a cuprate material, aligning with the user's interest in charge correlations, cuprates, and related phenomena in superconductors.",
+    "matching_keywords": [
+      "cuprate",
+      "resonant inelastic x-ray scattering"
+    ],
+    "suggested_keywords": [
+      "charge order mode",
+      "cuprate ladder",
+      "light-induced metastability"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6237271428108215,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      },
+      {
+        "score": 0.6099047660827637,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.5593942999839783,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24465v1": {
+    "id": "2510.24465v1",
+    "title": "Strain Engineering of van Hove Singularity and Coupled Itinerant Ferromagnetism in Quasi-2D Oxide Superlattices",
+    "authors": [
+      {
+        "name": "Seung Gyo Jeong",
+        "affiliation": null
+      },
+      {
+        "name": "Minjae Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Jin Young Oh",
+        "affiliation": null
+      },
+      {
+        "name": "Youngeun Ham",
+        "affiliation": null
+      },
+      {
+        "name": "In Hyeok Choi",
+        "affiliation": null
+      },
+      {
+        "name": "Seong Won Cho",
+        "affiliation": null
+      },
+      {
+        "name": "Jihyun Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Huimin Jeong",
+        "affiliation": null
+      },
+      {
+        "name": "Byungmin Sohn",
+        "affiliation": null
+      },
+      {
+        "name": "Tuson Park",
+        "affiliation": null
+      },
+      {
+        "name": "Suyoun Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Jong Seok Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Deok-Yong Cho",
+        "affiliation": null
+      },
+      {
+        "name": "Bongjae Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Woo Seok Choi",
+        "affiliation": null
+      }
+    ],
+    "summary": "Engineering van Hove singularities (vHss) near the Fermi level, if feasible, offers a powerful route to control exotic quantum phases in electronic and magnetic behaviors. However, conventional approaches, which rely primarily on chemical and electrical doping, focus mainly on local electrical or optical measurements, limiting their applicability to coupled functionalities. In this study, a vHs-induced insulator-metal transition coupled with a ferromagnetic phase transition was empirically achieved in atomically designed quasi-2D SrRuO3 (SRO) superlattices via epitaxial strain engineering, which has not been observed in conventional 3D SRO systems. Theoretical calculations revealed that epitaxial strain effectively modulates the strength and energy positions of vHs of specific Ru orbitals, driving correlated phase transitions in the electronic and magnetic ground states. X-ray absorption spectroscopy confirmed the anisotropic electronic structure of quasi-2D SRO modulated by epitaxial strain. Magneto-optic Kerr effect and electrical transport measurements demonstrated modulated magnetic and electronic phases. Furthermore, magneto-electrical measurements detected significant anomalous Hall effect signals and ferromagnetic magnetoresistance, indicating the presence of magnetically coupled charge carriers in the 2D metallic regime. This study establishes strain engineering as a promising platform for tuning vHss and resultant itinerant ferromagnetism of low-dimensional correlated quantum systems.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "doi": "10.1063/5.0283547",
+    "score": 0.7,
+    "reasoning": "The paper discusses correlated quantum systems and phase transitions in oxides, relating to previous papers on superconductivity, electronic structure, and correlated materials.",
+    "matching_keywords": [
+      "x-ray absorption spectroscopy"
+    ],
+    "suggested_keywords": [
+      "van Hove singularity",
+      "strain engineering",
+      "itinerant ferromagnetism"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6057165861129761,
+        "liked_paper_id": "yBtX0C4AAAAJ:isC4tDSrTZIC"
+      },
+      {
+        "score": 0.5828415751457214,
+        "liked_paper_id": "yBtX0C4AAAAJ:vV6vV6tmYwMC"
+      },
+      {
+        "score": 0.566128134727478,
+        "liked_paper_id": "yBtX0C4AAAAJ:5nxA0vEk-isC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
