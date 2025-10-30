@@ -75246,7 +75246,9 @@
         "liked_paper_id": "2506.18973v1"
       }
     ],
-    "discovery_sources": []
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   },
   "2510.24686v1": {
     "id": "2510.24686v1",
@@ -75461,6 +75463,664 @@
       {
         "score": 0.566128134727478,
         "liked_paper_id": "yBtX0C4AAAAJ:5nxA0vEk-isC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24137v1": {
+    "id": "2510.24137v1",
+    "title": "Matrix product state approach to lossy boson sampling and noisy IQP sampling",
+    "authors": [
+      {
+        "name": "Sojeong Park",
+        "affiliation": null
+      },
+      {
+        "name": "Changhun Oh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Sampling problems have emerged as a central avenue for demonstrating quantum advantage on noisy intermediate-scale quantum devices. However, physical noise can fundamentally alter their computational complexity, often making them classically tractable. Motivated by the recent success of matrix product state (MPS)-based classical simulation of Gaussian boson sampling (Oh et al., 2024), we extend this framework to investigate the classical simulability of other noisy quantum sampling models. We develop MPS-based classical algorithms for lossy boson sampling and noisy instantaneous quantum polynomial-time (IQP) sampling, both of which retain the tunable accuracy characteristic of the MPS approach through the bond dimension. Our approach constructs pure-state decompositions of noisy or lossy input states whose components remain weakly entangled after circuit evolution, thereby providing a means to systematically explore the boundary between quantum-hard and classically-simulable regimes. For boson sampling, we analyze single-photon, Fock, and cat-state inputs, showing that classical simulability emerges at transmission rates scaling as $O(1/\\sqrt{N})$, reaching the known boundary of quantum advantage with a tunable and scalable method. Beyond reproducing previous thresholds, our algorithm offers significantly improved control over the accuracy-efficiency trade-off. It further extends the applicability of MPS-based simulation to broader classes of noisy quantum sampling models, including IQP circuits.",
+    "published_date": "2025-10-28",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and simulation techniques, which is a departure from the user's previously liked papers on condensed matter physics and materials science.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "Matrix product state",
+      "Quantum sampling",
+      "Classical simulation"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5127146244049072,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5007917284965515,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.4895648956298828,
+        "liked_paper_id": "2506.23550v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.23720v1": {
+    "id": "2510.23720v1",
+    "title": "Chiral gapped states are universally non-topological",
+    "authors": [
+      {
+        "name": "Xiang Li",
+        "affiliation": null
+      },
+      {
+        "name": "Ting-Chun Lin",
+        "affiliation": null
+      },
+      {
+        "name": "Yahya Alavirad",
+        "affiliation": null
+      },
+      {
+        "name": "John McGreevy",
+        "affiliation": null
+      }
+    ],
+    "summary": "We propose an operator generalization of the Li-Haldane conjecture regarding the entanglement Hamiltonian of a disk in a 2+1D chiral gapped groundstate. The logic applies to regions with sharp corners, from which we derive several universal properties regarding corner entanglement. These universal properties follow from a set of locally-checkable conditions on the wavefunction. We also define a quantity $(\\mathfrak{c}_{\\text{tot}})_{\\text{min}}$ that reflects the robustness of corner entanglement contributions, and show that it provides an obstruction to a gapped boundary. One reward from our analysis is that we can construct a local gapped Hamiltonian within the same chiral gapped phase from a given wavefunction; we conjecture that it is closer to the low-energy renormalization group fixed point than the original parent Hamiltonian. Our analysis of corner entanglement reveals the emergence of a universal conformal geometry encoded in the entanglement structure of bulk regions of chiral gapped states that is not visible in topological field theory.",
+    "published_date": "2025-10-27",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user is interested in topological materials and superconductivity, this paper focuses on theoretical aspects of chiral gapped states and entanglement, which have limited overlap with the user's past interests.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "chiral gapped states",
+      "entanglement Hamiltonian",
+      "corner entanglement"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5402095913887024,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5330917835235596,
+        "liked_paper_id": "2507.00386v1"
+      },
+      {
+        "score": 0.49161627888679504,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.24681v1": {
+    "id": "2510.24681v1",
+    "title": "Renormalization-group-based preparation of matrix product states on up to 80 qubits",
+    "authors": [
+      {
+        "name": "Moritz Scheer",
+        "affiliation": null
+      },
+      {
+        "name": "Alberto Baiardi",
+        "affiliation": null
+      },
+      {
+        "name": "Elisa B\u00e4umer Marty",
+        "affiliation": null
+      },
+      {
+        "name": "Zhi-Yuan Wei",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Malz",
+        "affiliation": null
+      }
+    ],
+    "summary": "A key challenge for quantum computers is the efficient preparation of many-body entangled states across many qubits. In this work, we demonstrate the preparation of matrix product states (MPS) using a renormalization-group(RG)-based quantum algorithm on superconducting quantum hardware. Compared to sequential generation, it has been shown that the RG-based protocol asymptotically prepares short-range correlated MPS with an exponentially shallower circuit depth (when scaling system size), but it is not yet clear for which system sizes it starts to convey an advantage. We thus apply this algorithm to prepare a class of MPS exhibiting a phase transition between a symmetry-protected topological (SPT) and a trivial phase for systems of up to 80 qubits. We find that the reduced depth of the RG-based circuits makes them more resilient to noise, and that they generally outperform the sequential circuits for large systems, as we showcase by measuring string-order-like local expectation values and energy densities. We thus demonstrate that the RG-based protocol enables large-scale preparation of MPS and, in particular, SPT-ordered states beyond the fixed point.",
+    "published_date": "2025-10-28",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum computing and matrix product states, a departure from the user's interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "suggested_keywords": [
+      "matrix product states",
+      "quantum algorithm",
+      "superconducting qubits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.56248539686203,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.546057939529419,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5142594575881958,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.25539v1": {
+    "id": "2510.25539v1",
+    "title": "Quantum Spin Liquids Stabilized by Disorder in Non-Kramers Pyrochlores",
+    "authors": [
+      {
+        "name": "Marcus V. Marinho",
+        "affiliation": null
+      },
+      {
+        "name": "Eric C. Andrade",
+        "affiliation": null
+      }
+    ],
+    "summary": "This study investigates the emergence of quantum spin liquid phases in pyrochlore oxides with non-Kramers ions, driven by structural randomness that effectively acts as a transverse field, introducing quantum fluctuations on top of the spin ice manifold. This is contrary to the naive expectation that disorder favors phases with short-range entanglement by adjusting the spins with their local environment. Given this unusual situation, it is essential to assess the stability of the spin-liquid phase with respect to the disorder. To perform this study, a minimal model for disordered quantum spin ice, the transverse-field Ising model, is analyzed using a formulation of gauge mean-field theory (GMFT) directly in real space. This approach allows the inclusion of disorder effects exactly and provides access to non-perturbative effects. The analysis shows that the quantum spin ice remains remarkably stable with respect to disorder up to the transition to the polarized phase at high fields, indicating that it can occur in real materials. Moreover, the Griffiths region of enhanced disorder-induced fluctuations appears tiny and restricted to the immediate vicinity of this transition due to the uniqueness of the low-energy excitations of the problem. For most of the phase diagram, an average description of the disorder captures the physical behavior well, indicating that the inhomogeneous quantum spin ice behaves closely to its homogeneous counterpart.",
+    "published_date": "2025-10-29",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "While the user showed interest in correlated electron systems and novel materials, this paper focuses on quantum spin liquids and disorder effects, which are somewhat related but not a direct match to the previous interests.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "Quantum spin ice",
+      "Disorder effects",
+      "Gauge mean-field theory"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5921627283096313,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5469518899917603,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5362986326217651,
+        "liked_paper_id": "2506.15516v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.24218v1": {
+    "id": "2510.24218v1",
+    "title": "Pilot-Wave Simulator: Exact Classical Sampling from Ideal and Noisy Quantum Circuits up to Hundreds of Qubits",
+    "authors": [
+      {
+        "name": "Gleb Kalachev",
+        "affiliation": null
+      },
+      {
+        "name": "Pavel Mosharev",
+        "affiliation": null
+      },
+      {
+        "name": "Zuoheng Zou",
+        "affiliation": null
+      },
+      {
+        "name": "Pavel Panteleev",
+        "affiliation": null
+      },
+      {
+        "name": "Man-Hong Yung",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum circuit simulators running on classical computers offer a vital platform for designing, testing, and optimizing quantum algorithms, driving innovation despite limited access to real quantum hardware. However, their scalability is inherently constrained by exponential memory and computational overhead, which restricts accurate simulation of large-scale quantum circuits and often results in approximate output distributions. Here, we propose an exact sampling algorithm that integrates tensor network contraction techniques with a Markov process, wherein a classical state evolves according to the local structure of the quantum circuit. As a demonstration, we target the challenge of generating samples from ideal and noisy QAOA circuits with up to 476 qubits, incorporating both depolarizing and amplitude damping noise models. These results enable further validation of several assumptions and conjectures at a scale previously out of reach, significantly expanding the scope of classical simulation in quantum algorithm research.",
+    "published_date": "2025-10-28",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum circuit simulation, which is not closely related to the user's previous interests in condensed matter physics, superconductivity, and topological materials.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "quantum circuit simulation",
+      "tensor network contraction",
+      "noisy QAOA circuits"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5836849212646484,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.5136332511901855,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.5060228109359741,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.24713v2": {
+    "id": "2510.24713v2",
+    "title": "Distinct Types of Parent Hamiltonians for Quantum States: Insights from the $W$ State as a Quantum Many-Body Scar",
+    "authors": [
+      {
+        "name": "Lei Gioia",
+        "affiliation": null
+      },
+      {
+        "name": "Sanjay Moudgalya",
+        "affiliation": null
+      },
+      {
+        "name": "Olexei I. Motrunich",
+        "affiliation": null
+      }
+    ],
+    "summary": "The construction of parent Hamiltonians that possess a given state as their ground state is a well-studied problem. In this work, we generalize this notion by considering simple quantum states and examining the local Hamiltonians that have these states as exact eigenstates. These states often correspond to Quantum Many-Body Scars (QMBS) of their respective parent Hamiltonians. Motivated by earlier works on Hamiltonians with QMBS, in this work we formalize the differences between three distinct types of parent Hamiltonians, which differ in their decompositions into strictly local terms with the same eigenstates. We illustrate this classification using the $W$ state as the primary example, for which we rigorously derive the complete set of local parent Hamiltonians, which also allows us to establish general results such as the existence of asymptotic QMBS, and distinct dynamical signatures associated with the different parent Hamiltonian types. Finally, we derive more general results on the parent Hamiltonian types that allow us to obtain some immediate results for simple quantum states such as product states, where only a single type exists, and for short-range-entangled states, for which we identify constraints on the admissible types. Altogether, our work opens the door to classifying the rich structures and dynamical properties of parent Hamiltonians that arise from the interplay between locality and QMBS.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "math.MP"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum many-body scars and parent Hamiltonians, which is a different area than the user's liked papers on superconductivity, nickelates, and Dirac fermions.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Quantum Many-Body Scars",
+      "Parent Hamiltonians",
+      "W state"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5007823705673218,
+        "liked_paper_id": "2506.23550v1"
+      },
+      {
+        "score": 0.4654328227043152,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.4640154540538788,
+        "liked_paper_id": "2506.21431v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.24964v1": {
+    "id": "2510.24964v1",
+    "title": "Magneto-optical spectroscopy based on pump-probe strobe light",
+    "authors": [
+      {
+        "name": "Shihao Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Yujie Zhu",
+        "affiliation": null
+      },
+      {
+        "name": "Chunli Tang",
+        "affiliation": null
+      },
+      {
+        "name": "Rui Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Junming Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Yuzan Xiong",
+        "affiliation": null
+      },
+      {
+        "name": "Ingrid E. Russell",
+        "affiliation": null
+      },
+      {
+        "name": "Yi Li",
+        "affiliation": null
+      },
+      {
+        "name": "Dali Sun",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Tsui",
+        "affiliation": null
+      },
+      {
+        "name": "Binbin Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Valentine Novosad",
+        "affiliation": null
+      },
+      {
+        "name": "Jia-Mian Hu",
+        "affiliation": null
+      },
+      {
+        "name": "Wencan Jin",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "We demonstrate a pump-probe strobe light spectroscopy for sensitive detection of magneto-optical dynamics in the context of hybrid magnonics. The technique uses a combinatorial microwave-optical pump-probe scheme, leveraging both the high-energy resolution of microwaves and the high-efficiency detection using optical photons. In contrast to conventional stroboscopy using a continuous-wave light, we apply microwave and optical pulses with varying pulse widths, and demonstrate magnetooptical detection of magnetization dynamics in Y3Fe5O12 films. The detected magneto-optical signals strongly depend on the characteristics of both the microwave and the optical pulses as well as their relative time delays. We show that good magneto-optical sensitivity and coherent stroboscopic character are maintained even at a microwave pump pulse of 1.5 ns and an optical probe pulse of 80 ps, under a 7 megahertz clock rate, corresponding to a pump-probe footprint of ~1% in one detection cycle. Our results show that time-dependent strobe light measurement of magnetization dynamics can be achieved in the gigahertz frequency range under a pump-probe detection scheme.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the paper discusses magneto-optical effects, which could be relevant to correlated electron systems, it focuses more on the experimental technique than on the materials science aspects of the user's liked papers.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "Magneto-optical spectroscopy",
+      "Pump-probe technique",
+      "Hybrid magnonics"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4244380295276642,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.3838556110858917,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      },
+      {
+        "score": 0.3666914999485016,
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.25767v1": {
+    "id": "2510.25767v1",
+    "title": "Superconductivity in overdoped cuprates can be understood from a BCS perspective!",
+    "authors": [
+      {
+        "name": "B. J. Ramshaw",
+        "affiliation": null
+      },
+      {
+        "name": "Steven A. Kivelson",
+        "affiliation": null
+      }
+    ],
+    "summary": "We summarize key experimental studies of the low energy properties of overdoped cuprate high temperature superconductors and conclude that a theoretical understanding of the \"essential physics\" is achievable in terms of a conventional Fermi-liquid treatment of the normal state, and a BCS mean-field treatment of the (d-wave) superconducting state. For this perspective to be consistent, it is necessary to posit that there is a crossover from a strongly correlated underdoped regime (where a different theoretical perspective is necessary) to the more weakly correlated overdoped regime. It is also necessary to argue that the various observed features of the overdoped materials that are inconsistent with this perspective can be attributed to the expected effects of the intrinsic disorder associated with most of the materials being solid state solutions (alloys). As a test of this idea, we make a series of falsifiable predictions concerning the expected behavior of \"ideal\" (disorder free) overdoped cuprates.",
+    "published_date": "2025-10-29",
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses superconductivity in cuprates, a topic present in the user's liked papers, although it focuses on the overdoped regime and a BCS perspective which might be a different approach.",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "suggested_keywords": [
+      "overdoped cuprates",
+      "BCS theory",
+      "disorder effects"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.618828535079956,
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC"
+      },
+      {
+        "score": 0.5987589359283447,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.5889235734939575,
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23919v1": {
+    "id": "2510.23919v1",
+    "title": "Thermal nature of confining strings",
+    "authors": [
+      {
+        "name": "Sebastian Grieninger",
+        "affiliation": null
+      },
+      {
+        "name": "Dmitri E. Kharzeev",
+        "affiliation": null
+      },
+      {
+        "name": "Eliana Marroquin",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the quantum statistical properties of the confining string connecting a static fermion-antifermion pair in the massive Schwinger model. By analyzing the reduced density matrix of the subsystem located in between the fermion and antifermion, we demonstrate that as the interfermion separation approaches the string-breaking distance, the overlap between the microscopic density matrix and an effective thermal density matrix exhibits a pronounced, narrow peak, approaching unity at the onset of string breaking. This behavior reveals that the confining flux tube evolves toward a genuinely thermal state as the separation between the charges grows, even in the absence of an external heat bath. In other words, one cannot tell whether a reduced state of the subsystem arises from a surrounding heat bath or from entanglement with the rest of the system. The entanglement spectrum near the critical string-breaking distance exhibits a rapid transition from the dominance of a single state describing the confining electric string towards a strongly entangled state containing virtual fermion-antifermion pairs. Our findings establish a quantitative link between confinement, entanglement, and emergent thermality, and suggest that string breaking corresponds to a microscopic thermalization transition within the flux tube.",
+    "published_date": "2025-10-27",
+    "categories": [],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on quantum statistical properties of confining strings in the Schwinger model, a topic unrelated to the user's previously liked papers on condensed matter physics and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Confining strings",
+      "Schwinger model",
+      "String breaking"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4816274344921112,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.4745967388153076,
+        "liked_paper_id": "2506.21480v1"
+      },
+      {
+        "score": 0.4588199853897095,
+        "liked_paper_id": "2506.22302v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.25022v1": {
+    "id": "2510.25022v1",
+    "title": "Finite-Temperature Study of the Hubbard Model via Enhanced Exponential Tensor Renormalization Group",
+    "authors": [
+      {
+        "name": "Changkai Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Jan von Delft",
+        "affiliation": null
+      }
+    ],
+    "summary": "The two-dimensional (2D) Hubbard model has long attracted interest for its rich phase diagram and its relevance to high-$T_c$ superconductivity. However, reliable finite-temperature studies remain challenging due to the exponential complexity of many-body interactions. Here, we introduce an enhanced $1\\text{s}^+$ eXponential Tensor Renormalization Group algorithm that enables efficient finite-temperature simulations of the 2D Hubbard model. By exploring an expanded space, our approach achieves two-site update accuracy at the computational cost of a one-site update, and delivers up to 50% acceleration for Hubbard-like systems, which enables simulations down to $T\\!\\approx\\!0.004t$. This advance permits a direct investigation of superconducting order over a wide temperature range and facilitates a comparison with zero-temperature infinite Projected Entangled Pair State simulations. Finally, we compile a comprehensive dataset of snapshots spanning the relevant region of the phase diagram, providing a valuable reference for Artificial Intelligence-driven analyses of the Hubbard model and a comparison with cold-atom experiments.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper directly studies the Hubbard model, which is relevant to high-Tc superconductivity, a topic of interest based on the user's liked papers.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "Hubbard model",
+      "Tensor Renormalization Group",
+      "High-Tc Superconductivity"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6572754383087158,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.6565178036689758,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.6312540173530579,
+        "liked_paper_id": "2506.16503v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.23618v1": {
+    "id": "2510.23618v1",
+    "title": "Repulsively Bound Hadrons in a $\\mathbb{Z}_2$ Lattice Gauge Theory",
+    "authors": [
+      {
+        "name": "Sayak Guha Roy",
+        "affiliation": null
+      },
+      {
+        "name": "Vaibhav Sharma",
+        "affiliation": null
+      },
+      {
+        "name": "Kaidi Xu",
+        "affiliation": null
+      },
+      {
+        "name": "Umberto Borla",
+        "affiliation": null
+      },
+      {
+        "name": "Jad C. Halimeh",
+        "affiliation": null
+      },
+      {
+        "name": "Kaden R. A. Hazzard",
+        "affiliation": null
+      }
+    ],
+    "summary": "A paradigmatic model, the $\\mathbb{Z}_2$ lattice gauge theory exhibits confinement mediated by the gauge field that binds pairs of particles into mesons, drawing connections to quantum chromodynamics. In the absence of any additional attractive interactions between particles, mesons are not known to bind in this model. Here, we show that resonant pair-production terms give rise to an additional repulsive binding mechanism that forms a stable ``hadron'' bound state of two mesons. A high-energy state, the hadron is stabilized by being off-resonantly coupled to a continuum. We study the dynamical formation of this bound state starting from local excitations. We use matrix product state techniques based on the time-evolving block decimation algorithm to perform our numerical simulations and analyze the effect of model parameters on hadron formation. Furthermore, we derive an effective model that explains its formation. Our findings are amenable to experimental observation on modern quantum hardware from superconducting qubits to trapped ions.",
+    "published_date": "2025-10-21",
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper discusses hadron formation in a Z2 lattice gauge theory, which is unrelated to the user's interests in superconductivity, oxygen vacancies, and topological semimetals.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "Z2 lattice gauge theory",
+      "Repulsive binding",
+      "Matrix product states"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5044384002685547,
+        "liked_paper_id": "2506.14703v1"
+      },
+      {
+        "score": 0.49939048290252686,
+        "liked_paper_id": "2506.15516v1"
+      },
+      {
+        "score": 0.491550087928772,
+        "liked_paper_id": "2508.17292v1"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
+  },
+  "2510.24874v1": {
+    "id": "2510.24874v1",
+    "title": "Molecular simulations of Perovskites CsXI3 (X = Pb,Sn) Using Machine-Learning Interatomic Potentials",
+    "authors": [
+      {
+        "name": "Atefe Ebrahimi",
+        "affiliation": null
+      },
+      {
+        "name": "Franco Pellegrini",
+        "affiliation": null
+      },
+      {
+        "name": "Stefano De Gironcoli",
+        "affiliation": null
+      }
+    ],
+    "summary": "Cesium based halide perovskites, such as CsPbI3 and CsSnI3, have emerged as exceptional candidates for next generation photovoltaic and optoelectronic technologies, but their practical application is limited by temperature dependent phase transitions and structural instabilities. Here, we develop machine learning interatomic potentials within the LATTE framework to simulate these materials with near experimental accuracy at a fraction of the computational cost compared to previous computational studies. Our molecular dynamics simulations based on the trained MLIPs reproduce energies and forces across multiple phases, enabling large scale simulations that capture cubic tetragonal orthorhombic transitions, lattice parameters, and octahedral tilting with unprecedented resolution. We find that Pb based perovskites exhibit larger octahedral tilts and higher phase transition temperatures than Sn based analogues, reflecting stronger bonding and enhanced structural stability, whereas Sn based perovskites display reduced tilts and lower barriers, suggesting tunability through compositional or interface engineering. Beyond these systems, our work demonstrates that MLIPs can bridge first principles accuracy with simulation efficiency, providing a robust framework for exploring phase stability, anharmonicity, and rational design in next generation halide perovskites.",
+    "published_date": "2025-10-28",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "While the user has shown interest in correlated electron systems, this paper focuses on halide perovskites, which are distinct material systems with different underlying physics, hence the lower relevance.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Machine Learning Interatomic Potentials",
+      "Halide Perovskites",
+      "Phase Transitions"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.618982195854187,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.5257245898246765,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5139381885528564,
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC"
       }
     ],
     "discovery_sources": []
