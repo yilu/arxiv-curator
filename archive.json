@@ -78608,5 +78608,112 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2510.26907v2": {
+    "id": "2510.26907v2",
+    "title": "Generative diffusion modeling protocols for improving the Kikuchi pattern indexing in electron back-scatter diffraction",
+    "authors": [
+      {
+        "name": "Meghraj Prajapat",
+        "affiliation": null
+      },
+      {
+        "name": "Alankar Alankar",
+        "affiliation": null
+      }
+    ],
+    "summary": "Electron back-scatter diffraction (EBSD) has traditionally relied upon methods such as the Hough transform and dictionary Indexing to interpret diffraction patterns and extract crystallographic orientation. However, these methods encounter significant limitations, particularly when operating at high scanning speeds, where the exposure time per pattern is decreased beyond the operating sensitivity of CCD camera. Hence the signal to noise ratio decreases for the observed pattern which makes the pattern noisy, leading to reduced indexing accuracy. This research work aims to develop generative machine learning models for the post-processing or on-the-fly processing of Kikuchi patterns which are capable of restoring noisy EBSD patterns obtained at high scan speeds. These restored patterns can be used for the determination of crystal orientations to provide reliable indexing results. We compare the performance of such generative models in enhancing the quality of patterns captured at short exposure times (high scan speeds). An interesting observation is that the methodology is not data-hungry as typical machine learning methods.",
+    "published_date": "2025-10-30",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.CV"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "The paper focuses on electron back-scatter diffraction and generative machine learning models, which are not related to the user's past interests in condensed matter physics and superconductivity.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Electron back-scatter diffraction",
+      "Kikuchi patterns",
+      "Generative machine learning"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3809611201286316,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.30368390679359436,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.2926383316516876,
+        "liked_paper_id": "2506.17015v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2510.26780v2": {
+    "id": "2510.26780v2",
+    "title": "Perfect Particle Transmission through Duality Defects",
+    "authors": [
+      {
+        "name": "Atsushi Ueda",
+        "affiliation": null
+      },
+      {
+        "name": "Vic Vander Linden",
+        "affiliation": null
+      },
+      {
+        "name": "Laurens Lootens",
+        "affiliation": null
+      },
+      {
+        "name": "Jutho Haegeman",
+        "affiliation": null
+      },
+      {
+        "name": "Paul Fendley",
+        "affiliation": null
+      },
+      {
+        "name": "Frank Verstraete",
+        "affiliation": null
+      }
+    ],
+    "summary": "We study wavepackets that propagate across (a) topological interfaces in quantum spin systems exhibiting non-invertible symmetries and (b) duality defects coupling dual theories. We demonstrate that the transmission is always perfect, and that a particle traversing the interface is converted into a nonlocal string-like excitation. We give a systematic way of constructing such a defect by identifying its Hilbert space with the virtual bond dimension of the matrix product operator representing defect lines. Our work both gives an operational meaning to topological interfaces, and provides a lattice analogue of recent results solving the monopole paradox in quantum field theory.",
+    "published_date": "2025-10-30",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper deals with topological interfaces and defects, the focus on quantum spin systems and duality defects differs significantly from the user's interest in correlated electron systems and superconductivity.",
+    "matching_keywords": [],
+    "suggested_keywords": [
+      "duality defects",
+      "topological interfaces",
+      "non-invertible symmetries"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5061397552490234,
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC"
+      },
+      {
+        "score": 0.48813939094543457,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.46479853987693787,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ]
   }
 }
