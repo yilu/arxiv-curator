@@ -83231,5 +83231,1111 @@
       }
     ],
     "discovery_sources": []
+  },
+  "2511.07367v1": {
+    "id": "2511.07367v1",
+    "title": "Machine-Learning Accelerated Calculations of Reduced Density Matrices",
+    "authors": [
+      {
+        "name": "Awwab A. Azam",
+        "affiliation": null
+      },
+      {
+        "name": "Lexu Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Jiabin Yu",
+        "affiliation": null
+      }
+    ],
+    "summary": "$n$-particle reduced density matrices ($n$-RDMs) play a central role in understanding correlated phases of matter. Yet the calculation of $n$-RDMs is often computationally inefficient for strongly-correlated states, particularly when the system sizes are large. In this work, we propose to use neural network (NN) architectures to accelerate the calculation of, and even predict, the $n$-RDMs for large-size systems. The underlying intuition is that $n$-RDMs are often smooth functions over the Brillouin zone (BZ) (certainly true for gapped states) and are thus interpolable, allowing NNs trained on small-size $n$-RDMs to predict large-size ones. Building on this intuition, we devise two NNs: (i) a self-attention NN that maps random RDMs to physical ones, and (ii) a Sinusoidal Representation Network (SIREN) that directly maps momentum-space coordinates to RDM values. We test the NNs in three 2D models: the pair-pair correlation functions of the Richardson model of superconductivity, the translationally-invariant 1-RDM in a four-band model with short-range repulsion, and the translation-breaking 1-RDM in the half-filled Hubbard model. We find that a SIREN trained on a $6\\times 6$ momentum mesh can predict the $18\\times 18$ pair-pair correlation function with a relative accuracy of $0.839$. The NNs trained on $6\\times 6 \\sim 8\\times 8$ meshes can provide high-quality initial guesses for $50\\times 50$ translation-invariant Hartree-Fock (HF) and $30\\times 30$ fully translation-breaking-allowed HF, reducing the number of iterations required for convergence by up to $91.63\\%$ and $92.78\\%$, respectively, compared to random initializations. Our results illustrate the potential of using NN-based methods for interpolable $n$-RDMs, which might open a new avenue for future research on strongly correlated phases.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cs.AI"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses using machine learning to calculate reduced density matrices, which is relevant to understanding correlated phases of matter, a topic of interest based on the user's liked papers.",
+    "matching_keywords": [
+      "hubbard model",
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "reduced density matrices",
+      "neural networks",
+      "correlated phases"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6421033143997192,
+        "liked_paper_id": "2506.11222v1"
+      },
+      {
+        "score": 0.5527032613754272,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.5523718595504761,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.05668v1": {
+    "id": "2511.05668v1",
+    "title": "Single-Atom Photocatalysts on TiO2 : Insights from X-ray Absorption Spectroscopy",
+    "authors": [
+      {
+        "name": "Yingying Li",
+        "affiliation": null
+      },
+      {
+        "name": "David Morris",
+        "affiliation": null
+      },
+      {
+        "name": "Peng Zhang",
+        "affiliation": null
+      }
+    ],
+    "summary": "Surface modification of TiO2 with single-atom catalysts (SACs) is an effective strategy for enhancing photocatalytic efficiency. However, thorough characterization of SACs at the atomic scale remains challenging. X-ray absorption spectroscopy (XAS) offers unique advantages for the in-depth analysis of TiO2-supported SACs. By employing XAS, the local atomic structure, oxidation state, and electronic properties of the SACs, as well as the underlying photocatalytic mechanism, can be revealed. Herein, we present a short review on the application of XAS in studying TiO2-supported SACs. We first elucidate the key role of XAS in simultaneously probing the structure and electronic properties of monometallic SACs across different periods. Next, we discuss XAS studies of bimetallic SACs from the perspective of each constituent element and highlight the element-specific capabilities of XAS for analyzing multi-element SACs. Finally, we demonstrate how in situ XAS can effectively monitor structural and electronic property changes in SACs under real photocatalytic reaction conditions. Additionally, we provide practical suggestions for utilizing XAS more efficiently in the analysis of various SAC systems.",
+    "published_date": "2025-11-07",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "doi": null,
+    "score": 0.5,
+    "reasoning": "The paper involves material science and characterization techniques (XAS) similar to previous papers the user liked, but focuses on photocatalysis rather than superconductivity or topological materials.",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "suggested_keywords": [
+      "Single-atom catalysts",
+      "X-ray absorption spectroscopy",
+      "Photocatalysis"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.45326244831085205,
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC"
+      },
+      {
+        "score": 0.44594186544418335,
+        "liked_paper_id": "2507.00542v1"
+      },
+      {
+        "score": 0.44173336029052734,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06403v1": {
+    "id": "2511.06403v1",
+    "title": "Comprehensive Validation of Replica Symmetry Breaking via Quantum Annealing: From Ground States to Topological Collapse",
+    "authors": [
+      {
+        "name": "Kumar Ghosh",
+        "affiliation": null
+      }
+    ],
+    "summary": "Giorgio Parisi's exact solution of the Sherrington-Kirkpatrick spin glass, recognized with the 2021 Nobel Prize in Physics, revealed revolutionary hierarchical organization in disordered systems, yet systematic validation has remained computationally intractable beyond $N \\sim 100$ spins, and the topological limits of this complexity remain unexplored. Here we leverage quantum annealing to extend ground-state computations to 4000 spins and systematically probe both the emergence and breakdown of replica symmetry breaking. Three independent measurements validate core RSB predictions: ground-state energies converge to Parisi's value $E_\\infty/N = -0.7633$ with predicted $N^{-2/3}$ finite-size corrections; chaos exponent $\\theta = 0.51 \\pm 0.02$ confirms mean-field square-root scaling ($R^2 = 0.989$); and state-space overlap distribution exhibits broad continuous structure ($\\sigma_q = 0.19$) characteristic of hierarchical landscape organization. We then investigate RSB robustness by introducing controlled network dilution via the Blume-Capel model with vacancy formation. Remarkably, hierarchical complexity remains invariant under 36\\% dilution, proving RSB is a topological property of network connectivity rather than spin density. Beyond a critical threshold in the range $0.8 < D_c < 0.9$, the hierarchy collapses discontinuously as the system undergoes complete conversion to the all-vacancy state within a narrow parameter window an abrupt avalanche-driven transition where independent-vacancy mean-field theory correctly predicts the energy scale but fails to capture the cooperative dynamics. This comprehensive validation across thermodynamics, universality, landscape geometry, and topological limits establishes quantum advantage for probing fundamental statistical mechanics in complex systems relevant to neural networks, optimization, and materials science.",
+    "published_date": "2025-11-09",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the user is interested in correlated electron systems and superconductivity, this paper focuses on spin glasses and quantum annealing, which are distinct research areas, thus the relevance is low.",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "suggested_keywords": [
+      "Replica Symmetry Breaking",
+      "Quantum Annealing",
+      "Spin Glass"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.49085313081741333,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.4901052415370941,
+        "liked_paper_id": "2506.21431v1"
+      },
+      {
+        "score": 0.468360960483551,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.07331v1": {
+    "id": "2511.07331v1",
+    "title": "Characterizing Mott Insulators in the Interacting One-Body Picture",
+    "authors": [
+      {
+        "name": "Theo N. Dionne",
+        "affiliation": null
+      },
+      {
+        "name": "Santiago Villodre",
+        "affiliation": null
+      },
+      {
+        "name": "Mikel Iraola",
+        "affiliation": null
+      },
+      {
+        "name": "Maia G. Vergniory",
+        "affiliation": null
+      }
+    ],
+    "summary": "We present a framework to characterize Mott insulating phases within the interacting one-body picture, focusing on the Hubbard diamond chain featuring both Hubbard interactions and spin-orbit coupling simulated within cellular dynamical mean field theory. Using symmetry analysis of the single-particle Green's function, we classify spectral functions by irreducible representations at high-symmetry points of the Brillouin zone. Complementarily, we calculate the one-body reduced density matrix which allows us to reach both a qualitative description of charge distribution and an analysis of the state purity. Moreover, within the Tensor Network framework, we employ a Density Matrix Renormalization Group approach to confirm the presence of three distinct phases and their corresponding phase transitions. Our results highlight how symmetry-labelled spectral functions and effective orbital analysis provide accessible single-particle tools for probing correlation-driven insulating phases.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses Mott insulators and uses cellular dynamical mean field theory, which aligns with the user's interest in dynamical mean-field theory and correlated materials.",
+    "matching_keywords": [
+      "dynamical mean field theory",
+      "green's function",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Hubbard diamond chain",
+      "Mott insulating phases",
+      "Symmetry analysis of Green's function"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.616204559803009,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5896329283714294,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      },
+      {
+        "score": 0.582007110118866,
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.07303v1": {
+    "id": "2511.07303v1",
+    "title": "Thermal Tensor Network Simulations of Fermions with a Fixed Filling",
+    "authors": [
+      {
+        "name": "Qiaoyi Li",
+        "affiliation": null
+      },
+      {
+        "name": "Dai-Wei Qu",
+        "affiliation": null
+      },
+      {
+        "name": "Bin-Bin Chen",
+        "affiliation": null
+      },
+      {
+        "name": "Tao Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Li",
+        "affiliation": null
+      }
+    ],
+    "summary": "Numerical simulations of strongly correlated fermions at finite temperature are essential for studying high-temperature superconductivity and other quantum many-body phenomena. The recently developed tangent-space tensor renormalization group (tanTRG) provides an efficient and accurate framework by representing thermal density operators as matrix product operators. However, the particle number generally varies during the cooling process. The conventional strategy of fine-tuning chemical potentials to reach a target filling is computationally demanding. Here we propose a fixed-$N$ tanTRG algorithm that stabilizes the average particle number by adaptively tuning the chemical potential within the imaginary-time evolution. We benchmark its accuracy on exactly solvable free fermions, and further apply it to the square-lattice Hubbard model. For hole-doped cases, we study the temperature evolution of charge and spin correlations, identifying several characteristic temperature scales for stripe formation. Our results establish fixed-$N$ tanTRG as an efficient and reliable tool for finite-temperature studies of correlated fermion systems.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper focuses on numerical simulations of strongly correlated fermions and Hubbard models, which are relevant to high-temperature superconductivity and correlated electron systems, aligning with the user's interest in superconductivity and related materials.",
+    "matching_keywords": [
+      "hubbard model",
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Fixed-N tanTRG",
+      "Stripe formation",
+      "Thermal Tensor Network"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6150031089782715,
+        "liked_paper_id": "2507.01856v1"
+      },
+      {
+        "score": 0.6096897125244141,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.5986212491989136,
+        "liked_paper_id": "2506.20106v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.07252v1": {
+    "id": "2511.07252v1",
+    "title": "Machine Learning Green's Functions of Strongly Correlated Hubbard Models",
+    "authors": [
+      {
+        "name": "Mateo C\u00e1rdenes Wuttig",
+        "affiliation": null
+      }
+    ],
+    "summary": "We demonstrate that a machine learning framework based on kernel ridge regression can encode and predict the self-energy of one-dimensional Hubbard models using only mean-field features such as static and dynamic Hartree-Fock quantities and first-order GW calculations. This approach is applicable across a wide range of on-site Coulomb interaction strengths $U/t$, ranging from weakly interacting systems ($U/t \\ll 1$) to strong correlations ($U/t > 8$). The predicted self-energy is transformed via Dyson's equation and analytic continuation to obtain the real-frequency Green's function, which allows access to the spectral function and density of states. This method can be used for nearest-neighbor interactions $t$ and long-range hopping terms $t'$, $t''$, and $t'''$.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.other"
+    ],
+    "doi": null,
+    "score": 0.7,
+    "reasoning": "The paper discusses strongly correlated materials and utilizes Green's functions, a concept relevant to dynamical mean-field theory, and the application of machine learning may be of interest.",
+    "matching_keywords": [
+      "green's function",
+      "hubbard model",
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "kernel ridge regression",
+      "self-energy prediction",
+      "Hubbard model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6225569248199463,
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC"
+      },
+      {
+        "score": 0.6101452112197876,
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC"
+      },
+      {
+        "score": 0.603803813457489,
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06389v1": {
+    "id": "2511.06389v1",
+    "title": "Ultrafast symmetry modulation and induced magnetic excitation in the Kagome metal RbV3Sb5",
+    "authors": [
+      {
+        "name": "Mengxue Guan",
+        "affiliation": null
+      },
+      {
+        "name": "Xiaodong Zhou",
+        "affiliation": null
+      },
+      {
+        "name": "Jingyi Duan",
+        "affiliation": null
+      },
+      {
+        "name": "Chaoxi Cui",
+        "affiliation": null
+      },
+      {
+        "name": "Wei Jiang",
+        "affiliation": null
+      },
+      {
+        "name": "Zeying Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Binhua Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Zhengwei Nie",
+        "affiliation": null
+      },
+      {
+        "name": "Xun Shi",
+        "affiliation": null
+      },
+      {
+        "name": "Zhiwei Wang",
+        "affiliation": null
+      },
+      {
+        "name": "Yugui Yao",
+        "affiliation": null
+      }
+    ],
+    "summary": "Light-matter interaction in frustrated Kagome metals enables access to hidden quantum states, yet the microscopic origin of symmetry breaking under ultrafast excitation remains elusive. Here, we uncover a microscopic mechanism for laser-induced symmetry breaking in RbV3Sb5 through first-principles real-time simulations. Selective excitation of a single-QM phonon mode dynamically breaks both rotational and time-reversal symmetries within the 2X2X1 charge density wave (CDW) superlattice. The resulting anisotropic lattice distortion lifts geometric frustration and stabilizes a nonequilibrium ferrimagnetic phase, accompanied by a sizable intrinsic anomalous Hall effect. Distinct from prior interpretations based on orbital antiferromagnetism or extrinsic perturbations, our findings reveal a spin-driven pathway for symmetry breaking under strong optical fields. These results provide a microscopic foundation for exploring how spin, lattice and charge degrees of freedom are intertwined in nonequilibrium correlated states.",
+    "published_date": "2025-11-09",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses symmetry breaking in a Kagome metal, which aligns with the user's interest in symmetry, real Dirac fermions, and correlated electron systems.",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "suggested_keywords": [
+      "Kagome metal",
+      "ultrafast symmetry modulation",
+      "charge density wave"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5674781799316406,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5661228895187378,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "score": 0.5527480840682983,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06915v1": {
+    "id": "2511.06915v1",
+    "title": "The noiseless limit and improved-prior limit of the maximum entropy method and their implications for the analytic continuation problem",
+    "authors": [
+      {
+        "name": "Thomas Chuna",
+        "affiliation": null
+      },
+      {
+        "name": "Nicholas Barnfield",
+        "affiliation": null
+      },
+      {
+        "name": "Paul Hamann",
+        "affiliation": null
+      },
+      {
+        "name": "Sebastian Schwalbe",
+        "affiliation": null
+      },
+      {
+        "name": "Michael P. Friedlander",
+        "affiliation": null
+      },
+      {
+        "name": "Tobias Dornheim",
+        "affiliation": null
+      }
+    ],
+    "summary": "Quantum Monte Carlo (QMC) methods are uniquely capable of providing exact simulations of quantum many-body systems. Unfortunately, the applications of a QMC simulation are limited because extracting dynamic properties requires solving the analytic continuation (AC) problem. Across the many fields that use QMC methods, there is no universally accepted analytic continuation algorithm for extracting dynamic properties, but many publications compare to the maximum entropy method. We investigate when entropy maximization is an acceptable approach. We show that stochastic sampling algorithms reduce to entropy maximization when the Bayesian prior is near to the true solution. We investigate when is Bryan's controversial optimization algorithm [Bryan, Eur. Biophys. J. 18, 165-174 (1990)] for entropy maximization (sometimes known as the maximum entropy method) appropriate to use. We show that Bryan's algorithm is appropriate when the noise is near zero or when the Bayesian prior is near to the true solution. We also investigate the mean squared error, finding a better scaling when the Bayesian prior is near the true solution than when the noise is near zero. We point to examples of improved data-driven Bayesian priors that have already leveraged this advantage. We support these results by solving the double Gaussian problem using both Bryan's algorithm and the newly formulated dual approach to entropy maximization [Chuna et al., J. Phys. A: Math. Theor. 58, 335203 (2025)].",
+    "published_date": "2025-11-10",
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user is interested in quantum many-body systems, this paper focuses on a specific computational method (maximum entropy) for analyzing QMC data, which is somewhat tangential to the user's established interests in materials and phenomena.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "analytic continuation",
+      "maximum entropy method",
+      "quantum Monte Carlo"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4435470700263977,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.4320361018180847,
+        "liked_paper_id": "2506.20106v1"
+      },
+      {
+        "score": 0.428334504365921,
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.07359v1": {
+    "id": "2511.07359v1",
+    "title": "Spatio-temporal migration of antiferromagnetic domain walls in Sr2IrO4",
+    "authors": [
+      {
+        "name": "Ian Robinson",
+        "affiliation": null
+      },
+      {
+        "name": "David Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Ross Harder",
+        "affiliation": null
+      },
+      {
+        "name": "Dina Sheyfer",
+        "affiliation": null
+      },
+      {
+        "name": "Longlong Wu",
+        "affiliation": null
+      },
+      {
+        "name": "Jack Griffiths",
+        "affiliation": null
+      },
+      {
+        "name": "Emil Bozin",
+        "affiliation": null
+      },
+      {
+        "name": "Mark P. M. Dean",
+        "affiliation": null
+      },
+      {
+        "name": "Jialun Liu",
+        "affiliation": null
+      },
+      {
+        "name": "Hengdi Zhao",
+        "affiliation": null
+      },
+      {
+        "name": "Gang Cao",
+        "affiliation": null
+      },
+      {
+        "name": "Angel Rodriguez-Fernandez",
+        "affiliation": null
+      },
+      {
+        "name": "Jan-Etienne Pudell",
+        "affiliation": null
+      },
+      {
+        "name": "Roman Shayduk",
+        "affiliation": null
+      },
+      {
+        "name": "James Wrigley",
+        "affiliation": null
+      },
+      {
+        "name": "Alexey Zozulya",
+        "affiliation": null
+      },
+      {
+        "name": "Rustam Rysov",
+        "affiliation": null
+      },
+      {
+        "name": "Aliaksandr Leonau",
+        "affiliation": null
+      },
+      {
+        "name": "Ulrike Boesenberg",
+        "affiliation": null
+      },
+      {
+        "name": "Joerg Hallmann",
+        "affiliation": null
+      },
+      {
+        "name": "Anders Madsen",
+        "affiliation": null
+      }
+    ],
+    "summary": "By laser pump-probe time-resolved coherent magnetic X-ray diffraction imaging, we have measured the migration velocity of antiferromagnetic domain walls in the Mott insulator Sr2IrO4 at 100 K. During the laser-induced demagnetization, we observe domain walls moving at 3x10^6 m/s, significantly faster than acoustic velocities. This is understood to arise from a purely electronic spin contribution to the magnetic structure without any role for coupling to the crystal lattice.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper involves Mott insulators and magnetic phenomena, which aligns with the user's interest in correlated electron systems and unconventional superconductivity, although the specific material and experimental technique differ.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "antiferromagnetic domain walls",
+      "time-resolved X-ray diffraction",
+      "Sr2IrO4"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4765506386756897,
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC"
+      },
+      {
+        "score": 0.4625501036643982,
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC"
+      },
+      {
+        "score": 0.45230725407600403,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06995v1": {
+    "id": "2511.06995v1",
+    "title": "Microscopic origin of period-four stripe charge-density-wave in kagome metal CsV$_3$Sb$_5$",
+    "authors": [
+      {
+        "name": "Yuma Murata",
+        "affiliation": null
+      },
+      {
+        "name": "Rina Tazai",
+        "affiliation": null
+      },
+      {
+        "name": "Youichi Yamakawa",
+        "affiliation": null
+      },
+      {
+        "name": "Seiichiro Onari",
+        "affiliation": null
+      },
+      {
+        "name": "Hiroshi Kontani",
+        "affiliation": null
+      }
+    ],
+    "summary": "The interplay between unconventional density waves and exotic superconductivity has attracted growing interest. Kagome superconductors $A\\rm{V}_3\\rm{Sb}_5$ ($A = \\rm{K}, \\rm{Rb}, \\rm{Cs}$) offer a platform for studying quantum phase transitions and the resulting symmetry breaking. Among these quantum phases, the $4a_0$ stripe charge-density-wave (CDW) has been widely observed for $A=\\rm{Rb}$ and $\\rm{Cs}$ by scanning tunneling microscopy (STM) and nuclear magnetic resonance (NMR) measurements. However, the microscopic origin of the $4a_0$ stripe CDW remains elusive, and no theoretical studies addressing this phenomenon have been reported so far. In this paper, we propose a microscopic mechanism for the emergence of the $4a_0$ stripe CDW. We analyze the CDW instability in the 12-site kagome lattice Hubbard model with the $2\\times2$ bond order driven by the paramagnon-interference mechanism by focusing on the short-range magnetic fluctuations due to the geometrical frustration of kagome lattice. We reveal that the nesting vector of the reconstructed Fermi surface, formed by the $2\\times 2$ bond order, gives rise to a $4a_0$-period CDW. Remarkably, the obtained stripe CDW is composed of both the off-site hopping integral modulations and on-site potentials. The real-space structure of the stripe CDW obtained here is in good qualitative agreement with the experimentally observed stripe pattern.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses charge density waves and superconductivity in kagome materials, which relates to the user's interest in superconductivity and electronic structure.",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "suggested_keywords": [
+      "kagome lattice",
+      "charge-density-wave",
+      "paramagnon-interference mechanism"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5880670547485352,
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC"
+      },
+      {
+        "score": 0.5701762437820435,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "score": 0.5638463497161865,
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.05738v1": {
+    "id": "2511.05738v1",
+    "title": "Exchange field induced symmetry breaking in quantum hexaborides",
+    "authors": [
+      {
+        "name": "D. Rivera",
+        "affiliation": null
+      },
+      {
+        "name": "Fernando P. Sabino",
+        "affiliation": null
+      },
+      {
+        "name": "H. Raebiger",
+        "affiliation": null
+      },
+      {
+        "name": "A. Ruzsinszky",
+        "affiliation": null
+      },
+      {
+        "name": "J. P. Perdew",
+        "affiliation": null
+      },
+      {
+        "name": "G. M. Dalpian",
+        "affiliation": null
+      }
+    ],
+    "summary": "Symmetry breaking (SB) has proven to be a powerful approach for describing quantum materials: strong correlation, mass renormalization, and complex phase transitions are among the phenomena that SB can capture, even when coupled to a mean-field-like theory. Traditionally, corrective schemes were required to account for these effects; however, SB has emerged as an alternative that can also successfully describe the intricate physics of quantum materials. Here, we explore spin SB on EuB6 and SmB6 and how its relation to the exchange field can determine onsite properties, depending on the type of symmetry breaking. Using spin-polarized Density Functional Theory (DFT) calculations with the r2SCAN functional, we systematically compare four magnetic configurations, one totally symmetric - non-magnetic (NM) configuration - and three with different types of symmetry breaking: ferromagnetic (FM), antiferromagnetic (AFM) and a paramagnetic (PM) configuration - modeled through a Special Quasirandom Structure (SQS) method - to capture local symmetry-breaking effects. Our results show that the PM configuration produces distinct magnetic environments for the rare-earth atoms, leading to different exchange fields. These, in turn, induce symmetry breaking in the electronic and magnetic properties of Eu and Sm. Those results provide an alternative explanation for the experimental results on both materials, EuB6 and SmB6, where X-ray Absorption Spectroscopy (XAS) and X-ray Absorption Near Edge Structure (XANES) measurements suggest the presence of multiple atomic environments, previously attributed to a mixed-valence configuration.",
+    "published_date": "2025-11-07",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses symmetry breaking and electronic properties in quantum materials, which aligns with the user's interest in correlated electron systems and unconventional superconductivity, specifically papers involving symmetry and electronic structure.",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "suggested_keywords": [
+      "symmetry breaking",
+      "exchange field",
+      "quantum hexaborides"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5977551937103271,
+        "liked_paper_id": "2506.13431v1"
+      },
+      {
+        "score": 0.5970813632011414,
+        "liked_paper_id": "2507.00837v1"
+      },
+      {
+        "score": 0.5852683186531067,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06551v1": {
+    "id": "2511.06551v1",
+    "title": "Machine learning intermolecular transfer integrals with compact atomic cluster representations",
+    "authors": [
+      {
+        "name": "Keerati Keeratikarn",
+        "affiliation": null
+      },
+      {
+        "name": "Christoph Ortner",
+        "affiliation": null
+      },
+      {
+        "name": "Jarvist Moore Frost",
+        "affiliation": null
+      }
+    ],
+    "summary": "Calculating intermolecular charge transfer integrals in organic semiconductors requires substantial computer resource for each individual calculation. We might alternatively construct a machine learning model for transfer integrals, which model the full six-degrees of freedom for the relative position of dimer pairs, trained on representative calculations for the molecules of interest. Recent developments have produced effective machine learning force fields, which model the total energy of atomic assemblies. We extend the Atomic Cluster Expansion (ACE) with the correct symmetries for transfer (kinetic-energy) integrals. Combined with a spherical harmonic basis makes, this forms a strong inductive bias and makes for a data efficient model. We introduce coarse-grained and heavy-atom representations, and assess the methodology on representative conjugated semiconductors: ethylene, thiophene, and naphthalene.",
+    "published_date": "2025-11-09",
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "While the user has shown interest in correlated electron systems and novel materials, this paper focuses on computational methods for organic semiconductors, which is a different area.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "machine learning",
+      "transfer integrals",
+      "organic semiconductors"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4712936282157898,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      },
+      {
+        "score": 0.4360661506652832,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.42213037610054016,
+        "liked_paper_id": "2506.11227v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.07063v1": {
+    "id": "2511.07063v1",
+    "title": "Magnetic anisotropy and intermediate valence in CeCo$_5$ ferromagnet",
+    "authors": [
+      {
+        "name": "Alexander B. Shick",
+        "affiliation": null
+      },
+      {
+        "name": "Evgenia A. Tereshina-Chitrova",
+        "affiliation": null
+      }
+    ],
+    "summary": "The intermediate valence of Ce in CeCo$_5$ challenges standard density functional theory (DFT) and static DFT+$U$ approaches, which fail to capture its magnetic properties. By combining DFT+$U$ with exact diagonalization of the Anderson impurity model for the Ce 4$f$ shell, we find a substantial reduction of Ce spin and orbital moments, consistent with DFT+DMFT, arising from Ce$^{4+}$ - Ce$^{3+}$ valence fluctuations. The total magnetic moment of 6.70 $\\mu_B$ agrees with experiment, and the calculated $4f$ density of states reproduces photoemission and Bremsstrahlung isochromat spectra. The uniaxial magnetic anisotropy energy reaches 4.8 meV/f.u. when Coulomb correlations on both Ce 4$f$ and Co 3$d$ shells are included, in very good agreement with experimental data. These results highlight the importance of dynamical correlations and provide guidance for exploring high-performance, low-rare-earth-content permanent magnets.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper discusses correlated materials and electronic structure calculations like DMFT (similar to one liked paper), the specific material (CeCo5) and focus on magnetism and anisotropy are distinct from the user's previous interests in superconductivity, oxygen vacancies, and topological semimetals.",
+    "matching_keywords": [
+      "anderson impurity model"
+    ],
+    "suggested_keywords": [
+      "intermediate valence",
+      "magnetic anisotropy",
+      "DFT+DMFT"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.47437503933906555,
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC"
+      },
+      {
+        "score": 0.4597826898097992,
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC"
+      },
+      {
+        "score": 0.45788103342056274,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06506v1": {
+    "id": "2511.06506v1",
+    "title": "Resonating valence bond pairing energy in graphene by quantum Monte Carlo",
+    "authors": [
+      {
+        "name": "S. Azadi",
+        "affiliation": null
+      },
+      {
+        "name": "A. Principi",
+        "affiliation": null
+      },
+      {
+        "name": "T. D. K\u00fchne",
+        "affiliation": null
+      },
+      {
+        "name": "M. S. Bahramy",
+        "affiliation": null
+      }
+    ],
+    "summary": "We determine the resonating-valence-bond (RVB) state in graphene using real-space quantum Monte Carlo with correlated variational wave functions. Variational and diffusion quantum Monte Carlo (DMC) calculations with Jastrow-Slater-determinant and Jastrow-antisymmetrized-geminal-power ansatze are employed to evaluate the RVB pairing energy. Using a rectangular graphene sample that lacks $\\pi/3$ rotational symmetry, we found that the single-particle energy gap near the Fermi level depends on the system size along the $x$-direction. The gap vanishes when the length satisfies $L_x=3n\\sqrt{3}d$, where $n$ is an integer and $d$ is the carbon-carbon bond length, otherwise, the system, exhibits a finite gap. Our DMC results show no stable RVB pairing in the zero-gap case, whereas the opening of a finite gap near the Fermi level stabilizes the electron pairing. The DMC predicted absolute value of pairing energy at the thermodynamic limit for a finite-gap system is $\\sim 0.48(1)$ mHa/atom. Our results reveal a feometry-driven electron pairing mechanism in the confined graphene nanostructure.",
+    "published_date": "2025-11-09",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con",
+      "physics.comp-ph"
+    ],
+    "doi": null,
+    "score": 0.4,
+    "reasoning": "While the user showed interest in unconventional superconductivity and related electronic structures, this paper focuses on RVB pairing in graphene, a different material and context, making it moderately relevant.",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "suggested_keywords": [
+      "Resonating valence bond",
+      "Quantum Monte Carlo",
+      "Graphene nanostructure"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.6209293007850647,
+        "liked_paper_id": "2506.17015v1"
+      },
+      {
+        "score": 0.5053592324256897,
+        "liked_paper_id": "2506.15770v1"
+      },
+      {
+        "score": 0.49614861607551575,
+        "liked_paper_id": "2507.01856v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06827v1": {
+    "id": "2511.06827v1",
+    "title": "Machine Learning Approach to Predict the Curie Temperature of Fe- and Pt-Based Alloys",
+    "authors": [
+      {
+        "name": "Svitlana Ponomarova",
+        "affiliation": null
+      },
+      {
+        "name": "Oleksandr Ponomarov",
+        "affiliation": null
+      },
+      {
+        "name": "Yurii Koval",
+        "affiliation": null
+      }
+    ],
+    "summary": "Various techniques can be employed to determine the temperature of magnetic transformation, whether it be the Curie or Neel temperature. The standard procedure typically involves creating alloys with defined compositions and performing measurements experimentally. Alternatively, these temperatures can be predicted based on a material known physical and chemical properties prior to experiments. We identified an optimal feature set and selected the most effective algorithm. Our findings show that the Voting Ensemble model, when combined with Monte Carlo cross-validation, achieves the highest prediction accuracy. The normalized root mean squared error serves as the primary performance metric. For implementation, we utilize the Azure Machine Learning framework for its robust computational and integration capabilities. This approach offers an efficient and reliable strategy for designing and predicting the Curie temperature of ternary alloys. The paper also highlights potential applications of the model and its extensions for other systems.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "doi": null,
+    "score": 0.1,
+    "reasoning": "This paper focuses on machine learning for predicting the Curie temperature of alloys, a topic distinct from the user's interests in superconductivity, topological materials, and oxygen vacancies in complex oxides.",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "suggested_keywords": [
+      "Curie temperature prediction",
+      "Machine learning for alloys",
+      "Voting Ensemble model"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.4426184892654419,
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC"
+      },
+      {
+        "score": 0.3868735432624817,
+        "liked_paper_id": "2506.11227v1"
+      },
+      {
+        "score": 0.3733097016811371,
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.06093v1": {
+    "id": "2511.06093v1",
+    "title": "Magneto-Optical Study of Chiral Magnetic Modes in NiI$_{2}$: Direct Evidence for Kitaev Interactions",
+    "authors": [
+      {
+        "name": "Kartik Panda",
+        "affiliation": null
+      },
+      {
+        "name": "Chaebin Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Daniel Bazyliansky",
+        "affiliation": null
+      },
+      {
+        "name": "Javier Taboada-Guti\u00e9rrez",
+        "affiliation": null
+      },
+      {
+        "name": "Florian Le Mardel\u00e9",
+        "affiliation": null
+      },
+      {
+        "name": "Jan Dzian",
+        "affiliation": null
+      },
+      {
+        "name": "Guy Levy",
+        "affiliation": null
+      },
+      {
+        "name": "Jae Ha Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Youjin Lee",
+        "affiliation": null
+      },
+      {
+        "name": "Bumchan Park",
+        "affiliation": null
+      },
+      {
+        "name": "Martin Mourigal",
+        "affiliation": null
+      },
+      {
+        "name": "Jae Hoon Kim",
+        "affiliation": null
+      },
+      {
+        "name": "Alexey B. Kuzmenko",
+        "affiliation": null
+      },
+      {
+        "name": "Milan Orlita",
+        "affiliation": null
+      },
+      {
+        "name": "Je-Geun Park",
+        "affiliation": null
+      },
+      {
+        "name": "Nimrod Bachar",
+        "affiliation": null
+      }
+    ],
+    "summary": "Bond-dependent magnetic interactions, particularly those described by the Kitaev model, have emerged as a key pathway toward realizing unconventional magnetic states such as quantum spin liquids and topologically nontrivial excitations, including skyrmions. These interactions frustrate conventional magnetic order and give rise to rich collective behavior that continues to challenge both theory and experiment. While Kitaev physics has been extensively explored in the context of honeycomb magnets, direct evidence for its role in real materials remains scarce. Magnetic van der Waals (vdW) materials have emerged as a versatile platform for exploring low-dimensional electrical, magnetic, and correlated electronic phenomena, and provide a fertile ground for potential applications ranging from spintronics to multiferroic devices and quantum information technologies. Here, we demonstrate, through magneto-transmission, Faraday angle rotation, and magnetic circular dichroism measurements, that the magnetic excitation spectrum of NiI$_2$, a van der Waals multiferroic material, is more accurately captured by a Kitaev-based spin model than by the previously invoked helical spin framework.",
+    "published_date": "2025-11-08",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.6,
+    "reasoning": "The paper discusses magnetic materials and interactions, with potential connections to correlated electronic phenomena, which aligns with the user's interest in unconventional superconductivity and related materials.",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "suggested_keywords": [
+      "Kitaev interactions",
+      "van der Waals materials",
+      "multiferroic"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5836793184280396,
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC"
+      },
+      {
+        "score": 0.5720183849334717,
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC"
+      },
+      {
+        "score": 0.5571972131729126,
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.07415v1": {
+    "id": "2511.07415v1",
+    "title": "Topological and Trivial Valence-Bond Orders in Higher-Spin Kitaev Models",
+    "authors": [
+      {
+        "name": "Xing-Yu Zhang",
+        "affiliation": null
+      },
+      {
+        "name": "Qi Yang",
+        "affiliation": null
+      },
+      {
+        "name": "Philippe Corboz",
+        "affiliation": null
+      },
+      {
+        "name": "Jutho Haegeman",
+        "affiliation": null
+      },
+      {
+        "name": "Yuchi He",
+        "affiliation": null
+      }
+    ],
+    "summary": "We investigate the quantum phases of higher-spin Kitaev models using tensor network methods. Our results reveal distinct bond-ordered phases for spin-1, spin-$\\tfrac{3}{2}$, and spin-2 models. In all cases, we find translational symmetry breaking with unit cells being tripled by forming valence-bond orders. However, these three phases are distinct, forming plaquette order, topological dimer order, and non-topological dimer order, respectively. Our findings are based on a cross-validation between variational two-dimensional tensor network calculations: an unrestricted exploration of symmetry-broken states versus the detection of symmetry breaking from cat-state behavior in symmetry-restricted states. The origin of different orders can also be understood from a theoretical analysis. Our work sheds light upon the interplay between topological and symmetry-breaking orders as well as their detection via tensor networks.",
+    "published_date": "2025-11-10",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "doi": null,
+    "score": 0.3,
+    "reasoning": "While the paper involves topological phases and quantum materials, it focuses on theoretical modeling of higher-spin Kitaev models and valence-bond orders, which are not directly related to the user's previous interests in superconductivity, oxygen vacancies, and real Dirac fermions.",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "suggested_keywords": [
+      "Kitaev models",
+      "valence-bond orders",
+      "tensor network methods"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.5764729380607605,
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC"
+      },
+      {
+        "score": 0.5577086210250854,
+        "liked_paper_id": "2508.17292v1"
+      },
+      {
+        "score": 0.5565012693405151,
+        "liked_paper_id": "2506.13431v1"
+      }
+    ],
+    "discovery_sources": []
+  },
+  "2511.05703v1": {
+    "id": "2511.05703v1",
+    "title": "Surface acoustic wave enabled all-optical determination of the interlayer elastic constants of van der Waals interface",
+    "authors": [
+      {
+        "name": "N. Yu. Frolov",
+        "affiliation": null
+      },
+      {
+        "name": "A. Yu. Klokov",
+        "affiliation": null
+      },
+      {
+        "name": "A. I. Sharkov",
+        "affiliation": null
+      },
+      {
+        "name": "M. V. Pugachev",
+        "affiliation": null
+      },
+      {
+        "name": "A. Yu. Kuntsevich",
+        "affiliation": null
+      }
+    ],
+    "summary": "Understanding the properties of two-dimensional materials interfaces with the substrate is necessary for device applications. Surface acoustic wave propagation through the layered material flake on a substrate could provide unique information on the transverse rigidity of the flake-to-substrate interaction. We generate ultrasonic waves by a focused femtosecond laser pulse at the surface of the model system -- fused silica with h-BN flake transferred above. Using an all-optical spatially resolved pump-probe interferometric technique, we measure the spatial dependencies of the surface vertical velocity profiles. Our measurements reveal the appearance of the surface acoustic wave dispersion in the hBN flake region compared to fused silica surface. Multilayer modeling allows us to gain access to longitudinal and shear elastic coupling constants $c^*_{33}$ and $c^*_{44}$ between hexagonal BN and substrate.",
+    "published_date": "2025-11-07",
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall",
+      "physics.app-ph",
+      "physics.optics"
+    ],
+    "doi": null,
+    "score": 0.2,
+    "reasoning": "The paper focuses on the elastic properties of van der Waals interfaces, particularly h-BN, which is not directly related to the user's previous interests in superconductivity, nickelates, or topological materials, though there is a tangential connection to 2D materials.",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "suggested_keywords": [
+      "surface acoustic wave",
+      "van der Waals interface",
+      "elastic constants"
+    ],
+    "vector_matches": [
+      {
+        "score": 0.3393784165382385,
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C"
+      },
+      {
+        "score": 0.32668864727020264,
+        "liked_paper_id": "2506.22435v1"
+      },
+      {
+        "score": 0.3155459761619568,
+        "liked_paper_id": "yBtX0C4AAAAJ:mVmsd5A6BfQC"
+      }
+    ],
+    "discovery_sources": []
   }
 }
