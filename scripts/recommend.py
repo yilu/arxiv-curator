@@ -170,7 +170,7 @@ def get_papers_from_dmrg_site():
         return set()
 
 
-def get_llm_analysis(new_paper, liked_papers, api_key):
+def get_llm_analysis(new_paper, liked_papers, api_key, retry_on_429=True):
     """Sends a paper's details to the Gemini LLM for advanced scoring and reasoning."""
     liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
     prompt = f"""
@@ -205,6 +205,14 @@ def get_llm_analysis(new_paper, liked_papers, api_key):
         except json.JSONDecodeError as e:
             print(f"🔴 LLM returned invalid JSON, likely due to unescaped characters: {e}")
             return None
+    except requests.exceptions.HTTPError as e:
+        status = getattr(e.response, "status_code", None)
+        if status == 429 and retry_on_429:
+            print("⚠️ LLM rate limited (429). Sleeping 65s and retrying once...")
+            time.sleep(65)
+            return get_llm_analysis(new_paper, liked_papers, api_key, retry_on_429=False)
+        print(f"🔴 LLM API call failed: {e}")
+        return None
     except Exception as e:
         print(f"🔴 LLM API call failed: {e}")
         return None
@@ -278,11 +286,9 @@ def update_archive():
     papers_to_analyze = list(client.results(arxiv.Search(id_list=list(versionless_ids))))
     print(f"✅ Received fresh data for {len(papers_to_analyze)} papers.")
 
-    delay_seconds = 0
-    if len(papers_to_analyze) > LLM_RPM_LIMIT:
-        delay_seconds = 60.0 / (LLM_RPM_LIMIT - 1)
-        print(f"⚠️ Rate limiting LLM calls with a {delay_seconds:.2f}s delay.")
-
+    min_llm_interval = 60.0 / max(1, LLM_RPM_LIMIT)
+    print(f"⚠️ Enforcing at least {min_llm_interval:.2f}s between LLM calls (RPM limit: {LLM_RPM_LIMIT}).")
+    last_llm_call_time = None
     newly_added_ids = []
 
     for i, paper in enumerate(papers_to_analyze):
@@ -306,7 +312,14 @@ def update_archive():
                 "suggested_keywords": existing_data.get('suggested_keywords', [])
             }
         else:
+            if last_llm_call_time is not None:
+                elapsed = time.time() - last_llm_call_time
+                if elapsed < min_llm_interval:
+                    sleep_time = min_llm_interval - elapsed
+                    print(f"   ⏳ Sleeping {sleep_time:.2f}s to respect LLM RPM limit...")
+                    time.sleep(sleep_time)
             llm_result = get_llm_analysis({'title': paper.title, 'summary': paper.summary}, taste_profile[:5], gemini_api_key)
+            last_llm_call_time = time.time()
 
         if llm_result:
             vector_matches = []
