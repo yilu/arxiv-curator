@@ -9,7 +9,7 @@ import requests
 import numpy as np
 import re
 import torch
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from collections import defaultdict
 from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer, util
@@ -17,13 +17,38 @@ from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
     RECOMMENDATION_LIMIT, LLM_RPM_LIMIT, DMRG_URL, DMRG_SOURCE_TAG,
-    DMRG_SITE_LIMIT
+    DMRG_SITE_LIMIT, MAX_PAPER_AGE_DAYS
 )
 
 ARCHIVE_PATH = 'archive.json'
 FOLLOWED_AUTHORS_PATH = 'followed_authors.json'
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 LLM_FAILURE_REASON = "Could not be analyzed by LLM."
+
+def _now_utc():
+    return datetime.now(timezone.utc)
+
+def _ensure_utc(dt):
+    if dt is None:
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+def is_recent_datetime(dt):
+    """Returns True if the datetime is within the configured max age."""
+    normalized = _ensure_utc(dt)
+    if normalized is None:
+        return False
+    cutoff = _now_utc() - timedelta(days=MAX_PAPER_AGE_DAYS)
+    return normalized >= cutoff
+
+def is_recent_date_str(date_str):
+    if not date_str:
+        return False
+    try:
+        parsed = datetime.strptime(date_str, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+    except ValueError:
+        return False
+    return is_recent_datetime(parsed)
 
 def filter_arxiv_categories(categories):
     """Filters a list of strings to only include valid arXiv category formats."""
@@ -37,16 +62,27 @@ def get_recent_papers():
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
     all_papers = {}
     client = arxiv.Client()
+    skipped_old = 0
     for category in ARXIV_CATEGORIES:
         print(f"Querying category '{category}'...")
-        search = arxiv.Search(query=f"cat:{category}", max_results=150, sort_by=arxiv.SortCriterion.SubmittedDate)
+        search = arxiv.Search(
+            query=f"cat:{category}",
+            max_results=150,
+            sort_by=arxiv.SortCriterion.SubmittedDate,
+            sort_order=arxiv.SortOrder.Descending,
+        )
         try:
             for paper in client.results(search):
+                if not is_recent_datetime(_ensure_utc(getattr(paper, 'published', None))):
+                    skipped_old += 1
+                    continue
                 paper_id = paper.entry_id.split('/abs/')[-1]
                 if paper_id not in all_papers:
                     all_papers[paper_id] = paper
         except Exception as e:
             print(f"🔴 Error fetching from {category}: {e}")
+    if skipped_old:
+        print(f"⚠️ Skipped {skipped_old} papers older than {MAX_PAPER_AGE_DAYS} days while fetching categories.")
     print(f"✅ Found a total of {len(all_papers)} unique recent papers.")
     return list(all_papers.values())
 
@@ -68,16 +104,27 @@ def get_papers_from_followed_authors():
     print(f"🔍 Fetching papers from {len(followed_authors)} followed author(s)...")
     author_papers = {}
     client = arxiv.Client()
+    skipped_old = 0
     for author in followed_authors:
         query = f"au:\"{author['name']}\""
-        search = arxiv.Search(query=query, max_results=10, sort_by=arxiv.SortCriterion.SubmittedDate)
+        search = arxiv.Search(
+            query=query,
+            max_results=10,
+            sort_by=arxiv.SortCriterion.SubmittedDate,
+            sort_order=arxiv.SortOrder.Descending,
+        )
         try:
             for paper in client.results(search):
+                if not is_recent_datetime(_ensure_utc(getattr(paper, 'published', None))):
+                    skipped_old += 1
+                    continue
                 paper_id = paper.entry_id.split('/abs/')[-1]
                 author_papers[paper_id] = paper
         except Exception as e:
             print(f"🔴 Error fetching for author {author['name']}: {e}")
 
+    if skipped_old:
+        print(f"⚠️ Skipped {skipped_old} older papers from followed authors (>{MAX_PAPER_AGE_DAYS} days).")
     print(f"✅ Found {len(author_papers)} papers from followed authors.")
     return list(author_papers.values())
 
@@ -187,9 +234,11 @@ def update_archive():
 
     retry_ids = {
         pid for pid, p_data in archive.items()
-        if (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or \
-           (taste_profile_exists and not p_data.get('vector_matches')) or \
-           (pid.split('v')[0] in dmrg_paper_ids and DMRG_SOURCE_TAG not in p_data.get('discovery_sources', []))
+        if is_recent_date_str(p_data.get('published_date')) and (
+            (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or
+            (taste_profile_exists and not p_data.get('vector_matches')) or
+            (pid.split('v')[0] in dmrg_paper_ids and DMRG_SOURCE_TAG not in p_data.get('discovery_sources', []))
+        )
     }
     if retry_ids:
         print(f"🔍 Found {len(retry_ids)} papers in archive to re-evaluate.")
@@ -332,8 +381,17 @@ def generate_site(new_paper_ids):
     liked_paper_details = {item['id']: item for item in taste_profile}
     liked_paper_ids = set(liked_paper_details.keys())
 
+    recent_archive = {
+        pid: paper for pid, paper in archive.items()
+        if is_recent_date_str(paper.get('published_date'))
+    }
+    skipped_old = len(archive) - len(recent_archive)
+    if skipped_old:
+        print(f"⚠️ Skipping {skipped_old} papers older than {MAX_PAPER_AGE_DAYS} days while generating the site.")
+    archive_for_render = recent_archive if recent_archive else archive
+
     papers_by_month = defaultdict(list)
-    for paper in archive.values():
+    for paper in archive_for_render.values():
         date_key = (paper.get('published_date') or '0000-00-00')[:7]
         papers_by_month[date_key].append(paper)
 
