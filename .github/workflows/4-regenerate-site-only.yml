@@ -4,6 +4,11 @@ name: 4 - Regenerate Website Only
 
 on:
   workflow_dispatch:
+    inputs:
+      cleanup_disk:
+        description: 'Set to true to run cleanup (removes preinstalled toolchains to free space)'
+        required: false
+        default: 'false'
 
 concurrency:
   group: archive-commit
@@ -19,7 +24,8 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
 
-      - name: Cleanup disk space
+      - name: Cleanup disk space (optional)
+        if: ${{ github.event.inputs.cleanup_disk == 'true' }}
         run: |
           sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost
           sudo apt-get clean
