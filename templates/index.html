@@ -13,9 +13,19 @@
         .prose { max-width: 65ch; }
         .prose p { margin-top: 0; margin-bottom: 1em; }
         .reason-card { transition: background-color 0.2s ease-in-out; }
-        .reason-card:hover { background-color: #f0f9ff; }
+        .reason-card:hover { background-color: var(--brand-50); }
+        :root {
+            --brand-50: #f8f1f7;
+            --brand-100: #f2e7f0;
+            --brand-200: #e4cde1;
+            --brand-400: #b072aa;
+            --brand-600: #8a4487;
+            --brand-700: #7a3265;
+            --brand-800: #652754;
+            --brand-900: #512147;
+        }
         .control-btn.active {
-            background-color: #2563eb;
+            background-color: var(--brand-700);
             color: white;
             box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
         }
@@ -23,11 +33,25 @@
             min-width: 2.5rem; /* 40px */
         }
         .pagination-btn.active {
-            background-color: #2563eb;
-            border-color: #2563eb;
+            background-color: var(--brand-700);
+            border-color: var(--brand-700);
             color: white;
             font-weight: 600;
         }
+        /* Purple theme overrides */
+        .text-blue-400 { color: var(--brand-400) !important; }
+        .text-blue-600 { color: var(--brand-600) !important; }
+        .text-blue-700 { color: var(--brand-700) !important; }
+        .text-blue-800 { color: var(--brand-800) !important; }
+        .text-blue-900 { color: var(--brand-900) !important; }
+        .hover\:text-blue-600:hover { color: var(--brand-600) !important; }
+        .hover\:text-blue-700:hover { color: var(--brand-700) !important; }
+        .bg-blue-50 { background-color: var(--brand-50) !important; }
+        .bg-blue-100 { background-color: var(--brand-100) !important; }
+        .bg-blue-200 { background-color: var(--brand-200) !important; }
+        .hover\:bg-blue-200:hover { background-color: var(--brand-200) !important; }
+        .border-blue-200 { border-color: var(--brand-200) !important; }
+        .focus\:ring-blue-500:focus { --tw-ring-color: var(--brand-600) !important; }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
