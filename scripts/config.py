@@ -35,9 +35,14 @@ RECOMMENDATION_LIMIT = 150
 # Earliest date to consider when ingesting new papers (YYYY-MM-DD).
 ARCHIVE_START_DATE = '2024-01-01'
 
+# Gemini model and limits
+GEMINI_MODEL = 'gemini-2.5-flash'
 # The Requests Per Minute (RPM) limit for your Gemini API tier.
-# The script will automatically calculate the necessary delay based on this.
-LLM_RPM_LIMIT = 15
+LLM_RPM_LIMIT = 5
+# The Requests Per Day (RPD) limit for your Gemini API tier.
+LLM_DAILY_LIMIT = 20
+# How many papers to bundle into a single LLM call.
+LLM_BATCH_SIZE = 5
 
 # --- External Paper Sources ---
 # URL for the manually curated list of DMRG-related preprints.

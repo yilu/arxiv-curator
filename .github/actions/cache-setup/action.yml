@@ -30,7 +30,6 @@ runs:
         mkdir -p "${{ inputs.hf_cache_dir }}"
         mkdir -p "${{ inputs.torch_cache_dir }}"
         echo "HF_HOME=${{ inputs.hf_cache_dir }}" >> $GITHUB_ENV
-        echo "TRANSFORMERS_CACHE=${{ inputs.hf_cache_dir }}" >> $GITHUB_ENV
         echo "TORCH_HOME=${{ inputs.torch_cache_dir }}" >> $GITHUB_ENV
 
     - name: Restore model caches (workspace-local)

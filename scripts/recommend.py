@@ -16,13 +16,15 @@ from sentence_transformers import SentenceTransformer, util
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
-    RECOMMENDATION_LIMIT, LLM_RPM_LIMIT, DMRG_URL, DMRG_SOURCE_TAG,
-    DMRG_SITE_LIMIT, ARCHIVE_START_DATE
+    RECOMMENDATION_LIMIT, LLM_RPM_LIMIT, LLM_DAILY_LIMIT, LLM_BATCH_SIZE,
+    DMRG_URL, DMRG_SOURCE_TAG, DMRG_SITE_LIMIT, ARCHIVE_START_DATE,
+    GEMINI_MODEL
 )
 
 ARCHIVE_PATH = 'archive.json'
 FOLLOWED_AUTHORS_PATH = 'followed_authors.json'
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_MODEL_NAME = os.environ.get("GEMINI_MODEL", GEMINI_MODEL)
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL_NAME}:generateContent"
 LLM_FAILURE_REASON = "Could not be analyzed by LLM."
 
 START_DATE = datetime.strptime(ARCHIVE_START_DATE, '%Y-%m-%d').replace(tzinfo=timezone.utc)
@@ -168,24 +170,33 @@ def get_papers_from_dmrg_site():
         return set()
 
 
-def get_llm_analysis(new_paper, liked_papers, api_key, retry_on_429=True):
-    """Sends a paper's details to the Gemini LLM for advanced scoring and reasoning."""
-    liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
-    prompt = f"""
-    You are a helpful research assistant. A user has previously liked papers on these topics:
-    ---
-    {liked_papers_details}
-    ---
-    Now, consider this new paper:
-    Title: {new_paper['title']}
-    Abstract: {new_paper['summary']}
-
-    Please provide a relevance score as a single number between 0.0 (not relevant) and 1.0 (highly relevant).
-    Also provide a concise, one-sentence justification for your score.
-    Finally, provide an array of up to 3 new, insightful keywords from this paper's abstract.
-
-    Return the result as a single JSON object with the keys "score", "reason", and "suggested_keywords".
+def get_llm_batch_analysis(papers, liked_papers, api_key, retry_on_429=True):
     """
+    Sends multiple papers to the Gemini LLM in one call.
+    Expects papers to be a list of dicts with keys: id, title, summary.
+    Returns a dict mapping paper_id -> result dict.
+    """
+    liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
+    paper_blocks = "\n\n".join([
+        f"ID: {p['id']}\nTitle: {p['title']}\nAbstract: {p['summary']}"
+        for p in papers
+    ])
+    prompt = f"""
+You are a helpful research assistant. A user has previously liked papers on these topics:
+---
+{liked_papers_details}
+---
+Now, consider the following papers:
+{paper_blocks}
+
+For each paper, return a JSON array of objects with these keys:
+- "id": the ID given above
+- "score": relevance between 0.0 and 1.0
+- "reason": one-sentence justification
+- "suggested_keywords": up to 3 new, insightful keywords
+
+Respond ONLY with JSON.
+"""
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
         "generationConfig": {"responseMimeType": "application/json"}
@@ -194,26 +205,36 @@ def get_llm_analysis(new_paper, liked_papers, api_key, retry_on_429=True):
     params = {"key": api_key}
 
     try:
-        response = requests.post(GEMINI_API_URL, params=params, headers=headers, json=payload, timeout=90)
+        response = requests.post(GEMINI_API_URL, params=params, headers=headers, json=payload, timeout=120)
         response.raise_for_status()
         result = response.json()
         content = result['candidates'][0]['content']['parts'][0]['text']
-        try:
-            return json.loads(content)
-        except json.JSONDecodeError as e:
-            print(f"🔴 LLM returned invalid JSON, likely due to unescaped characters: {e}")
-            return None
+        parsed = json.loads(content)
+        output = {}
+        if isinstance(parsed, list):
+            for item in parsed:
+                pid = item.get("id")
+                if pid:
+                    output[pid] = {
+                        "score": item.get("score"),
+                        "reason": item.get("reason"),
+                        "suggested_keywords": item.get("suggested_keywords", []),
+                    }
+        return output
     except requests.exceptions.HTTPError as e:
         status = getattr(e.response, "status_code", None)
         if status == 429 and retry_on_429:
             print("⚠️ LLM rate limited (429). Sleeping 65s and retrying once...")
             time.sleep(65)
-            return get_llm_analysis(new_paper, liked_papers, api_key, retry_on_429=False)
-        print(f"🔴 LLM API call failed: {e}")
-        return None
+            return get_llm_batch_analysis(papers, liked_papers, api_key, retry_on_429=False)
+        try:
+            print(f"🔴 LLM API call failed: {e} | Body: {e.response.text}")
+        except Exception:
+            print(f"🔴 LLM API call failed: {e}")
+        return {}
     except Exception as e:
         print(f"🔴 LLM API call failed: {e}")
-        return None
+        return {}
 
 def update_archive():
     """Fetches, analyzes, and archives papers from all sources."""
@@ -230,6 +251,9 @@ def update_archive():
             KEYWORDS = json.load(f)
     except FileNotFoundError:
         print("🔴 keywords.json not found. Assuming empty list."); KEYWORDS = []
+
+    # Avoid deprecated env var warning in transformers
+    os.environ.pop('TRANSFORMERS_CACHE', None)
 
     print("🧠 Loading embedding model...")
     model = SentenceTransformer(EMBEDDING_MODEL)
@@ -287,7 +311,33 @@ def update_archive():
     min_llm_interval = 60.0 / max(1, LLM_RPM_LIMIT)
     print(f"⚠️ Enforcing at least {min_llm_interval:.2f}s between LLM calls (RPM limit: {LLM_RPM_LIMIT}).")
     last_llm_call_time = None
+    llm_calls_made = 0
+    pending_batch = []
+    llm_results = {}
+    pending_entries = []
     newly_added_ids = []
+
+    def flush_batch():
+        nonlocal pending_batch, llm_calls_made, last_llm_call_time
+        if not pending_batch:
+            return
+        if llm_calls_made >= LLM_DAILY_LIMIT:
+            print(f"⚠️ LLM daily limit reached ({LLM_DAILY_LIMIT}); marking {len(pending_batch)} papers for retry.")
+            for item in pending_batch:
+                llm_results[item['id']] = None
+            pending_batch = []
+            return
+        if last_llm_call_time is not None:
+            elapsed = time.time() - last_llm_call_time
+            if elapsed < min_llm_interval:
+                sleep_time = min_llm_interval - elapsed
+                print(f"   ⏳ Sleeping {sleep_time:.2f}s to respect LLM RPM limit...")
+                time.sleep(sleep_time)
+        batch_result = get_llm_batch_analysis(pending_batch, taste_profile[:5], gemini_api_key)
+        llm_calls_made += 1
+        last_llm_call_time = time.time()
+        llm_results.update(batch_result)
+        pending_batch = []
 
     for i, paper in enumerate(papers_to_analyze):
         paper_id = paper.entry_id.split('/abs/')[-1]
@@ -301,23 +351,33 @@ def update_archive():
         if base_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
             discovery_sources.append(DMRG_SOURCE_TAG)
 
-        llm_result = None
         if existing_data and existing_data.get('reasoning') and existing_data.get('reasoning') != LLM_FAILURE_REASON:
-            print(f"  -> LLM data exists. Skipping API call.")
-            llm_result = {
+            llm_results[paper_id] = {
                 "score": existing_data.get('score', 0.0),
                 "reason": existing_data.get('reasoning'),
                 "suggested_keywords": existing_data.get('suggested_keywords', [])
             }
         else:
-            if last_llm_call_time is not None:
-                elapsed = time.time() - last_llm_call_time
-                if elapsed < min_llm_interval:
-                    sleep_time = min_llm_interval - elapsed
-                    print(f"   ⏳ Sleeping {sleep_time:.2f}s to respect LLM RPM limit...")
-                    time.sleep(sleep_time)
-            llm_result = get_llm_analysis({'title': paper.title, 'summary': paper.summary}, taste_profile[:5], gemini_api_key)
-            last_llm_call_time = time.time()
+            pending_batch.append({
+                "id": paper_id,
+                "title": paper.title,
+                "summary": paper.summary
+            })
+            if len(pending_batch) >= LLM_BATCH_SIZE:
+                flush_batch()
+
+        pending_entries.append({
+            "paper": paper,
+            "discovery_sources": discovery_sources,
+            "is_new_paper": is_new_paper
+        })
+
+    flush_batch()
+
+    for entry in pending_entries:
+        paper = entry["paper"]
+        paper_id = paper.entry_id.split('/abs/')[-1]
+        llm_result = llm_results.get(paper_id)
 
         if llm_result:
             vector_matches = []
@@ -341,9 +401,9 @@ def update_archive():
                 'matching_keywords': [kw for kw in KEYWORDS if kw.lower() in (paper.title + paper.summary).lower()],
                 'suggested_keywords': llm_result.get('suggested_keywords', []),
                 'vector_matches': vector_matches,
-                'discovery_sources': discovery_sources
+                'discovery_sources': entry["discovery_sources"]
             }
-            if is_new_paper:
+            if entry["is_new_paper"]:
                 newly_added_ids.append(paper_id)
         else:
             archive[paper_id] = {
@@ -351,12 +411,9 @@ def update_archive():
                 'authors': [{'name': a.name, 'affiliation': getattr(a, 'affiliation', None)} for a in paper.authors if a],
                 'summary': paper.summary.replace('\n', ' '), 'published_date': paper.published.strftime('%Y-%m-%d'),
                 'reasoning': LLM_FAILURE_REASON, 'vector_matches': [], 'score': 0,
-                'discovery_sources': discovery_sources
+                'discovery_sources': entry["discovery_sources"]
             }
             print(f"  -> Marking paper {paper_id} for retry due to LLM analysis failure.")
-
-        if delay_seconds > 0 and i < len(papers_to_analyze) - 1:
-            time.sleep(delay_seconds)
 
     print(f"💾 Saving archive with {len(archive)} total papers...")
     with open(ARCHIVE_PATH, 'w') as f: json.dump(archive, f, indent=2)
