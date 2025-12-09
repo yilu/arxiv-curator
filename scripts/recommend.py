@@ -403,7 +403,7 @@ def generate_site(new_paper_ids):
     liked_paper_ids = set(liked_paper_details.keys())
 
     papers_by_month = defaultdict(list)
-    for paper in archive.values():
+    for paper in archive_for_render.values():
         date_key = (paper.get('published_date') or '0000-00-00')[:7]
         papers_by_month[date_key].append(paper)
 
