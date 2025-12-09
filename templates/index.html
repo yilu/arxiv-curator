@@ -56,20 +56,30 @@
                     </button>
                 </div>
                 <h2 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Archives</h2>
-                <ul class="space-y-2">
-                    {% for month in all_months %}
-                    <li>
-                        <a href="{{ 'index.html' if loop.first else month + '.html' }}" class="block px-3 py-2 rounded-md text-sm font-medium
-                            {% if month == current_month %}
-                                bg-blue-100 text-blue-700 font-semibold
-                            {% else %}
-                                text-gray-600 hover:bg-gray-100 hover:text-gray-900
-                            {% endif %}">
-                            {{ month }}
-                        </a>
-                    </li>
+                <div class="space-y-2">
+                    {% for year_group in year_sections %}
+                    <details class="border border-gray-200 rounded-lg overflow-hidden" {% if year_group.year == current_month[:4] %}open{% endif %}>
+                        <summary class="flex items-center justify-between px-3 py-2 cursor-pointer text-sm font-semibold text-gray-700 bg-gray-50 hover:bg-gray-100">
+                            <span>{{ year_group.year }}</span>
+                            <span class="text-xs text-gray-500">{{ year_group.months|length }} months</span>
+                        </summary>
+                        <ul class="space-y-1 px-2 pb-2 pt-1">
+                            {% for month in year_group.months %}
+                            <li>
+                                <a href="{{ 'index.html' if month == latest_month else month + '.html' }}" class="block px-3 py-2 rounded-md text-sm font-medium
+                                    {% if month == current_month %}
+                                        bg-blue-100 text-blue-700 font-semibold
+                                    {% else %}
+                                        text-gray-600 hover:bg-gray-100 hover:text-gray-900
+                                    {% endif %}">
+                                    {{ month }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </details>
                     {% endfor %}
-                </ul>
+                </div>
             </nav>
 
             <!-- Main Content -->

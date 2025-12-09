@@ -32,8 +32,8 @@ GENERATED_HTML_PATH = 'dist/index.html'
 # The maximum number of papers to display on each monthly archive page.
 RECOMMENDATION_LIMIT = 150
 
-# How far back (in days) papers are considered for recommendations/rendering.
-MAX_PAPER_AGE_DAYS = 365
+# Earliest date to consider when ingesting new papers (YYYY-MM-DD).
+ARCHIVE_START_DATE = '2024-01-01'
 
 # The Requests Per Minute (RPM) limit for your Gemini API tier.
 # The script will automatically calculate the necessary delay based on this.

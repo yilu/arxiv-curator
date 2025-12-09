@@ -17,7 +17,7 @@ from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
     RECOMMENDATION_LIMIT, LLM_RPM_LIMIT, DMRG_URL, DMRG_SOURCE_TAG,
-    DMRG_SITE_LIMIT, MAX_PAPER_AGE_DAYS
+    DMRG_SITE_LIMIT, ARCHIVE_START_DATE
 )
 
 ARCHIVE_PATH = 'archive.json'
@@ -25,30 +25,28 @@ FOLLOWED_AUTHORS_PATH = 'followed_authors.json'
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 LLM_FAILURE_REASON = "Could not be analyzed by LLM."
 
-def _now_utc():
-    return datetime.now(timezone.utc)
+START_DATE = datetime.strptime(ARCHIVE_START_DATE, '%Y-%m-%d').replace(tzinfo=timezone.utc)
 
 def _ensure_utc(dt):
     if dt is None:
         return None
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
-def is_recent_datetime(dt):
-    """Returns True if the datetime is within the configured max age."""
+def is_on_or_after_start_datetime(dt):
+    """Returns True if the datetime is on/after the configured start date."""
     normalized = _ensure_utc(dt)
     if normalized is None:
         return False
-    cutoff = _now_utc() - timedelta(days=MAX_PAPER_AGE_DAYS)
-    return normalized >= cutoff
+    return normalized >= START_DATE
 
-def is_recent_date_str(date_str):
+def is_on_or_after_start_date_str(date_str):
     if not date_str:
         return False
     try:
         parsed = datetime.strptime(date_str, '%Y-%m-%d').replace(tzinfo=timezone.utc)
     except ValueError:
         return False
-    return is_recent_datetime(parsed)
+    return is_on_or_after_start_datetime(parsed)
 
 def filter_arxiv_categories(categories):
     """Filters a list of strings to only include valid arXiv category formats."""
@@ -73,7 +71,7 @@ def get_recent_papers():
         )
         try:
             for paper in client.results(search):
-                if not is_recent_datetime(_ensure_utc(getattr(paper, 'published', None))):
+                if not is_on_or_after_start_datetime(_ensure_utc(getattr(paper, 'published', None))):
                     skipped_old += 1
                     continue
                 paper_id = paper.entry_id.split('/abs/')[-1]
@@ -82,7 +80,7 @@ def get_recent_papers():
         except Exception as e:
             print(f"🔴 Error fetching from {category}: {e}")
     if skipped_old:
-        print(f"⚠️ Skipped {skipped_old} papers older than {MAX_PAPER_AGE_DAYS} days while fetching categories.")
+        print(f"⚠️ Skipped {skipped_old} papers published before {ARCHIVE_START_DATE} while fetching categories.")
     print(f"✅ Found a total of {len(all_papers)} unique recent papers.")
     return list(all_papers.values())
 
@@ -115,7 +113,7 @@ def get_papers_from_followed_authors():
         )
         try:
             for paper in client.results(search):
-                if not is_recent_datetime(_ensure_utc(getattr(paper, 'published', None))):
+                if not is_on_or_after_start_datetime(_ensure_utc(getattr(paper, 'published', None))):
                     skipped_old += 1
                     continue
                 paper_id = paper.entry_id.split('/abs/')[-1]
@@ -124,7 +122,7 @@ def get_papers_from_followed_authors():
             print(f"🔴 Error fetching for author {author['name']}: {e}")
 
     if skipped_old:
-        print(f"⚠️ Skipped {skipped_old} older papers from followed authors (>{MAX_PAPER_AGE_DAYS} days).")
+        print(f"⚠️ Skipped {skipped_old} older papers from followed authors (before {ARCHIVE_START_DATE}).")
     print(f"✅ Found {len(author_papers)} papers from followed authors.")
     return list(author_papers.values())
 
@@ -242,7 +240,7 @@ def update_archive():
 
     retry_ids = {
         pid for pid, p_data in archive.items()
-        if is_recent_date_str(p_data.get('published_date')) and (
+        if is_on_or_after_start_date_str(p_data.get('published_date')) and (
             (p_data.get('reasoning') == LLM_FAILURE_REASON or p_data.get('reasoning') is None) or
             (taste_profile_exists and not p_data.get('vector_matches')) or
             (pid.split('v')[0] in dmrg_paper_ids and DMRG_SOURCE_TAG not in p_data.get('discovery_sources', []))
@@ -389,22 +387,23 @@ def generate_site(new_paper_ids):
 
     with open(ARCHIVE_PATH, 'r') as f: archive = json.load(f)
 
+    archive_for_render = {
+        pid: paper for pid, paper in archive.items()
+        if is_on_or_after_start_date_str(paper.get('published_date'))
+    }
+    skipped_old = len(archive) - len(archive_for_render)
+    if skipped_old:
+        print(f"⚠️ Skipping {skipped_old} papers published before {ARCHIVE_START_DATE} while generating the site.")
+    if not archive_for_render:
+        archive_for_render = archive  # fallback to avoid empty site if data is malformed
+
     # Load taste profile and create a lookup map for rendering vector matches
     taste_profile = json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else []
     liked_paper_details = {item['id']: item for item in taste_profile}
     liked_paper_ids = set(liked_paper_details.keys())
 
-    recent_archive = {
-        pid: paper for pid, paper in archive.items()
-        if is_recent_date_str(paper.get('published_date'))
-    }
-    skipped_old = len(archive) - len(recent_archive)
-    if skipped_old:
-        print(f"⚠️ Skipping {skipped_old} papers older than {MAX_PAPER_AGE_DAYS} days while generating the site.")
-    archive_for_render = recent_archive if recent_archive else archive
-
     papers_by_month = defaultdict(list)
-    for paper in archive_for_render.values():
+    for paper in archive.values():
         date_key = (paper.get('published_date') or '0000-00-00')[:7]
         papers_by_month[date_key].append(paper)
 
@@ -412,6 +411,19 @@ def generate_site(new_paper_ids):
 
     valid_months = [m for m in papers_by_month.keys() if re.match(r'^\d{4}-\d{2}$', m)]
     sorted_months = sorted(valid_months, reverse=True)
+
+    year_to_months = defaultdict(list)
+    for month in sorted_months:
+        year_to_months[month[:4]].append(month)
+    year_sections = [
+        {"year": year, "months": months}
+        for year, months in sorted(
+            ((year, sorted(months, reverse=True)) for year, months in year_to_months.items()),
+            key=lambda ym: ym[0],
+            reverse=True
+        )
+    ]
+    latest_month = sorted_months[0] if sorted_months else None
 
     env = Environment(loader=FileSystemLoader('templates'))
     env.filters['format_byl_authors'] = format_authors_filter
@@ -438,7 +450,7 @@ def generate_site(new_paper_ids):
         unique_keywords_in_month = sorted(list(set(kw for p in papers_to_render for kw in p.get('matching_keywords', []))))
 
         html_content = template.render(
-            papers=papers_to_render, current_month=month, all_months=sorted_months,
+            papers=papers_to_render, current_month=month, latest_month=latest_month, year_sections=year_sections,
             github_repo=github_repo, new_paper_ids=new_paper_ids,
             liked_paper_ids=liked_paper_ids,
             liked_paper_details=liked_paper_details, # Pass the lookup map to the template
