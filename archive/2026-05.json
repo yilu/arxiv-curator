@@ -20610,14 +20610,41 @@
         "name": "Yoshimoto Yuta"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.CE",
+      "cs.CL"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2605.30743v2",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-05-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces a novel AI-driven method for encoding and generating inorganic materials, directly supporting the discovery and design of materials relevant to the user's interests.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Generative models",
+      "Materials design",
+      "Crystal symmetry"
+    ],
     "summary": "Designing novel inorganic materials through generative models remains an important challenge for material science, driven by the complexity and diversity of inorganic structures across expansive chemical compositions and structural landscape. The vast combinatorial space of inorganic compounds demands innovative, AI-driven approaches to overcome limitations in generative accuracy and efficiency. To address this, we introduce a novel method that redefines the encoding and generation of inorganic materials by utilizing domain-specific symmetry-aware representation. Our approach not only refines the representation of intricate inorganic structures but also contributes to the field of material discovery by enhancing the precision and stability of generated candidates. Central to our methodology is a novel padding technique that exploits crystal symmetry information to enhance the encoding process. By integrating Wyckoff position length-aware padding into an encoder architecture, we achieve a more robust informed representation of inorganic materials. This symmetry-driven enhancement improves deep learning models to generate stable, previously unexplored inorganic structures with superior accuracy and computational efficiency. Furthermore, we introduce an end-to-end system that leverages the machine learning potential models to seamlessly generate novel, even those unseen in the training data, and stable inorganic materials from initial data to validated output. This pipeline integrates advanced generative models with stability analysis, marking a significant leap forward in the automated exploration and design of next-generation inorganic materials. Our method improved reconstruction accuracy 5.3% in proton conductor data, and generated 63.5% more novel stable inorganic material to baseline model on the perov-5 dataset.",
     "title": "A Padding Method for Enhanced Encoding of Inorganic Structures with Varying Chemical Compositions",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.433433473110199
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.39518284797668457
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.37993568181991577
+      }
+    ]
   },
   "2605.30752v1": {
     "authors": [
@@ -21451,14 +21478,41 @@
         "name": "Kjell Jorner"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.chem-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.00666v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-05-30",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces a machine learning model for generating structures of transition metal complexes, a broad category that includes materials relevant to the user's interests, focusing on efficient structure generation.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Transition metal complexes",
+      "Generative models",
+      "Materials design"
+    ],
     "summary": "Transition metal complexes are central to catalysis, drug design, and materials science, with relevant properties strongly sensitive to their three-dimensional geometry. However, the electronic diversity and unconventional bonding environments of transition metal complexes pose a major challenge for accurate structure generation. In this work, we introduce TMCgen, a manifold diffusion machine learning model that efficiently and accurately generates geometries of transition metal complexes. By formulating the diffusion process over the metal-ligand coordination angles, combined with torsional and rotational diffusion of the ligands, TMCgen focuses on the key geometric degrees of freedom of transition metal complexes. TMCgen shows strong performance in generating accurate coordination environments on a diverse set of experimentally derived bioinorganic and organometallic complexes while requiring only few inference steps, enabling efficient generation. Our results demonstrate the potential of manifold-based generative modeling for data-efficient geometry generation, paving the way for property-conditioned design of transition metal complexes.",
     "title": "Manifold Diffusion for Structure Generation of Transition Metal Complexes",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.3611304461956024
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.3483095169067383
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3452304005622864
+      }
+    ]
   },
   "2606.00794v1": {
     "authors": [

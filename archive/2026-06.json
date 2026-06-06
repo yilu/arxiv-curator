@@ -413,14 +413,40 @@
         "name": "Jiangping Hu"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.01984v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
     "published_date": "2026-06-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper develops an efficient computational method for spin dynamics in strongly correlated materials, including a nickelate, directly aligning with interests in theoretical approaches for correlated systems and specific material families.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Slave-boson theory",
+      "Spin dynamics",
+      "Correlated quantum materials"
+    ],
     "summary": "Spin-wave excitations provide a central probe of magnetic order and electronic correlations in strongly correlated materials. In this work, we develop an adiabatic theory of spin dynamics by combining the Niu-Kleinman formalism with Kotliar-Ruckenstein slave-boson theory (NK+KRSB). For each frozen spin configuration, the constrained slave-boson saddle point is solved self-consistently, allowing the Berry-curvature matrix and energy Hessian entering the linearized adiabatic equations of motion to be extracted directly. Applied to the half-filled single-orbital Hubbard model, the resulting spin-wave dispersion shows substantially improved agreement with determinant quantum Monte Carlo benchmarks compared with the random phase approximation and closely approaches results from the time-dependent Gutzwiller approximation. We further extend the method to a two-orbital model of $\\mathrm{La}_2\\mathrm{NiO}_4$, demonstrating its applicability to realistic multi-orbital correlated systems. Because the approach only requires saddle-point solutions near the magnetic ground state, it remains computationally efficient while incorporating strong-correlation effects beyond conventional weak-coupling descriptions, providing a practical framework for studying low-energy spin excitations in correlated quantum materials.",
     "title": "Spin Dynamics from Niu-Kleinman Adiabatic Approach and Slave Boson Mean Field Theory",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6445341110229492
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6143563389778137
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5914654731750488
+      }
+    ]
   },
   "2606.02152v1": {
     "authors": [
@@ -1480,16 +1506,41 @@
         "name": "Ion Nechita"
       }
     ],
+    "categories": [
+      "math.CO"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.04470v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-06-03",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This work explores multi-entropies and entanglement in random tensor networks with implications for holography, a topic that is somewhat related to quantum information and theoretical physics but less directly to condensed matter materials or strong correlation physics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Random tensor networks",
+      "Multipartite entanglement",
+      "Holography"
+    ],
     "summary": "We study the evaluation of Rényi multi-entropies $S^{(q)}_n$ in Random Tensor Network (RTN) states in the large bond-dimension limit. For the case of Rényi index $n=2$ and arbitrary number of parties $q$, we prove that that multi-entropies are determined by minimal multiway cuts through the network. When the minimal multiway cut is degenerate, we characterize the full minimizer set via compatible families of minimal cuts and give a criterion for all minimizers to come from ordinary cut partitions. For $n=2$, this gives a natural generalization of the minimal cut description of bipartite entanglement to multipartite systems with arbitrarily many parties. For the case of integer $n>2$, we show that the minimal multiway cut conjecture is in general \\emph{not true} by providing explicit counter examples for both the single random tensor and for the network built from isometric tilings. We discuss the implication for our results on the multipartite entanglement structures in RTN and holography.",
     "title": "Multi-entropy in random tensor networks",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5257697105407715
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4302747845649719
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.35240963101387024
+      }
+    ]
   },
   "2606.04506v1": {
     "authors": [
@@ -1646,16 +1697,44 @@
         "name": "Martin Friák"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.04608v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "neural quantum state",
+      "variational monte carlo"
+    ],
     "published_date": "2026-06-03",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates correlated superconducting states in quantum dot clusters using advanced computational methods, directly aligning with interests in superconductivity, correlated regimes, and novel computational techniques for quantum materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum dots",
+      "Correlated superconductivity",
+      "Variational Monte Carlo"
+    ],
     "summary": "We study an effective model of regular quantum dot clusters coupled to a common superconductor. By applying a canonical transformation, we map the system onto a particle-number-conserving representation, making it directly accessible to standard fermionic neural-network quantum-state variational Monte Carlo methods. We show that the superconducting gap closes at a particular high-symmetry point, which, in finite non-interacting systems, corresponds to crossings between singlet ground states of different character. Combining exact methods, density matrix renormalization group, and neural quantum-state variational Monte Carlo calculations, we identify three distinct interacting regimes: a trivial superconducting singlet phase, a strongly correlated regime connected to an effective Heisenberg model, and a critical intermediate regime with qualitatively different behavior in one and two dimensions. In one-dimensional systems, the intermediate regime exhibits a sequence of singlet-doublet transitions and becomes gapless in the thermodynamic limit even for finite Coulomb interaction. In two-dimensional clusters, we find robust triplet ground states. Furthermore, our results demonstrate that relatively standard fermionic neural quantum states provide an efficient approach for correlated superconducting nanostructures.",
     "title": "Correlated States in Quantum Dot Clusters Coupled to a Common Superconductor",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5609357953071594
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.5603150725364685
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.5558376312255859
+      }
+    ]
   },
   "2606.04771v1": {
     "authors": [
@@ -2451,14 +2530,41 @@
         "name": "Takeshi Kondo"
       }
     ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": "10.1038/s41467-026-73081-5",
     "id": "2606.05653v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
     "published_date": "2026-06-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly investigates the BCS-BEC crossover and Fermi surface topology in a high-Tc cuprate superconductor using advanced experimental techniques, aligning perfectly with previous interests in cuprate superconductivity and electronic correlations.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "BCS-BEC crossover",
+      "Fermi pockets",
+      "Angle-resolved photoemission spectroscopy"
+    ],
     "summary": "Fermi arcs observed in underdoped cuprates have sparked debate over whether they represent segments of a large Fermi surface or small Fermi pockets. This ambiguity has long hindered their classification as either the conventional Bardeen-Cooper-Schrieffer (BCS) regime or the strongly coupled Bose-Einstein condensation (BEC) crossover limit. Here, using angle-resolved photoemission spectroscopy and quantum oscillations, we demonstrate the coexistence of a small Fermi pocket and a large superconducting gap in the clean inner CuO2 layers of the four-layer cuprate Ba2Ca3Cu4O8(F,O)2. This coexistence constitutes a hallmark of the BCS-BEC crossover and has remained elusive for decades. Despite the presence of antiferromagnetic (AF) order, the superconducting gap in the small pocket is remarkably large, yielding a gap-to-Fermi-energy ratio (Delta_pocket/e_F ~ 0.6) and a critical-to-Fermi-temperature ratio (Tc/TF ~ 1.3) that reach the theoretical upper bound for two-dimensional superconductivity. Unexpectedly, this BCS-BEC crossover emerges not as the carrier density decreases but as it increases, abruptly within a narrow doping range of less than 1%. These results provide a long-sought microscopic foundation for the d-wave pairing mechanism in doped AF-Mott insulators.",
     "title": "BCS-BEC crossover driven by small Fermi pockets of a high-Tc cuprate superconductor",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.6857508420944214
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6633447408676147
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.6146390438079834
+      }
+    ]
   },
   "2606.05822v1": {
     "authors": [
@@ -2847,16 +2953,39 @@
         "name": "Pasquale Calabrese"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.06362v1",
+    "matching_keywords": [],
     "published_date": "2026-06-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates quantum thermalization and non-equilibrium dynamics in free fermion systems, aligning with theoretical aspects of condensed matter physics and many-body problems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum thermalization",
+      "Mpemba effect",
+      "Generalized hydrodynamics"
+    ],
     "summary": "We study thermalisation and the possible occurrence of the Mpemba effect in a closed quantum setting that mimics the interaction of a system with thermal reservoirs coupled only at its boundaries. Specifically, we consider a tripartite geometry in which a finite chain, initially prepared at a finite temperature, is suddenly connected on both sides to two semi-infinite chains of the same nature held at a different temperature. These outer chains act as thermal baths, while the full system evolves unitarily under a homogeneous Hamiltonian. This setup provides a simple quantum realisation of a temperature quench and closely resembles the original scenario in which the classical Mpemba effect was first observed. We focus on two paradigmatic free-fermion models, the XX chain and the transverse-field Ising chain, which respectively preserve and break the global $U(1)$ particle-number symmetry. As a probe of relaxation, we consider the Frobenius distance between the time-evolved reduced density matrix of the central subsystem and its stationary state, which is the thermal state at the bath temperature. Exploiting the free-fermionic structure of both models, the dynamics remains Gaussian and the Frobenius distance can be expressed exactly in terms of two-point correlation functions. Combining this representation with generalised hydrodynamics, we derive analytical predictions for the Frobenius distance in the hydrodynamic limit, providing a complete characterisation of the thermalisation process. Using these results, we investigate the possible occurrence of the Mpemba effect. We find that, despite the genuine non-equilibrium dynamics displayed by the system, no Mpemba effect arises in this setting. Our analysis identifies a broad class of boundary-driven thermalisation protocols in which relaxation is fully characterised analytically and exhibits no anomalous acceleration of equilibration.",
     "title": "A closed system setting for quantum thermalisation in free fermions",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5443267226219177
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5332954525947571
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.48679980635643005
+      }
+    ]
   },
   "2606.06415v1": {
     "authors": [
@@ -2881,14 +3010,40 @@
         "name": "Ketson R. M. dos Santos"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.06415v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
     "published_date": "2026-06-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on machine learning for polymer design, a materials class distinctly different from the strongly correlated inorganic materials the user has shown interest in.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Polymer informatics",
+      "Graph Neural Networks",
+      "Generative models"
+    ],
     "summary": "Polymers are indispensable materials with applications ranging from electronics to medicine owing to their versatility, which can be tailored by adjusting their chemical composition and architecture. The design space for these compounds is vast and governed by factors such as monomer classes, copolymer configurations (e.g., linear, branched, random, and alternating), chain size, stoichiometry, and material properties (e.g., density, refractive index, solubility, and Poisson's ratio). Exploring this space requires efficient computational methodologies for polymer science. To address this challenge, we introduce PolyGraphPy, an open-source Python framework that integrates atomistic simulations with machine learning for accurate property prediction and property-guided polymer design. The framework automates Density Functional Tight Binding calculations to efficiently construct structured datasets for monomers, homopolymers, and alternating copolymers. For property prediction, PolyGraphPy employs Bayesian Graph Neural Networks (GNNs) with stochastic graph representations to predict target properties, such as static polarizability, while providing robust uncertainty quantification. Furthermore, the platform incorporates two complementary generative models for the de novo design of targeted molecules: a SELFIES-based Generative Pretrained Transformer (GPT) and a Genetic Algorithm (GA) based on BRICS graph fragmentation. Demonstrated on a dataset of acrylates, PolyGraphPy provides a highly customizable end-to-end pipeline that reduces computational costs and accelerates data-driven polymer informatics.",
     "title": "PolyGraphPy: A unified Python framework for atomistic simulation and machine learning-driven polymer design",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.4482373297214508
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.388796329498291
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3748399019241333
+      }
+    ]
   },
   "2606.06430v1": {
     "authors": [
