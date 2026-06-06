@@ -1,0 +1,84 @@
+{
+  "2407.02454v3": {
+    "authors": [
+      {
+        "affiliation": null,
+        "name": "Yuriel Núñez Fernández"
+      },
+      {
+        "affiliation": null,
+        "name": "Marc K. Ritter"
+      },
+      {
+        "affiliation": null,
+        "name": "Matthieu Jeannin"
+      },
+      {
+        "affiliation": null,
+        "name": "Jheng-Wei Li"
+      },
+      {
+        "affiliation": null,
+        "name": "Thomas Kloss"
+      },
+      {
+        "affiliation": null,
+        "name": "Thibaud Louvet"
+      },
+      {
+        "affiliation": null,
+        "name": "Satoshi Terasaki"
+      },
+      {
+        "affiliation": null,
+        "name": "Olivier Parcollet"
+      },
+      {
+        "affiliation": null,
+        "name": "Jan von Delft"
+      },
+      {
+        "affiliation": null,
+        "name": "Hiroshi Shinaoka"
+      },
+      {
+        "affiliation": null,
+        "name": "Xavier Waintal"
+      }
+    ],
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.21468/SciPostPhys.18.3.104",
+    "id": "2407.02454v3",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2024-07-02",
+    "reasoning": "While the paper deals with efficient algorithms, tensor networks are not explicitly related to the user's interests in condensed matter physics, superconductivity, or topological materials.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Tensor cross interpolation",
+      "Matrix product states",
+      "Rank-revealing algorithms"
+    ],
+    "summary": "The tensor cross interpolation (TCI) algorithm is a rank-revealing algorithm for decomposing low-rank, high-dimensional tensors into tensor trains/matrix product states (MPS). TCI learns a compact MPS representation of the entire object from a tiny training data set. Once obtained, the large existing MPS toolbox provides exponentially fast algorithms for performing a large set of operations. We discuss several improvements and variants of TCI. In particular, we show that replacing the cross interpolation by the partially rank-revealing LU decomposition yields a more stable and more flexible algorithm than the original algorithm. We also present two open source libraries, xfac in Python/C++ and TensorCrossInterpolation.jl in Julia, that implement these improved algorithms, and illustrate them on several applications. These include sign-problem-free integration in large dimension, the superhigh-resolution quantics representation of functions, the solution of partial differential equations, the superfast Fourier transform, the computation of partition functions, and the construction of matrix product operators.",
+    "title": "Learning tensor networks with tensor cross interpolation: new algorithms and libraries",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5310250520706177
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4769916236400604
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.47458770871162415
+      }
+    ]
+  }
+}

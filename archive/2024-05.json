@@ -1,0 +1,61 @@
+{
+  "2405.20996v1": {
+    "authors": [
+      {
+        "affiliation": null,
+        "name": "Nepomuk Ritz"
+      },
+      {
+        "affiliation": null,
+        "name": "Anxiang Ge"
+      },
+      {
+        "affiliation": null,
+        "name": "Elias Walter"
+      },
+      {
+        "affiliation": null,
+        "name": "Santiago Aguirre"
+      },
+      {
+        "affiliation": null,
+        "name": "Jan von Delft"
+      },
+      {
+        "affiliation": null,
+        "name": "Fabian B. Kugler"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1063/5.0221340",
+    "id": "2405.20996v1",
+    "matching_keywords": [],
+    "published_date": "2024-05-31",
+    "reasoning": "The paper discusses the single-impurity Anderson model and functional renormalization group methods, both of which are relevant to dynamical mean-field theory and strongly correlated electron systems, aligning with the user's interests in electronic structure and superconductivity.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Keldysh formalism",
+      "functional renormalization group",
+      "single-impurity Anderson model"
+    ],
+    "summary": "We provide a detailed exposition of our computational framework designed for the accurate calculation of real-frequency dynamical correlation functions of the single-impurity Anderson model (AM) in the regime of weak to intermediate coupling. Using quantum field theory within the Keldysh formalism to directly access the self-energy and dynamical susceptibilities in real frequencies, as detailed in our recent publication (https://doi.org/10.1103/PhysRevB.109.115128), the primary computational challenge is the full three-dimensional real-frequency dependence of the four-point vertex. Our codebase provides a fully MPI+OpenMP parallelized implementation of the functional renormalization group (fRG) and the self-consistent parquet equations within the parquet approximation. It leverages vectorization to handle the additional complexity imposed by the Keldysh formalism, using optimized data structures and highly performant integration routines. Going beyond the results shown in the previous publication, the code includes functionality to perform fRG calculations in the multiloop framework, at arbitrary loop order, including self-consistent self-energy iterations. Moreover, implementations of various regulators, such as hybridization, interaction, frequency, and temperature are supplied.",
+    "title": "KeldyshQFT: A C++ codebase for real-frequency multiloop functional renormalization group and parquet computations of the single-impurity Anderson model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.7517354488372803
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.6966776847839355
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.6945123672485352
+      }
+    ]
+  }
+}

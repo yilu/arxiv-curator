@@ -1,0 +1,635 @@
+{
+  "2606.01515v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Igor Solovyev"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.01515v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper directly aligns with the user's interests by investigating electronic-structure calculations, strong-coupling regimes, and novel magnetic properties like altermagnetism in a specific material, similar to previous liked topics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Strong-coupling physics",
+      "Magneto-optical response"
+    ],
+    "summary": "MnF$_2$ is widely regarded as a candidate altermagnet, but the magnitude and implications of its altermagnetic band splitting remain debated. Using electronic-structure calculations, we construct minimal models that capture the magnetic and electronic properties of MnF$_2$. These models show that the parameters governing the chiral magnon splitting and the spin splitting of the electronic bands are relatively small. Moreover, the electronic system lies in the strong-coupling regime, where most magnetic properties are controlled by the ratio $t/U$ between the characteristic hopping amplitude $t$ and the large on-site Coulomb repulsion $U$. Consequently, all exchange interactions scale as $1/U$, so a small altermagnetic hopping $δt$ produces only a proportionally small exchange term. Upon doping, the altermagnetic contribution to the anomalous Hall effect is likewise suppressed, being smaller than the conventional (non-altermagnetic) contribution by a factor of order $δt/U$. In contrast, the behavior of the conductivity tensor $\\hatσ(ω)$ at $\\hbar ω\\sim U$ differs qualitatively, because $δt$ enters the energies of interband optical transitions \\emph{directly} rather than through the reduced ratio $δt/U$. This contribution strongly reshapes $\\hatσ(ω)$, leading to a dramatic enhancement of the magneto-optical response.",
+    "title": "Altermagnetism in MnF$_2$: Band Splitting and Its Physical Consequences",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5607117414474487
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5323466062545776
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5097470879554749
+      }
+    ]
+  },
+  "2606.01540v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Farzaneh Heidari"
+      },
+      {
+        "affiliation": [],
+        "name": "Guillaume Rabusseau"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.01540v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper is focused on machine learning interpretability using tensor networks for graph-structured data, which is unrelated to the user's interests in condensed matter physics or materials science.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Shapley Values",
+      "Tensor Networks",
+      "Graph Neural Networks"
+    ],
+    "summary": "Shapley values are a widely used tool for attributing importance and interactions among input variables in black-box models, but their computation involves a function defined over an exponentially large space of subsets. We propose TN-SHAP-G, a framework that exploits structure in graph-structured inputs to compute Shapley values and higher-order interaction indices efficiently. Given a predictor and a fixed masking scheme, TN-SHAP-G learns a compact, graph-aligned multilinear surrogate that approximates the masked-input behavior, represented as a tensor network whose topology mirrors the input graph. Once trained from a small number of oracle queries, the surrogate enables deterministic recovery of first- and higher-order Shapley indices via the multilinear extension, without additional model queries or Monte Carlo variance. Experiments on molecular benchmarks show that the learned factorization closely matches exact Shapley values on small graphs and scales efficiently to larger graphs where sampling-based methods become infeasible.",
+    "title": "TN-SHAP-G: Graph-Structured Tensor Network Surrogates for Shapley Values and Interactions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.46963563561439514
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3601110279560089
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3539127707481384
+      }
+    ]
+  },
+  "2606.01568v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ngo Phuoc Nguyen Ngoc"
+      },
+      {
+        "affiliation": [],
+        "name": "Lam Thi Nhung"
+      },
+      {
+        "affiliation": [],
+        "name": "Huynh Anh Thi"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.01568v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper describes a theoretical stochastic lattice model for particle transport, which is outside the scope of strongly correlated materials, topological physics, or specific material characterization methods.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Stochastic Processes",
+      "Lattice Models",
+      "Collective Transport"
+    ],
+    "summary": "We introduce the \\emph{tandem exclusion process} (TEP), a one-dimensional stochastic lattice model motivated by tandem running in ants. Particles evolve through two cooperative local transitions, $110\\to101$ at rate $α$ (leader advancement) and $101\\to011$ at rate $β$ (follower recovery). We prove that the stationary measure on the dynamically active sector is the Gibbs measure $π\\propto q^{H(η)}$, where $q=β/α$ and $H(η)$ counts neighboring occupied pairs, and derive exact closed-form expressions for the stationary current and spatial correlations using transfer-matrix methods. The current is asymmetric under particle--hole exchange $ρ\\mapsto1-ρ$, with its maximum occurring at densities strictly larger than $1/2$, in contrast to the symmetric current $ρ(1-ρ)$ of the totally asymmetric simple exclusion process (TASEP). For $q>1$, cooperative dynamics enhances the current above the TASEP value and generates strong spatial clustering; in the limit $q\\to\\infty$, the current approaches $J\\toαρ$, corresponding to nearly unconstrained collective transport. These results suggest that tandem coordination alone can substantially enhance collective transport efficiency at moderate and high densities, even without pheromone-mediated long-range communication.",
+    "title": "Tandem Exclusion Process",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.43274229764938354
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.41428878903388977
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.38533440232276917
+      }
+    ]
+  },
+  "2606.01763v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Christian S. Ahart"
+      },
+      {
+        "affiliation": [],
+        "name": "Denan Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Jochen Blumberger"
+      },
+      {
+        "affiliation": [],
+        "name": "Shi Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.01763v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper directly addresses charge carrier transport and polaron dynamics in transition metal oxides using advanced machine learning and first-principles molecular dynamics, aligning well with the study of electronic properties and computational methods in strongly correlated systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Polaron Transport",
+      "Transition Metal Oxides",
+      "Machine Learning MD"
+    ],
+    "summary": "Transition metal oxides have attracted much attention as photo(electrochemical)-catalysts but practical applications are typically hampered by their low and anisotropic charge mobility. A deep understanding of excess charge carrier transport in these materials requires a dynamical treatment of nuclear motion that goes well beyond standard approaches. Here we introduce DeepPolaron, a machine learning framework boosting the accessible time scale of first principles molecular dynamics of adiabatic polaron transport by three orders of magnitude at a virtually negligible loss in accuracy. We apply our method to excess electron and hole transport in titanium dioxide rutile and anatase. We find that the excess electron in rutile relaxes to a polaron predominantly localized on a single Ti atom with hopping occurring only along the [001] direction, associated with an activation energy of 39 meV and a room temperature mobility of $4.4 \\times 10^{-2}$ cm$^2$/Vs in good agreement with experiment. In contrast the hole polaron in anatase is localized on a single O atom, and due to poor O 2p orbital overlap with first nearest neighbors charge transport occurs primarily to second nearest neighbors, with a large activation energy of 139 meV resulting in a small room temperature mobility of $1.4 \\times 10^{-3}$ cm$^2$/Vs. This work provides a finite temperature first-principles characterization of small polaron transport in rutile and anatase, with a methodology that is directly transferable to other small polaron forming materials and interfacial charge-transfer processes.",
+    "title": "Polaron Transport in TiO$_{2}$ from Machine Learning Molecular Dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.48436248302459717
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NaGl4SEjCO4C",
+        "score": 0.4587520360946655
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.42592141032218933
+      }
+    ]
+  },
+  "2606.01852v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Feng Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanfeng Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Springer"
+      },
+      {
+        "affiliation": [],
+        "name": "Xipeng Li"
+      }
+    ],
+    "categories": [
+      "cs.DC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.01852v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper details the parallelization of tensor network contraction, a computational method applicable to many-body dynamics relevant to condensed matter physics, but its primary focus is on high-performance computing optimization.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Tensor network contraction",
+      "Multi-GPU",
+      "High-performance computing"
+    ],
+    "summary": "Exact tensor network contraction underpins quantum circuit simulation, quantum error correction, combinatorial optimization, and many-body dynamics. The dominant parallelization strategy, slicing, scales exponentially and incurs redundant computation. We present a multi-GPU framework that instead distributes intermediate tensors across devices with explicit communication, converting a fixed contraction path into a communication-efficient schedule via GEMM-oriented mode reordering and communication-aware mode distribution planning. Within a single DGX H100 node (8 GPUs, NVLink), distribution delivers $7$--$173\\times$ extra speedup beyond embarrassingly parallel slicing, capturing nearly all of the available compute reduction (87--101%) because NVLink's high bandwidth keeps communication small relative to compute. Scaling the same four workloads to 1024 H100 GPUs over InfiniBand, the extra speedup beyond slicing ranges from $42\\times$ to $67{,}869\\times$, demonstrating that communication-aware distributed contraction far surpasses slicing-based scaling limits for frontier tensor networks.",
+    "title": "Parallelizing Large-Scale Tensor Network Contraction on Multiple GPUs",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4724927544593811
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4326520562171936
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4282999634742737
+      }
+    ]
+  },
+  "2606.01922v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sinan Pehlivanoglu"
+      },
+      {
+        "affiliation": [],
+        "name": "Srinivasan Iyengar"
+      },
+      {
+        "affiliation": [],
+        "name": "Amr Sabry"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.01922v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper focuses on classical simulation techniques for quantum circuits, which is a different domain from the material-focused condensed matter physics topics of the liked papers.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum circuit simulation",
+      "Classical simulation",
+      "Interference sampling"
+    ],
+    "summary": "Classical simulation of quantum circuits is expensive for two distinct reasons. The obvious one is state-space size: an n-qubit system requires exponentially many amplitudes. The less obvious one is interference: useful output distributions emerge only after many computational histories have been coherently combined at common endpoints, and this aggregation step is itself a substantial source of cost. We introduce statistical interference sampling, a framework that makes this second bottleneck explicit by treating endpoint interference as a separately schedulable computation. Using the Chemical Abstract Machine (ChAM) as our model, weighted path contributions evolve as concurrent molecular species, and interference reactions combine contributions that share a common output state. A threshold rule terminates the process once an endpoint accumulates sufficient amplitude, discarding the remaining reactions. The method does not improve worst-case complexity and is not intended as a general-purpose simulator. Its purpose is to ask a more targeted question: how much of the interference calculation can be skipped while still recovering a useful output distribution? On benchmark circuits for Deutsch-Jozsa, Grover search, Simon's problem, and small Shor period-finding instances, we find that nearly 50% of endpoint interference reactions can be omitted while maintaining over 90% output accuracy for most algorithms tested. These results suggest that interference arithmetic is a structured resource that admits meaningful approximation, and that exposing it explicitly opens new opportunities for pruning strategies across path-sum, Pauli-path, and tensor-network simulation methods.",
+    "title": "Half the Interference, Most of the Answer: Approximate Quantum Simulation via Path-Sum Pruning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4499007761478424
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4322502911090851
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.42484456300735474
+      }
+    ]
+  },
+  "2606.01975v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Fabian Hoppe"
+      },
+      {
+        "affiliation": [],
+        "name": "Melven Röhrig-Zöllner"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp Knechtges"
+      }
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.SE"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.01975v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper focuses on using LLMs for algorithm development and optimization of tensor network contraction, which is distinct from the user's interest in condensed matter physics and electronic structure.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "LLM-assisted algorithm design",
+      "Contraction optimization",
+      "Evolutionary coding"
+    ],
+    "summary": "We consider LLM-based algorithm development through a case study on contractionorder optimisation for tensor networks with OpenEvolve. We pay particular attention to the choice of the LLM as well as design choices such as evaluation metric and test instances. Our results highlight both the promise of verifier-guided evolutionary coding agents for algorithm development/improvement and the continuing importance of evaluation, validation, and interpretation -- and corresponding challenges -- by the human scientist.",
+    "title": "Algorithmic algorithm development with LLMs: A Case Study on LLM-Usage for Contraction Order Optimization in Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3724316358566284
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3546774387359619
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.26329129934310913
+      }
+    ]
+  },
+  "2606.02152v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jie Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Shifang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Mengyang Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Pan Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianxin Zhong"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruqian Wu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.02152v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper explores the intersection of topological insulators, altermagnetism, and unconventional Fe-based superconductors using first-principles calculations, directly connecting to several previously liked themes including topological materials and correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Topological Superconductors",
+      "Anomalous Hall Effect"
+    ],
+    "summary": "Altermagnetism and topological insulators represent two of the most transformative frontiers in modern condensed matter physics, spintronics, and quantum information science. Bringing these two paradigms together opens a largely unexplored route toward fundamentally new quantum phenomena. Here, we predict a topological altermagnetic phase in bilayer tetragonal Fe-based superconductors and reveal it as a highly tunable platform for valley-polarized anomalous Hall physics. Based on first-principles calculations, we show that the characteristic spin-splitting and valley polarization can be effectively tuned via applied strain. Moreover, the resulting valley-polarized anomalous Hall conductivity can be manipulated by shifting the Fermi level. These findings reveal a powerful route for controlling altermagnetism in topological materials and identify a realistic material platform for its experimental realization and technological exploitation.",
+    "title": "Stacking-Engineered Switchable Altermagnetism in Topological FeSe bilayer systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6020829677581787
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5450369715690613
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5409166216850281
+      }
+    ]
+  },
+  "2606.02422v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiuxiang Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yueyang Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Honglin Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jumin Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Di Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongze Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenjin Mao"
+      },
+      {
+        "affiliation": [],
+        "name": "Hengrui Dong"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yinghao Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Ziling Cao"
+      },
+      {
+        "affiliation": [],
+        "name": "Taimin Miao"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Neng Cai"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenpei Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingkai Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiaqi Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Chunhong Deng"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xun Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhengtai Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Mao Ye"
+      },
+      {
+        "affiliation": [],
+        "name": "Shenjin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhimin Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Fengfeng Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Feng Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Qinjun Peng"
+      },
+      {
+        "affiliation": [],
+        "name": "Zuyan Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Guodong Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xintong Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanqing Mao"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiliang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongming Weng"
+      },
+      {
+        "affiliation": [],
+        "name": "Lin Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "X. J. Zhou"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.02422v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "This paper investigates strong correlation effects, p-wave magnetism, and the role of localized 4f electrons in a heavy-fermion material using ARPES and DFT+U, aligning with the user's interest in strongly correlated systems and electronic structure.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Heavy Fermions",
+      "4f electrons"
+    ],
+    "summary": "Altermagnetism, characterized by momentum-dependent spin splitting and zero net magnetization, has so far been explored mainly in weakly or moderately correlated d-electron systems. How such symmetry-allowed band splitting manifests in heavy-fermion materials, where magnetic exchange competes with Kondo correlations, remains unclear. Here we use high-resolution angle-resolved photoemission spectroscopy to investigate CeNiAsO, a heavy-fermion candidate for p-wave altermagnetism. Despite macroscopic signatures consistent with the proposed p-wave magnetic order, we find no resolvable near-Fermi-level p-wave exchange splitting on the Ni 3d-derived conduction bands across the Neel transitions. Fermi-surface mapping, orbital-resolved ARPES identify that the low-energy electronic structure is dominated by Ni 3d bands, while resonant photoemission reveals that the Ce 4f states remain predominantly localized with residual c-f hybridization. First-principles calculations further show that an uncorrected itinerant-4f description produces dispersive Ce 4f bands and additional Fermi-surface pockets that are absent in experiment, thereby overestimating both the low-energy c-f hybridization and the exchange splitting transferred to the Ni 3d bands. When the localized Ce 4f character is incorporated through DFT+U , the experimental Fermi-surface topology is recovered and the residual p-wave splitting on the Ni 3d-derived bands is reduced to only a few meV, below the effective experimental resolution. These results identify CeNiAsO as a strongly correlated f-electron limit of p-wave magnetism, in which localized 4f electrons suppress the observable single-particle band-splitting signature expected from a weak-correlation picture.",
+    "title": "Suppression of p-Wave Altermagnetism by Localized 4f Electrons in CeNiAsO",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5993101596832275
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5672220587730408
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5652596354484558
+      }
+    ]
+  },
+  "2606.02574v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Cameron V. Cogburn"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Grieninger"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitri E. Kharzeev"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.02574v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-01",
+    "reasoning": "Despite employing quantum simulation and many-body techniques, this paper's subject matter is high-energy QCD rather than condensed matter physics, making it dissimilar to the user's interests.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum chromodynamics (QCD)",
+      "Quantum simulation",
+      "Nucleon-antinucleon interaction"
+    ],
+    "summary": "We report a quantum simulation of the nucleon--antinucleon interaction in large-$N$ two-dimensional quantum chromodynamics (QCD$_2$) on the IBM Quantum Nighthawk processor. In the large-$N$ limit, QCD$_2$ admits a bosonized description in which baryons emerge as topological solitons (kinks) of an effective mesonic field theory, providing a controlled, nonperturbative framework for baryon--antibaryon dynamics.   We formulate the problem by mapping the continuum bosonized Hamiltonian to a spin-chain representation equivalent to an XXZ model with anisotropy set by the QCD parameters. In this mapping, nucleon and antinucleon states correspond to kink and antikink excitations, respectively, while their interaction is encoded in the spin correlations of the chain. Using Jordan--Wigner encoding, we implement the resulting XXZ Hamiltonian on a finite set of qubits and realize it via a variational ground state ansatz and postselected nonunitary disorder operator insertions optimized for the Nighthawk architecture. We then show the kink--antikink interaction potential built from the conditional energies of these nonunitary string operators can be robustly extracted from the quantum hardware due to structured error cancelation. The resulting potential exhibits the expected attractive behavior. The quantum simulation results are benchmarked against exact diagonalization, ideal statevector evaluation showing good agreement. To connect the device result to the continuum field theory, we extract the potential in the continuum limit using large-$L$ matrix product state calculations.",
+    "title": "Quantum Simulation of Nucleon-Antinucleon Interaction in Large-$N$ QCD$_2$ on an IBM Quantum Nighthawk Processor",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5398126840591431
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.47765105962753296
+      },
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.46775299310684204
+      }
+    ]
+  }
+}

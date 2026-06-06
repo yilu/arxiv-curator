@@ -4,11 +4,6 @@ name: 4 - Regenerate Website Only
 
 on:
   workflow_dispatch:
-    inputs:
-      cleanup_disk:
-        description: 'Set to true to run cleanup (removes preinstalled toolchains to free space)'
-        required: false
-        default: 'false'
 
 concurrency:
   group: archive-commit
@@ -20,30 +15,19 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.PAT }}
 
-      - name: Cleanup disk space (optional)
-        if: ${{ github.event.inputs.cleanup_disk == 'true' }}
-        run: |
-          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost
-          sudo apt-get clean
-          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
-
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
 
-      - name: Use shared cache & install step
-        uses: ./.github/actions/cache-setup
-        with:
-          requirements: requirements.txt
-          hf_cache_dir: ${{ github.workspace }}/.cache/hf
-          torch_cache_dir: ${{ github.workspace }}/.cache/torch
-          pip_no_cache: 'true'
-          disk_threshold_kb: 2097152
+      # Site rendering only needs Jinja2 — recommend.py defers its heavy
+      # data/ML imports, so there's no need to install torch/arxiv/etc. here.
+      - name: Install dependencies (site render only)
+        run: pip install Jinja2==3.1.6
 
       - name: Regenerate Website from Archive
         run: python -c "import sys; sys.path.append('scripts'); from recommend import generate_site; generate_site([])"

@@ -2,17 +2,11 @@
 
 import os
 import json
-import arxiv
 import shutil
 import time
-import requests
-import numpy as np
 import re
-import torch
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from collections import defaultdict
-from bs4 import BeautifulSoup
-from sentence_transformers import SentenceTransformer, util
 from jinja2 import Environment, FileSystemLoader
 from config import (
     ARXIV_CATEGORIES, EMBEDDING_MODEL, TASTE_PROFILE_PATH,
@@ -20,14 +14,85 @@ from config import (
     DMRG_URL, DMRG_SOURCE_TAG, DMRG_SITE_LIMIT, ARCHIVE_START_DATE,
     GEMINI_MODEL
 )
+from archive_store import load_archive, save_archive
 
-ARCHIVE_PATH = 'archive.json'
+# Heavy data-fetching/ML deps (arxiv, requests, bs4, torch, sentence-transformers)
+# are imported lazily inside the functions that use them. This lets generate_site
+# — and the "nothing new to process" early-exit — run without importing or even
+# installing torch, which matters for the lightweight site-only regen workflow.
+
 FOLLOWED_AUTHORS_PATH = 'followed_authors.json'
 GEMINI_MODEL_NAME = os.environ.get("GEMINI_MODEL", GEMINI_MODEL)
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL_NAME}:generateContent"
 LLM_FAILURE_REASON = "Could not be analyzed by LLM."
 
 START_DATE = datetime.strptime(ARCHIVE_START_DATE, '%Y-%m-%d').replace(tzinfo=timezone.utc)
+
+# --- arXiv client configuration ---
+# A single, shared client with gentle defaults. Shared CI runner IPs get
+# rate-limited (HTTP 429) easily, so we use a longer inter-request delay and
+# more internal retries than the library defaults (3s / 3 retries).
+ARXIV_PAGE_DELAY = 5.0     # seconds between paginated requests
+ARXIV_NUM_RETRIES = 5      # library-level retries per page
+ARXIV_ID_CHUNK_SIZE = 20   # max IDs per id_list request (large lists trigger 429s)
+
+_ARXIV_CLIENT = None
+
+def get_arxiv_client():
+    """Lazily build and cache the shared arXiv client (defers the arxiv import)."""
+    global _ARXIV_CLIENT
+    if _ARXIV_CLIENT is None:
+        import arxiv
+        _ARXIV_CLIENT = arxiv.Client(
+            page_size=100,
+            delay_seconds=ARXIV_PAGE_DELAY,
+            num_retries=ARXIV_NUM_RETRIES,
+        )
+    return _ARXIV_CLIENT
+
+def fetch_papers_by_ids(ids, chunk_size=ARXIV_ID_CHUNK_SIZE, max_retries=4):
+    """Fetch arXiv metadata for a list of (versionless) IDs.
+
+    Requests are split into small chunks and retried with exponential backoff.
+    A chunk that keeps failing (e.g. persistent HTTP 429) is skipped rather than
+    crashing the whole job — those papers simply stay flagged for the next run.
+
+    Parameters
+    ----------
+    ids : iterable of str
+        Versionless arXiv IDs (e.g. ``2606.01234``).
+    chunk_size : int
+        Maximum number of IDs per ``id_list`` request.
+    max_retries : int
+        Attempts per chunk before giving up on that chunk.
+
+    Returns
+    -------
+    list
+        arXiv ``Result`` objects that were successfully retrieved.
+    """
+    import arxiv
+    client = get_arxiv_client()
+    results = []
+    ids = list(ids)
+    for start in range(0, len(ids), chunk_size):
+        chunk = ids[start:start + chunk_size]
+        delay = 10.0  # seconds; doubled after each failed attempt
+        for attempt in range(max_retries):
+            try:
+                batch = list(client.results(arxiv.Search(id_list=chunk)))
+                results.extend(batch)
+                break
+            except Exception as e:
+                if attempt == max_retries - 1:
+                    print(f"🔴 Giving up on {len(chunk)} IDs after {max_retries} "
+                          f"attempts ({e}). They remain flagged for the next run.")
+                else:
+                    print(f"⚠️ arXiv id_list fetch failed ({e}); retrying in "
+                          f"{delay:.0f}s [attempt {attempt + 1}/{max_retries}]...")
+                    time.sleep(delay)
+                    delay *= 2
+    return results
 
 def _ensure_utc(dt):
     if dt is None:
@@ -59,9 +124,10 @@ def filter_arxiv_categories(categories):
 
 def get_recent_papers():
     """Fetches the most recent papers from specified arXiv categories."""
+    import arxiv
     print(f"🔍 Fetching recent papers from categories: {', '.join(ARXIV_CATEGORIES)}")
     all_papers = {}
-    client = arxiv.Client()
+    client = get_arxiv_client()
     skipped_old = 0
     for category in ARXIV_CATEGORIES:
         print(f"Querying category '{category}'...")
@@ -101,9 +167,10 @@ def get_papers_from_followed_authors():
     if not followed_authors:
         return []
 
+    import arxiv
     print(f"🔍 Fetching papers from {len(followed_authors)} followed author(s)...")
     author_papers = {}
-    client = arxiv.Client()
+    client = get_arxiv_client()
     skipped_old = 0
     for author in followed_authors:
         query = f"au:\"{author['name']}\""
@@ -133,6 +200,8 @@ def get_papers_from_dmrg_site():
     Scrapes the DMRG site for arXiv paper IDs from the current and previous month,
     and caps the result to the most recent ones.
     """
+    import requests
+    from bs4 import BeautifulSoup
     print(f" scraping {DMRG_URL} for recent paper IDs...")
 
     today = datetime.now()
@@ -176,6 +245,7 @@ def get_llm_batch_analysis(papers, liked_papers, api_key, retry_on_429=True):
     Expects papers to be a list of dicts with keys: id, title, summary.
     Returns a dict mapping paper_id -> result dict.
     """
+    import requests
     liked_papers_details = "\n---\n".join([f"Title: {p['title']}" for p in liked_papers])
     paper_blocks = "\n\n".join([
         f"ID: {p['id']}\nTitle: {p['title']}\nAbstract: {p['summary']}"
@@ -240,9 +310,9 @@ def update_archive():
     """Fetches, analyzes, and archives papers from all sources."""
     gemini_api_key = os.environ.get('GEMINI_API_KEY')
     if not gemini_api_key:
-        print("🔴 GEMINI_API_KEY not set."); return []
+        print("🔴 GEMINI_API_KEY not set."); return [], None
 
-    archive = json.load(open(ARCHIVE_PATH)) if os.path.exists(ARCHIVE_PATH) else {}
+    archive = load_archive()
     taste_profile = json.load(open(TASTE_PROFILE_PATH)) if os.path.exists(TASTE_PROFILE_PATH) else []
     taste_profile_exists = bool(taste_profile)
 
@@ -251,14 +321,6 @@ def update_archive():
             KEYWORDS = json.load(f)
     except FileNotFoundError:
         print("🔴 keywords.json not found. Assuming empty list."); KEYWORDS = []
-
-    # Avoid deprecated env var warning in transformers
-    os.environ.pop('TRANSFORMERS_CACHE', None)
-
-    print("🧠 Loading embedding model...")
-    model = SentenceTransformer(EMBEDDING_MODEL)
-    liked_vectors = torch.tensor([item['vector'] for item in taste_profile]) if taste_profile_exists else None
-    print("✅ Model loaded.")
 
     dmrg_paper_ids = get_papers_from_dmrg_site()
 
@@ -300,13 +362,40 @@ def update_archive():
     ids_to_process = retry_ids.union(new_paper_ids).union(new_from_dmrg)
 
     if not ids_to_process:
-        print("✅ No new or failed papers to process. Exiting."); return []
+        print("✅ No new or failed papers to process. Exiting."); return [], archive
+
+    # Load the embedding model lazily — only now that we know there is work to do.
+    # On quiet days this avoids the (slow) torch/SentenceTransformer import+load.
+    import torch
+    from sentence_transformers import SentenceTransformer, util
+    os.environ.pop('TRANSFORMERS_CACHE', None)  # avoid deprecated-env-var warning
+    print("🧠 Loading embedding model...")
+    model = SentenceTransformer(EMBEDDING_MODEL)
+    liked_vectors = torch.tensor([item['vector'] for item in taste_profile]) if taste_profile_exists else None
+    print("✅ Model loaded.")
 
     versionless_ids = {pid.split('v')[0] for pid in ids_to_process}
-    print(f"📡 Fetching fresh data for {len(versionless_ids)} papers from arXiv...")
-    client = arxiv.Client()
-    papers_to_analyze = list(client.results(arxiv.Search(id_list=list(versionless_ids))))
-    print(f"✅ Received fresh data for {len(papers_to_analyze)} papers.")
+
+    # Reuse Result objects we already fetched this run (category/author feeds)
+    # instead of re-downloading them by ID — this roughly halves arXiv traffic
+    # and is the main driver of the 429 rate-limiting that was failing the job.
+    candidate_by_base = {
+        pid.split('v')[0]: p for pid, p in all_candidate_papers.items()
+    }
+    papers_to_analyze = []
+    ids_needing_fetch = []
+    for vid in versionless_ids:
+        cached = candidate_by_base.get(vid)
+        if cached is not None:
+            papers_to_analyze.append(cached)
+        else:
+            ids_needing_fetch.append(vid)
+
+    print(f"📡 {len(papers_to_analyze)} papers reused from feeds; "
+          f"fetching {len(ids_needing_fetch)} more from arXiv by ID...")
+    if ids_needing_fetch:
+        papers_to_analyze.extend(fetch_papers_by_ids(ids_needing_fetch))
+    print(f"✅ Have data for {len(papers_to_analyze)} papers to analyze.")
 
     min_llm_interval = 60.0 / max(1, LLM_RPM_LIMIT)
     print(f"⚠️ Enforcing at least {min_llm_interval:.2f}s between LLM calls (RPM limit: {LLM_RPM_LIMIT}).")
@@ -374,6 +463,22 @@ def update_archive():
 
     flush_batch()
 
+    # Batch-encode embeddings for every paper that needs one, in a single call.
+    # SentenceTransformer is far faster encoding a list at once than looping one
+    # paper at a time, which is what the per-entry loop below used to do.
+    embeddings_by_id = {}
+    if liked_vectors is not None:
+        to_embed = [
+            (e["paper"].entry_id.split('/abs/')[-1], e["paper"])
+            for e in pending_entries
+            if llm_results.get(e["paper"].entry_id.split('/abs/')[-1])
+        ]
+        if to_embed:
+            texts = [f"Title: {p.title}\nAbstract: {p.summary}" for _, p in to_embed]
+            print(f"🧮 Encoding {len(texts)} paper embedding(s) in one batch...")
+            batch_embeddings = model.encode(texts, convert_to_tensor=True, batch_size=64)
+            embeddings_by_id = {pid: emb for (pid, _), emb in zip(to_embed, batch_embeddings)}
+
     for entry in pending_entries:
         paper = entry["paper"]
         paper_id = paper.entry_id.split('/abs/')[-1]
@@ -381,8 +486,8 @@ def update_archive():
 
         if llm_result:
             vector_matches = []
-            if liked_vectors is not None:
-                new_paper_embedding = model.encode(f"Title: {paper.title}\nAbstract: {paper.summary}", convert_to_tensor=True)
+            new_paper_embedding = embeddings_by_id.get(paper_id)
+            if new_paper_embedding is not None:
                 cosine_scores = util.cos_sim(new_paper_embedding, liked_vectors)[0]
                 top_results = torch.topk(cosine_scores, k=min(3, len(taste_profile)))
                 for score, idx in zip(top_results[0], top_results[1]):
@@ -415,10 +520,10 @@ def update_archive():
             }
             print(f"  -> Marking paper {paper_id} for retry due to LLM analysis failure.")
 
-    print(f"💾 Saving archive with {len(archive)} total papers...")
-    with open(ARCHIVE_PATH, 'w') as f: json.dump(archive, f, indent=2)
+    print(f"💾 Saving archive with {len(archive)} total papers (monthly shards)...")
+    save_archive(archive)
 
-    return newly_added_ids
+    return newly_added_ids, archive
 
 def format_authors_filter(authors):
     """
@@ -438,11 +543,22 @@ def format_authors_filter(authors):
     else:
         return ' and '.join(names)
 
-def generate_site(new_paper_ids):
-    """Generates the static site from the archive.json file."""
-    if not os.path.exists(ARCHIVE_PATH): print("🔴 Archive file not found."); return
+def generate_site(new_paper_ids, archive=None):
+    """Generates the static site from the archive.
 
-    with open(ARCHIVE_PATH, 'r') as f: archive = json.load(f)
+    Parameters
+    ----------
+    new_paper_ids : list
+        IDs newly added this run (used to badge them in the UI).
+    archive : dict, optional
+        The in-memory archive from ``update_archive``. When omitted (e.g. the
+        standalone "regenerate site" workflow) it is loaded from the monthly
+        shards on disk — avoiding a redundant multi-megabyte re-parse otherwise.
+    """
+    if archive is None:
+        archive = load_archive()
+    if not archive:
+        print("🔴 Archive is empty or not found."); return
 
     archive_for_render = {
         pid: paper for pid, paper in archive.items()
@@ -528,5 +644,5 @@ def generate_site(new_paper_ids):
     print("✅ Site generation complete.")
 
 if __name__ == "__main__":
-    newly_added_ids = update_archive()
-    generate_site(newly_added_ids)
+    newly_added_ids, archive = update_archive()
+    generate_site(newly_added_ids, archive)

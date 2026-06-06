@@ -1,0 +1,63 @@
+{
+  "2410.22975v3": {
+    "authors": [
+      {
+        "affiliation": null,
+        "name": "Stefan Rohshap"
+      },
+      {
+        "affiliation": null,
+        "name": "Marc K. Ritter"
+      },
+      {
+        "affiliation": null,
+        "name": "Hiroshi Shinaoka"
+      },
+      {
+        "affiliation": null,
+        "name": "Jan von Delft"
+      },
+      {
+        "affiliation": null,
+        "name": "Markus Wallerberger"
+      },
+      {
+        "affiliation": null,
+        "name": "Anna Kauch"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1103/PhysRevResearch.7.023087",
+    "id": "2410.22975v3",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2024-10-30",
+    "reasoning": "The paper discusses computational methods for solving complex quantum many-body problems, which aligns with the user's interest in efficient solvers and strongly correlated materials.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantics Tensor Trains",
+      "Parquet Equations",
+      "Hubbard Model"
+    ],
+    "summary": "We present the first application of quantics tensor trains (QTTs) and tensor cross interpolation (TCI) to the solution of a full set of self-consistent equations for multivariate functions, the so-called parquet equations. We show that the steps needed to evaluate the equations (Bethe--Salpeter equations, parquet equation and Schwinger--Dyson equation) can be decomposed into basic operations on the QTT-TCI (QTCI) compressed objects. The repeated application of these operations does not lead to a loss of accuracy beyond a specified tolerance and the iterative scheme converges even for numerically demanding parameters. As examples we take the Hubbard model in the atomic limit and the single impurity Anderson model, where the basic objects in parquet equations, the two-particle vertices, depend on three frequencies, but not on momenta. The results show that this approach is able to overcome major computational bottlenecks of standard numerical methods. The applied methods allow for an exponential increase of the number of grid points included in the calculations leading to an exponentially improving computational error for a linear increase in computational cost.",
+    "title": "Two-particle calculations with quantics tensor trains: Solving the parquet equations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.6954981088638306
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.5696377754211426
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5693252682685852
+      }
+    ]
+  }
+}

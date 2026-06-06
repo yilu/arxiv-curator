@@ -1,17 +1,27 @@
+# Pinned to the exact versions from a known-good CI run (2026-06-05) for
+# reproducibility. Unpinned deps were a latent failure mode: an upstream
+# major release (e.g. torch/transformers) could break the unattended daily job
+# overnight. To refresh, run the job, then `pip freeze` the working set.
+#
+# torch is pulled from the CPU-only wheel index — the default PyPI Linux wheel
+# bundles CUDA (~750 MB) and was the reason the workflow needed a disk-cleanup
+# hack. The CPU build is ~200 MB and runs the embedding model just fine.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 # For fetching data from arXiv and Google Scholar
-arxiv
-scholarly
+arxiv==4.0.0
+scholarly==1.7.11
 
 # For AI-based text embeddings and vector calculations
-sentence-transformers
-torch
-numpy
+sentence-transformers==5.5.1
+torch==2.12.0+cpu
+numpy==2.2.6
 
 # For rendering the HTML template
-Jinja2
+Jinja2==3.1.6
 
-#For GitHub API communication
-requests
+# For GitHub API communication
+requests==2.33.1
 
 # For web scraping and HTML parsing
-beautifulsoup4
+beautifulsoup4==4.14.3
