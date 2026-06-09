@@ -3298,16 +3298,41 @@
         "name": "Michael Knap"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.06605v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-06-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly addresses deconfined quantum criticality, antiferromagnetism, and spin-phonon interactions in 1D systems, aligning well with interests in strong correlations and competing phases in complex materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Deconfined quantum criticality",
+      "Spin-phonon coupling",
+      "Tensor network simulations"
+    ],
     "summary": "Deconfined quantum critical points (DQCPs) describe continuous transitions between ordered phases beyond the Landau paradigm. A simple example is the Néel antiferromagnet (AFM) to valence bond solid (VBS) transition in a 1D antiferromagnetic $J_1-J_2$ model. In analogy to the spin-Peierls instability of critical spin chains, DQCPs are predicted to be unstable towards lattice distortions below a critical phonon frequency. In this work, we use tensor network simulations to investigate this instability in the antiferromagnetic $J_1-J_2$ model coupled to lattice vibrations. We confirm the stability of DQCP for large phonon frequencies and demonstrate that the transition turns strongly first-order below a critical frequency. The instability is caused by a reduction of the Luttinger parameter due to spin-phonon interactions and we identify the effective theory of the behavior as the double sine-Gordon model. The same effective theory is known to describe the classical Ashkin-Teller model, which enables us to show that the critical endpoint is in the four-state Potts universality class. Furthermore, we provide quantitative numerical scaling results for the phonon spectral function, offering an experimental signature to probe DQCP-phonon coupling in low-dimensional materials.",
     "title": "Tensor network study of deconfined quantum criticality in a one-dimensional spin-phonon model",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.655511736869812
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6224496364593506
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5938313603401184
+      }
+    ]
   },
   "2606.06653v1": {
     "authors": [
@@ -3324,16 +3349,39 @@
         "name": "Xhek Turkeshi"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.06653v1",
+    "matching_keywords": [],
     "published_date": "2026-06-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper deeply explores fundamental quantum many-body phenomena, including symmetry breaking and conservation laws in fragmented systems, using a tensor-network formulation, which strongly aligns with the user's interest in theoretical condensed matter physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum many-body dynamics",
+      "Hilbert space fragmentation",
+      "Quantum Mpemba effect"
+    ],
     "summary": "A quantum system can restore a broken symmetry faster the more strongly it initially breaks it, an anomaly known as the quantum Mpemba effect. Whether this effect survives once conservation laws fragment the Hilbert space into exponentially many disconnected Krylov sectors has remained open. We address this question for circuits and Hamiltonians with simultaneous charge and dipole conservation, the paradigmatic setting for strong Hilbert-space fragmentation. Combining a replica tensor-network formulation for charge and dipole-conserving gates, which reaches the annealed Rényi-2 entanglement asymmetry up to $L=128$, with Hamiltonian simulations and an exactly solvable dissipative model, we uncover a higher-order symmetric quantum Mpemba effect: the charge and dipole asymmetries each display Mpemba-like crossings on parametrically distinct timescales. Resolving the state into frozen and active Krylov sectors reveals the mechanism: frozen fragments retain a finite asymmetry that obstructs full restoration, while active fragments host the relaxation responsible for the crossings. Fragmentation thus does not preclude the quantum Mpemba effect but reshapes it into frozen memory and active-fragment relaxation, providing a framework for the Mpemba phenomenology of higher-moment symmetries.",
     "title": "Higher-order Symmetric Quantum Mpemba Effect in Fragmented Systems",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.47393882274627686
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.44360294938087463
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.4375855624675751
+      }
+    ]
   },
   "2606.06765v1": {
     "authors": [
@@ -3453,7 +3501,7 @@
       },
       {
         "affiliation": [],
-        "name": "Romain Fluery"
+        "name": "Romain Fleury"
       },
       {
         "affiliation": [],
@@ -3468,14 +3516,40 @@
         "name": "Fabrizio Scarpa"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.07262v1",
+    "matching_keywords": [
+      "neural network"
+    ],
     "published_date": "2026-06-05",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper's focus on 'Engineering Material Neural Networks' and embedding intelligence in structural materials is distant from the user's previously liked topics concerning electronic structure and many-body physics.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Physical Neural Networks",
+      "Adaptive materials",
+      "Bio-inspired engineering"
+    ],
     "summary": "Structures that capture functionality in the form of animate or intelligent machines have the potential to transform modern engineering applications. Animation and embedded intelligence are typically realised by integrating advanced capabilities such as reversibility, adaptive responses and learning directly into the materials themselves. Currently, the majority of adaptive material systems rely on predefined adaptive designs combined with in-service, electronics-based computing to dynamically modify the structural behaviour. However, structural configurations with interconnected adaptable nodes are able to approximate continuous functions, providing new possibilities and opportunities than classical metamaterials and computational materials. We discuss here the potential to design load-bearing engineering materials with trainable physical parameters and neural network-inspired morphologies, embedding intelligence directly into their structure, a concept we define as Engineering Material Neural Networks (EMNNs) as a subcategory of Physical Neural Networks. In this perspective, we first establish the foundational concept of EMNNs; we then detail the mechanical and multifunctional properties required for such structural configurations. Finally, we evaluate existing and emerging engineering materials that hold promise for enabling this innovative approach. Key material candidates for realising EMNNs include composites, architected, biological and engineering living materials. We also outline future directions in materials science and structural engineering for developing EMNNs.",
     "title": "Towards Engineering Material Neural Networks",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.39374417066574097
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.37127959728240967
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3408217430114746
+      }
+    ]
   },
   "2606.07349v1": {
     "authors": [
@@ -3758,6 +3832,1069 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
         "score": 0.39506465196609497
+      }
+    ]
+  },
+  "2606.07712v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhan'ao Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Boxuan Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jingyuan Shu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoyu Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Rongyan Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Linjing Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Dajun Zeng"
+      },
+      {
+        "affiliation": [],
+        "name": "Yudong Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Tingwei Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Youwei Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaolin Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiahui Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianjun Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.07712v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-05",
+    "reasoning": "This paper focuses on a generative AI foundation model for general materials science, which is a different domain than the user's specific interests in strong correlations, superconductivity, and advanced experimental/theoretical techniques.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Generative AI",
+      "Materials informatics",
+      "Foundation models"
+    ],
+    "summary": "Progress in AI-driven crystal materials science has so far been carried by narrow architectures purpose-built for individual tasks -- graph neural networks for property prediction, diffusion and flow-matching models for crystal generation -- each excelling within its niche yet unable to act as a shared backbone across the full spectrum of materials problems. Generative large language models offer a fundamentally different paradigm, in which structural representation, quantitative prediction, and structure-activity reasoning can be unified within one model, but the materials community has yet to see this paradigm realized at a level competitive with established narrow specialists. Here we present MatMind, a generative foundation model purpose-built for crystal materials science under this paradigm, developed through the coordinated activation of structure-activity knowledge and physics-informed feedback within a progressive training framework -- combining structure-activity knowledge injection, a dual-head architecture that jointly trains language reasoning and numerical regression in a shared representation space, and multi-objective physics-informed reinforcement learning over stability, novelty, and structural diversity. Across three task families, MatMind attains the lowest mean absolute error on energy above hull, bulk modulus, and band gap -- surpassing graph neural network predictors purpose-built for these tasks -- reaches an S.U.N. rate of 65.3% on unconditional crystal generation, and achieves a comparable multiplicative improvement on magnetization-density-conditioned generation, where only 21 positive samples exist within over 600000 training entries. By matching or surpassing narrow specialists on their own ground while operating within a single unified model, MatMind shows that the LLM-based paradigm can serve as a viable backbone for crystal materials science going forward.",
+    "title": "MatMind: A Structure-Activity Knowledge-Driven Generative Foundation Model for Materials Science",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4716152846813202
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.4472281038761139
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4052866995334625
+      }
+    ]
+  },
+  "2606.07772v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Arseniy S. Burov"
+      },
+      {
+        "affiliation": [],
+        "name": "Artem M. Abakumov"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitry A. Aksyonov"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.07772v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-05",
+    "reasoning": "This work employs machine learning-assisted molecular dynamics to study charge-transfer mechanisms at material interfaces, representing an advanced computational approach to understanding fundamental materials properties.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Machine Learning MD",
+      "Charge Transfer",
+      "Solid Electrolytes"
+    ],
+    "summary": "Interfacial charge transfer between solid electrolytes (SEs) and Li metal is a key factor limiting all-solid-state battery performance. Conventional density functional theory and nudged elastic band calculations neglect many-body correlations and finite-temperature effects, which can lead to inaccurate activation barriers. Here, we trained moment tensor potentials (MTPs) for garnet LLZO systems (t-LLZO, c-LLZO, and Ga-LLZO) and Li metal, enabling machine-learning molecular dynamics (MLMD) simulations of Li$^+$ diffusion in the bulk and at Li/SE interfaces. We also introduce a residence-time window method that filters out ion rattling and isolates genuine charge-transfer events. The resulting charge-transfer activation energies are low: 167 meV at the Li/Ga-LLZO interface and 200 meV in Ga-LLZO, corresponding to resistances of $\\sim \\, 10^{-5} \\, Ω\\,\\mathrm{cm}^{2}$. These results indicate that intrinsic Li/Ga-LLZO charge transfer is not rate-limiting. Overall, our findings clarify the fast interfacial kinetics in Li/LLZO systems, and the proposed methodology can aid further interface optimization in solid-state batteries.",
+    "title": "Machine learning assisted molecular dynamics of charge-transfer mechanisms at Li/Ga-doped Li$_7$La$_3$Zr$_2$O$_{12}$ (LLZO) interfaces",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5157748460769653
+      },
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.49496424198150635
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4532572031021118
+      }
+    ]
+  },
+  "2606.07836v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Arnab Neogi"
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Forde"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher A. Lane"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergei Tretiak"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian-Xin Zhu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech",
+      "cs.AI",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.07836v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-05",
+    "reasoning": "This paper focuses on calculating quasiparticle and excitonic properties using advanced many-body techniques, which aligns well with the user's interest in methods like DMFT and understanding correlated electronic states.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Multi-fidelity learning",
+      "GW-Bethe-Salpeter",
+      "Exciton binding energy"
+    ],
+    "summary": "Many-body GW-Bethe-Salpeter equation calculations are essential for accurate simulations of electronic structure and optical properties in modern low-dimensional nanomaterials. However, these methods are computationally demanding and can exhibit localized numerical instabilities or convergence failures that are difficult to detect within high-throughput workflows. We introduce an agent-guided multi-fidelity framework for correcting GW-Bethe-Salpeter excited-state landscapes in strained MoS2-WS2 bilayers. Across stacking registries, strain branches and reciprocal-space samplings, the workflow identifies spike-like excursions, near-zero-gap collapse and cross-fidelity inconsistencies associated with fragile long-wavelength dielectric screening. A structural agent evaluates calculations by assigning confidence weights and selectively using a small number of high-accuracy reference points. Machine learning models then transfer information across related systems and apply Gaussian process corrections to recover improved quasiparticle gaps and exciton binding energies, with calibrated uncertainty estimates. The approach corrects numerically induced artifacts without erasing physical strain dependence and substantially improves agreement with higher-fidelity references relative to a no-agent baseline. These results show that reliable surrogate learning for excited-state materials requires explicit diagnosis of numerical fragility, not direct interpolation of raw first-principles data points. The proposed framework is readily transferable to other optoelectronic nanomaterials characterized by strong quantum confinement, such as quantum dots, nanoribbons, layered two-dimensional semiconductors, and hybrid perovskite nanostructures.",
+    "title": "Agentic multi-fidelity learning of quasiparticle and excitonic properties",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5293854475021362
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5275285840034485
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5088547468185425
+      }
+    ]
+  },
+  "2606.08181v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ryui Kaneko"
+      },
+      {
+        "affiliation": [],
+        "name": "Masatoshi Imada"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.08181v1",
+    "published_date": "2026-06-06",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Triple-layer cuprate superconductor $\\mathrm{HgBa_2Ca_2Cu_3O_8}$ (Hg1223) keeps the record of the highest superconducting (SC) critical temperature $T_{c}\\sim 134$K among all the existing materials at ambient pressure. $T_{c}$ further increases under pressure up to $T_{c}\\sim 160$K. However, its microscopic mechanism remains to be elucidated. We solve {\\it ab initio} Hamiltonians for Hg1223 using a variational solver supplemented by a neural network. The pressure dependence of the $d$-wave SC order parameter and estimated $T_{c}$ show a dome-like structure in essential agreement with the experimental indications. The origin of the strong SC amplitude at ambient pressure is identified as strong local Coulomb repulsion $U$ attributed to poor screening. Further increase in $T_{c}$ under pressure is understood from interplay of three elements, namely increased electron hopping $t$, decreased $U$ and more importantly, strongly reduced offsite Coulomb repulsion $V$ with increasing pressure. Pairing mechanism is identified as the emergent local attraction counterintuitively generated from the originally strong local repulsion $U$. The emergent attraction is interpreted from ``attraction from reduced repulsion'', originating from the release of the fluctuating doubly-occupied sites characterized from the ``false vacuum'' in the Mott insulator to the double-occupation-free $d$-wave SC states upon carrier doping. This instantaneous attraction is in contrast with the conventional BCS SC mediated by bosonic glues. The local attraction is consistent with the electron fractionalization supported in experimental analyses. The coexistence of the SC and antiferromagnetic order is also demonstrated as a characteristic feature of the multi-layer system. The microscopic understanding of Hg1223 offers a new route explicitly using this emergent attraction to design and optimize SC materials.",
+    "title": "Microscopic mechanism of high-temperature superconductivity revealed by ab initio studies on hole-doped multilayer cuprates HgBa$_2$Ca$_2$Cu$_3$O$_8$ under pressure",
+    "vector_matches": []
+  },
+  "2606.08287v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Josiah D. Kunz"
+      },
+      {
+        "affiliation": [],
+        "name": "Kamal Choudhary"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.08287v1",
+    "published_date": "2026-06-06",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Finite element analysis (FEA) is essential for structural design but remains computationally expensive, particularly when evaluating multiple design iterations or load scenarios. Machine learning surrogate models offer a promising alternative, yet most approaches struggle with a critical limitation: generalizing across varying geometries. This work presents a mesh graph network (MGN) for predicting von Mises stress fields in 2D structural components with arbitrary hole geometries. Unlike traditional machine learning approaches that use absolute node coordinates as features, the proposed model builds on existing MGN frameworks that encode node types (e.g., fixed boundary, free surface, hole edge), relative edge features (distance between neighbors), and global features (applied load). This architecture is inherently translation- and rotation-invariant, enabling generalization to unseen geometries without retraining. The MGN was trained on 11 plate geometries under 20 load conditions and evaluated on 7 unseen geometries and 3 unseen loads. In the most favorable case, the model achieves $R^2 \\geq 0.97$ on an unseen geometry and unseen load, compared to $R^2 \\approx 0.01$--$0.86$ for conventional models (Random Forest, Gradient Boosting , K-Nearest Neighbors) trained on identical data. However, even in less favorable cases, the MGN model still outperforms conventional models. This work extends the mesh-based simulation framework of Pfaff et al. (arXiv:2010.03409) to structural mechanics, demonstrating that graph neural networks can serve as efficient surrogates for finite element analysis across varying geometries.",
+    "title": "Mesh Graph Neural Network Framework for Accelerating Finite Element Simulation for Arbitrary Geometries",
+    "vector_matches": []
+  },
+  "2606.08347v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wuyang Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuxuan Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Giorgos Iacovides"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuning Qiu"
+      },
+      {
+        "affiliation": [],
+        "name": "Qibin Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Danilo Mandic"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.08347v1",
+    "published_date": "2026-06-06",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Modern language models represent text using discrete token-level embeddings, which forces recurring multi-token patterns to be learned implicitly across Transformer layers. Both Over-tokenized Transformers and Engram attempt to address this limitation by explicitly incorporating multi-token (n-gram) memories. However, they rely on separate hash tables for each n-gram order, which introduces hash collisions and prevents nested n-grams from sharing the underlying latent structures. To address these issues, we propose Tensorized Engram (TN-gram), a compact memory module that represents tensorized n-gram embeddings through shared factors in the Canonical Polyadic (CP) form. TN-gram learns shared token-position factors together with order-absorption vectors to encode the embeddings of different n-gram order. Comprehensive experiments demonstrate that TN-gram matches or even outperforms Engram-style n-gram modules while requiring much fewer parameters.",
+    "title": "Tensorizing Engram: Sharing Latents Across N-Gram Embeddings is Beneficial in LLMs",
+    "vector_matches": []
+  },
+  "2606.08350v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ruiyi Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Songrui Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianhang Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Yosuke Kanai"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.08350v1",
+    "published_date": "2026-06-06",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Solving Bethe-Salpeter equation (BSE) for the two-particle Green's function is the most widely used approach for taking into account the particle-hole (exciton) interaction in electronic excitation in the context of the many-body theory based on Green's function. In BSE calculations, the static approximation to the screened Coulomb interaction kernel is commonly employed. However, when the excitonic character is significant as typically indicated by a large exciton binding energy, dynamical screening effects become non-negligible, rendering the static approximation questionable. Because of the large computational cost due to the dense Brillouin zone integration necessary for convergence, solving the dynamical BSE for extended systems remains a significant challenge, especially when combined with GW calculation for the calculation of quasi-particle energies. In this work, we formulate the plane-wave based effective dielectric function method [Zhang, et al., Phys. Rev. B 107, 235205 (2023)] for the dynamical BSE calculation using atom-centered orbitals as basis functions. We implement this approach in our recently developed all-electron numerical atom-centered orbital (NAO) implementation of BSE@GW [Zhou, et. al. J. Chem. Theory Comput. 21, 291 (2025)] for extended systems. We validate our all-electron NAO-based implementation of the dynamical BSE method, and we then discuss its realistic application to molecular crystal of naphthalene by performing the dynamical BSE@G0W0 calculation.",
+    "title": "All-electron Dynamical Bethe-Salpeter Equation for Extended Systems with Atom-centered Orbital Basis Set",
+    "vector_matches": []
+  },
+  "2606.08558v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yingcheng Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Liujun Zou"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.08558v1",
+    "published_date": "2026-06-07",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "An ultimate theory of a phase of matter should describe all its universal properties via quantities that are measurable numerically and experimentally. In this work, we present a microscopic universal theory of symmetry-enriched topological quantum spin liquids (TQSLs) in two spatial dimensions, which directly utilizes microscopically measurable quantities to describe the universal properties. This theory applies to generic TQSLs, which can be Abelian or non-Abelian, chiral or non-chiral. The symmetries are also general, which can include both internal and lattice symmetries, unitary and anti-unitary symmetries, and discrete and continuous symmetries. There can be spin-orbit coupling, the microscopic degrees of freedom may transform linearly or projectively under the symmetries, and the symmetries can permute anyons. The input of the theory is some microscopic states with anyons, operators that control the dynamics of anyons, and symmetry actions in the TQSL, and its output is a set of data characterizing the universal properties, whose underlying mathematical structure is a generalization of category theory. Based on this theory, we find an explicit bijective map between the universal data characterizing a TQSL with a symmetry described by a group $G$, where the symmetry actions may include both lattice and internal symmetries, and the corresponding universal data for a TQSL with only an internal symmetry group $G$, and thus establish a precise crystalline equivalence principle. We demonstrate our theory in symmetry-enriched TQSLs realized on quantum processors based on superconducting qubits, trapped ions, and Rydberg atoms, and in each example we verify the Lieb-Schultz-Mattis anomaly matching condition. Our theory provides a solid basis for identifying and manipulating symmetry-enriched TQSLs, which further paves the way for fault-tolerant quantum computation based on these systems.",
+    "title": "Microscopic universal theory of symmetry-enriched topological quantum spin liquids",
+    "vector_matches": []
+  },
+  "2606.08565v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Toshiaki Koike-Akino"
+      },
+      {
+        "affiliation": [],
+        "name": "Jing Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Ye Wang"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.08565v1",
+    "published_date": "2026-06-07",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Tensor networks provide efficient representations for compressing large neural networks. By carefully designing shapes and topologies, they can significantly reduce memory and computational costs. However, identifying implicit low-rank structures in large foundation models remains challenging due to their enormous scale and un-structured weight distributions. We propose an adaptive tensorization method that discovers inherent low-rank structure in a target tensor by index ordering. Experiments on weight and KV-cache compression demonstrate improved reconstruction quality compared to baselines.",
+    "title": "EinSort: Sorting is All We Need for Tensorizing LLM",
+    "vector_matches": []
+  },
+  "2606.08637v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tamer Taşkıran"
+      },
+      {
+        "affiliation": [],
+        "name": "Soheil Ershadrad"
+      },
+      {
+        "affiliation": [],
+        "name": "Biplab Sanyal"
+      },
+      {
+        "affiliation": [],
+        "name": "Cüneyt Şahin"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.08637v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-07",
+    "reasoning": "This paper identifies a novel 2D altermagnetic material using DFT, characterized by unique magnetic properties and spin-dependent transport, which strongly aligns with the interest in new phases of matter and strongly correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "2D Materials",
+      "Spintronics"
+    ],
+    "summary": "Altermagnetism has recently emerged as a highly promising phase for spintronics, offering the combined advantages of both antiferromagnets and ferromagnets. Here, using a first-principles analysis based on density functional theory (DFT), we identify a monolayer V$_2$O crystal in a buckled Lieb lattice as a promising two-dimensional altermagnetic material. The structural and thermal stability of V$_2$O is verified through calculations of the crystal's formation energy, phonon structure, room-temperature ab initio molecular dynamics, and stiffness matrix. The system is found to exhibit auxetic behavior with a negative Poisson's ratio. Our calculations indicate an antiferromagnetic ground state with a local magnetic moment of $2.79\\,μ_{\\mathrm{B}}$ per V atom and a magnetocrystalline anisotropy that favors an out-of-plane easy axis. The electronic structure exhibits a momentum-dependent spin splitting of 1.2 eV, which is a characteristic of altermagnets. Inclusion of spin-orbit coupling breaks the symmetry of the quadratic band crossing near the Fermi level, resulting in a large Berry curvature and significant intrinsic spin Hall conductivity around $40\\,(\\hbar/e)\\,\\mathrm{S\\,cm^{-1}}$. The results demonstrate that monolayer V$_2$O serves as a robust room-temperature altermagnetic platform, exhibiting magnetic anisotropy and spin-dependent transport responses.",
+    "title": "Novel 2D Altermagnetic Vanadium Oxide with a Buckled Lieb Structure",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5477918386459351
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5369129180908203
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5287060737609863
+      }
+    ]
+  },
+  "2606.08643v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiangyu Luo"
+      },
+      {
+        "affiliation": [],
+        "name": "Yinghao Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Hao Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Yiwen Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jumin Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Taimin Miao"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenpei Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Neng Cai"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaolin Ren"
+      },
+      {
+        "affiliation": [],
+        "name": "Yingjie Shu"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaohui Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiuxiang Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chengtian Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Shenjin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhimin Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Fengfeng Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Feng Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Qinjun Peng"
+      },
+      {
+        "affiliation": [],
+        "name": "Zuyan Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Guodong Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xintong Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanqing Mao"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Xiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Lin Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "X. J. Zhou"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.08643v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-06-07",
+    "reasoning": "This paper directly investigates the coexistence of high-temperature superconductivity and antiferromagnetic order in a cuprate, using ARPES to probe multiple Fermi pockets, which highly aligns with the user's interest in cuprate superconductors and their electronic properties.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "High-Tc superconductivity",
+      "Cuprates",
+      "ARPES"
+    ],
+    "summary": "The intricate relationship between high temperature superconductivity and antiferromagnetic order in cuprates, and the fundamental origin of electron pairing remain open questions. By utilizing high-resolution laser-based spatially-resolved angle-resolved photoemission spectroscopy, we investigate the seven-layer $Bi_{2}Sr_{2}Ca_{6}Cu_{7}O_{18+δ}$ (Bi2267) and identify a cuprate system that consists of multiple hole Fermi pockets. The observed Fermi pockets exhibit pronounced momentum-, temperature- and Fermi surface-dependent energy gaps. Crucially, high temperature superconductivity with a critical temperature ($T_{\\mathrm{c}}$) of $\\sim$75 K emerges in a system with multiple Fermi pockets and the presence of strong antiferromagnetic order and correlations. In particular, substantial electron pairing is observed along the Fermi pocket with an energy gap up to $\\sim$42 meV in lightly-doped CuO$_{2}$ planes ($p\\sim$0.05). These findings challenge the conventional understanding of the roles of the nodal and antinodal electronic states in driving high-temperature superconductivity. They show that superconductivity and antiferromagnetism can coexist in a cuprate with multiple Fermi pockets, offering further insights into the pairing mechanism in cuprate superconductors.",
+    "title": "Coexistence of High Temperature Superconductivity and Antiferromagnetic Order in a Cuprate with Multiple Hole Fermi Pockets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.726517379283905
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.6846356391906738
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.660847544670105
+      }
+    ]
+  },
+  "2606.08686v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Suman Chabri"
+      },
+      {
+        "affiliation": [],
+        "name": "Gautam Anand"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.08686v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-06-07",
+    "reasoning": "This work applies graph convolutional neural networks and an information-theoretic approach for crystal structure prediction in complex disordered alloys, aligning with advanced computational materials discovery and characterization.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Crystal Structure Prediction",
+      "Graph Neural Networks",
+      "High-Entropy Alloys"
+    ],
+    "summary": "The phase prediction of chemically disordered alloys poses a significant computational challenge due to the combinatorial complexity of such materials. The high-throughput compositional exploration of chemically disordered alloys, including high-entropy alloys, requires an approach to efficiently explore the potential energy landscape of such complex materials. Additionally, a metric to quantify the potential energy landscape explored for phase prediction of the compositions needs to be defined. We propose an information-theoretic approach to phase prediction in chemically disordered alloys in the present work. We demonstrate the applicability of alchemical Monte Carlo sampling using an efficient Graph Convolutional Neural Network-Based machine learning model. We additionally demonstrate the applicability and limitations of the Bond Disproportion Vector (BDV) as a low-computational-cost descriptor and benchmark it against the state-of-the-art Smooth Overlap of Atomic Positions (SOAP) descriptor. We show the applicability of an information entropy-based metric for the phase prediction of binary (CoNi, MoW, FeNi and TaW), ternary (CoCrNi, CrFeNi), quaternary (CoCrFeNi) and quinary ($\\mathrm{Al_x(CoCrFeNi)_{1-x}}$) alloys. Information entropy-based phase prediction can be applicable in challenging cases where conventional approaches are not feasible.",
+    "title": "Information Entropy Based Crystal Structure Prediction of Chemically Disordered Alloys via Graph Convolutional Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5036900043487549
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.46518900990486145
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.45868876576423645
+      }
+    ]
+  },
+  "2606.08707v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Taige Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Fu"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.08707v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-07",
+    "reasoning": "This paper focuses on simulating quantum circuits for quantum processors using neural networks, which is distinct from the user's primary interest in condensed matter physics and quantum materials, despite the shared 'quantum' theme.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum computing simulation",
+      "Neural network quantum states",
+      "Wavefunction representation"
+    ],
+    "summary": "Predicting the output of quantum circuits is a central bottleneck for verifying quantum processors because a generic wavefunction grows exponentially with system size. We introduce a neural statebank that learns this wavefunction along the circuit trajectory. Each layer is stored as an autoregressive Transformer checkpoint trained from local gate updates to the preceding checkpoint, producing a compact neural representation that can evaluate amplitudes and generate independent samples. On long-range circuits combining entanglement, magic, and non-diagonal branching, a 0.3-million-parameter statebank reaches $\\sim 10^{-2}$ infidelity at 34 qubits, outperforming the other tested approximate simulators while using far less memory than exact state-vector evolution. The same architecture accurately simulates quantum approximate optimization, Clifford+$T$, and Clifford circuits.",
+    "title": "Simulating quantum circuits with a neural statebank",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5822600722312927
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5053870677947998
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4949195086956024
+      }
+    ]
+  },
+  "2606.08760v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alejandro Mata Ali"
+      }
+    ],
+    "categories": [
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.08760v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-07",
+    "reasoning": "This paper's focus on visualization and debugging tools for tensor networks and quantum circuits offers a tangential connection to computational methods sometimes used in condensed matter physics, but it is not directly about physics research.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Quantum software engineering",
+      "Computational visualization",
+      "Tensor network tools"
+    ],
+    "summary": "Tensor networks and quantum circuits are structural objects whose meaning depends on connectivity, indices, contraction order, gate placement, measurements, and related design choices. They are often easier to reason about visually than as code, yet in Python they are frequently constructed, transformed, and checked through backend-specific objects or compact symbolic expressions. This can make structural mistakes hard to notice during development, debugging, and communication. This paper presents three complementary packages: Tensor-Network-Visualization for visual debugging and structural inspection of supported tensor-network and traced einsum workflows; Tensor-Network-Editor for visual-to-code authoring, backend code generation, JSON preservation, export, and design-level analysis; and Quantum Circuit Drawer for clear circuit rendering, inspection, and complementary comparison of circuits or documented result distributions. The packages form a visual authoring and inspection layer around existing tensor-network libraries, array-based scientific Python workflows, and quantum SDKs. They are not simulators: they do not implement new contraction algorithms, execute quantum circuits, or guarantee full semantic equivalence across arbitrary backends. Their contribution is to make structural artifacts visible, editable, inspectable, comparable, exportable, and reproducible within those ecosystems.",
+    "title": "Visual-to-Code Authoring, Tensor-Network Debugging, and Quantum-Circuit Inspection Tools in Python",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.43765801191329956
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3938879072666168
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.3807327151298523
+      }
+    ]
+  },
+  "2606.09106v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Cătălin Paşcu Moca"
+      },
+      {
+        "affiliation": [],
+        "name": "Doru Sticlet"
+      },
+      {
+        "affiliation": [],
+        "name": "Balázs Dóra"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09106v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper investigates the fundamental physics of the 'Hubbard model,' including charge and spin fluctuations, which is highly relevant to the user's interest in correlated electron systems and DMFT.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Family-Vicsek scaling",
+      "KPZ universality",
+      "Quantum generating function"
+    ],
+    "summary": "We study Family-Vicsek scaling of charge, spin, and energy fluctuations in the one-dimensional Hubbard model at infinite temperature. Using a quantum generating function approach, we compute time-dependent cumulants of transferred conserved quantities and analyze how the corresponding roughness depends on subsystem size and time. We start by focusing on a single interface at half the chain and determine the transport exponents. Then we turn to fluctuations of a small finite interval and study the Family-Vicsek universality of fluctuations over an extended timescale. We find that the long-time scaling behavior is controlled by integrability. In the free limit, charge, spin, and energy all display ballistic transport. In the interacting integrable Hubbard chain, charge and spin cross over to a KPZ scaling regime, while the energy sector remains ballistic. Once integrability is broken by a next-nearest-neighbor density interaction, the long-time dynamics becomes diffusive in all sectors. In every case we also observe a short-time microscopic regime with apparently universal ballistic growth before the hydrodynamic scaling window sets in. The Family-Vicsek setup allows us to determine the growth, the saturation as well as the dynamical exponents.",
+    "title": "Dynamic scaling and Family-Vicsek universality in the Hubbard model at infinite temperature",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5649681687355042
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5485849380493164
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5459184050559998
+      }
+    ]
+  },
+  "2606.09422v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yutack Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Yeonwoo Chung"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinmu You"
+      },
+      {
+        "affiliation": [],
+        "name": "Jisu Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Suyeon Ju"
+      },
+      {
+        "affiliation": [],
+        "name": "Seungwu Han"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09422v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper introduces a robust agentic framework for automating atomistic simulations using machine learning interatomic potentials, directly improving the computational workflows relevant to the liked papers.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Atomistic Simulation",
+      "Computational Automation",
+      "ML Interatomic Potentials"
+    ],
+    "summary": "Traditionally, atomistic simulation has been constrained by the computational scaling limits of ab initio methods and the parameterization overhead of empirical force fields. The recent emergence of universal machine learning interatomic potentials has significantly mitigated these bottlenecks, offering near-quantum accuracy and generalizability across diverse chemical spaces at a fraction of the computational cost. However, this shift has relocated the bottleneck to the human dimension: time-consuming mechanical processes, such as input preparation and data analysis, now dominate the research lifecycle. We introduce Paimon, a Platform for Agentic Integration in Materials Optimization and Nanoscale-simulations. Through hundreds of trials on an expert-level liquid electrolyte simulation, we show that Paimon substantially improves the reliability of agentic workflows by suppressing silent errors: plausible yet physically incorrect results. We further demonstrate that Paimon can cooperate with an external scientific agent and autonomously reproduce simulation methodologies from the literature. As an agent harness for atomistic simulations, Paimon affords researchers a continuous, science-centric workflow throughout the entire simulation lifecycle.",
+    "title": "A Robust Agentic Framework for Expert-Level Automation of Atomistic Simulations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5263383388519287
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.44502344727516174
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.41779065132141113
+      }
+    ]
+  },
+  "2606.09440v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Elias Richter"
+      },
+      {
+        "affiliation": [],
+        "name": "Benedikt Maurer"
+      },
+      {
+        "affiliation": [],
+        "name": "Claudia Draxl"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09440v1",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper develops a first-principles framework for resonant inelastic X-ray scattering (RIXS) using many-body perturbation theory, directly addressing the user's interest in RIXS and advanced theoretical methods.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "RIXS",
+      "Many-body perturbation theory",
+      "Real-time TDDFT"
+    ],
+    "summary": "We present an \\textit{ab initio} framework for predicting resonant inelastic X-ray scattering (RIXS) in optically pumped materials. Our methodology is based on the Kramers-Heisenberg formula for the double-differential cross section formulated using the results of the Bethe-Salpeter equation (BSE) from many-body perturbation theory. To extend this approach to the time domain, we incorporate non-equilibrium charge-carrier distributions obtained from real-time, time-dependent density-functional theory (RT-TDDFT). Generalizing the RIXS implementation with respect to arbitrary polarizations, allows us to consider different orientations of incoming and outgoing light. We demonstrate our method's capabilities by studying RIXS at the K-edge of graphite for various non-equilibrium charge-carrier distributions, representing different delay times after optical pumping. Our results reveal angular dependencies in $π$- and $σ$-orbital-derived spectral regions, in good agreement with experiment.",
+    "title": "\\textit{\\textbf{First-principles}} description of pumped inelastic X-ray scattering: example of K-edge RIXS in graphite",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.5419235229492188
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.49565035104751587
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.4828987419605255
+      }
+    ]
+  },
+  "2606.09469v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Cameron V. Cogburn"
+      },
+      {
+        "affiliation": [],
+        "name": "Casimer DeCusatis"
+      },
+      {
+        "affiliation": [],
+        "name": "Evan Spillane"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.09469v1",
+    "published_date": "2026-06-08",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Denial-of-service (DoS) and distributed denial-of-service (DDoS) mitigation requires separating malicious traffic from benign traffic while minimizing disruption to legitimate users. Prior work proposed mapping honeypot traffic partitioning to a weighted MaxCut problem and solving the resulting graphs with variational quantum algorithms. We extend this proof of principle direction with a reproducible event-level honeypot-to-QUBO pipeline, labeled temporal bipartite benchmark graphs with 16, 32, 66, and 110 event nodes, QAOA executions on IBM quantum hardware, classical heuristic baselines, a noiseless matrix product state reference, and a routing overhead analysis across quantum processor architectures. The largest benchmark is a 110-node, 181-edge instance executed on three IBM backends. Our results show that a shallow QAOA can execute real traffic partitioning workloads at the utility scale, while backend architecture and routing overhead affect objective quality, security metrics, and observed runtime. Because simple classical heuristics can solve the current labeled benchmark graphs, these experiments are not a quantum advantage claim. Instead, we deliberately use a fixed, shallow QAOA implementation to enable controlled comparisons across problem sizes and hardware architectures. This work establishes a hardware feasibility and architecture benchmark framework, and demonstrates that MaxCut cost, security quality, routing overhead, and runtime must be reported as separate metrics for cybersecurity relevant quantum optimization.",
+    "title": "Hardware-Aware QAOA for Honeypot Traffic Partitioning on 100+ Qubit IBM Quantum Processors",
+    "vector_matches": []
+  },
+  "2606.09560v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andrei A. Gakh"
+      },
+      {
+        "affiliation": [],
+        "name": "Bobby G. Sumpter"
+      },
+      {
+        "affiliation": [],
+        "name": "Donald W. Noid"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09560v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper presents a neural network approach for predicting properties of molecular materials, which aligns with general computational materials science interests, though it focuses on a different material class than the liked papers.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Property Prediction",
+      "Computational Synthesis"
+    ],
+    "summary": "A computational scheme, which utilizes neural networks, was developed to predict properties of molecular-based materials from chemical structures. The method uses a set of simple algorithms to encode the structure and composition of organic molecules directly into numerical vectors, which is used as input for neural networks. Backpropagation type neural networks are then used to correlate these numeric inputs with a set of desired properties. Calculated results for a series of hydrocarbons, hydrofluorocarbons, and crown ethers demonstrate average accuracies of 0.2-8.1% with maximum deviations of 16-20% for a broad range of thermodynamic, physical, and physical-chemical characteristics (heat capacity, enthalpy, heat of evaporation, boiling point, density, refractive index, stability constants, etc.). In addition, a number of physical and mechanical properties were estimated for polymeric materials and compared with regression analysis. Based on the neural network capabilities of formulating accurate quantitative structure property relationships, a technique called computational synthesis is suggested for performing materials design.",
+    "title": "Predicting Physical and Physical-Chemical Properties of Molecular-Based Materials Using Computational Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.36871013045310974
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3167009949684143
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.28875529766082764
+      }
+    ]
+  },
+  "2606.09622v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gulloo Lal Prajapati"
+      },
+      {
+        "affiliation": [],
+        "name": "Igor Ilyakov"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexey Ponomaryov"
+      },
+      {
+        "affiliation": [],
+        "name": "Atiqa Arshad"
+      },
+      {
+        "affiliation": [],
+        "name": "Sanjeev Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Jayaprakash Sahoo"
+      },
+      {
+        "affiliation": [],
+        "name": "Dhanvir Singh Rana"
+      },
+      {
+        "affiliation": [],
+        "name": "Abdelrahman Azab"
+      },
+      {
+        "affiliation": [],
+        "name": "Friedemann Queisser"
+      },
+      {
+        "affiliation": [],
+        "name": "Ralf Schützhold"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan-Christoph Deinert"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09622v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper focuses on 'rare-earth nickelates' and their 'Mott insulator-metal transition' and 'electronic and magnetic phases,' directly addressing a material class and phenomena of interest to the user.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Terahertz HHG",
+      "Mott transition",
+      "Electronic phases"
+    ],
+    "summary": "High harmonic generation (HHG) is a sensitive probe for investigating electronic structures and dynamics of materials and a source for attosecond pulses. In particular, HHG with terahertz (THz) light can enable probing of nonlinear responses in correlated materials arising from low-energy many-body interactions. However, THz HHG studies have so far largely focused on topological materials and superconductors, leaving out other potential material systems which could also become efficient THz HHG sources. Here, we report THz third harmonic generation (THG) in rare-earth nickelates -- a prototype material for exploring the Mott insulator-metal transition and related technological applications. We find that the THG amplitude is highly sensitive to the strengths of electronic and magnetic phases of nickelates. In films with sharp phase-transitions, the local maximum and minimum in the temperature-dependent THG amplitude coincide with insulator-metal and magnetic transition temperatures, respectively. While in films with weaker transitions, these features shift toward lower temperatures or even monotonous THG enhancement is observed down to low temperatures. We developed a generalized theory for THz harmonic generation in negative charge-transfer insulators and outlined strategies to enhance the THz nonlinearities further. Our study broadens the scope of THz HHG studies and related applications to strongly correlated materials.",
+    "title": "Evolution of terahertz third harmonic response across rare-earth nickelate phase-diagram",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.600909948348999
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.5890482068061829
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.5738216638565063
+      }
+    ]
+  },
+  "2606.09647v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Felix Post"
+      },
+      {
+        "affiliation": [],
+        "name": "Jean-Philip Filling"
+      },
+      {
+        "affiliation": [],
+        "name": "Toulik Maitra"
+      },
+      {
+        "affiliation": [],
+        "name": "Falk May"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Wand"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Andrienko"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09647v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper uses first-principles methods and touches upon electronic response properties, but primarily focuses on polarizable force field parameterization for molecular systems, which is less aligned with the user's core interests in condensed matter physics.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Polarizable force fields",
+      "Graph neural networks",
+      "Electronic response properties"
+    ],
+    "summary": "Polarizable force fields offer superior transferability and accuracy compared to classical force fields, enabling access to electronic response properties such as refractive index and electronic density of states. Here, we demonstrate two key improvements that significantly enhance their accuracy: (1) assigning atomic polarizability to individual atoms rather than atom types, and (2) employing atomic polarizability tensors instead of scalar values. These modifications extend the applicability of polarizable force fields to cations, anions, and excited states, while also providing more accurate descriptions of neutral molecules. We propose a first-principles-based parameterization procedure for atomic polarizability tensors and scalars, validated on a set of small organic molecules with conjugated building blocks. To overcome the computational cost of ab initio calculations, we train a message-passing graph neural network to predict polarizability parameters, enabling efficient and scalable parameterization. Crucially, this approach imposes no additional computational cost during simulations and provides a clear diagnostic criterion for identifying cases where polarizable force field models fail to accurately describe molecular polarizability.",
+    "title": "Ab initio parametrization of distributed polarizable force fields",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.516514778137207
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.45408904552459717
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.432565838098526
       }
     ]
   }

@@ -21879,5 +21879,122 @@
         "score": 0.5491695404052734
       }
     ]
+  },
+  "2606.07557v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhaowen Fan"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.MA",
+      "cs.SI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.07557v1",
+    "matching_keywords": [
+      "matrix product state",
+      "neural network",
+      "tensor network"
+    ],
+    "published_date": "2026-05-25",
+    "reasoning": "Although it mentions 'tensor network' and 'Matrix Product State,' this paper is fundamentally about decentralized swarm control and robotics, which is entirely outside the user's focus on condensed matter physics and materials science.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Swarm intelligence",
+      "Multi-agent systems",
+      "Control theory"
+    ],
+    "summary": "Decentralized multi-agent swarm coordination on resource-constrained edge platforms remains fundamentally bottlenecked by the exponential scaling of joint action spaces and high-latency communication overhead. This paper introduces the Swarm Policy Interference Network (SPIN) framework, an architectural paradigm that bypasses these limitations by modeling swarm topologies as a compressed tensor network. We factorize the joint policy tensors of local multi-agent cliques into Matrix Product State (MPS) chains, reducing the computational complexity of evaluation from an exponential $O(n^m)$ wall to a strictly linear $O(m \\cdot n \\cdot χ^2)$ constraint. To bridge local continuous spatial geometry with this discrete algebraic backend without requiring power-intensive online training loops, we introduce a decoupled, hybrid neuro-symbolic control pipeline. Local multi-layered neural networks operate as structural coordination encoders, pre-trained offline to nonlinearly map hand-engineered geometric descriptors into abstract environmental target measures. At runtime, edge agents execute instantaneous behavioral adaptations by applying the Radon-Nikodým derivative directly as a zero-shot importance-reweighting filter. We validate the framework within a discrete-time multi-agent simulation sandbox spanning tracking, decentralized dispersion/area coverage, and multi-goal coordination regimes. Qualitative telemetry demonstrates that the integrated pipeline achieves stable target-directed motion, anti-collapse spatial spreading under decentralized constraints, and structured subgroup formation across multiple targets, providing a mathematically grounded route to tractable, low-power edge swarm intelligence.",
+    "title": "SPIN: Decentralized Swarm Control via Tensorized Policy Coordination",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3724406361579895
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3686487078666687
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.351132869720459
+      }
+    ]
+  },
+  "2606.07609v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Antonio Francesco Mello"
+      },
+      {
+        "affiliation": [],
+        "name": "E. Miles Stoudenmire"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph Tindall"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.07609v1",
+    "published_date": "2026-05-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Geometric frustration in quantum systems can stabilize unconventional phases of matter that avoid traditional magnetic ordering at low temperatures. Here, we observe this phenomenon while mapping out the finite temperature phase diagram of the spin-1/2 Heisenberg antiferromagnet on the ruby lattice with next-nearest-neighbor interactions. Using an infinite tensor network state (iTNS) optimized and measured with belief propagation (BP) and corrections to BP, we observe the low temperature formation of stable magnetic plateaus at various magnetic field strengths. We find these plateaus host a novel `simplex liquid state' -- a disordered phase involving strongly paired spin simplices that retains non-zero residual entropy due to an exponentially large subspace of crystalline configurations. We accurately quantify the energy gap associated with these states and show that, as the temperature of the system is lowered, it does not go through a phase transition to reach them: the heat capacity remains finite and continuous at all observed temperatures. Our work demonstrates how BP-based tensor network techniques provide a powerful route to understanding frustrated quantum magnets at finite temperature.",
+    "title": "Finite-temperature formation of magnetic plateaus and simplex liquid states on the frustrated ruby lattice",
+    "vector_matches": []
+  },
+  "2606.07634v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jin Hyung Cho"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.07634v1",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-05-31",
+    "reasoning": "This paper directly investigates 'cuprate superconductivity' and 'd-wave' pairing within the '2D Hubbard model,' which strongly aligns with the user's specific interest in YBCO superconductors and correlated electron systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate superconductivity",
+      "Magnetic stripes",
+      "Off-diagonal long-range order"
+    ],
+    "summary": "The exact ground state of the two-dimensional Hubbard model is critical for understanding cuprate superconductivity. Previous numerical studies on narrow cylinders found insulating, static stripes that inherently suppress superconductivity. Here, using constrained-path auxiliary-field quantum Monte Carlo on isotropic lattices up to $24 \\times 24$ sites, we show static stripes are boundary artifacts. The true 2D thermodynamic limit yields a topologically melted fluid of dynamically fluctuating magnetic pockets. Furthermore, we reveal the microscopic real-space origin of cuprate particle-hole asymmetry. Hole doping actively melts the magnetic background, driving a Lifshitz transition that unleashes macroscopic $d_{x^2-y^2}$ phase coherence at an optimal $x \\approx 0.150-0.200$. Conversely, electron doping preserves rigid antiferromagnetic domains, confining carriers to narrow fault lines that optimally saturate early at $x \\approx 0.100$. By extracting the macroscopic off-diagonal long-range order across both regimes, we perfectly recover the skewed phenomenological superconducting dome. Our parameter-free theoretical curve aligns with empirical Uemura and Božović scaling relations, capturing the underdoped emergence, distinct optimal peaks, the 1/8 anomaly suppression, and overdoped collapse. These results prove that robust d-wave superconductivity is the intrinsic ground state of the pure Hubbard Hamiltonian.",
+    "title": "Topological Melting of Magnetic Stripes and the Emergence of Macroscopic d-wave Superconductivity in the 2D Hubbard Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6517313122749329
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5983278751373291
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.5916035175323486
+      }
+    ]
   }
 }
