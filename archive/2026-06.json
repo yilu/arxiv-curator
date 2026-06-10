@@ -3452,14 +3452,41 @@
         "name": "Venkat Kapil"
       }
     ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.06848v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-06-05",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "It describes a machine learning approach for interatomic potentials in condensed-phase chemistry, which is distinct from the user's focus on strongly correlated electron systems and specific material types like superconductors or semimetals.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Machine Learning Potentials",
+      "Knowledge Distillation",
+      "Condensed-Phase Chemistry"
+    ],
     "summary": "Accurate machine learning interatomic potentials (MLIPs) have made first-principles-quality potential energy surfaces increasingly accessible for condensed-phase chemistry, but their inference cost can still limit the sampling needed to compute experimentally relevant observables. In this work, we combine transfer learning and knowledge distillation to construct compact \"student\" models that retain the accuracy of much larger \"teacher\" models obtained by applying transfer learning to foundation models. The resulting students reduce production simulation cost by roughly an order of magnitude, making high-accuracy sampling practical for challenging condensed-phase problems. We demonstrate this across three problems of increasing sampling complexity: finite-temperature NPT simulations of ice Ih, classical and path-integral simulations of liquid water over 240-370 K, and path-integral umbrella-sampling simulations of water dissociation at the anatase TiO2(101)/water interface. In all cases, the distilled students reproduce the target observables of their teachers more reliably than models of the same size trained directly on the limited reference data. The liquid-water student, distilled from a Δ-learned CCSD(T)-quality teacher, reproduces thermodynamic, structural, transport, and nuclear quantum properties over the full temperature range studied. At the TiO2/water interface, distillation makes PIMD umbrella sampling practical and shows that nuclear quantum effects lower the dissociation barrier by roughly 2 kcal/mol and shift the molecular-dissociated free energy difference into quantitative agreement with recent solid-state 17O NMR measurements. Our work demonstrates how knowledge distillation can make accurate MLIPs practical for the sampling methods needed to connect condensed-phase reaction thermodynamics with experiment, notably for interfacial chemistry and catalysis.",
     "title": "Distilling first-principles accuracy into compact machine learning potentials for condensed-phase chemistry",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.44689252972602844
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4318535327911377
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.41357338428497314
+      }
+    ]
   },
   "2606.07199v1": {
     "authors": [
@@ -3476,14 +3503,40 @@
         "name": "Olivier Gingras"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.07199v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
     "published_date": "2026-06-05",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly focuses on bilayer nickelates using dynamical mean-field theory, which are key topics in the user's liked papers, investigating their electronic structure and response to strain.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Bilayer Nickelates",
+      "Dynamical Singlets",
+      "Cluster DMFT"
+    ],
     "summary": "We present realistic calculations within the density functional plus cluster dynamical mean-field formalism indicating that the physics of the the bilayer Ruddlesden-Popper nickelates is to a significant extent controlled by interlayer \"dynamical singlets'' which are formed from the $3z^{2}-r^{2}$ orbitals singly occupied by electrons and are hybridized with itinerant planar $x^{2}-y^{2}$ orbitals. The hybridization is found to respond differently to hydrostatic pressure and to epitaxial strain, capturing the experimentally observed dichotomy between bulk single crystals and epitaxial thin films and reproducing several experimental results including angle-resolved photoemission and transport measurements.",
     "title": "Squeezing dynamical singlets in bilayer nickelates",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.6089327335357666
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.5989019274711609
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC",
+        "score": 0.5818493366241455
+      }
+    ]
   },
   "2606.07262v1": {
     "authors": [
@@ -4045,14 +4098,41 @@
         "name": "Masatoshi Imada"
       }
     ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.08181v1",
+    "matching_keywords": [
+      "cuprate",
+      "neural network"
+    ],
     "published_date": "2026-06-06",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates the microscopic mechanism of high-temperature superconductivity in multilayer cuprates using ab initio methods, which aligns perfectly with interests in unconventional superconductors and their underlying physics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate Superconductors",
+      "High-Tc Mechanism",
+      "Emergent Attraction"
+    ],
     "summary": "Triple-layer cuprate superconductor $\\mathrm{HgBa_2Ca_2Cu_3O_8}$ (Hg1223) keeps the record of the highest superconducting (SC) critical temperature $T_{c}\\sim 134$K among all the existing materials at ambient pressure. $T_{c}$ further increases under pressure up to $T_{c}\\sim 160$K. However, its microscopic mechanism remains to be elucidated. We solve {\\it ab initio} Hamiltonians for Hg1223 using a variational solver supplemented by a neural network. The pressure dependence of the $d$-wave SC order parameter and estimated $T_{c}$ show a dome-like structure in essential agreement with the experimental indications. The origin of the strong SC amplitude at ambient pressure is identified as strong local Coulomb repulsion $U$ attributed to poor screening. Further increase in $T_{c}$ under pressure is understood from interplay of three elements, namely increased electron hopping $t$, decreased $U$ and more importantly, strongly reduced offsite Coulomb repulsion $V$ with increasing pressure. Pairing mechanism is identified as the emergent local attraction counterintuitively generated from the originally strong local repulsion $U$. The emergent attraction is interpreted from ``attraction from reduced repulsion'', originating from the release of the fluctuating doubly-occupied sites characterized from the ``false vacuum'' in the Mott insulator to the double-occupation-free $d$-wave SC states upon carrier doping. This instantaneous attraction is in contrast with the conventional BCS SC mediated by bosonic glues. The local attraction is consistent with the electron fractionalization supported in experimental analyses. The coexistence of the SC and antiferromagnetic order is also demonstrated as a characteristic feature of the multi-layer system. The microscopic understanding of Hg1223 offers a new route explicitly using this emergent attraction to design and optimize SC materials.",
     "title": "Microscopic mechanism of high-temperature superconductivity revealed by ab initio studies on hole-doped multilayer cuprates HgBa$_2$Ca$_2$Cu$_3$O$_8$ under pressure",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6376082897186279
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.6320587992668152
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.5935097932815552
+      }
+    ]
   },
   "2606.08287v1": {
     "authors": [
@@ -4065,14 +4145,42 @@
         "name": "Kamal Choudhary"
       }
     ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "cs.CE"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.08287v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
     "published_date": "2026-06-06",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on applying graph neural networks to accelerate finite element simulations for structural mechanics, which is distinct from the user's interest in strongly correlated electron physics and quantum many-body problems.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Graph Neural Networks",
+      "Finite Element Analysis",
+      "Structural Mechanics"
+    ],
     "summary": "Finite element analysis (FEA) is essential for structural design but remains computationally expensive, particularly when evaluating multiple design iterations or load scenarios. Machine learning surrogate models offer a promising alternative, yet most approaches struggle with a critical limitation: generalizing across varying geometries. This work presents a mesh graph network (MGN) for predicting von Mises stress fields in 2D structural components with arbitrary hole geometries. Unlike traditional machine learning approaches that use absolute node coordinates as features, the proposed model builds on existing MGN frameworks that encode node types (e.g., fixed boundary, free surface, hole edge), relative edge features (distance between neighbors), and global features (applied load). This architecture is inherently translation- and rotation-invariant, enabling generalization to unseen geometries without retraining. The MGN was trained on 11 plate geometries under 20 load conditions and evaluated on 7 unseen geometries and 3 unseen loads. In the most favorable case, the model achieves $R^2 \\geq 0.97$ on an unseen geometry and unseen load, compared to $R^2 \\approx 0.01$--$0.86$ for conventional models (Random Forest, Gradient Boosting , K-Nearest Neighbors) trained on identical data. However, even in less favorable cases, the MGN model still outperforms conventional models. This work extends the mesh-based simulation framework of Pfaff et al. (arXiv:2010.03409) to structural mechanics, demonstrating that graph neural networks can serve as efficient surrogates for finite element analysis across varying geometries.",
     "title": "Mesh Graph Neural Network Framework for Accelerating Finite Element Simulation for Arbitrary Geometries",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.35850706696510315
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.3346051275730133
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.3309192359447479
+      }
+    ]
   },
   "2606.08347v1": {
     "authors": [
@@ -4135,14 +4243,41 @@
         "name": "Yosuke Kanai"
       }
     ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.08350v1",
+    "matching_keywords": [
+      "green's function"
+    ],
     "published_date": "2026-06-06",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper develops an all-electron dynamical Bethe-Salpeter equation method using atom-centered orbitals, aligning with the user's interest in efficient real-frequency solvers and many-body theory.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Bethe-Salpeter Equation",
+      "Dynamical Screening",
+      "Atom-centered Orbitals"
+    ],
     "summary": "Solving Bethe-Salpeter equation (BSE) for the two-particle Green's function is the most widely used approach for taking into account the particle-hole (exciton) interaction in electronic excitation in the context of the many-body theory based on Green's function. In BSE calculations, the static approximation to the screened Coulomb interaction kernel is commonly employed. However, when the excitonic character is significant as typically indicated by a large exciton binding energy, dynamical screening effects become non-negligible, rendering the static approximation questionable. Because of the large computational cost due to the dense Brillouin zone integration necessary for convergence, solving the dynamical BSE for extended systems remains a significant challenge, especially when combined with GW calculation for the calculation of quasi-particle energies. In this work, we formulate the plane-wave based effective dielectric function method [Zhang, et al., Phys. Rev. B 107, 235205 (2023)] for the dynamical BSE calculation using atom-centered orbitals as basis functions. We implement this approach in our recently developed all-electron numerical atom-centered orbital (NAO) implementation of BSE@GW [Zhou, et. al. J. Chem. Theory Comput. 21, 291 (2025)] for extended systems. We validate our all-electron NAO-based implementation of the dynamical BSE method, and we then discuss its realistic application to molecular crystal of naphthalene by performing the dynamical BSE@G0W0 calculation.",
     "title": "All-electron Dynamical Bethe-Salpeter Equation for Extended Systems with Atom-centered Orbital Basis Set",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5946313738822937
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5523226857185364
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5115078687667847
+      }
+    ]
   },
   "2606.08558v1": {
     "authors": [
@@ -4155,14 +4290,40 @@
         "name": "Liujun Zou"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.08558v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
     "published_date": "2026-06-07",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper presents a microscopic universal theory for symmetry-enriched topological quantum spin liquids, which strongly aligns with the user's established interest in symmetry and topological phases of matter.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Topological Quantum Spin Liquids",
+      "Symmetry-Enriched Topology",
+      "Anyons"
+    ],
     "summary": "An ultimate theory of a phase of matter should describe all its universal properties via quantities that are measurable numerically and experimentally. In this work, we present a microscopic universal theory of symmetry-enriched topological quantum spin liquids (TQSLs) in two spatial dimensions, which directly utilizes microscopically measurable quantities to describe the universal properties. This theory applies to generic TQSLs, which can be Abelian or non-Abelian, chiral or non-chiral. The symmetries are also general, which can include both internal and lattice symmetries, unitary and anti-unitary symmetries, and discrete and continuous symmetries. There can be spin-orbit coupling, the microscopic degrees of freedom may transform linearly or projectively under the symmetries, and the symmetries can permute anyons. The input of the theory is some microscopic states with anyons, operators that control the dynamics of anyons, and symmetry actions in the TQSL, and its output is a set of data characterizing the universal properties, whose underlying mathematical structure is a generalization of category theory. Based on this theory, we find an explicit bijective map between the universal data characterizing a TQSL with a symmetry described by a group $G$, where the symmetry actions may include both lattice and internal symmetries, and the corresponding universal data for a TQSL with only an internal symmetry group $G$, and thus establish a precise crystalline equivalence principle. We demonstrate our theory in symmetry-enriched TQSLs realized on quantum processors based on superconducting qubits, trapped ions, and Rydberg atoms, and in each example we verify the Lieb-Schultz-Mattis anomaly matching condition. Our theory provides a solid basis for identifying and manipulating symmetry-enriched TQSLs, which further paves the way for fault-tolerant quantum computation based on these systems.",
     "title": "Microscopic universal theory of symmetry-enriched topological quantum spin liquids",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6130261421203613
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5896255970001221
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.4838970899581909
+      }
+    ]
   },
   "2606.08565v1": {
     "authors": [
@@ -4895,6 +5056,868 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
         "score": 0.432565838098526
+      }
+    ]
+  },
+  "2606.09971v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Raghav G. Jha"
+      },
+      {
+        "affiliation": [],
+        "name": "Goksu C. Toga"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaber I. Taher"
+      },
+      {
+        "affiliation": [],
+        "name": "Bojko N. Bakalov"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander F. Kemper"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.09971v1",
+    "published_date": "2026-06-08",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Entanglement and non-stabilizerness (magic) quantify two distinct departures of quantum systems from classical description: the former measures non-local correlations, while the latter measures the deviation from stabilizer states that can be efficiently simulated classically. Understanding magic in physically relevant quantum field theories is essential for identifying where quantum advantage may be realized in the early fault-tolerant quantum computing era. We calculate the gauge-invariant entanglement entropy and stabilizer Rényi entropy of the ground state of the (1+1)-dimensional SU(2) lattice gauge theory formulated in a dressed-site basis that enforces Gauss's law exactly. Using tensor networks, we obtain results for system sizes up to $L=100$ (300 qubits). We find a crossover denoted by $g_{\\star}$ where the ground state passes from a more magic-rich regime into a regime with less magic; this is also tracked by the sharpest change of both the entanglement entropy and lattice particle density. Our large-scale study of non-stabilizerness and entanglement entropy in a non-Abelian lattice gauge theory with matter provides new insight into the interplay of magic and entanglement in gauge theories, both of which are relevant for classical and early fault-tolerant quantum simulations.",
+    "title": "Magic and entanglement in 1+1-dimensional SU(2) lattice gauge theory",
+    "vector_matches": []
+  },
+  "2606.09984v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiaojun Yao"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.09984v1",
+    "published_date": "2026-06-08",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We calculate the real-time symmetric correlation function of the stress-energy tensor for a non-integrable Ising field theory consisting of three stable scalar particles via lattice Hamiltonian simulation. Using classical exact diagonalization and the matrix product state tensor network methods, we find that in the scaling region of the lattice theory, Umklapp processes are suppressed and the sound modes of relativistic hydrodynamics emerge at long wavelength and late time. The extracted ratio of bulk viscosity to entropy density is $ζ/s=14.19\\pm 0.90$ and the speed of sound is $c_s/c=0.76 \\pm 0.02$ at the temperature $T\\approx 7.14$ in units of the lowest stable particle's mass. Our study demonstrates the utility of real-time lattice Hamiltonian simulation for describing hydrodynamization and calculating transport coefficients nonperturbatively.",
+    "title": "Tame the Umklapp Processes in Real-Time Lattice Simulation for Hydrodynamics: An Ising Field Theory Study",
+    "vector_matches": []
+  },
+  "2606.09985v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhijin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Tinhong Shen"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.09985v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper explores fundamental quantum critical phenomena and unconventional phase transitions in quantum magnets, aligning with interests in strongly correlated electron systems and exotic phases.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum Criticality",
+      "Conformal Bootstrap",
+      "Quantum Phase Transitions"
+    ],
+    "summary": "The deconfined quantum critical point (DQCP) provides a prominent example of the unconventional phase transitions beyond the Landau-Ginzburg-Wilson paradigm and its nature has been controversial for decades. The DQCP has been extensively studied and the results lead to two opposite scenarios with pseudo-criticality or multicriticality. The pseudo-criticality is a prevailing scenario of DQCP which interprets the approximately scale invariant numerical results with the walking behavior near complex fixed points. In contrast, the multicriticality scenario conjectures the DQCP is a unitary fixed point with a relevant $SO(5)$ singlet scalar. In this work we provide substantial evidence for the multicriticality scenario using conformal bootstrap. We start with the observation that the large scale Quantum Monte Carlo (QMC) results nearly saturate the bootstrap bounds. After imposing suitable sparseness condition the bootstrap bound forms a sharp cone in the three-dimensional parameter space. The bootstrap cone is close to the QMC data. We use the navigator algorithm to locate the apex of the cone and extract the extremal solutions. We find striking consistencies between the bootstrap solutions and the fuzzy sphere data of DQCP, including the coefficients in the operator product expansions (OPEs) and the higher spectrum! The bootstrap cone unifies the QMC and the fuzzy sphere data into a unitary conformal field theory with a relevant $SO(5)$ singlet scalar, thus strongly supporting the multicriticality scenario of DQCP. The agreement between the conformal bootstrap, QMC and fuzzy sphere results is a surprise towards solving DQCP and decoding the profound phase diagram of the two-dimensional quantum magnets.",
+    "title": "Bootstrap Cone of the Multicritical Deconfined Quantum Critical Point",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5179780125617981
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5152316093444824
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4986700415611267
+      }
+    ]
+  },
+  "2606.09988v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hao-Kai Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenghong Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuo Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shi-Xin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Xiang"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.09988v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "matrix product state",
+      "neural network"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "While matrix product states and DMRG are relevant methods for strongly correlated systems, the paper's primary focus on trainability in quantum circuits makes it less directly aligned with the user's specific interests in material properties and many-body theoretical methods.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Matrix Product States",
+      "DMRG",
+      "Variational Quantum Algorithms"
+    ],
+    "summary": "Quantum circuits suffer from severe trainability issues: even shallow circuits are swamped with poor local minima. Yet matrix product states (MPS), which can be prepared by sequential circuits, are remarkably trainable in practice -- as demonstrated by decades of successful density matrix renormalization group calculations. In this work, we resolve this apparent paradox by proving that the energy landscapes of MPS are free from poor local minima, under the same setting where brickwork circuits are not. The key insight is that the gauge freedom of MPS creates an effective local overparametrization that causes local minima to concentrate near the global minimum, analogous to overparametrized classical neural networks. We rigorously prove that the local minimum distribution of the MPS energy landscape is invariant under moves of the orthogonality center. Numerical experiments further confirm that the optimization of sequential circuits converges to near-optimal solutions even for random Hamiltonians, in stark contrast to brickwork circuits. Our findings highlight the pivotal role of effective local overparametrization in determining trainability, providing a valuable guide for overcoming the trainability bottleneck of variational quantum algorithms.",
+    "title": "Absence of poor local minima in matrix product states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5605645775794983
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5579490661621094
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5531492233276367
+      }
+    ]
+  },
+  "2606.09995v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chiara Capecci"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Nagies"
+      },
+      {
+        "affiliation": [],
+        "name": "Naga Dileep Varikuti"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp Hauke"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.09995v1",
+    "published_date": "2026-06-08",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Quantum annealing promises to solve combinatorial optimization problems by preparing the ground state of a target Hamiltonian. Standard annealing protocols are, however, stoquastic and can thus be simulated by sign-problem-free quantum Monte-Carlo methods. To obtain a true quantum advantage, it has been proposed to use non-stoquastic catalyst Hamiltonians. Active only at intermediate stages of the protocol, these can, for certain problems, convert first-order into second-order quantum phase transitions and thus permit an exponential speedup over the stoquastic protocol. At the same time, the non-stoquastic catalyst renders quantum Monte-Carlo methods inefficient. It remains, however, an open question how other classical computation methods are affected by the non-stoquastic terms. We address this question by computing quantum resources -- entanglement entropy and stabilizer Rényi entropy -- whose presence makes classical computations based on tensor networks and stabilizer-tableau methods exponentially hard. We compare these with the spectral gap along the annealing path for two paradigmatic benchmark models, the fully connected $p$-spin model and a geometrically local Ising model. While the exact behavior shows a subtle dependency on the underlying model and the annealing path, our numerics suggest consistently that the scaling of entanglement and non-stabilizerness is at least maintained in the deeply non-stoquastic regime and in some cases even significantly enhanced. Our results thus suggest that improvements of quantum performance in non-stoquastic annealing coincide with significant presence of quantum computational resources.",
+    "title": "Quantum resources in non-stoquastic quantum annealing",
+    "vector_matches": []
+  },
+  "2606.10101v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yao Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Siyu Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Evgeny Plekhanov"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivan Stich"
+      },
+      {
+        "affiliation": [],
+        "name": "Cedric Weber"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan M. Tomczak"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10101v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper directly applies Dynamical Mean-Field Theory (DMFT) to investigate correlation-driven phonon renormalization in strongly correlated f-electron cerium, aligning perfectly with the user's interest in DMFT and many-body correlations.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "f-electron systems",
+      "Phonon Renormalization",
+      "Many-body effects"
+    ],
+    "summary": "We investigate the thermodynamic properties of elemental cerium by assessing the crucial role of phonon free energy within the framework of dynamical mean-field theory (DMFT). While conventional density functional theory (DFT) often fails to capture the intricate energy landscape of $f$-electron materials, our approach integrates many-body electronic correlations with lattice dynamics to achieve a more rigorous description of the equation of state. We calculate the total energy as a function of the lattice constant at both the DFT and DFT+DMFT levels, subsequently incorporating the vibrational free energy derived from the phonon density of states. Our findings reveal that electronic renormalisation of the force constants significantly alters the phonon spectra, particularly in the strongly correlated $γ$-phase. By applying these phonon corrections to the energy profiles, we observe a substantial refinement in the predicted equilibrium volumes. Using principal-component-based machine learning, we interpolate phonon dispersions continuously from a finite set of first-principles calculations and compare them to experiment, finding significantly closer agreement compared to conventional DFT and DFT+U calculations that neglect dynamical many-body correlations. This study underlines the necessity of accounting for both electronic and vibrational entropy when evaluating the phase stability and structural transitions of lanthanide systems under varying pressures and temperatures.",
+    "title": "Correlation-driven phonon renormalisation and the equation of state of $γ$-cerium",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.5543965101242065
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5486053824424744
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5323688983917236
+      }
+    ]
+  },
+  "2606.10195v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Aaditya Panigrahi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yanjun Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Omri Lesser"
+      },
+      {
+        "affiliation": [],
+        "name": "Krishnanand Mallayya"
+      },
+      {
+        "affiliation": [],
+        "name": "Eun-Ah Kim"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10195v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-08",
+    "reasoning": "This paper focuses on machine learning representations for inorganic crystals, which is distinct from the user's primary interests in strongly correlated electron systems and quantum phenomena.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Materials Informatics",
+      "Crystal Representation",
+      "Machine Learning in Materials"
+    ],
+    "summary": "Machine learning models for materials property prediction increasingly rely on representations learned end-to-end from large density-functional-theory databases, limiting their applicability when only scarce experimental data are available. Domain-knowledge-driven representations precomputed from crystal structures alone offer a data-efficient, interpretable alternative, but existing approaches capture at most composition or bonding connectivity and discard local structural geometry. Here, we present Graphlet-MP, a database of graphlet histogram representations for 149,082 inorganic crystals from the Materials Project (MP). Seventy-nine distributions describe each material over three hierarchical graphlet orders: atomic sites, bonded pairs, and bond-angle triplets, extracted via screened Voronoi tessellation from the crystallographic information file. We provide a complete technical specification of the representation, an Earth Mover's Distance metric for comparing materials in this space, and the full precomputed database. An accompanying open-source codebase enables users to generate graphlet histograms for arbitrary crystal structures, including experimentally determined ones, and to extend the database to new materials or target properties.",
+    "title": "Graphlet Histogram Representation Database of Inorganic Crystals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4242434501647949
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.42277055978775024
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.35175859928131104
+      }
+    ]
+  },
+  "2606.10349v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Supriyo Ghosh"
+      },
+      {
+        "affiliation": [],
+        "name": "Yunhao Fan"
+      },
+      {
+        "affiliation": [],
+        "name": "Sheng Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Kipton Barros"
+      },
+      {
+        "affiliation": [],
+        "name": "Gia-Wei Chern"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10349v1",
+    "matching_keywords": [
+      "neural network",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper presents a novel neural network method for simulating spin dynamics in disordered itinerant magnets, relating to magnetic aspects of correlated electron systems and advanced computational techniques.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Itinerant Magnetism",
+      "Neural Network Potentials",
+      "Spin Dynamics"
+    ],
+    "summary": "We present a magnetic extension of the Hierarchically Interacting Particle Neural Network (HIP-NN) that enables large-scale simulations of electron-mediated spin dynamics in disordered itinerant magnets. The resulting magnetic HIP-NN (mHIP-NN) incorporates rotationally invariant spin correlations directly into hierarchical message-passing layers, enabling the network to learn emergent magnetic energy landscapes and effective local fields from coupled geometric-spin environments while preserving spin-rotation symmetry. As a benchmark application, we consider structurally disordered itinerant $s$-$d$ exchange models in which the effective magnetic forces arise dynamically from the instantaneous electronic structure and are computationally prohibitive to evaluate using conventional exact-diagonalization-based approaches. We show that mHIP-NN accurately reproduces the local torques governing Landau-Lifshitz-Gilbert dynamics and faithfully captures the nonequilibrium evolution of spatial spin correlations following thermal quenches. Our results establish symmetry-aware hierarchical message-passing networks as an efficient and scalable framework for large-scale simulations of frustrated itinerant spin systems and nonequilibrium magnetic dynamics. More broadly, because the learned energy functional remains fully differentiable with respect to both atomic coordinates and spin variables, the framework also provides a natural foundation for spin-dependent interatomic potentials and coupled atom-spin dynamics.",
+    "title": "Magnetic HIP-NN for spin dynamics in disordered itinerant magnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5650308132171631
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5612201690673828
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.559034526348114
+      }
+    ]
+  },
+  "2606.10352v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "I-Tzu Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Marat I. Latypov"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10352v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper focuses on a neural network enhancement for the Electron Backscatter Diffraction technique, which is a materials characterization method less directly related to the fundamental physics of strongly correlated systems or exotic superconductivity.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "EBSD",
+      "Microstructure Analysis",
+      "Deep Learning Microscopy"
+    ],
+    "summary": "In a polycrystalline microstructure, orientation and dislocation content vary smoothly within grains, and the grain boundaries between them are continuous curves. Electron backscatter diffraction (EBSD) records this continuum on a discrete grid with every subsequent analysis (from indexing to advanced pattern processing) confined to that grid. We introduce neural EBSD, which treats an EBSD scan as a continuous, differentiable four-dimensional field of Kikuchi diffraction intensity (in specimen--detector domain) and then represents it with a coordinate-based neural network. We develop and compare two formulations: a joint formulation that maps all four coordinates to intensity, and a factorized formulation that combines continuous specimen-domain coefficient fields with learned detector-domain basis patterns. Tested on recrystallized and additively manufactured Inconel 718, the factorized formulation shows better accuracy in reconstructing Kikuchi patterns that have map-averaged errors below 1% of the maximum intensity. Beyond reconstruction, it provides full-pattern super-resolution in the specimen frame, continuous querying along arbitrary off-grid paths, as well as spatially continuous boundary and heterogeneity localization from analytical spatial derivatives. Storing the network weights and learned bases in place of the raw patterns in a large dataset offers a 700-fold compression while preserving on-demand access to the full patterns for downstream analyses.",
+    "title": "Neural electron backscatter diffraction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.39196622371673584
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.37428024411201477
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.28824812173843384
+      }
+    ]
+  },
+  "2606.10564v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Young-Joon Song"
+      },
+      {
+        "affiliation": [],
+        "name": "W. E. Pickett"
+      },
+      {
+        "affiliation": [],
+        "name": "K. -W. Lee"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10564v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper directly focuses on the electronic properties and potential superconductivity in 'infinite layer nickelates', a topic explicitly present in multiple previously liked papers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Bilayer Nickelates",
+      "Interstitial Bands",
+      "Electron-Hole Dichotomy"
+    ],
+    "summary": "``Infinite layer'' nickelates (ILNs) ${\\cal R}$NiO$_2$ (${\\cal R}$=rare earth elements), having empty apical O sites, become superconducting upon hole doping. They display a secondary electron Fermi surface (FS), giving hole doping, arising not from atomic orbitals but from a band based on interstitial density. Newly reported La$_3$Ni$_2$O$_5$F, formally Ni$^{1+}$, provides an unexpected example of ILN with essentially ideal two dimensional character. A partially occupied single band $E^*$, based on interstitial density, has distinct properties, as its strongly anisotropic shape extends over the three ``apical'' layers and leads to a cylindrical electron FS giving self-doping. This interstitial density is associated with a {\\it network of valence bands}, including a Ni $d_{xz},d_{yz}$ pair that partners with $E^*$ to provide an incipient non-analytic Dirac point, leading to an unusual type of interstitial density--$d$ band coupling. The $E^*$ electron band and the conventional Ni $dpσ$ band will display a dichotomy of hole and electron quasiparticle behavior in normal state transport and far-IR properties, and likely resulting in unconventional superconducting state properties even for nickelates.",
+    "title": "Dichotomous electronic system in a bilayer Ni$^{1+}$ nickelate",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.6130334138870239
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.6078134775161743
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.5957008004188538
+      }
+    ]
+  },
+  "2606.10604v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Oksana Peschanska"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeroen van den Brink"
+      },
+      {
+        "affiliation": [],
+        "name": "Volodymyr P. Kravchuk"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10604v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper explores spin excitations and domain wall physics in novel altermagnetic materials, directly aligning with the user's interest in quantum phenomena, magnetic properties, and symmetry in condensed matter.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spin Excitations",
+      "Domain Walls"
+    ],
+    "summary": "Altermagnets (A$\\ell$Ms) are spin-compensated materials in which opposite-spin sublattices are connected by a symmetry that causes a spin splitting in their elementary excitations. As there is a strong effect of altermagnetism on domain wall properties, it is quite natural to also expect an enrichment of the physics of magnetic excitations at A$\\ell$M domain walls. Here, we consider the propagation of spin eigen-excitations along domain walls in easy-axial $d$-wave A$\\ell$Ms. Investigating the presence of bound states localized on a domain wall, we find that the effect of the A$\\ell$M on the bound states strongly depends on the orientation of the domain wall relative to the crystallographic directions. If the domain wall is oriented along a nodal direction [100] or [010], A$\\ell$M does not change the number of bound states; however, it leads to a nonlinear dispersion and a tilt of the wavefront. The effect of A$\\ell$M is strongest when the domain wall is oriented along the directions [110] or [$\\bar{1}$10], i.e., along the directions of the strongest A$\\ell$M splitting in the magnon spectrum. In this case, (i) the additional gapped bound states appear, (ii) degeneracy of the eigenstates with respect to their polarization (right-handed or left-handed precession of the N{é}el vector) is removed, and (iii) the localization area of the bound states strongly depends on the eigenfrequency. The latter may lead to strong localization of the bound state at the domain wall. We further consider the influence of a static magnetic field that is applied along the easy axis, and find that the magnetic field induces an asymmetry between the localization regions on opposite sides of the domain wall and sets an upper limit on the absolute value of the propagating eigenstate's wave vector.",
+    "title": "Propagation and localization of spin excitations at altermagnetic domain walls",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.528087317943573
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5240769386291504
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.48661407828330994
+      }
+    ]
+  },
+  "2606.10715v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Neha Sharma"
+      },
+      {
+        "affiliation": [],
+        "name": " AmritPal"
+      },
+      {
+        "affiliation": [],
+        "name": "Nikita Sharma"
+      },
+      {
+        "affiliation": [],
+        "name": "Mathieu Duttine"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Pelloquin"
+      },
+      {
+        "affiliation": [],
+        "name": "S. D. Kaushik"
+      },
+      {
+        "affiliation": [],
+        "name": "Sanjoy Mahatha"
+      },
+      {
+        "affiliation": [],
+        "name": "Olivier Toulemonde"
+      },
+      {
+        "affiliation": [],
+        "name": "Sourav Marik"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10715v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper investigates ferrimagnetism in a high-entropy spinel oxide using advanced characterization techniques like neutron and X-ray diffraction, which aligns with the user's interest in complex oxides, magnetic properties, and experimental probes of materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Ferrimagnetism",
+      "High-Entropy Oxides",
+      "Spinel"
+    ],
+    "summary": "High-entropy materials are complex, multifunctional materials that have reshaped the design of advanced functional materials. Their chemically diverse compositions enable access to a broader compositional space than conventional solid solutions, while simultaneously posing significant challenges for fundamental structure property understanding. In this study, we introduce a new highentropy spinel oxide with an exceptionally low coercivity of 1.8 Oe at room temperature, among the lowest reported for bulk spinel oxides, and a high electrical resistivity (1560 ohm-cm). Neutron powder diffraction (NPD) and magnetic measurements reveal long-range collinear ferrimagnetic ordering (k = 0,0,0) with a transition temperature at 420 K. This rare combination of ultra-soft magnetic behavior, robust ferrimagnetic ordering well above room temperature, and high resistivity highlights its strong potential as an advanced soft-magnetic oxide for low-loss, high-frequency applications. Furthermore, X-ray absorption spectroscopy (XAS), Mossbauer spectroscopy, and NPD analyses were combined to determine the cation distribution and site selectivity across the tetrahedral and octahedral sites of the complex structure.",
+    "title": "Ultra-Soft Ferrimagnetism in a High-Entropy Spinel Oxide Driven by Site-Selective Cation Disorder",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:e5wmG9Sq2KIC",
+        "score": 0.5179147720336914
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:isC4tDSrTZIC",
+        "score": 0.4981624484062195
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.4840850532054901
+      }
+    ]
+  },
+  "2606.10773v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Erik Schroedter"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Bonitz"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan-Philip Joost"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.10773v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper introduces a scalable nonequilibrium Green function method for large correlated quantum systems, directly aligning with the user's interest in efficient many-body solvers for dynamical mean-field theory and correlated electron problems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Nonequilibrium Green Functions",
+      "Many-Body Theory",
+      "Correlated Systems"
+    ],
+    "summary": "Correlated real-time dynamics in large, spatially inhomogeneous quantum systems remain difficult to access with nonequilibrium many-body methods. Two-time nonequilibrium Green functions (NEGF) retain dynamical correlations but their computational runtime grows cubically with the number of time steps $N_\\mathrm{t}$. This scaling bottleneck could recently be overcome by introducing the G1--G2 scheme that is linear in $N_\\mathrm{t}$, but requires propagation of a two-particle correlation function and may suffer from numerical instabilities. This has restricted simulations to small systems with $N_\\mathrm{b} \\sim 10^2$ basis states. Here we introduce a quantum-fluctuation formulation of nonequilibrium Green functions, denoted $δ$NEGF, that represents dynamical two-particle correlations through fluctuations of field-operator products, $δ\\hat G$. This guarantees stable dynamics by preserving the positivity of the reduced density matrices, avoids the explicit storage of the two-particle Green function, and reduces the propagation to a finite ensemble of Hartree-Fock-like trajectories. Combined with a stochastic low-rank decomposition of the correlation functions, the method retains time-linear scaling while extending dynamical $GW$ and particle-particle and particle-hole $T$-matrix simulations to basis sizes of order $N_\\mathrm{b}\\sim 10^4$. We benchmark $δ$NEGF against exact and HF-GKBA results for lattice systems, finding stable correlated dynamics also at strong coupling. We further demonstrate large-scale simulations of diffusion in two-dimensional Hubbard lattices and ultrafast relaxation in graphene nanoribbon heterostructures with long-range Coulomb interactions. These results establish $δ$NEGF as a scalable route to dynamical self-energy simulations of large, spatially inhomogeneous correlated quantum systems beyond the reach of existing NEGF implementations.",
+    "title": "Nonequilibrium Green Functions Simulations for Large Correlated Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5654727816581726
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5562900304794312
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.5297374129295349
+      }
+    ]
+  },
+  "2606.10976v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mingzhong Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu-Feng Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Youjin Deng"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan-Yao He"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.10976v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper investigates the Slater-Mott crossover in the Hubbard model, a fundamental aspect of strongly correlated electron systems highly relevant to the user's previous interests in materials like cuprates and nickelates.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Mott Insulator",
+      "Hubbard Model",
+      "Slater-Mott Crossover"
+    ],
+    "summary": "The interaction-driven crossover from a Slater insulator to a Mott insulator in the Néel-ordered ground state of the Hubbard model is a fundamental paradigm of strongly correlated electrons, yet its quantitative characterization has remained elusive. Here we establish a clear and experimentally accessible thermal criterion for this crossover via the sign change of the temperature derivative of double occupancy, $(\\partial D/\\partial T)_U$, near zero temperature. In the Slater regime, $(\\partial D/\\partial T)_U>0$ reflects the major role of charge fluctuations; in the Mott regime, the anomalous $(\\partial D/\\partial T)_U<0$, a manifestation of the Pomeranchuk effect, signals the dominance of low-energy spin superexchange physics. Using exact diagonalization and {\\it numerically exact} quantum Monte Carlo simulations, we demonstrate that this criterion determines the crossover boundary at $U_{\\rm cross}/t=4.0(2)$ for the half-filled two-dimensional Hubbard model. Furthermore, we obtain a consistent boundary independently from the maximum in the antiferromagnetic correlation length, which also arises from the superexchange physics. These two thermal signatures are theoretically unified through the local minimum of thermal entropy versus interaction $U$ at low temperatures. Our results offer a direct, measurable, and physically intuitive framework to identify the Slater-Mott crossover in optical lattice experiments.",
+    "title": "Thermal Signatures of the Slater-Mott Crossover in the Hubbard Model: From Double Occupancy to Antiferromagnetic Correlation Length",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6337338089942932
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.611661970615387
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5926671624183655
+      }
+    ]
+  },
+  "2606.11027v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gözde Özbal Sargın"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.11027v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper investigates direction-dependent quantum transport and electronic properties in a 2D material using DFT and NEGF, aligning with interests in electronic behavior and computational methods but not directly touching on strongly correlated superconductivity.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "2D Materials",
+      "Quantum Transport",
+      "Thermoelectrics"
+    ],
+    "summary": "Motivated by the experimental realization of the two-dimensional (2D) carbon biphenylene network (BPN), the theoretical extension of the BPN topology to various groups of elements was successfully implemented. In this work, we conducted first principles and quantum transport calculations to reveal the electronic, thermal, thermoelectric performance and current-voltage (\\textit{I-V}) behavior of the pristine MoS$_2$-BPN by using density functional theory (DFT) combined with Non-Equilibrium Green's Function (NEGF) formalism. At room temperature, the phonon thermal conductance is remarkably low along both the armchair and zigzag orientations, with values of 0.28 nW/K and 0.23 nW/K, respectively. The directional dependence of the electronic and thermal transport properties is clearly reflected in the thermoelectric figure of merit ($zT$) values, which reach first peaks at 0.27 and 0.19 along the armchair and zigzag directions, respectively. The current-voltage ($I-V$) characteristics demonstrate an exceptionally strong transport anisotropy, characterized by a substantial current ratio of $I_{\\text{armchair}}/I_{\\text{zigzag}} \\approx 7 \\times 10^4$. Furthermore, while the current along the armchair direction increases steadily with the applied bias, transport along the zigzag direction is characterized by a pronounced intrinsic negative differential conductance (NDC). This contrast highlights fundamentally distinct charge transport mechanisms along the two orthogonal axes. Consequently, different directions of this BPN phase of MoS$_2$ can be tailored for distinct nanoelectronic applications, where the armchair and zigzag axes serve as a reliable current switch and an active NDC device, respectively.",
+    "title": "Direction-Dependent Quantum Transport Properties of MoS$_2$ Integrated into Biphenylene Configuration",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.5002180337905884
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.47463470697402954
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.4597485661506653
+      }
+    ]
+  },
+  "2606.11072v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ruihuan Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiqiang Cui"
+      },
+      {
+        "affiliation": [],
+        "name": "Mani Jayaraman"
+      },
+      {
+        "affiliation": [],
+        "name": "Lincong Ji"
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zesheng Zeng"
+      },
+      {
+        "affiliation": [],
+        "name": "Petr Levinsky"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiri Hejtmanek"
+      },
+      {
+        "affiliation": [],
+        "name": "Christophe Candolfi"
+      },
+      {
+        "affiliation": [],
+        "name": "Emmanuel Guilmeau"
+      },
+      {
+        "affiliation": [],
+        "name": "Xingchen Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Yue Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.11072v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper focuses on discovering crystalline materials with ultralow thermal conductivity using machine learning, which is a different materials property and application domain than the user's interest in correlated electron systems and specific electronic/magnetic phenomena.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Thermal Insulation",
+      "High-Throughput Screening",
+      "Phonon Transport"
+    ],
+    "summary": "Crystalline materials with ultralow thermal conductivity ($κ$) are potential thermal barrier coatings or thermoelectrics, yet the discovery of ultralow-$κ$ materials remains inefficient due to the limitations of trial-and-error approaches. Herein, we propose a state-of-the-art high-throughput workflow that integrates universal machine learning interatomic potentials with high-fidelity phonon transport theories to accelerate the exploration of thermal insulators. Applying this approach, we identify dozens of crystalline materials with intrinsic room-temperature $κ$ values below 0.2 $\\rm W m^{-1} K^{-1}$. Among them, we report and experimentally validate CsTlI$_4$, a record-breaking material with an ultralow $κ$ of 0.14 $\\rm W m^{-1} K^{-1}$ at 300 K. Structural and bond analyses reveal that a hierarchical bonding framework, consisting of multi-coordinated Cs-I and antibonding Tl-I interactions, leads to weak chemical bonding and a soft lattice. These features reduce phonon group velocities, enhance phonon scattering, and induce strong vibrational mismatch between sublattices, collectively suppressing both particle-like phonon propagation and wave-like tunneling. Beyond this specific system, we establish physically interpretable descriptors based on interatomic force constants that correlate strongly with ultralow $κ$ and capture the role of bonding hierarchy and coordination environments in governing thermal transport. This work demonstrates a robust data-driven strategy for accelerating the discovery of thermal insulators and provides microscopic insight into how hierarchical bonding and strong anharmonicity cooperate to impede heat-carrying vibrations.",
+    "title": "Approaching the Limit of Intrinsic Crystalline Thermal Insulation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.567179262638092
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.4755251109600067
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.47124922275543213
+      }
+    ]
+  },
+  "2606.11128v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "K. D. Belashchenko"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.11128v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-09",
+    "reasoning": "This paper investigates surface altermagnetism and spin splitting in PT-symmetric antiferromagnets, further aligning with the user's interest in symmetry, novel magnetic phases, and quantum phenomena at surfaces.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Surface Altermagnetism",
+      "PT-Symmetry",
+      "Spintronics"
+    ],
+    "summary": "Surface altermagnetism extends spin splitting beyond bulk altermagnets through symmetry reduction at surfaces and interfaces. An existing classification applies to the local symmetry of atomically flat surface terraces. The present paper addresses the symmetry of macroscopic spin-momentum correlations that survive averaging over compensated rough surfaces. These correlations are governed by the surface antisymmetry Laue point group. Rough-surface altermagnetism is forbidden at any surface of a magnet whose antisymmetry space group contains antitranslations, and the classification therefore reduces to $PT$-symmetric antiferromagnets. By restoring all symmetries leaving the surface normal invariant, roughness can generate compensated surface altermagnets from uncompensated flat terminations, increase the surface symmetry, or suppress spin splitting. By combining bulk switchability with altermagnetic surface transport properties, roughness-robust surface altermagnetism in $PT$-symmetric antiferromagnets provides a route toward spintronic functionality.",
+    "title": "Roughness-robust surface altermagnetism in $PT$ antiferromagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.5244107842445374
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.49092650413513184
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.4312950670719147
       }
     ]
   }
