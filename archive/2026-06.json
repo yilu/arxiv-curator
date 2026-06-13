@@ -5208,16 +5208,39 @@
         "name": "Alexander F. Kemper"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.09971v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-06-08",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper explores magic and entanglement in SU(2) lattice gauge theory using tensor networks, relevant to understanding quantum advantage and theoretical quantum physics.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Lattice gauge theory",
+      "Magic states",
+      "Entanglement entropy"
+    ],
     "summary": "Entanglement and non-stabilizerness (magic) quantify two distinct departures of quantum systems from classical description: the former measures non-local correlations, while the latter measures the deviation from stabilizer states that can be efficiently simulated classically. Understanding magic in physically relevant quantum field theories is essential for identifying where quantum advantage may be realized in the early fault-tolerant quantum computing era. We calculate the gauge-invariant entanglement entropy and stabilizer Rényi entropy of the ground state of the (1+1)-dimensional SU(2) lattice gauge theory formulated in a dressed-site basis that enforces Gauss's law exactly. Using tensor networks, we obtain results for system sizes up to $L=100$ (300 qubits). We find a crossover denoted by $g_{\\star}$ where the ground state passes from a more magic-rich regime into a regime with less magic; this is also tracked by the sharpest change of both the entanglement entropy and lattice particle density. Our large-scale study of non-stabilizerness and entanglement entropy in a non-Abelian lattice gauge theory with matter provides new insight into the interplay of magic and entanglement in gauge theories, both of which are relevant for classical and early fault-tolerant quantum simulations.",
     "title": "Magic and entanglement in 1+1-dimensional SU(2) lattice gauge theory",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.49454447627067566
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4937314987182617
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.48952677845954895
+      }
+    ]
   },
   "2606.09984v1": {
     "authors": [
@@ -6970,16 +6993,39 @@
         "name": "Wei-Hai Fang"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.12056v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
     "published_date": "2026-06-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper develops Clifford disentanglers for entanglement reduction in tensor-network and quantum simulations, directly addressing a key challenge in efficient quantum system computation.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Entanglement reduction",
+      "Quantum simulations",
+      "Clifford operators"
+    ],
     "summary": "Entanglement is a key bottleneck limiting the efficiency of tensor-network and quantum simulations of molecular electronic structures. Here, we systematically assess and extend Clifford disentanglers as a structure-preserving approach to entanglement reduction: they can modify the entanglement structure of qubit wavefunctions while retaining the Pauli-string form of qubit Hamiltonians. To enable a practical search over Clifford transformations, we classify Clifford operators by their action on the Schmidt spectrum across a bipartition, reducing the two- and four-qubit search spaces to 20 and 91392 representatives, respectively. Embedded in an iterative Clifford-augmented matrix product state framework, these transformations reduce the energy errors at fixed bond dimension for the molecular test cases studied and mitigate the dependence on orbital orderings and fermion-to-qubit mappings. We further show that Clifford disentanglers can also benefit quantum simulations such as the shallow-circuit variational quantum eigensolver calculations. Together, these results establish Clifford disentanglers as a useful structure-preserving entanglement-engineering tool for tensor-network and quantum simulations of molecular electronic structure, while also clarifying their correlation dependence and motivating future developments.",
     "title": "Clifford disentanglers for entanglement reduction in molecular electronic structure simulations",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5455527305603027
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5336331129074097
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5287795662879944
+      }
+    ]
   },
   "2606.12083v1": {
     "authors": [
@@ -7269,14 +7315,41 @@
         "name": "S. A. Parameswaran"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.12530v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
     "published_date": "2026-06-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "It investigates strongly correlated electron systems in novel moiré materials using determinantal Quantum Monte Carlo, aligning with interests in computational methods and quantum phenomena in exotic materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Moiré materials",
+      "Determinantal QMC",
+      "U(6) symmetry"
+    ],
     "summary": "A new moiré material platform was recently proposed based on twisting two-dimensional atomic monolayers whose low-energy states lie at the three M-points of the Brillouin Zone. Continuum and ab initio modeling suggest that electrons in the conduction bands of these materials realize three-valley Hubbard models with valley-selective, quasi-one-dimensional hopping. Remarkably, the onsite Hubbard repulsion is almost $U(6)$-symmetric without fine-tuning. Here, we show that this class of systems naturally admits sign-free determinantal Quantum Monte Carlo simulations at a filling of three electrons per moiré unit cell. We use these to explore the phase diagram for interactions of various strengths and $U(6)$-breaking anisotropies. We show that for near-isotropic interactions as relevant to, e.g., AA-stacked twisted SnSe$_2$, the system exhibits an extended intermediate-coupling regime in which local-moment formation and itinerancy compete, and the crossover to a putative low-temperature ordered state can be understood in terms of fluctuating $U(6)$ local moments. We argue that many of these features persist beyond the idealized sign-problem-free limit.",
     "title": "Hidden antiferromagnetism, persistent valley fluctuations, and $U(6)$ crossovers in triangular-lattice M-point moiré materials via determinantal quantum Monte Carlo",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6774364113807678
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6463840007781982
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6154751181602478
+      }
+    ]
   },
   "2606.12538v1": {
     "authors": [
@@ -7289,16 +7362,39 @@
         "name": "Sun Woo P. Kim"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.12538v1",
+    "matching_keywords": [],
     "published_date": "2026-06-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper develops a systematic theory for solvable quantum circuits using Matrix Product States, a computational method relevant to quantum systems.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Solvable circuits",
+      "Matrix Product States (MPS)",
+      "Non-equilibrium dynamics"
+    ],
     "summary": "`Solvable' circuits, such as dual unitaries and its generalisations, have arisen as paradigmatic examples of tractable chaotic non-equilibrium dynamics, both in classical and quantum systems. However, while increasingly more complicated sufficient conditions have been proposed, a systematic theory classifying and understanding general features of solvable circuits is missing. We develop such a theory by introducing influence-solvable circuits, a class of $(1+1)D$ circuits whose influence matrix, which represents the `bath' generated by its own evolution, is given by a uniform MPS with finite bond-dimension $χ$. This property allows for efficient computation of subsystem dynamics and essentially contains all known examples of solvable circuits. We derive a set of necessary and sufficient local conditions by using a version of the fundamental theorem of MPS for open boundary conditions. Next we apply our theory to brickwork circuits with $χ=1$ influence-solvability and perform a systematic classification of classical brickwork circuits with local dimension up to $d=3$ and quantum brickwork circuits with $d=2$. Our search reveals new solvable circuits that are not captured by known solvability conditions.",
     "title": "Influence-solvability: a systematic theory of $(1+1)D$ solvability and its application to brickwork circuits",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.42201337218284607
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.37762051820755005
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3715524971485138
+      }
+    ]
   },
   "2606.12539v1": {
     "authors": [
@@ -7315,16 +7411,39 @@
         "name": "Paolo Braccia"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.12539v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-06-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper explores foundational aspects of quantum mechanics regarding spacetime, which is a different subfield from the user's focus on condensed matter physics and quantum materials.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Foundational QM",
+      "Spacetime",
+      "Quantum information"
+    ],
     "summary": "Recent efforts to formulate quantum mechanics in a way that treats space and time on a more equal footing have led to a large variety of spacetime-oriented approaches. In this work we present a detailed study of spacetime states, the objects that play the role of quantum states in the recently introduced framework of spacetime quantum mechanics, and show that the main proposals in the literature are different manifestations of the same underlying object. Path integrals, quantum states over time, pseudo-density matrices, the Page and Wootters mechanism, superdensity operators, and timelike-entanglement proposals all arise from spacetime states through particular evaluations, reduced information, linear maps, or quantum channels. This unification provides explicit mathematical representations of these formalisms, reveals relations among them, and clarifies the spacetime information each one captures. We also study the broader relevance of the spacetime-state point of view for Leggett-Garg inequalities, OTOCs, temporal tensor networks, fermionic systems, relativistic QFTs, quantum reference frames, and classical physics, together with additional insights and perspectives revealed by the common unifying framework.",
     "title": "Unifying spacetime approaches to quantum mechanics",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.41154730319976807
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.40151405334472656
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3773730993270874
+      }
+    ]
   },
   "2606.12621v1": {
     "authors": [
@@ -7490,14 +7609,40 @@
         "name": "Wei Chen"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.12696v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
     "published_date": "2026-06-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "It explores dynamic quantum geometric properties like Berry curvature and quantum metric in graphene, connecting to the user's interest in Dirac materials and fundamental quantum phenomena.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Graphene",
+      "Quantum metric",
+      "Floquet engineering"
+    ],
     "summary": "We show that, under a short optical pulse, the quantum metric of Bloch states in the momentum-time (kx, ky , t) of graphene becomes dynamic and exhibits a wave-like behavior near Dirac points. This quantum metric wave reflects the Floquet-band structure caused by the pulse, as revealed by solving the time-dependent Schrödinger equation assuming that correlations and out-of-equilibrium effects can be ignored. The momentum and temporal components of the metric have very distinct time dependence that persists even after the pulse has passed. In addition, the pulse also generates a Berry curvature wave that is otherwise absent in static graphene. The time-dependent electron densities in conduction and valence bands also give arise to a Fisher information wave that constitutes part of the quantum metric wave, and is readily measurable by pump-probe experiments.",
     "title": "Optical pulse-induced quantum geometric waves in graphene",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.3757938742637634
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.3594122529029846
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.3427830934524536
+      }
+    ]
   },
   "2606.12779v1": {
     "authors": [
@@ -7629,14 +7774,40 @@
         "name": "Henry J. Snaith"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.13114v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-06-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on degradation mechanisms in perovskite solar cells using computational inference, which deviates from the user's core interest in quantum materials and strongly correlated systems.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Perovskite photovoltaics",
+      "Bayesian inference",
+      "Device degradation"
+    ],
     "summary": "Machine learning and computational inference, coupled with experimental data, promise to significantly accelerate our rate of learning in most scientific disciplines. In this study, we develop tools that connect microscopic observations to macroscopic device behaviour, a capability that is essential for accelerating the design of durable energy materials. To this end, we introduce a novel approach that integrates photoluminescence imaging with drift diffusion simulations to understand operation and degradation in fully fabricated perovskite solar cells. By employing Bayesian inference, we generate \"inferred maps\" of parameters that govern recombination processes present in devices. We track these parameter maps while the devices are aged (70 °C, full spectrum sunlight) to analyse their temporal evolution during degradation. Notably, our approach allows us to distinguish between degradation occurring at the hole or electron transporting layer interface, or within the bulk. Our analysis reveals pronounced spatially non-uniform degradation, with significant macroscopic heterogeneity observed in the optoelectronic parameter maps. We pinpoint the greatest degradation observed in specific regions to stem from the perovskite/transport layer interfaces. Finally, we demonstrate that an amino-silane molecular passivation treatment suppresses this degradation, highlighting its specific role in enhancing device stability. Our approach offers valuable insights for future device fabrication and is a clear exemplification of how advanced Bayesian inference can significantly increase the value of experimental data.",
     "title": "Disentangling the origin of degradation in perovskite solar cells via optical imaging and Bayesian inference",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.43321800231933594
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4113457500934601
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.34831154346466064
+      }
+    ]
   },
   "2606.13144v1": {
     "authors": [
@@ -7778,14 +7949,41 @@
         "name": "Luca F. Tocchio"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2606.13342v1",
+    "matching_keywords": [
+      "hubbard model",
+      "variational monte carlo"
+    ],
     "published_date": "2026-06-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly investigates superconductivity in iron pnictides using a variational Monte Carlo method, which aligns with interests in computational studies of unconventional superconductors.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Iron pnictides",
+      "Variational Monte Carlo",
+      "Orbital Hubbard model"
+    ],
     "summary": "We study a two-orbital Hubbard-Kanamori model, which has been originally proposed for iron-based superconductors, using variational Monte Carlo. We span the nonmagnetic sector at both hole-doping and electron-doping, with respect to the half-filled case $n=2$. We report the presence of a superconductive region with a $s^{\\pm}$ symmetry only when the half-filled system is in a Mott state, while orbital selectivity is absent. These results are qualitatively different from what was reported in the three-orbital Hubbard-Kanamori model, where a more extended superconductive region was observed with a concomitant development of orbital selectivity, and they are to some extent more reminiscent of the single-band Hubbard model.",
     "title": "Variational Monte Carlo study of a two-orbital Hubbard model for the iron pnictides",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6423692107200623
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6413722634315491
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6168383359909058
+      }
+    ]
   },
   "2606.13606v1": {
     "authors": [
@@ -7798,15 +7996,41 @@
         "name": "Shinsei Ryu"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2606.13606v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-06-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates the diffusive dynamics of nonstabilizerness, a quantum information resource, in U(1)-symmetric many-body systems using tensor network methods.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Nonstabilizerness",
+      "Tensor network",
+      "Quantum information dynamics"
+    ],
     "summary": "Symmetries shape the quantum-information dynamics of many-body systems, but their effect on nonstabilizerness, the resource complementary to entanglement, is less understood. We compute the stabilizer Rényi entropy, a measure of nonstabilizerness, in $\\mathrm{U}(1)$-symmetric one-dimensional random circuits. The disorder-averaged dynamics is captured by a four-replica tensor network, which we evaluate by $S_4$-adapted infinite time-evolving block decimation (iTEBD) directly in the thermodynamic limit. Together with a hydrodynamic argument, our results identify a diffusive universality class for the late-time approach of nonstabilizerness to its random-state value, with the stabilizer Rényi entropy gap closing as $1/t$. The same scaling is verified in an energy-conserving nonintegrable Ising chain. More broadly, our framework provides a hydrodynamic perspective on nonstabilizerness generation and offers insight into the design of approximate Haar-random states in Hamiltonian dynamics.",
     "title": "Diffusive Dynamics of Nonstabilizerness",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4507444500923157
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.43821781873703003
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.42898520827293396
+      }
+    ]
   }
 }
