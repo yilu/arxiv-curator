@@ -7503,6 +7503,38 @@
       }
     ]
   },
+  "2606.12621v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiachen Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Hillenbrand"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian Venturella"
+      },
+      {
+        "affiliation": [],
+        "name": "Enzhi Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianyu Zhu"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.12621v2",
+    "published_date": "2026-06-10",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Periodic equation-of-motion coupled-cluster theory with single and double excitations (EOM-CCSD) has shown promise for quantitative calculations of band structures in solids. However, its steep computational scaling has limited calculations to relatively coarse $k$-point meshes, leading to sizable finite-size errors and discrepant estimates of thermodynamic-limit band gaps in recent benchmarks. In this work, we revisit EOM-CCSD band gaps for ten semiconductors and insulators using interacting-bath dynamical embedding theory (ibDET), a systematically improvable Green's function embedding framework that enables dense Brillouin-zone sampling at modest computational cost. By pushing the $k$-point sampling up to $10\\times10\\times10$, well beyond the system sizes accessible in canonical periodic EOM-CCSD calculations, we significantly reduce finite-size errors and obtain stable thermodynamic-limit extrapolations. We further compare $G_0W_0$@PBE, $G_0W_0$@HF, and EOM-CCSD on an equal footing using the same numerical settings in PySCF. We find that EOM-CCSD yields a mean absolute error of 0.32 eV relative to experimental band gaps for a test set of ten semiconductors and insulators, lower than that of $G_0W_0$@PBE. For ZnO, EOM-CCSD also accurately describes the Zn $3d$-band binding energy, despite overestimating the band gap. These results demonstrate that ibDET offers a practical route to high-accuracy many-body electronic structure calculations in periodic systems.",
+    "title": "Resolving Finite-Size Errors in EOM-CCSD Band Gaps of Solids with Interacting-Bath Dynamical Embedding Theory",
+    "vector_matches": []
+  },
   "2606.12665v1": {
     "authors": [
       {
@@ -8032,5 +8064,562 @@
         "score": 0.42898520827293396
       }
     ]
+  },
+  "2606.13779v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Aaron Sander"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Cichy"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Eigel"
+      },
+      {
+        "affiliation": [],
+        "name": "Jens Eisert"
+      },
+      {
+        "affiliation": [],
+        "name": "Maximilian Fröhlich"
+      },
+      {
+        "affiliation": [],
+        "name": "Tom Peham"
+      },
+      {
+        "affiliation": [],
+        "name": "Robert Wille"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.13779v1",
+    "published_date": "2026-06-11",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Efficient simulation of open quantum systems is central to modeling noisy quantum hardware and many-body dynamics. In trajectory-based tensor network methods, cost is often associated with trajectory-level quantities such as entanglement growth or bond dimension. However, the total cost of a fixed-accuracy simulation also depends on statistical sampling, and the interplay between per-trajectory complexity and sampling effort remains poorly understood. Here we introduce a cost-resolved framework for matrix product state (MPS)-based quantum trajectory simulations that decomposes total cost into memory per trajectory, runtime per trajectory, and sampling effort. We show that physically equivalent stochastic unravelings of the same Lindblad dynamics do not necessarily reduce total cost, but instead redistribute cost between trajectory complexity and statistical convergence. This trade-off is quantified by two dimensionless inflation factors: a bond dimension inflation $α$ and a sampling inflation $κ$, which together determine the preferred unraveling under hardware-dependent memory and parallelism constraints. We provide a practical protocol for extracting $(α,κ)$ from modest pilot simulations and demonstrate it using benchmarks across multiple noise channels. The resulting decision maps show that the computationally favorable unraveling can change with noise strength, time-step resolution, system size, and available parallelism. These results establish unraveling choice as a hardware-aware simulation design problem rather than an intrinsic optimization of trajectory entanglement alone.",
+    "title": "Computational regimes in matrix-product-state-based quantum trajectory simulations",
+    "vector_matches": []
+  },
+  "2606.13831v1": {
+    "authors": [
+      {
+        "affiliation": [
+          "Department of Physics and Astronomy, Uppsala University, Sweden",
+          "Institute of Physics, Poznan University of Technology, Poland"
+        ],
+        "name": "Wojciech Marciniak"
+      },
+      {
+        "affiliation": [
+          "Department of Physics and Astronomy, Uppsala University, Sweden",
+          "Institute of Molecular Physics, Polish Academy of Sciences, Poland"
+        ],
+        "name": "Joanna Marciniak"
+      },
+      {
+        "affiliation": [
+          "Department of Physics and Astronomy, Uppsala University, Sweden"
+        ],
+        "name": "José Ángel Castellanos-Reyes"
+      },
+      {
+        "affiliation": [
+          "Department of Physics and Astronomy, Uppsala University, Sweden"
+        ],
+        "name": "Ján Rusz"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.13831v1",
+    "published_date": "2026-06-11",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Seeing that ultrafast (picosecond timescale) vibrational electron energy loss spectroscopy (EELS) should soon be experimentally realizable, we present in silico approach capable of providing insight from the computational physics perspective. We present a framework that combines frozen trajectory excitation (FTE) with time auto-correlation of auxiliary wavefunctions (TACAW) to study the time-dependent spectral response of non-equilibrium lattice dynamics in a way comparable directly to experiment - (scanning) transmission electron microscope EELS, (S)TEM-EELS. In this approach, a selected phonon excitation is first introduced into an equilibrium molecular dynamics trajectory using FTE, after which the atomic positions during subsequent relaxations are treated with short-time TACAW analysis performed at different pump-probe delays. This yields momentum- and energy-resolved electron-scattering signals bearing a phonon imprint during the relaxation process, going beyond time-dependent diffuse-scattering intensities alone. We demonstrate the approach for fcc-Ni and 3C-SiC and discuss the observed phonon mode coupling and spectral redistribution during phonon relaxation.",
+    "title": "Combining Frozen Trajectory Excitation and TACAW for in silico Time-Resolved Vibrational Electron Energy Loss/Gain Spectroscopy",
+    "vector_matches": []
+  },
+  "2606.13869v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Taoufik Sakhraoui"
+      },
+      {
+        "affiliation": [],
+        "name": "František Karlický"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.13869v1",
+    "published_date": "2026-06-11",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We report the structural, electronic, and transport properties of the goldene 2D material using the density functional tight-binding (DFTB) method. Electronic transport calculations were conducted in conjunction with the non-equilibrium Green's functions (NEGF) technique. Our study reveals that the Au 2D material is dynamically and thermally stable, and it possesses good elastic properties. On the other hand, goldene has a linear relationship between current and voltage at low potentials, indicating its metallic character. The calculated current-potential curve correlates well with transmission functions and the electronic density of states around the Fermi level. We also investigated the electronic structure and magnetic properties of silicon (Si)-doped Au 2D material. Our results show that the Si atom can induce a local magnetic state in the goldene monolayer. The resulting magnetic moment is 0.63 $μ_B$.",
+    "title": "DFTB coupled with NEGF study of the structural, electronic and transport properties of goldene 2D material",
+    "vector_matches": []
+  },
+  "2606.13900v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mingyu Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Isaiah A. Moses"
+      },
+      {
+        "affiliation": [],
+        "name": "Wesley F. Reinhart"
+      },
+      {
+        "affiliation": [],
+        "name": "Stephanie Law"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.13900v1",
+    "published_date": "2026-06-11",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Autonomous synthesis platforms integrating machine learning with in situ diagnostics have the potential to revolutionize thin-film growth by enabling real-time process optimization and reducing the need for manual tuning. However, their application to molecular beam epitaxy (MBE) remains underdeveloped. Here, we present a machine learning-guided framework for MBE growth of GaSe films, leveraging reflection high-energy electron diffraction (RHEED) as an in situ diagnostic alongside ex situ characterization via X-ray diffraction and atomic force microscopy. Unsupervised learning on RHEED patterns reveals a well-defined boundary between high- and low-quality samples, capturing physically meaningful features. Mutual information analysis shows a strong correlation between RHEED embeddings and rocking curve full-width at half-maximum (fwhm), while the correlation with AFM root-mean-square (RMS) roughness is weak. Among key growth conditions, growth rate most strongly influences fwhm, whereas the Se/Ga flux ratio primarily affects RMS roughness and the RHEED embeddings. Supervised learning models trained to predict fwhm and RMS roughness demonstrate moderate accuracy, with significant improvement achieved by incorporating RHEED embeddings. Furthermore, anomaly detection via residual analysis in supervised learning aligns well with unsupervised classification from RHEED, reinforcing the reliability of the predictive models. This study establishes a data-driven framework for machine learning-assisted MBE, paving the way for real-time process control and accelerated optimization of thin-film synthesis.",
+    "title": "Multi-modal machine learning analysis of GaSe molecular beam epitaxy growth conditions",
+    "vector_matches": []
+  },
+  "2606.13912v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yi-Ran Xue"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Baigeng Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenan Wei"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.13912v1",
+    "published_date": "2026-06-11",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Neural-network quantum states (NQS) are a leading variational tool for quantum many-body physics, yet their optimization is fragile whenever the ground state carries a non-trivial sign or complex phase structure, a situation generic to gauge fields, broken time-reversal symmetry, and fermionic statistics. We trace this fragility to the stochastic estimator of the phase gradient rather than to network expressiveness. The phase sector of the Monte Carlo energy gradient is a noisy score-function estimator; differentiating the local energy instead yields a direct estimator that is unbiased for the same phase force, has far lower variance, and requires only a separated amplitude--phase ansatz. Demonstrated on a 100-site flux ladder, a small network trained this way reaches $0.89\\%$ median error, where tuned standard baselines plateau at $1.8\\%$ and wider or deeper standard-gradient networks degrade from $8.4\\%$ to $24.6\\%$. The advantage carries over to chiral XXX chains: the direct estimator again converges to a markedly lower error than the standard one, across $α$ and size; it grows with flux and vanishes in zero-flux controls. An adaptive-mixture of the two estimators is provably never worse in variance than the better endpoint at the optimal mixing coefficient, with seed-resolved diagnostics tracing much of the gain to eliminating failed runs. Estimator design thus emerges as a first-class lever for complex-valued neural quantum states.",
+    "title": "Direct/adaptive-mixture phase-gradient learning for neural-network quantum states with complex phase structure",
+    "vector_matches": []
+  },
+  "2606.13917v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Guanzhi Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Minkyung Han"
+      },
+      {
+        "affiliation": [],
+        "name": "Sean Gasiorowski"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Ratner"
+      },
+      {
+        "affiliation": [],
+        "name": "Chunjing Jia"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Lin"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.13917v1",
+    "published_date": "2026-06-11",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Metastable states and their minimum energy pathways (MEPs) are central to understanding transformations and phase stability in complex materials, yet mapping transition pathways between competing states remains computationally demanding and experimentally challenging. Here, we introduce a hybrid solid-state nudged elastic band (SSNEB) framework that integrates two pretrained machine learning models, EquiformerV2 (eqV2) and the equivariant Smooth Energy Network (eSEN), with DFT for energy, force, and stress evaluations. Applied to three solid-state systems, CsPbI$_3$, GaN, and TiO$_2$, our framework achieves up to a 7-fold speedup while converging to the same pathways predicted by first-principles calculations. Moreover, the hybrid SSNEB framework enables systematic benchmarking of existing ML models, providing both efficiency and reliability for predicting MEPs across various materials.",
+    "title": "Machine Learning Accelerated SSNEB for Efficient Minimum Energy Pathway Calculations",
+    "vector_matches": []
+  },
+  "2606.14073v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pin Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Cheng-bing Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Hai Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuewen Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Kangyou Zhong"
+      },
+      {
+        "affiliation": [],
+        "name": "Hai-Jun Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Liu-Liu Han"
+      },
+      {
+        "affiliation": [],
+        "name": "Guixin Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Dan Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Ben Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yutong Lu"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.14073v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Real-temperature topological magnetic dynamics in functional materials is governed by coupled lattice and spin evolution, yet remains inaccessible to predictive simulation at device-relevant scales. As a flagship example, thermally driven helix-to-skyrmion transformation in FeGe requires atomistic resolution, explicit lattice motion, and micrometer-scale domains to resolve device-scale topological texture formation. We combine a spin-constrained density-functional-theory-trained neuro-evolution potential with a structure-preserving spin-lattice integrator within one machine-learned framework. Architecture-specific optimizations, kernel fusion, SVE2 vectorization, and NUMA-aware data layout deliver a seven orders-of-magnitude speedup over prior spin-aware methods. Deployed on LineShine exascale supercomputer, the full application scales to 12.45 million CPU cores with 89.7% weak-scaling efficiency, enabling simulations of 1.34 trillion atoms and an equal number of spins while reaching 48.5 PFLOPS in double precision. The simulations directly resolve real-temperature skyrmion nucleation and reorganization at previously inaccessible scales, establishing a new regime for predictive simulation of coupled spin-lattice topological magnetic dynamics.",
+    "title": "Extreme-Scale Atomistic Simulation of Real-Temperature Magnetic Skyrmion Dynamics by Coupled Spin-Lattice Modeling",
+    "vector_matches": []
+  },
+  "2606.14101v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tanja Đurić"
+      },
+      {
+        "affiliation": [],
+        "name": "Shenlong Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Pinaki Sengupta"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.14101v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We study appearance of bond-nematicity in insulating altermagnetic materials induced by increased frustration and quantum-fluctuations driven melting of the altermagnetic order. Using novel machine learning approach that combines symmetry enhanced neural network architectures and variational Monte Carlo we consider the spin-$1/2$ square lattice $J_1-J_2-δ$ model known to have altermagnetic ordering in the regime of small geometric frustration and a gapless spin liquid phase in the regime of strong frustration and small exchange interaction modulation parameter $δ$. In the regime where exchange modulation is relatively large, resulting in the significant splitting of the magnon modes with different chiralities in the altermagnetic regime, we find that melting of the altermagnetic order by increased frustration leads to an intriguing phase that hosts coexisting symmetry protected topological valence bond solid and bond-nematic orders. The phase is characterized by condensation of magnon pairs that results in bond-nematicity, breaking of U(1) spin rotation and $\\mathbb{Z}_2$ spin inversion symmetries and chiral splitting of the triplon-like energy levels in the excitation spectrum. Whilst numerous recent studies address non-trivial impact of altermagnetic moments on various properties in altermagnetic materials, like electronic band structure and superconductivity, influence of strong quantum fluctuations and phases that can result from melting of the altermagnetic order are much less explored. Our study therefore presents an important step in identifying exotic phases of matter that can emerge in vicinity of the altermagnetic order.",
+    "title": "Altermagnetism and bond-nematicity in the spin-$1/2$ square lattice $J_1-J_2-δ$ model",
+    "vector_matches": []
+  },
+  "2606.14246v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hogyun Jeong"
+      },
+      {
+        "affiliation": [],
+        "name": "Sangyun Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Junhee Shin"
+      },
+      {
+        "affiliation": [],
+        "name": "Jung-Woo Yoo"
+      },
+      {
+        "affiliation": [],
+        "name": "Changhee Sohn"
+      },
+      {
+        "affiliation": [],
+        "name": "Yoon Seok Oh"
+      },
+      {
+        "affiliation": [],
+        "name": "Hosub Jin"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.14246v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Recently discovered altermagnetism in collinear compensated magnets shows even-parity spin texture in momentum space. Beyond the collinear spin ordering, unique odd-parity spin textures emerge in noncollinear compensated magnets. The noncollinear candidates, however, remain unexplored toward a room-temperature metallic altermagnet. Here, we demonstrate that MnAu2 exhibits metallic p-wave magnetism and large spin splitting induced by helical spin ordering. By adapting the band-unfolding scheme based on the translation operators combined with spin rotations, first-principles calculations reveal an unconventional Fermi surface around the $\\tilde{M}$-point composed of a single electron pocket with $p$-wave spin texture. Moreover, the spin twist in the helimagnet triggers topologically non-trivial hedgehog Berry curvature, which links to the nonlinear Hall effect and spin Hall effect. Considering the experimental T$_C$ = 335 to 370 K, MnAu$_2$ could establish itself as an ideal candidate for a room-temperature metallic $p$-wave magnet, promising for versatile spintronic applications.",
+    "title": "$p$-wave magnet and hedgehog-type Berry curvature in helimagnetic MnAu$_2$",
+    "vector_matches": []
+  },
+  "2606.14387v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Phalgun Lolur"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard P. Padbury"
+      },
+      {
+        "affiliation": [],
+        "name": "George H. Booth"
+      },
+      {
+        "affiliation": [],
+        "name": "Katherine Inzani"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicole Holzmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas W. Keal"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph Montaya"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel F. Urban"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Eckl"
+      },
+      {
+        "affiliation": [],
+        "name": "Emanuele Marsili"
+      },
+      {
+        "affiliation": [],
+        "name": "Wibe A. de Jong"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan R. Owens"
+      },
+      {
+        "affiliation": [],
+        "name": "Julian van Velzen"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.14387v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Materials discovery increasingly relies on the coordinated use of theory, computation, experiment, data-driven methods, and emerging quantum technologies, yet the full potential of these tools is realised only when they operate within workflows that reflect the complexity of real systems. This perspective summarises current capabilities, limitations, and opportunities across these domains, drawing on contributions from academia, industry, and national laboratories to identify the scientific and structural requirements for more reliable and efficient discovery. Classical simulations provide broad coverage across design spaces, while experimental measurements reveal degradation, heterogeneity, and kinetic processes that determine performance under realistic conditions. Machine learning accelerates exploration when supported by well-curated datasets with clear provenance and uncertainty quantification, and quantum computing offers promising routes into correlated electronic behaviour when aligned with properties that influence engineering decisions. Collectively, these insights highlight the need for reproducible workflows, shared data standards, realistic benchmarks, and a research culture that prepares scientists to work across paradigms. By integrating these methodological and organisational elements, the community can move toward discovery processes that deliver robust predictions, support confident decision making, and shorten the path from conceptual design to deployable materials.",
+    "title": "The Future of Computing for Materials Science Challenges",
+    "vector_matches": []
+  },
+  "2606.14425v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Benjamin Cohen-Stead"
+      },
+      {
+        "affiliation": [],
+        "name": "James Neuhaus"
+      },
+      {
+        "affiliation": [],
+        "name": "Kipton Barros"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas A. Maier"
+      },
+      {
+        "affiliation": [],
+        "name": "Steven Johnston"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.14425v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We introduce version 1.0 of the SmoQyElPhQMC package, an open-source Julia code for performing scalable quantum Monte Carlo simulations of electron-phonon coupled model Hamiltonians. SmoQyElPhQMC is built upon the SmoQyDQMC codebase and implements improved versions of the algorithms presented in [B. Cohen-Stead \\textit{et al}., Phys. Rev. E {\\bf 105}, 065302 (2022)] to enable linear-scaling simulations of a broad class of uncorrelated $e$-ph models both in system size and inverse temperature. By extending the functionality of the flexible scripting interface introduced in SmoQyDQMC, the SmoQyElPhQMC package continues to allow users to adapt it to different workflows and interface with other software packages in the Julia ecosystem. The code for this package can be downloaded from our GitHub repository at https://github.com/SmoQySuite/SmoQyElPhQMC.jl or installed using the Julia package manager. The online documentation, including examples, can be obtained from our documentation page at https://smoqysuite.github.io/SmoQyElPhQMC.jl/stable/.",
+    "title": "SmoQyElPhQMC.jl: An open-source Julia package for efficient and scalable quantum Monte Carlo simulations of electron-phonon coupled models",
+    "vector_matches": []
+  },
+  "2606.14588v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bernd Aichner"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Koch"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp A. Korner"
+      },
+      {
+        "affiliation": [],
+        "name": "Max Karrer"
+      },
+      {
+        "affiliation": [],
+        "name": "Katja Wurster"
+      },
+      {
+        "affiliation": [],
+        "name": "Christoph Schmid"
+      },
+      {
+        "affiliation": [],
+        "name": "Ulrich Kentsch"
+      },
+      {
+        "affiliation": [],
+        "name": "Reinhold Kleiner"
+      },
+      {
+        "affiliation": [],
+        "name": "Edward Goldobin"
+      },
+      {
+        "affiliation": [],
+        "name": "Dieter Koelle"
+      },
+      {
+        "affiliation": [],
+        "name": "Wolfgang Lang"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2606.14588v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Focused helium ion beam (He-FIB) irradiation with 30 keV ions is a key tool for nanoscale patterning and defect engineering in high transition temperature (Tc) cuprate superconducting devices, yet its usable fluence window is constrained by the competing requirements of reliable superconductivity suppression and minimal structural degradation. In this work, we provide a comprehensive dataset on the effects of large-area 30 keV He+ ion exposure on the electric transport and superconducting properties of epitaxial YBa2Cu3O7 (YBCO) thin films. X-ray diffraction shows a fluence-driven loss of crystalline order accompanied by an out-of-plane lattice expansion and an orthorhombic-to-tetragonal transition, culminating at predominant amorphization at the highest fluence of 1 x 10^16 cm^-2. Raman spectra exhibit increasing disorder while lacking signatures of oxygen depletion, indicating that irradiation mainly generates oxygen-related Frenkel defects rather than changing the carrier concentration. Consistently, with increasing fluence, the normal-state resistivity ρ_N(T) at temperature T above Tc increases strongly, while d ρ_N/d T remains nearly unchanged at moderate fluence. The suppression of Tc is accurately described by Abrikosov-Gor'kov pair breaking and reaches complete quenching of superconductivity at 4.5 x 10^15 cm^-2. The anisotropic upper critical fields decrease approximately exponentially with increasing fluence, the vortex activation energy is reduced, and the anisotropy drops, in contrast to oxygen-depleted YBCO. Hall-angle analysis confirms a nearly constant carrier density but a systematic increase in defect scattering and reduced mobility, consistent with a crossover toward the dirty limit at high fluence. These results establish quantitative fluence thresholds and a practical operational window for He-FIB nanopatterning of YBCO quantum circuits.",
+    "title": "Tailoring the properties of YBa$_{2}$Cu$_{3}$O$_{7-δ}$ thin films by 30 keV He$^+$ irradiation: An enabling route to superconducting device nanopatterning",
+    "vector_matches": []
+  },
+  "2606.14613v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pablo Páez-Velasco"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.14613v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Tensor networks provide a powerful framework for efficiently representing high-dimensional data and many-body quantum states. Endowing tensor networks with a Riemannian manifold structure provides a natural setting for numerical optimization and analysis. A central feature of tensor networks is their gauge freedom, whose characterisation (captured by so-called fundamental theorems) underlies both their intrinsic structure and the design of numerical algorithms. In this work, we study the interaction between the Riemannian manifold structure and the gauge freedom for several families of tensor networks. Using group actions and Riemannian submersions, we establish a Riemannian fundamental theorem for the tensor network families studied.",
+    "title": "Tensor network manifolds and Riemannian fundamental theorem for tensor networks",
+    "vector_matches": []
+  },
+  "2606.14627v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Petr Tichavsky"
+      }
+    ],
+    "categories": [
+      "cs.CE"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.14627v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-12",
+    "reasoning": "This paper introduces efficient algebraic operations for Tensor Trains, also known as Matrix Product States, which are fundamental computational methods for studying strongly correlated quantum many-body systems relevant to the user's liked topics.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Matrix Product States",
+      "Computational Condensed Matter"
+    ],
+    "summary": "The tensor train (TT) model is widely used to approximate high-dimensional tensors, enabling efficient handling of data that may exceed available memory. TT helps address the curse of dimensionality in applications such as system identification and dynamic programming. In some applications, TT is known as a ``matrix product state\" (MPS). This paper introduces algorithms that facilitate the summation, Hadamard (elementwise) product, and matrix--vector product of matrices and vectors (tensors) represented in the tensor train (TT) format. The last product is also known under the acronym MPO--MPS. The proposed algorithms achieve an improved tradeoff between computational efficiency and accuracy compared to state-of-the-art methods.",
+    "title": "Algebraic Operations on Tensor Trains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.46921783685684204
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.41839736700057983
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4128240942955017
+      }
+    ]
+  },
+  "2606.14635v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anand Manaparambil"
+      },
+      {
+        "affiliation": [],
+        "name": "Frithjof B. Anders"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2606.14635v1",
+    "published_date": "2026-06-12",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The numerical renormalization group (NRG) approach was developed to identify and quantify different equilibrium regimes of quantum impurity systems (QISs) with unprecedented accuracy by a tailored finite size representation. Out of equilibrium, the steady-state density operator is not of the Boltzmannian form but one that is determined by the imposed boundary conditions. We extend the NRG to the nonequilibrium setting by augmenting each Wilson site with a reservoir, whose coupling functions are calculated via a continuous fraction expansion in order to recover the continuum limit exactly. The nonequilibrium parameters such as a finite bias as well as a finite temperature gradient enters through the Bloch-Redfield tensor (BRT), whose zero eigenvector gives the steady-state density operator. We used the resulting open chain full density matrix (OC-FDM) approach with an effective single lead description to investigate the charge and spin transport through a quantum dot (QD) under finite bias and temperature gradient. The influence of lead asymmetry and an external magnetic field on the transport properties are also studied. For completeness, we have also investigated local properties of the QD, such as charge fluctuations and find excellent agreement with real-time quantum Monte Carlo (RT-QMC) data. The OC-FDM approach was able to explore Kondo energy scales as low as $T_K/D \\approx 10^{-8}$ in the non-equilibrium regime, as well as show convergence with the established equilibrium benchmarks, such as a quantitative agreement with full density matrix numerical renormalization group (FDM-NRG) and Fermi-liquid scaling at small bias and temperature. Owing to the effective single lead description, a single OC-FDM data point takes orders of magnitude less time on a standard laptop, compared to other state-of-the-art numerical methods.",
+    "title": "Open Wilson chain numerical renormalization group approach to steady-state non-equilibrium quantum transport",
+    "vector_matches": []
   }
 }
