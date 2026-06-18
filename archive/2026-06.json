@@ -11064,5 +11064,725 @@
         "score": 0.41318783164024353
       }
     ]
+  },
+  "2606.18339v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sabhyata Gupta"
+      },
+      {
+        "affiliation": [],
+        "name": "Bharath Sambasivam"
+      },
+      {
+        "affiliation": [],
+        "name": "Sophia E. Economou"
+      },
+      {
+        "affiliation": [],
+        "name": "Edwin Barnes"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander F. Kemper"
+      },
+      {
+        "affiliation": [],
+        "name": "Raghav G. Jha"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.18339v1",
+    "matching_keywords": [
+      "neural quantum state",
+      "tensor network"
+    ],
+    "published_date": "2026-06-16",
+    "reasoning": "This paper focuses on quantum algorithms for ground state preparation of random Hamiltonians, which falls outside the scope of the user's previous interests in specific condensed matter physics topics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Algorithms",
+      "SYK Model",
+      "Variational Quantum Eigensolver"
+    ],
+    "summary": "The ground state of random Hamiltonians with all-to-all interactions such as the quantum Sherrington-Kirkpatrick (SK) model and the Sachdev-Ye-Kitaev (SYK) model follow volume-law entanglement and are expected to be hard to model using tensor networks. In recent years, some progress has been made to push the limit of classical methods using neural quantum states. However, it remains an open question whether there exist quantum algorithms that could offer a quantum advantage over the state-of-the-art classical methods in simulating random Hamiltonians. In this work, we show that one such algorithm, TETRIS-ADAPT-VQE, can construct accurate ground states for dense and sparse SYK models containing up to $N=20$ Majorana fermions achieving fidelities $\\geq 99.3\\%$ and for the quantum SK model with up to $L=18$ sites achieving fidelities $\\geq 99.9998\\%$. We find that while the preparation of ground states is efficient (in terms of operator pool size and circuit depth) for the SK model, it is not efficient for either dense or moderately sparse SYK models.",
+    "title": "Ground state preparation of random all-to-all Hamiltonians using ADAPT-VQE",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.60869300365448
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5897203683853149
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5762556791305542
+      }
+    ]
+  },
+  "2606.18399v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Doğuhan Sarıtürk"
+      },
+      {
+        "affiliation": [],
+        "name": "Raymundo Arróyave"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.18399v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-06-16",
+    "reasoning": "This paper describes a software package for electronic structure calculations using the KKR method, which is foundational to understanding correlated materials and can be related to dynamical mean-field theory.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Electronic Structure Software",
+      "KKR Method",
+      "Disordered Alloys"
+    ],
+    "summary": "The Korringa-Kohn-Rostoker (KKR) Green's function method is a first-principles electronic structure approach well suited to substitutionally disordered alloys through the Coherent Potential Approximation (CPA). AkaiKKR is a widely used implementation, known for efficient treatment of metallic systems and their magnetic properties. Its output, however, is unstructured plain text with no programmatic interface, leaving data extraction entirely to the user and making systematic or high-throughput studies impractical. akaitools is a Python package that parses AkaiKKR output files into structured, type-annotated Python objects. The package covers three output types: self-consistent field (SCF) results, which capture convergence history and per-atom electronic and magnetic properties; spin-resolved, orbital projected density of states for each CPA component; and Bloch spectral functions on a user-defined k-point path. Results come back as immutable dataclasses backed by NumPy arrays. Energy quantities are available in both Rydbergs and electronvolts, and results can be exported to Pandas DataFrames. A built-in plotting module produces Matplotlib figures for DOS curves and SCF convergence. A command-line interface provides file summaries and JSON export without any Python scripting. The package also includes a programmatic input file generator, so full calculation pipelines from input preparation to output analysis can be run in Python.",
+    "title": "akaitools: A Python package for parsing and analyzing AkaiKKR electronic structure calculations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4328398108482361
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.39418601989746094
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.37615442276000977
+      }
+    ]
+  },
+  "2606.18691v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Youngwoo Cho"
+      },
+      {
+        "affiliation": [],
+        "name": "Seunghoon Yi"
+      },
+      {
+        "affiliation": [],
+        "name": "Wooil Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Sungmo Kang"
+      },
+      {
+        "affiliation": [],
+        "name": "Young-woo Son"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaegul Choo"
+      },
+      {
+        "affiliation": [],
+        "name": "Joonseok Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Soo Kyung Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongkee Yoon"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.18691v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "While mentioning magnetic moments and d-orbital contributions, the core contribution is a machine learning fine-tuning method for interatomic potentials, which deviates from the user's primary interest in fundamental physical phenomena and experimental/theoretical condensed matter physics.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Foundation Models",
+      "Magnetism Prediction"
+    ],
+    "summary": "Pre-trained materials foundation models, or machine learning interatomic potentials, leverage general physicochemical knowledge to effectively approximate potential energy surfaces. However, they often require domain-specific calibration due to physicochemical diversity as well as mismatches between practical computational settings and those used in constructing the pre-training data. To address this, we propose a sparsity-promoting fine-tuning method that selectively updates model parameters by exploiting the structural properties of E(3)-equivariant materials foundation models. On energy and force prediction tasks across molecular and crystalline benchmarks, our method matches or surpasses full fine-tuning and equivariant low-rank adaptation while updating only $\\sim$3~\\% of parameters, and in some cases as little as $\\sim$0.5~\\%. Beyond energy and force calibration, we further demonstrate task generalizability by applying our method to magnetic moment prediction and magnetism-aware total energy modeling. Finally, analysis of sparsity patterns reveals physically interpretable signatures, such as enhanced $d$-orbital contributions in transition metal systems. Overall, our results establish sparsity-promoting fine-tuning as a flexible and interpretable method for domain specialization of equivariant materials foundation models.",
+    "title": "Robust and Interpretable Adaptation of Equivariant Materials Foundation Models via Sparsity-promoting Fine-tuning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4835416376590729
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4461558163166046
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.42666029930114746
+      }
+    ]
+  },
+  "2606.18731v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Guangkai Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuehong Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Xubin Ye"
+      },
+      {
+        "affiliation": [],
+        "name": "Vincent C. Morano"
+      },
+      {
+        "affiliation": [],
+        "name": "Sze Tung Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaewon Choi"
+      },
+      {
+        "affiliation": [],
+        "name": "Rebecca Scatena"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuai Tang"
+      },
+      {
+        "affiliation": [],
+        "name": "Maocai Pi"
+      },
+      {
+        "affiliation": [],
+        "name": "Mengqi Ye"
+      },
+      {
+        "affiliation": [],
+        "name": "Mirian Garcia-Fernandez"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Bombardi"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaomei Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhao Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel G. Mazzone"
+      },
+      {
+        "affiliation": [],
+        "name": "Qisi Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yao Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Youwen Long"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.18731v1",
+    "matching_keywords": [
+      "RIXS",
+      "altermagnetism",
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper directly utilizes Resonant Inelastic X-ray Scattering (RIXS) to experimentally verify a novel $d$-wave altermagnetic phase in a strongly correlated material, aligning with interests in advanced spectroscopic techniques and complex magnetic orders.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "RIXS",
+      "Chiral Magnons"
+    ],
+    "summary": "Altermagnetism defines a third fundamental class of collinear magnetic order, featuring compensated magnetic moments with antiparallel spin alignment, yet lifted Kramers degeneracy without the need for relativistic spin-orbit coupling. Its ability to host spin-polarized electronic bands and unconventional chiral magnons makes it a promising platform for functional materials. However, experimental verification has proven challenging; while circular dichroism in resonant inelastic X-ray scattering (RIXS) has been suggested as a signature of chiral magnons, it remains controversial whether this effect is an intrinsic property of altermagnetism or an artifact of experimental geometry. In this work, we resolve this debate and provide unambiguous experimental evidence of $d$-wave altermagnetism in the strongly correlated Lieb-lattice magnet La$_2$O$_3$Mn$_2$Se$_2$. The RIXS spectra exhibit a $d$-wave-symmetry circular dichroism in the magnetic excitations that vanishes in the paramagnetic phase. Through RIXS-operator symmetry analysis and exact-diagonalization calculations, we prove that the observed dichroism is a direct consequence of altermagnetic symmetry constraints, independent of magnon branch splitting. Our results provide definitive evidence for the experimental realization of $d$-wave altermagnetism in La$_2$O$_3$Mn$_2$Se$_2$ and establish circularly polarized RIXS as a highly symmetry-sensitive spectroscopic framework for detecting magnetic phases that evade conventional probes.",
+    "title": "$d$-wave altermagnetism revealed by resonant inelastic X-ray scattering",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.6604920625686646
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.605095386505127
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.5816758871078491
+      }
+    ]
+  },
+  "2606.18964v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sopheak Sorn"
+      },
+      {
+        "affiliation": [],
+        "name": "Charanpreet Singh"
+      },
+      {
+        "affiliation": [],
+        "name": "Lukasz Plucinski"
+      },
+      {
+        "affiliation": [],
+        "name": "Gustav Bihlmayer"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuriy Mokrousov"
+      },
+      {
+        "affiliation": [],
+        "name": "Wulf Wulfhekel"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.18964v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "It explores the theoretical consequences of symmetry reduction on altermagnetic order at surfaces and in thin films, including $d$-wave spin splitting, connecting well with interests in symmetry, novel magnetic phases, and reduced-dimensional materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Thin Films",
+      "Surface Science"
+    ],
+    "summary": "Altermagnets are a newly identified class of magnetic materials that combine vanishing net magnetization within the unit cell with spin-split electronic states. Their theoretical description relies on symmetry properties of the bulk band structure. Surfaces and thin films, however, inherently break these symmetries. Here, we investigate the consequences of such symmetry reduction for the electronic structure of bulk altermagnets near the surface and of thin films. When the surface coincides with a symmetry plane of the bulk altermagnetic order, the resulting two-dimensional Brillouin zone exhibits spin-degenerate bands, corresponding to conventional antiferromagnetic behavior. In all other cases, the symmetry of the altermagnetic order is reduced, leading to modified spin splitting. Remarkably, we discover a thin-film geometry of a $g$-wave altermagnet with a particular surface orientation that enables a $d$-wave spin splitting, which is commonly accompanied by the spin-splitter effect, suggesting the functionalization of non-$d$-wave altermagnets by surfaces. Our findings demonstrate that symmetry breaking at surfaces and in thin films fundamentally reshapes altermagnetic spin textures, providing a tunable platform for controlling spin-dependent electronic phenomena.",
+    "title": "Projected altermagnetism by symmetry reduction at surfaces and in thin films",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.6139112710952759
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5629863739013672
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5513960123062134
+      }
+    ]
+  },
+  "2606.18973v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sam Azadi"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Principi"
+      },
+      {
+        "affiliation": [],
+        "name": "T. D. Kühne"
+      },
+      {
+        "affiliation": [],
+        "name": "M. S. Bahramy"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.18973v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper investigates the emergence of resonating valence-bond correlations and enhanced correlation effects in stretched graphene, a Dirac semimetal, which aligns with the user's interest in strongly correlated systems and Dirac materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Graphene",
+      "RVB",
+      "Electronic Correlations"
+    ],
+    "summary": "Electronic correlations in graphene are generally considered weak due to the large bandwidth of its $π$ electrons. Here we show that tensile expansion of the honeycomb lattice provides a direct route to enhancing correlation effects. Using variational and diffusion quantum Monte Carlo, we compare a conventional Jastrow-Slater determinant wave function with a resonating-valence-bond (RVB) Jastrow-antisymmetrized geminal product ansatz for a series of stretched graphene lattices. We find that the energy gain of the RVB state relative to the single-determinant description increases with bond expansion up to a critical strain $δ_{\\mathrm{cr}}$, and decreases beyond it, revealing a nonmonotonic evolution of electronic correlations. The crossover is found to occur in the range $15\\% < δ_{\\mathrm{cr}} < 20\\%$, in agreement with mechanical stability limits. This behavior indicates a transition from a weakly correlated Dirac semimetal to a regime with enhanced non-dynamic correlation and short-range singlet pairing. Our results provide direct many-body evidence that lattice expansion drives graphene into a regime where RVB-like correlations become energetically favorable, offering a simple route to tuning correlation effects in Dirac materials.",
+    "title": "Emergence of Resonating Valence-Bond Correlations in Stretched Graphene",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5382179021835327
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5182995796203613
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5041252970695496
+      }
+    ]
+  },
+  "2606.19033v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiao Zeng"
+      },
+      {
+        "affiliation": [],
+        "name": "Kaiyan Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Lingxia Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zizhu Wang"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19033v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper explores fundamental quantum correlations and symmetry breaking in many-body systems using contextuality, aligning with the user's interest in theoretical condensed matter physics and advanced computational techniques like MPS algorithms.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum Contextuality",
+      "Symmetry Breaking",
+      "Many-Body Correlations"
+    ],
+    "summary": "Bell- and contextuality-type inequalities have become practical probes of many-body quantum correlations, often involving only few-body correlators and quantities with a direct Hamiltonian interpretation such as an energy density. Here we show that, in infinite one-dimensional translation-invariant chains, contextuality can acquire a genuinely thermodynamic meaning: within the witness families studied, the maximal quantum violation coincides with spontaneous breaking of one-site translation symmetry, producing strictly $p$-periodic ground states with $p>1$. Along natural continuous interpolations between classical-bound and quantum-optimal Hamiltonians, the classical bound marks a symmetry-breaking point where competing classical periodicities are lifted in favor of a unique quantum-selected period. At the quantum optimum, the studied families admit exact finite-size reductions: a translation-invariant contextuality witness induces a $p$-site periodic-boundary-condition inequality with identical classical and quantum bounds (hence no loss under reduction), and in several cases the resulting finite inequalities are tight. This reduction turns an infinite-chain contextuality certification into a compact, hardware-testable benchmark on a small ring, requiring only local energy measurements. We establish the mechanism analytically in representative two- and three-body witness models and corroborate it more broadly using a translation-invariant adaptation of semidefinite-program hierarchies together with variational matrix-product-state algorithms.",
+    "title": "Contextuality as a Diagnostic of Translation-Symmetry Breaking in Translation-Invariant 1D Hamiltonians",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4382437467575073
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.437749445438385
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.40907078981399536
+      }
+    ]
+  },
+  "2606.19083v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Eugene Dumitrescu"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19083v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper develops advanced quantum algorithms for Hamiltonian simulation using matrix product operators and tensor networks, aligning with the user's interest in efficient computational methods for complex quantum systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Simulation",
+      "Tensor Network Algorithms",
+      "Block Encoding"
+    ],
+    "summary": "We develop a block-encoding compiler that speeds up linear combination of unitaries Hamiltonian simulation programs by treating matrix product operators as compressed, virtual-path LCU programs. In showing how these new conditional PREP and SELECT stages are compiled in terms of a parent matrix product operator, we go beyond typical operator splitting product formulas and illustrate how tensor networks are a natural language and valid intermediate representation for quantum circuits. Our results are numerically verified for two important cases, namely, Heisenberg and perturbed Heisenberg-adjacent chain real-time evolution, and highlight polynomial speedups. Specifically, we highlight a polynomial speedup that avoids the $\\mathcal{O}(N^K)$ Pauli-string growth when the compressed MPO bond dimension and path normalization remain mild. We quantify how MPO truncation error and bond-dimension budgets affect the compiled polynomial representation. Our algorithms show how classical pre-processing in terms of tensor network data structures opens new avenues to accelerate quantum algorithms.",
+    "title": "Matrix Product Operators In The Age of Block Encoding",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5599111318588257
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4890555143356323
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4735155999660492
+      }
+    ]
+  },
+  "2606.19130v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ransell D'Souza"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivana Savic"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.19130v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "The paper focuses on electron-phonon coupling and thermoelectric transport in semiconductors, which does not directly align with the user's past interests in strong electron correlations, specific superconductors, or topological materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Electron-Phonon Coupling",
+      "Thermoelectric Transport",
+      "Machine Learning in Materials"
+    ],
+    "summary": "The ability to compute electron-phonon coupling from first principles, using density functional perturbation theory and interpolation techniques, has enabled predictive calculations of electronic transport coefficients in crystalline materials. However, these methods are still computationally expensive. Here we present two inexpensive methods to obtain thermoelectric transport properties of semiconductors using a small number of electron-phonon matrix elements calculated from first principles. The first method combines models for coupling of electrons with different phonon modes whose parameters are obtained from $\\sim 10$ matrix elements per electronic band and phonon mode calculated from first principles. Within this method, we formulate the acoustic deformation potential model for arbitrary crystal symmetries and band extrema locations. The second method uses machine learning to interpolate $\\sim 100$ electron-phonon matrix elements per electronic band and phonon mode on dense reciprocal space grids in the parts of the Brillouin zone relevant for transport. We apply both methods to two-dimensional MoS$_2$ and show very good agreement with the state-of-the-art method. The calculated thermoelectric properties also agree well with experiments. We find that the machine-learning method is more accurate and straightforward to implement compared to the model approach.",
+    "title": "Generalized deformation potential and machine-learning approaches for electron-phonon coupling and thermoelectric transport in semiconductors",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.5147952437400818
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5028620958328247
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4865970015525818
+      }
+    ]
+  },
+  "2606.19133v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kasper Helverskov Petersen"
+      },
+      {
+        "affiliation": [],
+        "name": "François R J Cornet"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Ovesen"
+      },
+      {
+        "affiliation": [],
+        "name": "Mikkel Jordahn"
+      },
+      {
+        "affiliation": [],
+        "name": "Kristian S. Thygesen"
+      },
+      {
+        "affiliation": [],
+        "name": "Mikkel N. Schmidt"
+      }
+    ],
+    "categories": [
+      "physics.optics",
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.19133v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "The paper focuses on machine learning models for predicting optical spectra in materials screening, which is primarily a methodological advancement in computational materials science rather than fundamental condensed matter physics research.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Optical Spectra",
+      "Materials Screening"
+    ],
+    "summary": "Scalable prediction of optical spectra is a critical component of high-throughput materials screening for optoelectronic applications such as solar cells. Existing surrogate models are trained on spectra computed from lower levels of theory or rely on rotation-invariant scalar features, limiting their geometric expressiveness. We explore the use of equivariant graph neural networks for optical spectra prediction, adapting GotenNet to this task and evaluating it on multiple datasets including a recently published collection of 10,533 structures with spectra computed at the level of the random phase approximation (RPA). The proposed model outperforms the current state of the art, with the largest gains in the 0-8 eV range and on predicting the static real permittivity, both of particular relevance for thin-film optics.",
+    "title": "Equivariant Graph Neural Networks Improve Optical Spectra Prediction for Materials Screening",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.43103763461112976
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.43103742599487305
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.3719021677970886
+      }
+    ]
+  },
+  "2606.19206v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Emmanuel Bogacz"
+      },
+      {
+        "affiliation": [],
+        "name": "Graham Kells"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew K. Mitchell"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19206v1",
+    "matching_keywords": [
+      "anderson impurity model",
+      "dynamical mean field theory"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper directly addresses the Anderson Impurity Model and its application to correlated materials through dynamical mean-field theory, which strongly aligns with the user's interest in DMFT solvers.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Anderson Impurity Model",
+      "Non-Equilibrium DMFT",
+      "Strong Electron Correlations"
+    ],
+    "summary": "Quantum impurity models with strong electron correlations, such as the paradigmatic Anderson Impurity Model (AIM), are central to our understanding of a range of physical phenomena including local moment formation, Coulomb blockade and Kondo screening. They describe magnetic atoms and molecules on surfaces, quantum dot circuits, and correlated materials through dynamical mean field theory. The physics of such systems in strongly non-equilibrium conditions is particularly complex and challenging to capture, whereas Gaussian models of free fermions can be easily solved. Here we show that the time-evolving dynamics of the AIM after a quench can be described by a completely non-interacting version of the model, at the expense of coupling to additional static auxiliary degrees of freedom. Starting from the full solution of the quenched AIM using ED and DMRG, we study the properties of this mapping using numerical optimization, and uncover intriguing structure in the auxiliary system. The method allows us to understand interacting non-equilibrium dynamics through the simpler lens of an effective non-interacting system of larger dimension.",
+    "title": "Mapping the non-equilibrium interacting Anderson Impurity Model to an effective Gaussian theory",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.6874740123748779
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.6493749618530273
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.6470443606376648
+      }
+    ]
+  },
+  "2606.19239v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Francesco Nappi"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Kiser"
+      },
+      {
+        "affiliation": [],
+        "name": "Fedor Šimkovic"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19239v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper presents advancements in Auxiliary-Field Quantum Monte Carlo, a first-principles many-body method that could be applied to strongly correlated systems, sharing a broad connection with the user's interest in electronic structure and strong correlations.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Strongly Correlated Systems",
+      "Quantum Chemistry Methods"
+    ],
+    "summary": "We introduce algorithmic improvements to quantum-classical auxiliary-field quantum Monte Carlo (QC-AFQMC) that reduce the dominant per-step classical scaling from $\\tilde{\\mathcal{O}}(N^{5.5})$ to $\\tilde{\\mathcal{O}}(N^{4.5})$ as a function of the number of molecular spin-orbitals $N$. Central to this improvement is the application of Aitken's block transformation to handle singular Pfaffians arising in the estimation of overlaps between a quantum trial state and classical Slater-determinant walkers. Together with the use of algorithmic differentiation for the computation of the force bias, this yields a $248\\times$ estimated runtime improvement for a system of 100 molecular orbitals. Using our workflow, we demonstrate a ground-state energy calculation for $H_8$ from quantum data collected on IQM Emerald and post-processed with a tensor-network-based error-mitigation technique. We further validate the method's scalability through noiseless simulation of hydrogen chains up to $H_{12}$, and on the lithium-air battery related rearrangement pathway of the $Li_2O_4$ lithium superoxide dimer in a (26e, 20o) active space. We estimate both quantum and classical runtimes for a potential fault-tolerant implementation of QC-AFQMC, showing that the method holds promise for the early fault-tolerant era. These results move QC-AFQMC a step closer to treating chemically relevant systems.",
+    "title": "Quantum-Classical Auxiliary-Field Quantum Monte Carlo at the Edge of Practicability",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5735303163528442
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5357181429862976
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.5252156257629395
+      }
+    ]
   }
 }
