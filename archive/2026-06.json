@@ -11784,5 +11784,1183 @@
         "score": 0.5252156257629395
       }
     ]
+  },
+  "2606.19378v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hyeonbin Moon"
+      },
+      {
+        "affiliation": [],
+        "name": "Yongjin Choi"
+      },
+      {
+        "affiliation": [],
+        "name": "Seunghwa Ryu"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.19378v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-06-12",
+    "reasoning": "The paper focuses on fracture mechanics simulation using machine learning, which is unrelated to the user's past interests in strongly correlated electron systems, superconductors, or topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Graph Neural Networks",
+      "Phase-field fracture",
+      "Scientific machine learning"
+    ],
+    "summary": "Scientific machine learning (SciML) has emerged as a promising approach for accelerating simulations of complex physical systems, yet achieving physically consistent and generalizable predictions for nonlinear, history-dependent problems remains a central challenge. In this study, we propose a hybrid GNN--FEM framework for efficient and generalizable phase-field fracture modeling. While phase-field approaches provide a robust variational framework for simulating complex crack evolution, their high computational cost limits practical applications because they require solving coupled, nonlinear, and history-dependent systems within an incremental finite element procedure. To address this challenge, a graph neural network surrogate is integrated into the conventional staggered scheme, replacing the phase-field update at each load increment while retaining the FEM-based displacement solver to enforce mechanical equilibrium and boundary conditions. By preserving the incremental solution structure, the framework remains consistent with history-dependent fracture evolution without requiring the surrogate to approximate the full solution trajectory. This selective surrogate strategy emphasizes the identification of a physically meaningful and incrementally structured learning target, rather than relying on brute-force data generation to learn the full fracture process. The proposed framework achieves strong generalization across varying geometries, loading conditions, material properties, and discretizations through dimensionless feature design, a graph-based formulation on mesh-based domains, and a physics-informed loss derived from the governing phase-field equation. Numerical experiments demonstrate that the hybrid approach reduces computational cost while maintaining accuracy compared with conventional FEM, and exhibits robust predictive performance across diverse problem settings.",
+    "title": "A Hybrid GNN-FEM Framework for Phase-Field Fracture Simulation. Physics-Preserving Hybridization for Generalizable Surrogate Modeling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.4679797887802124
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.37587830424308777
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3500077724456787
+      }
+    ]
+  },
+  "2606.19430v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiao-Yang Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "He-Ran Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhong Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19430v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper focuses on theoretical methods for nonequilibrium dynamics in integrable systems and quantum simulators, which, while related to quantum many-body physics, deviates significantly from the user's apparent interest in specific correlated materials and their properties.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Integrable Systems",
+      "Nonequilibrium Dynamics",
+      "Tensor Networks"
+    ],
+    "summary": "Studies of integrable systems have profoundly deepened the fundamental understanding of quantum many-body physics. While equilibrium properties such as ground states and thermodynamics can often be characterized efficiently, accurately characterizing nonequilibrium integrable dynamics remains a significant challenge. Here, we address this problem in the \"Rule 201\" quantum cellular automaton, an integrable Trotterization of the PXP Hamiltonian. Using the tensor-network approach of the influence matrix, we develop local conditions called generalized zipper conditions that allow exact solutions of local dynamics. We also introduce a numerical bootstrap method for solving influence matrices with finite but relatively large bond dimensions. This uncovers a rich landscape of nonequilibrium behavior exhibiting initial-state dependence. As an example, we investigate the fate of persistent oscillating dynamics under local non-integrable perturbations, and present analytical results for non-thermal relaxation constrained by conservation laws. We also obtain numerically exact results for entanglement growth across a broad class of initial states. Furthermore, from an information-theoretic perspective, we identify a refined structure of multitime correlations termed the hidden Markov order: the memory encoded in the dynamics separates into finite-length and long-range distributed components, which becomes transparent in an exact split-index matrix-product-state representation of the influence matrix. Our approach enables unified investigations of nonthermalizing and thermalizing regimes of nonequilibrium dynamics within a single analytically tractable model, and can be tested experimentally in state-of-the-art quantum simulators such as Rydberg atom arrays.",
+    "title": "Solving Nonequilibrium Dynamics via Influence Matrix Bootstrap: Floquet-PXP Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.48666995763778687
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.48643893003463745
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.48618316650390625
+      }
+    ]
+  },
+  "2606.19437v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuxiao Hang"
+      },
+      {
+        "affiliation": [],
+        "name": "Stephan Haas"
+      },
+      {
+        "affiliation": [],
+        "name": "Rishabh Jha"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19437v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper explores topological edge states and their memory in strongly interacting, non-equilibrium quantum systems, aligning with the user's interest in topological materials and many-body physics.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Topological edge memory",
+      "Quantum quenches",
+      "Interacting topological systems"
+    ],
+    "summary": "Quantum quenches drive edge states far from equilibrium, yet whether the memory of a topological initial state survives in a non-integrable, interacting system has remained largely unexplored. We study this question in the bond-alternating XXZ chain -- an interacting Su--Schrieffer--Heeger model hosting symmetry-protected topological edge modes with markedly enhanced boundary magnetization -- and analyze quenches across all combinations of single-particle and many-body initial and final Hamiltonians. The results organize by a single distinction as we rigorously establish in this work: whether the post-quench Hamiltonian is free or genuinely interacting. For a free post-quench Hamiltonian, the dynamics is solved exactly by a correlation-matrix approach; the boundary-mode return amplitude decays as $t^{-3/2}$, and initial interactions enter only through a dressed one-body density matrix. For a genuinely interacting post-quench Hamiltonian, finite-time stability bounds prove that away from local resonances the first-dimer magnetization remains stable on time windows growing as arbitrarily large powers of the inverse inter-dimer coupling. Matrix product state simulations across all four protocols show that interactions in the final Hamiltonian markedly extend finite-time boundary memory -- with local suppression near the isotropic $SU(2)$ point -- revealing a many-body protection mechanism in a non-integrable system where scrambling would otherwise wash out initial-state memory fast.",
+    "title": "Many-Body Protection of Topological Edge Memory in Strong Interacting Quenches",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4774644672870636
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4756259620189667
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.4537582993507385
+      }
+    ]
+  },
+  "2606.19457v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hamza Jnane"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19457v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "This paper addresses efficient representation and preparation of wavefunctions for molecules with strong electron correlation using quantum computing, resonating with the user's interest in strongly correlated systems and advanced computational methods.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum State Preparation",
+      "Electron Correlation",
+      "Complete Active Space"
+    ],
+    "summary": "Quantum computers promise to solve the electronic structure problem for a large class of molecules. However, the performance of relevant quantum algorithms hinges on preparing initial states with substantial overlap with the target eigenvector. For classically challenging molecules with strong electron correlation, starting from multi-reference states, such as complete active space (CAS) wavefunctions is necessary. Unfortunately, the most advanced state preparation protocols applied to such states result in a gate complexity that scales exponentially with the active space size $d$. In fact, even encoding a CAS state classically is traditionally believed to be intractable for chemically relevant systems. Here, we draw insights from the recently introduced Quantum Paldus Transform (QPT) to show that there exists an efficient classical representation of CAS states and to design a new state preparation routine outperforming previous ones. The QPT represents a transformation from the Fock basis to a friendlier symmetry-adapted basis. Our main contribution consists in showing that CAS states expanded in this basis can efficiently be represented as a matrix product state (MPS) with a bond dimension scaling as $O(d^2)$. One can then efficiently load the MPS on a quantum computer and use the inverse QPT to transform the state to the Fock basis. Moreover, our method can easily be extended to the efficient preparation of CAS states in first quantisation with similar complexity. Crucially, we demonstrate that the complexity of both state preparation protocols only grows polynomially as $O(d^3)$ , which constitutes to the best of our knowledge an exponential improvement over the state of the art.",
+    "title": "Efficient classical representation and quantum state preparation of complete active space wavefunctions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.521186113357544
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4937411844730377
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4914599657058716
+      }
+    ]
+  },
+  "2606.19601v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anthony Gandon"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Mariani"
+      },
+      {
+        "affiliation": [],
+        "name": "Debasish Banerjee"
+      },
+      {
+        "affiliation": [],
+        "name": "Emilie Huffman"
+      },
+      {
+        "affiliation": [],
+        "name": "Gurtej Kanwar"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Tacchino"
+      },
+      {
+        "affiliation": [],
+        "name": "Uwe-Jens Wiese"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivano Tavernelli"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.19601v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-17",
+    "reasoning": "The paper focuses on quantum computing implementations for gauge theories, which is distinct from the user's primary interests in correlated electron systems and superconductivity, despite some methodological overlap in studying dynamics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Simulation",
+      "Gauge Theories",
+      "Tensor Networks"
+    ],
+    "summary": "The (2+1)D U(1) pure gauge theory always exists in the confining phase, with strings of non-zero string tension giving a characteristic linear potential between static charges. This makes it a useful testing ground for quantum computing methods designed to study string dynamics of confining gauge theories. Here we implement a minimal U(1) quantum link model on a quantum computer with qubit degrees of freedom representing the dual height variables of the model. This facilitates an efficient realization of plaquette interactions and enables effective calculations of real-time dynamics that are inaccessible to traditional quantum Monte Carlo. A specifically tailored lattice geometry is chosen to match the heavy-hexagonal geometry of the IBM quantum hardware used here, minimizing non-adjacent qubit interactions. By performing quantum quenches from a simple initial string state, we probe the transverse quantum fluctuations of the string before it thermalizes. Our experimental results from digital quantum simulations, with up to 112 qubits, show good agreement with reference tensor-network calculations at short times and with thermal averages at long times. Near the phase transition, the quench dynamics exhibit large fluctuations of the initial string that extend across both spatial dimensions of the lattice. Nonetheless, our error-mitigated estimators from the quantum hardware also give accurate predictions in that regime, with noise-induced violations of local gauge symmetries comparable to finite-bond-dimension tensor-network results.",
+    "title": "String dynamics of a (2+1)D U(1) quantum link model on a digital quantum computer",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5702947378158569
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.516340434551239
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5104263424873352
+      }
+    ]
+  },
+  "2606.19740v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Z. H. Guan"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. L. Peng"
+      },
+      {
+        "affiliation": [],
+        "name": "W. Z. Zhuo"
+      },
+      {
+        "affiliation": [],
+        "name": "G. Tian"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. P. Hou"
+      },
+      {
+        "affiliation": [],
+        "name": "D. Y. Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. Fan"
+      },
+      {
+        "affiliation": [],
+        "name": "X. B. Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "X. S. Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "M. H. Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "J. M. Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.19740v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "The paper directly investigates enhanced electronic correlations, flat bands, and van Hove singularities in a kagome metal, strongly resonating with interests in dynamical mean-field theory and material-specific electronic properties and exotic ground states.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Kagome Metals",
+      "Altermagnetism",
+      "Van Hove Singularities"
+    ],
+    "summary": "Recently, layered corrected kagome metal CsCr3Sb5 have garnered significant attention attributed to its flat bands near the Fermi level (EF) and altermagnetic ground state [ Yi Liu et al., Nature 632, 1032 (2024)]. However, the van Hove singularities (vHSs) in bulk CsCr3Sb5 are far away from the EF, while an effective modulation of VHS toward the EF is essential for exploring intriguing electron transport properties. In this work, using first-principles calculations, we investigate electronic structures of two-dimensional (2D) Cr3Sb5 and CsCr3Sb5 monolayers which may be mechanically exfoliated from bulk materials. Notably, it is revealed that both flat bands and vHSs simultaneously reside in close proximity to the EF in Cr3Sb5 monolayer, signifying enhanced electronic correlations. Importantly, a tensile strain further shifts the incipient flat bands and vHSs of two monolayers simultaneously to the vicinity of the EF, suggesting strain tunable electronic correlations and concomitant quantum effects. Furthermore, altermagnetic ground state is also revealed due to retained mirror symmetry between two sublattices in these two monolayers. Thus, this work advances understanding and modulations of electronic properties of 2D CsCr3Sb5 monolayers, strengthening their great potential for exploring unconventional quantum phenomena and altermagnetism.",
+    "title": "Enhanced electronic correlations and altermagnetic ground state of two-dimensional CsCr3Sb5 monolayers",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.5968292951583862
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5206513404846191
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.5202008485794067
+      }
+    ]
+  },
+  "2606.19780v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jeonghwan Ahn"
+      },
+      {
+        "affiliation": [],
+        "name": "Seoung-Hun Kang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaron T. Krogel"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.19780v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "The paper investigates a thickness-dependent semiconductor-to-semimetal crossover in layered arsenene, which directly connects to the user's interest in semimetals and general condensed matter physics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Arsenene multilayers",
+      "Semimetal crossover",
+      "Interlayer coupling"
+    ],
+    "summary": "Interlayer interactions in layered materials are often assumed to transfer from the bilayer to the bulk, but this assumption can fail when chemically active out-of-plane orbitals participate in bonding. We combine diffusion quantum Monte Carlo (DMC) and density functional theory (DFT) to determine how interlayer coupling evolves in arsenene multilayers. DMC shows that bulk gray arsenic is compact, whereas the corresponding few-layer structures remain at substantially larger interlayer separations despite sharing the same nominal A$_{1}$B$_{-1}$ adjacent-layer registry. Registry alone therefore does not determine the bonding regime; thickness and coordination reshape the interlayer interaction. Among the tested functionals, SCAN+rVV10 most closely reproduces DMC equilibrium separations and stacking energetics. Using the DMC-benchmarked SCAN+rVV10 calculations, we predict a thickness-driven stacking sequence from A$_{1}$A$_{1}$ to A$_{1}$B$_{1}$ and finally bulk-like A$_{1}$B$_{-1}$. The structural crossover coincides with a stacking-dependent DFT band-gap collapse driven by enhanced interlayer As p$_{z}$ hybridization.",
+    "title": "Thickness-Dependent Interlayer Coupling and Semiconductor-to-Semimetal Crossover in Arsenene Multilayers",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.5610566139221191
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5275178551673889
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5141869783401489
+      }
+    ]
+  },
+  "2606.19977v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bhautik R Dhori"
+      },
+      {
+        "affiliation": [],
+        "name": "Deepak Upadhyay"
+      },
+      {
+        "affiliation": [],
+        "name": "Prafulla K Jha"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.19977v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper extensively explores altermagnetism, non-relativistic spin splitting, and symmetry-controlled phases in 2D systems, directly aligning with interests in momentum-dependent phenomena and topological electronic properties.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Non-Relativistic Spin Splitting",
+      "2D Materials"
+    ],
+    "summary": "The emergence of non-relativistic spin splitting (NRSS) in altermagnetic systems has introduced a new paradigm in antiferromagnets with vanishing net magnetization. Although sliding-induced valley-polarized phases have recently been demonstrated in two-dimensional altermagnets, the observed valley-polarized state represents only a partial manifestation of altermagnetism, and a comprehensive classification based on spinsplitting characteristics remains lacking. Here, using first-principles calculations, general stacking theory, and spin-Laue symmetry analysis, we propose a coupled quasialtermagnetic state representing a distinct subclass of altermagnetism, in which reversible type-IV NRSS is controlled through interlayer sliding. Accordingly, the sliding-induced phases are classified into two categories: altermagnetic and quasi-altermagnetic states. We establish a direct correspondence between reciprocal-space spin splitting and real-space switching between the two quasi-altermagnetic states. Importantly, the spin-polarized bands in these states remain spin split at Γ point even in the absence of spin-orbit coupling (SOC), distinguishing them within the proposed classification framework. To demonstrate the interplay between altermagnetic and quasi-altermagnetic states, we investigate the two-dimensional Lieb-lattice material Mn2WS4 and its Janus derivative Mn2WS2Se2, analysing how changes in the local environment influence the different magnetic phases. Importantly, the underlying mechanism is broadly applicable to a wide class of twodimensional square-lattice systems. We further investigate the effects of SOC, focusing on spin texture and transport signatures in coupled quasi-altermagnetic states.",
+    "title": "Interplay of Altermagnetism and Coupled Quasi-Altermagnetic states in Sliding Two-dimensional Square Lattice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6010220050811768
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5774085521697998
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5758867263793945
+      }
+    ]
+  },
+  "2606.20029v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alessio Negro"
+      },
+      {
+        "affiliation": [],
+        "name": "Emil Otis Rosanowski"
+      },
+      {
+        "affiliation": [],
+        "name": "Lena Funcke"
+      },
+      {
+        "affiliation": [],
+        "name": "Timo Jakobs"
+      },
+      {
+        "affiliation": [],
+        "name": "Karl Jansen"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Ludwig"
+      },
+      {
+        "affiliation": [],
+        "name": "Carsten Urbach"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20029v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper focuses on lattice gauge theory methods for continuum extrapolation in (2+1)D Hamiltonian U(1) gauge theory, which is a different domain from the user's condensed matter physics interests.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Lattice Gauge Theory",
+      "Continuum Extrapolation",
+      "Hamiltonian Simulations"
+    ],
+    "summary": "We propose a finite-volume scheme to perform controlled continuum extrapolations of the lattice step-scaling function, a key ingredient for determining the running coupling in a Hamiltonian lattice gauge theory in small volumes. As a testbed, we employ a dual Hamiltonian formulation of pure U(1) gauge theory in (2+1) dimensions and an operator basis that remains efficient toward weak coupling. We describe the implementation of static external charges on the spatial lattice and study, using matrix product states, the resulting confining string, from which we extract the static potential and a force-based renormalized coupling. Using the proposed finite-volume scheme, we demonstrate a stable continuum limit of the step-scaling function on the lattice sizes accessible to present Hamiltonian simulations. The method is readily extendable to other gauge groups and dimensions, providing a pathway toward Hamiltonian step-scaling studies in other theories.",
+    "title": "A Finite-Volume Scheme for the Continuum Extrapolation of Lattice Step-Scaling in (2+1)D Hamiltonian U(1) Gauge Theory",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5383093357086182
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.48051124811172485
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4772322475910187
+      }
+    ]
+  },
+  "2606.20170v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "R. Taranko"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Baranski"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Jankiewicz"
+      },
+      {
+        "affiliation": [],
+        "name": "K. Wrzesniewski"
+      },
+      {
+        "affiliation": [],
+        "name": "I. Weymann"
+      },
+      {
+        "affiliation": [],
+        "name": "T. Domanski"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.20170v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "The paper studies transient triplet configurations and subgap transport in superconductor-quantum dot junctions, which involves superconductivity but shifts focus to nanoscale devices rather than bulk correlated materials.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Andreev Junction",
+      "Superconducting Qubits",
+      "Triplet Correlations"
+    ],
+    "summary": "We study the time-dependent triplet configuration, appearing under nonequilibrium conditions in a nanoscopic junction with two quantum dots coupled in series between superconductor and normal metallic lead. We show that in the situation, when both quantum dots are singly occupied by identical spin electrons, the on-dot electron pairing is suppressed what substantially affects the subgap charge transport. We investigate processes in which such configuration can be temporarily encountered, either due to the initial conditions or by imposing the external magnetic field. Our analytical and numerical calculations provide estimations for the temporal scales, characterizing evolution of the triplet configuration which could be manifested in the time-resolved tunneling measurements. Such nonequilibrium features of the triplet configuration might be relevant to operations on superconducting qubits, in their conventional and/or topological realizations.",
+    "title": "Transient triplet blockade in Andreev junction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16362v1",
+        "score": 0.5930661559104919
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5653277039527893
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.555024266242981
+      }
+    ]
+  },
+  "2606.20260v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pavol Farkasovsky"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.20260v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper is highly relevant as it explicitly investigates s- and d-wave superconducting correlations and unconventional superconductivity within the extended Hubbard model, directly addressing themes of strongly correlated systems and pairing mechanisms evident in the user's liked papers.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Hubbard Model",
+      "Pairing Symmetry",
+      "Unconventional Superconductivity"
+    ],
+    "summary": "We investigate the influence of nonlocal interactions on superconducting correlations within the extended Hubbard model. In addition to the on-site Coulomb interaction and nearest-neighbor hopping, we include next-nearest-neighbor hopping together with several physically relevant nonlocal terms, namely nearest-neighbor Coulomb interaction, correlated hopping, exchange interaction, and pair hopping. Using Lanczos exact diagonalization on a $4\\times4$ cluster, supported by projector quantum Monte Carlo simulations for selected parameter regimes, we analyze pairing correlations in both the s- and d-wave channels. We demonstrate that nonlocal interactions exert a highly nontrivial and symmetry-dependent influence on superconducting correlations. While the on-site repulsion in cooperation with next-nearest-neighbor hopping enhances d-wave pairing tendencies, correlated hopping and nearest-neighbor Coulomb interaction strongly promote s-wave correlations, whereas exchange and pair-hopping interactions can efficiently suppress superconductivity beyond relatively small critical strengths. When all nonlocal interactions are considered simultaneously, the resulting phase diagrams reveal a complex interplay and competition between different pairing symmetries. Our results highlight the crucial role of extended interactions in shaping the pairing landscape of strongly correlated systems and demonstrate that a comprehensive treatment beyond the minimal Hubbard model is essential for a realistic description of unconventional superconductivity.",
+    "title": "Effects of nonlocal interactions on s- and d-wave superconducting correlations in the extended Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.646242082118988
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5963344573974609
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.5633983016014099
+      }
+    ]
+  },
+  "2606.20296v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yang Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Turan Birol"
+      },
+      {
+        "affiliation": [],
+        "name": "Rafael M. Fernandes"
+      },
+      {
+        "affiliation": [],
+        "name": "Natalia B. Perkins"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.20296v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper investigates momentum-dependent spin splitting and novel magnetic phases in correlated iridates using theoretical models and symmetry analysis, aligning with interests in correlated materials and momentum-dependent phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Pyrochlore Iridates",
+      "Spin-Orbit Coupling"
+    ],
+    "summary": "Altermagnets are collinear magnetically ordered states that exhibit momentum-dependent spin splitting in the absence of net magnetization and spin-orbit coupling (SOC). Related spin-splitting patterns, however, can also emerge in noncollinear magnetic systems with large SOC. Here we show, via a microscopic model, that the all-in-all-out (AIAO) state in pyrochlore iridates constitutes a noncollinear counterpart of a $d$-wave altermagnet stabilized by strong SOC. Starting from a microscopic $j_{\\mathrm{eff}} = 1/2$ tight-binding model on the pyrochlore lattice, we demonstrate that electronic interactions favor the AIAO phase and analyze its symmetry properties. We show that the AIAO order parameter transforms as an $A_{2g}^{-}$ octupolar magnetic moment, breaking time-reversal symmetry while preserving inversion and zero net magnetization. Using group-theory analysis and mean-field calculations, we demonstrate that this symmetry enforces both a spin-polarized momentum-dependent lifting of band degeneracies that is similar to that of a collinear $d$-wave cubic altermagnet, but also a band splitting at zero-momentum. We show that the latter feature is captured by a low-energy model similar to the   Luttinger-Kohn model for cubic semiconductors. Our results identify pyrochlore iridates as a platform for noncollinear counterparts of altermagnetism and provide a general symmetry framework for spin-split phenomena in spin-orbit coupled materials.",
+    "title": "All-In-All-Out Pyrochlore Iridates as Noncollinear Spin-Orbit Coupled Counterparts of Altermagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6814336180686951
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.6179033517837524
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.5498336553573608
+      }
+    ]
+  },
+  "2606.20309v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ritwika Majumder"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.20309v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "The paper directly investigates fractionalized Majorana excitations, topological properties, and chiral topological order in a Kitaev chain, strongly aligning with the user's interest in topological phases and symmetries.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Kitaev Model",
+      "Majorana Fermions",
+      "Quantum Spin Liquid"
+    ],
+    "summary": "The Kitaev honeycomb model has attracted significant interest due to its quantum spin liquid ground state, fractionalized Majorana excitations, and topological properties. Motivated by these features, we introduce a quasi-one-dimensional Kitaev-like spin chain derived from a truncated honeycomb geometry. The resulting Majorana band structure contains both dispersive and flat bands, with a gap closing at a critical anisotropy that separates trivial and chiral topological phases. Under open boundary conditions, the topological regime hosts zero-energy edge modes protected by chiral symmetry, placing the system in the BDI symmetry class with a quantized winding number. In the excited spectrum, localized plaquette modes emerge near zero energy and can be tuned by introducing domains of negative plaquettes. The dynamical spin correlation function reveals broad continua associated with fractionalized excitations, together with characteristic low-energy spectral weight from edge Majorana modes. These features distinguish the present system from conventional Heisenberg spin chains and provide experimentally relevant fingerprints of chiral topological order. Our model thus establishes a conceptual bridge between the two-dimensional Kitaev spin liquid and Kitaev's one-dimensional quantum wire.",
+    "title": "Fractional excitations in Kitaev quasi-one-dimensional chain",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6791163682937622
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.640760064125061
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5832705497741699
+      }
+    ]
+  },
+  "2606.20313v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Cunxi Gong"
+      },
+      {
+        "affiliation": [],
+        "name": "Zirui Sheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Weitang Li"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20313v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper investigates entanglement in dissipative quantum dynamics using tensor network methods, which resonates with the user's interest in quantum many-body phenomena, theoretical methods, and entanglement in quantum systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Open Quantum Systems",
+      "Spin-Boson Model",
+      "Tensor Networks"
+    ],
+    "summary": "The sub-Ohmic spin-boson model exhibits three distinct dynamical regimes in its spin population dynamics, classified as coherent, incoherent, and pseudo-coherent. Whether these regimes correspond to distinct spin-bath entanglement structures remains an open question. Here we address this using tree tensor network states with projector-splitting time evolution (TTN-TDVP-PS), scanning a broad grid in the sub-Ohmic $(s, α)$ plane. We find that the spin entanglement entropy $S_\\mathrm{spin}(t)$ reaches a stationary plateau on a timescale shorter than the polarization relaxation, enabling construction of a stationary entropy landscape from the stationary value $S_\\mathrm{stable}$. Within this scalar entropy landscape, the entropy ridge broadly follows the population-based phase boundary at small $s$, but does not reproduce the two-branch structure at large $s$. The ridge remains single-valued within the incoherent region rather than separately tracking both population-based transitions. The Bloch-sphere representation provides a geometric interpretation of this behavior. The entropy plateau corresponds to trajectories settling onto constant-radius shells, with the ridge marking the parameters of smallest stationary Bloch radius. Mode-resolved bath entanglement shows that low-frequency modes dominate the environmental entropy scale and that coherent dynamics enhance bath-mode correlations beyond direct spin--mode correlations. These results establish the stationary spin entanglement entropy as a physically informative observable that complements population-based classifications of dissipative quantum dynamics.",
+    "title": "Entanglement structure of the dynamical phases in the sub-Ohmic spin-boson model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5271499156951904
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5096908807754517
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5060681700706482
+      }
+    ]
+  },
+  "2606.20387v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alex Gunning"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Schmid"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhengxiao Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Sridevi Kuriyattil"
+      },
+      {
+        "affiliation": [],
+        "name": "Aydin Deger"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew J. Daley"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20387v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper explores abstract quantum lattice models focusing on interaction geometry and ground-state phase transitions, which is less directly aligned with the user's interest in specific material properties or strong correlation effects.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Quantum Lattice Models",
+      "Interaction Geometry",
+      "Geometric Frustration"
+    ],
+    "summary": "We investigate how interaction geometry shapes the low-energy phases of sparse tunable long-range quantum models. We focus on a class of graphs whose degree grows logarithmically with system size, and show how symmetry and frustration in graph connectivity can drive, suppress, and reshape ground-state phase transitions. The central examples are power-of-$p$ graphs, where even and odd values of $p$ exhibit qualitatively distinct behaviour: even-$p$ graphs inherit the rich phase structure of the power-of-two model, while odd-$p$ graphs are governed by geometric frustration. Fibonacci graphs provide a contrasting case, lacking the discrete self-similarity of the power-of-$p$ family but exhibiting a direct geometric mapping between the short- and long-range limits. Across our models, we find that phase structure and criticality are governed by the same effective-geometry principle, unifying our framework for experimentally motivated long-range quantum systems.",
+    "title": "Interaction geometry and ground-state properties of sparse quantum lattice models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4959471821784973
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.49081066250801086
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.48598942160606384
+      }
+    ]
+  },
+  "2606.20402v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Erik M. Åsgrim"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Markidis"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20402v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper is focused on quantum machine learning, specifically quantum kernels and tensor network representations, which is a different domain from the user's primary interest in condensed matter physics and correlated materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Kernels",
+      "Spectral Tensor Networks",
+      "Quantum Machine Learning"
+    ],
+    "summary": "Quantum kernels admit Fourier representations whose frequencies are determined by the data-encoding gates of the underlying feature map. We show that entangling tensor kernels are matrix product operator factorizations of the corresponding Fourier coefficient tensors, thereby identifying quantum kernels as spectral tensor networks. By grouping gate-level frequency configurations that yield the same feature-wise frequency, we obtain a grouped Fourier form that induces a more compact spectral tensor network representation of the kernel. We further show that kernel target alignment serves as a bridge between the Fourier and tensor network views. On a grid that resolves the accessible Fourier modes, it becomes the Frobenius cosine similarity between Fourier coefficient tensors. Our numerical experiments show that layered quantum kernels admit accurate representations with small bond dimension, revealing a compressibility governed by correlations between Fourier modes. This compressibility provides a diagnostic of classical representability and of whether kernel evaluation is likely to remain classically tractable.",
+    "title": "Quantum Kernels are Spectral Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4982188045978546
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4881768226623535
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4770221710205078
+      }
+    ]
+  },
+  "2606.20425v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yang Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianwen Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruipeng Wei"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20425v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper directly investigates enhanced pairing correlations and antiferromagnetic correlations in moiré Hubbard systems, which aligns with the user's interest in YBCO superconductors and strong correlation physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Moiré Systems",
+      "Non-Hermitian Physics",
+      "Pairing Correlations"
+    ],
+    "summary": "We show that the non-Hermitian skin effect (NHSE) can enhance pairing correlations in moiré Hubbard systems through a channel-selective mechanism: skin-induced localization amplifies the boundary density of states, strengthening local pairing tendencies within an intermediate ``golden window'' of non-reciprocity $γ\\in[0.5,1.2]\\,t$. Using exact diagonalization of the non-Hermitian Hubbard model on triangular lattices with open boundaries, we map the $(U,γ)$ phase diagram. The double occupancy $D(γ)$ exhibits non-monotonic behavior -- rising by up to 21\\% then declining -- reflecting a competition between NHSE-enhanced boundary pairing and over-localization. A decomposition of the pairing susceptibility $χ_{\\mathrm{SC}}$ on the $3\\times3$ cluster reveals that the NHSE acts \\emph{channel-selectively}: it enhances on-site pairing ($+21\\%$) while simultaneously suppressing competing antiferromagnetic correlations (22\\% reduction), so that the total pairing susceptibility, dominated by the on-site channel, grows by $+98\\%$ on that cluster. These trends are corroborated by an independent non-Hermitian DMRG calculation and establish an enhancement of finite-cluster pairing correlations rather than trivial density redistribution. We do not claim long-range superconducting order. A BCS scaling estimate converts the same pairing-response signal into a dome-shaped $T_c(γ)$ fingerprint, suggesting an experimentally distinguishable response in coherent-drive versus reservoir-dominated moiré devices.",
+    "title": "Non-Hermitian Skin Effect Enhances Pairing Correlations in Moiré Hubbard Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6013122200965881
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5515490770339966
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5415101051330566
+      }
+    ]
+  },
+  "2606.20445v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Riccardo Travaglino"
+      },
+      {
+        "affiliation": [],
+        "name": "Pasquale Calabrese"
+      },
+      {
+        "affiliation": [],
+        "name": "Katja Klobas"
+      },
+      {
+        "affiliation": [],
+        "name": "Bruno Bertini"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20445v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper develops a theoretical framework for non-equilibrium quantum many-body dynamics, including entanglement growth, which aligns with the user's interest in advanced theoretical methods for strongly correlated and dynamic quantum systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum Quench",
+      "Entanglement Dynamics",
+      "Integrable Systems"
+    ],
+    "summary": "Characterising the universal aspects of non-equilibrium quantum many-body dynamics is one of the key goals of this century's physics research. Progress, however, is hindered by the lack of general theoretical frameworks for studying interacting quantum matter far from equilibrium. A recent breakthrough has been the realization that several key non-equilibrium quantities, such as the rate of growth of entanglement or the fluctuations of conserved charges within finite subsystems, can be related to equilibrium properties through a space-time duality that effectively exchanges the roles of space and time. This observation effectively enables the study of non-equilibrium phenomena using tools and concepts borrowed from equilibrium statistical mechanics and thermodynamics. A first proof of principle of this framework, dubbed space-time duality approach (SDA), was provided by interacting integrable systems, where thermodynamic properties can often be characterized exactly, while dynamical quantities typically remain beyond analytical reach. Subsequent developments, however, revealed that the SDA suffered from an intrinsic ambiguity, restricting its applicability to homogeneous quenches and to charge fluctuations arising from symmetric initial states. Here we resolve this ambiguity from first principles and derive closed-form predictions for entanglement growth and charge fluctuations after general quantum quenches. We benchmark our results against the exact analytical solution of the Rule 54 quantum cellular automaton and extensive TEBD simulations of the XXZ chain. Moreover we show that, when specialised to the entanglement entropy, our framework naturally reproduces the predictions of the quasiparticle picture.",
+    "title": "Space-time duality approach to (inhomogeneous) integrable quenches",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4083627164363861
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.3903680145740509
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.3744738698005676
+      }
+    ]
+  },
+  "2606.20466v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Emile Pangburn"
+      },
+      {
+        "affiliation": [],
+        "name": "Igor de Melo Froldi"
+      },
+      {
+        "affiliation": [],
+        "name": "Anurag Banerjee"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.20466v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper investigates correlated Mott semi-metals with Dirac electrons in a topological heavy-fermion model, using advanced methods for strong correlations like Quantum Monte Carlo, directly aligning with interests in topological materials and correlated electron systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Topological Heavy Fermion",
+      "Mott Semimetal",
+      "Determinant Quantum Monte Carlo"
+    ],
+    "summary": "The topological heavy-fermion model provides a minimal framework for describing the coexistence of localized moments and itinerant Dirac electrons in magic-angle twisted bilayer graphene (MATBG). Several analytical and numerical methods have been applied to this model; however, whether they provide a realistic description of MATBG remains incompletely understood. In this work, we develop an Hubbard operator approach that incorporates non-local correlations beyond the single-site limit. We benchmark the approximate calculations against numerically exact determinant quantum Monte Carlo simulations of a lattice-regularized model. We show that commonly used local approximations, such as Hubbard-I, fail to capture the coupling between localized and itinerant degrees of freedom, leading to incorrect spectral properties in the local-moment regime. In contrast, the Hubbard operator method provides a controlled description of both correlation functions and spectral features over a regime of parameters, in good agreement with exact numerical methods.",
+    "title": "Correlated Mott semi-metal in the topological heavy fermion model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.6902452707290649
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6378384828567505
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6060167551040649
+      }
+    ]
+  },
+  "2606.20472v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tyler D. Ellison"
+      },
+      {
+        "affiliation": [],
+        "name": "Dongjin Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhi Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Amin Moharramipour"
+      },
+      {
+        "affiliation": [],
+        "name": "Yasamin Panahi"
+      },
+      {
+        "affiliation": [],
+        "name": "Beni Yoshida"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20472v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper directly explores the quantum information theoretic characterization of many-body chirality in topological stabilizer states, strongly aligning with the user's interest in topological phases and symmetries exemplified by \"Symmetric Real Dirac Fermions and Semimetals.\"",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Anyon Theories",
+      "Topological Phases",
+      "Quantum Information"
+    ],
+    "summary": "A defining feature of chirality is the distinction between a system and its mirror image. Despite extensive experimental observations of chiral phases and theoretical advances, a quantum-information theoretic characterization of chirality based solely on the entanglement structure of many-body quantum states remains elusive. Here, we introduce the notion of many-body chirality by formulating it as an obstruction to transforming a quantum state into its complex conjugate through finite-depth local operations. We rigorously establish many-body chirality for stabilizer realizations of $\\mathbb{Z}_d^{(k)}$ anyon theories, proving that complex conjugation can be implemented by local quantum channels if and only if the underlying anyon data are mirror invariant. This reveals forms of chirality that evade conventional diagnostics, including examples with vanishing modular commutator, vanishing chiral central charge, and commuting-projector realizations. We further show that this obstruction is intrinsically four-partite, while invisible to tripartite entanglement structure. Finally, we prove that $\\mathbb{Z}_d^{(k)}$ states with $d>2$ possess intrinsic many-body imaginarity: their complex phase structure cannot be removed by finite-depth local unitaries. Remarkably, this includes states that are not many-body chiral.",
+    "title": "Many-body chirality of topological stabilizer states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.4006163477897644
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3981739282608032
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.3889801502227783
+      }
+    ]
+  },
+  "2606.20522v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Qi Yang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.20522v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper presents an advanced computational method for handling algebraically decaying interactions in infinite matrix product states, which is relevant to the user's interest in efficient solvers for strongly correlated electron systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Matrix product states",
+      "Long-range interactions",
+      "Transfer matrix method"
+    ],
+    "summary": "Variational infinite matrix product state (iMPS) calculations usually make Hamiltonians with algebraically decaying interactions compatible with standard MPO algorithms by first replacing the target Hamiltonian with a finite-pole sum-of-exponentials surrogate, thereby introducing a Hamiltonian-representation residual. We formulate the fixed-$D$ variational energy without introducing such a surrogate. For a fixed finite-$D$ MPS, the algebraic tail can be summed directly through the connected transfer matrix: the tail $e^{\\mathrm{i} Qr}/r^α$ is represented by the matrix function $F_{α,Q}(\\widetilde{T}_A)$, with $F_{α,Q}(z)=\\operatorname{Li}_α(e^{\\mathrm{i} Q}\\,z)/z$. We evaluate the resulting matrix-function action using a Krylov method and obtain stable gradients by combining a Fréchet adjoint with implicit fixed-point differentiation. Benchmarks on long-range free fermions and the inverse-square Heisenberg family, including the Haldane--Shastry point, validate the transfer-matrix-function formulation. A long-range Ising-chain calculation illustrates a practical consequence of avoiding a finite-pole Hamiltonian representation. At a fixed, independently known critical field, finite-pole surrogate Hamiltonians can bias a critical diagnostic away from criticality, whereas the matrix-function calculation retains the expected critical signatures of the target algebraic Hamiltonian.",
+    "title": "Transfer-matrix functions for algebraically decaying interactions in variational infinite matrix product states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5281412601470947
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5111799836158752
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4594579041004181
+      }
+    ]
+  },
+  "2606.20533v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jun Zhan"
+      },
+      {
+        "affiliation": [],
+        "name": "Xianxin Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiangping Hu"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.20533v1",
+    "matching_keywords": [
+      "RIXS",
+      "nickelate"
+    ],
+    "published_date": "2026-06-18",
+    "reasoning": "This paper directly addresses magnetic properties and excitations in high-Tc multilayer nickelates, a topic precisely matching the user's prior interest in both high-Tc superconductors and nickelate materials, and mentions RIXS.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Multilayer nickelates",
+      "Spin excitations",
+      "Resonant X-ray Scattering (RIXS)"
+    ],
+    "summary": "We investigate the magnetic ground states and transverse spin excitations of bilayer and trilayer nickelates within a multi-orbital itinerant framework. For the bilayer system, although Hartree-Fock calculations slightly favor a double-stripe order, the calculated excitation spectrum of the single-stripe state, characterized by an anisotropic low-energy cone at $Q_{\\text{BL}}$ and isotropic high-energy excitations near $Γ$, exhibits good qualitative agreement with recent RIXS and neutron scattering experiments. We further identify mirror-even optical interlayer modes at $Q_{\\text{BL}}$ whose energies match the mirror-odd modes at $Γ$. For the trilayer system, both mirror-odd and mirror-even spin-density-wave states can be stabilized near $Q_{\\text{TL}}$, with the mirror-odd state lower in energy in the parameter regime studied. The mirror-odd state hosts an additional nearly gapless mode dominated by the middle layer, while the mirror-even state contains only one acoustic branch together with two gapped optical modes. Comparison with available RIXS data favors the mirror-odd spin-density-wave scenario. Our results show that magnetic excitations provide a sensitive probe of the magnetic order and support a common itinerant origin of magnetism in multilayer nickelates.",
+    "title": "Magnetic configurations and excitations in high-$T_{c}$ multilayer nickelates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.6509556770324707
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6490012407302856
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC",
+        "score": 0.6232703924179077
+      }
+    ]
   }
 }
