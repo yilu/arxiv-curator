@@ -9920,11 +9920,11 @@
       },
       {
         "liked_paper_id": "2506.11222v1",
-        "score": 0.5626561641693115
+        "score": 0.562656044960022
       },
       {
         "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
-        "score": 0.5199031233787537
+        "score": 0.5199031829833984
       }
     ]
   },
@@ -13564,11 +13564,11 @@
     "vector_matches": [
       {
         "liked_paper_id": "2507.00837v1",
-        "score": 0.4931250810623169
+        "score": 0.4931251108646393
       },
       {
         "liked_paper_id": "2508.17292v1",
-        "score": 0.4465295374393463
+        "score": 0.44652947783470154
       },
       {
         "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
@@ -15714,6 +15714,594 @@
       {
         "liked_paper_id": "2506.22574v1",
         "score": 0.5907554030418396
+      }
+    ]
+  },
+  "2606.25240v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chunhan Feng"
+      },
+      {
+        "affiliation": [],
+        "name": "Linh Pham"
+      },
+      {
+        "affiliation": [],
+        "name": "George Batrouni"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard Scalettar"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.25240v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-23",
+    "reasoning": "This paper studies charge density wave formation driven by electron-phonon coupling in the SU(N) Holstein model using Quantum Monte Carlo, directly relevant to understanding competing phases and correlations in quantum materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Electron-phonon coupling",
+      "Charge density wave",
+      "Quantum Monte Carlo"
+    ],
+    "summary": "From the condensed matter physics perspective, the most natural single orbital tight-binding Hamiltonians, and hence the most widely studied, contain two fermionic species, corresponding to spin up and spin down electrons. In cold atom systems, however, SU(N) symmetry, in which $N > 2$ fermionic species reside within a single band, also occurs. In order to understand such experiments, the SU(N) Hubbard model has been increasingly studied. Here we present determinant Quantum Monte Carlo simulations of the SU(N) {\\it Holstein} Hamiltonian, in which $N$ fermionic species couple to a single local phonon mode. We show that at half filling it has an insulating charge density wave phase (CDW) at low temperatures, in which empty sites alternate with sites with $N$ particles. We determine the $N=3$ CDW phase diagram in the temperature, $T$, versus electron-phonon coupling, $α$, plane at fixed phonon frequency $ω_0$ and half-filling $ρ=1.5$. The critical temperature $T_c$ for $N=3$ can be as high as twice the maximum attainable for $N=2$. We also obtain the $N$ dependence of $T_c$ for a representative, fixed, $ω_0$ and $α$.",
+    "title": "The SU(N) Holstein Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6009570360183716
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.5694283246994019
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5625550746917725
+      }
+    ]
+  },
+  "2606.25275v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hanfeng Zhai"
+      },
+      {
+        "affiliation": [],
+        "name": "Rasool Ahmad"
+      },
+      {
+        "affiliation": [],
+        "name": "Tapan Mukerji"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei Cai"
+      }
+    ],
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci",
+      "physics.geo-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.25275v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper applies machine learning to predict mechanical properties of rocks, which is unrelated to the user's interest in quantum materials, strong correlation, and electronic/magnetic phenomena.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Machine learning",
+      "Elastic moduli",
+      "Digital rock physics"
+    ],
+    "summary": "Digital rock physics (DRP) aims to estimate effective rock properties (e.g., elastic moduli) directly from 3D micro-CT images. However, direct numerical simulations (DNS) on high-resolution large 3D scans are often computationally prohibitive and severely limit the application of DRP. To address this bottleneck, we combine a lightweight 3D convolutional neural network (CNN) with hierarchical homogenization (HHM) and apply it to determine effective elastic moduli. In this scheme, a large rock image is divided into subcubes. The CNN replaces costly DNS by directly predicting subcube elastic moduli, while HHM upscales subcube-level predictions to the full rock. Using a shared convolutional backbone, we systematically compare three training targets: (i) full anisotropic $6\\times6$ stiffness tensors, (ii) isotropic bulk and shear moduli $(K, G)$, and (iii) Hashin--Shtrikman (HS)-normalized factors. Across multiple rock types, all three models agree well with DNS results while substantially reducing the computational cost. Moreover, training from scratch on each rock type is fast enough that transfer learning is unnecessary. Across all three targets, the accuracy is comparable. In our comparative study, the HS-normalized factor offers the best overall speed--accuracy trade-off while guaranteeing physical consistency, making it a convenient default. The isotropic $(K, G)$ target is a slightly more accurate alternative.",
+    "title": "A convolutional neural network surrogate for hierarchical homogenization: fast elastic moduli prediction of digital rocks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.33470743894577026
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3314778208732605
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.30332300066947937
+      }
+    ]
+  },
+  "2606.25411v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jie Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaofan Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Suotang Jia"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.25411v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "It investigates spin-density-wave phases in one-dimensional correlated systems using DMRG, directly addressing magnetic correlations and competing orders relevant to previously liked topics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Spin-density wave",
+      "Dynamic lattice",
+      "Fermi surface nesting"
+    ],
+    "summary": "We investigate the magnetic order of a one-dimensional spin-1/2 fermion dynamical lattice, where itinerant fermions are coupled to bond-centered localized spins via an Ising-like spin dependent hopping. The model provides an anisotropic dynamical extension of conventional spin-1/2 fermion systems, in which the motion of itinerant fermions is directly modulated by the configuration of localized spins. Using density matrix renormalization group simulations, we map out the ground state phase diagram in various parameter spaces. Depending on the interplay among the hopping dependent on localized spins, the longitudinal field, and the external Zeeman field, two distinct phases are obtained: a paramagnetic phase and a spin-density-wave phase. Most notably, in the partially spin-polarized fermion phase, the spin-density wave ordering wave vector exhibits two distinct phenomena, corresponding respectively to the nesting vectors $2k_{F\\uparrow}$ and $2k_{F\\downarrow}$ of the spin-resolved Fermi surfaces. We further demonstrate that the two spin-density wave phases are robust against the repulsive Hubbard interaction between itinerant fermions. Our results reveal a novel route for tuning magnetic modulations in one-dimensional correlated systems and enrich the microscopic understanding of dynamical lattice magnetism.",
+    "title": "Spin-imbalanced fermion on a dynamic lattice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6737571954727173
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6663879752159119
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6423810124397278
+      }
+    ]
+  },
+  "2606.25717v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Arijit Dutta"
+      },
+      {
+        "affiliation": [],
+        "name": "Souradeep Roy Choudhury"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "Walter Hofstetter"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.25717v1",
+    "matching_keywords": [
+      "dynamical mean field theory"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper directly uses and discusses dynamical mean-field theory (DMFT) in the context of Floquet topological phases, aligning with the user's interest in DMFT and topological phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Floquet DMFT",
+      "Topological phases",
+      "Falicov-Kimball model"
+    ],
+    "summary": "We study the circularly driven Falicov-Kimball model on a honeycomb lattice within real space Floquet dynamical mean field theory (DMFT). The noninteracting version of this model has been realized experimentally. The noninteracting system hosts an effective Haldane phase at large driving frequencies, while at intermediate frequencies it hosts an anomalous topological phase. We study the effect of two-body interactions $U$ on the stability of these phases. We find that charge pumping does not remain quantized upon increasing $U$, despite the presence of edge modes in the spectrum. This can be attributed to the broadening of the edge modes due to interaction. We also calculate the rate of energy dissipation into the bath and find remarkably different behaviour in the two regimes.",
+    "title": "Effect of Two-Body Interactions on Floquet topological phases",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.5367879271507263
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5203586220741272
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5081116557121277
+      }
+    ]
+  },
+  "2606.25853v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiwen Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Arash A. Mostofi"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Horsfield"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.25853v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper focuses on combining tight binding with machine learning potentials for magnesium compounds, which is a computational method not directly linked to the specific theoretical frameworks (like DMFT) or material classes (superconductors, nickelates, Dirac semimetals) previously liked by the user.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Machine learning potentials",
+      "DFTB",
+      "Electronic structures"
+    ],
+    "summary": "We present a model for magnesium-based systems that combines density functional tight binding (DFTB) with MACE, a machine learning interatomic potential (DFTB+MACE). In this model, the conventional repulsive potential, pair potential, is replaced by a many-body MACE potential. The MACE component of the model is trained on the difference between density functional theory (DFT) energies and forces and the corresponding DFTB values, but neglecting the pair potential contribution. Using this model we performed structural relaxation of MgO-CO2 adsorption systems, molecular dynamics calculations of water clusters and phonon spectrum calculations of stable fcc-MgO and metastable bcc-MgO structures. We compare the performance of our model with a pure MACE model and with DFT. We demonstrate that the DFTB+MACE model achieves improved accuracy relative to DFTB with a pair potential, in many cases with only a moderate increase in computational cost. In addition, it can provide electronic structures that most of the machine learning potentials cannot. The training dataset, originally developed for MACE, may not fully represent all regions of the potential surface we may encounter during simulations. Expanding the dataset for a wider potential surface is expected to further enhance predictive accuracy of DFTB+MACE model. Overall, the resulting DFTB+MACE framework enables simulations at length and time scales beyond the reach of first-principles methods while retaining an explicit description of electronic structures, making it particularly attractive for studying charge-transfer in materials.",
+    "title": "A Combined Tight Binding with Machine Learning Potential Model for Magnesium Compounds",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.455856591463089
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4538915753364563
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.4458376467227936
+      }
+    ]
+  },
+  "2606.25946v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jens-Christian Drawer"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Han"
+      },
+      {
+        "affiliation": [],
+        "name": "Edson Rafael Cardozo de Oliveira"
+      },
+      {
+        "affiliation": [],
+        "name": "Chushuang Xiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Vita Solovyeva"
+      },
+      {
+        "affiliation": [],
+        "name": "Kenji Watanabe"
+      },
+      {
+        "affiliation": [],
+        "name": "Takashi Taniguchi"
+      },
+      {
+        "affiliation": [],
+        "name": "Norberto Daniel Lanzillotti-Kimura"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian Schneider"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Esmann"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "physics.optics"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.25946v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper focuses on nanophononic resonators in van der Waals materials, which is a distinct area from the electronic, magnetic, and topological phenomena, or specific material classes like superconductors and nickelates, that the user previously liked.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Nanophononics",
+      "WSe2",
+      "Van der Waals materials"
+    ],
+    "summary": "Van der Waals materials are ideally suited for the implementation of high-frequency nanophononic resonators with atomically flat interfaces. Here, we present two versatile van der Waals-based nanophononic architectures: First, we introduce self-supporting nano-domes of WSe$_2$ as a scalable platform for the simultaneous generation of hundreds of high-quality nanoacoustic resonators with resonance frequencies in the 100 GHz range. Second, we engineer self-supporting nano-drums that reach record-high working frequencies for 2D-semiconductor transducers beyond 1 THz. Through optical pump-probe spectroscopy experiments and photoelastic linear chain model calculations, we gain a detailed understanding of the intricate interplay between phononic mode hybridization across heterostructures, the differences between modes close to the center and edge of the acoustic Brillouin zone, and the temporal structure of the photoelastic response. Both architectures have potential applications in low-cost nanoacoustic probing and the ultrafast modulation of quantum emitters in two-dimensional semiconductors. While nano-drums surpass the THz frequency barrier, nano-domes appear as an accessible, low-cost alternative for developing scalable nanophononic technologies.",
+    "title": "High-Performance Nanophononic Resonators in Self-Suspended WSe$_2$ Domes and Drums",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.4209664762020111
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.37041735649108887
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.36422234773635864
+      }
+    ]
+  },
+  "2606.26014v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jozef Genzor"
+      },
+      {
+        "affiliation": [],
+        "name": "Roman Krčmár"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrej Gendiar"
+      },
+      {
+        "affiliation": [],
+        "name": "Chia-Min Chung"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Kochan"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26014v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "hubbard model",
+      "tensor network"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper investigates spin modulations and correlations in a strongly correlated 1D system using tensor networks, highly relevant to previous interest in charge correlations and many-body physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Spin-orbit coupling",
+      "Tensor network",
+      "Rashba-Hubbard model"
+    ],
+    "summary": "Uniform spin-orbit coupling in an open single-band Hubbard chain is an exactly removable \\(SU(2)\\) gauge field at the Hamiltonian level, but not at the level of laboratory-frame spin correlations. We study this separation using density matrix renormalization group calculations for the repulsive one-dimensional Rashba-Hubbard chain. For open boundary conditions, a site-dependent spin rotation maps the model with hopping \\(t\\) and Rashba spin-orbit strength \\(λ\\) onto the ordinary Hubbard chain with renormalized hopping \\(t_λ=\\sqrt{t^2+λ^2}\\). Consequently, charge and energy diagnostics are affected only through the bandwidth renormalization, which is quadratic in weak \\(λ/t\\). Spin correlations, however, respond already at linear order because the same transformation rotates the local spin basis by the wave vector \\(k_{\\rm so}=2\\arctan(λ/t)\\). We use DMRG to verify this observable consequence across the filling diagram of finite open chains. The filling structure follows the gauge-equivalent Hubbard model, whereas the spin structure factor shows the predicted spin-orbit sidebands. A dominant Hubbard-chain magnetic wave vector \\(k_0\\) is transformed into components at \\(k_0\\pm k_{\\rm so}\\), folded into the open-chain Brillouin zone. At half filling, where \\(k_0=π\\), the two sidebands fold onto a single, in-plane, spin spiral wave with \\(k=π-k_{\\rm so}<π\\). Away from half filling, the incommensurate Hubbard spin response splits into two distinct spin-orbit-shifted components, producing a real-space beating pattern. Our results provide a filling-resolved tensor-network benchmark for the exactly removable limit of one-dimensional spin-orbit coupling, and establish a controlled reference point for ladders, multiorbital chains, rings, proximitized wires, and higher-dimensional Hubbard systems where spin-orbit coupling can no longer be gauged away.",
+    "title": "Spin modulations in the Rashba-Hubbard chain -- a tensor network study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6582295894622803
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5775223970413208
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5732433199882507
+      }
+    ]
+  },
+  "2606.26023v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Qi Jia"
+      },
+      {
+        "affiliation": [],
+        "name": "Seung Gyo Jeong"
+      },
+      {
+        "affiliation": [],
+        "name": "Seungjun Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Tonini"
+      },
+      {
+        "affiliation": [],
+        "name": "Anand Santhosh"
+      },
+      {
+        "affiliation": [],
+        "name": "Yifei Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiangrui Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Brahmdutta Dixit"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuang Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu-Chia Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Tony Low"
+      },
+      {
+        "affiliation": [],
+        "name": "Bharat Jalan"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian-Ping Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26023v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper investigates emergent altermagnetic spin splitting in an oxide material (RuO2) driven by epitaxial strain, which relates to the user's interest in emergent phases and properties in complex oxides.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spin splitting",
+      "Epitaxial strain"
+    ],
+    "summary": "The altermagnetic nature of rutile RuO2 remains under active debate: bulk measurements indicate a nearly nonmagnetic ground state, whereas thin-film studies have reported symmetry-dependent transport signatures consistent with altermagnetism. Here, we provide experimental evidence that altermagnetic spin splitting in RuO2 is a strain-stabilized emergent state rather than an intrinsic bulk property. Angular-resolved spin-torque measurements reveal a symmetry-selected spin Hall response characteristic of altermagnetic spin splitting, which is strongest in the strained regime but progressively suppressed as the lattice relaxes toward the bulk limit. Complementary magnetic measurements further reveal enhanced coercivity and exchange-bias behavior exclusively in strained films, indicating the emergence of a strain-stabilized magnetic state. First-principles calculations reproduce the strain-dependent evolution of the Neel order and spin-split electronic structure, supporting the experimental observations. Together, these results establish altermagnetic spin splitting in RuO2 as a strain-stabilized emergent state and provide a unified explanation for the long-standing discrepancy between bulk and thin-film observations.",
+    "title": "Epitaxial Strain Activates Altermagnetic Spin-Splitting Torques in RuO2(100)",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.5625306963920593
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.5526834726333618
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5362589359283447
+      }
+    ]
+  },
+  "2606.26076v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Amirhosein Amini"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaime Cerda"
+      },
+      {
+        "affiliation": [],
+        "name": "Leopoldo Mejía"
+      },
+      {
+        "affiliation": [],
+        "name": "Arkajit Mandal"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26076v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "It develops a many-body Green's function theory, which aligns with previous interest in DMFT, but applies it to molecular quantum electrodynamics rather than strongly correlated solids.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Quantum Electrodynamics",
+      "Electron-boson coupling",
+      "Molecular systems"
+    ],
+    "summary": "In this work, we develop two many-body quantum electrodynamic methods to calculate the ground-state energies of strongly coupled light-matter molecular systems. Specifically, we extend the second-order many-body Green's function theory (GF2) for electronic systems to incorporate electron-boson couplings. We employ two ansätze to treat the bosonic part of the system, namely the coherent-state (CS) and Lang-Firsov (LF) transformed vacuum state. These are combined with the GF2 method to construct two new approaches, which we refer to as CS-GF2 and LF-GF2. We benchmark CS- and LF-GF2 by studying various molecular systems inside an optical cavity. We investigate $\\mathrm{H}_2$ and $\\mathrm{LiH}$ potential energy surfaces, keto-eneol tautomerization energy barrier, van-der Waals interactions between two $\\mathrm{H_2}$ molecules and the torsional potential energy surface of the ethylene molecule, $\\mathrm{C_2H_4}$. Both methods provide highly accurate energies, with only modest additional improvement observed in LF-GF2.",
+    "title": "Many-Body Second Order Green's Function Theory for Ab Initio Molecular Quantum Electrodynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.48880070447921753
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.46412038803100586
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.4638326168060303
+      }
+    ]
+  },
+  "2606.26096v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Niclas Heinsdorf"
+      },
+      {
+        "affiliation": [],
+        "name": "Ken Shiozaki"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26096v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper deeply explores higher Berry curvature and Chern numbers, which are core concepts in topological condensed matter physics, directly relating to the user's interest in Dirac fermions and topological semimetals.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Berry curvature",
+      "Chern number",
+      "Topological insulator"
+    ],
+    "summary": "We rewrite a lattice model of the four-dimensional Chern insulator as a family of translationally-invariant infinite chains over the three-dimensional Brillouin zone and compute its higher three-form Berry curvature using infinite matrix product states (iMPS). We calculate the topological phase diagram of the associated Dixmier--Douady--Kapustin--Spodyneiko (DDKS) number as a function of the model's mass term, and show that it is exactly congruent to the phase diagram in terms of the second Chern number, the analytic expression of which is known for this particular model. This agreement demonstrates that higher Berry curvature can be used to compute second Chern numbers in a manifestly quantized manner. Motivated by the connection between the second Chern form and the Chern--Simons axion coupling, we study magnetoelectric coupling in three dimensions and its relation to higher Berry phases.",
+    "title": "Higher Berry curvature, second Chern numbers and magnetoelectric coupling in crystalline insulators",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5852695107460022
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.535993218421936
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5340783596038818
       }
     ]
   }
