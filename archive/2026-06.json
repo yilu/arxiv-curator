@@ -15845,7 +15845,9 @@
       "cond-mat.str-el",
       "cond-mat.quant-gas"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2606.25411v1",
     "matching_keywords": [
@@ -15873,6 +15875,56 @@
       {
         "liked_paper_id": "2506.15516v1",
         "score": 0.6423810124397278
+      }
+    ]
+  },
+  "2606.25660v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Eric Vernier"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Miao"
+      },
+      {
+        "affiliation": [],
+        "name": "Masahito Yamazaki"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.25660v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper investigates non-invertible symmetries and dualities in quantum spin chains, resonating with a foundational interest in symmetries and their implications in quantum systems.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum integrability",
+      "Non-invertible symmetry",
+      "Spin chains"
+    ],
+    "summary": "We establish a direct connection between Onsager symmetry, duality defects, and quantum integrability in the XXZ spin chain at roots of unity, $Δ=(q+q^{-1})/2$ with $q^N=\\pm1$. Using a non-Abelian algebra of transfer matrices governed by an unbalanced version of the Yang--Baxter/RLL relation, we construct an explicit lattice realization of the Onsager algebra and its duality automorphism. The duality is represented by a matrix product operator related to the transfer matrices of the $τ_2$ model. We show that this operator obeys $\\mathbb{Z}_N$ Tambara--Yamagami fusion rules and therefore realizes on the lattice the topological defect lines of the free compactified boson conformal field theory. Our results identify non-Abelian integrability as a natural framework for the emergence of the Onsager symmetry and categorical dualities in lattice models.",
+    "title": "Lattice non-invertible symmetry from non-commuting transfer matrices",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4279535412788391
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.3888198733329773
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.3863247036933899
       }
     ]
   },
@@ -15979,6 +16031,121 @@
       }
     ]
   },
+  "2606.25889v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gregor Humar"
+      },
+      {
+        "affiliation": [],
+        "name": "Jean-Yves Desaules"
+      },
+      {
+        "affiliation": [],
+        "name": "Luka Pavešić"
+      },
+      {
+        "affiliation": [],
+        "name": "Marko Ljubotina"
+      },
+      {
+        "affiliation": [],
+        "name": "Zlatko Papić"
+      },
+      {
+        "affiliation": [],
+        "name": "Kristel Michielsen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaka Vodeb"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.25889v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "It explores metastable dynamics and competing domains in strongly correlated matter using a quantum annealer, which aligns with interests in computational methods for complex quantum systems and competing phases.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum Annealing",
+      "Metastable States",
+      "Quantum Simulation"
+    ],
+    "summary": "From cosmology to quantum matter, metastable states often decay through the nucleation and growth of competing domains, with false vacuum decay providing the paradigmatic example of this process. Here we demonstrate a distinct regime in which domain growth outpaces nucleation by orders of magnitude and is controlled by local resonance conditions. Using a programmable quantum annealer with more than 4000 qubits, we realize a two-dimensional quantum Ising model whose metastable spin-polarized state encodes a false vacuum. At a specific value of the longitudinal field, single-spin flips at the boundary of a seeded bubble become resonant, enabling kinetically constrained expansion. Combining experiment with tensor-network simulations and stochastic circuit modeling, we observe nearly ballistic growth of true-vacuum domains with sub-ballistic interface broadening, consistent with Kardar--Parisi--Zhang universality. Our results establish a growth-dominated regime of false vacuum decay and show how large-scale quantum simulation can access nonequilibrium metastable dynamics relevant to quantum field theory, cosmology, and strongly correlated matter.",
+    "title": "Resonant false vacuum decay in two dimensions on a 4000-qubit quantum annealer",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5104950666427612
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.449236661195755
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4485626220703125
+      }
+    ]
+  },
+  "2606.25914v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kun Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yingda Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Irene M. Gamba"
+      }
+    ],
+    "categories": [
+      "math.NA",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.25914v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-24",
+    "reasoning": "It proposes a fast computational scheme using tensor train approximation, which aligns with an interest in efficient solvers, but for the Boltzmann equation, not directly for quantum many-body systems.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Kinetic Equations",
+      "Tensor Methods",
+      "Numerical Schemes"
+    ],
+    "summary": "We propose a fast deterministic scheme for the space-homogeneous Boltzmann equation that exploits the low-rank structure of the velocity distribution. This paper consists of two independent contributions. The first is a \\emph{lifting-projection (LP) scheme}, inspired by the approach in the recent theoretical breakthroughs \\cite{guillen2025landau, imbert2026monotonicity, guillen2025landau2} on the well-posedness of the Landau and Boltzmann equations. In particular, the approach lifts the nonlinear 3D Boltzmann equation to the 6D linear Kac master equation, advanced over a single time step, and projected back to its marginal in 3D. The second contribution is a \\emph{low-rank tensor method} for evaluating the collision operator, in which the lifted solution is represented in tensor train (TT) format and computed via a TT cross approximation algorithm with interpolation, complemented by a TT-friendly conservation correction that enforces conservation of mass, momentum, and energy. When the solution is low-rank in velocity, the method scales linearly in $n$ when cubic interpolation is used (and quadratic in $n$ when spectral interpolation is used), where $n$ is the number of grid points in each velocity direction. Therefore, our methods offer significant computational savings over existing deterministic solvers in such cases. Numerical experiments on 2D and 3D benchmarks, including the BKW exact solution and anisotropic initial data, confirm the computational scaling, the expected order of accuracy and verify the effectiveness of the conservation correction.",
+    "title": "A fast scheme for the homogeneous Boltzmann equation based on lifting and tensor train approximation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.43030640482902527
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3609757423400879
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.3329423666000366
+      }
+    ]
+  },
   "2606.25946v1": {
     "authors": [
       {
@@ -16058,6 +16225,51 @@
       }
     ]
   },
+  "2606.25974v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuchen Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuo Yang"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.25974v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper focuses on quantum computing readout error mitigation using tensor networks, which falls outside the user's expressed interests in condensed matter physics and materials science.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum error mitigation",
+      "Readout errors",
+      "Quantum hardware"
+    ],
+    "summary": "Readout errors are a major bottleneck to extracting reliable information from near-term quantum processors, especially when spatial correlations are non-negligible. We present a unified tensor-network framework that models the readout process as a matrix product operator (MPO), enabling efficient characterization and mitigation beyond uncorrelated approximations. The MPO model is trained via likelihood optimization on calibration data and applies to multiple tasks, including nonlocal observable estimation, random circuit sampling, and random-measurement protocols, such as classical shadows and learning-based tomography. Experiments on a superconducting processor and numerical simulations up to 20 qubits show that the MPO model captures correlated readout errors that uncorrelated models miss, with a sample cost that grows only near-linearly with system size. When extended to two-dimensional systems, the framework can also be integrated with tensor-network quantum error-correction decoders by performing joint inference over data and readout errors. These results establish tensor-network readout error mitigation as a scalable and versatile approach for noise-aware quantum data processing.",
+    "title": "Tensor network characterization and mitigation of readout errors",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5456922650337219
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5202386379241943
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.49314308166503906
+      }
+    ]
+  },
   "2606.26014v1": {
     "authors": [
       {
@@ -16084,7 +16296,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2606.26014v1",
     "matching_keywords": [
@@ -16260,6 +16474,48 @@
       }
     ]
   },
+  "2606.26081v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Max Hörmann"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.26081v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-24",
+    "reasoning": "This theoretical paper explores phase transitions and complex phase diagrams in interacting many-body systems like the Dicke model and various quantum magnets, aligning with the user's interest in condensed matter theory and correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Superradiance",
+      "Dicke model",
+      "Phase transitions"
+    ],
+    "summary": "We give a thermodynamic-limit account of Dicke models with one cavity mode coupled collectively to interacting matter. Integrating out the cavity yields an exact self-consistent functional of the magnetisation $m$, $\\tilde e(m) = λm^2/2 + e_{\\rm mat}(λm)$: a classical penalty on the bare-matter energy $e_{\\rm mat}$ in the self-consistent field $h = λm$, with $λ= g^2/(2ω_c)$ the collective coupling. Supplying only that scalar field, the photon creates no phase the matter does not already possess. States holding a minimum form one connected curve, $λ(m) = μ_{\\rm mat}^{-1}(m)/m$, so superradiant first-order transitions are folds of one equation of state not crossings of disjoint sheets, and a fold can straighten into a continuous line. The remaining rules are local, each with a spectral counterpart: onset by the leading singularity of $e_{\\rm mat}$ (a softening polariton), order by one bare response -- the Landau quartic, or a divergent susceptibility forcing a Larkin-Pikin (LP) fold. For the Dicke-Ising model the Landau coefficients are exact, giving in closed form the second-order boundary and both zero-quartic fields, one tricritical; a $1/d$ expansion maps all four phases, with the AS-PS transition first order for $d\\le d_{uc}=3=4-z$ (LP) and tricritical points in the $(d,ε)$ plane above. At the degenerate quadruple point the matter is a Rydberg-blockade chain, solved by strict-blockade iDMRG: the antiferromagnetic superradiant (AS) phase persists as a finite 1D wedge, first order into the corner. Other magnets: the triangular antiferromagnet keeps a continuous superradiant-superradiant line (3D-XY, no fold forced); the compass chain a BKT-functional onset; the Heisenberg and XX chains, via a conserved operator, a spectrally silent first-order onset; and the Dicke-Heisenberg diagram an exact tricritical point at the saturation corner.",
+    "title": "Folds of one curve: the superradiant phase diagram of Dicke modes with interacting matter",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.4656299948692322
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.4540588855743408
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.44821682572364807
+      }
+    ]
+  },
   "2606.26096v1": {
     "authors": [
       {
@@ -16274,7 +16530,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2606.26096v1",
     "matching_keywords": [
@@ -16302,6 +16560,792 @@
       {
         "liked_paper_id": "2506.15516v1",
         "score": 0.5340783596038818
+      }
+    ]
+  },
+  "2606.26222v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kasper Rettedal Eikeland"
+      },
+      {
+        "affiliation": [],
+        "name": "Sondre Duna Lundemo"
+      },
+      {
+        "affiliation": [],
+        "name": "Asle Sudbø"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26222v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper explores magnetism in a 1D extended Hubbard model using bosonization, directly aligning with interests in strongly correlated electron systems and theoretical approaches.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "p-wave magnetism",
+      "bosonization",
+      "Luttinger liquid"
+    ],
+    "summary": "We consider a one-dimensional model for a $p$-wave magnet within the bosonization framework. The model consists of itinerant electrons described by an extended Hubbard model coupled to a chain of localized moments through the Kondo exchange. The classical ground state of the local-moment system captures the salient features of an odd-parity magnet. By bosonizing the coupled system, a description in terms of coupled Luttinger liquids follows, giving rise to a rich weak-coupling phase diagram. It is shown that the spin chain develops quasi long-range order consistent with the combined time-reversal and translation symmetry defining the $p$-wave magnet. We highlight the peculiar role played by this order in establishing a commensurability condition on the electronic filling under which additional interactions appear in the bosonic field theory. It is demonstrated that these interactions endow the electron spectral function with a pronounced $p$-wave character. Away from commensurate filling, these interactions are rendered irrelevant and the ensuing $p$-wave character is lost.",
+    "title": "The fate of odd-parity magnetism in one dimension",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6325485110282898
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5591474771499634
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5235621333122253
+      }
+    ]
+  },
+  "2606.26226v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vaibhav Sharma"
+      },
+      {
+        "affiliation": [],
+        "name": "Sumiran Pujari"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26226v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper explores topological order and quantum spin liquids for quantum error correction, which relates to the user's interest in topological phases of matter, albeit in a different application domain.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Topological quantum computing",
+      "Quantum error correction",
+      "Quantum spin liquids"
+    ],
+    "summary": "We introduce a framework of constructing topological subsystem codes based on the class of anticommuting quantum spin liquids described in [Phys. Rev. B 113, 064402 (2026)]. A canonical model from this class can be considered as a spatial modification of the toric code that voids its stabilizer code property. Rather, these models contain an extensive set of anticommuting local conserved operators that lead to an extensive ground state degeneracy. This degeneracy forms the basis of the subsystem degrees of freedom in the associated quantum error correcting code. The code inherits the many-body topological order of the quantum spin liquid, making it a topological subsystem code. We present two concrete and detailed examples for constructing these codes on a square lattice and a kagome lattice geometry, requiring weight-4 and weight-3 local check operator measurements respectively. In contrast to other subsystem codes, a unique property of these codes is the presence of an extensive number of local gauge qubits that are left undisturbed by the check operators apart from the logical qubits. Our construction provides a template for generating this new category of topological subsystem codes on different lattice or graph geometries, suitable for implementation on various quantum hardware platforms.",
+    "title": "Toric code made subsystem: a framework for topological subsystem codes using anticommuting quantum spin liquids",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5384349822998047
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5338809490203857
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.44645237922668457
+      }
+    ]
+  },
+  "2606.26239v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Iksu Jang"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui Aquino"
+      },
+      {
+        "affiliation": [],
+        "name": "Jörg Schmalian"
+      },
+      {
+        "affiliation": [],
+        "name": "Rafael M. Fernandes"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.other"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26239v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-06-24",
+    "reasoning": "This paper explores the anomalous Hall viscosity as a probe for altermagnetism, involving concepts like broken symmetries, topology, and Dirac points, which are highly relevant to the user's interest in Dirac fermions and semimetals.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Hall viscosity",
+      "Topological magnets"
+    ],
+    "summary": "We show that the phonon Hall viscosity at zero magnetic field is a natural probe of altermagnetism. First, we demonstrate that the finite elements of the Hall viscosity tensor unambiguously distinguish altermagnets from ferromagnets and conventional antiferromagnets. We then microscopically compute the Hall viscosity in models for d-wave and g-wave altermagnets, and find a strong sensitivity to electronic spectrum features such as gapped Dirac points and Lifshitz transitions. This sensitivity reflects a strain-space Berry curvature monopole, which contrast to the multipolar character of the standard momentum-space Berry curvature in altermagnets. Since the Hall viscosity can be probed experimentally through magneto-acoustic measurements, it provides a compelling method to probe the broken symmetries and topology of insulating altermagnets.",
+    "title": "Anomalous Hall viscosity of altermagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.48976048827171326
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.47938990592956543
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.47867634892463684
+      }
+    ]
+  },
+  "2606.26501v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Avik Mahata"
+      },
+      {
+        "affiliation": [],
+        "name": "Nick Beaver"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26501v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper focuses on mechanical properties and alloy design using machine learning, which is distant from the electronic structure, superconductivity, and topological materials found in the user's liked papers.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "High-entropy alloys",
+      "Machine learning",
+      "Mechanical properties"
+    ],
+    "summary": "Tungsten-based refractory high-entropy alloys (RHEAs) are promising materials for fusion applications but often remain brittle at room temperature because of tungsten's high ductile-to-brittle transition temperature (DBTT). To identify alloying strategies that improve ductility, we compiled a curated dataset of experimentally reported tungsten-containing alloys and developed composition-based, physics-informed descriptors for machine learning. Three classifiers were evaluated using nested cross-validation, and a support vector classifier (SVC) showed the best generalization for this sparse dataset. Shapley additive explanations identified the exchange-correlation parameter, valence electron concentration, pressure field, and electronegativity mismatch as the most influential features governing ductile-brittle behavior. Synthetic compositions generated within the convex interpolation domain of the training data were evaluated and visualized on pseudo-ternary diagrams to map predicted ductility trends. The model predicts that moderate additions of Ti, Ni, and Co increase the likelihood of room-temperature ductility, whereas high Cr contents promote brittle behavior. These predictions agree with published experimental observations, including Ti-assisted ductility through solid-solution and electronic effects and embrittlement in Cr-rich refractory alloys. Agreement between DFT-derived elastic descriptors and SVC decision-function margins further supports the physical relevance of the learned classification boundary. Although the available mechanical dataset remains limited and heterogeneous, the model captures experimentally consistent trends and provides an interpretable, physics-informed framework for screening tungsten-based RHEAs for targeted simulation and experimental validation in fusion environments.",
+    "title": "Ductility Design Rules for Tungsten based Refractory High Entropy Alloys from Sparse Experimental Datasets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5388221740722656
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.35695475339889526
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:K3LRdlH-MEoC",
+        "score": 0.3392792046070099
+      }
+    ]
+  },
+  "2606.26646v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kumpei Shiraishi"
+      },
+      {
+        "affiliation": [],
+        "name": "Rikuta Nozawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Emi Minamitani"
+      }
+    ],
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26646v1",
+    "matching_keywords": [
+      "XAS"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This work focuses on dynamic heterogeneity and ion transport in silicate melts, which is a topic in glass physics that diverges significantly from the user's apparent interest in correlated electron systems, superconductivity, and topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Glass physics",
+      "Dynamic heterogeneity",
+      "Ionic transport"
+    ],
+    "summary": "We present a comprehensive characterisation of dynamic heterogeneity in sodium silicate melts using molecular dynamics simulation with machine-learning potentials. By studying sodium disilicate, tetrasilicate, and hexasilicate melts across a range of temperatures, mean squared displacement and a time-correlation function computed up to the nanosecond timescale provide a detailed account of how spatial mobility disparities emerge in a realistic multicomponent oxide glass. Within these timescales, the self-part of the van Hove function for sodium displays a bimodality, demonstrating that alkali transport is mediated by discrete displacement events consistent with a hopping mechanism. This distinct hopping allows sodium ions to decouple from the sluggish relaxation of the silicate matrix. Furthermore, evaluation of the non-Gaussian parameter reveals that, although all constituent species exhibit dynamic heterogeneity, the non-Gaussian behaviour is most pronounced for oxygen atoms. This trend reflects the intermittency of structural rearrangements, where framework atoms undergo rare and stochastic events compared to the frequent displacements of mobile ions. Our findings elucidate the microscopic mechanism of ion transport and its connection to dynamic heterogeneity in silicate melts, offering a new avenue to study fundamental glassy physics in realistic vitreous materials.",
+    "title": "Dynamic heterogeneity in sodium silicate melts via machine-learning potential",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5432695150375366
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4575781226158142
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.4174916744232178
+      }
+    ]
+  },
+  "2606.26782v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Margot Lucas"
+      },
+      {
+        "affiliation": [],
+        "name": "Marie Landeiro Dos Reis"
+      },
+      {
+        "affiliation": [],
+        "name": "Sylvain Queyreau"
+      },
+      {
+        "affiliation": [],
+        "name": "Xavier Feaugas"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26782v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper investigates hydrogen embrittlement and dislocation interactions in iron, which is primarily focused on mechanical properties of structural materials rather than electronic correlations, superconductivity, or topological states.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Hydrogen embrittlement",
+      "Dislocations",
+      "Molecular simulation"
+    ],
+    "summary": "The interaction between hydrogen and screw dislocations in bcc iron is central to understanding hydrogen embrittlement. A major challenge lies in the high-dimensional parametric landscape governing this interaction. In this work, we perform a comprehensive set of molecular simulations using a reliable neural network interatomic potential, systematically exploring hydrogen binding across dislocation core structures (easy and hard cores), site types, and concentrations. From these energetics, we construct a thermodynamic framework that quantifies the statistical relevance of the various trapping configurations, thereby significantly reducing the complexity of the problem. Our results show good agreement with the limited density functional theory data available in the literature. We further delineate the validity domain of an elastic dipole description of hydrogen-dislocation interactions, providing a simplified yet physically grounded modeling approach. Finally, we demonstrate that the easy-core configuration plays a key role in rationalizing experimental hydrogen solubility limits. These findings establish a consistent multiscale foundation for incorporating hydrogen-dislocation interactions into larger-scale models of plasticity and embrittlement.",
+    "title": "Hydrogen segregation around a straight screw dislocation in bcc iron",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5070695877075195
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4783133864402771
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.4428458511829376
+      }
+    ]
+  },
+  "2606.26834v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Junting Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Colleen Reynolds"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryan S. Stroud"
+      },
+      {
+        "affiliation": [],
+        "name": "Jana Smutna"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel J. M. King"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew P. Horsfield"
+      },
+      {
+        "affiliation": [],
+        "name": "Mark R. Wenman"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26834v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper focuses on QM/ML methods for simulating solute-dislocation interactions in structural materials, which diverges from the user's primary interest in strongly correlated electron systems and superconductivity.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "machine learning potentials",
+      "dislocation dynamics",
+      "materials defects"
+    ],
+    "summary": "Solute-dislocation interactions play a central role in controlling microstructural evolution and mechanical behaviour of structural materials, yet conventional atomistic modelling approaches struggle to combine the chemical accuracy with computational scalability. In the nuclear industry, these challenges become particularly acute, as experiments reveal strong correlations between solute segregation and irradiation-induced dislocation loops. However, theoretical insight remains limited because density functional theory (DFT) simulations are prohibitively expensive at relevant length scales, while traditional semi-empirical interatomic potentials lack the chemical fidelity required for predictive solute-defect calculations. Here, we introduce a hybrid quantum-mechanics/machine-learning (QM/ML) simulation framework that couples DFT with neural-network machine learning interatomic potentials (MLIPs), enabling accurate atomistic dislocation simulations at reduced computational cost. We demonstrate the QM/ML framework's capability by reproducing the experimentally observed Sn and Fe segregation to dislocation loops in Zr and investigating magnetically complex solute-dislocation interactions in steel. These results establish the approach as a transferable, high-fidelity tool for modelling irradiation-induced defect structures and benchmarking emerging MLIPs.",
+    "title": "A Hybrid Quantum Mechanics Machine Learning Forcefield (QM/ML) Framework for Accurate Solute-Dislocation Interaction Simulations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5480067133903503
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5474958419799805
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5086678266525269
+      }
+    ]
+  },
+  "2606.26900v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wei Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhichao Peng"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.26900v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-25",
+    "reasoning": "It proposes an incremental tensor-train compression method directly applicable to 'quantum systems,' aligning with the user's interest in efficient computational methods for complex quantum problems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Reduced-Order Models",
+      "Data Compression",
+      "Quantum System Simulation"
+    ],
+    "summary": "High-dimensional tensor data streams arise naturally in scientific and engineering applications, such as simulations of kinetic equations and quantum systems, where samples become available sequentially and are often already represented in compressed low-rank tensor formats. Existing streaming tensor-train (TT) algorithms typically construct or update representations from dense tensor data or randomized sketches. However, when high-dimensional data are generated directly in TT or related low-rank formats, reconstructing dense tensors solely for the purpose of compression is unnecessary and computationally prohibitive. We develop a deterministic incremental TT compression algorithm that operates directly on streaming TT-formatted data. Given a new TT tensor, the proposed method updates an accumulated TT representation through core-wise projection, residual orthogonalization, and adaptive enrichment, retaining only the complementary information that cannot be represented within a prescribed tolerance. By operating entirely at the level of TT cores, the algorithm avoids reconstructing either the incoming tensor or the accumulated full tensor. We establish approximation error bounds for the proposed incremental approach. Moreover, we show that the accumulated TT representation corresponds to a compressed analogue of standard proper orthogonal decomposition for full-order snapshot data, enabling reduced-order models to be constructed directly from streaming low-rank solution data through operations on TT cores, without first reconstructing full snapshots. Numerical experiments on parametric radiative transfer equations demonstrate that the proposed method achieves comparable reconstruction accuracy with substantially reduced wall time and yields efficient and accurate ROMs directly from compressed low-rank data.",
+    "title": "Incremental Tensor-Train Compression from Streaming TT-Formatted Data: Applications to Reduced-Order Modeling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5017129182815552
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4597783088684082
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.396281361579895
+      }
+    ]
+  },
+  "2606.26909v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Aidan Steineman"
+      },
+      {
+        "affiliation": [],
+        "name": "Samuel Awelewa"
+      },
+      {
+        "affiliation": [],
+        "name": "Maxim Dzero"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.26909v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper directly addresses the nonlinear response and fundamental properties of d-wave superconductors using advanced theoretical methods, which aligns perfectly with the user's interest in superconductivity and correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "d-wave superconductors",
+      "Nonlinear response",
+      "Keldysh formalism"
+    ],
+    "summary": "We use a self-consistent Keldysh--Nambu quasiclassical theory to study two related nonlinear phenomena in clean d-wave superconductors: the photo-induced static correction to the order parameter -- the Eliashberg effect -- and third-harmonic generation. Both follow from a systematic perturbative solution of the out-of-equilibrium Eilenberger equation for the Keldysh propagator. For the steady-state correction to the pairing amplitude we find that at temperatures close to the critical temperature and to leading order in the gap magnitude $Δ$, the photo-induced change of the order parameter is zero at all drive frequencies: in contrast to s-wave superconductors, a clean d-wave superconductor exhibits no Eliashberg enhancement at this order. The gap-enhancing quasiparticle-redistribution channel that drives the effect in the s-wave case is suppressed by an additional power of $Δ$ in the d-wave case. For third-harmonic generation we find that the charge-density-fluctuation (particle--hole) channel significantly dominates the Schmid--Higgs amplitude-mode contribution over a broad frequency range, the two becoming comparable only in a narrow window near the resonance frequency $ω\\approx 2\\sqrt{2}\\,Δ$ if one neglects the diamagnetic part of the current in the normal state. We trace this to the nonequilibrium dynamics of nodal quasiparticles, which must be retained explicitly and which also makes the response sensitive to the orientation of the driving field.",
+    "title": "Quasiclassical theory of nonlinear response in d-wave superconductors",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5174776315689087
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.47785934805870056
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.47510790824890137
+      }
+    ]
+  },
+  "2606.27040v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "P. Reiss"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Shevchenko"
+      },
+      {
+        "affiliation": [],
+        "name": "P. S. Lizama"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Nuss"
+      },
+      {
+        "affiliation": [],
+        "name": "R. Dinnebier"
+      },
+      {
+        "affiliation": [],
+        "name": "P. A. van Aken"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Hepting"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Isobe"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. E. Suyolcu"
+      },
+      {
+        "affiliation": [],
+        "name": "H. Takagi"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Keimer"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Puphal"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.27040v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper directly investigates high-temperature transitions in Ruddlesden-Popper nickelates, a material class and topic explicitly mentioned in the user's liked papers, using relevant experimental techniques.",
+    "score": 0.98,
+    "suggested_keywords": [
+      "Ruddlesden-Popper nickelates",
+      "phase transitions",
+      "experimental characterization"
+    ],
+    "summary": "The discovery of superconductivity at $15\\,\\mathrm{K}$ in the infinite-layer nickelate $(\\mathrm{Nd},\\mathrm{Sr})\\mathrm{NiO}_2$, followed by superconductivity at $80\\,\\mathrm{K}$ in the Ruddlesden--Popper phase $\\mathrm{La}_3\\mathrm{Ni}_2\\mathrm{O}_7$, has ushered in a new era of nickelate research. Despite this progress, large discrepancies between reports exist. Here, we investigate the complete series of bulk-stable $\\mathrm{La}_{n+1}\\mathrm{Ni}_n\\mathrm{O}_{3n+1}$ compounds using a comprehensive set of experimental techniques, including PXRD, single-crystal XRD, electron microscopy, heat capacity, differential scanning calorimetry, magnetic susceptibility, and transport measurements, over a broad temperature range from $2$ to $1000\\,\\mathrm{K}$. By studying high-quality single crystals, we identify a previously underappreciated high-temperature phase transition in Ruddlesden--Popper nickelates $\\mathrm{La}_{n+1}\\mathrm{Ni}_n\\mathrm{O}_{3n+1}$ distinct from the one going to a tetragonal phase.",
+    "title": "High temperature transitions in Ruddlesden-Popper nickelates La$_{n+1}$Ni$_{n}$O$_{3n+1}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.7191333770751953
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.6958551406860352
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.6841561794281006
+      }
+    ]
+  },
+  "2606.27102v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "J. Ferrer"
+      },
+      {
+        "affiliation": [],
+        "name": "A. García-Fuente"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Volosheniuk"
+      },
+      {
+        "affiliation": [],
+        "name": "H. S. J. van der Zant"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.27102v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper develops a low-energy model for many-body behavior in doped graphene nanoribbons, connecting to interests in Dirac materials and correlated electron physics.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Graphene nanoribbons",
+      "Many-body theory",
+      "Nanoelectronics"
+    ],
+    "summary": "We analyse in this article the many-body behavior of free-standing doped graphene nanoribbons where the chemical potential lies inside the bulk single-particle bands. We perform an exact mapping from both an extended and an on-site Hubbard model of the ribbons to a Kanamori model, which includes ferromagnetic exchange and pair-hopping interactions. We determine the resulting Coulomb matrix elements analytically, and identify their scaling behavior as a function of ribbon width and length. We propose a low-energy version of the Kanamori Hamiltonian to address the response of the ribbons to external fields, with a view to their use as transport channels in nanoelectronics. We find that the model and the proposed ribbon parameters can produce open-shell, high-spin many-body states that can lead to shell- and spin-blockade responses.",
+    "title": "Low-energy model for doped graphene nanoribbons",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5648500919342041
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5572579503059387
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.536298394203186
+      }
+    ]
+  },
+  "2606.27121v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Misa Nozaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Takatoshi Fujita"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.27121v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper investigates magnetoresistance in chiral systems driven by spin-orbit coupling and on-site Coulomb interactions, showing connections to spin transport, topological physics, and weakly to correlated electron effects.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Chiral-induced spin selectivity",
+      "spin-orbit coupling",
+      "spintronics"
+    ],
+    "summary": "Chiral-induced spin selectivity (CISS), in which electrons transmitted through nonmagnetic chiral materials exhibit strong spin-dependent transport, has attracted growing interest for spintronic applications. However, a quantitative understanding of CISS remains elusive, partly because most previous studies rely on single-band models. In this work, we theoretically investigate multi-band effects on magnetoresistance (MR)-CISS, which is typically observed in experiments using magnetic conductive atomic force microscopy. To evaluate the spin polarization in MR-CISS, we simulate the nonequilibrium steady-state current using the Gorini-Kossakowski-Sudarshan-Lindblad master equation. We find that spin polarization exceeding 25\\% can be achieved for realistic inter-band spin-orbit coupling strengths in the presence of on-site Coulomb interactions. These findings highlight the crucial role of inter-band spin-orbit coupling in the mechanism of CISS.",
+    "title": "Magnetoresistance in chiral systems driven by inter-band spin-orbit coupling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5562336444854736
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.5041986703872681
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.49988222122192383
+      }
+    ]
+  },
+  "2606.27204v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sayantan Roy"
+      },
+      {
+        "affiliation": [],
+        "name": "Abhisek Samanta"
+      },
+      {
+        "affiliation": [],
+        "name": "Nandini Trivedi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2606.27204v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper directly investigates Mottness and its finite-temperature precursors in the Fermi Hubbard model using quantum Monte Carlo, aligning perfectly with interests in strongly correlated electron physics and computational methods.",
+    "score": 0.96,
+    "suggested_keywords": [
+      "Mott physics",
+      "Fermi-Hubbard model",
+      "quantum Monte Carlo"
+    ],
+    "summary": "We investigate finite-temperature precursors of Mottness in the repulsive Hubbard model above the spin-ordering temperature, using numerically exact determinant quantum Monte Carlo. We show that the finite-temperature crossover is accompanied by a pronounced suppression of charge fluctuations, despite the presence of a gapless single-particle spectra, demonstrating that Mottness first emerges via two-particle response in an anomalous metallic regime, before appearing in single-particle spectral functions. We further show that a gap formation in the density of states occurs through momentum-resolved redistribution of spectral weight across the Brillouin zone, that begins at the onset of anomalous metallic regime, rather than through gap formation in single-particle spectral functions at individual momenta. Upon doping, the anomalous-metallic regime generates transport and spectroscopic signatures characteristic of doped Mott insulators. This shows that the transport and spectroscopic anomalies of the doped Hubbard model do not require the presence of a fully formed Mott insulator at half-filling, but instead originate from the strong charge-response renormalization and spectral-weight redistribution that develop within the precursor anomalous metallic regime at half-filling.",
+    "title": "Finite temperature precursors of Mottness in the Fermi Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.758338212966919
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6208622455596924
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.59488445520401
+      }
+    ]
+  },
+  "2606.27337v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Katja Klobas"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "nlin.SI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.27337v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper studies exact dynamics in quantum many-body systems using matrix-product operators, directly aligning with interests in strongly correlated matter and advanced computational/theoretical methods.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Dynamics",
+      "Matrix-Product Operators",
+      "Integrable Systems"
+    ],
+    "summary": "The dynamics of local subsystems in a thermodynamically large quantum many-body system can be understood as effectively open as the system produces its own effective bath. The action of this bath can be characterised in terms of the so-called influence matrices. In generic situations, the complexity of these objects grows unfavourably with time, however, there exist solvable cases where influence matrices can be characterised exactly even in the presence of non-trivial interactions. Here we show that Rule 201, a deterministic version of the Floquet-PXP model, is one of these solvable instances. Indeed, it admits influence matrices given by a finite-dimensional matrix-product operator (MPO) that solves a finite set of algebraic conditions. We provide the solution, and characterise multi-time autocorrelation functions.",
+    "title": "Exact subsystem dynamics in the deterministic Floquet-PXP model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.4938634932041168
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.45434314012527466
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.4466736316680908
+      }
+    ]
+  },
+  "2606.27358v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yichen Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiao Wang"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2606.27358v1",
+    "matching_keywords": [],
+    "published_date": "2026-06-25",
+    "reasoning": "This paper focuses on fault-tolerant quantum computing and logical gate implementation, which is distinct from the user's interests in condensed matter physics and computational methods for quantum materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Fault-Tolerant Quantum Computing",
+      "Quantum Error Correction",
+      "Logical Qubits"
+    ],
+    "summary": "We introduce a surface-code cultivation protocol for reusable logical catalyst states that implement exact fine dyadic phase gates $Z^{2^{-b}}$ by phase kickback. The catalyst is an eigenstate of a high-period Clifford circuit $U$, with a direct construction supported on $O(2^b)$ logical qubits. Once cultivated, each invocation implements the target phase through a controlled-$U$ gadget, removing Clifford+$T$ synthesis approximation error from the online gate and making the online non-Clifford depth independent of the target logical accuracy. As a concrete demonstration, we construct a catalyst for $\\sqrt{T}=Z^{1/8}$, where $U$ is a nine-qubit brickwork Clifford circuit and controlled-$U$ consists of eight controlled-CNOTs. Starting from nine distance-three rotated-surface-code blocks, we cultivate the catalyst through logical-$U$ checks, syndrome extraction and postselection, code growth, and complementary-gap decoding. Due to the intrinsic fault tolerance of the phase read-out, a \\emph{single} verification round already reaches the leading error-corrected scaling, in contrast to the repeated logical checks required when cultivating single-qubit magic states. A hybrid tensor-network and stabilizer simulation shows that, at physical error rate $p=10^{-3}$, the postselected catalyst can be grown to distance-seven rotated-surface-code blocks with logical leakage rate $\\sim 10^{-6}$ using around seven expected attempts, and can be suppressed further with stronger postselection. Compared with existing protocols, our approach trades offline, phase-specific catalyst cultivation for exactness, reusability, and constant-depth online implementation of fixed fine dyadic phases in codes with restricted transversal gate sets.",
+    "title": "Cultivating logical catalysts for fault-tolerant dyadic phase rotations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.3755190670490265
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.33947476744651794
+      },
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.33592963218688965
       }
     ]
   }
