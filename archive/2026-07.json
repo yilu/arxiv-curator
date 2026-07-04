@@ -387,14 +387,39 @@
         "name": "Zi Yang Meng"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2607.00762v2",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
     "published_date": "2026-07-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly investigates deconfined criticality between antiferromagnetic and nodal d-wave superconducting phases using Quantum Monte Carlo, which is highly relevant to the user's interests in cuprate-like superconductors, competing phases, and Dirac fermions.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Deconfined criticality",
+      "Nodal d-wave",
+      "Quantum Monte Carlo"
+    ],
     "summary": "We present a quantum Monte Carlo study of the transition between the insulating Néel state and the nodal $d$-wave superconductor on the square lattice at half-filling. We access a regime of frustrated magnetic order without a sign problem using a parton representation of the electron in terms of fermionic spinons and bosonic chargons. Both partons move in a background $π$-flux (so the electron experiences no net flux) and are coupled to a quantum fluctuating SU(2) lattice gauge field. In contrast to earlier studies directly on the electronic degrees of freedom, we find evidence for a second-order deconfined quantum phase transition at which both the Néel and $d$-wave superconductivity orders vanish continuously. We compute correlators of the spinon-chargon composite with the same quantum numbers as the electron: we find a gapless Dirac dispersion inside the $d$-wave superconductor, turning into a gapped dispersion in the antiferromagnet.",
     "title": "Deconfined criticality between an antiferromagnetic insulator and a nodal d-wave superconductor: a quantum Monte Carlo study",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6205483078956604
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5986607074737549
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5979045629501343
+      }
+    ]
   },
   "2607.00991v1": {
     "authors": [
@@ -765,14 +790,42 @@
         "name": "Christopher Earls"
       }
     ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "cs.AI",
+      "cs.LG"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2607.01336v1",
+    "matching_keywords": [
+      "neural quantum state"
+    ],
     "published_date": "2026-07-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper explores Neural Quantum States as variational ansätze for quantum many-body wavefunctions and their interpretability in capturing physical observables, aligning with the user's interest in advanced computational methods for quantum many-body systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Neural Quantum States",
+      "Mechanistic interpretability",
+      "Variational ansätze"
+    ],
     "summary": "Neural Quantum States (NQS) are a remarkably expressive class of variational ansätze for quantum many-body wavefunctions, yet little is understood about their internal mechanisms: trained on variational objectives alone, how do NQS accurately capture physical observables that they have never been explicitly optimized for? In this work, we present a systematic approach to analyze the internal activations of NQS using sparse autoencoders. We extract features from the residual stream and demonstrate that these features strongly correlate with physical observables such as order parameters, staggered magnetization, and half-chain correlators, across both ground state representation and real-time dynamics. Remarkably, the discovery of these features is entirely unsupervised, with no physical labels provided. We further establish that such features causally affect the corresponding observables predicted by NQS, by showing that targeted, post-training intervention on a \\textit{single} feature smoothly and monotonically steers the corresponding observable, while leaving the variational energy nearly unchanged. These results demonstrate that NQS are not merely functional approximators, but encode rich, interpretable internal representations of physical information. Our approach provides both a diagnostic and an intervention tool for NQS, and serves as a foundation for using mechanistic interpretability towards more reliable, transparent NQS.",
     "title": "Mechanistic Interpretability and Causal Feature Steering of Neural Quantum States via Sparse Autoencoders",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5955341458320618
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5899524092674255
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5118005871772766
+      }
+    ]
   },
   "2607.01341v1": {
     "authors": [
@@ -879,16 +932,39 @@
         "name": "Jeffrey H. Schenker"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.01446v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
     "published_date": "2026-07-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates theoretical properties of quantum many-body systems described by Matrix Product States and their parent Hamiltonians, which aligns with an interest in advanced computational and theoretical physics methods for correlated systems.",
+    "score": 0.55,
+    "suggested_keywords": [
+      "Matrix Product States",
+      "Quantum Many-Body Theory",
+      "Ground State Properties"
+    ],
     "summary": "Matrix product states (MPS) are quintessential examples of frustration-free gapped ground states of local interactions called parent Hamiltonians. In this work, we investigate parent Hamiltonians for a class of ergodic matrix product states (EMPS), which are MPS defined by site-dependent random tensors $\\{X_j^{[k]}\\}_{j=1}^D$ which are homogeneously distributed at every site $k$ in the spin chain. Here, the EMPS are not translation-invariant but rather statistically translation-invariant. Under a mild injectivity assumption, we show the thermodynamic limit of an EMPS is the unique frustration-free ground state of a parent Hamiltonian on the whole spin chain, which, depending on the statistical properties of the EMPS, may or may not be finite-range. In contrast to the translation-invariant regime, these Hamiltonians need not be gapped. Nevertheless, applying the martingale method while keeping track of local statistics gives conditions for a gap, in addition to pointing towards why there need not be a gap in general. We include examples of EMPS both with and without spectral gaps to illustrate our results.",
     "title": "Parent Hamiltonians of Ergodic Matrix Product States",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4886687397956848
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4712092876434326
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.46475034952163696
+      }
+    ]
   },
   "2607.01519v1": {
     "authors": [
@@ -1041,14 +1117,39 @@
         "name": "Bai Song"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2607.01673v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
     "published_date": "2026-07-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on thermal properties and phonon transport in lithium niobate, which is unrelated to the user's expressed interest in strongly correlated electron systems, superconductivity, or fermionic quantum systems.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Thermal transport",
+      "Phonon scattering",
+      "Lithium niobate"
+    ],
     "summary": "With the rapid development of integrated electro-optic and nonlinear optical devices based on lithium niobate (LiNbO$_3$, LN), thermal management is becoming a critical area of focus. However, experimental measurement of thermal transport in stoichiometric LiNbO$_3$ (sLN) remains scarce, and the intrinsic microscopic mechanisms remain to be established. Here, we combine the laser pump-probe technique of frequency-domain thermoreflectance (FDTR) with state-of-the-art machine-learned atomistic simulations to comprehensively investigate thermal transport in sLN. The measured and simulated room-temperature thermal conductivity ($κ$) values of sLN agree well, which are orders-of-magnitude lower than that of many classic and emerging semiconductors such as silicon. Furthermore, the temperature-dependent $κ$ exhibits a $T^{-α}$ scaling with $α$ near unity, suggesting that thermal transport is dominated by intrinsic phonon-phonon scattering. By comparing sLN with cubic boron arsenide (cBAs) which serves as an ultrahigh-$κ$ benchmark, we reveal that harmonic properties are not responsible for the low $κ$ of sLN, which feature phonon heat capacity and group velocities that are either higher than or comparable to those in cBAs. Instead, the low $κ$ originates from substantially stronger anharmonicity and larger scattering phase space. These two factors collectively suppress phonon lifetimes by 1-2 orders of magnitude, leading to a maximum phonon mean free path of approximately 140 nm. As a result, notable size effects emerge in thin-film sLN below 1 $μ$m, with $κ$ dropping to half the bulk value at 10 nm. Altogether, our findings establish a fundamental understanding of thermal transport in sLN and provide atomistic insights for thermal management in advanced lithium niobate technologies.",
     "title": "Intrinsically low thermal conductivity of stoichiometric lithium niobate:Experimental measurement and microscopic origin",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.501832127571106
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4871162176132202
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.48300036787986755
+      }
+    ]
   },
   "2607.01682v1": {
     "authors": [
@@ -1380,16 +1481,41 @@
         "name": "Mikhail Kiselev"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.02183v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
     "published_date": "2026-07-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper applies the Density Matrix Renormalization Group (DMRG) to a one-dimensional fermionic system with interactions, investigating phenomena highly relevant to strongly correlated electron physics and advanced computational methods for such systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "DMRG",
+      "Quantum point contact",
+      "Correlated fermions"
+    ],
     "summary": "Using the density matrix renormalization group (DMRG) combined with the correction-vector method, we investigate the competition between an harmonic potential and repulsive interactions in a one-dimensional fermionic system. The parabolic confinement induces spatial inhomogeneity, and by tuning its curvature one can continuously interpolate between a potential well--relevant for cold-atom setups--and a quantum barrier, as realized in mesoscopic systems such as quantum point contacts. We analyze how the ground-state particle distribution evolves with the strength and sign of the confining potential and how the confinement reshapes the spectral weight of the local density of states (LDOS) at the center of the chain. In the barrier regime, a localized peak emerges in the electron part of the spectrum ($ω>0$) as a direct consequence of the potential. In contrast, in the well configuration and for weak interactions, a localized feature persists but shifts to the hole sector ($ω<0$). However, for stronger interactions, the LDOS no longer displays clear signatures of the external potential, indicating that correlations dominate over single-particle confinement.",
     "title": "A density matrix renormalization group approach to quantum point contacts",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5442006587982178
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5123991966247559
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5113294124603271
+      }
+    ]
   },
   "2607.02219v1": {
     "authors": [
@@ -1469,14 +1595,37 @@
         "name": "Sheng-Hsuan Lin"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2607.02242v1",
+    "matching_keywords": [],
     "published_date": "2026-07-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper develops a resource theory for fermionic non-Gaussianity, linking quantum information with condensed matter physics and providing tools relevant to the complexity of many-body fermionic systems, which aligns with the user's interest in fermionic quantum systems and advanced theoretical methods.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Fermionic magic",
+      "Quantum complexity",
+      "Resource theory"
+    ],
     "summary": "Fermionic non-Gaussianity, or fermionic magic, is a key resource underlying the computational complexity of fermionic quantum systems, yet tractable and operationally meaningful ways to quantify it remain limited. We address this challenge by developing a convex resource theory of fermionic non-Gaussianity and introducing two families of computable measures for pure fermionic states, both derived from the Williamson normal form of the covariance matrix. The first family, occupation number entropies, is defined as the Tsallis-$α$ entropy of the occupation numbers. We prove that one member of this family is monotonic under Gaussian protocols, establishing it as a computable convex resource monotone. It consequently lower bounds the number of non-Gaussian gates needed for state preparation. The second family, natural-orbital participation entropies, is given by the Rényi-$α$ entropy of the squared amplitudes of the state in the natural-orbital basis, defined by the eigenvectors of the covariance matrix. These measures quantify state compressibility in this basis and thus upper bound the classical simulation cost in an orthonormal Gaussian basis. We analyze both families for stabilizer and translation-invariant states, where they simplify and reveal additional structure. We further study representative examples, including random SWAP-doped matchgate circuits and the bond-modulated XXZ model, highlighting the role of non-Gaussianity in many-body phenomena. Our work establishes a resource-theoretic framework for computable fermionic non-Gaussianity that unifies notions arising across quantum information, condensed-matter physics, and quantum chemistry, opening new directions for studying the complexity of quantum many-body systems and providing practical tools to assess the classical simulability of fermionic states relevant for quantum advantage.",
     "title": "Computable measures of fermionic non-Gaussianity from the covariance matrix",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.47230690717697144
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4349897503852844
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.42439088225364685
+      }
+    ]
   },
   "2607.02326v1": {
     "authors": [
