@@ -477,6 +477,62 @@
       }
     ]
   },
+  "2607.00991v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tiago V. C. Antão"
+      },
+      {
+        "affiliation": [],
+        "name": "Anouar Moustaj"
+      },
+      {
+        "affiliation": [],
+        "name": "Yitao Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Jose L. Lado"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.00991v2",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-01",
+    "reasoning": "This paper presents a novel tensor network methodology for solving large-scale tight-binding problems, aligning with the user's interest in advanced computational methods for quantum materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Tight-binding",
+      "Quantum Materials"
+    ],
+    "summary": "Understanding quantum materials at meso and even macroscopic scales requires tight-binding calculations on system sizes where explicit matrix representations become prohibitively costly. This represents a major bottleneck to rationalize phenomena in moiré and super-moiré heterostructures and quasicrystals. Here, we present a unified tensor-network methodology to solve tight-binding problems at exceptionally large scales, by mapping a system of $N = 2^L$ sites onto a many-body problem of $L$ pseudospin sites, which is subsequently solved with tensor network algorithms. For Hamiltonians with compressible real-space structure, the tensor network bond dimension remains modest, typically of order a few tens, independent of $N$. Tensor network representations of arbitrary hopping functions including long-range, spatially modulated, and twisted-layer couplings are built with quantics tensor cross interpolation, and all physical observables are evaluated entirely with tensor network algebra without explicit matrix storage or diagonalization. We demonstrate applications to spectral functions, momentum-space spectra via the tensor-network quantum Fourier transform, real-space topological invariants, real-time dynamics, correlation induced symmetry breaking with self-consistent mean-field calculations, non-Hermitian phenomena, and excitonic many-body physics. Our methodology enables routinely solving systems with billions of sites, by leveraging the tensor network compressibility of real-space structures, and establishing a flexible framework to study quantum matter at ultra-large length scales. The methodology is implemented in the open-source Julia package TensorBinding.",
+    "title": "Tensor network solvers for ultra-large tight-binding Hamiltonians: algorithms and applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5979093909263611
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5885436534881592
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5827488303184509
+      }
+    ]
+  },
   "2607.01004v1": {
     "authors": [
       {
@@ -3863,6 +3919,686 @@
       {
         "liked_paper_id": "2506.15516v1",
         "score": 0.5336673259735107
+      }
+    ]
+  },
+  "2607.06645v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jaehyung Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Charles Rhys Campbell"
+      },
+      {
+        "affiliation": [],
+        "name": "Kent Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Kamal Choudhary"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.06645v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-07",
+    "reasoning": "This paper combines machine learning and DFT for efficient screening of battery cathode materials, echoing the user's interest in advanced and efficient computational approaches for materials science.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Materials Discovery",
+      "DFT-ML Framework",
+      "Battery Cathodes"
+    ],
+    "summary": "Density functional theory (DFT) predicts cathode voltages accurately but does not scale to the combinatorial chemical spaces of modern materials databases, while pure machine-learning surrogates are fast but cannot guarantee thermodynamic consistency. We introduce BatteryMat, a three-tier framework that promotes single-pass average-voltage prediction with the Atomistic Line Graph Neural Network (ALIGNN) as the primary screening signal across JARVIS-DFT, then validates survivors with ALIGNN-FF force-field delithiation profiles and automated PBE+U or optB88-vdW+U supercell DFT. The exchange-correlation functional is selected automatically by spacegroup, and the lithium metal reference is recomputed in the same plane-wave basis as the cathode runs, removing a systematic offset of about 1 V present in tabulated values. Trained on 7,610 ALIGNN-FF delithiation voltages, the ALIGNN predictor reproduces the force-field labels with a mean absolute error of 0.17 V and a coefficient of determination of 0.94; this measures distillation fidelity to the force-field protocol, not agreement with DFT or experiment. On four commercial chemistries (LiFePO4, LiMnPO4, LiMn2O4, LiCoO2) the DFT tier reproduces the experimental average voltage to within 0.3 V and the theoretical volumetric capacity to within 5%; a fifth, non-stoichiometric layered entry is carried as an edge case. The pipeline prioritises, rather than generates, existing structures: it ranks the lithium-containing JARVIS-DFT pool into 71 candidates and a scan of about 4.49 million Alexandria structures into 213, all surrogate-level leads awaiting DFT validation rather than confirmed cathodes. BatteryMat is available at https://github.com/atomgptlab/batterymat with a demo at https://atomgpt.org/battery.",
+    "title": "BatteryMat: a hierarchical machine-learning and DFT framework for average-voltage screening of lithium-ion cathode materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.44365566968917847
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.42976003885269165
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4285980463027954
+      }
+    ]
+  },
+  "2607.06841v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Robert Gruhlke"
+      },
+      {
+        "affiliation": [],
+        "name": "Julius Berner"
+      },
+      {
+        "affiliation": [],
+        "name": "David Sommer"
+      },
+      {
+        "affiliation": [],
+        "name": "Lorenz Richter"
+      }
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.06841v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-07",
+    "reasoning": "This paper focuses on general high-dimensional sampling and diffusion models using advanced numerical methods, which is too far removed from the user's specific interests in condensed matter physics and materials science.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "High-Dimensional Sampling",
+      "Diffusion Models",
+      "Tensor Train"
+    ],
+    "summary": "Diffusion models offer a powerful framework for sampling from complex probability densities by learning to reverse a noising process. A common approach involves solving for the time-reversed stochastic differential equation (SDE), which requires the score function of the evolving sample distribution. The logarithm of this distribution's density is governed by a Hamilton-Jacobi-Bellman (HJB) type partial differential equation (PDE). However, current methods for solving this PDE, such as PINNs or trajectory-based techniques, often suffer from long training times and significant sensitivity to hyperparameter tuning. In this work, we introduce a novel and efficient solver for the underlying HJB equation based on the functional tensor train (FTT) format. The FTT representation leverages latent low-rank structures to efficiently approximate high-dimensional functions, enabling both model compression and rapid computation. By integrating this efficient representation with a backward-in-time iterative scheme derived from backward stochastic differential equations (BSDEs), we develop a fast, robust and accurate sampling method. Our approach overcomes primary bottlenecks of existing techniques, enabling high-fidelity sampling from challenging target distributions with improved efficiency.",
+    "title": "Tensor Train Diffusion: Leveraging Low-Rank Structures for High-Dimensional Score-Based Sampling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.40616342425346375
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.39435482025146484
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3855397701263428
+      }
+    ]
+  },
+  "2607.06847v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yilun Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Ignacio Cirac"
+      },
+      {
+        "affiliation": [],
+        "name": "Mari Carmen Bañuls"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.06847v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-07",
+    "reasoning": "This paper investigates the thermalization of quantum many-body states and Floquet systems, which is a fundamental theoretical topic relevant to understanding complex quantum materials.",
+    "score": 0.55,
+    "suggested_keywords": [
+      "Quantum Many-Body Physics",
+      "Thermalization",
+      "Floquet Systems"
+    ],
+    "summary": "Quantum many-body states with sufficiently low energy variance can serve as approximations to thermal states, and they may be prepared by energy filtering simple pure states. In this work, we examine how narrow the filter width must be to guarantee thermal behavior. To this end, we analyze the problem in the Floquet regime, where filtered states are found to be equivalent to time averages. This equivalence allows us to reproduce the distinct Rényi-$α$ entropy scalings as reported in [Morettini et al., Physical Review Letters 133, 240401 (2024)]. Crucially, we show that under the Floquet eigenstate thermalization hypothesis, the trace distance between Floquet-filtered states and thermal states is bounded by the square root of filter width. We further demonstrate that these results extend naturally to the conventional Hamiltonian setting by mapping Hamiltonian-filtered states to their Floquet counterparts.",
+    "title": "How thermal is a filtered state?",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.4485379457473755
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.42094528675079346
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4000062346458435
+      }
+    ]
+  },
+  "2607.07087v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mizuki Akei"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Mizukoshi"
+      },
+      {
+        "affiliation": [],
+        "name": "Muneaki Hase"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07087v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper investigates phonon scattering in a Weyl semimetal using ultrafast spectroscopy, directly connecting to the user's interest in semimetals and advanced experimental techniques for quantum materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Weyl Semimetals",
+      "Phonons",
+      "Ultrafast Spectroscopy"
+    ],
+    "summary": "Revealing the mechanisms of phonon scattering is crucial for understanding material properties such as transport characteristics and optical responses. It can be discussed by measuring the temperature dependence of the phonon energy and lifetime. To gain insight into these mechanisms in Weyl semimetal T$_d$-WTe$_2$, we investigated coherent phonons using time-resolved pump-probe spectroscopy in a wide temperature range from 4.6 to 300 K. The temperature dependence of the frequency and decay rate of the two high-frequency optical modes was described by the conventional anharmonic phonon-phonon scattering model. In contrast, the low-frequency mode at 2.4 THz exhibited anomalous behavior, which can be interpreted as the contribution of phonon-electron scattering.",
+    "title": "Phonon scattering mechanisms in WTe$_2$ observed by ultrafast coherent phonon spectroscopy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.494218111038208
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.43437039852142334
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.42380741238594055
+      }
+    ]
+  },
+  "2607.07163v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Carlos Eduardo S. P. Corsino"
+      },
+      {
+        "affiliation": [],
+        "name": "Hermann Freire"
+      },
+      {
+        "affiliation": [],
+        "name": "Anurag Banerjee"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.dis-nn",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07163v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper directly addresses the emergence of superconductivity in topological insulators due to disorder, utilizing quantum Monte Carlo, which strongly aligns with the user's interest in superconductors, topological materials, and advanced computational physics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Superconductivity",
+      "Topological Insulators",
+      "Quantum Monte Carlo"
+    ],
+    "summary": "We study the emergence of superconductivity in a quantum spin Hall insulator and identify a disorder-driven enhancement of pairing arising from quantum geometry. Using sign-problem-free quantum Monte Carlo simulations of the attractive Bernevig-Hughes-Zhang (BHZ) Hubbard model, we obtain a quantum phase transition as a function of interaction strength for different impurity densities. In the clean limit, the system develops bulk superconductivity for Hubbard interaction $\\vert U \\vert$ above a finite critical strength. Interestingly, strong impurities significantly reduce such $\\vert U \\vert$ required for the onset of superconductivity. Our calculations indicate that Cooper pairing first nucleates in subgap ring states surrounding the impurities and then evolves into a globally coherent superconducting phase. Our results demonstrate that impurity-generated bound states can promote superconductivity in systems with strong quantum geometry. This mechanism is expected to be relevant in nearly flat-band systems like moiré materials where quantum geometry plays a dominant role.",
+    "title": "Emergent superconductivity upon disordering a topological insulator",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6219945549964905
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6161819696426392
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6038156151771545
+      }
+    ]
+  },
+  "2607.07248v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sankalp Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan D'Emidio"
+      },
+      {
+        "affiliation": [],
+        "name": "Sumiran Pujari"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07248v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper investigates deconfined quantum criticality and entanglement entropy in strongly correlated quantum antiferromagnets, aligning well with interests in many-body physics and theoretical condensed matter.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Deconfined criticality",
+      "Entanglement entropy",
+      "Quantum antiferromagnet"
+    ],
+    "summary": "The deconfined quantum critical point (DQCP) in square lattice S=1/2 quantum antiferromagnets has been extensively studied with a large body of evidence pointing to a weakly first-order transition scenario. Recent studies, which focused on entanglement at this nearly continuous DQCP in square lattice J-Q models, have observed conflicting bipartite entanglement entropy (EE) scaling behavior. One bipartition choice gave scaling coefficients in remarkable agreement with predictions from the unitary CFT corresponding to the putative DQCP. While another equally natural choice gave scaling coefficients in complete violation of unitary CFT that may be attributed to lack of scale invariance at the known weakly first-order behavior of the model. This motivates the exploration of DQCP behavior via entanglement measures in lattice models with distinct crystalline symmetries. Here we study a S=1/2 honeycomb model that hosts a nearly continuous transition between Néel and valence-bond-solid ground states relevant to probing DQCP. Using large-scale quantum Monte Carlo simulations, we compute the Rényi EE for a variety of bipartitions and test the CFT based description of the DQCP on the honeycomb lattice. For smooth bipartitions, we find no evidence of logarithmic corrections, in accordance with CFT, thereby essentially ruling out contributions from Goldstone modes. For subsystems with corners, CFT predicts universal logarithmic contributions, which we extract for corners with 60 and 120 degree angles and find close agreement with an emergent SO(5) CFT. While we observe scaling consistent with a critical system in the majority of cases, we also demonstrate an intriguing counterexample of the hexagon subsystem that exhibits a subtle period three oscillation. This results in three separate finite-size series, where the sign of the logarithmic term apparently changes depending on the series.",
+    "title": "Critical SO(5) scaling of entanglement entropy at honeycomb lattice deconfined criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5937273502349854
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5583279132843018
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5477231740951538
+      }
+    ]
+  },
+  "2607.07289v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sergei Zorkaltsev"
+      },
+      {
+        "affiliation": [],
+        "name": "Maciej Haranczyk"
+      },
+      {
+        "affiliation": [],
+        "name": "Christina Schenk"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn",
+      "cs.AI",
+      "cs.LG",
+      "math.OC"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07289v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper focuses on optimizing genetic algorithm hyperparameters for the mechanical design of lattice materials, which is distant from the user's interest in electronic structure, superconductivity, and strongly correlated systems.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Bayesian optimization",
+      "Lattice material design",
+      "Multi-fidelity optimization"
+    ],
+    "summary": "This study presents a multi-fidelity framework for the systematic optimization of genetic algorithm (GA) hyperparameters. The framework integrates three fidelity levels: high-fidelity Fast Fourier Transform (FFT) homogenization for validation, a medium-fidelity 3D convolutional neural network surrogate for rapid property evaluation, and a low-fidelity Gaussian process (GP) surrogate within a Bayesian optimization (BO) framework to guide the hyperparameter search. Various acquisition functions are evaluated, with logNEI achieving the best performance by effectively accounting for the noise inherent in GA evaluations. The proposed framework identifies hyperparameter configurations that enable a 25-generation GA run to achieve elastic modulus values comparable to those obtained in a full 75-generation optimization. Furthermore, introducing a penalized BO objective significantly reduces the number of required lattices with only minor decreases in absolute achieved elastic modulus, revealing a practical trade-off between performance and the number of structures that must be evaluated. High-fidelity FFT validation verifies the effectiveness of the surrogate-driven optimization strategy. The optimized hyperparameters allow for rapid convergence, eliminate the need for lattice mutation, and reduce the overall computational cost by 24% (from 225 to 171 hours) while preserving mechanical performance. These results demonstrate the potential of multi-fidelity optimization as an efficient and practical approach for GA hyperparameter tuning and future experimental lattice design studies.",
+    "title": "Bayesian Optimization of Genetic Algorithm Hyperparameters in a Multi-Fidelity Framework for Efficient Lattice Material Design",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.33822280168533325
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.32186684012413025
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3096391558647156
+      }
+    ]
+  },
+  "2607.07339v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Paulo Pires"
+      },
+      {
+        "affiliation": [],
+        "name": "Pierre-Paul De Breuck"
+      },
+      {
+        "affiliation": [],
+        "name": "Mauro Fava"
+      },
+      {
+        "affiliation": [],
+        "name": "Hai-Chen Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel A. L. Marques"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07339v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper uses machine learning with orbital-projected density of states to predict key materials properties like superconducting critical temperature and magnetic exchange, directly aligning with the user's interests in electronic structure and superconductivity.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Machine learning",
+      "Electronic structure",
+      "Superconducting Tc prediction"
+    ],
+    "summary": "Graph neural networks have become the dominant machine-learning architecture for predicting materials properties from crystal structures. Yet the initialization of atomic node features has received comparatively little attention, and conventional approaches rely on static elemental descriptors that carry no information about the quantum-mechanical electronic environment of each atom in its crystalline host. Here we show that augmenting atomic node representations with site-projected orbital density of states (pDOS) fingerprints, computed directly from density functional theory calculations, yields systematic and substantial improvements in predictive performance.These representations are fused with Pettifor elemental embeddings at each atomic site before message passing. For the superconducting critical temperature $T_c$ and the optical dielectric constant $ε_{\\infty}$,the pDOS augmentation reduces prediction errors by 22.9% and 27.9%, respectively, relative to the elemental-descriptor baseline. These improvements are comparable to those achieved by doubling the training-set size. The gains are, however, contingent on training-set size. For the magnetic exchange energies of Heusler compounds, a substantially smaller dataset, the improvement is reduced,indicating that pDOS augmentation is most effective when the training data exceeds the length of the pDOS feature vector. We introduce an interpretable spectral attention-gating mechanism that reveals that the model autonomously learns to prioritize the orbital channels and energy windows most physically relevant to each target property. These results establish pDOS-augmented graph nodes as a broadly applicable strategy for infusing first-principles electronic-structure knowledge into graph networks, opening a practical route to high-accuracy property prediction in data-scarce regimes.",
+    "title": "Machine Learning Materials Properties by Encoding Orbital-Projected Density of States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5823260545730591
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5729024410247803
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5674588680267334
+      }
+    ]
+  },
+  "2607.07456v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhenyao Fang"
+      },
+      {
+        "affiliation": [],
+        "name": "Qimin Yan"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07456v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This framework combines machine learning and statistical methods to address coupled disorder in magnetic alloys, resonating with interests in complex material properties and advanced computational techniques.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Disorder",
+      "Machine Learning",
+      "Magnetic Alloys"
+    ],
+    "summary": "Understanding the thermodynamic properties of disordered magnetic alloys requires a unified treatment of configurational (chemical, spin, etc.) and structural degrees of freedom, which has remained beyond the scope of existing computational frameworks. Here we present a general framework that integrates machine learning models (such as graph neural networks and machine learning interatomic potentials) and statistical sampling methods (such as Monte Carlo and molecular dynamics simulations) to study the coupled chemical, spin, and structural disorder in alloys. We demonstrate the framework on body-centered-cubic Fe-Co alloys with interstitial carbon dopants, where the Fe-Co host exhibits intrinsic chemical and spin disorder, and the interstitial carbon introduces additional structural disorder through local lattice distortions, making the system a prototypical multi-disorder magnetic alloy. The framework predicts the order-to-disorder phase transition temperature and the melting temperature of Fe-Co alloy to be 1,000 K and 1,690 K, in excellent agreement with the experimentally measured values of 1,006 K and approximately 1,700 K, respectively. It also predicts the tetragonal-to-nearly-cubic structural transitions in Fe-Co-C alloy as temperature increases. These results establish the framework as a reliable tool for studying multi-disorder alloys, with applications to complex disordered systems such as high-entropy alloys, multiferroics, and spintronic devices.",
+    "title": "A Multi-Scale Machine Learning Framework for Coupled Chemical, Spin, and Structural Disorder in Alloys",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5324859619140625
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5096834301948547
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.44400733709335327
+      }
+    ]
+  },
+  "2607.07501v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Qiang Luo"
+      },
+      {
+        "affiliation": [],
+        "name": "Shijie Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Wang Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuhai Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinbin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Jize Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoqun Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.07501v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-08",
+    "reasoning": "This work investigates quantum phases and transitions in a strongly correlated spin-1 Kitaev-$Γ$ chain using advanced theoretical and computational methods, directly fitting the interest in many-body physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Kitaev physics",
+      "Spin chain",
+      "DMRG"
+    ],
+    "summary": "Recent advances in bond-directional spin chains have revealed extensive emergent phenomena and unconventional criticality. Here we investigate the spin-1 Kitaev-$Γ$ chain with uniaxial single-ion anisotropy (SIA) using large-scale density-matrix renormalization group calculations and bosonization analysis. Tuning the SIA strength reveals a crossover from the Kitaev phase to the large-$D$ phase, evidenced by the excitation gap changing from quadratic to linear, the coexistence and smooth evolution of spin-nematic and string order parameters, and the suppression of the double-peak specific heat. For negative SIA, we uncover a changeover from a first-order transition to a continuous one between the dimerized and Haldane phases. The continuous transition belongs to the \\textrm{SU(2)$_2$} Wess-Zumino-Witten universality class with central charge $c=3/2$, a rare instance in a system without continuous symmetry. Our results establish the Kitaev-$Γ$ chain as a minimal platform for controlling crossover and changeover phenomena.",
+    "title": "Crossover and Changeover in Spin-1 Kitaev-$Γ$ Chain with Uniaxial Single-ion Anisotropy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6402328014373779
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6196109056472778
+      },
+      {
+        "liked_paper_id": "2506.16362v1",
+        "score": 0.5394939184188843
+      }
+    ]
+  },
+  "2607.07606v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Manas Sharma"
+      },
+      {
+        "affiliation": [],
+        "name": "Sudeep Punnathanam"
+      },
+      {
+        "affiliation": [],
+        "name": "Ananth Govind Rajan"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07606v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper introduces a platform for machine learning interatomic potentials that bridge DFT accuracy and reduce computational cost for atomistic simulations, highly relevant for materials exploration in condensed matter.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Machine learning potentials",
+      "Atomistic simulation",
+      "DFT acceleration"
+    ],
+    "summary": "Universal machine learning interatomic potentials (MLIPs) are foundation AI models transforming atomistic simulations, but their practical use remains hindered by fragmented software ecosystems, dependency conflicts, and the lack of accessible benchmarking tools. These models approach first-principles density functional theory (DFT) accuracy at a fraction of the computational cost. We introduce MLIP Studio (available at https://mlipstudio.iisc.ac.in), an open and free platform that brings more than 60 universal MLIPs into a unified interactive interface for molecules and materials. The platform enables end-to-end MLIP-driven workflows, including property prediction, geometry optimization, vibrational and equation-of-state analysis, spin-state determination, custom model deployment, and high-throughput benchmarking against reference data. Automated parity plots and sortable error tables facilitate rapid identification of element-wise outliers and problematic data points. We demonstrate that MLIP-based pre-optimization can reduce subsequent DFT optimization effort by ~33$\\times$. Additionally, the application enables benchmarking of computational performance. Through a comprehensive case study involving the 2D magnetic material CrCl$_3$ on a sapphire substrate, we show how cross-model comparisons of various properties and potential-energy landscapes can guide task-specific MLIP selection. Overall, MLIP Studio lowers the barrier to the reliable use of foundation models in end-to-end research workflows, benchmarking, and education in computational chemistry and materials science.",
+    "title": "MLIP Studio: An Open Platform for Interactive Benchmarking and Atomistic Simulations Using Machine Learning Interatomic Potentials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5015349388122559
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4767066240310669
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4552772045135498
+      }
+    ]
+  },
+  "2607.07647v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hanwen Kang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tenglong Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Sheng Meng"
+      },
+      {
+        "affiliation": [],
+        "name": "Miao Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.CE",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07647v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper benchmarks the efficiency and scalability of Machine Learning Interatomic Potentials, aligning with the user's interest in efficient computational methods for materials science.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Machine Learning Potentials",
+      "Computational Efficiency",
+      "Materials Simulation"
+    ],
+    "summary": "Most MLIP benchmarks reward static accuracy while ignoring inference efficiency and hardware scalability -- driving model bloat with unclear real-world value. We benchmark 23 mainstream open-source MLIPs on a low-cost NVIDIA DGX Spark (128 GB native memory, capped at 80 GB to mimic ordinary lab hardware), using a fixed 192-atom system under a unified ASE-based pipeline. We evaluate three dimensions: predictive accuracy, MD simulation throughput, and atomic scalability. Our results expose a sharp accuracy-efficiency trade-off: large SOTA models deliver only 3-5 meV/atom more accuracy than lightweight ones, but lose orders of magnitude in throughput -- in the worst case, becoming only marginally faster than DFT itself. Lightweight MLIPs, by contrast, sit on the Pareto frontier and run on modest hardware. The lesson is that single-dimensional benchmarks mislead the field, and that future MLIP development should value efficiency and scalability alongside accuracy.",
+    "title": "Are Machine Learning Interatomic Potentials Truly Practical? A Benchmark of 23 Mainstream Models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.3754459023475647
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3445008397102356
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3384650945663452
+      }
+    ]
+  },
+  "2607.07685v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Michael P. Path"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeffrey McCord"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Vogel"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.07685v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-08",
+    "reasoning": "This paper uses machine learning to decode magnetic textures, which is somewhat related to understanding magnetic materials but less directly aligned with the quantum phenomena or computational methods previously liked.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Magnetic Texture",
+      "Machine Learning",
+      "Magneto-optics"
+    ],
+    "summary": "In magnetically ordered materials, magnetic field and temperature variations modify the magnetic texture through their coupling to the local energy landscape, imprinting distinct fingerprints in the resulting magnetic domain patterns. Retrieving these conditions from the pattern remains challenging, as stochastic nucleation and hysteresis produce a nonlinear, multivariate, and ambiguous relationship between magnetic domain morphology and external stimuli. To decode these fingerprints, we designed a controlled magneto-optical inference experiment that reconstructs magnetic field, temperature, and magnetic history from a single fine-scale, high-contrast, pixel-resolved optical polarization map of feature-rich magnetic domain textures in a bismuth-substituted yttrium iron garnet film. Deep convolutional neural networks are complemented by feature-based neural-network inference using hand-crafted, physically interpretable descriptors of measured magneto-optical image data, linking the decoded information to material-dependent features and exploring their contributions. Together, these results establish magnetic texture as a high-fidelity record of external conditions enabling accurate single image multiparametric sensing and paving the way for data-driven explorations of complex magnetic states. Uncovering the physically interpretable features that encode this record sheds new light on the physics of magnetic domain formation.",
+    "title": "Decoding magnetic texture",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.4337722659111023
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.4280073046684265
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.40992629528045654
       }
     ]
   }
