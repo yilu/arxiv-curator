@@ -5504,6 +5504,56 @@
       }
     ]
   },
+  "2607.08616v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Filippo Gaggioli"
+      },
+      {
+        "affiliation": [],
+        "name": "Sam Azadi"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Fu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.08616v2",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-09",
+    "reasoning": "This paper introduces a highly accurate and scalable variational wavefunction method using neural networks, relevant for advanced computational studies of many-body quantum systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Neural Network Wavefunctions",
+      "Variational Monte Carlo",
+      "Homogeneous Electron Gas"
+    ],
+    "summary": "Self-attention neural networks provide powerful variational wavefunctions that surpass the expressivity of traditional variational ansatze. This expressivity, however, comes with increased computational complexity, raising a pressing question about scalability -- can such wavefunctions retain their accuracy at large system sizes? We apply self-attention wavefunctions to the two-dimensional homogeneous electron gas for up to N=169 particles, obtaining energies systematically lower than state-of-the-art DMC. Direct access to the ground state wavefunction further lets us recover the full collective-mode dispersion of the liquid phase, from the small-q plasmon branch to a roton-like minimum near q=2k_F. Observables at N=91 and N=169 are in near-perfect agreement, indicating convergence to the thermodynamic limit.",
+    "title": "Accurate Self-Attention Wavefunctions at Large Scale",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5651926398277283
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5069265365600586
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.454035222530365
+      }
+    ]
+  },
   "2607.08649v1": {
     "authors": [
       {
@@ -5755,16 +5805,39 @@
         "name": "Boian S. Alexandrov"
       }
     ],
+    "categories": [
+      "math.NA"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.08936v1",
+    "matching_keywords": [],
     "published_date": "2026-07-09",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper presents an efficient tensor-train discontinuous Galerkin method, but its application to plasma physics is outside the user's primary interest in condensed matter systems.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Tensor-train",
+      "Discontinuous Galerkin",
+      "Vlasov-Maxwell system"
+    ],
     "summary": "We present a tensor-train discontinuous Galerkin (TT-DG) formulation for the Vlasov--Maxwell system that combines a modal DG discretization with low-rank tensor representations of the phase-space solution and discrete operators. The formulation exploits the tensor-product structure of the DG discretization to perform quadrature, differentiation, nonlinear upwind flux evaluation, and time integration directly in compressed form.   The method is evaluated on several standard 1D2V Vlasov--Maxwell benchmark problems, including the streaming Weibel instability, weak Landau damping, and two-stream instability problems. Across these problems, the TT formulation reproduces the accuracy and conservation behavior of the underlying full-grid DG discretization while substantially reducing memory usage and runtime. For weakly nonlinear problems, compression ratios exceeding $10^4$ are obtained together with significant speedups relative to the full-grid solver. For the strongly nonlinear two-stream instability problem, the TT formulation remains effective despite reduced compressibility caused by fine-scale phase-space filamentation.   These results demonstrate that tensor-train representations provide an effective approach for reducing the computational cost of deterministic DG-based kinetic plasma simulations while retaining the favorable numerical properties of the underlying discretization.",
     "title": "A Tensor-Train Discontinuous Galerkin Method for the Vlasov-Maxwell System",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4004214107990265
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.3153674900531769
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.26211145520210266
+      }
+    ]
   },
   "2607.08967v1": {
     "authors": [
@@ -5781,16 +5854,37 @@
         "name": "Phillip C. Lotshaw"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.08967v1",
+    "matching_keywords": [],
     "published_date": "2026-07-09",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates quantum criticality and entanglement in many-body systems relevant to quantum materials, aligning with the user's interest in strongly correlated electron systems and their quantum phenomena, even if using a quantum processor as the tool.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Criticality",
+      "Spin Entanglement",
+      "Quantum Phase Transitions"
+    ],
     "summary": "Quantum phase transitions in many-body systems give rise to highly entangled states, and understanding their quantum correlations is crucial for characterizing quantum materials. However, traditional entanglement measures such as entanglement entropy are difficult to interpret for noisy or mixed states and require complex circuits to evaluate. Therefore, we explore the Positive Partial Transpose (PPT) criterion, coupled with overlapping state tomography, as an efficient and scalable spin-spin entanglement witness. It detects pairwise entanglement from reduced density matrices, distinguishes quantum from classical correlations, and applies to both pure and mixed states. It is ideal for studying condensed matter systems prepared on noisy quantum devices as well as future extensions to finite temperatures. We demonstrate the approach on quantum hardware, using variational circuits to prepare quantum critical states with up to 20 qubits and completely map their two-spin entanglement across various quantum phase transitions.",
     "title": "Probing two-spin entanglement at quantum criticality on a quantum processor",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5426270961761475
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5101214647293091
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5031125545501709
+      }
+    ]
   },
   "2607.09140v1": {
     "authors": [
@@ -6229,16 +6323,39 @@
         "name": "Arul Rhik Mazumder"
       }
     ],
+    "categories": [
+      "cs.LG"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.09893v1",
+    "matching_keywords": [],
     "published_date": "2026-07-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "While mentioning Matrix Product States (MPS), the core focus on benchmarking quantum sampling algorithms for Markov Random Fields is not directly aligned with the user's condensed matter interests.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum sampling",
+      "Markov random fields",
+      "Matrix product states"
+    ],
     "summary": "Sampling from discrete Markov random fields (MRFs) is a hard problem. We study amplitude-encoded i.i.d. sampling for small MRFs where $2^n$ target probabilities are precomputed classically. This removes quantum exponential speedup but allows a clean comparison against classical MCMC based on independent circuit samples ($τ\\approx 1$). Across 60 instances spanning five graph families (1k-step burn-in, 3k retained samples), the mean ESS ratios of Quantum to Single-Site Gibbs, Block Gibbs, Tuned-Block, and Parallel Tempering are $16.35$, $7.29$, $1.82$, and $1.79$, showing modern classical samplers substantially close this gap. Amortizing $O(2^n)$ preprocessing into wall-clock time, exact inverse-CDF sampling yields $17.7\\text{M}$ ESS/s versus $488\\text{K}$ ESS/s for the quantum sampler ($36\\times$ mean rate, $153\\times$ per-instance), confirming no wall-clock advantage. We characterize MCMC autocorrelation costs and benchmark amplitude-encoded state preparation at $n \\in \\{8,10,12\\}$. An MPS scaling study ($n \\le 40$) shows bond dimension $χ=32$ achieves $F=0.721\\pm0.059$ at $n=40$. Finally, a matched-budget VQC vs. MPS comparison at $n \\in \\{8,10,12\\}$ shows VQC fidelities fall far below MPS: $(F_{\\mathrm{VQC}}, F_{\\mathrm{MPS}}) = (0.31, 0.99), (0.21, 0.96), (0.17, 0.88)$ at compressions $10.7\\times$, $34.1\\times$, and $113.8\\times$.",
     "title": "An End-to-End Hybrid Quantum--Classical Sampling Workflow for Discrete Markov Random Fields: A Reproducible Case Study",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.42116403579711914
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.41553306579589844
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.41190600395202637
+      }
+    ]
   },
   "2607.10002v1": {
     "authors": [
@@ -7285,16 +7402,39 @@
         "name": "Qibin Zhao"
       }
     ],
+    "categories": [
+      "cs.LG"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.11273v1",
+    "matching_keywords": [],
     "published_date": "2026-07-13",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper discusses quantum state tomography using Matrix Product States, a computational method that has some distant connection to theoretical methods but is not directly related to the specific material systems or phenomena of interest.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum State Tomography",
+      "Matrix Product States",
+      "Quantum Computing"
+    ],
     "summary": "Quantum state tomography is sample-starved, and the states one prepares live on a narrow, learnable manifold. A $k{=}0$ prior-only control shows that on concentrated families a prior estimate is already near-optimal, so ``high fidelity at few measurements'' can be family memorization rather than tomography; genuine measurement-efficiency needs a model that conditions on the measurements and demonstrably uses them. On a shared matrix-product-state (MPS) core parameterization we study two routes. Approach~A learns a generative prior over MPS cores with measurement-guided posterior inference (gold-standard-validated, but whose few-measurement accuracy the control shows is largely the prior). Approach~B, our main proposal, is a \\emph{fixed-protocol amortized} MPS estimator trained once with a gauge-invariant fidelity loss; we deliberately do not rest it on a permutation-invariant set encoder (a plain MLP matches it). The decisive lever is the measurement design: motivated by the fact that local reduced density matrices determine a $χ$-MPS, conditioning on an \\emph{informative local} Pauli set rather than random strings turns a modest, memorization-prone estimator into a high-fidelity one ($\\approx\\!0.95$, up to $+0.59$ over prior-only, decisively passing a shuffled-measurement control). A dropout ensemble, conformally recalibrated, gives $\\approx\\!90\\%$-coverage intervals -- including for observables never measured, where a shot-based interval does not exist. Quality holds as the system grows (fidelity $0.90$ at $n{=}10$, gain \\emph{growing} in $n$; $0.88$ at bond dimension $χ{=}4$), the parameterization is polynomial (native contraction to $20$ qubits), and we close the loop on IBM hardware ($5$ states at $0.97$ from hardware-measured Paulis).",
     "title": "Fixed-Protocol Amortized MPS Tomography with Conformalized Predictive Uncertainty",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4529346823692322
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.404432475566864
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.40211325883865356
+      }
+    ]
   },
   "2607.11293v1": {
     "authors": [
@@ -7311,16 +7451,39 @@
         "name": "Martin Stoll"
       }
     ],
+    "categories": [
+      "math.NA"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2607.11293v1",
+    "matching_keywords": [],
     "published_date": "2026-07-13",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper develops adaptive Krylov methods for low-rank exponential integrators using tensor formats, which is a general efficient numerical approach that could be applicable to complex, high-dimensional differential equations in condensed matter physics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Tensor train",
+      "Exponential integrators",
+      "Krylov methods"
+    ],
     "summary": "Differential equations arise in numerous applications, particularly within scientific and technical contexts. Systems of stiff, time-dependent ordinary differential equations constitute the focus of this work. Exponential integrators are designed to solve such equations by integrating the linear part exactly, while simultaneously approximating the nonlinear part through a linear combination of $\\varphi$-functions. By utilizing an augmented stiffness matrix, state-of-the-art methods like KIOPS and RK2EXPINT solve the linear part and evaluate linear combinations of $\\varphi$-functions for the nonlinear part in a single step, effectively reducing the computational effort to a single matrix exponential evaluation. However, these classical approaches assume that the system is represented by matrices and vectors, potentially not utilizing the underlying high-dimensional structure. Tensors address this limitation and offer significant storage efficiency through well-established decompositions like the Tensor Train (TT) format. This work provides a general framework for solving stiff, time-dependent systems directly within the TT format. Specifically, KIOPS-TT and RK2EXPINT-TT are developed as extensions of the original KIOPS and RK2EXPINT algorithms. This involves reformulating the scheme of explicit exponential Runge-Kutta integrators for tensors and augmenting the stiffness tensor to compute linear combinations of $\\varphi$-functions acting on tensors through a single evaluation of the exponential function using Krylov subspace methods. Furthermore, it is shown that the underlying theory of the matrix methods remains valid, thereby enabling the transfer of key theorems to the tensor case. Numerical experiments confirm significant speed-ups for KIOPS-TT and RK2EXPINT-TT in low-rank scenarios compared to their classical counterparts.",
     "title": "Adaptive Krylov Methods for Low-Rank Exponential Integrators",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.3947710394859314
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.37399783730506897
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3436792194843292
+      }
+    ]
   },
   "2607.11298v1": {
     "authors": [
@@ -7465,6 +7628,837 @@
       {
         "liked_paper_id": "2506.13431v1",
         "score": 0.6121546030044556
+      }
+    ]
+  },
+  "2607.12029v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xuyang Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiao-Chuan Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zenan Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhe Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng Yan"
+      },
+      {
+        "affiliation": [],
+        "name": "Dao-Xin Yao"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12029v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-13",
+    "reasoning": "This paper investigates quantum critical phenomena and finite-size scaling using advanced computational methods, aligning with interests in theoretical approaches to complex quantum systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Criticality",
+      "Monte Carlo Simulations",
+      "Renormalization Group"
+    ],
+    "summary": "At the bulk upper critical dimension, marginally irrelevant interactions generate multiplicative logarithmic corrections to mean-field scaling. While these corrections are well understood for bulk observables, their consequences for boundary criticality, particularly for finite-size scaling, remain much less explored. Here we combine large-scale quantum Monte Carlo simulations with boundary renormalization-group analysis to study a (3 + 1)D O(3) quantum critical point. After verifying the known logarithmically modified bulk finite-size scaling, including the correlation-length scaling governed by the logarithmic finite-size exponent \\hat{\\coppa}, we tune the surface coupling to identify ordinary, special, and extraordinary boundary regimes. For the ordinary and special transitions, we derive logarithmic correction exponents and \\hat{\\coppa}-dependent finite-size scaling forms for boundary correlations, including results that have not been systematically established before. These predictions are quantitatively supported by Monte Carlo data. In the extraordinary regime, we find long-range surface magnetic order and a logarithmically enhanced surface-bulk correlation.",
+    "title": "Logarithmic corrections to bulk and surface criticality in a three-dimensional quantum Heisenberg antiferromagnet",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5809509754180908
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5615032911300659
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5296049118041992
+      }
+    ]
+  },
+  "2607.12047v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Debopriyo Biswas"
+      },
+      {
+        "affiliation": [],
+        "name": "Gong Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Krishnanand Karthikeyan"
+      },
+      {
+        "affiliation": [],
+        "name": "Diana Muñoz-Valencia"
+      },
+      {
+        "affiliation": [],
+        "name": "Vincent P. Su"
+      },
+      {
+        "affiliation": [],
+        "name": "Hrant Gharibyan"
+      },
+      {
+        "affiliation": [],
+        "name": "Daiwei Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Grant Salton"
+      },
+      {
+        "affiliation": [],
+        "name": "Evgeny Epifanovsky"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Roetteler"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Monroe"
+      },
+      {
+        "affiliation": [],
+        "name": "John Preskill"
+      },
+      {
+        "affiliation": [],
+        "name": "Norbert M. Linke"
+      },
+      {
+        "affiliation": [],
+        "name": "ChunJun Cao"
+      },
+      {
+        "affiliation": [],
+        "name": "Crystal Noel"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.12047v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-13",
+    "reasoning": "The paper focuses on quantum gravity and holographic codes on quantum computers, which are far removed from the condensed matter physics, materials science, and topological materials themes of the liked papers.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Gravity",
+      "AdS/CFT",
+      "Quantum Computing"
+    ],
+    "summary": "The unification of quantum mechanics and general relativity remains one of the major open problems of theoretical physics. The Anti-de Sitter/Conformal Field Theory (AdS/CFT) correspondence provides a valuable theoretical framework for this effort via a holographic duality between a theory of quantum gravity in asymptotically AdS spacetime and a conformal quantum field theory on the lower-dimensional boundary. Here, we implement a toy model of this duality called the HaPPY code, a quantum error-correcting code in the form of a tensor network with hyperbolic entanglement patterns, on a trapped-ion quantum computer. We present the first experimental confirmation of the Faulkner-Lewkowycz-Maldacena formula in this model - a key test of the holographic correspondence. We then enrich it with non-stabilizerness, or magic, and observe entropic precursors expected of emergent gravity. Finally, we present and measure a code construction whose entropic behavior is reminiscent of a highly quantum wormhole. Our experiments illustrate how quantum computers can serve as testbeds for modeling the emergence of spacetime.",
+    "title": "Observation of gravity-like signatures in holographic codes on a quantum computer",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3594478964805603
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.35548099875450134
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.34973591566085815
+      }
+    ]
+  },
+  "2607.12066v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Suman Das"
+      },
+      {
+        "affiliation": [],
+        "name": "Sabyasachi Maulik"
+      },
+      {
+        "affiliation": [],
+        "name": "Leopoldo A. Pando Zayas"
+      },
+      {
+        "affiliation": [],
+        "name": "Jingchao Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12066v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-07-13",
+    "reasoning": "This paper uses abstract holographic duality to study quantum corrections to transport, which is a more theoretical approach, less directly connected to the specific materials and methods in the liked papers.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Holographic Duality",
+      "Quantum Transport",
+      "Schwarzian Theory"
+    ],
+    "summary": "We determine the quantum corrections to transport arising from fluctuations of the near-AdS${}_2$ throat of near-extremal black branes in holographic models with momentum relaxation. By computing the shear viscosity and electrical conductivity at both zero and finite chemical potential, we uncover a universal low-temperature enhancement of transport generated by Schwarzian quantum fluctuations. Specifically, transport coefficients extracted from retarded Green's functions increase throughout the regime $C T \\ll 1$. For operators with Schwarzian scaling dimension $Δ>1$, this enhancement is preceded by a universal minimum at a characteristic temperature $T_{\\rm min} \\propto C^{-1}$, leading to a non-monotonic temperature dependence strikingly similar to that observed in many correlated materials. In contrast, for the case $Δ=1$, relevant for the electrical conductivity, the transport coefficient evolves monotonically toward a constant value. Our results identify universal signatures of near-horizon quantum gravity in the transport properties of holographic quantum matter.",
+    "title": "Low-temperature Quantum-corrected Holographic Transport with Momentum Relaxation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.4361671805381775
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.42442047595977783
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.41253548860549927
+      }
+    ]
+  },
+  "2607.12262v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yantao Cao"
+      },
+      {
+        "affiliation": [],
+        "name": "He Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhendong Fu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhaoming Tian"
+      },
+      {
+        "affiliation": [],
+        "name": "Huiqian Luo"
+      },
+      {
+        "affiliation": [],
+        "name": "Junsen Xiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Peijie Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinkui Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanjie Guo"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12262v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper investigates quantum spin liquids and their potential for magnetic refrigeration, aligning with an interest in exotic magnetic states and correlated materials, though less directly linked to specific material classes.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum spin liquid",
+      "Magnetic refrigeration",
+      "Geometric frustration"
+    ],
+    "summary": "Magnetic refrigeration in the sub-Kelvin regime requires refrigerant materials to retain a large magnetic entropy at low temperatures by suppressing magnetic ordering. Quantum spin liquids (QSLs), which evade long-range magnetic ordering while retaining strong quantum fluctuations to the lowest temperatures, therefore provide a promising platform for realizing high-performance magnetic refrigerants. Here, we investigate the magnetic ground state and the magnetocaloric effect of the hexaaluminate, NdMgAl$_{11}$O$_{19}$, in which the Nd$^{3+}$ ions form a network of triangular lattices. Magnetic susceptibility and specific heat measurements indicate a magnetically dynamic state down to 50~mK, consistent with a QSL state. Specific heat measurements further reveal substantial magnetic entropy retained below 50~mK. Quasi-adiabatic demagnetization measurements demonstrate a superior cooling performance of NdMgAl$_{11}$O$_{19}$, which can be cooled to 113~mK from 1.9~K by only a small magnetic field change of 2~T. The outstanding refrigeration performance is attributed to the persistent spin fluctuations associated with the QSL-like ground state, together with a large effective \\textit{g} factor and the smallness of the exchange interactions along the easy-axis direction. This study demonstrates that frustration, combined with strong spin-orbit coupling and crystal-electric-field effect in the rare earth magnets provides a promising design principle for next-generation cryogenic magnetic refrigerants.",
+    "title": "Giant magnetocaloric effect at low fields in triangular-lattice NdMgAl$_{11}$O$_{19}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.548798680305481
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.4998643398284912
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.4920033812522888
+      }
+    ]
+  },
+  "2607.12410v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ivan Pasqua"
+      },
+      {
+        "affiliation": [],
+        "name": "Carlos Mejuto-Zaera"
+      },
+      {
+        "affiliation": [],
+        "name": "Michele Fabrizio"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12410v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper proposes a theoretical framework for fractionalized Fermi liquids in the context of the pseudogap regime of underdoped cuprates, directly relevant to understanding complex phases in cuprate superconductors.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Fractionalized Fermi liquid",
+      "Cuprates",
+      "Pseudogap"
+    ],
+    "summary": "Fractionalized Fermi liquids ($\\mathrm{FL}^{\\!*}$), elusive metallic states characterized by fractionalized quasiparticles alongside conventional ones and defying Luttinger's theorem, are prime candidates for the pseudogap regime of underdoped cuprates. We show that a $\\mathrm{FL}^{\\!*}$ phase emerges in the single-band $t$-$J$ model through a simple ghost-Gutzwiller Ansatz, optimized at the cost of a mean-field calculation. The resulting temperature-doping phase diagram encompasses a low-doping $\\mathrm{FL}^{\\!*}$, a $d$-wave superconducting dome, and an overdoped conventional Fermi liquid, thereby reproducing key qualitative features of cuprate phenomenology.",
+    "title": "Fractionalized Fermi liquids with the ghost-Gutzwiller Ansatz",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.4902680516242981
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.47289931774139404
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.47034013271331787
+      }
+    ]
+  },
+  "2607.12442v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu-Te Hsu"
+      },
+      {
+        "affiliation": [],
+        "name": "Matija Čulo"
+      },
+      {
+        "affiliation": [],
+        "name": "Thom Ottenbros"
+      },
+      {
+        "affiliation": [],
+        "name": "Yingkai Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jake Ayres"
+      },
+      {
+        "affiliation": [],
+        "name": "Steffen Wiedmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Mikhail I. Katsnelson"
+      },
+      {
+        "affiliation": [],
+        "name": "Nigel E. Hussey"
+      },
+      {
+        "affiliation": [],
+        "name": "Mikhail Titov"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12442v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper directly investigates transport properties and particle-hole symmetry in overdoped cuprates, which aligns with interest in cuprate superconductors and their complex phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Cuprate",
+      "Strange Metal",
+      "Particle-hole symmetry"
+    ],
+    "summary": "Here, we report magnetothermopower measurements on overdoped (Bi,Pb)2(Sr,La)2CuO6+delta (Bi2201) single crystals in magnetic fields up to 35 T. Whereas the temperature dependence of the zero-field Seebeck coefficient S(T) can be captured using Boltzmann transport theory, the field-dependent response S(H) cannot. Instead, the magnetothermopower contains a large additional contribution whose field and temperature dependence is consistent with the presence of short-range superconducting order well above Tc. Combined with earlier Hall and magnetoresistance results, these data imply that the overdoped cuprate strange metal contains two transport sectors with distinct particle-hole symmetry: a conventional particle-hole-asymmetric Fermi-liquid (FL) contribution governing the Hall effect and the zero-field thermopower, and a nearly particle-hole-symmetric sector dominating the anomalous longitudinal magnetotransport. We formulate a phenomenological real-space model in which disconnected FL islands are embedded in a compensated Dirac liquid of phase-incoherent d-wave Bogoliubov quasiparticles. This picture reconciles conventional zero-field transport with anomalous magnetothermopower and magnetoresistance and offers a concrete framework for thinking about strange metallicity in overdoped cuprates.",
+    "title": "Magnetothermopower and particle-hole symmetry in a cuprate strange metal",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5382016897201538
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.5365256071090698
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.5339024066925049
+      }
+    ]
+  },
+  "2607.12536v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hao Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian-Qiao Meng"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": "10.7498/aps.75.20251330",
+    "id": "2607.12536v1",
+    "matching_keywords": [
+      "nonequilibrium",
+      "pump-probe"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper directly aligns with the user's interest in topological materials and their characterization using advanced experimental techniques like ultrafast spectroscopy.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Ultrafast Spectroscopy",
+      "Weyl Semimetals",
+      "Spintronics"
+    ],
+    "summary": "Topological materials, characterized by symmetry-protected nontrivial band structures such as Dirac cones and Weyl nodes, host diverse quantum phenomena, with potential applications in quantum transport, spintronics, and nonlinear optics. Ultrafast pump-probe spectroscopy has emerged as a powerful tool for exploring nonequilibrium dynamics in these systems. Its femtosecond resolution allows charge, spin, orbital, and lattice interactions to be tracked on their intrinsic timescales, thereby revealing key coupling mechanisms in topological phases. This review summarizes progress in ultrafast spectroscopic studies of topological insulators, topological semimetals, and magnetic topological materials. We first discuss the relaxation pathways of photoexcited surface and bulk electronic states, emphasizing electron-phonon scattering, surface-bulk charge transfer, and ultrafast spin conversion. We then examine population inversion in Dirac and Weyl semimetals, spin-polarization dynamics associated with tilted Weyl bands, and the effects of magnetic order on topological states, including coherent phonon and magnon excitations, magnetically driven topological transitions, and terahertz emission. We further review photoinduced topological phase transitions driven by electronic correlations, lattice distortions, and magnetic order under intense optical excitation, highlighting routes toward nonthermal control of quantum phases. Finally, we outline future directions that combine multidimensional ultrafast spectroscopy with temporal, energy, momentum, and spin resolution and advanced theoretical modeling to establish a unified picture of nonequilibrium topological states. This review aims to provide a useful reference for ultrafast studies of topological quantum materials and to advance their applications in high-speed, low-power information processing, spintronics, and quantum technologies.",
+    "title": "Research on topological materials using ultrafast spectroscopy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5808514356613159
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.549134373664856
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5432957410812378
+      }
+    ]
+  },
+  "2607.12595v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ryuta Iwazaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Shinnosuke Koyama"
+      },
+      {
+        "affiliation": [],
+        "name": "Takashi Koretsune"
+      },
+      {
+        "affiliation": [],
+        "name": "Shintaro Hoshino"
+      },
+      {
+        "affiliation": [],
+        "name": "Joji Nasu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12595v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper explores magnetic competition in a Kitaev candidate material using first-principles calculations and pseudospin models, relating to fundamental condensed matter physics and computational approaches.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Kitaev spin liquid",
+      "Correlated electron systems",
+      "First-principles calculation"
+    ],
+    "summary": "The spin-orbital Mott insulators Ru$X_3$ ($X =$ Cl, Br) have attracted considerable attention as promising candidate materials for realizing a Kitaev spin liquid. In this study, we construct effective pseudospin models from multiorbital Hubbard models derived from first-principles calculations and investigate the magnetic states of RuCl$_3$ and RuBr$_3$. From the constructed effective models, we find that RuBr$_3$ has more extended Wannier orbitals and stronger interlayer exchange interactions than RuCl$_3$. These interactions enhance three-dimensional correlations, consistent with the stronger antiferromagnetic tendency experimentally inferred for RuBr$_3$. Orbital-dependent Coulomb anisotropy further reduces the energy difference between ferromagnetic and zigzag states. Our results clarify how halogen substitution controls magnetic competition in Ru$X_3$ through interlayer exchange interactions and effects of orbital-dependent Coulomb interactions.",
+    "title": "Halogen control of magnetic competition in Kitaev candidate Ru$X_3$ ($X =$ Cl, Br)",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.5937448740005493
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5600063800811768
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5579105615615845
+      }
+    ]
+  },
+  "2607.12613v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sahidul Islam"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Mang"
+      },
+      {
+        "affiliation": [],
+        "name": "Maxim Olshanskii"
+      }
+    ],
+    "categories": [
+      "math.NA",
+      "math.OC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.12613v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-14",
+    "reasoning": "This work introduces a tensor-based reduced-order modeling framework for optimization-based inverse problems, a methodology that could be valuable for analyzing experimental data or fitting complex models in condensed matter research.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Reduced-order modeling",
+      "Inverse problems",
+      "Tensor decomposition"
+    ],
+    "summary": "We develop a tensor reduced-order modeling (TROM) framework for optimization-based inverse problems governed by parameter-dependent dynamical systems. The approach approximates the parameter-to-observation map directly in tensor-train format, using either TT-SVD or TT-Cross compression, and integrates the resulting representation into a regularized nonlinear least-squares formulation. Beyond accelerating forward evaluations, the low-rank tensor structure is used to reformulate the inverse problem in reduced coordinates, assemble the Gauss--Newton quantities without forming the full observation-space Jacobian, and perform TROM-based objective minimization over the discrete parameter grid. This tensor optimization step can be used either as a stand-alone approximate minimization procedure or as a data-informed initialization for a subsequent Gauss--Newton solve. The method is studied for two inverse problems: an inverse heat-transfer problem in a heterogeneous medium, where the unknown parameters describe the locations of multiple low-conductivity inclusions, and a FitzHugh--Nagumo parameter-estimation problem with a highly nonconvex optimization landscape. Numerical experiments assess the effects of ROM approximation error, measurement noise, regularization, initialization, spatial discretization, and increasing parameter dimension. The results show that TROM can reproduce the behavior of full-order inversion at a substantially reduced online cost. The experiments also demonstrate that reduced-coordinate inversion, tensor-based optimization, and appropriate regularization improve robustness in higher-dimensional, noisy, and strongly nonconvex regimes.",
+    "title": "Tensor-Based Reduced-Order Modeling for Optimization-Based Inverse Problems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.358257919549942
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.30692633986473083
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3042239248752594
+      }
+    ]
+  },
+  "2607.12718v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Oliwier Urbański"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomasz P. Polak"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.12718v1",
+    "matching_keywords": [
+      "hubbard model",
+      "tensor network"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper directly investigates the ground-state and temperature properties of the Bose-Hubbard model, a fundamental strongly correlated system, using an improved computational method relevant to condensed matter physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Bose-Hubbard model",
+      "Strongly correlated systems",
+      "Phase transitions"
+    ],
+    "summary": "We formulate an improved standard basis operator (SBO) method for the single and two-component Bose-Hubbard model in three dimensions. In the first case, nonzero temperature predictions are qualitatively and quantitatively enhanced by taking into account necessary number of on-site states, not just three as in previous works. Performance of the final numerical calculations is also improved by asymptotic analysis of the self-consistent equations near the critical line. Obtained results are compared with Monte-Carlo, tensor networks, Quantum Rotor Approach and experimental data. In the two-component case, SBO generalizes rather poorly, being able to account for intra-species thermal and quantum fluctuations, but not the inter-species ones. Deeper reasons for this situation are discussed. Still however, non-trivial deformation of the phase diagrams is predicted, together with first-order phase transitions steered by the changes in chemical potential.",
+    "title": "Standard basis operator method for ground-state and temperature properties of single and two-component Bose-Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5824958086013794
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5588257312774658
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.554733157157898
+      }
+    ]
+  },
+  "2607.12773v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zi Yuan"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Zhan"
+      },
+      {
+        "affiliation": [],
+        "name": "Xianxin Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shaozhi Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12773v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper investigates emergent s+id superconductivity in infinite-layer nickelates, combining first-principles calculations and addressing the interplay of electronic correlations and electron-phonon coupling, highly relevant to liked topics on nickelate superconductors.",
+    "score": 0.98,
+    "suggested_keywords": [
+      "Nickelate superconductor",
+      "s+id superconductivity",
+      "Electron-phonon coupling"
+    ],
+    "summary": "Recent tunneling measurements on infinite-layer nickelates have revealed spatially varying superconducting symmetries, whose microscopic origin remains unclear. Motivated by this observation, we investigate the interplay between electron correlations and electron-phonon interactions in infinite-layer nickelates by combining first-principles calculations with the fluctuation-exchange-Migdal-Eliashberg theory. Our calculations show that spin fluctuations yield robust $d$-wave superconductivity on the Ni $d_{x^2-y^2}$ orbital, whereas electron-phonon coupling induces $s$-wave pairing on an interstitial orbital, leading to an $s+id$ superconducting state. The emergence of the $s$-wave component is strongly carrier-density dependent: an intermediate electron-phonon coupling of $λ=0.4$ stabilizes the $s+id$ state at $n=0.9$ but not at $n=0.8$. These results imply that local oxygen defects tune the local electron density and form finite-size domains with distinct pairing symmetries, offering a compelling explanation for the spatially inhomogeneous superconducting symmetries observed in experiments.",
+    "title": "Emergent $s+id$ Superconductivity from the Interplay between Electronic Correlations and Electron-Phonon Coupling in $\\mathrm{R}_{1-x}\\mathrm{Sr}_x\\mathrm{NiO}_2$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.7249236106872559
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.7065553665161133
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.6887310147285461
+      }
+    ]
+  },
+  "2607.12783v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yang-hao Chan"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenglu Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Steven G. Louie"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12783v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper develops a first-principles method for simulating coherent phonon dynamics in time-resolved photoemission spectroscopy, relevant for understanding electron-phonon coupling in quantum materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "TR-ARPES",
+      "Electron-Phonon Coupling",
+      "Coherent Phonons"
+    ],
+    "summary": "Coherent lattice dynamics can be observed in pump-probe time-resolved and angle-resolved photoemission spectroscopy (TR-ARPES) as a periodic modulation of intensity and energy of photoelectrons over probe time. We present an ab initio time-dependent GW approach including electron-phonon (e-ph) couplings to simulate the photogeneration of coherent phonons and their effects on the TR-ARPES of monolayer MoS2. We demonstrate that state-resolved e-ph coupling strength can be obtained from analyzing coherent phonon modulations on TR-ARPES. Features of both the impulsive stimulated Raman scattering mechanism and the displacive excitation mechanism of coherent phonon generation are identified in our simulations. We clarify their origins and the coincident selection rule of coherent phonon generation and Raman scattering intensity. This method provides supports to analyze coherent phonon dynamics and e-ph couplings in TR-ARPES and enables quantitative engineering of band structure through coherent phonons.",
+    "title": "Photogeneration and signatures of coherent phonons in time-resolved photoemission spectroscopy: First-principles time-dependent adiabatic GW approach",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.5658555030822754
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.5478537678718567
+      },
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.473705530166626
+      }
+    ]
+  },
+  "2607.12799v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shengqiao Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Harish K. Singh"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiahao Xie"
+      },
+      {
+        "affiliation": [],
+        "name": "Fu Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongbin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yang Su"
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Lijun Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12799v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper investigates novel altermagnetic and multiferroic properties in a complex oxide, exploring their tunability and momentum-dependent features using first-principles calculations.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Multiferroics",
+      "First-Principles Calculations"
+    ],
+    "summary": "Altermagnetism has recently emerged as a compelling frontier in spintronics, seamlessly merging the agile tunability of ferromagnets with the hallmark merits of antiferromagnets. As a prototypical polar multiferroic featuring distinctive altermagnetism, Fe2Mo3O8 hosts an ideal playground for exploring the intricate interplay among ferroelectric polarization, altermagnetic order, and spin-dependent responses. Here, employing first-principles calculations, we systematically investigate the coupling among polarization, spin splitting, shift current, and magneto-optical responses in Fe2Mo3O8. Our findings reveal that switching the ferroelectric polarization not only inverts the sign of the shift current but also comprehensively reshapes the momentum-space spin-splitting texture. Furthermore, the shift current and magneto-optical spectrum exhibits strong tunability under mechanical strain. Remarkably, the application of a-axis uniaxial strain breaks the crystalline symmetry, thereby activating a finite magneto-optical Kerr effect that is otherwise forbidden in the pristine phase.",
+    "title": "Strain-Tunable Shift Current and Magneto-Optical Kerr Effect in Multiferroic Altermagnet Fe2Mo3O8",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.5275918245315552
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.49558401107788086
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Wp0gIr-vW9MC",
+        "score": 0.48826584219932556
+      }
+    ]
+  },
+  "2607.12969v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ibrahim El Mountasser"
+      },
+      {
+        "affiliation": [],
+        "name": "Khalide Jbilou"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.12969v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-14",
+    "reasoning": "The paper discusses general numerical methods for low-precision matrix and tensor approximation, which is too generic and lacks direct relevance to the user's specific interests in condensed matter physics and quantum materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Tensor Trains",
+      "Low-Precision Computation",
+      "Numerical Linear Algebra"
+    ],
+    "summary": "Lower numerical precision reduces storage and memory traffic but raises the perturbation floor. We study rank compensation: reinvesting saved memory in a larger approximation rank. For matrices, the singular-value error identity yields a directly testable sufficient condition requiring the additional singular component to offset the perturbation from storing the rank-augmented approximation in lower precision. On ten SuiteSparse matrices, all 100 truncation-dominated configurations (50 FP32 and 50 FP16) are certified non-increases and strict accuracy wins, with mean error ratio $0.963$ and storage ratios $58.8\\%$ and $29.4\\%$ relative to the FP64 baseline. FP16 failures occur only in tail-rank stress tests near the perturbation floor. At the largest resident matrix-application batch, compensated FP32 and FP16 achieve geometric-mean A100 speedups of $1.28\\times$ and $2.12\\times$; neither accelerates the smallest batch. For Tensor-Train (TT) approximation, we give a conditional a posteriori extension based on the measured truncation gain and rounded-core perturbation. Across three-way and six-way synthetic tests, FP32 and FP16 achieve combined accuracy-memory wins in 10 of 20 and 14 of 20 trials. On public hyperspectral tensors and FROSTT top-active subtensors, the corresponding counts are 44 of 60 and 54 of 60; four FP16 Salinas-A tail-stress cases fail. No certified TT case exceeds the FP64 error beyond numerical tolerance. Reconstruction of six public tensors yields geometric-mean compensated speedups of $1.38\\times$ (FP32) and $1.94\\times$ (FP16). Timings cover resident downstream kernels, not factorization, transfers, or end-to-end acceleration.",
+    "title": "Low-Precision Rank Compensation for Matrices and Tensor Trains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4296724796295166
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.35704800486564636
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.3054068088531494
       }
     ]
   }
