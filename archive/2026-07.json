@@ -8417,6 +8417,53 @@
       }
     ]
   },
+  "2607.12810v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Viktor A. Lilja"
+      },
+      {
+        "affiliation": [],
+        "name": "Philippe Tassin"
+      }
+    ],
+    "categories": [
+      "physics.optics",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.12810v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper leverages symmetry principles to improve deep learning in physical simulations, which connects to the explicit mention of symmetry in one of the liked papers.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "equivariant neural networks",
+      "Maxwell's equations",
+      "photonic devices"
+    ],
+    "summary": "Deep learning can accelerate the modeling of electromagnetic devices by replacing costly simulations with neural networks trained to map design parameters to scattering parameters. However, data efficiency remains a central bottleneck, as training data is typically generated through expensive numerical simulations. Here we show that symmetry provides a powerful and largely untapped route to overcoming this limitation in electromagnetic scattering problems. Leveraging the equivariance of Maxwell's equations, we obtain general transformation rules that map symmetries of electromagnetic devices to corresponding transformations of their scattering parameters. This enables both systematic data augmentation and the construction of exactly equivariant neural networks. We implement the framework for both discrete and continuous symmetry groups and demonstrate its effectiveness on photonic-crystal slabs and free-form diffraction gratings. Incorporating symmetry improves data efficiency by an order of magnitude compared to standard architectures, while equivariant models additionally enforce physical constraints exactly. Our approach is general and complementary to existing physics-informed strategies, provides a first-principles framework for constructing physically grounded surrogate models, and establishes symmetry as a unifying inductive bias for data-efficient and physically consistent learning in computational electromagnetics and beyond.",
+    "title": "Symmetry-Informed Deep Learning for Electromagnetic Scattering",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.43888014554977417
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.41523751616477966
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4048765301704407
+      }
+    ]
+  },
   "2607.12969v1": {
     "authors": [
       {
@@ -8459,6 +8506,1817 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
         "score": 0.3054068088531494
+      }
+    ]
+  },
+  "2607.13086v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jacques R. Eone"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13086v1",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model"
+    ],
+    "published_date": "2026-07-13",
+    "reasoning": "This paper directly explores a mechanism for high-temperature superconductivity in cuprates, which is a core topic in the user's liked papers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "high-Tc superconductivity",
+      "Hund's coupling",
+      "Hubbard model"
+    ],
+    "summary": "Among the various mechanisms proposed for unconventional superconductivity, this paper focuses on the Coulomb interaction responsible for $d$-wave and $s\\pm$-wave pairing symmetries in cuprates and iron pnictides. Although the effective interaction $U_\\text{eff}=U-J$ is predominantly repulsive, an attractive component arising from the Hund's coupling parameter $J$ is sufficient to bind fractional charges. Evaluating this binding energy within a single-band Hubbard model yields a superconducting pairing gap $Δ_0$ and estimates the transition temperature $T_c$. Given the complex electronic structure and vast compositional space of these materials, the model focuses exclusively on the doped superconducting plane hosting these fractional charges. Through this approach, an analytical expression dependent on the Hubbard $U$ and Hund $J$ parameters that accurately reproduces the superconducting dome is derived. Furthermore, the model successfully addresses the characteristic electron and hole doping asymmetry observed in cuprates by accounting for Hund's coupling parameters. Finally, while the theory accurately describes strange metal behavior, it currently provides only a qualitative explanation for the pseudogap phase and the underdoped isotope effect.",
+    "title": "Cooper pairing with the onsite exchange interaction: A possible mechanism of high-temperature superconductivity",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.639305591583252
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6214327812194824
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.5982718467712402
+      }
+    ]
+  },
+  "2607.13301v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Trond I. Andersen"
+      },
+      {
+        "affiliation": [],
+        "name": "Nikita Astrakhantsev"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeronimo Martinez"
+      },
+      {
+        "affiliation": [],
+        "name": "Will Morong"
+      },
+      {
+        "affiliation": [],
+        "name": "Johannes Motruk"
+      },
+      {
+        "affiliation": [],
+        "name": "Dario Rossi"
+      },
+      {
+        "affiliation": [],
+        "name": "Brayden Ware"
+      },
+      {
+        "affiliation": [],
+        "name": "Bryce Kobrin"
+      },
+      {
+        "affiliation": [],
+        "name": "Weijie Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Elizabeth Bennewitz"
+      },
+      {
+        "affiliation": [],
+        "name": "Manuel Rudolph"
+      },
+      {
+        "affiliation": [],
+        "name": "Tom Westerhout"
+      },
+      {
+        "affiliation": [],
+        "name": "Amira Abbas"
+      },
+      {
+        "affiliation": [],
+        "name": "Rajeev Acharya"
+      },
+      {
+        "affiliation": [],
+        "name": "Laleh Aghababaie Beni"
+      },
+      {
+        "affiliation": [],
+        "name": "Ross Alcaraz"
+      },
+      {
+        "affiliation": [],
+        "name": "Sayra Alcaraz"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Ansmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Arute"
+      },
+      {
+        "affiliation": [],
+        "name": "Kunal Arya"
+      },
+      {
+        "affiliation": [],
+        "name": "Walt Askew"
+      },
+      {
+        "affiliation": [],
+        "name": "Juan Atalaya"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Ayala"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryan Babbush"
+      },
+      {
+        "affiliation": [],
+        "name": "Brian Ballard"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph Bardin"
+      },
+      {
+        "affiliation": [],
+        "name": "Hector Bates"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Bengtsson"
+      },
+      {
+        "affiliation": [],
+        "name": "Majid Bigdeli Karimi"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Bilmes"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Bilodeau"
+      },
+      {
+        "affiliation": [],
+        "name": "Felix Borjans"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexandre Bourassa"
+      },
+      {
+        "affiliation": [],
+        "name": "Jenna Bovaird"
+      },
+      {
+        "affiliation": [],
+        "name": "Dylan Bowers"
+      },
+      {
+        "affiliation": [],
+        "name": "Leon Brill"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Brooks"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Broughton"
+      },
+      {
+        "affiliation": [],
+        "name": "David Browne"
+      },
+      {
+        "affiliation": [],
+        "name": "Brett Buchea"
+      },
+      {
+        "affiliation": [],
+        "name": "Bob Buckley"
+      },
+      {
+        "affiliation": [],
+        "name": "Tim Burger"
+      },
+      {
+        "affiliation": [],
+        "name": "Brian Burkett"
+      },
+      {
+        "affiliation": [],
+        "name": "Jamal Busnaina"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas Bushnell"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonas Bylander"
+      },
+      {
+        "affiliation": [],
+        "name": "Anthony Cabrera"
+      },
+      {
+        "affiliation": [],
+        "name": "Juan Campero"
+      },
+      {
+        "affiliation": [],
+        "name": "Hung-Shen Chang"
+      },
+      {
+        "affiliation": [],
+        "name": "Silas Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Zijun Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Ben Chiaro"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang-Ying Chih"
+      },
+      {
+        "affiliation": [],
+        "name": "Agnetta Cleland"
+      },
+      {
+        "affiliation": [],
+        "name": "Bryan Cochrane"
+      },
+      {
+        "affiliation": [],
+        "name": "Matt Cockrell"
+      },
+      {
+        "affiliation": [],
+        "name": "Josh Cogan"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Conner"
+      },
+      {
+        "affiliation": [],
+        "name": "Tom Connolly"
+      },
+      {
+        "affiliation": [],
+        "name": "Harold Cook"
+      },
+      {
+        "affiliation": [],
+        "name": "Rodrigo Cortinas"
+      },
+      {
+        "affiliation": [],
+        "name": "William Courtney"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Crook"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin Curtin"
+      },
+      {
+        "affiliation": [],
+        "name": "Adam Dally"
+      },
+      {
+        "affiliation": [],
+        "name": "Sayan Das"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Damyanov"
+      },
+      {
+        "affiliation": [],
+        "name": "Dripto Debroy"
+      },
+      {
+        "affiliation": [],
+        "name": "Himadri Dey"
+      },
+      {
+        "affiliation": [],
+        "name": "Stijn de Graaf"
+      },
+      {
+        "affiliation": [],
+        "name": "Laura De Lorenzo"
+      },
+      {
+        "affiliation": [],
+        "name": "Sean Demura"
+      },
+      {
+        "affiliation": [],
+        "name": "Lucia De Rose"
+      },
+      {
+        "affiliation": [],
+        "name": "Agustin Di Paolo"
+      },
+      {
+        "affiliation": [],
+        "name": "Leon Ding"
+      },
+      {
+        "affiliation": [],
+        "name": "Howard Dobbs"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Donohoe"
+      },
+      {
+        "affiliation": [],
+        "name": "Ebru Dogan"
+      },
+      {
+        "affiliation": [],
+        "name": "Ilya Drozdov"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Dunsworth"
+      },
+      {
+        "affiliation": [],
+        "name": "Rasmus Edholm"
+      },
+      {
+        "affiliation": [],
+        "name": "Valerie Ehimhen"
+      },
+      {
+        "affiliation": [],
+        "name": "Alec Eickbusch"
+      },
+      {
+        "affiliation": [],
+        "name": "Aviv Elbag"
+      },
+      {
+        "affiliation": [],
+        "name": "Lior Ella"
+      },
+      {
+        "affiliation": [],
+        "name": "Mahmoud Elzouka"
+      },
+      {
+        "affiliation": [],
+        "name": "David Enriquez"
+      },
+      {
+        "affiliation": [],
+        "name": "Catherine Erickson"
+      },
+      {
+        "affiliation": [],
+        "name": "Lara Faoro"
+      },
+      {
+        "affiliation": [],
+        "name": "Vinicius Ferreira"
+      },
+      {
+        "affiliation": [],
+        "name": "Marcos Flores"
+      },
+      {
+        "affiliation": [],
+        "name": "Leslie Flores Burgos"
+      },
+      {
+        "affiliation": [],
+        "name": "Sam Fontes"
+      },
+      {
+        "affiliation": [],
+        "name": "Ebrahim Forati"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeremiah Ford"
+      },
+      {
+        "affiliation": [],
+        "name": "Brooks Foxen"
+      },
+      {
+        "affiliation": [],
+        "name": "Masaya Fukami"
+      },
+      {
+        "affiliation": [],
+        "name": "Alan Fung"
+      },
+      {
+        "affiliation": [],
+        "name": "Lenny Fuste"
+      },
+      {
+        "affiliation": [],
+        "name": "Suhas Ganjam"
+      },
+      {
+        "affiliation": [],
+        "name": "Gonzalo Garcia"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Garrick"
+      },
+      {
+        "affiliation": [],
+        "name": "Robert Gasca"
+      },
+      {
+        "affiliation": [],
+        "name": "Helge Gehring"
+      },
+      {
+        "affiliation": [],
+        "name": "Robert Geiger"
+      },
+      {
+        "affiliation": [],
+        "name": "Élie Genois"
+      },
+      {
+        "affiliation": [],
+        "name": "William Giang"
+      },
+      {
+        "affiliation": [],
+        "name": "Dar Gilboa"
+      },
+      {
+        "affiliation": [],
+        "name": "James Goeders"
+      },
+      {
+        "affiliation": [],
+        "name": "Edward Gonzales"
+      },
+      {
+        "affiliation": [],
+        "name": "Raja Gosula"
+      },
+      {
+        "affiliation": [],
+        "name": "Alejandro Grajales Dau"
+      },
+      {
+        "affiliation": [],
+        "name": "Dietrich Graumann"
+      },
+      {
+        "affiliation": [],
+        "name": "Joel Grebel"
+      },
+      {
+        "affiliation": [],
+        "name": "Alex Greene"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan Gross"
+      },
+      {
+        "affiliation": [],
+        "name": "Jose Guerrero"
+      },
+      {
+        "affiliation": [],
+        "name": "Tan Ha."
+      },
+      {
+        "affiliation": [],
+        "name": "Steve Habegger"
+      },
+      {
+        "affiliation": [],
+        "name": "Tanner Hadick"
+      },
+      {
+        "affiliation": [],
+        "name": "Ali Hadjikhani"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Hamilton"
+      },
+      {
+        "affiliation": [],
+        "name": "Monica Hansen"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Harrigan"
+      },
+      {
+        "affiliation": [],
+        "name": "Sean Harrington"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeanne Hartshorn"
+      },
+      {
+        "affiliation": [],
+        "name": "Stephen Heslin"
+      },
+      {
+        "affiliation": [],
+        "name": "Paula Heu"
+      },
+      {
+        "affiliation": [],
+        "name": "Oscar Higgott"
+      },
+      {
+        "affiliation": [],
+        "name": "Reno Hiltermann"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeremy Hilton"
+      },
+      {
+        "affiliation": [],
+        "name": "Hsin-Yuan Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Hucka"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Hudspeth"
+      },
+      {
+        "affiliation": [],
+        "name": "Ashley Huff"
+      },
+      {
+        "affiliation": [],
+        "name": "William Huggins"
+      },
+      {
+        "affiliation": [],
+        "name": "Aditya Jayaraman"
+      },
+      {
+        "affiliation": [],
+        "name": "Evan Jeffrey"
+      },
+      {
+        "affiliation": [],
+        "name": "Shaun Jevons"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhang Jiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoxuan Jin"
+      },
+      {
+        "affiliation": [],
+        "name": "Cody Jones"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaitali Joshi"
+      },
+      {
+        "affiliation": [],
+        "name": "Kelsey Josund"
+      },
+      {
+        "affiliation": [],
+        "name": "Pavol Juhas"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Kabel"
+      },
+      {
+        "affiliation": [],
+        "name": "Bharath Kannan"
+      },
+      {
+        "affiliation": [],
+        "name": "Hui Kang"
+      },
+      {
+        "affiliation": [],
+        "name": "Kiseo Kang"
+      },
+      {
+        "affiliation": [],
+        "name": "Amir Karamlou"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryan Kaufman"
+      },
+      {
+        "affiliation": [],
+        "name": "Tanuj Khattar"
+      },
+      {
+        "affiliation": [],
+        "name": "Mostafa Khezri"
+      },
+      {
+        "affiliation": [],
+        "name": "Seon Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Klimov"
+      },
+      {
+        "affiliation": [],
+        "name": "Can Knaut"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Korotkov"
+      },
+      {
+        "affiliation": [],
+        "name": "Fedor Kostritsa"
+      },
+      {
+        "affiliation": [],
+        "name": "John Mark Kreikebaum"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryuho Kudo"
+      },
+      {
+        "affiliation": [],
+        "name": "Arun Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Ben Kueffler"
+      },
+      {
+        "affiliation": [],
+        "name": "Vladislav Kurilovich"
+      },
+      {
+        "affiliation": [],
+        "name": "Vitali Kutsko"
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan Lacroix"
+      },
+      {
+        "affiliation": [],
+        "name": "Tiano Lange-Dei"
+      },
+      {
+        "affiliation": [],
+        "name": "Brandon Langley"
+      },
+      {
+        "affiliation": [],
+        "name": "Pavel Laptev"
+      },
+      {
+        "affiliation": [],
+        "name": "Kim-Ming Lau"
+      },
+      {
+        "affiliation": [],
+        "name": "Emma Leavell"
+      },
+      {
+        "affiliation": [],
+        "name": "Loïck Le Guevel"
+      },
+      {
+        "affiliation": [],
+        "name": "Justin Ledford"
+      },
+      {
+        "affiliation": [],
+        "name": "Joy Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Kenny Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Brian Lester"
+      },
+      {
+        "affiliation": [],
+        "name": "Wendy Leung"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Lloyd"
+      },
+      {
+        "affiliation": [],
+        "name": "Lily Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Wing Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Ming Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Lill"
+      },
+      {
+        "affiliation": [],
+        "name": "Mike Lindmark"
+      },
+      {
+        "affiliation": [],
+        "name": "William Livingston"
+      },
+      {
+        "affiliation": [],
+        "name": "Aditya Locharla"
+      },
+      {
+        "affiliation": [],
+        "name": "Erik Lucero"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Lundahl"
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Lunt"
+      },
+      {
+        "affiliation": [],
+        "name": "Sid Madhuk"
+      },
+      {
+        "affiliation": [],
+        "name": "Donald Macaskill"
+      },
+      {
+        "affiliation": [],
+        "name": "Aniket Maiti"
+      },
+      {
+        "affiliation": [],
+        "name": "Ashley Maloney"
+      },
+      {
+        "affiliation": [],
+        "name": "Salvatore Mandra"
+      },
+      {
+        "affiliation": [],
+        "name": "Leigh Martin"
+      },
+      {
+        "affiliation": [],
+        "name": "Orion Martin"
+      },
+      {
+        "affiliation": [],
+        "name": "Eric Mascot"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Masih Das"
+      },
+      {
+        "affiliation": [],
+        "name": "Anselme Massimino"
+      },
+      {
+        "affiliation": [],
+        "name": "Melvin Mathews"
+      },
+      {
+        "affiliation": [],
+        "name": "Cameron Maxfield"
+      },
+      {
+        "affiliation": [],
+        "name": "Jarrod McClean"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew McEwen"
+      },
+      {
+        "affiliation": [],
+        "name": "Seneca Meeks"
+      },
+      {
+        "affiliation": [],
+        "name": "Anthony Megrant"
+      },
+      {
+        "affiliation": [],
+        "name": "Tim Menke"
+      },
+      {
+        "affiliation": [],
+        "name": "Kevin Miao"
+      },
+      {
+        "affiliation": [],
+        "name": "Zlatko Minev"
+      },
+      {
+        "affiliation": [],
+        "name": "Reza Molavi"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Molina"
+      },
+      {
+        "affiliation": [],
+        "name": "Shirin Montazeri"
+      },
+      {
+        "affiliation": [],
+        "name": "Akira Nakamura"
+      },
+      {
+        "affiliation": [],
+        "name": "Charles Neill"
+      },
+      {
+        "affiliation": [],
+        "name": "Konstantin Nesterov"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Newman"
+      },
+      {
+        "affiliation": [],
+        "name": "Roselle Ngaloy"
+      },
+      {
+        "affiliation": [],
+        "name": "Anthony Nguyen"
+      },
+      {
+        "affiliation": [],
+        "name": "Murray Nguyen"
+      },
+      {
+        "affiliation": [],
+        "name": "Chia-Hung Ni"
+      },
+      {
+        "affiliation": [],
+        "name": "Murphy Niu"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas Noll"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergey Novikov"
+      },
+      {
+        "affiliation": [],
+        "name": "Logan Oas"
+      },
+      {
+        "affiliation": [],
+        "name": "Ricky Oliver"
+      },
+      {
+        "affiliation": [],
+        "name": "Will Oliver"
+      },
+      {
+        "affiliation": [],
+        "name": "Raymond Orosco"
+      },
+      {
+        "affiliation": [],
+        "name": "Kristoffer Ottosson"
+      },
+      {
+        "affiliation": [],
+        "name": "Alice Pagano"
+      },
+      {
+        "affiliation": [],
+        "name": "Manan Patel"
+      },
+      {
+        "affiliation": [],
+        "name": "Sherman Peek"
+      },
+      {
+        "affiliation": [],
+        "name": "David Peterson"
+      },
+      {
+        "affiliation": [],
+        "name": "Alex Pizzuto"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Plumb-Reyes"
+      },
+      {
+        "affiliation": [],
+        "name": "Elias Portoles"
+      },
+      {
+        "affiliation": [],
+        "name": "Rebecca Potter"
+      },
+      {
+        "affiliation": [],
+        "name": "Orion Pritchard"
+      },
+      {
+        "affiliation": [],
+        "name": "Sam Probst"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Qian"
+      },
+      {
+        "affiliation": [],
+        "name": "Chris Quintana"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Rakher"
+      },
+      {
+        "affiliation": [],
+        "name": "Arpit Ranadive"
+      },
+      {
+        "affiliation": [],
+        "name": "Ganesh Ramachandran"
+      },
+      {
+        "affiliation": [],
+        "name": "Armin Razavi"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Reagor"
+      },
+      {
+        "affiliation": [],
+        "name": "Rachel Resnick"
+      },
+      {
+        "affiliation": [],
+        "name": "David Rhodes"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Riley"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabrielle Roberts"
+      },
+      {
+        "affiliation": [],
+        "name": "Roberto Rodriguez"
+      },
+      {
+        "affiliation": [],
+        "name": "Emma Ropes"
+      },
+      {
+        "affiliation": [],
+        "name": "Eliott Rosenberg"
+      },
+      {
+        "affiliation": [],
+        "name": "Emma Rosenfeld"
+      },
+      {
+        "affiliation": [],
+        "name": "Dario Rosenstock"
+      },
+      {
+        "affiliation": [],
+        "name": "Elizabeth Rossi"
+      },
+      {
+        "affiliation": [],
+        "name": "Pedram Roushan"
+      },
+      {
+        "affiliation": [],
+        "name": "David Rower"
+      },
+      {
+        "affiliation": [],
+        "name": "Robert Salazar"
+      },
+      {
+        "affiliation": [],
+        "name": "Kannan Sankaragomathi"
+      },
+      {
+        "affiliation": [],
+        "name": "Murat Sarihan"
+      },
+      {
+        "affiliation": [],
+        "name": "Kevin Satzinger"
+      },
+      {
+        "affiliation": [],
+        "name": "Max Schaefer"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Schroeder"
+      },
+      {
+        "affiliation": [],
+        "name": "Henry Schurkus"
+      },
+      {
+        "affiliation": [],
+        "name": "Aria Shahingohar"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Shearn"
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Shorter"
+      },
+      {
+        "affiliation": [],
+        "name": "Shvarts Vladimir"
+      },
+      {
+        "affiliation": [],
+        "name": "Vlad Sivak"
+      },
+      {
+        "affiliation": [],
+        "name": "Spencer Small"
+      },
+      {
+        "affiliation": [],
+        "name": "W. Clarke Smith"
+      },
+      {
+        "affiliation": [],
+        "name": "David Sobel"
+      },
+      {
+        "affiliation": [],
+        "name": "Barrett Spells"
+      },
+      {
+        "affiliation": [],
+        "name": "Sofia Springer"
+      },
+      {
+        "affiliation": [],
+        "name": "George Sterling"
+      },
+      {
+        "affiliation": [],
+        "name": "Scott Stonemeyer"
+      },
+      {
+        "affiliation": [],
+        "name": "John Su"
+      },
+      {
+        "affiliation": [],
+        "name": "Jordan Suchard"
+      },
+      {
+        "affiliation": [],
+        "name": "Youngkyu Sung"
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Szasz"
+      },
+      {
+        "affiliation": [],
+        "name": "Alex Sztein"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomoyuki Tanaka"
+      },
+      {
+        "affiliation": [],
+        "name": "Madeline Taylor"
+      },
+      {
+        "affiliation": [],
+        "name": "Jothi Thiruraman"
+      },
+      {
+        "affiliation": [],
+        "name": "Douglas Thor"
+      },
+      {
+        "affiliation": [],
+        "name": "Brandur Thorgrimsson"
+      },
+      {
+        "affiliation": [],
+        "name": "Dogan Timucin"
+      },
+      {
+        "affiliation": [],
+        "name": "Eifu Tomita"
+      },
+      {
+        "affiliation": [],
+        "name": "Alfredo Torres"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Mert Torunbalci"
+      },
+      {
+        "affiliation": [],
+        "name": "Hao Tran"
+      },
+      {
+        "affiliation": [],
+        "name": "Abeer Vaishnav"
+      },
+      {
+        "affiliation": [],
+        "name": "Justin Vargas"
+      },
+      {
+        "affiliation": [],
+        "name": "Gopinath Vasalamarri"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergey Vdovichev"
+      },
+      {
+        "affiliation": [],
+        "name": "Guifre Vidal"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin Villalonga"
+      },
+      {
+        "affiliation": [],
+        "name": "Meghan Voorhees"
+      },
+      {
+        "affiliation": [],
+        "name": "Steven Waltman"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan Waltz"
+      },
+      {
+        "affiliation": [],
+        "name": "Shannon Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Danni Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "James Watson"
+      },
+      {
+        "affiliation": [],
+        "name": "Yonghua Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Travis Weidel"
+      },
+      {
+        "affiliation": [],
+        "name": "Theodore White"
+      },
+      {
+        "affiliation": [],
+        "name": "Kristi Wong"
+      },
+      {
+        "affiliation": [],
+        "name": "Bryan Woo"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Wood"
+      },
+      {
+        "affiliation": [],
+        "name": "Maddy Woodson"
+      },
+      {
+        "affiliation": [],
+        "name": "Cheng Xing"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. Jamie Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Ping Yeh"
+      },
+      {
+        "affiliation": [],
+        "name": "Bicheng Ying"
+      },
+      {
+        "affiliation": [],
+        "name": "Juhwan Yoo"
+      },
+      {
+        "affiliation": [],
+        "name": "Noureldin Yosri"
+      },
+      {
+        "affiliation": [],
+        "name": "Elliot Young"
+      },
+      {
+        "affiliation": [],
+        "name": "Grayson Young"
+      },
+      {
+        "affiliation": [],
+        "name": "Adam Zalcman"
+      },
+      {
+        "affiliation": [],
+        "name": "Ran Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yaxing Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yiqing Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Ningfeng Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas Zobrist"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenjie Zou"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergio Boixo"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Julian Kelly"
+      },
+      {
+        "affiliation": [],
+        "name": "Hartmut Neven"
+      },
+      {
+        "affiliation": [],
+        "name": "Vadim Smelyanskiy"
+      },
+      {
+        "affiliation": [],
+        "name": "Dvir Kafri"
+      },
+      {
+        "affiliation": [],
+        "name": "L. B. Ioffe"
+      },
+      {
+        "affiliation": [],
+        "name": "Kostyantyn Kechedzhi"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiao Mi"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitry Abanin"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13301v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "The paper focuses on quantum simulation of magnon spectra in spin systems, which is a different domain from the user's previously liked topics on electronic structure, superconductivity, and specific material classes.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "quantum simulation",
+      "magnons",
+      "superconducting qubits"
+    ],
+    "summary": "Quantum simulation promises to advance materials discovery by accurately simulating complex states of matter, their microscopic excitations, and macroscopic response functions. The central challenge in resolving the underlying interacting dynamics is to combine high-fidelity evolution with the sophisticated control necessary to manipulate individual quasi-particles in quantum many-body states. Here, we report on high-precision simulation of both linear and non-linear response functions in a 2D XY spin-1/2 magnet using an analog-digital superconducting processor of up to 97 qubits. By interleaving digital gates with analog evolution precisely characterized via Hamiltonian learning, we selectively excite magnons at tunable energy densities. Measuring first the linear magnon response -- a central probe in neutron-scattering experiments -- we extract temperature-dependent spectra and lifetimes. Our results reveal stark variations in magnon decay rates across the Brillouin zone, with enhancement near van Hove singularities and suppression for edge-localized modes. Next, we perform a suite of nonlinear measurements, including the study of self-scattering mechanisms, as well as pump-probe spectroscopy to directly characterize the magnon interactions. While matrix-product state simulations capture the dynamics well in either small systems or at low temperatures, their predictions become inaccurate away from these limits. This work demonstrates precise simulation of the interacting dynamics in quantum magnets, and provides key insights into quasi-particles and their microscopic scattering mechanisms.",
+    "title": "Precision quantum simulation of magnon spectra and interactions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5788694620132446
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5786100625991821
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5686341524124146
+      }
+    ]
+  },
+  "2607.13375v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xu Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Huifen Ren"
+      },
+      {
+        "affiliation": [],
+        "name": "Minjie Cui"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Luo"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuai Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Shaokui Su"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1088/1674-1056/ae8972",
+    "id": "2607.13375v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper highlights research on pressure-induced high-temperature superconductivity in nickelates and other quantum materials, directly aligning with previously liked papers on nickelate superconductors and correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "extreme conditions",
+      "nickelate superconductors",
+      "quantum materials"
+    ],
+    "summary": "The Synergetic Extreme Condition User Facility (SECUF) is a comprehensive, state-of-the-art user facility designed to provide integrated extreme physical conditions-including ultrahigh pressure, ultralow temperature, strong magnetic fields, and ultrafast optical fields-for frontier research in condensed matter physics and materials science. Within SECUF, the F2 Sample Pre-selection and Characterization Station plays a pivotal supporting role. Its mission is to provide comprehensive sample synthesis, processing, pre-screening, and characterization services to prepare high-quality specimens for subsequent experiments under extreme conditions. This paper details the specifications and performance of ten core instrument systems within these units. Furthermore, we highlight several breakthrough scientific achievements enabled by the F2 Station, encompassing the discovery of novel quantum spin supersolid states, pressure-induced high-temperature superconductivity in nickelates, giant anomalous Hall angles, and molecular water in lunar soil. We also outline ongoing technical developments that expand the station's capabilities, such as integrated high-pressure cells and self-built ancillary measurement systems.",
+    "title": "The Sample Pre-selection and Characterization Station at the SECUF: Instrumentation, Capabilities, and Representative Scientific Achievements",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:K3LRdlH-MEoC",
+        "score": 0.4771260917186737
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.46001482009887695
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.457255482673645
+      }
+    ]
+  },
+  "2607.13400v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shovan Gayen"
+      },
+      {
+        "affiliation": [],
+        "name": "Sk. Soyeb Ali"
+      },
+      {
+        "affiliation": [],
+        "name": "S K Panda"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13400v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper investigates Dirac topology and altermagnetic semimetals, directly aligning with the user's interest in Dirac fermions and semimetals.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "altermagnetism",
+      "Berry curvature",
+      "anomalous Hall effect"
+    ],
+    "summary": "We combine first-principles density-functional theory, Berry-curvature analysis, semiclassical Boltzmann transport, and atomistic spin dynamics to establish hexagonal NiS as a compensated 3d altermagnetic semimetal in which topology, magnetism, and lattice dynamics are intrinsically intertwined. The rotational coset symmetry of the NiAs lattice produces momentum-dependent spin splitting characteristic of altermagnetism. With spin-orbit coupling, gapped Dirac-like crossings generate intense Berry-curvature hot spots and nearly compensated electron-hole pockets. This leads to a large and anisotropic intrinsic spin Hall conductivity comparable to that of several 4d, 5d metals, a symmetry-allowed anomalous Hall response despite zero net magnetization, and nonsaturating magnetoresistance exceeding 10000 percent. On the magnetic side, first-principles determination of the exchange tensor reveals dominant long-range superexchange and sizable anisotropic interactions, quantitatively reproducing the experimental Neel temperature. Our results identify NiS as a model 3d platform in which carrier compensation, altermagnetic symmetry, Berry-curvature driven transport, and lattice-sensitive magnetism coexist within a single symmetry framework, offering a design principle for multi-functional quantum responses in correlated transition-metal compounds.",
+    "title": "Dirac topology, anomalous Hall response, and giant magnetoresistance in carrier-compensated altermagnetic semimetal NiS",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6455031633377075
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.6430047750473022
+      },
+      {
+        "liked_paper_id": "2506.16362v1",
+        "score": 0.6286157369613647
+      }
+    ]
+  },
+  "2607.13467v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Prashil S. Joshi"
+      },
+      {
+        "affiliation": [],
+        "name": "Diksha Mahadule"
+      },
+      {
+        "affiliation": [],
+        "name": "Rajesh K. Khatirkar"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13467v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper focuses on constitutive modeling for mechanical properties of alloys, a domain quite distinct from the condensed matter physics and strongly correlated electron systems in the liked papers.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "constitutive modeling",
+      "dynamic recrystallization",
+      "titanium alloys"
+    ],
+    "summary": "Accurate constitutive modeling of hot deformation behavior is essential for designing thermomechanical processes in advanced structural alloys. Conventional Arrhenius-type and empirical models do not adequately capture the combined effects of strain hardening, dynamic recovery (DRV), and dynamic recrystallization (DRX) across broad processing conditions. In this study, two Stacked Residual Physics-Informed Neural Networks (STAR-PINNs) were developed to simulate the hot deformation response of a Mo-rich $α+β$ titanium alloy (Ti-6Al-4Mo-1V-0.1Si). The Enhanced STAR-PINN incorporated thermomechanical constitutive constraints, while the DRX-Aware STAR-PINN employed a dual-output architecture to account for recrystallization kinetics. Both models used a shared residual encoder trained on experimental flow stress data collected at temperatures from 800 to 1050 degrees C and strain rates between 0.01 and 10 per second. Physics-informed constraints, including thermal softening, strain-rate sensitivity, strain hardening, and post-peak softening, were enforced through automatic differentiation. The DRX-Aware model further integrated JMAK-Avrami regularization, DRX saturation constraints, and Arrhenius-based consistency with tunable parameters, directly linking the predicted DRX fraction to stress output via latent-feature fusion. The DRX-Aware STAR-PINN achieved RMSE = 11.69 MPa, MAE = 4.83 MPa, R^2 = 0.9850, and a cross-validated RMSE of 12.47 +/- 0.26 MPa. This model accurately reproduced temperature-dependent flow curves, DRX kinetics, and Zener-Hollomon relationships, while maintaining physically consistent constitutive behavior. These results demonstrate that physics-informed deep learning provides a robust and interpretable framework for constitutive modeling, offering a practical approach for advanced process modeling of titanium alloys.",
+    "title": "Physics-Informed Residual Deep Learning for Constitutive Modeling of Hot Deformation and Dynamic Recrystallization in a Mo-Rich $α+β$ Titanium Alloy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.43294084072113037
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.35556095838546753
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.3436790406703949
+      }
+    ]
+  },
+  "2607.13863v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chenyu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yaxian Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Sheng Meng"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13863v1",
+    "matching_keywords": [
+      "altermagnetism",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper investigates ultrafast manipulation of altermagnets through phonons and symmetry breaking, connecting to the user's interest in symmetry, novel magnetic states, and their control.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "altermagnetism",
+      "phononics",
+      "ultrafast dynamics"
+    ],
+    "summary": "Altermagnets feature symmetry-dictated nontrivial spin splitting in electronic structure promising for next-generation spintronics, yet their ultrafast dynamical manipulation remains largely unexplored. Here, we establish altermagnetophononics as an efficient route for magnetic control via selective symmetry breaking induced by coherent phonons. Using the prototypical altermagnet $α$-MnTe as an example, we demonstrate that the targeted excitation of B$_{1g}$ mode selectively lifts the symmetry constraints protecting altermagnetism (AM), driving ultrafast transition into a transient compensated ferrimagnetic (cFiM) phase characterized by a global spin splitting without net magnetization. Further, we show that the proposed mechanism is broadly applicable by demonstrating a multi-mode symmetry breaking pathway, and by realizing a ferrimagnetic order with reversible magnetic moment in metallic CrSb. These findings elucidate the potential to obtain desirable nonequilibrium properties in altermagnets via coherent phononic control over their spin splittings.",
+    "title": "Ultrafast altermagnetophononics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5442566871643066
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5339096784591675
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5062960386276245
+      }
+    ]
+  },
+  "2607.13979v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andreas Werbrouck"
+      },
+      {
+        "affiliation": [],
+        "name": "Nikhila C. Paranamana"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew C. Meng"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoqing He"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthias J. Young"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13979v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper offers an efficient data processing method for 2D diffraction datasets, a technique directly relevant to X-ray scattering experiments mentioned in a previously liked paper.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "4D-STEM",
+      "X-ray diffraction",
+      "feature reduction"
+    ],
+    "summary": "Large 2D diffraction datasets, consisting of hundreds or thousands of measurements, are commonly acquired with 4D-STEM electron diffraction or at synchrotron X-ray beamlines. Machine learning and artificial intelligence offer great promise for analyzing these datasets. However, the sheer volume of data presents a significant data processing bottleneck. Cropping the detector and pixel binning are standard ways to reduce data size. Here we propose grouping and averaging pixels into superpixels of variable area. High-information regions are sampled densely, while low-information areas are collected into larger superpixels. In the process, symmetries in the data are captured and exploited, making this approach suitable for preprocessing 2D diffraction data. We compare two variance-minimizing methods: K-means clustering (top-down) and agglomerative clustering (bottom-up) and demonstrate superior scaling and interpretability for the bottom-up method. As these methods are distance-based, we demonstrate that the construction of superpixels can be accelerated using Gaussian random projection. Finally we show over 100-fold acceleration for phase mapping with Non-negative matrix factorization on a 4D-STEM dataset when superpixels are used as a preprocessing step.",
+    "title": "Using superpixels for interpretable feature reduction in large 2D diffraction datasets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3626701831817627
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.3477843701839447
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.279803067445755
+      }
+    ]
+  },
+  "2607.13993v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jia-Ming Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-Heng Tian"
+      },
+      {
+        "affiliation": [],
+        "name": "Yin Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Ru Zheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Rong-Qiang He"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhong-Yi Lu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.13993v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper directly describes an open-source quantum impurity solver for dynamical mean-field theory, which is highly relevant to a previously liked paper on efficient real-frequency DMFT solvers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "quantum impurity solver",
+      "natural orbitals",
+      "strongly correlated electrons"
+    ],
+    "summary": "In the context of dynamical mean-field theory (DMFT) calculations for strongly correlated electron systems, quantum impurity solvers play a central computational role in treating correlated lattice models and realistic materials. Consequently, developing efficient and robust quantum impurity solvers remains a key challenge. In this paper, we present an open-source quantum impurity solver package based on the natural orbitals renormalization group (NORG) method, dubbed $\\texttt{iNORG}$. This software delivers high accuracy with reduced computational cost by optimizing the bath representation using natural orbitals and incorporating advanced features such as efficient Hilbert space selection and efficient algorithms for computing Green's functions. We first introduce the basic principle of the NORG method and then discuss the implementation details. The software framework, major features, and installation procedure for $\\texttt{iNORG}$ are explained as well. Finally, several simple examples are presented to demonstrate the usage of $\\texttt{iNORG}$.",
+    "title": "$\\texttt{iNORG}$: An open-source quantum impurity solver package based on the natural orbitals renormalization group",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.765864908695221
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.6679823398590088
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.6651829481124878
+      }
+    ]
+  },
+  "2607.14025v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Victor Wen-zhe Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Siyuan Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Jin"
+      },
+      {
+        "affiliation": [],
+        "name": "Vrindaa Somjit"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Paolo Villani"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiawei Zhan"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Govoni"
+      },
+      {
+        "affiliation": [],
+        "name": "Giulia Galli"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.14025v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "It describes a new computational code for large-scale excited-state simulations, which aligns with the user's interest in advanced computational methods for materials research, similar to the previously liked DMFT solver.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "excited states",
+      "GW-BSE",
+      "computational materials science"
+    ],
+    "summary": "We present WEST, an open-source plane-wave pseudopotential code for large-scale excited-state materials simulations, and describe its theoretical foundations, software architecture, and capabilities. WEST implements full-frequency GW, quantum defect embedding theory, the Bethe-Salpeter equation, and time-dependent density functional theory within a common algorithmic framework that avoids the explicit computation of virtual electronic states. By combining density functional and density matrix perturbation theory, low-rank representations of the dielectric screening and exact exchange, and localization techniques, WEST achieves favorable computational scaling with system size. The code supports the calculation of quasi-particle and neutral excitation energies, optical and photoluminescence spectra, excited-state forces, and non-adiabatic couplings, with interoperable workflows connecting to quantum chemistry, vibronic coupling, and quantum computing packages. A hierarchical parallelization strategy and GPU acceleration deliver near-ideal strong scaling to thousands of GPUs, enabling accurate excited-state simulations of systems with more than a thousand atoms. Representative applications, spanning the full optical cycle of solid-state spin defects, self-trapped excitons in metal-halide perovskites, and the optical response of liquid water and ice, demonstrate the accuracy and versatility of the code across diverse material classes. The capabilities implemented in WEST establish the code as a scalable platform for predictive excited-state simulations, high-throughput materials discovery, and the generation of high-fidelity datasets for machine learning in computational materials science.",
+    "title": "The WEST code for large-scale excited-state materials simulations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5512562394142151
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5298019647598267
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.524864137172699
       }
     ]
   }
