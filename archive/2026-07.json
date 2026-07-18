@@ -10536,6 +10536,58 @@
       }
     ]
   },
+  "2607.14150v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nahid Binandeh Dehaghani"
+      },
+      {
+        "affiliation": [],
+        "name": "Rafal Wisniewski"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Pedro Aguiar"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.14150v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-07-14",
+    "reasoning": "This paper applies tensor network methods, a technique found in some liked papers, but to classical partial differential equations rather than directly to quantum many-body problems.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "PDE simulation",
+      "Matrix Product States"
+    ],
+    "summary": "We present a quantum-inspired tensor-network framework for solving advection-diffusion-reaction (ADR) partial differential equations. Discretized solution fields are encoded as matrix product states (MPS), while differential operators are represented as matrix product operators (MPOs). Time integration is performed entirely in tensor-network form using explicit Euler updates with controlled truncation. The method is evaluated on one- and two-dimensional ADR problems and compared with high-accuracy Runge-Kutta reference solutions. Numerical results show that the proposed representation remains compact, stable, and accurate across a range of dynamical regimes. The solver captures both local solution profiles and global observables while maintaining small bond dimensions throughout the simulation. These results highlight the potential of tensor networks as efficient structure-preserving tools for PDE simulation in multiple spatial dimensions.",
+    "title": "Tensor Network Methods for Advection-Diffusion-Reaction Systems Using Quantum-Inspired Representations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5095964670181274
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.46699991822242737
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4582342207431793
+      }
+    ]
+  },
   "2607.14221v1": {
     "authors": [
       {
@@ -10554,7 +10606,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2607.14221v1",
     "matching_keywords": [
@@ -10582,6 +10636,51 @@
       {
         "liked_paper_id": "2506.13431v1",
         "score": 0.552822470664978
+      }
+    ]
+  },
+  "2607.14222v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rishabh Jha"
+      },
+      {
+        "affiliation": [],
+        "name": "Karun Gadge"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.14222v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-15",
+    "reasoning": "The paper delves into abstract quantum information concepts like \"magic\" and \"entanglement\" in many-body quantum dynamics, which diverges significantly from the user's interest in specific condensed matter systems and their properties.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Information Theory",
+      "Quantum Resources",
+      "Many-body Quantum Dynamics"
+    ],
+    "summary": "Magic and entanglement are independent quantum resources, yet their exact relation in many-body dynamics has remained elusive. We uncover two structural principles. First, at any stabilizer state, the curvature of the second stabilizer Rényi entropy under an arbitrary Hermitian generator equals the quantum Fisher information up to a fixed normalization, creating a bidirectional bridge between computational and metrological resources. Second, for commuting Ising evolution on any forest graph, a Clifford pruning circuit yields the full stabilizer-Rényi family at arbitrary size and in any spatial embedding, thereby furnishing a graph-theoretic construction of families with finite magic density and vanishing entanglement density in the thermodynamic limit. We solve two paradigmatic one-dimensional realizations central to quantum simulation -- an Ising quench and a kicked Floquet chain -- exactly for arbitrary system size and directly in the thermodynamic limit, revealing finite magic density with vanishing entanglement density, distinct magic and entanglement revival periods, and Clifford points with zero magic but finite bipartite entanglement. The same tangent geometry fixes initial growth, perturbative revival lifting, and stability of thermodynamic magic minima. Large-scale Pauli-basis matrix-product-state calculations verify all predictions, and the tangent bridge yields a concrete protocol for detecting magic through established quantum-Fisher-information measurements.",
+    "title": "Magic Without Entanglement: Exact Revivals and Their Fisher Information Origin",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4708685576915741
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4674690067768097
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4526048004627228
       }
     ]
   },
@@ -10730,6 +10829,63 @@
       }
     ]
   },
+  "2607.14296v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Francesca De Franco"
+      },
+      {
+        "affiliation": [],
+        "name": "Dante M. Kennes"
+      },
+      {
+        "affiliation": [],
+        "name": "David J. Luitz"
+      },
+      {
+        "affiliation": [],
+        "name": "Matteo Rizzi"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Schmitt"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.14296v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper uses tensor network simulations to investigate fundamental quantum many-body dynamics in disordered Floquet circuits, relevant to both computational methods and quantum phenomena.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Floquet Circuits",
+      "Operator Scrambling",
+      "Quantum Simulation"
+    ],
+    "summary": "Current quantum hardware is limited by noise and decoherence, which restrict the depth of unitary circuits that can be implemented with high fidelity. We investigate how the compressibility of time-evolution operators depends on the dynamical regime of the underlying many-body system. As a testbed, we study a one-dimensional Floquet random circuit with a tunable competition between interactions and on-site disorder. Using tensor-network simulations, we characterize operator growth through the operator-entanglement entropy of the Floquet unitary as well as of out-of-time-ordered correlators (OTOCs). We find rapid operator scrambling at weak disorder, while strong disorder leads to slow OTOC-front propagation and logarithmic or near-logarithmic operator-entanglement growth over the accessible time window. We then optimize shallow brickwall circuits to approximate the Floquet evolution and show that strong-disorder circuits can be compressed to substantially smaller depths than weak-disorder circuits at fixed logarithmic fidelity density. These results suggest that localized or slowly scrambling dynamics provide a favorable regime for compressed quantum simulation on noisy devices.",
+    "title": "Disorder-enhanced compressibility of Floquet random quantum circuits",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5481512546539307
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4719979763031006
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4673745632171631
+      }
+    ]
+  },
   "2607.14402v1": {
     "authors": [
       {
@@ -10756,7 +10912,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2607.14402v1",
     "matching_keywords": [
@@ -10840,6 +10998,59 @@
       }
     ]
   },
+  "2607.14518v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dongwoo Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenyu Cui"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel K. Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Chihoon Lee"
+      }
+    ],
+    "categories": [
+      "q-fin.CP"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.14518v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper is dedicated to applying quantum computing to financial problems such as option pricing, a domain entirely unrelated to the user's previously expressed interest in condensed matter physics.",
+    "score": 0.0,
+    "suggested_keywords": [
+      "Quantum Finance",
+      "Financial Applications",
+      "Quantum Amplitude Estimation"
+    ],
+    "summary": "Basket option pricing often relies on Monte Carlo estimation, for which quantum amplitude estimation (QAE) provides a quadratic speed-up. However, the practical benefit of QAE can be limited by the depth of the state-preparation circuit. We propose a structure-aware quantum state-preparation framework for QAE-based basket option pricing. The framework uses tensor-train (TT) rank information to design shallow variational state-preparation circuits. In the independent regime, TT ranks remove unnecessary entangling links from a hardware-efficient ansatz. In correlated basket settings, we instead prepare asset-wise marginals locally and train a compact latent block to match the basket cumulative distribution function. The Basket-CDF objective targets the basket pushforward distribution rather than the full joint state, directly aligning state preparation with basket-dependent payoffs. Numerical experiments show that the proposed circuits replace the exponential state-preparation depth scaling of exact amplitude loading with linear scaling, while maintaining low-percent basket-pricing errors. Additional sampling-based training experiments and an end-to-end QAE integration study support compatibility with sample-estimated training and standard QAE-based pricing workflows.",
+    "title": "Structure-Aware Variational State Preparation for Quantum Basket Option Pricing",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5697321891784668
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5211421251296997
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.48859286308288574
+      }
+    ]
+  },
   "2607.14766v1": {
     "authors": [
       {
@@ -10870,7 +11081,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2607.14766v1",
     "matching_keywords": [
@@ -11021,6 +11234,49 @@
       }
     ]
   },
+  "2607.14917v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Masayuki Ohzeki"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.14917v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper focuses on statistical mechanics duality and permutation models, which is less directly related to the computational methods for quantum many-body systems or specific materials of interest.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Star-Triangle Duality",
+      "Permutation Models",
+      "Statistical Mechanics"
+    ],
+    "summary": "We study a duality analysis in conjunction with the star-triangle transformation for symmetric-group permutation models on the triangular and honeycomb lattices. The calculation is motivated by the permutation-model description of random tensor networks and by earlier duality analyses of replicated spin glasses. The essential point is that the finite-basis unit is not a bare bond but a star-triangle block. Our analysis estimates the critical bond dimension for the honeycomb lattice to be 2.634929344884, and the associated single-bond duality relation yields the triangular-lattice estimate 1.475661534848.",
+    "title": "Star-triangle duality estimates for triangular and honeycomb permutation models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4887070059776306
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.43015310168266296
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4239400327205658
+      }
+    ]
+  },
   "2607.14951v1": {
     "authors": [
       {
@@ -11114,7 +11370,9 @@
       "cond-mat.str-el",
       "physics.comp-ph"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2607.15030v1",
     "matching_keywords": [
@@ -11220,7 +11478,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2607.15124v1",
     "matching_keywords": [
@@ -11249,6 +11509,101 @@
       {
         "liked_paper_id": "2506.23550v1",
         "score": 0.48369407653808594
+      }
+    ]
+  },
+  "2607.15132v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Elena Petrova"
+      },
+      {
+        "affiliation": [],
+        "name": "Maksym Serbyn"
+      },
+      {
+        "affiliation": [],
+        "name": "Marko Ljubotina"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.15132v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper explores fundamental aspects of quantum many-body dynamics in integrable spin chains, a topic relevant to the broader understanding of correlated systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Many-body Scars",
+      "Integrable Systems",
+      "Spin Chains"
+    ],
+    "summary": "Quantum many-body scars provide an exception to generic thermalising dynamics, but their relation to integrability remains unclear. Here we apply the periodic-orbit framework to the integrable XYZ/XXZ spin-1/2 chain, developing an energy-resolved approach that enables us to locate and track periodic orbits across the spectrum. We identify families of scarred orbits and resolve their supporting eigenstates in terms of Bethe-ansatz quantum numbers, revealing a common string core dressed by zero-momentum magnon pairs. This allows us to reconstruct both the scarred eigenstates and the associated towers directly within the Bethe ansatz, and explain the equidistant tower spacing analytically from the decoupling of zero-momentum magnon pairs in the Bethe equations, providing a microscopic realisation of scar phenomenology in an integrable setting. We further show that this structure persists upon breaking integrability with a transverse field, with the periodic orbits continuing to govern the dynamics. Our results establish a direct connection between the periodic-orbit picture of quantum scarring and the algebraic structure of integrable models, showing that key features of scar dynamics can be understood analytically within the Bethe ansatz framework.",
+    "title": "Periodic orbits and quantum many-body scars in integrable spin chains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5645992755889893
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5183504223823547
+      },
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.4959367513656616
+      }
+    ]
+  },
+  "2607.15158v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yining Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Philippe Corboz"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.15158v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper significantly improves the efficiency of tensor network methods for strongly correlated systems, aligning with interest in efficient computational solvers.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "CTMRG",
+      "GPU acceleration"
+    ],
+    "summary": "The corner transfer matrix renormalization group (CTMRG) is one of the standard contraction methods for infinite projected entangled-pair states (iPEPS), but its computational cost is dominated by repeated truncated singular value decompositions (SVDs). We introduce subspace-iteration CTMRG (SI-CTMRG), a QR-based projector construction that replaces each large-matrix SVD with an SVD of a much smaller matrix. The resulting algorithm shifts the dominant cost from decompositions to tensor contractions, making it highly suited to GPU acceleration and yielding speedups of up to two orders of magnitude over standard CTMRG. We demonstrate the efficiency and accuracy of the method for the triangular-lattice Heisenberg antiferromagnet, reaching state-of-the-art iPEPS results on a single H100 GPU in approximately 10 hours of computation.",
+    "title": "Fast two-dimensional tensor-network contraction via subspace iteration",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.562334418296814
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5108754634857178
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5019378662109375
       }
     ]
   },
