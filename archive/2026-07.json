@@ -11177,6 +11177,69 @@
       }
     ]
   },
+  "2607.14827v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anh Khoa Augustin Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shungo Arai"
+      },
+      {
+        "affiliation": [],
+        "name": "Yutack Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Seungwu Han"
+      },
+      {
+        "affiliation": [],
+        "name": "Tsuyoshi Miyazaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Satoshi Watanabe"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.14827v2",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-16",
+    "reasoning": "The paper introduces an equivariant graph neural network for fast and accurate prediction of materials properties including Born effective charges in complex oxides like perovskites, aligning with interests in advanced computational methods and materials characterization.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "graph neural networks",
+      "Born effective charges",
+      "computational materials science"
+    ],
+    "summary": "Accurate prediction of the Born effective charge (BEC) tensor is crucial for modeling materials under electric fields but remains computationally expensive. To bridge this gap, we present SevenNet-Polar, an equivariant graph neural network framework based on the SevenNet architecture for fast and accurate BEC predictions. Our BEC-only predictors can achieve an RMSE as low as 0.0043 e on ZrO$_2$, Li$_3$PO$_4$, and perovskites, despite the presence of high-temperature (up to 2,000 K) and defect-laden training data. Our all-in-one multitask models for predicting energy, forces, stress, and BEC in ZrO$_2$ and Li$_3$PO$_4$ achieve high accuracy with an RMSE of 1.0 meV/atom for energy, 12 meV/angstrom for forces, 0.05 GPa for stress, and 0.0029 e for BEC. BEC accuracy is not degraded by multitask training. Scaling analysis reveals distinct exponents for diagonal and off-diagonal BEC components, both of which exhibit less favorable scaling than energy, force and stress errors. SevenNet-Polar generalizes robustly when tested on scenarios containing structural environments absent from the training set, such as along nudged elastic band (NEB) trajectories or grain boundaries in ZrO$_2$. Accelerated by FlashTP, SevenNet-Polar enables simulations containing up to 1.5 million atoms on multi-GPU supercomputers and up to approximately 15,000 atoms on a single consumer-grade GPU. This makes charge-aware molecular dynamics simulations under electric fields more accessible.",
+    "title": "SevenNet-Polar for MultiTask Prediction of Energy, Forces, Stress, and Born Effective Charges: Development and Application to ZrO$_2$, Li$_3$PO$_4$, and Perovskites",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.49224531650543213
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4155313968658447
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.4067510664463043
+      }
+    ]
+  },
   "2607.14875v1": {
     "authors": [
       {
@@ -11769,6 +11832,714 @@
       {
         "liked_paper_id": "2507.01856v1",
         "score": 0.39931410551071167
+      }
+    ]
+  },
+  "2607.15346v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tanner J. Legvold"
+      },
+      {
+        "affiliation": [],
+        "name": "Bin Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Rong-Zhu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Violet Williams"
+      },
+      {
+        "affiliation": [],
+        "name": "Tong Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Dehong Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Chien-Lung Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Gage Eichman"
+      },
+      {
+        "affiliation": [],
+        "name": "Renjie Lui"
+      },
+      {
+        "affiliation": [],
+        "name": "Benedetta Flebus"
+      },
+      {
+        "affiliation": [],
+        "name": "Pengcheng Dai"
+      },
+      {
+        "affiliation": [],
+        "name": "Douglas Natelson"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.15346v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper investigates field-induced phase transitions and magnetic excitations in a quantum spin liquid candidate using experimental techniques, aligning with interests in competing phases and correlated materials.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum spin liquid",
+      "Neutron scattering",
+      "Magnetic phase transitions"
+    ],
+    "summary": "BaCo2(AsO4)2 (BCAO) is an insulating Kitaev quantum spin liquid candidate with a rich low-temperature phase diagram. Below 5 K, it exhibits double-zigzag magnetic order. Upon application of an in-plane magnetic field, the magnetic structure first transforms into an up-up-down (UUD) state near 0.12 T and then enters a fully spin-polarized ferromagnetic (FM) state near 0.5 T. In the narrow field regime close to the polarized phase, a finite residual thermal conductivity has been reported, suggesting a possible field-induced quantum spin liquid phase. Using neutron scattering, we show that the field-induced double-zigzag-to-UUD transition near 0.15 T is accompanied by the emergence of a cluster of localized UUD spin excitations that coexist with conventional spin waves. Upon further increasing field, BCAO undergoes a first-order UUD-to-FM transition with coexistence of UUD and FM phases, accompanied by a sharp response in the spin Seebeck coefficient. These results do not support a quantum spin liquid scenario near the UUD-to-FM critical field. Instead, modeling indicates that the broad excitations arise from bound spin-flip pairs, while a low-lying dispersive branch near the FM phase boundary carries the same sign of magnetization as the FM order. These excitations naturally account for the observed sign of the spin Seebeck response and are likely relevant to the thermal conductivity near the critical field.",
+    "title": "Field-induced first order transitions and phase coexistence in the Kitaev quantum spin liquid candidate BaCo2(AsO4)2",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6403143405914307
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5689654350280762
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5408492088317871
+      }
+    ]
+  },
+  "2607.15411v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhenfa Zheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Benran Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiawei Ruan"
+      },
+      {
+        "affiliation": [],
+        "name": "Chih-En Hsu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zien Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Supavit Pokawanvit"
+      },
+      {
+        "affiliation": [],
+        "name": "Felipe H. da Jornada"
+      },
+      {
+        "affiliation": [],
+        "name": "Hung-Chung Hsueh"
+      },
+      {
+        "affiliation": [],
+        "name": "Ting Cao"
+      },
+      {
+        "affiliation": [],
+        "name": "Mauro Del Ben"
+      },
+      {
+        "affiliation": [],
+        "name": "Yang-Hao Chan"
+      },
+      {
+        "affiliation": [],
+        "name": "Steven G. Louie"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenglu Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.15411v1",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium",
+      "pump-probe"
+    ],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper presents an advanced ab initio method to simulate exciton-phonon coupled dynamics across momentum space, aligning with interests in sophisticated theoretical approaches and momentum-dependent phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "exciton-phonon coupling",
+      "time-dependent GW",
+      "nonequilibrium dynamics"
+    ],
+    "summary": "The dynamics of optical excitations in materials generally involves intertwined electron-hole (e-h) and electron-phonon (e-ph) interactions out of equilibrium. However, a full theoretical description of such nonequilibrium dynamics requires a systematic treatment of the coherent excitonic excitations and exciton-phonon interactions across the entire crystal momentum space in real time, which remains a major challenge and out of reach for first-principles approaches. Here, we present a new ab initio time-dependent adiabatic GW methodology that incorporates full finite-momentum e-h and e-ph couplings, enabling real-time simulations of the coherently coupled exciton-phonon dynamics. The excitonic excitations are naturally described by the equation of motion of the interacting single-particle density matrix, whereas their couplings to phonons are formulated within a linear-response framework, hence the simulations can be efficiently carried out within a primitive unit cell. We demonstrate the capabilities of this new approach by investigating the direct-to-indirect exciton transitions in monolayer WSe2 in a pump-probe setup of time-resolved and angle-resolved photoemission spectroscopy. Our results reveal that the phonon-mediated ultrafast intervalley dynamics of excitons of this system is within ~0.5 ps, manifested as in-gap photoemission intensity transfer from the K-valley to the Q-valley. This work establishes a comprehensive and practical nonequilibrium Green's function framework for accurately simulating nonequilibrium and coherent excitations involving coupled excitons and phonons from first principles.",
+    "title": "Ab initio time-dependent GW approach for nonequilibrium exciton-phonon coupled dynamics across momentum space",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5086381435394287
+      },
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.4868510067462921
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.46775954961776733
+      }
+    ]
+  },
+  "2607.15728v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhi Yan"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuwen Hua"
+      },
+      {
+        "affiliation": [],
+        "name": "Yueting Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Xujin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianhua Xiao"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaohong Xu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.15728v1",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper investigates giant resistance switching in novel altermagnetic multiferroic tunnel junctions, leveraging momentum-dependent spin splitting and advanced first-principles calculations, which aligns well with interests in new materials, spintronics, and computational methods.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "altermagnetism",
+      "multiferroics",
+      "spintronics"
+    ],
+    "summary": "Altermagnets enable spin-split transport without stray magnetic fields, yet converting their momentum-dependent spin splitting into a strong tunnel-junction response requires interface-selected tunneling channels. Here, using density functional theory combined with nonequilibrium Green's function calculations, we demonstrate giant multistate resistance switching in CrSb/$α$-In$_2$Se$_3$ altermagnetic multiferroic tunnel junctions. The response is governed not by the bulk spin splitting of CrSb alone, but by a symmetry-selected interfacial mechanism in which Cr/Sb terminations and \\textit{h}-BN or graphene insertion layers determine spin-channel matching, while ferroelectric polarization reshapes the electrostatic barrier. Symmetric and asymmetric terminations reverse the correspondence between parallel/antiparallel Néel-vector configurations and high-/low-resistance states, showing that the actual alignment of interfacial Cr moments selects the dominant tunneling channels. Monolayer-In$_2$Se$_3$ junctions exhibit four nonvolatile resistance states, with tunneling magnetoresistance (TMR) and tunneling electroresistance (TER) reaching 1626\\% and 2206\\%, respectively, and increasing to 9576\\% and 4144\\% upon Fermi-level shifting. Finite-bias calculations further reveal robust spin filtering and tunable spin-polarized currents. Extending the barrier to bilayer In$_2$Se$_3$ introduces interlayer polarization coupling, enabling eight resistance states with maximum TMR and TER values of $3.77\\times10^{4}\\%$ and $4.18\\times10^{5}\\%$, respectively. These results establish interface symmetry, spin-channel matching, and ferroelectric barrier reconstruction as design principles for stray-field-free multistate spintronic tunnel devices.",
+    "title": "Interface-Engineered Giant Multistate Resistance Switching in Altermagnetic CrSb Multiferroic Tunnel Junctions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5532593727111816
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.48282086849212646
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.4776689410209656
+      }
+    ]
+  },
+  "2607.15763v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Maryia Zinouyeva"
+      },
+      {
+        "affiliation": [],
+        "name": "Leonardo Martinelli"
+      },
+      {
+        "affiliation": [],
+        "name": "Riccardo Arpaia"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas B. Brookes"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniele Di Castro"
+      },
+      {
+        "affiliation": [],
+        "name": "Kurt Kummer"
+      },
+      {
+        "affiliation": [],
+        "name": "Floriana Lombardi"
+      },
+      {
+        "affiliation": [],
+        "name": "Giacomo Merzoni"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Rosa"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Tarasio"
+      },
+      {
+        "affiliation": [],
+        "name": "Enrico Tassi"
+      },
+      {
+        "affiliation": [],
+        "name": "Flora Yakhou-Harris"
+      },
+      {
+        "affiliation": [],
+        "name": "Ezio Puppin"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Moretti Sala"
+      },
+      {
+        "affiliation": [],
+        "name": "Giacomo Ghiringhelli"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.15763v1",
+    "matching_keywords": [
+      "RIXS",
+      "cuprate",
+      "machine learning",
+      "neural network",
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper directly investigates $dd$ excitations in cuprate superconductors using RIXS, a technique and material class explicitly mentioned in a previously liked paper, and applies machine learning for analysis.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprates",
+      "RIXS",
+      "Machine learning in physics"
+    ],
+    "summary": "We investigate $dd$ excitations in Resonant Inelastic X-ray Scattering spectra of YBa$_2$Cu$_3$O$_6$ and La$_2$CuO$_4$ using the local single-ion model. The data are analyzed by conventional global fitting and by a convolutional neural network trained within the same theoretical framework. For YBa$_2$Cu$_3$O$_6$, the excited state energies obtained with the two methods coincide, leading to the $xy$, $3z^2-r^2$, $xz/yz$ sequence for increasing energy. This result validates the use of machine learning tools for the analysis of RIXS spectra dominated by $dd$ excitations. By contrast, for La$_2$CuO$_4$, the two methods do not converge to a single solution, revealing the limitations of the single-ion model in describing $dd$ excitations in cuprates and pointing to the role of additional contributions beyond a purely local picture in shaping high-energy excitations.",
+    "title": "Machine-learning test of the single-ion model for $dd$ excitations in cuprates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.5212066173553467
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.5204981565475464
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.5203366279602051
+      }
+    ]
+  },
+  "2607.15916v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Niccolò Ciolli"
+      },
+      {
+        "affiliation": [],
+        "name": "Anders Vestergaard Nørskov"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Kastoryano"
+      },
+      {
+        "affiliation": [],
+        "name": "Petr Taborsky"
+      },
+      {
+        "affiliation": [],
+        "name": "Morten Mørup"
+      }
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.15916v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper focuses on a general machine learning optimization technique using Matrix Product Operators, without direct application or strong conceptual links to condensed matter physics or strongly correlated materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Machine learning algorithms",
+      "Polynomial optimization"
+    ],
+    "summary": "Central to machine learning and signal processing is the ability to perform universal function approximation and learn complex input-output relationships from limited numbers of observations. Multivariate polynomial models offer a natural way to express such relationships through multiplicative feature interactions, but their coefficient tensors grow exponentially in size with the polynomial degree. Existing tensorized polynomial models reduce this cost, yet canonical polyadic decompositions have rank-limited expressivity, and tensor train formulations are feature order dependent. We introduce Multivariate Polynomial Optimization based on Matrix Product Operators (MPO)$^2$, a framework that combines learned MPO feature embeddings with compact polynomial weight tensors. This yields feature order independent polynomial representations that can incorporate structured operators such as projections, convolutions, and masks for weight tensor symmetries. Across regression and classification benchmarks, (MPO)$^2$ improves over existing tensor decomposition based polynomial models and provides a flexible alternative for efficient polynomial function approximation.",
+    "title": "(MPO)$^2$: Multivariate Polynomial Optimization based on Matrix Product Operators",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3926244378089905
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3159720003604889
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.2627950608730316
+      }
+    ]
+  },
+  "2607.15954v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "V. E. Valiulin"
+      },
+      {
+        "affiliation": [],
+        "name": "A. V. Mikheyenkov"
+      },
+      {
+        "affiliation": [],
+        "name": "K. I. Kugel"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.15954v1",
+    "matching_keywords": [
+      "altermagnetism",
+      "green's function"
+    ],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper theoretically explores altermagnetism, a new magnetic phase, in correlated electron systems, including the concept of an \"altermagnetic liquid\" without long-range order.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Kugel-Khomskii model",
+      "Correlated electron systems"
+    ],
+    "summary": "The Kugel-Khomskii spin-pseudospin model, originally developed for transition-metal compounds with orbital degrees of freedom, has recently been reinterpreted in the context of altermagnetism. In this work, we theoretically investigate the emergence of altermagnetic behavior in the absence of long-range magnetic or orbital order. Using the rotation-invariant Green's function method for the SU(2) x SU(2) symmetric model on a square lattice and on a linear chain, we analyze spin-spin and spin-pseudospin correlation functions, excitation spectra, heat capacity, and susceptibilities. We show that beyond a critical intersubsystem exchange Kc(T), a composite state arises with nonzero spin-pseudospin correlations, even though the average spin and pseudospin at each site are zero. The excitation spectrum splits into acoustic and optical branches, with nodal lines along qx = qy - a direct signature of altermagnetic symmetry. A peak in heat capacity and a jump in susceptibility are observed at the phase boundary. In 1D, the phase boundary is nonmonotonic and demonstrates reentrant transition. These results establish the concept of an \"altermagnetic paramagnet\" or \"altermagnetic liquid\" without long-range order, relevant for low-dimensional and strongly fluctuating systems.",
+    "title": "Altermagnetism without a long-range order",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5994867086410522
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5978797674179077
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5605993866920471
+      }
+    ]
+  },
+  "2607.16039v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Longye Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shifeng Cui"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenan Guo"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.16039v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper explores deconfined quantum criticality and competing phases in dissipative spin systems using advanced theoretical tools like renormalization group and quantum Monte Carlo, strongly aligning with interests in correlated materials and critical phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "deconfined quantum criticality",
+      "open quantum systems",
+      "quantum Monte Carlo"
+    ],
+    "summary": "Open quantum spin systems offer a previously unexplored route to realizing deconfined quantum criticality. We consider a spin-1/2 $J$-$Q_3$ chain, consisting of an antiferromagnetic (AFM) Heisenberg exchange and a competing multi-spin interaction favoring a valence-bond solid (VBS) state, with each spin component coupled to a bosonic bath. Using non-Abelian bosonization and renormalization-group (RG) analysis, combined with large-scale quantum Monte Carlo (QMC) simulations, we determine the phase diagram and the associated phase transitions of the model. We show that strong dissipation stabilizes an AFM phase for sub-Ohmic, Ohmic, and super-Ohmic baths. Continuous AFM-VBS transitions at finite dissipation are found upon increasing the multi-spin interaction in both the sub-Ohmic and Ohmic regimes. Critical properties are obtained through perturbative RG analysis and QMC simulations. In the Ohmic case, the critical point features spinon deconfinement and emergent O(4) symmetry. In the sub-Ohmic regime, the transition may also involve spinon deconfinement, provided that spinons remain deconfined in the dissipative VBS phase. In addition, in the super-Ohmic regime, we propose a transition from AFM phase to a quasi-long-range ordered phase.",
+    "title": "Deconfined quantum critical point in a dissipative spin-1/2 chain",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6714823842048645
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6602809429168701
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6226462721824646
+      }
+    ]
+  },
+  "2607.16114v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Neil J. Ross"
+      },
+      {
+        "affiliation": [],
+        "name": "Scott Wesley"
+      }
+    ],
+    "categories": [
+      "cs.LO",
+      "math.CT"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.16114v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper delves into the abstract mathematical semantics of parameterized quantum circuits using category theory, which is too far removed from condensed matter physics and materials science topics.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Quantum computing theory",
+      "Category theory",
+      "Quantum circuit semantics"
+    ],
+    "summary": "It is well-known that combinatorial circuits are modeled mathematically by string diagrams in monoidal categories. Given a gate set $Σ$, the circuits over $Σ$ can be thought of as string diagrams in the free monoidal category generated by $Σ$. In this model, circuit semantics are then given by monoidal functors out of this free category. For quantum circuits, this functor is often valued in the category of unitary matrices. This model suffices for concrete quantum circuits, but fails to describe parameterized families of quantum circuits, such as those which arise in the analysis of ansatz circuits. In this paper, we introduce an approach to parameterized circuit semantics, which is based on enriched category theory. We first introduce an abstract categorical construction, and use this to gain new insights on controlled operations and quantum communication. We then study the special cases of Cartesian monoidal parameters and monoidal closed parameters, both endowing the parameterized semantics with useful constructions.We conclude by showing that the monoidal closed case can be used to unify two perspectives on quantum control.",
+    "title": "Parameterized Quantum Circuit Semantics Through Enriched Categories",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4190247356891632
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.3737560510635376
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.35640794038772583
+      }
+    ]
+  },
+  "2607.16116v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jinzhao Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Bozhen Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jue Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenyu Du"
+      },
+      {
+        "affiliation": [],
+        "name": "Zixu Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuntian Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Junxiang Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuo Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Ziruo Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Yosifov"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenzheng Dong"
+      },
+      {
+        "affiliation": [],
+        "name": "Yiming Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Serrano"
+      },
+      {
+        "affiliation": [],
+        "name": "Xinzhao Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianfeng Feng"
+      },
+      {
+        "affiliation": [],
+        "name": "Shreyas Sadugol"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenjun Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhou You"
+      },
+      {
+        "affiliation": [],
+        "name": "Dayue Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiao-Ming Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yantao Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Aditya Iyer"
+      },
+      {
+        "affiliation": [],
+        "name": "You Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Tongyang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiongfeng Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Qi Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Pei Zeng"
+      },
+      {
+        "affiliation": [],
+        "name": "Pan Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiao Yuan"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.16116v1",
+    "matching_keywords": [
+      "tensor network",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-07-17",
+    "reasoning": "This paper discusses quantum-classical crossover in fault-tolerant quantum dynamics simulation, which is related to quantum computation but not directly to specific condensed matter problems or theories the user has liked.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "quantum computing",
+      "fault tolerance",
+      "quantum dynamics"
+    ],
+    "summary": "While quantum computers promise to solve classically intractable problems, identifying the point at which fault-tolerant quantum computation outperforms the best classical algorithms for practical applications remains an outstanding challenge. Here we establish a concrete quantum-classical crossover for quantum many-body dynamics under realistic hardware conditions. We introduce a scalable fault-tolerant framework that combines coherent observable estimation with a space-time-efficient implementation of non-Clifford rotations, suppressing the residual logical errors that limit existing partially fault-tolerant approaches. A benchmark against state-of-the-art tensor-network and variational Monte Carlo algorithms reveals a concrete crossover for mixed-field Ising dynamics at modest system sizes. For a physical error rate of $p=10^{-3}$, fault-tolerant simulation requires approximately 2 hours and $3.7 \\times 10^5$ physical qubits for a 100-site 1D system, whereas tensor network approaches would require about 100 years. For 2D models, where rapid entanglement growth limits the classical evolution time, we project quantum runtimes within minutes. A physical error rate of $p=10^{-4}$ leads to at least an order of magnitude reduction in qubit count ($3.1 \\times 10^4$ physical qubits) and runtime (minutes for 1D and seconds for 2D). The reduction in quantum runtime arises from our improved rotation-state injection and co-design of quantum error correction and observable-estimation protocols, which jointly suppress logical-error accumulation and reduce sampling overhead. Our results establish a scalable route towards practical quantum advantage and identify quantitative engineering targets for future fault-tolerant architectures.",
+    "title": "Quantum-classical crossover in fault-tolerant quantum dynamics simulation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.598702073097229
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5289022922515869
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.522718608379364
       }
     ]
   }
