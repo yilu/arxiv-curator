@@ -11240,6 +11240,69 @@
       }
     ]
   },
+  "2607.14827v3": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anh Khoa Augustin Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shungo Arai"
+      },
+      {
+        "affiliation": [],
+        "name": "Yutack Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Seungwu Han"
+      },
+      {
+        "affiliation": [],
+        "name": "Tsuyoshi Miyazaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Satoshi Watanabe"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.14827v3",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper focuses on machine learning methods for predicting general material properties like Born effective charges, which is distant from the previously liked topics on strongly correlated electron physics, superconductivity, or specific material families.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Machine learning for materials",
+      "Born effective charge",
+      "Graph neural networks"
+    ],
+    "summary": "Accurate prediction of the Born effective charge (BEC) tensor is crucial for modeling materials under electric fields but remains computationally expensive. To bridge this gap, we present SevenNet-Polar, an equivariant graph neural network framework based on the SevenNet architecture for fast and accurate BEC predictions. Our BEC-only predictors can achieve an RMSE as low as 0.0043 e on ZrO$_2$, Li$_3$PO$_4$, and perovskites, despite the presence of high-temperature (up to 2,000 K) and defect-laden training data. Our all-in-one multitask models for predicting energy, forces, stress, and BEC in ZrO$_2$ and Li$_3$PO$_4$ achieve high accuracy with an RMSE of 1.0 meV/atom for energy, 12 meV/angstrom for forces, 0.05 GPa for stress, and 0.0029 e for BEC. BEC accuracy is not degraded by multitask training. Scaling analysis reveals distinct exponents for diagonal and off-diagonal BEC components, both of which exhibit less favorable scaling than energy, force and stress errors. SevenNet-Polar generalizes robustly when tested on scenarios containing structural environments absent from the training set, such as along nudged elastic band (NEB) trajectories or grain boundaries in ZrO$_2$. Accelerated by FlashTP, SevenNet-Polar enables simulations containing up to 1.5 million atoms on multi-GPU supercomputers and up to approximately 15,000 atoms on a single consumer-grade GPU. This makes charge-aware molecular dynamics simulations under electric fields more accessible.",
+    "title": "SevenNet-Polar for MultiTask Prediction of Energy, Forces, Stress, and Born Effective Charges: Development and Application to ZrO$_2$, Li$_3$PO$_4$, and Perovskites",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.49224531650543213
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4155313968658447
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.4067510664463043
+      }
+    ]
+  },
   "2607.14875v1": {
     "authors": [
       {
@@ -14182,6 +14245,52 @@
       }
     ]
   },
+  "2607.18094v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Guan-Hao Feng"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Quan"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18094v2",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-07-20",
+    "reasoning": "This paper directly addresses the unconventional pairing mechanism and superconductivity in a nickelate compound (La5Ni3O11), related to La3Ni2O7, and utilizes dynamical mean-field theory, making it highly relevant to multiple previously liked topics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Nickelate superconductivity",
+      "Pairing mechanism",
+      "DFT+DMFT"
+    ],
+    "summary": "Recent experiments report high-temperature superconductivity in the hybrid nickelate $\\mathrm{La}_5\\mathrm{Ni}_3\\mathrm{O}_{11}$, which is composed of alternating stacks of bilayer $\\mathrm{La}_3\\mathrm{Ni}_2\\mathrm{O}_7$ and monolayer $\\mathrm{La}_2\\mathrm{NiO}_4$. However, the superconducting transition temperature $T_c \\approx 64~\\mathrm{K}$ for $\\mathrm{La}_5\\mathrm{Ni}_3\\mathrm{O}_{11}$ is remarkably lower than the $80~\\mathrm{K}$ observed for pressurized $\\mathrm{La}_3\\mathrm{Ni}_2\\mathrm{O}_7$. Thus, an unified microscopic theory is required to address the difference in the pairing mechanisms between these systems. Here, we develop a phenomenological symmetry-based approach to systematically analyze the low-energy physics in $\\mathrm{La}_5\\mathrm{Ni}_3\\mathrm{O}_{11}$, which is obtained by a charge self-consistent density functional theory plus dynamical mean-field theory method. We show that the superconductivity in $\\mathrm{La}_5\\mathrm{Ni}_3\\mathrm{O}_{11}$ exhibits a two-gap nature, consisting of a leading interlayer pairing between the $d_{z^2}$ orbitals and a subleading intralayer pairing between the $d_{x^2-y^2}$ orbitals. The reduction of $T_c$ can be attributed to the diminished contribution of the interlayer pairing, as reflected by the hopping parameter ratio $|t_{\\perp}^z/t_{\\parallel}^{x}|$. Base on this unified picture, we discuss the possible pairing mechanism and the role of $γ$ pocket for the superconductivity in the bilayer NiO$_2$ planes of nickelate superconductors.",
+    "title": "Symmetry-Based Microscopic Theory of the Unconventional Pairing Mechanism in La$_5$Ni$_3$O$_{11}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.770113468170166
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.7043988704681396
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.6820303201675415
+      }
+    ]
+  },
   "2607.18099v1": {
     "authors": [
       {
@@ -14359,6 +14468,803 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
         "score": 0.5081192851066589
+      }
+    ]
+  },
+  "2607.18389v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "C. Alexander Baum"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonas Issing"
+      },
+      {
+        "affiliation": [],
+        "name": "Sarbajit Mazumdar"
+      },
+      {
+        "affiliation": [],
+        "name": "Matteo Dürrnagel"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Klett"
+      },
+      {
+        "affiliation": [],
+        "name": "Ronny Thomale"
+      },
+      {
+        "affiliation": [],
+        "name": "Lennart Klebl"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18389v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-20",
+    "reasoning": "This paper investigates exotic electronic orders in an interacting kagome semimetal, directly aligning with the user's interest in semimetals and general concepts of competing phases and electronic correlations.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Kagome semimetal",
+      "Electronic order",
+      "Quadratic band touching"
+    ],
+    "summary": "We study an interacting kagome-lattice realization of a quadratic band-touching semimetal at 2/3 filling with onsite and nearest-neighbor repulsive interactions. Combining functional renormalization group and slave-boson approaches, we map its phase diagram from intermediate to strong coupling and uncover a hierarchy of unconventional electronic orders. The leading instabilities comprise loop-current order, spontaneous altermagnetism arising from a spin-Pomeranchuk instability, and spin-loop-current order with distinctive and largely unexplored properties. We demonstrate how the interplay of band kinematics, electronic interactions, and quantum geometry governs the selection of these phases. Our findings establish quadratic band-touching semimetals as a promising platform for unconventional symmetry breaking and suggest analogous phenomena in other parabolic semimetals.",
+    "title": "Exotic Electronic Order in a Parabolic Kagome Semimetal",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.553081214427948
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5213021636009216
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5156627297401428
+      }
+    ]
+  },
+  "2607.18403v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexander C. Tyner"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18403v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-20",
+    "reasoning": "This paper presents a novel machine learning approach for generating Wannier Hamiltonians, a critical component for electronic structure calculations relevant to strongly correlated and topological materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Machine learning",
+      "Electronic structure",
+      "Wannier functions"
+    ],
+    "summary": "While machine learning interatomic potentials (MLiPs) have matured to revolutionize material science, deep learning models for electronic structure are just beginning to emerge and restricted, almost exclusively, to non-orthogonal basis Hamiltonians. We introduce G(Wa)NN, the first deep-learning model capable of generating the electronic Hamiltonian of solid-state systems in an orthogonal Wannier basis. G(Wa)NN is trained on an unprecedented, diverse dataset of more than 111K Wannier Hamiltonians (150M+ hopping matrices) spanning 69 elements. The combination of optimized inference and linear-scaling methods for orthogonal Hamiltonians unlock transport simulations at massive scales (10K+ atoms). Crucially, the framework supports local finetuning, allowing users to adapt the base model to custom Wannier Hamiltonian datasets. To seamlessly translate these predictions into physical observables, we introduce Tailwater, a Python package providing an API interface to G(Wa)NN alongside a high performance post-processing library. Tailwater enables automated projection of the predicted Hamiltonian into an arbitrary low-energy subspace-directly mirroring familiar Wannier90 workflows-and includes a suite of Kernel Polynomial Method (KPM) functions that exploit the orthogonal basis to achieve strict linear scaling for spectral observables. The Tailwater ecosystem, with the G(Wa)NN model at its core, aims to help bridge the gap between deep learning and macro-scale quantum transport simulations.",
+    "title": "Towards a universal model for spin-orbit coupled Wannier Hamiltonians",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5596835017204285
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5489306449890137
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5312339067459106
+      }
+    ]
+  },
+  "2607.18404v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "James Brown"
+      },
+      {
+        "affiliation": [],
+        "name": "Erika Lloyd"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexandre Fleury"
+      },
+      {
+        "affiliation": [],
+        "name": "Tarini S Hardikar"
+      },
+      {
+        "affiliation": [],
+        "name": "Kenny Heitritter"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.18404v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-20",
+    "reasoning": "This paper introduces a quantum algorithm to reduce entanglement in ground state calculations, which is generally relevant to solving many-body Hamiltonians, though its focus is on chemical systems.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum algorithms",
+      "Entanglement reduction",
+      "Qubit Coupled Cluster"
+    ],
+    "summary": "Recently (Physica Scripta, 100(10):105401, 2025), an algorithm was introduced that deterministically generates a Clifford transformation from the Qubit Coupled Cluster (QCC) algorithm which we call Q-Cliff (QCC+Clifford). There, it was shown that Q-Cliff could be utilized to generate a hardware efficient version of the QCC ansatz. Here, we examine and refine these techniques and show that Q-Cliff can be utilized to generate efficient classical and quantum approximations to the ground states of chemical systems. The algorithm generates an efficient variational method that generally has accuracy between MP2 and CISD with $O(N^6)$. Furthermore, we show through DMRG calculations that the entanglement between qubits is reduced significantly and therefore the accuracy for a given bond dimension can be vastly improved (up to an order of magnitude). Finally, we refine the previously reported algorithm to generate low-depth and CNOT efficient circuits that can be optimized with a comparable number of energy evaluations to state-of-the-art VQE algorithms. All these results show that this Hamiltonian derived Clifford transformation should be a tool used for many classical and quantum algorithms.",
+    "title": "Reducing entanglement with a Hamiltonian derived Clifford transformation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5397771596908569
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5101704597473145
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4923223555088043
+      }
+    ]
+  },
+  "2607.18591v1": {
+    "authors": [
+      {
+        "affiliation": [
+          "Instituto de Química Aplicada del Litoral IQAL"
+        ],
+        "name": "Lara Goncebat"
+      },
+      {
+        "affiliation": [
+          "Instituto de Investigación en Señales, Sistemas e Inteligencia Computacional sinc"
+        ],
+        "name": "Rodrigo Echeveste"
+      },
+      {
+        "affiliation": [
+          "Instituto de Investigación en Señales, Sistemas e Inteligencia Computacional sinc"
+        ],
+        "name": "Matías Gerard"
+      },
+      {
+        "affiliation": [
+          "General Chemistry"
+        ],
+        "name": "Frederik Tielens"
+      },
+      {
+        "affiliation": [
+          "Instituto de Química Aplicada del Litoral IQAL"
+        ],
+        "name": "Gustavo Belletti"
+      },
+      {
+        "affiliation": [
+          "Instituto de Química Aplicada del Litoral IQAL"
+        ],
+        "name": "Paola Quaino"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18591v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-20",
+    "reasoning": "This paper presents an efficient computational methodology using graph neural networks for accelerated materials design, resonating with the user's interest in efficient theoretical solvers and materials discovery.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Machine Learning for Materials",
+      "Catalyst Design",
+      "Graphene Quantum Dots"
+    ],
+    "summary": "In recent years, interest in single-atom catalysts supported on carbon-based structures has grown considerably due to their high catalytic activity and efficient uses of metal atoms. However, the design and characterization of these materials through first-principles calculations are computationally expensive, limiting the exploration of a large number of possible configurations. Here, we developed a framework based on graph neural networks (GNNs) to predict the adsorption energies of transition metals on graphene quantum dots (GQDs). The model was trained using data obtained from density functional theory calculations and achieved an $R^2$ of 0.906 with an MAE of 0.101 eV, while reducing computational cost by roughly six orders of magnitude relative to DFT. This methodology provides an efficient tool for the accelerated screening and rational design of new catalysts based on carbon nanostructures.",
+    "title": "GQD-AdsNet: Graph Neural Networks Unlock Rapid Exploration of Transition Metal Adsorption on Graphene Quantum Dots",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.4366215467453003
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.42246270179748535
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4166566729545593
+      }
+    ]
+  },
+  "2607.18594v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Prathami Divakar Kamath"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Tavani"
+      },
+      {
+        "affiliation": [],
+        "name": "Alin Marin Elena"
+      },
+      {
+        "affiliation": [],
+        "name": "Théo Jaffrelot Inizan"
+      },
+      {
+        "affiliation": [],
+        "name": "Yen-hsu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenqian Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Omar M. Yaghi"
+      },
+      {
+        "affiliation": [],
+        "name": "Kristin A. Persson"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18594v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper directly aligns with the user's interest in efficient computational methods and materials discovery, employing a data-driven, machine learning-accelerated high-throughput workflow for designing MOFs with specific tunable properties.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Metal-Organic Frameworks",
+      "Negative Thermal Expansion",
+      "Machine Learning Potentials"
+    ],
+    "summary": "Materials with negative thermal expansion (NTE) are essential for applications requiring precise control of thermal expansion. Owing to their exceptional chemical tunability, flexible architectures, and low-energy lattice vibrations, metal-organic frameworks (MOFs) represent a rich platform for exploring NTE. However, uncovering the structural motifs that govern NTE across the enormous MOF design space remains experimentally challenging, and large-scale first-principles phonon calculations are computationally prohibitive. Here, we comprehensively evaluate the factors influencing NTE in MOFs by utilizing a high-throughput workflow based on MACE-MP-MOF0, a machine learning interatomic potential fine-tuned for MOFs with near-ab initio accuracy, to construct PhononMOFdb, a database of phonons, inelastic neutron scattering spectra, bulk moduli, and heat capacities for over 12,000 MOFs. High-throughput screening of this database reveals that highly porous cubic topology frameworks with heavier, lower-valent metal nodes favor strong NTE, while linker functionalization provides a practical handle for tuning NTE magnitude and sign without compromising mechanical stability. Experimental validation via high-resolution temperature-dependent synchrotron powder X-ray diffraction on the Ce-UiO-66 MOF and its brominated variants confirms the design recipe and yields volumetric NTE coefficients surpassing current records. This work establishes a data-driven strategy for engineering NTE in MOFs, showing how machine learning-accelerated discovery and targeted experimental validation together unlock predictive materials design.",
+    "title": "Data-driven Design of Metal-Organic Frameworks with Tunable Negative Thermal Expansion",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5432350635528564
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4911029040813446
+      },
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.41462230682373047
+      }
+    ]
+  },
+  "2607.18916v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zuzhang Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhijian Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Chengxin Xiao"
+      },
+      {
+        "affiliation": [],
+        "name": "Wang Yao"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.18916v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper proposes a novel architecture for generating remote Cooper pairing and mesoscopic superconductivity in distributed quantum materials, directly aligning with interests in correlated electron systems and superconductivity.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Mesoscopic superconductivity",
+      "Quantum networks",
+      "Cooper pairing"
+    ],
+    "summary": "We introduce an architecture where mesoscopic quantum matter distributed over spatially separated nodes can be correlated in equilibrium, creating an unprecedented form of many-body quantum system. Central to the design is a multi-gap split-ring resonator (SRR) where the cavity photon has multiple hot spots -- each with deep-subwavelength volume at a split gap and separated by millimeter-scale distances. The cavity's vacuum fluctuations can then mediate a many-body interaction that bridges the distributed quantum materials embedded in the multiple gaps, coupling them into a single correlated mesoscopic system in equilibrium. As an example, we consider a THz SRR with two split gaps, each proximitized to a metallic moiré superlattice, where virtual exchange of a photon in the cavity vacuum mediates a current-current interaction across the gaps. The inherent attractive interaction channels lead to remote Cooper pairing reminiscent of mesoscopic superconductivity, demonstrated with density matrix renormalization group and exact diagonalization calculations. With the two constituents of a Cooper pair now paired across a millimeter-scale separation, a hole incident at one split gap can be converted into an outgoing electron at the remote gap, a process we term Andreev teleportation. The entanglement entropy between the two mesoscopic superlattices is shown to scale linearly with the area (total number of sites) of the mesoscopic lattice. Our results suggest an intriguing paradigm for equilibrium quantum networks of mesoscopic matter that enable emergent nonlocal functionalities and distributed quantum resources.",
+    "title": "Bridging distributed quantum materials via multi-hotspot vacuum: remote Cooper pairing and Andreev teleportation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.5230075120925903
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.514106273651123
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.5024826526641846
+      }
+    ]
+  },
+  "2607.18938v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sung-Bin B. Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Chae-Yeun Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Changhun Oh"
+      },
+      {
+        "affiliation": [],
+        "name": "Seung-Sup B. Lee"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.18938v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper investigates complexity transitions in quantum computing architectures due to disorder, which is largely outside the scope of the user's interests in condensed matter materials and electronic structure.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum computing",
+      "Disorder effects",
+      "Tensor-network simulations"
+    ],
+    "summary": "While decoherence is known to erode classical hardness in quantum random sampling, the impact of coherent spatial disorder remains an open question. We study a square-lattice instantaneous quantum polynomial-time (IQP) architecture subject to two-qubit gate-angle disorder and single-qubit dephasing using exact tensor-network simulations up to 576 qubits. For finite systems without dephasing, increasing disorder drives two consecutive crossovers toward classical simulability: the output distribution first loses anticoncentration, and then the tensor-network simulation cost drops from exponential to polynomial as entanglement is suppressed. The finite-size scaling collapses are consistent with continuous transitions in the large-system limit. Dephasing further reduces the complexity. We characterize the computationally hard regime through scaling laws that provide quantitative error-budget bounds for realistic near-term devices.",
+    "title": "Coherent-disorder-driven complexity transitions in a quantum-advantage architecture",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5322101712226868
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5153461694717407
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5111914873123169
+      }
+    ]
+  },
+  "2607.18986v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xavier Rocquefelte"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Blaha"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18986v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper directly investigates first-principles calculations of spin exchange interactions in cuprates, specifically La2CuO4, which strongly aligns with the user's interest in cuprate superconductors and their underlying physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Cuprate magnetism",
+      "Spin Hamiltonian",
+      "First-principles spin exchange"
+    ],
+    "summary": "Four-spin ring (cyclic) exchange $J_{ring}$ is an essential ingredient of the Heisenberg spin Hamiltonian of cuprates and other square-lattice magnets, yet it has lacked the kind of direct, local first-principles extraction that the four-state method provides for bilinear exchange, $J$. We supply it by generalizing that method to a sixteen-state ($2^4$) scheme. Symmetry reduces the sixteen configurations to six or eight inequivalent energies, so the cost is modest. The derivation also shows that the conventional four-state magnetic coupling, $J$, is itself ring-renormalized, by $\\pm 2 J_{ring} S^2$ with the sign set by the reference state. T-La$_2$CuO$_4$ confirms this quantitatively: three independent routes agree on $J_{ring}$ to $0.2\\%$, giving $J_{ring}/J_1 = 0.25$, and a four-state $J_1$ quoted without naming its reference is wrong by $12\\%$ in this material. The direct sixteen-state extraction itself proves reference-dependent, the Néel and ferromagnetic baths bracketing the mapping value: a fourth-order fingerprint of interactions beyond the pair-plus-ring model, which additional reference baths resolve into a bare $J_{ring}$ and a converging tower of six- and eight-spin loop couplings. SrFeO$_2$ ($S = 2$), with the same plaquette yet $J_{ring}/J = 0.006$, provides the negative control: a plaquette is necessary for ring exchange, far from sufficient. The complete workflow, including the band-gap and local-moment diagnostics that certify any such extraction, is implemented in the openly available Mag4 package, so that $J_{ring}$ costs no more effort to obtain than $J$.",
+    "title": "Sixteen-State Energy Mapping for First-Principles Four-Spin Ring Exchange: Validation on $La_2CuO_4$ and $SrFeO_2$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5249179601669312
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4932636618614197
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.4932478666305542
+      }
+    ]
+  },
+  "2607.19078v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Milán Ádám Rozmán"
+      },
+      {
+        "affiliation": [],
+        "name": "András Molnár"
+      },
+      {
+        "affiliation": [],
+        "name": "Norbert Schuch"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19078v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper focuses on advanced theoretical and computational methods, specifically tensor networks for lower bounding spectral gaps in quantum many-body systems, aligning well with the user's interest in efficient solvers and fundamental properties of materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Spectral Gap",
+      "Quantum Many-Body Physics"
+    ],
+    "summary": "Proving spectral gaps above the ground space is a central problem in quantum many-body physics. Yet, finding lower bounds on the gap is notoriously difficult. We revisit the martingale method, originally developed by Fannes, Nachtergaele, and Werner [Fannes '92, Nachtergaele '96] to prove the existence of spectral gaps of parent Hamiltonians of Matrix Product States (MPS), and provide improvements to the different steps of the method. Most importantly, we devise a new technique which allows to compute the key quantity in the martingale method -- the overlap of local ground spaces -- exactly and efficiently. This enables a clear improvement of the method, allowing it to outperform other existing techniques to lower bound gaps, which we demonstrate by benchmarking on several models. Remarkably, our -- numerically motivated -- approach at the same time also yields a significantly simplified proof of the fact that parent Hamiltonians of any (well-behaved) MPS are always gapped.",
+    "title": "Lower Bounds on Spectral Gaps of Parent Hamiltonians via Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.6362861394882202
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5799393653869629
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5739859342575073
+      }
+    ]
+  },
+  "2607.19156v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rishi Sundar"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas J. Elliott"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19156v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper focuses on quantum adaptive agents and dimension reduction in quantum memory, which falls under quantum information and computation, distinct from the user's interests in condensed matter physics and materials science.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Machine Learning",
+      "Quantum Information Theory",
+      "Adaptive Systems"
+    ],
+    "summary": "Adaptive agents realise complex reactive behaviours by using a memory of past input stimuli and output actions to guide structured future responses. Quantum adaptive agents can operate while storing less information in memory than optimal classical counterparts; yet, this does not necessarily translate into a reduced dimension of the memory that must be physically realised. We introduce a route-truncate-repair procedure that converts entropic quantum memory advantages into reductions in memory dimension. Routing a reference input process through an agent yields a temporal matrix product state representation whose canonical bond is identified with the agent's memory. Truncating this bond and locally repairing the resulting dynamics produces a smaller, physically-valid agent that remains capable of responding to arbitrary input sequences. A fidelity-divergence certificate quantifies the resulting trade-off between accuracy and memory dimension. Benchmark adaptive processes exhibit substantial dimension reduction whilst preserving the underlying behaviour with high fidelity. These results establish a route from entropic memory advantages to practical, dimension-reduced adaptive quantum agents.",
+    "title": "Dimension Reduction for Quantum Adaptive Agents",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.444122314453125
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4051596522331238
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.3767869770526886
+      }
+    ]
+  },
+  "2607.19166v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Michele Fossati"
+      },
+      {
+        "affiliation": [],
+        "name": "Colin Rylands"
+      },
+      {
+        "affiliation": [],
+        "name": "Eytan Grosfeld"
+      },
+      {
+        "affiliation": [],
+        "name": "Eran Sela"
+      },
+      {
+        "affiliation": [],
+        "name": "Pasquale Calabrese"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19166v1",
+    "matching_keywords": [
+      "matrix product state",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "While theoretical, this paper on boundary quenches in CFT and entanglement dynamics is quite distinct from the user's past interests in specific materials and computational methods.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum Quenches",
+      "Conformal Field Theory",
+      "Entanglement Dynamics"
+    ],
+    "summary": "We investigate a class of local quantum quenches in which the conformal boundary condition of a (1+1)-dimensional conformal field theory is abruptly changed. We derive a remarkably simple and universal expression for the time evolution of one-point functions on the half-line. This result provides a direct description of the propagation of the disturbance generated by the quench and, in turn, allows us to determine the dynamics of bipartite entanglement for subsystems adjacent to the boundary. We show that, once the subsystem becomes fully causally connected to the quench event, the entanglement entropy undergoes a sharp finite jump whose magnitude is universally given by the logarithm of the ratio of the boundary g-factors associated with the initial and final boundary conditions. We benchmark these analytical predictions against Matrix Product State simulations of the critical Ising spin chain, finding excellent agreement. The numerical analysis further allows us to investigate the time evolution of the spin-flip entanglement asymmetry, revealing how the symmetry-breaking perturbation emitted from the boundary propagates through the system. Our results uncover universal dynamical signatures of boundary quenches and establish a direct connection between nonequilibrium entanglement dynamics and boundary critical phenomena.",
+    "title": "Boundary quenches in (1+1)-dimensional conformal field theory",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5251374244689941
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5016196966171265
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.4681601822376251
+      }
+    ]
+  },
+  "2607.19198v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mouyang Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Blessing"
+      },
+      {
+        "affiliation": [],
+        "name": "Botao Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Gerhard Neumann"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingda Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Carles Domingo-Enrich"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuanqi Du"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.19198v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper introduces a powerful AI/ML foundation model for efficient sampling and inverse design of materials, directly aligning with the user's interest in efficient computational methods and materials discovery.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Amorphous Materials",
+      "Machine Learning for Materials",
+      "Materials Design"
+    ],
+    "summary": "Amorphous materials exhibit exceptional mechanical and functional properties, yet their rugged energy landscapes are notoriously difficult to sample. Below the glass-transition temperature, conventional molecular dynamics and Monte Carlo become inefficient because equilibration relies on rare barrier-crossing events, while data-driven generative models are constrained by scarce and biased reference ensembles. Here, we introduce ATLAS, an efficient sampler that learns a diffusion process to generate Boltzmann-distributed amorphous structures directly from a target energy function. Parameterized by an equivariant graph neural network, ATLAS generalizes across system size, temperature, and composition. By exploiting the time reversal of the diffusion process, it enables efficient estimation of thermodynamic quantities and steering toward target observables. In two-dimensional Kob-Andersen systems, ATLAS reproduces parallel tempering Markov chain Monte Carlo structural distributions, free energies and entropies, achieving below 0.2% free energy error in the low-temperature glass regime with over 500-fold fewer energy evaluations. In Cu-Zr and Cr-Co-Ni metallic glasses, ATLAS recovers experimentally observed short-range-order trends and steers structures toward prescribed order parameters and optimized bulk moduli. Moreover, composition-amortized pretraining outperforms composition-specific training from scratch, reduces inverse-design costs by several hundred-fold, and enables sampling with expensive universal machine learning interatomic potentials. Coupled to a large language model agent, ATLAS searches an eight-element space for high-entropy metallic glasses balancing stiffness and ductility, identifying a converged Pareto frontier within 480 oracle evaluations. Together, these results establish ATLAS as a foundation model for sampling, steering and designing amorphous materials.",
+    "title": "ATLAS: A Foundation Neural Sampler for Amorphous Materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5417227745056152
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5382074117660522
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4507642984390259
+      }
+    ]
+  },
+  "2607.19208v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Riccardo Travaglino"
+      },
+      {
+        "affiliation": [],
+        "name": "Katja Klobas"
+      },
+      {
+        "affiliation": [],
+        "name": "Bruno Bertini"
+      },
+      {
+        "affiliation": [],
+        "name": "Pasquale Calabrese"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19208v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper explores the theoretical framework for dynamical correlation functions and charge transport in quantum quenches, which is tangentially related to charge correlations in interacting systems.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Quantum quenches",
+      "Dynamical correlations",
+      "Full Counting Statistics"
+    ],
+    "summary": "We investigate the $n$-time cumulant generating function (or $n$-Full Counting Statistics, $n$-FCS) of extensive $U(1)$ charges following a quantum quench. Exploiting space-time duality we characterise this function when evolving from initial states that are symmetric under the action of the charge. In particular, we show that if the correlations in time are sufficiently weak, e.g.\\ the transport is ballistic, the $n$-FCS factorises into a sum of single-time FCS arranged in a time-shell structure. A direct implication of this structure is a drastic simplification of dynamical correlation functions: in the presence of time ordering they only depend on the smallest time entering the correlator. We support these findings with several analytical and numerical tests performed in free and interacting models.",
+    "title": "Dynamical correlation functions of extensive charges after global quantum quenches",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5062839984893799
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.4823395013809204
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.4534659683704376
+      }
+    ]
+  },
+  "2607.19217v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wiktoria Lewandowski"
+      },
+      {
+        "affiliation": [],
+        "name": "Steffen Bötzel"
+      },
+      {
+        "affiliation": [],
+        "name": "Ilya M. Eremin"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Lechermann"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.19217v1",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper explores charge-transfer physics and correlation in a T'-structure nickelate (La2NiO4), drawing parallels to cuprates and thus connecting strongly to the user's interest in nickelates and charge correlations in related high-Tc materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Charge-transfer insulator",
+      "T'-nickelates",
+      "Correlation physics"
+    ],
+    "summary": "The La$_2$NiO$_4$ compound stabilizes in nature in the so-called T structure with octahedral oxygen coordination of the Ni site. Motivated by a similarly existing polymorph for La$_2$CuO$_4$ in the cuprate system, we here study La$_2$NiO$_4$ in the T$^\\prime$-structure with square-planar oxygen coordination of Ni by means of first-principles many-body theory. The hypothetical T$^\\prime$-La$_2$NiO$_4$ compound turns out to be a manifest charge-transfer insulator with a cuprate-like charge gap of $\\sim 1.8$ eV. Upon doping, a strong carrier asymmetry is revealed, i.e. while holes dominantly enter O$(2p)$-derived states, electrons may become itinerant majorly within effective Ni-$d_{x^2-y^2}$ states. Nearest-neighbor antiferromagnetic ordering at stoichiometry appears absent in the T$^\\prime$ structure, in stark contrast to the strong antiferromagnetism in the T structure. Our theoretical study opens up new pathways for correlation physics in layered nickelates with challenging charge-transfer signatures, awaiting experimental inquiries.",
+    "title": "Manifest charge-transfer physics in T$^\\prime$-La$_2$NiO$_4$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.6820912957191467
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5798163414001465
+      },
+      {
+        "liked_paper_id": "2506.16362v1",
+        "score": 0.5600870251655579
       }
     ]
   }
