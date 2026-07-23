@@ -10829,6 +10829,64 @@
       }
     ]
   },
+  "2607.14263v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ryan Levy"
+      },
+      {
+        "affiliation": [],
+        "name": "Brandon Eskridge"
+      },
+      {
+        "affiliation": [],
+        "name": "Lukas Weber"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel A. Morales"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiwei Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.14263v2",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-15",
+    "reasoning": "This paper presents a general Hartree-Fock solver utilizing automatic differentiation, which is a computational method for many-fermion systems, aligning with the user's interest in efficient solvers like DMFT.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Hartree-Fock",
+      "mean-field solver",
+      "automatic differentiation"
+    ],
+    "summary": "We present autohf, a general, easy-to-use mean-field solver for quantum many-fermion Hamiltonians. It allows the user to bypass the process of deciphering the mean-field form for each many-body Hamiltonian $H$ and thus avoid setting up a tailored program for each $H$. Rather, autohf finds the optimal Slater determinant $|Ψ\\rangle$, written in terms of orbital coefficients and subject to symmetry constraints, by directly minimizing the variational energy $\\langle H \\rangle$. By embracing this variational approach, autohf makes use of the growing power of automatic differentiation and optimization tools developed by the machine learning community.",
+    "title": "AutoHF: a general Hartree-Fock solver utilizing direct energy minimization with automatic differentiation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.524586021900177
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.5119925737380981
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5089580416679382
+      }
+    ]
+  },
   "2607.14296v1": {
     "authors": [
       {
@@ -14932,6 +14990,52 @@
       }
     ]
   },
+  "2607.18986v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xavier Rocquefelte"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Blaha"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.18986v2",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper develops a first-principles method to extract ring exchange parameters, applying it directly to cuprate superconductors, which aligns perfectly with the user's interest in strongly correlated systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Ring Exchange",
+      "Heisenberg Model",
+      "Cuprates"
+    ],
+    "summary": "Four-spin ring (cyclic) exchange $J_{ring}$ is an essential ingredient of the Heisenberg spin Hamiltonian of cuprates and other square-lattice magnets, yet it has lacked the kind of direct, local first-principles extraction that the four-state method provides for bilinear exchange, $J$. We supply it by generalizing that method to a sixteen-state ($2^4$) scheme. Symmetry reduces the sixteen configurations to six or eight inequivalent energies, so the cost is modest. The derivation also shows that the conventional four-state magnetic coupling, $J$, is itself ring-renormalized, by $\\pm 2 J_{ring} S^2$ with the sign set by the reference state. T-La$_2$CuO$_4$ confirms this quantitatively: three independent routes agree on $J_{ring}$ to $0.2\\%$, giving $J_{ring}/J_1 = 0.25$, and a four-state $J_1$ quoted without naming its reference is wrong by $12\\%$ in this material. The direct sixteen-state extraction itself proves reference-dependent, the Néel and ferromagnetic baths bracketing the mapping value: a fourth-order fingerprint of interactions beyond the pair-plus-ring model, which additional reference baths resolve into a bare $J_{ring}$ and a converging tower of six- and eight-spin loop couplings. SrFeO$_2$ ($S = 2$), with the same plaquette yet $J_{ring}/J = 0.006$, provides the negative control: a plaquette is necessary for ring exchange, far from sufficient. The complete workflow, including the band-gap and local-moment diagnostics that certify any such extraction, is implemented in the openly available Mag4 package, so that $J_{ring}$ costs no more effort to obtain than $J$.",
+    "title": "Sixteen-State Energy Mapping for First-Principles Four-Spin Ring Exchange: Validation on $La_2CuO_4$ and $SrFeO_2$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5249179601669312
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4932636618614197
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.4932478666305542
+      }
+    ]
+  },
   "2607.19078v1": {
     "authors": [
       {
@@ -15265,6 +15369,641 @@
       {
         "liked_paper_id": "2506.16362v1",
         "score": 0.5600870251655579
+      }
+    ]
+  },
+  "2607.19421v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xuming Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Deniz Najafi"
+      },
+      {
+        "affiliation": [],
+        "name": "Mehrdad Morsali"
+      },
+      {
+        "affiliation": [],
+        "name": "Chengwei Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Zahra Ghanaatianjobzari"
+      },
+      {
+        "affiliation": [],
+        "name": "Mahdi Nikdast"
+      },
+      {
+        "affiliation": [],
+        "name": "Shaahin Angizi"
+      },
+      {
+        "affiliation": [],
+        "name": "Gourav Datta"
+      }
+    ],
+    "categories": [
+      "cs.AR",
+      "cs.AI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19421v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-20",
+    "reasoning": "This paper focuses on photonic hardware for machine learning and vision transformers, which falls outside the user's indicated interests in condensed matter physics, quantum field theory, and advanced computational methods for physical systems.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Photonic AI",
+      "ViT Accelerators",
+      "On-chip Fine-tuning"
+    ],
+    "summary": "Silicon-photonic (SiPh) accelerators have emerged as a promising platform for Vision Transformer (ViT) inference by performing matrix multiplications on microring-resonator (MRR) banks with high throughput and energy efficiency. Extending these platforms to support on-chip fine-tuning remains challenging because backpropagation requires large activation storage, frequent weight write-back to MRRs, and tolerance to device-level noise. We present Opto-ViT-v2, the first framework for parameter-efficient fine-tuning (PEFT) on a near-sensor SiPh ViT accelerator. Our tensorized low-rank decomposition separates pretrained optical weights from a small set of trainable electronic factors (as few as 8K parameters for ViT-Base), greatly reducing activation storage and weight updates while enabling practical on-chip training. We further introduce a gradient-accumulated sparse classifier that freezes low-importance weights through one-shot top-k gradient masking, reducing classifier training cost by about 40 percent. We also develop the first system-level noise model for photonic on-chip training, capturing the effects of MRR crosstalk, thermal drift, and laser amplitude noise during both forward and backward propagation. Calibrated using measurements from more than 200 fabricated MRR devices, the model shows that low-rank factor updates are more robust than full fine-tuning and conventional layer-wise low-rank adaptation under identical noise conditions. Experiments on VTAB-1K (19 tasks) and FGVC few-shot benchmarks demonstrate that Opto-ViT-v2 recovers within 0.3 to 0.8 percent of clean software accuracy under measured photonic noise while achieving more than 100 KFPS/W, enabling practical on-chip domain adaptation for photonic edge vision systems.",
+    "title": "Opto-ViT-v2: Noise-Resilient On-Chip Fine-Tuning for Photonic Near-Sensor Vision Transformer Accelerators",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4228774905204773
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.26661932468414307
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.2605343461036682
+      }
+    ]
+  },
+  "2607.19465v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Boran Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Taige Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Ya-Hui Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19465v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "hubbard model"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper directly investigates quantum Mott semimetals and spinful Dirac fermions in a Hubbard model, closely aligning with the user's interest in semimetals, Dirac fermions, and strongly correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Mott semimetal",
+      "Dirac fermion",
+      "Hubbard model"
+    ],
+    "summary": "Mott physics in topological bands has recently attracted considerable attention, particularly in the context of twisted bilayer graphene (TBG). However, the essential ingredients for stabilizing this physics remain unclear. Here, we demonstrate a quantum Mott semimetal phase as the ground state within a one-dimensional spinful Hubbard model featuring only one orbital per unit cell, protected by inversion and particle-hole symmetries. We start from a two-orbital model where a localized $f$ orbital on the A sublattice hybridizes with a delocalized $c$ orbital on the B sublattice. Projecting the $f$-orbital Hubbard $U$ onto the active flat band yields a lattice model with Wannier orbitals centered on the B sublattice. Similar to TBG, a momentum-space scale $k_*$ emerges, setting the interaction range in the projected model to $1/k_*$. While the ground state is ferromagnetic with only the Hubbard $U$, introducing an inter-site antiferromagnetic spin coupling $J$ stabilizes a Mott semimetal$^*$ phase with a central charge $c=3$. Using exact diagonalization (ED) and density matrix renormalization group (DMRG) methods, we show that this phase hosts a spinful Dirac fermion coexisting with a neutral spin mode -- analogous to the fractionalized Fermi liquid (FL$^*$) phase in higher dimensions. Furthermore, breaking particle-hole (PH) symmetry via dispersion transforms the Mott semimetal into a Mott insulator, which is separated from a distinct Mott insulating phase by a continuous transition with a polarization jump of $1/2$. Our work provides the first unbiased evidence of a Mott semimetal ground state and demonstrates that this 1D model captures some essential aspects of TBG physics, despite lacking a Wannier obstruction.",
+    "title": "Quantum Mott semimetal in a one-dimensional Hubbard mode",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6837408542633057
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5909335613250732
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5771680474281311
+      }
+    ]
+  },
+  "2607.19468v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sriram Bharadwaj"
+      },
+      {
+        "affiliation": [],
+        "name": "Jack Isen"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhong-Bo Kang"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19468v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "This paper directly addresses fundamental quantum field theory concepts like confinement and screening in the Schwinger Model on AdS$_2$ and utilizes tensor networks and matrix product states for its analysis, aligning strongly with the user's interests in theoretical physics and advanced computational methods for quantum systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Schwinger Model",
+      "AdS$_2$ Geometry",
+      "Confinement-Screening"
+    ],
+    "summary": "We analyze confinement and screening in single-flavor quantum electrodynamics (QED$_2$) on two-dimensional anti-de Sitter space (AdS$_2$), with and without a Schwarzschild black hole, both in the continuum and on the lattice. The theory is formulated in two frames adapted to distinct choices of a preferred time coordinate: the Schwarzschild frame, associated with the Boulware vacuum, and the global AdS$_2$ frame, associated with the $\\mathrm{SL}(2,\\mathbb{R})$-invariant vacuum. In the massless limit, the static potential between an external charge-anticharge pair is obtained in closed form by bosonization, at both zero and finite temperature. After subtraction of the position-dependent probe self-energies, which, unlike in flat space, are not constant, the potential remains finite as the geodesic separation is taken to infinity, establishing that the theory is screened. This is consistent with the explicit breaking of the $\\mathrm{U}(1)$ electric one-form symmetry by the dynamical fermions, and resolves a confining/screening ambiguity in earlier treatments that identify the static potential with the unsubtracted ground-state energy. To validate the continuum analysis, we propose a covariant discretization scheme for placing fermions in curved spacetime on the lattice while ensuring that the continuum properties of the spin and gauge connections are restored in the continuum limit. This construction resolves ambiguities in the existing literature on lattice fermions in curved backgrounds and provides the foundation for our tensor-network simulations. Using a matrix product state ansatz, we confirm our analytical predictions for the phase diagram in AdS$_2$. We perform extensive numerical simulations of the static potential and the electric flux-tube profile for varying fermion masses, which we match to the continuum prediction.",
+    "title": "Confinement Versus Screening in the Schwinger Model on AdS$_2$ from Bosonization and Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.4004229009151459
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.39867356419563293
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.38529500365257263
+      }
+    ]
+  },
+  "2607.19503v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Domenico Pomarico"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandra Costantino"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabriel Ramirez Sanchez"
+      },
+      {
+        "affiliation": [],
+        "name": "Loredana Bellantuono"
+      },
+      {
+        "affiliation": [],
+        "name": "Davide D' Alò"
+      },
+      {
+        "affiliation": [],
+        "name": "Mario Elia"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Fania"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Giordano"
+      },
+      {
+        "affiliation": [],
+        "name": "Niloofar Kheirkhahan"
+      },
+      {
+        "affiliation": [],
+        "name": "Raffaele Lafortezza"
+      },
+      {
+        "affiliation": [],
+        "name": "Ester Pantaleo"
+      },
+      {
+        "affiliation": [],
+        "name": "Sabina Tangaro"
+      },
+      {
+        "affiliation": [],
+        "name": "Roberto Bellotti"
+      },
+      {
+        "affiliation": [],
+        "name": "Alfonso Monaco"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicola Amoroso"
+      }
+    ],
+    "categories": [
+      "physics.soc-ph",
+      "cs.LG",
+      "physics.data-an"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.19503v1",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-07-21",
+    "reasoning": "While the application domain of wildfire susceptibility mapping is different, this paper's use of tensor network machine learning, Matrix Product States, and concepts like quantum mixedness aligns with the user's interest in tensor networks as advanced computational methods and quantum-inspired approaches.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Tensor Network ML",
+      "Quantum Mixedness",
+      "Grokking Dynamics"
+    ],
+    "summary": "A quantum-inspired tensor network framework for wildfire susceptibility classification in the Gargano region is introduced, leveraging AlphaEarth embeddings and Matrix Product State models. The approach combines scalable geospatial representations with an interpretable quantum mask, enabling both binary and multiclass classification of wildfire susceptibility. Beyond predictive performance, the study reveals a pronounced grokking transition in the binary case and provides a detailed analysis of inter-class confusion in the multiclass setting. By introducing level-resolved mixedness diagnostics based on reduced density matrices, we show that the MPS classifier naturally encodes a hierarchy of class distinguishability, with non-adjacent categories becoming more separable than neighboring ones. These results demonstrate that tensor network models not only achieve competitive classification accuracy but also offer a physically grounded framework to quantify and interpret class separability in complex environmental datasets.",
+    "title": "Tensor Network Machine Learning for Wildfire Susceptibility Mapping: from Grokking Dynamics to Quantum Mixedness of Class Representations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4641507565975189
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3997107148170471
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.3910074234008789
+      }
+    ]
+  },
+  "2607.19694v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hao Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Hang Su"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Yao"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.19694v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This paper introduces a twisting-operator approach to identify gaplessness in SU(N) fermionic systems using Hubbard models and DQMC, connecting to the user's interest in symmetric systems, semimetals, and computational techniques.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Gapless systems",
+      "SU(N) symmetry",
+      "twisting operator"
+    ],
+    "summary": "We propose a general necessary condition for a spinful fermion chain with SU(2) spin-rotation symmetry to be gapped. Specifically, we prove that the expectation value of a properly defined fermionic twisting operator asymptotically approaches unity in any gapped phase with finite ground-state degeneracy, with finite-size corrections bounded by $\\mathscr{O}(1/L)$. Consequently, a non-unity value in the thermodynamic limit provides a sufficient criterion for identifying gapless fermion chains. We confirm this criterion using the $s$-wave Bardeen-Cooper-Schrieffer (BCS) Hamiltonian and determinant quantum Monte Carlo (DQMC) simulations of interacting Hubbard models. We further extend the twisting-operator approach to SU($N$)-symmetric fermionic systems, where the gapped ground-state sector must be SU($N$)-singlet and $\\langle \\hat{\\mathcal{U}}^M\\rangle=1+\\mathscr{O}(1/L)$ by a fermionic twisting operator $\\hat{\\mathcal{U}}$ with a suitably chosen integer $M$.",
+    "title": "Twisting-operator approach to identifying gaplessness in SU($N$) fermionic systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5865858793258667
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5620934963226318
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5542904138565063
+      }
+    ]
+  },
+  "2607.19732v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Li Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yunjie Ye"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.19732v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This paper focuses on structural superlubricity and pinning criteria in 2D materials, which is distinct from the user's primary interest in electronic correlations, superconductivity, and topological states.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Structural Superlubricity",
+      "2D Materials",
+      "Moiré Physics"
+    ],
+    "summary": "Incommensurability and elastic reconstruction do not by themselves define a structurally superlubric phase. We define fully sliding and pinned zero-temperature phases by $\\limsup_{A\\to\\infty}τ_{\\rm dep}^{\\max}(A)=0$ and $\\liminf_{A\\to\\infty}τ_{\\rm dep}^{\\min}(A)>0$, respectively; $Λ_n=|V_n|G_{n,i}[D_{\\rm rel}^{-1}(\\mathbf q_n)]_{ij}G_{n,j}$ measures only reconstruction susceptibility. Translational covariance then proves that a clean, smooth, infinite moiré continuum can reconstruct without acquiring a bulk sliding barrier. We restore atomic sampling in a two-dimensional discrete model of graphene/hBN and test both a diffusion quantum Monte Carlo first-star potential and a 15-harmonic Leven potential across three rational approximants and five directions. No physical-coupling equilibrium or metastable barrier is resolved. The Leven spectrum raises the largest tested $Λ$ from $0.142$ to $0.212$, while artificial scaling through $Λ=1$ reaches uncontrolled strain before a size-independent threshold appears. The tested zero-temperature in-plane models are therefore consistent with an elastically relaxed sliding regime; $Λ=1$ is a reconstruction scale, not a static phase criterion.",
+    "title": "A Thermodynamic Pinning Criterion for Two-Dimensional Structural Superlubricity",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.46256154775619507
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.42340517044067383
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.41497254371643066
+      }
+    ]
+  },
+  "2607.19807v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Stefan Kirchner"
+      },
+      {
+        "affiliation": [],
+        "name": "Petr Jizba"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.19807v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This paper directly addresses cuprate superconductors and applies sophisticated Renormalization Group topology to understand criticality and phase behavior in strongly correlated matter, strongly aligning with the user's interests.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate superconductors",
+      "Renormalization Group",
+      "quantum criticality"
+    ],
+    "summary": "In this paper, we examine the dynamical charge-Kondo-breakdown scenario proposed for cuprate superconductors within the perspective of renormalization group (RG) topology. By analyzing the coupled RG flow equations governing the effective low-energy theory, we determine the fixed-point structure, stability properties, and global organization of the flow. We find that the putative finite-coupling interacting fixed point is unstable against perturbations transverse to an invariant critical manifold. As a result, generic RG trajectories exhibit runaway behavior. To elucidate the global structure of the theory, we combine analytical solutions of the flow equations with numerical phase portraits and Poincaré compactification. This analysis reveals that the interacting fixed point exhibits a marginally relevant instability, generating an exponentially large but finite crossover scale. The resulting flow topology closely resembles anisotropy-driven runaway flows encountered in fluctuation-induced weakly first-order transitions. Within this framework, the apparent quantum-critical regime can be understood as an extended crossover controlled by a near-critical fixed point, rather than by asymptotic scale invariance. The results obtained indicate that the existence of extended scaling behavior does not, by itself, imply the presence of a stable interacting quantum critical state. More generally, our analysis demonstrates how RG topology can provide a powerful diagnostic for distinguishing genuine criticality from pseudo-critical behavior in theories of strongly correlated quantum matter.",
+    "title": "Multi-Criticality and RG Topology in the Charge-Kondo-Breakdown Scenario in the Cuprates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.5215574502944946
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.4763096272945404
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.47053444385528564
+      }
+    ]
+  },
+  "2607.20030v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Victoire Morisseau"
+      },
+      {
+        "affiliation": [],
+        "name": "Luke C. Rhodes"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Wahl"
+      },
+      {
+        "affiliation": [],
+        "name": "Carolina A. Marques"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.20030v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This paper directly addresses the detection of loop current phases, a key topic in high-temperature cuprate superconductors, using scanning tunneling microscopy.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Loop Currents",
+      "Scanning Tunneling Microscopy",
+      "Time-Reversal Symmetry Breaking"
+    ],
+    "summary": "The emergence of loop current phases, where spontaneous loops of orbital currents give rise to a weak local magnetic moments, has been proposed to exist in a number of quantum materials based on measurements that pick up weak signatures of time reversal symmetry breaking or small magnetic moment order. The most prominent example is as an explanation of the pseudogap phase on the underdoped side of the phase diagram of the high-temperature cuprate superconductors, but more recently, it has been proposed to occur in Kagome materials and at the surface layer of Sr$_2$RuO$_4$. Experimental results have, however, been inconclusive so far, some detecting signatures that can be understood as emerging due to loop current phases, whilst others have not detected any significant proof. One of the techniques that should be able to pick up local signatures of loop current orders is low temperature scanning tunneling microscopy and spectroscopy (STM/STS), however firm predictions of how to detect them are missing. Here, we provide specific predictions for how loop current orders in a square lattice can be seen in spectroscopic maps, using models of the cuprate high-temperature superconductors and of the surface layer of Sr$_2$RuO$_4$. We find that, besides lifting degeneracies at the specific ordering vector of the loop current order, a finite spin polarisation emerges when spin-orbit coupling is present, signatures of which can be detected in spin-polarised STM.",
+    "title": "How to measure loop currents in scanning tunneling microscopy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5586068630218506
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.5336378812789917
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.5234032273292542
+      }
+    ]
+  },
+  "2607.20077v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Courtney Kunselman"
+      },
+      {
+        "affiliation": [],
+        "name": "Doguhan Sariturk"
+      },
+      {
+        "affiliation": [],
+        "name": "Siya Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Vahid Attari"
+      },
+      {
+        "affiliation": [],
+        "name": "Raymundo Arroyave"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.20077v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This paper focuses on a computational framework for alloy design and microstructure prediction, which differs significantly from the user's interest in strongly correlated electron systems and superconductivity.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Alloy Design",
+      "Machine Learning Potentials",
+      "Spinodal Decomposition"
+    ],
+    "summary": "Identifying regions of design space subject to spinodal decomposition is a critical component of alloy design in high-dimensional composition spaces. In cases where designers are seeking to exploit spinodal microstructures to tailor alloy properties, prediction of microstructure evolution and morphology is also needed. In this work, we present a Machine Learning Interatomic Potential (MLIP)-trained, CALPHAD-based, open-source workflow for high-throughput microstructure stability analysis and visualization. In this workflow, coherent strain contributions are captured via high-throughput MLIP elastic constant calculations. To predict microstructure morphology for compositions of interest, MLIP-generated thermodynamic models are fed into an elasto-chemical phase field simulation. Both stability analyses and phase-field simulations utilize analytically-derived Gibbs energy Hessians to improve computational efficiency and accuracy over finite difference approximations. We demonstrate this workflow by investigating microstructure stability in the Hf-Nb-Ti-V quaternary system.",
+    "title": "From MLIPs to Microstructure: A High-Throughput Computational Framework to Design Spinodal Alloys in High-Dimensional Composition Spaces via Analytic Derivatives of CALPHAD Model Predictions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4328727722167969
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.40923839807510376
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.40062543749809265
+      }
+    ]
+  },
+  "2607.20298v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "David T. Plouff"
+      },
+      {
+        "affiliation": [],
+        "name": "Nawsher J. Parvez"
+      },
+      {
+        "affiliation": [],
+        "name": "Subhash Bhatt"
+      },
+      {
+        "affiliation": [],
+        "name": "Xixiang Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Adam A. Aczel"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan Gaudet"
+      },
+      {
+        "affiliation": [],
+        "name": "John Q. Xiao"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.20298v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This experimental paper investigates doping in oxides using various characterization techniques like X-ray and neutron diffraction, and explores competing magnetic interactions, aligning with the user's interests in oxides, doping, experimental probes, and competing phases.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Oxides",
+      "doping",
+      "neutron diffraction"
+    ],
+    "summary": "We investigate the proposal of hole doping RuO$_{2}$ via alloying with Cr ions to induce altermagnetism. Thin film samples of Ru$_{1-x}$Cr$_{x}$O$_{2}$ ($0 \\leq x \\leq 0.28$) were prepared by reactive magnetron co-sputtering on TiO$_{2}$ substrates, with epitaxial nature verified by X-ray diffraction and composition depth profiles determined by X-ray photoelectron spectroscopy combined with Ar etching. Neutron diffraction measurements of samples with $x = 0$ and $x = 0.23$ at low temperatures show no evidence of long-range altermagnetic order with spins oriented along the $c$-axis or within the $ab$-plane. In contrast, temperature dependent susceptibility measurements in samples with $x \\geq 0.16$ show a gradual downturn below $T\\approx20~$K, suggestive of antiferromagnetic interactions, although this coexists with ferromagnetic hysteresis and remnant magnetization at $4~$K for samples with $x \\geq 0.23$. Together, our magnetometry and neutron scattering measurements suggest the coexistence of antiferromagnetically coupled ferromagnetic CrO\\textsubscript{2} clusters. This indicates that Cr ions do not hole dope Ru bands to induce an altermagnet state, but rather the holes remain localized to the Cr ions.",
+    "title": "Competing ferromagnetic and antiferromagnetic interactions in non-altermagnetic Ru$_{1-x}$Cr$_{x}$O$_{2}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5462344884872437
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.5309735536575317
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:hqOjcs7Dif8C",
+        "score": 0.5306608080863953
+      }
+    ]
+  },
+  "2607.20403v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Carl A. Kukkonen"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.5281/zenodo.21497366",
+    "id": "2607.20403v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-22",
+    "reasoning": "This paper provides a fundamental theoretical benchmark for the uniform electron gas focusing on exchange-correlation, which is a bit abstract compared to the user's preferred material-specific studies of correlated systems and superconductivity.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Uniform Electron Gas",
+      "Exchange-Correlation",
+      "Local Field Factors"
+    ],
+    "summary": "The static local field factors of the uniform electron gas are known accurately from quantum Monte Carlo (QMC) calculations, but two of their most striking features have lacked a mechanism: $G_+$ grows almost exactly as $q^2$ up to nearly $2k_F$, and the violent $2k_F$ physics of the Fermi surface leaves only a faint trace in it. Combining the textbook first-order local-field relation with the exact static exchange polarizability gives a compact exact benchmark: the universal exchange-only local field factor $G_x(q,0) = -I(Q)Q^2/L(Q)^2$, $Q = q/2k_F$, with exact values $(1/4)(q/k_F)^2$ at small $q$, $π^2/6$ at $2k_F$ -- apparently never before stated as a local-field value -- and $1/3$ at large $q$, giving the exchange-only spin-averaged contact value $g(0) = 1/2$ of the unpolarized gas (BDL 1977). $G_x$ rises to a finite maximum of 1.9924 at $1.9685k_F$ and passes through $π^2/6$ at exactly $2k_F$ with a slope diverging as $\\ln^3|q-2k_F|$. Against this benchmark, the 1980 BDL tabulation is accurate to about one percent below $1.5k_F$, while the 2024 McLachlan-variational kernel of Nazarov and Silkin is two-percent accurate only below $0.5k_F$, is a factor of 1.74 low at $2k_F$, and its large-q limit is inconsistent with the contact constraint. A spin-resolved decomposition of QMC local field factors about the exact baseline shows that, within the resolution and smoothness assumptions of the QMC-based representations, both features follow from a strong exchange-correlation cancellation: at the QMC point closest to $2k_F$ ($q = 2.01k_F$, $r_s = 2$), correlation cancels 0.43(7) of the exact exchange value 1.33. Computed consistently at each wavevector, the static exchange-kernel thresholds derived from the closed form reproduce, to 0.2%, the finite-wavevector charge threshold $r_s \\approx 10.6$ near $q = 1.94k_F$ obtained numerically in 1980, and recovered again in 2014.",
+    "title": "Exact static exchange benchmark for the uniform electron gas: Dynamic-kernel tests and exchange-correlation cancellation near 2kF",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.44152095913887024
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.43419966101646423
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4322355389595032
       }
     ]
   }
