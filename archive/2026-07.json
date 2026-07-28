@@ -11696,6 +11696,64 @@
       }
     ]
   },
+  "2607.15124v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Luke Hodgkiss"
+      },
+      {
+        "affiliation": [],
+        "name": "Laurens Lootens"
+      },
+      {
+        "affiliation": [],
+        "name": "Atsushi Ueda"
+      },
+      {
+        "affiliation": [],
+        "name": "Bram Vanhecke"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Verstraete"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.15124v2",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-07-16",
+    "reasoning": "This paper investigates the fundamental theory and practical applications of tensor network methods, which are advanced computational techniques for studying strongly correlated and entangled quantum systems, similar to DMFT.",
+    "score": 0.87,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Entanglement scaling",
+      "Matrix product states"
+    ],
+    "summary": "The concept of finite entanglement scaling forms one of the pillars on which the tensor network ecosystem is built. In this paper, we resolve the open problem of determining the actual perturbations induced by matrix product state approximations of critical systems, and we demonstrate that these can be quite different than the ones predicted by conformal field theory. To that aim, we develop a sparse linear solver to calculate the forward and backward derivatives of 2-dimensional tensor networks with respect to their defining parameters in an implicit way. This algorithm is of independent interest as it provides a primitive for the variational optimization of projected entangled pair states that circumvents the instabilities plaguing traditional automatic differentiation methods.",
+    "title": "On the origin of finite entanglement scaling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5630763173103333
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5146371126174927
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.48369407653808594
+      }
+    ]
+  },
   "2607.15132v1": {
     "authors": [
       {
@@ -16440,6 +16498,75 @@
       }
     ]
   },
+  "2607.20880v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hongqing Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingwei Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongjie Luo"
+      },
+      {
+        "affiliation": [],
+        "name": "Wen Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Fazhi Qi"
+      },
+      {
+        "affiliation": [],
+        "name": "Xuqing Chai"
+      },
+      {
+        "affiliation": [],
+        "name": "Miao Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Fengyao Hou"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.20880v2",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-23",
+    "reasoning": "This paper focuses on an automated analysis platform for X-ray powder diffraction, which is a methodological tool for structural characterization rather than a study of specific correlated electron phenomena or novel materials physics.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "X-ray Powder Diffraction",
+      "Automated Materials Discovery",
+      "High-throughput Characterization"
+    ],
+    "summary": "High-throughput experimentation and self-driving laboratories are drastically accelerating materials discovery, yet automated interpretation of X-ray powder diffraction (XRPD) data remains a critical rate-limiting step. Conventional search-match workflows rely heavily on expert manual intervention, while pure data-driven machine learning approaches suffer from limited generalizability across chemical systems and lack rigorous crystallographic interpretability. Here we present MatDiffract, a material-informed automated analysis platform for high-throughput XRPD characterization. Built on a first-principles density functional theory (DFT)-derived inorganic crystal structure database, Atomly, MatDiffract constructs a perturbation-augmented simulated diffraction database, embeds multi-scale diffraction features into indexable vectors, and integrates hierarchical vector retrieval with full-pattern fitting Rietveld refinement and quantitative phase fitting. Benchmarked on 875 single-phase experimental patterns, the platform achieves 91.3% Top-1 and 97.2% Top-10 identification accuracy after automated refinement. For binary and ternary multiphase mixtures, it delivers 85.0% and 70.0% Top-1 accuracy with mass fraction mean absolute errors as low as 1.2% and 1.8%, respectively. Beyond mere phase labeling, MatDiffract outputs full crystallographic results including refined structural models, fitted profiles, and quantitative compositions within tens of seconds per sample. Its modular vector-based architecture supports seamless incremental expansion to new material systems, providing an end-to-end solution to close the characterization throughput gap for autonomous materials discovery and high-throughput materials development.",
+    "title": "MatDiffract: A Material-Informed Automated Analysis Platform for X-ray Powder Diffraction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4006892442703247
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.3804391920566559
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.37817683815956116
+      }
+    ]
+  },
   "2607.20906v1": {
     "authors": [
       {
@@ -17040,6 +17167,87 @@
       }
     ]
   },
+  "2607.21803v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kim-Khuong Huynh"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Anthony Quintero"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Klanjšek"
+      },
+      {
+        "affiliation": [],
+        "name": "Tilen Knaflič"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuta Ishii"
+      },
+      {
+        "affiliation": [],
+        "name": "Norimasa Sasabe"
+      },
+      {
+        "affiliation": [],
+        "name": "Nhu-Quynh T. Phan"
+      },
+      {
+        "affiliation": [],
+        "name": "Frej Søren Rattenborg"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuichi Yamasaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Arčon"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Brummerstedt Iversen"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.21803v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-23",
+    "reasoning": "It explores the intrinsic properties of an altermagnet, including an Anderson insulating state and experimental probes like X-ray magnetic circular dichroism, which aligns with an interest in electronic and magnetic phases and advanced X-ray techniques.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "X-ray magnetic circular dichroism",
+      "Anderson Insulator"
+    ],
+    "summary": "We report the synthesis methodology, structure, and intrinsic properties of ultra-high quality single crystals of MnTe, an archetypal altermagnet. The crystals, obtained from self-flux method, are nearly free from crystal imperfections and disproportionate chemical compositions as seen by various investigation methods. In measurements under quasi free-standing configuration minimizing stress induced effects, the crystals exhibit complex and anisotropic domain kinetics in both superheating and supercooling regimes around the altermagnetic transition at $T_{\\mathrm{N}} = 310\\,\\mathrm{K}$. An Anderson insulating state is observed below $T_{\\mathrm{MI}}\\approx 150\\,\\mathrm{K}$ with a carrier density of about $1.6\\times 10^{17}\\,\\mathrm{cm}^{-3}$, being sharply contrast to metallic states usually seen in Te-deficit samples. Nevertheless, hallmarks of altermagnetism, anomalous Hall effect and X-ray magnetic circular dichroism signal, are robust in this intrinsic limit, however with significantly reduced magnitudes.",
+    "title": "Intrinsic single crystals of MnTe altermagnet",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.5759955644607544
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.53373122215271
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.5307544469833374
+      }
+    ]
+  },
   "2607.21829v1": {
     "authors": [
       {
@@ -17115,6 +17323,63 @@
       {
         "liked_paper_id": "2507.01856v1",
         "score": 0.40441325306892395
+      }
+    ]
+  },
+  "2607.21868v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "S. Gayen"
+      },
+      {
+        "affiliation": [],
+        "name": "S. S. Ali"
+      },
+      {
+        "affiliation": [],
+        "name": "V. K. Singh"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Koteswararao"
+      },
+      {
+        "affiliation": [],
+        "name": "S. K. Panda"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1002/pssr.202600001",
+    "id": "2607.21868v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-23",
+    "reasoning": "This paper investigates quantum antiferromagnetism in a distorted honeycomb lattice using a combination of DFT and QMC, which aligns with the user's interest in computational methods for strongly correlated magnetic systems, even though it doesn't discuss superconductivity or DMFT directly.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Honeycomb Lattice",
+      "Low-Dimensional Magnetism"
+    ],
+    "summary": "We investigate the electronic structure and magnetic properties of the distorted honeycomb lattice compound KCuInP2O8 through a combination of experimental measurements, first principles calculations and quantum monte carlo simulations. Density functional theory calculations within the GGA+U framework establishes KCuInP2O8 as an indirect gap insulator with Cu2+ local moments and finite magnetocrystalline anisotropy arising from spin orbit coupling. A microscopic evaluation of magnetic exchange interactions using the magnetic force theorem reveals a pronounced hierarchy of couplings, with the next nearest neighbor interaction dominating over the nearest neighbor exchange, while interlayer couplings remain negligible. This exchange hierarchy naturally maps the system onto weakly coupled antiferromagnetic spin chains embedded in a distorted honeycomb lattice. Motivated by the ab initio estimated exchange interactions, we construct an effective spin half Hamiltonian and investigate its magnetic response using large scale quantum Monte Carlo simulations. The calculated temperature dependent susceptibility and field dependent magnetization quantitatively reproduce the experimental behavior and capture key signatures of low dimensional quantum magnetism, including a broad susceptibility maximum and a field induced saturation at low temperatures. Our results establish KCuInP2O8 as a quasi-two-dimensional quantum antiferromagnet composed of coupled spin chains, providing a consistent theoretical framework that links electronic structure, exchange interactions, and collective magnetic behavior.",
+    "title": "Quasi-Two-Dimensional Quantum Antiferromagnetism in the Distorted Honeycomb Compound KCuIn(PO4)2",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6077747941017151
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5735369920730591
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.534725546836853
       }
     ]
   },
@@ -17447,6 +17712,51 @@
       }
     ]
   },
+  "2607.22283v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nikhil Vamsodharakan Seshadri"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.22283v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-07-24",
+    "reasoning": "This paper investigates the Mott transition within the Gutzwiller variational method, linking to the user's interest in dynamical mean-field theory and correlated electron systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Mott Transition",
+      "Gutzwiller Theory",
+      "Cavity Quantum Electrodynamics"
+    ],
+    "summary": "Can vacuum electromagnetic fluctuations shift a bulk Mott transition? Within the Gutzwiller variational method, we derive a criterion that separates collective spectroscopic hybridization from thermodynamic phase control. We show that a Mott transition shifts only when the electromagnetic environment supplies finite thermodynamic spectral weight with bond-scale variation. A joint frequency--spatial Pauli--Fierz density gives the leading shift. Surface phonon polaritons yield a $d^{-3}$-to-$d^{-5}$ crossover, while finite-coordination variational Monte Carlo supports the predicted critical coefficient and $M/N$ scaling.",
+    "title": "When Can a Cavity Move a Mott Transition? A Spectral-Density Criterion within Gutzwiller Theory",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.4644903540611267
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.457208514213562
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.4556066393852234
+      }
+    ]
+  },
   "2607.22316v1": {
     "authors": [
       {
@@ -17717,6 +18027,662 @@
       {
         "liked_paper_id": "2506.23550v1",
         "score": 0.4880284070968628
+      }
+    ]
+  },
+  "2607.22831v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tamaghna Hazra"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.22831v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-24",
+    "reasoning": "This paper introduces a new class of exactly flat topological bands and discusses their protection by local graph topology, which is highly relevant to the user's interest in topological materials and strongly correlated quantum matter.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Flat Bands",
+      "Topological Quantum Computation",
+      "Moiré Heterostructures"
+    ],
+    "summary": "Strongly correlated quantum matter is fundamentally defined by the tension between non-commuting quantum operators. Hamiltonians exhibiting macroscopic degeneracies are of general interest in this field because they imply an infinite susceptibility to any non-commuting perturbation. In moiré heterostructures, engineering such extensive degeneracies in the kinetic Hamiltonian creates a fertile garden for exotic strongly correlated phases of matter to emerge from the resulting flat bands. Here, we introduce a prescription to construct an infinite family of exact flat band Hamiltonians supported on the faces of arbitrary graphs. We demonstrate this algorithm on the faces of four Bravais lattices. Using a discrete graph generalization of the Atiyah-Singer index theorem, we prove that the extensive degeneracies of such face-graph Hamiltonians are protected by the local topology of the face-graph connectivity. The resulting macroscopic null spaces yield compact localised states that remain localised over time due to frustration in hopping pathways. We discuss the broad implications of such non-dispersing quantum modes in diverse settings, from arrested dynamics in quantum networks and quantum machine learning algorithms to Majorana-free topological quantum computation.",
+    "title": "New class of exactly flat topological bands - compact localised states protected by local graph topology",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5177663564682007
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5036927461624146
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4819090962409973
+      }
+    ]
+  },
+  "2607.22863v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jan T. Schneider"
+      },
+      {
+        "affiliation": [],
+        "name": "Cristian Tabares"
+      },
+      {
+        "affiliation": [],
+        "name": "Alejandro González-Tudela"
+      },
+      {
+        "affiliation": [],
+        "name": "Luca Tagliacozzo"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.22863v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-24",
+    "reasoning": "This paper introduces a universal scaling framework for assessing variational quantum ansätze, connecting to computational methods for quantum many-body physics, which aligns with the user's interest in efficient solvers for strongly correlated systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Variational Ansätze",
+      "Critical Phenomena",
+      "Correlation Length Scaling"
+    ],
+    "summary": "Variational ansätze are a cornerstone of quantum many-body physics, providing compact approximations to complex ground states using finite resources. Recent quantum-technology advances have introduced a new class based on layered parameterized evolutions. Assessing whether they can represent critical ground states is challenging: correlations span all length scales, while finite circuit depth limits how far they extend. Building on finite-resource scaling from tensor networks, we assign each ansatz an emergent correlation length $ξ_D$, the longest range over which it faithfully captures critical correlations. Its growth with refinement parameter $D$, $ξ_D \\propto D^κ$, defines an exponent $κ$ measuring how efficiently an architecture converts resources into long-distance correlations. Applying this framework to the critical transverse-field Ising model, with $D$ the circuit depth of parameterized evolutions, we compare ansätze with nearest-neighbor and long-range generators, and layers where generators act separately or combined. All ansätze are compatible with algebraic growth, but fitted exponents range from $κ\\simeq1$ to $κ\\simeq3$. Exponential interactions give the largest exponents, while power-law interactions stay close to nearest-neighbor behavior, showing long-range support alone gives no scaling advantage. Combined-generator layers generally outperform separable ones, so layer organization matters alongside interaction range. Finally, a quasiparticle analysis shows finite depth leaves an unresolved window of width $ξ_D^{-1}$ around the low-energy modes responsible for long-distance correlations. The emergent correlation length thus acts as an infrared resolution scale, providing a benchmark for critical-state preparation and a guide for designing resource-efficient variational architectures.",
+    "title": "Universal scaling framework for parameterized quantum evolutions at criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5042367577552795
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.498899906873703
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4954453110694885
+      }
+    ]
+  },
+  "2607.23203v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "R. Zosiamliana"
+      },
+      {
+        "affiliation": [],
+        "name": "Lalhriat Zuala"
+      },
+      {
+        "affiliation": [],
+        "name": "N. T. Tien"
+      },
+      {
+        "affiliation": [],
+        "name": "Vo Khuong Dien"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Laref"
+      },
+      {
+        "affiliation": [],
+        "name": "D. P. Rai"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.23203v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-25",
+    "reasoning": "While it employs DFT, the paper's main focus on thermoelectric properties and the use of machine learning for lattice thermal conductivity of LiCdSb is less aligned with the user's core interests in strongly correlated superconductivity, DMFT, or topological quantum matter.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Thermoelectric Materials",
+      "Lattice Thermal Conductivity",
+      "Machine Learning Potentials"
+    ],
+    "summary": "By using first-principles density functional theory (DFT) and the Boltzmann transport equation, we have calculated the corresponding electronic and thermoelectric properties of LiCdSb. For calculating electron transport properties, accurate band-structure estimation is crucial. Hence, for the precise band gap calculation, we have implemented a hybrid functional HSE06, which is widely known for its high accuracy. To evaluate the thermoelectric performance of a material, the calculation of lattice thermal conductivity (Kl) is a key parameter. However, from a theoretical perspective, the calculation of lattice thermal conductivity is very complex and demands huge computational resources. Therefore, in this work, we have opted for an alternative method of machine-learning interatomic potentials (MLIPs) for the calculation of Kl. Our result of Kl=0.24 Wm^-1K^-1 at room temperature is in qualitative agreement with the available theoretical and experimental data. The figure of merit (ZT) with Kl estimated from Slack+TDEC ZT is 0.18 at 300 K, and machine learning (ML) models ZT is 0.17 at 300K, combining with HSE06-based electronic transport properties agreed well with the available experimentally reported value of ZT is 0.10 at 300K. However, we report the ZT value well above the benchmark value of 1 beyond 600K. The ZT value exceeding 1 at higher temperatures makes LiCdSb a promising material for high-temperature energy conversion.",
+    "title": "A DFT and Machine Learning-Assisted Study on the Lattice Thermal Conductivity of LiCdSb for Thermoelectric Applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4784400463104248
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4540400505065918
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.44147053360939026
+      }
+    ]
+  },
+  "2607.23208v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ming-Yu Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei-Jia Zou"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Shang"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei-Xiong Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.23208v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-25",
+    "reasoning": "This paper focuses on machine learning for predicting properties of energetic multi-ionic materials, which is distinct from the quantum materials, superconductivity, and advanced computational physics (like DMFT) themes present in the user's liked papers.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Materials Informatics",
+      "Energetic Materials"
+    ],
+    "summary": "Multi-ionic materials pose a distinct representational challenge in machine learning-driven materials design. Different from single-molecule or composition-based materials, their properties arise from how charged building blocks aggregate into specific assemblies. Here, we show how pretrained machine-learned interatomic potentials (MLIPs) can bypass full crystal-structure prediction and support pre-synthesis screening from stoichiometric ionic clusters using multi-ionic integrated explosives (MIXs) as a synthesis-facing example. This strategy combines a stoichiometric ionic-cluster representation, which represents each candidate material by a non-periodic, stoichiometry-preserved formula-unit cluster, with multi-task fine-tuning (MT-FT), which adapts a pretrained atomistic backbone while retaining the energy--force objective as physical regularization for the sparse detonation-velocity labels. With the pretrained backbone regularized by MT-FT, this surrogate provides a cross-validated screen across only 25 structurally curated perovskite-type energetic materials (PEMs) with experimentally derived Kamlet--Jacobs (K--J) detonation velocities. Representation probes show that the learned descriptors implicitly retain site-aware ionic organization, density information, and coarse packing compatibility, implying why non-periodic clusters can remain predictive before full crystal structures are known. The surrogate extends known PEMs chemistry to three newly synthesized ABX$_4$ materials with both unseen ABX$_4$ stoichiometry and an unseen ethylenediammonium B-site cation, yielding three-point concordance with K--J reference velocities and a mean absolute error (MAE) of 92~m$\\cdot$s$^{-1}$ without retraining. Together, these results establish stoichiometry-preserved cluster learning as a synthesis-facing screening strategy for data-scarce multi-ionic materials.",
+    "title": "Stoichiometric cluster learning for few-shot property prediction of multi-ionic integrated energetic materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.48562049865722656
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.40802156925201416
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.3568463623523712
+      }
+    ]
+  },
+  "2607.23392v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Guan-Lin Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Di Xiao"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Ran"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.23392v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-07-25",
+    "reasoning": "This paper introduces a variational-wavefunction-based framework for strongly correlated quantum states of matter, directly aligning with the user's interest in theoretical and computational methods for such systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Variational Wavefunctions",
+      "Strongly Correlated Materials",
+      "Quantum Spin Liquids"
+    ],
+    "summary": "We systematically introduce hyperdeterminant wavefunctions as a variational-wavefunction-based theoretical framework for strongly correlated quantum states of matter, together with practical numerical simulation algorithms. This framework generalizes previously known fermionic parton constructions, yields reliable microscopics with intuitive physical pictures, and allows direct access to the fractionalized degrees of freedom together with associated microscopic effective field theories. We demonstrate the applications of this framework to fractional Chern insulators and quantum spin liquids. We comment that the hyperdeterminant states belong to a more general class of variational wavefunctions: the fused Gaussian states.",
+    "title": "Hyperdeterminant wavefunctions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.46520739793777466
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.4583642780780792
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.445797860622406
+      }
+    ]
+  },
+  "2607.23654v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shuai A. Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Qianqian Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Guangyu Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng Zhu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.23654v1",
+    "matching_keywords": [
+      "altermagnetism",
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-07-26",
+    "reasoning": "The paper investigates pair-density-wave superconductivity emerging from an altermagnetic Mott insulator using DMRG, directly connecting to the user's interest in superconductors, Mott physics, and complex charge correlations.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Pair-Density Wave",
+      "Altermagnetic Mott Insulator",
+      "Density Matrix Renormalization Group"
+    ],
+    "summary": "Pair-density-wave (PDW) superconductivity is a state in which the superconducting order parameter modulates at a finite wavevector. Using large-scale density matrix renormalization group, we study the doped altermagnetic Mott insulator in the checkerboard $t$-$J$ model, where altermagnetic exchange anisotropy is encoded microscopically through anisotropic ferromagnetic next-nearest-neighbor exchange. By mapping the ground-state phase diagram as a function of doping and altermagnetic anisotropy, mainly on six-leg cylinders, we identify a transition from a uniform $d$-wave superconducting regime with charge modulation to a PDW regime coexisting with stripe order. In the PDW regime, we report an unconventional wave-vector locking $\\mathbf Q_{\\mathrm{PDW}}\\approx 2\\mathbf Q_{\\mathrm{Stripe}}$ along the cylinder direction, in contrast to the conventional relation. Pair correlations reveal a two-scale structure, consisting of short-distance local $d$-wave pairing and long-distance finite-momentum PDW correlations. A symmetry-based Ginzburg--Landau analysis is presented for the observed locking. Our results identify altermagnetism as a strong-coupling, microscopically grounded route to finite-momentum superconductivity in doped Mott insulators.",
+    "title": "Pair-Density Wave from Doping an Altermagnetic Mott Insulator",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.647261381149292
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.60940021276474
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5909680128097534
+      }
+    ]
+  },
+  "2607.23886v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tanjin He"
+      },
+      {
+        "affiliation": [],
+        "name": "Aikaterini Vriza"
+      },
+      {
+        "affiliation": [],
+        "name": "Logan Ward"
+      },
+      {
+        "affiliation": [],
+        "name": "Xu Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yiming Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Anubhav Jain"
+      },
+      {
+        "affiliation": [],
+        "name": "Gerbrand Ceder"
+      },
+      {
+        "affiliation": [],
+        "name": "Rajeev S. Assary"
+      },
+      {
+        "affiliation": [],
+        "name": "Ian T. Foster"
+      },
+      {
+        "affiliation": [],
+        "name": "Maria K. Y. Chan"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "cs.CL",
+      "cs.DL",
+      "cs.IR"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.23886v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-07-26",
+    "reasoning": "This paper develops a data-driven method for X-ray absorption spectroscopy (XAS) data, a technique similar to resonant X-ray scattering used in previously liked papers for probing material electronic structure.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "X-ray absorption spectroscopy",
+      "Data mining",
+      "Materials informatics"
+    ],
+    "summary": "X-ray absorption spectroscopy (XAS) is central to understanding the local electronic and atomic structure of materials, yet most published spectra remain inaccessible to data-driven analysis because they are embedded in figures and described through fragmented textual context in the literature. Here, we use multimodal (image and text) literature mining to transform this dispersed knowledge into an AI-ready experimental data resource. We developed a scalable spectroscopy data digitization pipeline that identifies XAS figures in full-text articles, digitizes spectral curves, and links each spectrum to accompanying metadata on the measured edge and material. Applying this pipeline to the battery literature produced an open dataset of 13,740 XAS spectra, spanning 66 absorbing elements and diverse battery chemistries, with expert validation confirming accurate extraction of spectral and metadata information. By converting literature-embedded spectra into structured numerical data, this dataset provides a foundation for large-scale XAS analysis, cross-laboratory comparison, high-throughput characterization, and autonomous discovery of advanced materials.",
+    "title": "Harnessing X-ray Absorption Spectroscopy Data through Multimodal Mining of Battery Literature",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.5021136403083801
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC",
+        "score": 0.4832499027252197
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.43910378217697144
+      }
+    ]
+  },
+  "2607.24231v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Weiguang Cao"
+      },
+      {
+        "affiliation": [],
+        "name": "Haruki Watanabe"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.other",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.24231v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-27",
+    "reasoning": "This paper discusses abstract theoretical concepts of non-invertible dualities and finite-temperature phase diagrams in quantum field theory, which is less directly related to the user's condensed matter interests in specific materials or correlated electron phenomena.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Non-invertible Duality",
+      "Gauge Theory",
+      "Quantum Phase Transitions"
+    ],
+    "summary": "Do two Hamiltonians related by a non-invertible transformation necessarily share the same finite-temperature phase diagram? For a cluster-model interpolation $H(s)$ and its Kennedy--Tasaki dual $\\tilde H(s)$, the map is a partial isometry and equates only their all-plus-sector partition functions. In one dimension, thermal order is forbidden on both sides, leaving only the common zero-temperature transition at $s=\\tfrac12$. In three dimensions, however, the inequivalence is exact already at $s=0$: the cluster model has an analytic paramagnetic free energy, whereas its dual $\\mathbb Z_2$ gauge theory has a deconfinement transition at $T_c\\approx1.31$. Quantum Monte Carlo shows that the mismatch occupies a finite window of the interpolation, marked by a self-dual frozen wedge on the cluster side and a deconfined dome on the gauge side; once both close the two phase diagrams agree again, coinciding over the entire remaining interval up to the shared trivial endpoint $s=1$.",
+    "title": "Distinct finite-temperature phase diagrams of non-invertible Kennedy--Tasaki duals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5097721219062805
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4598022997379303
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.4272199273109436
+      }
+    ]
+  },
+  "2607.24327v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yidong Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tenglong Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanwen Kang"
+      },
+      {
+        "affiliation": [],
+        "name": "Junfeng Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Sheng Meng"
+      },
+      {
+        "affiliation": [],
+        "name": "Miao Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.CE",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.24327v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-27",
+    "reasoning": "This paper addresses inconsistencies in Density Functional Theory (DFT) calculations using graph neural networks, which is a computational methodology improvement relevant to materials design and aligns with interest in theoretical methods.",
+    "score": 0.88,
+    "suggested_keywords": [
+      "Density Functional Theory",
+      "Graph Neural Networks",
+      "Materials AI"
+    ],
+    "summary": "Heterogeneous density functional theory (DFT) calculations, particularly plane-wave implementations, introduce systematic formation energy errors ranging from tens to hundreds of meV/atom, depending on the selection of exchange-correlation functionals, kinetic energy cutoffs, pseudopotentials, and dispersion corrections. As demonstrated by the MatPES dataset, identical structures can exhibit an average energy discrepancy of 107 meV/atom between PBE and r2SCAN calculations. Such method-dependent discrepancies hinder the integration of multi-source DFT data, greatly limiting the scale and quality of datasets for training robust materials AI models. Here, we resolve this fundamental data silo barrier via graph-based transfer learning. Leveraging 380,190 structurally paired PBE-r2SCAN entries from the MatPES database, we train a structure-aware graph neural network to predict cross-functional energy residuals and align inconsistent DFT energy scales. By adopting GPTFF model architecture, the model converts conventional PBE energies to r2SCAN-level accuracy with a mean absolute error of 14.3 meV/atom, compared with 18.2 meV/atom achieved by CHGNet. This versatile approach effectively upgrades massive legacy PBE datasets to high-precision r2SCAN standards. It enables reliable predictions of phase stability, battery voltage profiles, and reaction thermodynamics, while allowing the integration of multi-source DFT data to advance the development of high-performance materials foundation models.",
+    "title": "Aligning Heterogeneous DFT Datasets: A Graph Neural Network Approach to Cross-Functional Formation Energies",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4769313633441925
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4681655168533325
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.45749393105506897
+      }
+    ]
+  },
+  "2607.24549v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Taka-Shi Fujiwara"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiro Sakai"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryotaro Arita"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.24549v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-07-27",
+    "reasoning": "This paper directly addresses strongly correlated superconductivity in the bilayer Hubbard model, investigating the real-frequency self-energy structure and utilizing the dynamical cluster approximation, which aligns perfectly with the user's interest in DMFT and superconductivity in strongly correlated systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Dynamical Cluster Approximation",
+      "Hubbard Model",
+      "Strongly Correlated Superconductivity"
+    ],
+    "summary": "We study the real-frequency structure of the self-energy in the bilayer Hubbard model, using the dynamical cluster approximation. At half filling, the Mott insulator-band insulator (MI-BI) crossover involves a rearrangement of self-energy poles between the bonding and antibonding bands; these poles cross as the interlayer hopping $t_{\\perp}$ is varied. Upon doping, this pole structure produces a band-selective pseudogap and enhances $s^{\\pm}$-wave superconductivity. The order parameter is maximized near the MI-BI boundary, where low-energy anomalous self-energy poles develop simultaneously in both bands and cooperatively enhance the pairing. We further show that these self-energy poles can be interpreted as emergent fermionic excitations, offering an enhanced-pairing mechanism in common with the single-layer Hubbard model. The controllability of these poles through $t_{\\perp}$ makes the bilayer system an unconventional platform for optimizing strongly correlated superconductivity.",
+    "title": "Self-energy pole optimization of superconductivity in the bilayer Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6079472303390503
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6067447066307068
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.594260573387146
+      }
+    ]
+  },
+  "2607.24599v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuchi Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yusheng Hou"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.24599v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-27",
+    "reasoning": "This paper investigates the electronic and magnetic properties of a hole-doped material using first-principles calculations and quantum oscillations, identifying novel altermagnetic states, which closely aligns with interest in exotic phases, doping effects, and electronic structure of materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Quantum oscillations",
+      "RuO2"
+    ],
+    "summary": "Altermagnetism, characterized by its ferromagnetism-like spin-splitting band structure and antiferromagnetism-like magnetic order, has garnered considerable attention recently. Although hole doping may promote magnetism in the debated altermagnet candidate RuO2, the evolution of its electronic and magnetic properties under hole doping remains poorly understood. Based on first-principles calculations, we employ quantum oscillations to study hole-doped RuO2. We find that hole doping can enhance spin splitting and reconstruct the Fermi surface in RuO2, which is revealed by the angle-dependent quantum oscillation frequency. By tracking a pair of closed Fermi-surface pockets, we identify a meaningful correlation between the magnetic moment of Ru and a quantum-oscillation-based signature of spin splitting. This correlation follows a quasi-linear trend over a broad doping range, which can be captured by a minimal two-dimensional d-wave altermagnetic model. In addition, the hole-doped RuO2 exhibits a transition from a nonmagnetic to an altermagnetic state via an intermediate state. The quasi-linear correlation through quantum oscillation and the distinct quantum oscillation frequency of the stable altermagnetic state can serve as useful signatures for identifying the altermagnetic state in RuO2. Our results provide a comprehensive framework for understanding hole-doped RuO2, offering new insights into altermagnetic transitions and their identification.",
+    "title": "Quantum oscillation fingerprints of altermagnetism in hole-doped RuO2",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5905839800834656
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5287928581237793
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.5261719822883606
+      }
+    ]
+  },
+  "2607.24679v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Julius S. Herz"
+      },
+      {
+        "affiliation": [],
+        "name": "Robin Schäfer"
+      },
+      {
+        "affiliation": [],
+        "name": "Matías G. Gonzalez"
+      },
+      {
+        "affiliation": [],
+        "name": "David J. Luitz"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.24679v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-27",
+    "reasoning": "This paper presents a novel Quantum Monte Carlo method to mitigate the sign problem, which is a significant advancement in computational techniques for strongly correlated systems, akin to interest in DMFT solvers.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Sign problem",
+      "Strongly correlated systems"
+    ],
+    "summary": "The sign problem breaks the polynomial scaling of Quantum Monte Carlo methods. We alleviate it by rotation of the local basis of the Hilbert space, such that the phase of off-diagonal matrix elements of the rotated Hamiltonian is minimized. These minima coincide with optima of the average sign. We benchmark our method for frustrated Heisenberg antiferromagnets in one dimension and on the two-dimensional maple-leaf lattice. Our approach reveals more efficient bases with improved sign in a large part of the parameter space for all models considered, enabling us to reach lower temperatures, on par with state-of-the-art numerical linked cluster expansions which we directly compare to.",
+    "title": "Sign-optimized Quantum Monte Carlo",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5728847980499268
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5286816954612732
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.526630163192749
       }
     ]
   }
