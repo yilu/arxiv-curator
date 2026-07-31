@@ -18759,6 +18759,47 @@
       }
     ]
   },
+  "2607.24038v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hyun-Yong Lee"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.24038v2",
+    "matching_keywords": [],
+    "published_date": "2026-07-27",
+    "reasoning": "This paper explores how magnetic texture winding influences fermion-parity switches and topological phases in an interacting p-wave magnet ring, using DMRG simulations relevant to understanding complex many-body phenomena and topological aspects.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Magnetic Textures",
+      "Topological Phases",
+      "Fermion Parity"
+    ],
+    "summary": "Coplanar magnetic spirals map locally onto uniform spin--orbit-coupled wires, but on a ring the rotating spin frame can change the electronic boundary condition. We prove, level by level in every fixed-particle-number sector, that even and odd texture windings impose boundary phases separated by half the single-electron flux period. Changing the winding by one also changes the physical pitch in inverse proportion to the circumference; a symmetric comparison removes this leading pitch correction. In the number-conserving topological phase, a global parity constraint then reverses the fermion-parity assignment of neighboring phase-winding branches. Density-matrix renormalization-group simulations show this reversal, support an Ising transition coexisting with a gapless charge mode, and relate the finite-size parity splitting to an independently calculated charge stiffness. Magnetic-texture winding thus changes the many-body spectrum through a global boundary condition that is not determined by the local band dispersion, providing a closed-geometry, number-conserving probe of topological pairing.",
+    "title": "Magnetic-texture winding controls fermion-parity switches in an interacting $p$-wave magnet ring",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5646364092826843
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.49442058801651
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.49333998560905457
+      }
+    ]
+  },
   "2607.24127v1": {
     "authors": [
       {
@@ -20997,6 +21038,1265 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
         "score": 0.29576027393341064
+      }
+    ]
+  },
+  "2607.27295v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Satya Kokonda"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1016/j.cattod.2026.115725",
+    "id": "2607.27295v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-07-29",
+    "reasoning": "This paper applies machine learning for the computational discovery of photocatalysts for environmental applications, which falls outside the user's primary interests in strongly correlated electron systems and unconventional superconductivity.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Photocatalysis",
+      "MOF",
+      "Materials discovery"
+    ],
+    "summary": "The rational design of photocatalysts for environmental remediation and CO2 conversion remains limited by the high computational cost and sparse experimental data describing multi-parameter photocatalytic behavior. This work presents an integrated machine-learning framework that couples reinforcement learning-based metal-organic framework (MOF) generation with a multi-stage Crystal Graph Convolutional Neural Network (CGCNN) prediction funnel to identify photocatalysts optimized across multiple electronic and structural features. 120,000 MOF candidates were generated and screened using 13 key descriptors, including band-gap suitability, CO2/H2O selectivity, adsorption energy, and structural stability. The funnel approach reduced computational cost by 4.13-fold while maintaining predictive robustness. Two top candidates, a Cr-based and a Zn-based MOF, exhibited predicted photocatalytic fitness values of 1.70 +/- 0.25 and 1.20 +/- 0.05 fold higher respectively than benchmark materials such as PCN-224(Zr), demonstrating simultaneous improvements in light absorption, redox energetics, and framework durability. Simulated X-ray diffraction patterns confirmed strong structural agreement with experimentally synthesized MOFs, indicating high synthesizability. Post-hoc analysis revealed recurring structural motifs, such as the N262 metal cluster, that correlated strongly with high predicted photocatalytic activity. These results highlight the potential of data-driven methods to accelerate discovery of efficient and durable photocatalysts for environmental and energy-related transformations, providing a foundation for experimental realization and large-scale implementation of computationally designed MOFs.",
+    "title": "MatCreatioNN: Machine learning-guided computational discovery of photocatalysts for environmental applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3906848132610321
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3176058828830719
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.2916092276573181
+      }
+    ]
+  },
+  "2607.27331v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ying Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Augustin Davignon"
+      },
+      {
+        "affiliation": [],
+        "name": "Peng Rao"
+      },
+      {
+        "affiliation": [],
+        "name": "Runhan Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Maia G. Vergniory"
+      },
+      {
+        "affiliation": [],
+        "name": "Roser Valentí"
+      },
+      {
+        "affiliation": [],
+        "name": "Johannes Knolle"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.27331v1",
+    "matching_keywords": [
+      "altermagnetism",
+      "cuprate"
+    ],
+    "published_date": "2026-07-29",
+    "reasoning": "This paper proposes altermagnetism in cuprate heterostructures and discusses its interplay with unconventional superconductivity, which strongly aligns with the user's interest in cuprate superconductors and competing phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Cuprate heterostructures",
+      "Unconventional superconductivity"
+    ],
+    "summary": "Realizing altermagnetism in high-$T_c$ cuprate-based systems would provide a direct route for studying spin-split electronic bands in the absence of net magnetization and investigate their interplay with unconventional superconductivity. Here, we propose that FeSe/cuprate heterostructures offer such a platform, where a 45$^\\circ$ twist of Cu and Fe layers creates an effective CuFe$_2$ Lieb lattice in which Fe magnetic order and Cu-Fe hybridization through the ligands induces altermagnetic $d$-wave spin splitting. A minimal tight-binding model shows that this mechanism is generic. Furthermore, a substrate-induced inequivalence of the two Se sites in FeSe provides a second route in which altermagnetism originates in the Fe layer and is transferred to the cuprate layer by proximity. Density functional theory calculations for FeSe/Bi$_2$Sr$_2$CuO$_6$ heterostructures confirm the viability of both mechanisms and reveal ways to enhance the spin splitting. These results establish superconducting cuprate/transition metal chalcogenide heterostructures as a promising setting for engineering altermagnetism and studying its coupling to unconventional superconductivity.",
+    "title": "Altermagnetism from a Cu-Fe Lieb Lattice in FeSe/Cuprate Heterostructures",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6268912553787231
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6249096393585205
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5982266664505005
+      }
+    ]
+  },
+  "2607.27368v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Satya Kokonda"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1109/ISTAS65609.2025.11269612",
+    "id": "2607.27368v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-07-29",
+    "reasoning": "The paper's focus on machine learning for MOF design in photocatalysis is largely outside the user's core interests in fundamental condensed matter physics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Metal-Organic Frameworks",
+      "Materials Informatics",
+      "Reinforcement Learning"
+    ],
+    "summary": "Many crucial processes are too complex for computational modeling, requiring experimentation to identify promising materials. Here, a methodology for material design is presented, while photocatalysis is presented as a specific case-study. Metal-Organic Frameworks (MOFs) are a subset of highly promising porous nanomaterials, used in a variety of unmodellable applications. Reinforcement learning generated 60,000 novel MOFs optimized for CO/H20 selectivity. A predictor funnel system was created, iteratively removing low-scoring MOFs to 10,986 potential candidates, improving computational efficiency by 276%. While trained Crystal Graph Convolutional Neural Network (CGCNN) models predicted features for creating a fitness function incorporating stability, catalytic ability, material cost, sustainability, and adsorption while allowing the inclusion of application specific design criterion. This designed function provides a computational method to model photocatalytic performance- and filtered down to two promising MOFs which each pass a myriad of synthesis criteria, first a Cr-based MOF with photocatalyst score 230% higher than the control. Second, a Zn-based MOF outperforms the best control across all relevant metrics, demonstrating robustness against variable fitness functions. This work designed 20 materials, each 125% better than the control for this application. Furthermore, analysis revealed insightful design patterns, such as the significant influence of metal cluster N262 on catalytic performance, providing a method for future work to narrow the chemical space. By incorporating industrially applicable features such as cost or stability of the material, this work successfully designs industrially promising materials in otherwise unmodellable processes such as drug delivery, while paving a method for multi-objective optimization incorporating 260% more features than prior work.",
+    "title": "Machine Learning for Designing Undesignable Metal-Organic Frameworks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.37247297167778015
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.29931640625
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.2871485948562622
+      }
+    ]
+  },
+  "2607.27377v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kevin G. Kleiner"
+      },
+      {
+        "affiliation": [],
+        "name": "Lucas K. Wagner"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.27377v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-07-29",
+    "reasoning": "This paper focuses on optimizing excited states for strongly correlated quantum defects in materials using ensemble variational Monte Carlo, which is highly relevant to understanding defects like oxygen vacancies and applying advanced computational methods to correlated systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum Defects",
+      "Variational Monte Carlo",
+      "Excited States"
+    ],
+    "summary": "Using the recently introduced ensemble variational Monte Carlo (VMC), we study optimized wave functions for strongly correlated point defects, including nitrogen-vacancy and silicon-vacancy centers in diamond and substitutional iron and chromium impurities in aluminum nitride. We study the effects of fully optimized determinant expansion parameters, orbitals, and Jastrow correlation factors on these systems. We find that orbitals from the hybrid functional PBE0 are much better (have lower objective functional) than semilocal PBE, which results in changes in the excitation energies up to 0.5 eV. Further improvements can be made by directly optimizing the objective functional, resulting in changes in excitation energies up to 0.2 eV. The most important parameter varies from defect to defect, reinforcing the necessity of optimizing all parameters to obtain accurate excited states in strongly correlated defects.",
+    "title": "Excited state optimization for strongly correlated quantum defects using ensemble variational Monte Carlo",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5467418432235718
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5299325585365295
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.4883604049682617
+      }
+    ]
+  },
+  "2607.27394v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Geng-Dong Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhi-Da Song"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.27394v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-29",
+    "reasoning": "This paper explores the universal behavior of energy-space entanglement entropy in quantum impurity models like the Anderson and Kondo models, directly aligning with the theoretical framework of strongly correlated systems relevant to dynamical mean-field theory.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Entanglement Entropy",
+      "Quantum Impurity Models",
+      "Fermi Liquid"
+    ],
+    "summary": "Entanglement entropy (EE) is commonly studied using real-space bipartitions. We show that, in quantum impurity models, an energy-space bipartition, equivalent to the momentum-space bipartition of the bath, can display universal behavior. Motivated by poor man's scaling, we logarithmically discretize the bath and partition it into high- and low-energy sectors. For models with Fermi-liquid fixed points, including the Anderson model and fully screened or underscreened Kondo models, the low-energy EE flows to constants independent of model parameters. These constants are integer multiples of $\\ln 2$ plus corrections that depend only on the logarithmic discretization parameter $Λ$. We show that scale invariance of the fixed-point wavefunction in energy space maps to effective translation invariance along a one-dimensional chain, allowing the fixed points to be classified by one-dimensional topological band theory. With low-energy chiral symmetry, each $\\ln 2$ contribution originates from a topological edge mode. We also study transitions between distinct Fermi-liquid fixed points using the local-singlet--Kondo-singlet transition in a two-orbital Anderson model driven by an inter-orbital antiferromagnetic coupling. The local-singlet phase has an effectively decoupled impurity and nearly vanishing EE, whereas the Kondo-singlet phase has finite EE larger than $\\ln 2$ per spin and orbital. When chiral symmetry holds at low energies, this distinction corresponds to a topological transition of the effective bath chain. At the non-Fermi-liquid critical point, the EE develops an unstable plateau. Its $Λ$ dependence resembles that of the overscreened two-channel Kondo model, supporting universality within the same non-Fermi-liquid universality class.",
+    "title": "Universality of Energy-Space Entanglement in Quantum Impurity Models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.5356221795082092
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5064367651939392
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5052537322044373
+      }
+    ]
+  },
+  "2607.27430v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bradley J. Fugetta"
+      },
+      {
+        "affiliation": [],
+        "name": "Anqi Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Kai Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Amy Y. Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Gen Yin"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.27430v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-07-29",
+    "reasoning": "This paper focuses on using machine learning to extract micromagnetic Hamiltonians from experimental data, which is a methodological approach for characterization rather than a study of fundamental correlated electron physics or novel materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Machine learning in magnetism",
+      "Micromagnetism",
+      "FORC"
+    ],
+    "summary": "Extracting intrinsic magnetic Hamiltonians directly from magnetometry is challenging due to the high dimensionality of the parameter space and the degeneracy induced by ensemble averaging. Here, we introduce a collection of deep convolutional neural networks (CNNs) to extract the full phenomenological micromagnetic Hamiltonian directly from the magnetic fingerprints encoded within First-Order Reversal Curves (FORCs). We validate this approach via closed-loop verification, re-creating the input magnetometry for both simulated and experimental FORCs. To mitigate false positives, we deploy an `Alice--Bob' parallel network that quantifies prediction uncertainty based on solely the information in FORCs without any additional ground-truth knowledge. This framework provides a robust, machine-learning-assisted approach to unravel the underlying spin behaviors in complex magnetic systems",
+    "title": "Decoding the Micromagnetic Hamiltonian from Magnetic Fingerprints",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5019635558128357
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.46209660172462463
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.44169145822525024
+      }
+    ]
+  },
+  "2607.27550v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Blake Senseman"
+      },
+      {
+        "affiliation": [],
+        "name": "Zane Ozzello"
+      },
+      {
+        "affiliation": [],
+        "name": "Yannick Meurice"
+      },
+      {
+        "affiliation": [],
+        "name": "Stephen Mrenna"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.27550v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper uses DMRG to study a spin chain effective Hamiltonian, which is a computational method relevant to many-body quantum systems, although the specific physical phenomena are drawn from simplified QCD phenomenology.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum Simulation",
+      "Lattice Gauge Theory",
+      "Spin Chains"
+    ],
+    "summary": "While real-time simulation of Quantum Chromodynamics remains technologically out of reach, simplified models for studying elements of QCD phenomenology abound. This work presents a simple model, a spin-1 truncation of the Compact Abelian Higgs Model simulated on qutrit sites, in which confinement and string breaking is accessible to current simulation methods. In the low-energy regime of 1+1D scalar electrodynamics, the heavy modes are integrated out, producing a spin chain effective Hamiltonian in which Gauss' law is implicitly satisfied. We study the spectrum of string-like excitations using DMRG methods on the order of 100 sites. We demonstrate that an added, local chemical potential, playing a role analogous to external charges, permits parameter-dependent measurements of physical features of interest like the string tension and effective meson mass. Varying the chemical potential also permits a characterization of string stability not assessed in prior studies of confining lattice models.",
+    "title": "Confinement and String Breaking in the Compact Abelian Higgs Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.49931225180625916
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4627681374549866
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.44475147128105164
+      }
+    ]
+  },
+  "2607.27607v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Misaki Sasaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhehong Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Takeshi Hara"
+      },
+      {
+        "affiliation": [],
+        "name": "Shunsuke Kitou"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Kriener"
+      },
+      {
+        "affiliation": [],
+        "name": "Haruto Yoshimochi"
+      },
+      {
+        "affiliation": [],
+        "name": "Shion Yamada"
+      },
+      {
+        "affiliation": [],
+        "name": "Chieko Terakura"
+      },
+      {
+        "affiliation": [],
+        "name": "Naohisa Hirao"
+      },
+      {
+        "affiliation": [],
+        "name": "Hirokazu Kadobayashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yusuke Wakabayashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yoshinori Tokura"
+      },
+      {
+        "affiliation": [],
+        "name": "Yasujiro Taguchi"
+      },
+      {
+        "affiliation": [],
+        "name": "Taka-hisa Arima"
+      },
+      {
+        "affiliation": [],
+        "name": "Yukako Fujishiro"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.27607v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper directly addresses the structural phase diagram and superconductivity in the bilayer nickelate La3Ni2O7, which is a specific material and topic explicitly mentioned in previously liked papers.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Bilayer nickelate",
+      "Structural phase transition",
+      "High-temperature superconductivity"
+    ],
+    "summary": "The bilayer nickelate La3Ni2O7 has attracted intense interest following the discovery of high-temperature superconductivity under pressure, representing the first nickelate superconductor realized in bulk form. However, the crystal structure of the superconducting phase remains under active discussion, complicating efforts to establish its microscopic origin. Here we resolve these structural controversies by establishing a definitive pressure-temperature phase diagram, including the superconducting region of stoichiometric La3Ni2O7 single crystals under hydrostatic conditions using helium as the pressure-transmitting medium. At ambient pressure, La3Ni2O7 adopts a polar orthorhombic Am2m structure characterized by charge order between inequivalent Ni sites and NiO6 octahedral tilting. Upon compression, the system undergoes a direct transition from the charge-ordered Am2m phase to the tetragonal I4/mmm phase near 10 GPa, coinciding with the onset of bulk superconductivity. These results establish the intrinsic structural evolution of La3Ni2O7 and provide a structural framework for microscopic theories of nickelate superconductivity.",
+    "title": "Single-crystal structural phase diagram of stoichiometric bilayer nickelate La3Ni2O7 under hydrostatic pressure",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.73663330078125
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.7307231426239014
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.727830171585083
+      }
+    ]
+  },
+  "2607.27693v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shantanu Pathak"
+      },
+      {
+        "affiliation": [],
+        "name": "Saswata Bhattacharya"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.27693v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper establishes a crystal-field design principle for orbital-order-driven altermagnetism in transition-metal compounds, linking electronic structure, magnetism, and materials design relevant to oxide materials and correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Orbital Order",
+      "Crystal-Field Engineering"
+    ],
+    "summary": "Altermagnets combine collinear antiferromagnetic order with nonrelativistic spin splitting, enabling spintronic functionalities without relying on spin--orbit coupling. While staggered orbital ordering has recently emerged as an alternative route to altermagnetism, its generality has remained unexplored. Here, we establish a universal crystal-field design principle for orbital-order-driven altermagnetism. We show that structural relaxation consistently reconstructs the crystal-field landscape, activating a common $d_{xz}/d_{yz}$ orbital manifold that drives spontaneous staggered orbital ordering and robust $d$-wave nonrelativistic spin splitting across transition-metal compounds spanning electron fillings from $d^1$ to $d^7$. By introducing a unified symmetry framework based on layer-dependent magnetic and orbital order parameters, we demonstrate how interlayer stacking determines whether the system realizes a bulk altermagnetic state or a globally compensated antialtermagnetic phase. Furthermore, we reveal that this symmetry-protected spin-split texture gives rise to highly anisotropic spin-polarized conductivities. Our results establish crystal-field engineering as a predictive design strategy for discovering and engineering orbital-order-driven altermagnets.",
+    "title": "A Universal Crystal-Field Design Principle for Orbital-Order-Driven Altermagnetism",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6612334251403809
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.6001490354537964
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.5832434892654419
+      }
+    ]
+  },
+  "2607.27745v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shibo Shan"
+      },
+      {
+        "affiliation": [],
+        "name": "Cheng Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Patrick Ledwith"
+      },
+      {
+        "affiliation": [],
+        "name": "Zi Yang Meng"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.27745v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "It investigates exotic many-body excitations, specifically 'Dirac trions,' in twisted bilayer graphene using quantum Monte Carlo, directly relevant to strongly correlated electron systems and Dirac physics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Twisted bilayer graphene",
+      "Quantum Monte Carlo",
+      "Dirac trion"
+    ],
+    "summary": "Determining the nature of charge carriers is a fundamental goal in the study of strongly correlated electron systems. Here, we employ the continuous-field momentum-space quantum Monte Carlo method to reveal exotic \"Dirac trion\" excitations in the finite-temperature normal state of twisted bilayer graphene. While the ground state is a symmetry-breaking insulator with gapped ($\\sim$ 20 meV) electron-like excitations, we show that a small temperature ($\\sim$ 3 meV), well below the interaction scale, drives the system into a strongly fluctuating symmetric normal state. We demonstrate that this normal state hosts gapless excitations consisting of three-particle bound states, two electrons and one hole, that are exactly orthogonal to the higher-energy electrons at the zero-momentum gapless point. These Dirac trions have the remarkable property of being arbitrarily light despite being composed of heavy constituents, and their spectra can be easily tuned by varying the twist angle and interlayer hopping strength. Our unbiased quantum many-body computation sheds light on the Dirac trions in a projected correlated flat-band setting and opens the door for further investigation of many-body excitations in strongly correlated topological bands beyond Landau levels.",
+    "title": "Trion Excitations in Twisted Bilayer Graphene: A Quantum Monte Carlo Study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.6105341911315918
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5202405452728271
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5153442025184631
+      }
+    ]
+  },
+  "2607.27916v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Md Fahad Equbal"
+      },
+      {
+        "affiliation": [],
+        "name": "Satoru Hayami"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.27916v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper investigates interaction-driven crossovers, including the BCS-BEC crossover, in the attractive Hubbard model using exact diagonalization, DMRG, and machine learning, directly relevant to the study of correlated electron systems and superconductivity.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Hubbard Model",
+      "BCS-BEC Crossover",
+      "Machine Learning"
+    ],
+    "summary": "We investigate the quarter-filled attractive Hubbard model on finite-width cylindrical lattices using exact diagonalization (ED), density-matrix renormalization group (DMRG) and unsupervised machine-learning-based techniques. Analysis of the ground-state energetics, local observables and correlation functions reveals a continuous interaction-driven crossover from weakly correlated fermions to a regime dominated by tightly bound singlet pairs. This crossover originates from the competition between kinetic-energy-driven fermionic itinerancy and interaction-driven onsite pair formation and exhibits behavior consistent with the BCS--BEC crossover in the thermodynamic limit. Hole-binding-energy calculations provide direct energetic evidence for pair formation: the two-hole binding energy remains negative throughout the attractive regime whereas three-hole binding emerges only at sufficiently strong attraction and exhibits pronounced finite-size dependence. To obtain an unbiased characterization of the correlation landscape, we apply principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) to the real-space correlation matrices. PCA reveals a systematic redistribution of correlation variance whereas UMAP identifies a clear separation between weak- and strong-pairing regimes. Both machine-learning-based approaches independently identify the same crossover region inferred from conventional observables while providing an order-parameter-independent characterization of the underlying reorganization of many-body correlations. Finite-size scaling analyses of the pairing structure factor and the leading PCA variance ratio demonstrate that these signatures remain robust with increasing system size.",
+    "title": "Finite-size effects and interaction-driven crossovers in quarter-filled attractive Hubbard model: Exact diagonalization, DMRG and machine-learning analysis",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6649580001831055
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6646957993507385
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6066503524780273
+      }
+    ]
+  },
+  "2607.27971v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vicente López Oliva"
+      },
+      {
+        "affiliation": [],
+        "name": "José Manuel Badía Contelles"
+      },
+      {
+        "affiliation": [],
+        "name": "Maria Isabel Castillo Catalán"
+      }
+    ],
+    "categories": [
+      "cs.ET"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.27971v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper focuses on optimizing tensor network and decision diagram methods for simulating quantum circuits, which directly relates to efficient computational techniques for complex quantum systems, aligning with an interest in advanced solvers.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Decision Diagrams",
+      "Quantum Circuit Simulation",
+      "Computational Optimization"
+    ],
+    "summary": "Combining Tensor Networks (TNs) and Decision Diagrams (DDs) provides a high-performance framework for the exact simulation of quantum circuits on classical computers by exploiting structural redundancies and topological entanglement. However, improving the scalability of hybrid tools such as the Fast Tensor Decision Diagram (FTDD) requires addressing strict memory growth constraints and complex node management during tensor contractions. In this paper, we propose a hardware-aware architectural optimization of the FTDD framework, with two main contributions: first, we overhaul the internal memory management through a fixed-footprint memory model, strict node lifecycle tracking, and a systematic evaluation of table-sizing policies (exponential, static, and hybrid) to reduce allocation overhead and control memory growth; second, we introduce Path, a new index-ordering heuristic guided by the contraction path, and conduct a comprehensive study of variable index-ordering strategies, an important factor for DD compression. By comparing the original alphanumeric ordering, RCM, and our Path heuristic across diverse circuit topologies, we show that index permutation strongly affects node sharing and diagram density. Experimental evaluation confirms that our optimized FTDD engine bounds memory consumption under structured quantum workloads, enabling stable execution of circuits such as QFT with up to 100 qubits. Furthermore, we systematically characterize execution time, memory footprint, and topological trade-offs across diverse quantum benchmarks.",
+    "title": "Optimizing Memory Efficiency and Index Ordering to Simulate Quantum Circuits Using Tensor Decision Diagrams",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5580774545669556
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4812651574611664
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.42948877811431885
+      }
+    ]
+  },
+  "2607.28000v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zixiong Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Fei Shuang"
+      },
+      {
+        "affiliation": [],
+        "name": "Poulumi Dey"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.28000v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper presents a machine learning interatomic potential for Fe-O systems, which involves computational materials science but is less directly related to strongly correlated electron systems or superconductivity.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Interatomic potentials",
+      "Fe-O system",
+      "Atomistic modeling"
+    ],
+    "summary": "Accurate atomistic modelling of iron (Fe) oxidation requires a reliable interatomic potential, which necessitates an extensive and representative first-principles dataset for training the interatomic potential. However, Fe-oxygen (O) system is known for its structural and magnetic complexity, rendering the generation of high-quality dataset challenging. In this work, we propose the Perturbation Augmented Space group structure Sampling (PASS) method to generate extensive and representative dataset consisting of small-cell structures with less than 10 atoms. We present a systematic approach to developing a first of its kind transferable machine learning interatomic potential (MLIP) for Fe-O system based on the atomic cluster expansion (ACE) framework. We thoroughly validate the accuracy and capability of the ACE MLIP across both pure Fe and Fe-O systems through bulk, surface, and interface properties. We showcase the formation of FeO-like structure in large-scale Fe oxidation simulation using the ACE MLIP. This work demonstrates that the PASS method yields an accurate and transferable MLIP which is capable of capturing the reactive complexity of oxide growth while remaining computationally practical for extended systems.",
+    "title": "PASS: Perturbation augmented space group structure sampling for transferable Fe-O machine learning interatomic potential",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4440791606903076
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.42466145753860474
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.41883954405784607
+      }
+    ]
+  },
+  "2607.28029v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiuhua Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Yilin Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.28029v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper aligns strongly with the user's interests by utilizing DFT+DMFT to investigate orbital-selective Mott transitions, charge ordering, and strong electronic correlations in an altermagnet.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Orbital-Selective Mott Transition",
+      "Ligand Engineering"
+    ],
+    "summary": "Altermagnet CsCr$_2$S$_2$O undergoes a Verwey-type metal-to-insulator transition (MIT) driven by lattice distortion and a stripe charge order on the Cr sublattice, reminiscent of the physics in Fe$_3$O$_4$. However, atomic distortions occur exclusively at the ligand sites rather than the Cr sites. What drives such a pronounced charge imbalance between Cr sites thus remains a mystery. Utilizing DFT+DMFT calculations, we identify an orbital-selective Mott transition, which leaves the correlated metallic $d_{yz}$ orbital governing the low-energy physics. We demonstrate that S-site distortions trigger an initial, tiny charge asymmetry between Cr sites via Cr-$d_{yz}$ and S-$p$ orbital hybridization. Crucially, this asymmetry is significantly amplified by dynamical electronic correlations, resulting in a large discrepancy in both the charge and electron correlations of the Cr-$d_{yz}$ orbital between distinct Cr sites. This further induces a substantial differentiation in local spin polarizations in the altermagnetic state, ultimately driving the MIT. In contrast, we predict that replacing S with Te weakens this correlation-amplification effect and fails to induce an MIT due to weaker electron correlations. Our findings demonstrate that many-body effects can drastically amplify ligand instabilities to reshape the electronic structure of altermagnets, highlighting that ligand engineering is of paramount importance for realizing robust metallic altermagnetism.",
+    "title": "Orbital-Selective Mott Transition and Correlation-Amplified Charge Ordering in the Altermagnet CsCr$_2$S$_2$O",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.5327713489532471
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5322644710540771
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.526729166507721
+      }
+    ]
+  },
+  "2607.28200v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Fuwei Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Weiheng Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Bai Song"
+      }
+    ],
+    "categories": [
+      "physics.app-ph",
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.28200v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper focuses on an AI-driven framework for thermal metrology, which does not align with the user's interest in strongly correlated electron systems, superconductivity, or specific material physics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "AI for science",
+      "Thermal metrology",
+      "LLM agents"
+    ],
+    "summary": "Frequency-domain thermoreflectance (FDTR) is a laser pump-probe technique widely used to measure thermal properties at the micro- and nanoscale; however, it relies on a complex data analysis procedure that demands substantial domain expertise and is susceptible to subtle human errors. Here, we present Vibe-FDTR, an agent-oriented framework that enables large language model (LLM) agents to perform reliable and reproducible FDTR analyses directly from natural language requests. This framework couples a configuration-driven FDTR code package, which enforces physical and parametric consistency, with procedural agent skills that translate user intentions into organized and verifiable analysis steps. We evaluate Vibe-FDTR using a controlled benchmark with two levels: synthetic single-step tasks and real-data multi-step tasks based on measurements of gold-coated graphite samples. Across the two levels, agents using Vibe-FDTR achieve success rates of 100% and 98.9%, respectively. In sharp contrast, ablating skills (Code-agent) reduces performance to 91.4% and 36.7%, which drops further to 38.6% and 0% when the domain package is also omitted (Agent-only). Beyond success rate, Vibe-FDTR also reduces computational cost by 87.7% relative to the Code-agent variant and cuts execution time by more than 60%. Finally, an optional expert mode supports experimental planning via autonomous sensitivity and uncertainty evaluations, and formulates physically grounded recommendations for underspecified tasks. These results demonstrate that encapsulating domain code and expert knowledge into agent skills offers a promising route toward low-barrier, autonomous, and trustworthy thermal metrology.",
+    "title": "Vibe-FDTR: An agent-oriented framework for reproducible frequency-domain thermoreflectance data analysis",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.3908553123474121
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.26480916142463684
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.25339120626449585
+      }
+    ]
+  },
+  "2607.28329v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chenchao Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Wansheng Bai"
+      },
+      {
+        "affiliation": [],
+        "name": "Guo-Xiang Zhi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoqun Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianhui Dai"
+      },
+      {
+        "affiliation": [],
+        "name": "Chao Cao"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.28329v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper investigates a metal-insulator transition driven by coupled spin-density wave and bond order, involving electronic correlations and competing magnetic phases, which aligns with interests in correlated electron systems and competing orders.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Orbital-selective physics",
+      "Metal-insulator transition"
+    ],
+    "summary": "A metal-insulator transition (MIT) driven by bond order (BO) coupled with a secondary spin-density wave (SDW) is identified in CsCr$_2$S$_2$O. Such coupling is enabled as a result of the broken time-reversal symmetry due to the pre-existing C-type antiferromagnetic (C-AFM) order. First-principles calculations reveal an orbital-selective physics that Cr-$d_{yz}$ orbitals form local moments and establish the altermagnetic order, while the Cr-$d_{xz}$ orbitals remain metallic and hybridize with S-$p_z$. Thus the low-energy physics is governed by the Cr-$d_{xz}$ and S-$p_z$ orbitals. On-site interactions then enhance a secondary SDW ($s$SDW) instability of the itinerant $d_{xz}$ electrons, which couples to the Cr-$d_{xz}$-S-$p_z$ bonding order. The resulting coupled $s$SDW-BO simultaneously produces experimentally observed structural distortion, charge disproportionation, local Cr-moment modulation, and gap opening. Our results establish an orbital-selective mechanism upon which pre-existing altermagnetism and electronic correlations cooperate to drive a structural MIT.",
+    "title": "Coupled Spin-Density-Wave and Bond-Order Driven Metal-Insulator Transition in Altermagnetic CsCr$_2$S$_2$O",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5908812284469604
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5460711717605591
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.5390409231185913
+      }
+    ]
+  },
+  "2607.28369v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Per Sehlstedt"
+      },
+      {
+        "affiliation": [],
+        "name": "Paolo Bientinesi"
+      },
+      {
+        "affiliation": [],
+        "name": "Lars Karlsson"
+      }
+    ],
+    "categories": [
+      "physics.comp-ph",
+      "cs.CE",
+      "cs.MS",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.28369v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper directly addresses the performance and efficiency of Density Matrix Renormalization Group (DMRG) software, a critical computational method for quantum systems, which strongly aligns with the user's interest in efficient solvers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "DMRG Software",
+      "Performance Evaluation",
+      "Computational Physics"
+    ],
+    "summary": "The performance of scientific software often determines the scale of problems that can be solved in practice. As multiple implementations of the same algorithm emerge, systematic evaluation is needed to compare their strengths and limitations. The density matrix renormalization group (DMRG) algorithm, widely used to study quantum systems, has over 50 software implementations. These implementations vary in multiple aspects that can strongly affect performance. However, despite the need, performance evaluations of these implementations are scarce and lack a consistent standard; many existing evaluations are either too incomplete to enable meaningful comparisons or focus on objectives other than direct performance comparisons, thereby limiting understanding of how the implementations compare. Here, we present a performance-oriented benchmarking framework to facilitate meaningful comparisons of DMRG implementations, and we apply it to quantify the performance of eight implementations, highlighting similarities and differences among them. Furthermore, we examine multiple parameter settings, optimization strategies, and implementation-specific features to demonstrate how parameter configuration can affect performance and how systematic evaluation can reveal non-obvious trade-offs. The results show significant performance differences, up to two orders of magnitude in some cases, not only between different implementations when aligning parameters, but also within the same implementation when comparing different parameter configurations. Hence, our results demonstrate the significant value and insight that can be gained from conducting rigorous performance evaluations. Using our results and framework as a starting point, more rigorous benchmarking will ultimately help users and developers make informed decisions and support future development efforts to build better, more efficient software.",
+    "title": "Performance Benchmarking: Software for the Density Matrix Renormalization Group",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.48859718441963196
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.4822852611541748
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.47472578287124634
+      }
+    ]
+  },
+  "2607.28373v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mohit Lal Bera"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreu Anglés-Castillo"
+      },
+      {
+        "affiliation": [],
+        "name": "Alberto Acevedo Meléndez"
+      },
+      {
+        "affiliation": [],
+        "name": "Rafael Gómez-Lurbe"
+      },
+      {
+        "affiliation": [],
+        "name": "Luca Ion"
+      },
+      {
+        "affiliation": [],
+        "name": "Rodrigo M. Sanz"
+      },
+      {
+        "affiliation": [],
+        "name": "Somayeh Mehrabankar"
+      },
+      {
+        "affiliation": [],
+        "name": "Tanmoy Pandit"
+      },
+      {
+        "affiliation": [],
+        "name": "Carmen G. Almudéver"
+      },
+      {
+        "affiliation": [],
+        "name": "Armando Pérez"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel Angel Garcia-March"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.28373v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-30",
+    "reasoning": "The paper explores quantum phase transitions, entanglement, and macroscopic quantum states in a frustrated spin chain, connecting to general themes of quantum many-body physics and strongly correlated systems relevant to the user's interests.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Frustrated Magnetism",
+      "Macroscopic Quantum State",
+      "Quantum Phase Transition"
+    ],
+    "summary": "We study a one-dimensional frustrated spin chain, which combines cluster-Ising and anisotropic next-nearest neighbor Ising models. We first offer a historical perspective that justifies the studied model. Then we study in detail the two quantum phases and prove that they are separated by a first order quantum phase transition. On one side, the ground state corresponds to a ferromagnetic phase, shows the presence of macroscopic cat states, and a small gap that closes in the thermodynamic limit. On the other phase, competing interactions avoid the establishment of a topological phase, though it conserves large incommensurate quantum correlations. We prove it is fundamentally distinct from a simple paramagnet, and we name it an incommensurate phase. This is a gapped phase, which gap does not close in the thermodynamic limit. While in the ferromagnetic phase there are two dominant Schmidt coefficients, in the incommensurate phase there are four. This corresponds to four distinct bipartite entanglement channels contributing substantially to the ground state. Finally, we discuss the utility of the macroscopic cat states for quantum metrology applications and the experimental feasibility of the system.",
+    "title": "Emergence of a Macroscopic Cat State and Multi-Channel Entanglement in a Frustrated Cluster Spin Chain",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.6247357130050659
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6028422117233276
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5855295062065125
+      }
+    ]
+  },
+  "2607.28435v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sascha Hauck"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivica Turkalj"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.28435v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper applies tensor network and quantum Fourier transform methods to financial option pricing, which is entirely outside the scope of the user's previous condensed matter physics interests.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Financial Modeling",
+      "Quantum Finance",
+      "Option Pricing"
+    ],
+    "summary": "Fourier-based methods are among the most widely used techniques for pricing European options when the characteristic function of the underlying asset process is available. Their applicability to increasingly fine discretizations, however, is limited by the rapidly growing memory requirements of classical Fourier transforms, which become a computational bottleneck for large-scale pricing problems.   In this work, we overcome this limitation by reformulating the Carr-Madan pricing framework using tensor networks. Specifically, we employ the Superfast Fourier Transform (SFFT), a compressed Tensor Train representation of the Quantum Fourier Transform (QFT), and apply it directly to tensorized option pricing without ever explicitly constructing exponentially large vectors or Fourier operators. This formulation also enables a direct comparison between the classical tensor network algorithm and its quantum counterpart through QFT-based option pricing on quantum simulators and quantum hardware. Numerical experiments for European call options demonstrate that the proposed SFFT method maintains pricing accuracy while substantially reducing memory requirements and achieving subexponential computational scaling compared with conventional FFT-based pricing. The accompanying quantum simulations and hardware executions enable a direct comparison between the classical tensor network formulation and its QFT-based quantum counterpart, showing that both approaches avoid the exponential scaling of conventional Fourier implementations and provide complementary perspectives on large-scale option pricing.   Together, these results establish a unified framework connecting classical Fourier pricing, tensor network algorithms, and quantum computing approaches, demonstrating how tensorized Fourier methods can provide scalable alternatives for high-dimensional financial computations.",
+    "title": "Classical Tensor Network and Quantum Fourier Transform Approaches for Large-Scale Carr-Madan Option Pricing",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5278691053390503
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5045013427734375
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4887464642524719
+      }
+    ]
+  },
+  "2607.28471v1": {
+    "authors": [
+      {
+        "affiliation": [
+          "Department of Physics, University of West Florida, Pensacola, FL"
+        ],
+        "name": "Chandra Sekhar Prayaga"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.28471v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper provides a numerical study using Exact Diagonalization and DMRG for the Transverse-Field Ising Model, directly aligning with the user's interest in computational methods for strongly correlated quantum systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "DMRG",
+      "Quantum phase transition",
+      "Many-body numerics"
+    ],
+    "summary": "We present a self-contained numerical study of the one-dimensional transverse-field Ising model (TFIM), tracing its ground-state entanglement structure from exact diagonalization at small system size (L=8,14,20) through density-matrix renormalization group (DMRG) calculations up to L=100. A single, consistent methodology - identical field grid, identical convergence diagnostic (independent runs at bond dimensions chi=100 and chi=200 at every point) - is used across all seven system sizes, and we show explicitly where exact diagonalization and DMRG must agree exactly rather than merely approximately. Along the way we document and resolve a bond-dimension convergence artifact that produced a spurious discontinuity in an earlier, less systematic dataset, as a worked cautionary example for practitioners. Using the resolved dataset we extract the central charge of the transition via two complementary routes - the leading logarithmic finite-size scaling of the mid-chain entropy, and the full Calabrese-Cardy formula applied to every bond of every system size simultaneously - obtaining c_eff to 0.51-0.52 as short-distance lattice corrections are systematically excluded, consistent with the exact two-dimensional Ising value c=1/2. We review the quantum-classical (Suzuki-Trotter) correspondence that underlies this agreement and discuss how the Widom-Kadanoff scaling hypothesis transplants from the classical to the quantum problem. The manuscript is intended as both a physics result and a worked methodological example of careful finite-size numerics.",
+    "title": "From Exact Diagonalization to DMRG: A Complete Numerical Study of the Transverse-Field Ising Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5371778011322021
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5074049234390259
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.4981033205986023
+      }
+    ]
+  },
+  "2607.28479v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ashkan Abedi"
+      },
+      {
+        "affiliation": [],
+        "name": "Roberto Menta"
+      },
+      {
+        "affiliation": [],
+        "name": "Julien Despres"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Polini"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Caravelli"
+      },
+      {
+        "affiliation": [],
+        "name": "Vittorio Giovannetti"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.28479v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-30",
+    "reasoning": "While mentioning superconducting architectures, the paper's primary focus on quantum computing and decoherence mitigation is distinct from the user's interest in the fundamental physics of superconducting materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Computing",
+      "Decoherence Mitigation",
+      "Optimal Control"
+    ],
+    "summary": "We show that global optimal control can drastically suppress the impact of decoherence in globally driven superconducting quantum computing architectures, taking as a prototype a recently proposed quasi-two-dimensional ladder geometry. Using a tensor-network-based approach, we quantify how amplitude-damping and dephasing channels degrade the flow of quantum information along the ladder and the fidelity of one- and two-qubit gate operations. We then demonstrate that shaping the global drive compresses the gate sequences by an order of magnitude in time, restoring high gate fidelities. We stress that this mitigation is far from trivial: in a globally driven processor, dissipation acts on every physical qubit---including those outside the logical register that sustain the surrounding ordered phases---so its impact cannot be suppressed by protecting an isolated subsystem, and is instead overcome purely through the temporal shaping of the global drive.",
+    "title": "Mitigating quantum decoherence via global optimal control",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4596210718154907
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.4564339816570282
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.44401243329048157
+      }
+    ]
+  },
+  "2607.28537v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ali Rayat"
+      },
+      {
+        "affiliation": [],
+        "name": "Yunhao Fan"
+      },
+      {
+        "affiliation": [],
+        "name": "Gia-Wei Chern"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2607.28537v1",
+    "matching_keywords": [
+      "neural network",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper utilizes machine learning for simulating spin dynamics in metallic magnets, connecting to computational methods and magnetism often relevant in strongly correlated electron systems.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Machine learning potentials",
+      "Spin dynamics",
+      "Metallic magnetism"
+    ],
+    "summary": "Metallic magnets exhibit complex spin dynamics governed by electronically generated interactions. Predictive simulations of such dynamics typically require repeated solutions of an underlying electronic problem throughout the time evolution, creating a major computational bottleneck. Here we introduce a graph neural network (GNN) magnetic force-field framework that learns the effective magnetic energy functional governing itinerant spin dynamics directly from electronic calculations. Conceptually analogous to machine-learned interatomic potentials, the proposed framework enables efficient evaluation of spin torques while capturing the nonlinear and spatially extended interactions generated by itinerant electrons. We benchmark the method on representative metallic magnetic systems exhibiting collinear, noncollinear, and noncoplanar magnetic order. The learned force fields accurately reproduce electronically generated spin torques and yield nonequilibrium spin dynamics in excellent agreement with direct electronic simulations. Our results establish graph neural networks as a powerful framework for machine-learned magnetic force fields, providing a pathway toward predictive large-scale simulations of nonequilibrium magnetism across multiple length and time scales.",
+    "title": "Graph Neural Network Force Fields for Spin Dynamics in Metallic Magnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5255222320556641
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5186514258384705
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.47590890526771545
+      }
+    ]
+  },
+  "2607.28570v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Maggie Bao"
+      },
+      {
+        "affiliation": [],
+        "name": "Rushil Dandamudi"
+      },
+      {
+        "affiliation": [],
+        "name": "Jerimiah Wright"
+      },
+      {
+        "affiliation": [],
+        "name": "Joan Étude Arrow"
+      },
+      {
+        "affiliation": [],
+        "name": "Henry Zou"
+      },
+      {
+        "affiliation": [],
+        "name": "Vardaan Sahgal"
+      },
+      {
+        "affiliation": [],
+        "name": "Brian J. McDermott"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.28570v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "tensor network"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This work uses the Density Matrix Renormalization Group (DMRG), a tensor network method, to benchmark quantum simulations of a many-body model, directly relating to efficient computational solvers for quantum systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum Benchmarking",
+      "Tensor Network Algorithms",
+      "Many-Body Systems"
+    ],
+    "summary": "As quantum computing matures, it is critical to benchmark its real-world problem solving performance against competitive classical methods, such as tensor networks. In this work, we leverage the Density Matrix Renormalization Group (DMRG) algorithm to compute ground state energies of the Lipkin Meshkov Glick (LMG) model as a comparative benchmark against popular noisy intermediate-scale (NISQ) algorithms like the Variational Quantum Eigensolver (VQE) and Sample-Based Quantum Diagonalization (SQD) method. By running DMRG on the NERSC Perlmutter supercomputer, we provide one of the largest LMG ground state energy datasets in literature, containing accurate ground state energies for systems up to 1400 particles. We compare these results with VQE and SQD implementations on an IBM Eagle quantum computer for comparison. VQE achieved results within 1 percent error for 6 particles, while exceeding that threshold for all other values while SQD extended that range to 17 particles, suggesting that in a noisy intermediate scale quantum era, subspace-based approaches may strike the best balance between accuracy, circuit depth, and noise resilience.",
+    "title": "Benchmarking Quantum Simulations of the Lipkin-Meshkov-Glick Model Using Large Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5911954641342163
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5822837948799133
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5644144415855408
       }
     ]
   }
