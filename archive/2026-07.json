@@ -21637,6 +21637,58 @@
       }
     ]
   },
+  "2607.27916v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Md Fahad Equbal"
+      },
+      {
+        "affiliation": [],
+        "name": "M. A. H. Ahsan"
+      },
+      {
+        "affiliation": [],
+        "name": "Satoru Hayami"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2607.27916v2",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-07-30",
+    "reasoning": "This paper explores interaction-driven crossovers and pair formation in a generic attractive Hubbard model using advanced computational methods, which has conceptual links to superconductivity and correlated electron systems, but lacks the material-specific focus of other liked papers.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "attractive Hubbard model",
+      "BCS-BEC crossover",
+      "DMRG"
+    ],
+    "summary": "We investigate the quarter-filled attractive Hubbard model on finite-width cylindrical lattices using exact diagonalization (ED), density-matrix renormalization group (DMRG) and unsupervised machine-learning-based techniques. Analysis of the ground-state energetics, local observables and correlation functions reveals a continuous interaction-driven crossover from weakly correlated fermions to a regime dominated by tightly bound singlet pairs. This crossover originates from the competition between kinetic-energy-driven fermionic itinerancy and interaction-driven onsite pair formation and exhibits behavior consistent with the BCS--BEC crossover in the thermodynamic limit. Hole-binding-energy calculations provide direct energetic evidence for pair formation: the two-hole binding energy remains negative throughout the attractive regime whereas three-hole binding emerges only at sufficiently strong attraction and exhibits pronounced finite-size dependence. To obtain an unbiased characterization of the correlation landscape, we apply principal component analysis (PCA) and uniform manifold approximation and projection (UMAP) to the real-space correlation matrices. PCA reveals a systematic redistribution of correlation variance whereas UMAP identifies a clear separation between weak- and strong-pairing regimes. Both machine-learning-based approaches independently identify the same crossover region inferred from conventional observables while providing an order-parameter-independent characterization of the underlying reorganization of many-body correlations. Finite-size scaling analyses of the pairing structure factor and the leading PCA variance ratio demonstrate that these signatures remain robust with increasing system size.",
+    "title": "Finite-size effects and interaction-driven crossovers in quarter-filled attractive Hubbard model: Exact diagonalization, DMRG and machine-learning analysis",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6649580001831055
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6646957993507385
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6066503524780273
+      }
+    ]
+  },
   "2607.27971v1": {
     "authors": [
       {
@@ -22910,6 +22962,212 @@
       {
         "liked_paper_id": "2507.00837v1",
         "score": 0.5626975297927856
+      }
+    ]
+  },
+  "2608.00167v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ahmed Abouelkomsan"
+      },
+      {
+        "affiliation": [],
+        "name": "Filippo Gaggioli"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniele Guerci"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Fu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.00167v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-07-31",
+    "reasoning": "It explores correlated quantum phases and potential superconductivity in rhombohedral graphene, employing advanced computational methods to reveal exotic electronic crystal states, resonating with interests in correlated systems and Dirac materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Rhombohedral Graphene",
+      "Electronic Crystals",
+      "Neural-Network VMC"
+    ],
+    "summary": "Experiments on rhombohedral graphene have uncovered an extraordinary wealth of correlated quantum phases - from chiral superconductors to electronic crystals - all within a single family of atomically thin materials. Here, we introduce a simple indicator, derived from the noninteracting band dispersion, that identifies strongly correlated regions in the phase diagram of rhombohedral graphene as a function of carrier density and displacement field. We develop a neural-network variational Monte Carlo method, combined with Hartree-Fock theory, to solve the interacting ground states. Our calculation reveals a variety of electron crystals with no classical analog. These include, at increasing density: Wigner crystal, self-doped Wiger crystal, as well as ''anticrystal'', a lattice of holes in an electron liquid. We discuss their experimental manifestations and possible connection to superconductivity.",
+    "title": "Rhombohedral Graphene: A Tale of Many Crystals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5644292831420898
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.520206868648529
+      },
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.5046128034591675
+      }
+    ]
+  },
+  "2608.00170v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Minho Luke Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiao-Gang Wen"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.00170v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-07-31",
+    "reasoning": "This paper investigates Wigner crystals and hole self-doping driven by strong Coulomb interaction in a system with a specific Fermi surface, which connects to the user's interest in self-doping and correlated electron phenomena.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Wigner crystal",
+      "Mexican-hat dispersion",
+      "electron-vacancy correlation"
+    ],
+    "summary": "We study Wigner crystals (WCs) induced by a strong Coulomb interaction from the ring-like Fermi surface of a Mexican-hat dispersion $ε_k= c_2k^2+c_4k^4$. We design orbital shape in order to minimize the energy of the WC, and find that a low ground-state energy requires an orbital shape with a depletion of electrons near $k=0$. To capture the Coulomb-induced correlations, we include a Jastrow factor as well as a factor describing the correlation between electrons and doped vacancies. Using variational Monte Carlo calculations, we calibrate the effective band parameters $c_2$ and $c_4$ to reproduce the two transitions observed experimentally as the electron density is lowered: from a spin-valley-polarized Fermi liquid with a disk-like Fermi surface, to one with a ring-like Fermi surface, and finally to a WC. We find that, even with an optimized orbital shape that depletes electrons near $k=0$, a WC with hole self-doping near $k=0$ can still be energetically favorable near the WC transition, provided that the electron-vacancy correlation is included. We also estimate the dispersion of the doped hole.",
+    "title": "Shape of Wigner Crystals and Hole Self-Doping in a Mexican-Hat Dispersion",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.601018488407135
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.4982394576072693
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.49733981490135193
+      }
+    ]
+  },
+  "2608.00179v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Maurizio Benfatto"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.00179v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-07-31",
+    "reasoning": "This paper provides a theoretical framework for X-ray absorption spectroscopy in disordered systems, which is highly relevant to the user's interest in X-ray techniques for probing material properties, as indicated by a liked paper on resonant X-ray scattering.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "X-ray absorption spectroscopy",
+      "Multiple-scattering theory",
+      "Disordered systems"
+    ],
+    "summary": "We present a formulation of the full multiple-scattering theory of X-ray absorption spectroscopy (XAS) for disordered systems based on the augmented-space method of Mookerjee. Both substitutional (chemical) and thermal (vibrational) disorder are cast, on the same footing, as exact matrix elements of a non-random operator acting on an enlarged Hilbert space. The configuration-averaged scattering-path operator is thereby obtained by inverting a non-random secular matrix, with no expansion in scattering paths, without recourse to the single-site approximation and without any assumption on the shape of the disorder distribution. This is what the quantitative analysis of the near-edge region requires: XANES lies where the multiple-scattering series does not converge, so that a treatment of disorder tied to a path expansion is unavailable there. The inversion is carried out by a continued-fraction (Lanczos) recursion, which accesses the required matrix element without constructing the full configuration basis or diagonalising the augmented operator. The operator Debye-Waller factor of the harmonic theory is recovered as the Gaussian special case, and anharmonic disorder is included with no additional machinery, through the moments of a non-Gaussian displacement distribution. Where the series does converge, the construction also settles a question of principle: for statistically independent site variables, replacing each t-matrix by its configuration average is exact only for scattering paths in which every site occurs once, and for paths that revisit a site we obtain the exact second-order correction.",
+    "title": "Configuration averaging of X-ray absorption spectra of disordered systems within the augmented-space full multiple-scattering formalism",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC",
+        "score": 0.49768197536468506
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.4761384129524231
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.46899837255477905
+      }
+    ]
+  },
+  "2608.00254v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xue Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Walber Hugo Brito"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Gleis"
+      },
+      {
+        "affiliation": [],
+        "name": "Ran Adler"
+      },
+      {
+        "affiliation": [],
+        "name": "Tsung-Han Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabriel Kotliar"
+      },
+      {
+        "affiliation": [],
+        "name": "Corey Peters"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.00254v1",
+    "matching_keywords": [
+      "dynamical mean field theory"
+    ],
+    "published_date": "2026-07-31",
+    "reasoning": "This paper investigates electronic correlations and the interplay of spin-orbit coupling and crystal field splitting using a slave-boson method that converges to dynamical mean-field theory, which directly aligns with the user's interest in DMFT and strongly correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Slave-boson method",
+      "Hubbard-Kanamori model",
+      "Sr2RuO4"
+    ],
+    "summary": "We investigate the interplay of spin-orbit coupling, crystal field splittings, and electronic correlations in the $t_{2g}$ Hubbard-Kanamori model within the recently formulated ghost rotationally invariant slave-boson method (GRISB). In particular, we study a tight binding model of Sr$_2$RuO$_4$ with parameters extracted from density functional theory and linearized quasiparticle self-consistent GW (LQSGW) calculations; we study the behavior of different physical quantities as the number of ghosts increases to examine the convergence of GRISB to dynamical mean field theory (DMFT) and experimental results; and we leverage the ability of GRISB to investigate the model over a wide range of parameters at low temperature. In particular, we examine both static and dynamical observables driven by the spin orbit coupling (SOC) and study how they vary as a function of the Hubbard $U$ and Hund's coupling $J$. GRISB converges quickly for most of these observables, and the calculations reveal the following: $U$ enhances the spin-orbit coupling while $J$ suppresses it. We also study the shape of the Fermi surface within different methodologies, and examine the Lifshitz transition which takes place as a function of strain in this material.",
+    "title": "Interplay of spin-orbit coupling, crystal field splitting and correlations: a ghost rotationally invariant slave boson treatment",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.632581353187561
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6263136267662048
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.604564905166626
       }
     ]
   }
