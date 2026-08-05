@@ -22965,6 +22965,64 @@
       }
     ]
   },
+  "2608.00053v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shiwen An"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhongyi Ni"
+      },
+      {
+        "affiliation": [],
+        "name": "Huanhai Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jin-Guo Liu"
+      }
+    ],
+    "categories": [
+      "eess.IV",
+      "cs.CV",
+      "cs.LG",
+      "math.OC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.00053v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-07-26",
+    "reasoning": "This paper focuses on developing trainable bases for image compression, with only a very distant conceptual inspiration from quantum many-body theory, and is unrelated to quantum materials or condensed matter physics research.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Image compression",
+      "Tensor networks",
+      "Machine learning"
+    ],
+    "summary": "The Discrete Fourier Transform, the Discrete Cosine Transform, and their block-wise variants underpin most deployed image and video codecs. Their effectiveness rests on three properties: they run in near-linear time (linear up to a polylogarithmic factor), they are exactly invertible, and they carry few to no parameters. In this work, we generalize these bases to isometric multilinear bases, allowing a small number of extra parameters, polylogarithmic in the image size, while preserving all three properties. Given an image dataset, we develop a systematic framework that searches this family for the basis compressing the dataset most effectively: the basis is parameterized as an isometric tensor network, inspired by quantum many-body theory, and trained with Riemannian optimization on the manifold of unitary matrices. Across natural photographs and line drawings, the trained bases consistently improve on their fixed, non-parametric counterparts. On Quick Draw line-drawing compression, they store images in roughly $20\\%$ fewer bytes than JPEG's $8 \\times 8$ block cosine transform at the same reconstruction quality.",
+    "title": "Fast Trainable Multilinear Bases for Image Compression",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.37859436869621277
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3311610221862793
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.32212841510772705
+      }
+    ]
+  },
   "2608.00167v1": {
     "authors": [
       {
@@ -23103,6 +23161,56 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
         "score": 0.46899837255477905
+      }
+    ]
+  },
+  "2608.00194v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Stefano Pisoni"
+      },
+      {
+        "affiliation": [],
+        "name": "Egor Tiunov"
+      },
+      {
+        "affiliation": [],
+        "name": "Chiara Calascibetta"
+      }
+    ],
+    "categories": [
+      "physics.flu-dyn",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.00194v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-31",
+    "reasoning": "This paper focuses on multiscale turbulence and fluid dynamics, which are distinct from the condensed matter topics of strongly correlated electrons and superconductivity that the user has previously liked.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Turbulence",
+      "Fluid dynamics",
+      "Tensor trains"
+    ],
+    "summary": "Capturing the multiscale statistics of turbulence in compressed form remains a central challenge for reduced-order modeling. We introduce a hybrid Tensor Train (TT) approach for a highly intermittent passive scalar. The hybrid TT matches Galerkin, wavelet, and standard TT decompositions for the structure functions while improving the representation of intermittent, non-Gaussian fluctuations. These results open a route toward evolving the linear dynamics of passive scalars directly in compressed tensor form, with potential applications to quantum algorithms for fluid transport.",
+    "title": "Multiscale passive scalar turbulence in a compressed subspace via tensor trains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4480077624320984
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4262825548648834
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.38622501492500305
       }
     ]
   },

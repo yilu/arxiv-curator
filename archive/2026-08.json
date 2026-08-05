@@ -480,6 +480,57 @@
       }
     ]
   },
+  "2608.02041v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Benjamin Zec"
+      },
+      {
+        "affiliation": [],
+        "name": "Lukas Schmidbauer"
+      },
+      {
+        "affiliation": [],
+        "name": "Maja Franz"
+      },
+      {
+        "affiliation": [],
+        "name": "Wolfgang Mauerer"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.02041v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-03",
+    "reasoning": "While this paper utilizes advanced tensor network methods like DMRG, which are central to condensed matter physics, it applies them to general optimization problems (SAT-solving) rather than direct physics problems concerning materials or strongly correlated systems.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "DMRG",
+      "Tensor networks",
+      "Optimization"
+    ],
+    "summary": "Integrated HPC/QC systems aim to combine classical high-performance computing with quantum processors, but cannot be reduced to mechanisms for dispatching quantum kernels. An integrated architecture must support aspects such as observability, which cannot be implemented using QPUs alone, as well as fallback execution and cost-aware decisions on whether to replace quantum tasks with classical surrogates. Such mechanisms must be approximate or benefit from problem structure to soften the inescapable exponential classical worst-case complexity. In this work, we study tensor-network ground-state search, as such a surrogate, for optimisation problems. This combines key quantum primitives with advanced classical simulation. It provides initial empirical indicators for surrogate selection criteria, and exposes end-to-end toolchain effects that may be missed when transformation steps are studied in isolation. We compare a native polynomial unconstrained optimisation to-higher-order-Ising and a quadratised quadratic unconstrained binary optimization to-quadratic-Ising formulation for Max-3-SAT. Both are encoded as matrix product operator and optimised using density matrix renormalisation group approaches, with simulated annealing (SA) as classical performance baseline. Our results show that quadratisation is not a neutral transformation step: auxiliary variables and pairwise couplings substantially degrade solution quality relative to the native higher-order representation, while SA matches or outperforms DMRG across all tested instances. Since the optima of Boolean satisfiability (SAT)-derived problems are classical product states, DMRGs advantages dont materialise here. These findings suggest that surrogate selection in HPC/QC runtimes must be encoding- and instance-aware and provide empirical groundwork for informed decisions on fallback strategies and architecture co-design.",
+    "title": "Towards Tensor-Network SAT-Solvers for Quantum-Classical Workflows",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5376654863357544
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5245479941368103
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4954497218132019
+      }
+    ]
+  },
   "2608.02120v1": {
     "authors": [
       {
@@ -568,6 +619,69 @@
       {
         "liked_paper_id": "2506.23823v1",
         "score": 0.5930466651916504
+      }
+    ]
+  },
+  "2608.02245v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Abdul Kalam"
+      },
+      {
+        "affiliation": [],
+        "name": "Prasenjit Deb"
+      },
+      {
+        "affiliation": [],
+        "name": "Akitada Sakurai"
+      },
+      {
+        "affiliation": [],
+        "name": "Tapan Mishra"
+      },
+      {
+        "affiliation": [],
+        "name": "V. S. Prasannaa"
+      },
+      {
+        "affiliation": [],
+        "name": "B. P. Das"
+      }
+    ],
+    "categories": [
+      "cond-mat.other"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.02245v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-03",
+    "reasoning": "This paper directly addresses many-body localization in a Fermi-Hubbard model, a topic highly relevant to the study of strongly correlated electron systems and quantum dynamics found in previously liked condensed matter papers.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Many-body localization",
+      "Quantum simulation",
+      "Fermi-Hubbard model"
+    ],
+    "summary": "Many-body localization (MBL) is a dynamical phenomenon that describes the non-ergodicity of isolated quantum many-body systems. In contrast to thermalization, this phenomenon leads to a long-lived memory of initial states of local systems and slow growth of entanglement. In this work, we study Stark MBL in a 12-qubit correlated fermionic system described by the one-dimensional Fermi-Hubbard model using Hamiltonian simulation on an IBM superconducting qubit quantum computer. To enable such a computation on current-day noisy hardware, we combine a series of compilation steps, including the use of the spin-resolved Jordan-Wigner transformation, employing SWAP networks, and integrating a tensor-network-based quantum circuit optimization routine on top of a standard circuit optimization pipeline. As a result, there is approximately an 88$\\%$ and 87$\\%$ reduction in two-qubit gate count and circuit depth, respectively. Through such simulations of the real-time dynamics using Trotterized quantum circuits, we exhibit a crossover from thermalizing dynamics of the system at a weak tilt of the field to a strongly localized behavior at large tilt with short evolution times. We also benchmark our obtained results with respect to those from exact simulations.",
+    "title": "Quantum computer-based simulation of Stark many-body localization in a 1D Fermi-Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6064107418060303
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5791827440261841
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5659409761428833
       }
     ]
   },
@@ -707,6 +821,845 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:mVmsd5A6BfQC",
         "score": 0.45172157883644104
+      }
+    ]
+  },
+  "2608.02473v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiahang Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Runze Chi"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Normand"
+      },
+      {
+        "affiliation": [],
+        "name": "Hai-Jun Liao"
+      },
+      {
+        "affiliation": [],
+        "name": "T. Xiang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.02473v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-03",
+    "reasoning": "This paper details an optimized tensor-network method for calculating spectral functions and quantum dynamics in strongly correlated systems, aligning with the user's interest in advanced computational techniques for such problems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Tensor network",
+      "Quantum dynamics",
+      "Spectral function"
+    ],
+    "summary": "Tensor-network methods have opened a powerful route for the study of dynamical spectral functions in two-dimensional quantum systems. However, existing approaches within the framework of infinite projected entangled-pair states construct the required renormalization tensors solely from the ground-state environment and can suffer from severe numerical instability. We identify the origin of this instability and introduce an excitation-tailored corner-transfer-matrix renormalization-group (ET-CTMRG) method to resolve it. By incorporating excitation tensors into the renormalization procedure, the method constructs a substantially more accurate effective Hamiltonian matrix and thereby yields reliable and well-converged excitation spectra. For Heisenberg antiferromagnets, it reduces truncation errors by orders of magnitude and for the particularly complex case of the supersolid phase in the triangular-lattice XXZ magnet $\\mathrm{K_2Co(SeO_3)_2}$, it achieves excellent quantitative agreement with inelastic neutron-scattering measurements. ET-CTMRG therefore provides a robust framework for investigating the dynamical properties of strongly correlated quantum systems.",
+    "title": "Optimized Tensor-Network Renormalization for Quantum Dynamics: Resolving the Spectral Function of $\\mathrm{K_2Co(SeO_3)_2}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.653455376625061
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6396819353103638
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6177499890327454
+      }
+    ]
+  },
+  "2608.02724v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yale Yauk"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuhan Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Ignacio Cirac"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.02724v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-08-03",
+    "reasoning": "This paper develops the theoretical understanding of matrix product density operators and their relation to quantum phases, including symmetry-protected topological phases, resonating with the user's interest in advanced theoretical methods and topological quantum matter.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Matrix Product Operators",
+      "Symmetry-Protected Topological Phases"
+    ],
+    "summary": "Tensor network methods provide powerful analytical and numerical tools for characterizing quantum phases of matter. While the mathematical structure of matrix product states (MPS) is well understood through the MPS fundamental theorem, an analogous understanding for mixed-state tensor networks remains largely absent: if two purification tensors generate the same density matrix, how are they related? In this work, we initiate the study of a fundamental theorem for matrix product locally purifiable density operators (LPDOs) and focus on sequentially generated LPDOs (sLPDOs), a broad subclass admitting an interpretation in terms of successive applications of quantum channels on an initial state. We prove that, under suitable invertibility or cyclic conditions, two sLPDO representations generate the same density matrix for arbitrary system sizes if and only if they are related by a matrix product isometry acting on the purification bonds. Beyond the sLPDO setting, we provide a counterexample that suggests an obstruction to a general fundamental theorem for LPDOs with periodic boundary conditions. Finally, we discuss implications for mixed-state symmetry-protected topological phases, including the possibility of nontrivial phases protected only by weak symmetry conditions.",
+    "title": "Structure of matrix product locally purifiable density operators",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.49566006660461426
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.49427762627601624
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.43923455476760864
+      }
+    ]
+  },
+  "2608.02727v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuntian Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Hui Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhehao Dai"
+      },
+      {
+        "affiliation": [],
+        "name": "Yantao Wu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.quant-gas",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.02727v1",
+    "matching_keywords": [
+      "hubbard model",
+      "neural quantum state",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-08-03",
+    "reasoning": "The paper explores fundamental phenomena like spin-charge separation, chiral spin liquids, and anyonic superconductivity in strongly correlated systems using advanced computational methods, fitting multiple aspects of the user's interests.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Spin-charge separation",
+      "Hofstadter-Hubbard model",
+      "Chiral spin liquid"
+    ],
+    "summary": "Recent experiments in moiré materials have enabled the realization of a variety of exotic quantum phases. In this context, the Hofstadter-Hubbard model has been proposed as a possible setting for hosting chiral spin liquid. Concurrently, significant progress has been recently made in the computational methods for two-dimensional many-body fermion systems, which makes numerically studying this challenging model a real possibility in genuine 2D geometry. Motivated by these advances, we investigate the putative chiral spin liquid phase in the triangular-lattice Hofstadter-Hubbard model using variational Monte Carlo with neural quantum states (NQS) and projected entangled pair states (PEPS). We observe spin-charge separation directly in real space through numerical spin-pumping simulation and real-time spin and charge motion. In addition, in the context of anyonic superconductivity conjectured in this model, we find a positive two-electron binding energy on small systems, but it decreases below our numerical resolution as the system size increases. Our work demonstrates NQS and PEPS as powerful tools, capable of cross-checking each other, for diagnosing topological order and fractionalized excitations in strongly correlated electronic systems.",
+    "title": "Spin-charge separation in the triangular-lattice Hofstadter-Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.68800288438797
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6716325283050537
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6599603295326233
+      }
+    ]
+  },
+  "2608.02753v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Christopher Roth"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Millis"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomohiro Soejima"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.02753v1",
+    "matching_keywords": [
+      "hubbard model",
+      "neural quantum state"
+    ],
+    "published_date": "2026-08-03",
+    "reasoning": "This paper investigates the interplay of superconductivity and quantum criticality in a strongly correlated model using advanced neural quantum state methods, directly aligning with interests in novel superconductivity and computational approaches for quantum materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Neural Quantum States",
+      "Hofstadter-Hubbard Model",
+      "Topological Superconductor"
+    ],
+    "summary": "Understanding how a parent insulating state shapes the superconductivity that emerges upon doping is a long-standing problem dating back to Anderson's resonating-valence-bond proposal. The triangular-lattice Hofstadter-Hubbard model with $π/2$ flux per plaquette offers an ideal setting for this question: at half filling it hosts two distinct parent states---an integer quantum Hall insulator at weak coupling and a chiral spin liquid at intermediate coupling---separated by a topological phase transition. Using neural quantum states on tori of up to $432$ sites, we present strong evidence that the transition is continuous, with a vanishing $2e$ charge gap and critical charge fluctuations. Upon doping, we find a topological superconductor with off-diagonal long-range order consistent with $d+id$ pairing on either side of the transition. The two ingredients of superconductivity, pair formation and phase coherence, respond to the parent state in sharply different ways: while the pairing order parameter remains nearly unchanged across the transition, the superfluid stiffness is strongly enhanced near the critical point. The energy scale of the superconductor is therefore set not by which parent state is doped, but by proximity to the transition between them. Our results establish neural quantum states as a powerful tool for understanding the delicate interplay between long-ranged electronic correlations and superconductivity.",
+    "title": "Large scale neural quantum states reveal the interplay between superconductivity and quantum criticality in the Hofstadter-Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.651477038860321
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6417313814163208
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6273962259292603
+      }
+    ]
+  },
+  "2608.02925v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anumita Bose"
+      },
+      {
+        "affiliation": [],
+        "name": "Nataliia Manko"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Gibertini"
+      },
+      {
+        "affiliation": [],
+        "name": "Antimo Marrazzo"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.02925v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-08-03",
+    "reasoning": "This paper identifies new 2D altermagnets using symmetry-guided computational screening with Hubbard corrections, aligning well with interests in novel magnetic phases, topological materials, and advanced computational methods for quantum systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "2D Materials",
+      "Hubbard Corrections"
+    ],
+    "summary": "Altermagnets combine compensated antiferromagnetic order with momentum-dependent spin splitting, offering a promising platform for spintronic applications without macroscopic magnetization or stray magnetic fields. Although a wide range of three-dimensional (3D) materials have been identified as altermagnets, two-dimensional (2D) altermagnets remain comparatively limited. In this work, we perform a high-throughput computational search for altermagnetism across 2710 materials in the Materials Cloud 2D Crystals (MC2D) database. Our approach combines symmetry-based screening with first-principles density functional theory calculations, including self-consistent Hubbard-$U$ corrections, to reliably capture magnetic ground states. Through a systematic exploration of magnetic configurations and their energetic stability, we identify 42 materials exhibiting altermagnetic ground states for at least one value of $U$, of which 24 remain robust upon determination of the Hubbard-$U$ parameters from first principles--including 4 materials previously reported in the literature and 20 newly predicted candidates. These comprise promising monolayers such as metallic Fe$_2$Si$_2$SbO$_9$, and insulating CoBrO, with spin splittings about 294 meV and 330 meV, respectively. Our results significantly expand the pool of potential 2D altermagnet candidates with favorable exfoliation energetics and provide valuable guidance for experimental efforts. In addition, this work establishes a high-throughput computational framework for reproducible discovery and characterization of altermagnetic materials.",
+    "title": "Symmetry-Guided Computational Screening of Two-Dimensional Altermagnets with ab initio Hubbard Corrections",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6165000796318054
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5819689631462097
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5462560653686523
+      }
+    ]
+  },
+  "2608.03024v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Takahiro Misawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Kota Ido"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03024v1",
+    "matching_keywords": [
+      "quantum spin liquid",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "The paper investigates exotic superconductivity in a quantum spin liquid using computational methods, aligning with interests in superconductivity and strongly correlated systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Kitaev model",
+      "Quantum spin liquid",
+      "Triplet superconductivity"
+    ],
+    "summary": "We investigate superconductivity in a doped Kitaev quantum spin liquid by applying the many-variable variational Monte Carlo method to the hole-doped $t$-$J$-type Kitaev model. Using a projected pair-product wave function that can exactly represent the Kitaev quantum spin liquid, we examine the stability of superconducting phases on isotropic two-dimensional clusters. For the ferromagnetic Kitaev interaction, robust triplet $p$-wave superconductivity coexists with ferromagnetism in the low-to-intermediate doping regime but is suppressed as the system approaches the fully polarized ferromagnetic phase. For the antiferromagnetic Kitaev interaction, superconductivity exhibits a change in the dominant pairing symmetry from spin-dependent triplet $p$-wave at low doping to singlet $d+id$ at intermediate doping. By varying the strength of the ferromagnetic Kitaev interaction at fixed doping, we show that the triplet superconductivity increases together with the ferromagnetic moment and becomes strongest slightly below full polarization. Our results provide a theoretical basis for experimental searches for unconventional superconductivity, such as triplet superconductivity coexisting with ferromagnetism, in carrier-doped Kitaev candidate materials.",
+    "title": "Exotic superconductivity in the doped Kitaev quantum spin liquid",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.6234189867973328
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6034038066864014
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5894637107849121
+      }
+    ]
+  },
+  "2608.03308v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jemal Yimer Damte"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiří Houška"
+      },
+      {
+        "affiliation": [],
+        "name": "Pavel Baroch"
+      },
+      {
+        "affiliation": [],
+        "name": "Xue Yong"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03308v1",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper focuses on gas sensing using DFT and NEGF, which is distinct from the user's interest in superconductivity, strongly correlated materials, and topological phases.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Gas sensing",
+      "Bismuth Oxyiodide",
+      "NEGF transport"
+    ],
+    "summary": "Understanding the interplay between adsorption energetics and charge-transport modulation is essential for the rational design of low-power and bias-tunable gas sensors. Here, we present a comprehensive first-principles study of gas selectivity in layered bismuth oxyiodide (BiOI) by integrating density functional theory with nonequilibrium Green's function transport calculations. The adsorption and bias-dependent transport responses toward NO2, NH3, CO2, and representative volatile organic compounds are systematically examined. While NH3 and NO2 exhibit strong chemisorption and localized electronic perturbations, CO2 interacts through weak physisorption, demonstrating that adsorption strength alone does not determine sensing performance. Instead, the evolution of transmission channels near the Fermi level governs the sensing response. Bias-dependent calculations reveal an electrically tunable sensitivity hierarchy, in which weakly adsorbed CO2 preserves conductive pathways and exhibits pronounced low-bias sensitivity despite minimal charge transfer. Recovery-time analysis further highlights the trade-off between transport modulation and reversibility for strongly adsorbed species. These results establish a transport-centered selectivity framework for layered BiOI and provide mechanistic insight into electric-field-controlled gas sensing under ambient conditions.",
+    "title": "Bias Tunable Transport Modulation and Gas Selectivity in Layered BiOI: A DFT NEGF Study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pqnbT2bcN3wC",
+        "score": 0.4348730146884918
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.4189298450946808
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:HoB7MX3m0LUC",
+        "score": 0.4034419059753418
+      }
+    ]
+  },
+  "2608.03551v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rodrigo Jaeschke-Ubiergo"
+      },
+      {
+        "affiliation": [],
+        "name": "Xanthe H. Verbeek"
+      },
+      {
+        "affiliation": [],
+        "name": "Colin Lange"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergio Rodriguez"
+      },
+      {
+        "affiliation": [],
+        "name": "Atasi Chakraborty"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Mook"
+      },
+      {
+        "affiliation": [],
+        "name": "Jairo Sinov"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03551v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper investigates emergent surface altermagnetism and its detection in a metallic magnet using experimental techniques like neutron diffraction and photoemission spectroscopy, which aligns with interests in novel magnetic orders and experimental probes of quantum materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Surface magnetism",
+      "Photoemission spectroscopy"
+    ],
+    "summary": "We demonstrate the recent concept of emergent surface altermagnetism through its unique signatures in \\KVSO. We show that for bulk antiferromagnetically ordered \\KVSO, the (001) surface exhibits $d$-wave altermagnetism. Our results fully explain the recent seemingly contradicgting experimental evidence, independently showing both an antiferromagnetically ordered bulk from neutron diffraction, and $d$-wave spin splitting from photoemission spectroscopy. To fully verify this conecept, we predict, as a key experimental signature, a large nonlinear Edelstein response, which is localized at the surface, and follows the $d$-wave altermagnetic symmetry. These results are not only relevant for the metallic and room-temperature magnet \\KVSO, but also for several other Lieb lattice systems. Our work expands the pool of techniques that can be used to detect altermagnetism emerging at the surfaces of antiferromagnets.",
+    "title": "Emergence and Detection of Surface altermagnetism in KV$_2$Se$_2$O",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5987988710403442
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5592420101165771
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.5532150268554688
+      }
+    ]
+  },
+  "2608.03688v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiadong Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Junjie Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaosa Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenyu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Pengzhu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Zixiao Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jing Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Baoling Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianshou Zhao"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1021/acs.nanolett.5c00797",
+    "id": "2608.03688v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper focuses on machine learning for battery electrolyte design, which is outside the user's primary interest in quantum materials, superconductivity, and strongly correlated electron systems.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Battery Electrolytes",
+      "Machine Learning Screening",
+      "Lithium Metal Batteries"
+    ],
+    "summary": "Trace residual solvents in solid polymer electrolytes (SPEs) significantly affect electrolyte and interface properties, where optimal selection enhances ionic conductivity and transference numbers. However, solvent complexity hinders general screening methods. We establish a universal criterion linking electronic (HOMO, LUMO) and macroscopic properties (dielectric constant, dipole moment, polarizability) via machine learning on an approximately 10,000-solvent dataset from high-throughput DFT. Two solvents, N-methoxy-N-methyl-2,2,2-trifluoroacetamide and 2,2,2-trifluoro-N,N-dimethylacetamide, were identified. Experimental incorporation of trace N-methoxy-N-methyl-2,2,2-trifluoroacetamide into a poly(vinylidene fluoride-co-hexafluoropropylene) matrix achieves a 4.5 V window, 5.5x10^-4 S cm^-1 conductivity (30 C), and 0.78 Li+ transference number. The cell retains 86.7% capacity over 500 cycles (LiFePO4) and 98.7% after 200 cycles at 2C (LiNi0.9Co0.05Mn0.05O2), outperforming 2,2,2-trifluoro-N,N-dimethylacetamide, dimethylformamide, N-methyl-2-pyrrolidone, and dimethyl sulfoxide. This synergy enables balanced ion transport, wide stability, and cycling durability, advancing safer, high-energy lithium metal batteries. Our integrated approach establishes a solvent screening paradigm for rational SPE design, accelerating next-generation battery development.",
+    "title": "Machine Learning-Guided Screening of Advantageous Solvents for Solid Polymer Electrolytes in Lithium Metal Batteries",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.30522650480270386
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.2851330637931824
+      },
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.27355217933654785
+      }
+    ]
+  },
+  "2608.03760v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Emmanuel A. Olanrewaju"
+      },
+      {
+        "affiliation": [],
+        "name": "Santosh Adhikari"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiyin Niu"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Nikolaou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeremy C. Palmer"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeffrey D. Rimer"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingjian Wen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1103/v2yp-ylxm",
+    "id": "2608.03760v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper applies machine learning to guide the synthesis of zeolites, a topic unrelated to quantum materials, superconductivity, or correlated electron physics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Zeolite synthesis",
+      "Machine learning",
+      "Materials discovery"
+    ],
+    "summary": "Zeolites are microporous crystalline materials with diverse frameworks, widely used in industrial applications such as petroleum refining and molecular separation. Unlike most zeolites, EMT can be synthesized under mild conditions (at low temperatures and without the use of organic structure-directing agents), making it attractive for cost-effective and environmentally sustainable production. However, the specific synthesis conditions that selectively produce EMT rather than similar frameworks like FAU are not yet well established. In this work, we develop machine learning (ML) models to guide the discovery of synthesis conditions for EMT zeolites. Our dataset comprises 174 experimental synthesis attempts, recording reaction time, temperature, silica and alumina sources, Si/Al stoichiometric ratio, and other synthesis parameters. We apply both classical ML methods and pretrained foundation models to predict zeolite framework outcomes from these synthesis parameters. Feature importance analysis identifies critical parameters for EMT formation, validating known synthesis principles. Leveraging the ML models, we explore the synthesis space and identify six promising new conditions for EMT formation. Experimental validation confirms EMT crystallization in five cases, including two with Si/Al stoichiometric ratios outside the training dataset's range. Evaluation on independent literature-reported synthesis conditions further demonstrates the generalizability of the model. This work demonstrates a data-driven approach to accelerating zeolite synthesis, closing the loop between ML prediction and experimental validation.",
+    "title": "Guided Synthesis of EMT Zeolites by Machine Learning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3515145182609558
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.2584264576435089
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:MXK_kJrjxJIC",
+        "score": 0.2542409896850586
+      }
+    ]
+  },
+  "2608.03805v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Blaise Awola Ayirizia"
+      },
+      {
+        "affiliation": [],
+        "name": "Bimal K C"
+      },
+      {
+        "affiliation": [],
+        "name": "Jorge A. Munoz San Martin"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03805v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper focuses on machine learning for refractory alloy design and mechanical properties, which is distinct from the user's interest in quantum materials, superconductivity, and correlated electron physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Physics-informed ML",
+      "Refractory alloys",
+      "Mechanical properties"
+    ],
+    "summary": "Refractory complex concentrated alloys (CCAs) exhibit exceptional mechanical properties at elevated temperatures, but their vast compositional space (approximately 10^15 possible combinations) poses significant challenges for experimental exploration. We develop a physics-informed machine learning framework combining quantile gradient boosting with Born stability constraints to predict eight mechanical properties (bulk modulus B, shear modulus G, Vickers hardness Hv, elastic constants C11, C12, C44, Young's modulus E, and Poisson's ratio nu) of refractory CCAs. Using 393 density functional theory (DFT)-computed alloys from a 10-element design space (Cr, Hf, Mo, Nb, Re, Ta, Ti, V, W, Zr), we achieve coefficient of determination (R^2) values of 0.89 to 0.97 with mean absolute errors of 0.85 to 14.74 GPa across six properties on a held-out test set (n = 59). Remarkably, all test predictions satisfy the Born stability criteria (100% compliance), demonstrating the efficacy of physics-informed constraints. Compositional screening in valence electron concentration (VEC)-atomic size mismatch (delta) space identifies high-performance candidates, with MoReW exhibiting the highest predicted shear rigidity (C44 = 139 GPa). Elemental analysis reveals that rhenium appears in 100% of the top-performing alloys, molybdenum in 90%, and chromium in 80%, establishing quantitative design rules: VEC = 6.0 to 6.4, delta < 10%, and Re-Mo-Cr ternary systems maximize shear resistance. This physics-informed screening framework enables accelerated discovery of mechanically stable, high-performance refractory alloys from the trillion-scale compositional space.",
+    "title": "Physics-Informed Machine Learning for Refractory Alloy Design",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.49978888034820557
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.4155840575695038
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.41554370522499084
+      }
+    ]
+  },
+  "2608.03894v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jie Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03894v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper uses advanced quantum Monte Carlo simulations to study correlated states and superfluid quantum criticality in the attractive Hubbard model on the kagome lattice, directly aligning with interests in correlated electron systems and computational methods like DMFT.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Kagome lattice",
+      "Quantum Monte Carlo",
+      "Correlated states"
+    ],
+    "summary": "The recent discovery of several families of kagome materials and experimental realization of optical kagome lattices have stimulated growing numerical studies of interaction-driven correlated states on the kagome lattice. Among the available numerical approaches, determinant quantum Monte Carlo (DQMC) is a powerful method for investigating such strongly correlated states. However, the accessible system sizes of existing DQMC simulations remain limited, preventing reliable finite-size scaling analyses. Here we develop a general acceleration scheme based on fast Fourier transform (FFT) for propagator multiplications on composite lattices and combine it with the delay-update algorithm, enabling simulations on system sizes twice as large as those of previous DQMC studies, allowing reliable finite-size scaling analyses of the attractive kagome-lattice Hubbard model. Our large-scale simulations reveal the interaction-driven zero-temperature superfluid quantum criticality at the Dirac filling and provide reliable estimates of the associated critical exponents. Besides, we find no evidence that the previously proposed triangle-rule charge-density-wave order survives in the thermodynamic limit, suggesting that it is likely a finite-size effect. Moreover, for system sizes accessible in current two-dimensional optical lattice experiments, the combined FFT and delay-update scheme exhibits an effective computational cost scaling as $N^{2.49}$, substantially below the $\\mathcal{O}(N^3)$ computational cost of conventional DQMC simulations.",
+    "title": "Accelerated quantum Monte Carlo simulations of the attractive Hubbard model on the kagome lattice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6354096531867981
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5654774904251099
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5538088083267212
+      }
+    ]
+  },
+  "2608.03908v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu Miao"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiwei Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongxu Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianchang Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Runqing Luan"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhipeng Ou"
+      },
+      {
+        "affiliation": [],
+        "name": "Xinru Yong"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhenyu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Haoyu Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Junfeng He"
+      },
+      {
+        "affiliation": [],
+        "name": "Xianhui Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03908v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper directly investigates high-Tc superconductivity, thermodynamic phase transitions, and pairing symmetry in Ruddlesden-Popper nickelates, a topic closely related to multiple liked papers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Ruddlesden-Popper nickelates",
+      "High-Tc superconductivity",
+      "ARPES"
+    ],
+    "summary": "Ruddlesden-Popper (RP) nickelates provide an uncharted territory to explore high-transition-temperature (high-$T_C$) superconductivity and superconducting mechanism. Here, we investigate the electronic structure of a new type of high-$T_C$ superconducting RP nickelate heterostructure $\\mathrm{La_2PrNi_2O_7/NdAlO_3}$ by angle-resolved photoemission spectroscopy. A superconducting state is observed without a pseudogap state, enabling a direct measurement of the superconducting order parameter and a microscopic extraction of the electronic specific heat. The observed superconducting gap opens at $T_C$ with prominent coherence peaks, illustrating the emergence of nonzero order parameter upon entering the superconducting state. An electronic specific heat jump appears at $T_C$, further demonstrating a thermodynamic phase transition. The magnitude of the superconducting order parameter is quantified by the observed superconducting coherence peaks, and a nodeless behavior is unambiguously established in the absence of pseudogap. The underlying Fermi surface consists of $α$, $β$ and $γ$ pockets, exhibiting a multi-orbital nature. Strain dependent measurements further reveal the $γ$ pocket in all superconducting and non-superconducting films with different epitaxial strain. Our results establish the missing thermodynamic evidence for superconducting phase transition in nickelates. They also provide direct evidence for the symmetry of the superconducting order parameter and illustrate the relationship between Fermi surface topology and the emergence of superconductivity in RP nickelate films.",
+    "title": "Thermodynamic phase transition, pairing symmetry and Fermi surface topology in Ruddlesden-Popper nickelate films",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.7427317500114441
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.7003576755523682
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.6686512231826782
+      }
+    ]
+  },
+  "2608.03955v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sheng-Chih Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Alfred Zong"
+      },
+      {
+        "affiliation": [],
+        "name": "Emma Berger"
+      },
+      {
+        "affiliation": [],
+        "name": "Bailey R. Nebgen"
+      },
+      {
+        "affiliation": [],
+        "name": "Marcus Hui"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuaiwei Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Jackson McClellan"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael W. Zuerch"
+      }
+    ],
+    "categories": [
+      "physics.ins-det",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.03955v1",
+    "matching_keywords": [
+      "XAS",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-08-04",
+    "reasoning": "This paper presents a novel ultrafast XUV absorption spectrometer for studying quantum materials and strongly correlated systems, offering an advanced experimental probe similar to previously liked resonant x-ray scattering.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Ultrafast Spectroscopy",
+      "XUV Absorption",
+      "Quantum Material Probes"
+    ],
+    "summary": "We present a table-top cryogenic ultrafast broadband XUV absorption spectroscopy (c-UBXAS) beamline designed for temperature-dependent and time-resolved investigations of quantum materials. The instrument combines a broadband high-harmonic generation source spanning 22-73 eV with automated image registration and cryogenic sample control down to 20 K, enabling element-specific measurements under both equilibrium and nonequilibrium conditions. The beamline provides sub-50-meV energy resolution and a sub-10-fs instrument response function, while maintaining long-term stability suitable for extended, ultrasensitive measurements. Benchmark experiments on NiI$_2$, a van der Waals multiferroic, reveal temperature-dependent spectral evolution across its magnetic phase transitions, demonstrating the ability to identify element-specific contributions to the ground state and its transient response in the femtosecond regime. This instrument introduces the opportunity to unravel the very first response of a solid-state material during light-matter interaction, paving the way for understanding the complex phase space of nonequilibrium dynamics and emergent states in strongly correlated systems where the few-femtosecond electronic response has eluded most other types of time-resolved techniques.",
+    "title": "A table-top few-femtosecond broadband extreme-ultraviolet absorption spectrometer with cryogenic cooling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.539828896522522
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.5211333632469177
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:K3LRdlH-MEoC",
+        "score": 0.5144095420837402
       }
     ]
   }
