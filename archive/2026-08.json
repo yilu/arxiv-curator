@@ -2936,5 +2936,794 @@
         "score": 0.5223338603973389
       }
     ]
+  },
+  "2608.05202v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daniel Sierra-Sosa"
+      },
+      {
+        "affiliation": [],
+        "name": "Begonya Garcia-Zapirain"
+      },
+      {
+        "affiliation": [],
+        "name": "Cristian Marquez"
+      },
+      {
+        "affiliation": [],
+        "name": "Kelly Garces"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.05202v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-05",
+    "reasoning": "This paper benchmarks quantum error management techniques on quantum hardware, a topic entirely separate from the user's stated interests in condensed matter physics and materials science.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Computing",
+      "Error Mitigation",
+      "Hardware Benchmarking"
+    ],
+    "summary": "Quantum processors have crossed the one-hundred-qubit mark, but noise continues to limit circuit performance, while full quantum error correction remains too costly for routine use. Error suppression and mitigation therefore play an important role in extracting value from current hardware, yet independent comparisons of commercial solutions on identical workloads and devices remain scarce. We benchmark IBM Qiskit Runtime, Q-CTRL Performance Management, and Qedma QESEM on IBM Pittsburgh, a 156-qubit IBM Quantum Heron r3 processor. For Sampler workloads, we run Bernstein-Vazirani, quantum phase estimation, GHZ-state preparation, and randomized mirror circuits with up to 100 measured qubits, comparing raw execution, IBM measurement twirling, and Q-CTRL. For Estimator workloads, we measure chain-averaged magnetization and correlation observables of an eight-layer transverse-field Ising circuit at 25, 50, and 75 qubits against an exact matrix-product-state reference, comparing IBM raw execution, IBM TREX plus twirling, Q-CTRL, and QESEM. Q-CTRL produced the best results on the three structured Sampler workloads while keeping reported QPU times within the same order as the IBM configurations. Across six Ising observable and system-size cases, aggregate mean absolute error was 0.0883 for IBM raw execution, 0.0807 for IBM TREX plus twirling, 0.0285 for Q-CTRL, and 0.0188 for QESEM. Relative to raw execution, Q-CTRL and QESEM reduced aggregate error by factors of 3.10 and 4.70, respectively, while QESEM used 7.5 to 11.1 times the reported QPU time of Q-CTRL. These results show that managed error suppression and mitigation can substantially improve current hardware performance, but with distinct accuracy and execution-time tradeoffs.",
+    "title": "Quantum Error Management in Practice: A Cross-Stack Benchmark",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4397108554840088
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.39750006794929504
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3826424479484558
+      }
+    ]
+  },
+  "2608.05277v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andreas Feuerpfeil"
+      },
+      {
+        "affiliation": [],
+        "name": "Ronny Thomale"
+      },
+      {
+        "affiliation": [],
+        "name": "Subir Sachdev"
+      },
+      {
+        "affiliation": [],
+        "name": "Pietro M. Bonetti"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05277v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-08-05",
+    "reasoning": "This paper directly discusses the emergence of superconductivity and charge-ordered phases from 'U(1) Dirac spin liquids' and 'fermionic spinons', which is a very strong match with the user's interest in Dirac Fermions and superconductivity in novel materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Dirac spin liquid",
+      "Quantum criticality",
+      "Charge-ordered phases"
+    ],
+    "summary": "Triangular-lattice quantum spin-liquid insulators are observed to undergo transitions to superconductivity under pressure or doping, and exhibit enhanced terahertz conductivity when driven by mid-infrared light. We present a general theoretical framework for the emergence of superconducting and charge-ordered phases from a U(1) Dirac spin liquid with fermionic spinons, as well as from its gapped $\\mathbb{Z}_2$ and chiral descendants. Numerical studies have provided substantial evidence for these spin-liquid states.   The spin-liquid phase hosts fractionalized Dirac spinons coupled to an emergent gauge field, whereas the superconducting and charge-ordered phases are conventional, with neither fractionalized excitations nor emergent gauge dynamics. The transition between these phases is driven by the Higgs condensation of spinless charge-$e$ bosonic chargons (``doublons'' and ``holons''). We show that the projective symmetry group of the Dirac spinons uniquely determines the symmetry and dispersion of the chargons, allowing us to construct an effective low-energy theory near the chargon band minima. Gauge-invariant composites of the chargon Higgs fields provide the order parameters characterizing the phases. The resulting phase diagram contains a rich variety of ordered states, including $d+id$ superconductivity, charge-density waves, bond-density waves, and pair-density waves.",
+    "title": "Superconducting and charge-ordered phases from Dirac quantum spin liquids on the triangular lattice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.7116824984550476
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6423759460449219
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.5695594549179077
+      }
+    ]
+  },
+  "2608.05289v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kabir Khanna"
+      },
+      {
+        "affiliation": [],
+        "name": "Sara Murciano"
+      },
+      {
+        "affiliation": [],
+        "name": "Romain Vasseur"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.05289v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-05",
+    "reasoning": "This paper explores quantum criticality, long-range correlations, and Tomonaga-Luttinger liquids in the context of measurement-induced effects, which strongly aligns with the user's interest in strongly correlated electron systems and critical phenomena.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Measurement-induced criticality",
+      "Tomonaga-Luttinger liquids",
+      "Quantum critical states"
+    ],
+    "summary": "Local measurements can alter long-range correlations in gapless quantum matter. We propose a theory of weakly-monitored Tomonaga-Luttinger liquids, a broad class of quantum critical states in one dimension. In order to address the intrinsic randomness of the measurement record, we develop a replica instanton calculation to study Born-averaged observables. We find that when measurements are relevant, average correlators of density and phase fluctuations decay at long distances as universal power laws with logarithmic corrections, a feature we argue is peculiar to measurement-induced randomness. We characterize the full multifractal spectrum of moments of correlations functions, revealing broad, strongly non-gaussian fluctuations across the ensemble of post-measurement states. We support these analytic results with matrix-product-state calculations, and provide a general picture of measurement-altered criticality for ground states described by 1+1d conformal field theories. Our results establish that physical measurements alter critical quantum states in a manner that lies beyond both forced measurements and conventional critical scaling.",
+    "title": "Theory of Measurement-Altered Criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5274125933647156
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.48845067620277405
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.441226065158844
+      }
+    ]
+  },
+  "2608.05294v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Da-Chuan Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Chong Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Ashvin Vishwanath"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.05294v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-05",
+    "reasoning": "This paper delves into topological phase transitions, non-Abelian gauge theories, and lattice models with self-duality, directly connecting to the user's interests in topological materials and theoretical approaches to condensed matter.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Topological order",
+      "Gauge theory",
+      "Anyon condensation"
+    ],
+    "summary": "Electric-magnetic self-duality of the $\\mathbb{Z}_2$ gauge theory, realized microscopically as a half-lattice-translation exchanging electric charge and magnetic flux, has been an influential example of a duality symmetry with an exact lattice realization. We construct the first non-Abelian generalization of this construction: a lattice model of the $S_3$ quantum double $\\mathcal{D}(S_3)$ on a tensor product Hilbert space in which the $\\mathbb{Z}^{\\mathrm{em}}_2$ anyon-permutation symmetry, exchanging the non-Abelian chargeon $C$ and fluxon $F$, is realized via lattice translation. Consequently we find that the zigzag boundary termination of the model realizes, without fine-tuning, a gapless critical edge state described by the tetracritical Ising CFT. The bulk admits three independent $\\mathbb{Z}_2^{\\mathrm{em}}$-preserving bosonic perturbations, driving $\\mathcal{D}(S_3)$ into distinct gapped phases. We analyze these transitions by three independent methods: category-theoretic anyon condensation, microscopic lattice Hamiltonians, and Chern-Simons-Higgs theory, which all agree, yielding a unified picture. These examples motivate a minimal-condensation principle: proliferating a bosonic anyon generically drives condensation of a minimal condensable algebra containing it, with symmetry-related condensates appearing as degenerate vacua that spontaneously break the anyon-permutation symmetry. Our model construction extends to an infinite family of self-dual dihedral quantum doubles $\\mathcal{D}(D_{2n})$. Notably, each model is sign-problem-free, opening the door to large-scale numerical exploration of the phases of non-Abelian Chern-Simons-Higgs theories.",
+    "title": "Self-dual $S_3$ gauge theory in 2+1d: lattice model and topological phase transitions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.626409649848938
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5474201440811157
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5332871675491333
+      }
+    ]
+  },
+  "2608.05526v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhen Qin"
+      }
+    ],
+    "categories": [
+      "eess.SP",
+      "math.OC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.05526v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper focuses on quantum state tomography and its sample complexity under noisy observations within quantum information processing, which is tangential to the user's primary interests in condensed matter physics.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum Tomography",
+      "Quantum Information",
+      "Tensor Networks"
+    ],
+    "summary": "Quantum state tomography (QST) has attracted considerable attention due to its fundamental role in quantum information processing. In this paper, we develop a unified theoretical framework for analyzing the sample complexity of structured QST under noisy observations arising from state preparation noise, measurement noise, and finite-shot statistical noise. The proposed framework applies to a broad family of structured quantum-state classes, including general mixed states, sparse states, low-rank states, matrix product states (MPSs), matrix product operators (MPOs), projected entangled-pair states (PEPSs), and projected entangled-pair operators (PEPOs), while further introducing physically consistent structured models---including low-rank and sparse states, low-rank MPOs (LR-MPOs), and low-rank PEPOs (LR-PEPOs)---that simultaneously exploit low-dimensional structures and preserve the physical constraint. Within this framework, we derive unified non-asymptotic sample complexity guarantees for two constrained least-squares estimators under noisy observations: a noise-aware estimator that incorporates the calibrated noise model and a noise-unaware estimator based on the ideal Born measurement model. For the noise-aware estimator, we derive unified trace-norm recovery guarantees that explicitly characterize the dependence of the sample complexity on three fundamental quantities: the complexity of the underlying structured state class, the complexity of the measurement ensemble, and the state preparation and measurement noise levels. For the noise-unaware estimator, we establish a unified non-asymptotic recovery guarantee consisting of a statistical error term and an additional deterministic bias term arising from the mismatch between the assumed reconstruction model and the noisy observation process.",
+    "title": "A Unified Framework for Sample Complexity of Structured Quantum State Tomography under Noisy Observations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4262264668941498
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4186283349990845
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.38209038972854614
+      }
+    ]
+  },
+  "2608.05529v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuzhong Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Pan Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Baoru Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Songmin Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Binchang Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Lizhong Sun"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1103/hw4l-jknk",
+    "id": "2608.05529v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "The paper's focus on symmetry-based frameworks, emergent surface altermagnetism, and collinear antiferromagnets strongly resonates with the user's interest in 'PT-Symmetric Real Dirac Fermions and Semimetals' and related magnetic/topological phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Surface altermagnetism",
+      "Symmetry analysis",
+      "Spintronic materials"
+    ],
+    "summary": "Research on altermagnetism has thus far primarily focused on spin-polarized bulk electronic states in magnetic materials. In this work, we advance the field by introducing the concept of surface altermagnetism (SAM), wherein altermagnetic spin polarization emerges at the surfaces of collinear antiferromagnets (AFMs) or altermagnets (AMs). To lay the theoretical groundwork for this phenomenon, we construct a thorough symmetry-based framework that systematically connects bulk spin groups to surface spin groups for both types of systems. Through symmetry analysis, we identify all symmetry-breaking surfaces capable of supporting SAM, identifying 35 for $PT$-symmetric AFMs and 61 distinct cases for bulk AMs. Moreover, we show that 203 collinear spin space groups---including 100 without and 103 with the $[C_2 \\Vert P]$ operation---permit the appearance of SAM on the surface of $tT$-symmetric AFMs via the breaking of fractional translational symmetries. The proposed framework is verified using tight-binding models and first-principles calculations, with practical material implementations shown in representative compounds like NaMnP, LiMnAs, and CrSb. Our results establish SAM as a robust, symmetry-protected magnetic state, extending altermagnetic phenomena to material surfaces and paving the way for advanced, field-free spin manipulation in next-generation spintronic technologies.",
+    "title": "Emergent Surface Altermagnetism",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5479247570037842
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5324712991714478
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.5172030925750732
+      }
+    ]
+  },
+  "2608.05556v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuekun Niu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Ni"
+      },
+      {
+        "affiliation": [],
+        "name": "Jia-Ming Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhong-Yi Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yun Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiping Feng"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05556v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper directly applies 'dynamical mean-field theory' to investigate 'quasiparticle breakdown' in the 'orbital-selective Mott phase', aligning perfectly with the user's explicit interest in Dynamical Mean-Field Theory and correlated electron systems.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Orbital-selective Mott phase",
+      "Quasiparticle breakdown",
+      "Hund's coupling"
+    ],
+    "summary": "The orbital-selective Mott phase (OSMP) is commonly described as a coexistence of localized and itinerant electrons within effectively decoupled orbitals, but emerging evidence for quasiparticle breakdown points to physics beyond this picture, whose microscopic origin remains unknown. Using dynamical mean-field theory for the two-band Hubbard model, we show that the spin-flip and Ising-type components of Hund's coupling generate local spin excitations (LSEs). These LSEs couple electrons between different orbitals, renormalize quasiparticle lifetimes and binding energies, and thereby destroy well-defined quasiparticles in the OSMP. Removing these two components of Hund's coupling restores coherent quasiparticle behavior and fully decouples the charge dynamics of the two bands. Our results therefore identify electronic coupling to LSEs as the fundamental mechanism driving quasiparticle breakdown within the OSMP.",
+    "title": "Local Spin Excitations Mediate Quasiparticle Breakdown in the Orbital-Selective Mott Phase",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6351791024208069
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6121273636817932
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5432925224304199
+      }
+    ]
+  },
+  "2608.05603v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rahul Soni"
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan S. Nichols"
+      },
+      {
+        "affiliation": [],
+        "name": "Sutirtha Paul"
+      },
+      {
+        "affiliation": [],
+        "name": "Garfield Warren"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Sokol"
+      },
+      {
+        "affiliation": [],
+        "name": "Adrian Del Maestro"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05603v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper focuses on the confinement of neutral quantum fluids in nanopores, which is distinct from the user's strong interest in strongly correlated electronic systems, superconductivity, and topological materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Nanopores",
+      "Quantum Fluids",
+      "Adsorption"
+    ],
+    "summary": "Atomic-scale modification of mesopore interfaces provides a route to tune the confinement experienced by adsorbed fluids, but how a specific interface preparation translates into the resulting microscopic confinement potential remains unclear. Here, we show that preplating MCM-41 with an argon monolayer modifies the effective pore interface by occupying strongly attractive regions of the heterogeneous silica surface and screening its atomic-scale corrugation. Grand-canonical Monte Carlo simulations of argon adsorption, low-temperature molecular dynamics, and helium test-particle insertion are combined with adsorption isotherms and neutron-scattering measurements to characterize the preplated pore at the atomic scale. Helium test-particle insertion calculations show that the modified interface shifts the helium adsorption minimum to an annular region inside the pore and produces a confinement landscape dominated by a smooth radial component. The resulting radial confinement potential can be described by a continuum cylindrical model, providing microscopic support for the effective potential used in earlier quantum Monte Carlo studies. Residual corrugation persists over multiple spatial scales and is accurately captured by a Gaussian process surrogate. These results demonstrate how atomic preplating can tailor nanopore confinement and provide an experimentally constrained microscopic potential for predictive studies of confined quantum fluids.",
+    "title": "Interface Engineering of Helium Confinement in Argon-Preplated MCM-41 Nanopores",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.3893781304359436
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.33656543493270874
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.3313840627670288
+      }
+    ]
+  },
+  "2608.05819v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alfred M. Pastor"
+      },
+      {
+        "affiliation": [],
+        "name": "Maribel Castillo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jose M. Badia"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.DC",
+      "cs.PF"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.05819v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper addresses the optimization of tensor network contraction plans for GPU-accelerated quantum circuit simulation, which is a computational aspect of quantum computing rather than condensed matter physics.",
+    "score": 0.25,
+    "suggested_keywords": [
+      "Quantum Simulation",
+      "Tensor Network Optimization",
+      "Machine Learning"
+    ],
+    "summary": "Classical simulation remains essential for developing and validating quantum algorithms, but its cost grows rapidly with circuit size. Tensor-network contraction can reduce this cost by exploiting circuit structure, although its efficiency depends strongly on the chosen contraction plan. On GPUs, plans with similar theoretical complexity may perform very differently because execution also depends on parallelism, reduction structure, memory traffic, and contraction geometry. We present a learning-to-rank framework for selecting efficient contraction plans before executing them. Each plan is represented by structural features derived directly from its sequence of pairwise contractions, and gradient-boosted rankers are trained from GPU measurements using listwise and pairwise objectives. We evaluate the resulting models on diverse circuit families, using separate in-distribution and circuit-family-shift test sets, and compare them with random and MinFill-based baselines. The learned rankers generally identify better plans, with the listwise model providing the strongest overall decision quality. We also study backend shift by comparing empirical plan orderings on two GPU architectures and evaluating the source-trained models on the second device without retraining. The rankings remain substantially, though not perfectly, stable across GPUs, and the models retain useful decision quality. These results support Learning to Rank as a practical way to reduce contraction-plan search, while showing that performance remains partly backend dependent.",
+    "title": "Learning to Rank Tensor Network Contraction Plans for GPU-Accelerated Quantum Circuit Simulation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.48853158950805664
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4409811496734619
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.43884479999542236
+      }
+    ]
+  },
+  "2608.05957v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ridha Eddhib"
+      },
+      {
+        "affiliation": [],
+        "name": "Matyáš Novák"
+      },
+      {
+        "affiliation": [],
+        "name": "Hubert Ebert"
+      },
+      {
+        "affiliation": [],
+        "name": "Aki Pulkkinen"
+      },
+      {
+        "affiliation": [],
+        "name": "Ján Minár"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05957v1",
+    "matching_keywords": [
+      "green's function",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper introduces a computational framework (SPR-KKR) based on Green's functions, applicable to spectroscopic properties (XAS, photoemission) and relativistic effects, directly linking to the user's interest in computational methods and experimental probes.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "SPR-KKR",
+      "Green's function methods",
+      "X-ray absorption spectroscopy"
+    ],
+    "summary": "The Spin-Polarized Relativistic Korringa-Kohn-Rostoker (SPR-KKR) is an all-electron ab-initio multiple-scattering code that provides unique capabilities for treating chemical disorder, finite-temperature magnetism, relativistic effects, and spectroscopic properties of various types of solids through its fundamental formulation in terms of the single-particle Green's function rather than eigenstates. We present ASE2SPRKKR, a comprehensive Python interface that integrates SPR-KKR into the Atomic Simulation Environment (ASE), making SPR-KKR more accessible, streamlined, and uniform. Our implementation extends the ASE's Atoms object to handle fractional site occupations for coherent-potential-approximation calculations while maintaining full compatibility with ASE's extensive ecosystem of structure builders, optimizers, and analysis tools. Automated input generation with validation, comprehensive output parsing, and direct MPI support enable seamless integration into high-throughput and multi-method workflows. We demonstrate the interface through representative applications: semi-infinite surface calculations reproducing Rashba-split Au(111) surface states; one-step photoemission modeling capturing matrix-element effects; exchange-parameter extraction for atomistic spin dynamics; and X-ray absorption spectroscopy including magnetic circular dichroism. Beyond these demonstrations, ASE2SPRKKR is designed with transferability as a first-class concern. By grounding its architecture in FAIR principles of Findability, Accessibility, Interoperability, and Reusability, it establishes a replicable blueprint for bringing other specialized Green's function and first-principles codes into the collaborative, reproducible workflows that modern materials discovery requires.",
+    "title": "ASE2SPRKKR: a unified Python framework integrating the Spin-Polarized Relativistic Korringa-Kohn-Rostoker method into the Atomic Simulation Environment",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.514986515045166
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5074767470359802
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4714634120464325
+      }
+    ]
+  },
+  "2608.05968v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Léonce Dupays"
+      },
+      {
+        "affiliation": [],
+        "name": "Taufiq Murtadho"
+      },
+      {
+        "affiliation": [],
+        "name": "Bi Hong Tiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Nelly H. Y. Ng"
+      },
+      {
+        "affiliation": [],
+        "name": "Paola Ruggiero"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05968v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper explores entanglement dynamics in strongly correlated one-dimensional systems using Luttinger liquid theory and field-space partitions, aligning with interests in many-body physics and theoretical condensed matter.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Entanglement",
+      "Luttinger Liquid",
+      "Nonequilibrium Physics"
+    ],
+    "summary": "Entanglement dynamics depend not only on how a quantum system is partitioned, but critically on how interactions across that partition are structured. For a spatial bipartition of a locally interacting system, entanglement is generated near the boundary and then propagates into the bulk. By contrast, when two extended quantum fields are coupled locally along their entire length, the interaction crosses the field-space partition everywhere, and this generates correlations throughout the system. Here, we study the entanglement dynamics between two gapless one-dimensional quantum many-body systems described by Luttinger liquid theory. The systems are initially decoupled and prepared at zero or finite temperature, after which a time-dependent tunneling interaction is activated uniformly along their length. Within a Gaussian approximation, we derive general analytical expressions for the logarithmic negativity, mutual information, and Rényi entropies under arbitrary coupling protocols. At zero temperature, entanglement displays an early-time power-law growth whose exponent is fixed solely by the first non-null derivative of the tunneling protocol. Once the coupling saturates, we obtain exact long-time averages of the information-theoretic quantities and characterise how the correlations scale with temperature and the final coupling strength. We also analyse how mutual information and logarithmic negativity approach the adiabatic limit for a very slow protocol with respect to intrinsic system timescale. This work extends the study of entanglement dynamics in nonequilibrium field theory to field-space partitions and mixed initial states.",
+    "title": "Field-Space Entanglement Dynamics Between Tunnel-Coupled Luttinger Liquids",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.46668705344200134
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.44993215799331665
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.442038357257843
+      }
+    ]
+  },
+  "2608.05984v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhenjiu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Manuel Weber"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05984v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "The paper focuses on topological phases (Haldane chain, SPT states, topological edge modes) and quantum criticality, using quantum Monte Carlo simulations, which aligns well with the user's interest in topological materials, strongly correlated systems, and computational methods.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Haldane chain",
+      "SPT phase",
+      "Dissipative quantum systems"
+    ],
+    "summary": "We study the Haldane chain coupled to a dissipative ohmic bath. Using large-scale quantum Monte Carlo simulations, we identify a second-order quantum phase transition into an antiferromagnetic state with spontaneously broken SO(3) symmetry that is governed by an interacting fixed point with dynamical exponent $z\\approx 2$. We derive a generalized string order parameter which indicates that the symmetry-protected topological ground state of the Haldane chain is stable for weak dissipation and develops a nontrivial scaling dimension at criticality. In particular, its topological edge modes display nontrivial boundary criticality that is distinct from an equivalent transition out of a trivial state; for the latter, we perform an accurate $ε$ expansion of a dissipative $φ^4$ theory with ordinary boundary conditions. Our setup realizes a spin impurity in a critical yet nonconformal antiferromagnet and paves the way for continuously tunable boundary criticality controlled by dissipation.",
+    "title": "Dissipation-induced bulk and boundary criticality in the Haldane chain",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5767239332199097
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5722437500953674
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5548693537712097
+      }
+    ]
+  },
+  "2608.05988v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jérôme Leblanc"
+      },
+      {
+        "affiliation": [],
+        "name": "A. -M. S. Tremblay"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.05988v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper directly investigates strange metal behavior and unconventional quantum criticality in the 2D Hubbard model, which is highly relevant to the physics of high-temperature superconductors and strongly correlated systems, aligning perfectly with the user's core interests, including computational methods.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Strange metal",
+      "Hubbard model",
+      "Quantum critical point"
+    ],
+    "summary": "Properties of the two-dimensional Hubbard model with nearest-neighbor hopping are under scrutiny in cold-atom experiments and diagrammatic quantum Monte Carlo. Given the controlled nature of these approaches, it is timely to make predictions about strange-metal behavior and its relation to quantum-critical properties. Even for interaction strengths below the Mott transition, several peculiarities occur at the quantum critical point separating Fermi liquid and incommensurate spin-density wave order. Here, we predict, using the non-perturbative improved two-particle self-consistent approach, that for correlation lengths ranging from about one to one hundred lattice spacings, Kohn anomalies on the underlying Fermi surface lead to unconventional critical exponents. The temperature dependence of the single-particle self-energy acquires strong momentum dependence along the Fermi surface with no clear evidence of Landau quasiparticles. Nevertheless, we observe strange-metal behavior, namely, resistivity that scales linearly with temperature as $T\\rightarrow{0}$. Our work shows that a linear temperature dependence of resistivity arises without a linear-in-temperature self-energy along the Fermi surface, as is often assumed.",
+    "title": "Resilient strange metal at an unconventional quantum critical point in $d=2$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6414127349853516
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6385258436203003
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6199321746826172
+      }
+    ]
+  },
+  "2608.06006v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Viktor Eisler"
+      },
+      {
+        "affiliation": [],
+        "name": "Erik Tonni"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.06006v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper investigates the entanglement Hamiltonian in a many-body system after projective measurements, utilizing field-theory descriptions relevant to strongly correlated electron systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Entanglement Hamiltonian",
+      "Quantum Measurements",
+      "Conformal Field Theory"
+    ],
+    "summary": "We study the entanglement Hamiltonian of an infinite hopping chain in its ground state, after partial projective measurements in the occupation basis. For a segment separated by two measurement regions from the rest of the chain, we show that the reduced density matrix can be related to a grand-canonical state via a conformal mapping and a gauge transformation in the underlying field-theory description. The entanglement Hamiltonian is then described by a local inverse temperature that vanishes as a square root around the endpoints and is independent of the particular measurement outcome. In sharp contrast, the local chemical potential is shown to be related to the induced charge density in the segment. Hence the entanglement Hamiltonian of a post-selected state contains much more information on the measurement outcome than the respective entropy.",
+    "title": "Measurement-induced entanglement Hamiltonian",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.499022513628006
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.47458627820014954
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4730072319507599
+      }
+    ]
+  },
+  "2608.06357v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Luis Walther"
+      },
+      {
+        "affiliation": [],
+        "name": "Alberto Nocera"
+      },
+      {
+        "affiliation": [],
+        "name": "Mona Berciu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.06357v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-08-06",
+    "reasoning": "This paper uses advanced computational methods (DMRG, RPA) to study phonon spectral functions and electron-phonon coupling, aligning with the user's interest in computational techniques and spectroscopic analysis in correlated materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Polaron metals",
+      "Phonon spectral function",
+      "DMRG"
+    ],
+    "summary": "We use the density matrix renormalization group (DMRG) to compute the phonon spectral function of a one-dimensional spinless Holstein model doped with a low but finite carrier concentration, $x \\leq 0.15$, as a function of the electron-phonon coupling $λ$. To the best of our knowledge, these are the first such results in this regime, complementing extensive prior work at the single-polaron level ($x\\to 0$). We find that significant phonon spectral weight is transferred both below, all the way down to $ω=0$, and above the bare phonon energy $Ω$, in stark contrast with the Kohn-anomaly phenomenology expected in the Migdal limit, where weight remains centered near $Ω$ with a kink at $q=2k_F$. No signature of this $2k_F$ kink appears in our results. This behavior is captured qualitatively by the Random Phase Approximation (RPA), and semi-quantitatively, at negligible extra computational cost, by a ``dressed RPA'' scheme in which the electron addition propagator is renormalized using the Momentum Average (MA) approximation for the low-density electron-polaron. By contrast, adding the lowest-order vertex correction to this dressed scheme produces unphysical negative spectral weight, signaling that vertex and propagator dressings must be treated consistently once the propagators are dressed nonperturbatively. Our results provide an efficient approximation for the phonon spectral functions of low-density polaron metals, a regime relevant to weakly doped insulators.",
+    "title": "Phonon spectral functions of low-density polaron metals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5843921303749084
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5437618494033813
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5245133638381958
+      }
+    ]
   }
 }
