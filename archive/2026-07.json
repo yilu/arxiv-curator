@@ -23278,5 +23278,50 @@
         "score": 0.604564905166626
       }
     ]
+  },
+  "2608.07526v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ahmet Kaan Aydin"
+      },
+      {
+        "affiliation": [],
+        "name": "Bedřich Sousedík"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.07526v1",
+    "matching_keywords": [],
+    "published_date": "2026-07-18",
+    "reasoning": "This paper describes an efficient low-rank tensor format solver for stochastic PDEs, aligning with the user's interest in advanced computational methods for complex physical problems, even if the specific application (fluid dynamics) differs from condensed matter physics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Stochastic PDEs",
+      "Tensor Train",
+      "Low-Rank Approximation"
+    ],
+    "summary": "We study a low-rank solver for the stochastic unsteady incompressible Navier--Stokes equations with uncertain viscosity. The problem is discretized by a stochastic Galerkin method and written in an all-at-once (monolithic) form where the time steps are informed by a sequential solve of the mean problem. The solution vector is represented in Tensor Train (TT) format, while the system matrices are represented in CANDECOMP/PARAFAC (CP) format as needed. We propose preconditioners based on the low-rank CP approximations that retain additional stochastic and nonlinear information compared to mean-based preconditioners. Numerical experiments for a benchmark channel-flow problem are presented to show the effectiveness of the low-rank approximation, the relative tolerance strategy, and the proposed preconditioners.",
+    "title": "A Mean-Informed Low-Rank Monolithic Stochastic Galerkin Solver for the Unsteady Navier-Stokes Equations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.2892132103443146
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.2774084210395813
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.2749919891357422
+      }
+    ]
   }
 }
