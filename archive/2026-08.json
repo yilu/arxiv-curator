@@ -1158,14 +1158,42 @@
         "name": "Tomohiro Soejima"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn",
+      "cond-mat.supr-con"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2608.02753v2",
+    "matching_keywords": [
+      "hubbard model",
+      "neural quantum state"
+    ],
     "published_date": "2026-08-03",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates the interplay of superconductivity and quantum criticality in a correlated electron model using neural quantum states, resonating strongly with the user's interest in superconductivity and advanced theoretical approaches to correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Neural Quantum States",
+      "Quantum Criticality",
+      "Topological Superconductivity"
+    ],
     "summary": "Understanding how a parent insulating state shapes the superconductivity that emerges upon doping is a long-standing problem dating back to Anderson's resonating-valence-bond proposal. The triangular-lattice Hofstadter-Hubbard model with $π/2$ flux per plaquette offers an ideal setting: at half filling it hosts two distinct parent states---an integer quantum Hall insulator and a chiral spin liquid---separated by a topological phase transition. Using neural quantum states on tori of up to $432$ sites, we present strong evidence that the transition is continuous, with a vanishing $2e$ charge gap and critical charge fluctuations. Upon doping, we find a topological superconductor on either side of the transition. While the pairing order parameter remains nearly unchanged across the transition, the superfluid stiffness is strongly enhanced near the critical point. The energy scale of the superconductor is therefore set not by which parent state is doped, but by proximity to the transition between them. Our results establish neural quantum states as a powerful tool for understanding the interplay between unconventional electronic correlations and superconductivity.",
     "title": "Large scale neural quantum states reveal the interplay between superconductivity and quantum criticality in the Hofstadter-Hubbard model",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.6376816630363464
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6260259747505188
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.611291229724884
+      }
+    ]
   },
   "2608.02756v1": {
     "authors": [
@@ -6400,7 +6428,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2608.10365v1",
     "matching_keywords": [
@@ -6419,15 +6449,15 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.21431v1",
-        "score": 0.5067369937896729
+        "score": 0.5067370533943176
       },
       {
         "liked_paper_id": "2507.01856v1",
-        "score": 0.4944036304950714
+        "score": 0.4944037199020386
       },
       {
         "liked_paper_id": "2506.11227v1",
-        "score": 0.49308645725250244
+        "score": 0.4930865168571472
       }
     ]
   },
@@ -6442,14 +6472,39 @@
         "name": "Jong E. Han"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2608.10547v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
     "published_date": "2026-08-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper explores the role of collective excitations (Goldstone modes) in nonequilibrium phase transitions using Keldysh Green's function formalism, aligning with the user's interest in theoretical methods and collective phenomena in condensed matter.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Goldstone Mode",
+      "Non-equilibrium",
+      "Keldysh Formalism"
+    ],
     "summary": "Measurements of resistive breakdown in electronic systems under a DC electric field have shown that the threshold fields for the insulator-to-metal transition are significantly lower than predicted by single-electron excitation scenarios, such as the Landau-Zener theory. In this work, we propose an alternate mechanism of destabilizing ordered insulators under a DC electric field by fluctuations of the order parameters through the Goldstone mode excitation. The low-energy bosonic excitations receive energy from accelerated electrons and thus destroy the spontaneous symmetry breaking. Using the Keldysh Gree's function formalism, we numerically confirm that the Goldstone mode remains well-defined in the nonequilibrium steady state, while its nonequilibrium excitations are sensitive to the electric field. The effective temperature of the Goldstone mode increases much more rapidly than the electronic effective temperature, with the bosonic threshold field significantly smaller than the electronic one, which suggests that collective phase dynamics may further reduce the transition field to the experimental range via a purely electronic mechanism.",
     "title": "Role of Goldstone mode in nonequilibrium insulator under DC electric field",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.5438953638076782
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5105712413787842
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9yKSN-GCB0IC",
+        "score": 0.5025067329406738
+      }
+    ]
   },
   "2608.10697v1": {
     "authors": [
@@ -6567,14 +6622,41 @@
         "name": "Nongnuch Artrith"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2608.10910v1",
+    "matching_keywords": [
+      "XAS",
+      "machine learning",
+      "x-ray absorption spectroscopy"
+    ],
     "published_date": "2026-08-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper utilizes X-ray absorption spectroscopy and ab initio simulations to probe the local chemical environment of oxygen in advanced oxide materials, aligning with the user's interest in advanced characterization and oxygen-related phenomena.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "X-ray Absorption Spectroscopy",
+      "Cathode Materials",
+      "Oxygen K-edge"
+    ],
     "summary": "X-ray absorption spectroscopy (XAS) probes the local chemical environment of the absorbing atom and is one of the most powerful characterization techniques for battery materials. Here we present a database of simulated oxygen K-edge XAS spectra for the layered cathode material LiNi0.8Mn0.1Co0.1O2 (NMC811), built on the atomic structures of our recent work[1]. All spectra were obtained using the excited electron and core-hole (XCH) method with the R2SCAN meta-GGA functional, as implemented in the Vienna Ab initio Simulation Package (VASP). The database covers benchmark binary oxides (TiO, Ti2O3, TiO2, Mn3O4, Mn2O3, MnO2) together with a realistic NMC811 supercell containing 60 transition metal sites at three states of charge. Because each spectrum is resolved at the level of individual oxygen sites, the database links O K-edge spectral features to specific oxygen environments defined by their local coordination and transition metal neighbors. All data are freely available and can serve as a reference for spectral fingerprinting, for direct comparison with experiments, and as training data for machine learning models.",
     "title": "Oxygen K-edge X-ray Absorption Spectroscopy Database for NMC811 Layered Cathode Materials",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.670809268951416
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.6363146305084229
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC",
+        "score": 0.6020259857177734
+      }
+    ]
   },
   "2608.11004v1": {
     "authors": [
@@ -6686,14 +6768,39 @@
         "name": "Michele Simoncelli"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2608.11089v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
     "published_date": "2026-08-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper explores magnetic phases and doping effects in materials using first-principles calculations (DFT+U), which aligns with the user's interest in theoretical methods and material modifications in correlated systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Magnetic Disorder",
+      "DFT+U"
+    ],
     "summary": "Recent experimental reports suggest that the narrow-gap nonmagnetic semiconductor FeSb$_2$ can be transformed into an altermagnetic metal through Co doping (Co$_{0.15}$Fe$_{0.85}$Sb$_2$), or into a magnetically disordered or short-range-ordered state through Cr doping (Cr$_{0.15}$Fe$_{0.85}$Sb$_2$). Here we explore the energy landscape and magnetic states of these doped systems from first principles, relying on Hubbard-augmented density-functional theory (DFT+U) combined with the Romeo ground-state search algorithm. Within the established virtual-crystal approximation (VCA), we show that \\texttt{Romeo} finds several non-trivial magnetic states, which inform targeted explicit simulations of doping in supercells. We rely on these findings to discuss strengths and limitations of the VCA-Romeo approach versus the explicit-doping supercell approach, and how they can be used in synergy. Overall, our simulations suggest that the ground state of the Cr-doped system is a Locally Disordered Spin-Compensated (LDSC) configuration, formally compatible with Néel's L-type fully compensated ferrimagnetism, whereas the ground state of the Co-doped system is found to be altermagnetic (AFMo). This work shows how approximate and explicit simulations of magnetic alloys can be mutually informative, and establishes a protocol for studying candidate metallic altermagnets.",
     "title": "Competition between local magnetic disorder and altermagnetism in doped FeSb$_2$",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.6395921111106873
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5910033583641052
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.581827700138092
+      }
+    ]
   },
   "2608.11189v1": {
     "authors": [
@@ -6702,13 +6809,356 @@
         "name": "Atsushi Ono"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "physics.optics"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2608.11189v1",
+    "matching_keywords": [
+      "green's function"
+    ],
     "published_date": "2026-08-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper presents a theoretical framework using Green's functions for quantum Floquet engineering in condensed matter, aligning with the user's interest in advanced theoretical methods for many-body systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Floquet Theory",
+      "Quantum Light",
+      "Non-equilibrium Physics"
+    ],
     "summary": "We formulate Floquet Green's functions for noninteracting single-band lattice electrons driven by a reservoir-stabilized single-mode Gaussian quantum light source. The source is prescribed externally and is not updated by the many-electron polarization, while an active electronic probe still conditions the source evolution through the Peierls coupling. The two time arguments of a Green's function share one source history: the lesser and greater components are obtained by convolving a shared-history four-endpoint kernel with the continuous bath kernels before the final source trace, while the bath canonical anticommutation relation yields an equal-time covariance that seeds the retarded and advanced one-leg propagations. The Peierls coupling is treated nonperturbatively within the prescribed-source model, and classical Floquet theory is recovered in the appropriate limit. Numerical calculations on a minimal one-dimensional model show finite-coupling quantum-source corrections beyond a prescribed classical drive, together with spectral reconstruction and occupancy redistribution for squeezed vacuum and squeezed coherent sources. The squeezing parameter and phase provide additional control knobs, beyond classical amplitude modulation, for both sideband structure and occupied weight. This work provides a theoretical framework for quantum Floquet engineering of condensed matter with an externally prescribed quantum light source.",
     "title": "Floquet Green's functions for lattice electrons driven by Gaussian quantum light",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5828754901885986
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.5755194425582886
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5051078796386719
+      }
+    ]
+  },
+  "2608.11261v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Steve Cabrel Teguia Kouam"
+      },
+      {
+        "affiliation": [],
+        "name": "Rockefeller Rockefeller"
+      },
+      {
+        "affiliation": [],
+        "name": "Raoult Dabou Teukam"
+      },
+      {
+        "affiliation": [],
+        "name": "Jean-Pierre Tchapet Njafa"
+      },
+      {
+        "affiliation": [],
+        "name": "Patrick Sorrel Mvoto Kongo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jean-Pierre Nguenang"
+      },
+      {
+        "affiliation": [],
+        "name": "Serge Guy Nana Engo"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.11261v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-08-09",
+    "reasoning": "This paper focuses on organic photovoltaics and machine learning for materials prediction, which is outside the user's demonstrated interest in strongly correlated electron systems, superconductivity, and topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Organic Photovoltaics",
+      "Machine Learning",
+      "Materials Informatics"
+    ],
+    "summary": "Organic photovoltaic (OPV) materials are promising candidates for distributed solar energy in tropical regions, yet existing virtual screening tools report static power conversion efficiency (PCE) values at standard testing conditions (STC) that fail to capture the temperature-driven performance degradation experienced under real deployment conditions. Here we introduce a Climate-Native computational framework that forecasts the annual PCE profile of OPV donor molecules under geographically realistic operating conditions. The framework combines GFN2-xTB molecular dynamics with an equivariant graph neural network surrogate ($268$ Neyman-stratified CEP molecules; $120,600$ training geometries; $\\sim 1050\\times$ speedup over explicit quantum chemistry) and sequential deep learning models trained on annual time series anchored in NASA POWER climate data for Douala, Cameroon, and validated by zero-shot transfer to Yaoundé and Maroua. Applied to $\\sim 30,000$ molecules from the Harvard Clean Energy Project (CEP) and validated against $350$ HOPV15 experimental device measurements, the framework demonstrates that sequential models trained on full molecular dynamics trajectories outperform time-averaged baselines ($35\\%$-$48\\%$ relative MAE improvement over static baselines), confirming that thermal conformational dynamics carry information beyond mean geometry. We further introduce a seasonal stability score that reranks OPV candidates by performance consistency under tropical conditions, identifying molecules whose deployment suitability differs substantially from their static PCE ranking.",
+    "title": "Temperature-Driven Sequential Modeling for the Prediction of Annual Power Conversion Efficiency Profiles of Organic Photovoltaic Materials: Douala Case Study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.41987550258636475
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3665813207626343
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.3591039478778839
+      }
+    ]
+  },
+  "2608.11388v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anirudh Adavi"
+      },
+      {
+        "affiliation": [],
+        "name": "Kayahan Saritas"
+      },
+      {
+        "affiliation": [],
+        "name": "Ming Lei"
+      },
+      {
+        "affiliation": [],
+        "name": "Das Pemmaraju"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul R. C. Kent"
+      },
+      {
+        "affiliation": [],
+        "name": "Iwnetim I. Abate"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.11388v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-11",
+    "reasoning": "This paper directly addresses the nature and many-body stability of oxygen and ligand holes in transition-metal oxides using advanced computational methods like QMC, closely aligning with the user's interest in oxygen vacancies and ligand holes in nickelates.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Oxygen Holes",
+      "Quantum Monte Carlo",
+      "Correlated Oxides"
+    ],
+    "summary": "Oxygen holes in transition-metal oxides can appear as localized polarons, symmetry-delocalized ligand holes, or intermediate states whose stability is controlled by subtle electron-correlation effects. In layered Na$_{2-x}$Mn$_3$O$_7$, hybrid density functional theory (DFT) predicts an unusual bond-centered split oxygen-hole polaron stabilized near ordered Mn vacancies. Here we resolve the nature of this state using diffusion Quantum Monte Carlo (QMC). Although hybrid DFT favors the split configuration, QMC reverses the energetic ordering and identifies the localized oxygen polaron as the lower-energy state. The result is robust to the class of trial wavefunctions used, including hybrid and generalized-gradient DFT wavefunctions. Many-body spin densities further show that the nominal split state partially collapses toward a localized polaron. Because localized and split configurations produce similar O K-edge spectral features, this qualitative failure is not resolved by conventional X-ray absorption signatures alone. These findings identify Na$_{2-x}$Mn$_3$O$_7$ as a stringent benchmark for oxygen-hole polarons and reveal a failure mode of hybrid functionals in correlated oxides.",
+    "title": "Many-Body Destabilization of Intermediate Oxygen-Hole States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.5996158719062805
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.5704877376556396
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.5482901930809021
+      }
+    ]
+  },
+  "2608.11447v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ilige S. Hage"
+      },
+      {
+        "affiliation": [],
+        "name": "Charbel Y. Seif"
+      },
+      {
+        "affiliation": [],
+        "name": "Jose Enrico Q. Quinsaat"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel J. van de Pas"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard Vendamme"
+      },
+      {
+        "affiliation": [],
+        "name": "Walter Eeversd"
+      },
+      {
+        "affiliation": [],
+        "name": "Karolien Vanbroekhovend"
+      },
+      {
+        "affiliation": [],
+        "name": "Elias Feghalid"
+      }
+    ],
+    "categories": [
+      "cs.CE",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.11447v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-08-11",
+    "reasoning": "Although it uses advanced computational methods like CNNs and microstructural analysis, the focus on mechanical properties of lignin-containing polyurethane foams is not aligned with the user's interest in electronic, magnetic, or quantum properties of advanced inorganic materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Convolutional Neural Networks",
+      "Mechanical Properties",
+      "Bio-based Materials"
+    ],
+    "summary": "Bio-based alternatives for conventional rigid foams have proven to be good substituents owing to their enhanced sustainability and competitive performance. However, because their manufacturing processes are complex and destructive testing is often impractical, this study investigates whether microstructural features can be correlated with mechanical properties in lignin-containing rigid polyurethane (PU) foams using machine-learning approaches. Various types and percentages of lignin-based polyols were investigated as a partial polyol replacement. Scanning electron microscopy (SEM) images and corresponding mechanical compression data were used to train a custom state-of-art dual-head convolutional neural network (CNN) targeting the specific prediction of density, specific compression modulus, specific yield strength, and specific compression strength. The CNN was optimized with a weighted multi-output loss function, achieving strong predictive performance R2 values ranging from 0.850 to 0.91 and correlation coefficients above 0.92 while maintaining mean absolute error percentages below 9%. This proves the trained network capability to predict and capture morphological features governing load bearing responses. On the other hand, Grad-CAM visualization revealed that the network focused its predictions on physically meaningful microstructural regions such as cell walls and strut junctions, which confirm that the proposed network can be classified as an interpretable, non-destructive and data-driven framework for predicting and understanding bio-based PU foams mechanical behavior, hence reducing the inconvenience caused by time consuming manufacturing and destructive testing.",
+    "title": "Predicting Mechanical Properties of Lignin-Containing Polyurethane Rigid Foams from Microstructure Using Convolutional Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.2702696621417999
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.25707802176475525
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.23412497341632843
+      }
+    ]
+  },
+  "2608.11687v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jinsoo Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Jin"
+      },
+      {
+        "affiliation": [],
+        "name": "Arpan Kundu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jorge O. Sofo"
+      },
+      {
+        "affiliation": [],
+        "name": "Giulia Galli"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.11687v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-08-12",
+    "reasoning": "This paper employs a first-principles Green's function framework to study vibronic structure and electron-phonon interactions in spin defects, strongly aligning with the user's interest in theoretical methods for correlated systems and defects.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Vibronic Structure",
+      "Electron-Phonon Coupling",
+      "Spin Defects"
+    ],
+    "summary": "Color centers in wide-band-gap semiconductors are leading platforms for solid-state quantum technologies, yet a quantitative description of their vibronic structure has remained elusive due to the complexity of multi-phonon processes in localized defect states. Here we present a first-principles Green's function framework based on the retarded cumulant ansatz (RCA) to describe electron-phonon interactions in spin defects; our approach goes beyond the adiabatic and lowest-order perturbation theory approximations underlying widely used approaches. Applied to the negatively charged nitrogen-vacancy (NV$^-$) center in diamond, our method reveals that multi-phonon satellites persist over a 400 meV energy window even at zero temperature, driven by quantum zero-point fluctuations. We demonstrate that accurate spectral functions require mode-, momentum-, spin-, and orbital-resolved electron-phonon matrix elements sampled across the full Brillouin zone, to account for hybridized and propagating phonon channels. We find that the vibronic structure of the NV$^-$ center exhibits strong spin and orbital anisotropy, with different orbitals coupling to qualitatively distinct parts of the phonon spectrum, and spin-selective coupling affecting both sideband positions and intensities.",
+    "title": "First-principles cumulant approach to the vibronic structure of spin defects",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5073097348213196
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5071650147438049
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5065132975578308
+      }
+    ]
+  },
+  "2608.11725v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zunair Masroor"
+      },
+      {
+        "affiliation": [],
+        "name": "Bonwook Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Wonjoong Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Trinh Ngoc Le"
+      },
+      {
+        "affiliation": [],
+        "name": "Summal Zoha"
+      },
+      {
+        "affiliation": [],
+        "name": "Han-Bo-Ram Lee"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.11725v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-08-12",
+    "reasoning": "This paper uses a high-throughput computational framework combining machine learning and DFT to study dopant effects in oxides, directly relevant to the user's interest in doping and theoretical methods for materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Dopant Engineering",
+      "High-k Dielectrics",
+      "Machine Learning Potentials"
+    ],
+    "summary": "Hafnium oxide (HfO2) is the cornerstone high-k dielectric in modern silicon technology. Since the constraints of silicon device fabrication rule out replacing the material itself, dopant incorporation is the principal means available to engineer its band gap and dielectric constant within existing process flows. However, dopant selection is still largely empirical due to the coupled interplay among thermodynamic stability, electronic insulation, and dielectric response. Here, we present a high-throughput computational framework integrating special quasi-random structures (SQS), machine-learning potentials (SevenNet), and graph neural networks (ALIGNN) to systematically evaluate doped-HfO2 compositions across three dopants (Al, Si, Y) and two technologically relevant polymorphs (monoclinic and orthorhombic). Our analysis uncovers a fundamental design principle: formation energy, band gap, and dielectric constant are decoupled parameters requiring application-specific prioritization rather than simultaneous optimization. Yttrium achieves the lowest formation energy (-3.763 eV/atom) and favors orthorhombic phase stabilization at process-compatible thermal budgets; silicon preserves near-pristine band gaps (around 5.72 eV) critical for suppressing leakage in gate dielectric applications; and aluminum enables concentration-tunable band gap widening (5.6-5.9 eV) suited for voltage scaling. Validation against experimental literature and density functional theory (DFT) confirms quantitative accuracy (0.02 eV band gap error for Si-doping, mean absolute error less than 0.001 eV/atom formation energy). This framework provides rational, property-decoupled guidance for dopant engineering in HfO2-based dielectrics and related high-k oxide systems.",
+    "title": "Deep-Learning-Accelerated Dopant Selection for High-k HfO2 Dielectrics: A Disorder-Resolved Study of Y, Si and Al",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5257085561752319
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:BqipwSGYUEgC",
+        "score": 0.4461727738380432
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.4082634150981903
+      }
+    ]
   }
 }
