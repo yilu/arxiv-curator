@@ -9099,7 +9099,9 @@
       "cond-mat.stat-mech",
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2608.15467v1",
     "matching_keywords": [
@@ -9118,15 +9120,15 @@
     "vector_matches": [
       {
         "liked_paper_id": "2508.17292v1",
-        "score": 0.49550941586494446
+        "score": 0.49550938606262207
       },
       {
         "liked_paper_id": "2506.11227v1",
-        "score": 0.4516873359680176
+        "score": 0.4516872465610504
       },
       {
         "liked_paper_id": "2506.16068v1",
-        "score": 0.4439978301525116
+        "score": 0.44399794936180115
       }
     ]
   },
@@ -9223,6 +9225,51 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
         "score": 0.39474356174468994
+      }
+    ]
+  },
+  "2608.15732v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sen Niu"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui-Zhen Huang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.15732v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-16",
+    "reasoning": "This paper explores tensor network methods (PEPS) for describing topological and chiral gapped phases, which aligns with the user's interest in topological condensed matter and computational approaches.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Topological Phases",
+      "Chiral Spin Liquid"
+    ],
+    "summary": "It has been controversial whether infinite projected entangled pair state (PEPS) can faithfully describe chiral gapped phases in two dimensions or not. Finite-bond-dimension PEPS can capture many local and topological properties of chiral phases, but generically develop spurious long-range power-law like correlations. We introduce an auxiliary-assisted framework that bypass this obstruction by embedding the physical chiral system together with an auxiliary time-reversed partner, yielding a non-chiral enlarged representation whose physical chiral sector is recovered with controlled decoupling. For both a free-fermion Chern insulator and an interacting chiral spin liquid, the resulting PEPS show clean gapped correlation functions, and a finite transfer-matrix correlation length, in contrast with the artificial long-range tail of direct chiral PEPS representations. There exist small and negligibly coupling between the physical and auxiliary systems due to the finite entanglement effect, which only affect short-ranged local quantities. Despite the nonchiral enlarged representation, the chiral topological information remains encoded in the entanglement. Using layer-resolved momentum projection, we recover the expected universal chiral entanglement boundary spectrum. Our study provides a practical route to access gapped chiral phases with finite bond-dimension PEPS by changing the representation problem rather than directly studying the chiral pure state.",
+    "title": "Accessing Gapped Chiral Phase with Auxiliary-Assisted PEPS",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6138079762458801
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5335970520973206
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.492992103099823
       }
     ]
   },
@@ -9576,6 +9623,47 @@
       }
     ]
   },
+  "2608.16083v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Juntao Wang"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.16083v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper discusses tensor-network parameterization of Kähler metrics on Calabi-Yau manifolds, which pertains to string theory and algebraic geometry, not the user's condensed matter interests.",
+    "score": 0.12,
+    "suggested_keywords": [
+      "Calabi-Yau Manifolds",
+      "String Theory",
+      "Algebraic Geometry"
+    ],
+    "summary": "We develop and implement a positive tensor-network parameterization for computing Ricci-flat Kähler metrics on Calabi-Yau manifolds. It replaces the large Hermitian coefficient matrix of a high-degree algebraic metric by a matrix-product factorization. For the immersed source spaces used here, the resulting metric is globally positive for every parameter value and, at fixed local and bond dimensions, its number of parameters grows only linearly with the algebraic degree. We test the construction on three generalized complete-intersection Calabi-Yau (gCICY) threefolds, constructing chart by chart the generalized sections, holomorphic volume forms and sampling measures that define and train the metric there. From a common low-degree metric, the tensor network outperforms a parameter-matched neural potential using the same section data, reducing both bulk errors and the one-percent tail conditional mean in every paired run. It also reaches a substantially lower error than direct optimization of an unrestricted Hermitian metric of the same degree from the same start, with both methods optimized to validation convergence under their respective schedules. On a second geometry, a higher-degree network with fewer parameters than a lower-degree unrestricted Hermitian baseline substantially reduces the same-sample errors. We further observe saturation within the tested calculations: at fixed bond dimension, increasing the degree eventually plateaus; increasing the bond dimension at fixed optimization effort gives no resolved gain; and the outcome depends strongly on initialization and optimization path.",
+    "title": "Positive Tensor-Network Kähler Metrics on gCICY Threefolds",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3343237638473511
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.28623294830322266
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.27394384145736694
+      }
+    ]
+  },
   "2608.16219v1": {
     "authors": [
       {
@@ -9684,6 +9772,56 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
         "score": 0.5137277841567993
+      }
+    ]
+  },
+  "2608.16241v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Süha Tuna"
+      },
+      {
+        "affiliation": [],
+        "name": "Ülker Başar"
+      }
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG",
+      "math.OC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.16241v1",
+    "matching_keywords": [
+      "neural network",
+      "tensor network"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper focuses on hyperspectral image classification using tensor networks, an application domain far removed from condensed matter physics and quantum many-body systems.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Hyperspectral Imaging",
+      "Machine Learning",
+      "Tensor Decompositions"
+    ],
+    "summary": "Feature extraction for hyperspectral image classification is conventionally addressed using rigid tensor decompositions that fail to capture complex spatio-spectral interdependencies, or heavily parameterized convolutional neural networks that are computationally expensive. To overcome these limitations, this work introduces the Holistic Multivariance Decomposition (HMD) framework as a novel, end-to-end differentiable neural network layer. By explicitly separating independent single mode variations from cooperative higher dimensional interactions via learnable, matrix valued supports, the proposed HMD-0, HMD-1 and HMD-2 approximants are optimized jointly with a downstream classifier via backpropagation. Comprehensive evaluations across three benchmark HS datasets demonstrate that the higher level HMD layers achieve superior classification accuracy compared to classical learnable tensor baselines, including Tucker, Canonical Polyadic, and Tensor Train decompositions. Furthermore, HMD-1 and HMD-2 achieve a generalization capacity and training stability comparable to standard 2D and 3D-CNNs while requiring significantly fewer feature extractor parameters. These results demonstrate that the HMD framework provides a structurally robust substitute for traditional convolution in multidimensional HS image classification, offering high parameter efficiency and stability throughout the optimization process.",
+    "title": "Convolution-Free Holistic Multivariance Decomposition Layer for Efficient Hyperspectral Image Classification Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.34159576892852783
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.26976150274276733
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.2681584358215332
       }
     ]
   },
@@ -9849,6 +9987,422 @@
       {
         "liked_paper_id": "2511.14505v1",
         "score": 0.3665519654750824
+      }
+    ]
+  },
+  "2608.17200v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Weiyi Xia"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei Shen Tee"
+      },
+      {
+        "affiliation": [],
+        "name": "Maxim Moraru"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Wai Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Cai-Zhuang Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.17200v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper focuses on the machine learning-guided discovery of new magnetic rare-earth transition-metal borides, which involves aspects of materials discovery and magnetism relevant to the user's broader interests.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Magnetic Materials Discovery",
+      "Machine Learning",
+      "First-Principles Calculation"
+    ],
+    "summary": "Rare-earth transition-metal borides offer critical structural motifs for permanent-magnet design; however, the manganese-rich regions within these compositional phase spaces remain largely unexplored. In this work, we develop an advanced machine-learning-assisted discovery framework to explore Y-Mn-B ternary system. Starting from over one million hypothetical structures generated from known structures in databases, we filtered promising candidates by first applying graph neural networks to predict material stability, then using machine-learning-interatomic-potential to relax their structures, and finally validating the results with first-principles calculations. We identify 5 stable and near-stable Y-Mn-B phases along with 61 metastable compounds with the formation energy within 100 meV/atom with respect to the ternary convex hull. Among them, Y2Mn7B7 and YMn4B4 are structurally analogous to the previously synthesized $R_{1+ε}Fe_4B_4$ 1D incommensurate composite chain compounds. In striking contrast to the strongly suppressed Fe moments reported, our first-principles calculations reveal that the predicted Mn-chain phases preserve sizable local Mn moments (approximately 1.1 $μ_B$) and favored ferromagnetic ordering. Electronic structure analyses elucidate the microscopic origin of moment recovery via an enhanced exchange splitting driven by a Stoner-like instability. We also perform systematic Mn-Fe substitution to confirm the thermodynamic continuity and a monotonic enhancement of the macroscopic magnetization, from Fe to Mn. These findings indicate that targeted transition-metal substitution within a one-dimensional boride family can recover transition-metal magnetism, offering a physically interpretable route for designing new magnetic rare-earth transition-metal borides.",
+    "title": "Discovery of novel magnetic Y-Mn-B compounds via advanced machine learning guided framework",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.456736296415329
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4469868540763855
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.4191906452178955
+      }
+    ]
+  },
+  "2608.17558v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Qingzhuo Duan"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongdao Zhuge"
+      },
+      {
+        "affiliation": [],
+        "name": "Zixuan JIa"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianxing Ma"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.17558v1",
+    "matching_keywords": [
+      "quantum monte carlo",
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper directly addresses metal-insulator transitions and antiferromagnetism in correlated kagome systems using determinant quantum Monte Carlo, which are strong parallels to the user's interests in strongly correlated materials and computational methods.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Kagome Lattice",
+      "Metal-Insulator Transition",
+      "Determinant Quantum Monte Carlo"
+    ],
+    "summary": "The metal-insulator transition is often accompanied by fascinating quantum phenomena, including superconducting domes, antiferromagnetic phase transitions, and quantum spin liquids. Concurrently, kagome materials are predominantly metallic, necessitating the realization of insulating states to fully exploit their significant potential in logic and optoelectronic device applications. To address this, we investigate the electronic transport and magnetic properties in correlated kagome systems with hopping disorder using the determinant quantum Monte Carlo method. Through comprehensive analysis of the kinetic energy, dc conductivity, and density of states at the Fermi level, we demonstrate that the cooperative interplay between hopping disorder and electron correlations promotes electron localization. Within the insulator, an increase in the disorder level reduces the Coulomb interaction required for the Mott transition. Additionally, while disorder partially suppresses antiferromagnetic ordering, it remains insufficient to induce a complete magnetic transition. Finally, we summarize two schematic regions distinguishing between antiferromagnetic metal, correlated Anderson insulator, and disordered Mott insulator. Our study advances the understanding of metal-insulator transition in kagome systems by disorder and provides actionable insights for experimental control of these transitions.",
+    "title": "Inducing metal-insulator transition via disorder in correlated kagome systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.5984352827072144
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.5981769561767578
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5975810289382935
+      }
+    ]
+  },
+  "2608.17631v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhi-Yao Ning"
+      },
+      {
+        "affiliation": [],
+        "name": "Xue-Feng Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Naoki Kawashima"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Takahashi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.17631v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper explores gauge-constrained spinon complexes and deconfined quantum criticality in quantum magnets using quantum Monte Carlo simulations, aligning with interests in strongly correlated systems and computational methods.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum Magnetism",
+      "Deconfined Criticality",
+      "Spinon Confinement"
+    ],
+    "summary": "Quantum magnets provide a microscopic platform for studying confinement and gauge-constrained structures mediated by emergent gauge fields. We investigate confined spinon complexes in the columnar valence-bond-solid (VBS) phase near deconfined quantum criticality using pinned-spin defects and quantum Monte Carlo simulations. The pinned spins act as static spinon sources with controlled positions, spin projections, and VBS vorticities, enabling measurement of defect energies and direct real-space visualization of the associated VBS domain-wall strings. For matched spinon-antispinon sources, the excitation energy saturates beyond a characteristic separation as one extended dipole reorganizes into two shorter neutral dipoles, providing energetic and real-space evidence of string breaking. We further show that domain-wall connectivity is governed by lattice-scale VBS phase offsets in addition to vorticity and spin-projection neutrality. Compatible multi-pin patterns generate connected four-spinon complexes and extended domain-wall networks that retain their global connectivity under local distortions. These results establish pinned-spin defects as a controlled tool for assembling and resolving multi-spinon structures and their confining strings in a VBS phase.",
+    "title": "Gauge-constrained Spinon Complexes Near Deconfined Quantum Criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5899212956428528
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.535765528678894
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5310312509536743
+      }
+    ]
+  },
+  "2608.17742v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Raghutheja Bollampally"
+      },
+      {
+        "affiliation": [],
+        "name": "Soumya Sankar"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuqi Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "Berthold Jäck"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.17742v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper presents an active learning protocol for molecular beam epitaxy of complex quantum materials, including a topological Weyl ferromagnet, linking to interests in advanced synthesis techniques and topological materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Autonomous Synthesis",
+      "Molecular Beam Epitaxy",
+      "Topological Materials"
+    ],
+    "summary": "The integration of machine learning (ML) into materials science offers a transformative pathway toward fully autonomous synthesis workflows. For precise thin-film deposition techniques like molecular beam epitaxy (MBE), this automation is critical to overcome the time-consuming, manual navigation of high-dimensional thermodynamic phase spaces. Existing approaches for ML-assisted thin film growth predominantly rely on continuous Bayesian optimization (BO) models that assume smooth parameter landscapes. Consequently, they struggle to capture the abrupt crystallographic phase boundaries and narrow growth windows inherent to binary quantum materials. Here, we demonstrate an active learning protocol based on Sequential Model-Based Optimization (SMBO) designed specifically for the closed-loop MBE of such compounds. To overcome the limitations of continuous models while retaining the efficient exploration-exploitation logic of traditional BO, we combine a random forest surrogate model capable of capturing highly non-linear phase transitions and thermodynamics constraints of the growth process with an expected improvement function to predict optimum growth parameters. We apply this combined SMBO framework to the MBE of the topological Weyl ferromagnet Fe$_3$Sn, which exists as a metastable line compound. Using a small initial training set of fewer than twenty growth iterations, our active learning loop rapidly navigates a complex optimization landscape to identify an optimum growth window bounded by sharp transitions. Within only four active learning iterations, the absolute predictive error is halved to $\\approx10\\%$. This data-efficient framework paves the way for the autonomous discovery and thin-film synthesis of functional quantum materials.",
+    "title": "Active learning molecular beam epitaxy of complex quantum materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5415022373199463
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4553259313106537
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.44529715180397034
+      }
+    ]
+  },
+  "2608.17745v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Motoki Osada"
+      },
+      {
+        "affiliation": [],
+        "name": "Chieko Terakura"
+      },
+      {
+        "affiliation": [],
+        "name": "Shusaku Imajo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jean-Baptiste Morée"
+      },
+      {
+        "affiliation": [],
+        "name": "Akiko Kikkawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Masamichi Nakajima"
+      },
+      {
+        "affiliation": [],
+        "name": "Hsiao-Yi Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Yusuke Nomura"
+      },
+      {
+        "affiliation": [],
+        "name": "Koichi Kindo"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryotaro Arita"
+      },
+      {
+        "affiliation": [],
+        "name": "Yoshinori Tokura"
+      },
+      {
+        "affiliation": [],
+        "name": "Atsushi Tsukazaki"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1038/s41563-026-02695-3",
+    "id": "2608.17745v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper directly investigates superconductivity in bilayer nickelates (La2LnNi2O7) under varying pressure, which is a key material class and topic from the user's liked papers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Bilayer Nickelates",
+      "High-Pressure Superconductivity",
+      "Normal State Transport"
+    ],
+    "summary": "The discovery of high critical-temperature $T_{\\mathrm{c}}$ superconductivity near 80 K in bilayer nickelates under high pressure has sparked extensive studies. While superconductivity exceeding 40 K was subsequently discovered at ambient pressure in compressively strained films, the relationship between ambient- and high-pressure regimes remains an open question. Here we present a systematic investigation of superconductivity in compressively strained La$_2$LnNi$_2$O$_7$ films (Ln = lanthanides) at ambient and high pressures. The normal-state resistivity at ambient pressure, revealed by suppressing superconductivity with magnetic fields of 59 T, tends toward $T^2$ behaviour. Under high pressure in a cubic-anvil cell, $T_{\\mathrm{c}}$ was enhanced from 41-42 K at ambient pressure to 67-73 K at 16 GPa. On the other hand, lattice compression induced by Ln substitution, which may mimic effects of pressure, lowers $T_{\\mathrm{c}}$. In both cases, $T_{\\mathrm{c}}$ correlates with the evolution of normal-state transport between $T^2$ and $T$-linear behaviour, offering insight into the interplay between lattice structure and superconductivity in bilayer nickelates.",
+    "title": "Bridging ambient- and high-pressure superconductivity in La$_2$LnNi$_2$O$_7$ films",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.746066689491272
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.7182599306106567
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.7061224579811096
+      }
+    ]
+  },
+  "2608.18013v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Deepak Kumar Sahu"
+      },
+      {
+        "affiliation": [],
+        "name": "Santu Kumar Ghosh"
+      },
+      {
+        "affiliation": [],
+        "name": "Sagarneel Ghoshal"
+      },
+      {
+        "affiliation": [],
+        "name": "Saranya Das"
+      },
+      {
+        "affiliation": [],
+        "name": "Samit K. Ray"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18013v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper investigates sulfur vacancies in 2D transition-metal dichalcogenides, using characterization techniques and linking to the user's interest in defects and their visualization in materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "2D Materials",
+      "Sulfur Vacancies",
+      "Neuromorphic Devices"
+    ],
+    "summary": "Two-dimensional transition-metal dichalcogenide alloys are potential candidates for advanced optoelectronic and neuromorphic applications due to their strong light-matter interactions and controllable defect properties. However, large-area growth of such alloys remains challenging, while the correlation between their physical and neuromorphic properties remains largely unclear. In this work, we present an innovative microcavity chemical vapor deposition (CVD) reactor pathway to grow uniform, and large-area MoWS$_2$ mono- and few-layer alloy films for demonstrating optoelectronic synaptic functionalities. Driven by growth-induced intrinsic sulfur vacancies, as confirmed by XPS, KPFM, and STEM measurements, our optoelectronic synaptic device (OSD) successfully emulates essential biological synaptic features, such as excitatory postsynaptic currents (EPSC), paired-pulse facilitation (PPF~170%), and stimulus-dependent short- and long-term plasticities (STP & LTP). With picojoule-order energy consumption per synaptic event and nanoampere-order dark current, the device enables low-power neuromorphic learning, including emulation of Pavlovian associative learning. Furthermore, the experimentally measured conductance weight-update characteristics enabled an artificial neural network (ANN) simulation to achieve 92.43% recognition accuracy on the MNIST handwritten digit dataset. Finally, we demonstrate advanced neuromorphic visual processing by executing color image filtering based on the device's wavelength-selective photoresponse characteristics. This simple, yet multifunctional device architecture provides a promising path toward energy-efficient, spectral-selective neuromorphic vision applications.",
+    "title": "Energy-efficient, Reconfigurable Optoelectronic Artificial Synapses Based on MoWS$_2$ Alloy for Pattern Recognition and Color Image Filtering Applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.4098318815231323
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.4073949158191681
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:BqipwSGYUEgC",
+        "score": 0.4066603183746338
+      }
+    ]
+  },
+  "2608.18065v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Adil Attar"
+      },
+      {
+        "affiliation": [],
+        "name": "Amine M. Aboussalah"
+      },
+      {
+        "affiliation": [],
+        "name": "Mohamed Hibat-Allah"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18065v1",
+    "matching_keywords": [
+      "neural network",
+      "neural quantum state"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper focuses on advanced computational methods (Neural Quantum States) for solving many-body wave functions and finding ground states, aligning strongly with the user's interest in computational approaches like DMFT.",
+    "score": 0.88,
+    "suggested_keywords": [
+      "Neural Quantum States",
+      "Variational Methods",
+      "Quantum Simulation"
+    ],
+    "summary": "Neural Quantum States (NQS) provide a powerful neural network-based variational framework for representing many-body wave functions and solving for ground states. Recurrent Neural Networks (RNNs) are particularly promising owing to their relatively low computational cost and their autoregressive property, which enables perfect sampling. Recently, RNNs have been reported to be unstable under curvature-based optimizers such as the minimum-step stochastic reconfiguration (minSR) method. In this paper, we address this perceived limitation and show that minSR can be stabilized through simple regularization techniques, enabling robust training of RNN-based NQS with only a few samples. Our approach outperforms the Adam optimizer on the one-dimensional transverse-field Ising model and the one-dimensional cluster state, and provides competitive results on the two-dimensional Heisenberg and $J_1-J_2$ models. This work offers a promising pathway for using modern optimization techniques with autoregressive NQS to address open questions in quantum simulation.",
+    "title": "Quantum Geometric Tensor Preconditioning for Stable Training of Recurrent Neural Quantum States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.6415269374847412
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.6024231910705566
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5619177222251892
       }
     ]
   }
