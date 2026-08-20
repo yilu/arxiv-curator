@@ -9990,6 +9990,170 @@
       }
     ]
   },
+  "2608.16992v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Faizan Bhat"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.16992v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper uses matrix product states to study criticality and phase transitions in quantum field theories, which strongly aligns with the computational methods and fundamental physics concepts related to strong correlation and competing phases found in the user's liked papers.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "AdS/CFT",
+      "quantum field theory",
+      "critical exponents"
+    ],
+    "summary": "We study interacting scalar quantum field theories in anti-de Sitter (AdS) space using a tensor-network approach based on matrix product states. We develop methods for extracting low-lying boundary spectra from global-AdS energy levels, probing bulk criticality through finite-size scaling in the AdS radius, and identifying conformal boundary conditions. Applying these methods to scalar $φ^4$ theory in $\\mathrm{AdS}_2$, we compute the lowest non-trivial $\\mathbb{Z}_2$-odd and even boundary scaling dimensions non-perturbatively. We then locate the bulk $\\mathbb{Z}_2$ symmetry-breaking transition and extract critical exponents and central charge consistent with the 2D Ising universality class. At the critical point, we determine the low-lying boundary spectrum and use it to identify the $\\mathbb{Z}_2$-preserving free/ordinary Ising conformal boundary condition, thereby characterising both the bulk and boundary universality classes.",
+    "title": "Bulk Criticality and Boundary Spectra in AdS from Matrix Product States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5611165761947632
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.533113956451416
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5190377235412598
+      }
+    ]
+  },
+  "2608.16994v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Maximilian Fröhlich"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard M. Milbradt"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Eigel"
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Sander"
+      },
+      {
+        "affiliation": [],
+        "name": "Robert Wille"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian B. Mendl"
+      }
+    ],
+    "categories": [
+      "cond-mat.other"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.16994v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper directly addresses the development of matrix product state algorithms for quantum dynamics, a computational method highly relevant to the strongly correlated condensed matter systems mentioned in the user's liked papers.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "quantum dynamics",
+      "matrix product operators",
+      "Haldane-Shastry model"
+    ],
+    "summary": "Matrix product state algorithms must enlarge their bond spaces as entanglement grows and compress them to control cost. We formulate basis-update and Galerkin (BUG) time integration as a sequence of canonical MPS sweeps for Hamiltonians represented as matrix product operators. We show when two natural basis updates produce the same trial space and when transporting coefficients between successive bases preserves the represented state. Under these conditions, the existing first-order error bound for uncompressed tree-tensor-network BUG also applies to the alternating-endpoint MPS schedule. We verify the uncompressed implementation against an independent six-site calculation. We then compare BUG with two-site TDVP for 16-site transverse-field Ising and Haldane-Shastry dynamics. At matched timestep and truncation settings, BUG performs fewer local exponential actions and has lower runtime. These settings do not produce equal accuracy. The runtime versus accuracy curves cross for the Ising model and are close for the Haldane-Shastry model. The comparison therefore identifies model-dependent trade-offs rather than a general advantage for either method.",
+    "title": "Basis-update and Galerkin time integration in canonical matrix-product-state form",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5372388958930969
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5237669944763184
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.49413126707077026
+      }
+    ]
+  },
+  "2608.17135v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiao Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomohiro Hashizume"
+      },
+      {
+        "affiliation": [],
+        "name": "Pia Siegl"
+      },
+      {
+        "affiliation": [],
+        "name": "Dieter Jaksch"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.stat-mech",
+      "cs.AI",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.17135v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper focuses on a general algorithmic framework for tensor networks in data processing and optimization, which is only indirectly related to the specific condensed matter physics and materials science topics of the liked papers.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "data compression",
+      "nonlinear functions",
+      "tensor trains"
+    ],
+    "summary": "Tensor networks are powerful formats for compressing large-scale data. However, their application to general data processing has been limited by the difficulty of performing nonlinear operations. Here, we introduce iterative tensor network transformations (ITNTs), a general algorithmic framework for the element-wise evaluation of elementary and nonlinear filtering functions on data encoded as tensor trains (TTs), a class of tensor networks. Our approach operates entirely in the compressed domain, enabling efficient computation on exponentially large datasets while maintaining a controlled computational cost. We demonstrate its power in two key areas: (I) evaluating highly nonlinear elementary and filtering functions on a 3D reactive flow field, enabling high-fidelity reaction rate computation and region filtering, and (II) finding extrema in complex optimization problems, such as solving Max-SAT instances on spaces up to $2^{70}$ configurations. These results establish ITNT as a foundational tool that provides tensor network methods with the capability for general-purpose data science and large-scale optimization.",
+    "title": "Iterative tensor network transformations for element-wise evaluation of elementary and filtering functions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4759024679660797
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4244365692138672
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.42439359426498413
+      }
+    ]
+  },
   "2608.17200v1": {
     "authors": [
       {
@@ -10046,6 +10210,45 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
         "score": 0.4191906452178955
+      }
+    ]
+  },
+  "2608.17249v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Toru Fujii"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.17249v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper focuses on quantum state preparation for partial differential equations on quantum computers, which is distinct from the condensed matter physics, materials science, and specific theoretical methods (like DMFT) in the liked papers, despite a tangential mention of tensor networks.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "quantum state preparation",
+      "quantum computing",
+      "NISQ"
+    ],
+    "summary": "Preparing smooth real-amplitude quantum states is a key subroutine in quantum solvers for dissipative PDEs, such as LCHS, where discretized positive weights must be encoded into amplitudes. Exact state-preparation decompositions can reach unit fidelity ideally, but their two-qubit depth grows quickly and causes severe fidelity loss on NISQ hardware. We propose a low-depth, hardware-aware variational ansatz tailored to smooth, weakly entangled, near-real target distributions typical of damped PDE dynamics. The circuit uses one layer of local Ry rotations to generate real amplitudes, a nearest-neighbor CZ entangling layer to introduce limited entanglement, and additional Rz rotations implemented virtually as frame updates. Virtual Rz operations add no physical pulses and do not increase circuit duration, providing extra degrees of freedom without enlarging the gate footprint; in simulation they are treated as ideal to isolate their benefit. From a tensor-network viewpoint, the alternating structure restricts the state to a low-bond-dimension MPS, matching the target smoothness (for 3 qubits, bond dimension <= 2). We optimize parameters with COBYLA to minimize infidelity and benchmark against exact state preparation (Qiskit) and a RealAmplitudes (CZ) baseline. Under depolarizing noise representative of NISQ and early fault-tolerant regimes, the proposed single-layer circuit achieves high ideal fidelity with O(n) depth and substantially higher noisy fidelity than deeper exact constructions. In coherent-noise sweeps, virtual Rz parameters absorb systematic phase errors and axis mismatch, maintaining near-unity fidelity over a wide error range. These results indicate that virtual-Rz-enabled, low-depth circuits provide a practical, noise-resilient state-preparation primitive for PDE solvers on NISQ and early FTQC hardware.",
+    "title": "Low-Depth and Noise-Resilient Quantum State Preparation for Partial Differential Equations via Virtual Rz",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5033813118934631
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4455750584602356
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.42318302392959595
       }
     ]
   },
@@ -10154,6 +10357,53 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
         "score": 0.5310312509536743
+      }
+    ]
+  },
+  "2608.17636v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Lucas Arenstein"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Kastoryano"
+      }
+    ],
+    "categories": [
+      "q-fin.CP",
+      "math.NA",
+      "q-fin.PR"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.17636v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper focuses on multi-asset option pricing and financial modeling, which is entirely outside the scope of condensed matter physics and material science topics previously liked.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Financial engineering",
+      "Option pricing",
+      "Tensor-train decomposition"
+    ],
+    "summary": "This paper considers European multi-asset option pricing under Lévy and affine characteristic-function models. The main obstruction is the curse of dimensionality: direct multidimensional COS pricing forms tensor-product coefficient arrays whose size grows exponentially with the number of assets. We study and extend COS-TT-CHF, a low-rank construction that uses TT-cross to compress sampled characteristic-function tensors into tensor-train COS coefficients for arithmetic basket and min/max option pricing. Once built, the compressed representation gives fast post-setup strike-grid and selected component Delta/Vega calculations. The numerical study compares with adaptive-quadrature Fourier benchmarks, direct COS, a tensor-Fourier min-option benchmark, and quasi-Monte Carlo (QMC) references based on randomized Sobol points. The reported timings show a low-dimensional crossover against direct COS as the benchmark moves from $d=2$ to $d=4$, favorable timings against the tensor-Fourier min-option benchmark from $d=3$ onward, and favorable timings against the QMC common-Heston reference already at $d=2$. The reported tests reach $d=30$ for GBM and $d=20$ for VG, NIG, and common-Heston benchmark families, with accuracy, rank, runtime, control-sensitivity, and component Delta/Vega diagnostics reported throughout.",
+    "title": "COS-TT-CHF: A Tensor-Train Characteristic-Function COS Method for Multi-Asset Option Pricing",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4578820466995239
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4212203323841095
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.3971732258796692
       }
     ]
   },
@@ -10297,6 +10547,111 @@
       }
     ]
   },
+  "2608.17885v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Niklas Paulicks"
+      },
+      {
+        "affiliation": [],
+        "name": "Johannes Tölle"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.17885v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper develops and benchmarks tensor factorization techniques for efficient many-body electronic structure calculations, a computational domain directly relevant to understanding the properties of strongly correlated materials and superconductors mentioned in the liked papers.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "tensor factorization",
+      "two-electron integrals",
+      "computational chemistry"
+    ],
+    "summary": "Finding a low-rank approximation for the two-electron integral (ERI) tensor is a crucial step towards reducing the computational cost of many-body electronic structure methods. In recent years, a range of new tensor factorization techniques, like the so-called tensor-hypercontraction (THC) approach, have been developed to achieve this goal. Unfortunately, a systematic comparison of accuracy and efficiency of different THC construction algorithms is missing. In this work, we address this gap by benchmarking these techniques across a wide range of molecular systems. In addition to offering useful insights into the advantages and disadvantages of the different techniques, we provide reference implementations in the newly developed open-source library, PyTHC.",
+    "title": "Benchmarking Least-Squares Tensor Hypercontraction Techniques for Molecular Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5495866537094116
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.47275757789611816
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.4509929418563843
+      }
+    ]
+  },
+  "2608.17980v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andrés N. Cáliz"
+      },
+      {
+        "affiliation": [],
+        "name": "Arnau Riera"
+      },
+      {
+        "affiliation": [],
+        "name": "Enrique Rico"
+      },
+      {
+        "affiliation": [],
+        "name": "João Barata"
+      },
+      {
+        "affiliation": [],
+        "name": "Marcin Płodzień"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.17980v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper investigates magnon dynamics, polaron formation, and bath-mediated pairing in a quantum many-body system, which touches upon general themes of excitations and correlations relevant to strongly correlated materials.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Magnons",
+      "Polarons",
+      "Bose-Hubbard model"
+    ],
+    "summary": "We study one- and two-magnon dynamics in a spin-$1/2$ XX chain coupled to a tunable Bose-Hubbard bath. The XX Hamiltonian transports the magnons, while the bath dresses their motion and mediates an effective attraction. A single magnon forms a mobile polaron whose retarded bosonic cloud reduces its velocity below the static Lang-Firsov prediction and generates magnon-boson entanglement. In the weak-dressing, off-resonant mobile regime, the residual velocity deficit and entanglement are governed by the excitation weight of the cloud, as captured by perturbation theory and tensor network-based real-time simulations. Transport therefore provides a model-calibrated proxy for entanglement without joint-state reconstruction. When two clouds overlap, the bath mediates a finite-range attraction, yielding finite-size evidence for a compact two-magnon bound state and a transient post-scattering signature. On-site bath interactions suppress local boson number fluctuations and stiffen the bath response, reducing entanglement and weakening ground-state binding. Bath deformability thus emerges as a common control parameter for magnon transport, entanglement, and bath-mediated pairing.",
+    "title": "Dressed magnon dynamics in a Bose-Hubbard bath: retardation, pairing, entanglement and two-magnon scattering",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5252876281738281
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5175512433052063
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.513709545135498
+      }
+    ]
+  },
   "2608.18013v1": {
     "authors": [
       {
@@ -10403,6 +10758,845 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
         "score": 0.5619177222251892
+      }
+    ]
+  },
+  "2608.18168v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ryui Kaneko"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18168v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-08-17",
+    "reasoning": "This paper explores Gutzwiller-projected BCS wave functions, a crucial theoretical tool for describing strongly correlated quantum many-body states, especially relevant to superconductivity.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Gutzwiller projection",
+      "BCS wave function",
+      "Variational Monte Carlo"
+    ],
+    "summary": "Gutzwiller-projected Bardeen--Cooper--Schrieffer (BCS) wave functions of Abrikosov fermions are widely used to describe quantum many-body states. Taking the one-dimensional transverse-field Ising model as an example, we exactly embed any even-parity spinless fermionic Gaussian state representable as a paired exponential in the chosen particle basis into a projected BCS state of spinful Abrikosov fermions. The construction provides controlled initial states for variational Monte Carlo studies of nonintegrable models.",
+    "title": "Embedding Paired Free-Fermion Gaussian States into Gutzwiller-Projected Bardeen--Cooper--Schrieffer Wave Functions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5616617798805237
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5337611436843872
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.50937819480896
+      }
+    ]
+  },
+  "2608.18267v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "M. R. Carbone"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Fomichev"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Kloss"
+      },
+      {
+        "affiliation": [],
+        "name": "A. J. Millis"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Berciu"
+      },
+      {
+        "affiliation": [],
+        "name": "D. R. Reichman"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Sous"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18267v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "green's function"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This work introduces a numerically exact method for calculating finite-temperature, momentum- and frequency-resolved single-particle Green's functions, directly addressing the challenge of real-frequency solvers for polaron problems in correlated systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Green's function methods",
+      "Thermofield double formalism",
+      "Electron-phonon interaction"
+    ],
+    "summary": "We introduce a method, numerically exact in principle, for computing the momentum- and frequency-resolved single-particle Green's function of a polaron at finite temperature. The method, which we refer to as the finite-temperature Green's function cluster expansion, combines two ingredients: the generalized Green's function cluster expansion, a numerically exact extension of the momentum average family of methods that solves the polaron problem at zero temperature through a hierarchy of equations of motion for restricted phonon cloud configurations; and the thermofield double formalism, which maps the thermal trace onto a pure-state expectation value over a doubled Hilbert space. The resulting equations of motion have the same algebraic structure as those of the multi-boson zero-temperature theory, with the temperature entering through a Bogoliubov-type mixing angle that controls the coupling to a set of fictitious bath bosons. We implement the method in our open-source software package and benchmark it on the one-dimensional Holstein polaron, computing spectral functions, dispersions, lifetimes, and effective masses across coupling regimes and temperatures up to $T/Ω\\sim 1$. Where finite-temperature density matrix renormalization group results are available, we find quantitative agreement at affordable computational cost. The method recovers momentum-resolved spectra directly in frequency space, with no time evolution or analytic continuation. We also discuss the practical costs of the approach. In particular, since the doubled phonon Hilbert space has a non-trivial configuration structure in which real and fictitious clouds compete, convergence in the corresponding cloud parameters requires care.",
+    "title": "Finite-temperature Green's function cluster expansion from thermofield doubles: Breakdown of the polaron picture",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5162694454193115
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.47640305757522583
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.47606995701789856
+      }
+    ]
+  },
+  "2608.18529v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jeet Shannigrahi"
+      },
+      {
+        "affiliation": [],
+        "name": "Janez Bonča"
+      },
+      {
+        "affiliation": [],
+        "name": "Mona Berciu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18529v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper's focus on polaron coherence and its thermal breakdown, using advanced computational methods like Momentum Average approximation and comparing with VED-FTLM/DMRG for spectral functions, aligns well with the interest in real-frequency solvers and understanding quasiparticle behavior in correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Polaron physics",
+      "Quasiparticle coherence",
+      "Finite-temperature spectral functions"
+    ],
+    "summary": "How a polaron loses its quasiparticle coherence with increasing temperature is a long-standing open problem. Holstein addressed it in 1959 only in the extreme antiadiabatic, strong-coupling limit, while more recent numerically exact approaches are largely restricted to one dimension. Here we solve this problem on square and simple cubic lattices across the weak-, intermediate-, and strong-coupling regimes. We show that the polaron effective mass $m^*$ and inverse lifetime $1/τ$ increase monotonically with temperature until, at $T \\sim 0.5\\,Ω$, the quasiparticle peak dissolves into a broad incoherent thermal continuum. The phonon frequency $Ω$ therefore defines a universal coherence scale, independent of dimensionality and coupling strength, validating Holstein's prediction far beyond the regime in which it was derived. These results follow from a finite-temperature generalization of the Momentum Average (MA) approximation, yielding a closed-form, diagrammatically derived self-energy that is asymptotically exact in the strong-coupling limit at all temperatures. Benchmark comparisons demonstrate excellent quantitative agreement of the resulting 1D spectral functions with the numerically exact Variational Exact Diagonalization-Finite-Temperature Lanczos Method (VED-FTLM) and finite-$T$ Density Matrix Renormalization Group (DMRG).",
+    "title": "Universal thermal breakdown of polaron coherence in one, two, and three dimensions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5159101486206055
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4832242429256439
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.47768786549568176
+      }
+    ]
+  },
+  "2608.18530v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "K. Imamura"
+      },
+      {
+        "affiliation": [],
+        "name": "R. Ohno"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. C. Tsuzuki"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Akui"
+      },
+      {
+        "affiliation": [],
+        "name": "R. Namba"
+      },
+      {
+        "affiliation": [],
+        "name": "K. Ishihara"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Akaki"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Kimata"
+      },
+      {
+        "affiliation": [],
+        "name": "N. Kurita"
+      },
+      {
+        "affiliation": [],
+        "name": "H. Tanaka"
+      },
+      {
+        "affiliation": [],
+        "name": "N. Kimura"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Imajo"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Matsuo"
+      },
+      {
+        "affiliation": [],
+        "name": "K. Kindo"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Matsuda"
+      },
+      {
+        "affiliation": [],
+        "name": "K. Hashimoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Mizukami"
+      },
+      {
+        "affiliation": [],
+        "name": "T. Shibauchi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18530v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper investigates Kitaev quantum spin liquids and Majorana quasiparticles in $α$-RuCl$_3$ under high magnetic fields, which aligns with interests in topological matter and exotic quantum states.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Kitaev quantum spin liquid",
+      "Majorana quasiparticles",
+      "$α$-RuCl$_3$"
+    ],
+    "summary": "Kitaev quantum spin liquids (KQSLs) host fractionalized excitations described by itinerant Majorana quasiparticles and gapped $Z_2$ fluxes (visons), providing a platform for emergent topological matter. Whether such a state survives under strong magnetic fields, however, remains an open question. The layered honeycomb magnet $α$-RuCl$_3$ is a leading candidate material: an in-plane field of $\\sim$ 7 T suppresses antiferromagnetic order and induces a quantum-disordered phase exhibiting signatures consistent with Majorana excitations, including an anomalous thermal Hall effect and field-angle-dependent specific heat. At higher fields, the magnetization approaches saturation, suggesting a transition to a spin-polarized state, yet the microscopic evolution between these limits remains unresolved. Here we report high-field specific heat measurements up to 24 T that reveal a distinct crossover at $μ_0H^*\\approx$15 T, beyond which the perturbative Kitaev description breaks down. Above $H^*$, the characteristic six-fold angular modulation of the specific heat collapses and the excitation gap deviates from the predicted $H^3$ scaling. Meanwhile, the gap decreases with increasing field and the in-plane magnetization anisotropy persists up to $\\sim$ 24 T, both in sharp contrast to a trivial spin-polarized state, indicating that KQSL signatures are preserved even at $\\sim$ 90 % of magnetization saturation. These results reveal that the KQSL in $α$-RuCl$_3$ extends well beyond the perturbative window, persisting as a nonperturbative regime in which the Majorana and vison energy scales merge, before eventually giving way to spin polarization. This thermodynamic roadmap provides a basis for understanding how fractionalized phases evolve under strong magnetic fields.",
+    "title": "High-field fate of the Kitaev quantum spin liquid in $α$-RuCl$_3$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6386108994483948
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5868152976036072
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.5646108388900757
+      }
+    ]
+  },
+  "2608.18540v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "A. A. Katanin"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18540v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper directly addresses the development of new DMFT solvers for strongly correlated electron systems, aligning perfectly with the user's interest in efficient DMFT solvers.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Hybridization expansion",
+      "Strongly correlated systems"
+    ],
+    "summary": "We present two related customized software packages, Hubb_DMFT and Wan2mb_DMFT, designed to solve the Dynamical Mean-Field Theory (DMFT) equations for strongly correlated electron systems. Hubb_DMFT is adjusted for the single-band Hubbard model, providing a fast way to calculate the local self-energy, as well as the two-particle fermion and triangular fermion-boson charge and spin vertices, while Wan2mb_DMFT extends this capability to realistic multi-orbital systems, directly interfacing Wannier tight-binding Hamiltonians with many-body solvers. Both codes are based on iQIST v.0.7 impurity solver and utilize a modified and internally integrated Continuous-Time Quantum Monte Carlo (CT-QMC) core with the hybridization expansion (CT-HYB) framework and improved self-energy and vertex estimators for density-density interaction, ensuring numerically exact solutions for quantum impurity problems.",
+    "title": "Hubb_DMFT and Wan2mb_DMFT: Continuous-Time Quantum Monte Carlo Solvers for Single- and Multi-Orbital Hubbard Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.694669246673584
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.6600717306137085
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.641660749912262
+      }
+    ]
+  },
+  "2608.18714v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Can Polat"
+      },
+      {
+        "affiliation": [],
+        "name": "Mustafa Kurban"
+      },
+      {
+        "affiliation": [],
+        "name": "Erchin Serpedin"
+      },
+      {
+        "affiliation": [],
+        "name": "Hasan Kurban"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18714v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper explores the crucial role of physical symmetry, specifically parity labels, in ensuring physically consistent predictions from machine learning models for materials, linking to the user's interest in symmetry and materials properties.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Materials informatics",
+      "Symmetry constraints",
+      "Group theory"
+    ],
+    "summary": "Machine-learned models are replacing first-principles calculations across materials discovery, and physical symmetry is the central guarantee built into them. The debate over how much symmetry to hard-wire rather than learn has run on rotations, where a symmetry error is an approximation error. Some constraints are exact: symmetry forces certain property tensors to exactly zero, so a nonzero prediction is physically impossible rather than inaccurate. Here we show that whether a model can make such predictions is decided before training by one rarely reported design bit, whether its features carry parity labels, and derive a criterion, the parity gap, that computes from group theory alone which properties and crystals are exposed. Across matched architecture pairs differing only in that bit, evaluated on two thousand centrosymmetric crystals whose piezoelectric tensor must vanish, parity-labelled arms sit at the floating-point floor while rotation-only arms predict forbidden responses on 90-96% of crystals, six orders of magnitude apart, at no accuracy cost. Training on explicit zeros does not recover exactness, and a head on a frozen universal potential inherits its backbone's symmetry group. One reflection at random initialization verifies the label in seconds.",
+    "title": "A single design choice determines whether machine learning models of materials make physically impossible predictions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4593101739883423
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4487288296222687
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3918601870536804
+      }
+    ]
+  },
+  "2608.18861v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Thomas Köhler"
+      },
+      {
+        "affiliation": [],
+        "name": "Adrian Kantian"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18861v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper utilizes quantum simulation and matrix product state methods to investigate high-$T_c$ superconductivity, directly aligning with interests in understanding complex superconducting phases.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "High-Tc superconductivity",
+      "Quantum simulation",
+      "Matrix product state"
+    ],
+    "summary": "Quantum simulation based on ultra cold atomic lattice gases is one of the most promising platforms to investigate high-$T_c$ superconductivity beyond the limited capabilities of quantum many body numerics on classical computers. Yet, despite enormous progress since the field's inception, realizing a high-$T_c$ superconducting state still remains out of reach. The present work lays the groundwork to purpose the recently proposed, and already partly realized, mixed-dimensional (mixD) models, towards this end. These systems offer the proven capability to realize very high pairing energies while retaining appreciable mobility of pairs. We specifically investigate the potential of 2D mixD-models with anisotropic tunneling, using the matrix product state plus mean field theory (MPS+MF) for fermions, and show that these models may enter a high-$T_c$ superconducting phase. These simulations in turn are based on a comprehensive characterization of the 1D mixD-systems, which are the sub-units of which the 2D system is comprized. In this, we cover the range of currently experimentally relevant system sizes, and establish practical heuristics to determine when finite\\hyp size effects preclude the use of a 1D mixD-system to build the 2D ones.",
+    "title": "Predicting critical temperature in quantum simulators for high-$T_c$ superconductivity: the matrix product state plus mean field approach",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6102134585380554
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5846334099769592
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5775837898254395
+      }
+    ]
+  },
+  "2608.18925v1": {
+    "authors": [
+      {
+        "affiliation": [
+          "I. Physikalisches Institut, Georg-August-Universität Göttingen, Germany"
+        ],
+        "name": "Jan Philipp Bange"
+      },
+      {
+        "affiliation": [
+          "Department of Ultrafast Dynamics, Max Planck Institute for Multidisciplinary Sciences, Göttingen, Germany"
+        ],
+        "name": "Till Domröse"
+      },
+      {
+        "affiliation": [
+          "Department of Ultrafast Dynamics, Max Planck Institute for Multidisciplinary Sciences, Göttingen, Germany",
+          "IV. Physikalisches Institut, Georg-August-Universität Göttingen, Germany"
+        ],
+        "name": "Claus Ropers"
+      },
+      {
+        "affiliation": [
+          "I. Physikalisches Institut, Georg-August-Universität Göttingen, Germany",
+          "International Center for Advanced Studies of Energy Conversion"
+        ],
+        "name": "Stefan Mathias"
+      },
+      {
+        "affiliation": [
+          "I. Physikalisches Institut, Georg-August-Universität Göttingen, Germany",
+          "Fachbereich Physik, Philipps-Universität Marburg, Germany",
+          "mar.quest | Marburg Center for Quantum Materials and Sustainable Technologies, Germany"
+        ],
+        "name": "Marcel Reutzel"
+      },
+      {
+        "affiliation": [],
+        "name": " ."
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.18925v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper reviews advanced ultrafast electron imaging and spectroscopy techniques specifically for probing non-equilibrium dynamics in quantum materials, which complements the user's interest in experimental probes and visualization in condensed matter physics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Ultrafast spectroscopy",
+      "Electron microscopy",
+      "Quantum materials dynamics"
+    ],
+    "summary": "Ultrafast pump-probe spectroscopies in energy and momentum have become indispensable for probing non-equilibrium dynamics in quantum materials, revealing pathways in ultrafast energy conversion and light-induced phase transitions. Different modalities uniquely access the coupled lattice, charge, and spin degrees of freedom that underpin the functionality of these materials. However, investigating technologically relevant nanoscale devices also requires high spatial resolution. Although electron microscopy provides nanometer-scale imaging, it frequently lacks the simultaneous ultrafast temporal resolution and spectroscopic specificity needed for such studies. In this perspective, we review recent advances in dark-field electron and photoelectron microscopy, focusing on two complementary techniques: femtosecond photoelectron momentum microscopy and ultrafast transmission electron microscopy. Their application enables comprehensive insights into the ultrafast dynamics of the electron, lattice, and spin subsystems. These order-selective electron imaging and spectroscopy techniques open broad scientific opportunities for a microscopic understanding of non-equilibrium phenomena in quantum materials, nanostructures and devices.",
+    "title": "Ultrafast order-selective electron imaging and spectroscopy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9yKSN-GCB0IC",
+        "score": 0.47804760932922363
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.46772056818008423
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.4503016471862793
+      }
+    ]
+  },
+  "2608.19028v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wen Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Rubem Mondaini"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19028v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "The paper directly addresses challenges in simulating strongly correlated fermion systems using determinant quantum Monte Carlo, probes interaction-driven transitions in Hubbard models, and explicitly mentions Dirac semimetals, making it highly relevant to interests in computational methods and topological/correlated materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Sign problem",
+      "Mott insulator transition"
+    ],
+    "summary": "The sign problem limits determinant quantum Monte Carlo studies of strongly correlated fermion systems. In the spin-channel Hubbard-Stratonovich decoupling, spin correlations are exactly related to auxiliary-field correlations. This relation implies that an antiferromagnetic transition reorganizes auxiliary-field configurations and thereby changes the statistical structure of the resulting fermion matrices. We use the adjacent gap ratio of low-lying singular values of the space-time fermion matrix to probe interaction-driven transitions in two half-filled honeycomb-lattice Hubbard models. In the sign-free honeycomb Hubbard model, the statistic tracks the established transition from a Dirac semimetal to an antiferromagnetic Mott insulator. In the complex-weight Haldane-Hubbard model, the transition-sensitive feature remains visible in the phase-quenched reference ensemble and occurs near previous estimates of the transition. Moreover, phase reweighting only weakly modifies the gap ratio over the regimes investigated, despite the rapid suppression of the average phase. These results establish singular-value statistics as a sign-problem-resilient probe of interaction-driven transitions in determinant quantum Monte Carlo.",
+    "title": "Sign-problem-resilient singular-value probe in determinant quantum Monte Carlo",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6614100337028503
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6580373048782349
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.636926531791687
+      }
+    ]
+  },
+  "2608.19071v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Serkan Hoşten"
+      },
+      {
+        "affiliation": [],
+        "name": "Niharika Chakrabarty Paul"
+      },
+      {
+        "affiliation": [],
+        "name": "Otto T. P. Schmidt"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitry Skurt"
+      }
+    ],
+    "categories": [
+      "math.AG",
+      "cond-mat.str-el",
+      "math.AC",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19071v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "The paper discusses theoretical mathematics related to tensor networks and algebraic geometry, which does not directly align with the user's interest in condensed matter physics, quantum materials, or computational methods for correlated systems.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Algebraic geometry",
+      "Markov models"
+    ],
+    "summary": "We show that tree tensor network varieties, including tensor train varieties, are general Markov models associated to spaced trees. This allows us to prove that the prime ideals of these varieties are generated by minors of matrix flattenings. In the case of tensor train varieties, we discuss whether these minors form a Gröbner basis and provide a combinatorial method to compute the degree for order $3$ tensor trains.",
+    "title": "Equations of Tree Tensor Network Varieties",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4143974781036377
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3302771747112274
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.28570109605789185
+      }
+    ]
+  },
+  "2608.19106v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Francesco Tavani"
+      },
+      {
+        "affiliation": [],
+        "name": "Saber Mirzaei"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Yen-hsu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Caden Myers"
+      },
+      {
+        "affiliation": [],
+        "name": "Cheng-Hung Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Milinda Abeykoon"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Billinge"
+      },
+      {
+        "affiliation": [],
+        "name": "Omar M. Yaghi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19106v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper utilizes advanced X-ray techniques (PDF) and machine learning-accelerated simulations to investigate the local structure and dynamics of materials, which aligns with the user's general interest in experimental and computational methods for materials characterization.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Covalent organic frameworks",
+      "X-ray PDF",
+      "Molecular dynamics"
+    ],
+    "summary": "Resolving and controlling the local dynamical properties of covalent organic frameworks (COFs) remains a central challenge, particularly when assembled from large, flexible building units. Here, we combine synchrotron X-ray pair distribution function (PDF) analyses with machine learning-accelerated molecular dynamics (MD) simulations to resolve the local structure and dynamics of two three-dimensional imine-linked COFs, COF-682 {[(DHP)(TAM)]$_{imine}$}, assembled from 6,13-dihydropentacene (DHP) and tetrakis(4-aminophenyl)methane (TAM), and COF-612 {[(HBC-LA$_{12}$)(HAPT)$_2$]$_{imine}$}, assembled from nanographene dodecabenzaldehyde hexakis{[3,5-bis($p$-formylphenyl)-4,6-dimethoxyphenyl]}hexabenzocoronene (HBC-LA$_{12}$) and 2,3,6,7,14,15-hexa(4-aminophenyl)triptycene (HAPT). Validated against the experimental PDFs through ensemble-averaged calculations, the simulations show that the exposed $π$-surface and V-shaped geometry of the DHP linker endow COF-682 with enhanced local flexibility through face-to-face and offset $π$-stacking interactions differing in both their average interplanar separation and their ring-plane tilt angle. In contrast, the extended nanographene linker rigidifies COF-612 by maintaining the planarity of its fused cores, while the linker pendant aryl rings equip both COFs with enhanced librational ability. The simulations further provide quantitative measures of the translational and reorientational mobility of the linkers, revealing how local COF dynamics may be tuned by balancing non-covalent interactions and different degrees of aromatic rigidity. The PDF-MD experimental-computational approach holds promise as a general method beyond conventional crystallography to gain insights into the local properties of COFs with the aim of directing their dynamic function.",
+    "title": "Local Structure and Dynamics of Three-Dimensional Covalent Organic Frameworks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.3538944721221924
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.3399368226528168
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.3239322304725647
+      }
+    ]
+  },
+  "2608.19116v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Denis Blessing"
+      },
+      {
+        "affiliation": [],
+        "name": "Mouyang Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Maximilian Schebek"
+      },
+      {
+        "affiliation": [],
+        "name": "Jutta Rogal"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingda Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Carles Domingo-Enrich"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuanqi Du"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19116v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "The paper's development of a neural sampler for disordered materials, capable of exploring vacancies and dopants in various semiconductors, connects to the previously liked topics concerning oxygen vacancies and doping in nickelate and infinite-layer oxides.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Disordered materials",
+      "Machine learning for materials",
+      "Defect engineering"
+    ],
+    "summary": "Many problems in disordered materials require sampling beyond fixed composition and volume, where coupled changes in atomic identities and structure create a prohibitively expensive discrete-continuous sampling problem. Here we introduce JANUS, a multimodal neural sampler that couples continuous and masked discrete diffusion through an equivariant graph neural network trained directly from energy evaluations, without pre-generated equilibrium data. In benchmark Ising and isobaric $ΔμNPT$ alloy systems, JANUS reproduces reference Monte Carlo equilibrium observables and recovers free energies and phase behavior with more than three orders of magnitude fewer energy evaluations. In multicomponent alloys, JANUS enables conditional steering toward prescribed chemical short-range order and enhanced bulk modulus and, when coupled to a large language model evolutionary agent, performs efficient inverse design for balanced optical and mechanical properties. In semiconductors like silicon and diamond, JANUS explores vacancies and dopants spanning 15 elements in grand-canonical $μVT$ ensembles, recovers established defects including the silicon $E$ centre, and identifies new candidate defect pairs and triplets for quantum engineering, including S-Ti in silicon and B-O-O in diamond, with deep in-gap states validated by hybrid-functional density functional theory. By unifying discrete site identities with continuous structural and volumetric relaxation, JANUS provides a foundation for thermodynamic sampling, characterization and inverse design of chemically disordered materials.",
+    "title": "JANUS: A Multi-modal Foundation Neural Sampler for Disordered Materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5029445290565491
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5000943541526794
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.4908362925052643
+      }
+    ]
+  },
+  "2608.19117v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "John Mangum"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Glaws"
+      },
+      {
+        "affiliation": [],
+        "name": "Francois Usseglio-Viretta"
+      },
+      {
+        "affiliation": [],
+        "name": "Steven Spurgeon"
+      },
+      {
+        "affiliation": [],
+        "name": "Donal Finegan"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19117v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper focuses on enhancing EBSD throughput for battery materials using machine learning, which is not directly related to the fundamental physics of superconductivity, strong correlations, or topological materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "EBSD",
+      "Machine learning",
+      "Battery materials"
+    ],
+    "summary": "Quantitative microstructural characterization of Li-ion battery electrode materials using electron backscatter diffraction (EBSD) has been proven as a critical method for optimizing cell performance. However, the inherently slow nature of EBSD can hinder the throughput of analyses needed for statistical representation of a material microstructure being developed. This work demonstrates a machine learning super-resolution framework using a generative adversarial network (SRGAN) to significantly increase EBSD throughput. The SRGAN model was trained on EBSD data of LiNixMnyCozO2 (NMC) cathode particles to computationally enhance low-resolution datasets and its performance is compared against classical interpolation methods across various upscaling factors (2x to 12x). Both qualitative image metrics and quantitative microstructural analysis verified that the SRGAN systematically outperformed classical methods, particularly in preserving small grains and maintaining realistic grain boundaries. We demonstrate that a 5x upscaling factor, corresponding to a 25x speed-up in acquisition time or a 25x larger field of view, is practical while maintaining acceptable accuracy in key metrics like grain size and shape. For instance, at 5x upscaling, relative errors were +5.7%, +8.2%, and -14.6% on grain area-equivalent diameter, grain maximum sphere-inscribed diameter, and grain boundary length, respectively. The SRGAN methodology developed in this work significantly enhances the efficiency of EBSD acquisition for more statistically robust microstructural dataset, enabling EBSD as a high-throughput characterization tool for materials research and industrial process development.",
+    "title": "Enhancing EBSD throughput of battery electrode materials using super-resolution generative adversarial networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3430511951446533
+      },
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.3270307779312134
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.31023693084716797
+      }
+    ]
+  },
+  "2608.19178v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daiki Sasamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Arnaud Ralko"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaime Merino"
+      },
+      {
+        "affiliation": [],
+        "name": "Joji Nasu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19178v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper investigates spin dynamics and quantum spin liquid phases in Kitaev magnets using a Schwinger-boson mean-field theory, aligning with interests in correlated materials, competing phases, and theoretical calculations of dynamical (real-frequency) properties.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum spin liquids",
+      "Kitaev model",
+      "Spin dynamics"
+    ],
+    "summary": "The Kitaev model is a paradigmatic system for realizing quantum spin liquids, but its higher-spin extensions are not exactly solvable, and their spin dynamics is less well understood than in the spin-1/2 case. In this work, we reexamine a previously introduced triplet-pairing $φ_t = π/2$ phase pattern for the antiferromagnetic $S = 1$ Kitaev model and extend the analysis to weak symmetric off-diagonal exchanges $Γ$ and $Γ'$. Using a bond-operator formulation of Schwinger-boson mean-field theory, we calculate the dynamical spin structure factor for the triplet 0-flux and triplet $π/2$-flux Ansätze with a spin-correlation scheme appropriate for Kitaev interactions. In the pure Kitaev limit, the $π/2$-flux Ansatz yields a flatter spectrum than the 0-flux Ansatz. The real-space spin correlations show that the $π/2$-flux Ansatz suppresses longer-distance correlations more strongly than the 0-flux Ansatz, yielding a correlation pattern closer to the short-ranged form expected in the Kitaev limit. This comparison shows that the flatness of $S(\\boldsymbol{q}, ω)$ is tied to short-ranged spin correlations and is therefore an important consistency check, although it is not, by itself, a diagnostic of time-reversal-symmetry breaking. We then study weak off-diagonal exchanges along $Γ' = Γ$ near the pure Kitaev limit, taking the same-sign relation from analyses of candidate spin-1 Kitaev materials. Gapped solutions are obtained within the constrained $π/2$-flux manifold, and the spectra share the qualitative energy- and momentum-space features found by finite-size exact diagonalization. Taken together, these results support the triplet $π/2$-flux chiral bosonic Ansatz as a useful mean-field description of spin dynamics near the antiferromagnetic $S = 1$ Kitaev limit with weak off-diagonal exchanges.",
+    "title": "Chiral bosonic mean-field Ansatz and spin dynamics in spin-1 Kitaev magnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6147103309631348
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5909362435340881
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5345368385314941
       }
     ]
   }
