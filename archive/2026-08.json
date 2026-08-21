@@ -10870,6 +10870,128 @@
       }
     ]
   },
+  "2608.18267v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "M. R. Carbone"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Fomichev"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Kloss"
+      },
+      {
+        "affiliation": [],
+        "name": "A. J. Millis"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Berciu"
+      },
+      {
+        "affiliation": [],
+        "name": "D. R. Reichman"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Sous"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.18267v2",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "green's function"
+    ],
+    "published_date": "2026-08-18",
+    "reasoning": "This paper introduces a numerically exact method for computing finite-temperature Green's functions, which is highly relevant to the user's interest in efficient real-frequency solvers and correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Polaron problem",
+      "Thermofield double",
+      "Green's function methods"
+    ],
+    "summary": "We introduce a method, numerically exact in principle, for computing the momentum- and frequency-resolved single-particle Green's function of a polaron at finite temperature. The method, which we refer to as the finite-temperature Green's function cluster expansion, combines two ingredients: the generalized Green's function cluster expansion, a numerically exact extension of the momentum average family of methods that solves the polaron problem at zero temperature through a hierarchy of equations of motion for restricted phonon cloud configurations; and the thermofield double formalism, which maps the thermal trace onto a pure-state expectation value over a doubled Hilbert space. The resulting equations of motion have the same algebraic structure as those of the multi-boson zero-temperature theory, with the temperature entering through a Bogoliubov-type mixing angle that controls the coupling to a set of fictitious bath bosons. We implement the method in our open-source software package and benchmark it on the one-dimensional Holstein polaron, computing spectral functions, dispersions, lifetimes, and effective masses across coupling regimes and temperatures up to $T/Ω\\sim 1$. Where finite-temperature density matrix renormalization group results are available, we find quantitative agreement at affordable computational cost. The method recovers momentum-resolved spectra directly in frequency space, with no time evolution or analytic continuation. We also discuss the practical costs of the approach. In particular, since the doubled phonon Hilbert space has a non-trivial configuration structure in which real and fictitious clouds compete, convergence in the corresponding cloud parameters requires care.",
+    "title": "Finite-temperature Green's function cluster expansion from thermofield doubles: Breakdown of the polaron picture",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5162694454193115
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4764029383659363
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.4760700464248657
+      }
+    ]
+  },
+  "2608.18511v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuqing Rong"
+      },
+      {
+        "affiliation": [],
+        "name": "Huan-Hai Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Guo-Yi Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinguo Liu"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.18511v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper focuses on efficient computational methods using tensor networks (PEPS) and monitored quantum circuits for two-dimensional quantum many-body systems, directly aligning with the user's interest in advanced solvers for complex quantum problems and mentioning DMRG.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Network Methods",
+      "Quantum Simulation",
+      "Monitored Quantum Circuits"
+    ],
+    "summary": "Projected entangled pair states (PEPS) provide an efficient variational ansatz for two-dimensional quantum phases, but computing observables remains challenging because PEPS contraction is generally costly.   Here, we parameterize two-dimensional quantum states using variational PEPS subject to isometric constraints and map the resulting ansatz onto monitored quantum circuits, replacing tensor-network contraction with circuit sampling.   For infinite cylinders, the transfer matrix defines a quantum channel on the virtual boundary. We use a fixed-point treatment and a monitored-circuit unraveling of this channel to evaluate observables efficiently.   Using a constant number of variational parameters and a number of qubits that scales only with the cylinder width, our method yields a phase diagram for the $J_1$-$J_2$ model in qualitative agreement with DMRG results.   Because the monitored circuits are compatible with near-term quantum hardware, this approach provides a hybrid quantum-classical framework for simulating two-dimensional quantum many-body systems.",
+    "title": "Sampling isometric tensor network states with monitored quantum circuits",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6497102975845337
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5469922423362732
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4899757504463196
+      }
+    ]
+  },
   "2608.18529v1": {
     "authors": [
       {
@@ -10889,7 +11011,9 @@
       "cond-mat.str-el",
       "cond-mat.mtrl-sci"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2608.18529v1",
     "matching_keywords": [
@@ -10912,11 +11036,11 @@
       },
       {
         "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
-        "score": 0.4832242429256439
+        "score": 0.4832243025302887
       },
       {
         "liked_paper_id": "2506.22302v1",
-        "score": 0.47768786549568176
+        "score": 0.47768789529800415
       }
     ]
   },
@@ -11141,7 +11265,9 @@
       "cond-mat.supr-con",
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2608.18861v1",
     "matching_keywords": [
@@ -11160,15 +11286,68 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.11227v1",
-        "score": 0.6102134585380554
+        "score": 0.6102133393287659
       },
       {
         "liked_paper_id": "2507.01856v1",
-        "score": 0.5846334099769592
+        "score": 0.5846333503723145
       },
       {
         "liked_paper_id": "2506.21480v1",
-        "score": 0.5775837898254395
+        "score": 0.5775836110115051
+      }
+    ]
+  },
+  "2608.18901v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gustav J L Jäger"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin B Plenio"
+      },
+      {
+        "affiliation": [],
+        "name": "Hans-Martin Rieser"
+      }
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": "10.14428/esann/2025.ES2025-157",
+    "id": "2608.18901v1",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper explores tensor network learning where the matrix product state represents a quantum state and is optimized using an adaptation of DMRG, directly connecting machine learning techniques with computational methods for quantum systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Machine Learning",
+      "Matrix Product States",
+      "DMRG Optimization"
+    ],
+    "summary": "Tensor Networks are a relatively new machine learning approach. The architectures proposed initially are inspired by approaches from quantum many-body physics simulations. One common layout is the matrix product state (MPS) also known as a tensor train optimized with gradient descent techniques. We introduce a global normalization condition, so that the MPS represents a quantum state. We investigate two optimization methods that find the locally optimal tensors and compare them regarding their effectiveness. One is based on gradient descent and the other on an adaptation of DMRG.",
+    "title": "Quantum Tensor Network Learning with DMRG",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.64444500207901
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5736787915229797
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5635080337524414
       }
     ]
   },
@@ -11320,7 +11499,9 @@
       "math.AC",
       "physics.chem-ph"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2608.19071v1",
     "matching_keywords": [
@@ -11339,15 +11520,15 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.23550v1",
-        "score": 0.4143974781036377
+        "score": 0.41439738869667053
       },
       {
         "liked_paper_id": "2506.20106v1",
-        "score": 0.3302771747112274
+        "score": 0.33027714490890503
       },
       {
         "liked_paper_id": "2506.22574v1",
-        "score": 0.28570109605789185
+        "score": 0.28570103645324707
       }
     ]
   },
@@ -11597,6 +11778,543 @@
       {
         "liked_paper_id": "2506.14703v1",
         "score": 0.5345368385314941
+      }
+    ]
+  },
+  "2608.19368v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Paolo Bosques-Paulet"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.19368v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper focuses on numerical algorithms for general high-dimensional diffusion equations, which is too broad and lacks specific connections to quantum many-body physics or correlated materials.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Tensor decomposition",
+      "High-dimensional PDEs",
+      "Numerical integrators"
+    ],
+    "summary": "This paper presents a high-order rank-adaptive implicit integrator for the tensor solution of high-dimensional diffusion equations. We extend the 3D version of this method from the Tucker decomposition to higher dimensions using the hierarchical Tucker (HT) decomposition, since the storage complexity for the Tucker decomposition increases exponentially with the number of dimensions $d>3$. The HT format avoids this issue by decomposing the solution according to a binary tree consisting of bases for each dimension and core tensors which connect the bases. Spectral methods are considered for spatial discretization, and diagonally implicit Runge-Kutta methods are considered for time discretization. At each stage of the Runge-Kutta method, the bases computed at the previous stages are augmented to predict the upcoming basis and construct projection subspaces. By projecting onto these enriched subspaces, the bases and cores can be updated in a sequential manner going up the tree from leaf-to-root. Unlike the 3D Tucker method which has a single core tensor, the HT method also updates the intermediate core tensors. Numerical experiments demonstrate that the method observes high-order accuracy, and test how well the integrator captures the solution rank for various sets of time-dependent diffusion coefficients.",
+    "title": "A High-Order Rank-Adaptive Implicit Algorithm for Solving High Dimensional Diffusion Equations using the Hierarchical Tucker Decomposition",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3633498549461365
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3179664611816406
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.29407456517219543
+      }
+    ]
+  },
+  "2608.19428v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yi-Yu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Song Cheng"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.19428v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper explores holographic entanglement entropy and quantum information flow using tensor networks, which has connections to quantum information and condensed matter but might be somewhat tangential to the user's primary focus on correlated electron systems and superconductivity.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Holographic entanglement",
+      "Quantum information flow",
+      "Tensor network geometry"
+    ],
+    "summary": "Bit threads, arising as the convex dual of the minimal-surface formula for holographic entanglement entropy, are line-like structures with nontrivial bulk trajectories. Their physical picture has long been associated with Bell-pair interpretations, yet the meaning of their detailed trajectories, particularly their nonuniqueness, remains unclear. We propose to apply Coecke's notion of quantum information flow (QIF) in protocol-network geometry, developed within categorical quantum mechanics, to a holographic setup, and show that its trajectories within the discrete holographic bulk---the tensor network---obey the divergence-free and density-bound conditions of bit threads. From this process-centered perspective, bit-thread nonuniqueness becomes natural: for a given resource state, different protocols realizing the same distillation task can give rise to different QIF trajectories. We further analyze stabilizer-type holographic tensor networks using ZX string diagrams and show that QIF trajectories can probe finer entanglement structure beyond the level captured by entanglement entropy.",
+    "title": "Holographic Bit Threads from String-Diagrammatic Quantum Information Flow",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4285694360733032
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.42281481623649597
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.3826412260532379
+      }
+    ]
+  },
+  "2608.19582v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jonathan Daniel"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Y. Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Jesse Hernandez"
+      },
+      {
+        "affiliation": [],
+        "name": "Emanuel Suarez"
+      },
+      {
+        "affiliation": [],
+        "name": "Sangwoo Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinhee Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Je-Hyung Kim"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19582v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "This paper focuses on machine learning for sensor calibration, which does not directly align with the user's interests in condensed matter theory, correlated materials, or superconductivity.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "NV centers",
+      "Quantum sensing",
+      "Machine learning calibration"
+    ],
+    "summary": "Ensemble nitrogen-vacancy (NV) centers in diamond enable robust vector magnetometry in unshielded environments, yet deployment remains bottlenecked by complex calibration and a reliance on external data references. Conventional statistical machine learning requires an exorbitantly large volume of training data and suffers from severe simulation-to-reality mismatches. To address this, we introduce a physics-guided hybrid machine learning framework that embeds the Zeeman splitting directly into the learning pipeline. Our physics-guided model significantly reduces the average tracking error demonstrating a 372-fold precision improvement over purely statistical baselines. Furthermore, our hybrid architecture pairs a sparse physical measurement with scalable synthetic data generation, seamlessly incorporating real-world hardware non-idealities. When deployed to decode uncalibrated, raw experimental ODMR data, our framework delivers exceptional predictive accuracy for the scalar magnetic field. This work paves the way toward self-calibrated sensors while establishing a machine learning training method applicable to other data-scarce physical systems",
+    "title": "Physics-guided machine learning for sim-to-real calibration of NV diamond magnetometers",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.48353153467178345
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4732564091682434
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.45339179039001465
+      }
+    ]
+  },
+  "2608.19725v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rong Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruo-Yu Ning"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhi-Hua Yan"
+      },
+      {
+        "affiliation": [],
+        "name": "Si Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19725v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "This paper identifies novel topological phases, specifically mirror Chern insulators and Weyl points, in altermagnetic materials, directly aligning with the user's previous interest in topological materials and symmetry-protected states.",
+    "score": 0.88,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Mirror Chern Insulator",
+      "Weyl Points"
+    ],
+    "summary": "The interplay between altermagnetism and crystalline band topology provides an intriguing avenue for realizing unconventional topological phases with distinctive spin-dependent properties. Here, based on first-principles calculations and theoretical analysis, we identify monolayer $\\mathrm{Tc}_2X_2\\mathrm{O}$ ($X$ = Cl, Br) as a family of two-dimensional altermagnetic mirror Chern insulators. In the absence of spin--orbit coupling (SOC), both monolayers exhibit robust altermagnetism with mirror-spin coupling and host two symmetry-protected Weyl points in each spin channel near the Fermi level. The Weyl points in opposite spin channels carry distinct mirror-symmetry eigenvalues, $m_z=\\pm i$. Upon inclusion of SOC, the Weyl points are gapped, and the two mirror sectors acquire opposite Chern numbers, ${\\cal {C}}_{+}=1$ and ${\\cal {C}}_{-}=-1$, resulting in a nonzero mirror Chern number ${\\cal {C}}_m=1$. A low-energy $k\\cdot p$ model captures the symmetry protection of the Weyl points and elucidates their SOC-induced mass gaps and topological character. Furthermore, the resulting mirror Chern insulating phases host helical edge states within the bulk band gap and exhibit a quantized spin Hall conductivity. Our work establishes a direct connection between altermagnetism and mirror Chern topology and provides a promising platform for exploring unconventional topological and spin-dependent phenomena in two-dimensional altermagnetic materials.",
+    "title": "Mirror Chern insulators in two-dimensional altermagnetic Tc$_2$Cl$_2$O and Tc$_2$Br$_2$O",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5953447222709656
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5636154413223267
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5295730233192444
+      }
+    ]
+  },
+  "2608.19789v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Michal A. Sterzel"
+      },
+      {
+        "affiliation": [],
+        "name": "Marko J. Rančić"
+      }
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.19789v1",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "Although this paper utilizes quantum-inspired tensor network methods, its primary application is classical machine learning for image denoising, which diverges significantly from the condensed matter physics and computational physics topics of the user's liked papers.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum-Inspired AI",
+      "Image Denoising",
+      "Tensor Train"
+    ],
+    "summary": "Developed as a workhorse for classical simulations of quantum algorithms and quantum many-body systems, Tensor Network methods have entered the scientific mainstream in quantum physics. Among various types of tensor networks, Tensor Trains (commonly know as Matrix Product States in the quantum computing community) have already found applications in machine learning. These methods often rely on a powerful linear algebra tool called the Singular Value Decomposition (SVD). Several conditional GAN architectures for image denoising incorporate SVD as a single-cut decomposition step applied to generator feature maps. In this work we introduce TT-Net, which replaces the per-channel SVD denoising block with a two-cut tensor-train decomposition capable of accessing cross-channel information directly, a capability absent from contemporary alternatives. In a controlled comparison differing only in this decomposition mechanism, TT-Net outperforms SVD-Net on PSNR and SSIM across all three noise types tested (Gaussian, motion blur, and salt-and-pepper), supporting the hypothesis that cross-channel access improves denoising quality. Training-dynamics analysis further shows that TT-Net's adversarial loss term consistently saturates to a stagnant state across all three noise types, more so than SVD-Net's, while reconstruction quality continues to improve regardless, raising an open question about the adversarial component's contribution that this work identifies but does not resolve. Furthermore, for Gaussian noise our method outperforms both the EigenGAN and the state of the art Pix2pix method which does not assume any linear algebra decompositions and does not retain any linear algebra information. Our manuscript shows how quantum inspired tools can be used as practical real world feature filters for deep learning applications.",
+    "title": "TT-net: Quantum Inspired Tensor Network Denoising in Conditional GANs",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.507192850112915
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4837230443954468
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4061737656593323
+      }
+    ]
+  },
+  "2608.20131v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiani Fu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zewen Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Eduardo Ibarra-García-Padilla"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20131v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "It explores numerical techniques and mean-field theory for strongly correlated SU(N) Fermi Hubbard models, which is broadly relevant to the user's interest in theoretical methods for such systems, though in a different physical platform (ultracold atoms).",
+    "score": 0.55,
+    "suggested_keywords": [
+      "SU(N) Fermi Hubbard Model",
+      "Quantum Gas Microscopy",
+      "Structural Complexity"
+    ],
+    "summary": "Two-dimensional quantum gas microscopy provides an unparalleled tool to study quantum many-body systems using ultracold atoms. For the SU(2) Fermi Hubbard model (FHM), access to spin-resolved projective measurements has been vital for quantifying correlation functions and mapping out the phase diagram. Recent progress in quantum gas microscopy for experiments with ultracold alkaline-earth atoms, which are well described by the SU(N) FHM and are predicted to host exotic ground-state phases, calls for the development of theory-free numerical techniques to extract physical information from their projective measurements. To that end, we evaluate the multiscale structural complexity of snapshots of an SU(3) FHM in the square lattice at $1/3$-filling. We employ mean-field theory to generate spin-resolved density distributions and compute their structural complexity using rectangular coarse-graining windows. We demonstrate that these complexities are linked to relevant physical observables such as the entanglement entropy, and are extremely sensitive for locating phase boundaries. The results presented here validate the structural complexity as an efficient and reliable tool for analyzing the outputs of SU(N) quantum gas microscopes, offering a theory-free property, immediately accessible to experiments.",
+    "title": "Structural complexity of an SU(3) Fermi Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6315169334411621
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.625733494758606
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5753548741340637
+      }
+    ]
+  },
+  "2608.20199v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hongbin Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinkwon Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Desheng Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Dasol Yoon"
+      },
+      {
+        "affiliation": [],
+        "name": "Darrell G. Schlom"
+      },
+      {
+        "affiliation": [],
+        "name": "David A. Muller"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20199v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "This paper directly investigates oxygen dopant distribution in cuprate superconductors using an atomic-scale visualization technique, aligning perfectly with previous interests in cuprates, oxygen vacancies, and visualization methods.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Electron Ptychography",
+      "Strain Engineering",
+      "Dopant Clustering"
+    ],
+    "summary": "Oxygen dopants play a critical role in tuning the properties of cuprate superconductors, yet it is challenging to visualize them at the atomic scale. Here, we use multislice electron ptychography to directly image oxygen dopants in a Sr2CuO3+delta film. We observe oxygen dopants at interstitial sites between the Cu-O chains, with a strong preference for clustering in tensile-strained regions, which are often associated with dislocations and interfacial steps. These findings indicate that the oxygen dopant distribution in cuprates is not random but rather sensitive to strain field, suggesting strain as a doping tuning parameter.",
+    "title": "Three-dimensional imaging of oxygen dopant distribution in Sr$_2$CuO$_{3+δ}$ by electron ptychography",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.6094592213630676
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.5883787274360657
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:BqipwSGYUEgC",
+        "score": 0.5862427949905396
+      }
+    ]
+  },
+  "2608.20221v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiao Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jianda Wu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.20221v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-20",
+    "reasoning": "The paper's focus on universal meson spectra near (1+1)D Ising criticality is theoretically distinct from the user's previously liked topics, which are primarily centered on material-specific superconductors, doping, and topological semimetals.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Ising Criticality",
+      "Meson Spectra",
+      "Hamiltonian Truncation"
+    ],
+    "summary": "Near $(1+1)$-dimensional [$(1+1)$D] Ising criticality, a magnetic perturbation induces confinement and produces a cascade of bound-state excitations known as mesons. Here we show these mesons share a universal mass scaling after independently rescaling the model-dependent microscopic couplings. The number of stable mesons is controlled by the lightest two-meson threshold, while the lightest-meson mass follows a continuous trajectory characterized by a single scaling parameter. Using Hamiltonian truncation method, we obtain the trajectory numerically in both Ising field theory and the near-critical mixed-field Ising chain (MFIC). Under the rescaling, the trajectory and stable-meson-count crossover windows of MFIC both collapse onto the field-theory results. To further demonstrate the above universal organization of the meson spectra, we consider a class of four-periodic spin-$1/2$ Heisenberg-Ising chains under transverse fields, whose parameter space contains a family of quantum Ising critical points. The Hamiltonian family includes effective spin models for the quasi-one-dimensional antiferromagnets Ba(Sr)Co$_2$V$_2$O$_8$. Using tensor-network calculations, we obtain the corresponding lightest-meson mass trajectory for BaCo$_2$V$_2$O$_8$ and find that it also collapse onto the same universal curve given by field-theory result. Our results suggest that the universal scaling structure of quantum Ising criticality extends into the nearby confining regime, governing the organization of the meson spectrum. They thereby provide a practical criterion for interpreting excitations of quasi-1D Ising-like magnets in mixed fields beyond $E_8$ integrability.",
+    "title": "Universal meson spectra near $(1+1)$-dimensional Ising criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5722419023513794
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5233243107795715
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5143107175827026
+      }
+    ]
+  },
+  "2608.20269v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tetsuya Iwasaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Hosho Katsura"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20269v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "This paper investigates nonlinear transport properties and the Mott metal-insulator transition in the one-dimensional Hubbard model using exact methods, directly relevant to the user's interest in correlated electron systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Hubbard model",
+      "Bethe ansatz",
+      "Mott transition"
+    ],
+    "summary": "We investigate nonlinear Drude weights (NLDWs) in the one-dimensional repulsive Hubbard model by combining exact Bethe-ansatz calculations with low-energy effective field theory. At quarter filling, we first derive the strong-coupling expansion of the NLDWs and confirm it numerically over a wide range of interaction strength. We then compare the numerical results with the prediction of the Tomonaga-Luttinger liquid (TLL) description including irrelevant perturbations. While band-curvature corrections yield finite contributions to higher-order NLDWs, the Umklapp interaction predicts divergent NLDWs when the order $n$ of the Drude weight exceeds a threshold determined by the TLL parameter. In contrast, finite-size scaling of the exact Bethe-ansatz results indicates that all calculated NLDWs remain finite in the thermodynamic limit, revealing a discrepancy between the exact results and the predictions of the low-energy effective field theory. At half filling, we analyze the finite-size scaling of the NLDWs across the Mott metal-insulator transition. We derive their asymptotic behavior in the insulating phase and propose a hyperscaling ansatz for NLDWs near the critical point, which is verified numerically. Our results clarify the interaction dependence and critical scaling of nonlinear transport coefficients in the one-dimensional Hubbard model and highlight limitations of the conventional low-energy effective description for higher-order transport.",
+    "title": "Nonlinear Drude weight of the one-dimensional Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5818271636962891
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5649955868721008
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.546115517616272
+      }
+    ]
+  },
+  "2608.20310v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Khanh Duy Nguyen"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabriele Berruto"
+      },
+      {
+        "affiliation": [],
+        "name": "Yunhe Bai"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Marchese"
+      },
+      {
+        "affiliation": [],
+        "name": "Woojoo Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Haoran Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiangang Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chong Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Shirley Meng"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuolong Yang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20310v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "It investigates light-induced exciton condensates and their BEC-BCS crossover in a topological material, connecting directly to interests in superconductivity, quasiparticle pairing, topological phases, and experimental spectroscopy.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Exciton Condensate",
+      "BEC-BCS Crossover",
+      "Time-Resolved ARPES"
+    ],
+    "summary": "Exciton condensates provide a platform to study quasiparticle pairing, Bose-Einstein condensation-Bardeen-Cooper-Schrieffer (BEC-BCS) crossover, and excitonic topological phenomena. Achieving a nonequilibrium exciton condensate allows the ultimate tunability of these emergent phenomena. Yet, evidence of a light-induced, nonequilibrium exciton condensate and its BEC-BCS crossover remains elusive. Here, we use time- and angle-resolved photoemission spectroscopy to demonstrate signatures of a non-equilibrium exciton condensate and its BEC-BCS crossover in monolayer MnBi2Te4. Following optical excitation, a distinctive hole-like dispersion representing excitons emerges and persists for >20 ps. Strikingly, energy-domain sharpening in the valence band occurs 2 ps after time zero and exhibits a sharp onset at a threshold pump fluence of 0.84 mJ/cm2. The delayed and strongly nonlinear response is difficult to reconcile with transient field effects or conventional carrier-induced band shifts but is consistent with a model of exciton condensation governed by a Berezinskii-Kosterlitz-Thouless transition. The estimated threshold exciton density agrees quantitatively with the Nelson-Kosterlitz critical density. At higher fluences, the exciton feature develops a camel-back-shaped dispersion, consistent with the BEC-BCS crossover in the condensate framework. Our work establishes ultrathin MnBi2Te4 as a model system for studying nonequilibrium exciton condensates with a connection to superconductivity and exciton-driven topological phases.",
+    "title": "Signatures of a light-induced exciton condensate exhibiting BEC-BCS crossover",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.5148799419403076
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.4864732623100281
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.47390255331993103
       }
     ]
   }
