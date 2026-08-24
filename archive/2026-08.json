@@ -11044,6 +11044,58 @@
       }
     ]
   },
+  "2608.18529v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jeet Shannigrahi"
+      },
+      {
+        "affiliation": [],
+        "name": "Janez Bonča"
+      },
+      {
+        "affiliation": [],
+        "name": "Mona Berciu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.18529v2",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper investigates polaron coherence and spectral functions in strongly correlated systems using advanced computational methods, aligning well with the user's interest in DMFT and the many-body physics of cuprates.",
+    "score": 0.88,
+    "suggested_keywords": [
+      "Polarons",
+      "Electron-Phonon Coupling",
+      "Spectral Function"
+    ],
+    "summary": "How a polaron loses its quasiparticle coherence with increasing temperature is a long-standing open problem. Holstein addressed it in 1959 only in the extreme antiadiabatic, strong-coupling limit, while more recent numerically exact approaches are largely restricted to one dimension. Here we solve this problem on square and simple cubic lattices across the weak-, intermediate-, and strong-coupling regimes. We show that the polaron effective mass $m^*$ and inverse lifetime $1/τ$ increase monotonically with temperature until, at $T \\sim 0.5\\,Ω$, the quasiparticle peak dissolves into a broad incoherent thermal continuum. The phonon frequency $Ω$ therefore defines a universal coherence scale, independent of dimensionality and coupling strength, validating Holstein's prediction far beyond the regime in which it was derived. These results follow from a finite-temperature generalization of the Momentum Average (MA) approximation, yielding a closed-form, diagrammatically derived self-energy that is asymptotically exact in the strong-coupling limit at all temperatures. Benchmark comparisons demonstrate excellent quantitative agreement of the resulting 1D spectral functions with the numerically exact Variational Exact Diagonalization-Finite-Temperature Lanczos Method (VED-FTLM) and finite-$T$ Density Matrix Renormalization Group (DMRG).",
+    "title": "Universal thermal breakdown of polaron coherence in one, two, and three dimensions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5159101486206055
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4832242429256439
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.47768786549568176
+      }
+    ]
+  },
   "2608.18530v1": {
     "authors": [
       {
@@ -11587,6 +11639,79 @@
       "Covalent organic frameworks",
       "X-ray PDF",
       "Molecular dynamics"
+    ],
+    "summary": "Resolving and controlling the local dynamical properties of covalent organic frameworks (COFs) remains a central challenge, particularly when assembled from large, flexible building units. Here, we combine synchrotron X-ray pair distribution function (PDF) analyses with machine learning-accelerated molecular dynamics (MD) simulations to resolve the local structure and dynamics of two three-dimensional imine-linked COFs, COF-682 {[(DHP)(TAM)]$_{imine}$}, assembled from 6,13-dihydropentacene (DHP) and tetrakis(4-aminophenyl)methane (TAM), and COF-612 {[(HBC-LA$_{12}$)(HAPT)$_2$]$_{imine}$}, assembled from nanographene dodecabenzaldehyde hexakis{[3,5-bis($p$-formylphenyl)-4,6-dimethoxyphenyl]}hexabenzocoronene (HBC-LA$_{12}$) and 2,3,6,7,14,15-hexa(4-aminophenyl)triptycene (HAPT). Validated against the experimental PDFs through ensemble-averaged calculations, the simulations show that the exposed $π$-surface and V-shaped geometry of the DHP linker endow COF-682 with enhanced local flexibility through face-to-face and offset $π$-stacking interactions differing in both their average interplanar separation and their ring-plane tilt angle. In contrast, the extended nanographene linker rigidifies COF-612 by maintaining the planarity of its fused cores, while the linker pendant aryl rings equip both COFs with enhanced librational ability. The simulations further provide quantitative measures of the translational and reorientational mobility of the linkers, revealing how local COF dynamics may be tuned by balancing non-covalent interactions and different degrees of aromatic rigidity. The PDF-MD experimental-computational approach holds promise as a general method beyond conventional crystallography to gain insights into the local properties of COFs with the aim of directing their dynamic function.",
+    "title": "Local Structure and Dynamics of Three-Dimensional Covalent Organic Frameworks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.3538944721221924
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.3399368226528168
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.3239322304725647
+      }
+    ]
+  },
+  "2608.19106v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Francesco Tavani"
+      },
+      {
+        "affiliation": [],
+        "name": "Saber Mirzaei"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Yen-hsu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Caden Myers"
+      },
+      {
+        "affiliation": [],
+        "name": "Cheng-Hung Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Milinda Abeykoon"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon J. L. Billinge"
+      },
+      {
+        "affiliation": [],
+        "name": "Omar M. Yaghi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.19106v2",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-19",
+    "reasoning": "This paper focuses on local structure and dynamics of Covalent Organic Frameworks using X-ray PDF and ML-accelerated MD, which is a different material class and physics domain than previously liked topics.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Covalent organic frameworks",
+      "Molecular dynamics",
+      "X-ray PDF"
     ],
     "summary": "Resolving and controlling the local dynamical properties of covalent organic frameworks (COFs) remains a central challenge, particularly when assembled from large, flexible building units. Here, we combine synchrotron X-ray pair distribution function (PDF) analyses with machine learning-accelerated molecular dynamics (MD) simulations to resolve the local structure and dynamics of two three-dimensional imine-linked COFs, COF-682 {[(DHP)(TAM)]$_{imine}$}, assembled from 6,13-dihydropentacene (DHP) and tetrakis(4-aminophenyl)methane (TAM), and COF-612 {[(HBC-LA$_{12}$)(HAPT)$_2$]$_{imine}$}, assembled from nanographene dodecabenzaldehyde hexakis{[3,5-bis($p$-formylphenyl)-4,6-dimethoxyphenyl]}hexabenzocoronene (HBC-LA$_{12}$) and 2,3,6,7,14,15-hexa(4-aminophenyl)triptycene (HAPT). Validated against the experimental PDFs through ensemble-averaged calculations, the simulations show that the exposed $π$-surface and V-shaped geometry of the DHP linker endow COF-682 with enhanced local flexibility through face-to-face and offset $π$-stacking interactions differing in both their average interplanar separation and their ring-plane tilt angle. In contrast, the extended nanographene linker rigidifies COF-612 by maintaining the planarity of its fused cores, while the linker pendant aryl rings equip both COFs with enhanced librational ability. The simulations further provide quantitative measures of the translational and reorientational mobility of the linkers, revealing how local COF dynamics may be tuned by balancing non-covalent interactions and different degrees of aromatic rigidity. The PDF-MD experimental-computational approach holds promise as a general method beyond conventional crystallography to gain insights into the local properties of COFs with the aim of directing their dynamic function.",
     "title": "Local Structure and Dynamics of Three-Dimensional Covalent Organic Frameworks",
@@ -12315,6 +12440,484 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
         "score": 0.47390255331993103
+      }
+    ]
+  },
+  "2608.20596v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Abraham A. Mancilla"
+      },
+      {
+        "affiliation": [],
+        "name": "Oliver A. Dicks"
+      },
+      {
+        "affiliation": [],
+        "name": "Solveig S. Aamlid"
+      },
+      {
+        "affiliation": [],
+        "name": "Mario Ulises González-Rivas"
+      },
+      {
+        "affiliation": [],
+        "name": "Karl Tsang"
+      },
+      {
+        "affiliation": [],
+        "name": "Dongjoon Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Jörg Rottler"
+      },
+      {
+        "affiliation": [],
+        "name": "Alannah M. Hallas"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20596v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-20",
+    "reasoning": "This paper describes the machine learning-guided discovery of new oxide materials, which broadly connects to the user's interest in novel oxides like nickelate superconductors, although the specific physics differs.",
+    "score": 0.55,
+    "suggested_keywords": [
+      "High Entropy Oxides",
+      "Machine Learning",
+      "Materials Discovery"
+    ],
+    "summary": "Early thinking in the field of high entropy oxides (HEOs) emphasized their likely abundance, with combinatorial arguments hinting at a myriad of new materials. The experimental reality has proven more challenging: the stability of HEOs cannot be straightforwardly predicted based on ionic radii, lattice geometry, and charge-balancing considerations alone. In this work, we employ machine learning interatomic potentials (MLIPs) to predict the synthesizability of HEOs of the form $A_2$O$_3$ derived from a selection of trivalent cations. From nearly 500 possible compositions, we identify 16 promising candidates for experimental validation with solid-state and combustion synthesis. We discover three new HEOs in the corundum structure, including (Al,Cr,Fe,Rh,Sc)$_2$O$_3$, and one novel cation-ordered phase, (Al,Fe,Ga,Sc)$_2$O$_3$. By far the most common synthesis outcome was a mixture of competing phases, sometimes involving redox reactions. Our results also reveal profound synthesis method dependence for the final product, where qualitatively equivalent outcomes between the two synthesis methods were only observed for 3 of the 16 tested compositions. We conclude that the occurrence rate of HEOs is far rarer than initially believed and that machine learning approaches can effectively guide us to the \"needle in the haystack\".",
+    "title": "Machine Learning Guided Discovery of Corundum High Entropy Oxides",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5148521661758423
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.49581781029701233
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.4454500675201416
+      }
+    ]
+  },
+  "2608.20760v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Umesh Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Gonzalo Alvarez"
+      },
+      {
+        "affiliation": [],
+        "name": "David Alan Tennant"
+      },
+      {
+        "affiliation": [],
+        "name": "Satoshi Okamoto"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20760v1",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This paper investigates quantum wake dynamics using RIXS, detailing how different spectroscopic channels resolve many-body propagation and providing a strong link to previous interests in RIXS and correlated materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "RIXS",
+      "Quantum magnets",
+      "Fractionalized excitations"
+    ],
+    "summary": "Quantum wake dynamics in quantum magnets have recently been inferred from the dynamical spin structure factor, which probes only a restricted class of local perturbations. Here, we show that resonant inelastic x-ray scattering (RIXS) selection rules act as an operator filter on fractionalized excitations, producing distinct quantum wakes in the spin-$\\frac{1}{2}$ Heisenberg antiferromagnetic chain. Using explicit real-time evolution of single-spin and spin-conserving bond correlators, we find that the conventional spin response propagates up to the maximum spinon velocity, $v_s=\\fracπ{2} J$, whereas the bond channels concentrate their spectral weight into a slower dominant wake with $v\\simeq 0.92 J$, while weaker components remain bounded by the full spinon light cone. The corresponding momentum- and frequency-resolved responses map onto experimentally accessible RIXS channels, demonstrating that different spectroscopic perturbations resolve complementary pathways of many-body propagation beyond the neutron-scattering spin structure factor. Their inelastic spectral weights further provide access to quantum Fisher information, while equal-time bond sum rules connect the same spectroscopic channels to the ground-state energy. Because the same correlators can be prepared and measured on quantum hardware, they also define direct, experimentally anchored benchmarks for quantum simulations, particularly in frustrated and higher-dimensional magnets where controlled classical real-time calculations become challenging.",
+    "title": "Quantum Wake Dynamics from Distinct Spectroscopic Perturbations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.5904307961463928
+      },
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.5586435198783875
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5311335921287537
+      }
+    ]
+  },
+  "2608.20849v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andras Molnar"
+      },
+      {
+        "affiliation": [],
+        "name": "Efekan Kökcü"
+      },
+      {
+        "affiliation": [],
+        "name": "Norbert Schuch"
+      },
+      {
+        "affiliation": [],
+        "name": "Bojko N. Bakalov"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20849v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This paper explores SO(3)-symmetric spin models and their critical ground state properties using Matrix Product States, relevant for fundamental understanding of strongly correlated systems and computational methods.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Spin models",
+      "Matrix Product States",
+      "Ground state degeneracy"
+    ],
+    "summary": "We introduce an $\\mathrm{SO}(3)$-symmetric spin model derived from the algebraic structure of $\\mathfrak{so}(3)$: It is obtained as the nearest-neighbor parent Hamiltonian of a Matrix Product State (MPS) built from the generators of the Lie algebra $\\mathfrak{so}(3)$ and the identity matrix, and therefore encodes the quadratic relations of the Lie algebra. We characterize the ground space structure of the resulting model and show that for open boundary conditions (OBC), it exhibits a quadratic ground space degeneracy, given by one irreducible representation (irrep) of each odd dimension (integer spin). For periodic boundary conditions (PBC), it has a linear ground space degeneracy, consisting of a singlet --- namely, the MPS underlying the model --- and a ferromagnet (the irrep with maximal spin), and thus exhibits gapless excitations. We also generalize the construction and the analysis of the OBC ground space to $\\mathrm{SO}(d)$ and other compact simple Lie groups.   The MPS on which the model is based is an injective MPS, and therefore, its 3-site parent Hamiltonian has a unique ground space and is gapped. The observed critical behavior thus has its origin in the small parent Hamiltonian considered. The model's algebraic ground space scaling thus provides an example distinct from that reported in (Schuch et al., 2025, arXiv:2503.10767), where it was shown that small parent Hamiltonians of injective MPS generically have unique ground states, and examples with an exponential ground space degeneracy were given.",
+    "title": "Spin models with critical ground space degeneracy from Lie algebra relations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5929624438285828
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5154805183410645
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4561682343482971
+      }
+    ]
+  },
+  "2608.20994v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Leyu Cai"
+      },
+      {
+        "affiliation": [],
+        "name": "Yunzhe Jia"
+      },
+      {
+        "affiliation": [],
+        "name": "Daqiang Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Sheng Meng"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.20994v1",
+    "matching_keywords": [
+      "machine learning",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This work presents TDAP-eML, a scalable framework integrating machine-learned electronic structure with atomistic propagation for photoexcitation-induced lattice dynamics, offering efficient computational insights into material behavior.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Machine-learned Hamiltonians",
+      "Photoexcitation dynamics",
+      "FeSe"
+    ],
+    "summary": "Ultrafast photoexcitation offers a controllable route to steer structural dynamics in solids, yet predicting how nonequilibrium electronic excitation drives lattice motion across extended spatial and temporal scales remains a major computational challenge. Here we introduce time-dependent ab-initio propagation with electronic machine learning (TDAP-eML), a framework that explicitly incorporates electronic evolution into scalable simulations of photoexcitation-induced lattice dynamics. By integrating machine-learned electronic structure with atomistic propagation, TDAP-eML describes how photoexcitation reshapes the evolving energy landscapes and forces governing structural motion. Across representative examples including silicon and FeSe, the framework reproduces key photoexcited lattice responses obtained from first-principles time-dependent density functional theory calculations and captures coherent phonon dynamics together with their dependence on excitation conditions. Its computational advantage increases with system size, reaching nearly three orders of magnitude reduction in computational cost for the large systems examined. TDAP-eML thus establishes a scalable framework for coupled electronic and lattice evolution, linking nonequilibrium excitation to photoinduced forces, predictive structural dynamics, and experimentally accessible observables.",
+    "title": "Scalable photoexcitation-induced molecular dynamics with machine-learned Hamiltonians",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5517505407333374
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.537713348865509
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.504611611366272
+      }
+    ]
+  },
+  "2608.21029v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "David Jacob"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefan Kurth"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.21029v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This paper investigates the doping-driven Mott transition in the Hubbard model using a computational method related to strongly correlated electron systems, aligning with the interest in DMFT and cuprate physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Mott Transition",
+      "i-DFT",
+      "Hubbard Model"
+    ],
+    "summary": "The doping-driven Mott transition in the Hubbard model is described within the frame- work of steady-state density functional theory, or i-DFT. In order to access the many-body spectral function in i-DFT, an approximation for the exchange-correlation (xc) bias at arbitrary density and current is required. By using Fermi-liquid theory, a connection between the xc bias of i-DFT and the quasiparticle weight of many-body theory is derived and the results are employed to guide the construction of the approximation. Numerical results obtained with this functional demonstrate that the doping-driven Mott transition can indeed be captured with i-DFT.",
+    "title": "Doping-driven Mott transition from steady-state density functional theory",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.6203127503395081
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.614359438419342
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.5674980282783508
+      }
+    ]
+  },
+  "2608.21284v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dongwook Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Karsten Held"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.21284v1",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This paper directly addresses the universal features of mid-infrared optical conductivity in cuprate superconductors, explaining them through the interplay of pseudogap and Mott-Hubbard correlations, which strongly aligns with previous interests.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate Superconductors",
+      "Optical Conductivity",
+      "Pseudogap"
+    ],
+    "summary": "Mid-infrared (MIR) optical conductivities in cuprate superconductors show universal features. In this study, we demonstrate that these originate from two distinct gaps: the pseudogap mediated by antiferromagnetic spin fluctuations and the Mott-Hubbard gap. The MIR spectra from these two gaps show a characteristic and distinct shape and doping dependence, and can thus be distinguished. Specifically, the Mott-Hubbard correlations, while rendering a peak in the visible spectrum for small dopings, yield a broad optical response starting in the MIR when a ``waterfall'' develops in the one-particle spectrum at larger dopings. The numerically and analytically determined doping-dependence of both gaps consistently reproduce experiments, and provide a unified microscopic understanding of the cuprate MIR optical conductivity.",
+    "title": "Two distinct gap structures in the mid-infrared optical conductivity of the Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.710275411605835
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.670012891292572
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.6103851795196533
+      }
+    ]
+  },
+  "2608.21291v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jonas B. Rigo"
+      },
+      {
+        "affiliation": [],
+        "name": "Björn J. Wurst"
+      },
+      {
+        "affiliation": [],
+        "name": "Rajah Nutakki"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Schmitt"
+      },
+      {
+        "affiliation": [],
+        "name": "Dante Kennes"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.21291v1",
+    "matching_keywords": [
+      "neural quantum state"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This perspective reviews Neural Quantum States as a flexible variational method for quantum many-body wave functions, highly relevant to efficiently solving strongly correlated condensed-matter systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Neural quantum states",
+      "Variational methods",
+      "Strongly correlated matter"
+    ],
+    "summary": "Neural quantum states provide flexible variational representations of quantum many-body wave functions by combining neural-network parametrizations with Monte Carlo sampling. In this perspective, we review recent advances in their application to condensed-matter systems, focusing on frustrated quantum magnets, interacting lattice fermions, and non-equilibrium dynamics. We discuss the architectures, symmetry constraints, optimization methods, and sampling strategies underlying state-of-the-art calculations, and summarize practical guidelines for reliable simulations. We also examine the principal remaining challenges, including learning non-trivial sign and phase structures, controlling variational bias, enforcing physical symmetries, scaling optimization to large networks, and achieving stable real-time evolution. Finally, we outline promising directions in which neural quantum states may extend the reach of classical simulations of strongly correlated quantum matter.",
+    "title": "Neural quantum states in condensed matter: advances, best practices, and prospects",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6449758410453796
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6281362175941467
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.6277894973754883
+      }
+    ]
+  },
+  "2608.21316v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ankit Labh"
+      },
+      {
+        "affiliation": [],
+        "name": "Ross H. Colman"
+      },
+      {
+        "affiliation": [],
+        "name": "Jakub Šebesta"
+      },
+      {
+        "affiliation": [],
+        "name": "Noah Oefele"
+      },
+      {
+        "affiliation": [],
+        "name": "Elsa Lhotel"
+      },
+      {
+        "affiliation": [],
+        "name": "Adam Berlie"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Steffens"
+      },
+      {
+        "affiliation": [],
+        "name": "Oksana Zaharko"
+      },
+      {
+        "affiliation": [],
+        "name": "Pascal Manuel"
+      },
+      {
+        "affiliation": [],
+        "name": "Iurii Kibalin"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp Gegenwart"
+      },
+      {
+        "affiliation": [],
+        "name": "Dominik Legut"
+      },
+      {
+        "affiliation": [],
+        "name": "Johanna K. Jochum"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander A. Tsirlin"
+      },
+      {
+        "affiliation": [],
+        "name": "Petr Čermák"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2608.21316v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-08-21",
+    "reasoning": "This paper focuses on ultralow-field triplon condensation and quantum criticality in a spin-ladder magnet, which is quite distinct from the user's interests in high-Tc cuprates, nickelates, or computational methods for strongly correlated electrons.",
+    "score": 0.25,
+    "suggested_keywords": [
+      "Triplon Condensation",
+      "Spin Ladders",
+      "Quantum Criticality"
+    ],
+    "summary": "We realise the first ultralow-field Bose-Einstein condensation of triplons in a spin-ladder magnet, uncovering a quantum critical point at only $μ_0 H_{c1}=0.17$ T in Henmilite ($\\mathrm{Ca_2Cu(OH)_4[B(OH)_4]_2}$). Unlike dimer magnets, a ladder retains extended one-dimensional correlations in its gapped parent state, making this limit strongly fluctuation dominated. Thermodynamic, magnetoelastic, $μ$SR, and neutron-diffraction measurements overturn the previous assignment of zero-field antiferromagnetic order, establishing a quantum-disordered coupled-ladder parent state with persistent low-energy dynamics. The weak low-temperature anomaly instead marks a gap-controlled crossover from the correlated ladder regime into the activated quantum-disordered state. These measurements further reveal an exceptionally asymmetric ordered dome extending to $μ_0 H_{c2}\\simeq 8.2$ T. Quantum Monte Carlo simulations for the relevant spin Hamiltonian place Henmilite just on the gapped side of the zero-field ladder-ordering instability, naturally accounting for the strong separation between the exchange and residual-gap scales and the tiny critical field. Our findings extend ultralow-field triplon condensation beyond the dimer paradigm and establish Henmilite as a platform for controlled tuning across quantum criticality in a fluctuation-dominated spin ladder.",
+    "title": "Ultralow-Field Triplon Condensation in a Spin-Ladder Magnet",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6024146676063538
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.541705310344696
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.516890287399292
       }
     ]
   }
