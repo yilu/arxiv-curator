@@ -20536,5 +20536,99 @@
         "score": 0.5573620796203613
       }
     ]
+  },
+  "2608.21368v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Domenico Pomarico"
+      },
+      {
+        "affiliation": [],
+        "name": "Giuseppe Magnifico"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Grecucci"
+      },
+      {
+        "affiliation": [],
+        "name": "Loredana Bellantuono"
+      },
+      {
+        "affiliation": [],
+        "name": "Jesus M. Cortes"
+      },
+      {
+        "affiliation": [],
+        "name": "Marianna La Rocca"
+      },
+      {
+        "affiliation": [],
+        "name": "Alfonso Monaco"
+      },
+      {
+        "affiliation": [],
+        "name": "Marlis Ontivero-Ortega"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Scarano"
+      },
+      {
+        "affiliation": [],
+        "name": "Massimo Stella"
+      },
+      {
+        "affiliation": [],
+        "name": "Roberto Bellotti"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastiano Stramaglia"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicola Amoroso"
+      }
+    ],
+    "categories": [
+      "q-bio.NC",
+      "physics.data-an"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2608.21368v1",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-06-19",
+    "reasoning": "This paper applies a quantum-inspired tensor network framework, specifically Matrix Product States from quantum many-body systems, to analyze brain networks, bridging a relevant method with an unrelated application domain.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Tensor Network Machine Learning",
+      "Matrix Product State",
+      "Brain Network Analysis"
+    ],
+    "summary": "Identifying robust neurobiological signatures of brain disorders requires machine learning approaches that combine predictive performance with interpretable representations of feature interactions. Here we introduce a quantum-inspired framework based on tensor network machine learning that learns distributed representations of gray-matter features encoded in a Matrix Product State representation, a variational ansatz originally developed for quantum many-body systems. The trained model is then used not only as a classifier but to extract quantum connected correlations between features, which encode higher-order feature interactions and which we map onto a weighted graph. This construction allows us to track, within a single representation, both: (i) the global spectral properties of the network (capturing collective learning dynamics), and (ii) node-level centrality measures (providing interpretable signatures of individual brain regions). Using repeated train-test sampling schemes, we analyze two classification tasks on structural MRI data as examples of complex brain disorders: healthy controls versus schizophrenia and versus bipolar disorder. Node-level analysis identifies a stable set of gray-matter features, most prominently Heschl gyrus, insular cortex, and frontal regions, that act as hubs across multiple centrality measures and across resamplings. These centralities display lower variability across resamplings than Shapley values, supporting the interpretive value of the network representation. The bipolar feature set emerges as a subset of the schizophrenia one, consistent with the hierarchically organized neuroanatomical alterations reported in neuroimaging studies and offering a network-based characterization of this hierarchy.",
+    "title": "A Tensor Network Framework for Interpretable Graph Analysis of Brain Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5601150989532471
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5293439626693726
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5220566987991333
+      }
+    ]
   }
 }
