@@ -18149,5 +18149,387 @@
         "score": 0.48536258935928345
       }
     ]
+  },
+  "2609.00099v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bharath M N"
+      },
+      {
+        "affiliation": [],
+        "name": "R K Singh Raman"
+      },
+      {
+        "affiliation": [],
+        "name": "Alankar Alankar"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.00099v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper focuses on generative AI for corrosion prediction in materials engineering, which is distinct from the user's core interests in quantum many-body physics, superconductivity, and specific material systems.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Generative AI",
+      "Corrosion engineering",
+      "Knowledge synthesis"
+    ],
+    "summary": "Corrosion accounts for approximately 4% of global GDP, and reliable prediction is essential for timely mitigation. Machine learning effectively predicts corrosion rates from composition, microstructure, and environmental variables, but cannot explain the underlying mechanisms. A reliable approach in safety-critical materials engineering requires not only accurate retrieval but also mechanistically defensible reasoning, a capability that existing factuality metrics cannot assess. This work presents a domain-adapted retrieval-augmented generation framework for corrosion knowledge synthesis, demonstrated on magnesium alloy corrosion. Three open-weight language models (Llama-3.1-8B, Qwen-2.5-7B, Mistral-7B) are fine-tuned on 3,309 expert-verified question-answer pairs from 840 peer-reviewed papers and integrated with a hybrid dense-lexical retrieval pipeline. Retrieval augmentation produces Token F1 gains of 143-194%, with system faithfulness of 0.964 and context recall of 0.988. Blind external validation on newly published literature and in-house electrochemical data confirms trend-level generalisation. Reason Map, a proposition-graph framework, is further introduced; it independently constructs directed evidence graphs from generated answers and retrieved literature, enabling systematic detection of causal direction inversions and unsupported inferential leaps that flat factuality metrics cannot expose. The modular architecture can be applied across domains, offering a generalizable blueprint for trustworthy AI-assisted knowledge synthesis to circumvent corrosion, which can also be applied to other engineering domains.",
+    "title": "Generative artificial intelligence for reliable mechanistic reasoning for corrosion",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.5440142750740051
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.28045302629470825
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.2621345520019531
+      }
+    ]
+  },
+  "2609.00124v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Peizhi Mai"
+      },
+      {
+        "affiliation": [],
+        "name": "Philip W. Phillips"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.00124v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper directly investigates the information encoded in Green functions in strongly correlated matter, linking to Mott transitions and charge-ordering phases, which is highly relevant to DMFT and competing phases in correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Green Function Zeros",
+      "Mott Physics",
+      "Correlated Insulators"
+    ],
+    "summary": "While correlated insulators are devoid of low-energy quasiparticle poles, their Green functions retain clean momentum structure through zeros. However, precisely what zeros imply is not clear. By studying the extended Hubbard model both analytically and numerically, we establish a new paradigm for strongly correlated matter: the dispersion of Green function zeros is determined by both microscopic spin-spin correlations and defect kinematics. In fact, we find that the dispersion changes discontinuously across the transition between the Mott and the checkerboard charge-density wave phases as is expected for a first-order transition. This physics is robust to the inclusion of further neighbor hopping which simply fine tunes the spin-correlation or charge-defect kinematics. We conclude that it is the {\\it dispersion} of the Green-function zeros that encode the physics of ordering resultant from the strong correlations.",
+    "title": "Green-function Zeros Encode Competing Mott and Charge-ordering Scales",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6234439611434937
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6127928495407104
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.5838723182678223
+      }
+    ]
+  },
+  "2609.00145v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sam Oaks-Leaf"
+      },
+      {
+        "affiliation": [],
+        "name": "David T. Limmer"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.00145v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper focuses on the kinetics and morphological symmetry breaking in nanocrystal growth, a domain distinct from the electronic structure or strongly correlated physics themes of the user's liked papers.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Nanocrystal Growth",
+      "Morphological Asymmetry",
+      "Kinetic Wulff Construction"
+    ],
+    "summary": "The kinetic Wulff construction predicts symmetric nonequilibrium shapes when crystallographically equivalent facets share a fixed growth rate. However, nanocrystals grow through finite facets whose nucleation barriers and ligand coverages depend on facet size. Here we develop a size-dependent kinetic construction and show that as a consequence infinitesimal seed asymmetries can be amplified into strongly asymmetric nanocrystal morphologies even when all symmetry-related facets obey the same microscopic growth law. Spatially heterogeneous nucleation rates and boundary limited growth generate facet growth velocities that depend on size, and deterministic shape evolution translates these local rates into global shape symmetry breaking. We illustrate the mechanism of persistent anisotropic growth on square and triangular lattices in two dimensions and on FCC seeds in three dimensions, where cuboctahedra can evolve toward rods or tetrahedra depending on which facet-area perturbations are amplified.",
+    "title": "Size-Dependent Growth Rates Amplify Infinitesimal Asymmetry in Nanocrystals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3691188097000122
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.3443434238433838
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.33693695068359375
+      }
+    ]
+  },
+  "2609.00148v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiangyuan Qian"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2609.00148v1",
+    "published_date": "2026-08-31",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Non-commutative sphere regularization of CFT has become a powerful tool for computing conformal data of 3d CFTs and was recently extended to 4d CFTs. In this work we further construct 5d free-scalar CFT and Yang-Lee CFT on a fuzzy 4-sphere. We observe a continuous phase transition and conformal towers in these examples. We obtain the first three scalar primaries of the 5d free-scalar CFT, furthermore, we compute the 5d Yang-Lee $Δ_φ,Δ_{φ^3}$ with $N_e=10$ fermions using exact diagonalization (ED) and $N_e=20$ fermions using density matrix renormalization group (DMRG), obtaining relatively good agreement with both $ε$-expansion and the Gliozzi truncated bootstrap result.",
+    "title": "Regulating Free-scalar and Yang--Lee 5d CFTs on the Fuzzy Four Sphere",
+    "vector_matches": []
+  },
+  "2609.00159v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexios Christopoulos"
+      },
+      {
+        "affiliation": [],
+        "name": "João Costa"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Scopa"
+      },
+      {
+        "affiliation": [],
+        "name": "Jacopo De Nardis"
+      },
+      {
+        "affiliation": [],
+        "name": "Zala Lenarčič"
+      },
+      {
+        "affiliation": [],
+        "name": "Denis Bernard"
+      },
+      {
+        "affiliation": [],
+        "name": "Tony Jin"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.00159v1",
+    "matching_keywords": [],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper directly investigates non-equilibrium dynamics and macroscopic fluctuation theory in interacting quantum many-body systems, using tensor-network simulations, strongly aligning with the user's core interests in quantum physics and computational methods.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Non-equilibrium quantum matter",
+      "Macroscopic fluctuation theory",
+      "XXZ spin chain"
+    ],
+    "summary": "A universal characterization of non-equilibrium steady states in interacting quantum many-body systems remains one of the central challenges of statistical physics. Here, we address this problem for a paradigmatic model of diffusive interacting quantum matter---the boundary-driven XXZ spin chain with bulk dephasing---and derive, directly from its microscopic Lindblad dynamics, an emergent classical Macroscopic Fluctuation Theory (MFT) governing its large-scale fluctuations. Crucially, the resulting hydrodynamics carries a density-dependent diffusivity and mobility as the fingerprint of interactions. This effective description enables the exact computation of the stationary density profile, long-range correlations, and the full counting statistics of the current, in excellent agreement with tensor-network simulations. Our work demonstrates that noisy quantum many-body systems can realize the universality class of genuinely interacting diffusive matter, beyond the constant-diffusivity class of the symmetric simple exclusion process, and establishes MFT as a powerful universal framework for interacting diffusive quantum systems.",
+    "title": "Nonlinear Fluctuating Hydrodynamics from Interacting Noisy Quantum Matter",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.504315972328186
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.500943660736084
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.4785766899585724
+      }
+    ]
+  },
+  "2609.00169v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nicola Pancotti"
+      },
+      {
+        "affiliation": [],
+        "name": "Vedika Saravanan"
+      },
+      {
+        "affiliation": [],
+        "name": "Krysta Svore"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.00169v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper utilizes tensor networks, a powerful computational tool in quantum many-body physics, to develop a principled method for learning quantum noise models relevant to quantum error correction.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum noise",
+      "Tensor networks",
+      "Quantum error correction"
+    ],
+    "summary": "Accurate noise models are essential for high-performance quantum error correction, yet characterizing the noise of a quantum device typically requires dedicated experiments. We present a variational framework that learns the noise model directly from quantum-error-correction syndrome and logical-observable data collected during error-corrected memory experiments. The fault-event probabilities are treated as variational parameters and optimized via gradient descent to minimize the binary cross-entropy between the decoder's predictions and experimental logical-observable outcomes. We prove that this objective is principled rather than ad hoc: a sufficiently expressive noise ansatz attains the information-theoretic minimum logical error rate. We instantiate this framework using a tensor-network decoder, which provides exact maximum-likelihood decoding and analytically differentiable gradients with respect to all noise parameters. Using circuit-level data from Google's Sycamore processor, and starting from an uninformed prior, the optimization recovers noise models whose logical error rates agree to within $2\\%$ with those of Google's independently characterized detector error model. The mean squared error between the learned and reference noise parameters shows a clear overall decrease throughout training, confirming that the method recovers physically meaningful noise structure, not merely parameters that happen to decode well. We further demonstrate that the optimization can track device drifts in real time via warm-started updates, maintaining near-optimal decoding performance under synthetically evolving noise without the need for re-characterization. The approach is decoder-agnostic in its formulation and naturally extends to correlated noise models.",
+    "title": "Exact learning of quantum noise with tensor networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.515437662601471
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.511195719242096
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4738183617591858
+      }
+    ]
+  },
+  "2609.00277v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu-Han Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Jin-Wei Dong"
+      },
+      {
+        "affiliation": [],
+        "name": "Ziqiang Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Sen Zhou"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.00277v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper explores symmetry-guided engineering of p-wave magnetism and spin splitting in correlated bilayer systems using the Hubbard model, strongly connecting to interests in symmetry, magnetism, and competing electronic phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "p-wave Magnetism",
+      "Symmetry Engineering",
+      "Antiferromagnetic Bilayers"
+    ],
+    "summary": "We propose a symmetry-guided route to engineer tunable $p$-wave magnetism in a bilayer system composed of two AB-stacked antiferromagnetic square lattices with their collinear moments nonparallel to each other. We show that an in-plane relative shift between the two layers selectively breaks the symmetries protecting spin degeneracy while preserving time-reversal-related constraints, thereby generating odd-parity spin splitting in a fully compensated magnetic state without spin-orbit coupling. The direction and the magnitude of the resulting $p$-wave spin-splitting, together with the associated spin responses, can be continuously tuned by the in-plane displacement, providing a potential knob for control. We further map the bilayer system onto an effective bond-modulated square lattice and investigate the corresponding Hubbard model within a mean-field framework. The calculated phase diagram reveals extended regions where $p$-wave magnetism with coplanar or chiral spin textures emerges spontaneously. Our results establish a minimal equilibrium platform for realizing and manipulating $p$-wave magnetism in two-dimensional systems.",
+    "title": "Engineering tunable $p$-wave magnetism in antiferromagnetic bilayers",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.662420928478241
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5687476396560669
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5488501191139221
+      }
+    ]
+  },
+  "2609.00359v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Steven J. Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Govinda Anantha Padmanabha"
+      },
+      {
+        "affiliation": [],
+        "name": "D. Thomas Seidl"
+      },
+      {
+        "affiliation": [],
+        "name": "Nikolaos Bouklas"
+      }
+    ],
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.00359v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-08-31",
+    "reasoning": "This paper focuses on machine learning for hyperelastic constitutive models in engineering materials, which is unrelated to the electronic structure, correlated electron physics, or topological materials previously favored by the user.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Hyperelasticity",
+      "Material Modeling",
+      "Neural Potentials"
+    ],
+    "summary": "Hyperelastic constitutive models enable modeling large deformations in elastic solids. In common practice, a strain energy density function is prescribed in advance and model-specific parameters are calibrated from experiments. However, many applications require constitutive models for a family of related materials whose mechanical behavior varies with composition. A fixed constitutive model-form may not capture the full range of behavior across the family, while fitting separate forms does not provide a direct way to predict the response of new compositions. Recent work has developed data-driven constitutive models that learn flexible strain energy functions while incorporating key physical constraints. In this work, we propose using mixtures of convex neural potentials based on input convex neural networks as a modular and data efficient approach to modeling material families. Each potential is convex and monotonic with respect to polyconvex strain invariants, while a conditioning network maps material descriptors to mixture weights. We compare the approach with a monolithic partially input-convex neural network using experimental data from PolyJet 3D-printed materials and a synthetic Gent-type benchmark. Across both benchmarks, the mixture architecture generalized better to material descriptors not seen during training. In the PolyJet experimental benchmark, we showed that the mixture architecture is less sensitive to model hyperparameters, while in the Gent-type benchmark it generalized more reliably with sparse data in the material-descriptor space. These results suggest that representing a material family through a small set of shared convex neural potentials provides a useful structural prior for learning descriptor-dependent constitutive behavior from limited data.",
+    "title": "Mixture of Polyconvex Neural Potentials for Parametric Hyperelasticity: Towards Foundation Material Models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.36937806010246277
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3266587555408478
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.30528926849365234
+      }
+    ]
   }
 }
