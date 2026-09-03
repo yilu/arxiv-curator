@@ -46,14 +46,40 @@
         "name": "Hai-Hu Wen"
       }
     ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.00542v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
     "published_date": "2026-09-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly investigates bilayer Ruddlesden-Popper nickelates, their synthesis, structural properties, and electronic structure in the context of high-temperature superconductivity, strongly aligning with previous interests in nickelate materials and correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Ruddlesden-Popper nickelates",
+      "High-Tc superconductivity",
+      "DFT calculations"
+    ],
     "summary": "High-temperature superconductivity has been found in bilayer Ruddlesden-Popper (RP) nickelates in bulk samples under high pressure, or in thin films via compressive strain. In the superconducting state, a tetragonal structure with a straight Ni-O-Ni bond along c-axis has been commonly observed, together with the suppression or diminishing of the density-wave orders. Therefore, it remains an open question whether these factors are sufficient for achieving superconductivity at ambient pressure. Here we report the first successful synthesis of heavily Sr-doped La$_{2}$SrNi$_{2}$O$_{7-δ}$ under high-pressure and high-temperature (HPHT) conditions with a flux method. X-ray diffraction and scanning transmission electron microscopy (STEM) confirm that the material adopts a tetragonal (I4/mmm) structure with an 180$^{\\circ}$ Ni-O-Ni bond angle along c-axis. Resistance measurements reveal metallic behavior with a low-temperature upturn and no density-wave features are observed. However, neither pressure nor oxygen variation induces superconductivity. Density functional theory calculations indicate that the holes introduced by Sr doping are predominantly doped into the Ni-3d$_{z^2}$ orbital, leading to the appearance of a very large $γ$ pocket on the Fermi surface at ambient pressure and significantly reducing the occupation of the Ni-3d$_{z^2 }$ orbital. Combining the experimental observations with theoretical calculations, we attribute the absence of superconductivity to the serious deviation from the half-filling state of the Ni-3d$_{z^2 }$ band, which is crucial for the interlayer antiferromagnetic interaction and thus for pairing. Our work unravels important issues for achieving superconductivity in bilayer nickelate system.",
     "title": "Heavily Sr-Doped La$_{2}$SrNi$_{2}$O$_{7-δ}$ as a Tetragonal Ruddlesden-Popper Phase at Ambient Pressure",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.7942140698432922
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.7331418991088867
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6893697381019592
+      }
+    ]
   },
   "2609.00722v1": {
     "authors": [
@@ -130,14 +156,40 @@
         "name": "Zhihong Chen"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.00722v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-09-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper applies machine learning to optimize the fabrication of 2D TMD FETs, relating to the general interest in 2D materials and materials engineering, albeit with an applied focus.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "2D-FETs",
+      "Process optimization",
+      "Machine learning"
+    ],
     "summary": "We present the first experimental machine learning (ML)-enabled Process-Technology Co-Optimization (PTCO) framework for optimizing 2D transition metal dichalcogenide (TMD) FET fabrication directly from statistically meaningful experimental data rather than pure simulation data. We first introduce a transition voltage metric, VTrans, to quantify the gate voltage required for off-to-on switching and reveal its direct correlation with subthreshold swing (SS), highlighting an overlooked switching characteristic that governs both off-state and on-state performance. By integrating automated metric extraction, multi-objective recipe ranking, and predictive modeling, our framework uncovers hidden process-performance correlations and predicts the performance of unexplored fabrication recipes from limited experimental data. Experimental validation shows close agreement with ML predictions, thus demonstrating the framework's ability to efficiently guide gate stack optimization through iterative experimental feedback.",
     "title": "Process-Technology Co-optimization for 2D-FETs",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.39457717537879944
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3783695101737976
+      },
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.33086419105529785
+      }
+    ]
   },
   "2609.00870v1": {
     "authors": [
@@ -266,14 +318,39 @@
         "name": "Kangming Li"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.00915v1",
+    "matching_keywords": [
+      "neural network"
+    ],
     "published_date": "2026-09-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper explores computational methods for materials science using graph neural networks to improve chemical transfer, which aligns with the user's general interest in computational approaches for materials, though not specifically for correlated electron systems.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Materials informatics",
+      "Graph neural networks",
+      "Chemical transfer"
+    ],
     "summary": "Materials graph neural networks must often transfer to chemical regions weakly represented in training data. Such transfer can rely on predefined relations among elements or supervised evidence from target-containing structures, but these pathways are usually entangled. Here, held-out-element splits and incremental target support separate their roles. Without target-containing training structures, formation-energy errors depend strongly on the element representation, particularly for H, O and F. Matched perturbations show that representation-induced sharing matters beyond input dimension or numerical form, while a label-free similarity-graph prior reduces selected zero-shot errors. Adding a few target-containing structures sharply lowers errors and contracts differences among one-hot, k-hot and continuous inputs across ALIGNN and CGCNN. Calibration explains only part of this recovery, and freezing the initial element projection preserves most gains in five of six ALIGNN splits. Target support therefore shifts chemical transfer from reliance on static element relations toward learning from target-containing environments.",
     "title": "Element priors and target support shape chemical transfer in materials graph networks",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.42002058029174805
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.38124698400497437
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.3639458417892456
+      }
+    ]
   },
   "2609.01213v1": {
     "authors": [
@@ -318,14 +395,40 @@
         "name": "Andreas W. Rost"
       }
     ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.01213v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
     "published_date": "2026-09-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly addresses superconductivity in overdoped cuprates, specifically Tl$_2$Ba$_2$CuO$_6$, and investigates pairing strength and disorder using specific heat measurements, aligning perfectly with the user's interest in cuprate superconductors.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate Superconductors",
+      "Specific Heat",
+      "Pairing Mechanism"
+    ],
     "summary": "The physical origin of the suppression of superconductivity with hole doping in overdoped cuprates remains unclear. We measure the electronic specific heat of microgram-scale Tl$_2$Ba$_2$CuO$_6$ crystals and find sharp superconducting anomalies persisting far into the overdoped regime, with $Δγ(T_{\\rm c})/γ_n\\approx0.6$ for $T_{\\rm c}=14$-$25$K. A weak-coupling BCS-like framework incorporating the known Fermi surface and cation disorder quantitatively reproduces the observed anomaly and its weak doping dependence. We conclude that the observed $T_{\\rm c}(p)$ cannot be driven predominantly by increasing disorder and is instead consistent with a smoothly decreasing pairing strength.",
     "title": "Robust thermodynamics constrain disorder and pairing in far-overdoped Tl$_2$Ba$_2$CuO$_6$",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6359726190567017
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.5965791940689087
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.5941137075424194
+      }
+    ]
   },
   "2609.01492v1": {
     "authors": [
@@ -388,6 +491,1034 @@
       {
         "liked_paper_id": "2506.11227v1",
         "score": 0.48440447449684143
+      }
+    ]
+  },
+  "2609.01719v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Roeland Wiersema"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.01719v1",
+    "matching_keywords": [
+      "neural quantum state",
+      "tensor network",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-09-01",
+    "reasoning": "This paper explores advanced classical simulation techniques like time-dependent variational Monte Carlo to challenge quantum advantage claims, relevant to the user's interest in computational methods for quantum systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Annealing",
+      "Time-Dependent VMC",
+      "Classical Simulation"
+    ],
+    "summary": "Programmable quantum annealers can realize real-time dynamics of frustrated transverse-field Ising models on large, nontrivial graphs. Recent work by King et al. argued that the classical simulation of such experiments would require exponential computational resources for classical methods such as tensor networks and neural quantum states. Here, we numerically simulate the D-Wave spin-glass annealing protocol with time-dependent variational Monte Carlo (t-VMC) using a correlator state tailored to spin-glass dynamics. For the two-dimensional cylinder, three-dimensional dimer, diamond, and biclique instances considered, at annealing times of 7 and 20 ns, we show that systematically increasing the variational ansatz size enables t-VMC to approximate the final two-spin correlation errors of the quantum processing unit (QPU). We also perform an accurate large-scale simulation of a challenging biclique instance for which no other variational method is known to work, and we find close agreement with the quantum annealer. Through ablation studies, we identify poor Markov-chain mixing, high-variance local-energy estimators, and stochastic Runge-Kutta error estimates as the principal numerical failure modes. We address these numerical issues by using parallel tempering, blurred sampling and an importance-weighted differential equation solver, thereby clarifying the numerical requirements for stable, large-scale t-VMC simulations. Our results extend the frontier of classical simulation while providing a realistic assessment of the computational costs of simulating quantum dynamics at this scale.",
+    "title": "Numerical simulation of D-Wave's quantum advantage experiment with time-dependent variational Monte Carlo",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5770643949508667
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5574764013290405
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5528179407119751
+      }
+    ]
+  },
+  "2609.01724v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xu Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.01724v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-01",
+    "reasoning": "The discussion of Fermi liquid instability, broken symmetries, and Monte Carlo simulations in a general framework of correlated systems is relevant to the user's interest in strong correlation and superconductivity.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Fermi Liquid Instability",
+      "Broken Symmetries",
+      "Monte Carlo Simulation"
+    ],
+    "summary": "We study bilinear order-parameter correlations in a general class of sign problem-free systems that are described by what we call Fluctuating Gaussian States (FGS) with anti-unitary symmetries, where the weight of each Gaussian measurement in the space-time path integral is positive-definite. Supported by Monte Carlo simulations on fluctuating Gaussian fermionic and bosonic examples, we argue that such systems generally exhibit two types of broken-symmetry phases: a \\emph{saddle point phase} and a \\emph{non-local contraction phase}, with the competition between the two determined by the stability of the fluctuation saddle point of FGS. Due to the Fermi liquid instability in fermionic FGS with anti-unitary symmetries, we also discuss the possibility of representing fermionic FGS with a particular Projected Entangled-Pair State (PEPS) ansatz, which we argue a certain construction provides an efficient description for the saddle point phase, but not for the non-local contraction phase. Finally, we discuss the potential implication of our result in non-equilibrium systems and stabilizing a target bilinear order.",
+    "title": "Bilinear correlations in Fluctuating Gaussian States with anti-unitary symmetries",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.498685359954834
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4859950542449951
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.4704779088497162
+      }
+    ]
+  },
+  "2609.01876v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zixiang Tong"
+      },
+      {
+        "affiliation": [],
+        "name": "Lehu Bu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jin Yang"
+      }
+    ],
+    "categories": [
+      "cs.CV",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.01876v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-01",
+    "reasoning": "This paper focuses on a machine learning-based digital volume correlation technique for displacement measurements from volumetric images, which is too far removed from the user's explicit interests in correlated electron systems and material physics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Digital volume correlation",
+      "Machine learning",
+      "Image analysis"
+    ],
+    "summary": "Digital volume correlation (DVC) provides three-dimensional full-field displacement measurements from volumetric images, but how the internal resolution of a machine-learning-based DVC model affects accuracy and operating range remains poorly understood. Here, we present RAFT-DVC, a resolution-aware family of recurrent all-pairs field transforms (RAFT)-based DVC solvers with encoder downsampling factors s = 2, 4, and 8. Using a matched design, we find that the three solvers localize displacement to approximately 0.017 feature-grid voxel, giving an empirical raw-volume error scaling of approximately 0.017s voxel. The solvers exhibit complementary operating regimes governed jointly by displacement reach and volumetric-texture compatibility. Synthetic benchmarks show that RAFT-DVC achieves errors of the same order as tuned classical DVC under fine-texture, small-to-moderate-displacement conditions and becomes competitive or advantageous under coarse-texture, large-displacement conditions. Frequency-swept tests quantify deformation spatial resolution, while tiled inference enables dense estimation on large volumes. Evaluation on confocal volumetric images acquired during indentation illustrates the importance of matching solver operating regime to deformation magnitude and image texture. Tests on micro-CT images of elastomeric foam, despite training only on particle-labeled synthetic data, provide evidence of cross-texture transfer. We also identify coordinate-order inconsistencies in three-dimensional RAFT correlation sampling and introduce a non-cubic impulse test to verify sampler geometry independently of network training. Correcting the sampler improves native-input accuracy and generalization to unseen volume dimensions. Together, these results establish RAFT-DVC as a fast, resolution-aware framework for dense DVC with characterized accuracy and operating regimes.",
+    "title": "RAFT-DVC: Resolution-Aware Machine Learning-Based Digital Volume Correlation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.25773054361343384
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.23958660662174225
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.20370957255363464
+      }
+    ]
+  },
+  "2609.01904v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tamas Nemeth"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabor Vattay"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cs.MS"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.01904v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-09-01",
+    "reasoning": "Although it utilizes tensor networks and quantum circuits, the application to acoustic wave equations in seismology is not aligned with the user's interest in quantum many-body systems or strongly correlated materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Seismic Simulation",
+      "Acoustic Wave",
+      "Matrix Product State"
+    ],
+    "summary": "We present a cohesive framework for simulating seismic wave propagation utilizing quantum computing paradigms and their classical tensor network equivalents.   We detail a quantum circuit-based formulation for the explicit finite-difference time-domain (FDTD) solution of the two-dimensional acoustic wave equation and   map this quantum architecture onto a tensor train representation, namely for Matrix Product State (MPS).   The MPS solver enables deterministic simulation of large-scale wavefield dynamics on classical high-performance computing systems.   We demonstrate the MPS representation by computing 2D seismic wavefields on the Marmousi model.   Our results indicate that the MPS representation is a viable direction for computing and scaling wavefield propagation.",
+    "title": "Quantum Circuit and Tensor Network Implementation of the 2D Acoustic Wave Equation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.6057103276252747
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4704211950302124
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.46082833409309387
+      }
+    ]
+  },
+  "2609.01923v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yi Xia"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.01923v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-01",
+    "reasoning": "This paper presents an accelerated machine learning approach for calculating electron-phonon interactions, appealing to the general interest in efficient computational methods for material properties.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Machine learning",
+      "Electron-phonon coupling",
+      "Computational materials science"
+    ],
+    "summary": "Electron-phonon interactions govern carrier dynamics, transport, and many optical and quantum phenomena in solids, but finite-displacement calculations within the projector augmented-wave (PAW) framework require up to 6N self-consistent supercell calculations for an N-atom system, making them costly for large, low-symmetry, and disordered materials. We introduce MLLocP, a machine learning strategy that learns the self-consistent local potential on real-space grids and supplies its displacement derivatives to the evaluation of all-electron PAW electron-phonon matrix elements. Analysis of the PAW decomposition identifies the local-potential contribution as a natural target for machine learning, while the remaining PAW quantities are retained within the established VASP/PHELEL framework. Using targeted grid-point sampling and feature-diversity selection for efficient model training, we validate MLLocP for elemental Cu, polar BAs, and chemically disordered Cu3Au. The learned potentials and their resulting displacement derivatives closely reproduce direct density functional theory calculations, yielding transport coefficients within approximately 3.5% for BAs mobility, 8% for Cu conductivity, and 11% for Cu3Au conductivity. For the 32-atom Cu3Au special quasirandom structure, using 40 sampled configurations reduces the number of self-consistent calculations by about fivefold relative to the 192 displaced structures required directly; using 20 or 10 configurations increases the acceleration to approximately 10- and 20-fold, with conductivity errors of 14.3% and 18.6%, respectively. MLLocP thus provides a scalable route to PAW electron-phonon calculations in complex materials while preserving the underlying all-electron formalism.",
+    "title": "Machine Learning Local Potentials for Accelerated Electron-Phonon Interactions Calculations within the Projector Augmented-Wave Framework",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5254120826721191
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5131709575653076
+      },
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.5071920156478882
+      }
+    ]
+  },
+  "2609.01969v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ryo Misawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Rikuto Oiwa"
+      },
+      {
+        "affiliation": [],
+        "name": "Shunsuke Kitou"
+      },
+      {
+        "affiliation": [],
+        "name": "Tatsuya Miki"
+      },
+      {
+        "affiliation": [],
+        "name": "Motohiko Ezawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Weiyi Yun"
+      },
+      {
+        "affiliation": [],
+        "name": "Rinsuke Yamada"
+      },
+      {
+        "affiliation": [],
+        "name": "Chihaya Koyama"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Alberto Rodríguez Velamazán"
+      },
+      {
+        "affiliation": [],
+        "name": "Kamil K. Kolincio"
+      },
+      {
+        "affiliation": [],
+        "name": "Navid Qureshi"
+      },
+      {
+        "affiliation": [],
+        "name": "Elina Zhakina"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuiga Nakamura"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan Masell"
+      },
+      {
+        "affiliation": [],
+        "name": "Ilya Belopolski"
+      },
+      {
+        "affiliation": [],
+        "name": "Taka-hisa Arima"
+      },
+      {
+        "affiliation": [],
+        "name": "Yusuke Nomura"
+      },
+      {
+        "affiliation": [],
+        "name": "Satoru Hayami"
+      },
+      {
+        "affiliation": [],
+        "name": "Max Hirschberger"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.01969v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This work reports the direct experimental observation and visualization of g-wave altermagnetic multipoles using synchrotron X-ray and polarized neutron diffraction, strongly resonating with the user's interest in experimental probes and hidden multipole order in quantum materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Multipole order",
+      "Synchrotron X-ray diffraction"
+    ],
+    "summary": "Over the past few years, altermagnets have emerged as a new class of collinear magnets with broken time-reversal symmetry, offering novel opportunities for spintronics beyond conventional magnets. Rather than from net magnetization, as in ferromagnets, the unconventional time-reversal symmetry breaking of altermagnets originates from antiferroic magnetic dipoles locked to higher-order multipoles. Here we report the direct visualization of a $g$-wave altermagnetic multipole in the canonical altermagnet CrSb. Combining high-energy synchrotron X-ray diffraction with valence electron density (VED) analysis, we uncover a pronounced directional anisotropy of the VED distribution alternating between Cr sublattices. This evidences the antiferroic order of electric hexadecapoles predicted in $g$-wave altermagnets. Its coexistence with antiferroic magnetic dipoles induces ferroic magnetic multipoles, as probed by polarized neutron diffraction. We further identify a microscopic model of altermagnetism that directly relates the $g$-wave multipole and the $g$-wave spin splitting. Through direct observation and quantification of multipoles, this study provides a real-space fingerprint of altermagnetism and establishes a general probe of hidden multipole order in quantum materials.",
+    "title": "Observation of g-wave altermagnetic multipole",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5669010281562805
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5647941827774048
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.5027264356613159
+      }
+    ]
+  },
+  "2609.02008v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yun-Mei Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiacheng Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Hua Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Kai Chang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1103/5bns-qkgl",
+    "id": "2609.02008v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This theoretical work investigates symmetry-enforced nonlinear thermal Hall effects driven by Berry curvature in altermagnets, connecting to interests in symmetry, novel quantum phases, and Berry curvature physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Thermal Hall effect",
+      "Berry curvature"
+    ],
+    "summary": "Thermal Hall effect (THE) is a powerful probe of material properties, even in insulators. Here we investigate the thermal response of altermagnets by developing a theory on Berry curvature driven nonlinear THE from both electrons and magnons. We identify symmetry conditions under which the third-order THE dominates while linear and second-order contributions vanish. Notably, d-wave and i-wave altermagnets with out-of-plane Neel order satisfy these conditions, whereas in-plane order yields a dominant linear THE. Using KV2Se2O (a d-wave altermagnetic metal) and MnF2 (an altermagnetic insulator) as concrete examples, we show nonzero third-order nonlinear THE from electrons and magnons, respectively, both exhibiting a pi-periodic dependence on the direction of temperature gradient. These symmetry-guaranteed Berry curvature phenomena provide a diagnostic for altermagnetism in candidate materials and enable determination of the Neel vector orientation.",
+    "title": "Symmetry-enforced third-order nonlinear thermal Hall effects in altermagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.4867402911186218
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.4658956825733185
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.4600690007209778
+      }
+    ]
+  },
+  "2609.02141v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu-Hsueh Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.02141v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper focuses on theoretical concepts in quantum information and statistical mechanics, which is too general and lacks specific material or strong correlation relevance for the user's interests.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Information",
+      "Statistical Mechanics",
+      "Conditional Mutual Information"
+    ],
+    "summary": "A departure of a mixed quantum state from a local Gibbs description is generally invisible to local observables but can be detected by the conditional mutual information (CMI). Here we study the relationship between the renormalization group (RG) and CMI, and in particular, how RG constrains CMI. We first show that the CMI between nonadjacent regions $A$ and $C$, conditioned on the buffer region $B$, is UV-finite whenever the state admits a locally reversible RG with a fixed on-site Hilbert space dimension. We then study two hierarchical models that have long-range CMI and yet admit a simple RG description. The first model has a divergent Markov length at every temperature $0<T<\\infty$ but nevertheless flows to an infinite-temperature product state under RG. The second model satisfies the local Markov condition while violating the global one and is stable against weak noise. At the critical noise strength, the two-point CMI decays only polynomially as a function of the system size, while the two-point mutual information vanishes.",
+    "title": "Renormalization group and long-range conditional mutual information in hierarchical models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.41303402185440063
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.38864755630493164
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.38512641191482544
+      }
+    ]
+  },
+  "2609.02206v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daniel Duarte-Ruiz"
+      },
+      {
+        "affiliation": [],
+        "name": "Timo Reents"
+      },
+      {
+        "affiliation": [],
+        "name": "Elmar Kataev"
+      },
+      {
+        "affiliation": [],
+        "name": "Raul Garcia-Diez"
+      },
+      {
+        "affiliation": [],
+        "name": "Regan G. Wilks"
+      },
+      {
+        "affiliation": [],
+        "name": "Marcus Baer"
+      },
+      {
+        "affiliation": [],
+        "name": "Caterina Cocchi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02206v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "Although focused on battery materials, this paper utilizes ab initio many-body theory and XAS to understand oxygen K-edge fingerprints in transition-metal oxides, which aligns with the user's interest in materials characterization and theoretical understanding of oxides and oxygen-related phenomena.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "X-ray Absorption Spectroscopy",
+      "Ab Initio Theory",
+      "Transition-Metal Oxides"
+    ],
+    "summary": "The degradation of LiNi$_{0.8}$Co$_{0.1}$Mn$_{0.1}$O$_2$ (NCM-811) in Li-ion batteries produces complex transition-metal oxides and binary phases that fundamentally limit cathode performance. While identifying these degradation products via X-ray absorption spectroscopy (XAS) is essential for mitigating electrochemical performance loss, interpretation remains challenging due to the structural complexity of real-world samples. In this work, we present an integrated theoretical-experimental framework combining high-resolution oxygen K-edge XAS with \\textit{ab initio} simulations based on many-body perturbation theory and high-throughput screening from density functional theory. We first evaluate the spectroscopic fingerprints of eight layered, spinel, and nominal rock-salt reference oxides, identifying discrepancies between the idealized single-crystal bulk phase and experimental spectra. Using high-throughput screening to analyze the oxygen $p$-projected density of states of 38 distinct polymorphs of NiO, CoO, and MnO, we propose that the spectral differences can emerge, among other factors, from a structural ensemble of local variations represented here by simplified structural proxies. Our work establishes a viable and rigorous computational pathway to interpret the complex landscape of degraded battery materials.",
+    "title": "Decoding Oxygen K-edge Fingerprints of NCM-811 Degradation via Ab Initio Many-Body Theory and High-Throughput Screening of Crystal Proxies",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.612321138381958
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.5476216077804565
+      },
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.5063855648040771
+      }
+    ]
+  },
+  "2609.02321v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daniel G. Lourens"
+      },
+      {
+        "affiliation": [],
+        "name": "Maarten Kwaaitaal"
+      },
+      {
+        "affiliation": [],
+        "name": "Carl S. Davies"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrei Kirilyuk"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02321v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper demonstrates ultrafast photoinduced strain for ferroelastic domain switching, which relates to controlling material properties but is less directly aligned with strongly correlated electron systems or topological materials.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Ferroelasticity",
+      "Ultrafast control",
+      "Strain engineering"
+    ],
+    "summary": "The crystal lattice underpins the fundamental properties of condensed matter, with ferroic order emerging sensitively from atomic coordination. Manipulating the lattic therefore promises a direct way to switch ferroics between their states. Infrared excitation provides an efficient pathway to drive lattice motion and generate transient crystal deformations and strains. Ferroelastics constitute a uniquely direct platform for such control, their order parameter being strain itself. However, whether ultrafast laser-induced lattice distortions can switch ferroelastic order remains unknown. Here we use ultrafast pump-probe microscopy to demonstrate that a single high-amplitude infrared pulse induces strain within the first nanosecond, followed by ferroelastic domain switching several nanoseconds later. The spatial distribution follows that expected from the photoinduced strain field, while their temporal evolution is closely coupled to the strain dynamics. Our observations identify transient strain as the driving field for ferroelastic switching and suggest a general lattice-mediated pathway for controlling ferroic order using infrared light.",
+    "title": "Ferroelastic domain switching by ultrafast photoinduced strain",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Wp0gIr-vW9MC",
+        "score": 0.4508969783782959
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ZHo1McVdvXMC",
+        "score": 0.4415571689605713
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.419755220413208
+      }
+    ]
+  },
+  "2609.02361v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hendrik Kühne"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian B. Mendl"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.02361v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper introduces a novel combination of Belief Propagation and DMRG, extending a key computational method for quantum many-body systems to complex lattices, aligning with interests in advanced solvers.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Belief Propagation",
+      "Quantum Many-Body",
+      "Arbitrary Lattices"
+    ],
+    "summary": "Tensor networks have attracted much attention as a powerful tool for modeling quantum many-body systems. Their contraction is a significant challenge, however, especially in highly connected networks, as memory requirements become prohibitive and the optimal contraction order is increasingly hard to find. The belief propagation (BP) algorithm has emerged as an alternative to exact contraction. Being formulated in a graph-agnostic way, it offers great flexibility, but its accuracy suffers in the presence of loops. In this work, we combine BP with the DMRG algorithm to solve ground-state problems, thereby extending DMRG to higher dimensions and arbitrary lattices. We demonstrate the viability of BP-DMRG on the transverse-field Ising model on a $2\\times 2$ hexagonal lattice, finding that it produces states with a fidelity between $0.9$ and $0.99$ to the true ground state, and energy estimates with a relative error between $10^{-2}$ and $10^{-3}$. Additionally, BP-DMRG can find ground states on randomly generated lattices, with fidelity improving as the transverse field increases. We conclude with a discussion of the limitations we encounter when using belief propagation, highlighting that the TFI tensor network operators lead to larger errors during BP iterations in BP-DMRG.",
+    "title": "DMRG using Belief Propagation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.6338533163070679
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.6234409213066101
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6174715161323547
+      }
+    ]
+  },
+  "2609.02394v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dihang Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Nannan Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Ching Hua Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianqi Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiangbin Gong"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.02394v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "matrix product state"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper introduces a new recursive algorithm for computing low-energy eigenstates of many-body Hamiltonians, offering an alternative to DMRG with both classical and quantum implementations, which is highly relevant to the user's liked topics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Variational Quantum Algorithm",
+      "NISQ",
+      "Many-Body Eigenstates"
+    ],
+    "summary": "Finding the eigenstates of a many-body Hamiltonian is a fundamental challenge in physics and computational science. Since the search space grows exponentially with system size, numerous classical and quantum algorithms have been developed to address this problem. A practical strategy is to identify a physics-informed low-dimensional subspace that effectively accommodates the low-lying eigenstates, thereby reducing the computational complexity. In this paper, we propose a recursive module-coupling algorithm, which iteratively treats a system as a composition of locally-coupled smaller modules, with low-energy subspace estimated successively according to the same recursive structure. Unlike the density matrix renormalization group (DMRG) approach that optimizes a global matrix product state through repeated local sweeps and obtains excited states sequentially, our algorithm constructs a physically tailored variational basis from module eigenstates and obtains several low-energy states on an equal footing, leading to substantial speedups if targeting moderate accuracy. Our proposed method further leads naturally to a recursive quantum variational algorithm, providing a systematic and modular circuit-construction framework compatible with contemporary gate-based quantum architectures. At each recursive level, block encoders are trained to map logical basis states onto the retained physical subspace, within which a variational circuit is subsequently optimized.Such a quantum-circuit implementation provides not only a quantum multistate eigensolver, but also a systematic prescription for hierarchically constructing quantum state-preparation circuits. Classical simulations demonstrate the accuracy and efficiency of the proposed method, whereas experiments on IBM quantum processors show that eigenstate preparation with reasonable fidelities is achievable even in the current NISQ era.",
+    "title": "A Recursive Module-Coupling Algorithm for Computing Low-Energy Eigenstates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.565887451171875
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5639954209327698
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5541951656341553
+      }
+    ]
+  },
+  "2609.02397v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu-Jie Cen"
+      },
+      {
+        "affiliation": [],
+        "name": "Sandro Wieser"
+      },
+      {
+        "affiliation": [],
+        "name": "Georg K. H. Madsen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jesús Carrete"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02397v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper uses advanced molecular dynamics and symmetry-adapted modal analysis to investigate heat transport in quasi-1D systems, aligning with interests in computational methods and symmetry in materials science.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Heat transport",
+      "Symmetry analysis",
+      "Quasi-1D systems"
+    ],
+    "summary": "Detailed analysis of thermal conductivity results obtained from molecular dynamics (MD) trajectories conventionally relies on knowledge of the harmonic vibrational modes of the system. Such is the case in methods like Green--Kubo modal analysis (GKMA) and homogeneous nonequilibrium modal analysis (HNEMA). This approach faces several shortcomings that become especially important when dealing with nanostructures. Chief among them is scalability, followed by the ambiguity associated to the degeneracy of the large vibrational subspaces defined by a common translational wave number k. We propose an alternative for quasi-one-dimensional (quasi-1D) systems: we construct the modal basis for the decomposition of the thermal conductivity from line-group projection operators, so that every projected component carries well-defined symmetry labels (including rotational information and parities) and the decomposition is unique at the level of irreducible representations (irreps). Applying the idea to a (10,0)-(20,0) WS2-MoS2 double-walled nanotube (DWNT) described by a neuroevolution potential (NEP), we find that at 300 K both HNEMA and GKMA yield statistically consistent total conductivities and allow the identification of several prominent symmetry-adapted conduction channels. The GKMA pair matrix shows that within-block and same-channel cross-k terms account for 75.6% of the total conductivity, while cross-channel correlations contribute 24.4%.",
+    "title": "Molecular-dynamics-based modal analysis of heat transport in quasi-one-dimensional systems from a symmetry-adapted perspective",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.43846505880355835
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.40704119205474854
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.403084397315979
+      }
+    ]
+  },
+  "2609.02429v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Meysam Bagheri Tagani"
+      },
+      {
+        "affiliation": [],
+        "name": "Carmine Autieri"
+      },
+      {
+        "affiliation": [],
+        "name": "Sahar Izadi Vishkayi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02429v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper proposes a rank-selective optical tomography method using finite photon momentum to identify higher-wave altermagnetic order, strongly aligning with the interest in momentum-dependent experimental probes and novel magnetic phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Optical tomography",
+      "Momentum-resolved spectroscopy"
+    ],
+    "summary": "Identifying the spatial rank of higher-wave altermagnetic order optically is challenging because local electric-dipole response does not uniquely resolve distinct continuum harmonics. We show that finite photon momentum turns one-photon spin-resolved absorption into a rank-selective tomography. For the planar $|m|=\\ell$ sector of an even-parity $\\ell$-wave component, a joint Fourier projection in polarization and momentum angle isolates $\\mathcal T_\\ell\\proptoη_\\ell q^{\\ell-2}$, yielding the hierarchy $d:q^0$, $g:q^2$, and $i:q^4$; phase changes track rotations of the selected magnetic harmonic. A Ward-consistent finite-$q$ microscopic calculation reproduces these powers without imposing them. Although discrete crystal symmetry can generate lower-order local aliases, they are orthogonal to the selected momentum harmonic and cannot contaminate it below $q^{\\ell-2}$. In MnTe, whose nonrelativistic parent order is three-dimensional $g$ wave while spin--orbit coupling lowers the exact relativistic spin-momentum-locking symmetry, first-principles calculations show that more than $99.9\\%$ of the Fourier power of the Néel-projected $A$-region spin-energy contrast remains in the parent $g$-wave-derived $m=3$ harmonic. Structured near fields place the required momentum window within experimental reach.",
+    "title": "Rank-Selective Optical Tomography of Higher-Wave Altermagnetism",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5633739233016968
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5264828205108643
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.4811437726020813
+      }
+    ]
+  },
+  "2609.02466v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kento Uchida"
+      },
+      {
+        "affiliation": [],
+        "name": "Shintaro Takayoshi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuta Murakami"
+      },
+      {
+        "affiliation": [],
+        "name": "Dongjoon Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Alannah M. Hallas"
+      },
+      {
+        "affiliation": [],
+        "name": "Masayuki Watanabe"
+      },
+      {
+        "affiliation": [],
+        "name": "Takashi Konishi"
+      },
+      {
+        "affiliation": [],
+        "name": "Aiko Nakano"
+      },
+      {
+        "affiliation": [],
+        "name": "Koichiro Tanaka"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.optics"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02466v1",
+    "matching_keywords": [
+      "hubbard model",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper investigates dimensionality and spin-charge coupling effects on nonlinear optical responses in strongly correlated electron systems, including a cuprate material, using both experiments and Hubbard model simulations.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "High-harmonic generation",
+      "Strongly correlated materials",
+      "Hubbard model"
+    ],
+    "summary": "Dimensionality strongly affects elementary excitations in correlated quantum materials, yet its impact on extreme nonlinear optical responses remains largely unexplored. Here, we combine high-harmonic generation (HHG) experiments on quasi-one-dimensional SrCuO$_2$ and quasi-two-dimensional Pr$_2$CuO$_4$ with nonequilibrium simulations of Hubbard models. We find a pronounced dimensional contrast: SrCuO$_2$ exhibits a robust plateau-like high-harmonic spectrum with weak temperature dependence, whereas Pr$_2$CuO$_4$ shows a monotonic decrease in harmonic yield and strong thermal suppression, especially at higher harmonics. The simulations qualitatively reproduce these trends and identify dimensionality-dependent doublon--holon dephasing, governed by spin--charge coupling, as their microscopic origin. These results establish dimensionality and spin--charge coupling as key control parameters for extreme nonlinear optical responses in correlated insulators.",
+    "title": "Prominent Dimensional Effects on High-order Harmonic Generation in Strongly Correlated Electron Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.5522529482841492
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.5446540713310242
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.5390070676803589
+      }
+    ]
+  },
+  "2609.02668v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "U. M. Jayathilake"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Sheikh"
+      },
+      {
+        "affiliation": [],
+        "name": "T. -L. Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "C. Klewe"
+      },
+      {
+        "affiliation": [],
+        "name": "G. Logvenov"
+      },
+      {
+        "affiliation": [],
+        "name": "G. Campi"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Bianconi"
+      },
+      {
+        "affiliation": [],
+        "name": "A. X. Gray"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02668v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper investigates electronic structure and superconductivity in LSCO/LCO high-Tc superlattices using X-ray spectroscopy, which directly matches the user's interest in cuprate superconductors and advanced experimental techniques.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "High-Tc Superlattices",
+      "X-ray Spectroscopy",
+      "Electronic Structure"
+    ],
+    "summary": "In La$_{1.55}$Sr$_{0.45}$CuO$_4$/La$_2$CuO$_4$ (LSCO/LCO) artificial high-$T_c$ superlattices (AHTS), grown by quantum material design, the superconducting dome can be tuned by varying the geometric ratio $L/d$, where $L$ is the LCO layer thickness and $d$ is the superlattice nanoscale period. Here, we combine hard X-ray photoelectron spectroscopy (HAXPES) and polarization-dependent soft X-ray absorption spectroscopy (XAS) to probe how the electronic structure evolves across the $L/d$-tuned superconducting dome. We observe systematic chemical-potential evolution across the series, together with enhanced spectral weight near the Fermi level, enhanced local and non-local screening signatures, and increased in-plane orbital polarization near the top of the dome. Together, these spectroscopic signatures provide insight into the emergence of Fano-Feshbach resonant superconductivity in the LSCO/LCO AHTS series.",
+    "title": "Electronic Structure and Superconductivity in La$_{1.55}$Sr$_{0.45}$CuO$_4$/La$_2$CuO$_4$ Artificial High-$T_c$ Superlattices Probed by Hard and Soft X-ray Spectroscopy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.6539373397827148
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dfsIfKJdRG4C",
+        "score": 0.6443241834640503
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.6282061338424683
+      }
+    ]
+  },
+  "2609.02770v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yujia Teng"
+      },
+      {
+        "affiliation": [],
+        "name": "Mesfin Eshete"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrea Urru"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Seleznev"
+      },
+      {
+        "affiliation": [],
+        "name": "Se Young Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian E. Reyes-Lillo"
+      },
+      {
+        "affiliation": [],
+        "name": "Karin M. Rabe"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02770v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper introduces a computational tool to systematically construct band-structure paths for altermagnetic materials, directly addressing electronic spin splitting and symmetry, which aligns with interests in Dirac fermions and computational methods for material properties.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Band structure",
+      "Computational materials science"
+    ],
+    "summary": "Altermagnetic materials exhibit spin splitting in their electronic band structures while maintaining zero net magnetization. However, conventional high-symmetry k-paths generally hide this splitting because they follow symmetry lines that in most cases enforce spin degeneracy. We present AlterSeeK-Path, an open-source Python tool that systematically constructs generalized band-structure paths for collinear altermagnets. The method selects the centroid of the conventional irreducible wedge used in routine band-structure calculations as the representative general k-point, maps it to a spin-flip-related partner, and inserts paired segments through these points into the standard high-symmetry path; these segments systematically sample the interior of the irreducible wedge. We demonstrate the construction for all 54 three-dimensional combinations of extended Bravais lattice type and spin Laue group across the six crystal systems that support collinear altermagnetism, and for the 12 two-dimensional cases spanning the four compatible two-dimensional Bravais lattices. Representative band structures are shown for the distinct lattice/path cases. With AlterSeeK-Path, these band structures can be constructed with essentially the same effort as conventional band structures.",
+    "title": "AlterSeeK-Path: Systematic construction of generalized band-structure paths for displaying altermagnetic spin splitting",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5683304071426392
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5336931943893433
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5097181797027588
+      }
+    ]
+  },
+  "2609.02824v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "İpek Yenda Çınar"
+      },
+      {
+        "affiliation": [],
+        "name": "Oguzhan Orhan"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Oluş Özbek"
+      },
+      {
+        "affiliation": [],
+        "name": "Şener Özönder"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02824v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper employs molecular dynamics and machine learning to investigate low-temperature transport in Li-ion battery electrolytes, aligning with computational materials science and the study of transport properties.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Li-ion batteries",
+      "Electrolyte transport",
+      "Molecular dynamics"
+    ],
+    "summary": "Low-temperature operation imposes severe limitations on lithium-ion transport in battery electrolytes, yet the coupled effects of solvent composition and fluorinated additives in the cold-temperature regime remain insufficiently resolved. Here, we combine classical molecular dynamics (MD) and machine learning (ML) to investigate 1 M LiPF$_6$ electrolytes containing ethylene carbonate (EC), ethyl methyl carbonate (EMC), and EC/EMC (3:7), with 0-10 mol% fluoroethylene carbonate (FEC), from 298 to 233 K. MD simulations quantify Li$^+$ self-diffusion, Nernst-Einstein (NE) and Green-Kubo (GK) conductivities and local coordination, while Gaussian-process surrogates model conductivity across composition and temperature. Cooling produces a pronounced transport penalty, particularly in EMC-containing electrolytes, whose GK conductivity decreases by more than 98% at 233 K, compared with approximately 90% in EC-rich systems. Li$^+$ self-diffusion activation energies are 0.49-0.54 eV for EMC-containing systems and 0.27-0.29 eV for EC-based systems. Within the EC family, 0-2 mol% FEC gives comparable cold-temperature transport, whereas 5-10 mol% FEC shows lower conductivity retention at the coldest simulated temperature. The analyzed coordination channels remain solvent dominated, while direct Li$^+$-FEC coordination is not quantified in the present RDF set.The Gaussian-process surrogates achieve composition-disjoint cross-validated RMSE values of 0.56 and 0.57 mS cm$^{-1}$ for NE and GK conductivity. Within the simulated liquid-state trajectories, temperature and host-solvent composition dominate the bulk-transport response, with FEC acting as a secondary modifier.",
+    "title": "Low-Temperature Transport in Li-Ion Battery EC/EMC/FEC Electrolytes: Molecular Dynamics and Machine-Learning Modeling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.450360506772995
+      },
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.3985750675201416
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:K3LRdlH-MEoC",
+        "score": 0.3891065716743469
       }
     ]
   }
