@@ -1521,5 +1521,839 @@
         "score": 0.3891065716743469
       }
     ]
+  },
+  "2609.02966v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rodion Podorozhny"
+      },
+      {
+        "affiliation": [],
+        "name": "Nikoleta Theodoropoulou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jelena Tešić"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.02966v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper directly addresses oxygen vacancy dynamics in an oxide heterostructure using advanced physics-informed neural networks, strongly aligning with previous interests in oxygen vacancies and computational methods for materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Physics-informed neural networks",
+      "SrTiO3",
+      "memristors"
+    ],
+    "summary": "Physics-informed neural networks (PINNs) offer a promising framework for modeling semiconductor devices, yet standard architectures struggle with severe numerical stiffness and multiscale spatial discrepancies inherent to oxide heterostructures. Here, we demonstrate a cascaded PINN architecture coupled with a custom second-order Chebyshev second kind polynomial spectral optimizer (DSO V2 Hybrid) to model ion-electronic drift-diffusion transport in Pt/SrTiO$_3$/Si memristive heterostructures across a 20 nm STO film on a 380 $μ$m Si substrate. By isolating potential, carrier density, and vacancy transport into four sequentially trained sub-neural-networks, our model circumvents condition numbers exceeding $10^{16}$ without operator splitting. The trained surrogate reproduces experimental conductive-AFM current-voltage hysteresis ($R^2 > 0.96$) while ensuring strict Poisson consistency across continuous space. Compared to conventional finite-element solvers (e.g., COMSOL), the PINN surrogate enables differentiable inverse parameter estimation and linear time inference.",
+    "title": "Physics-Informed Neural Network Surrogate for Oxygen Vacancy Dynamics in epitaxial $\\mathrm{SrTiO_3}$ on Si memristors via Dynamic Spectral Optimization",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4676019251346588
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.43416479229927063
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4340197443962097
+      }
+    ]
+  },
+  "2609.03073v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Asier Piñeiro Orioli"
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Guido Masella"
+      },
+      {
+        "affiliation": [],
+        "name": "Tommaso Macrì"
+      },
+      {
+        "affiliation": [],
+        "name": "Hengyun Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Shannon Whitlock"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.03073v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "This paper focuses on optimized matrix product state (MPS) simulations, a tensor network technique relevant to efficient computational methods for quantum systems, aligning with the user's interest in efficient solvers.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Quantum Simulation",
+      "Circuit Optimization"
+    ],
+    "summary": "Simulating quantum error correction (QEC) circuits including non-Clifford gates at scale is important to accelerate progress toward fault-tolerant quantum computing. Here we demonstrate that matrix product state (MPS) techniques can handle many QEC circuits exactly and without restriction on gate types. Crucially, we find that MPS efficiency depends sensitively on implementation choices, and we introduce a series of targeted optimizations that reduce bond dimensions and simulation time by several orders of magnitude compared to naive approaches. We illustrate this with examples including: (a) a rotated surface code quantum memory up to distance 11, (b) logical Bell-state preparation up to distance 9, (c) a 15-to-1 magic-state distillation circuit including hundreds of QEC rounds that we optimize to be simulated with only 11 logical qubits (187 physical qubits) and a maximal bond dimension of 64 in under 40 seconds, and (d) a narrow, deep random circuit that scales linearly with the number of T gates. These results demonstrate the importance of circuit-level optimizations and position MPS as a valuable complement to near-Clifford simulators for QEC circuits.",
+    "title": "Optimized Matrix-Product State Simulations of Quantum Error Correction Circuits",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5066509246826172
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.47507956624031067
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4657273292541504
+      }
+    ]
+  },
+  "2609.03075v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kristian Mæland"
+      },
+      {
+        "affiliation": [],
+        "name": "Björn Trauzettel"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.03075v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-02",
+    "reasoning": "The paper utilizes symmetry arguments to predict novel transport phenomena related to orbital magnetic moments in magnets, which connects to the previous interest in symmetry and novel electronic/magnetic properties.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Antialtermagnetism",
+      "orbitronics",
+      "magnon Edelstein effect"
+    ],
+    "summary": "We show that $p$-wave magnets efficiently generate magnetization via a linear thermal Edelstein effect arising from the orbital magnetic moments of their magnons. Furthermore, they can generate perfectly nonreciprocal orbital currents through a purely even-order nonlinear response. This makes them promising candidates for orbital-current rectification. Because these transport phenomena originate from the orbital magnetic moment of magnons, they connect magnonics and orbitronics. More generally, we find that odd-parity-wave magnets with coplanar ground states host magnons with zero spin magnetic moment. Instead the magnons carry a collinear, out-of-plane orbital magnetic moment, realizing an orbital version of antialtermagnetism. We establish these general results using symmetry arguments and demonstrate them explicitly for a coplanar ground state with the minimal number of sublattices, inspired by the ground state of CeNiAsO. Our conclusions hold both in absence and presence of spin-orbit coupling.",
+    "title": "Orbital current rectifier and linear magnon Edelstein effect in $p$-wave antialtermagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5359284281730652
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5118370652198792
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.4786018431186676
+      }
+    ]
+  },
+  "2609.03271v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jingtian Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Maxim Khodas"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivar Martin"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.03271v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper introduces a mechanism for altermagnetism in moiré systems, linking to correlated electron physics and novel magnetic orders, which aligns with interests in competing phases and strong correlations.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Moiré superlattices",
+      "Altermagnetism",
+      "Correlated insulators"
+    ],
+    "summary": "We propose a mechanism for nonmagnetic materials to develop altermagnetic order by moiré interference with nonmagnetic substrate, which is driven by structural relaxation and spontaneous twirls in moiré domain walls of lattice-mismatched moiré square lattices. When doped with one electron per moiré domain, a correlated insulating gap is opened by electron interaction. Depending on the location of the moiré potential minima, the moiré bands can show d-wave or g-wave altermagnetic splitting. The former can be enhanced by a finite twist angle; the latter is sensitive to strains that drive a transition to d-wave.",
+    "title": "Moiré-induced altermagnetism from nonmagnetic constituents",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6086663007736206
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.510590672492981
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.509857177734375
+      }
+    ]
+  },
+  "2609.03274v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tianxiao Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Fanhan Kong"
+      },
+      {
+        "affiliation": [],
+        "name": "Jijun Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Xue Jiang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.03274v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper investigates the competing magnetic ground states, including altermagnetism, in RuO2, using advanced computational methods to explain experimental controversies, directly aligning with interests in novel materials, competing phases, and computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Magnetic ground state",
+      "Spin-lattice interactions"
+    ],
+    "summary": "Rutile RuO2 is a prominent candidate for altermagnetism, yet its magnetic ground state remains highly controversial, with experiments reporting either a nonmagnetic state or altermagnetic order. Here, we develop a generalized environment-dependent spin-lattice framework that unifies localized Heisenberg exchange, itinerant Stoner magnetism via Landau spin fluctuations, and spin-orbit-coupling-mediated spin-lattice interactions. Parameterized from a high-throughput first-principles database using machine-learning and solved by large-scale Monte Carlo simulations, the framework reveals an exceptionally flat magnetic energy landscape in RuO2, where the nonmagnetic state lies nearly degenerate with multiple altermagnetic configurations. We find that material perturbations, exemplified by intrinsic defects, select distinct magnetic ground states primarily by modifying the localized Heisenberg exchange, with perturbation-induced itinerant Stoner polarization provides an essential secondary contribution. Spin-orbit coupling controls the orientation and stability of the Néel vector, but does not determine the emergence of long-range magnetic order. These results provide a unified explanation for the conflicting experimental observations and establish a general microscopic framework for understanding how material perturbations select competing magnetic ground states in systems with nearly flat magnetic energy landscapes.",
+    "title": "Resolving the Magnetic Ground-State Controversy in RuO2 through A Flat Magnetic Energy Landscape",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.5948523283004761
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.587223470211029
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5864803791046143
+      }
+    ]
+  },
+  "2609.03459v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jongmin Seok"
+      },
+      {
+        "affiliation": [],
+        "name": "Chae Eun Rhee"
+      }
+    ],
+    "categories": [
+      "cs.DC",
+      "cs.AR"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": "10.1145/3831252.3834112",
+    "id": "2609.03459v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-03",
+    "reasoning": "While employing Tensor-Train decomposition, this paper's application domain is machine learning and recommendation systems, which diverges from the user's core interests in condensed matter and quantum physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Tensor Decomposition",
+      "Machine Learning Acceleration",
+      "GPU Computing"
+    ],
+    "summary": "Tensor-Train (TT) decomposition effectively compresses large embedding tables in recommendation models, but TT-based embedding lookup remains inefficient because partially shared computation flows across input indices are not fully reused and intermediate results are repeatedly materialized off-chip between sequential TT-core contractions. We present FlowTT, a flow-aware GPU execution framework that reformulates TT gather as a set of prefix-shared irregular computation flows. FlowTT combines flow-aligned prefix-based index grouping, a fused TT-embedding execution path with on-chip intermediate retention, and persistent-thread scheduling with chunk-based work stealing and L2 checkpointing to preserve reuse under skewed workloads. By co-designing task formation, data buffering, and scheduling with the structure of TT gather, FlowTT reduces redundant TT-core operations, global-memory traffic, and load imbalance. On Meta's synthetic recommendation benchmarks (Meta-240, Meta-480, and Meta-788), FlowTT consistently achieves the lowest latency compared to existing methods. At batch size 32,768, it reduces latency by up to 42.2% in inference and 49.2% in training relative to EcoRec, while also achieving the lowest inference peak memory usage. These results show that exposing prefix-shared computation is key to efficient TT-based embedding execution.",
+    "title": "FlowTT: Exploiting Computation Flow Reuse in Irregular Tensor-Train Embedding",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3086855411529541
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.27540767192840576
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.2513889968395233
+      }
+    ]
+  },
+  "2609.03576v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zekun Lou"
+      },
+      {
+        "affiliation": [],
+        "name": "Alan M. Lewis"
+      },
+      {
+        "affiliation": [],
+        "name": "Théophane Bernhard"
+      },
+      {
+        "affiliation": [],
+        "name": "Lukas Seifert"
+      },
+      {
+        "affiliation": [],
+        "name": "Agustin Salcedo"
+      },
+      {
+        "affiliation": [],
+        "name": "Florian Kleemiss"
+      },
+      {
+        "affiliation": [],
+        "name": "Mariana Rossi"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrea Grisafi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.03576v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper introduces a symmetry-adapted machine-learning program for electron density prediction in materials, aligning with the interest in advanced computational methods and fundamental properties relevant to understanding various materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Machine learning",
+      "electron density",
+      "materials informatics"
+    ],
+    "summary": "SALTED provides an open-source Python package for machine learning the quantum-mechanical electron density, $n(\\mathbf{r})$, in molecular and condensed-phase systems based on input atomic coordinates and species. The program adopts a linear atom-centered decomposition of the electron density, which makes it highly transferable across diverse atomistic configurations sharing similar chemical environments. Because of this representation choice, SALTED is naturally interfaced with state-of-the-art electronic-structure programs based on atomic orbitals, namely CP2K, FHI-aims, and PySCF, from which reference electron-density data can be generated and used to train a model. The learning algorithm is based on a symmetry-adapted extension of Gaussian process regression, making SALTED especially efficient in small-data regimes. Thanks to the implementation of vector-field kernel functions, SALTED can also learn the first-order response of the electron density to applied electric fields, $\\partial n(\\mathbf{r})/\\partial \\mathbf{E}$. The application of SALTED within computational workflows has already shown its utility in a wide variety of contexts, including the calculation of polarization vectors and polarizability tensors, the accurate evaluation of Coulomb forces in QM/MM molecular-dynamics simulations, and electronic-structure studies of large-scale 2D materials.",
+    "title": "SALTED: a symmetry-adapted machine-learning program for predicting electron-densities in molecules and materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5238310694694519
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.503957986831665
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.48243626952171326
+      }
+    ]
+  },
+  "2609.03684v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "C. A. Crawford"
+      },
+      {
+        "affiliation": [],
+        "name": "C. I. Hiley"
+      },
+      {
+        "affiliation": [],
+        "name": "N. C. Bristowe"
+      },
+      {
+        "affiliation": [],
+        "name": "C. Stock"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Gainza"
+      },
+      {
+        "affiliation": [],
+        "name": "C. Ritter"
+      },
+      {
+        "affiliation": [],
+        "name": "M. R. Lees"
+      },
+      {
+        "affiliation": [],
+        "name": "R. I. Walton"
+      },
+      {
+        "affiliation": [],
+        "name": "M. S. Senn"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.03684v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper investigates hidden magnetic octupolar order and competing instabilities driven by spin-orbit coupling in a perovskite, aligning well with interests in complex magnetic states, competing phases, symmetry, and the electronic properties of strongly correlated materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Hidden order",
+      "Octupolar order",
+      "Spin-orbit coupling"
+    ],
+    "summary": "Phase transitions are typically driven by symmetry-breaking structural distortions that lift electronic degeneracies, yet in some cases, these transitions may be driven by a hidden order without conventional structural signatures. Here, we demonstrate that the 3$d$ perovskite, KFeF$_3$, hosts such a hidden instability. Using a combination of high-resolution powder diffraction, magnetometry, symmetry-based analysis and first principles calculations, we reveal that while the 90 K cubic to rhombohedral transition arises from conventional magnetostriction accompanying antiferromagnetic order, a second transition at 40 K lowers the symmetry to monoclinic without any detectable Jahn-Teller distortion or translational symmetry-breaking. Symmetry-based Landau analysis supports a hidden zone centered magnetic octupole order parameter, whose improper coupling accounts for the weak ferromagnetism and pronounced symmetry-breaking strain. Density functional calculations show that spin-orbit coupling suppresses the competing Jahn-Teller instability, and thereby favors higher rank magnetic multipolar degrees of freedom. These findings establish KFeF$_3$ as a model system in which the competing energy scales between spin-orbit coupling and orbital degeneracy result in the emergence of hidden, multipolar order. We show that the control of such magnetic, multipolar order could, in principle, provide a route to induce altermagnetism.",
+    "title": "Hidden Magnetic Octupolar Order driven by Spin-Orbit coupling in KFeF$_3$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.6270699501037598
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6084778308868408
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.5889412760734558
+      }
+    ]
+  },
+  "2609.03854v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chang-Yu Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuai Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Zi-Xiang Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.03854v1",
+    "matching_keywords": [
+      "nonequilibrium",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper investigates the universal driven critical dynamics of entanglement entropy in interacting Dirac fermions using quantum Monte Carlo, connecting to interests in Dirac fermions and computational methods, though the focus on entanglement dynamics is somewhat distinct.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Entanglement entropy",
+      "Quantum criticality",
+      "Kibble-Zurek mechanism"
+    ],
+    "summary": "The Kibble-Zurek mechanism (KZM) and finite-time scaling (FTS) provide a foundational framework for driven critical dynamics, yet their predictive power has been largely confined to local observables. Here, we establish a universal finite-time scaling theory for the nonequilibrium dynamics of quantum entanglement. Using unbiased quantum Monte Carlo simulations, we investigate the corner entanglement entropy of (2+1)-dimensional interacting Dirac fermions driven from ordered phases toward a quantum critical point. We find that the corner entanglement accurately obeys a universal driven scaling governed by the driving rate and system size, persisting whether the initial ordered state is fully gapped or hosts gapless Goldstone modes. Crucially, this dynamical entanglement exhibits a logarithmic dependence on the driving rate, from which the universal corner coefficient of the underlying conformal field theory can be robustly extracted far from equilibrium. These results generalize the KZM from local observables to the intrinsic nonlocal quantum information measures, offering a practical blueprint for characterizing quantum criticality and entanglement on programmable quantum simulators.",
+    "title": "Universal Driven Critical Dynamics of Entanglement Entropy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5438276529312134
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.524331271648407
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5188585519790649
+      }
+    ]
+  },
+  "2609.04037v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Francesco Formicola"
+      },
+      {
+        "affiliation": [],
+        "name": "Grazia Di Bello"
+      },
+      {
+        "affiliation": [],
+        "name": "Antonio De Candia"
+      },
+      {
+        "affiliation": [],
+        "name": "Giulio De Filippis"
+      },
+      {
+        "affiliation": [],
+        "name": "Carmine Antonio Perroni"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.04037v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-03",
+    "reasoning": "While employing numerical simulations, the core topic of discrete time crystals in disordered spin chains deviates significantly from the previously liked papers focusing on real materials, their defects, or specific symmetry-protected states.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Time crystals",
+      "matrix-product-states",
+      "quantum many-body localization"
+    ],
+    "summary": "A discrete time crystal is an out-of-equilibrium phase of matter characterized by the spontaneous breaking of discrete time-translation symmetry. Using extensive numerical simulations based on matrix-product-state methods, we provide evidence for discrete time-crystalline behavior in strongly disordered spin chains with Heisenberg interactions, including the isotropic point, subject to periodic driving. Starting from a many-body localized regime, we observe that rotations induced by delta kicks produce a pronounced subharmonic response at half the drive frequency in spin observables. We investigate the stability of this response against rotation-angle errors through entanglement entropy, quantum Fisher information, short-range spin correlations, and restricted-control ergotropy. Increasing the rotation error reveals an intermediate dynamical regime separating the time-crystalline and Floquet-localized responses. In this regime, most observables exhibit signatures of weakly correlated dynamics reminiscent of Anderson localization.",
+    "title": "Discrete time crystals in disordered anisotropic Heisenberg chains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5667184591293335
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5516273379325867
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.550287663936615
+      }
+    ]
+  },
+  "2609.04114v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Helen Zwölfer"
+      },
+      {
+        "affiliation": [],
+        "name": "Giovanni Cataldi"
+      },
+      {
+        "affiliation": [],
+        "name": "Umberto Borla"
+      },
+      {
+        "affiliation": [],
+        "name": "Jad C. Halimeh"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.04114v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper utilizes tree tensor networks for real-time simulations of string dynamics in lattice quantum electrodynamics, strongly aligning with interests in advanced computational methods for quantum many-body physics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Lattice Gauge Theory",
+      "Real-Time Dynamics",
+      "Tree Tensor Networks"
+    ],
+    "summary": "Understanding real-time string dynamics in three spatial dimensions is essential for connecting quantum simulations of lattice gauge theories (LGTs) to the physical dimensionality of QED and QCD, where transverse fluctuations and competing local processes proliferate. We present the first real-time simulations of string breaking in $3+1$D lattice quantum electrodynamics. Using tree tensor networks, we simulate the quench dynamics of electric flux strings in a $3\\!+\\!1$D U(1) LGT with dynamical matter. At strong coupling, the string breaks resonantly at a sharp resonance condition of mass and gauge couplings, converting electric energy into matter--antimatter pairs that screen the static charges. Off resonance, we classify all competing channels---pair production, string deformations and extensions, and flux loops---whose multiplicity, extensive for pair production and flux loops, depletes the string sector even far from resonance. A channel-resolved perturbation theory quantitatively reproduces these dynamics and their Fourier spectrum. Our results establish diagnostics and benchmarks for upcoming quantum simulators of higher-dimensional LGTs.",
+    "title": "Real-Time String Dynamics in $3+1$D Lattice Quantum Electrodynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4789619445800781
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.4673529863357544
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.46594834327697754
+      }
+    ]
+  },
+  "2609.04117v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Erick Parra Verde"
+      },
+      {
+        "affiliation": [],
+        "name": "Giovanni Cataldi"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefan Kühn"
+      },
+      {
+        "affiliation": [],
+        "name": "Giuseppe Magnifico"
+      },
+      {
+        "affiliation": [],
+        "name": "Jad C. Halimeh"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.04117v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper investigates non-Abelian string dynamics and thermalization in open lattice gauge theories using tensor networks, directly intersecting with the user's interest in sophisticated quantum many-body simulations.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Open Quantum Systems",
+      "Non-Abelian Gauge Theory",
+      "Thermalization"
+    ],
+    "summary": "Open-system lattice gauge theory (LGT) has so far been developed predominantly in Abelian settings, leaving open how genuinely non-Abelian gauge structure reshapes dissipative real-time dynamics. Here, we study a $1+1$D SU(2) Yang--Mills LGT with dynamical matter coupled to a thermal scalar environment through a gauge-preserving Lindblad evolution, which we solve using tensor networks. Starting from a quark--antiquark pair connected by a chromoelectric flux string, we find that the thermal medium melts the string by delocalizing the color charges and screening the flux; on resonance, this dissipative melting competes with and delays coherent string breaking. The thermalization time is non-monotonic in the environment coupling, decreasing through environment-assisted transport at weak dissipation before increasing in a quantum-Zeno regime. In the strong-dephasing limit, a Schrieffer--Wolff expansion maps the dynamics to a classical exclusion process and yields the Liouvillian thermalization time analytically. Beyond these generic open-system effects, the non-Abelian matter structure produces a systematic mesonic bias in the steady state, while the thermalization time decreases with temperature, in contrast to the Abelian Schwinger model trend and in qualitative agreement with pNRQCD studies of the quark--gluon plasma. These results establish a gauge-preserving framework for thermalization and string dynamics in open non-Abelian lattice gauge theories.",
+    "title": "Non-Abelian string melting and thermalization in an open lattice gauge theory",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.48358383774757385
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.4603258967399597
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4539647698402405
+      }
+    ]
+  },
+  "2609.04146v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiaodong Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Guan-Lin Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Ran"
+      },
+      {
+        "affiliation": [],
+        "name": "Di Xiao"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.04146v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "The paper introduces a novel variational wavefunction for strongly correlated systems and competing phases, which aligns well with the previous interest in computational methods for such systems and the study of competing phases in materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Strongly correlated systems",
+      "variational Monte Carlo",
+      "quantum many-body systems"
+    ],
+    "summary": "Describing competing phases of strongly correlated systems often requires trial wave functions built from phase-specific assumptions. We propose the \\emph{hyperdeterminant (HyperDet) wavefunction} as a phase-agnostic ansatz for both bosonic and fermionic quantum many-body systems exhibiting spontaneous symmetry-breaking order, fractionalization, and/or topological order with anyonic excitations. The HyperDet structure emerges naturally by fusing auxiliary fermionic parton Slater determinants into physical orbitals through a fully learnable \\emph{fusion tensor} $\\mathcal F$. Optimized using variational Monte Carlo, a single HyperDet architecture can achieve exceptionally high overlaps $\\geq 99.9\\%$ with exact-diagonalization ground states throughout the entire fractional Chern insulator phase in both bosonic and fermionic models, and across their nearby competing phases. We introduce the singular-value spectrum of the \\emph{bipartite fusion matrix} as a structural diagnostic of fusion tensor, and find that its redistribution tracks many-body phase transitions without computing phase-specific observables. The optimized fusion tensor also encodes the parton-level topological data: it reproduces the parton Chern numbers expected for the bosonic and fermionic FCI states, completing their field-theory descriptions and the resulting topological order. Its intrinsic gauge structure further determines whether physical symmetries admit virtual lifts and, when faithful lifts exist, extracts their projective class; for the bosonic FCI, this recovers the expected parton translation fractionalization. We thus anticipate the HyperDet wavefunction to be a promising variational platform for both accurate ground-state searches and phase-diagram explorations across strongly correlated phases, and for providing interpretable theoretical insights from parton-level microscopics to field-theory descriptions.",
+    "title": "HyperDet Wavefunction: A Phase-Agnostic Ansatz for Strongly Correlated Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.508202850818634
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5080674886703491
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5034639239311218
+      }
+    ]
+  },
+  "2609.04164v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pramodh Senarath Yapa"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph Maciejko"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Marsiglio"
+      },
+      {
+        "affiliation": [],
+        "name": "Annica M. Black-Schaffer"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.04164v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper introduces a novel superconducting Peierls instability leading to a pair-density wave in unconventional superconductors, directly linking to the user's interests in high-Tc cuprates, nickelate superconductors, charge correlations, and competing orders.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Pair-density wave",
+      "Unconventional superconductivity",
+      "Peierls instability"
+    ],
+    "summary": "The Peierls instability is a foundational mechanism in condensed matter physics, showing how the electron--phonon interaction can transform a simple metal into an insulating state with a new lattice periodicity. In a one-dimensional (1D) metal the Peierls instability follows from the enhanced electronic response at wavevector $Q=2k_F$ (connecting the Fermi points) producing a Kohn anomaly: a softening of the phonon mode at the same wavevector. Condensation of this mode then generates the tell-tale Peierls periodic lattice distortion and charge-density wave (CDW) that gaps the electronic spectrum. Here we show an analogous instability at the edge of a two-dimensional (2D) superconductor, where a dispersing Andreev bound state (ABS) hosts Bogoliubov Fermi points at $\\pm k_c$. The enhanced quasiparticle response at the connecting wavevector $Q=2k_c$ couples directly to pairing-fluctuations and produces a superconducting Kohn anomaly: a softening of a pairing mode at the same wavevector. Condensation of this mode then generates an edge pair-density wave (PDW) that gaps the ABS. We refer to this as a superconducting Peierls instability and identify the boundary quasiparticle structure that enables it. As a concrete realization, we consider a square-lattice extended Hubbard model whose mixed-symmetry $s+d+ip$ state hosts a dispersing ABS with zero-energy crossings at finite edge momenta. Using self-consistent Bogoliubov--de Gennes (BdG) calculations we show that the order parameter develops an edge PDW, with the wavevector set by the superconducting Kohn anomaly, that gaps the ABS crossings. Our results identify a novel mechanism for spontaneous translation-symmetry breaking in a superconductor. As this superconducting Peierls mechanism does not require an extensive zero-energy flat band or topologically protected edge states, it may apply broadly to unconventional superconductors.",
+    "title": "A Superconducting Peierls Instability",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.6035619974136353
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5935965776443481
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.5751965045928955
+      }
+    ]
+  },
+  "2609.04165v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matthias C. Caro"
+      },
+      {
+        "affiliation": [],
+        "name": "Natalie McHugh"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergii Strelchuk"
+      }
+    ],
+    "categories": [
+      "cs.DS",
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.04165v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-09-03",
+    "reasoning": "This paper delves into the graph-theoretic foundations and complexities of tensor networks (MPS, TTN), directly informing the understanding and application of these efficient computational methods for quantum systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Tensor Network Theory",
+      "Graph Parameters",
+      "Entanglement Structure"
+    ],
+    "summary": "Parameterised graph theory studies how the complexity of graph-theoretic problems depends on structural parameters of the input graph. This perspective has proved useful in analysing tensor-network simulation (Markov and Shi, 2008). Its implications for tensor-network representations and tomography are less well understood. In particular, which graph parameters determine whether a tensor-network state (TNS) admits a tractable matrix product state (MPS) or tree tensor network (TTN) representation, and which control the complexity of learning the state?   We address these questions using parameterised graph theory. First, we show that cutwidth and tree-cutwidth bound the bond dimension overhead required to represent a TNS as an MPS or TTN. In the TTN case, tree-cutwidth also bounds the local dimension of the grouped subsystems. The proofs are based on entanglement rerouting, a tensor-network analogue of rerouting information in a classical network. Second, we derive graph-dependent upper bounds on the sample and computational complexity of realisable TNS tomography, with exponents that depend on cutwidth, tree-cutwidth, and a new graph parameter, learning complexity, which we bound in terms of degree and treewidth. We obtain these results by extending the disentangling MPS learner of (Cramer et al., 2010), as analysed further in (Bakshi et al., 2025; Lin et al., 2025), to TTNs and to tensor networks on arbitrary known graphs. Finally, we extend the framework beyond the realisable setting. For an arbitrary input state, our agnostic learner outputs a pure state whose fidelity is within additive error $ε$ of the optimum over tensor-network states on the given graph with a given bond dimension, with explicit graph-dependent bounds on sample and computational complexity.",
+    "title": "Parameterised graph theory for tensor networks: entanglement rerouting, structural simplification, and agnostic tomography",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4821382462978363
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4582841992378235
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.41844847798347473
+      }
+    ]
   }
 }
