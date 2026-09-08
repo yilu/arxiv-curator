@@ -2421,14 +2421,40 @@
         "name": "Yong Baek Kim"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.04330v1",
+    "matching_keywords": [
+      "neural quantum state"
+    ],
     "published_date": "2026-09-03",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates phase transitions and collective excitations in electron systems using a theoretical framework, touching upon quantum geometry and emergent phases like skyrmion lattices, which aligns well with interests in strongly correlated and topological materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum geometry",
+      "Electron crystallization",
+      "Skyrmion lattice"
+    ],
     "summary": "Recent experiments on multilayer graphene systems have reinvigorated the study of electron crystallization, now with the inclusion of quantum geometry. In this work, we apply time-dependent Hartree-Fock (TDHF) to the $λ$-jellium model to analyze the impact that quantum geometry has on the electronic liquid--crystal phase diagram and how it modifies the collective modes and responses of the liquid and crystal phases. In agreement with recent results utilizing neural quantum states, we find that quantum geometry favours electron crystallization, shifting the transition to higher densities. We also study the instabilities revealed by TDHF in the Fermi liquid ground state at low densities, providing insight into the fluctuations driving the crystallization transition. We further find that quantum geometry reduces the dispersion of the plasmon mode and suppresses Friedel oscillations deep in the liquid phase. Resolving the density response in terms of individual orbitals, we find that this suppression is caused by spectral weight transfer to an out-of-phase inter-orbital mode. Finally, we show that an analogous mode that emerges in the crystal phase corresponds to the breathing mode of an emergent real-space pseudospin skyrmion lattice.",
     "title": "The influence of quantum geometry on the phase boundary and collective excitations of electron liquids and crystals",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5647708177566528
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5222697854042053
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.47967422008514404
+      }
+    ]
   },
   "2609.04532v1": {
     "authors": [
@@ -2587,14 +2613,42 @@
         "name": "Adrián Buganza-Tepole"
       }
     ],
+    "categories": [
+      "cs.AI",
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.04541v1",
+    "matching_keywords": [
+      "neural network",
+      "nonequilibrium"
+    ],
     "published_date": "2026-09-03",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper focuses on data-driven modeling of mechanical properties in 3D printed materials, which is unrelated to strongly correlated electron systems, superconductivity, or topological physics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Data-driven materials",
+      "Constitutive modeling",
+      "Digital fabrication"
+    ],
     "summary": "Digital materials fabricated by multi-material 3D printing are designed as controlled mixtures of stiff and compliant constituents, yielding effective responses that span more than an order of magnitude in apparent stiffness and exhibit strongly nonlinear, composition-dependent, and rate-dependent dissipative behavior. Classical finite-strain viscoelastic models represent such behavior with closed-form strain energy functions for equilibrium and non-equilibrium stresses as well as evolution of internal variables, which may limit flexibility when a single constitutive model is expected to generalize across materials and loading rates. Here, we present a data-driven multi-material constitutive modeling framework that generalizes a formulation by Bergström and Boyce. The proposed framework retains the structure of the classical model, namely multiplicative kinematics, invariant-based strain-energy functions, and a scalar dissipative evolution law directed along the normalized nonequilibrium deviatoric stress. For the equilibrium branch, the data-driven discovery framework either directly predicts closed-form model parameters as functions of composition or automatically constructs a polyconvex strain-energy function using neural ordinary differential equations (NODEs). The nonequilibrium branch kinetics are learned similarly, either by directly identifying closed-form parameters across compositions or by using appropriately constrained artificial neural networks. Using multi-rate uniaxial compression data across multiple material compositions, we show that the proposed formulation captures rate-dependent stiffness and hysteresis across compositions while preserving thermodynamic consistency.",
     "title": "Data-Driven Discovery of Composition-Dependent Constitutive Models for Hyperelasticity and Viscoelasticity of Digital Materials",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.31887686252593994
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.24532990157604218
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.23623248934745789
+      }
+    ]
   },
   "2609.04696v1": {
     "authors": [
@@ -2619,14 +2673,42 @@
         "name": "Ziyang Hu"
       }
     ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.04696v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "While this paper presents a sophisticated machine learning potential, its application is focused on electrochemical interfaces and open system simulations, which is distinct from the user's primary interests in strongly correlated materials, superconductivity, and topological physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Electrochemical modeling",
+      "Graph neural networks",
+      "Open quantum systems"
+    ],
     "summary": "Modeling electrochemical interfaces under operational non-equilibrium conditions is vital for energy technologies but remains bottlenecked by the expensive cost of ab initio methods. Current machine learning potentials, largely designed for closed systems under homogeneous electric fields, are limited in open quantum transport applications. To overcome this, we present an E(3)-equivariant graph neural network that embeds voltage bias for open-system simulations. Our approach decouples the system energy and forces into zero-bias and bias-dependent contributions, assigning distinct vector encodings to electrode and scattering-region atoms to capture non-equilibrium conditions. Trained on limited discrete bias data, the model achieves high predictive accuracy and robust extrapolation transferability. When applied to a lithium/water interface, our model successfully captures the field-induced dynamic reorientation of water molecules and reproduces asymmetric electrochemical behavior at different electrodes.",
     "title": "Voltage-embedded equivariant machine learning potential for open system simulations",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5180394053459167
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4778296649456024
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.4640651047229767
+      }
+    ]
   },
   "2609.04798v1": {
     "authors": [
@@ -2750,14 +2832,39 @@
         "name": "Wei-Hua Wang"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": "10.1088/1674-1056/ae5b5f",
     "id": "2609.04845v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "While employing advanced computational methods like deep learning for materials design might be a general interest, the specific material class (Fe-based soft magnetic alloys) and properties optimized are not directly related to the user's explicit interests in strongly correlated electron systems, superconductivity, or topological materials.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Materials informatics",
+      "Machine learning for materials",
+      "Alloy design"
+    ],
     "summary": "Fe-based amorphous alloys are promising soft magnetic materials for developing next-generation devices with high frequency and efficiency. However, optimization of Fe-based alloys with ultra-high saturation magnetic flux density (B_s), ultra-low coercivity (H_c), and good glass-forming ability is a notorious problem, owing to the vast composition space and complex trade-offs of these properties. Thus, conventional design methods encounter great challenges. Here we develop a generative multi-task deep learning (GMTDL) to achieve simultaneous optimization of compositions and trade-off properties. The GMTDL can sufficiently exploit and share the knowledge of datasets across different tasks, despite the limitation and imbalance of these datasets. Therefore, it exhibits superior performance in prediction of alloys with multiple targeted properties, outperforming previous machine learning-based design strategies. Moreover, the GMTDL can also tailor compositions, providing an efficient way to regulate properties and generate desired candidates for further experimental processing. The validity and reliability of GMTDL are rigorously tested by benchmarking with Fe-based alloys reported very recently. Moreover, some new alloys with ultra-high B_s and ultra-low H_c are predicted. The optimal content windows of key elements and their synergistic effects are also unraveled for practical guidance. Thus, our study establishes an effective and reliable paradigm for simultaneous prediction and optimization of high-performance materials with multiple properties.",
     "title": "Multi-task deep-learning optimization of trade-off properties for superior-performance Fe-based soft magnetic alloys",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4478619396686554
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3777152895927429
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.37585577368736267
+      }
+    ]
   },
   "2609.05024v1": {
     "authors": [
@@ -2818,16 +2925,39 @@
         "name": "Sergiy Zhuk"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.05024v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper discusses quantum error mitigation using tensor networks, a computational method relevant to many-body physics, and applies it to discrete time crystals, a topic in condensed matter.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum error mitigation",
+      "Discrete time crystals",
+      "Tensor network methods"
+    ],
     "summary": "We introduce Lindblad Multiproduct Formulas: a quantum error mitigation technique that uses two-dimensional tensor networks contracted with loop-corrected belief propagation. The quantities required to implement the error mitigation scheme that are evaluated with tensor networks can be less computationally expensive to calculate than the expectation values themselves, thus allowing for the possibility of applying our method to certain systems for which tensor network methods may struggle to calculate the observable quantities of interest. The workflow incorporates Clifford rescaling techniques and outputs an estimated error bar. We apply our method to a model of two-dimensional discrete time crystals studied previously and implement it on $65$ qubits arranged in a $3\\!\\times\\!3$ heavy-hexagonal topology on the quantum computer ibm_basquecountry. We show that a GPU implementation of the classical part of our workflow achieves a speedup of up to $5.6\\times$.",
     "title": "Lindblad Multiproduct Formulas",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5734740495681763
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5450952649116516
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5304152965545654
+      }
+    ]
   },
   "2609.05045v1": {
     "authors": [
@@ -2840,16 +2970,41 @@
         "name": "G Subrahmanya V. R. K. Rao"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.05045v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "Although it employs concepts like tensor networks and the XY model from statistical physics, its application to financial portfolio allocation is outside the user's scientific interests.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Financial modeling",
+      "XY model",
+      "Portfolio optimization"
+    ],
     "summary": "We apply tensor-network methods to a field-coupled XY model for long-only portfolio construction. Daily return statistics set asset-specific fields and correlation couplings. Correlation distance, four-point Gromov hyperbolicity, and Ward clustering are used to construct a sparse interaction path. A Fourier-Bessel expansion maps the continuous angular partition function to a finite-current tensor network; bottom-up and top-down contractions then give the one-site marginals and equilibrium cosine scores. A softmax map converts these scores into positive, fully invested portfolio weights. We study five equity markets over continuous ranges of inverse temperature beta and concentration gamma, and compare selected parameter pairs with long-only Markowitz frontiers and standard benchmarks. The same-sample comparisons demonstrate a tractable route from financial time series to network-adjusted allocations; predictive trading performance is outside their scope.",
     "title": "Tensor-Network Inference in a Field-Coupled XY Model for Portfolio Allocation",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.3698616623878479
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.3623465895652771
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.36018985509872437
+      }
+    ]
   },
   "2609.05121v1": {
     "authors": [
@@ -2858,16 +3013,40 @@
         "name": "Balázs Pozsgay"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "nlin.SI"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.05121v1",
+    "matching_keywords": [],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper explores theoretical quantum information concepts like operator entanglement in abstract quantum circuits, which does not align with the user's interest in specific material systems or condensed matter phenomena.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum circuits",
+      "Operator entanglement",
+      "Yang-Baxter equation"
+    ],
     "summary": "We study the operator entanglement of local operators in one-dimensional brickwork circuits whose two-site gate satisfies the braid relation; throughout this work, we call such a gate a Yang--Baxter gate. We establish upper bounds for several structured, overlapping classes of Yang--Baxter gates. We show that the operator Schmidt rank remains uniformly bounded in time for all qubit Yang--Baxter gates and, in arbitrary local dimension, for permutation gates obtained from non-degenerate Yang--Baxter maps. We also show that it grows at most polynomially for involutive dual-unitary Yang--Baxter gates and for arbitrary phase dressings of permutation gates obtained from non-degenerate Yang--Baxter maps. These results imply, respectively, constant and logarithmic upper bounds on the operator entanglement. Conversely, we construct a seven-state involutive Yang--Baxter gate without dual unitarity and a one-site operator whose exact operator Schmidt rank grows exponentially, although the corresponding operator entropies remain undetermined. Entanglement growth in the general Yang--Baxter case remains open. All proofs and selected examples were constructed by ChatGPT 5.6 Sol.",
     "title": "On the growth of operator entanglement in brickwork circuits with Yang--Baxter gates",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4103522002696991
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4046711325645447
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4013340473175049
+      }
+    ]
   },
   "2609.05181v1": {
     "authors": [
@@ -2892,16 +3071,42 @@
         "name": "Sadamichi Maekawa"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.05181v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper explores exotic spin supersolid states in a strongly correlated triangular antiferromagnet using advanced numerical methods and discusses experimental signatures, aligning perfectly with interests in strongly correlated electron systems, competing phases, and experimental probes.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Spin supersolid",
+      "Quantum frustration",
+      "Inelastic neutron scattering"
+    ],
     "summary": "We present a systematic numerical study of the spin-1 antiferromagnetic Heisenberg model on the triangular lattice in an out-of-plane magnetic field, using Density Matrix Renormalization Group (DMRG) methods. By mapping out the quantum phase diagram as a function of the single-ion anisotropy $D_z$ and magnetic field, we identify distinct dipolar and quadrupolar spin supersolid states, characterized by spontaneous U(1) symmetry breaking with finite spin superfluid stiffness coexisting with longitudinal translational symmetry breaking. At zero field, the dipolar spin supersolid with a 'Y'-type spin configuration persists down to $D_z = 0$, whereas the quadrupolar spin supersolid prevails at large $D_z$. At intermediate fields, the phase diagram is dominated by an up-up-down phase. At high fields below saturation, a quadrupolar spin superfluid emerges in the large-$D_z$ regime, whereas a dipolar spin supersolid with a 'V'-type spin configuration dominates at small $D_z$. These phases are characterized through their order parameters and spin superfluid stiffness using calculations on various system sizes. Furthermore, the dynamical spin structure factor is obtained across the phase diagram, where characteristic spectral signatures of different phases are observed, including the gapless Goldstone mode and the roton-like minima. These features are directly accessible to inelastic neutron scattering experiments. Our results provide a theoretical understanding of the interplay between frustrations, anisotropy, and Zeeman interactions in driving distinct spin supersolid phases in the spin-1 system, which are relevant to various triangular-lattice antiferromagnets such as Na$_2$BaNi(PO$_4$)$_2$ and K$_2$Ni(SeO$_3$)$_2$.",
     "title": "Dipolar and quadrupolar spin supersolid states in a spin-1 triangular antiferromagnet",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6698575019836426
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6038649082183838
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5996919870376587
+      }
+    ]
   },
   "2609.05185v1": {
     "authors": [
@@ -2981,14 +3186,40 @@
         "name": "Luis G. G. V. Dias da Silva"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.05219v1",
+    "matching_keywords": [
+      "green's function"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly investigates RKKY interactions and topological robustness in Weyl semimetals, a material class explicitly mentioned in the user's liked papers, connecting to topological properties, symmetry breaking, and advanced theoretical concepts like Berry curvature.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Weyl semimetals",
+      "RKKY interaction",
+      "Topological phase transition"
+    ],
     "summary": "Weyl semimetals (WSMs), with their unique topological properties and distinct electronic structure, exhibit intriguing properties when either time-reversal or inversion symmetries are broken. In this work, we consider the Ruderman-Kittel-Kasuya-Yosida (RKKY) interaction between magnetic impurities in time-reversal symmetry-breaking WSMs. We derive analytical expressions for the full RKKY exchange tensor in arbitrary two-band spinful lattice systems. Our approach reveals both Heisenberg, anisotropic Ising and Dzyaloshinsky-Moriya terms, which can be calculated by energy-integrating real-space Green's functions across the entire Brillouin zone, with the band edge acting as a natural energy cutoff. We apply this framework to study a two-band tight-binding model for a time-reversal symmetry-breaking WSM that interpolates between a Weyl phase with well-separated chiral nodes and a quadratic band-touching semimetal phase. Remarkably, the spatial profile, magnitude, and anisotropic tensor structure of the exchange couplings remain persistent across the node-annihilation transition. This topological robustness reveals that short- and intermediate-range RKKY interactions are mediated by the global, Brillouin-zone-integrated quantum metric of the full valence band rather than being strictly dictated by local low-energy Berry curvature monopoles. These findings demonstrate the necessity of full-band tight-binding formulations when predicting real-space magnetic interactions, providing key insights for electric-field tuning of magnetic anisotropy and constructing realistic models of heavy-fermion and Weyl-Kondo semimetals.",
     "title": "Robustness of RKKY interactions across a Weyl node-annihilation transition",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5456997752189636
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5371952056884766
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5288736820220947
+      }
+    ]
   },
   "2609.05388v1": {
     "authors": [
@@ -3009,15 +3240,40 @@
         "name": "Lia Morra"
       }
     ],
+    "categories": [
+      "cs.CV"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.05388v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-09-04",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper is an AI/machine learning work focused on visual reasoning and neuro-symbolic systems, which is unrelated to the user's stated interests in physics and materials science.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Neuro-symbolic AI",
+      "Visual reasoning",
+      "Logic Tensor Networks"
+    ],
     "summary": "Visual reasoning tasks require a system to jointly perceive visual content and apply formal relational constraints---a combination that neither pure neural nor purely symbolic approaches handle well in isolation. This paper proposes a Neuro-Symbolic (NeSy) framework that closes this gap by tightly coupling a Vision-Language Model (VLM) for automatic First-Order Logic (FOL) rule induction with a Dynamic Logic Tensor Network (D-LTN) for differentiable rule verification, in a closed iterative feedback loop. The VLM receives a small set of labelled visual examples and proposes candidate FOL rules conforming to a strict grammar (Think); the D-LTN is automatically assembled from these rules at runtime and evaluates them grounding on CNN-produced visual embeddings (Verify); and verification failures are fed back to guide the VLM's next hypothesis (Revise). Evaluated on the ViSudo-PC benchmark across four visual domains (MNIST, EMNIST, KMNIST, FMNIST), the system induces valid Sudoku constraint rules using only three training examples as visual context. The proposed method achieves AUC scores matching or outperforming previous methods (NeuPSL, LTN), showing the potential for automatic rule discovery through VLM. Code is available at https://github.com/homayoun-afshari/nesy.",
     "title": "Think-Verify-Revise: Neuro-Symbolic Visual Reasoning with Vision-Language Models and Dynamic Logic Tensor Networks",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.26324236392974854
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.2630385756492615
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.24890640377998352
+      }
+    ]
   }
 }
