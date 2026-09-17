@@ -9277,14 +9277,40 @@
         "name": "Fabian Grusdt"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.13391v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
     "published_date": "2026-09-11",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly investigates the pseudogap phase and competing orders in doped antiferromagnets, specifically linking to high-temperature superconductivity in cuprates, a topic of clear interest to the user.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Pseudogap phase",
+      "Cuprate superconductors",
+      "Stripe instabilities"
+    ],
     "summary": "The microscopic origin of the pseudogap phase constitutes a longstanding puzzle related to the emergence of high-temperature superconductivity in cuprate materials. In this work, we develop an effective model for doped antiferromagnets in terms of fluctuating stripes, or string-like domain walls, which obscure the antiferromagnetic order of the spin background. The open ends of such domain walls of the N'eel order are treated as vortices in the resulting lattice gauge theory. We numerically evaluate the phase diagram by classical Monte Carlo simulations, using percolation-based geometric order parameters to diagnose hidden N'eel order. At high temperatures, we identify a BKT-type crossover in which the domain wall ends become deconfined. We interpret this as the $T^*$ crossover from the hidden order regime to the paramagnetic metal above. At low temperatures, we identify stripe instabilities. Predictions of our effective model can be tested in ultracold fermion quantum simulators.",
     "title": "Effective theory of the hidden-order pseudogap phase in a doped antiferromagnet",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.61181640625
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6050241589546204
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5894900560379028
+      }
+    ]
   },
   "2609.13426v1": {
     "authors": [
@@ -9449,14 +9475,39 @@
         "name": "Sangjae Lee"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.13723v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
     "published_date": "2026-09-12",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly uses DFT+DMFT to study nickelate heterostructures exhibiting Mott physics, a core theme in the user's liked papers.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "orbital-selective Mott transition",
+      "nickelate superlattices",
+      "dimensional confinement"
+    ],
     "summary": "The design of quantum materials to manipulate dimensionality and electronic correlations is a central focus in the exploration of emergent phenomena. We propose a new correlated quantum material platform for realizing a layer- and orbital-selective Mott transition (LOSMT) in a nickelate heterostructure by combining bilayer and monolayer LaNiO$_3$ separated by a monolayer LaAlO$_3$ spacer under compressive strain from the LaAlO$_3$ substrate. The LOSMT emerges from the layer-dependent dimensional confinement of the apical Ni($d$)-$z^2$ orbital and strain-induced lifting of the orbital degeneracy. The monolayer LaNiO$_3$ exhibits an orbital-selective Mott insulating phase with a Mott gap in the Ni($d$)-$z^2$ orbital, whereas the bilayer LaNiO$_3$ exhibits a multi-orbital metallic phase, triggering the orbital-selective Mott transition upon cooling $via$ inter-layer hybridization of the Ni($d$)-$z^2$ orbitals. Calculations within the density functional theory plus dynamical mean-field theory (DFT+DMFT) framework reveal that the LOSMT drives a dimensional crossover by enabling out-of-plane electronic transport through the metallization of the localized apical Ni($d$)-$z^2$ orbital, while the planar Ni($d$)-$x^2-y^2$ orbital remains itinerant across the transition. The emergence of the LOSMT provides a new pathway for engineering correlated quantum materials toward unconventional superconductivity and Mott-transistor functionalities.",
     "title": "Layer- and Orbital-Selective Mott Physics Driving Dimensional Crossover in Nickelate Superlattices",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.7085322141647339
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC",
+        "score": 0.6661308407783508
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:5nxA0vEk-isC",
+        "score": 0.6407577395439148
+      }
+    ]
   },
   "2609.14051v1": {
     "authors": [
@@ -10032,14 +10083,40 @@
         "name": "Rickard Armiento"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.14846v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-09-13",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper uses machine learning for efficient, high-throughput prescreening of point defects in semiconductors, directly aligning with the user's interest in material defects and advanced computational methods.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Point defects",
+      "High-throughput screening",
+      "Quantum technologies"
+    ],
     "summary": "High-throughput calculations using density-functional theory (DFT) are commonly used to explore point defects for applications in power electronics and quantum technologies. There is currently a major shift away from these traditional simulation techniques towards machine learning (ML) methods. We explore a class of physics-guided ML models for predicting defect formation energies and zero-phonon lines (ZPL) to identify point defects for quantum applications. The models are specifically targeted for use in a prescreening step for accelerated high-throughput workflows, and are therefore designed to avoid the costly relaxation step typically present with ML interatomic potentials (MLIPs). We compare performance for single and double point defect systems in 4H-SiC with ridge, kernel ridge, and multilayer perceptron (MLP) models using three different descriptors representing the defect systems. For vacancies and substitutions, the optimized models give mean absolute errors (MAEs) of 0.437 eV for the formation energy and 0.202 eV for ZPLs, which is just above the level at which such predictions can be useful even beyond the targeted prescreening, i.e., in some applications they may completely replace the need for costly DFT calculations. For interstitials the MAEs are larger, 1.101 eV for the formation energy and 0.230 eV for the ZPL, which, while still useful for prescreening, will not generally be useful for more detailed characterization. Hence, while the results may be further improved by model design and optimization, the models presented in this work are already useful for prescreening in high-throughput characterization of point defects.",
     "title": "Prescreening Point Defects in Semiconductors With Machine Learning",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5321359038352966
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4828187823295593
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.46710720658302307
+      }
+    ]
   },
   "2609.14925v1": {
     "authors": [
@@ -10770,14 +10847,42 @@
         "name": "Eugene A. Demler"
       }
     ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "nlin.PS"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.16137v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
     "published_date": "2026-09-14",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates optical and magnetic responses in YBCO cuprate superconducting bilayers, directly aligning with the user's interest in YBCO superconductors and their properties.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "driven superconductivity",
+      "phase synchronization",
+      "cuprate bilayers"
+    ],
     "summary": "Recent experiments demonstrating superconducting-like characteristics in materials above their equilibrium transition temperatures following strong sub-picosecond optical excitation have stimulated theoretical interest in phase-disordered superconductors subject to a periodically modulated superfluid stiffness. Previous analyses of the single-layer optical conductivity have shown that such a drive can enhance the low-frequency $1/ω$ response, even when the period-averaged stiffness remains unchanged. We extend these studies to bilayer systems, such as the YBa$_2$Cu$_3$O$_{6+x}$ (YBCO) cuprate, by considering drives with different symmetries. Specifically, we investigate a layer-symmetric drive, in which the two planes stiffen and soften simultaneously, and a layer-antisymmetric drive, in which one plane stiffens while the other softens. Both drives enhance correlations of the layer-averaged phase and generate comparable superconducting-like optical conductivities. Only the symmetric drive, however, strengthens relative-phase locking and the associated counterflow response to a magnetic field parallel to the planes. Thus, an enhanced $1/ω$ optical conductivity does not by itself imply enhanced magnetic screening. In view of applications to driven YBCO, where superconducting-like in-plane optics and transient diamagnetism have both been reported, our result provides a symmetry diagnostic: within a phase-synchronization mechanism, the experimentally active low-frequency stiffness modulation must contain a substantial layer-symmetric component.",
     "title": "Optical and magnetic signatures of drive-enhanced coherence in phase-disordered superconducting bilayers",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.603500485420227
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.5883780121803284
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5869909524917603
+      }
+    ]
   },
   "2609.16143v1": {
     "authors": [
@@ -11087,14 +11192,40 @@
         "name": "Subramanian K. R. S. Sankaranarayanan"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2609.16526v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
     "published_date": "2026-09-15",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces an efficient, interpretable machine learning framework for interatomic potentials, which broadly relates to the user's interest in advanced computational methods for materials simulation.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Symbolic regression",
+      "Machine learning potentials",
+      "Interpretability"
+    ],
     "summary": "Machine learning has transformed materials simulation by delivering force fields with ab initio accuracy, yet bridging the gap between high-dimensional regression and physical interpretability remains a grand challenge. Conventional analytical potentials offer transparency but often fail to capture the complexity of far-from-ground state regimes. Here, we introduce a hybrid symbolic-neural framework that unifies the interpretability of the Embedded Atom Method (EAM) with the adaptability of data-driven learning. Using Equation Learner Neural Networks (EqNNs) trained on density functional theory (DFT) data, we obtain interpretable models for aluminum through three distinct training protocols: random initialization trained via Monte Carlo Tree Search (MCTS) and gradient descent, and two transfer-learning strategies initialized from a copper potential - one employing MCTS followed by gradient descent, and the other using gradient descent only. We find that while all three resulting symbolic models achieve sub-10 meV/atom accuracy, they occupy distinct local minima in the functional landscape, exhibiting complementary trade-offs across phonon dispersion, surface energetics, and elastic response. By integrating these diverse functional forms through a weighted symbolic ensemble, we derive a composite potential that surpasses the fidelity of its constituent models. The resulting ensemble effectively mitigates individual biases, delivering superior consistency with DFT benchmarks across equation-of-state curvature, phonon spectra, and melting dynamics. This approach demonstrates that combining transfer learning with ensemble symbolic regression yields compact, transparent potentials capable of robust prediction across equilibrium and non-equilibrium states.",
     "title": "Symbolic Ensemble Learning Enables Discovery of Fast Accurate Physics-Based Interatomic Potentials",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5537658333778381
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5364493727684021
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.5222199559211731
+      }
+    ]
   },
   "2609.16587v1": {
     "authors": [
@@ -11291,6 +11422,67 @@
       }
     ]
   },
+  "2609.16758v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu-hao Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "Shengpu Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Dong-Hui Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Da-shuai Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.16758v2",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-15",
+    "reasoning": "The paper leverages Floquet theory and symmetry analysis to predict novel multiferroic phases and unconventional magnetism, connecting with interests in advanced theory, correlation physics, and emergent phenomena.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Floquet theory",
+      "Multiferroics",
+      "Unconventional magnetism"
+    ],
+    "summary": "Multiferroics combining magnetic and polar orders offer opportunities for optical control of spin and electric degrees of freedom. Here, using symmetry analysis and Floquet theory, we establish Floquet spin-antiferroelectricity coexisting with unconventional magnetism in periodically driven collinear antiferromagnets, qualifying it as an unconventional multiferroic. This driven phase supports compensated, spin-resolved in-plane electric polarizations perpendicular to the vertical rotation axis, which are strictly forbidden by crystalline symmetry in equilibrium. Using a tight-binding model, we elucidate how light polarization controls the emergence of polar order and spin responses. Moreover, first-principles-based Floquet calculations predict its realization in monolayer $\\text{MnPS}_3$, identifying a realistic two-dimensional antiferromagnetic platform. These findings establish a nonequilibrium route to spin-antiferroelectricity beyond equilibrium symmetry constraints and connect Floquet engineering, unconventional magnetism, and multiferroicity through optical control of spin and polar degrees of freedom.",
+    "title": "Floquet Spin-Antiferroelectricity in Collinear Antiferromagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5521986484527588
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5191997289657593
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5180436372756958
+      }
+    ]
+  },
   "2609.16780v1": {
     "authors": [
       {
@@ -11398,6 +11590,675 @@
       {
         "liked_paper_id": "2506.23550v1",
         "score": 0.4374240040779114
+      }
+    ]
+  },
+  "2609.17664v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "João Barata"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying-Ying Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Hua Xing Zhu"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.17664v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-15",
+    "reasoning": "This paper focuses on applying lattice spin systems and quantum simulation to collider detector observables in high-energy physics, which is distinct from the user's condensed matter and materials science interests.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum simulation",
+      "Collider physics",
+      "Lattice field theory"
+    ],
+    "summary": "Detector observables pose a fundamental challenge for nonperturbative lattice methods due to their intrinsically real-time and asymptotic nature. We propose quantum simulation platforms as an ideal setting for studying these observables. Using quantum spin systems as a demonstration, we construct lattice detector operators and establish their connection to continuum energy-flow observables. We demonstrate this framework in the $1+1$-dimensional quantum Ising model, where finite lattice calculations show quantitative agreement with conformal field theory expectations at criticality. These results support the interpretation of the lattice flow operators as regulated counterparts of continuum detectors in the scaling and asymptotic limits, providing a concrete route toward realizing high-energy collider physics on table-top quantum platforms.",
+    "title": "Collider Detector Observables from Lattice Spin Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5204949378967285
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4989611506462097
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4957335591316223
+      }
+    ]
+  },
+  "2609.17794v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexander Osterkorn"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan C. Louw"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.17794v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-09-15",
+    "reasoning": "This paper discusses thermalization in SYK models, which are theoretical many-body systems; while related to advanced theoretical methods, it's less aligned with the material-specific and computational DMFT applications the user previously liked.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "SYK model",
+      "quantum thermalization",
+      "Planckian dissipation"
+    ],
+    "summary": "Motivated by the Planckian thermalization rate $Γ\\sim T$ observed in the two-body interacting SYK model, we study thermalization in the $q/2$-body case. Previous studies of such systems have established the notion of instantaneous thermalization to leading order in $1/q$. It was conjectured that the thermalization may still be Planckian but with a divergent rate $Γ\\sim T q$, explaining the ``instantaneous'' part. For an analytically and numerically tractable system, we calculate the effective temperatures after a quench at time $t = 0$ and indeed find a Planckian rate, albeit with the unexpected decaying behavior $Γ\\sim T q^{-1} $. This is contrasted with the behavior of the causal Green's function $\\mathcal{G}(t_1, t_2)$, which instantly acquires a thermal form in the two-time plane block $t_1, t_2 > 0$.   The resulting picture is that instant thermalization is a meaningful concept only for this block, while the off-diagonal blocks $t_1 \\cdot t_2 < 0$ are inherently non-thermal at any $q$. Since the effective temperature is obtained from correlations spanning all blocks, it inherits a finite rate set by the off-diagonal. We illustrate this directly by studying the non-thermal correlations' time dependence.",
+    "title": "What does \"instant thermalization\" in large-$q$ SYK models mean?",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.31110548973083496
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.3007270097732544
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.29954415559768677
+      }
+    ]
+  },
+  "2609.18438v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Robin Heumann"
+      },
+      {
+        "affiliation": [],
+        "name": "Toby Rudolph"
+      },
+      {
+        "affiliation": [],
+        "name": "Gaosheng Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Kirchartz"
+      },
+      {
+        "affiliation": [],
+        "name": "Chris Dreessen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.18438v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "While it uses artificial neural networks for parameter estimation, its focus on semiconductor photoluminescence in perovskites is less aligned with the user's specific interests in strong correlations, superconductivity, or advanced many-body theory.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Machine learning",
+      "Photoluminescence",
+      "Parameter estimation"
+    ],
+    "summary": "Extracting material parameters from experimental data is often challenging if no invertible analytical equation can be used to link the data with the quantities of interest. If the link between experiment and material parameters is given mathematically by a set of non-linear differential equations, these must be solved repeatedly during the traditional fitting procedure, resulting in long optimization times and limited insight into parameter uncertainty. Here, we present a parameter estimation workflow specifically aimed at transient photoluminescence measurements performed on lead-halide perovskite films. This workflow is accelerated using artificial neural networks for rapid comparison between experiment and simulation. An advantage of the method is the ability to rapidly scan multidimensional material parameter spaces and identify correlations between parameters that provide insights into the physics of non-radiative recombination in halide perovskites. Finally, we compare steady-state and transient photoluminescence and show how uncertainty in parameters such as the defect density can be reduced by including steady-state data in the parameter estimation workflow.",
+    "title": "Rapid Parameter Estimation from Photoluminescence Decays of Halide Perovskite Thin Films",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4340028464794159
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4304598569869995
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.42475277185440063
+      }
+    ]
+  },
+  "2609.18566v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Koji Hashimoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Hyun-Sik Jeong"
+      },
+      {
+        "affiliation": [],
+        "name": "Keun-Young Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Daichi Takeda"
+      },
+      {
+        "affiliation": [],
+        "name": "Kwan Yun"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.18566v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "It applies deep learning to reconstruct holographic spacetimes from fermionic spectral functions, addressing quantum critical states like marginal Fermi liquids relevant to strongly correlated electron systems and advanced theoretical frameworks.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Holography",
+      "Deep learning",
+      "Fermionic spectral functions",
+      "Strange metal"
+    ],
+    "summary": "We present a physics-informed machine learning framework based on Neural Ordinary Differential Equations that solves the holographic inverse problem: reconstructing the bulk spacetime and gauge field of a charged AdS black hole directly from boundary fermionic spectral functions. Encoding the UV asymptotics, horizon regularity, and zero temperature extremality as hard constraints in the neural network architecture, our framework reliably reconstructs the extremal Reissner-Nordström AdS geometry across three quantum critical regimes set by the $U(1)$ probe charge---non-Fermi liquid, marginal Fermi liquid (strange metal), and Fermi-liquid-like states---and can jointly infer the probe charge itself to sub-percent accuracy. Relaxing the near-AdS boundary constraint uncovers a geometrical degeneracy: bulk profiles that differ throughout the radial direction but share the same near-horizon $AdS_2 \\times \\mathbb{R}^2$ data reproduce identical spectral functions near the Fermi surface. This isospectral non-uniqueness is precisely the bulk degeneracy expected on general holographic grounds at zero temperature, and its spontaneous emergence across independent training runs shows that the network isolates the IR CFT universality rather than overfitting a single UV completion.",
+    "title": "Deep learning emergent spacetime from fermionic spectral functions in holography",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.42812997102737427
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.4268180727958679
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.41436827182769775
+      }
+    ]
+  },
+  "2609.18755v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daan Vanhaecke"
+      },
+      {
+        "affiliation": [],
+        "name": "Emile Vanderstraeten"
+      },
+      {
+        "affiliation": [],
+        "name": "Dries Vande Ginste"
+      }
+    ],
+    "categories": [
+      "math.NA",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.18755v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper focuses on a general computational method for electromagnetic scattering problems, which is not directly related to the user's past interests in strongly correlated materials, superconductivity, or topological physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Tensor trains",
+      "FDTD",
+      "Electromagnetic scattering"
+    ],
+    "summary": "In this letter, a novel 3-D Finite-Difference Time-Domain (FDTD) framework is proposed that circumvents the costly volumetric scaling of conventional FDTD methods. By representing the electromagnetic fields as low-rank Quantized Tensor Trains (QTT), the memory requirements scale logarithmically with system size. Moreover, the various numerical operations that constitute the FDTD scheme can be efficiently implemented in this format, with their computational cost also exhibiting a logarithmic complexity. The simulation of systems in open space is enabled by the inclusion of a uniaxial PML. A validation example demonstrates that the method achieves excellent accuracy compared to the traditional full-grid (FG) FDTD method, while significantly reducing the required computational resources. Memory savings of several orders of magnitude are obtained, highlighting the potential of the proposed framework for the simulation of large multiscale electromagnetic systems.",
+    "title": "A Highly Scalable Quantized Tensor-Train FDTD Framework for the Simulation of Three-Dimensional Electromagnetic Scattering Problems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4452941417694092
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.37902313470840454
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.3601120114326477
+      }
+    ]
+  },
+  "2609.18761v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Antonia Duft"
+      },
+      {
+        "affiliation": [],
+        "name": "Patrick Adelhardt"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan Alexander Koziol"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas A. Buchheit"
+      },
+      {
+        "affiliation": [],
+        "name": "Kai Phillip Schmidt"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.18761v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper develops an efficient computational method for momentum-resolved properties of quantum systems with long-range interactions, aligning with the user's interest in advanced computational techniques and momentum-dependent phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Linked-cluster expansion",
+      "Graph zeta function",
+      "Momentum-resolved spectra"
+    ],
+    "summary": "Over the past decade, high-order series expansions based on linked-cluster methods have become an important tool for studying low-energy properties of gapped quantum systems with long-range interactions. We introduce a deterministic framework that removes a central computational bottleneck of this method. Our graph zeta method replaces the costly and statistically noisy Monte Carlo (MC) evaluation of high-dimensional lattice sums by a systematic, high-precision computation that delivers series coefficients within minutes on standard desktop hardware. The full momentum-dependent series is obtained in a single calculation, enabling high-resolution excitation spectra throughout the Brillouin zone. Building on the companion paper [1], the method reformulates graph-embedding sums as graph zeta functions and decomposes them into blocks classified by their treewidth tw. Low-treewidth blocks (tw$\\leq2$) admit closed expressions based on Epstein zeta functions, while higher-treewidth blocks (tw$>2$) are evaluated using tensor-network bucket elimination. We benchmark the approach for transverse-field Ising models with power-law interactions in 1d, 2d, and 3d, reproducing previous MC results at a fraction of the computational cost while enabling substantially denser parameter sampling. An open-source implementation makes the method directly applicable to general interactions and large parameter scans. As an application, we compare microscopic interaction models for the stacked quasi-2d transverse-field Ising triangular-lattice antiferromagnet KTmSe$_2$ and find that a model including dipolar interactions best describes existing experimental data. The graph zeta method thus turns high-order linked-cluster expansions into a practical and deterministic tool for fast quantitative momentum-resolved modeling of short- and long-range quantum matter.",
+    "title": "Exact and fast series expansions for quantum models with long-range interactions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5727063417434692
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5500936508178711
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5309014916419983
+      }
+    ]
+  },
+  "2609.18826v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chengye Lü"
+      },
+      {
+        "affiliation": [],
+        "name": "Weizhong Fu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xin-gao Gong"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongjun Xiang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.18826v1",
+    "matching_keywords": [
+      "neural network",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper focuses on neural-network quantum Monte Carlo for molecular systems in magnetic fields, which diverges significantly from the condensed matter and many-body theory topics previously liked by the user.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "neural-network quantum Monte Carlo",
+      "molecular electronic structure",
+      "magnetic fields"
+    ],
+    "summary": "External magnetic fields, through their coupling to orbital and spin motion, complicate the correlated electronic states and impose coordinate-dependent phases on the wavefunction, thereby making accurate electronic structure calculations substantially more demanding. Recently, neural network-based quantum Monte Carlo (NNQMC) has emerged as a highly accurate approach to study nucleus-free systems in magnetic fields. For molecular systems, however, things get more complicated as the magnetic field would introduce a rapidly varying phase in the region far from the gauge origin. Here we introduce a gauge-including phase factor that acts directly on the full many-electron wavefunction and accounts for the prescribed magnetic phase, leaving a smoother correlated residual for the network to learn. This factor greatly improves molecular translation consistency and size consistency, providing a route for studying systems in magnetic fields with NNQMC. Upon this approach, we reproduce weak-field magnetizabilities and strong-field bond contraction in \\ce{H2}. We further apply the method to selected transitions in the \\ce{CN} red and \\ce{C2} Swan systems at magnetic fields relevant to white dwarfs. The \\ce{CN} transition exhibits a much larger field-induced shift than its \\ce{C2} counterpart, suggesting its potential as a probe of white-dwarf magnetic fields.",
+    "title": "Gauge-including neural-network quantum Monte Carlo for molecules in magnetic fields",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5546379089355469
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5516294240951538
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.51784348487854
+      }
+    ]
+  },
+  "2609.18841v1": {
+    "authors": [
+      {
+        "affiliation": [
+          "LPCT"
+        ],
+        "name": "Christophe Chatelain"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.18841v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper offers an introductory review of Matrix Product State algorithms for integrating the Lindblad equation in one-dimensional quantum lattice systems, directly aligning with the user's interest in computational methods for strongly correlated and open quantum systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Open quantum systems",
+      "Lindblad equation",
+      "Matrix Product States"
+    ],
+    "summary": "In this introductory review, we present and compare four algorithms for the numerical integration of the Lindblad equation for one-dimensional quantum lattice systems. All four methods are based on Matrix Product State representations and can be viewed as extensions of the Time-Evolving Block Decimation (TEBD) algorithm to open quantum systems. Two approaches directly integrate the vectorized Lindblad equation, one of them explicitly enforcing the positivity of the density matrix. The other two rely on stochastic unravelings of the Lindblad equation, namely the quantum trajectory and quantum state diffusion approaches. We discuss the principles, numerical implementation, accuracy, and computational efficiency of the different methods, and benchmark them against an exactly solvable free fermion model.",
+    "title": "A first introduction to Matrix Product State algorithms for the integration of Lindblad equation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.510896623134613
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5065993070602417
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5023398399353027
+      }
+    ]
+  },
+  "2609.18918v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andreas Alexander Buchheit"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Rupp"
+      }
+    ],
+    "categories": [
+      "math.NA",
+      "cond-mat.str-el",
+      "math.NT"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.18918v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper details an exact and fast computational method using graph zeta functions for momentum-resolved properties of quantum lattice models with long-range interactions, aligning with the user's interest in advanced computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Graph theory",
+      "Quantum lattice models",
+      "Tensor networks"
+    ],
+    "summary": "Taming the exponential increase of the Hilbert space dimension with system size in the simulation of gapped quantum lattice models is of the highest relevance for understanding and designing exotic quantum materials, where nonlocal interactions are of particular interest. High-order linked-cluster expansions provide access the solution of the eigenvalue problem for the infinite system, yet rely on the computation of high-dimensional oscillatory lattice sums with a graph structure, only approachable with Monte Carlo methods so far. This work resolves this issue, rendering all required graph lattice sums, referred to as graph zeta functions for kernels involving power-laws, computable. The resulting method reduces the evaluation time for state-of-the art series expansions from tenthousands of core-hours to minutes. After factorizing the lattice sum over blocks, each block is evaluated by the cheapest available strategy depending on its treewidth $\\mathrm{tw}$. Basic blocks admit analytic forms in terms of generalized zeta functions. Series-parallel blocks with $\\mathrm{tw}\\le 2$ can be computed at linear cost in the number of graph nodes and in the size of the momentum grid using a semi-analytical algebra based on Epstein zeta functions and rapidly decaying Fourier series. Finally, for $\\mathrm{tw}>2$, the method is combined with tensor-network bucket elimination yielding polynomial scaling of numerical work and memory in momentum grid size with exponents only growing with $\\mathrm{tw}$ rather than with the number of vertices. Through use of FFT, the full momentum grid is recovered at the cost of a single momentum evaluation. We provide a detailed analysis of the precision and runtime of our method against analytic and numerical benchmarks. We further reproduce published Monte Carlo data for the transverse-field Ising model on different 1D, 2D, and 3D lattices, obtaining full agreement.",
+    "title": "Graph lattice sums and graph zeta functions for long-range interacting quantum lattice models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5212737917900085
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.479757159948349
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.47389525175094604
+      }
+    ]
+  },
+  "2609.19112v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Christopher T. Parzyck"
+      },
+      {
+        "affiliation": [],
+        "name": "Octave Duros"
+      },
+      {
+        "affiliation": [],
+        "name": "Hari Paudyal"
+      },
+      {
+        "affiliation": [],
+        "name": "Noah M. Edmiston"
+      },
+      {
+        "affiliation": [],
+        "name": "Katya Mikhailova"
+      },
+      {
+        "affiliation": [],
+        "name": "Lerato Takana"
+      },
+      {
+        "affiliation": [],
+        "name": "Daisy O'Mahoney"
+      },
+      {
+        "affiliation": [],
+        "name": "Sauviz P. Alaei"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel J. Foster"
+      },
+      {
+        "affiliation": [],
+        "name": "Hiroki Suga"
+      },
+      {
+        "affiliation": [],
+        "name": "Naoya Kurahashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Miyawaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael E. Flatte"
+      },
+      {
+        "affiliation": [],
+        "name": "Georgi Dakovski"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuri Suzuki"
+      },
+      {
+        "affiliation": [],
+        "name": "Durga Paudyal"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei-Sheng Lee"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19112v1",
+    "matching_keywords": [
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper uses resonant inelastic x-ray scattering to probe momentum-dependent magnon damping in an oxide, directly paralleling a liked paper that used RIXS for momentum-dependent charge correlations in cuprates.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Resonant Inelastic X-ray Scattering (RIXS)",
+      "Magnons",
+      "Momentum-dependent damping"
+    ],
+    "summary": "The realization of practical, high-speed magnonic devices requires engineering magnetic materials with low dissipation over wide frequency ranges. While optical and microwave probes are used to infer the damping of low energy/long wavelength modes, the degree to which these $q\\sim0$ properties translate into higher-energy, finite-momentum modes remains an important open question. Here, we utilize a combination of ferromagnetic resonance (FMR) and resonant inelastic x-ray scattering on spinel ferrites Li$_{0.5}$Al$_x$Fe$_{2.5-x}$O$_4$ to probe magnons in both the short- and long-wavelength limits. We observe that aluminum substitution both markedly reduces the magnon bandwidth and drastically shortens the high-$q$ magnon lifetimes, in sharp contrast to the ultralow magnon damping inferred from FMR. These findings demonstrate a disparity between how non-magnetic substituents impact magnon damping in the long- and short-wavelength limits, providing a new perspective for assessing candidate materials for magnonic devices.",
+    "title": "Divergence between long- and short-wavelength magnon damping in spinel ferrites",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:70eg2SAEIzsC",
+        "score": 0.5883265733718872
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5509207844734192
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.48936697840690613
+      }
+    ]
+  },
+  "2609.19116v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tom Hartweg"
+      },
+      {
+        "affiliation": [],
+        "name": "Asier Piñeiro Orioli"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.19116v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "While using Matrix Product States, a method relevant to correlated systems, this paper applies it to quantum computing and magic state cultivation, which falls outside the user's specific interests in condensed matter physics.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Quantum error correction",
+      "Magic states",
+      "Matrix product states"
+    ],
+    "summary": "Magic state cultivation prepares high-fidelity magic states at low expected space-time costs; however, the exact performance of some schemes is unsettled due to the difficulty in simulating non-Clifford circuits. Here, we use matrix-product states (MPS) based methods to compute the exact performance of two types of fold-transversal cultivation schemes: (i) the Sahay et al method based on the regular surface code S gate, and (ii) a method we propose based on a partially fault-tolerant fold-transversal S gate. We show that for the former protocol at $d=5$, the $|T\\rangle$ output reaches similar logical error rates to the $|S\\rangle$ output, traditionally used as a cheap full Clifford proxy. This contrasts with the $\\sim10\\times$ discrepancy reported for the $d=5$ colour-code scheme of Gidney et al. We also find that our new $d=5$ scheme has $\\sim1.3\\times$ lower expected space-time cost while still reaching $10^{-9}$ logical error rate. We show that MPS and Clifford-augmented MPS (CAMPS) perform on par with or even better than the recently introduced near-Clifford simulator Clifft on the hardest $d=5$ regular surface code scheme. Additionally, to speed up simulation, we propose a new pre-screening method based on simple Pauli propagation, lowering by up to three orders of magnitude the required number of exact simulations, and use several simulator-agnostic sampling methods such as subset sampling.",
+    "title": "Comparing magic state cultivation methods using matrix product states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.40341606736183167
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.35919007658958435
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.35411256551742554
+      }
+    ]
+  },
+  "2609.19117v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Annabelle Canestraight"
+      },
+      {
+        "affiliation": [],
+        "name": "Phillip Christopher"
+      },
+      {
+        "affiliation": [],
+        "name": "Vojtech Vlcek"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19117v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper explores Floquet engineering and real-time Green's function methods for non-equilibrium charge transfer, which aligns with an interest in advanced theoretical techniques for correlated phenomena.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Floquet engineering",
+      "Real-time Green's function",
+      "Non-equilibrium dynamics"
+    ],
+    "summary": "Plasmonic excitation of metallic nanostructures can generate energetic carriers capable of transferring charge into nearby adsorbed molecules, providing a possible pathway for driving chemical transformations. In many theoretical descriptions of this process, charge transfer is determined by the equilibrium electronic structure of the molecule and substrate together with the time-dependent carrier distribution produced during plasmon decay. However, the intense transient electric fields associated with localized surface plasmons can also dynamically perturb the molecular electronic structure itself on ultrafast timescales. In this work, we investigate how these time-dependent fields modify the molecular spectral function and influence charge injection at catalytic interfaces. Using a model of CO2 adsorbed on Au(111), we compute the real-time molecular Green's function within a correlated frontier-orbital active space under plasmon-like driving. We find that the driving field rapidly produces transient Floquet-type replica bands in the molecular density of states, opening additional resonant pathways for hot-carrier injection that are absent without external driving or in time-local descriptions. Coupling the evolving molecular spectrum to a time-dependent hot-electron distribution described within a two-temperature Sommerfeld framework, we predict large enhancements in quasiparticle spectral overlap that governs injection during plasmon dephasing. These results suggest that dynamically generated non-equilibrium spectral structure may play an important role in plasmon-assisted catalysis and provide a framework for studying driven catalytic interfaces beyond static electronic structure descriptions.",
+    "title": "Floquet-Plasmon Enhanced Charge Transfer at Catalytic Interfaces",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.4362074136734009
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.4321514368057251
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC",
+        "score": 0.4214165508747101
       }
     ]
   }
