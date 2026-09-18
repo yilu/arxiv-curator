@@ -12261,5 +12261,1107 @@
         "score": 0.4214165508747101
       }
     ]
+  },
+  "2609.19184v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Johann Ostmeyer"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.19184v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-15",
+    "reasoning": "This review paper details advanced numerical methods for quantum time evolution, directly aligning with the user's interest in efficient solvers for quantum systems like those used in dynamical mean-field theory.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum Algorithms",
+      "Tensor Networks",
+      "Computational Physics"
+    ],
+    "summary": "(Suzuki-)Trotter decompositions, splitting methods, (Lie) product formulae... The most common numerical methods for the time evolution of quantum systems come with many names. And they are used practically everywhere with applications ranging from the solution of classical equations of motion and various Monte Carlo simulations to the real and imaginary time evolution on classical as well as quantum computers. Here we review the state of the art of said methods, focussing especially on the progress made over the last few years. We highlight recently discovered efficient time evolution algorithms and explain how best to use them in practice. A central part of this work is the estimation of error bounds that has improved greatly within the past decade. The relevance of time evolution methods for quantum computing is discussed with a focus on noisy hardware. Finally, a comprehensive overview of generalisations, related methods and alternatives to Trotterization is provided. This includes time-dependent Hamiltonian dynamics, processed methods, multi-product formulae, symplectic integrators, TDVP for tensor networks, quantum signal processing, Crouch-Grossman methods and more. The overall perspective in this work is that of a theoretical physicist. All mathematical proofs as well as some technical details are omitted for easier readability. Instead, this review serves as a hands-on guide and, of course, as a starting point for references that provide further details.",
+    "title": "Suzuki-Trotter Decompositions and other Methods for Quantum Time Evolution",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5107405185699463
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4972730576992035
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.49276915192604065
+      }
+    ]
+  },
+  "2609.19191v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Marcos V. N. da Costa"
+      },
+      {
+        "affiliation": [],
+        "name": "José R. da M. Lima Filho"
+      },
+      {
+        "affiliation": [],
+        "name": "Kádila R. de S. Oliveira"
+      },
+      {
+        "affiliation": [],
+        "name": "Raphael M. Tromer"
+      },
+      {
+        "affiliation": [],
+        "name": "Marcelo L. Pereira Junior"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19191v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-15",
+    "reasoning": "This paper uses machine learning to explore defect topologies and thermodynamic stability in 2D materials, directly connecting to the user's interest in vacancies and defects in novel materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "2D Materials",
+      "Defect Engineering",
+      "Symbolic Regression"
+    ],
+    "summary": "Atomic vacancies and vacancy aggregates control the thermodynamic stability and the functional response of graphene, yet the configurational space spanned by many vacancies at variable concentration and separation is too large to be mapped exhaustively by first-principles methods. Here, we map and rationalize this stability landscape by combining semiempirical atomistic thermodynamics, interpretable machine learning, and symbolic regression. Several hundred defective supercells, built from a 72-atom cell by varying the vacancy concentration and the inter-vacancy distance up to the fourth neighbor, were relaxed with the PM7 Hamiltonian in MOPAC, and the heat of formation was adopted as the stability metric. Each structure was encoded with the Dynamic Collision Fingerprint, a translationally and rotationally invariant descriptor that maps the local topology onto transport-like statistics of virtual probe particles. A gradient boosted decision tree model, optimized by Bayesian hyperparameter search, reproduces the heat of formation of an independent test set with a root mean squared error of approximately 23.5~kcal/mol and no evidence of overfitting, and a SHAP analysis identifies the defect concentration and the inter-vacancy distance as the two variables that dominate the stability. Symbolic regression then condenses the learned mapping into a compact closed-form expression that reproduces the heat of formation with a coefficient of determination of $R^{2} = 0.9966$, a mean absolute error of 15.51~kcal/mol, and a root mean squared error of 24.18~kcal/mol. The workflow turns a high-dimensional structure--stability problem into an interpretable analytical law, providing a transferable route to rational defect engineering in two-dimensional materials.",
+    "title": "Machine-Learning Exploration of Defect Topologies and Thermodynamic Stability in Graphene with Atomic Vacancies",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5128397941589355
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.4674656391143799
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.45452579855918884
+      }
+    ]
+  },
+  "2609.19247v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vijay Balasubramanian"
+      },
+      {
+        "affiliation": [],
+        "name": "Charlie Cummings"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.19247v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "Despite mentioning \"topological\" and \"tensor network,\" this paper focuses on 3D gravity, which is outside the scope of condensed matter physics and materials science topics the user previously liked.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Gravity",
+      "AdS/CFT",
+      "Holography"
+    ],
+    "summary": "We derive an entropy formula for a recently proposed tensor network model of states in 3D gravity which satisfy the constraint equations of diffeomorphism invariance, and including the effects of matter. After accounting for the invertibility of the spacetime metric, we argue that this formula matches the quantum extremal surface formula (for small but finite $G_N$), and is not restricted to time symmetric spacetimes. We derive the result via canonical quantization without relying on path integrals, and discuss an extension to compact bulk subregions.",
+    "title": "Topological entanglement entropy in 3D gravity",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.43320968747138977
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.39940595626831055
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3610674738883972
+      }
+    ]
+  },
+  "2609.19264v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Evyatar Tulipman"
+      },
+      {
+        "affiliation": [],
+        "name": "Vadim Oganesyan"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas P. Devereaux"
+      },
+      {
+        "affiliation": [],
+        "name": "Steven A. Kivelson"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19264v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper investigates bad metallicity and strong local correlations in the Hubbard model, a central topic in strongly correlated electron systems and relevant to the user's interest in methods like DMFT and high-Tc superconductivity.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Strongly Correlated Materials",
+      "Hubbard Model",
+      "Bad Metals"
+    ],
+    "summary": "Bad metals exhibit approximately $T$-linear dc resistivity beyond the Ioffe--Regel limit. That this behavior occurs in systems with radically different ground states suggests it is a generic manifestation of strong local correlations. We test this hypothesis in the infinite-$U$ Hubbard model with small hole densities using exact diagonalization to compute thermodynamic and transport properties of finite clusters. Upon cooling, we find an intermediate temperature range, an electronic analogue of the ``semi-quantum regime'' of liquid helium, in which quantum effects produce a roughly $T$-independent compressibility, yet the resistivity is $T$-linear and exceeds the Ioffe--Regel limit. Entry into this regime is accompanied by the formation of quasi-local ferromagnetic ``spin cages'' around doped holes, regions that facilitate local quantum motion embedded in a fluctuating spin background, analogous to the transient crystalline cages thought to control incoherent transport in semi-quantum liquid helium. Remarkably, despite the simplicity of the model, the bad metal behavior found here resembles that seen in various material platforms.",
+    "title": "Bad metallicity in the semi-quantum regime of the Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6285501718521118
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5980261564254761
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5769709944725037
+      }
+    ]
+  },
+  "2609.19282v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rafael Flores-Calderón"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Pollmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Knap"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19282v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper utilizes quantum Monte Carlo simulations and discusses non-Abelian topological order and generalized symmetry breaking, connecting to interests in numerical methods and symmetry in condensed matter physics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Topological order",
+      "Quantum Monte Carlo",
+      "Anyons"
+    ],
+    "summary": "Transitions out of non-Abelian topological order are difficult to describe in microscopic quantum models with numerical methods that remain tractable at large scales. We develop a sign-free path-integral framework for Kitaev quantum doubles $\\mathcal D(G)$ by organizing single-link perturbations in terms of non-invertible electric and magnetic 1-form symmetries that proliferate distinct anyon species. For any finite group $G$, an exact $\\textit{matterization}$ isometry introduces vertex degrees of freedom and maps the link-only model onto a $G$ gauge--Higgs theory. Furthermore, the 1-form symmetries of the fixed point allow us to define generalized Fredenhagen--Marcu order parameters that become finite when the corresponding anyons condense. For $G = S_3$, quantum Monte Carlo simulations show that proliferating a non-Abelian electric anyon drives a first-order transition in which all nontrivial electric anyons condense. In the purely magnetic limit, the model reduces to a $(2+1)$D pure $G$ gauge theory; for $G=S_3$, it exhibits a first-order confinement transition, diagnosed by the onset of a Wilson-loop area law and the restoration of an emergent magnetic 1-form symmetry. These results provide a unified numerical framework for non-Abelian anyon condensation, confinement, and generalized symmetry breaking.",
+    "title": "Non-Abelian Anyon Condensation: a Path-Integral Monte Carlo Approach",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.48273545503616333
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4564100503921509
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.45588886737823486
+      }
+    ]
+  },
+  "2609.19310v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiangling Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Igor Klep"
+      },
+      {
+        "affiliation": [],
+        "name": "Marc-Olivier Renou"
+      }
+    ],
+    "categories": [
+      "math.OA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.19310v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper focuses on theoretical aspects of quantum information processing, including quantum networks and semidefinite programming hierarchies, which is a domain largely distinct from the user's interest in condensed matter physics and materials science.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Quantum Information Theory",
+      "Quantum Networks",
+      "Semidefinite Programming"
+    ],
+    "summary": "Understanding the capabilities and limits of quantum systems is central to quantum information processing. This includes determining which correlations can arise in networks of quantum systems distributed by independent sources. Yet for general quantum networks, no systematic, dimension-free method is known to bound these correlations arbitrarily well. We resolve this problem for all quantum tree networks through a new source-transfer model, which we prove equivalent to a mixed quantum model. The mixed model places no restriction on dimension and reduces to the standard tensor-product model in finite dimensions; the source-transfer model instead describes these correlations through states on $C^*$-algebras and completely positive maps composed recursively along the tree. We prove the equivalence by reconstructing local measurements as Radon-Nikodym derivatives in the spatial tensor products prescribed by the network. Building on this characterization, we establish two convergent outer hierarchies of semidefinite programs (SDPs): a novel source-transfer hierarchy and the inflation-NPA hierarchy. For the source-transfer hierarchy, we extend noncommutative real algebraic geometry to multi-state polynomials with completely positive maps, prove a reconstruction theorem establishing its convergence, and give a sufficient stopping criterion for extracting finite-dimensional realizations. For the inflation-NPA hierarchy, we reconstruct source-transfer realizations from weak-operator limits of averages over source copies. Consequently, the game-value promise problem for quantum tree networks in the mixed model is $\\mathsf{coRE}$-complete.",
+    "title": "Quantum tree networks: complete semidefinite hierarchies and the source-transfer model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.46541136503219604
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.43308788537979126
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.42340415716171265
+      }
+    ]
+  },
+  "2609.19450v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Flavia B. Ramos"
+      },
+      {
+        "affiliation": [],
+        "name": "Imke Schneider"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Eggert"
+      },
+      {
+        "affiliation": [],
+        "name": "Rodrigo G. Pereira"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.19450v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-16",
+    "reasoning": "The paper explores non-equilibrium real-time dynamics and energy partitioning in a critical fermionic system using advanced numerical and analytical methods, resonating with interests in real-time solvers and many-body physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Luttinger Liquid",
+      "DMRG",
+      "Fractionalization"
+    ],
+    "summary": "We investigate the non-equilibrium dynamics of wave packets in a one-dimensional critical fermionic system and analyze the resulting partitioning of energy between emergent excitations. Starting from a Gaussian wave packet injected on top of the many-body ground state, we follow its real-time evolution using the time-dependent density-matrix renormalization group. We observe that interactions lead to fractionalization of the initial excitation into counter-propagating left- and right-moving modes, whose energies can be resolved in real space. To interpret these results, we employ Luttinger liquid theory, which allows us to derive analytical predictions for the energy carried by the emergent modes. We find good agreement between field-theoretical predictions and numerical simulations in the low-energy regime. In contrast to charge fractionalization, which is completely determined by the Luttinger liquid parameter, we show that energy partitioning is non-universal and depends on details of the injected wave packet, such as its width. Our results provide a real-space characterization of energy partitioning in one-dimensional systems and establish a quantitative comparison between non-equilibrium numerical simulations and the effective field-theory description.",
+    "title": "Energy partitioning of wave packets in one-dimensional systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.4707005023956299
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.4693251848220825
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.46479547023773193
+      }
+    ]
+  },
+  "2609.19487v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jaehyung Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Charles Rhys Campbell"
+      },
+      {
+        "affiliation": [],
+        "name": "Akshaya Ajith"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergei V. Kalinin"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Wolverton"
+      },
+      {
+        "affiliation": [],
+        "name": "Kamal Choudhary"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19487v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper presents a machine learning framework for materials screening, property prediction including superconducting Tc, and simulation of various spectroscopy and microscopy techniques, aligning well with the user's broad interest in materials science and characterization.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Graph neural networks",
+      "Materials property prediction",
+      "Machine learning potentials"
+    ],
+    "summary": "Graph neural networks are central to materials property prediction and machine-learning interatomic potentials, yet their reliance on specialized graph libraries hampers portability and reproducibility, and property and force-field models have historically required separate graph pipelines. We present ALIGNN 2.0, a dependency-free, pure-PyTorch reimplementation of the Atomistic Line Graph Neural Network, with the line graph and its batching built from scratch, running on current-generation accelerators and unifying scalar, spectral, tensorial, per-atom, and force-field prediction behind a single graph, a combination that to our knowledge no existing framework provides. Comparing radius and k-nearest-neighbor (kNN) graphs, the wider kNN graph is more accurate for properties while the smoothly varying radius graph is required for energy-conserving molecular dynamics. On the JARVIS-Leaderboard, ALIGNN 2.0 leads on 26 of 30 single-property benchmarks against the original ALIGNN, with large gains for piezoelectric and dielectric maxima, exfoliation energy, moduli, and superconducting Tc. The LAMMPS- and OpenMM-compatible ALIGNN-FF matches leading universal potentials on the Matbench-Discovery and CHIPS-FF benchmarks at a small fraction of their parameters while scaling to hundred-thousand-atom cells. We further use ALIGNN 2.0 as the denoiser in a conditional crystal-diffusion model, where explicit line-graph message passing consistently lowers structural denoising loss. We also show, as work in progress, that an independently diffused, redundant bond-angle state is learnable but does not uniformly improve reconstruction or combine additively with the line graph. Finally, from a single relaxed structure the same framework reconstructs infrared, Raman, optical-dielectric, and neutron spectra in agreement with experiment and DFT, and drives frozen-phonon electron-microscopy image simulation.",
+    "title": "ALIGNN 2.0: A Unified Line-Graph Neural Network Framework for Materials Screening, Force Fields, Inverse Design, Spectroscopy, and Microscopy",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.44889599084854126
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4146963357925415
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.40741613507270813
+      }
+    ]
+  },
+  "2609.19629v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chunhao Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhe Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng Yan"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19629v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper develops a method to extract collective symmetry and criticality from fluctuations, which is relevant to understanding phases and critical phenomena in strongly correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Phase Transitions",
+      "Lee-Yang Zeros",
+      "Quantum Criticality"
+    ],
+    "summary": "Symmetry plays a fundamental role in modern physics by guiding the classification of phases and the construction of effective theories of critical systems. Identifying collective symmetry remains challenging because tests based on preselected order parameters can overlook hidden components. A central goal is therefore to extract symmetry and critical information from a single accessible component. We pursue this goal using Lee--Yang zero ratios generated by a single ordering field. Unmeasured components shape the projected fluctuation distribution and hence the relative zero positions. Deep in a phase with spontaneous symmetry breaking, we show analytically that the zero ratios for an isotropic order parameter approach a parameter-free Bessel sequence fixed by the number of collective components. Near quantum criticality, fluctuations deform this distribution. The resulting ratio deviations and their finite-size coupling dependence carry additional critical information. We demonstrate these results with large-scale quantum Monte Carlo simulations of many-body systems with conventional and enlarged continuous symmetries. This approach provides quantitative access to collective symmetry and criticality without measuring every competing order.",
+    "title": "Collective Symmetry and Criticality from Single-Component Fluctuations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.47708848118782043
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4727928042411804
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.45993098616600037
+      }
+    ]
+  },
+  "2609.19837v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hao Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Zongrui Pei"
+      },
+      {
+        "affiliation": [],
+        "name": "Xianglin Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.19837v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This review focuses on machine learning applications for high-entropy catalysts, a topic outside the scope of strongly correlated electron physics, superconductivity, or topological materials previously liked by the user.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Materials Informatics",
+      "Catalysis",
+      "High-Entropy Alloys"
+    ],
+    "summary": "High-entropy alloys (HEAs) exhibit exceptional catalytic performance in various reactions due to their high configurational entropy, synergistic elemental effects, tunable electronic structures, and excellent structural stability. However, the vast compositional space of HEA catalysts makes traditional experimental and theoretical design costly and inefficient. In recent years, data-driven machine learning (ML) methods have emerged as powerful tools for studying HEAs in catalysis. Through predictive models and ML surrogates, researchers can decipher the intricate composition-structure-performance relationships of these materials. In addition, by leveraging large language models (LLMs) for knowledge extraction, hypothesis generation and validation, and as a foundation to build integrated design workflows, ML approaches can significantly accelerate the design of novel HEA catalysts. This review systematically summarizes the latest methodological advances and applications of ML methods for HEAs in catalysis, discusses the challenges, and offers insights into future research directions to support the rational design and efficient development of catalysts.",
+    "title": "Machine Learning for High-Entropy Catalysts: Methods and Applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.45560964941978455
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3383217453956604
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.31600669026374817
+      }
+    ]
+  },
+  "2609.19884v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Humberto E. López-Hernández"
+      },
+      {
+        "affiliation": [],
+        "name": "Santiago F. Caballero-Benitez"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "physics.atom-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.19884v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper investigates entanglement in the Bose-Hubbard model using advanced numerical methods like DMRG and a slave-boson approach, relevant to the user's interest in numerical techniques for strongly correlated quantum many-body systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Entanglement entropy",
+      "Bose-Hubbard model",
+      "Strongly correlated systems"
+    ],
+    "summary": "The area law relates the bipartite entanglement entropy of a quantum many-body ground state to the size of the boundary between the subsystems, but the geometry of this boundary is rarely discussed. We inspect this in the 1D Bose-Hubbard model at fixed density by comparing four spatial bipartitions of the periodic lattice: first half, second half, even sites, and odd sites; sharing the same number of sites but differing in how the boundary is arranged. We find analytical limits with perturbation theory: in the Mott insulator the contiguous cut obeys the area lay while the alternating cut obeys a volume law $S\\propto N_s$, in this sense an anomaly, and for the superfluid both cuts colapse to the binomial saturation due to delocalization of the state. We formulate these limits as a statement about the many-body problem using a generalized slave-boson approach based on mean-field with quantum fluctuations while verifying with Exact Diagonalization (ED) for small lattice sizes and Densitiy Matrix Renormalization Group (DMRG) simulations for $N_s\\gg 1$. The slave-boson Gaussian ground state allows to compute the entanglement entropy from a reduced correlation matrix for any desired bipartition consistent with ED and DMRG results. Using slave bosons the computational cost is set by the local cutoff $n_{\\max}$ rather than the Hilbert space dimension, so we can reach lattice sizes far beyond ED. Our method is capable of establishing the partition-dependent scaling laws as a many-body feature, not only a finite-size effect, in great agreement with the ED for $N_s\\in[4,10]$ and DMRG for larger lattice sizes.",
+    "title": "Odd/Even or Half ? Entanglement Anomaly in the Bose-Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5498935580253601
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.549501895904541
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5460011959075928
+      }
+    ]
+  },
+  "2609.20020v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chloé Van Bastelaere"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui-Zhen Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Laurens Vanderstraeten"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.20020v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper explores entanglement scaling at quantum critical points using projected entangled pair states, a computational technique highly relevant to the study of strongly correlated systems and topological phases.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Entanglement Entropy",
+      "Quantum Criticality",
+      "Tensor Networks"
+    ],
+    "summary": "Entanglement scaling provides a powerful probe of universal properties at quantum critical points. In two dimensions, contributions originating from a corner-shaped bipartition exhibit a universal scaling, which is determined by the underlying conformal field theory. We develop a method to extract this corner entanglement entropy from projected entangled pair states directly in the thermodynamic limit. When applied to models at a quantum critical point, we show that the corner contribution exhibits scaling with the effective correlation length, in agreement with the hypothesis of finite-entanglement scaling. Our results for the corner coefficients are consistent with other methods, demonstrating the efficiency of our method for diagnosing strongly-correlated quantum critical points in two dimensions.",
+    "title": "Corner entanglement scaling with projected entangled pair states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.4697926640510559
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4557687044143677
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4522642493247986
+      }
+    ]
+  },
+  "2609.20376v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "N. S. Dhami"
+      },
+      {
+        "affiliation": [],
+        "name": "V. Baledent"
+      },
+      {
+        "affiliation": [],
+        "name": "I. Batistic"
+      },
+      {
+        "affiliation": [],
+        "name": "C. M. N. Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "D. Kaczorowski"
+      },
+      {
+        "affiliation": [],
+        "name": "L. Nataf"
+      },
+      {
+        "affiliation": [],
+        "name": "J. M. Ablett"
+      },
+      {
+        "affiliation": [],
+        "name": "J. -P. Rueff"
+      },
+      {
+        "affiliation": [],
+        "name": "J. P. Itie"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Fertey"
+      },
+      {
+        "affiliation": [],
+        "name": "S. R. Shieh"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Popcevic"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Utsumi Boucher"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20376v1",
+    "matching_keywords": [
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper uses x-ray spectroscopy and diffraction to study the electronic and structural evolution of an antiferromagnet, connecting to the user's interest in materials characterization and competing phases.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Intermediate Valence",
+      "X-ray Spectroscopy",
+      "High Pressure"
+    ],
+    "summary": "We investigated the pressure-induced evolution of the electronic and crystal structure of the noncentrosymmetric BaNiSn3-type antiferromagnet EuIrGe3 using x-ray absorption spectroscopy, synchrotron x-ray diffraction complemented by density functional theory calculations, and electrical resistivity measurements. The Eu L3-edge spectra reveal a continuous increase in the mean Eu valence under compression, accompanied by modifications of the Ge and Ir electronic states. High- pressure x-ray diffraction shows anisotropic lattice compression in the tetragonal (I4mm) phase and provides evidence for a structural phase transition above 38 GPa. The experimentally deter- mined lattice and equation-of-state parameters are in good agreement with the DFT calculations. Electrical resistivity measurements reveal a monotonic increase in the antiferromagnetic ordering temperatures up to 18 GPa, indicating that the antiferromagnetic ground state remains robust despite the increasing contribution of the nonmagnetic Eu3+ configuration to the intermediate va- lence state. These results demonstrate that EuIrGe3 exhibits a pressure response distinct from EuCoGe3 and EuRhGe3, highlighting the important role of the transition metal d-electron states in the pressure-induced electronic and structural evolution of the EuT Ge3 family",
+    "title": "Pressure-induced electronic and structural evolution of EuIrGe3",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.5463437438011169
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:K3LRdlH-MEoC",
+        "score": 0.5459610223770142
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.5102248191833496
+      }
+    ]
+  },
+  "2609.20434v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jules Sueiro"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Schiro"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20434v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper studies non-thermal effects in the Fermi-Hubbard model using Keldysh diagrammatics, which aligns with the user's interest in real-frequency solvers and strongly correlated electron systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Non-Equilibrium",
+      "Keldysh Formalism",
+      "Superradiance"
+    ],
+    "summary": "We study a Fermi-Hubbard model coupled to a open dissipative single cavity mode. Using Keldysh diagrammatics we derive and solve the quantum kinetic equations for the fermions, taking the bosonic cavity mode as a source of non-equilibrium noise and dissipation. In absence of Hubbard interactions we show that the fermions reach generically a non-equilibrium steady-state, characterized by a non-thermal distribution function. Quite interestingly we demonstrate that the latter exactly nullifies the heat-current between fermions and cavity mode. We discuss the regimes of parameters where a low-frequency effective temperature description emerges and how the fluctuations affect the mean-field phase diagram for the superradiance phase transition. Finally we include Hubbard interaction in the weak-coupling regime and show that it leads to a crossover towards a full equilibrium distribution.",
+    "title": "Non-Thermal Effects in Fermionic Atoms Coupled to Open Cavities",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5952760577201843
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5479182600975037
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5403273105621338
+      }
+    ]
+  },
+  "2609.20502v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "João C. Inácio"
+      },
+      {
+        "affiliation": [],
+        "name": "Fakher F. Assaad"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20502v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper directly investigates an orthogonal semimetallic phase and Dirac liquid, aligning very well with the user's interest in Dirac fermions and semimetals.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Lattice QED",
+      "Deconfined Criticality",
+      "Dirac Liquid"
+    ],
+    "summary": "Gauge theoretic descriptions of 2D quantum magnets are defined on a restricted physical Hilbert space by imposing Gauss's law. In this work, we study an unconstrained compact lattice QED$_{2+1}$ coupled to bond phonons, in which local Gauss operators are conserved, but their eigenvalues are not a priori fixed. Using exact auxiliary-field quantum Monte Carlo simulations at $N_f = 2$, we investigate how the physical Gauss sector becomes energetically favourable, and how this process is connected to confinement and symmetry breaking. We identify an orthogonal semimetallic (OSM) phase, in which fermions striped off their gauge charge and form a Dirac liquid. This phase mixes various Gauss sectors, and becomes unstable when Gauss's law is explicitly enforced. Upon the imposition of Gauss's law, compactness allows for monopole excitations carrying antiferromagnetic (AFM) and valence-bond-solid (VBS) quantum numbers. Gauge field fluctuations and spinon-phonon coupling tune between the competition of such monopoles and generate a phase diagram with OSM, AFM and VBS orders. The transitions out of the OSM phase coincide with the dynamical generation of Gauss's law, while the competition between AFM and VBS charged monopoles produces a transition consistent with deconfined quantum criticality. Thus our results establish that upon the projection to the physical Hilbert space, deconfinement in compact lattice QED$_{2+1}$ is always unstable towards either AFM or VBS order.",
+    "title": "Unconstrained compact lattice QED$_{2+1}$ coupled to phonons: Gauss sectors, orthogonal semimetal, and deconfined criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5584259033203125
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5387150645256042
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5362271666526794
+      }
+    ]
+  },
+  "2609.20510v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Marcel F. Langer"
+      },
+      {
+        "affiliation": [],
+        "name": "Adrian Hill"
+      },
+      {
+        "affiliation": [],
+        "name": "Michele Ceriotti"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20510v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper focuses on machine learning for interatomic potentials, which is a computational method for materials but does not directly overlap with the user's specific interests in DMFT or topological materials.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Machine Learning Potentials",
+      "Automatic Differentiation",
+      "Molecular Dynamics"
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) learn the mapping from atomic positions to potential energy. The forces, the negative gradient of this energy, drive molecular dynamics and are readily obtained using automatic differentiation. Higher-order derivatives, most notably the Hessian, describe collective motion and allow the direct prediction of experimental observables, but are considered computationally inaccessible for large systems. We suggest a solution: in physical systems, interactions decay with distance, and most MLIPs build on this locality through message passing up to a finite receptive field. This implies both sparsity of higher-order derivatives and their decay with distance. This structure can be exploited using automatic sparse differentiation (ASD). We explain how to compute the sparsity pattern for MLIP derivatives and demonstrate that, for multiple foundation MLIPs, ASD computes full Hessians of large porous materials exactly, but with modest speedups at best. The larger gains come from truncated ASD: discarding small, but nonzero, Hessian entries between distant atoms yields order-of-magnitude speedups with negligible impact on predicted observables.",
+    "title": "Truncated automatic sparse differentiation for machine learning interatomic potentials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5133084058761597
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4853643774986267
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4295864701271057
+      }
+    ]
+  },
+  "2609.20526v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhosan I. A."
+      },
+      {
+        "affiliation": [],
+        "name": "Lomachuk Yu. V."
+      },
+      {
+        "affiliation": [],
+        "name": "Maltsev D. A."
+      },
+      {
+        "affiliation": [],
+        "name": "Moiseev I. A."
+      },
+      {
+        "affiliation": [],
+        "name": "Andreev O. Yu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20526v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper uses advanced multiconfigurational methods to analyze the local electronic structure of RuO2, addressing strong electron correlation and symmetry, which directly aligns with the user's interests.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Multiconfigurational methods",
+      "Altermagnetism",
+      "Orbital quasi-degeneracy"
+    ],
+    "summary": "We present a multiconfigurational, relativistic embedded-cluster study of the local electronic structure of ruthenium dioxide ($\\mathrm{RuO_2}$), a candidate altermagnetic material. Starting from free $\\mathrm{Ru}$ ions, we progressively build up the local environment through a $\\mathrm{Ru+Q_6}$ electrostatic model, a bare $\\mathrm{[RuO_6]^{8-}}$ ligand model, and finally a high-accuracy $\\mathrm{RuO_6}$@CTEP embedded cluster that reproduces the crystalline surroundings. All systems are treated at the SA-CASSCF and NEVPT2+SOC levels of theory to capture strong electron correlation and spin-orbit coupling on an equal footing. While the formal local site symmetry of the $\\mathrm{Ru}$ sites in $\\mathrm{RuO_2}$ is orthorhombic ($D_{2h}$), we find that the calculated $4d$-orbital energy spectrum and its splitting pattern behave much closer to the higher tetragonal ($D_{4h}$) symmetry, preserving a strong quasi-degeneracy among the relevant $4d$ orbitals. Since the local $xy$ quadrupolar order responsible for altermagnetic spin splitting in independent-particle models relies on this symmetry reduction, its suppression by orbital quasi-degeneracy offers a natural explanation for why altermagnetism is not observed in bulk $\\mathrm{RuO_2}$ experiments, in contrast to the robust altermagnetic signatures reported in strained thin films.",
+    "title": "Multiconfigurational Analysis of Local Electronic Structure of $\\mathrm{RuO_2}$ Using Relativistic Embedded Clusters",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.4607270061969757
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.43307530879974365
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.42951419949531555
+      }
+    ]
+  },
+  "2609.20536v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vamika Longia"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.20536v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper investigates numerical methods, specifically tensor renormalization group techniques, to study phase transitions in lattice systems, which aligns with interest in computational approaches for complex physical phenomena and efficient solvers.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Phase Transitions",
+      "Numerical Simulations"
+    ],
+    "summary": "The study of phase transitions plays an important role in understanding qualitative changes in the behaviour of physical systems at criticality. Despite decades of progress, there is still a strong demand for high-precision numerical tools capable of resolving subtle critical phenomena. Motivated by this need, in this thesis, we present two complementary numerical investigations of phase transitions in lattice systems. The first uses GPU-accelerated higher-order tensor renormalization group (HOTRG) techniques to study the two-dimensional generalized XY model, characterizing its ferromagnetic, nematic, and paramagnetic phases and mapping their phase boundaries using thermodynamic observables in the thermodynamic limit. The second develops and benchmarks a configurational temperature estimator, constructed from gradients and Hessians of the Euclidean lattice action, in compact U(1) lattice gauge theories. On one hand, tensor network methods capture rich phase structures when truncation and finite-bond effects are adequately controlled. On the other hand, the configurational temperature estimator provides an independent, low-overhead means of validating thermal sampling across different algorithms and models, and can also be used as a runtime diagnostic to identify sampling pathologies before large-scale production runs.",
+    "title": "Numerical Investigations of Phase Transitions in Lattice Field Theories",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5652633905410767
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5642483830451965
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5559032559394836
+      }
+    ]
+  },
+  "2609.20597v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jonas Loy"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan C. Louw"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20597v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper investigates exact real-time non-equilibrium dynamics and thermalization in a strongly correlated many-body system, aligning with the interest in real-time solvers and strongly correlated physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Chaos",
+      "SYK Model",
+      "Non-equilibrium Dynamics"
+    ],
+    "summary": "A verified Kubo-Martin-Schwinger (KMS) relation, after a drive has ceased, is not sufficient evidence to prove equilibrium. We demonstrate this in a large-$N$ large-$q$ Sachdev-Ye-Kitaev (SYK) quench protocol. Although all post-quench fermion correlators are exactly thermal, a second quench back to the initial Hamiltonian reveals hidden memory of the initial state. It is encoded in correlators connecting to times before the first quench. This memory is an extensive nonequilibrium (NEQ) witness with its decay rate being the Lyapunov exponent $λ_L$. Thus $λ_L$ sets the rate at which the state becomes effectively indistinguishable from a Gibbs state. Despite being a unitary interacting many-body system, the complete NEQ real-time evolution is obtained exactly in the large-$N$, large-$q$ limit, making the setup ideal for analytically studying thermalization.",
+    "title": "Lyapunov-controlled thermalization: an exact real-time example",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.49499133229255676
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.42294418811798096
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4062507152557373
+      }
+    ]
+  },
+  "2609.20767v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ali Emami Kopaei"
+      },
+      {
+        "affiliation": [],
+        "name": "Karthik Subramaniam Eswaran"
+      },
+      {
+        "affiliation": [],
+        "name": "Krzysztof Wohlfeld"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.20767v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper investigates the distinctive real-space dynamics of magnons in altermagnets, providing a novel probe for a new type of magnetic order, which aligns with interest in exotic phases and their characterization.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Magnon Dynamics",
+      "Spin Waves"
+    ],
+    "summary": "Distinguishing altermagnetism from conventional ferromagnetism and antiferromagnetism typically relies on momentum-space probes. Here, we show that the real-space spreading of a localized spin excitation provides a distinctive dynamical fingerprint of altermagnetic order. Using linear spin-wave theory on a two-dimensional checkerboard lattice with nearest-neighbor and next-nearest-neighbor couplings J_1 and J_2, we demonstrate that finite J_2 produces direction-dependent magnon group velocities and splits the two magnon branches. The resulting propagation remains closer to that of an antiferromagnet than a ferromagnet, retaining an approximately circular outer wavefront, while the direction-dependent magnon velocities produce a pronounced cross-like spatial structure inside this front. We further show that changing the sign of J_2 to enter the unfrustrated regime (J_2<0) increases the characteristic propagation velocities and interchanges the diagonal directions of enhanced propagation, corresponding to a pi/2 rotation of the anisotropic spatial pattern. These results establish spacetime dynamics as a complementary probe of altermagnetic magnons, providing a route to identifying unconventional magnetic order through real-space propagation patterns in solid-state and synthetic quantum systems.",
+    "title": "Spacetime Dynamics of Altermagnetic Magnons",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6301186680793762
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6032601594924927
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5225088596343994
+      }
+    ]
+  },
+  "2609.20802v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Carolin Wille"
+      },
+      {
+        "affiliation": [],
+        "name": "Max Marvell"
+      },
+      {
+        "affiliation": [],
+        "name": "Lauren Stewart"
+      },
+      {
+        "affiliation": [],
+        "name": "Max Murphy"
+      },
+      {
+        "affiliation": [],
+        "name": "Vinul Wimalaweera"
+      },
+      {
+        "affiliation": [],
+        "name": "Lesley Gover"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew G. Green"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.20802v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-17",
+    "reasoning": "While focusing on computational methods for quantum many-body systems, the specific techniques of variational evolution and matrix-product states are distinct from the user's interest in DMFT.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Variational Quantum Algorithms",
+      "Matrix Product States",
+      "Quantum Simulation"
+    ],
+    "summary": "Conventional quantum advantage in many-body dynamics is based on avoiding the simulation cost on a classical computer that arises from the extensive exponential complexity of the global wavefunction. Local observables, however, do not inherit this extensive complexity and may instead be governed by an intrinsic local complexity that is independent of the total system size. This distinction is particularly relevant in thermalising systems, where local observables lose memory of microscopic details and relax towards equilibrium values determined by only a few parameters. Here we introduce a variational time-evolution principle that exploits this distinction by replacing global-state fidelity with a cost function defined on local reduced density matrices. The resulting evolution retains coherent short-time dynamics while exploiting the simplification produced by thermalisation at later times. The concrete algorithm we propose is based on locally optimising matrix-product states and admits closed-form equations of motion analogous to the time-dependent variational principle. We show that the same variational principle has a quantum-classical counterpart, combining quantum evaluation of the local cost with an optimisation strategy robust to both shot and hardware noise. Proof-of-principle implementations on Quantinuum H2 and IBM Heron processors recover the characteristic local dynamics.",
+    "title": "Locally optimized variational evolution for quantum many-body systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5501071810722351
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5142168998718262
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5042128562927246
+      }
+    ]
   }
 }
