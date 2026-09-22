@@ -14007,5 +14007,1324 @@
         "score": 0.6146649718284607
       }
     ]
+  },
+  "2609.22238v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Osama Orabi"
+      },
+      {
+        "affiliation": [],
+        "name": "Artur Zagitov"
+      },
+      {
+        "affiliation": [],
+        "name": "Hadi Salloum"
+      },
+      {
+        "affiliation": [],
+        "name": "Viktor A. Lobachev"
+      },
+      {
+        "affiliation": [],
+        "name": "Yaroslav Kholodov"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.22238v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-04",
+    "reasoning": "This paper focuses on neural network pruning using QUBO optimization, which falls outside the user's primary interests in condensed matter physics and quantum systems.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Neural network pruning",
+      "QUBO optimization",
+      "Combinatorial optimization"
+    ],
+    "summary": "Neural network pruning can be formulated as a combinatorial optimization problem, yet many existing approaches rely on independent filter-importance scores or simplified objective functions. In this work, we propose a Hybrid Quadratic Unconstrained Binary Optimization (QUBO) framework for structured filter pruning that combines task-aware sensitivity information with interactions between candidate filters. The formulation incorporates first-order Taylor sensitivity and Weight-Fisher sensitivity into the linear component of the objective and can additionally incorporate activation similarity into the quadratic interactions. To control the target pruning cardinality without introducing an explicit quadratic cardinality penalty, we use a binary search over the capacity incentive to identify a coefficient that empirically yields the target pruning cardinality. We further investigate a two-stage QUBO--Tensor-Train refinement strategy in which the QUBO solution initializes gradient-free probabilistic black-box optimization to search for improved pruning masks using the downstream metric. Experiments on the SIDD image denoising task and a Half-UNet model show that the Hybrid QUBO achieves higher PSNR and SSIM than the evaluated Taylor and L1-based QUBO baselines at the studied pruning target. Multi-seed experiments under a fixed dataset protocol are used to assess robustness, while controlled sub-problem experiments demonstrate that Tensor-Train refinement becomes increasingly valuable as the combinatorial problem size grows. The results support Hybrid QUBO as a task-aware structured pruning framework for the evaluated setting, while also highlighting the computational and deployment limitations of mask-based pruning.",
+    "title": "Task-Aware Hybrid QUBO Optimization for Structured Neural Network Pruning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.33656400442123413
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.26502931118011475
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.25672534108161926
+      }
+    ]
+  },
+  "2609.22342v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yi-Ran Xue"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Baigeng Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenan Wei"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el",
+      "cs.LG",
+      "physics.chem-ph",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.22342v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "neural network"
+    ],
+    "published_date": "2026-09-16",
+    "reasoning": "This paper focuses on improving neural network-based variational optimization methods for quantum many-body problems, which is a methodological advance rather than a direct study of strongly correlated materials or superconductivity.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "neural network optimization",
+      "variational methods",
+      "quantum chemistry computation"
+    ],
+    "summary": "Neural networks provide expressive representations for scientific computing. However, even sufficiently expressive networks can suffer training failure in weak-gradient regimes, limiting their practical use in quantum many-body physics and ab initio quantum chemistry. Here we derive an unbiased direct gradient estimator and introduce the adaptive minimum-variance phase (AMVP) estimator for neural-network variational optimization. By improving the signal-to-noise ratio of weak gradients, these methods enable reliable scientific calculations where training previously failed, while substantially reducing computational cost. The framework enables compact networks to outperform larger and fine-tuned default standard-estimator models with over an order of magnitude less GPU time on correlated flux models, and ultimately exceed the density matrix renormalization group (DMRG) accuracy. It further achieves chemical accuracy in N$_2$ bond breaking and, for the first time, in heavy-element I$_2$ with explicit spin-orbit coupling. These results demonstrate that gradient-estimator design expands the capabilities of neural-network variational methods for accurate scientific computing.",
+    "title": "Gradient-estimator design overcomes trainability barriers in neural-network-based variational optimization",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.6102880239486694
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5146772265434265
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5093439817428589
+      }
+    ]
+  },
+  "2609.22376v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "H. Dong"
+      },
+      {
+        "affiliation": [],
+        "name": "S. D. M. Jacques"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Q. Hlatshwayo"
+      },
+      {
+        "affiliation": [],
+        "name": "E. Papoutsellis"
+      },
+      {
+        "affiliation": [],
+        "name": "K. Georgopoulos"
+      },
+      {
+        "affiliation": [],
+        "name": "A. M. Beale"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Vamvakeros"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22376v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-17",
+    "reasoning": "This paper introduces a quantum neural network for quantitative analysis of experimental X-ray diffraction data from multiphase oxides, linking advanced characterization to novel computational methods.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Neural Networks",
+      "X-ray Diffraction Analysis",
+      "Multiphase Materials"
+    ],
+    "summary": "Quantitative analysis of experimental powder X-ray diffraction data remains challenging when evaluating complex multiphase materials and noisy measurements. We introduce a hybrid quantum neural network framework designed to extract quantitative parameters, such as phase weight fractions and scale factors, directly from one-dimensional powder diffraction patterns without iterative refinement. The model combines noise-aware classical simulator pre-training with fast downstream fine-tuning on quantum processing unit features, ensuring stability against hardware decoherence. We demonstrate the practical utility of this approach by deploying the trained network onto an IBM quantum computer to analyse experimental X-ray diffraction computed tomography datasets from a three-phase solid oxide fuel cell containing ca. 10,000 patterns and a four-phase lithium-ion battery containing ca. 20,000 patterns). The network successfully reconstructs quantitative spatial phase maps in strong agreement with classical Rietveld refinement, paving the way for using quantum computing hardware to analyse real-world materials characterisation data.",
+    "title": "A Hybrid Quantum Neural Network to Analyse Big Experimental Powder X-ray Diffraction Data",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5956225395202637
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.48862385749816895
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.4702548682689667
+      }
+    ]
+  },
+  "2609.22400v1": {
+    "authors": [
+      {
+        "affiliation": [
+          "NEEL - MagSup"
+        ],
+        "name": "Chafic Fawaz"
+      },
+      {
+        "affiliation": [
+          "NEEL - MagSup"
+        ],
+        "name": "Yingzheng Gao"
+      },
+      {
+        "affiliation": [
+          "NEEL - MagSup"
+        ],
+        "name": "Luca Laveder"
+      },
+      {
+        "affiliation": [
+          "NEEL - MagSup"
+        ],
+        "name": "Lorenzo Menon"
+      },
+      {
+        "affiliation": [
+          "NEEL - MagSup"
+        ],
+        "name": "Owen Moulding"
+      },
+      {
+        "affiliation": [
+          "IQMT"
+        ],
+        "name": "Rolf Heid"
+      },
+      {
+        "affiliation": [
+          "IMPMC DEMARE"
+        ],
+        "name": "Blair W Lebert"
+      },
+      {
+        "affiliation": [
+          "IMPMC PHYSIX"
+        ],
+        "name": "Christophe Bellin"
+      },
+      {
+        "affiliation": [
+          "IMPMC"
+        ],
+        "name": "Keevin Beneut"
+      },
+      {
+        "affiliation": [
+          "OMU"
+        ],
+        "name": "David Santos-Cottin"
+      },
+      {
+        "affiliation": [
+          "OMU"
+        ],
+        "name": "Ikuya Yamada"
+      },
+      {
+        "affiliation": [
+          "OMU"
+        ],
+        "name": "Yuichi Okazaki"
+      },
+      {
+        "affiliation": [
+          "TITECH"
+        ],
+        "name": "Hajime Yamamoto"
+      },
+      {
+        "affiliation": [
+          "TITECH"
+        ],
+        "name": "Masaki Azuma"
+      },
+      {
+        "affiliation": [
+          "NEEL"
+        ],
+        "name": "M. -A. Méasson"
+      },
+      {
+        "affiliation": [
+          "NEEL - MagSup"
+        ],
+        "name": "Matteo d'Astuto"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22400v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-09-18",
+    "reasoning": "This paper directly investigates high-temperature cuprate superconductors using Raman scattering to probe magnetic and superconducting phases, strongly aligning with previous interests in cuprates.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprates",
+      "Raman Spectroscopy",
+      "Multimagnons"
+    ],
+    "summary": "We investigate the Raman response of sodium-doped cuprate oxychloride Na$_x$Ca$_{2-x}$CuO$_2$Cl$_2$ high-temperature superconductors across their entire phase diagram, from the antiferromagnetic to the superconducting region. In addition to the expected Raman-active phonon modes, we detect several additional modes that can be interpreted as being excited via a resonance process enabled by strong electron--phonon coupling. To verify the resonance effect, the Raman response at different incident photon energies was measured. At high energies, there is a well-defined $B_{1g}$ mode in the antiferromagnetic phase, which can be interpreted as a bimagnon We follow its temperature and doping dependence, providing information on the multimagnon excitation in these cuprates, which can be theoretically linked to the exchange interaction.",
+    "title": "Raman scattering in cuprate oxychlorides high-temperature superconductors single-crystals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.6679973602294922
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.6469588279724121
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.6347923278808594
+      }
+    ]
+  },
+  "2609.22420v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sagnik Banerjee"
+      },
+      {
+        "affiliation": [],
+        "name": "Haoyu Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Debanjan Chowdhury"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.22420v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-18",
+    "reasoning": "This paper introduces a method to certify string order in quantum spin chains and topological phases, directly connecting to the user's interest in Dirac fermions and semimetals, which often have topological character.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "string order",
+      "topological phases",
+      "quantum spin chains"
+    ],
+    "summary": "The many-body bootstrap certifies ground-state properties by minimizing energy over correlators constrained only by positivity, without any variational wavefunction. Its cost, however, grows exponentially with the size of the operators involved, placing the long-range string correlators that diagnose topological phases out of reach. We overcome this by treating string operators as primary objects: bare and endpoint-dressed strings satisfy a closed operator algebra with one another and with local words, yielding a semidefinite program whose cost grows only polynomially with string length. A single computation then yields estimates of string correlators of all lengths. Rigorous two-sided bounds are obtained for each target string once the ground-state energy is pinned within a window. When benchmarked against density-matrix renormalization group computations on the cluster Ising and spin$-1$ Heisenberg chains, the method certifies the nonlocal string order of the cluster and Haldane phases directly from the Hamiltonian. Our rigorous certification of string order parameters reveal that the sharpness of the bounds is set by which operators enter the calculation, not by their length alone. By exploiting algebraic closure of strings and local words, our framework lifts spatially extended observables into polynomially tractable bootstrap variables, opening up a route to wavefunction-free certification of nonlocal order in quantum many-body systems.",
+    "title": "Bootstrap certification of string order in quantum spin chains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.4910469055175781
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4837857186794281
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4631097912788391
+      }
+    ]
+  },
+  "2609.22533v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Parameshwaran A"
+      },
+      {
+        "affiliation": [],
+        "name": "Sanjay Puri"
+      },
+      {
+        "affiliation": [],
+        "name": "Bhaskar Sen Gupta"
+      }
+    ],
+    "categories": [
+      "cond-mat.soft",
+      "cond-mat.mtrl-sci",
+      "cond-mat.other",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22533v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-18",
+    "reasoning": "This paper discusses phase ordering in soft matter systems, which does not align with the user's interests in strongly correlated electron systems, superconductivity, or topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Soft matter",
+      "Liquid crystals",
+      "Phase transitions"
+    ],
+    "summary": "We investigate the nonequilibrium phase-ordering kinetics of a binary mixture of uniaxial ellipsoidal particles interacting via the anisotropic Gay-Berne potential using large-scale molecular dynamics simulations. Following a temperature quench from the isotropic and homogeneous phase into the coexistence region, the system exhibits two distinct ordering processes occurring on different time scales. At first, rapid orientational ordering leads to the formation and coarsening of nematic domains, characterized by dynamical scaling, generalized Porod-law behavior, and a growth law $\\ell(t) \\sim t^{1/2}$ consistent with nonconserved order-parameter dynamics. Later, the system undergoes binary phase separation driven by compositional fluctuations. This compositional ordering process shows a transition from diffusive growth $\\ell(t) \\sim t^{1/3}$ to hydrodynamic regimes, with finite-size scaling analysis indicating asymptotic viscous growth $\\ell(t) \\sim t$. Despite the presence of global orientational order, the phase-separation kinetics remains effectively isotropic. These results demonstrate a clear separation between orientational and compositional ordering dynamics, governed by distinct conservation laws, and provide a unified framework for understanding phase ordering in anisotropic particle systems.",
+    "title": "Two-Stage Ordering Kinetics in Binary Mixtures of Ellipsoidal Particles",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4146454334259033
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.39598727226257324
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.3414931297302246
+      }
+    ]
+  },
+  "2609.22535v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jingyi Luo"
+      },
+      {
+        "affiliation": [],
+        "name": "Fletcher Williams"
+      },
+      {
+        "affiliation": [],
+        "name": "Ang-Kun Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "David Dahlbom"
+      },
+      {
+        "affiliation": [],
+        "name": "Cristian D. Batista"
+      },
+      {
+        "affiliation": [],
+        "name": "Hao Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22535v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-09-18",
+    "reasoning": "This paper uses neural networks to reconstruct quantum magnetic Hamiltonians from neutron scattering data, which is highly relevant to understanding strongly correlated electron systems and complements experimental techniques used previously.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum magnetism",
+      "Neutron scattering",
+      "Inverse problem"
+    ],
+    "summary": "Determining the microscopic Hamiltonian of a quantum magnet from inelastic neutron scattering measurements remains a central challenge in condensed matter physics. While the dynamical spin structure factor contains, in principle, sufficient information about the underlying interactions, extracting Hamiltonian parameters from experimental spectra constitutes a highly nontrivial inverse problem due to the large parameter space and the presence of experimental noise. Here we demonstrate that neural networks can efficiently solve this inverse problem for a broad class of quantum magnets. As a benchmark, we consider an eight-parameter family of honeycomb lattice Heisenberg spin models in the fully polarized phase, where the dynamical spin structure factor can be computed exactly within linear spin-wave theory. Using a large synthetic dataset of neutron scattering spectra, we train neural networks to infer the underlying Hamiltonian parameters directly from the dynamical response. We compare the performance of three different architectures---fully connected neural networks (FCNNs), one-dimensional convolutional neural networks (CNN1Ds), and two-dimensional convolutional neural networks (CNN2Ds)---and find that all achieve high predictive accuracy. Remarkably, the trained models remain robust in the presence of substantial experimental uncertainty, reliably recovering the Hamiltonian parameters even when the input spectra are contaminated by random noise with amplitudes reaching $10\\%$ of the signal intensity. Our results establish machine learning as a powerful framework for quantitative Hamiltonian reconstruction from neutron scattering data and provide a practical route toward automated characterization of quantum magnetic materials.",
+    "title": "Approaching the Inverse Neutron Scattering Problem with Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5749198198318481
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5621697902679443
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5593191385269165
+      }
+    ]
+  },
+  "2609.22604v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jonas Scheunert"
+      },
+      {
+        "affiliation": [],
+        "name": "Shamail Ahmed"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Demuth"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Beyer"
+      },
+      {
+        "affiliation": [],
+        "name": "Kerstin Volz"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22604v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-18",
+    "reasoning": "This paper uses artificial intelligence for material phase prediction in LiNiO2/NiO, which aligns with the user's interest in advanced materials characterization of oxides.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Material Phase Prediction",
+      "Artificial Neural Networks",
+      "Electron Diffraction"
+    ],
+    "summary": "In the realm of material analysis, identifying different material phases is of key importance. Artificial intelligence in the form of neural networks provides a very fast and, once trained, computationally inexpensive method for analysing large amounts of image data, like the sets of diffraction patterns generated during four-dimensional scanning transmission electron microscopy (4DSTEM) dataset acquisition. In this work, we train multiple network architectures on images of this type to distinguish between the phases of LiNiO2 and NiO, an important and challenging distinction in the lithium-ion battery community, since the formation of NiO limits battery capacity. We test both classical convolutional neural networks (CNNs) and different forms of vision transformers (ViTs). Our networks are trained on synthetic images and tested on experimentally recorded diffraction patterns. Additionally, we also investigate the decision-making of our networks using the GradCAM method. We test our networks on both synthetic as well as experimental diffraction patterns. Our networks exhibit very robust results, especially when dealing with highly varying data, an area where traditional template-matching methods typically struggle.",
+    "title": "LiNiO2/NiO Phase Prediction Using Artificial Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4619450271129608
+      },
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.4567123353481293
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3871372938156128
+      }
+    ]
+  },
+  "2609.22618v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiao Liang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22618v1",
+    "matching_keywords": [
+      "hubbard model",
+      "neural quantum state"
+    ],
+    "published_date": "2026-09-18",
+    "reasoning": "This paper investigates d-wave pairing in the Hubbard model using advanced tensor-backflow wave functions, directly relevant to the physics of high-Tc cuprate superconductors and advanced computational methods for strongly correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "d-wave pairing",
+      "Hubbard model",
+      "Tensor-backflow"
+    ],
+    "summary": "Building on the recently developed tensor-backflow method, which accurately describes energies and stripe states in the Fermi-Hubbard model, we investigate $d$-wave pairing in the two-dimensional $t$-$t'$-$U$ Hubbard model. For the $8\\times8$ lattice, we improve the wave function using symmetry projections followed by one Lanczos step, whereas for the $12\\times 12$ and $16\\times 16$ lattices, we apply one Lanczos step without symmetry projection. We focus primarily on the parameter regime with filling $n=0.875$, on-site repulsion $U=8$ and next-nearest-neighbor hopping $t'=-0.2t$, a regime in which enhanced $d$-wave pairing has been reported. The resulting energies are competitive with those obtained using state-of-the-art neural quantum states. For example, on a $16\\times 16$ lattice with periodic boundary conditions, the tensor-backflow wave function after one Lanczos step without explicit symmetry enforcement achieves a relative energy difference of $4.4\\times 10^{-3}$ from the symmetry-preserving neural quantum state result. From the real space pair correlations, for $t'=-0.2t$, we observe stronger $d$-wave pair correlations together with the characteristic relative sign between horizontal and vertical bond-pair components. Compared with $t'=0$, finite negative $t'$ increases the spectral weight of the corresponding pair-density matrix, which indicates the enhanced overall $d$-wave pair fluctuations. The leading eigenvalue is enhanced on the $8\\times8$ lattice for both with and without symmetry projections. For larger lattices such as $12\\times 12$ and $16\\times 16$, the leading pair-density matrix spectral weight is distributed among several nearly degenerate eigenmodes rather than being concentrated in a single dominant mode. This indicates enhanced and more broadly distributed $d$-wave pair fluctuations, but no single eigenvalue exhibits the extensive scaling required for ODLRO.",
+    "title": "Probing $d$-wave pairing in the $t$-$t'$-$U$ Hubbard model with tensor-backflow wave functions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.7738392353057861
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6419733166694641
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6068670749664307
+      }
+    ]
+  },
+  "2609.22907v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rongyi Lv"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiangjian Qian"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingpu Qin"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.22907v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-09-19",
+    "reasoning": "This paper investigates antiferromagnetic phases and quantum spin liquids in a specific model, which is related to general condensed matter but not directly aligned with previous interests in nickelates, cuprates, or DMFT.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Shastry-Sutherland model",
+      "Quantum spin liquid",
+      "Density Matrix Renormalization Group (DMRG)"
+    ],
+    "summary": "The ground state phase diagram of the Shastry-Sutherland model remains controversial. In particular, the nature of the transition between the plaquette valence bond solid (PVBS) phase and the Néel antiferromagnetic (AFM) phase is still under debate. While some studies suggest a direct transition between the two phases, others propose the existence of a narrow intermediate quantum spin liquid regime. To address this issue, we perform large-scale Density Matrix Renormalization Group calculations to determine the Néel AFM phase boundary in the Shastry-Sutherland model. By applying staggered boundary pinning fields and directly measuring the bulk staggered magnetization, and through systematic extrapolations with respect to truncation error as well as careful finite-size scaling, we find that the staggered magnetization remains finite across the controversial region $0.78 \\lesssim J_{1}/J_{2} \\leq 0.81$, which was suggested to host a quantum spin liquid phase in some studies. Together with the previously established consensus placing the PVBS phase boundary at $J_{1}/J_{2} \\approx 0.78$, these results provide evidence against the existence of an intermediate quantum spin liquid phase and support a direct PVBS--Néel AFM transition in the Shastry-Sutherland model.",
+    "title": "On the precise boundary of the Néel antiferromagnetic phase in the Shastry-Sutherland model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6581211686134338
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6131184697151184
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5442083477973938
+      }
+    ]
+  },
+  "2609.22992v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Prashil S. Joshi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.22992v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-09-19",
+    "reasoning": "This paper uses physics-informed neural networks to link local atomic structure to the thermodynamic state in metallic glasses, demonstrating an advanced computational approach to material properties.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Physics-Informed Neural Networks",
+      "Metallic Glasses",
+      "Structure-Property Relationship"
+    ],
+    "summary": "Machine-learning models that relate local atomic structure to the thermodynamic state of metallic glasses typically assess physical consistency after training rather than enforcing it during learning. Here, we develop a multi-task physics-informed neural network (PINN) that predicts temperature directly from Voronoi-motif population histograms while incorporating autograd-derived gradient constraints representing physically motivated relationships between structural motifs, quench rate, and temperature. The model simultaneously classifies each configuration as liquid, supercooled/transition, or glass through an auxiliary classification head. The classification task achieves 96.6% test accuracy with a macro-F1 score of 0.95, while the regression head yields a mean absolute error of 23.4 K on a trajectory-disjoint held-out test set. Five-fold trajectory-grouped cross-validation, deep-ensemble predictions, and Monte Carlo dropout are used to assess model robustness and predictive uncertainty. Sensitivity analyses demonstrate that physics constraints can be incorporated over a broad range of loss weights without compromising predictive accuracy, while substantially improving compliance with the prescribed physical trends. Benchmarking against conventional machine-learning regressors further demonstrates competitive predictive performance. SHAP analysis across the cross-validation ensemble identifies the coupled near-icosahedral motif family, particularly the full icosahedral motif and its single-atom-perturbed counterpart, as the dominant structural fingerprints of the glassy state. These results demonstrate that physically motivated constraints can be embedded directly into motif-based structure-property models, providing a pathway from post-hoc interpretability toward physically constrained machine learning for metallic glasses.",
+    "title": "From Local Atomic Motifs to Thermodynamic State: An Interpretable Physics-Informed Framework for Cu-Zr Metallic Glasses",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5887145400047302
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4751570224761963
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.453082799911499
+      }
+    ]
+  },
+  "2609.23150v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Marnin J. Di Nunzio"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Lechermann"
+      },
+      {
+        "affiliation": [],
+        "name": "Ilya M. Eremin"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.23150v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-19",
+    "reasoning": "This paper investigates the role of electronic correlations and various factors in altermagnets and their spin-polarized electronic structures, which aligns with interests in strong correlations and exotic electronic phases.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "altermagnetism",
+      "spin-polarized carriers",
+      "slave-boson approach"
+    ],
+    "summary": "Altermagnets combine vanishing net magnetization with a momentum-dependent spin-split electronic structure, providing a route to spin-polarized carriers without ferromagnetism. Here, we investigate how electronic correlations, doping, uniaxial strain, and interlayer coupling control altermagnetism within a minimal Hubbard-type model for mono- and bilayer systems. Comparing Hartree--Fock theory with the rotationally invariant slave-boson (RISB) approach, we demonstrate the robustness of altermagnetic order against quasiparticle renormalization and reveal a separation between the onset of magnetic order and the loss of quasiparticle coherence at stronger coupling. In the monolayer, doping produces a pronounced particle--hole asymmetry, while its combination with uniaxial strain generates a fully spin-polarized Fermi surface close to half-filling. In the bilayer, stacking that favors ferroic alignment of the layer altermagnetic order parameters allows their momentum-dependent spin splittings to combine constructively. Weak asymmetric doping additionally induces intra-unit-cell charge order, resulting in fully spin-polarized low-energy carriers. At a bilayer filling of five electrons in four orbitals, we find a continuous paramagnet-to-altermagnet transition followed, at stronger coupling, by an evolution toward a Mott-like regime with strongly suppressed quasiparticle weight. Our results establish correlations, strain, doping, and stacking as complementary means of controlling altermagnetic metals and generating fully spin-polarized Fermi surfaces.",
+    "title": "Correlation-assisted spin-selective metallicity in strained and bilayer altermagnets",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6546627283096313
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6211816072463989
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5950923562049866
+      }
+    ]
+  },
+  "2609.23513v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ting-Long Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Shi-Xin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuai Yin"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-Fan Jiang"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.23513v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-20",
+    "reasoning": "This paper explores far-from-equilibrium phase transitions and entanglement dynamics in quantum systems, directly aligning with the user's interest in real-time dynamics and quantum many-body physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Temporal entanglement",
+      "Far-from-equilibrium",
+      "Floquet systems"
+    ],
+    "summary": "Equilibrium phase transitions are conventionally categorized into first-order and continuous phase transitions. Far from equilibrium, many new transitions emerge during the real-time evolution of quantum systems. One such transition is the temporal entanglement transition (TET) characterized by the nonanalyticity of the entanglement spectrum. So far, all TETs occur through a linear crossing of the leading Schmidt levels in different symmetry sectors, resembling a first-order transition in equilibrium. A natural question is whether a continuous TET, featured by entanglement spectrum touching, is possible. In a periodically driven transverse $J_1$-$J_2$ Ising chain, we show that two such TETs can merge into a critical touching, where the leading levels meet tangentially without exchanging, realizing the temporal analog of a continuous phase transition. Near the critical frequency, the temporal separation of the two TETs vanishes continuously and its derivative with respect to frequency diverges, a nonanalytic signature that is absent in a single first-order TET. This finite-frequency touching arises from the interplay between a weak symmetry-preserving perturbation of the product initial state and Floquet corrections. Further extending the frequency scan reveals a second critical touching at a higher frequency, and the two critical frequencies enclose a finite window with no TET. These features can be understood from a second-order Floquet Hamiltonian and persist across a broad range of coupling ratios, establishing the critical touching as a distinct form of TET.",
+    "title": "Critical Touching of Temporal Entanglement Transitions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.53946852684021
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5209033489227295
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5112415552139282
+      }
+    ]
+  },
+  "2609.23645v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yingying Cao"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-feng Yang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.23645v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-09-20",
+    "reasoning": "This paper directly investigates superconducting infinite-layer nickelates using DFT+DMFT, highly aligning with multiple previously liked topics.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Infinite-layer nickelates",
+      "DFT+DMFT",
+      "Hund's coupling"
+    ],
+    "summary": "Recent discovery of reentrant superconductivity and elevated $T_c$ in Eu-substituted infinite-layer nickelates raises a critical question concerning the nature of Eu-4$f$ states and their potential interaction with Ni-$d$ electrons. Here we combine density functional theory with the dynamical mean-field theory (DFT+DMFT) calculations to investigate the valence and magnetic properties of Eu-ions in the nickelate 112 structure, explicitly treating the Coulomb repulsion in both Ni-3$d$ and Eu-4$f$ shells. We find a three-regime evolution of the Eu-4$f$ configuration driven by its Hund's rule coupling $J_{\\rm H}$. The magnetic and mixed-valence Eu ionic state inferred by experiments only occurs for moderate $J_{\\rm H}$, with coexisting local moments and strongly correlated $j=7/2$ quasiparticles, in contrast to the nonmagnetic state at small $J_{\\rm H}$ and the fully spin-polarized divalent state at large $J_{\\rm H}$. This local-itinerant duality arises from an effectively hole-doped orbital-selective Mott state induced by the intra-4$f$ charge transfer between $j=5/2$ and $7/2$ manifolds. It not only explains the origin of the mixed-valence and local moment behaviors of the Eu-ions observed experimentally, but also predicts low-energy 4$f$ quasiparticles that may hybridize with the Ni-3$d$ electrons and contribute to the elevated $T_c$. Our work provides a basis for understanding the unusual ferromagnetic and superconducting properties of Eu-substituted infinite-layer nickelates.",
+    "title": "Hund-driven local-itinerant duality of Eu-4$f$ electrons in infinite-layer nickelates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.6266584992408752
+      },
+      {
+        "liked_paper_id": "2506.16362v1",
+        "score": 0.5682437419891357
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.5651175379753113
+      }
+    ]
+  },
+  "2609.23774v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sagad Hamid"
+      },
+      {
+        "affiliation": [],
+        "name": "Tanya Braun"
+      }
+    ],
+    "categories": [
+      "cs.AI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.23774v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-20",
+    "reasoning": "While utilizing tensor networks, a technique relevant to quantum many-body physics, this paper applies them to probabilistic inference in graphical models, which is less directly related to the user's core interests in physical systems.",
+    "score": 0.45,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Probabilistic inference",
+      "Graphical models"
+    ],
+    "summary": "Probabilistic inference is generally only tractable in low-treewidth graphical models, limiting its effective applicability in high-treewidth settings. Many existing methods improve efficiency by exploiting specific parametric structure, such as symmetries. However, they typically require such structure to be explicitly present, limiting their applicability to a broader range of graphical models. To address this limitation, we propose a framework where tractable inference is controlled by latent parametric structure exploitation, rather than requiring it to be explicitly present a priori. Our approach first reparameterises a graphical model as a specific tensor network representation, which we call a base tensor network. This representation yields two key properties that allow inference tractability to be controlled by parametric structure: 1) First, the complexity of inference is mainly determined by the parametric structure of a single tensor, called the base tensor. We characterise several tractable classes of base tensors for which the entire base tensor network can be contracted efficiently. 2) Second, decomposing the base tensor yields again a collection of base tensor networks. This allows inference to be naturally reduced to decomposing the base tensor into tractable components with sufficient parametric structure. We call this procedure parametric tensor decomposition. By exploiting parametric structure within the base tensor, our framework enables a novel view on inference beyond settings where such structure is explicitly present.",
+    "title": "On Probabilistic Inference Through Parametric Tensor Decomposition in Base Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4173121750354767
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.39010366797447205
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.32599204778671265
+      }
+    ]
+  },
+  "2609.23942v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chaithanya Rayudu"
+      },
+      {
+        "affiliation": [],
+        "name": "Takahiro Misawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Takahashi"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el",
+      "cs.CC"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.23942v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-20",
+    "reasoning": "This paper presents a fundamental theorem for interacting fermion models applicable to phase transitions and quantum algorithms, which is broadly relevant to many-body physics but not directly to the specific materials or computational methods of previous interests.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Lee-Yang theorem",
+      "Interacting fermions",
+      "Quantum algorithms"
+    ],
+    "summary": "Lee-Yang theorems are a powerful tool for studying many-body systems, with applications ranging from analyzing phase transitions to proving the efficiency of certain classical and quantum algorithms. In this work, we prove a Lee-Yang zero-freeness theorem for the partition function of a broad class of interacting fermion models, implying the existence of a provably efficient quantum algorithm for estimating their ground-state energies. This class includes several well-known models such as the attractive Hubbard model, repulsive Hubbard model on bipartite graphs, and the interacting Hofstadter model. Our results also rigorously establish the nonexistence of phase transitions in these models in the presence of a nonzero local external field.",
+    "title": "Lee-Yang theorem for fermions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5699851512908936
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5683633089065552
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5619179606437683
+      }
+    ]
+  },
+  "2609.23978v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shijie Jin"
+      },
+      {
+        "affiliation": [],
+        "name": "Lu Liu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.23978v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper develops an improved quantum Monte Carlo method for quantum spin systems, aligning with the user's interest in computational methods for correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Stochastic Series Expansion",
+      "Quantum Spin Systems"
+    ],
+    "summary": "The Stochastic Series Expansion (SSE) quantum Monte Carlo method with loop updates is among the most powerful approaches for quantum spin and boson systems. In the standard formulation, the magnetic field term is routinely absorbed into the Heisenberg interactions---a strategy that has proven highly efficient across a wide range of field strengths. In this work, we propose a more general SSE framework in which the magnetic field operator is treated as an independent operator class, enabling it to participate in Monte Carlo updates on an equal footing with all other operators. Importantly, the field operator and other interaction operators can transform into one another during the update process. We demonstrate this algorithm using the two-dimensional antiferromagnetic Heisenberg model in a magnetic field as a concrete example. The simulation results agree with those of the conventional algorithm, confirming the correctness of the new formulation. A comparison of the integrated autocorrelation time shows that the new algorithm is competitive. This flexibility not only facilitates measurements of observables associated with operators but also offers potential computational advantages for a broader class of problems.",
+    "title": "Decoupling the Magnetic Field Operator as an Independent Operator Class in Stochastic Series Expansion Quantum Monte Carlo",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5136896371841431
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5038714408874512
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.49139392375946045
+      }
+    ]
+  },
+  "2609.23993v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Haoran Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Principi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.23993v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper develops an advanced computational method for strongly correlated systems, including the Hubbard model and Majorana fermions, aligning with interests in DMFT and exotic condensed matter phases.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum dynamics",
+      "Reduced Density Matrix",
+      "Majorana fermions"
+    ],
+    "summary": "We introduce a time-dependent two-particle (TP) reduced-density-matrix algorithm for systems of interacting Majorana fermions. We close the BBGKY hierarchy at the two-particle level by reconstructing the three-particle reduced density matrix from lower-order correlations. To stabilize the evolution, we impose a positivity projection on the two-particle density matrix while preserving chosen conserved quantities such as the energy. We benchmark the approach on quenches in the one-dimensional Hubbard model and on flux dynamics in the Kitaev honeycomb model. For the Hubbard quench, TP captures strong-coupling dynamics missed by Hartree--Fock (HF). For the Kitaev quenches, TP accurately reproduces the early-time flux dynamics in several regimes and provides a substantial improvement over HF when two-particle correlations are important. We further show that gauge coherence is essential for flux dynamics. The projection procedure however introduces an effective irreversibility, which affects the long-time dynamics.",
+    "title": "A Majorana Formulation of Time-Dependent Two-Particle Reduced-Density-Matrix Dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5897459983825684
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5822391510009766
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5762289762496948
+      }
+    ]
+  },
+  "2609.24038v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Federico Zahariev"
+      },
+      {
+        "affiliation": [],
+        "name": "Regina Pereyra"
+      },
+      {
+        "affiliation": [],
+        "name": "Vassiliki-Alexandra Glezakou"
+      },
+      {
+        "affiliation": [],
+        "name": "Durga Paudyal"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.24038v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper focuses on applying machine learning to predict properties of single-ion magnets, which is a different material class and methodological approach compared to the user's liked topics.",
+    "score": 0.25,
+    "suggested_keywords": [
+      "single-ion magnets",
+      "lanthanide complexes",
+      "machine learning for materials"
+    ],
+    "summary": "Machine learning (ML) is expected to speed up the discovery of single-ion magnets (SIMs), but does the structural information available before synthesis allow such predictions? For 1215 lanthanide complexes from the SIMDAVIS 1.2.1 database we compared three increasing levels of structural description: tabular features of the coordination site, continuous symmetry measures of the coordination polyhedron, and the complete 3D arrangement of atoms. All three converge to an accuracy near 76%, only slightly above the 71% of the single rule \"predict SIM for Dy3+\". To explain the failures, we combined multireference ab initio calculations with an inspection of the structures behind the high-confidence errors. The SIMs missed by the geometric models are field-induced relaxers whose ground Kramers doublets are prone to tunnelling, a property invisible to geometric descriptors. Many false positives contain several lanthanide centers or radicals, so their relaxation is collective and outside the single-ion picture. The electronic-structure and connectivity information needed to identify SIMs is therefore not accessible to geometric methods alone. Geometric models remain useful: restricting the screening to compounds with high prediction confidence raises the accuracy to 88% while retaining 48% of the dataset. Building on the analysis of the failures, we propose a strategy that combines simple filters for nuclearity and for radicals with ligand-field descriptors from ab initio calculations.",
+    "title": "From Heuristics to Machine Learning: The Performance Ceiling for Single-Ion Magnets and Its Electronic Origin",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4807726740837097
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.44217196106910706
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4397219717502594
+      }
+    ]
+  },
+  "2609.24282v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gerhard Hellstern"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": "10.1140/epja/s10050-026-01957-7",
+    "id": "2609.24282v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper applies quantum computing methods, specifically VQE with a tensor-network ansatz, to solve a fundamental equation in relativistic quantum field theory for bound states, which is highly relevant to the user's interests in quantum systems and computational physics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Quantum computing",
+      "Bethe-Salpeter equation",
+      "Matrix Product State"
+    ],
+    "summary": "We present a gate-based quantum computing solution of the homogeneous Bethe-Salpeter equation (hBSE) for the bound state of two massive relativistic scalar particles interacting via ladder-approximation scalar exchange. After Wick rotation to Euclidean space and O(4) S-wave partial-wave projection, the hBSE is reduced to a symmetric matrix eigenvalue problem of dimension N = 2^n. We decompose the resulting Hamiltonian into a sum of n-qubit Pauli operators and solve it with the Variational Quantum Eigensolver (VQE) using a Matrix Product State (MPS) tensor-network ansatz. For N=16 (n=4 qubits), the VQE recovers the maximum eigenvalue - which encodes the minimum coupling constant for binding - to better than 1 % mean relative error compared to classical diagonalization. Entanglement analysis of the BSE amplitude shows low, area-law-like entanglement over the tested sizes, which motivates the MPS ansatz. A critical analysis of three independent barriers - exponential Pauli overhead, approximately size-independent low entanglement, and decreasing VQE gradient scales for the tested ansatz, consistent with generic barren-plateau concerns at larger n - reveals that the specific problem studied here lies in a classically tractable regime: over the tested range it is well described by low-bond-dimension tensor networks and efficiently handled by MPS/Lanczos methods. This negative result provides, to our knowledge, the first entanglement quantification of the BSE amplitude in qubit encoding, establishes the Pauli Hamiltonian framework for future BSE variants, and identifies 2D Minkowski-space BSE, N-body bound states, and non-ladder kernels as physically motivated extensions where genuine quantum advantage may become plausible.",
+    "title": "Quantum Computing Solution of the Bethe-Salpeter Equation for Relativistic Scalar Bound States via Tensor-Network VQE",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5806778073310852
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5336400270462036
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5240360498428345
+      }
+    ]
+  },
+  "2609.24293v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhenxing Dai"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingjue Ni"
+      },
+      {
+        "affiliation": [],
+        "name": "Xinpeng Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Menglin Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Anderson Janotti"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiyou Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.24293v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "While it addresses point defects, a topic of previous interest, this paper focuses on machine learning methods for conventional materials rather than the strongly correlated or superconducting systems favored previously.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Point defects",
+      "Machine Learning",
+      "Computational Materials Science"
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) can treat large-scale material systems with near first-principles accuracy and have been widely used to accelerate point-defect simulations. However, the training of MLIPs usually relies on large amounts of DFT data. This issue is particularly pronounced for charged defects, for which DFT calculations of large supercells are required to avoid long-range Coulomb interactions and finite-size effects, making the construction of datasets computationally expensive. In this work, we propose an efficient MLIP training scheme for neutral and lowly charged point defects based on small supercells (less than 100 atoms) and limited number of DFT calculations. The scheme requires only four DFT structural relaxations to construct the training dataset and the trained MLIPs dedicated for the defect can predict the defect formation energies in larger supercells (over 200 atoms) with small errors (mostly smaller than 0.3 eV). Using defects in GaN, SiO$_2$, and $\\mathrm{Cu}_2\\mathrm{ZnSnS}_4$ as representative examples, we evaluate the extrapolation capability of this scheme for predicting defect total energies and structural relaxations across different supercell sizes. The results show that an MLIP trained only on single small defect supercell produces severe errors when treating large supercells. Incorporating defect data from multiple supercell sizes improves the predictive performance of the MLIP, while adding pristine defect-free bulk supercells further enhances the accuracy. These results provide practical guidance for training MLIP models of defect systems with low computational costs.",
+    "title": "Small-supercell and Small-dataset Training Strategy of Machine Learning Interatomic Potentials for Point Defects",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5116013288497925
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4616968035697937
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4521943926811218
+      }
+    ]
+  },
+  "2609.24315v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ankur Majumder"
+      },
+      {
+        "affiliation": [],
+        "name": "Sudeshna Sen"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.24315v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper explores the Mott transition and strong electron correlations using theoretical methods like slave-rotor mean-field theory, which aligns with the user's interest in advanced theoretical techniques for correlated systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Mott transition",
+      "Slave-rotor theory",
+      "Strong correlations"
+    ],
+    "summary": "The Mott-Hubbard transition is a paradigmatic phenomenon driven by strong electronic correlations. We investigate this transition in a three-orbital modified periodic Anderson model using slave-rotor mean-field theory. A minimal two-site cluster extension is introduced to understand the minimal effects of short-range spatial correlations. In comparison to the single-site solution, short-range spatial correlations reveal a shift of the transition point. Going beyond the slave-rotor analysis, we also evaluate the dynamical self-energy and map it onto the boundary Green's function of a non-interacting semi-infinite auxiliary chain. For the metallic phase, the resulting hopping pattern corresponds to a topologically trivial generalized Su--Schrieffer--Heeger chain. This construction provides a framework for exploring the possible topological character of the Mott transition in this model.",
+    "title": "Slave-Rotor and Auxiliary Chain Analysis of the Mott Transition in a Modified Periodic Anderson Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6059461832046509
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.5822237133979797
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.5819169282913208
+      }
+    ]
+  },
+  "2609.24429v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kai Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Junyan Guan"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhongming Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jie Zhu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.24429v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper explores fundamental quantum phenomena like spin-orbit induced bound states in the continuum within the Fermi-Hubbard model, directly linking to strongly correlated electron systems and advanced condensed matter theory.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Fermi-Hubbard Model",
+      "Spin-Orbit Coupling",
+      "Bound States in the Continuum"
+    ],
+    "summary": "Repulsively bound doublons are two-particle composites formed by strong interactions and are usually separated from the scattering continuum. Introducing spin-orbit coupling fundamentally alters the underlying band structure, providing a powerful tuning knob to shift these isolated pairs toward this continuum. However, because entering such a regime typically dictates immediate dissociation, whether this coupling can drive these pairs inside while preserving their bound nature constitutes a fundamental unresolved challenge. Here we show that spin-orbit coupling in the one-dimensional Fermi-Hubbard model can drive doublons into the two-particle scattering continuum. Most of these states hybridize with extended channels and decay, whereas a subset remains decoupled and spatially bound, forming many-body bound states in the continuum (BICs). We map the interacting two-particle problem onto a two-dimensional lattice of coupled acoustic cavities, and experimentally observe both the radiating doublon continuum and the confined BIC states. These results demonstrate that spin-orbit coupling can turn selected doublons into interaction-induced BICs, deepening the understanding of continuum physics for interaction-bound pairs.",
+    "title": "Spin-Orbit Induced Confinement of Correlated Bound States in the Continuum",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6405768394470215
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5305315256118774
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.5192289352416992
+      }
+    ]
+  },
+  "2609.24857v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Youichi Yamakawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Hiroshi Kontani"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.24857v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper directly addresses high-temperature superconductivity and intertwined density-wave orders in multilayer nickelates, a topic closely related to previously liked papers on nickelate superconductors and charge correlations in cuprates.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "trilayer nickelates",
+      "orbital density wave",
+      "intertwined order"
+    ],
+    "summary": "Intertwined charge-density-wave (CDW) and spin-density-wave (SDW) orders are a hallmark of high-temperature superconducting multilayer nickelates. In trilayer La4Ni3O_{10}, charge correlations develop at temperatures above the onset of long-range spin order, and the characteristic ordering wavevectors satisfy $Q_{cdw} \\approx 2Q_{sdw}$. Here, using a density-wave equation with vertex corrections, we show that quantum interference between short-range SDW fluctuations at $q \\approx Q_{sdw}$ on the outer NiO2 layers generates an inter-outer-layer bond order at $Q_{cdw} \\approx 2 Q_{sdw}$. This bond order induces a pronounced inner-layer-centered orbital order, with antiphase modulations of the Ni $d_{3z^2-r^2}$ and $d_{x^2-y^2}$ occupations, producing strong orbital polarization but only weak total charge modulation. This intertwined bond-and-orbital order accounts for the layer-selective electronic reconstruction inferred from NMR/NQR and is consistent with Raman spectroscopy and scanning tunnelling microscopy measurements. The same orbital and spin fluctuations also cooperate to stabilize $s_{\\pm}$-wave superconductivity through $M_z$ mirror-parity selection rules. Our results provide a unified microscopic framework for intertwined density-wave order and high-Tc superconductivity in multilayer nickelates.",
+    "title": "Quantum-interference-driven orbital density wave and high-temperature superconductivity in trilayer nickelates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.7105254530906677
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.7065934538841248
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.6662628650665283
+      }
+    ]
   }
 }
