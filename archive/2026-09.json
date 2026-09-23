@@ -15326,5 +15326,828 @@
         "score": 0.6662628650665283
       }
     ]
+  },
+  "2609.24857v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Youichi Yamakawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Hiroshi Kontani"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.24857v2",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper directly discusses high-temperature superconductivity, intertwined density waves (CDW/SDW), and orbital order in trilayer nickelates, which aligns strongly with previous interests in cuprate superconductors and nickelate materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "orbital density wave",
+      "trilayer nickelates",
+      "intertwined orders"
+    ],
+    "summary": "Intertwined charge-density-wave (CDW) and spin-density-wave (SDW) orders are a hallmark of high-temperature superconducting multilayer nickelates. In trilayer La4Ni3O_{10}, charge correlations develop at temperatures above the onset of long-range spin order, and the characteristic ordering wavevectors satisfy $Q_{cdw} \\approx 2Q_{sdw}$. Here, using a density-wave equation with vertex corrections, we show that quantum interference between short-range SDW fluctuations at $q \\approx Q_{sdw}$ on the outer NiO2 layers generates an inter-outer-layer bond order at $Q_{cdw} \\approx 2 Q_{sdw}$. This bond order induces a pronounced inner-layer-centered orbital order, with antiphase modulations of the Ni $d_{3z^2-r^2}$ and $d_{x^2-y^2}$ occupations, producing strong orbital polarization but only weak total charge modulation. This intertwined bond-and-orbital order accounts for the layer-selective electronic reconstruction inferred from NMR/NQR and is consistent with Raman spectroscopy and scanning tunnelling microscopy measurements. The same orbital and spin fluctuations also cooperate to stabilize $s_{\\pm}$-wave superconductivity through $M_z$ mirror-parity selection rules. Our results provide a unified microscopic framework for intertwined density-wave order and high-Tc superconductivity in multilayer nickelates.",
+    "title": "Quantum-interference-driven orbital density wave and high-temperature superconductivity in trilayer nickelates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.710525393486023
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.70659339427948
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.6662627458572388
+      }
+    ]
+  },
+  "2609.25058v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ashfak Yeafi"
+      },
+      {
+        "affiliation": [],
+        "name": "Mehedi Hasan"
+      },
+      {
+        "affiliation": [],
+        "name": "Md Khairul Islam"
+      }
+    ],
+    "categories": [
+      "cs.CL",
+      "cs.CV"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.25058v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-08",
+    "reasoning": "This paper is about fine-tuning large language models using tensor-train factorizations, which is unrelated to condensed matter physics or materials science.",
+    "score": 0.0,
+    "suggested_keywords": [],
+    "summary": "Parameter-efficient fine-tuning (PEFT) adapts large language models (LLMs) to downstream tasks while updating only a small fraction of their pretrained parameters. Low-Rank Adaptation (LoRA) uses two trainable low-rank matrices, while Weight-Decomposed Low-Rank Adaptation (DoRA) further separates weight magnitude and direction but retains the dense LoRA-style factorization in its directional branch. We propose ChainDoRA, a weight-decomposed adaptation framework that constructs the directional low-rank factors from a connected Tensor-Train (TT) chain, where the adapter rank forms the boundary rank between input- and output-side TT contractions and an independent TT rank controls representation capacity and parameter cost. Under a controlled 15,119-example response-only adaptation setting with LLaMA-7B, ChainDoRA is evaluated against matched LoRA and DoRA baselines on seven commonsense reasoning benchmarks. ChainDoRA with TT rank 16 achieves a seven-task average accuracy of 72.30%, compared with 69.88% for LoRA and 69.39% for DoRA, while requiring only 5.35M trainable parameters versus 56.10M for LoRA and 56.98M for DoRA, corresponding to a 90.62% reduction relative to DoRA. Ablations over TT rank and adapter placement show controllable parameter-accuracy trade-offs, indicating that connected TT parameterization can substantially reduce the parameter cost of magnitude-direction adaptation while preserving, and in this setting improving, downstream reasoning performance.",
+    "title": "ChainDoRA: Tensor-Train Factorized Weight-Decomposed Low-Rank Adaptation for Parameter-Efficient LLM Fine-Tuning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.36802756786346436
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.2537461221218109
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.24799229204654694
+      }
+    ]
+  },
+  "2609.25193v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Lukas Homeier"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Linsel"
+      },
+      {
+        "affiliation": [],
+        "name": "Lode Pollet"
+      },
+      {
+        "affiliation": [],
+        "name": "Ana Maria Rey"
+      }
+    ],
+    "categories": [
+      "cond-mat.quant-gas",
+      "cond-mat.str-el",
+      "physics.atom-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.25193v1",
+    "matching_keywords": [
+      "quantum monte carlo",
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper introduces novel diagnostics for quantum spin liquids, a type of exotic phase of matter, which connects to the user's interest in Dirac fermions and advanced material characterization techniques.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "quantum spin liquids",
+      "multiple-quantum coherences",
+      "anyon condensation"
+    ],
+    "summary": "Quantum simulators are beginning to prepare long-sought phases of matter that remain difficult to realize cleanly in materials. Yet identifying such phases remains a major challenge when their defining properties are inherently non-local and cannot be captured by conventional local measurements. Here we establish multiple-quantum coherences (MQCs) as phase-sensitive diagnostics for gapped $\\mathbb{Z}_2$ quantum spin liquids. Focusing on the extended toric code and using large-scale quantum Monte Carlo simulations, we build a direct correspondence between the elementary anyonic excitations and the weights of different MQC sectors. MQCs thereby reveal anyon condensation across the phase transitions through characteristic signatures that remain robust against fluctuations that obscure conventional diagnostics. Subsystem-resolved MQCs further provide a bipartite entanglement witness that distinguishes a classical loop gas from a quantum-coherent closed-loops gas. We develop and benchmark a practical protocol to extract MQCs based on the return fidelity of adiabatic round trips, and show that local coherence measurements retain experimentally accessible signatures of the phase transitions. Our results establish MQCs as a practical diagnostic for the excitations, phase structure and global constraints of quantum spin liquids.",
+    "title": "Probing quantum spin liquids with multiple quantum coherences",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6254823207855225
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5684582591056824
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.531752347946167
+      }
+    ]
+  },
+  "2609.25210v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Guilherme Delfino"
+      },
+      {
+        "affiliation": [],
+        "name": "Mehmet Dede"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitry Green"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael J. Manfra"
+      },
+      {
+        "affiliation": [],
+        "name": "Charles M. Marcus"
+      },
+      {
+        "affiliation": [],
+        "name": "Claudio Chamon"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.25210v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "The paper proposes a realization of the Kitaev spin liquid, an exotic quantum state, in superconducting networks, which relates to the user's interest in correlated electron systems and superconductivity.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Kitaev spin liquid",
+      "superconducting networks",
+      "quantum metamaterials"
+    ],
+    "summary": "We propose a realization of the Kitaev honeycomb Hamiltonian -- an archetypal spin-liquid model -- in a superconducting metamaterial. The architecture consists of Cooper-pair boxes coupled through depleted semiconductor--superconductor heterostructures that do not require spin--orbit coupling. The Cooper-pair boxes encode effective spin degrees of freedom, while normal and anomalous virtual propagation through the heterostructures mediate bond-directional interactions. Two key control parameters are an out-of-plane magnetic flux and the semiconductor Fermi energy. The former controls interference and distinguishes the bond directions, while tuning the latter close to the bottom of the band gives rise to an emergent Nambu-exchange symmetry that enforces the required bond directionality. Through numerical calculations, we identify an operating regime with controlled corrections, with associated energy and length scales within experimental reach. These results establish a route toward equilibrium quantum spin liquids in engineered superconducting networks.",
+    "title": "Kitaev spin liquid in superconducting networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6085325479507446
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6063818335533142
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5649714469909668
+      }
+    ]
+  },
+  "2609.25242v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tiago Jorge"
+      },
+      {
+        "affiliation": [],
+        "name": "Jens Paaske"
+      },
+      {
+        "affiliation": [],
+        "name": "Pedro Ribeiro"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.25242v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper explores quantum criticality in driven-dissipative systems and the concept of an effective temperature, which is a general theoretical concept in condensed matter physics that might be relevant to understanding non-equilibrium aspects of strongly correlated materials.",
+    "score": 0.55,
+    "suggested_keywords": [
+      "Quantum Criticality",
+      "Nonequilibrium Physics",
+      "Driven-Dissipative Systems"
+    ],
+    "summary": "Whether a nonequilibrium quantum-critical steady state can be described by an effective temperature remains an open question. We address it in a voltage-biased electronic Lipkin--Meshkov--Glick model, a minimal driven-dissipative model of a collective spin coupled to metallic leads. A controlled large-$N$ treatment reveals an overdamped open quantum-critical regime distinct from the closed model. The surrounding quantum critical fan, organized by temperature and voltage, is explored and fluctuations are found to be governed by an effective temperature $T_{\\rm eff}$. At strong bias, the transition becomes first-order through a tricritical point. Remarkably, the same $T_{\\rm eff}$ governs the strongly driven regime, but now varies across the entire order-parameter landscape. The steady state is therefore selected by a non-Boltzmann rule, shifting the first-order transition away from the equal-depth point of a deterministic potential. Driven criticality thus remains organized by an effective temperature while revealing non-thermal state selection.",
+    "title": "From Effective Temperature to Non-Boltzmann State Selection in Driven-Dissipative Quantum Criticality",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5311994552612305
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4818774461746216
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.4741594195365906
+      }
+    ]
+  },
+  "2609.25243v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nai Chao Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xing-Yu Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuchi He"
+      },
+      {
+        "affiliation": [],
+        "name": "Nick Bultinck"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.25243v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper investigates a gapless Dirac spin liquid state in a honeycomb lattice model using advanced tensor network methods, aligning with interests in novel quantum phases, Dirac fermions, and computational physics techniques.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Spin Liquid",
+      "Tensor Networks",
+      "Honeycomb Lattice"
+    ],
+    "summary": "Motivated by two-dimensional bilayer systems we numerically study an anti-ferromagnetic spin-$1/2$ Heisenberg model on the honeycomb lattice with a nearest-neighbour exchange coupling $J_1$, and a next-nearest-neighbour exchange coupling $J_2'$ for the B sublattice sites only. Using infinite Projected Entangled-Pair States (iPEPS), variational uniform matrix-product states on cylinders, and exact diagonalization, we find an extended symmetric regime $0.4\\lesssim J'_2/J_1\\lesssim0.6$, in which local observables show no magnetic, valence-bond, or chiral spin order. At $J'_2/J_1=0.5$, the PEPS correlation length grows systematically with bond dimension, and an inverse-correlation-length extrapolation favors a vanishing limit. We also find that various observables scale algebraically with the finite bond-dimension-induced correlation length, which points to a gapless spin liquid ground state. We propose a $\\mathbb{Z}_2$ Dirac spin liquid parton state, with Dirac points that are protected by translation, time-reversal and three-fold rotation symmetry, as a promising candidate state to explain the numerical results. We also discuss the possibility that the symmetric ground state is a featureless, short-range entangled state with a small gap.",
+    "title": "Extended symmetric quantum phase in a honeycomb Heisenberg model with sublattice-selective interactions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.7140372395515442
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6350621581077576
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6205164194107056
+      }
+    ]
+  },
+  "2609.25276v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Marta Brzezińska"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeanne Colbois"
+      },
+      {
+        "affiliation": [],
+        "name": "Loïc Herviou"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.dis-nn",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.25276v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper develops an exact matrix product operator construction for tight-binding Hamiltonians on complex lattices, directly relevant to advanced computational methods and electronic properties in condensed matter physics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "matrix product operator",
+      "tight-binding Hamiltonian",
+      "recursively structured lattices"
+    ],
+    "summary": "Inspired by the recent progress in the simulation of tight-binding Hamiltonians on large lattices using tensor networks, we introduce a systematic matrix product operator (MPO) construction for single-particle Hamiltonians on recursively structured lattices. Taking advantage of this recursive structure, we encode the lattice geometry in a finite-state automaton and, adapting ideas from Abelian-symmetric tensor networks, obtain an exact and analytical MPO representation of the Hamiltonian, where the number of tensors grows logarithmically with the system size and the bond dimension is set by the number of automaton states. Several examples demonstrate the generality of the framework: regular lattices, fractals, Cayley trees, hyperbolic lattices, and one- and two-dimensional Fibonacci quasicrystals. Combined with the kernel polynomial method, these MPO representations enable large-scale calculations of spectral properties without explicitly constructing the full Hamiltonian. This provides a unified route to the exploration of electronic properties across a broad class of lattices at exponentially large system sizes.",
+    "title": "Finite-state automata for exact matrix product operators of tight-binding Hamiltonians: fractals, quasicrystals, trees and hyperbolic lattices",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5147678852081299
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5100469589233398
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5036135911941528
+      }
+    ]
+  },
+  "2609.25384v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Roman Rausch"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.25384v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper focuses on optimizing DMRG, a numerical method for strongly correlated systems, which might be of interest to a user who liked a paper on solvers for dynamical mean-field theory.",
+    "score": 0.55,
+    "suggested_keywords": [
+      "DMRG optimization",
+      "tensor networks",
+      "lattice compilation"
+    ],
+    "summary": "The density-matrix renormalization group (DMRG) is a one-dimensional tensor-network technique, but it is not limited to one-dimensional systems: it can be applied to periodic 2D and 3D clusters and molecules, provided their sites are first enumerated along a line; a step one may call \"lattice compilation\".   This paper discusses three proxy loss functions for finding this optimal enumeration: the graph bandwidth $B$ (maximum interaction range), the cutwidth $C$ (maximum number of bonds crossing a cut), and the average interaction range $R$. Constructing the Hamiltonian MPO (matrix-product operator) for a large set of clusters that are of interest in frustrated magnetism, I find that $C$ determines the peak SU(2) Heisenberg MPO bond dimension and $R$ the average one. Targeting $(C,R)$ lexicographically yields the best energies. Targeting $B$ indirectly reduces $C$, but not as efficiently as targeting $C$ directly. Otherwise, the value of $B$ itself is largely irrelevant in the sense that good DMRG energies can have large $B$.   To perform the optimization, classic heuristics (e.g. reverse Cuthill--McKee) prove unreliable even for small clusters, and I find that a QUBO formulation improves them only marginally. Instead I propose a staged optimization built on Boolean satisfiability (SAT) and constraint-programming (CP) solvers, chiefly CP-SAT of Google's OR-Tools, a hybrid of CP propagation and SAT clause learning. This approach yields significantly better orderings together with rigorous bounds.   The corresponding Lattice in Line code is available at https://github.com/spinflip/lattice_in_line and was designed with extensive use of the Fable 5 large language model.",
+    "title": "Lattice in Line: Optimized DMRG ordering for complex lattice geometries",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5655320882797241
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.47909918427467346
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4737425446510315
+      }
+    ]
+  },
+  "2609.25418v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Debshikha Banerjee"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinu Thomas"
+      },
+      {
+        "affiliation": [],
+        "name": "G. Alvarez"
+      },
+      {
+        "affiliation": [],
+        "name": "T. P. Devereaux"
+      },
+      {
+        "affiliation": [],
+        "name": "T. A. Maier"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Johnston"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.25418v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "hubbard model",
+      "nonequilibrium",
+      "pump-probe"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper employs time-dependent DMRG to differentiate electron-phonon coupling mechanisms in Mott insulators using ultrafast spectroscopy, which connects to the user's interest in strongly correlated systems, advanced computational methods, and experimental probes.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Electron-Phonon Coupling",
+      "Mott Insulator",
+      "Ultrafast Spectroscopy"
+    ],
+    "summary": "Ultrafast pump-probe spectroscopy provides a powerful means to investigate electron-phonon (e-ph) interactions in strongly correlated systems. Nevertheless, the question of how different microscopic e-ph coupling mechanisms influence the lattice's nonequilibrium response has not been widely addressed. We perform time-dependent density matrix renormalization group simulations on a pumped one-dimensional Mott insulator coupled to phonons through either Holstein or Su-Schrieffer-Heeger (SSH) interactions. The electronic responses of the two models are qualitatively similar in the Mott-insulating regime and are governed by the same excitations and resonance conditions of the Hubbard model. In contrast, the lattice dynamics of the two models differ substantially. While the Hubbard-Holstein model exhibits long-lived coherent phonon oscillations when the pump resonates with the bare phonon frequency, no such oscillations are observed for the Hubbard-SSH model. These contrasting responses remain robust against changes in phonon frequency and pump parameters, suggesting that coherent lattice dynamics can provide a direct nonequilibrium probe of the microscopic form of e-ph coupling.",
+    "title": "Coherent lattice dynamics distinguish Holstein and Su-Schrieffer-Heeger electron-phonon coupling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:vRqMK49ujn8C",
+        "score": 0.5256143808364868
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.49806106090545654
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4908871650695801
+      }
+    ]
+  },
+  "2609.25458v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Stavya Puri"
+      },
+      {
+        "affiliation": [],
+        "name": "Poetri Sonya Tarabunga"
+      },
+      {
+        "affiliation": [],
+        "name": "Piotr Sierant"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.25458v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper develops and analyzes a new class of tensor network states (GAMPS) to address strong entanglement in quantum many-body systems, directly aligning with the user's interest in advanced computational methods for strongly correlated physics.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Quantum Entanglement",
+      "Computational Methods"
+    ],
+    "summary": "Strong entanglement limits the reach of tensor-network descriptions of quantum many-body systems. We study Gaussian-augmented matrix product states (GAMPS), formed by applying a free-fermionic (Gaussian) unitary to a matrix product state. To explore the capabilities of this family, we consider random GAMPS}, a minimally structured ensemble obtained by independently sampling random matrix product states and Gaussian unitaries. Exploiting the algebraic structure of Gaussian unitaries, we develop a replica tensor-network method that computes averages over the random GAMPS ensemble for hundreds of qubits. Random GAMPS exhibit nearly maximal volume-law entanglement already at modest bond dimension, while other quantum resource quantifiers rapidly approach Haar-random state values as the bond dimension increases. The entanglement scaling suggests an exponential reduction in the bond dimension needed to approach the volume-law entropy compared with unaugmented matrix product states. We find a state two-design behavior of random GAMPS at fixed accuracy with a bond dimension independent of system size. Our results reveal how Gaussian augmentation expands the expressive power of tensor networks.",
+    "title": "Random Gaussian Augmented Matrix Product States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5997444987297058
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5607130527496338
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5417970418930054
+      }
+    ]
+  },
+  "2609.25494v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Juntaro Fujii"
+      },
+      {
+        "affiliation": [],
+        "name": "Kazuki Yamamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Akihisa Koga"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.25494v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-21",
+    "reasoning": "This paper directly addresses the efficiency of continuous-time quantum Monte Carlo updates within Dynamical Mean-Field Theory solvers for the Fermi-Hubbard model, aligning perfectly with the user's interest in efficient DMFT methods for strongly correlated systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "DMFT",
+      "Quantum Monte Carlo",
+      "Hubbard Model"
+    ],
+    "summary": "We investigate the sampling efficiency in a segment-based continuous-time hybridization-expansion quantum Monte Carlo solver within dynamical mean-field theory for the doped SU(3) Fermi-Hubbard model. Focusing on the low-temperature and strong-coupling regime, where a ferromagnetic state appears upon hole doping away from one-third filling, we compare several update schemes. Adding the double-flip update to the basic local update yields the smallest integrated autocorrelation time of the majority-flavor occupation in the ferromagnetic regime, whereas adding the flavor-permutation update is the most effective in the paramagnetic regime. We further clarify the origin of this difference by analyzing the characteristic occupation changes caused by accepted updates.",
+    "title": "Efficiency of Continuous-Time Quantum Monte Carlo Updates in the Ferromagnetic State of the Doped SU(3) Fermi-Hubbard Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6125218868255615
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.599273681640625
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.562903642654419
+      }
+    ]
+  },
+  "2609.25829v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "D. M. Basko"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.25829v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper investigates strong coupling polarons in cavity quantum materials using quantum Monte Carlo, exploring a novel way to modify material properties via vacuum fields, which could appeal to someone interested in correlated electron systems and advanced numerical techniques.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "cavity quantum materials",
+      "polarons",
+      "electron-photon coupling"
+    ],
+    "summary": "Cavity-induced electron mass renormalization is an important ingredient of many proposals to control material properties through vacuum field modification. What is its ultimate limit? Here this question is answered by (i)~noting that this mass renormalization is essentially due to the field-mediated interaction between the electron and the polarizable degrees of freedom in the cavity mirrors, and (ii)~directly evaluating the corresponding Feynman path integral for a 2D electron by numerically exact quantum Monte Carlo. The sought upper limit is provided by the Landau-Pekar polaron in the planar geometry. The presented calculation bridges the gap between cavity control and dielectric engineering of material properties.",
+    "title": "Strong coupling polarons in cavity quantum materials: limits of cavity-induced electron mass renormalization",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9yKSN-GCB0IC",
+        "score": 0.40375858545303345
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.3963412940502167
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.36176860332489014
+      }
+    ]
+  },
+  "2609.25922v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Junyu Tang"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongquan Lv"
+      },
+      {
+        "affiliation": [],
+        "name": "Gang v. Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.25922v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper explores quantum geometry in topological Mott insulators and chiral spin liquids, connecting to topological materials and strongly correlated electron physics, which aligns with the user's interests.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "quantum geometry",
+      "chiral spin liquid",
+      "topological Mott insulator"
+    ],
+    "summary": "Inspired by recent interests in quantum geometry in electronic bands, we consider a two-dimensional topological Mott insulator, i.e. chiral spin liquid, whose spinon bands develop nontrivial band topological and quantum geometry. The virtual polarization of the gapped charge sector transfers the electromagnetic drive to the charge-neutral spinons through the emergent U(1) gauge field, producing a tensor Ioffe-Larkin response and enabling two complementary optical protocols for measurements. In the off-shell (low-frequency) regime, a self-calibrated ratio of the physical longitudinal and Hall conductivities yields the spinon Chern number without the microscopic knowledge of the charge response. In the on-shell (resonant) regime, combining the inverse Ioffe-Larkin response with the Kramers-Kronig relation enables reconstruction of the quantum-metric and Berry-curvature spectral densities. Our approach directly applies to the triangular lattice Hofstadter-Hubbard model in Moiré systems, can be well adapted to other triangular lattice antiferromagnets such as Nb$_3$Br$_8$ with appropriate modifications. We establish a unified framework for quantitatively probing the quantum geometry of fractionalized quasiparticles in topological Mott regime.",
+    "title": "Fractional Quantum Geometry in Topological Mott Regime",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6673007011413574
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.624354898929596
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5440747141838074
+      }
+    ]
+  },
+  "2609.26362v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shi-Xin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuo Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu-Qin Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.26362v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper focuses on entanglement dynamics and hydrodynamics in random circuits, which is a theoretical quantum information topic largely distinct from the user's interests in specific condensed matter materials and related experimental or computational techniques.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Entanglement dynamics",
+      "Quantum hydrodynamics",
+      "Random quantum circuits"
+    ],
+    "summary": "Entanglement embezzlement asks how much entanglement can be borrowed from a many-body state by local operations and classical communication while returning that state with a small error. We uncover a conservation-law mechanism that redistributes the dominant probability mass of the Schmidt spectrum in the logarithmic Schmidt-rank coordinate and thereby controls this operational resource. For typical random pure states at fixed U(1) charge, we prove a finite-error conversion law: away from half filling, the charge bias converts $O(\\sqrt L)$ charge fluctuations into $O(\\sqrt L)$ borrowable entanglement, whereas particle--hole symmetry at half filling removes this contribution entirely. We then show how the resource develops dynamically in charge-conserving random circuits. Combining hydrodynamic analysis with large-scale replica tensor-network calculations, we find that diffusion broadens the operationally relevant distribution in the logarithmic Schmidt-rank coordinate on the scale $t^{1/4}$ and increases the amount of entanglement that can be borrowed. Charge transport therefore continues to reorganize the entanglement spectrum and activate embezzlement after the leading volume-law entropy has saturated.",
+    "title": "Entanglement Embezzlement from Diffusive Hydrodynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4574645459651947
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4501207768917084
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.40927600860595703
+      }
+    ]
+  },
+  "2609.26516v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Innocenzo Fulginiti"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Poggiali"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian Mendl"
+      }
+    ],
+    "categories": [
+      "cs.ET"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.26516v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper uses tensor network methods, specifically extending a DMRG-based approach, for simulating quantum circuits, which relates to the user's interest in advanced computational physics techniques.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "tensor network simulation",
+      "quantum circuits",
+      "DMRG"
+    ],
+    "summary": "Dynamic circuits, which incorporate mid-circuit measurements and classically controlled operations, extend the expressive power of quantum programs and are central to applications such as quantum error correction, state preparation, and distributed quantum algorithms. However, their classical simulation is challenging due to the exponential growth of execution branches induced by mid-circuit measurements. In this work, we develop a tensor network approach for simulating dynamic circuits by extending a DMRG-based method for quantum circuit simulation to support dynamic circuit operations. To address the exponential proliferation of execution branches, we introduce and compare two strategies: a single-path stochastic approach that samples individual measurement outcomes, and a multi-path approach that maintains an ensemble of branches. We benchmark these methods on standard dynamic circuits, including the teleportation protocol and GHZ state preparation, as well as on random dynamic circuits. Our analysis explores the trade-offs between simulation accuracy and computational efficiency. These results provide a practical and scalable framework for the classical simulation of dynamic circuits.",
+    "title": "Tensor Network Simulation of Dynamic Circuits",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6198947429656982
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4958186745643616
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4867118000984192
+      }
+    ]
+  },
+  "2609.26544v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tianshu Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaowei Ou"
+      },
+      {
+        "affiliation": [],
+        "name": "Vidvuds Ozolins"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.26544v1",
+    "matching_keywords": [
+      "hubbard model",
+      "neural network",
+      "quantum monte carlo",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper develops a novel deep learning-enhanced variational Monte Carlo method for strongly correlated fermions, specifically addressing intertwined charge and spin density patterns in the Hubbard model, aligning with interests in numerical solvers and density waves in superconductors.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "neural network ansatz",
+      "variational Monte Carlo",
+      "Hubbard model"
+    ],
+    "summary": "Simulating strongly correlated fermions remains a long-standing challenge due to the exponential complexity of the Hilbert space and the intricate sign structure of many-body wavefunctions. We introduce a variational framework centered on a neural network backflow transformation that combines deep learning with variational Monte Carlo. The proposed ansatz employs a multi-determinant expansion with low-rank shifts to capture non-local correlations and complex sign structures. Applied to the two-dimensional Hubbard model at both half-filling and $1/8$ doping, the method achieves energies within $0.45\\%$ of auxiliary-field quantum Monte Carlo at half-filling and captures intertwined charge- and spin-density stripe patterns at $1/8$ doping. These results demonstrate the potential of this framework as a scalable and interpretable approach to variational simulations of strongly correlated fermionic systems.",
+    "title": "Neural Network Backflow with Low-Rank Multi-Determinant Updates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6852726936340332
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6699528098106384
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6675588488578796
+      }
+    ]
   }
 }
