@@ -16149,5 +16149,768 @@
         "score": 0.6675588488578796
       }
     ]
+  },
+  "2609.26881v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mark Johnston"
+      },
+      {
+        "affiliation": [],
+        "name": "Emilie Huffman"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.26881v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "The paper investigates the Majorana-Hubbard model and Majorana semimetals using quantum Monte Carlo simulations, aligning well with the user's interest in strongly correlated systems and topological semimetals.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Majorana Semimetal",
+      "Quantum Monte Carlo",
+      "Fermion Bags"
+    ],
+    "summary": "The two-dimensional Majorana-Hubbard model on the $π$-flux lattice involves the most local interaction possible for a lattice with one relativistic Majorana fermion per site. It is predicted to host a Majorana semimetal, dimerized phases, and quantum-critical points with an emergent $U(1)$ symmetry. Nonperturbative lattice calculations for this model remain a major open challenge, thus far limited to zero hopping. We present quantum Monte Carlo simulations of the model at finite hopping using Hamiltonian fermion bags, which are based on a continuous-time expansion with Boltzmann weights that are Pfaffians of a matrix with dimension set by the expansion order, and which give the sign of the weight. Sign problem severity is related to the location of zero modes in the free hopping matrix, and for couplings $g\\lesssim 0.7$ and $β=L/4$ it is fully removed for lattices up to at least $256$ sites. The interaction strength $g>0$ enhances the $U(1)$-charged dimerization doublet and suppresses the neutral channel, as the renormalization group predicts. Increasing the interactions also restores $U(1)$ symmetry in the component of the dimerization correlator that is even under bond orientation exchange, but not its odd component. There is a persistent anisotropy in the odd component with the symmetry of a lattice nematic. The data is consistent with a gapless semimetal throughout the sign-problem-minimal window.",
+    "title": "Fermion bag study of the two-dimensional Majorana-Hubbard model at finite hopping",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6646763682365417
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6111696362495422
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5781646370887756
+      }
+    ]
+  },
+  "2609.26941v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kemal Aziz"
+      },
+      {
+        "affiliation": [],
+        "name": "Haining Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "J. H. Pixley"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.26941v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper investigates measurement-only dynamics and dynamical phase transitions in a symmetry-protected topological state, directly aligning with the user's interest in topological materials and quantum phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Topological Phases",
+      "Measurement-induced Phase Transitions",
+      "Matrix Product States"
+    ],
+    "summary": "We study measurement-only dynamics in an interacting spin-1 chain, using forced, normalized local projections rather than Born-rule-sampled measurement outcomes. Starting from the nearest-neighbor (NN) Affleck-Kennedy-Lieb-Tasaki (AKLT) Haldane symmetry-protected topological state, we show that competing local projectors drive this order toward three distinct dynamical phases: a featureless topologically trivial product state, an explicitly dimerized valence-bond-solid state, and a topologically trivial next-nearest-neighbor (NNN) AKLT state consisting of two interwoven Haldane chains. Using matrix product state and exact statevector simulations, we identify continuous transitions among these phases and characterize them using nonlocal string order parameters, local dimer order, and entanglement scaling. For the NN-NNN AKLT model, finite-size signatures are consistent with an intervening extended critical regime rather than a single direct transition. These results extend studies of monitored topology to a bosonic SPT and show that local projections can control both topological and valence-bond-solid order.",
+    "title": "Measurement-Only Dynamical Phase Transitions in Spin-1 Chains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5736887454986572
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5246068239212036
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4999716579914093
+      }
+    ]
+  },
+  "2609.26971v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiaoyue Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Emily Z. Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas P. Devereaux"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.26971v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "The study of robust strange metallicity in Hubbard models using quantum Monte Carlo is highly relevant to understanding strongly correlated electron systems and the normal state properties of high-Tc superconductors, a key area of the user's interest.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Strange Metallicity",
+      "Hubbard Model",
+      "Incoherent Transport"
+    ],
+    "summary": "Using determinant quantum Monte Carlo simulations, we compare charge transport in the two-dimensional attractive and repulsive Hubbard models at strong coupling, $|U|/t=6$. Although the interaction with opposite signs generates qualitatively different low-energy spin, charge, and pairing correlations, both exhibit approximately linear-in-temperature resistivity over a broad intermediate- and high-temperature regime. At asymptotically high temperature this common behavior follows from the moment expansion of the conductivity, whose leading contribution is even in $U$. More strikingly, the similarity persists to temperatures well below $|U|$, where strong interaction-dependent correlations have already developed, and also irrespective of whether resistivity crosses the MIR limit. Using the Nernst--Einstein relation, we find that the common linear-in-temperature resistivity is primarily associated with an approximately Curie-like charge compressibility and weakly temperature-dependent diffusivity. The two models separate only at lower temperatures, where the attractive model develops a pronounced feature in the charge diffusivity correlated with signatures of pair formation. These results show that linear-in-temperature incoherent transport in the Hubbard model can be remarkably insensitive to the microscopic nature of the low-energy correlations. Our results suggest that transport in the incoherent regime appears insensitive to what the system will ultimately become at low temperature; the distinction between competing low-energy states becomes visible only when their characteristic correlations acquire sufficiently long spatial or temporal coherence.",
+    "title": "Robust Strange Metallicity across Attractive and Repulsive Hubbard Models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5915080308914185
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5735479593276978
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:TFP_iSt0sucC",
+        "score": 0.5482322573661804
+      }
+    ]
+  },
+  "2609.27036v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Robert W. Learsch"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas Liesen"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel S. Levine"
+      },
+      {
+        "affiliation": [],
+        "name": "Anna M. Hiszpanski"
+      },
+      {
+        "affiliation": [],
+        "name": "Evan R. Antoniuk"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.27036v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper focuses on machine learning for polymer property prediction, which is distinct from the user's core interest in strongly correlated electron systems and topological quantum materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Polymers",
+      "Property Prediction"
+    ],
+    "summary": "Polymer property prediction lacks open, standardized benchmarks that enable rigorous comparison of machine-learning methods, with existing resources covering only a narrow fraction of polymer architectures, such as homopolymers. We introduce Polymer Benchmark 2026 (PolyBench26), an open dataset comprising nearly 250,000 polymer-property datapoints across eight physical properties, including data from experimental measurements, density functional theory, and molecular dynamics. The benchmark supports four evaluation tasks across homopolymers and alternating, random, and block copolymers: in-distribution property prediction, dataset-size scaling, repeat-unit complexity, and transfer to held-out polymer architectures. We compare language model, graph-based, and descriptor-based approaches and find graph-based models provide the lowest errors in property prediction, retain their advantage across the evaluated training-set sizes, and remain robust to increasing repeat-unit complexity. PolyBench26 provides a reproducible foundation for developing models for the increasingly complex polymer design space. The PolyBench26 benchmark is available open-source at https://github.com/rlearsch/PolymerBenchmark2026.",
+    "title": "An open benchmark for machine learning-based polymer property prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.3641279339790344
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.35112419724464417
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3190973699092865
+      }
+    ]
+  },
+  "2609.27128v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tobias Haug"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27128v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper focuses on efficient learning and characterization of quantum states and circuits, including entanglement properties and the use of matrix product states, which are broadly relevant to quantum information and simulation.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Quantum Information",
+      "Clifford Circuits",
+      "Quantum Entanglement"
+    ],
+    "summary": "Clifford circuits acting on product magic states provide a compact ansatz exhibiting extensive magic, volume-law entanglement, and even classically hard sampling under standard complexity assumptions. Here, we efficiently recover its hidden product subsystems from two-copy Bell sampling. Quadratic relations between Bell samples determine the irreducible blocks after removing Pauli stabilizers, and binary linear algebra constructs a Clifford disentangler. For logarithmic-size blocks, approximate learning of the full state is efficient whenever the state remains inverse-polynomially separated from acquiring additional Pauli stabilizers. We efficiently learn $n$-qubit states prepared by random $T$-doped Clifford circuits with $T$-gate density below one via $O(n^2)$ Bell samples, and disentangle hidden product blocks in Clifford-augmented matrix product states. For unitary learning, we exactly learn $T$-depth-one circuits using $O(n^2)$ queries. Finally, we rule out pseudorandom states and unitaries with a product bipartition hidden by Clifford circuits.",
+    "title": "Efficient Learning of Clifford-Scrambled Product States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.49445250630378723
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4776988625526428
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.45680201053619385
+      }
+    ]
+  },
+  "2609.27132v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ho Jang"
+      },
+      {
+        "affiliation": [],
+        "name": "Sankha Subhra Bakshi"
+      },
+      {
+        "affiliation": [],
+        "name": "Gia-Wei Chern"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.27132v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-22",
+    "reasoning": "This paper develops machine learning methods for simulating correlated electron systems and lattice many-body dynamics, directly addressing topics like computational methods for condensed matter and charge correlations.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Many-Body Dynamics",
+      "Lattice Models",
+      "Symmetry-Preserving ML"
+    ],
+    "summary": "Large-scale simulations of correlated electron systems require repeated evaluations of the electronic forces and transition energies driving collective dynamics. Machine-learning surrogates alleviate this bottleneck, but incorporating symmetry often involves carefully designed descriptors or specialized network architectures. We show that ordinary multilayer perceptrons equipped with finite-group averaging provide exactly equivariant surrogates directly from microscopic configurations. The construction separates symmetry enforcement from the internal network architecture and applies to both discrete and continuous lattice degrees of freedom. In the Falicov--Kimball model, it predicts directional hopping free-energy differences; in the Holstein model, its invariant limit generates conservative lattice forces. Benchmarks against exact diagonalization establish microscopic accuracy and agreement of dynamical correlations, while large-scale simulations recover multiscale charge ordering and charge-density-wave coarsening. These results demonstrate an accessible, reusable route to symmetry-preserving many-body dynamics for systems with finite lattice point groups.",
+    "title": "Exact Equivariance from Ordinary Neural Networks for Lattice Many-Body Dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.6099933385848999
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5974780321121216
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.5897775292396545
+      }
+    ]
+  },
+  "2609.27306v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kewen Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Tang"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.dis-nn",
+      "stat.ML"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27306v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper develops a novel neural-network-based computational framework for discrete diffusion models applicable to spin systems, which aligns with the user's interest in advanced computational methods.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Discrete Diffusion Models",
+      "Neural Networks",
+      "Spin Systems"
+    ],
+    "summary": "Conventional score-based diffusion models learn scores without representing normalized densities, whereas tractable normalized models support both sampling and direct likelihood evaluation. A recent tensor-network approach provides such a representation but is largely restricted to low-dimensional lattices. Here we introduce a discrete diffusion model that parameterizes normalized probability distributions using variational autoregressive networks. Explicit Markov jump operators govern the forward noising and reverse denoising dynamics, extending discrete diffusion models with normalized distributions to spin systems on higher-dimensional lattices. We apply this framework to the two- and three-dimensional Ising models across ordered, critical, and disordered regimes, accurately computing thermodynamic quantities including free energy, energy, and magnetization. We further integrate the framework with Monte Carlo sampling, using adaptive diffusion steps to maintain high acceptance rates even at low temperatures while enhancing sample diversity. These results establish a neural-network framework for the discrete diffusion model with normalized probability distributions.",
+    "title": "Discrete Diffusion Models via Evolving Variational Autoregressive Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5543595552444458
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5185608863830566
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.483681857585907
+      }
+    ]
+  },
+  "2609.27390v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Paweł Cieśliński"
+      },
+      {
+        "affiliation": [],
+        "name": "Wiesław Laskowski"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27390v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper analyzes multipartite correlations, entanglement, and quantum magic in long-range interacting systems, which are key aspects of complex quantum phases relevant to strongly correlated materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Long-Range Interactions",
+      "Quantum Correlations",
+      "Quantum Magic"
+    ],
+    "summary": "Long-range interacting quantum systems exhibit interesting phenomena beyond the nearest-neighbours regime. Such interactions can reach further separated particles and change the behaviour of many-body correlations. Here, we analyse their structure in the antiferromagnetic long-range interaction transverse field Ising model with power-law interactions decaying as $1/r^α$. We examine the spatial behaviour of basis-independent total multipartite correlations, called sector lengths $S_k$, of its ground state in the vicinity of critical points for different interaction exponents $α$ and fixed system size. These correlation functions were shown to indicate entanglement and the existence of local realistic models, allowing us to make claims about the Bell nonlocality and entanglement in the system. We further investigate them in the context of non-stabiliserness, often referred to as quantum magic, which holds information on their classical simulability and usefulness for quantum computation. We evaluate R{é}nyi stabiliser entropy near and outside the criticality and show that cumulative magic, up to the critical point, increases with $α$ for all of the examined system sizes. Our results provide new insights into the interplay between the long-range interactions, observable non-classical phenomena and their classical simulability.",
+    "title": "Higher-order Spatially Separated Correlations and Quantum Magic in the Long-range Transverse Field Ising Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5156910419464111
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.508307933807373
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.47750890254974365
+      }
+    ]
+  },
+  "2609.27405v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Prashil S. Joshi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.27405v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper focuses on machine learning for designing Co-based superalloys, which is distinct from the user's interests in correlated electron systems, superconductors, and topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Inverse Materials Design",
+      "Superalloys",
+      "Machine Learning for Materials"
+    ],
+    "summary": "The discovery of next-generation Co-based superalloys with improved high-temperature stability is hindered by the vast compositional design space and complex interactions among alloying elements governing gamma-prime phase stability. This study presents a physics-informed machine learning framework for the inverse design of Co-based superalloys with higher gamma-prime solvus temperature while accounting for alloy density. Four descriptors representing atomic size mismatch (delta-MV), mixing enthalpy (Delta-Hm), electronegativity mismatch (delta-EN), and valence electron concentration mismatch (delta-VEC) were used to characterize the chemistry governing phase stability. Regression algorithms were evaluated using leave-one-out cross-validation, with Gaussian Process Regression (GPR) achieving the best performance (R2 = 0.932, RMSE = 34.7 deg C, and MAE = 25.9 deg C). The probabilistic nature of GPR enabled uncertainty-aware Bayesian optimization for exploring the uncharted composition space. Non-dominated Sorting Genetic Algorithm II (NSGA-II) and Genetic Algorithms were used to simultaneously increase gamma-prime solvus temperature and reduce alloy density. The optimization generated numerous previously unexplored Co-based alloy compositions, with predicted gamma-prime solvus temperatures of 1248-1353 deg C, including candidates approaching or exceeding the maximum value in the experimental dataset. Descriptor analysis identified atomic size mismatch and mixing enthalpy as key factors governing gamma-prime stability, while principal component analysis confirmed that the proposed alloys occupy chemically relevant descriptor regions. This physics-informed inverse design framework provides an efficient route for identifying high-performance Co-based superalloys and can be adapted to other advanced structural alloys.",
+    "title": "Physics-guided inverse design of Co-based superalloys using machine learning and multi-objective optimization for enhanced $γ'$ solvus temperature",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.40745654702186584
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.32641854882240295
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3111092448234558
+      }
+    ]
+  },
+  "2609.27497v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hugo Mackay"
+      },
+      {
+        "affiliation": [],
+        "name": "Donghoon Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Tan Van Vu"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomotaka Kuwahara"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27497v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper focuses on efficient computational methods for quantum dynamics using tensor networks and analyzes entanglement growth, a topic relevant to understanding complex quantum systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Quantum Dynamics",
+      "Entanglement Growth"
+    ],
+    "summary": "Local quantum interactions generate dynamics in an exponentially large Hilbert space, yet locality and entanglement restrict the information that can spread and accumulate. Bounds on propagation and entanglement growth, together with tensor networks, exploit these restrictions to discard information unnecessary for describing the evolution. This leads to a sharper question: how much information must any low-rank representation retain? Here we determine these limits, up to logarithmic factors, for short-range interactions. For time-independent evolution, the optimal rank obeys $\\log D=\\widetilde O(t+\\sqrt{\\log(1/ε)})$, with matching lower bounds fixing the accuracy exponent $1/2$; for arbitrary driving, matching fixed-time bounds instead give $2/3$. Correspondingly, the corresponding dynamical entanglement spectra exhibit distinct small-$α$ Rényi laws, $α^{-1}$ and $α^{-2}$. In one dimension, the static limit is constructively attained by an explicit MPO algorithm, with an analogous extension to Liouvillian dynamics. Together, these results determine the irreducible information required to represent local quantum evolution and uncover distinct entanglement structures in static and driven dynamics.",
+    "title": "Optimal low-rank compression of quantum dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.44781696796417236
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.36404889822006226
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.3601793646812439
+      }
+    ]
+  },
+  "2609.27530v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yoshihito Kuno"
+      },
+      {
+        "affiliation": [],
+        "name": "Takahiro Orito"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27530v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper explores the robustness of average symmetry-protected topological states, which directly connects to the user's interest in topological materials and symmetry-related phenomena.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "ASPT States",
+      "Quantum Operations",
+      "Symmetry-Protected Topology"
+    ],
+    "summary": "The fate of average symmetry-protected topological (ASPT) states based on the one-dimensional cluster state is investigated by using the Choi mapping, namely, the doubled Hilbert-space formalism. By introducing two effective spins, $τ$ and $η$, on each doubled rung, we obtain a transparent representation of the ASPT parent Hamiltonian and systematically identify the conserved stabilizers and the corresponding orders. We further study symmetry-preserving operations that deform the ASPT by combining qualitative effective-Hamiltonian and systematic parent-Hamiltonian analyses with numerical matrix-product-state filtering calculations. We find that although the ASPT remains robust over a broad range of decoherence strengths, strong-to-weak spontaneous symmetry breaking (SWSSB) becomes exact in the maximal-decoherence limit. In addition, we consider symmetry preserving no-click postselection, which removes the exact conservation law supporting the Rényi-2 string order of the ASPT and drives the system toward weak-symmetry spontaneous symmetry breaking (WSSB). Again, the ASPT remains robust over a broad range of postselection strengths, with WSSB becoming pronounced only near the projective limit and exact at the limit itself.",
+    "title": "Fate of average symmetry-protected topological states under symmetry-preserving quantum operations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5023461580276489
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.46718594431877136
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4574245810508728
+      }
+    ]
+  },
+  "2609.27648v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Grazia Di Bello"
+      },
+      {
+        "affiliation": [],
+        "name": "Fabrizio Pavan"
+      },
+      {
+        "affiliation": [],
+        "name": "Mattia Trama"
+      },
+      {
+        "affiliation": [],
+        "name": "Roberta Citro"
+      },
+      {
+        "affiliation": [],
+        "name": "Giulio De Filippis"
+      },
+      {
+        "affiliation": [],
+        "name": "Carmine Antonio Perroni"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27648v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper explores charge and spin qubits in interacting quantum dots using an Anderson impurity model and matrix-product-state simulations, which align with interests in correlated electron systems and advanced computational methods.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Quantum Qubits",
+      "Anderson Impurity Model",
+      "Rashba Spin-Orbit Coupling"
+    ],
+    "summary": "We present a unified study of charge and spin qubits encoded in a single interacting quantum dot tunnel-coupled to Rashba fermionic leads. The dot is described by an Anderson impurity Hamiltonian with either repulsive or attractive local interactions and a magnetic field of arbitrary orientation. In the repulsive regime, a spin qubit is encoded in the singly occupied spin sector, whereas in the attractive regime, close to the degeneracy between the empty and doubly occupied configurations, these two states define a charge-qubit subspace. We combine a weak-coupling Lindblad master equation in the Markovian secular limit with numerically controlled matrix-product-state simulations of the full dot-reservoir system. In equilibrium, we identify magnetic pair breaking in the attractive regime and a weak Rashba-induced magnetic anisotropy when the magnetic field is rotated relative to the spin-orbit axis. In the dynamical regime, relaxation and decoherence are controlled by the energetic gap between the logical manifold and nearby leakage states, and are further enhanced by Rashba-dependent tunneling. These findings show that even a minimal Anderson-impurity description captures key ingredients for coherent spin and charge qubits: the energetic structure of leakage states and spin-orbit-dependent dot-lead hybridization.",
+    "title": "Charge and spin qubits in interacting quantum dots coupled to Rashba-active leads",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.505879282951355
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4900103211402893
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.47081458568573
+      }
+    ]
+  },
+  "2609.27993v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Michael J. Kastoryano"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.27993v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper investigates the spectral gap of quantum many-body systems like the AKLT model and Ising PEPS, which is directly relevant to condensed matter theory and the quantum properties explored in the liked papers.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Spectral gap",
+      "Tensor networks",
+      "AKLT model"
+    ],
+    "summary": "We establish a sufficient condition under which overlapping PEPS boundary states satisfy the approximate factorization criterion for a spectral gap. The condition is formulated in terms of the boundary response induced by cutting bonds through the center of a rectangular region. We decompose this response into a contribution common to all four associated regions and a remainder measured in the instantaneous boundary metric. A single linear transport absorbs the common contribution and yields compatible factorization operators, with an error controlled solely by the remainder.   We apply this framework to Ising PEPS and to the spin-3/2 AKLT model on the hexagonal lattice. For Ising PEPS, the required boundary-response estimate reduces to a Dobrushin-Shlosman-type condition. For the hexagonal AKLT model, a rooted expansion in paths and loops isolates the common response, while a local comparison of boundary states together with a scalar Kotecký-Preiss estimate controls the remaining terms. In both cases, the factorization error decays exponentially with the overlap width, up to a prefactor proportional to the cut length. For AKLT, we establish the corresponding physical projector estimate and obtain a uniform spectral gap. For Ising PEPS, the gap implication additionally requires compatible injective regional contractions, as specified in the paper. More generally, the method provides a systematic route from locality of PEPS boundary response to spectral gaps of two-dimensional parent Hamiltonians.",
+    "title": "Spectral Gap of the Hexagonal AKLT Model via Boundary-State Factorization",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5150943398475647
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5002970695495605
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.4895314574241638
+      }
+    ]
+  },
+  "2609.28029v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rahul Krishnan"
+      },
+      {
+        "affiliation": [],
+        "name": "Volker Schulz"
+      }
+    ],
+    "categories": [
+      "math.NA",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.28029v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper focuses on tensor decomposition in the context of transformer models, which is largely unrelated to condensed matter physics and superconductivity.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Transformer",
+      "Tensor decomposition",
+      "LLM compression"
+    ],
+    "summary": "The key-value (KV) cache of autoregressive transformers can be viewed as a fourth-order tensor spanning attention heads, tokens, features, and grouped layers. We measure the singular-value spectra of all four mode unfoldings on Mistral-7B-v0.3 and LLaMA-2-13B and compare four standard tensor decompositions: Tucker, CP, tensor train, and t-SVD, at matched storage. The spectra partition the four axes into two classes. The token and feature modes carry low-rank structure, particularly for keys. The head and layer modes are nearly full-rank and resist compression at any practical error level. Among the four decompositions, Tucker achieves the lowest reconstruction error at every compression ratio from $2\\times$ to $5\\times$, because it can leave the full-rank modes untouched. Comparisons with two-dimensional unfolding baselines show that the preferred representation differs between keys and values: 2D methods achieve lower key error, while four-way Tucker achieves lower value error at matched storage. A mode-pinning theorem certifies the full-rank preservation from the measured spectra alone. Two further spectral properties affect the compressible modes without touching the full-rank ones: values reach a higher error floor than keys at every ratio, and post-RoPE keys lose $41\\%$ - $64\\%$ of their pre-RoPE compressibility on both models.",
+    "title": "Tensor Decomposition of Transformer Key-Value Caches: Spectral Structure and Format Comparison",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4138503074645996
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.35683244466781616
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.3262414038181305
+      }
+    ]
+  },
+  "2609.28229v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Guang Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Qibin Zhao"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.28229v1",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper focuses on optimizing data preparation for general quantum machine learning models, which is somewhat tangential to the user's specific interests in correlated electron systems and condensed matter physics.",
+    "score": 0.25,
+    "suggested_keywords": [
+      "Quantum Data Distillation",
+      "Shallow Quantum Circuits",
+      "Quantum AI"
+    ],
+    "summary": "In quantum machine learning, training a quantum model requires each sample to be prepared as a quantum state by a loading circuit that must be re-executed for every shot at every training step. The total burden therefore scales with both the number of samples and the cost of preparation. Existing approaches reduce the loading cost of individual inputs or distill data and compress their representations before applying a separate quantum encoding. This separation can leave resulting samples costly to prepare or cause additional loss of the information during subsequent compilation into shallow circuits. We propose quantum dataset distillation (QDD), which distills the full dataset directly into a small set of shallow circuits. Each synthetic sample is parameterized as a staircase circuit corresponding to a low-rank tensor network, making the sample and its loading circuit the same object. The circuit parameters are optimized classically with exact gradients using distribution matching under an explicit loading budget, without post-hoc state-preparation synthesis. On MNIST and Fashion-MNIST, only 10 circuits per class ($0.0017\\times$ the full dataset size) achieve accuracy comparable to full-data training and outperform selection baselines under matched sample and loading budgets. In finite-shot training, QDD reaches 95\\% of the full-data accuracy with more than $100\\times$ fewer cumulative shots. Additionally, we validate QDD on real quantum hardware, demonstrating its practical deployment potential.",
+    "title": "Distilling Datasets into Shallow Circuits for Quantum Machine Learning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5629026889801025
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.473339319229126
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4347071051597595
+      }
+    ]
+  },
+  "2609.28453v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Paolo G. Radaelli"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.28453v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-09-23",
+    "reasoning": "This paper introduces a theoretical framework for understanding altermagnetism and time-reversal-odd tensorial properties in magnetic materials, which is relevant to the user's interest in magnetic ordering and properties of complex oxides and superconductors.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Magnetic Materials",
+      "Exchange Multiplet"
+    ],
+    "summary": "A representation-theoretic framework for the calculation of time-reversal-odd tensorial properties of magnetic materials based on the Bertaut--Izyumov exchange-multiplet formalism is developed. In contrast to approaches based on distinct magnetic point groups or spin groups for different orientations of the magnetic order parameter, the exchange-multiplet framework permits the order parameter to be treated as a continuous variable. It is shown that, for constant-moment collinear structures, covariance imposes a simple set of symmetry constraints on the tensor intertwiners appearing in a Landau--Lifshitz expansion. This leads to canonical intertwiner forms that factorise the magnetic and crystallographic parts of the tensor construction. Tensor fields can be built to retain a Cartesian representation in the physical variables while acquiring a systematic dependence on the order-parameter direction through symmetry-adapted polynomial bases. Magnetic-point-group selection rules are recovered automatically for arbitrary order-parameter directions, while the framework also provides a natural separation of co-rotating (SOC-free) and non-co-rotating contributions. The approach is applicable to altermagnets and conventional antiferromagnets alike and is particularly suited to experiments and first-principles calculations in which the magnetic order parameter can be continuously varied.",
+    "title": "Altermagnetism and generalised tensorial properties in the exchange multiplet framework",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.44424474239349365
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.432414174079895
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.42369145154953003
+      }
+    ]
   }
 }
