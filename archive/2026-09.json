@@ -17210,16 +17210,37 @@
         "name": "Hayk Tepanyan"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.28657v1",
+    "matching_keywords": [],
     "published_date": "2026-09-23",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper demonstrates quantum computational advantage using superconducting quantum computers, which represents a significant step towards developing new computational tools that could eventually simulate the complex many-body systems and materials found in the user's liked topics.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Advantage",
+      "Superconducting Qubits",
+      "Quantum Simulation"
+    ],
     "summary": "We report forward random-circuit sampling (RCS) on the 120-qubit Nighthawk r2 superconducting processor (\\textit{ibm\\_phoenix}) with square-lattice connectivity, using 61 qubits, native CZ gates, and the standard cloud execution stack with no benchmark-specific calibration. Two independent fidelity estimators---mirror benchmarking and three- and four-patch cross-entropy benchmarking (XEB)---agree with each other at every measured depth, the mirror from 4 to 40 cycles and the patched estimators from 20 to 40 cycles, across more than two orders of magnitude of fidelity decay, and exceed the first-generation Nighthawk r1 device by more than an order of magnitude at fixed depth. The 36-cycle circuits sit at the depth where tensor-network contraction cost saturates at system size: a contraction-cost estimator validated against the published Sycamore and Zuchongzhi networks places the single-amplitude cost at $\\sim$$10^{22}$ complex operations. At $F_{\\mathrm{XEB}}(36)=2.3\\times10^{-3}$ under favorable memory assumptions this implies $1.2\\times10^{27}$ machine operations within the bounded-fidelity rejection-sampling model --- more than a century of runtime on the Frontier supercomputer --- to collect a $10^{6}$-sample ensemble, which takes only 19\\,s on Nighthawk r2. To our knowledge, this is the first demonstration of quantum advantage for a vanilla random-circuit sampling on a commercially and broadly accessible quantum processor that most non-expert quantum computer users can easily replicate.",
     "title": "Quantum computational advantage in random-circuit sampling on IBM superconducting quantum computers",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4547419548034668
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.44725117087364197
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.4222975969314575
+      }
+    ]
   },
   "2609.28994v1": {
     "authors": [
@@ -17379,16 +17400,39 @@
         "name": "Maria C. Mariani"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.29323v1",
+    "matching_keywords": [],
     "published_date": "2026-09-24",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates critical phenomena and phase transitions in the Ising model on a hyperbolic lattice using Monte Carlo simulations, which is a foundational topic in statistical mechanics but less directly aligned with the complex materials and advanced many-body techniques of the user's liked papers.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Statistical Mechanics",
+      "Criticality",
+      "Phase Transitions"
+    ],
     "summary": "On the $\\{5,4\\}$ hyperbolic lattice, the outermost generation holds 73\\% of the sites at all system sizes, making macroscopic averages strictly boundary-dependent. We study the ferromagnetic Ising model on this geometry with free boundaries by Monte Carlo simulation, demonstrating that conventional observables cease to identify a single critical scale. Instead, the finite lattices are organized by two distinct temperature scales. The susceptibility maximum identifies the lower transition scale at $T_{c2}=1.4782(15)J/k_{B}$ without extrapolation. However, the order-parameter distribution lacks a conventional fixed point at this scale. A distinct pseudocritical scale emerges instead at $T^{*}\\simeq1.67(3)$ inside the boundary-sensitive intermediate phase, where Binder cumulant curves cross and effective exponents are compatible with mean-field criticality. Between $T_{c2}$ and $T^{*}$, the interior amplifies boundary fluctuations into induced order. Furthermore, because the volume grows exponentially with depth, finite-size scaling must be formulated in the generation index rather than the total number of sites. The lack of asymptotic power-law convergence in the scaling stretch confirms through an independent observable that $T^{*}$ is a finite-size crossover rather than a thermodynamic fixed point. Finally, by applying a coherent field to the outermost generation alone, we recover the upper thermodynamic transition at $T_{pt}=2.81(1)J/k_{B}$, demonstrating that it remains accessible under an appropriate boundary perturbation.",
     "title": "Two temperature scales in the Ising model on the $\\{5,4\\}$ hyperbolic lattice with free boundaries: susceptibility peak and boundary-induced order",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5437779426574707
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5363765358924866
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.49134230613708496
+      }
+    ]
   },
   "2609.29337v1": {
     "authors": [
@@ -17405,16 +17449,37 @@
         "name": "Xiao Yuan"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.29337v1",
+    "matching_keywords": [],
     "published_date": "2026-09-24",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces a variational quantum simulation method for dynamical quantum many-body systems in quantum chemistry, directly addressing computational challenges relevant to the user's interest in many-body physics and leveraging concepts like tensor networks.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Variational Quantum Algorithms",
+      "Quantum Dynamics",
+      "Quantum Chemistry"
+    ],
     "summary": "Dynamical simulation of quantum many-body systems is a central task in quantum chemistry and requires efficient wavefunction representations. Although tensor-network and neural-network quantum states have achieved considerable success in ground-state calculations, entanglement growth hinders their application to quantum dynamics. Quantum computing may offer a route to quantum advantage, but algorithms such as Trotterization generally require fault-tolerant quantum computers, whereas near-term hardware supports only limited circuit sizes. Variational quantum simulation (VQS) instead represents the evolving state with a single shallow, fixed-size parameterized quantum circuit (PQC). Here, we introduce nonorthogonal variational quantum simulation (NOVQS), which applies linear combinations of parameterized quantum states to real- and imaginary-time evolutions. We design a shallow, hardware-friendly ansatz tailored to second-quantized electronic-structure Hamiltonians, together with resource-efficient protocols for measuring the matrices and vectors in the parameter equations of motion. Error analysis and resource estimation are also provided. Numerical simulations of hydrogen chains and the nitrogen molecule demonstrate that a collection of shallow, or even single-layer, PQCs can match or outperform a much deeper PQC in VQS. In particular, we identify a trade-off between circuit number and depth. NOVQS therefore provides a flexible route to enhancing wavefunction expressivity under circuit-depth constraints, making it a promising framework for quantum dynamics simulations on near-term quantum processors.",
     "title": "Nonorthogonal variational quantum simulation for quantum chemistry",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.6028022766113281
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.602662205696106
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5960329174995422
+      }
+    ]
   },
   "2609.29472v1": {
     "authors": [
@@ -17771,16 +17836,41 @@
         "name": "Bin Gao"
       }
     ],
+    "categories": [
+      "math.NA",
+      "math.OC",
+      "physics.comp-ph"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.30138v1",
+    "matching_keywords": [],
     "published_date": "2026-09-24",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper develops computational methods using low-rank tensor formats to solve high-dimensional eigenvalue problems in electronic structure calculations and quantum mechanics, directly relevant to simulating strongly correlated materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Train",
+      "Electronic Structure",
+      "Eigenvalue Problem"
+    ],
     "summary": "High-dimensional extreme eigenvalue problems often arise from molecular vibrational models, electronic structure calculations, and quantum mechanics. Directly solving these problems suffers from the curse of dimensionality. Instead of tackling the problem in high-dimensional ambient space, we reformulate the problem through low-rank tensor formats, which can significantly reduce the computational cost and storage. Specifically, we consider the Rayleigh--Ritz problem on bounded-rank tensors in the tensor train format, which enables a more flexible choice of rank parameters. Moreover, we consider a smooth parametrization for bounded-rank tensors by introducing slack variables, leading to a smooth manifold structure. The original Rayleigh--Ritz problem is therefore transferred to an optimization problem on the manifold. We develop the Riemannian geometry and propose optimization methods for solving extreme eigenvalue problems. In practice, the Kronecker-product structure in Hamiltonian and PDE operators is employed to simplify the computation. Numerical experiments on the harmonic oscillator, the Laplace operator, the Schrödinger equation, the layered cluster problem, and the Bose--Einstein model demonstrate that the proposed method achieves accuracy comparable to full-space eigensolvers with reduced computation time and avoids storing full vectors. The results also show numerical rank reduction during iteration and robustness when the rank parameter is over-estimated. In addition, the fixed-point iterations illustrate that the proposed methods are able to serve as an inner eigensolver for solving nonlinear eigenvalue problems.",
     "title": "High-dimensional extreme eigenvalue problems: low-rank tensor parametrization and optimization",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4689497947692871
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.439181387424469
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.40162044763565063
+      }
+    ]
   },
   "2609.30148v1": {
     "authors": [
@@ -17793,16 +17883,40 @@
         "name": "Jordan Cotler"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2609.30148v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
     "published_date": "2026-09-24",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on the learning and optimization of Matrix Product States and Tree Tensor Networks, which are crucial computational tools for efficiently representing and simulating quantum many-body systems relevant to strongly correlated materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Quantum State Learning",
+      "Many-Body Methods"
+    ],
     "summary": "We establish proper agnostic learning of matrix product states and tree tensor networks. Given copies of an arbitrary quantum state $ρ$, our algorithms return a state $|ψ\\rangle$ of chosen bond dimension such that $\\langleψ| ρ|ψ\\rangle$ is within $\\varepsilon$ of the optimum over the model class, without assuming that $ρ$ itself belongs to or is well approximated by that class. The main idea is to use improper learning to compress the mixed-state objective, reducing proper agnostic learning to optimization against a finite collection of explicitly specified pure states. We then introduce a comparator-dual compression procedure that reduces the bond dimension of these targets while uniformly preserving their overlaps with all bounded-bond comparators, with an error independent of system size. For matrix product states, this gives polynomial copy complexity in the system size, local dimension, bond dimension, and $1/\\varepsilon$, together with polynomial runtime in the system size for fixed local dimension, bond dimension, and accuracy. The same framework yields proper agnostic learning of tree tensor networks on bounded-degree trees, with both copy complexity and runtime polynomial in the system size when the remaining parameters are fixed.",
     "title": "Proper Agnostic Learning of Matrix Product States and Tree Tensor Networks",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5401644706726074
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.48267656564712524
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4688326418399811
+      }
+    ]
   },
   "2609.30162v1": {
     "authors": [
