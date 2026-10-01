@@ -20921,5 +20921,1554 @@
         "score": 0.6334404945373535
       }
     ]
+  },
+  "2609.38300v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gregory A. L. White"
+      },
+      {
+        "affiliation": [],
+        "name": "Jens Eisert"
+      },
+      {
+        "affiliation": [],
+        "name": "Neil Dowling"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.38300v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-29",
+    "reasoning": "This paper delves into quantum information concepts like operator complexity, entanglement, and OTOCs within random matchgate circuits and free-fermionic systems, which is more theoretical quantum information than the material-specific condensed matter physics or computational methods the user preferred.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Operator Complexity",
+      "Matchgate Circuits",
+      "Majorana Fermions"
+    ],
+    "summary": "Matchgate circuits describe classically tractable dynamics in a physically relevant setting while nonetheless exhibiting features characteristic of complex quantum systems, such as high amounts of magic. This invites the broader question: to what extent are typical complexity measures saturated under trivial dynamics? Here, we address this by studying the behaviour of different Heisenberg-picture complexity measures in random matchgate ensembles. Our main technical contribution is a tractable and generalisible free-fermionic unitary Weingarten calculus formulated entirely in the Majorana basis. This method is tailored to computing moments of operators, and simplifies to a combinatorics problem which depends on the boundary conditions prescribed by a given operator functional. Using this framework, we derive closed-form expressions for the typical local-operator entanglement, operator stabiliser entropy, and higher-order out-of-time-ordered correlators. For extensive initial Majorana strings, both operator entanglement and stabiliser entropy obey volume laws, even though the underlying circuits remain classically simulable. Out-of-time-ordered correlators can likewise become exponentially small, showing that their late-time saturation value alone does not witness computational hardness and constituting a classically tractable example of emergent free independence. Finally, we relate these separations to operator resource theories, showing how operator entanglement beyond the Gaussian baseline lower-bounds the number of non-Gaussian gates in doped matchgate circuits. Our results present a practical toolbox for computing exact averages over random matchgates, while clarifying the distinction between quantum resources versus simulation complexity, and their dependence on the representation being exploited.",
+    "title": "Exact Operator Complexity Measures from Random Matchgate Unitaries",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4233728051185608
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4027683436870575
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3790229260921478
+      }
+    ]
+  },
+  "2609.38333v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pietro Brighi"
+      },
+      {
+        "affiliation": [],
+        "name": "Gianluca Frazzei"
+      },
+      {
+        "affiliation": [],
+        "name": "Igor Lesanovsky"
+      },
+      {
+        "affiliation": [],
+        "name": "Juan P. Garrahan"
+      },
+      {
+        "affiliation": [],
+        "name": "Alberto Biella"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.38333v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-29",
+    "reasoning": "Explores collective dynamics, phase transitions, and entanglement in many-body spin chains using tensor-network methods, aligning strongly with the user's interest in strongly correlated systems and quantum many-body physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Spin Chains",
+      "Dissipative Quantum Systems",
+      "Dynamical Phase Transitions"
+    ],
+    "summary": "Collective non-equilibrium phenomena in many-body systems are strongly influenced by fluctuations, particularly in the vicinity of phase transitions, where the interplay between classical and quantum effects can alter cooperative behavior. Here, we investigate this classical-quantum competition in a kinetically constrained spin chain, the dissipative far-East model. In absence of fluctuations, the system exhibits emergent collective dynamics, resulting in phase coexistence. We find that this phenomenon is robust to quantum fluctuations, which further stabilize it, whereas classical fluctuations suppress phase coexistence at long times. We map out the steady-state phase diagram using a cluster mean-field approach and characterize the dynamics with stochastic tensor-network methods. Within the bistable phase we identify signatures of dynamical heterogeneity in both the local magnetization and the entanglement dynamics. This highlights how competing quantum fluctuations and classical kinetic constraints shape the relaxation dynamics and the phase structure of many-body systems.",
+    "title": "Collective Dynamics in Spin Chains with Constrained Dissipation: Classically Fragile but Quantum Robust",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.5007654428482056
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4941294491291046
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4793543219566345
+      }
+    ]
+  },
+  "2609.38531v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jonas Hänseroth"
+      },
+      {
+        "affiliation": [],
+        "name": "Rose Asuka Baroness von Stackelberg"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian Dreßler"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.38531v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-29",
+    "reasoning": "This paper presents a practical application of machine learning potentials to atomistic simulations of materials, demonstrating improved accuracy for transport properties, which is relevant to materials science and computational methods.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "machine learning potential",
+      "transport properties",
+      "domain-specific models"
+    ],
+    "summary": "Machine-learned interatomic potentials trained across the periodic table have made atomistic simulation broadly accessible, and specializing them to a single compound class is widely expected to improve accuracy. Yet examples remain scarce, and fewer still surpass universal models in speed or reach a higher level of electronic-structure theory. Here we present a potential that is universal within the class of water-free solid-state hydrogen-bond network mediated proton conductors rather than across chemistry and a database of 4.4 million first-principles configurations spanning 55 materials. It surpasses leading general-purpose potentials across this domain, recovering measured activation energies and the ordering of anion rotational dynamics that those models miss; agreement on static structure does not imply agreement on transport. Accuracy falls for compositions far from the training set but stays competitive for close structural relatives, and a higher level of electronic-structure theory is reached with a few hundred additional configurations per material. We further introduce a compact variant carrying a fifth of the parameters, faster still and yet more accurate than every general-purpose model tested. It sustains more than a quarter of a million atoms on a single graphics processor, placing grain boundaries and the transition into the highly conducting phase within reach, and making a quantum treatment of the protons affordable. Reference accuracy and accessible system size thus become largely independent, offering a template for other compound classes.",
+    "title": "Enabling Domain-Specific Atomistic Models: A Machine Learning Potential for the Solid Acid Family",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5464563369750977
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5342898368835449
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.45866072177886963
+      }
+    ]
+  },
+  "2609.38579v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xiaofeng Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zebo Tang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhangbu Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Chi Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Wangmei Zha"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.38579v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-29",
+    "reasoning": "This paper focuses on nuclear/high-energy physics, specifically heavy-ion collisions and QCD, which is outside the scope of the user's previous interests in condensed matter and quantum materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Contact theory",
+      "Nonequilibrium physics",
+      "Universal relations"
+    ],
+    "summary": "Short-distance correlations generate universal relations that can be independent of microscopic details. Tan's contact is a prominent example, connecting close pairs, high-momentum constituents, and bound-state formation across atomic, condensed-matter, and nuclear systems. Whether an analogous universality governs the nonequilibrium freeze-out of relativistic QCD matter is an open question. We develop an effective contact theory that relates the production of loosely bound states to continuum two-particle correlations in heavy-ion collisions. The construction replaces the hard relative-momentum cutoff of conventional coalescence by a regulated Bethe--Peierls kernel: freeze-out localization fixes its momentum scale, while the composite yield fixes its contact residue. Bound and continuum observables then become projections of a common two-particle density matrix rather than independent phenomena. Coulomb-bound $Kμ$ atoms provide an ideal realization because their atomic, production, and source scales are widely separated. A contact-theory analysis of STAR $dΛ$ correlations supplies a first bound--continuum consistency test and demonstrates how inferred near-threshold parameters can depend on the finite expanding source. The framework establishes a general strategy for relating coalescence, correlations, and exotic bound states in strongly interacting expanding matter.",
+    "title": "Effective Contact Theory for Exotic Loosely Bound States in Strongly Interacting Expanding Matter",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.4360032081604004
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.42637670040130615
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.42154189944267273
+      }
+    ]
+  },
+  "2609.38581v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "E. S. Andriyakhina"
+      },
+      {
+        "affiliation": [],
+        "name": "A. S. Shankar"
+      },
+      {
+        "affiliation": [],
+        "name": "T. Senthil"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. D. Shi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.38581v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-09-29",
+    "reasoning": "This paper investigates U(1) symmetry breaking at quantum critical points in 1+1D systems using DMRG, which directly relates to theoretical aspects of strongly correlated materials and computational methods.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum criticality",
+      "U(1) symmetry breaking",
+      "Lifshitz critical points"
+    ],
+    "summary": "We present an analytic theory of the recently proposed phenomenon of spontaneous $U(1)$ symmetry breaking at 1+1D Lifshitz quantum critical points. The low-energy field theory contains two periodic scalars $θ$ and $φ$, with a Berry phase coupling that makes $θ$ canonically conjugate to the $U(1)$ charge density $\\partial_x φ$. Within a controlled large-$N$ limit, we demonstrate that the $U(1)$-charged phase vertex $e^{iβθ}$ develops long-range order, while the conjugate vertex $e^{iβφ}$ decays as a stretched exponential, $\\log\\langle e^{iβφ(x)} e^{-iβφ(0)}\\rangle\\propto-|β|^{4/3}|x|^{2/3}$. Going beyond the large-$N$ limit, we give an analytic argument that the Lifshitz field theory supports $U(1)$ long-range order provided its dynamical exponent satisfies $z\\neq1$, a condition strongly supported by existing calculations. We test these predictions using finite-size and infinite-system DMRG in an itinerant-fermion chain with $U(1) \\rtimes \\mathbb{Z}_2$ symmetry. At the $\\mathbb{Z}_2$ ferromagnetic transition, the spin sector of the chain maps to the Lifshitz field theory. Consistent with analytic predictions, the $U(1)$-charged spin-nematic bond operator $S_i^+S_{i+1}^+$ exhibits long-range order, while the electron Green's function shows stretched-exponential decay. Together, these results elucidate the mechanism and consequences of criticality-enabled $U(1)$ symmetry breaking in 1+1D.",
+    "title": "Theory of criticality-enabled $U(1)$ symmetry breaking in a class of 1+1D systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5283118486404419
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5061405897140503
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4950021505355835
+      }
+    ]
+  },
+  "2609.38740v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rubem Mondaini"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard T. Scalettar"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.38740v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper delves into a fundamental challenge of quantum Monte Carlo methods, the sign problem, and its connection to criticality and phase transitions in many-body systems, which is highly relevant to the computational study of strongly correlated materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "quantum Monte Carlo",
+      "sign problem",
+      "phase transitions"
+    ],
+    "summary": "Discussions of the sign problem usually focus on its role as the primary limitation of the applicability of quantum Monte Carlo methods for reliably solving quantum many-body models. Its behavior as a function of spatial lattice size, doping, temperature, and interaction strengths has been carefully characterized within the determinant quantum Monte Carlo algorithm. Here, we consider the much less well-explored question of the temperature- and size-dependence of the sign problem in the world-line quantum Monte Carlo method. We review how, in this algorithm, even sampling the partition function of free fermions yields a sign problem, which we connect to non-analytic behavior in the corresponding reference model, hard-core bosons on a lattice. The latter exhibits a finite-temperature Kosterlitz-Thouless phase transition in 2D, and we show how this non-analytic behavior is imprinted on the average sign of the weights for the corresponding free fermion 2D tight-binding model. Our results thus show how phase-transition information can remain encoded in the sign problem even after direct sign sampling becomes impractical.",
+    "title": "Sign problem and criticality in world-line quantum Monte Carlo methods",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6230701208114624
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6152349710464478
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6132584810256958
+      }
+    ]
+  },
+  "2609.38815v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Takato Mori"
+      },
+      {
+        "affiliation": [],
+        "name": "Beni Yoshida"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.38815v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper focuses on the holographic duality between entanglement entropy and minimal surfaces in the context of quantum gravity, which is very different from the user's interests in condensed matter physics and its specific computational challenges.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Holographic Duality",
+      "Entanglement Entropy",
+      "Quantum Gravity"
+    ],
+    "summary": "We propose a holographic dual of the relative entropy of entanglement for a boundary tripartition $A:B:C$. Our proposal is that, at the leading order, \\begin{align} E_R(ρ_{AB}) = \\frac{1}{4G_N}\\Big[\\mathrm{Area}(Γ_{\\min}) - \\mathrm{Area}(γ_{AB})\\Big] \\notag \\end{align} where $Γ_{\\min}$ is the minimal bulk tripartition surface and $γ_{AB}$ is the minimal surface homologous to $AB$. For a general random tensor network, we prove the corresponding upper bound by constructing a separable state associated with $Γ_{\\min}$ and evaluating its relative entropy. We also establish the matching lower bound rigorously for networks of one, two, and three Haar random tensors by bounding the maximal tripartite product-state overlap. In appropriate geometries, the minimal tripartition surface can form a nontrivial tri-junction resembling the Mercedes logo. The proof proceeds by sequential optimization over candidate product states, which has a natural geometric interpretation as a local search for the minimal tripartition surface.",
+    "title": "Relative entropy of entanglement and tripartite minimal surface",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4876583516597748
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.3541710376739502
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.34435105323791504
+      }
+    ]
+  },
+  "2609.38848v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Azar C. Nakhl"
+      },
+      {
+        "affiliation": [],
+        "name": "Ben Harper"
+      },
+      {
+        "affiliation": [],
+        "name": "Muhammad Usman"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Quella"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.38848v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper explores quantum dynamics and topological phases in many-body systems using advanced tensor network simulations, aligning with interests in computational methods for strongly correlated physics and quantum phases.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "tensor network simulation",
+      "quantum dynamics",
+      "scar states"
+    ],
+    "summary": "Clifford augmented methods have emerged as a powerful technique to simulate quantum circuits and many-body systems by exploiting the stabiliser structure found in said systems, whilst additionally enabling one to readily quantify the non-stabilizerness (i.e.\\ magic) present. In this work, we utilise a qudit Clifford augmented simulation method to probe the presence of magic in the Affleck-Kennedy-Lieb-Tasaki (AKLT) model, finding that its ground state and scar states are highly magical as quantified by their Stabiliser Rényi Entropy (SRE). Nevertheless, owing to its low entanglement structure, these states are still readily expressible as a Clifford augmented Matrix Product State with low bond-dimension and moreover may be time-evolved using the Clifford augmented time-dependent variational principle (TDVP) algorithm. We utilise Clifford augmented TDVP to study the string order dynamics in the scar states of the AKLT model after a quench within the Haldane phase to the anti-ferromagnetic Heisenberg Hamiltonian. We observe that there is a decay of string order following the quench, which is more pronounced with increasing bimagnon number. This finding highlights the sensitivity of string order in the AKLT scar states to symmetry-preserving quenches, even when the initial and final Hamiltonians belong to the same topological phase.",
+    "title": "Quantum quenches of scar states in the Affleck-Kennedy-Lieb-Tasaki model via Clifford augmented tensor network simulation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5403063893318176
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5001236796379089
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.48770320415496826
+      }
+    ]
+  },
+  "2609.39042v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anuj Apte"
+      },
+      {
+        "affiliation": [],
+        "name": "Abid Khan"
+      },
+      {
+        "affiliation": [],
+        "name": "Edward Farhi"
+      },
+      {
+        "affiliation": [],
+        "name": "Kunal Marwaha"
+      },
+      {
+        "affiliation": [],
+        "name": "Sami Boulebnane"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruslan Shaydulin"
+      }
+    ],
+    "categories": [
+      "cs.DS",
+      "math.OC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39042v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper investigates quantum optimization algorithms (QAOA) for abstract graph problems like Max-k-Cut, which deviates significantly from the user's interest in physical systems and materials science.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Optimization",
+      "Max-k-Cut",
+      "Graph Algorithms"
+    ],
+    "summary": "Broadening the study of quantum optimization algorithms from binary to $k$-element alphabets has been shown to open new avenues for potential quantum advantage. A quantum advantage claim for approximate optimization requires showing that, under the same assumptions, an efficient quantum algorithm provably achieves a better performance than can be proven for the best known efficient classical algorithms. We study local classical and quantum algorithms for Max-$k$-Cut on $d$-regular graphs of girth $g$. We advance classical algorithms for this problem by developing a local vector algorithm based on the explicit vector construction of Thompson, Parekh, and Marwaha (TPM). Our algorithm gives the best provable cut fraction guarantee among known efficient classical algorithms on regular graphs for $k\\geq3$. To evaluate the performance of QAOA under identical assumptions of girth and regularity, we develop tensor network techniques for general $d$ and $k \\geq 2$. In addition, using an equivalence to a coupled qudit--boson system, we compute the QAOA performance in the infinite-degree limit. Together, these techniques give provable guarantees on QAOA performance on large graphs. Despite the improvements we introduce to the classical algorithm, QAOA achieves a better cut fraction guarantee for depths $p\\geq 9$, corresponding to girth $g\\geq 20$, for both finite- and infinite-degree regimes. Thus, we obtain an apparent quantum advantage from applying QAOA to the Max-$k$-Cut problem.",
+    "title": "Provable Classical and Quantum Local Algorithms for Max-$k$-Cut and Quantum Advantage at Moderate Girth",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5130139589309692
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4595754146575928
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4372159242630005
+      }
+    ]
+  },
+  "2609.39090v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jörg Behler"
+      },
+      {
+        "affiliation": [],
+        "name": "Michele Ceriotti"
+      },
+      {
+        "affiliation": [],
+        "name": "Cecilia Clementi"
+      },
+      {
+        "affiliation": [],
+        "name": "Gábor Csányi"
+      },
+      {
+        "affiliation": [],
+        "name": "Alin-Marin Elena"
+      },
+      {
+        "affiliation": [],
+        "name": "Aditi Krishnapriyan"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph W. Abbott"
+      },
+      {
+        "affiliation": [],
+        "name": "Fabio Affinito"
+      },
+      {
+        "affiliation": [],
+        "name": "Albert P. Bartók"
+      },
+      {
+        "affiliation": [],
+        "name": "Ilyes Batatia"
+      },
+      {
+        "affiliation": [],
+        "name": "Filippo Bigi"
+      },
+      {
+        "affiliation": [],
+        "name": "Florian N. Brünig"
+      },
+      {
+        "affiliation": [],
+        "name": "Yannick Calvino Alonso"
+      },
+      {
+        "affiliation": [],
+        "name": "Giuseppe Carleo"
+      },
+      {
+        "affiliation": [],
+        "name": "Aurélie Champagne"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefan Chmiela"
+      },
+      {
+        "affiliation": [],
+        "name": "Marc L. Descoteaux"
+      },
+      {
+        "affiliation": [],
+        "name": "Ralf Drautz"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexandra Farcas"
+      },
+      {
+        "affiliation": [],
+        "name": "Meng Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Rohit Goswami"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael F. Herbst"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian Holm"
+      },
+      {
+        "affiliation": [],
+        "name": "James R. Kermode"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander L. M. Knoll"
+      },
+      {
+        "affiliation": [],
+        "name": "Tobias Kreiman"
+      },
+      {
+        "affiliation": [],
+        "name": "Hoang-Thien Luu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yury Lysogorskiy"
+      },
+      {
+        "affiliation": [],
+        "name": "Mihai-Cosmin Marinica"
+      },
+      {
+        "affiliation": [],
+        "name": "Rocco Meli"
+      },
+      {
+        "affiliation": [],
+        "name": "Klaus-Robert Müller"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Noé"
+      },
+      {
+        "affiliation": [],
+        "name": "Mohamadhosein Nosratjoo"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Olsson"
+      },
+      {
+        "affiliation": [],
+        "name": "Christoph Ortner"
+      },
+      {
+        "affiliation": [],
+        "name": "Aldo S. Pasos-Trejo"
+      },
+      {
+        "affiliation": [],
+        "name": "Anyang Peng"
+      },
+      {
+        "affiliation": [],
+        "name": "Eric Qu"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrea Rizzi"
+      },
+      {
+        "affiliation": [],
+        "name": "Mariana Rossi"
+      },
+      {
+        "affiliation": [],
+        "name": "Bassem Sboui"
+      },
+      {
+        "affiliation": [],
+        "name": "Gregor N. C. Simm"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexandre Tkatchenko"
+      },
+      {
+        "affiliation": [],
+        "name": "Jacopo Venturin"
+      },
+      {
+        "affiliation": [],
+        "name": "O. Anatole von Lilienfeld"
+      },
+      {
+        "affiliation": [],
+        "name": "William C. Witt"
+      },
+      {
+        "affiliation": [],
+        "name": "Brandon M. Wood"
+      },
+      {
+        "affiliation": [],
+        "name": "Tigany Zarrouk"
+      },
+      {
+        "affiliation": [],
+        "name": "Fabian Zills"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.39090v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This roadmap discusses the overarching infrastructure and challenges for machine learning in atomistic simulations, which underpins the computational methods relevant to the user's liked topics, but is not a direct scientific result.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "machine learning ecosystem",
+      "atomistic simulation",
+      "computational infrastructure"
+    ],
+    "summary": "Data-driven machine learning (ML) techniques have become an essential tool in many domains of science. Their application to atomistic simulations of matter is particularly widespread and impactful. This success is due largely to the existence of a well-developed and established physics-based modeling framework, ranging from first-principles electronic-structure calculations to molecular dynamics and statistical sampling, into which ML was integrated naturally to reshape long-standing trade-offs between accuracy, efficiency, and scale. Nevertheless, this integration raises both conceptual and practical challenges, from choosing between data-centric and physics-based modeling approaches to adapting established software stacks to modern hardware accelerators and ML libraries. As the field evolves rapidly, fueled in part by widespread enthusiasm but also by tangible impact, it seems appropriate to take a moment to consider the current state of the art and open challenges, and reflect on what can be done to better coordinate efforts across the community. With this goal in mind, several members of this community met in Lausanne in January 2026 at CECAM to discuss algorithms, models, software and hardware infrastructure, and the most promising scientific applications that have become possible thanks to the use of artificial intelligence in atomic-scale simulations. This strategic roadmap paper summarizes the outcomes of these discussions, suggesting some long-term goals, and some concrete actions, to establish a healthy, sustainable and impactful atomistic ML ecosystem.",
+    "title": "A strategic roadmap for an atomistic machine-learning ecosystem",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.49740856885910034
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.47041845321655273
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4579363465309143
+      }
+    ]
+  },
+  "2609.39164v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuchen Cong"
+      },
+      {
+        "affiliation": [],
+        "name": "Zerui Tao"
+      },
+      {
+        "affiliation": [],
+        "name": "Chao Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhe Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Qibin Zhao"
+      }
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39164v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper discusses a quantum-inspired algorithm for variational inference using tensor networks, which is too far removed from the condensed matter physics, experimental techniques, and specific computational methods (like DMFT) that the user previously liked.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Variational Inference",
+      "Quantum-inspired Algorithms",
+      "Matrix Product Operators"
+    ],
+    "summary": "Score-based variational inference (VI) provides an alternative to Kullback--Leibler (KL)-based VI by minimizing the Fisher divergence between the variational distribution and the target. A prior score-VI approach formulates this optimization as an eigenvalue problem, with the variational distribution constructed from low-energy eigenstates. However, this eigenvalue-based formulation faces two high-dimensional obstacles: an intractably large parameter count due to exponential scaling and non-uniqueness of individual eigenvectors in degenerate or nearly degenerate low-energy subspaces. We propose QuanVI, a scalable quantum-inspired algorithm that combines a mixed-state density-operator formulation with a quantum tensor network (QTN) parameterization using the matrix product operator (MPO) structure. In degenerate low-energy subspaces, the density-operator formulation represents the subspace by its maximally mixed state rather than relying on a non-unique individual eigenvector, while the QTN parameterization compresses the density operator to avoid exponential parameter growth. Experiments and ablations show that QuanVI agrees with exact solutions in low dimensions and scales to high-dimensional synthetic and Bayesian posterior-approximation benchmarks, including challenging non-Gaussian targets.",
+    "title": "QuanVI: Score-based Variational Inference via Quantum Maximally Mixed States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5827661752700806
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5458868145942688
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5414063930511475
+      }
+    ]
+  },
+  "2609.39258v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tokuro Shimokawa"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39258v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper focuses on characterizing entanglement and correlations in quantum spin chains using DMRG, directly aligning with interests in strongly correlated quantum materials and advanced computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Entanglement characterization",
+      "Quantum magnetism",
+      "DMRG"
+    ],
+    "summary": "Characterizing entanglement in quantum materials through experimentally accessible observables remains a central challenge. Quantum Fisher information associated with sums of one-site spin operators provides one route by linking entanglement to measurable magnetic response functions. Extending this approach to local composite observables requires new entanglement bounds. Here we establish a rigorous bound for the total nearest-neighbour vector chirality of periodic spin-$1/2$ chains with an even number of sites. The quantum Fisher information per spin cannot exceed $k+1$ for any $k$-producible state, so exceeding this bound certifies entanglement depth of at least $k+1$. Combining infinite density-matrix renormalization group and thermal pure quantum-state calculations, we demonstrate multipartite entanglement encoded in vector-chiral correlations at zero and finite temperatures in an extended $J_1$-$J_2$ XXZ chain. The spin-current coupling between vector chirality and electric polarization offers, in principle, access to this witness through dielectric loss spectroscopy in multiferroic magnets, extending entanglement diagnostics beyond dipolar spin correlations.",
+    "title": "Multipartite entanglement hidden in vector-chiral correlations of spin-1/2 chains",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5957741737365723
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5794261693954468
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5454286336898804
+      }
+    ]
+  },
+  "2609.39401v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Balázs Pozsgay"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "nlin.SI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39401v1",
+    "matching_keywords": [],
+    "published_date": "2026-09-30",
+    "reasoning": "It delves into operator entanglement in integrable many-body systems, a theoretical topic fundamental to quantum many-body physics and directly relevant to understanding the behavior of correlated electron systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Operator Entanglement",
+      "Integrable Quantum Systems",
+      "Many-body Entanglement"
+    ],
+    "summary": "It is widely expected that the von Neumann entanglement of a local operator grows at most logarithmically in integrable many-body systems in infinite volume. We give a counterexample in a four-state brickwork circuit whose gate is a permutation matrix solving the constant Yang--Baxter equation. The von Neumann operator entropy grows as $(\\log2)\\sqrt{t/π}+O(\\log t)$, whereas fixed-index Rényi entropies grow linearly below index one and logarithmically above it. At fixed relative Hilbert--Schmidt error below one, matrix product operator simulations require a bond dimension growing at least as $\\exp(c\\sqrt t)$ for some $c>0$.",
+    "title": "Square-root growth of operator entanglement in an integrable brickwork circuit",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.44065549969673157
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.43951451778411865
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4381721615791321
+      }
+    ]
+  },
+  "2609.39418v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Taekyoung Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Pit Bermes"
+      },
+      {
+        "affiliation": [],
+        "name": "Giorgia A. Busin"
+      },
+      {
+        "affiliation": [],
+        "name": "Fabian Grusdt"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2609.39418v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Motivated by the first experimental realization of the antiferromagnetic phase transition in the three-dimensional Fermi-Hubbard model, we present a theoretical study of the model's 3D superconducting phase. By formulating a 3D extension of the Feshbach mechanism, we provide a unified microscopic picture at strong coupling in which pairing is driven by near-resonant bound states of dopants. These long-lived bound states acquire a qualitatively different internal structure in three dimensions compared to their two-dimensional counterparts, giving rise to a distinct superconducting state, namely a time-reversal symmetry breaking $d_{x^2-y^2}+id_{z^2}$ pairing state. We also provide an estimate of the corresponding critical temperature, and provide evidence that the resulting superconducting phase hosts gapless Weyl points. Our results represent a new milestone for the field of quantum simulation, challenging experiments and large-scale numerics alike to test our predictions.",
+    "title": "Weyl superconductivity from Feshbach resonance in the three-dimensional repulsive Hubbard model",
+    "vector_matches": []
+  },
+  "2609.39556v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bin Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Feng Pan"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39556v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper is primarily concerned with quantum error correction and decoding algorithms, a topic far removed from condensed matter physics, strongly correlated materials, or specific computational methods like DMFT.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Error Correction",
+      "Decoding Algorithms",
+      "Tensor Network Contraction"
+    ],
+    "summary": "Maximum-likelihood decoding provides an optimal decoding strategy for quantum error correction under stochastic Pauli noise. However, computing logical-class probabilities is challenging, and the leading exact tensor-network contraction requires time exponential in treewidth. In this work, we introduce a new decoding algorithm based on rank-decomposition dynamic programming (Rank DP). We express decoding partition functions with independent local fault factors as quadratic sums of powers and apply Rank DP. The resulting exact evaluator has arithmetic complexity polynomial in the input size and exponential in the Tanner graph's rank-width with respect to the fault partition, including decomposition construction. After Gaussian elimination, it gives polynomial-time decoding for punctured quantum Reed-Muller codes and a Steane-concatenated family with growing distance under independent single-qubit Pauli noise. Standard contraction of the corresponding tensor networks requires superpolynomial time. A nonnegative realization gives relative floating-point error bounds under explicit arithmetic assumptions. Numerical experiments demonstrate runtime advantages over the tested tensor-network implementations on selected code-capacity and circuit-level instances, with full likelihood evaluation for Reed-Muller codes up to $1{,}023$ qubits. We further use these likelihoods to learn circuit noise parameters from syndromes, evaluate rare postselection probabilities, and quantify decoder optimality gaps. Our work opens new avenues for exploiting algebraic structure in quantum decoding and noise characterization.",
+    "title": "Exact Maximum Likelihood Decoding beyond Treewidth via Rank-Decomposition Dynamic Programming",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.48647212982177734
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4549889862537384
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.44705861806869507
+      }
+    ]
+  },
+  "2609.39686v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Y. S. Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "H. X. Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "J. L. Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. L. Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "F. C. Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. C. Gan"
+      },
+      {
+        "affiliation": [],
+        "name": "Y. F. Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "H. Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Hua Y. Geng"
+      }
+    ],
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech",
+      "physics.app-ph",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": "10.17632/hdx3fwwxx8.1",
+    "id": "2609.39686v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper introduces a computational toolkit for automated melting temperature calculation using molecular dynamics and machine learning, directly relevant to computational materials science and high-throughput material design.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Computational materials science",
+      "Molecular dynamics",
+      "Machine learning for materials"
+    ],
+    "summary": "Melting temperature calculation is one of the important topics in computational materials science. In high-throughput in silico screening and artificial intelligence assisted design of materials, it usually requires a rapid and autonomous assessment of the melting temperature of the target. Unfortunately, molecular dynamics (MD) simulations of the melting point require many cumbersome and manual operations, making large-scale calculation of the melting point challenging. In this work, we introduce MyTm, a toolkit that employs MD to automatically determine the melting point. The method is fully modularized, and by combining these modules, the program enables fully automated melting calculations by using commonly adopted approaches, including the direct-heating method, the void method, the modified void method, the solid-liquid coexistence method, and the Z method. Moreover, a machine learning (ML) method is proposed and employed to recognize and classify the solid like and liquid like atoms, which effectively resolve the low accuracy issue in conventional classification approaches, thus making the automated high throughput pipeline of melting-point calculation possible. The robustness and efficacy of MyTm have been demonstrated by several well studied systems.",
+    "title": "MyTm: An Automated Melting Temperature Calculation Toolkit",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5095430612564087
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.41841763257980347
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4063461422920227
+      }
+    ]
+  },
+  "2609.39693v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shu Kanno"
+      },
+      {
+        "affiliation": [],
+        "name": "Kenji Sugisaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Takashi Imamichi"
+      },
+      {
+        "affiliation": [],
+        "name": "Toshinari Itoko"
+      },
+      {
+        "affiliation": [],
+        "name": "Rei Sakuma"
+      },
+      {
+        "affiliation": [],
+        "name": "Hajime Nakamura"
+      },
+      {
+        "affiliation": [],
+        "name": "Qi Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Naoki Yamamoto"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39693v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper focuses on quantum computing for electronic dynamics in quantum chemistry, which is distinct from the condensed matter physics and computational methods for correlated materials that the user has shown interest in.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Chemistry",
+      "Electronic Dynamics",
+      "Quantum Computing"
+    ],
+    "summary": "Here we demonstrate quantum--classical break-even for chemical dynamics applications, reaching useful accuracy with a quantum-hardware wall-clock time comparable to that estimated for practical classical computing resources. Specifically, we construct a quantum workflow for electronic dynamics based on tensor-network circuit compression leveraging spatial locality, extending circuit compression beyond one-dimensional open-boundary systems. This enables application of the workflow to problems that are hardware-native but classically hard. The workflow targets one-dimensional periodic Hamiltonians: circuits classically optimized only for short-time evolution within a small spatial region can be replicated in both space and time to construct long-time dynamics of the full system without classically simulating the corresponding large-scale evolution. We apply the workflow to cyclic conjugated macrocycles with rotational periodicity, 12-qubit benzene and 120-qubit [60]annulene, by embedding their electronic structure onto loops of IBM quantum processors. For the annulene, the quantum-processing-unit (QPU) wall-clock times for hole-doped nonequilibrium dynamics became comparable to the estimated wall-clock time of two classical methods, Majorana propagation and matrix-product-state time evolution based on the time-dependent variational principle; this corresponds to tens to hundreds of compute nodes depending on the task (36 CPU cores per node), assuming near-ideal parallel scaling, bringing the quantum calculation into a wall-clock-time regime comparable to conventional parallel high-performance-computing resources. We also show a situation in which a hybrid quantum--classical calculation is a reasonable choice in terms of both accuracy and computational time. These results show that quantum hardware can become a realistic computational option for chemically relevant electronic dynamics.",
+    "title": "Quantum--classical break-even in electronic dynamics of macrocyclic molecules",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5296050906181335
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.48805248737335205
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4503616988658905
+      }
+    ]
+  },
+  "2609.39758v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yijia Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yixu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zi-Wen Liu"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2609.39758v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We present a unified algebraic theory of Clifford spacetime quantum fault tolerance, which underpins universal fault-tolerant quantum computation. We construct a spacetime chain complex from a tensor network representation of a circuit that encodes fault propagation, detector syndromes, and logical actions through the associated gauge and stabilizer structure. We show that this theory (1) unifies various formulations of quantum fault tolerance including spacetime codes, Gottesman's gadget framework, fault complexes, and ZX calculus; (2) connects spacetime distances to the gadget-level correctness properties in Gottesman's formalism; (3) naturally accommodates a range of fault models, in particular phenomenological and circuit-level models, bringing these often separately formulated descriptions into a common algebraic framework through different tensor decompositions and fault assignments; and (4) recovers many known fault tolerance constructions and results as special cases, including repeated syndrome extraction, correlated detectors for transversal and fold-transversal gates, Steane- and Knill-type syndrome extraction gadgets, and single-shot error correction.",
+    "title": "Theory of spacetime quantum fault tolerance",
+    "vector_matches": []
+  },
+  "2609.39962v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mario Guillaume Cecile"
+      },
+      {
+        "affiliation": [],
+        "name": "Nis-Luca van Hülst"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomohiro Hashizume"
+      },
+      {
+        "affiliation": [],
+        "name": "Pia Siegl"
+      },
+      {
+        "affiliation": [],
+        "name": "Abhishek Setty"
+      },
+      {
+        "affiliation": [],
+        "name": "José Diogo da Costa Jesus"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul Over"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergio Bengoechea"
+      },
+      {
+        "affiliation": [],
+        "name": "Muhammad Umer"
+      },
+      {
+        "affiliation": [],
+        "name": "Spyros Tserkis"
+      },
+      {
+        "affiliation": [],
+        "name": "Eleftherios Mastorakis"
+      },
+      {
+        "affiliation": [],
+        "name": "Tristan Kraft"
+      },
+      {
+        "affiliation": [],
+        "name": "Francisco Cárdenas-López"
+      },
+      {
+        "affiliation": [],
+        "name": "Leonardo Scandurra"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Rung"
+      },
+      {
+        "affiliation": [],
+        "name": "Felix Motzoi"
+      },
+      {
+        "affiliation": [],
+        "name": "Belda Yesil"
+      },
+      {
+        "affiliation": [],
+        "name": "Barbara Kraus"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Kiffner"
+      },
+      {
+        "affiliation": [],
+        "name": "Dimitris G. Angelakis"
+      },
+      {
+        "affiliation": [],
+        "name": "Eugene de Villiers"
+      },
+      {
+        "affiliation": [],
+        "name": "Dieter Jaksch"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.39962v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "It focuses on quantum algorithms for computational fluid dynamics, an application domain far removed from the condensed matter and materials science topics of the user's liked papers.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum CFD",
+      "Fluid Dynamics",
+      "Quantum PDE Solvers"
+    ],
+    "summary": "We present a comprehensive review of quantum approaches for solving partial differential equations (PDEs) arising in computational fluid dynamics (CFD). We examine fully quantum approaches, including quantum linear system algorithms (QLSAs), ranging from the Harrow--Hassidim--Lloyd (HHL) algorithm to quantum singular value transformation (QSVT), Hamiltonian simulation, and quantum lattice Boltzmann methods (QLBMs), while emphasizing hybrid quantum--classical approaches, including quantum physics-informed neural networks (QPINNs) and amplitude-encoded variational PDE solvers. We focus on hardware-agnostic algorithms compatible with present noisy processors and emerging fault-tolerant architectures. For each framework, we analyze the mathematical formulation, algorithmic structure, and principal limitations. We also examine tensor-network (TN) representations, since CFD fields, differential operators, and geometrical information can often be encoded efficiently in low-rank form. The TN formalism bridges CFD discretizations and quantum states, operators, and circuits, enabling compact representations to be translated into tensor-programmable variational quantum algorithms (TP-VQAs). We further review benchmark problems, including Poisson, reaction, diffusion, and nonlinear model equations, and assess how well quantum algorithms capture key features of fluid dynamics. Our analysis highlights that potential quantum advantage is highly problem dependent and governed by condition number, representational complexity, state preparation, and measurement constraints. We outline capabilities, limitations, and challenges toward scalable quantum algorithms for CFD.",
+    "title": "Quantum Algorithms for Computational Fluid Dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5824923515319824
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5398566722869873
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5122463703155518
+      }
+    ]
+  },
+  "2609.39984v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuto Iwasaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel A. Caro"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2609.39984v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Machine learning interatomic potentials (MLIPs) are essential components for accelerating simulation-driven materials design. Data-efficient MLIP training relies on data-selection strategies that maximize structural diversity while limiting computationally expensive first-principles calculations. A key challenge in such strategies is evaluating structural similarity, which involves a trade-off between retaining information on individual atomic environments and reducing computational cost. Here, we propose similarity evaluation methods that achieve both representational fidelity and computational efficiency. Our method represents each structure using a small set of characteristic atomic environments identified by k-medoids clustering and computes pairwise similarity through optimal matching between these representatives or their distributions. Molecular benchmarks demonstrate that our method is approximately 50 times faster than the baseline method while also more clearly distinguishing structures with different chemical compositions. Similarity-based data-selection benchmarks demonstrate that our methods improve the data efficiency and stability of force prediction in MLIPs.",
+    "title": "Cluster-based Structural Similarity for Dataset Visualization and Data Selection for Machine Learning Interatomic Potentials",
+    "vector_matches": []
+  },
+  "2609.39994v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gyungmin Cho"
+      },
+      {
+        "affiliation": [],
+        "name": "Changhun Oh"
+      },
+      {
+        "affiliation": [],
+        "name": "Dohun Kim"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2609.39994v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Approximate unitary designs reproduce the statistics of Haar-random unitaries to a given order and accuracy. Recent constructions realize such designs with logarithmic-depth circuits, enabling shallow measurement protocols for various quantum state-learning tasks while preserving performance. These results raise the question of whether approximate designs can replace exact designs more generally. We show that even exponentially small design error need not preserve the learning guarantees of exact designs. This motivates deriving learning guarantees directly from the measurement circuit structure. For observable estimation with classical shadows, we prove that logarithmic-depth two-layer Clifford circuits yield an unbiased estimator matching the global Clifford variance scaling for every state and Hermitian observable. Beyond observable estimation, this bound allows shallow measurements to retain global Clifford guarantees for other tasks, including setting-efficient tomography, mixed-state metrology, and stabilizer structure learning. We complement these statistical guarantees with a compact, exact tensor-network representation of the inverse shadow channel. When measurement bases are reused, approximate unitary designs of arbitrarily high order need not uniformly match the Haar variance in the many-shot limit. For the all-to-all random two-local circuits considered, doing so requires nearly linear depth. Together, our results reveal the capabilities and limitations of shallow quantum state learning, highlighting the distinction between approximating Haar randomness and reproducing its learning guarantees.",
+    "title": "Quantum state learning beyond approximate unitary designs",
+    "vector_matches": []
+  },
+  "2609.40002v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tanaya Halder"
+      },
+      {
+        "affiliation": [],
+        "name": "Ashis K. Nandy"
+      },
+      {
+        "affiliation": [],
+        "name": "Anamitra Mukherjee"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2609.40002v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We identify a route to altermagnetism driven by entropy upon heating and demonstrate it in a minimal square-lattice antiferromagnet. An exchange modulation is entropically favored because the resulting momentum-dependent magnon splitting increases the magnon entropy, thereby lowering the free energy and favoring altermagnetism. We derive an instability criterion for this exchange-modulated state, predict its temperature-driven reentrant behavior, and show that its overlap with Néel order defines a finite-temperature altermagnetic phase. Variational spin-wave theory, spin--lattice Monte Carlo, and cluster diagonalization establish the entropy-driven instability and its coexistence with magnetic order. The resulting state supports a transverse spin conductivity. The mechanism provides a route to thermally induced altermagnetism in compensated magnets coupled to sufficiently soft physical modes.",
+    "title": "Entropy-Driven Altermagnetism from Thermal Magnons",
+    "vector_matches": []
+  },
+  "2609.40004v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Maksimilian Usoltcev"
+      },
+      {
+        "affiliation": [],
+        "name": "Nguyen Hanh Dung"
+      },
+      {
+        "affiliation": [],
+        "name": "Carolin Wille"
+      },
+      {
+        "affiliation": [],
+        "name": "Matteo Rizzi"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Altland"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2609.40004v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Planar parity-preserving tensor networks (ppTNs) admit a fermionic formulation in which the Gaussian, efficiently contractible limit is deformed by local interactions. We investigate how many-body methods can be used to analyze such contractions in a minimal two-parameter ppTN. Its contraction is simultaneously an interacting fermionic partition function, a loop gas, a deformed toric-code norm, and a quartic Ising model, allowing the same phase diagram to be approached with complementary tools. At its center lies a `topological island', characterized beyond the Gaussian limit by a boundary-twist $\\mathbb Z_2$ indicator that reduces to Chern-number parity and admits a loop-winding interpretation under duality. Fermionic perturbation theory predicts the interacting phase boundaries, tensor-network numerics establish their critical behavior, and the loop and spin descriptions reveal a self-dual line with a $c=1$ four-state-Potts multicritical fixed point.",
+    "title": "Many-body topology in parity-preserving tensor networks",
+    "vector_matches": []
+  },
+  "2609.40109v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Danqing Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiangfan Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zixiang Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-feng Yang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.40109v1",
+    "matching_keywords": [
+      "numerical renormalization group"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This paper investigates collective and individual Kondo screening in multi-impurity systems using the auxiliary-bath numerical renormalization group method, directly aligning with interests in strongly correlated electron physics and advanced computational techniques.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Kondo effect",
+      "Numerical renormalization group",
+      "Collective screening"
+    ],
+    "summary": "Collective screening has been proposed to underlie the basic physics of multi-impurity and lattice Kondo systems. But how to establish this picture and distinguish it from individual (local) Kondo screening remains a grand challenge. The recently developed auxiliary-bath numerical renormalization group (AUNRG) method provides a key step towards resolving this issue. Its application to the $C_3$-symmetric three-impurity Kondo (3IK) model with a shared electron bath reveals fully screened Fermi liquid ground states arising from collective screening of cluster spin degrees of freedom at small Kondo coupling $J_{\\rm K}$ and individual (local) screening of local impurities at large $J_{\\rm K}$. Here we design a four-impurity Kondo (4IK) model where the probe impurity couples only to the original three Kondo impurities to detect the nature of the screened states. We show that the collective and individual Kondo screenings give rise to emergent multi-stage, two-channel Kondo effect and unstable three-channel Kondo effect, respectively. This suggests a special helicity structure of the screened states and confirms the idea of collective screening in multi-impurity Kondo systems. Our work also demonstrates that the same auxiliary-bath construction can be readily extended to models with additional impurities to explore novel many-body quantum states with emergent cluster degrees of freedom.",
+    "title": "Probing Collective and Individual Kondo Screening: Multi-Stage, Multi-Channel Kondo Effects in a $C_3$-Symmetric Four-Impurity Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.6165574789047241
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5176293849945068
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4921736717224121
+      }
+    ]
+  },
+  "2609.40150v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhen Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chia-Nan Yeh"
+      },
+      {
+        "affiliation": [],
+        "name": "Lin Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Nils Wentzell"
+      },
+      {
+        "affiliation": [],
+        "name": "Jason Kaye"
+      },
+      {
+        "affiliation": [],
+        "name": "Hugo U. R. Strand"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2609.40150v1",
+    "published_date": "2026-09-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We describe adapol, a Python package for fitting Matsubara Green's functions, self-energies, and hybridization functions by a compact sum of simple poles with real pole locations and matrix-valued residues. This pole-fitting step arises in many contexts, including hybridization fitting for quantum impurity solvers based on exact diagonalization, perturbation theory, and tensor networks, the compression of existing pole expansions such as the discrete Lehmann representation, diagrammatic methods based on discrete pole representations, and the analytic continuation of Matsubara Green's functions. adapol uses a modified version of the AAA rational approximation algorithm to estimate pole locations, and non-convex optimization to refine them. This procedure yields accurate and compact fits in a black-box and noise-robust manner. adapol provides a simple, self-contained interface with extensive documentation and examples, as well as an interface to the TRIQS package.",
+    "title": "adapol: Adaptive pole-fitting for quantum many-body physics",
+    "vector_matches": []
+  },
+  "2609.40209v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alessandro Sinibaldi"
+      },
+      {
+        "affiliation": [],
+        "name": "Luciano Loris Viteritti"
+      },
+      {
+        "affiliation": [],
+        "name": "Riccardo Rende"
+      },
+      {
+        "affiliation": [],
+        "name": "Federico Becca"
+      },
+      {
+        "affiliation": [],
+        "name": "Giuseppe Carleo"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.40209v1",
+    "matching_keywords": [
+      "altermagnetism",
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "This work directly addresses the inverse design of strongly correlated quantum phases and the search for quantum spin liquids using novel neural-network quantum states, which aligns very well with the user's interest in strongly correlated systems and advanced computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "inverse design",
+      "quantum spin liquid",
+      "neural-network quantum states"
+    ],
+    "summary": "Designing a material with a desired property amounts to solving an inverse problem: finding the couplings of a microscopic Hamiltonian whose ground state exhibits that property. For strongly correlated quantum systems, solving this problem efficiently remains largely out of reach. To address this challenge, we present a general framework for ab initio inverse design based on Foundation Neural-Network Quantum States, a recent approach in which the ground states of a family of Hamiltonians are encoded in a single variational wave function. Because the ansatz depends explicitly on the couplings, any target property is a differentiable function of them, and the search for the right Hamiltonian reduces to gradient-based optimization in coupling space. We apply this approach to search for nonmagnetic phases of frustrated Heisenberg models on the square lattice with an increasing number of free next-nearest-neighbor couplings, aiming to identify new quantum spin liquid candidates. With a single coupling, the method recovers the known nonmagnetic window of the square $J_1$-$J_2$ Heisenberg model, whereas letting the two diagonal couplings vary independently reveals an extended nonmagnetic region connecting the square-lattice and anisotropic-triangular-lattice regimes. In a search space of eight independent couplings within a $2\\times2$ unit cell, which contains several paradigmatic frustrated spin models, the optimization spontaneously converges to the $J_1$-$J_2$-$δ$ Heisenberg model, in which the diagonal couplings alternate between two values on neighboring plaquettes, a model recently proposed in the context of altermagnetism. Finite-size scaling up to $16\\times16$ clusters in this optimal model shows that the ground state has no magnetic, dimer, or plaquette order, establishing it as a new quantum spin liquid candidate, distinct from those previously proposed on the square lattice.",
+    "title": "Designing Strongly Correlated Quantum Phases of Matter with Foundation Neural-Network Quantum States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6248463988304138
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5775096416473389
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5653679966926575
+      }
+    ]
+  },
+  "2609.40309v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sami Boulebnane"
+      },
+      {
+        "affiliation": [],
+        "name": "Abid Khan"
+      },
+      {
+        "affiliation": [],
+        "name": "Pragna Subrahmanya"
+      },
+      {
+        "affiliation": [],
+        "name": "Dylan Herman"
+      },
+      {
+        "affiliation": [],
+        "name": "Edward Farhi"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin Villalonga"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruslan Shaydulin"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2609.40309v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-30",
+    "reasoning": "Although it mentions spin-boson systems and spin glasses, its primary focus is on quantum optimization algorithms (QAOA) rather than exploring the fundamental condensed matter physics of these systems.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "QAOA",
+      "Spin Glasses",
+      "Quantum Optimization Algorithms"
+    ],
+    "summary": "The Quantum Approximate Optimization Algorithm (QAOA) is regarded as a promising candidate for near-term quantum advantage in combinatorial optimization, yet our ability to study it at scale is limited. Exact recursive formulas have been introduced for predicting QAOA performance on large spin glasses, but the computational cost of evaluating them grows exponentially with the number of QAOA layers, preventing the study of QAOA in the promising high-depth regime. In this work, we show that for the task of computing QAOA energy on any mixed dense spin glass problem, spins approximately decouple into independent spin-boson systems. In the infinite-size limit, the decoupling becomes exact, establishing the spin-boson mapping as a natural framework for the many-body physics of QAOA. This generalized spin-boson mapping gives a recursive procedure for computing QAOA energies that can be executed at modest cost using tensor networks. As a numerical application, we optimize QAOA on pure and mixed spin glasses at depths intractable for prior techniques, observing that higher-degree problems require more layers for a comparable approximation ratio while angle optimization becomes more challenging. While decoupling enables the evaluations of QAOA energies at large size and depth, it does not enable strong simulation of QAOA; a quantum computer is required to sample the bitstring corresponding to the predicted energy.",
+    "title": "Decoupling of the QAOA into independent spin-boson systems and high-depth performance on pure and mixed spin glasses",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5474590063095093
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5369267463684082
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5319402813911438
+      }
+    ]
   }
 }
