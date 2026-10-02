@@ -1,0 +1,386 @@
+{
+  "2610.01099v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Seongpyo Hong"
+      },
+      {
+        "affiliation": [],
+        "name": "Woodo Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Yong-Su Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Seung-Sup B. Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Junghyun Lee"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.01099v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-01",
+    "reasoning": "This work utilizes Matrix Product States (MPS) for pretraining variational quantum algorithms, aligning with the interest in advanced computational methods for quantum many-body systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Matrix Product State (MPS)",
+      "Distributed quantum computing",
+      "Variational quantum eigensolver"
+    ],
+    "summary": "Distributed quantum processors could scale variational algorithms beyond single devices, but circuit depth, communication overhead, and noise limit their performance. We compare ladder, mixed-canonical, and brick-wall realizations of matrix-product-state (MPS) pretraining with matched per-layer two-qubit-block resources. Despite comparable ideal variational quantum eigensolver performance and gradient scales, the shallower brick-wall architecture reduces circuit duration, idle-time decoherence, and zero-noise-extrapolation (ZNE) overhead, yielding superior noisy and ZNE-assisted performance. We then extend MPS-pretrained circuits to modular processors with one communication qubit per quantum processing unit (QPU); a nearest-neighbor QPU-path schedule keeps the per-layer depth constant as QPUs are added. Distributed circuits whose inter-QPU links realize long-range interactions of the target Hamiltonian match or outperform the single-processor brick-wall under noise when communication idle time is short compared with the coherence time. These results establish hardware-aware co-design of tensor-network pretraining, circuit scheduling, and communication topology as a principle for variational quantum computation on noisy modular hardware.",
+    "title": "Constant-Per-Layer-Depth MPS-Pretrained Ansatz for Noisy Distributed Quantum Processors",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.48235201835632324
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.43301934003829956
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.42206794023513794
+      }
+    ]
+  },
+  "2610.01432v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mengyi Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Peichen Zhong"
+      },
+      {
+        "affiliation": [],
+        "name": "Zihan Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Qianxiao Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.01432v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-10-01",
+    "reasoning": "This paper presents a framework for learning ab initio phase-field models, offering a new computational approach to simulate microstructure evolution and phase transitions with quantum-mechanical accuracy, which complements interests in computational materials science.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Phase-field modeling",
+      "Ab initio methods",
+      "Multiscale simulation"
+    ],
+    "summary": "Simulating microstructure evolution requires quantum-mechanical accuracy and mesoscopic reach in length and time scales, a combination that no current method achieves. Classical phase-field models provide this reach, but their accuracy is limited by phenomenological free energies and mobilities. Here we develop a framework for learning ab initio phase-field models, where the mesoscopic equation is not postulated but derived from a Mori-Zwanzig projection of molecular dynamics onto species-density fields under explicit assumptions. The nonlocal free energy and mobility left unspecified by this equation are parametrized by neural networks and learned from short molecular dynamics trajectories generated with machine-learning interatomic potentials of ab initio accuracy. We demonstrate the framework on an iron-boron melt and on hydrogen-helium mixtures under planetary conditions. For iron-boron, the model shows that the melt at the FeB$_4$ composition is spinodally unstable at ambient pressure but stabilized at 10 GPa, offering a thermodynamic rationale for why FeB$_4$ has been synthesized only under high pressure. For hydrogen-helium, the model predicts the immiscibility boundary and captures droplet nucleation and growth in helium-rain simulations of a column corresponding to 2.2 million atoms, far beyond the scale of atomistic modeling at comparable accuracy. Trained across compositions and conditions, such models could provide a mesoscopic counterpart to ab initio molecular dynamics.",
+    "title": "Learning ab initio phase-field models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5474816560745239
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5227576494216919
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.49381184577941895
+      }
+    ]
+  },
+  "2610.01771v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Timothy N. Georges"
+      },
+      {
+        "affiliation": [],
+        "name": "Darren J. Valentine"
+      },
+      {
+        "affiliation": [],
+        "name": "William Barford"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.01771v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-10-01",
+    "reasoning": "This paper applies time-dependent DMRG to the extended Hubbard-Peierls model, a computational approach directly relevant to the study of strongly correlated systems, echoing the interest in methods like DMFT.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Time-dependent DMRG",
+      "Hubbard-Peierls model",
+      "Nonadiabatic dynamics"
+    ],
+    "summary": "Propagating the electronic and nuclear degrees of freedom of a molecule simultaneously is a challenging task, because the number of vibronic states grows exponentially with system size. We use the adaptive time-dependent density matrix renormalization group to perform simulations of the extended Hubbard-Peierls Hamiltonian, in which both the electronic and nuclear degrees of freedom are quantized. We describe our approach, and demonstrate it through converged calculations of the nonadiabatic dynamics of hexatriene. This simulation predicts a lifetime of the `bright' $\\mathrm{1B_u}$ electronic state of approximately 40 fs. Our predictions for the population of the $\\mathrm{1B_u}$ electronic state are in qualitative agreement with those obtained using the linear vibronic coupling model derived from the extended Hubbard-Peierls Hamiltonian in previous work.",
+    "title": "Nonadiabatic Quantum Dynamics of Hexatriene via the Extended Hubbard-Peierls Model and Time-Dependent DMRG",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.6142934560775757
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5895894765853882
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5619363784790039
+      }
+    ]
+  },
+  "2610.01790v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexander Gorsky"
+      },
+      {
+        "affiliation": [],
+        "name": "Elizaveta Kovalenko"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergei Nechaev"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.01790v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-01",
+    "reasoning": "This paper focuses on theoretical models like DSSYK, TASEP, and dilaton gravity, which are distinct from the condensed matter physics and computational materials science interests of the liked papers.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "SYK model",
+      "KPZ universality",
+      "Statistical mechanics"
+    ],
+    "summary": "We discuss the triality between stochastic growth models in the KPZ universality class, the DSSYK model, and low dimensional dilaton gravity. The TASEP model, which will be our primary focus, is identified with the strong-coupling limit of two-dimensional quantum gravity. The Hamiltonian of DSSYK and the transfer matrix of ASEP coincide up to an additive constant, and we derive the exact expression for the resolvent of the corresponding transfer matrix in ASEP on a finite interval. We also mention the relation of cumulants with the Tutte polynomial $T(1,q)$ of the crossing graph dual to the chord diagram, which implies the relationship of the models considered with the $Q=0$ Potts model coupled with gravity. We further exploit the realization of all these models in terms of different versions of discrete and continuous random walks on two-dimensional manifolds, which parameterize the Hilbert spaces of the respective theories. The representation of TASEP as the growth model of heaps provides new insight into strong-coupling gravity, suggesting its interpretation as an emerging phenomenon. The new dualities between ASEP and q-TASEP models and heap models providing a useful growth interpretation have been developed.",
+    "title": "DSSYK, open ASEP/TASEP and 2d dilaton gravity at strong coupling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.36373192071914673
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.3591291308403015
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.3540519177913666
+      }
+    ]
+  },
+  "2610.01954v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Federico Santona"
+      },
+      {
+        "affiliation": [],
+        "name": "Manuel G. Algaba"
+      },
+      {
+        "affiliation": [],
+        "name": "Aeishah Ameera Anuar"
+      },
+      {
+        "affiliation": [],
+        "name": "Anna M. Wernbacher"
+      },
+      {
+        "affiliation": [],
+        "name": "Prachi Sharma"
+      },
+      {
+        "affiliation": [],
+        "name": "Fedor Šimkovic"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.01954v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-01",
+    "reasoning": "This paper presents a quantum algorithm for ground-state preparation in quantum chemistry, offering a computational approach for potentially strongly correlated systems and comparing to DMRG.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Variational quantum algorithms",
+      "Ground-state preparation",
+      "Quantum chemistry"
+    ],
+    "summary": "Compact ground-state preparation circuits are essential for early fault-tolerant quantum chemistry. We introduce Variational Imaginary-time Majorana Evolution (VIME), a classical pre-training algorithm that extends operator-projected variational quantum imaginary-time evolution (OVQITE) to molecular electronic structure using a single compiled Majorana-propagation (MP) surrogate graph. We pair VIME with a compressed tiled Unitary Product State (c-tUPS) ansatz that we develop to reduce both classical simulation and quantum state-preparation costs. In the strongly correlated ruthenium complex TLD-1411, active-space calculations requiring up to 52 qubits achieve chemical precision against DMRG reference energies, with energy errors approximately $400\\times$ smaller than those from ADAPT-VQE-based variational Majorana-propagation (ADAPT-VMPE). Across the strongly multireference acene series up to heptacene (60 qubits), VIME matches or improves on the MP-reported energy accuracy of the ADAPT-VMPE comparison points with up to $26\\times$ fewer CNOTs and $167\\times$ lower two-qubit depth. These results establish imaginary-time classical pre-training of compressed variational ansätze as a promising route to resource-efficient molecular ground-state preparation.",
+    "title": "Hardware-Efficient Ground-State Preparation using Variational Imaginary-Time Majorana Evolution",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5513287782669067
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.48862481117248535
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.48100966215133667
+      }
+    ]
+  },
+  "2610.02082v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matilde Grassi"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Carignano"
+      },
+      {
+        "affiliation": [],
+        "name": "Luca Tagliacozzo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jacopo De Nardis"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.02082v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-10-01",
+    "reasoning": "It explores tensor network methods for simulating quantum circuits, which is a powerful computational technique akin to those used for strongly correlated many-body systems like DMFT.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Quantum circuits",
+      "Strong simulation"
+    ],
+    "summary": "Tensor networks are powerful tools for simulating quantum many-body systems, but the growth of spatial entanglement severely limits the direct evolution of pure states under chaotic unitary circuits. Here we consider a more targeted task: the approximate strong simulation of a specified output probability of a 1D chaotic brick-wall circuit at finite relative precision. Given input and output bit strings $\\by$ and $\\bx$, we evaluate $p(\\bx|\\by)=|\\bra{\\bx}U(T)\\ket{\\by}|^2$ using the Sweeping RTM algorithm, a transverse tensor-network contraction based on reduced transition matrices (RTMs). The algorithm compresses the left and right temporal boundary states jointly, seeking an output probability that converges across spatial cuts and as the bond dimension is increased. For chaotic one-dimensional brick-wall circuits at a fixed relative target precision, we find numerical evidence that the bond dimension required to obtain stable estimates grows subexponentially over the accessible time window. Our findings open a direct route to classical probability queries for chaotic quantum circuits, with potential applications to benchmarking and learning tasks.",
+    "title": "Strong Simulation of 1D Quantum Circuits via Reduced Transition Matrices",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5459874272346497
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5302402973175049
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5029293298721313
+      }
+    ]
+  },
+  "2610.02166v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Omar Al-Ghattas"
+      },
+      {
+        "affiliation": [],
+        "name": "David Gamarnik"
+      },
+      {
+        "affiliation": [],
+        "name": "Bobak T Kiani"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.02166v1",
+    "published_date": "2026-10-01",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We introduce a method for studying state preparation complexity in dense quantum $p$-spin Hamiltonians on $n$ qubits, going beyond bounds based only on circuit lightcones. The key input is the class's effective profile complexity, which is derived from the metric entropy of its Pauli profiles. These profiles record expectations of all Pauli operators supported on exactly $p$ qubits. Classes with uniformly bounded quadratic effective profile complexity remain separated from the ground-state energy by a positive multiple of $\\sqrt n$ for sufficiently large fixed $p$. At subquadratic effective profile complexity, the class cannot outperform a suitable benchmark class at leading order, with product states providing a universal benchmark. The proof combines an adaptation of a nonsymmetric quantum de Finetti theorem of Berta et al. (arXiv:1810.12197) with Gaussian process entropy bounds.   Applying this framework, we show that attaining near-ground-state energy requires $Ω(n^2/\\log n)$ one- and two-qubit gates, even with arbitrary discardable ancillas. We also obtain depth-width tradeoffs, entanglement-depth and matrix product state bond-dimension lower bounds, and obstructions for both orientations at every fixed level of Parham's magic hierarchy (arXiv:2504.19966), with total circuit width $O(n)$. In first-level reverse magic, a shallow circuit is followed by an unrestricted Clifford circuit. The latter can spread local observables across the system, preventing a direct application of small-lightcone bounds. For this first-level class, our bounds also allow arbitrarily many clean ancillas at fixed shallow-circuit depth. A sharper benchmark shows that Clifford+$T$ circuits with $o(n)$ $T$-gates have no leading-order energy advantage over product stabilizer states, even with unrestricted Clifford operations and arbitrary discardable ancillas.",
+    "title": "Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses",
+    "vector_matches": []
+  },
+  "2610.02167v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiaqing Jiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan Ju"
+      },
+      {
+        "affiliation": [],
+        "name": "Ojas Parekh"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaithanya Rayudu"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Zhao"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.02167v1",
+    "published_date": "2026-10-01",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Quantum impurity models are paradigmatic models of interacting quantum matter, as well as key computational primitives for modern electronic-structure methods. They describe a small subsystem of interacting fermions coupled to a large, noninteracting bath. We perform a comprehensive study of the computational complexity of simulating impurity models, delineating the boundary between classical and quantum tractability for this class of problems. Our main finding is that static properties of quantum impurity models can be calculated efficiently on a classical computer. Specifically, we give classical algorithms that (1) estimate the ground-state energy to additive precision $δ$ in time $\\mathrm{poly}(n,δ^{-1})$, and (2) estimate the partition function at inverse temperature $β$ to relative precision $δ$ in time $\\mathrm{poly}(n,β,δ^{-1})$, where $n$ is the system size. These results improve the previous best-known complexity for ground-state energy estimation from quasipolynomial to polynomial time, while establishing for the first time rigorous polynomial-time guarantees for simulating impurity models in thermal equilibrium. On the other hand, we find that simulating dynamical properties of impurity models is hard for classical computers but easy on a quantum computer. As a canonical example, we show that computing their nonequilibrium Green's functions captures the full power of quantum computation, even at finite temperature. Taken together, our results rule out superpolynomial quantum speedups for computing static properties, but provide an avenue for quantum advantage in simulating impurity physics out of equilibrium.",
+    "title": "Polynomial-time classical and quantum simulation of quantum impurity models",
+    "vector_matches": []
+  }
+}
