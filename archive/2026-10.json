@@ -340,16 +340,43 @@
         "name": "Bobak T Kiani"
       }
     ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cs.CC",
+      "math.PR"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.02166v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
     "published_date": "2026-10-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "While it mentions Matrix Product States, the paper primarily focuses on theoretical quantum computational complexity and state preparation, which is a significant departure from the user's condensed matter and materials science interests.",
+    "score": 0.25,
+    "suggested_keywords": [
+      "Quantum Complexity",
+      "State Preparation",
+      "Quantum Spin Glasses"
+    ],
     "summary": "We introduce a method for studying state preparation complexity in dense quantum $p$-spin Hamiltonians on $n$ qubits, going beyond bounds based only on circuit lightcones. The key input is the class's effective profile complexity, which is derived from the metric entropy of its Pauli profiles. These profiles record expectations of all Pauli operators supported on exactly $p$ qubits. Classes with uniformly bounded quadratic effective profile complexity remain separated from the ground-state energy by a positive multiple of $\\sqrt n$ for sufficiently large fixed $p$. At subquadratic effective profile complexity, the class cannot outperform a suitable benchmark class at leading order, with product states providing a universal benchmark. The proof combines an adaptation of a nonsymmetric quantum de Finetti theorem of Berta et al. (arXiv:1810.12197) with Gaussian process entropy bounds.   Applying this framework, we show that attaining near-ground-state energy requires $Ω(n^2/\\log n)$ one- and two-qubit gates, even with arbitrary discardable ancillas. We also obtain depth-width tradeoffs, entanglement-depth and matrix product state bond-dimension lower bounds, and obstructions for both orientations at every fixed level of Parham's magic hierarchy (arXiv:2504.19966), with total circuit width $O(n)$. In first-level reverse magic, a shallow circuit is followed by an unrestricted Clifford circuit. The latter can spread local observables across the system, preventing a direct application of small-lightcone bounds. For this first-level class, our bounds also allow arbitrarily many clean ancillas at fixed shallow-circuit depth. A sharper benchmark shows that Clifford+$T$ circuits with $o(n)$ $T$-gates have no leading-order energy advantage over product stabilizer states, even with unrestricted Clifford operations and arbitrary discardable ancillas.",
     "title": "Beyond Light Cones: State Preparation Complexity in Quantum Spin Glasses",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4430655241012573
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4297247529029846
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.42888641357421875
+      }
+    ]
   },
   "2610.02167v1": {
     "authors": [
@@ -374,13 +401,42 @@
         "name": "Andrew Zhao"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cs.CC",
+      "cs.DS",
+      "physics.chem-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.02167v1",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium"
+    ],
     "published_date": "2026-10-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper discusses the computational tractability of quantum impurity models and Green's functions, which are the foundational elements for Dynamical Mean-Field Theory solvers, a user's stated interest.",
+    "score": 0.98,
+    "suggested_keywords": [
+      "quantum impurity models",
+      "computational complexity",
+      "Green's functions"
+    ],
     "summary": "Quantum impurity models are paradigmatic models of interacting quantum matter, as well as key computational primitives for modern electronic-structure methods. They describe a small subsystem of interacting fermions coupled to a large, noninteracting bath. We perform a comprehensive study of the computational complexity of simulating impurity models, delineating the boundary between classical and quantum tractability for this class of problems. Our main finding is that static properties of quantum impurity models can be calculated efficiently on a classical computer. Specifically, we give classical algorithms that (1) estimate the ground-state energy to additive precision $δ$ in time $\\mathrm{poly}(n,δ^{-1})$, and (2) estimate the partition function at inverse temperature $β$ to relative precision $δ$ in time $\\mathrm{poly}(n,β,δ^{-1})$, where $n$ is the system size. These results improve the previous best-known complexity for ground-state energy estimation from quasipolynomial to polynomial time, while establishing for the first time rigorous polynomial-time guarantees for simulating impurity models in thermal equilibrium. On the other hand, we find that simulating dynamical properties of impurity models is hard for classical computers but easy on a quantum computer. As a canonical example, we show that computing their nonequilibrium Green's functions captures the full power of quantum computation, even at finite temperature. Taken together, our results rule out superpolynomial quantum speedups for computing static properties, but provide an avenue for quantum advantage in simulating impurity physics out of equilibrium.",
     "title": "Polynomial-time classical and quantum simulation of quantum impurity models",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.6010373830795288
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5788020491600037
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5614644289016724
+      }
+    ]
   }
 }
