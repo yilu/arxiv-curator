@@ -18624,6 +18624,51 @@
       }
     ]
   },
+  "2609.31459v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gianluca Esposito"
+      },
+      {
+        "affiliation": [],
+        "name": "Georgios Styliaris"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2609.31459v2",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-09-25",
+    "reasoning": "This paper focuses on the computational complexity of quantum information measures for tensor network states, which is distant from the user's primary interest in specific material systems or many-body theory applications.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum complexity",
+      "Tensor network states",
+      "Nonstabilizerness"
+    ],
+    "summary": "Nonstabilizerness is a necessary resource for quantum systems to lie beyond the classically simulable regime. With the advent of stabilizer $α$-Rényi entropies, nonstabilizerness has also become a many-body diagnostic, complementary to entanglement. While deciding whether an arbitrary quantum state has nonstabilizerness is provably hard, such states already require a description exponentially large in the number of qubits and are thus out of reach for many-body physics. Here we instead consider 2D tensor network (TN) states, which compactly capture states obeying an entanglement area law, and ask whether they admit a simpler algorithm for the same task. In contrast to the 1D case, we prove that, even at small, constant bond dimension, computing the stabilizer entropy of 2D TN states is $\\#\\mathrm{P}$-hard for any integer $α\\ge 2$, and deciding stabilizer membership is $\\mathrm{C_=P}$-complete. The corresponding constant-accuracy problems remain $\\mathrm{C_= P}$-hard. We further prove that deciding whether a PEPS can be transformed into a stabilizer state by local unitaries over a specified bipartition is $\\mathrm{C_= P}$-hard. Under standard complexity assumptions, these results rule out classical or quantum algorithms with polynomial resources for all three tasks in the worst case.",
+    "title": "Nonstabilizerness of quantum tensor network states is intractable in two dimensions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4833678603172302
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.46705320477485657
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.46513864398002625
+      }
+    ]
+  },
   "2609.31518v1": {
     "authors": [
       {
