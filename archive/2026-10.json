@@ -6126,6 +6126,64 @@
       }
     ]
   },
+  "2610.12151v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yue Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Haoyu Wan"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Tian"
+      },
+      {
+        "affiliation": [],
+        "name": "Deng Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingwei Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.12151v2",
+    "matching_keywords": [
+      "machine learning",
+      "neural network"
+    ],
+    "published_date": "2026-10-08",
+    "reasoning": "This review discusses advanced machine learning methods for atomistic simulations, which aligns with the user's interest in efficient computational techniques for understanding material properties, even if not directly focused on DMFT or superconductivity.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Machine Learning Potentials",
+      "Atomistic Simulations",
+      "Materials Dynamics"
+    ],
+    "summary": "Machine learning interatomic potentials (MLIPs) are transforming atomistic simulations by accessing unprecedented length and time scales. While pretrained equivariant graph neural networks achieve robust zero-shot performance for near-equilibrium properties across broad chemical spaces, their translation to complex materials dynamics remains fundamentally challenged by out-of-distribution reactive states, representation biases, and computational scaling limits. In this Review, we examine how physics-driven specialization extends the applicability of MLIPs to complex dynamical systems. We systematically evaluate the structural trade-offs in MLIP design: the undersampling of highly strained configurations, the prohibitive computational overhead of high-order message-passing architectures, and the necessity of nonlocal interactions for open and field-coupled systems. Through four demanding application contexts - electrified interfaces, compositionally fluctuating open systems, multiphase evolution, and large-scale fracture - we establish a framework for observable-specific validation. Highlighting the complementary roles of universal foundation models and task-specific potentials, we emphasize that targeted adaptations must be rigorously benchmarked against intended observables. We conclude with a roadmap for developing physically consistent, hardware-aware force fields that seamlessly connect electronic-structure accuracy to macroscopic materials phenomena.",
+    "title": "Specialized machine learning force fields for materials dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5270044803619385
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.49698406457901
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4724574685096741
+      }
+    ]
+  },
   "2610.12271v1": {
     "authors": [
       {
@@ -6264,6 +6322,873 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
         "score": 0.4312402009963989
+      }
+    ]
+  },
+  "2610.12739v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bin Feng"
+      },
+      {
+        "affiliation": [],
+        "name": "Reid A. Coyle"
+      },
+      {
+        "affiliation": [],
+        "name": "Shyam Chand Pal"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Walther"
+      },
+      {
+        "affiliation": [],
+        "name": "Saeun Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiling Zheng"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.12739v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-08",
+    "reasoning": "This paper focuses on AI/ML-driven predictive synthesis of MOFs and COFs, which diverges from the previous interests in strongly correlated electron systems, superconductivity, and topological materials physics.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Materials Synthesis",
+      "Computational Chemistry"
+    ],
+    "summary": "Predictive synthesis concerns the prospective modeling of how a targeted structure can be realized. The synthesis of metal-organic frameworks (MOFs) and covalent organic frameworks (COFs) intrinsically involves a multidimensional space of interdependent variables, posing a challenge for bench chemists to parameterize and predict. In this Perspective, we discuss the evolution from chemical-intuition-driven experimentation toward the integration of artificial intelligence (AI) and machine learning (ML) in the laboratory. By virtue of prior knowledge, uncertainty, and experimental failure in determining what should be attempted next, we envision predictive synthesis progressing from static recipe recommendation toward real-time control and transferable principles of framework formation. In this context, the significance lies in transforming trial-and-error practice into a means of measurable chemical reasoning, thereby accelerating crystalline materials discovery and advancing synthetic chemistry.",
+    "title": "Predictive Synthesis of MOFs and COFs",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.38944315910339355
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.33011162281036377
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.2807227671146393
+      }
+    ]
+  },
+  "2610.12791v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Qing-Bo Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xin-Yi Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiangyang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Xingxing Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinlong Yang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.12791v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-10-08",
+    "reasoning": "This paper introduces altermagnetism and highly spin-polarized 2D materials, aligning with previous interests in novel electronic/magnetic phases, advanced materials, and theoretical computational methods like those used for Dirac fermions or correlated electron systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spintronics",
+      "2D Materials"
+    ],
+    "summary": "Altermagnetism, as a novel magnetic paradigm, not only possesses a zero net magnetic moment, but also exhibits a substantial nonrelativistic spin-splitting effect. Currently, developing a simple and experimentally feasible method for designing altermagnets is eagerly pursued. Moreover, achieving 100% spin polarization along certain directions in valence or conduction bands for altermagnets remains challenging. To address these issues, based on a tight-binding model, we propose a viable chemical strategy for constructing organometallic altermagnets by using ambidentate ligands. Furthermore, in these organometallic altermagnets, direction-dependent 100% spin polarization along the [110] direction in band edges can be induced via the coexistence of altermagnetically spin-split dispersive and flat bands, where the flat band suppresses electron transport in one spin channel and the dispersive band enables conduction in the other spin channel. Then, via first-principles calculations, a screening of 90 two-dimensional ambidentate-ligand based square organometallic lattices leads to the identification of three altermagnetic materials, namely Fe(taz)2Cl2 (taz = 1,2,4- triazine), Co(app)2Cl2, and Fe(app)2Cl2 (app = 1,4-azaphosphinine), all of which possess 100% spin polarization along the [110] direction in valence bands, as well as notable piezomagnetic behavior. This study paves the way for achieving direction-dependent fully spin-polarization in altermagnetic materials.",
+    "title": "Realizing Two-Dimensional Altermagnets with 100% Spin Polarization along the [110] Direction in Ambidentate-Ligand Based Square Organometallic Lattices",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5498790144920349
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5093328952789307
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.5029664635658264
+      }
+    ]
+  },
+  "2610.12798v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Felipe Taha Sant'Ana"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech",
+      "nlin.SI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.12798v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-08",
+    "reasoning": "This paper delves into the theoretical properties of strongly correlated spin chains, which underpins the physics of complex materials like the superconductors and oxides the user previously liked.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Spin Chains",
+      "Staggered Magnetization",
+      "Anisotropy"
+    ],
+    "summary": "The staggered order parameter of the gapped XYZ spin-$1/2$ chain follows from the eight-vertex solution, but in elliptic variables that fix the Hamiltonian couplings only implicitly. We derive a closed form for the coefficient governing the leading quadratic response of the spontaneous staggered magnetization to the XY anisotropy at fixed longitudinal anisotropy in the gapped antiferromagnetic regime. Starting from the Baxter--Kelland--Jimbo--Miwa--Nakayashiki polarization formula, we show that at fixed longitudinal anisotropy both the modular nome and the crossing-parameter variable of the formula move with the XY anisotropy, and that the motion of the crossing-parameter variable reverses the sign of the expansion at fixed elliptic variables. The coefficient is a rational term plus a Lambert series. It is strictly negative and bounded above by a rational function of the longitudinal anisotropy, to which it is asymptotic in the Ising limit. At the isotropic point it diverges as the inverse five-halves power of the distance to that point, and since the Lambert sum has an asymptotic expansion with exponentially small remainder, the subleading terms of the divergence also follow in closed form. When the XY anisotropy vanishes as the five-fourths power of the distance to the isotropic point, the ratio of the perturbed to the unperturbed order parameter tends to a Gaussian in the scaling variable, and the quadratic truncation is controlled when that variable is small. A fourth-order perturbative calculation in the spin chain, with no input from the eight-vertex solution, reproduces the leading strong-coupling behaviour, and infinite-DMRG calculations at four anisotropies in the gapped regime are consistent with the closed form.",
+    "title": "Quadratic XY-anisotropy correction to the spontaneous staggered magnetization of the gapped XYZ spin-$1/2$ chain",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.6227744817733765
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5710470676422119
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.536415696144104
+      }
+    ]
+  },
+  "2610.12800v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vahagn Mkhitaryan"
+      },
+      {
+        "affiliation": [],
+        "name": "Milan Kornjača"
+      },
+      {
+        "affiliation": [],
+        "name": "Mao Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Schuckert"
+      },
+      {
+        "affiliation": [],
+        "name": "Majd Hamdan"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergio H. Cantú"
+      },
+      {
+        "affiliation": [],
+        "name": "Ammar Ali"
+      },
+      {
+        "affiliation": [],
+        "name": "Tommaso Macrí"
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan Gemelke"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Keesling"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Komar"
+      },
+      {
+        "affiliation": [],
+        "name": "Travis S. Humble"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexei Bylinski"
+      },
+      {
+        "affiliation": [],
+        "name": "Pedro L. S. Lopes"
+      },
+      {
+        "affiliation": [],
+        "name": "Fangli Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexandra Boltasseva"
+      },
+      {
+        "affiliation": [],
+        "name": "Mikhail D. Lukin"
+      },
+      {
+        "affiliation": [],
+        "name": "Arnab Banerjee"
+      },
+      {
+        "affiliation": [],
+        "name": "Vladimir M. Shalaev"
+      },
+      {
+        "affiliation": [],
+        "name": "Sheng-Tao Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.12800v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-10-08",
+    "reasoning": "It explores frustrated magnets and their quantum phase diagrams using analog quantum simulation, which aligns with the interest in emergent behavior and novel phases in condensed matter, even with a different methodology.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Frustrated magnets",
+      "Quantum simulation",
+      "Shastry-Sutherland model"
+    ],
+    "summary": "Frustrated magnets host rich emergent behavior because competing interactions generate dense manifolds of low-energy states. The Ising Shastry-Sutherland model is a paradigmatic setting, motivated experimentally by Ising-like rare-earth tetraborides such as TmB$_4$ and ErB$_4$, whose field-induced magnetization plateaus have motivated extensive microscopic modeling. Yet how tunable quantum fluctuations reorganize this material-motivated phase diagram remains largely unexplored. Here, we realize a transverse- and longitudinal-field Ising model on the Shastry-Sutherland lattice using a programmable Rydberg-atom array. We map its quantum phase diagram using density matrix renormalization group calculations and probe corresponding signatures experimentally in arrays containing more than 110 atoms. Beyond the established classical phases, the calculations identify two regimes absent in the classical limit and stabilized at finite transverse field: a $2/5$ filling plateau whose finite stability region emerges from a classically degenerate phase boundary and a symmetry-preserving quantum-dimer regime replacing classically selected collinear order. Experiments on finite open arrays reveal signatures consistent with these regimes across three boundary-pinning conditions, with the resulting response maps agreeing qualitatively with the calculated phase diagram. Our results establish programmable Rydberg-atom arrays as tools for exploring frustrated, material-motivated Hamiltonians and motivate searches for new, quantum-driven magnetization plateaus and quantum-dimer behavior in ErB$_4$ under a transverse field or in strain-tuned TmB$_4$.",
+    "title": "Analog quantum simulation of Shastry-Sutherland Ising materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5837817192077637
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.565970778465271
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5625219345092773
+      }
+    ]
+  },
+  "2610.13189v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Eunike Mahayoni"
+      },
+      {
+        "affiliation": [],
+        "name": "Louiza Larbi"
+      },
+      {
+        "affiliation": [],
+        "name": "Romain Batiot"
+      },
+      {
+        "affiliation": [],
+        "name": "Anatole Weill"
+      },
+      {
+        "affiliation": [],
+        "name": "Damien Brégiroux"
+      },
+      {
+        "affiliation": [],
+        "name": "Antonella Iadecola"
+      },
+      {
+        "affiliation": [],
+        "name": "Arnaud Perez"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.13189v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "The paper investigates battery electrode materials using operando techniques to understand volume changes during cycling, which deviates from the user's interests in superconductivity, topological materials, and correlated electron physics.",
+    "score": 0.25,
+    "suggested_keywords": [
+      "Li-ion Batteries",
+      "Operando Characterization",
+      "Redox Chemistry"
+    ],
+    "summary": "Understanding volume changes in high-voltage spinel cathodes is essential for mitigating mechanical degradation and improving cycling stability. However, linking these changes to cation-specific redox processes remains challenging. Here, we combine operando X-ray diffraction (XRD) and X-ray absorption spectroscopy (XAS) to investigate the LiCoxMn2-xO4 spinel system, which exhibits a cubic structure and isotropic lattice response, in order to correlate the evolution of the local and long-range structure. Five compositions (x = 0, 0.25, 0.5, 0.75, and 1.0) were synthesized and electrochemically characterized, with x = 0, 0.5, and 1.0 examined in detail under identical cycling conditions. XAS at the Mn and Co K-edges reveals distinct Mn4+/Mn3+ and Co4+/Co3+ redox processes, with Mn redox activity dominating below 4.7 V and Co redox triggered at higher potentials. Chemometric tools for XAS data analysis further resolve the evolution of local structure during cycling. Both XRD and XAS capture consistent trends in volume evolution, despite probing different structural length scales. Increasing Co content progressively decreases the overall volume change, from 5.0 % to 1.6 % by XAS and from 5.8 % to 2.1 % by XRD. These results demonstrate that Co substitution suppresses electrochemically induced structural strain and establish a direct link between cation-specific redox activity and volumetric evolution. The correlative operando XRD/XAS approach provides a framework to investigate newly designed low-strain, high-energy cathodes with improved cycling stability.",
+    "title": "Insights on the volume variation of LiCoxMn2-xO4 electrode upon cycling: a correlative operando XRD and XAS study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.54511559009552
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.4747578501701355
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.4504827558994293
+      }
+    ]
+  },
+  "2610.13233v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Han Ma"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.13233v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper focuses on machine learning and neural network dynamics, which is outside the domain of condensed matter physics and correlated electron systems.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Neural network dynamics",
+      "Percolation theory",
+      "Boolean function states"
+    ],
+    "summary": "We study how a neural network reorganizes its learned function as training proceeds and as previously unseen parity data accumulate. The trained model is itself a Boolean function on binary strings of finite length. We then evaluate it on all data, inside and outside the training set, and read off its complete sign table. Its $\\pm1$ entries are the amplitudes of a normalized state, dubbed the function-state, whose inverse subsystem purity $K_f=1/\\textrm{Tr}(ρ_A^2)$ is an effective Schmidt rank. We find that small data additions broaden the Schmidt spectrum, whereas larger additions reconcentrate it in the target mode. The former is called differentiation because the model distinguishes inputs more sharply. The latter is called target-selective recoherence, where the model settles on the single rule shared by the added data. As the dataset grows, the connectivity of the constraint graph defined by the training set increases monotonically, whereas the learned inverse purity changes nonmonotonically. On a fixed connected dataset, as learning proceeds, the Schmidt spectrum begins to reorganize, followed by gains in target alignment and later by improvement in predictive accuracy. This ordering distinguishes three aspects of learning: constraint identifiability, function-state organization, and predictive accuracy. At fixed data size, a function that has already been learned can re-differentiate, an event we call retreat, without changing graph connectivity. Recovery reconcentrates the Schmidt spectrum in a similar target-selective pattern, without exact recurrence of the Boolean state. Thus the percolation of data constraints fixes the identifiable support, while the reduced state produced by training continues to reorganize even after that support stops changing.",
+    "title": "Percolation of Data Constraints and Reorganization of Boolean Function States in Parity Learning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.44995519518852234
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3432379961013794
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.33269867300987244
+      }
+    ]
+  },
+  "2610.13251v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Luciano Jacopo D'Onofrio"
+      },
+      {
+        "affiliation": [],
+        "name": "Adolfo Avella"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Eckstein"
+      }
+    ],
+    "categories": [
+      "cond-mat.other",
+      "cond-mat.mes-hall",
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.13251v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper applies non-equilibrium Green's functions to study many-body strong correlation effects and electron dynamics, a core theoretical approach for correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Non-equilibrium Green's functions",
+      "Ultrafast electron dynamics",
+      "Strong-field emission"
+    ],
+    "summary": "Ultrafast laser-assisted field emission from metallic nanotips is a promising route for generating coherent electron pulses. However, existing theoretical models often neglect many-body strong correlation effects in the emitter's electronic structure and its response to the optical field. In this work, we propose a theoretical framework based on the non-equilibrium Green's function formalism to simulate the out-of-equilibrium electron dynamics across a strongly driven matter-vacuum interface, in a one-dimensional model. Treating the tip-vacuum coupling perturbatively, we find that the interplay between strong-field emission and multi-photon emission regimes can be described in terms of a filtering of the emitter's local density of occupied states through field-dressed vacuum propagators. By including electron-electron interactions via the second-Born approximation, we show that correlation-induced modifications in the electronic structure are directly transferred to the far-field spectrum. Finally, by self-consistently solving the Dyson equation at the interface, we uncover a dynamic back-action regime driven by the optical field, characterized by a periodic polarization of the emitter, which reshapes the far-field spectrum. This shows that the non-equilibrium Green's functions approach provides a versatile framework for exploring and analyzing field emission of correlated electrons.",
+    "title": "Ultrafast laser-stimulated field emission from a metal: a non-equilibrium Green's functions approach",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4632187783718109
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.4328557550907135
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NaGl4SEjCO4C",
+        "score": 0.4161519706249237
+      }
+    ]
+  },
+  "2610.13401v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daiki Sasamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Joji Nasu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.13401v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This work investigates spin dynamics, fractionalized excitations like Majorana fermions, and advanced theoretical methods beyond mean-field theory in Kitaev models, highly relevant to quantum spin liquids and correlated materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Kitaev model",
+      "Majorana fermions",
+      "Spin dynamics",
+      "Quantum spin liquids"
+    ],
+    "summary": "The $S=1/2$ Kitaev model provides an exactly solvable setting in which spin fractionalization produces itinerant Majorana fermions coupled to an emergent $\\mathbb{Z}_2$ gauge field. In realistic Kitaev magnets, however, non-Kitaev interactions break integrability and make their finite-temperature dynamics difficult to calculate. We develop a finite-temperature parton mean-field theory based on the Abrikosov-fermion representation and incorporate the effects of exchange interactions through the random phase approximation to calculate the dynamical spin structure factor. For the pure Kitaev model, the method reproduces a strong, nearly dispersionless peak at a finite low energy together with a broad continuum at higher energies. It also reproduces the momentum dependence of the dynamical spin structure factor and its temperature evolution, including the downward shift of the low-energy spectral weight, in qualitative agreement with continuous-time quantum Monte Carlo calculations. Within the present theory, the contraction of the continuum is traced to the temperature-induced reduction of the bond amplitudes, which narrows the parton bands and compresses the two-parton phase space. For ferromagnetic Kitaev coupling, the energy of the low-energy peak is minimized at the $Γ$ point for a ferromagnetic Heisenberg interaction and maximized there for an antiferromagnetic interaction. In the ferromagnetic Kitaev-$Γ$ model, the static response develops a finite-momentum softening, indicating an instability toward the period-three magnetic order reported in numerical studies. For uniform-ferromagnetic states selected by a $[111]$ magnetic field, we find that a broad parton continuum coexists with magnonlike dispersive structures, producing spectral features consistent with a spinon-to-magnon crossover.",
+    "title": "Temperature evolution of spin dynamics in extended Kitaev models within an Abrikosov fermion theory beyond mean field",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.601426362991333
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5991024971008301
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5388383865356445
+      }
+    ]
+  },
+  "2610.13418v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuntong Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhihao Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuyang Dai"
+      },
+      {
+        "affiliation": [],
+        "name": "Chang Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Yang Xiang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.13418v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper concerns grain growth simulations in polycrystalline materials, which is unrelated to the user's previously liked topics on electronic structure, superconductivity, and topological physics.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Microstructure Simulation",
+      "Grain Growth",
+      "Graph Neural Networks"
+    ],
+    "summary": "Efficient simulations of grain growth are essential for investigating the process-structure-property relationships in polycrystalline materials. We introduce a two-dimensional von Neumann-Mullins-based graph grain growth simulation (VN-GraphGG), which couples the grain-scale kinetics with microstructure reconstruction. The polycrystalline microstructure is represented as a graph with grain and junction nodes. The grain-area evolution on the grain graph is governed by the von Neumann--Mullins (VN) law, while a graph neural network is trained to reconstruct the microstructure from the graph. This separation allows kinetic coefficients to be varied without retraining the neural reconstruction model. Topological changes during grain growth such as disappearance of grains and changes in neighbor relations are handled straightforwardly through reconstruction and postprocessing. Simulations demonstrate accurate predictions of VN kinetics and coarsening statistics, and significant speedup over the phase-field simulations. The proposed method provides a foundation for efficient grain growth simulation based on grain-scale kinetics, opening the way to incorporate a broader range of physical mechanisms. An application example is presented for abnormal grain growth, in which kinetic heterogeneity significantly influences the grain microstructure evolution.",
+    "title": "VN-GraphGG: von Neumann--Mullins--based graph grain growth simulation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.37777891755104065
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.36449798941612244
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.3413328528404236
+      }
+    ]
+  },
+  "2610.13666v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "V. Yu. Irkhin"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1016/j.physleta.2026.132238",
+    "id": "2610.13666v1",
+    "matching_keywords": [
+      "anderson impurity model"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper presents a novel analytical approach to the Kondo effect and related strongly correlated electron problems, directly aligning with the user's interest in dynamical mean-field theory and fundamental correlated electron physics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Kondo Effect",
+      "Strongly Correlated Electrons",
+      "Theoretical Condensed Matter"
+    ],
+    "summary": "We develop an analytical approach to the Kondo problem based on an effective partition function that generalizes the sophomore's dream integral. The Kondo crossover is represented as a passage through an approximately equidistant ladder of its Lee-Yang zeros in the complex plane, rather than as a singularity on the real axis. Summation over this ladder yields the Gamma function $Γ(α+ T_K/(2 πT))$ as the universal crossover backbone, where the offset $α=1/2$ is fixed by the Friedel sum rule. The Euler-Maclaurin expansion connects the discrete zero structure to the Nozieres Fermi-liquid theory through Bernoulli numbers. A two-cutoff formula provides a compact, essentially one-parameter description of the full crossover in terms of a temperature-space Fano lineshape which is a thermal average of the energy-space Fano resonance observed in STM. Drift corrections are treated. The approach extends to $\\mathrm{SU}(N)$ Coqblin-Schrieffer, underscreened and Anderson impurity models, and Kondo lattices.",
+    "title": "A new approach to the Kondo effect: sophomore's dream function and Lee-Yang zeros",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.5322720408439636
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4093073606491089
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.39377060532569885
+      }
+    ]
+  },
+  "2610.13694v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Amit S. Patel"
+      },
+      {
+        "affiliation": [],
+        "name": "Himanshu R. Patel"
+      },
+      {
+        "affiliation": [],
+        "name": "Bikash K. Behera"
+      },
+      {
+        "affiliation": [],
+        "name": "Pranav Mehta"
+      },
+      {
+        "affiliation": [],
+        "name": "Ghanshyam Tejani"
+      },
+      {
+        "affiliation": [],
+        "name": "Deepak Parashar"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.13694v1",
+    "matching_keywords": [
+      "machine learning",
+      "neural network",
+      "tensor network"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper focuses on quantum machine learning and fault diagnosis, which is a distinct field from the user's preferred topics in condensed matter physics and materials science, despite the use of 'tensor network' inspired architectures.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Machine Learning",
+      "Quantum Neural Networks",
+      "NISQ Devices"
+    ],
+    "summary": "Resource constraints and imperfect quantum operations remain major challenges for quantum machine learning (QML) on noisy intermediate-scale quantum (NISQ) devices, particularly for fault-diagnosis tasks involving imbalanced and heterogeneous data. This work proposes QTN-RQNN, a Quantum Tensor Network-Based Recurrent Quantum Neural Network that integrates tensor-network-inspired nearest-neighbor interactions with recurrent quantum processing. The model sequentially encodes input features while propagating quantum memory across recurrent steps and incorporates QSMOTE for class balancing. QTN-RQNN is evaluated on four heterogeneous fault-diagnosis datasets SPID, CWRUBD, EFDD, and SFDD and compared with QNN, QTN-QNN, and RQNN baselines through classification, ablation, multi-seed, convergence, and quantum-resource analyses. Results show dataset-dependent predictive behavior, indicating that increased quantum architectural complexity does not universally improve classification. On SPID, QTN-RQNN improves the RQNN F1-score from 0.3077 to 0.4516 and ROC-AUC from 0.4485 to 0.6970, while the remaining datasets exhibit different performance-resource trade-offs and sensitivity to recurrent timesteps and circuit depth. Across all datasets, QTN-RQNN reduces the two-qubit-gate count from 32 to 24 per sample relative to RQNN, corresponding to a 25% reduction without increasing the four-qubit requirement; the same relative reduction is obtained for QTN-QNN over QNN. These findings establish QTN-RQNN as a resource-conscious recurrent quantum architecture and highlight the need to jointly consider predictive performance and circuit-resource requirements for near-term quantum fault diagnosis.",
+    "title": "QTN-RQNN: Quantum Tensor Network-Based Recurrent Quantum Neural Network",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5432239770889282
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5041060447692871
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.44100433588027954
+      }
+    ]
+  },
+  "2610.13795v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Karsten Walz Jensen"
+      },
+      {
+        "affiliation": [],
+        "name": "Mie Andersen"
+      },
+      {
+        "affiliation": [],
+        "name": "Raffaele Cheula"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.13795v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper applies machine learning and DFT to study doped oxide catalysts, which, while involving doping and computational methods, is in a different domain (catalysis) than the user's primary interests in strongly correlated electron systems and superconductivity.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Catalysis",
+      "DFT"
+    ],
+    "summary": "Dopants can tune the activity of zirconia-based CO$_2$ hydrogenation catalysts through changes in adsorbate and transition-state (TS) energetics. Computing these quantities with density functional theory (DFT) becomes expensive when several dopants, reaction intermediates, and TSs must be screened. Here, we further develop the graph-based machine learning method Wasserstein Weisfeiler-Lehman Gaussian Process Regression (WWL-GPR): we introduce additional electronic-structure and local-environment features relevant for oxide surfaces and use the resulting model to predict adsorption and TS energies on ZrO$_2$(101) surfaces doped with Al$^{3+}$, Cd$^{2+}$, Ga$^{3+}$, In$^{3+}$, and Zn$^{2+}$. Adsorbate-surface structures are represented as attributed graphs that combine bonds connectivity and features. We benchmark WWL-GPR against thermodynamic scaling relations (TSR) for reaction intermediates and Bronsted-Evans-Polanyi relations (BEP) for TSs, and then propagate the predicted energies to microkinetic CH$_3$OH-yield estimates. WWL-GPR consistently improves the prediction of reaction intermediate energetics relative to linear scaling approaches and provides TS estimates that are competitive with BEP-based models. These improvements become especially relevant when the predicted energetics are propagated through the reaction network. Microkinetic calculations show that WWL-GPR-derived energies give CH$_3$OH yields closer to DFT-derived yields than the linear-relation workflow. Degree-of-rate-control analysis links the activity errors to dopant-dependent rate-controlling steps, including HCOO* formation, H$_2$COOH* dissociation, and H$_3$CO* formation. These results support WWL-GPR as a data-efficient surrogate for connecting atomistic energetics with catalyst-screening observables on doped oxide surfaces.",
+    "title": "Improved screening of doped ZrO$_2$ catalysts for CO$_2$ hydrogenation from graph-based machine learning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5054646730422974
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.4366946220397949
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:f2IySw72cVMC",
+        "score": 0.40963608026504517
+      }
+    ]
+  },
+  "2610.13824v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Silviu S. Pufu"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin T. Søgaard"
+      },
+      {
+        "affiliation": [],
+        "name": "Spyros Terlemes"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.13824v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper significantly contributes to theoretical methods for quantum many-body systems, employing tensor networks (generalizing MPS) and quasiparticle descriptions to study excitations in relativistic quantum field theories, which is highly relevant to the user's interest in advanced theoretical condensed matter physics and particle physics concepts like Dirac Fermions.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor Network Methods",
+      "Relativistic Quantum Field Theory",
+      "Quasiparticles"
+    ],
+    "summary": "The Relativistic Continuous Matrix Product State (RCMPS) ansatz introduced in arXiv:2102.07741 is a translation-invariant variational ansatz intended to approximate the ground states of gapped one-dimensional relativistic Quantum Field Theories directly in the continuum limit and in infinite volume. In this work, we develop an ansatz, referred to as the Relativistic Quasiparticle (RQP) ansatz, for the low-lying one-particle excitations of the RCMPS vacuum, as well as for solitons interpolating between two distinct degenerate vacua. The corresponding energies of these states can be obtained as the eigenvalues of an effective Hamiltonian. The RQP ansatz generalizes constructions used in the Matrix Product State and Continuous Matrix Product State literature. We apply the RQP ansatz to the sine-Gordon model and find good agreement with results from integrability for both the soliton and breather masses. We also apply the RQP ansatz to the $φ^4$ theory, in both its $\\mathbb Z_2$-preserving and $\\mathbb{Z}_2$-broken phases, and determine the spectrum of particles and solitons. This enables us to determine the parameter regime for which multiple stable particles exist.",
+    "title": "The Quasiparticle Ansatz for Relativistic Continuous Matrix Product States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.3947297930717468
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.39341574907302856
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.3759613037109375
+      }
+    ]
+  },
+  "2610.13936v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Olumakinde Ogunnaike"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.13936v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "While dealing with many-body systems, this paper's primary focus is on foundational quantum mechanics and modifications to the Born rule, rather than specific condensed matter phenomena or materials.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Foundations of quantum mechanics",
+      "Warped Born rule",
+      "Maxwell's demon"
+    ],
+    "summary": "Quantum mechanics seems to be an incredibly delicate theory. Slight alterations to nearly any part of its structure can lead to huge qualitative differences and wildly unphysical predictions. Here, we explore the many-body consequences of replacing the Born rule $p(m)\\propto\\|P_m|ψ\\rangle|^2$ by a warped rule $p_b(m)\\propto\\|P_m|ψ\\rangle\\|^{2b}$. Specifically, in systems with conserved particle number, evolution punctuated by repeated local particle observations acquires a probabilistic bias over measurement histories with an effect controlled by the sign of $b-1$. For $b>1$, this bias generically drives the gas to collect into nearly frozen configurations. Similar to the action of Maxwell's demon, the simple act of observation seems to extract entropy from a closed system. For $b<1$, the bias is reversed, generically scouring out long-wavelength fluctuations to produce a hyperuniform gas. We study this effect in a one-dimensional quantum gas, where these two phases are derived analytically for a particular measurement scheme and corroborated numerically for more general procedures with discrete-time projective-measurement circuit models using matrix product state simulations. We additionally discuss how this bias manifests in a common technique that often employs this warped rule, the ``replica trick,'' implying qualitative differences between finite-replica and replica-limit calculations.",
+    "title": "A Warped Born Rule Turns an Observer into a Maxwell's Demon",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.34462183713912964
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.33963143825531006
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.33757704496383667
+      }
+    ]
+  },
+  "2610.13946v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chan Bin Bark"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanbyul Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Yoonil Koo"
+      },
+      {
+        "affiliation": [],
+        "name": "SeungBeom Hong"
+      },
+      {
+        "affiliation": [],
+        "name": "Seik Pak"
+      },
+      {
+        "affiliation": [],
+        "name": "Kwang Jun Ahn"
+      },
+      {
+        "affiliation": [],
+        "name": "Sangmo Cheon"
+      },
+      {
+        "affiliation": [],
+        "name": "Youngseok Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Moon Jip Park"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.13946v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-10-09",
+    "reasoning": "This paper uses quantum computing to investigate quasiparticle interactions and entanglement in the Fermi-Hubbard model, a cornerstone for understanding the strongly correlated systems the user is interested in.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum Computing",
+      "Fermi-Hubbard Model",
+      "Quasiparticles"
+    ],
+    "summary": "Scattering of quasiparticles provides direct access to the interactions that govern strongly correlated systems. In this work, we realize the quasiparticle scattering experiment of the Fermi-Hubbard model on a digital quantum processor by colliding a doublon and a holon in the half-filled chain of 21 sites encoded on 42 qubits of the ibm_boston processor. For the first time, we measure the transmission probability of quasiparticles of the Hubbard model on quantum hardware, which agrees with the Bethe-ansatz scattering matrix without free parameters. Beyond the scattering probabilities, the collision generates entanglement by superposing the transmitted and reflected components, which we infer from the particle-number fluctuation. In sharp contrast, a control collision between two doublons shows neither the interaction dependence nor the number fluctuation, as expected for indistinguishable particles. Our work demonstrates that the ability to create quasiparticles of a chosen flavor on demand and program their motion and interactions makes a digital quantum processor a new experimental toolset for probing the entanglement structure generated by quasiparticle scattering.",
+    "title": "An entangling Hubbard quasiparticle collider on a digital quantum processor",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5031929016113281
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.47209128737449646
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.446092426776886
       }
     ]
   }

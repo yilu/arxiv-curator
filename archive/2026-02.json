@@ -9833,6 +9833,55 @@
       }
     ]
   },
+  "2602.16351v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mathias Pelz"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan von Delft"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Gleis"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2602.16351v2",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-02-18",
+    "reasoning": "This paper directly addresses improvements in Dynamical Mean-Field Theory (DMFT) and its extensions for strongly correlated systems like the Hubbard model, a topic explicitly liked by the user.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Cluster DMFT",
+      "Hubbard Model",
+      "Self-Energy"
+    ],
+    "summary": "Two widely-used non-local extensions of dynamical mean-field theory (DMFT), namely cellular DMFT (CDMFT) and the dynamical cluster approximation (DCA), both yield self-energies marred by having some unphysical properties: CDMFT yields real-space self-energies that are not translationally invariant, and DCA yields momentum-space self-energies with discontinuities in their momentum dependence. It is often desirable to remove these flaws by post-processing cluster DMFT results, using strategies called periodization for CDMFT and interpolation for DCA---for brevity, we refer to both cases as \\textit{interpolation}. However, traditional interpolation approaches struggle to reliably capture intricate structures such as hole pockets in the hole-doped square-lattice Hubbard model. Further, these approaches interpolate frequency-dependent functions, which may lead to causality violations. Here, we propose \\textit{Liouvillian interpolation}, a novel, intuitive, and robust scheme for interpolating cluster DMFT results. Our key idea is to interpolate frequency-\\textit{independent} matrix elements of the single-particle irreducible part of the Liouvillian, obtained from a continued-fraction expansion of the cluster DMFT self-energy. We demonstrate that the ingredients of such an expansion possess a more local Fourier expansion than the functions involved in traditional interpolation schemes, and that Liouvillian interpolation conserves causality by construction. We illustrate our method for the one-dimensional Hubbard model using CDMFT, and for the two-dimensional Hubbard model using four-site CDMFT and four-patch DCA. For the latter, $\\mathcal{L}$-interpolation can (depending on doping) yield Fermi and Luttinger arcs which together seem to form a closed surface.",
+    "title": "Liouvillian interpolation of the self-energy of cluster dynamical mean-field theories",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5141977667808533
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.490903377532959
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.48728489875793457
+      }
+    ]
+  },
   "2602.16533v1": {
     "authors": [
       {
