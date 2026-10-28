@@ -13010,16 +13010,40 @@
         "name": "Yu-Cheng Lin"
       }
     ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.24994v2",
+    "matching_keywords": [],
     "published_date": "2026-10-18",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper explores quantum magnetism and disordered systems using advanced tensor-network renormalization group methods, aligning with the user's interest in theoretical condensed matter physics and computational techniques for many-body problems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "quantum magnetism",
+      "strong-disorder renormalization group",
+      "random-singlet phase"
+    ],
     "summary": "We revisit the spin-reduction transition in the random spin-$3/2$ antiferromagnetic Heisenberg chain using the tensor-network strong-disorder renormalization group (tSDRG). The predicted transition separates two random-singlet (RS) phases: one formed by effective spin-$1/2$ moments at weaker disorder and the other by full spin-$3/2$ moments at stronger disorder. Within the Damle--Huse classification, this transition corresponds to an emergent permutation-symmetric $P_4$ multicritical point on a $P_2$ critical line associated with the RS phases. We first derive the critical exponents governing the disorder-averaged bulk and end-to-end correlation functions in the $P_n$ universality classes within the Damle--Huse framework. Using these theoretical predictions, together with a diagnostic constructed from the mean and variance of the energy-gap distribution, we identify the $P_4$ transition point and the reentrant behavior of the RS phase.",
     "title": "Random spin-3/2 antiferromagnetic Heisenberg chains revisited",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6247047781944275
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5938196182250977
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5442190766334534
+      }
+    ]
   },
   "2610.25186v1": {
     "authors": [
@@ -15739,6 +15763,65 @@
       }
     ]
   },
+  "2610.30321v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ao Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Johnnie Gray"
+      },
+      {
+        "affiliation": [],
+        "name": "Si-Jing Du"
+      },
+      {
+        "affiliation": [],
+        "name": "Garnet Kin-Lic Chan"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.30321v2",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model",
+      "tensor network"
+    ],
+    "published_date": "2026-10-21",
+    "reasoning": "This paper directly addresses the Hubbard model, d-wave superconductivity, and competing stripe phases in cuprates, which are core interests of the user related to high-Tc superconductivity and correlated electron systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Hubbard model",
+      "stripe phases",
+      "variational methods"
+    ],
+    "summary": "The two-dimensional Hubbard model was originally proposed as the minimal model of uniform $d$-wave superconductivity in the cuprate high-temperature superconductors, but recent calculations with relevant parameters in a realistic doping regime have often found other ground states. Further, uncertainty remains over such results due to the intrinsic bias of different computational methods. Here we address this uncertainty through state-of-the-art neural tensor network and neural backflow state simulations, enabled by large-scale GPU computation, that together reach an unprecedented variational accuracy on lattices with up to 1024 sites. At $1/8$ doping in the pure Hubbard model, as well as with next-nearest-neighbor hopping relevant to the hole-doped cuprates, we reveal a near degeneracy among a low-energy uniform $d$-wave state, superconducting stripes, and non-superconducting stripe states on the milli-$t$ energy scale. Our work rebalances the narrative that the Hubbard model supports a single dominant order in relevant parameter regimes towards a picture of extreme competition between stripes and superconductivity.",
+    "title": "Extreme competition between stripes and superconductivity in the hole-doped Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.7031347751617432
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6373542547225952
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.6105713844299316
+      }
+    ]
+  },
   "2610.30371v1": {
     "authors": [
       {
@@ -17355,14 +17438,40 @@
         "name": "Ayan Roy Chaudhuri"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.35436v1",
+    "matching_keywords": [
+      "neural network"
+    ],
     "published_date": "2026-10-26",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "Although it mentions defect engineering and vacancies, the paper's primary focus on memristors and neuromorphic computing aligns poorly with the user's interests in fundamental strongly correlated systems and superconductivity.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "memristors",
+      "defect engineering",
+      "halide perovskites"
+    ],
     "summary": "Defect engineering of memristive materials offers a powerful strategy for regulating ionic transport and analog resistive switching required for neuromorphic computing. Here, we report a wet chemical synthesis route for chloride-vacancy (VCl) engineering in lead-free all-inorganic KCuCl3-x thin films and establish a direct correlation between defect concentration, electronic structure, transport dynamics, and neuromorphic performance. Controlled precursor-ratio variation systematically tunes the VCl concentration in KCuCl3-x thin films, driving preferential vacancy formation at the terminal chloride sites, band-gap narrowing, and enhanced electronic disorder. W/KCuCl3-x/FTO memristors exhibit stable bipolar VCM-type resistive switching, with increasing VCl concentration promoting forming-free operation. An optimal VCl concentration (~ 1.3*10^21 cm^-3) provides a balance between ionic mobility and defect controllability, resulting in highly linear potentiation/depression characteristics and superior pulse endurance (>104 cycles). When the experimentally measured conductance characteristics of the optimized memristor are implemented as synaptic weights in artificial neural network simulations, recognition accuracies of 98.96% and 91.82% are achieved on the MNIST and Fashion-MNIST datasets, respectively. These findings establish precursor ratio-controlled VCl engineering as an effective strategy for simultaneously optimizing ionic transport, analog switching, and neuromorphic learning in lead-free halide perovskite memristors, providing a general materials design principle for energy-efficient neuromorphic electronics.",
     "title": "Precursor Ratio-Controlled Chloride Vacancies in Lead-Free KCuCl3-x Memristors for Forming-Free Gradual Resistive Switching and Neuromorphic Learning",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:HoB7MX3m0LUC",
+        "score": 0.3685649633407593
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.34549859166145325
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pqnbT2bcN3wC",
+        "score": 0.33289849758148193
+      }
+    ]
   },
   "2610.35814v1": {
     "authors": [
@@ -17462,6 +17571,641 @@
       {
         "liked_paper_id": "2506.13431v1",
         "score": 0.4764716625213623
+      }
+    ]
+  },
+  "2610.35946v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Quan Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhilong Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Lei Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Baojing Feng"
+      },
+      {
+        "affiliation": [],
+        "name": "Changhui Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jie Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jingya Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Weisen Zheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Matic JovicevicKlug"
+      },
+      {
+        "affiliation": [],
+        "name": "Ziyuan Rao"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinjin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Dierk Raabe"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoqin Zeng"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.35946v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-23",
+    "reasoning": "This paper focuses on machine learning for sustainable alloy design, which does not align with the user's focus on fundamental condensed matter physics, strongly correlated systems, and superconductivity.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "materials design",
+      "machine learning",
+      "sustainable alloys"
+    ],
+    "summary": "Designing sustainable alloys must reconcile high performance with real-world constraints, including feedstock scarcity and variability, processing and energy requirements, regulatory thresholds, and economic limitations. Addressing these constraints reaches far beyond today's conventional performance-focused frameworks. It needs to consider not only complex property-processing-performance trade-offs but also sustainable production pathways. Here, we propose a physics-informed ensemble (PIE) learning framework that integrates fundamental structure-property relationships with processing routes and sustainability criteria for mechanism-based alloy design. It predicts properties from composition-microstructure relationships and infers processing routes under sustainability constraints, establishing an interdisciplinary approach to identifying sustainable alloy solutions. We validate the approach for Mg alloys, a lightweight yet energy-intensive metallic material class, considering performance, cost, and carbon emissions. Trained on a benchmark dataset, the PIE model systematically explores plausible alloy compositions and microstructures to construct a digital library of millions of candidate alloys. From this space, we identify two sustainable Mg alloy solutions that overcome the conventional performance-cost-emission trade-off: a rare-earth-containing alloy increases yield and tensile strength by 72.8 percent and 61.1 percent, respectively, over alloys from the same family at comparable cost and emissions; and a rare-earth-free alloy reduces cost and carbon emissions by 40.4 percent and 88.9 percent, respectively, relative to its primary-feedstock counterpart, without compromising mechanical performance. This work introduces a general, physics-informed, and quantifiable framework for designing sustainable alloys under real-world constraints.",
+    "title": "Machine learning enabled design of sustainable alloys considering real world constraints",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.42280110716819763
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.32457366585731506
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.28788626194000244
+      }
+    ]
+  },
+  "2610.36047v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Federico Petrovich"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Staros"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel N. Blaschke"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian-Xin Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Cerezo"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.36047v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-10-26",
+    "reasoning": "This paper directly addresses symmetry-resolved fermionic correlations and many-body Hamiltonians in iron-oxide models, aligning well with interests in strongly correlated oxides and quantum properties.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Hubbard model",
+      "Iron oxides",
+      "Quantum degeneracy"
+    ],
+    "summary": "Symmetries of quantum systems provide a natural way to organize the eigenspaces of many-body Hamiltonians. When degeneracies exist, however, they play a more subtle role as different sets of symmetry operators can resolve the same energy subspace into states with very different correlation properties. We study this interplay using a sequence of FeO and Fe$_2$O$_2$ models. For a Hubbard model of FeO, the ground space is 16-fold degenerate. Resolving it by local magnetizations gives a basis of Slater determinants, while total-spin quantum numbers select entangled and non-Gaussian states from the same ground manifold. Adding density-density Hund interactions breaks the independent spin rotations and reduces the ground space to a spin-reversal pair with maximal magnetization. These states are extremely close to Slater determinants in their natural occupations, yet have finite two-body cumulants and conserved-operator algebras whose orbit dimensions differ substantially from the Slater values. Fe$_2$O$_2$ provides a larger example in which spatial mode entanglement can be substantial while fermionic non-Gaussianity remains weak, with the conserved-operator structure again distinguishing the state from the corresponding Slater transformation class. Together, these examples show that symmetry resolution, mode entanglement, reduced-density-matrix correlations, and conserved-operator structure provide complementary information about interacting and degenerate electronic ground states.",
+    "title": "Symmetry-resolved fermionic correlations in iron-oxide ground spaces",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6009401082992554
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5585781335830688
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.539690375328064
+      }
+    ]
+  },
+  "2610.36193v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Junkil Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Aron Walsh"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.36193v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-26",
+    "reasoning": "This paper focuses on machine learning for predicting materials synthesizability, which is distinct from the user's interest in fundamental electronic properties, strong correlation, and topological physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Materials Discovery",
+      "Machine Learning",
+      "Synthesizability"
+    ],
+    "summary": "High-throughput computational and generative approaches are proposing candidate materials far faster than they can be synthesized, making it increasingly important to identify which hypothetical materials are likely to be experimentally realizable. Positive-unlabeled (PU) learning has emerged as a representative framework for synthesizability prediction, yet existing approaches treat experimentally reported materials as a static collection, overlooking the historical trajectory of materials discovery and the diverse practical factors that have driven its progress. Here we introduce ChronoSyn, a chronology-aware machine learning model that jointly learns synthesizability and the relative reporting order of known materials through a shared composition representation. Incorporating discovery chronology provides additional supervision beyond conventional synthesizability labels, improving prediction performance and enabling ChronoSyn to identify experimentally realizable compositions more effectively than baseline models. Applied to approximately 50 million hypothetical compositions, ChronoSyn identifies chemically coherent high-scoring families that include experimentally reported compositions unseen during training. These results highlight the chronology of materials discovery as an informative learning signal and suggest that the path along which known materials were discovered can point the way to those that will be discovered in the future.",
+    "title": "Learning the Chronology of Materials Discovery for Synthesizability Prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.40163829922676086
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.37117114663124084
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.30968108773231506
+      }
+    ]
+  },
+  "2610.36567v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ahmed Khalifa"
+      },
+      {
+        "affiliation": [],
+        "name": "Shubhayu Chatterjee"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.36567v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "This paper investigates anyons in topologically ordered phases using neural variational frameworks, which is highly relevant to the user's interest in topological materials and advanced computational methods for quantum systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Anyonic statistics",
+      "Topological phases",
+      "Neural variational methods"
+    ],
+    "summary": "Mobile anyons in topologically ordered phases provide a setting to investigate how fractional exchange statistics shapes collective behavior at finite density. We introduce AnyFormer: a neural variational framework for continuum anyons on a torus that explicitly incorporates statistical interactions and global winding constraints. We construct a smooth orbital frame that enforces the matrix-valued torus boundary conditions, and supplement it with an analytic pair factor that supplies the regular collision behavior. The orbital geometry and many-body amplitudes are optimized in parallel by variational Monte Carlo. We apply AnyFormer to semions without an external field or interaction potential, isolating unique correlations generated solely by statistics. Our framework closely matches exact two-semion energies and yields lower variational energies than finite-cutoff exact diagonalization for $N = 4$ and $6$ semions. Scaling up to $N = 16$ semions, well beyond the limits of continuum diagonalization, our calculations reveal states with pronounced correlation holes, suppressed long-wavelength density fluctuations, and a reversal of pair circulation at a distance set by the mean particle spacing. For $N = 12$ and $16$ semions, the circulation develops damped spatial oscillations. AnyFormer thus provides a scalable variational neural-net framework for microscopic studies of correlations, chiral motion, and collective phases of bulk anyonic matter.",
+    "title": "Continuum neural wavefunctions for anyons on a torus",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.49251633882522583
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.47005540132522583
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.46701186895370483
+      }
+    ]
+  },
+  "2610.36619v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Junting Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew P. Horsfield"
+      },
+      {
+        "affiliation": [],
+        "name": "Mark R. Wenman"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.36619v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "While it employs quantum mechanics and machine learning for defects, the focus on dislocation loops in zirconium alloys for nuclear applications diverges significantly from the user's interest in electronic correlations in superconductors and topological materials.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Dislocation defects",
+      "Zirconium alloys",
+      "Machine learning force fields"
+    ],
+    "summary": "Zr cladding alloys in nuclear reactors are exposed to high neutron fluxes, making irradiation-induced defects and solute segregation central to understanding their in-service behaviour. Dislocation cores involve short-range chemistry and long-range elastic fields, which are difficult to describe simultaneously using conventional atomistic methods. Using a hybrid quantum mechanics/machine learning (QM/ML) framework, this part of work examines prismatic <a> loops in hcp α-Zr. All three loop variants are considered, including faulted and perfect, interstitial- and vacancy-type, and first- and second-order prismatic configurations. Nine possible dislocation line segments are characterised in terms of core geometry, solute binding, glide barriers and faulted-to-perfect transition pathways using QM/ML and newly implemented QM/ML-NEB calculations. Shockley and half-Shockley partials, together with basal and prismatic fault ribbons, are found to govern core stabilisation. Fe and H preferentially bind to faulted segments, whereas Sn and Nb favour perfect segments. Solutes can also drive partial motion, recombination and local unfaulting. These results establish a comprehensive picture of <a> loop microstructure, solute trapping and transition mechanisms in α-Zr.",
+    "title": "Comprehensive QM/ML Study of Dislocation Loop Line Segments in α-Zr Part I: <a> Loop Core Geometries, Solute Binding, and Transition Barriers",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.43383219838142395
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.39108824729919434
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3656582832336426
+      }
+    ]
+  },
+  "2610.36697v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Naomichi Sato"
+      },
+      {
+        "affiliation": [],
+        "name": "Makoto Naka"
+      },
+      {
+        "affiliation": [],
+        "name": "Joji Nasu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.36697v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "This paper investigates the ground-state properties of a lattice-coupled strongly correlated model, including magnetic moments and lattice distortions, aligning with interests in strongly correlated physics and complex material behavior.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Strongly Correlated Materials",
+      "Spin-Lattice Coupling",
+      "Quantum Monte Carlo"
+    ],
+    "summary": "Solid oxygen is an $S=1$ molecular magnet with strong   coupling between spin and lattice degrees of freedom.   Recent studies suggest that magnetic moments   coexist with tetramer distortions under pressure.   We derive an effective spin Hamiltonian from a two-orbital   Peierls--Hubbard model with spin-orbit coupling.   The resulting model contains competing easy-plane   single-ion and easy-axis exchange anisotropies.   We analyze this model on a square lattice using quantum Monte Carlo simulations   and evaluate the magnetic contribution to the lattice stiffness   for several lattice distortion patterns including the tetramer pattern.   We find that the tetramer pattern is the most favorable   among the considered distortion patterns throughout the parameter range studied.   Moreover, competition between the two anisotropies   enhances the tendency toward lattice distortion   and strengthens the preference for tetramerization over the other patterns.",
+    "title": "Ground-State Properties of a Lattice-Coupled Strongly Correlated Model for Solid Oxygen under Pressure",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6259604692459106
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5881383419036865
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5778576731681824
+      }
+    ]
+  },
+  "2610.36779v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Heting Liao"
+      },
+      {
+        "affiliation": [],
+        "name": "Masato Wakeda"
+      },
+      {
+        "affiliation": [],
+        "name": "Takahito Ohmura"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.36779v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "This paper focuses on machine learning models for atomistic energy and charge density prediction, which differs from the user's primary interests in strongly correlated systems, topological materials, and specific experimental probes.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Graph Neural Networks",
+      "Machine Learning",
+      "Charge Density Prediction"
+    ],
+    "summary": "Ground-state electron density contains sufficient information to determine ground-state energy, while providing spatial electronic information. This study developed a charge-density-informed graph neural network (hereafter CDGNN) that jointly learns energy and valence electron density from equivariant atomic graphs. This approach incorporates density-supervised real-space probe representations into the global energy regressor, allowing density-related spatial information to contribute to energy prediction. On the QM9 dataset, CDGNN reduced the energy prediction errors relative to an equivariant GNN baseline for interpolation and extrapolation to larger molecules. For small H-containing Fe and Fe-C datasets, CDGNN performed similarly to the baseline, indicating the dataset-dependent benefits of density supervision. CDGNN also accurately predicted the charge density distributions for molecular and Fe-based systems. The attention analysis showed higher weights for probe representations near the H atoms in Fe-based structures. These findings highlight the potential of integrating charge-density information for energy prediction and its task-dependent benefits.",
+    "title": "Charge density-supervised real-space representations for atomistic energy prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5064374804496765
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4597814977169037
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4569290280342102
+      }
+    ]
+  },
+  "2610.37152v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Touko Lehenkari"
+      },
+      {
+        "affiliation": [],
+        "name": "Hannu-Pekka Komsa"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.37152v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "Though it uses multi-scale computational studies including DFT and KMC, its primary focus on memristive switching in MoS2 devices is less aligned with fundamental studies of strongly correlated or topological matter.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Memristive devices",
+      "2D materials",
+      "Kinetic Monte Carlo"
+    ],
+    "summary": "Vertically-aligned MoS$_2$ films paired with a Cu top electrode have been used as electrochemical metallization cell memristor devices. The memristive switching has been attributed to the formation of conductive filaments, yet their exact structure has remained elusive. Here we carry out a multi-scale computational study of Cu intercalation, clustering, and field-driven dynamics to eventually model the filament formation under operating conditions. We use density-functional theory results to fine-tune a machine learning force field, and the most important physical phenomena are further distilled into multi-particle kinetic Monte Carlo simulations. By exhaustive enumeration of Cu intercalated structures, we find the most stable structure at MoS$_2$Cu$_{0.11}$ composition, with Cu atoms forming a dice lattice between the MoS$_2$ layers. These structures are shown to exhibit metallic character and can thus form conductive filaments under memristor operation. The simulated switching speed and threshold voltage agree well with the available experimental data. Our results give fundamental insights on the device operation mechanism and guidelines for maximizing switching speed and endurance.",
+    "title": "Cu intercalation and field-driven filament formation in vertically aligned MoS$_2$ memristors",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.4732391834259033
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.40342044830322266
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.3945370316505432
+      }
+    ]
+  },
+  "2610.37222v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wen-Chuang Shang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenyu Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Mikito Tsujimoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomonori Tanaka"
+      },
+      {
+        "affiliation": [],
+        "name": "Yoshihiro Gohda"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.37222v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "This paper presents a machine learning workflow for generating magnetic crystal structures, which is an applied materials design approach rather than a study of fundamental electronic or correlated physics.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Generative AI",
+      "Magnetic Materials",
+      "Materials Design"
+    ],
+    "summary": "We introduce GMMag, a workflow for generating crystal structures together with their site-resolved magnetic moments, built on a conditional variational autoencoder with a graph neural network encoder and a transformer decoder. Gaussian-mixture sampling redirects generation towards selected chemical and magnetic targets without retraining. We systematically investigate how encoder and decoder design, the representation of magnetic-moment magnitudes and relative signs, and sampling choices affect reconstruction, generation quality and diversity. Because a higher screening pass rate does not necessarily yield more qualifying candidates with distinct chemical formulas absent from the reference dataset, we model how repeated generation of the same chemical formulas limits their accumulation and test the model in two separate ten-million-draw runs. As an application, the workflow identifies Nd-containing candidates with chemical formulas absent from the reference dataset, negative formation energies and high estimated saturation magnetization.",
+    "title": "Magnetic crystal generation with site-resolved magnetic moments via Gaussian-mixture retargeting and finite-budget yield prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.42950987815856934
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4228372573852539
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.40061965584754944
+      }
+    ]
+  },
+  "2610.37505v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Boyuan Shi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.37505v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "The paper presents new diagrammatic Monte Carlo methods for interacting lattice fermions and the Hubbard model, directly addressing computational techniques for strongly correlated electron systems, similar to the user's interest in DMFT.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Diagrammatic methods",
+      "Lattice fermions",
+      "Hubbard models"
+    ],
+    "summary": "This thesis develops diagrammatic methods for thermodynamic and subsystem quantities of interacting lattice fermions, providing reference calculations for quantum simulators and many-body approximations. I formulate an inverse-flavour expansion about a self-consistent Hartree saddle, enumerate non-Gaussian diagrams, and use a discrete Lehmann representation to integrate selected internal vertices analytically. Density results cover 31 state points of the six-flavour Hubbard model on a $70\\times70$ lattice at $T/t=0.15$.   I generalize combinatorial summation to flavour-dependent propagators and expansion shifts. CoS++ combines partial contractions to obtain connected sums for interaction subsets. A determinant-polynomial sieve evaluates the same sums through local coefficient filters; at ninth order it is 24--25 times faster than the specified CoS baselines in three-flavour dense-random-matrix benchmarks. Thermodynamic applications include a 2048-site honeycomb lattice and a three-flavour square lattice with 1024 sites.   For the second Renyi entropy, I derive a fermionic replica path integral and a stable evaluation of its two-time Green functions. The connected-determinant calculation reaches tenth order on a $3\\times3$ cluster and ninth order on larger lattices. On $50\\times50$ sites at $(U/t,μ/t,βt)=(3,1,8)$, the ninth-order continuation at shift $α=1.3$ gives $S_2/N_s=0.06695$ with propagated Monte Carlo uncertainty $3.0\\times10^{-5}$. Comparing two expansion shifts at their respective retained orders gives an endpoint difference of $2.6\\times10^{-4}$.",
+    "title": "New Developments in Diagrammatic Monte Carlo for Interacting Lattice Fermions: Efficient Algorithms and Applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6287020444869995
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6154173612594604
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6060407161712646
+      }
+    ]
+  },
+  "2610.37530v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexander Flasby"
+      },
+      {
+        "affiliation": [],
+        "name": "Anwesha Panda"
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan Savoia"
+      },
+      {
+        "affiliation": [],
+        "name": "Laura Bégon-Lours"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.app-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.37530v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "The paper focuses on neuromorphic computing hardware and ferroelectric material integration with CMOS, which is largely outside the user's interests in fundamental condensed matter physics and strongly correlated materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "neuromorphic computing",
+      "ferroelectrics",
+      "CMOS integration"
+    ],
+    "summary": "Functionalising the back-end-of-line (BEOL) of CMOS with emerging materials is a key route to neural network accelerators and neuromorphic systems. In this work, we demonstrate for the first time the integration of 2-terminal ferroelectric synaptic weights in the BEOL of as-delivered commercial 180 nm CMOS dies. A novel material stack is proposed, in which a WOx/[HfO2-ZrO2] bilayer is sandwiched between TiN and Mo electrodes. For devices annealed at 450 °C, programming below 1.8 V is achieved with a cycle-to-cycle variation below 3 %. Synaptic weights annealed at 500 °C exhibit more gradual weight updates, while the tested underlying NMOS transistors remain functional after the complete integration process. The trade-off between thermal budget and on-device training performance is illustrated using hardware-aware neural network simulations.",
+    "title": "Back-End-Of-Line Integration of 2-Terminal Ferroelectric Hafnia Synaptic Weights on Commercial CMOS Process",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:BqipwSGYUEgC",
+        "score": 0.4271013140678406
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:MXK_kJrjxJIC",
+        "score": 0.4243972897529602
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.4198245406150818
+      }
+    ]
+  },
+  "2610.37575v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yang Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Ya-Hui Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xue-Yang Song"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.37575v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "hubbard model"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "This paper investigates topological criticality and exotic charge fluctuations in a strongly correlated model, directly aligning with interests in topological materials and complex electronic phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Topological Phases",
+      "Strongly Correlated Systems",
+      "Quantum Criticality"
+    ],
+    "summary": "A transition between an integer quantum Hall insulator and a chiral spin liquid can become critical without closing the single-electron gap, raising the question of which composite excitations govern the change in topological order. We investigate this question in the \\(\\mathrm{SU}(3)\\) triangular-lattice Hofstadter--Hubbard model at one particle per site and magnetic flux \\(π/3\\) per triangle. Using infinite density matrix renormalization group calculations, we identify a weak-coupling integer quantum Hall phase and an interaction-driven \\(\\mathrm{SU}(3)_1\\) chiral spin liquid. Near the transition, both the neutral and charge-\\(3e\\) correlation lengths increase substantially, whereas the single-electron correlation length remains short, providing evidence for a Chern--Simons--Higgs critical theory, where a gauge-invariant monopole carries the quantum numbers of a fermionic \\(\\mathrm{SU}(3)\\)-singlet trion. We discuss the implications for doping the system and recent experiments on doping \\(ν=-2/3\\) fractional quantum anomalous Hall in tMoTe\\(_2\\).",
+    "title": "Topological Criticality with Charge-\\(3e\\) Fluctuations in the \\(\\mathrm{SU}(3)\\) Triangular-Lattice Hofstadter--Hubbard Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6843222379684448
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6111540794372559
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6105265021324158
       }
     ]
   }
