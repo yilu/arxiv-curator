@@ -18718,14 +18718,41 @@
         "name": "Zhiqi Liu"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall",
+      "physics.app-ph"
+    ],
     "discovery_sources": [],
+    "doi": "10.1002/adfm.79184",
     "id": "2610.38491v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
     "published_date": "2026-10-28",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This review discusses various magnetic orders and their symmetry constraints in 2D materials, aligning with interests in strongly correlated systems, topological properties, and competing phases.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "2D Magnetism",
+      "Altermagnetism",
+      "Spin-Splitting"
+    ],
     "summary": "Atomically thin magnets are governed by composition, thickness, stacking, strain, defects, substrates, ferroic order, and interfaces. This Review organizes two-dimensional (2D) magnetism using net magnetization and momentum-space spin splitting or spin-polarization patterns as primary coordinates, supplemented by sublattice structure and the symmetry relations between opposite-spin sublattices. Ferromagnets generally carry a net moment; ferrimagnets can be fully compensated. Conventional antiferromagnets may retain spin-degenerate bands, while altermagnets permit nonrelativistic alternating spin splitting under dimension-specific symmetry constraints. M1-M4 reporting classes introduced here distinguish layer-resolved atomically thin forms, non-layer-resolved thin flakes or films, bulk benchmarks, and theoretical candidates or design routes; the evidence category and ordering-temperature provenance are reported independently. Current experimental support for altermagnetism comes mainly from M2 thin-film and M3 bulk benchmarks, leaving a fully verified atomically thin M1 altermagnetic phase as an open experimental goal. Most proposed monolayer and few-layer systems therefore fall within M4, and contested cases clarify the measurements needed for phase assignment. Device readiness is compared qualitatively using operating temperature, readout, switching, domain control, stability, scalability, interface sensitivity, and integration difficulty. Reliable phase assignment and device assessment require complementary measurements from the same material form under matched conditions, ideally on the same specimen or in situ.",
     "title": "Two-Dimensional Magnetic Materials from Ferromagnetism to Altermagnetism: Fabrication, Symmetry, Evidence, and Device Readiness",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.6330159902572632
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5705047249794006
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5261809825897217
+      }
+    ]
   },
   "2610.38780v1": {
     "authors": [
@@ -18738,14 +18765,39 @@
         "name": "Carlo Barbieri"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.38780v1",
+    "matching_keywords": [
+      "green's function"
+    ],
     "published_date": "2026-10-28",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces a new, efficient computational method for Green's functions, which is directly relevant to the user's explicit interest in solvers for dynamical mean-field theory in many-body physics.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Green's Function",
+      "Eigenvector Continuation",
+      "Many-Body Physics"
+    ],
     "summary": "Emulating the Green's function using reduced-order equations is challenging because of the amount of information it contains. This information includes the one-particle spectroscopy over the entire energy spectrum, the one-body density matrix, and the ground-state energy. Nevertheless, the computational speedup offered by emulators is essential for applications requiring repeated model evaluations, which are ubiquitous in many-body physics. These include parameter calibration, uncertainty quantification, phase-diagram mapping, and geometry optimization. In this Letter, we introduce a systematically improvable emulator based on eigenvector continuation and moment-matching. The resulting approximation, which we refer to as an ``eigenvector-continued Green's function,'' can be obtained by solving linear equations, enabling an efficient separation of the computational workload into offline and online stages.",
     "title": "An Eigenvector-Continued Green's Function Method",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.6045730710029602
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.508627712726593
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.4749384820461273
+      }
+    ]
   },
   "2610.38876v1": {
     "authors": [
@@ -18966,14 +19018,41 @@
         "name": "William Witczak-Krempa"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.39059v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
     "published_date": "2026-10-28",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates quantum magic in many-body states, including the Kitaev quantum spin liquid, and proposes experimental witnessing via neutron scattering, aligning with interests in quantum materials and advanced characterization.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum Magic",
+      "Kitaev Model",
+      "Quantum Materials"
+    ],
     "summary": "Magic, a quantum resource distinct from entanglement, measures departure from states stabilized by products of Pauli operators. Such stabilizer states can be maximally entangled yet admit efficient classical description: quantum advantage requires magic. We develop a powerful framework to evaluate the degree of magic in generic many-body states. We use it to study the fate of magic under thermal and dynamical evolution. In the transverse field Ising model, we find a thermal sudden death of magic that saturates with system size, and occurs after the death of entanglement. We reach similar conclusions in generic spin chains, and in the Kitaev quantum spin liquid on the honeycomb lattice, where the threshold shows an intricate dependence on subregion shape. We then study how magic equilibrates after a quantum quench. In quenches of generic spin chains, the magic of a subregion typically dies before entanglement, contrary to thermal trajectories. An explanation is given in terms of the geometry of non-magical states. As a third type of trajectory, we examine the fate of magic with separation with an appropriate notion of non-local magic and establish a sudden death. Finally, we show how to experimentally witness a volume law of frame-robust magic in quantum materials by using neutron scattering.",
     "title": "Fate of Quantum Magic",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5422512292861938
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5064488649368286
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.48302513360977173
+      }
+    ]
   },
   "2610.39513v1": {
     "authors": [
@@ -19258,14 +19337,40 @@
         "name": "Yuta Tsuboi"
       }
     ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.40126v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper focuses on machine learning interatomic potentials and uncertainty quantification for atomistic simulations, which is less directly related to the user's primary interests in strongly correlated electron systems and Green's function methods.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Machine Learning Potentials",
+      "Uncertainty Quantification",
+      "Atomistic Simulation"
+    ],
     "summary": "Machine-learning interatomic potentials (MLIPs) commonly use uncertainty estimates to flag out-of-distribution (OOD) configurations and select structures for active learning. A key question is whether the resulting structure-level uncertainty scores remain comparable across different system sizes. A common practice is to aggregate per-atom uncertainties by their mean or maximum and compare the resulting score against a fixed threshold, implicitly assuming such comparability. We test this assumption across several in-distribution (ID)/OOD pairs by characterizing both aggregations as a function of atom count. The two aggregations exhibit distinct size dependencies. Mean aggregation remains size-independent for homogeneous systems but loses sensitivity to defects in large cells. In contrast, maximum aggregation grows with system size for ID systems while remaining approximately flat for defect-containing systems, narrowing the ID-OOD gap in a manner consistent with extreme-value statistics. Although highly uncertain atoms in large structures may indicate novel local environments, retraining on these structures yields little improvement, in contrast to retraining on OOD structures constructed to lie outside the training distribution. Our results reveal a practical limitation of size-unaware uncertainty criteria and motivate size-aware calibration for more reliable OOD detection in large-scale atomistic simulations.",
     "title": "Does System Size Matter in Uncertainty Quantification for Machine Learning Interatomic Potentials?",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.41541996598243713
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.39851611852645874
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.30544301867485046
+      }
+    ]
   },
   "2610.40297v1": {
     "authors": [
@@ -19286,14 +19391,43 @@
         "name": "Karyn Le Hur"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.supr-con"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.40297v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "quantum spin liquid"
+    ],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper's exploration of topological quantum spin liquids, Majorana fermions, and p-wave superconductivity strongly aligns with previous interests in topological materials, superconductivity, and strongly correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Spin Liquid",
+      "Majorana Fermions",
+      "Topological Superconductivity"
+    ],
     "summary": "In this article, we address the possibility of topological quantum spin liquids with only short-range (spin) correlations in the whole phase diagram in a ladder system, through an exactly solvable model which represents a generalization of the two-dimensional Kitaev honeycomb spin model to a ribbon geometry. This system gives rise to $\\mathbb{Z}_2$ gauge fields emerging in a static way in the ground state through Majorana fermions which then produce either $0$ or $π$ flux. Through a quantum field theory perspective, mathematical and Density Matrix Renormalization Group results, we present our progress on the geometrical, topological and physical classification of this model through observables navigating on the whole phase diagram presenting three spin-liquid phases with a spin gap and a metallic phase in the sense of Majorana fermions. We propose a bulk-edge correspondence revealing the presence of protected zero-energy Majorana fermions at the edge in the phases with a gap and revealing also the presence of itinerant Majorana fermions in the bulk in the topological liquid phase. The proposed approach allows us to distinguish between properties of the brickwall ladder giving rise to a special line and those of the square ladder allowing for the gapless Majorana liquid phase. This model gives some hope on finding solutions for topological quantum spin models, e.g. with $π$ flux, on a square lattice geometry. This approach also allows for a correspondence onto models of topological superconductivity.",
     "title": "Topological Quantum Spin Liquids in a Ladder with Majorana fermions and p-wave Superconductivity",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.7999558448791504
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6423438787460327
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.5609015226364136
+      }
+    ]
   },
   "2610.40410v1": {
     "authors": [
