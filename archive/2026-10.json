@@ -17775,6 +17775,123 @@
       }
     ]
   },
+  "2610.36058v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Songlei Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenguang Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhi-Cheng Yang"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.36058v1",
+    "published_date": "2026-10-26",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Conditional mutual information (CMI) characterizes dependence between two regions conditioned on an intervening buffer. Its characteristic decay length, the Markov length, has recently been identified as a diverging length scale at mixed-state phase transitions. Here, we investigate CMI dynamics in one-dimensional classical stochastic models and propose a universal scaling form for systems whose Markov length diverges with time. We derive this form in the inactive phase of parity-conserving directed percolation, where domain-wall coarsening generates a growing length scale and a self-similar probability distribution. We introduce a Hankel-based truncation scheme that enables matrix-product-state simulations at long times and over large spatial regions. Using this method, we verify the proposed scaling both in the inactive phase and at the nonequilibrium critical point, where the dynamical critical exponent governs Markov-length growth. More broadly, the same scaling form captures cases in which collective inference sets the diverging Markov length. Despite these distinct mechanisms, the CMI between fixed microscopic regions exhibits a common scaling dimension of two. Finally, we extend this framework to temporal CMI, establishing an analogous relation between the strength of conditional dependence in time domain and its characteristic memory time.",
+    "title": "Universal Scaling of Conditional Mutual Information in Classical Stochastic Dynamics",
+    "vector_matches": []
+  },
+  "2610.36156v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sudip Chakrabarty"
+      },
+      {
+        "affiliation": [],
+        "name": "A. S. Majumdar"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.36156v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-10-26",
+    "reasoning": "This work directly addresses many-body entanglement quantification and applies it to interacting spin models, utilizing techniques like DMRG, which strongly aligns with previous interests in many-body physics and computational methods.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Entanglement",
+      "Randomized Measurement",
+      "Spin Models"
+    ],
+    "summary": "Can the entanglement of an arbitrary many-body state be quantified without reconstructing the state? We answer the question affirmatively by showing how the measure of logarithmic negativity can be estimated using a finite number of even partial transpose (PT) moments of a many-body state. Considering the squared PT spectrum as a probability measure, we solve exactly the task of a truncated Hausdorff moment problem with Gauss and Gauss-Radau quadrature. We obtain a hierarchy of lower bounds on the logarithmic negativity, which improves with increasing order of moments. Convergence to the exact value of the measure can be achieved for every state of finite dimension. We illustrate the bounds for ground states of three different interacting spin models, as well as for a thermal state. An error analysis demonstrates the efficacy of our scheme towards handling the limitation of finite statistics encountered in actual experiments with randomized measurements. Moreover, an example of density matrix renormalization group based numerical estimation is provided for handling system sizes beyond the scope of exact diagonalization.",
+    "title": "Many-body entanglement quantification in arbitrary states through a few partial-transpose moments",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.547724723815918
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5087254643440247
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5015163421630859
+      }
+    ]
+  },
+  "2610.36172v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yufeng Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xuhan Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Zixuan Ning"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiliang Yuan"
+      },
+      {
+        "affiliation": [],
+        "name": "Yikai Su"
+      },
+      {
+        "affiliation": [],
+        "name": "Kaizhi Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergei Turitsyn"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhipei Sun"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.36172v1",
+    "published_date": "2026-10-26",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Classical simulation is essential for developing and testing quantum circuits, but the exponential growth of Hilbert space challenges conventional digital processors. Here, we introduce a classical optical quantum simulation architecture that treats gates and batches of input states as independent tensor dimensions rather than separate simulation instances, while mapping eligible tensor network contractions onto the same processor. Using co-designed multidimensional encoding and readout across spatial and wavelength degrees of freedom, we experimentally realize high-order tensor-matrix multiplication in a single propagation and process all computational-basis inputs for each 4-qubit gate. Using a physics-based optical propagation model, we further numerically evaluate the architecture for the Deutsch algorithm and for the tensor network of all 128 target instances of a 7-qubit Grover algorithm. These results establish a unified framework for gate-state batch and tensor network simulation, providing a route to exploit optical concurrency across quantum simulation tasks.",
+    "title": "Quantum circuit simulation with high-order optical tensor processing",
+    "vector_matches": []
+  },
   "2610.36193v1": {
     "authors": [
       {
@@ -17817,6 +17934,51 @@
       {
         "liked_paper_id": "2506.11227v1",
         "score": 0.30968108773231506
+      }
+    ]
+  },
+  "2610.36257v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Geshuo Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jingwei Hu"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.36257v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-26",
+    "reasoning": "This paper develops tensor-train methods for open quantum systems, aligning with the user's interest in advanced computational techniques for many-body physics and quantum phenomena.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Tensor Train",
+      "Open Quantum Systems",
+      "Quantum Dynamics"
+    ],
+    "summary": "We develop a dynamical tensor-train method for the Wigner--Fokker--Planck equation arising in continuous-variable open quantum systems. The Wigner function is evolved directly in tensor-train form using a projector-splitting integrator, while the nonlocal Wigner pseudo-differential operator is treated through low-rank representations of the potential difference and matrix-free exponential actions. The resulting method avoids full tensor-product computations in high-dimensional phase space. Numerical experiments in one, two, and three spatial dimensions demonstrate the accuracy and scalability of the method, including simulations in a six-dimensional phase space.",
+    "title": "Dynamical Tensor Train Approximation for Wigner--Fokker--Planck Equation with Applications to Open Quantum Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5398736000061035
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.5089831352233887
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5013449192047119
       }
     ]
   },
@@ -17914,6 +18076,32 @@
       }
     ]
   },
+  "2610.36659v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pritam Das"
+      },
+      {
+        "affiliation": [],
+        "name": "Satadeep Bhattacharjee"
+      },
+      {
+        "affiliation": [],
+        "name": "Pil-Ryung Cha"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.36659v2",
+    "published_date": "2026-10-27",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Anion redox in Li-rich layered oxides places holes on oxygen next to an antiferromagnetic Mn(IV) d3 lattice, a strongly correlated open-shell problem for which projection-based wavefunction-in-DFT embedding offers a route to correlated and quantum solvers, but whose errors are known mainly for closed-shell molecules. We develop a spin-unrestricted projection-based embedding, exact at the DFT-in-DFT level to the microhartree scale for closed-shell, broken-symmetry and high-spin references with point charges, and apply DMRG-in-DFT to point-charge clusters of delithiated Li(2-x)MnO3, varying the environment functional (0-100% exact exchange), geometry, active region, active-space spin, virtual space, cluster size and magnetic reference. In every setting the lowest SCF state places the hole on an oxygen pair, with no O-O bond. How the hole is shared depends on the functional together with the geometry: hybrids give a full, uncoupled hole at the DFT+U geometry but a partial, weakly covalent hole at their own geometry, a change of up to 0.5 e on one oxygen. Where spin spreads across the active/environment boundary, the integer spin projection of the active space becomes a choice worth up to 0.26 e, and at most 0.09 e once the two Mn neighbors are included. An extended state search found missed lower states for two functionals, changing a pair-oxygen spin by up to 0.45 e. Across all 82 runs the embedded mean field gives the same hole (median DMRG change 0.02-0.04 e); correlation mainly adds O-O covalency. State control and geometry consistency, not the solver, dominate the uncertainty, and total energies are not converged at 30-40 orbitals. For quantum solvers, the embedded Hamiltonian must be spin-unrestricted: a shared-orbital form reverses the hole, while sample-based quantum diagonalization reproduces exact diagonalization, as accurately as, but not better than, classical selected CI.",
+    "title": "Where Does the Anion-Redox Hole Go? Reliability of Open-Shell Projection-Based Embedding for Li-Rich Cathodes, from DFT Environments to Quantum Solvers",
+    "vector_matches": []
+  },
   "2610.36697v1": {
     "authors": [
       {
@@ -17964,6 +18152,48 @@
       }
     ]
   },
+  "2610.36746v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tatsumi Aoyama"
+      },
+      {
+        "affiliation": [],
+        "name": "Kazuyoshi Yoshimi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuichi Motoyama"
+      },
+      {
+        "affiliation": [],
+        "name": "Akito Nakano"
+      },
+      {
+        "affiliation": [],
+        "name": "Hengyu Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Yusuke Konishi"
+      },
+      {
+        "affiliation": [],
+        "name": "Takeo Hoshi"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.36746v1",
+    "published_date": "2026-10-27",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Open Data Analysis Tool for Science and Engineering (ODAT-SE) is an open-source Python framework for inverse problems that are solved by repeated forward simulations. It succeeds 2DMAT, which was developed for surface-structure analysis with quantum-beam diffraction and has since been applied to other fields. In version 3, the search algorithms were separated from the application-specific solvers, which became independent packages, and the software was renamed; this paper describes the current version 4.0. The framework connects optimization and sampling algorithms to solvers through a common interface for parameter mapping, constraints, and objective evaluation, so that an existing simulation code can be used with any of the algorithms. Relative to the previously published 2DMAT, it provides two-level MPI parallelism, which distributes candidate evaluations over processes and each evaluation over a parallel solver, checkpoint and continuation facilities, random search, global optimizers from SciPy, tensor-train optimization, and a Bayesian workflow that estimates partition-function ratios, model evidence, effective noise levels, and marginal posterior distributions. We validate the Bayesian workflow against closed-form results for a linear regression, benchmark tensor-train optimization on continuous, binary, and mixed-integer problems, and verify the two-level parallelization by the same optimum for all process decompositions. Taking up the positron-diffraction example of the 2DMAT paper, the workflow identifies the correlated structural solutions and an effective noise scale close to the imposed perturbation, while exposing incomplete convergence of symmetry-related mode weights. Solver packages, templates, and a gallery of examples support the use of the framework as a general platform for inverse-problem analysis.",
+    "title": "ODAT-SE: A modular and parallel framework for simulation-based inverse problems",
+    "vector_matches": []
+  },
   "2610.36779v1": {
     "authors": [
       {
@@ -18012,6 +18242,24 @@
         "score": 0.4569290280342102
       }
     ]
+  },
+  "2610.37012v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Valentin Link"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.37012v1",
+    "published_date": "2026-10-27",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The time-evolving matrix product operator (TEMPO) method efficiently simulates non-Markovian open quantum system dynamics by contracting a two-dimensional tensor network representing the time-discretized Feynman-Vernon influence functional. The standard form of this network has an unfavorable scaling with the size of the system. We show that, within the usual second-order time-step error, the dimensions of all internal network bonds can be reduced to $(2m+1)(m+1)$, where $m$ is the number of independent coupling channels. This dimension does not depend on the number of distinct eigenvalues of the coupling operators. The system size only enters in the final boundary layer of the network, making large system sizes accessible to TEMPO methods. This structure was discovered by Claude Opus 5.5 during guided algorithm development.",
+    "title": "The TEMPO network can be made independent of the system size",
+    "vector_matches": []
   },
   "2610.37152v1": {
     "authors": [
@@ -18114,6 +18362,49 @@
       {
         "liked_paper_id": "2511.14505v1",
         "score": 0.40061965584754944
+      }
+    ]
+  },
+  "2610.37285v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tamas Gombor"
+      }
+    ],
+    "categories": [
+      "nlin.SI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.37285v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "This paper investigates Matrix Product States (MPS), a foundational concept related to Density Matrix Renormalization Group (DMRG) and many-body quantum systems, aligning with interests in advanced computational methods and theoretical physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Integrable Systems",
+      "Quantum Groups",
+      "Tensor Network States"
+    ],
+    "summary": "We derive explicit overlap functions for integrable matrix product states associated with arbitrary finite-dimensional irreducible evaluation representations of the orthogonal and symplectic twisted Yangians. The central step is to relate the commuting quasi-determinants entering the universal overlap formula to Sklyanin determinants of nested subalgebras. For orthogonal evaluation representations, this relation determines their spectra directly in the Gelfand--Tsetlin basis. In the symplectic case, we combine Sklyanin determinants and minors with a factorization of the nested rank-two boundary matrices to obtain the corresponding spectra. The resulting overlap functions are explicit products parametrized by Gelfand--Tsetlin patterns and require only the highest-weight data of the underlying orthogonal or symplectic representation. Together with the universal ratio of Gaudin determinants and the model-dependent pseudovacuum overlap coefficients, they determine the normalized MPS overlaps. We also express the overlap functions in the orthogonal case beyond evaluation representations in terms of the highest weights arising along the nested twisted-Yangian subalgebras.",
+    "title": "MPS overlaps and Sklyanin determinants",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3757813274860382
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.3593037724494934
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.3555881083011627
       }
     ]
   },
@@ -18231,7 +18522,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2610.37575v1",
     "matching_keywords": [
@@ -18251,7 +18544,7 @@
     "vector_matches": [
       {
         "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
-        "score": 0.6843222379684448
+        "score": 0.6843221783638
       },
       {
         "liked_paper_id": "2508.17292v1",
@@ -18259,7 +18552,76 @@
       },
       {
         "liked_paper_id": "2506.14703v1",
-        "score": 0.6105265021324158
+        "score": 0.610526442527771
+      }
+    ]
+  },
+  "2610.37589v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Su Yeon Chang"
+      },
+      {
+        "affiliation": [],
+        "name": "Hailey S. Murray"
+      },
+      {
+        "affiliation": [],
+        "name": "Brian Barch"
+      },
+      {
+        "affiliation": [],
+        "name": "Greeshma Oruganti"
+      },
+      {
+        "affiliation": [],
+        "name": "Luis Pedro García-Pintos"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Larocca"
+      },
+      {
+        "affiliation": [],
+        "name": "Mark M. Wilde"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Cerezo"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.37589v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-27",
+    "reasoning": "While it involves dynamical quantum simulations and spin chains, its primary focus on quantum information as a laboratory for many-body states diverges from the user's interest in material properties and condensed matter phenomena.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "quantum information",
+      "spin chains",
+      "dynamical simulations"
+    ],
+    "summary": "Dynamical quantum simulations are commonly designed to access a particular response function or correlation function. Yet the underlying protocol prepares a family of many-body states that contains information well beyond the observable for which the simulation was originally designed. In this work, we explore the idea of using these states as laboratories for quantum information. As a case study, we consider the local-pulse protocols used to compute Green functions in finite XX and XXX spin chains, and we interpret opposite source rotations as encoding a classical bit into the many-body system. This allows us to follow how the resulting record propagates, how it is encoded across local subsystems, and how readily it can be accessed with different measurements. We also find a clear separation between representation and readout. While fermionic covariance data exactly reconstruct the signed response in the XX chain, simple spin measurements recover a larger fraction of the locally available information in the XXX chain. This reversed ordering persists when we move from finite-pulse discrimination to local source-angle estimation. Going beyond the source record, the same reduced states also allow us to reinterpret results in terms of Bell state recovery and quantum communication rates, as well as providing direct access to the evolving bipartite and genuine multipartite entanglement of the system. Our results show that dynamical quantum simulations developed for response calculations can naturally be used to ask a much broader set of quantum-information questions about the many-body states they already prepare.",
+    "title": "Dynamical quantum simulations as laboratories for quantum information",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5166176557540894
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.47929203510284424
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.43692535161972046
       }
     ]
   },
@@ -18393,6 +18755,80 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
         "score": 0.5510276556015015
+      }
+    ]
+  },
+  "2610.37761v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pradip Kattel"
+      },
+      {
+        "affiliation": [],
+        "name": "Thierry Giamarchi"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.37761v1",
+    "published_date": "2026-10-27",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We study the interacting Kitaev chain with nearest-neighbor interactions and finite chemical potential using a combination of bosonization and density-matrix renormalization-group calculations. Focusing away from special exactly solvable lattice limits, we develop a continuum field-theoretic description of the generic finite-density interacting regime, where doping nonperturbatively modifies the competition between superconducting pairing and commensurate charge ordering. We show that the phase diagram consists of an intermediate incommensurate Luttinger liquid between the topological superconducting and commensurate charge-density-wave Mott phases, as well as a trivial band-insulating regime at large chemical potential. The commensurate--incommensurate and incommensurate--topological-superconducting phase boundaries are governed by Pokrovsky--Talapov and Berezinskii--Kosterlitz--Thouless criticality, respectively. We analyze the interacting topological superconducting regime and its boundary excitations. At the semiclassical level, and explicitly in the free-fermion boundary theory, the topological phase supports exponentially localized Majorana edge modes at interfaces between topological and trivial regions. We also construct a dual continuum fermionic representation in which this topological bulk sector is described instead by conventional symmetry breaking. This gives a continuum version of the SPT--SSB correspondence between different fermionic representations. Overall, our results provide an analytical description of one-dimensional interacting topological superconductors, from the competition between topology and commensurability and the resulting quantum criticality to the dual symmetry-breaking description of the topological phase.",
+    "title": "Field theory of competing phases in the interacting Kitaev chain",
+    "vector_matches": []
+  },
+  "2610.37784v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Clara Lößl"
+      },
+      {
+        "affiliation": [],
+        "name": "Fabian Ewald Fassnacht"
+      },
+      {
+        "affiliation": [],
+        "name": "Viacheslav Barkov"
+      }
+    ],
+    "categories": [
+      "cs.CV"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.37784v1",
+    "matching_keywords": [
+      "machine learning",
+      "tensor network"
+    ],
+    "published_date": "2026-10-27",
+    "reasoning": "Despite the mention of 'tensor networks,' this paper is entirely focused on forestry applications of deep learning and LiDAR data, which is completely outside the user's expressed interests.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Geospatial AI",
+      "Remote Sensing",
+      "Forest Inventory"
+    ],
+    "summary": "Measurements of tree diameter at breast height (DBH) are fundamental to forest inventories, but manual surveys across entire stands or regions are impractical. UAV-borne laser scanning (ULS) enables scalable automated forest surveys, yet canopy occlusion makes accurate DBH estimation from ULS point clouds non-trivial. Limited stem-level point density of ULS data constrains approaches relying on detailed stem reconstruction, such as Quantitative Structure Models (QSMs) and circle fitting. Empirical machine learning methods based on predefined point cloud metrics are an alternative. New deep learning approaches offer an even more principled solution, allowing models to learn directly from point clouds. Sparse tensor networks have shown particular promise, transforming forestry tasks such as tree species classification. We investigate whether these strengths can be extended to estimate individual tree DBH from ULS data across four mixed-species temperate forest plots in Germany. We further advance existing sparse tensor networks by introducing TreeNext, a lightweight deep learning architecture for direct individual tree parameter estimation from voxelized LiDAR point clouds. We present a fully automated forest inventory pipeline from individual tree instance segmentation to DBH regression, and quantify the impact of segmentation errors by comparing performance on automatically segmented and ground truth instances. TreeNext achieves an $R^2$ of 0.8355 on automatically segmented trees and 0.9380 on ground truth segments, outperforming strong tabular baselines including Random Forest and XGBoost. Segmentation quality emerges as the dominant error source in the automated pipeline. TreeNext proves highly data-efficient, performing well even in small data scenarios. Our findings establish sparse tensor networks as a practical foundation for automated individual tree DBH estimation from ULS.",
+    "title": "Sparse tensor networks for individual tree diameter estimation in mixed forests",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.33016058802604675
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.2542109191417694
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.25312769412994385
       }
     ]
   },
@@ -18545,6 +18981,32 @@
         "score": 0.47654956579208374
       }
     ]
+  },
+  "2610.38415v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Riku Yaegashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Kazuhiro Sato"
+      },
+      {
+        "affiliation": [],
+        "name": "Kentaro Ohki"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.38415v1",
+    "published_date": "2026-10-28",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Understanding how local perturbations influence global quantum dynamics is important for analyzing and designing large-scale quantum systems. Existing quantum centrality measures often rely on static correlations or entanglement and do not directly capture perturbation propagation under unitary evolution. We formulate controllability allocation scoring for quantum input-output dynamics governed by the Schrodinger equation. Using the multiobservable quantum-control Gramian, we introduce virtual local Hamiltonian perturbations along a nominal trajectory and decompose the terminal-output response into channel-wise Gramian contributions. A simplex-constrained log-determinant optimization combines these contributions to define a volumetric controllability allocation score (V-CAS), specifying an optimal allocation of virtual input intensities among local Hamiltonian perturbation directions. The score measures their cooperative dynamical influence and depends on the output and trajectory. We characterize the output Gramian's range and minimum-energy properties and derive a drift-independent sufficient condition ensuring score uniqueness for almost every terminal time at which the problem is feasible. For quantum many-body systems, we develop a matrix-product-state and time-evolving-block-decimation implementation that avoids explicitly constructing exponentially large state-transition matrices. We also derive an error bound propagating Trotter and MPS-truncation errors to the discrete output Gramian. Numerical experiments show that the score captures finite-time influence patterns distinct from those identified by static correlation- and entanglement-based measures and can inform target-independent control-channel preselection.",
+    "title": "Controllability-Based Input Allocation in Quantum System",
+    "vector_matches": []
   },
   "2610.38421v1": {
     "authors": [
@@ -18754,6 +19216,91 @@
       }
     ]
   },
+  "2610.38701v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matthieu Fortin-Deschenes"
+      },
+      {
+        "affiliation": [],
+        "name": "Ibrahim Shehzad"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.38701v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-28",
+    "reasoning": "This paper introduces quantum algorithms for chemistry, extending computational methods to molecular geometries and reactions, which aligns with the interest in advanced computational techniques for complex systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Chemistry",
+      "Variational Quantum Eigensolver",
+      "Molecular Optimization"
+    ],
+    "summary": "Quantum and hybrid quantum-classical algorithms have the potential to improve the accuracy and scale of quantum chemistry and impact a broad range of applications such as drug discovery and catalysis. In particular, subspace methods such as sample-based quantum diagonalization (SQD) can already tackle classically challenging systems. However, practical algorithms that go beyond the computation of electronic ground and excited states are still scarce. Here, we introduce the variable-geometry sample-based quantum diagonalization (VGSQD) algorithm, which extends SQD to variable molecular geometries by reusing quantum samples from a reference geometry at displaced ones, thus significantly reducing quantum computational cost. Using circuits of up to 124 qubits on ibm-quebec, an IBM Heron r2 quantum processor, we determine the equilibrium geometry and energy of the weakly bound, strongly correlated beryllium dimer, as well as the water molecule. Finally, we extend VGSQD to chemical reactions and compute the minimum energy path and energy barrier of a hydrogen exchange reaction. The results are comparable with state-of-the-art classical methods such as CCSD(T) and DMRG. This work broadens the scope of quantum algorithms for chemistry, from energies to geometry optimization and reaction pathways, both essential for practical applications.",
+    "title": "Sample-Based Quantum Diagonalization for Variable Molecular Geometries",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5191433429718018
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5060401558876038
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4913252294063568
+      }
+    ]
+  },
+  "2610.38704v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kumar Ghosh"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.38704v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-28",
+    "reasoning": "This paper focuses on the gravitational anomaly spectroscopy of a Kitaev spin liquid, directly addressing interests in topological phases, strongly correlated systems, and advanced computational techniques like DMRG.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Kitaev spin liquid",
+      "topological phase",
+      "gravitational anomaly"
+    ],
+    "summary": "The chiral central charge $c$ measures the gravitational anomaly of a two-dimensional topological phase. It fixes the heat current carried along the edge. So far, it has been accessed through thermal transport, where phonons complicate the signal, or through wave-function probes that need a pure ground state. Here we show that $c$ is a spectroscopic quantity of the edge. A weak modulation of the edge couplings that travel along the edge is absorbed according to the Virasoro algebra. Normalized by the response to a static change of the same couplings, the absorbed weights obey $D_n=2n\\langle L_0\\rangle+\\frac{c}{12}(n^3-n)$, so that $\\mathcal{C}\\equiv2D_2-4D_1=c$ in any state of the ideal edge theory, thermal or not. The central charge thus appears in transition weights, although it cancels from excitation gaps. The ratio of line weights with and without a vison in the bulk, $Λ=4h_σ/c$, needs no calibration and fixes the conformal spin $h_σ$ of the non-Abelian Ising anyon. For the Kitaev honeycomb spin liquid we find $\\mathcal{C}=0.49999$ and $h_σ=0.06250$ on 7168 spins. Calibrating with the shift of the measured line itself gives $c$ within about $1\\%$ on 96 spins and within $1\\%$ under $20\\%$ random coupling errors. Interacting edge Majoranas in a fixed flux sector, treated with DMRG, keep $\\mathcal{C}$ within $1.5\\%$ while the edge velocity changes by $\\pm13\\%$. An exact simulation of a quantum-processor protocol, including the native Floquet circuit, returns $c$ within $3.5\\%$ on 96 to 600 spins.",
+    "title": "Gravitational anomaly spectroscopy of a Kitaev spin liquid",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5588943362236023
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4912685453891754
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.4802049398422241
+      }
+    ]
+  },
   "2610.38780v1": {
     "authors": [
       {
@@ -18796,6 +19343,75 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
         "score": 0.4749384820461273
+      }
+    ]
+  },
+  "2610.38807v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Baptiste Debecker"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp Westhoff"
+      },
+      {
+        "affiliation": [],
+        "name": "Visal So"
+      },
+      {
+        "affiliation": [],
+        "name": "Sebastian Paeckel"
+      },
+      {
+        "affiliation": [],
+        "name": "Guido Pagano"
+      },
+      {
+        "affiliation": [],
+        "name": "John Martin"
+      },
+      {
+        "affiliation": [],
+        "name": "Mattia Moroder"
+      },
+      {
+        "affiliation": [],
+        "name": "François Damanet"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.38807v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-28",
+    "reasoning": "This paper investigates the generation of multipartite entanglement in interacting Ising chains using bath engineering and tensor-network simulations, aligning with fundamental quantum many-body physics and advanced theoretical techniques relevant to strongly correlated systems.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Multipartite Entanglement",
+      "Dissipative Quantum Systems",
+      "Tensor Network Simulations"
+    ],
+    "summary": "We present how to dissipatively prepare genuinely multipartite-entangled steady states with mutually independent local reservoirs by harnessing an Abelian strong symmetry and temporal bath correlations. In interacting Ising chains, we demonstrate that, for a broad class of system-environment couplings, flat baths exponentially erase Ising-axis correlations. Structured baths overcome this obstruction by converting temporal bath correlations into classical spatial correlations. Strong symmetry then promotes these correlations to the quantum domain, enabling global multipartite entanglement. Within weak-coupling theory, we obtain exact steady states despite the generator's nonquadratic nature: strong symmetry reduces their construction to a classical problem for arbitrary Ising couplings. This reduction reveals an exact connection between classical distinguishability and entanglement. We then show how to engineer the bath spectrum to increase the correlation length and enable the preparation of GHZ-like states from separable initial conditions. We test the mechanism beyond the analytical regime using exact Markovian embeddings and tensor-network simulations. Our approach is particularly suited to superconducting and trapped-ion platforms, and we propose a concrete implementation for the latter using sympathetically cooled motional modes.",
+    "title": "Generating Multipartite Entanglement via Structured-Bath Engineering",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5452884435653687
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.532415509223938
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5147764682769775
       }
     ]
   },
@@ -19054,6 +19670,24 @@
       }
     ]
   },
+  "2610.39392v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ziqi Xu"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.39392v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "I study how measurement outcomes can remain conditionally dependent over long distances while the underlying state carries only a small internal memory, using one-dimensional rotated cluster states, whose exact matrix product state (MPS) bond dimension is $D=2$ at every rotation angle. Using exact MPS contraction, I compute the conditional mutual information (CMI) of two readout protocols: the entanglement-swapping endpoint CMI decreases from one bit at $θ=0$ to zero at $θ=π/2$, whereas a stationary bulk readout of the locally equivalent conventional cluster state vanishes at both limits. As an exact control, the spin-1 AKLT chain obeys $I_m=(4/9)\\,3^{-m}$, so its CMI length equals its two-point correlation length, for an identifiable but non-generic reason. I then compare learners on the same $N=64$, $θ=0.35$ target. A positive autoregressive GRU learns the computational-basis Born distribution from a few thousand samples, but an exactly computable Bell-basis readout shows that this distribution does not fix the phases. A complex RBM reaches the $N=8$ ground state under an exact objective, while a short generic recurrent variational Monte Carlo pilot is still improving when its runs end. As a positive control, an MPS-induced recurrent model whose hidden state is the bond vector reaches the ground state to near machine precision at $χ=2$, whereas a $χ=1$ control fails. These results show that long CMI does not require a large bond dimension, and that building the small virtual memory into the architecture greatly eases optimization.",
+    "title": "Conditional Information Flow and Neural Representability of One-Dimensional Rotated Cluster States",
+    "vector_matches": []
+  },
   "2610.39513v1": {
     "authors": [
       {
@@ -19146,6 +19780,28 @@
         "score": 0.43869641423225403
       }
     ]
+  },
+  "2610.39529v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Souvik Roy"
+      },
+      {
+        "affiliation": [],
+        "name": "Ranjini Bhattacharya"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.39529v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We investigate persistent charge and spin currents in a one-dimensional quantum ring threaded by an Aharonov-Bohm (AB) flux, considering generalized Aubry-André-Harper (AAH) modulation with staggered onsite energies and antiferromagnetic (AFM) ordering in both the noninteracting and interacting regimes, with the latter treated using a self-consistent Hartree-Fock mean field theory (MFT). At half filling, two distinct current-enhancement peaks emerge as the modulation strength increases, with quasiperiodic hopping modulation playing a crucial role in establishing the two-peak structure within a restricted parameter regime. Spin-resolved bond-current profiles reveal a switch in the dominant spin contribution between the two peaks, while the inverse participation ratio (IPR) and flux-dependent spin-resolved ground-state energies provide complementary insights into the spatial characteristics of the eigenstates and their spin-dependent flux sensitivity. At quarter filling, the spin current exhibits a single enhancement peak, in contrast to the two-peak response observed at half filling. The Hubbard interaction affects the two half-filled peaks differently: it suppresses the primary peak, whereas the secondary peak exhibits a nonmonotonic, re-entrant response, with the current recovering at finite interaction strength. The interacting results are further characterized through the Drude weight, and comparisons with exact diagonalization (ED) and density-matrix renormalization group (DMRG) calculations for a finite half-filled system support the reliability of the MFT description. Our findings elucidate how quasiperiodic modulation, AFM order, band filling, and electronic correlations collectively govern the magnitude and spin-resolved character of persistent currents, giving rise to multiple enhancement regimes and interaction-induced re-entrant behavior.",
+    "title": "Multiple Current Enhancement Regimes and Interaction Induced Re-entrant Transport in a Quasiperiodic Hubbard Ring with Antiferromagnetic Order",
+    "vector_matches": []
   },
   "2610.39710v1": {
     "authors": [
@@ -19397,7 +20053,9 @@
       "cond-mat.mtrl-sci",
       "cond-mat.supr-con"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2610.40297v1",
     "matching_keywords": [
@@ -19417,15 +20075,15 @@
     "vector_matches": [
       {
         "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
-        "score": 0.7999558448791504
+        "score": 0.7999557256698608
       },
       {
         "liked_paper_id": "2508.17292v1",
-        "score": 0.6423438787460327
+        "score": 0.6423437595367432
       },
       {
         "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
-        "score": 0.5609015226364136
+        "score": 0.5609014630317688
       }
     ]
   },
@@ -19490,6 +20148,28 @@
       }
     ]
   },
+  "2610.40450v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Paulina Hoyos"
+      },
+      {
+        "affiliation": [],
+        "name": "Joe Kileel"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.40450v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The singular value decomposition (SVD) provides optimal low-rank approximations of real and complex matrices by the Eckart--Young theorem, and SVD-based tensor decomposition algorithms such as the higher-order singular value decomposition (HOSVD) and the tensor train singular value decomposition (TT-SVD) inherit quasi-optimality guarantees from it. We extend the SVD to matrices over a finite-dimensional $\\ast$-algebra $K$. Our main contribution is a characterization of the algebras $K$ for which every matrix admits an SVD, and of the inner products on $K$ for which the Eckart-Young theorem holds. We introduce a notion of ordered SVD, show that ordered SVDs reveal the rank of a matrix over $K$ and yield optimal truncations, and give an explicit algorithm that computes an ordered SVD from the structure of the algebra. We then extend the Tucker, tensor train, and tree tensor network (TTN) decompositions and their SVD-based decomposition algorithms to tensors over $K$, and show that TT-SVD retains a quasi-optimality guarantee over every such $K$, whereas HOSVD, ST-HOSVD, and TTN-SVD do so when $K$ is commutative. Viewed in real or complex coordinates, these constructions give novel decomposition formats of ordinary tensors. We illustrate our new methods by compressing data from a variety of scientific applications, and show that they can achieve lower approximation error than their classical counterparts at equal storage.",
+    "title": "Singular value decompositions over $\\ast$-algebras with applications to tensor decompositions",
+    "vector_matches": []
+  },
   "2610.40638v1": {
     "authors": [
       {
@@ -19551,5 +20231,710 @@
         "score": 0.4294620156288147
       }
     ]
+  },
+  "2610.40755v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Max Haas"
+      },
+      {
+        "affiliation": [],
+        "name": "Guy C. Moore"
+      },
+      {
+        "affiliation": [],
+        "name": "Isaac M. Craig"
+      },
+      {
+        "affiliation": [],
+        "name": "Kristin A. Persson"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiali He"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael E. Hjelmstad"
+      },
+      {
+        "affiliation": [],
+        "name": "Dennis Meier"
+      },
+      {
+        "affiliation": [],
+        "name": "Sinéad M. Griffin"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan Schultheiß"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.40755v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The Kibble-Zurek mechanism (KZM) predicts the universal scaling of topological defect densities generated during continuous phase transitions, a result derived in the thermodynamic limit of homogeneous systems. Yet real materials are intrinsically finite and heterogeneous, raising the question of how nonequilibrium universality survives outside this idealized limit. Here we establish an ensemble-finite-size extension of the KZM that describes critical dynamics in collections of independent finite subsystems with distributed sizes. We test this framework using a polycrystalline model system undergoing a symmetry-breaking transition. We find that the density of topological vortices follows an apparent power law with an exponent approximately half that observed in single crystals. This reduced exponent emerges quantitatively from averaging over the experimentally measured grain-size distribution, without fitting to the measured vortex densities. Our results demonstrate that finite-size effects do not simply suppress KZ scaling but reorganize it into an emergent statistical scaling regime governed by system-size heterogeneity. This establishes microstructure and geometry as control parameters of nonequilibrium critical dynamics and provides a general strategy to engineer scaling behaviour in complex materials.",
+    "title": "Kibble-Zurek dynamics beyond the thermodynamic limit",
+    "vector_matches": []
+  },
+  "2610.40771v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ramanjit Sohal"
+      },
+      {
+        "affiliation": [],
+        "name": "Hannes Bernien"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruben Verresen"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.40771v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We propose a multi-leg PXYP model as a minimal setting to explore constraint-induced intertwinement between itinerant and internal degrees of freedom. We argue that the Rydberg-like blockade induces correlations in squeezed space, providing a unified mechanism for nontrivial string order both in and out of equilibrium. In a two-leg geometry, this leads to an intrinsically gapless topological ground state, which can terminate at a supersymmetric multicritical point. This mechanism also leads to the preservation of string order for parametrically long times after a quench, which we verify using tensor network simulations and a classical stochastic approximation to the dynamics. In a three-leg geometry, the blockade leads to an additional emergent $U(1)$ symmetry, resulting in a multicomponent Luttinger liquid where both itinerant and internal degrees of freedom are critical. This family of models arises naturally in a range of quantum simulator platforms such as Rydberg tweezer arrays and dipolar atoms in optical lattices.",
+    "title": "Gapless and Non-Equilibrium Topology in Blockaded Ladders",
+    "vector_matches": []
+  },
+  "2610.40776v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sajant Anand"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher D. White"
+      },
+      {
+        "affiliation": [],
+        "name": "Jack Kemp"
+      },
+      {
+        "affiliation": [],
+        "name": "Julia Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Norman Y. Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael P. Zaletel"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.40776v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Extracting late-time hydrodynamic transport properties directly from microscopic quantum models, especially in dimensions beyond one, is believed to be classically intractable. This owes, in part, to the extensive growth of entanglement in higher dimensions and often a mismatch between geometric and tensor network locality. Here, we extend the Density Matrix Truncation (DMT) algorithm to accurately and quantitatively predict high-temperature transport coefficients (e.g. diffusion constants) in up to three dimensions. Additionally, we demonstrate the ability to capture the slow crossover dynamics characteristic of weakly broken integrability. The intuition underlying our approach is to preserve the geometrically local information crucial for hydrodynamics throughout the time evolution, despite using a one-dimensional matrix product state ansatz for higher-dimensional calculations. Our work pushes the boundary of classical computability and opens the door to benchmarking the high-temperature, late-time dynamics of generic quantum simulators.",
+    "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
+    "vector_matches": []
+  },
+  "2610.40786v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Conor Smith"
+      },
+      {
+        "affiliation": [],
+        "name": "Yubo Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiwei Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel A. Morales"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.40786v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Moiré superlattices can bind several electrons to each potential minimum, forming few-electron \"moiré atoms.\" Using neural quantum states that obey magnetic periodic boundary conditions, include full Landau-level mixing, and treat both spin sectors, we map the ground state of two-electron moiré atoms in a superlattice as a function of moiré depth and magnetic field strength. At strong field each atom is a spin-triplet maximum-density droplet with canonical angular momentum $\\langle L_z\\rangle=-1$ and a persistent circulating current: the rotating counterpart of the \"Wigner molecular crystal\" recently imaged in moiré superlattices. Deepening the wells drives a singlet-triplet transition to non-rotating spin-singlet atoms whose only current is a weak diamagnetic counter-circulation. The transition moves to deeper wells as the field grows, so depth and field together open a window for the formation of rotors. This is the collective analog of the singlet-triplet transition of two-electron quantum dots. At the transition, the orbital magnetic moments of the atoms reverse sign as their spin polarization switches, a joint signature accessible to magnetometry. If the atoms are instead polarized by other means, such as magnetic proximity coupling, the rotors lock at weak field into a spontaneously ordered crystal of dimers in a pinwheel pattern.",
+    "title": "Singlet-Triplet Transition of Rotating Moiré Atoms in a Magnetic Field",
+    "vector_matches": []
+  },
+  "2610.40864v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Michael Demos"
+      },
+      {
+        "affiliation": [],
+        "name": "Dongqi Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Mainak Das"
+      },
+      {
+        "affiliation": [],
+        "name": "Tobias M. R. Wolf"
+      },
+      {
+        "affiliation": [],
+        "name": "Chunli Huang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.40864v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-10-29",
+    "reasoning": "This paper employs quantum Monte Carlo to study spin-valley ferromagnetism in rhombohedral graphene, directly aligning with interests in computational methods for quantum materials and magnetism.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "rhombohedral graphene",
+      "spin-valley ferromagnetism",
+      "quantum Monte Carlo"
+    ],
+    "summary": "Recent capacitance measurements in bilayer and trilayer rhombohedral graphene reported large magnetic entropy above the Curie temperature, suggesting the formation of fluctuating local moments. Further experimental support comes from scanning tunneling microscopy experiments in rhombohedral hexalayer graphene, which directly visualized honeycomb electron-crystal order that strengthens upon heating before melting, related to the Pomeranchuk effect. Motivated by these experiments, we construct spin-valley local-moment Hamiltonians for the quarter-metal and half-metal phases. We extract their couplings from constrained Hartree-Fock calculations, and solve their finite-temperature thermodynamics with stochastic-series-expansion quantum Monte Carlo. For the quarter metal we find a continuous 2D-Ising transition at $T_c \\approx 0.7$ K, an order of magnitude smaller than the Hartree-Fock estimate (~30 K) and closer to the experimental scale of a few kelvin. For the half metal, we study the field-induced magnetization as a function of temperature with and without proximity-enhanced spin-orbit coupling. When spin-orbit coupling is negligible, intervalley Hund's coupling enhances the magnetic response. Strong spin-orbit coupling, as can be induced by a neighboring transition-metal dichalcogenide, gives rise to the standard spin-canted ground state at zero temperature. Upon heating, the in-plane polarization decreases more rapidly than the out-of-plane polarization. Surprisingly, despite the itinerant nature of the electrons, local-moment models with microscopically determined couplings appear to capture key finite-temperature magnetic properties of rhombohedral graphene without any fitting.",
+    "title": "Quantum Monte-Carlo study of spin-valley ferromagnetism in rhombohedral graphene",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5815825462341309
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5637795925140381
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5475322008132935
+      }
+    ]
+  },
+  "2610.40870v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jonathan M. DeStefano"
+      },
+      {
+        "affiliation": [],
+        "name": "Yaofeng Xie"
+      },
+      {
+        "affiliation": [],
+        "name": "Guodong Ren"
+      },
+      {
+        "affiliation": [],
+        "name": "Mai Nguyen"
+      },
+      {
+        "affiliation": [],
+        "name": "Yue Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaodong Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Juan Carlos Idrobo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiun-Haw Chu"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.40870v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Ferromagnetism and altermagnetism both break time-reversal symmetry, yet their distinct transformation properties under crystalline symmetries forbid direct bilinear coupling between their order parameters. Whether these two magnetic orders can remain thermodynamically distinct while strongly influencing one another remains an open question. Here we demonstrate the homogeneous coexistence of ferromagnetism and altermagnetism in Cr-doped MnTe. By tuning the ferromagnetic ordering temperature across the nearly unchanged Néel temperature with Cr doping, we uncover a striking interplay between the two orders: the ferromagnetic transition becomes a crossover when altermagnetism develops first, whereas the onset of altermagnetism strongly suppresses the out-of-plane ferromagnetic remanence when ferromagnetism develops first. Moreover, spin-orbit coupling enables symmetry-selective interactions through which the ferromagnetic moment controls the altermagnetic domain manifold, with its out-of-plane and in-plane components biasing the time-reversal ($Z_2$) and orientational ($Z_3$) sectors, respectively. Our results reveal how two symmetry-distinct magnetic orders can retain separate ordering tendencies while remaining strongly coupled, providing a route towards internal control of altermagnetic domain states.",
+    "title": "Intertwined ferromagnetic and altermagnetic orders in Cr-doped MnTe",
+    "vector_matches": []
+  },
+  "2610.40910v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Guilherme F. Figueiredo"
+      },
+      {
+        "affiliation": [],
+        "name": "E. Miranda"
+      },
+      {
+        "affiliation": [],
+        "name": "R. L. Doretto"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.40910v1",
+    "published_date": "2026-10-29",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We investigate triplon topology and the thermal Hall transport in a columnar valence-bond solid of a spin-$1/2$ honeycomb-lattice $J_1$-$J_2$ Heisenberg antiferromagnet. Inequivalent triangular sublattices, modeled by $J_2^A\\neq J_2^B$, remove inversion symmetry at nearest-neighbor bond centers and allow in-plane Dzyaloshinskii--Moriya (DM) interactions. We identify the two symmetry-allowed in-plane DM vector patterns and present detailed results for the pattern parallel to the bonds including an out-of-plane magnetic field. Within a harmonic bond-operator treatment, we determine the triplon bands, their Berry curvatures and Chern numbers, and the triplon thermal Hall conductivity. The DM interaction and magnetic field generate nonzero Berry curvatures, but the numerically integrated Chern number of every isolated triplon band vanishes. Nevertheless, the energy-dependent Bose weighting of positive and negative Berry-curvature regions produces a finite thermal Hall response at nonzero low temperatures. We delimit the dilute-triplon regime in which the harmonic transport calculation is expected to be reliable. These results show that a vanishing Chern number band does not directly constrain the triplon response of a valence-bond solid. We also comment on the effects on the columnar valence-bond solid phase of a DM interaction between next-nearest-neighbor spins characterized by an out-of-plane vector pattern.",
+    "title": "Triplon thermal Hall response in a honeycomb-lattice $J_1$-$J_2$ Heisenberg antiferromagnet with Dzyaloshinskii--Moriya interactions",
+    "vector_matches": []
+  },
+  "2610.41161v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tong-Yu Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Guang-Ming Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.41161v1",
+    "matching_keywords": [],
+    "published_date": "2026-10-30",
+    "reasoning": "This paper investigates frustration-induced fractional-vortex phases in a kagome XY model using tensor-network calculations, which aligns with interests in exotic phases, frustrated magnetism, and computational methods.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "geometric frustration",
+      "kagome lattice",
+      "fractional vortices"
+    ],
+    "summary": "Geometric frustration can fractionalize vortices in two-dimensional XY systems, but a given frustrated model usually hosts only a single type of fractional vortex. Here we study a kagome XY model in which an antiferromagnetic coupling $J_1$ and a second-harmonic coupling $K$ favor two competing frustrated ground-state manifolds. For $K/J_1<1/9$, the ground states map onto those of the kagome three-state Potts antiferromagnet and support $1/3$ vortices; for $K/J_1>1/9$, they map onto those of the kagome Ising antiferromagnet and support $1/2$ vortices. At $K/J_1=1/9$, the two manifolds become degenerate, and bends in the domain walls between them carry $1/6$-vortex excitations. Tensor-network calculations show that a finite-temperature phase with quasi-long-range order only in $e^{6iθ}$ emerges from this degenerate point, separating the $1/3$- and $1/2$-vortex-paired phases. This $1/6$-vortex-paired phase has no counterpart in either parent manifold, showing that competing frustrated manifolds provide a route to new fractional-vortex-paired phases.",
+    "title": "Frustration-Induced $1/6$-Vortex-Paired Phase in a Kagome XY Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.4899302124977112
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4697583019733429
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.459938108921051
+      }
+    ]
+  },
+  "2610.41451v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mikko J. Alava"
+      },
+      {
+        "affiliation": [],
+        "name": "Tero J. Mäkinen"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.41451v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Driven elastic manifolds exhibit a depinning transition whose large-scale behavior is governed by a nonequilibrium critical fixed point. Real interfaces, however, often possess internal degrees of freedom, raising the question of whether such modes alter depinning universality or only nonuniversal properties of the transition. We address this question for a dissociated dislocation, whose two Shockley partials define a fluctuating stacking-fault width driven by correlated random-alloy stresses. Comparing exact thresholds on identical disorder realizations with the width either free or frozen, we find that width fluctuations leave the depinning universality class unchanged: the roughness exponent $ζ$ and correlation-length exponent $ν$ remain the same even when the width becomes strongly fluctuating and locally multistable. The threshold, however, shifts. The shift is governed by the elastic crossover length of the internal mode rather than by multistability, and can have either sign. An infinite-range mean-field treatment misses this mechanism. With the physical two-partial elastic kernel and disorder calibrated against measured strengths, width fluctuations raise the athermal critical resolved shear stress by 10-35% over that of a rigid dissociated dislocation. An internal mode can thus be irrelevant at the depinning fixed point while remaining quantitatively important for where the transition occurs.",
+    "title": "An internal mode shifts the depinning threshold of dissociated dislocations without changing universality",
+    "vector_matches": []
+  },
+  "2610.41554v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bram Leys"
+      },
+      {
+        "affiliation": [],
+        "name": "Karl Meerbergen"
+      },
+      {
+        "affiliation": [],
+        "name": "Nick Vannieuwenhoven"
+      },
+      {
+        "affiliation": [],
+        "name": "Mathijs Vivet"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.41554v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We introduce randomized algorithms for computing the hierarchical Tucker decomposition of high-order tensors. Unlike traditional algorithms performed in a sequential leaves-to-root direction, our algorithms traverse the dimension tree in a root-to-leaves direction, leveraging randomized sequential projections to accelerate the computation of intermediate subspaces. This strategy can reduce the computation time by an order of magnitude relative to prior randomized algorithms using the leaves-to-root direction, while guaranteeing quasi-optimal approximation. Although the theoretical error bound is slightly larger than for leaves-to-root methods, in all our experiments the practical error adheres to the classic bound. Our results highlight the method's potential for scalable tensor decompositions in high-dimensional data analysis.",
+    "title": "An Efficient Randomized Hierarchical Tucker Decomposition",
+    "vector_matches": []
+  },
+  "2610.41589v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Han-Bing Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhi-Gang Shao"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.41589v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-10-30",
+    "reasoning": "This paper explores the engineering of altermagnetism in monolayer hexagonal lattices using mirror symmetry, which is highly relevant to novel magnetic phases and quantum materials with specific symmetries.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "altermagnetism",
+      "monolayer hexagonal lattices",
+      "mirror symmetry"
+    ],
+    "summary": "Altermagnetism (AM) is a novel collinear antiferromagnetic phase characterized by spin-polarized bands and zero net magnetization. However, realizing AM in monolayer hexagonal lattices is strongly constrained by lattice symmetry. Here, we propose a mirror-symmetry-based design principle and implementation scheme for realizing AM based on monolayer hexagonal lattices and validate it using holey graphyne (HGY) as a representative system. By examining hydrogenated nonmetal units X$-$H (X = B, C, N, P, and S) introduced along the mirror-symmetry axis and extending the analysis to N$-$F, we identify the configurations that form two antiparallel spin sublattices related by mirror reflection. The N$-$H structure forms a stable altermagnetic ground state, with a momentum-dependent spin splitting up to 148.2 meV. The magnetism originates from $π-π$ superexchange interactions, and H/F functionalization stabilizes intrinsic AM by regulating the local charge distribution. Our work offers insights into the design of light-element altermagnetic materials.",
+    "title": "Mirror-symmetry engineering of altermagnetism based on monolayer hexagonal lattices",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5890411138534546
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5485336184501648
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.4938863217830658
+      }
+    ]
+  },
+  "2610.41687v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yi-Jian Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-Fan Jiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Wen Huang"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.41687v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Pair density waves (PDW) are superconducting states that exhibit a spatially modulated pairing order parameter, corresponding to Cooper pairs carrying finite center-of-mass momentum. While some recent studies have emphasized the role of quantum geometry in stabilizing PDW order in certain multiband systems, we here present a systematic investigation of an alternative, geometry-independent mechanism: PDW order driven purely by interband Cooper pairing. Using the superfluid weight (SW) as a diagnostic, we study two canonical models. The first is the classic Fulde-Ferrell model of an $s$-wave superconductor subject to a Zeeman splitting field, which realizes pure interband pairing between two rigidly shifted bands; the second is a spinless honeycomb-lattice model with nearest-neighbor $f$-wave pairing, a modified version of which was recently found to exhibit PDW instability in density-matrix renormalization-group simulations. In both models the SW receives no quantum geometric contribution at the mean-field level, yet it can be greatly suppressed or even turn negative, signaling a tendency toward pairing with spatial phase modulations. For the first model, we establish that the SW is increasingly suppressed as the Zeeman field grows, drastically turning negative upon the emergence of extensive gapless excitations, i.e., the Bogoliubov Fermi surfaces. For the honeycomb $f$-wave model, we demonstrate, both analytically and numerically, vanishing quantum-geometric SW and an invariably negative total SW. Our results thus establish the SW as a qualitative indicator of the tendency toward PDW order, and provide a microscopic rationale for the interband-pairing-driven PDW instability.",
+    "title": "Pair density waves via interband pairing --- a perspective from superfluid weight",
+    "vector_matches": []
+  },
+  "2610.41797v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Benjamin F. Mead"
+      },
+      {
+        "affiliation": [],
+        "name": "Isaiah Gray"
+      },
+      {
+        "affiliation": [],
+        "name": "Seng Huat Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Chilcote"
+      },
+      {
+        "affiliation": [],
+        "name": "Zi-Jie Yan"
+      },
+      {
+        "affiliation": [],
+        "name": "Sijie Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Aparna Jayakumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Emilia Morosan"
+      },
+      {
+        "affiliation": [],
+        "name": "Jörn W. F. Venderbos"
+      },
+      {
+        "affiliation": [],
+        "name": "Cui-Zu Chang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiqiang Mao"
+      },
+      {
+        "affiliation": [],
+        "name": "Pengcheng Dai"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Brahlek"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Wu"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.41797v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Altermagnetism has emerged as a new class of magnetism with vanishing magnetization and macroscopic time reversal symmetry breaking. Hexagonal MnTe is a g-wave altermagnet with a 307 K Néel temperature, large spin splitting, and an anomalous Hall effect. However, the relationship between altermagnetism and the anomalous Hall effect in MnTe remains debated. Here, using optical magnetic circular dichroism, we observe hysteresis and a memory effect in a MnTe bulk crystal below 250 K. No hysteresis is seen after polishing the bulk crystal and in thin films. We conclude that the hysteresis in magnetic circular dichroism in the bulk crystal is from surface defects. The similar temperature dependence and a sign change between circular dichroism and the anomalous Hall effect indicate that the origin of the anomalous Hall effect in transport is likely not intrinsic.",
+    "title": "Spontaneous Circular Dichroism and Memory Effect from Surface Defects in Altermagnetic MnTe",
+    "vector_matches": []
+  },
+  "2610.41848v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Esteban Payares"
+      },
+      {
+        "affiliation": [],
+        "name": "Nadia Milazzo"
+      },
+      {
+        "affiliation": [],
+        "name": "Ghada Ben Slama"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Cope"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2610.41848v1",
+    "matching_keywords": [
+      "machine learning",
+      "matrix product state"
+    ],
+    "published_date": "2026-10-30",
+    "reasoning": "This paper focuses on demonstrating quantum machine learning algorithms on noisy quantum processors for an engineered problem, which diverges from the user's interest in condensed matter physics and material properties.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Quantum Machine Learning",
+      "Quantum Hardware",
+      "Error Mitigation"
+    ],
+    "summary": "Despite quantum machine learning being an active topic of research, demonstrations of algorithms run on quantum hardware beating classical methods remain rare. In this work, we demonstrate a significant performance gap using a projected quantum kernel for $n=15,30$ and $45$ qubits over classical methods on an engineered classification problem, and show reproducibility of the results over different quantum processor units. We also demonstrate how error mitigation can widen this gap, both by improving hardware performance but also by increasing the classical difficulty, with different techniques contributing unequally to these phenomena. This work provides strong evidence that superior empirical performance of quantum hardware over all classical techniques is an achievable goal in quantum machine learning, albeit for an artificial problem. However, as with any application relying on observables, beating state-of-the-art simulation methods remains the primary challenge, as our matrix product state results here show.",
+    "title": "Engineered Learning Problems on Noisy Quantum Processors",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5452679991722107
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4740421175956726
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4687142074108124
+      }
+    ]
+  },
+  "2610.41932v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vipin Kurian Elavunkel"
+      },
+      {
+        "affiliation": [],
+        "name": "Sylvain Le Tonquesse"
+      },
+      {
+        "affiliation": [],
+        "name": "Hadrien Vroylandt"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.41932v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Identifying earth-abundant catalysts for the hydrogen evolution reaction (HER) is a central challenge in scalable green hydrogen production. We present a computational pipeline that couples diffusion-based generative modelling, machine-learning force-field relaxation, and graph neural network (GNN) property prediction to discover bimetallic HER catalysts beyond the structures and stoichiometries covered by existing adsorption databases. A generative model (MatterGen) is fine-tuned on bulk alloy structures labelled with their minimum hydrogen adsorption energy and steered towards adsorption energies near zero. From the generated pool we retain the stable structures that are novel bimetallic alloys: binary compositions built from the training-set metals but at stoichiometries or structures absent from that database. Each candidate's low-index facets are ranked by a machine-learning-force-field (MatterSim) surface-energy screen, and only the most stable terminations are converted into explicit slab models with hydrogen adsorbed at all high-symmetry surface sites and relaxed with the same force field. Two GNN surrogates (MEGNet and ALIGNN), trained on a high-throughput density functional theory (DFT) dataset, then screen the resulting slab candidates. Because the two models encode the local environment through different inductive biases, we retain only the alloys on which both agree, reducing the influence of any single model. This consensus screening, combined with a MatterSim energy-difference triangulation, resulted in a shortlist of near-thermoneutral bimetallic candidates. Eight are validated with plane-wave DFT, and four of them, Pd5Au, Pt5Rh, Cu5Pt3, and Pd13Ru3, bind hydrogen within the thermoneutral window. All eight alloys are dynamically stable by phonon calculations. These four alloys are highlighted as DFT-validated bimetallic HER candidates for experimental follow-up.",
+    "title": "Generative Design and Graph Neural Network Screening of Novel Bimetallic Alloy Catalysts for the Hydrogen Evolution Reaction",
+    "vector_matches": []
+  },
+  "2610.41976v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Izak Snyman"
+      },
+      {
+        "affiliation": [],
+        "name": "Serge Florens"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.41976v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Two of the most successful ideas in many-body theory, the exponential coupled cluster ansatz and DMFT, have to date developed separately. We establish a connection between them, by showing that the infinite dimensional limit of the hypercubic lattice allows the exact closed-form evaluation of static expectation values of coupled cluster wave functions, provided the cluster amplitudes admit a low-rank decomposition. As a result, evaluation errors -- a serious concern in conventional coupled cluster theory -- can be disentangled from limitations to expressivity of coupled cluster states. For this family of coupled cluster states, the cavity construction in $d\\to\\infty$ exactly reduces the environment of a lattice site to a Gaussian Grassmann kernel, and irreducible diagrams for one-body expectation values are found to be site-diagonal (in analogy to the DMFT self-energy). The resulting ``impurity problem\" is an integral over a finite number of Grassmann variables rather than a dynamical quantum impurity problem, so that static observables derive exactly from a static self-consistency condition: a wave function counterpart of DMFT. For the simplest case of a cluster amplitude restricted to rank-one doubles, we obtain the momentum distribution in closed form. We show that any momentum distribution can be realized by a state that is the exact and unique ground state of an explicit parent Hamiltonian with a gapless single-particle tunnelling spectrum. By construction these coupled cluster states variationally recover low order perturbation theory for the Hubbard model. Their failure in the strong coupling regime near the Mott transition diagnoses a fundamental limitation of coupled cluster doubles. Intriguingly, our family of coupled cluster wave functions includes a gapless state with zero quasiparticle weight, with a momentum distribution that is completely smooth at the Fermi energy.",
+    "title": "Solvable coupled cluster states in $d=\\infty$ with prescribed momentum distribution",
+    "vector_matches": []
+  },
+  "2610.42098v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Haifeng Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Hannes Kempf"
+      },
+      {
+        "affiliation": [],
+        "name": "Hinduja Bhuvanendran"
+      },
+      {
+        "affiliation": [],
+        "name": "Aitor De Andrés"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Ludwig"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicolò Maccaferri"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.42098v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The optical Kerr effect, whereby the refractive index of a material changes with light intensity, underpins nonlinear photonics and emerging mid-infrared technologies. Accurate determination of the nonlinear refractive index is therefore essential, yet conventional intensity-based techniques infer the nonlinear phase shift indirectly from changes in beam propagation or optical spectra. Moreover, methods such as the $z$-scan cannot resolve the temporal evolution of the nonlinear response, making it difficult to distinguish instantaneous Kerr nonlinearities from delayed contributions, including free-carrier effects. Here, we investigate the nonlinear optical response of germanium at $5 μ\\mathrm{m}$ using field-resolved degenerate pump-probe spectroscopy. By measuring the transmitted probe electric field as a function of pump-probe delay, we directly retrieve the pump-induced phase shift and its temporal evolution while retaining sensitivity to changes in absorption. We observe cross-phase modulation that follows the pump intensity envelope and vanishes when the pump and probe no longer overlap, consistent with an instantaneous Kerr response. The phase shift scales linearly with pump intensity, yielding a nonlinear refractive index of $n_2=(0.87\\pm0.16)\\times10^{-17} \\mathrm{m}^2/\\mathrm{W}$. Our results establish the instantaneous Kerr effect as the dominant contribution to the measured nonlinear phase shift under our experimental conditions and demonstrate field-resolved pump-probe spectroscopy as a direct, time-resolved method for determining the nonlinear refractive index and distinguishing instantaneous from delayed optical responses.",
+    "title": "Field-resolved observation and quantification of the instantaneous Kerr response in semiconductors",
+    "vector_matches": []
+  },
+  "2610.42103v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Runze Chi"
+      },
+      {
+        "affiliation": [],
+        "name": "Meng Zeng"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Xiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-Zhuang You"
+      },
+      {
+        "affiliation": [],
+        "name": "Bertrand I. Halperin"
+      },
+      {
+        "affiliation": [],
+        "name": "Juven Wang"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.42103v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Quantized charge pumping in quantum Hall systems is a bulk topological property, typically manifesting on gapless boundaries as spectral flow through chiral edge modes upon flux insertion. When the boundary is anomaly-free, it can be symmetrically gapped by symmetric mass generation (SMG) interactions. However, the effects on quantized charge pumping at an interacting gapped boundary are unclear. We address this using density-matrix renormalization group simulations of a four-leg ladder quasi-(2+1)d realization of the (1+1)d 3-4-5-0 lattice chiral fermion model with six-fermion interactions at one edge. We find gapless modes near the interacting edge for both weak and strong couplings, but the edge can be in a fully gapped SMG phase at intermediate coupling. We also identify spontaneous breaking of the model's $\\mathbb{Z}_2$ symmetry above a critical interaction strength. Across all three boundary phases, we find quantized charge pumping with the same pumped charge per flux quantum. The spatial distribution of the pumped charge varies between phases. Besides charge pumping, we study how a single injected fermion propagates under open boundary conditions. In the SMG phase, an interaction-induced flavor-mixing current develops at the endpoints of the gapped edge, which is absent in the weak- and strong-coupling limits. This current reveals a charge-redistribution mechanism unique to the SMG phase. Additionally, we propose an analogy between charge pumping in this model and a topological leptogenesis scenario in the (3+1)d Standard Model. The anomaly-free chiral U(1) symmetries of the 3-4-5-0 model play a role analogous to the baryon-minus-lepton symmetry of the Standard Model. In both settings, charge pumping can be associated with a continuous deformation along a classically defined but quantum-anomalous direction, while a discrete subgroup remains an exact quantum symmetry.",
+    "title": "Charge Pumping Leptogenesis from the Symmetric Mass Generation Phase on a Four-Leg Ladder Lattice",
+    "vector_matches": []
+  },
+  "2610.42119v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Javier Lopez-Piqueres"
+      },
+      {
+        "affiliation": [],
+        "name": "Atithi Acharya"
+      },
+      {
+        "affiliation": [],
+        "name": "Yue Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Niraj Kumar"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.42119v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Risk management of worst-of autocallables needs price sensitivities (Greeks) up to third order and the potential future exposure, a tail quantile of the note's future value. In Monte Carlo, each order of differentiation multiplies the sampling noise by a factor that grows with the observation frequency, and nested simulation turns the noise of its inner paths into a bias of the quantile. We instead solve the backward pricing recursion, storing the continuation value as an $hp$ functional tensor train (hp-FTT) whose piecewise-polynomial cores are split at the barriers, so that worst-of barrier events act exactly, with rank one. For Gaussian transitions we show that the polynomial degree sufficient for an error $\\varepsilon$ grows only as $\\sqrt{\\log(1/\\varepsilon)}$. One solve then gives every Greek at any spot without sampling noise, by integrating the likelihood-ratio weight against the stored value, and the values it stores at future dates replace inner simulation. Against the strongest Monte Carlo estimators we could build or find published, on worst-of autocallables observed monthly on three to five assets, the order of the Greek and the accuracy decide which method is cheaper. At $1\\%$ accuracy Monte Carlo is more than an order of magnitude cheaper for deltas, second-order Greeks go either way, and hp-FTT is cheaper for every third-order Greek, by up to two orders of magnitude. At $0.1\\%$ hp-FTT is cheaper for every Greek we could check, under geometric Brownian motion and local volatility alike. For the exposure alone Monte Carlo is cheaper at $1\\%$ and hp-FTT at $0.1\\%$, and a solve run for the Greeks yields it for little more than scenario sampling. Sampling pays in variance for each derivative and hp-FTT in rank for each asset, so Monte Carlo keeps low-order Greeks at percent accuracy, rarely observed contracts and many assets.",
+    "title": "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
+    "vector_matches": []
   }
 }
