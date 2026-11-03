@@ -1,0 +1,430 @@
+{
+  "2611.01525v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Edward G Friedman"
+      },
+      {
+        "affiliation": [],
+        "name": "Elizabeth J. Baggett"
+      },
+      {
+        "affiliation": [],
+        "name": "Abhishek Shetty"
+      },
+      {
+        "affiliation": [],
+        "name": "Derrick Chan-Sew"
+      },
+      {
+        "affiliation": [],
+        "name": "Vanellsa Acha"
+      },
+      {
+        "affiliation": [],
+        "name": "Harshitha Dwaracherla"
+      },
+      {
+        "affiliation": [],
+        "name": "P. A. Kienzle"
+      },
+      {
+        "affiliation": [],
+        "name": "William Ratcliff"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.01525v1",
+    "published_date": "2026-11-01",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Machine learning for powder diffraction (PXRD) symmetry classification is being trained at scale, yet the field lacks a common evaluation standard: papers report results on different subsets of experimental archives, with different target taxonomies, preprocessing, and metrics, and published models are rarely released in a form that permits rescoring. We present InformedXRD, an evaluation framework with three parts: (i) a machine-readable mapping from 230 space groups to 99 extinction groups, the finest classes powder diffraction can identify from systematic absences alone; (ii) a benchmark-construction method whose inclusion rules are specified as code and reproduce from a frozen snapshot, instantiated as RRUFF-473, RRUFF-325, and, as a small example, opXRD-98; (iii) a reporting protocol with prior-only frequency baselines, a label-permutation test, a hierarchy-aware error metric on the condensed translationengleiche subgroup graph, and stratified evaluation. We build on the mapping, RRUFF benchmarks, subgroup graph, and four ViT checkpoints released in our earlier work (Baggett et al., 2026). Using these checkpoints, a 1D residual CNN, and six architectures trained under the XRDBench recipe (Cao et al., 2025), we show that evaluation design changes what conclusions are justified: paired tests point in different directions at Top-1 and Top-5; paired Top-k tests do not separate the three leading XRDBench models, while hierarchy-aware analysis describes error distance and direction across all six; an input-blind frequency predictor matches the models on aggregate Top-k, yet a label-permutation test still detects pattern-specific evidence; and stratified analysis exposes a label-entropy confound that aggregate accuracy hides. All mapping tables, benchmark code, scripts, and checkpoints are released as shared infrastructure for PXRD-ML evaluation.",
+    "title": "InformedXRD: Reproducible Benchmarks and Physics-Informed Evaluation for Powder Diffraction Symmetry Classification",
+    "vector_matches": []
+  },
+  "2611.01899v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sankar Das Sarma"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.01899v1",
+    "matching_keywords": [
+      "variational monte carlo"
+    ],
+    "published_date": "2026-11-01",
+    "reasoning": "This theoretical paper investigates fundamental aspects of interactions, disorder, and phase transitions in two-dimensional electron systems, aligning with interests in correlated electron physics.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Wigner crystallization",
+      "Metal-insulator transition",
+      "2D electron systems"
+    ],
+    "summary": "We present a unified theoretical study of the interplay between Coulomb disorder and Coulomb interactions in two-dimensional electron systems, covering the Wigner crystallization transition, the metal-insulator transition, and the crossover from a Wigner crystal to an amorphous localized solid in both zero magnetic field and the lowest Landau level. Using Hartree-Fock theory, variational Monte Carlo, and percolation and strong-localization arguments, we show that quenched charged disorder destroys true long-range Wigner crystalline order in the thermodynamic limit at any nonzero charged-impurity density, within the Imry-Ma-Larkin framework; the finite-system density image is that of an amorphous solid with crystalline coherence over at most a few lattice spacings. For the two-dimensional metal-insulator transition we show, in a controlled nonlinear-Thomas-Fermi model of long-range Coulomb disorder at setback d, that the half-depletion density of the semiclassical landscape and the Ioffe-Regel-Mott density of Born-RPA transport track each other to within a factor of order unity over the physically relevant range of impurity density and setback, with a slow n_i^(-1/10) d^(-1/5) spread; the agreement reflects the common energy scale E_dis ~ E_F at the transition rather than a theorem, and modest independent short-range transport channels can shift the ratio by factors of order two. The article is a theoretical study under well-defined approximations; it takes the recent scanning tunneling microscopy imaging experiments on two-dimensional electron systems and the longstanding disorder-versus-interaction debate on the two-dimensional metal-insulator transition as motivation, and leaves to the reader the comparison between its calculated signatures and the published experimental analyses.",
+    "title": "Disorder, Interactions, and the Fate of the Two-Dimensional Electron System: Wigner Crystal, Metal-Insulator Transition, and Amorphous Solid",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.533678412437439
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5322504043579102
+      },
+      {
+        "liked_paper_id": "2506.13399v1",
+        "score": 0.5264188647270203
+      }
+    ]
+  },
+  "2611.01944v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhaoqing Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yizheng Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhe Yuan"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.01944v1",
+    "published_date": "2026-11-01",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Altermagnetism combines vanishing net magnetization with momentum-dependent spin splitting, enabling spin-transport functionalities without ferromagnetism. Although rutile RuO$_2$ has been proposed as a d-wave altermagnet, its magnetic ground state remains highly controversial. Moreover, existing transport verifications suffer from severe ambiguity due to the entanglement of spin-splitting effects and time-reversal-even spin-Hall contributions. Here, we introduce a two-pronged strategy to break the current verification impasse. First, we establish a definitive, symmetry-based transport criterion: by identifying specific crystallographic geometries where the spin-Hall background is strictly forbidden, we provide a zero-background window for unambiguous altermagnetic detection. Concurrently, to bypass the uncertain bulk energetics, we propose the RuO$_2$/MnO$_2$ superlattice as a prototypical platform to robustly enforce the d-wave altermagnetic order via interfacial magnetic proximity. Within this platform, symmetry-resolved spin-transport analysis reveals unconventional responses, including collinear spin currents enabling field-free magnetization switching and sizable spin-polarized charge currents. By combining a universal transport criterion with a robustly engineered material platform, our work transcends the debates over bulk properties, providing an actionable, definitive experimental roadmap for verifying d-wave altermagnetism.",
+    "title": "Symmetry-Based Transport Criterion and Robust Design for RuO$_2$-type Altermagnets",
+    "vector_matches": []
+  },
+  "2611.02582v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yasuyuki Kawahigashi"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.02582v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We study 3-tensors satisfying the ``zipper condition,'' which play an important role in tensor network approaches to two-dimensional topological order. In our previous work, we identified the 4-tensors appearing in these approaches with bi-unitary connections in the Jones theory of subfactors in operator algebras. These bi-unitary connections give rise to subfactors of finite index. We prove that, when the associated subfactor has finite depth, the 3-tensors satisfying the zipper condition correspond precisely to the quantum $6j$-symbols, also known as $F$-symbols, of the unitary multi-fusion category arising from the subfactor. This realization of quantum $6j$-symbols differs from their realization through a flat bi-unitary connection arising from the higher relative commutants of a subfactor.",
+    "title": "Quantum 6j-symbols arising from a subfactor of finite index and finite depth and the zipper condition for 4-tensors in two-dimensional topological order",
+    "vector_matches": []
+  },
+  "2611.02622v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Manish Kumar Singh"
+      },
+      {
+        "affiliation": [],
+        "name": "Dominic Kang Jueh Lim"
+      },
+      {
+        "affiliation": [],
+        "name": "Anson Wen Han Cheong"
+      },
+      {
+        "affiliation": [],
+        "name": "Adams Wai Kin Kong"
+      },
+      {
+        "affiliation": [],
+        "name": "Chang Quan Lai"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.02622v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper focuses on metamaterial design and optimization using neural networks, which deviates significantly from the user's interests in quantum many-body physics, superconductivity, and topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Physics Informed Neural Networks",
+      "Metamaterial Design",
+      "Topology Optimization"
+    ],
+    "summary": "Current methods of deriving ultrastiff isotropic metamaterials require heuristics or topology optimization, which are highly inefficient and limited by human input. To circumvent this, Physics Informed Neural Networks are applied to analytical equations to systematically solve for plate orientations in closed cell lattices. Following a standardized procedure, the plate orientations were modelled and assembled into geometries resembling quasi random foams for validation via finite element simulations. Closed cell 6-plate geometries were also additively manufactured using LAPIS and experimentally characterized. The results indicate that a minimum of 6 plates is required to constitute an ultrastiff isotropic lattice, 7 plates would return the established plate Cubic Octet structure while 8 to 10 plate geometries did not show significant differences in properties. Despite the introduction of some plate bending due to sub-optimal plate placement strategy, relative stiffness of the PINNs lattices adheres closely to the Hashin Shtrikman upper bound, 90 percent of Hashin Shtrikman upper bound at a relative density of 0.4, and the lattices maintain near isotropic behaviour, achieving a Zener ratio of 0.95 at a relative density of 0.1. Benchmarking results show that specific stiffness of PINNs lattices is higher than the majority of isotropic architectures reported in the literature.",
+    "title": "Derivation of Novel Isotropic Metamaterials at the Hashin Shtrikman Stiffness Limit Enabled by Physics Informed Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22435v1",
+        "score": 0.3241989016532898
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:5nxA0vEk-isC",
+        "score": 0.3103700876235962
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ZHo1McVdvXMC",
+        "score": 0.30625009536743164
+      }
+    ]
+  },
+  "2611.02703v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Krishna Nand Prajapati"
+      },
+      {
+        "affiliation": [],
+        "name": "Prabuddha Kant Mishra"
+      },
+      {
+        "affiliation": [],
+        "name": "Shashi B Singh"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.02703v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Triangular magnetic lattices have attracted significant attention as a model platform for exploring frustrated magnetism and quantum spin liquids, particularly in rare-earth-based systems. These materials also hold considerable promise for cryogenic magnetic refrigeration. In this work, we investigate the magnetic and magnetocaloric properties of the rare-earth (RE) based compounds $\\text{Ba}_3\\text{RE}(\\text{BO}_3)_3$ ($\\text{RE} = \\text{Dy}$ and $\\text{Ho}$). Polycrystalline samples synthesized via a solid-state reaction method crystallize in a hexagonal structure with the space group $P6_3mc$, featuring triangular nets separated by approximately $8.8~\\textÅ$ along the $c$-axis. Detailed magnetic investigation reveals a deviation from pure paramagnetic behavior at low temperatures ($T < 20\\text{ K}$). This is further corroborated by isothermal magnetization measurements, which exhibit non-overlapping $M$ vs. $H/T$ plots and reduced magnetization moments, suggesting significant crystal electric field (CEF) splitting of localized $f$-states. For an applied magnetic field change of $70\\text{ kOe}$, the maximum entropy change (Relative Cooling Power) reaches $4.2\\text{ J kg}^{-1}\\text{ K}^{-1}$ ($204\\text{ J kg}^{-1}$) and $7.3\\text{ J kg}^{-1}\\text{ K}^{-1}$ ($230\\text{ J kg}^{-1}$) for the Dy- and Ho-based compounds, respectively. Overall, the positive slopes of Arrott plots, the universal scaling behaviour of $ΔS_{\\text{m}}/ΔS_{\\text{m}}^{\\text{max}}$ versus reduced temperature ($t$), and the field exponent $c$ of the RCP versus $H$ curves indicate a second-order nature of entropy distribution, making them promising candidates for magnetocalorics in the millikelvin range.",
+    "title": "Competing interaction driven broad magnetic entropy distribution in triangular net compounds \\text{Ba$_3$RE(BO$_3$)$_3$}, RE= Dy and Ho",
+    "vector_matches": []
+  },
+  "2611.02796v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Min-Ju Choi"
+      },
+      {
+        "affiliation": [],
+        "name": "Le Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Krishna Prasad Koirala"
+      },
+      {
+        "affiliation": [],
+        "name": "Hyoju Park"
+      },
+      {
+        "affiliation": [],
+        "name": "Mark E. Bowden"
+      },
+      {
+        "affiliation": [],
+        "name": "Elizabeth Helen Krenkel"
+      },
+      {
+        "affiliation": [],
+        "name": "Aiping Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jueli Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Conan Weiland"
+      },
+      {
+        "affiliation": [],
+        "name": "Iradwikanari Waluyo"
+      },
+      {
+        "affiliation": [],
+        "name": "Adrian Hunt"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter V. Sushko"
+      },
+      {
+        "affiliation": [],
+        "name": "Yingge Du"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.02796v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Rare-earth nickelates are among the most active oxide electrocatalysts for the oxygen evolution reaction (OER), owing to their tunable Ni-O covalency, near-unity eg occupancy, and sensitivity to A-site chemistry, oxygen stoichiometry, and epitaxial strain. Here, we use epitaxial A-site high-entropy (La0.2Pr0.2Nd0.2Sm0.2Eu0.2)NiO3 thin films to reveal how epitaxial strain influences defect formation, Ni valence, electronic structure, and OER activity in a chemically disordered rare-earth (RE) sublattice. Tensile strain promotes Ruddlesden-Popper fault formation, interrupts the corner-sharing NiO6 network, and lowers the average Ni oxidation state. Although the occupied density of states near the Fermi level remains largely unchanged, O K-edge X-ray absorption spectroscopy reveals increased low-energy unoccupied states under tensile strain. First-principles calculations suggest that tensile strain shifts RE 4f-derived states toward the Fermi level, enhancing RE 4f-O 2p-Ni 3d hybridization. These coupled structural and electronic changes lead to earlier OER onset, stronger pre-catalytic Ni redox features, and higher activity than compressively strained films and representative single-A-site nickelates. The high-entropy nickelate also shows enhanced resistance to OER-induced structural degradation compared with LaNiO3. These results suggest that A-site configurational disorder and epitaxial strain can jointly tune defect formation and rare-earth-derived electronic states, providing a route for improving perovskite oxide electrocatalysts.",
+    "title": "High-Entropy A-Site Disorder Enhances Oxygen Evolution Reaction Activity and Stability in Nickelate Thin Films",
+    "vector_matches": []
+  },
+  "2611.03154v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xuwei Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhimin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoguang Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhongwei Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuanhui Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Huo"
+      },
+      {
+        "affiliation": [],
+        "name": "Hua Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Haifeng Wang"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.03154v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Machine learning supports materials design, atomistic simulation and experimental characterization, yet models and workflows remain fragmented. We present PaddleMaterials, an open-source framework integrating heterogeneous materials-learning tasks while preserving task-specific representations and scientific semantics. It unifies data processing, training, evaluation, pretrained-model management and workflows across six task classes: property prediction, structure generation, machine-learning interatomic potentials, electronic-structure fields, spectrum elucidation and microscopy image processing. Task interfaces record physical quantities, units, aggregation conventions and references, making cross-task composition verifiable. A shared compiler backend enables switching from dynamic-graph to compiled execution through one setting, using graph optimization, operator fusion and hardware-targeted code generation without changing model definitions. Across 65 model instances in 11 groups, compiled execution accelerated every instance in eight groups, with group median speedups of 11%-224% and group maximum speedups of 11%-336%. Case studies on LiMnO2 and toluene link structure generation or spectrum elucidation, interatomic-potential relaxation, property prediction and electron-density prediction, using same-geometry density functional theory (DFT) calculations as references. For LiMnO2, predicted formation energies for generated and relaxed structures differed from same-geometry PBE+U references by at most 7 meV per atom, while the computational cost of model steps was less than one-twentieth of a DFT single-point calculation. PaddleMaterials extends unified materials workflows beyond conventional property, potential and structure-generation tasks while supporting verifiable cross-task operations and compiled execution.",
+    "title": "PaddleMaterials: An End-to-End Deep Learning Toolkit for Materials Science",
+    "vector_matches": []
+  },
+  "2611.03180v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Arijit Mandal"
+      },
+      {
+        "affiliation": [],
+        "name": "Nayana Devaraj"
+      },
+      {
+        "affiliation": [],
+        "name": "Birabar Ranjit Kumar Nanda"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.03180v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper explores quantum phase transitions driven by strong electron correlations, Mott physics, and anomalous Hall effects in a specific material, connecting well with the user's interests in correlated electron systems and exotic transport phenomena.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Quantum Criticality",
+      "Piezo-Anomalous Hall Effect"
+    ],
+    "summary": "We establish a pressure-correlation phase diagram that yields multiple pressure-tunable quantum phase transitions in iron oxyhydroxide ($ε$-FeOOH) across three critical pressures, $P_{c1}>P_{c2}>P_{c3}$. The transitions arise from the competition among electron-correlation, crystal-field, and Hund's coupling. First-principles calculations reveal that the earlier reported high-spin (HS) to low-spin (LS) crossover at correlation-sensitive $P_{c1}$ is accompanied by a transition from charge-transfer to Mott insulating (CTI-MI) phase, and a change in the spin-quantization axis (SQA) from $\\hat{y}$ to $\\hat{x}$. The HS-LS crossover and CTI-MI transition is driven by the simultaneous increase in crystal-field splitting and decrease in Hund's coupling. The critical pressure $P_{c2}$ governing the structural transition from centrosymmetric $Pnnm$ phase to noncentrosymmetric $P2_1nm$ phase is found to be independent of electron-correlation. When correlation is strong, a third critical pressure ($P_{c3}$) emerges in the lower-pressure regime of the phase diagram. Validating the recent experimental observation, $P_{c3}$ is responsible for changing the SQA from $\\hat{z}$ to $\\hat{y}$. By exhibiting altermagnetism in both $P2_1nm$ and $Pnnm$ phases and possessing finite anomalous Hall conductivity (AHC) only for SQA along $\\hat{x}$ and $\\hat{y}$, $ε$-FeOOH enables a unique piezo-anomalous Hall effect where one can switch on the AHC at a lower pressure and change its direction at a higher pressure.",
+    "title": "Pressure-correlation phase diagram unraveling quantum phase transitions in altermagnetic $ε$-FeOOH and realization of piezo-anomalous Hall effect",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.5563329458236694
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.5522656440734863
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5374107360839844
+      }
+    ]
+  },
+  "2611.03207v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sayantan Dey"
+      },
+      {
+        "affiliation": [],
+        "name": "Abel Carreras"
+      },
+      {
+        "affiliation": [],
+        "name": "Siddhartha Patra"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.03207v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Ground states of Sachdev-Ye-Kitaev (SYK)-type models are volume-law entangled, which makes them costly both for tensor networks and for quantum hardware simulations. Thus, it remains unclear where quantum hardware could outperform classical simulation of such models. In this work, we study a spin SYK-dot chain, in which q dense SYK dots of p qubits are joined by single ZZ bonds of strength K. The entanglement across any cut is then bounded by floor(p/2) ln 2 plus the inter-dot entanglement, and the two-qubit depth of one Trotter step is set by p alone. A resource estimate shows that a quantum advantage for the ground state could appear only for dots of about 15 to 21 qubits or more. There, a single Trotter step already requires two-qubit error rates of order 10^{-6}, beyond the reach of noisy intermediate-scale quantum (NISQ) hardware. We test the assumptions of this estimate with an imaginary-time matrix product state (MPS) that applies each dot as one block. It agrees with exact diagonalisation at (p, q) = (6, 2). At (5, 2), a variational circuit with the same dot-plus-link layout comes within 3.6% of the exact energy, and noisy simulations show that its fidelity decays as assumed in the resource estimate. At (8, 5), i.e., N = 40 qubits, the energy converges at bond dimension chi = 768, far below the exact value 2^20, and the inter-dot entanglement stays small and is set mainly by K. Out-of-time-order correlators across the links decay on a time scale that shrinks rapidly with |K|. Thus, the dot size p and the inter-dot coupling K together set the entanglement of the chain, and with it where a quantum advantage could appear.",
+    "title": "Spin SYK-dot chains: entanglement bound and resource estimates towards a quantum advantage",
+    "vector_matches": []
+  },
+  "2611.03485v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Suhas Suresh Bharadwaj"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.03485v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The shear piezoelectric coefficient $e_{15}$ governs the shear-mode electromechanical coupling in piezoelectric micromachined ultrasonic transducers (PMUTs) and surface acoustic wave (SAW) devices, but measuring it typically requires destructive resonance testing on dedicated specimens. On simulated data, $e_{15}$ can instead be recovered non-destructively from sparse, noisy subsurface wavefield observations using a constrained physics-informed neural network (PINN). By building exact spatial distance functions and temporal multipliers directly into the network output, the clamped, grounded boundaries and resting initial state hold automatically, leaving the loss with only the interior equations of coupled electro-elastodynamics and the data misfit. Non-dimensional scaling brings all governing coefficients within one decade of O(1), and the setup removes the boundary and initial-condition penalty weights that soft-constraint methods must tune. In a six-way comparison (plane-strain PZT-5H, manufactured wavefield, 30 dB noise), a soft-penalty baseline with adaptive weights converges to an erroneous $e_{15}$ in four of the five runs (51.7% mean error), and fixed penalties reach an error of 0.85% only after a second-order optimization stage. The constrained formulations reach mean $e_{15}$ errors between 0.15% and 0.51% with held-out displacement errors below 1%. Within these variants, the spatial multiplier gives rapid first-order convergence, and the quadratic temporal multiplier lowers the early-time electrostatic residual by a factor of 6.8 versus a linear one. On finite-element data along one subsurface line, the full formulation recovers $e_{15}$ with 1.19% mean error at 30 dB and keeps it between 0.65% and 2.71% across a 40 to 0 dB noise sweep. Finally, training on displacements alone still recovers $e_{15}$ with mean errors of 0.45% on finite-element and 1.64% on manufactured data.",
+    "title": "Identifying the Shear Piezoelectric Coefficient using Physics-Informed Neural Networks under Exact Boundary and Initial Constraints",
+    "vector_matches": []
+  },
+  "2611.03492v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Meiyan Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Li Zhu"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.03492v1",
+    "published_date": "2026-11-02",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The spin splitting of an altermagnet arises from a rotation that relates its two magnetic sublattices. In known cases it is fixed by the crystal structure. Here we show that guest-host frameworks separate the two roles. In the boron-carbon clathrates $M$B$_3$C$_3$ the ordered cage removes the translation between the two guest sites and enforces cubic $i$-wave altermagnetism, with six symmetry-enforced nodal planes, for any magnetic guest in the compensated state; strain retunes the class to $d$- or $g$-wave. We demonstrate the platform with GdB$_3$C$_3$: its compensated antiferromagnetic ground state is a narrow-gap semiconductor with spin splitting of 0.19 eV at the conduction-band edge, and its weakly pinned Néel vector switches the helicity-resolved optical response on and off according to the magnetic point group. Thermodynamic stability at high pressure and dynamical stability at ambient pressure indicate that it can be made by the route established for this family.",
+    "title": "Cage-enforced i-wave altermagnetism in boron-carbon clathrates",
+    "vector_matches": []
+  }
+}

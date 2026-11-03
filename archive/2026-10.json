@@ -17186,6 +17186,34 @@
       }
     ]
   },
+  "2610.34470v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gabriele Bellomia"
+      },
+      {
+        "affiliation": [],
+        "name": "Carlos Mejuto-Zaera"
+      },
+      {
+        "affiliation": [],
+        "name": "Massimo Capone"
+      },
+      {
+        "affiliation": [],
+        "name": "Adriano Amaricci"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2610.34470v2",
+    "published_date": "2026-10-25",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "In order to identify intrinsic quantum resources in strongly interacting fermionic systems, we introduce a symmetry resolution of the parity-superselected two-site entanglement, as measured by both the fermionic negativity and the relative entropy of entanglement. We discuss how the symmetry resolution can be extended also to the full entanglement in pure and mixed two-site states. We apply our recipe to the Hubbard model, first for a dimer, and then for a plaquette cluster dynamical mean-field theory, an established method tailored to accurately capture short-range correlations. Following the evolution of the model through the interaction- and density-driven Mott transitions at zero temperature, we highlight how the three symmetry-resolved components of the two-site entanglement probe different key aspects of Mott and pseudogap physics.",
+    "title": "Symmetry-resolved quasilocal entanglement as a key to Mott and pseudogap physics in plaquette CDMFT",
+    "vector_matches": []
+  },
   "2610.34551v1": {
     "authors": [
       {
@@ -17472,6 +17500,32 @@
         "score": 0.33289849758148193
       }
     ]
+  },
+  "2610.35784v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhi-Yao Ning"
+      },
+      {
+        "affiliation": [],
+        "name": "Zi-Xiang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Naoki Kawashima"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2610.35784v1",
+    "published_date": "2026-10-26",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We construct a controllable imaginary-time Mpemba effect in quantum spin systems using spatially modulated local rotations without changing initial bipartite entanglement spectra and correlation magnitudes. This feature unambiguously isolates the redistribution of spectral weights as the sole driver of the anomalous relaxation. Using the compact-boson description, we reveal that these twists act as precise mode selectors: higher-harmonic twists exclusively populate high-energy standing waves, structurally bypassing slow-decaying infrared modes to accelerate convergence. We derive exact analytical crossing times for these reversals and demonstrate that intentionally reintroducing the slow-mode population systematically delays the ITME. This exact mechanism is validated beyond the fixed-point theory via calculations on interacting XXZ chains and ladders. Furthermore, a twelve-qubit simulation of variational quantum imaginary-time evolution reproduces the reversals and their controlled delay, providing a concrete route to realize this protocol in realistic quantum circuits. Ultimately, these results provide a strictly controllable and exact starting point for realizing and investigating the imaginary-time Mpemba effect, establishing a foundational paradigm to harness anomalous non-equilibrium relaxation in quantum ground-state preparations.",
+    "title": "Twist-controlled imaginary-time Mpemba effect in quantum spin systems",
+    "vector_matches": []
   },
   "2610.35814v1": {
     "authors": [
@@ -20333,16 +20387,42 @@
         "name": "Michael P. Zaletel"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.40776v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "While it uses advanced tensor network methods relevant to many-body quantum systems, its specific application to hydrodynamics and transport properties in higher dimensions is less directly aligned with the material-specific superconductivity or topological themes of the liked papers.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Quantum Hydrodynamics",
+      "Matrix Product States"
+    ],
     "summary": "Extracting late-time hydrodynamic transport properties directly from microscopic quantum models, especially in dimensions beyond one, is believed to be classically intractable. This owes, in part, to the extensive growth of entanglement in higher dimensions and often a mismatch between geometric and tensor network locality. Here, we extend the Density Matrix Truncation (DMT) algorithm to accurately and quantitatively predict high-temperature transport coefficients (e.g. diffusion constants) in up to three dimensions. Additionally, we demonstrate the ability to capture the slow crossover dynamics characteristic of weakly broken integrability. The intuition underlying our approach is to preserve the geometrically local information crucial for hydrodynamics throughout the time evolution, despite using a one-dimensional matrix product state ansatz for higher-dimensional calculations. Our work pushes the boundary of classical computability and opens the door to benchmarking the high-temperature, late-time dynamics of generic quantum simulators.",
     "title": "A Universal Approach to Hydrodynamics in Higher Dimensions via Tensor Networks",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5259073972702026
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4920690655708313
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.48962655663490295
+      }
+    ]
   },
   "2610.40786v1": {
     "authors": [
@@ -20488,16 +20568,40 @@
         "name": "R. L. Doretto"
       }
     ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.40910v1",
+    "matching_keywords": [],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This theoretical paper on a Heisenberg antiferromagnet explores triplon topology, thermal Hall response, and Chern numbers, aligning well with interests in correlated electron systems and topological phenomena.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Triplon topology",
+      "Thermal Hall effect",
+      "Dzyaloshinskii-Moriya interaction"
+    ],
     "summary": "We investigate triplon topology and the thermal Hall transport in a columnar valence-bond solid of a spin-$1/2$ honeycomb-lattice $J_1$-$J_2$ Heisenberg antiferromagnet. Inequivalent triangular sublattices, modeled by $J_2^A\\neq J_2^B$, remove inversion symmetry at nearest-neighbor bond centers and allow in-plane Dzyaloshinskii--Moriya (DM) interactions. We identify the two symmetry-allowed in-plane DM vector patterns and present detailed results for the pattern parallel to the bonds including an out-of-plane magnetic field. Within a harmonic bond-operator treatment, we determine the triplon bands, their Berry curvatures and Chern numbers, and the triplon thermal Hall conductivity. The DM interaction and magnetic field generate nonzero Berry curvatures, but the numerically integrated Chern number of every isolated triplon band vanishes. Nevertheless, the energy-dependent Bose weighting of positive and negative Berry-curvature regions produces a finite thermal Hall response at nonzero low temperatures. We delimit the dilute-triplon regime in which the harmonic transport calculation is expected to be reliable. These results show that a vanishing Chern number band does not directly constrain the triplon response of a valence-bond solid. We also comment on the effects on the columnar valence-bond solid phase of a DM interaction between next-nearest-neighbor spins characterized by an out-of-plane vector pattern.",
     "title": "Triplon thermal Hall response in a honeycomb-lattice $J_1$-$J_2$ Heisenberg antiferromagnet with Dzyaloshinskii--Moriya interactions",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5867500305175781
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5662177205085754
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5401864051818848
+      }
+    ]
   },
   "2610.41161v1": {
     "authors": [
@@ -20557,14 +20661,40 @@
         "name": "Tero J. Mäkinen"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.41451v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
     "published_date": "2026-10-30",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates dislocation dynamics and depinning transitions in materials, a topic unrelated to the user's interests in quantum materials and electronic properties.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Dislocation dynamics",
+      "Depinning transition",
+      "Elasticity theory"
+    ],
     "summary": "Driven elastic manifolds exhibit a depinning transition whose large-scale behavior is governed by a nonequilibrium critical fixed point. Real interfaces, however, often possess internal degrees of freedom, raising the question of whether such modes alter depinning universality or only nonuniversal properties of the transition. We address this question for a dissociated dislocation, whose two Shockley partials define a fluctuating stacking-fault width driven by correlated random-alloy stresses. Comparing exact thresholds on identical disorder realizations with the width either free or frozen, we find that width fluctuations leave the depinning universality class unchanged: the roughness exponent $ζ$ and correlation-length exponent $ν$ remain the same even when the width becomes strongly fluctuating and locally multistable. The threshold, however, shifts. The shift is governed by the elastic crossover length of the internal mode rather than by multistability, and can have either sign. An infinite-range mean-field treatment misses this mechanism. With the physical two-partial elastic kernel and disorder calibrated against measured strengths, width fluctuations raise the athermal critical resolved shear stress by 10-35% over that of a rigid dissociated dislocation. An internal mode can thus be irrelevant at the depinning fixed point while remaining quantitatively important for where the transition occurs.",
     "title": "An internal mode shifts the depinning threshold of dissociated dislocations without changing universality",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.39412131905555725
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.39038562774658203
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.36791306734085083
+      }
+    ]
   },
   "2610.41554v1": {
     "authors": [
@@ -20824,14 +20954,39 @@
         "name": "Serge Florens"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.41976v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
     "published_date": "2026-10-30",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper establishes a fundamental connection between coupled cluster theory and dynamical mean-field theory (DMFT) in the infinite-dimensional limit, addressing the Hubbard model and Mott transition, which are core themes directly related to the user's interest in DMFT.",
+    "score": 0.98,
+    "suggested_keywords": [
+      "Coupled Cluster Theory",
+      "Wavefunction DMFT",
+      "Mott Transition"
+    ],
     "summary": "Two of the most successful ideas in many-body theory, the exponential coupled cluster ansatz and DMFT, have to date developed separately. We establish a connection between them, by showing that the infinite dimensional limit of the hypercubic lattice allows the exact closed-form evaluation of static expectation values of coupled cluster wave functions, provided the cluster amplitudes admit a low-rank decomposition. As a result, evaluation errors -- a serious concern in conventional coupled cluster theory -- can be disentangled from limitations to expressivity of coupled cluster states. For this family of coupled cluster states, the cavity construction in $d\\to\\infty$ exactly reduces the environment of a lattice site to a Gaussian Grassmann kernel, and irreducible diagrams for one-body expectation values are found to be site-diagonal (in analogy to the DMFT self-energy). The resulting ``impurity problem\" is an integral over a finite number of Grassmann variables rather than a dynamical quantum impurity problem, so that static observables derive exactly from a static self-consistency condition: a wave function counterpart of DMFT. For the simplest case of a cluster amplitude restricted to rank-one doubles, we obtain the momentum distribution in closed form. We show that any momentum distribution can be realized by a state that is the exact and unique ground state of an explicit parent Hamiltonian with a gapless single-particle tunnelling spectrum. By construction these coupled cluster states variationally recover low order perturbation theory for the Hubbard model. Their failure in the strong coupling regime near the Mott transition diagnoses a fundamental limitation of coupled cluster doubles. Intriguingly, our family of coupled cluster wave functions includes a gapless state with zero quasiparticle weight, with a momentum distribution that is completely smooth at the Fermi energy.",
     "title": "Solvable coupled cluster states in $d=\\infty$ with prescribed momentum distribution",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5333037376403809
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5299116373062134
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:r0BpntZqJG4C",
+        "score": 0.5018740892410278
+      }
+    ]
   },
   "2610.42098v1": {
     "authors": [
@@ -20936,5 +21091,399 @@
     "summary": "Risk management of worst-of autocallables needs price sensitivities (Greeks) up to third order and the potential future exposure, a tail quantile of the note's future value. In Monte Carlo, each order of differentiation multiplies the sampling noise by a factor that grows with the observation frequency, and nested simulation turns the noise of its inner paths into a bias of the quantile. We instead solve the backward pricing recursion, storing the continuation value as an $hp$ functional tensor train (hp-FTT) whose piecewise-polynomial cores are split at the barriers, so that worst-of barrier events act exactly, with rank one. For Gaussian transitions we show that the polynomial degree sufficient for an error $\\varepsilon$ grows only as $\\sqrt{\\log(1/\\varepsilon)}$. One solve then gives every Greek at any spot without sampling noise, by integrating the likelihood-ratio weight against the stored value, and the values it stores at future dates replace inner simulation. Against the strongest Monte Carlo estimators we could build or find published, on worst-of autocallables observed monthly on three to five assets, the order of the Greek and the accuracy decide which method is cheaper. At $1\\%$ accuracy Monte Carlo is more than an order of magnitude cheaper for deltas, second-order Greeks go either way, and hp-FTT is cheaper for every third-order Greek, by up to two orders of magnitude. At $0.1\\%$ hp-FTT is cheaper for every Greek we could check, under geometric Brownian motion and local volatility alike. For the exposure alone Monte Carlo is cheaper at $1\\%$ and hp-FTT at $0.1\\%$, and a solve run for the Greeks yields it for little more than scenario sampling. Sampling pays in variance for each derivative and hp-FTT in rank for each asset, so Monte Carlo keeps low-order Greeks at percent accuracy, rarely observed contracts and many assets.",
     "title": "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
     "vector_matches": []
+  },
+  "2611.00203v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "He-Ran Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Lorenzo Gotta"
+      },
+      {
+        "affiliation": [],
+        "name": "Sanjay Moudgalya"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.00203v1",
+    "published_date": "2026-10-30",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Characterizing local Hamiltonians that host interesting many-body states as eigenstates has been an important problem in quantum many-body physics. For matrix product states (MPS), there is a well-known construction of parent Hamiltonians that have the MPS as the frustration-free ground state. However, recent results on quantum many-body scars have shown that such a construction does not exhaust all possible Hamiltonians that have the MPS as an eigenstate. In this work, we develop an exhaustive construction of generalized parent Hamiltonians that have a given translation-invariant MPS as an eigenstate. These go beyond the conventional projector-based construction of frustration-free parent Hamiltonians, where each local Hermitian term has the MPS as an eigenstate, by allowing non-Hermitian telescoping terms that cancel out with periodic boundary conditions (PBC). We derive a local tensor equation that establishes a correspondence between inequivalent classes of generalized parent Hamiltonians, i.e., those that cannot be related using linear combinations with frustration-free Hamiltonians, and the MPS transfer matrix spectrum. We illustrate the connection to intrinsic physical properties, including non-Abelian symmetries and zero correlation length, and further extend this construction to block-injective MPS. Our framework hence provides a systematic bridge between generalized parent Hamiltonians and the local structure of quantum states.",
+    "title": "Exhaustive Construction of Generalized Parent Hamiltonians for Matrix Product States",
+    "vector_matches": []
+  },
+  "2611.00228v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mohammed Al-Fahdi"
+      },
+      {
+        "affiliation": [],
+        "name": "Aakash Naik"
+      },
+      {
+        "affiliation": [],
+        "name": "Katharina Ueltzen"
+      },
+      {
+        "affiliation": [],
+        "name": "Luc Walterbos"
+      },
+      {
+        "affiliation": [],
+        "name": "Tom Demeyere"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp Benner"
+      },
+      {
+        "affiliation": [],
+        "name": "Janine George"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.00228v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-30",
+    "reasoning": "This paper discusses the role of chemical bonding and electronic structure representations in the era of machine learning for materials, which underpins the study of quantum materials.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Chemical bonding concepts",
+      "Interpretable machine learning",
+      "Electronic structure representation"
+    ],
+    "summary": "Chemical bonding is the language through which chemistry rationalizes materials structure, stability, properties, and reactivity. Meanwhile, modern deep-learning models achieve remarkable predictive performance using representations based largely on compositional and structural information, raising the question of whether explicit bonding concepts remain necessary. In this work, we argue that artificial intelligence does not render chemical bonding obsolete but provides a new framework for evaluating and refining bonding concepts. We show that, through linear probing, Allegro and MACE embeddings recover bonding descriptors with (R^2 > 0.95), indicating that bonding emerges naturally from Allegro's and MACE's latent spaces. We also show that bonding descriptors provide information beyond bond distance in our electronic-structure-featurized MEGNet (ESF-MEGNet) model, reducing prediction error for properties including bulk and shear moduli by 15%. We discuss implications for interpretable machine learning, synthesizability prediction, and generative materials design, and suggest joint-embedding approaches for learning more general bonding representations. More broadly, we propose that chemical bonding can be understood as a learnable representation of electronic structure. From this perspective, different bonding models represent alternative compressions of the underlying electronic information and can be evaluated through their predictive power, dimensionality, and complexity. The age of machine learning shifts the focus from whether a bonding model is physically motivated to whether it captures the information required to explain and predict materials behavior. If a materials genome exists, it should be encodable through a representation of chemical bonding. If no bonding representation can capture this information, our understanding of the chemical bond may require revision.",
+    "title": "In the age of big data and AI: do we still need chemical bonds?",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5037996768951416
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4338442087173462
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4095918536186218
+      }
+    ]
+  },
+  "2611.00533v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Luqing Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Qunfei Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Qiucheng Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Venkata Surya Chaitanya Kolluru"
+      },
+      {
+        "affiliation": [],
+        "name": "Hui Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Albert Tsui"
+      },
+      {
+        "affiliation": [],
+        "name": "Joshua Paul"
+      },
+      {
+        "affiliation": [],
+        "name": "Pierre Darancet"
+      },
+      {
+        "affiliation": [],
+        "name": "Mark C. Hersam"
+      },
+      {
+        "affiliation": [],
+        "name": "Maria K. Y. Chan"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.00533v1",
+    "published_date": "2026-10-31",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Borophene, a monolayer of boron, is distinctive among two-dimensional materials owing to its unique properties, including polymorphism and potential applications in quantum technologies and energy conversion and storage. Nevertheless, its applications are hindered by the strong binding of borophene to metal substrates, which impedes the realization of freestanding borophene. Alternative substrates with tunable binding to borophene are therefore highly desirable. Since boride layers arise during borophene synthesis on metals, borides provide potential alternative substrates for borophene synthesis. In this work, we investigate the binding energies and interactions between borophene and 1356 boride surfaces for two borophene phases (v1/6 and v1/9), using density functional theory (DFT) calculations and machine learning (ML). Importantly, incorporating ML-predicted charge transfer as an input feature to a subsequent ML model enables physics-informed predictions of binding energies. Additional DFT calculations on four representative cases were performed to validate the ML predictions. SHAP analysis reveals that the majority of key descriptors are associated with delocalized electrons, highlighting the role of electronic properties in governing binding strength. Combined DFT and ML screening identifies 65 and 73 promising boride surfaces for the v1/6 and v1/9 phases, respectively. Al- and Ag-based borides, including AlB2 and AgB2, emerge as predominant candidates for both phases. The computationally predicted candidate substrates and the deduced design guidelines provide a charge-transfer-informed ML strategy for substrate selection and represent promising steps toward the experimental realization of freestanding borophene.",
+    "title": "Machine Learning Aided Computational Discovery of Boride Substrates for Borophene Synthesis",
+    "vector_matches": []
+  },
+  "2611.00540v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yiu-Fung Chiu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaewon Choi"
+      },
+      {
+        "affiliation": [],
+        "name": "Nileena Nandakumaran"
+      },
+      {
+        "affiliation": [],
+        "name": "Mirian Garcia-Fernandez"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan Pelliciari"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiyu Fan"
+      },
+      {
+        "affiliation": [],
+        "name": "Valentina Bisogni"
+      },
+      {
+        "affiliation": [],
+        "name": "Chris Leighton"
+      },
+      {
+        "affiliation": [],
+        "name": "Ke-Jin Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Agrestini"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.00540v1",
+    "published_date": "2026-10-31",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Strain-tuned $(\\mathrm{Pr}_{0.85}\\mathrm{Y}_{0.15})_{0.7}\\mathrm{Ca}_{0.3}\\mathrm{CoO}_{3}$ thin films provide a model system for controlling coupled valence, spin-state, structural and metal-insulator transitions (VSSTs) in perovskite cobaltite materials. Here, we use Co $L_{2,3}$ and Pr $M_{4,5}$ X-ray Absorption Spectroscopy (XAS), along with Co $L_{3}$ edge Resonant Inelastic X-ray Scattering (RIXS), to probe the local electronic structure across the strain-controlled VSST in epitaxial (Pr,Y,Ca)CoO$_{3}$ thin films. In compressively strained films on YAlO$_{3}$ (YAO) substrates, cooling through the transition produces Pr$^{4+}$-like spectral weight, suppresses Co$^{4+}$-like character, and favors predominantly low-spin Co$^{3+}$. The changes at the Pr and Co edges are quantitatively consistent with a reduction of approximately 0.15 holes per Co in the Co--O network. By contrast, tensile-strained thin films on La$_{0.18}$Sr$_{0.82}$Al$_{0.59}$Ta$_{0.41}$O$_{3}$ (LSAT) substrates have nearly temperature-independent spectra. Multiplet calculations reproduce the principal XAS lineshapes and local $dd$ excitations at high energy loss. Additionally, low-energy RIXS intensity recovered above the transition is consistent with a combination of Co$^{4+}$-like local excitations and a broader particle--hole continuum associated with the metallic phase. These results provide element-resolved evidence for charge compensation between the Pr and Co--O sublattices and support cooperative coupling among charge-transfer, spin-state, and lattice structure at the strain-controlled VSST.",
+    "title": "RIXS study of strain-tuned coupled valence and spin-state transition in epitaxial $(\\mathrm{Pr}_{0.85}\\mathrm{Y}_{0.15})_{0.7}\\mathrm{Ca}_{0.3}\\mathrm{CoO}_{3}$ films",
+    "vector_matches": []
+  },
+  "2611.00622v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hana Schiff"
+      },
+      {
+        "affiliation": [],
+        "name": "Ishmam Nihal"
+      },
+      {
+        "affiliation": [],
+        "name": "John Vinson"
+      },
+      {
+        "affiliation": [],
+        "name": "Robin Msiska"
+      },
+      {
+        "affiliation": [],
+        "name": "Judit Romhányi"
+      },
+      {
+        "affiliation": [],
+        "name": "David Lederman"
+      },
+      {
+        "affiliation": [],
+        "name": "Christoph Klewe"
+      },
+      {
+        "affiliation": [],
+        "name": "Sujoy Roy"
+      },
+      {
+        "affiliation": [],
+        "name": "Eric E. Fullerton"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.00622v1",
+    "published_date": "2026-10-31",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Altermagnets are a unique subset of antiferromagnets possessing ferromagnet-like responses that are odd in the Néel vector, making X-ray magnetic circular dichroism (XMCD) a natural probe of ground state altermagnetic order. Because the relativistic ingredient of XMCD at the $L$-edge is supplied predominantly by core-level spin--orbit coupling (SOC), the dichroic signal can reflect the non-relativistic order of the valence electrons. Here we develop a complete symmetry framework for XMCD in altermagnets (AMs) preserving the crystalline unit cell. We tabulate the symmetry-allowed optical Hall vector, anisotropic magnetic dipole (AMD), and underlying octupolar components for all magnetic point groups, thereby identifying the experimental geometries that maximize the XMCD signal. We show that only twelve magnetic point groups, none with a rotation axis of order three or higher, are compatible with both altermagnetism and finite XMCD. By extending the Landau theory of collinear AMs, we connect these relativistic constraints to the spin--orbit-free order. We show that the AMD is forced to vanish at zero valence SOC in conventional antiferromagnets, and that every AM sublattice structure allows the Hall vector and AMD at linear or cubic order in the Néel vector; whether the resulting XMCD is nonzero depends on the Néel vector orientation at finite SOC. The Landau theory thus fixes the Néel-vector dependence of the XMCD for all AM candidates, and separates $d$-wave AMs, whose signal is inherited from a non-relativistic AMD, from $g$- and $i$-wave AMs, whose signal requires valence SOC or core--valence multiplet effects. We illustrate these predictions with first-principles Bethe--Salpeter calculations of $L$-edge XMCD for five representative altermagnetic materials and one conventional antiferromagnet.",
+    "title": "X-ray magnetic circular dichroism in altermagnets: insights from symmetry",
+    "vector_matches": []
+  },
+  "2611.00739v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shun Muroga"
+      },
+      {
+        "affiliation": [],
+        "name": "Takashi Tsuji"
+      },
+      {
+        "affiliation": [],
+        "name": "Shunsuke Sakurai"
+      },
+      {
+        "affiliation": [],
+        "name": "Don N Futaba"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft",
+      "cs.AI",
+      "cs.LG",
+      "physics.data-an"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.00739v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-10-31",
+    "reasoning": "This paper focuses on machine learning for materials synthesis of carbon nanotubes, which falls outside the user's quantum materials and theoretical physics interests.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Carbon nanotube synthesis",
+      "Machine learning in materials science",
+      "Chemical vapor deposition"
+    ],
+    "summary": "Machine learning for chemical vapor deposition (CVD) of carbon nanotubes (CNTs) has largely mapped static synthesis conditions to final properties, implicitly treating these conditions as a complete description of growth. Here, we test this assumption by integrating gas-flow conditions with in-situ time-resolve growth profiles (growth curves) of vertically aligned CNT forests. We introduce an observation-window analysis, in which prediction is evaluated as a function of observation time by providing models with the growth curve only up to progressively later times, to determine not only whether a property can be predicted, but when the necessary information becomes available during synthesis. Clustering of normalized growth curves revealed distinct growth patterns independent of final forest height. The gas conditions alone could predict the initial growth rate but not the growth lifetime and failed to capture the variation in yield (R^2<0). Adding the growth curve improved yield prediction (R^2~0.4-0.5), with the relevant information emerging during the intermediate and later stages of growth rather than at its onset. In contrast, density and G/D ratio, which forest height does not record, showed no consistent improvement. The maximum height and lifetime could be estimated with moderate accuracy midway through the 10-min growth. Permutation feature importance identified water vapor and H_2, both linked to catalyst activity, as the most informative gas variables. These results indicate that variation unexplained by synthesis conditions is not merely noise but reflects an evolving catalyst state, and they establish mid-growth decision points for autonomous synthesis, enabling early termination of unpromising batches and, ultimately, in-batch adjustment of growth conditions.",
+    "title": "Beyond Synthesis Conditions: Linking In-situ Growth Dynamics to Carbon Nanotube Forest Properties through Multimodal Machine Learning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.33957555890083313
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.25810933113098145
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.2416672706604004
+      }
+    ]
+  },
+  "2611.00928v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Stefano Mocatti"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiangzhou Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Giulio Volpato"
+      },
+      {
+        "affiliation": [],
+        "name": "Pierluigi Cudazzo"
+      },
+      {
+        "affiliation": [],
+        "name": "Matteo Calandra"
+      },
+      {
+        "affiliation": [],
+        "name": "Giovanni Marini"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.00928v1",
+    "published_date": "2026-10-31",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We develop an efficient reciprocal-space method to reconstruct the static Bethe-Salpeter (BSE) Hamiltonian at arbitrary crystal momenta from coarse first-principles grids. Bloch states are interpolated within an optimally smooth Wannier subspace, while the screened Coulomb interaction is reconstructed from the dielectric response. This decouples the electron-hole transition momenta and transferred momentum from the underlying ab initio sampling. We benchmark the method on monolayer hBN, monolayer MoS$_2$, and bulk GaAs against explicit ab initio calculations, finding excellent agreement for dense-grid Bloch states, dielectric screening, and BSE optical spectra. Furthermore, our cost analysis estimates speedups of up to $22\\times$ on the grids considered here. Arbitrary transferred-momentum sampling gives direct access to the long-wavelength exciton dispersion: in hBN and MoS$_2$, we resolve the nonanalytic behaviour induced by long-range electron-hole exchange at momenta well below the spacing of practical uniform grids. For bulk GaAs, locally refined transition-momentum sampling yields a converged binding energy for the threefold-degenerate lowest exciton, in close agreement with experiment and reference calculations, using far fewer BSE points than conventional uniform meshes. As the present framework provides exciton energies and amplitudes at arbitrary crystal momenta, it opens the way to incorporating ab initio excitonic effects into nonlocal electron-phonon vertices and to extensions towards exciton-phonon interactions and nonequilibrium exciton dynamics.",
+    "title": "Efficient Interpolation of the Bethe-Salpeter Hamiltonian at Arbitrary Momenta",
+    "vector_matches": []
+  },
+  "2611.01118v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ethan Saïman"
+      },
+      {
+        "affiliation": [],
+        "name": "Feiyu Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Junjie Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jean-Pascal Rueff"
+      },
+      {
+        "affiliation": [],
+        "name": "Victor Balédent"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.01118v1",
+    "matching_keywords": [
+      "cuprate",
+      "nickelate",
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-10-31",
+    "reasoning": "This paper directly investigates orbital occupations and their role in unconventional superconductivity in nickelates using X-ray scattering, aligning perfectly with the user's previously liked papers on nickelate and cuprate superconductors and spectroscopic techniques.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Bilayer Nickelates",
+      "Orbital Hybridization",
+      "Inelastic X-ray Scattering"
+    ],
+    "summary": "Models of unconventional superconductivity in cuprates and nickelates depend sensitively on the distribution of valence electrons among the $d$ orbitals. But accurately determining the orbital electron or hole occupations in these systems remains a difficult and unresolved task. Here, using $s$-core-level non-resonant inelastic x-ray scattering at the Ni $M_1$ edge, we determine the angular distribution of the Ni $3d$ holes in a single crystal of La$_2$SmNi$_2$O$_7$. Our results demonstrate that the hole occupation ratio $\\hz/\\hx = 0.94\\pm0.06$, thus significantly above the expected value of $2/3$ for a filled $d_{z^2}$ orbitals models and close to value expected in a Hund's-coupling picture. Our results support superconductivity scenarios in which both $e_g$ orbitals contribute to the electron-pairing mechanism in La$_2$SmNi$_2$O$_7$.",
+    "title": "Direct imaging of the Ni $e_g$ hole orbitals in the bilayer nickelate La$_2$SmNi$_2$O$_7$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.683971643447876
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.6519989967346191
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.6377941370010376
+      }
+    ]
   }
 }
