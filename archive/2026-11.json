@@ -34,14 +34,132 @@
         "name": "William Ratcliff"
       }
     ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.01525v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-11-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on machine learning methodologies for powder diffraction symmetry classification, which is distinct from the user's interest in condensed matter physics, correlated electrons, and specific X-ray scattering applications.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "machine learning",
+      "powder diffraction",
+      "crystallography"
+    ],
     "summary": "Machine learning for powder diffraction (PXRD) symmetry classification is being trained at scale, yet the field lacks a common evaluation standard: papers report results on different subsets of experimental archives, with different target taxonomies, preprocessing, and metrics, and published models are rarely released in a form that permits rescoring. We present InformedXRD, an evaluation framework with three parts: (i) a machine-readable mapping from 230 space groups to 99 extinction groups, the finest classes powder diffraction can identify from systematic absences alone; (ii) a benchmark-construction method whose inclusion rules are specified as code and reproduce from a frozen snapshot, instantiated as RRUFF-473, RRUFF-325, and, as a small example, opXRD-98; (iii) a reporting protocol with prior-only frequency baselines, a label-permutation test, a hierarchy-aware error metric on the condensed translationengleiche subgroup graph, and stratified evaluation. We build on the mapping, RRUFF benchmarks, subgroup graph, and four ViT checkpoints released in our earlier work (Baggett et al., 2026). Using these checkpoints, a 1D residual CNN, and six architectures trained under the XRDBench recipe (Cao et al., 2025), we show that evaluation design changes what conclusions are justified: paired tests point in different directions at Top-1 and Top-5; paired Top-k tests do not separate the three leading XRDBench models, while hierarchy-aware analysis describes error distance and direction across all six; an input-blind frequency predictor matches the models on aggregate Top-k, yet a label-permutation test still detects pattern-specific evidence; and stratified analysis exposes a label-entropy confound that aggregate accuracy hides. All mapping tables, benchmark code, scripts, and checkpoints are released as shared infrastructure for PXRD-ML evaluation.",
     "title": "InformedXRD: Reproducible Benchmarks and Physics-Informed Evaluation for Powder Diffraction Symmetry Classification",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.3624669313430786
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3296196162700653
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.31287211179733276
+      }
+    ]
+  },
+  "2611.01771v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Fang-Cheng Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Qi-Jun Ye"
+      },
+      {
+        "affiliation": [],
+        "name": "Xin-Zheng Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.01771v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-01",
+    "reasoning": "This study employs tensor network methods to uncover novel gapless phases and critical behavior in the two-dimensional Potts model, connecting to the phase transitions and computational techniques common in strongly correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "statistical mechanics",
+      "complex phase diagrams",
+      "Luttinger liquids"
+    ],
+    "summary": "The complex-temperature phase structure of the two-dimensional Potts model has remained largely unresolved despite decades of study. Here we determine the complex-temperature phase diagram of the 3-state Potts model, and uncover three gapless phases beyond the familiar ferromagnetic and paramagnetic phases. This is done by combining tensor-network free energies with the Poisson equation to compute the Fisher zero density in the thermodynamic limit. The resulting zero distribution unifies and revises long-standing conjectures on the zero loci, and outlines each phase. One is a non-conformal gapless phase, with an exponentially growing number of low-lying transfer-matrix levels distributed across all momentum sectors. The other two are Luttinger-liquid phases with complex-valued Luttinger parameters related by the Kramers-Wannier duality. At the antiferromagnetic critical point, the Luttinger parameter equals 3, while its limit from the adjacent Luttinger-liquid phase is 6. These findings reveal rich phase structures and unconventional critical behavior in a classical textbook model.",
+    "title": "Three New Phases in the Two-Dimensional Potts Model at Complex Temperature",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5900437235832214
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5384020805358887
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5194182991981506
+      }
+    ]
+  },
+  "2611.01890v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuhao Han"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.01890v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-01",
+    "reasoning": "This paper introduces a novel graph-theoretic approach to tensor contraction using ZX calculus, a computational methodology highly relevant to advanced simulations in quantum physics and condensed matter.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Tensor Networks",
+      "Quantum Computing Algorithms",
+      "Graph Theory"
+    ],
+    "summary": "Tensors are higher dimensional generalisations of vectors and matrices. Tensor networks are a diagrammatic representation of complicated relations between tensors, and tensor contraction is the evaluation of a tensor network analogous to matrix multiplication. Tensor networks and tensor contraction are ubiquitous in computer science, physics, and applied mathematics.   Most existing tensor contraction algorithms are focused on finding an optimal contraction order of the tensors' bonds. However, finding the optimal order is an NP-hard problem. It is equivalent to another possibly more straightforward but still NP-hard problem of finding the treewidth of the line graph of the tensor network.   While in general finding the optimal bond-by-bond contraction order is hard, in many practical cases there is no need to find an optimal order. This observation leads to the core innovation of this thesis, which is a new tensor contraction paradigm that uses graph theoretic operations to produce an equivalent tensor network whose line graph has lower treewidth than the original tensor network, before applying the bond-by-bond contraction algorithm. We call these graph theoretical operations \\textit{rewrite preprocessing}, and we name the algorithms that apply rewrite preprocessing before regular bond-by-bond contraction \\textit{Tensor Contraction with Graph Operation}.   There are many possible ways to perform rewrite preprocessing; in this thesis, we focus on the graph operations of ZX calculus, a diagrammatic language for quantum circuits. Ample numerical simulations have been performed to demonstrate the effectiveness of our proposed method.",
+    "title": "Tensor Contraction with ZX Calculus, a Graph-Theoretic Approach",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.40106329321861267
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.3990778923034668
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.39790672063827515
+      }
+    ]
   },
   "2611.01899v1": {
     "authors": [
@@ -104,14 +222,93 @@
         "name": "Zhe Yuan"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.01944v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
     "published_date": "2026-11-01",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces and characterizes altermagnetism, a novel magnetic phase with unique symmetry-driven transport properties, aligning with the user's interest in new material phases and the role of symmetry in condensed matter physics.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spin transport",
+      "Novel magnetic phases"
+    ],
     "summary": "Altermagnetism combines vanishing net magnetization with momentum-dependent spin splitting, enabling spin-transport functionalities without ferromagnetism. Although rutile RuO$_2$ has been proposed as a d-wave altermagnet, its magnetic ground state remains highly controversial. Moreover, existing transport verifications suffer from severe ambiguity due to the entanglement of spin-splitting effects and time-reversal-even spin-Hall contributions. Here, we introduce a two-pronged strategy to break the current verification impasse. First, we establish a definitive, symmetry-based transport criterion: by identifying specific crystallographic geometries where the spin-Hall background is strictly forbidden, we provide a zero-background window for unambiguous altermagnetic detection. Concurrently, to bypass the uncertain bulk energetics, we propose the RuO$_2$/MnO$_2$ superlattice as a prototypical platform to robustly enforce the d-wave altermagnetic order via interfacial magnetic proximity. Within this platform, symmetry-resolved spin-transport analysis reveals unconventional responses, including collinear spin currents enabling field-free magnetization switching and sizable spin-polarized charge currents. By combining a universal transport criterion with a robustly engineered material platform, our work transcends the debates over bulk properties, providing an actionable, definitive experimental roadmap for verifying d-wave altermagnetism.",
     "title": "Symmetry-Based Transport Criterion and Robust Design for RuO$_2$-type Altermagnets",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6187500953674316
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.575855553150177
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5656383037567139
+      }
+    ]
+  },
+  "2611.02505v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Krishna Bhatia"
+      },
+      {
+        "affiliation": [],
+        "name": "Kavita Choudhary"
+      },
+      {
+        "affiliation": [],
+        "name": "Pruthwik Mishra"
+      },
+      {
+        "affiliation": [],
+        "name": "Praveen Kumar Chandaliya"
+      }
+    ],
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.02505v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper is focused on quantum-inspired computer vision and face verification, which is entirely outside the user's expressed interests in condensed matter physics, superconductivity, and correlated materials.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Face Verification",
+      "Tensor Networks",
+      "Computer Vision"
+    ],
+    "summary": "Quantum-inspired computer vision often reshapes high-dimensional features into tensors and applies tensor-network models. In face verification, this can be misleading: modern embeddings are optimized for cosine similarity, and tensorization alone does not establish the low-rank structure needed for tensor trains or matrix-product operators (MPOs). We study model placement through two controlled interfaces. First, cross-model embedding alignment requires a 512 x 512 operator to map AdaFace embeddings into ArcFace space. Dense Ridge and Procrustes mappings remain strong, while deterministic TT-SVD and MPO compression underperform even with basis changes and low-rank residuals. At a 64K-parameter storage budget, mean directional AUC is 0.9297 for dense Ridge, 0.8952 for rank-64 SVD, 0.8685 for the best low-rank-MPO hybrid, and approximately 0.649 for raw MPO. Second, before global pooling, we construct a 7 x 7 x 7 x 7 probe-gallery correspondence tensor from local AdaFace descriptors. A geometry-aware symmetric tensor train with bond dimension 2 uses 122 trainable parameters, compared with 2,403 for a dense linear matcher, while attaining an LFW AUC of 0.9802. Yet compression does not translate into better low-false-acceptance performance: on CFP-FP, TAR at FAR = 0.001 is 0.0102 versus 0.1734 for global cosine matching, and on CPLFW it is 0.7805 versus 0.8737. These results suggest that quantum-inspired factorization is most credible when the chosen interface provides task-aligned axes and compressible structure. They also show why aggregate AUC must be assessed alongside operational low-FAR metrics.",
+    "title": "QFacePlacement: From Arbitrary Tensorization to Semantic Spatial Correspondence in Modern Face Verification",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4000155031681061
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3394639492034912
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.3214890956878662
+      }
+    ]
   },
   "2611.02582v1": {
     "authors": [
@@ -120,14 +317,43 @@
         "name": "Yasuyuki Kawahigashi"
       }
     ],
-    "discovery_sources": [],
+    "categories": [
+      "cond-mat.str-el",
+      "math.OA",
+      "math.QA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
     "id": "2611.02582v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-11-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates the theoretical and mathematical framework of two-dimensional topological order using tensor networks, a fundamental concept relevant to the user's interest in topological materials and quantum phases.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Topological order",
+      "Tensor networks",
+      "Fusion categories"
+    ],
     "summary": "We study 3-tensors satisfying the ``zipper condition,'' which play an important role in tensor network approaches to two-dimensional topological order. In our previous work, we identified the 4-tensors appearing in these approaches with bi-unitary connections in the Jones theory of subfactors in operator algebras. These bi-unitary connections give rise to subfactors of finite index. We prove that, when the associated subfactor has finite depth, the 3-tensors satisfying the zipper condition correspond precisely to the quantum $6j$-symbols, also known as $F$-symbols, of the unitary multi-fusion category arising from the subfactor. This realization of quantum $6j$-symbols differs from their realization through a flat bi-unitary connection arising from the higher relative commutants of a subfactor.",
     "title": "Quantum 6j-symbols arising from a subfactor of finite index and finite depth and the zipper condition for 4-tensors in two-dimensional topological order",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.40453073382377625
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.40052899718284607
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.39963096380233765
+      }
+    ]
   },
   "2611.02622v1": {
     "authors": [
@@ -201,14 +427,111 @@
         "name": "Shashi B Singh"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.02703v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper investigates frustrated magnetism and competing interactions in rare-earth compounds, which aligns with the interest in competing phases and correlated electron physics seen in the liked papers on superconductors and nickelates.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Frustrated Magnetism",
+      "Rare-Earth Compounds",
+      "Magnetocaloric Effect"
+    ],
+    "summary": "Triangular magnetic lattices have attracted significant attention as a model platform for exploring frustrated magnetism and quantum spin liquids, particularly in rare-earth-based systems. These materials also hold considerable promise for cryogenic magnetic refrigeration. In this work, we investigate the magnetic and magnetocaloric properties of the rare-earth (RE) based compounds $\\text{Ba}_3\\text{RE}(\\text{BO}_3)_3$ ($\\text{RE} = \\text{Dy}$ and $\\text{Ho}$). Polycrystalline samples synthesized via a solid-state reaction method crystallize in a hexagonal structure with the space group $P6_3mc$, featuring triangular nets separated by approximately $8.8~\\textÅ$ along the $c$-axis. Detailed magnetic investigation reveals a deviation from pure paramagnetic behavior at low temperatures ($T < 20\\text{ K}$). This is further corroborated by isothermal magnetization measurements, which exhibit non-overlapping $M$ vs. $H/T$ plots and reduced magnetization moments, suggesting significant crystal electric field (CEF) splitting of localized $f$-states. For an applied magnetic field change of $70\\text{ kOe}$, the maximum entropy change (Relative Cooling Power) reaches $4.2\\text{ J kg}^{-1}\\text{ K}^{-1}$ ($204\\text{ J kg}^{-1}$) and $7.3\\text{ J kg}^{-1}\\text{ K}^{-1}$ ($230\\text{ J kg}^{-1}$) for the Dy- and Ho-based compounds, respectively. Overall, the positive slopes of Arrott plots, the universal scaling behaviour of $ΔS_{\\text{m}}/ΔS_{\\text{m}}^{\\text{max}}$ versus reduced temperature ($t$), and the field exponent $c$ of the RCP versus $H$ curves indicate a second-order nature of entropy distribution, making them promising candidates for magnetocalorics in the millikelvin range.",
+    "title": "Competing interaction driven broad magnetic entropy distribution in triangular net compounds \\text{Ba$_3$RE(BO$_3$)$_3$}, RE= Dy and Ho",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:Tiz5es2fbqcC",
+        "score": 0.521230936050415
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.51319819688797
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.5074105858802795
+      }
+    ]
+  },
+  "2611.02731v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kayo Kinjo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Ohkubo"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.02731v1",
     "published_date": "2026-11-02",
     "reasoning": "Could not be analyzed by LLM.",
     "score": 0,
-    "summary": "Triangular magnetic lattices have attracted significant attention as a model platform for exploring frustrated magnetism and quantum spin liquids, particularly in rare-earth-based systems. These materials also hold considerable promise for cryogenic magnetic refrigeration. In this work, we investigate the magnetic and magnetocaloric properties of the rare-earth (RE) based compounds $\\text{Ba}_3\\text{RE}(\\text{BO}_3)_3$ ($\\text{RE} = \\text{Dy}$ and $\\text{Ho}$). Polycrystalline samples synthesized via a solid-state reaction method crystallize in a hexagonal structure with the space group $P6_3mc$, featuring triangular nets separated by approximately $8.8~\\textÅ$ along the $c$-axis. Detailed magnetic investigation reveals a deviation from pure paramagnetic behavior at low temperatures ($T < 20\\text{ K}$). This is further corroborated by isothermal magnetization measurements, which exhibit non-overlapping $M$ vs. $H/T$ plots and reduced magnetization moments, suggesting significant crystal electric field (CEF) splitting of localized $f$-states. For an applied magnetic field change of $70\\text{ kOe}$, the maximum entropy change (Relative Cooling Power) reaches $4.2\\text{ J kg}^{-1}\\text{ K}^{-1}$ ($204\\text{ J kg}^{-1}$) and $7.3\\text{ J kg}^{-1}\\text{ K}^{-1}$ ($230\\text{ J kg}^{-1}$) for the Dy- and Ho-based compounds, respectively. Overall, the positive slopes of Arrott plots, the universal scaling behaviour of $ΔS_{\\text{m}}/ΔS_{\\text{m}}^{\\text{max}}$ versus reduced temperature ($t$), and the field exponent $c$ of the RCP versus $H$ curves indicate a second-order nature of entropy distribution, making them promising candidates for magnetocalorics in the millikelvin range.",
-    "title": "Competing interaction driven broad magnetic entropy distribution in triangular net compounds \\text{Ba$_3$RE(BO$_3$)$_3$}, RE= Dy and Ho",
+    "summary": "The correlation between two subsystems $A$ and $B$ of a many-body system is usually measured through a pair of observables chosen in advance. The Hirschfeld-Gebelein-Rényi maximal correlation removes the choice: it is the largest correlation coefficient between any function of the configuration of $A$ and any function of the configuration of $B$, and the two functions that reach it, the optimal transformations, are the observables that carry the correlation. Both follow from a singular value decomposition (SVD) of the joint distribution normalized by its marginals, a matrix whose dimension is the number of configurations. We show that this SVD can be computed variationally for a classical distribution of discrete variables, such as the Boltzmann distribution of a spin model, given in the tensor-train (matrix-product) format, without ever forming the matrix. The optimal transformations are sought as tensor trains; each step updates a single core in closed form, and the inverse of a small matrix contracted from the distribution and the remaining cores performs the division by the marginals core by core. Every iterate is a feasible pair, so the objective is a lower bound on the maximal correlation that increases monotonically, and the cost grows linearly with the number of variables. The algorithm reproduces the exact SVD on small systems, recovers the known nonlinear optimal transformations of synthetic distributions of up to ten angular variables ($10^{15}$ configurations), and, for the bipartite antiferromagnetic model with $2^{32}$ configurations, returns an optimal transformation that is a function of the group magnetization, linear above the transition and sign-like below it: the staggered order parameter is read off from the distribution instead of being postulated.",
+    "title": "Maximal correlation and optimal transformations of probability distributions in tensor-train format: a variational algorithm",
     "vector_matches": []
+  },
+  "2611.02785v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ryota Nakai"
+      },
+      {
+        "affiliation": [],
+        "name": "Taozhi Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Shinsei Ryu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.02785v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-02",
+    "reasoning": "This theoretical paper explores topological phenomena in chiral Floquet phases, including quantized boundary effects and winding numbers, which aligns with the user's interest in topological materials and symmetry.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Floquet Phases",
+      "Topological Pumping",
+      "Quantum Cellular Automata"
+    ],
+    "summary": "Chiral Floquet phases support quantized chiral flow along their boundaries even when the bulk is fully localized. In this Letter, we establish a complementary phenomenon, which we call Hilbert-space pumping: under a boundary condition twisted by time translation, a part of the boundary Hilbert space, of quantized dimension, is transferred between the opposite boundaries. The twist is the temporal analogue of Laughlin's flux insertion in the quantum Hall effect. For noninteracting fermions, the number of transferred boundary modes is determined by the winding number, as we show analytically for the boundary dynamics and numerically for the anomalous Floquet Anderson insulator. For interacting systems whose boundary dynamics is a quantum cellular automaton, the transferred dimension is set by the Gross-Nesme-Vogts-Werner (GNVW) index: the twisted boundary Floquet operator is the Floquet operator on a tilted time slice, whose Hilbert-space dimension is multiplied by the index for each period of twist. We derive this relation for matrix product unitaries and test it numerically in random unitary circuits. Applied to the matrix product operators of non-invertible symmetries, the same twisted rank returns the quantum dimension of the symmetry operator in addition to its flow index.",
+    "title": "Quantized pumping of boundary Hilbert space in chiral Floquet phases",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5063121318817139
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5057085156440735
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.4926903247833252
+      }
+    ]
   },
   "2611.02796v1": {
     "authors": [
@@ -265,14 +588,40 @@
         "name": "Yingge Du"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.02796v1",
+    "matching_keywords": [
+      "nickelate",
+      "x-ray absorption spectroscopy"
+    ],
     "published_date": "2026-11-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates high-entropy nickelate thin films, exploring how A-site disorder and epitaxial strain tune electronic structure and defect formation, directly aligning with the user's interest in nickelates and their properties.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "High-Entropy Oxides",
+      "Electrocatalysis",
+      "A-Site Disorder"
+    ],
     "summary": "Rare-earth nickelates are among the most active oxide electrocatalysts for the oxygen evolution reaction (OER), owing to their tunable Ni-O covalency, near-unity eg occupancy, and sensitivity to A-site chemistry, oxygen stoichiometry, and epitaxial strain. Here, we use epitaxial A-site high-entropy (La0.2Pr0.2Nd0.2Sm0.2Eu0.2)NiO3 thin films to reveal how epitaxial strain influences defect formation, Ni valence, electronic structure, and OER activity in a chemically disordered rare-earth (RE) sublattice. Tensile strain promotes Ruddlesden-Popper fault formation, interrupts the corner-sharing NiO6 network, and lowers the average Ni oxidation state. Although the occupied density of states near the Fermi level remains largely unchanged, O K-edge X-ray absorption spectroscopy reveals increased low-energy unoccupied states under tensile strain. First-principles calculations suggest that tensile strain shifts RE 4f-derived states toward the Fermi level, enhancing RE 4f-O 2p-Ni 3d hybridization. These coupled structural and electronic changes lead to earlier OER onset, stronger pre-catalytic Ni redox features, and higher activity than compressively strained films and representative single-A-site nickelates. The high-entropy nickelate also shows enhanced resistance to OER-induced structural degradation compared with LaNiO3. These results suggest that A-site configurational disorder and epitaxial strain can jointly tune defect formation and rare-earth-derived electronic states, providing a route for improving perovskite oxide electrocatalysts.",
     "title": "High-Entropy A-Site Disorder Enhances Oxygen Evolution Reaction Activity and Stability in Nickelate Thin Films",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.6930202841758728
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pqnbT2bcN3wC",
+        "score": 0.6923508048057556
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.5841936469078064
+      }
+    ]
   },
   "2611.03154v1": {
     "authors": [
@@ -309,14 +658,41 @@
         "name": "Haifeng Wang"
       }
     ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "cs.CE"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.03154v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
     "published_date": "2026-11-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces a comprehensive deep learning toolkit for materials science, capable of tasks like electronic-structure field prediction and property prediction, which can be applied to investigate the correlated electron systems and complex materials explored in the user's liked papers.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Deep Learning Toolkit",
+      "Materials Informatics",
+      "Electronic Structure Prediction"
+    ],
     "summary": "Machine learning supports materials design, atomistic simulation and experimental characterization, yet models and workflows remain fragmented. We present PaddleMaterials, an open-source framework integrating heterogeneous materials-learning tasks while preserving task-specific representations and scientific semantics. It unifies data processing, training, evaluation, pretrained-model management and workflows across six task classes: property prediction, structure generation, machine-learning interatomic potentials, electronic-structure fields, spectrum elucidation and microscopy image processing. Task interfaces record physical quantities, units, aggregation conventions and references, making cross-task composition verifiable. A shared compiler backend enables switching from dynamic-graph to compiled execution through one setting, using graph optimization, operator fusion and hardware-targeted code generation without changing model definitions. Across 65 model instances in 11 groups, compiled execution accelerated every instance in eight groups, with group median speedups of 11%-224% and group maximum speedups of 11%-336%. Case studies on LiMnO2 and toluene link structure generation or spectrum elucidation, interatomic-potential relaxation, property prediction and electron-density prediction, using same-geometry density functional theory (DFT) calculations as references. For LiMnO2, predicted formation energies for generated and relaxed structures differed from same-geometry PBE+U references by at most 7 meV per atom, while the computational cost of model steps was less than one-twentieth of a DFT single-point calculation. PaddleMaterials extends unified materials workflows beyond conventional property, potential and structure-generation tasks while supporting verifiable cross-task operations and compiled execution.",
     "title": "PaddleMaterials: An End-to-End Deep Learning Toolkit for Materials Science",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4577993154525757
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.4010973870754242
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.37881365418434143
+      }
+    ]
   },
   "2611.03180v1": {
     "authors": [
@@ -391,6 +767,117 @@
     "title": "Spin SYK-dot chains: entanglement bound and resource estimates towards a quantum advantage",
     "vector_matches": []
   },
+  "2611.03207v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sayantan Dey"
+      },
+      {
+        "affiliation": [],
+        "name": "Abel Carreras"
+      },
+      {
+        "affiliation": [],
+        "name": "Siddhartha Patra"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.03207v2",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper discusses advanced computational methods like tensor networks and exact diagonalization for strongly correlated SYK models, which aligns with an interest in computational approaches for complex quantum systems.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum Advantage",
+      "SYK Models",
+      "Tensor Network Simulations"
+    ],
+    "summary": "Ground states of Sachdev-Ye-Kitaev (SYK)-type models are volume-law entangled, which makes them costly both for tensor networks and for quantum hardware simulations. Thus, it remains unclear where quantum hardware could outperform classical simulation of such models. In this work, we study a spin SYK-dot chain, in which q dense SYK dots of p qubits are joined by single ZZ bonds of strength K. The entanglement across any cut is then bounded by floor(p/2) ln 2 plus the inter-dot entanglement, and the two-qubit depth of one Trotter step is set by p alone. A resource estimate shows that a quantum advantage for the ground state could appear only for dots of about 15 to 21 qubits or more. There, a single Trotter step already requires two-qubit error rates of order 10^{-6}, beyond the reach of noisy intermediate-scale quantum (NISQ) hardware. We test the assumptions of this estimate with an imaginary-time matrix product state (MPS) that applies each dot as one block. It agrees with exact diagonalisation at (p, q) = (6, 2). At (5, 2), a variational circuit with the same dot-plus-link layout comes within 3.6% of the exact energy, and noisy simulations show that its fidelity decays as assumed in the resource estimate. At (8, 5), i.e., N = 40 qubits, the energy converges at bond dimension chi = 768, far below the exact value 2^20, and the inter-dot entanglement stays small and is set mainly by K. Out-of-time-order correlators across the links decay on a time scale that shrinks rapidly with |K|. Thus, the dot size p and the inter-dot coupling K together set the entanglement of the chain, and with it where a quantum advantage could appear.",
+    "title": "Spin SYK-dot chains: entanglement bound and resource estimates towards a quantum advantage",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4556081295013428
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4483208954334259
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.43320176005363464
+      }
+    ]
+  },
+  "2611.03241v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nisarg Chadha"
+      },
+      {
+        "affiliation": [],
+        "name": "Taige Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Pavel A. Nosov"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael G. Scheer"
+      },
+      {
+        "affiliation": [],
+        "name": "Eslam Khalaf"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.03241v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper rigorously proves the existence of Néel order in a fundamental antiferromagnetic model using matrix product states, directly connecting to the magnetism and computational methods relevant for strongly correlated materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "quantum magnetism",
+      "spontaneous symmetry breaking",
+      "rigorous proof"
+    ],
+    "summary": "Rigorously establishing spontaneous symmetry breaking (SSB) in the thermodynamic limit is generally challenging. This is exemplified by the two-dimensional (2D) $S = 1/2$ antiferromagnetic Heisenberg model where the existence of Néel order is not rigorously established despite overwhelming evidence from a variety of methods. We show that a bootstrap approach can be used to rigorously establish SSB and use it to prove the existence of Néel order in the 2D $S = 1/2$ XXZ model by deriving a strictly positive lower bound on the Néel order parameter for a set of discrete values of the anisotropy parameter $Δ$ in the range $[0,2]$ including the isotropic (Heisenberg) point $Δ= 1$. Our approach employs a generalization of the Kennedy--Lieb--Shastry inequalities, which use an infrared bound to reduce the existence of long-range order to bounds on certain finite-distance correlators. We compute these bounds for all sufficiently large systems with periodic boundary conditions using the bootstrap. An important ingredient in our proof is a novel method for obtaining exactly certified variational upper bounds on the energy density in the thermodynamic limit from matrix product states. Our approach can be readily generalized to other local lattice models for which infrared susceptibility bounds can be obtained.",
+    "title": "Establishing Néel order in the square-lattice antiferromagnetic Heisenberg model: a bootstrap proof",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5559795498847961
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5422384738922119
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5261573791503906
+      }
+    ]
+  },
   "2611.03485v1": {
     "authors": [
       {
@@ -398,14 +885,42 @@
         "name": "Suhas Suresh Bharadwaj"
       }
     ],
+    "categories": [
+      "physics.comp-ph",
+      "cond-mat.mtrl-sci",
+      "cs.LG",
+      "physics.app-ph"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.03485v1",
+    "matching_keywords": [
+      "neural network"
+    ],
     "published_date": "2026-11-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper focuses on a computational method (PINN) for identifying material parameters in piezoelectric devices, which is distant from the user's interest in fundamental properties of strongly correlated, topological, or magnetic materials.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Piezoelectricity",
+      "Physics-informed neural networks",
+      "Parameter identification"
+    ],
     "summary": "The shear piezoelectric coefficient $e_{15}$ governs the shear-mode electromechanical coupling in piezoelectric micromachined ultrasonic transducers (PMUTs) and surface acoustic wave (SAW) devices, but measuring it typically requires destructive resonance testing on dedicated specimens. On simulated data, $e_{15}$ can instead be recovered non-destructively from sparse, noisy subsurface wavefield observations using a constrained physics-informed neural network (PINN). By building exact spatial distance functions and temporal multipliers directly into the network output, the clamped, grounded boundaries and resting initial state hold automatically, leaving the loss with only the interior equations of coupled electro-elastodynamics and the data misfit. Non-dimensional scaling brings all governing coefficients within one decade of O(1), and the setup removes the boundary and initial-condition penalty weights that soft-constraint methods must tune. In a six-way comparison (plane-strain PZT-5H, manufactured wavefield, 30 dB noise), a soft-penalty baseline with adaptive weights converges to an erroneous $e_{15}$ in four of the five runs (51.7% mean error), and fixed penalties reach an error of 0.85% only after a second-order optimization stage. The constrained formulations reach mean $e_{15}$ errors between 0.15% and 0.51% with held-out displacement errors below 1%. Within these variants, the spatial multiplier gives rapid first-order convergence, and the quadratic temporal multiplier lowers the early-time electrostatic residual by a factor of 6.8 versus a linear one. On finite-element data along one subsurface line, the full formulation recovers $e_{15}$ with 1.19% mean error at 30 dB and keeps it between 0.65% and 2.71% across a 40 to 0 dB noise sweep. Finally, training on displacements alone still recovers $e_{15}$ with mean errors of 0.45% on finite-element and 1.64% on manufactured data.",
     "title": "Identifying the Shear Piezoelectric Coefficient using Physics-Informed Neural Networks under Exact Boundary and Initial Constraints",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3366430997848511
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3132450580596924
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.29988688230514526
+      }
+    ]
   },
   "2611.03492v1": {
     "authors": [
@@ -418,13 +933,936 @@
         "name": "Li Zhu"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2611.03492v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
     "published_date": "2026-11-02",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper introduces a new class of magnetic materials exhibiting unique symmetry-enforced spin splitting and nodal planes, aligning with the user's interest in novel topological and correlated electronic phases and their symmetries, similar to Dirac fermions and semimetals.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Clathrates",
+      "Spin splitting"
+    ],
     "summary": "The spin splitting of an altermagnet arises from a rotation that relates its two magnetic sublattices. In known cases it is fixed by the crystal structure. Here we show that guest-host frameworks separate the two roles. In the boron-carbon clathrates $M$B$_3$C$_3$ the ordered cage removes the translation between the two guest sites and enforces cubic $i$-wave altermagnetism, with six symmetry-enforced nodal planes, for any magnetic guest in the compensated state; strain retunes the class to $d$- or $g$-wave. We demonstrate the platform with GdB$_3$C$_3$: its compensated antiferromagnetic ground state is a narrow-gap semiconductor with spin splitting of 0.19 eV at the conduction-band edge, and its weakly pinned Néel vector switches the helicity-resolved optical response on and off according to the magnetic point group. Thermodynamic stability at high pressure and dynamical stability at ambient pressure indicate that it can be made by the route established for this family.",
     "title": "Cage-enforced i-wave altermagnetism in boron-carbon clathrates",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.562328577041626
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5163254737854004
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5146032571792603
+      }
+    ]
+  },
+  "2611.03538v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Amogh Anakru"
+      },
+      {
+        "affiliation": [],
+        "name": "Linhao Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhen Bi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.quant-gas"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.03538v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper investigates a novel intrinsically gapless topological phase with unique symmetry properties and strong correlations (Luttinger liquid), directly relevant to the user's strong interest in topological materials and theoretical models of strongly correlated systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Dipole symmetry",
+      "Gapless topological phase",
+      "Luttinger liquid"
+    ],
+    "summary": "We show that the boundary fractionalization familiar from gapped topological insulators can enforce bulk gaplessness in a dipole-conserving system. In a one-dimensional fermion model with charge conservation, dipole conservation, and particle-hole symmetry, we realize an intrinsically gapless symmetry-protected topological (igSPT) phase combining a dipolar Luttinger liquid with half-quantized boundary charges. This boundary structure obstructs a unique gapped bulk preserving these symmetries and lattice translation. Remarkably, the two charge-neutral edge configurations remain exactly degenerate even at finite size due to dipole conservation and particle-hole symmetry. The boundary fractionalization also manifests as shifted conformal towers in the dipole-resolved entanglement spectrum, reflecting distinct conformal boundary conditions of the Luttinger liquid. We support our analysis of the igSPT by studying exactly-solvable limits and performing DMRG computations, establishing its stability for a wide range of tuning parameters.",
+    "title": "An Intrinsically Gapless Topological Phase with Dipole Symmetry",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6755113005638123
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5383610725402832
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.5019676089286804
+      }
+    ]
+  },
+  "2611.03833v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tianle Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomohiro Soejima"
+      },
+      {
+        "affiliation": [],
+        "name": "Norman Y. Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Ashvin Vishwanath"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael P. Zaletel"
+      },
+      {
+        "affiliation": [],
+        "name": "Taige Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel E. Parker"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.03833v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper investigates repulsion-driven topological superconductivity in a moiré material, featuring Majorana edge modes, which strongly aligns with interests in superconductivity and topological states.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Moiré Materials",
+      "Topological Superconductivity",
+      "Majorana Modes"
+    ],
+    "summary": "We show that a microscopic model of twisted MoTe$_2$ with screened Coulomb interactions produces topological superconductivity. Using the density matrix renormalization group (DMRG) on infinite cylinders, we find that the narrow Chern band of twisted MoTe$_2$ has Cooper pair correlations that strengthen with cylinder circumference, consistent with two dimensional superconductivity. The superconductor has chiral $f$-wave pairing around the valley center, and its topology produces chiral Majorana edge modes and non-Abelian vortex cores. At zero displacement field, the superconductor spans fillings $-0.78\\lesssimν\\lesssim-0.72$, close to the experimental range, and extends in a dome to finite displacement field. We then predict how its stiffness evolves with the filling and the tunable displacement field. The interplay with screening length is also examined. Nearby, we find a fractional Chern insulator, a topological charge density wave, a metal, and a charge-ordered state. The last is a candidate for the reentrant integer Hall regime in experiments. These results establish a route from repulsive interactions in microscopic models of moiré materials to chiral topological uperconductors with chiral Majorana edge modes.",
+    "title": "Repulsion-Driven Topological Superconductivity in Twisted MoTe$_2$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5757725834846497
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5365374088287354
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.5196707248687744
+      }
+    ]
+  },
+  "2611.03859v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pau Torrente Badia"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Pérez García"
+      },
+      {
+        "affiliation": [],
+        "name": "Artur Garcia-Saez"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Carignano"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.03859v1",
+    "matching_keywords": [
+      "density matrix renormalization group",
+      "tensor network"
+    ],
+    "published_date": "2026-11-02",
+    "reasoning": "This paper develops efficient preconditioning techniques for tensor network solvers, specifically mentioning DMRG-like methods, directly relevant to the user's interest in computational efficiency for quantum many-body physics.",
+    "score": 0.87,
+    "suggested_keywords": [
+      "Tensor train",
+      "Preconditioning",
+      "DMRG"
+    ],
+    "summary": "We present a preconditioning pipeline that accelerates Tensor Train (TT) linear solvers for symmetric positive-definite problems. Extending the Factorized Sparse Approximate Inverse framework to tensor networks, we construct a preconditioner as the product of a TT operator and its transpose. This formulation is positive semidefinite for any bond dimension and truncation, and definite whenever the factor is non-singular, satisfying the mathematical requirements of the Conjugate Gradient method. We detail the construction of this preconditioner and its integration into Density Matrix Renormalization Group (DMRG)-like linear solvers. Performance evaluations show consistent iteration reductions for anisotropic diffusion and Poisson problems across various configurations, leading to net speedups of up to 25% in ill-conditioned settings of time stepping schemes that can reuse the approximate inverses. These benchmarks were performed with the open-source Julia library DifferenTT.jl, which we also introduce in this work to provide out-of-the-box access to these preconditioned pipelines.",
+    "title": "Factorized approximate inverse preconditioners in the tensor train format",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.47394242882728577
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4413786828517914
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4135245382785797
+      }
+    ]
+  },
+  "2611.04156v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Laurenz Kremeyer"
+      },
+      {
+        "affiliation": [],
+        "name": "Bradley J. Siwick"
+      },
+      {
+        "affiliation": [],
+        "name": "Samuel Huberman"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mes-hall"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.04156v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "This paper presents a frequency-domain solver utilizing Green's functions for phonon transport, which aligns methodologically with the user's interest in \"real-frequency solver for dynamical mean-field theory\" by employing similar advanced computational techniques.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Phonon Transport",
+      "Wigner Transport Equation",
+      "Green's Function Method"
+    ],
+    "summary": "Heat transport in solids is usually described in a phenomenological way via Fourier's law. However, at small time and length scales in low thermal conductivity materials, a microscopic description is needed. This is traditionally done by invoking the phonon Boltzmann Transport Equation (BTE), which has been successful in describing transport in high thermal conductivity materials. Recently, a generalization of the BTE, the Wigner Transport Equation, was developed to be able to microscopically describe transport in low thermal conductivity materials by taking into account not only phonon scattering processes but also phonon tunneling processes, so-called coherences. We present a Python package that solves the Wigner Transport Equation (WTE) in spatial and temporal Fourier space for arbitrary source terms, thereby enabling the study of heat transport at small space and time scales. This allows one to compute both static and dynamic thermal conductivities from bulk to nanoscale. Beyond that, it can be used to study the response of phonon systems in materials to arbitrary heat sources.",
+    "title": "greenWTE: Frequency-domain solver for the phonon Wigner Transport Equation with arbitrary heating using Green's functions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.4118207097053528
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.40984082221984863
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.40104636549949646
+      }
+    ]
+  },
+  "2611.04333v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yuntian Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaohui Fan"
+      },
+      {
+        "affiliation": [],
+        "name": "Ruichen Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Haoxiang Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Weizhong Fu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yixiao Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Dingshun Lv"
+      },
+      {
+        "affiliation": [],
+        "name": "Weiluo Ren"
+      },
+      {
+        "affiliation": [],
+        "name": "Tao Xiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Liwei Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingpu Qin"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiang Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.04333v1",
+    "matching_keywords": [
+      "green's function",
+      "hubbard model",
+      "neural quantum state",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "This paper introduces a JAX toolkit for neural quantum state simulations of lattice quantum many-body models, directly supporting research areas like strongly correlated systems and advanced computational physics.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "neural quantum states",
+      "JAX",
+      "computational condensed matter"
+    ],
+    "summary": "Neural quantum states provide accurate variational representations for interacting lattice fermions and spins. Turning a new ansatz into a reproducible calculation, however, requires coordinated implementations of the Hamiltonian, sampling, optimization, observables, and accelerator parallelism. We present LaQX (Lattice Quantum simulation based on jaX), an open-source neural quantum state library based on JAX that organizes these components through common functional interfaces. Beyond ground-state variational Monte Carlo, LaQX supports excited-state calculations, Green's Function Monte Carlo refinement, adiabatic evolution, and real-time evolution with time-dependent variational Monte Carlo. It consolidates methods developed in recent high-accuracy neural quantum state studies of the Hubbard model and frustrated magnets, and the package has been used to investigate the triangular-lattice Hofstadter-Hubbard model. We document these capabilities with reproducible calculations for Hubbard, $J_1$-$J_2$ Heisenberg, altermagnetic Hubbard, and interacting Hofstadter models. Function-oriented modules separate the scientific components and limit the source context needed for extensions by human developers and large language models. Source code, documentation, and executable examples are available at https://github.com/bytedance/laqx.",
+    "title": "LaQX: A JAX Toolkit for Neural Quantum State Simulations of Lattice Quantum Many-Body Models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6232491135597229
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.6063706874847412
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6063638925552368
+      }
+    ]
+  },
+  "2611.04360v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dibyendu Adak"
+      },
+      {
+        "affiliation": [],
+        "name": "Radoslav Vuchkov"
+      },
+      {
+        "affiliation": [],
+        "name": "Oleg Korobkin"
+      },
+      {
+        "affiliation": [],
+        "name": "Ted Sariyski"
+      },
+      {
+        "affiliation": [],
+        "name": "Boian S. Alexandrov"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.04360v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-03",
+    "reasoning": "While employing advanced tensor-train computational methods, the application to multigroup neutron transport falls outside the user's primary interests in condensed matter physics and strongly correlated systems.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Tensor-Train Decomposition",
+      "Numerical Methods",
+      "Neutron Transport"
+    ],
+    "summary": "We develop a hybrid tensor-train/quantized tensor-train (TT/QTT) upwind discontinuous Galerkin method for three-dimensional transient multigroup neutron transport. The central contribution is a fixed-matrix upwind construction: two spatial DG matrices serve all directions and energy groups, with signed and absolute direction-cosine factors preserving Kronecker structure. For homogeneous materials on uniform Cartesian grids, operator rank bounds are independent of mesh size, group count and direction count at fixed scattering order. We derive a conditional global step-defect bound and enforce group-integrated balance of the compressed system. Crank-Nicolson tests show second-order convergence on a separable manufactured solution whose finest final state occupies 13 kB instead of 35 TB, a compression factor of $2.7\\times10^9$. A modified rank-adaptive basis-update and Galerkin integrator (TT-BUG) advances passive and active bursts with approximately half a billion unknowns. Selected runs are 15-20 times faster than AMEn at comparable verified scalar-flux errors. In the reported anisotropic active-burst configurations, TT-BUG takes 14.3 s on one processor versus 716 s for OpenSn on 24 processors: approximately 50 times less wall time and 1200 times less allocated processor-time cost. This compares reported configurations rather than matched physical errors. OpenSn provides an independent discretization check. The modified TT-BUG source-onset and saturation treatment is tested numerically; its order, convergence and general tolerance-to-error relation remain unproved.",
+    "title": "A hybrid TT/QTT discontinuous Galerkin method with fixed-matrix upwinding for three-dimensional transient multigroup neutron transport",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.42578694224357605
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.399394690990448
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.38463354110717773
+      }
+    ]
+  },
+  "2611.04402v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Boian S. Alexandrov"
+      },
+      {
+        "affiliation": [],
+        "name": "Dimiter Petsev"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.04402v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-03",
+    "reasoning": "While proposing a new computational method, its application to the thermodynamics of conventional binary alloys like NiAl and TiAl is outside the user's specific interests in strongly correlated electron systems or topological materials.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Computational Thermodynamics",
+      "Binary Alloys",
+      "Self-Consistent Harmonic Approximation"
+    ],
+    "summary": "The free energy of a crystal is an integral over the positions of all its atoms, in 3N dimensions. We evaluate it without random sampling for the ordered alloys B2 NiAl and gamma-TiAl with embedded-atom potentials, using a self-consistent harmonic approximation (SCHA) corrected to third order in temperature, calculated via thermal averages of tensor-train (TT) integrals built from one atom and its neighbors, which we call TT-SCHA. The result is for an infinite crystal without sampling error; its numerical error is set by the starting pivots of the interpolation (up to 9 MPa in the pressure, reduced by averaging three runs; SM Table S26). Against the molecular dynamics of 65,536 atoms (Frenkel-Ladd free energy at 600 K, integrated energy above), TT-SCHA free energy agrees to 0.13 meV per atom at 600-1000 K, using 420-500 times fewer core-seconds for one run. At zero pressure, results agree with published calculations that use the same embedded-atom potential: the published elastic constants of gamma-TiAl (to 1 GPa, by a static lattice calculation) and its thermal expansion from Monte Carlo sampling (to 0.012 percentage points).",
+    "title": "TT-SCHA for Thermodynamics of Binary Alloys",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5038907527923584
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4625559449195862
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.42318373918533325
+      }
+    ]
+  },
+  "2611.04496v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kunal Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Tomonori Shirakawa"
+      },
+      {
+        "affiliation": [],
+        "name": "Boseong Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Ryo Wakizaka"
+      },
+      {
+        "affiliation": [],
+        "name": "Ikko Hamamura"
+      },
+      {
+        "affiliation": [],
+        "name": "Mitsuhisa Sato"
+      },
+      {
+        "affiliation": [],
+        "name": "Seiji Yunoki"
+      },
+      {
+        "affiliation": [],
+        "name": "Mario Motta"
+      },
+      {
+        "affiliation": [],
+        "name": "Hiroshi Horii"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuri Kobayashi"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.04496v1",
+    "published_date": "2026-11-03",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Sample-based quantum diagonalization (SQD) accuracy remains limited for strongly correlated systems like iron-sulfur clusters. This accuracy heavily depends on the mean-field reference state, which determines the sampling ansatz and configuration-recovery target. We extend the qcsc-prefect workflow to support a broken-symmetry unrestricted Hartree-Fock (BS-UHF) starting point, derived from atom-localized antiferromagnetic initial guesses. For the $[Fe_4S_4(SCH_3)_4]^{2-}$ cubane (54 electrons, 36 orbitals, 72 data qubits; 88 total qubits), this lowers the mean-field reference by $\\approx 534$ mHa relative to the Restricted Hartree-Fock (RHF) solution (-327.0809 vs. -326.5474 Ha). Combined with deep multi-step configuration recovery on ROQUO GPU nodes at subspace dimension $d = 3 \\times 10^{10}$, we reach $E = -327.235076$ Ha. This is 4.3 mHa above the finite-$D = 4000$ DMRG value (-327.2393952 Ha) and $\\sim 512-517$ mHa below a previous same-active-space RHF-reference SQD calculation. Extrapolating to the $d \\to \\infty$ limit via a Gaussian-in-log $d$ fitting ansatz gives an asymptotic estimate $E_\\infty = -327.244468$ Ha $\\pm 1.05$ mHa, just 0.33 mHa above our discarded-weight-extrapolated DMRG estimate ($E_{D\\to\\infty} = -327.244797$ Ha $\\pm 0.46$ mHa), well within their combined $1σ$ uncertainty. We characterize the determinant-subspace composition driving convergence, show matching validation on $[Fe_2S_2(SCH_3)_4]^{2-}$, and report multi-HPC execution on Fugaku, Miyabi-G, and ROQUO. We conclude that reference-state preparation, rather than subspace size alone, is a key driver of SQD energy accuracy under strong electronic correlation.",
+    "title": "Broken-Symmetry Reference States for Sample-Based Quantum Diagonalization with Near-DMRG Accuracy",
+    "vector_matches": []
+  },
+  "2611.04500v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yongwei Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yue Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuting Zhou"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.04500v1",
+    "published_date": "2026-11-03",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Nonlinear lattice kinetic simulation requires each updated distribution to supply the velocity and gradients that determine the next step. In a quantum-classical solver, reading out the full distribution incurs work proportional to the lattice size. We construct a tensor-train (TT) interface that retains reusable classical cores at the physical amplitude scale for a full-relaxation lattice kinetic scheme. The cores supply nonlinear coefficients and prepare each quantum input. Energy-scaled propagation and coordinate recovery encode the updated distribution, and alternating least-squares reconstruction converts signed Hadamard-test overlaps into output cores by restoring a known normalization factor. The next step starts from accepted cores without replaying previous quantum evolution. Under positive, unit-sum reference coefficients, positive lower and finite upper density bounds, and Lipschitz equilibrium sensitivity, perturbation bounds relate local defects to feedback errors. Resource bounds account for classical operations, circuit execution, sampling, and verification. Classical diagnostics expose why distribution accuracy alone is insufficient: in 80-step feedback on a $16\\times16$ grid, rank cap 4 nearly eliminates the vortex despite a final distribution error below $1\\%$, whereas rank cap 12 gives relative velocity error $1.03\\times10^{-3}$. Four-step binomial readout simulations show that tightening core sampling tolerance threefold raises the prescribed sufficient budget from $5.97\\times10^{12}$ to $5.37\\times10^{13}$ shots as the result approaches the fixed-rank, fixed-sweep exact-overlap trajectory. The interface therefore provides a way to connect quantum propagation to nonlinear feedback and to assess the separate demands of compression, velocity accuracy, and readout precision.",
+    "title": "A hybrid quantum-classical lattice kinetic scheme with tensor-train feedback for incompressible flows",
+    "vector_matches": []
+  },
+  "2611.04681v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Brice Kengni Zanguim"
+      },
+      {
+        "affiliation": [],
+        "name": "Thibaut Véry"
+      },
+      {
+        "affiliation": [],
+        "name": "Marie-Bernadette Lepetit"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.04681v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "This paper develops a machine learning model to predict magnetic exchange interactions from chemical composition and structure, which is relevant to understanding magnetic properties in correlated materials.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Magnetic Exchange",
+      "Materials Informatics"
+    ],
+    "summary": "In this paper we propose an ensemble model based on a swarm of dense neural networks, able to predict Heisenberg exchange interactions within less than 1% error. The model uses the inputs of the ab-initio Schrödinger equation, i.e. the compound structure and chemical composition. In this first work, we trained the model on a few compounds of the hexagonal manganite family and were able to infer, with similar accuracy, the J values for other compounds of the same family at randomly chosen geometries, thus showing that we accurately learned the effect of the chemical composition and structure on effective magnetic integrals J.",
+    "title": "Small-data physics-informed ML model for magnetic exchange based on chemical composition and structure",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.467358261346817
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.467151939868927
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4568171203136444
+      }
+    ]
+  },
+  "2611.04815v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Fengyu Yao"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiong Mei"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenjin Mao"
+      },
+      {
+        "affiliation": [],
+        "name": "Runxin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuchen Huo"
+      },
+      {
+        "affiliation": [],
+        "name": "Miaomiao Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Quanxing Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Guihao Jia"
+      },
+      {
+        "affiliation": [],
+        "name": "Qing Qu"
+      },
+      {
+        "affiliation": [],
+        "name": "Cui Ding"
+      },
+      {
+        "affiliation": [],
+        "name": "Lin Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhuoyu Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Ming-Qiang Ren"
+      },
+      {
+        "affiliation": [],
+        "name": "Kun Jiang"
+      },
+      {
+        "affiliation": [],
+        "name": "X. J. Zhou"
+      },
+      {
+        "affiliation": [],
+        "name": "Jin-Feng Jia"
+      },
+      {
+        "affiliation": [],
+        "name": "Qi-Kun Xue"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu-Jie Sun"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.04815v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "It directly investigates cuprate superconductors using scanning tunneling spectroscopy to reveal the atomic-scale manifestation of their unconventional d-wave pairing symmetry, highly relevant to the user's interest in cuprates and experimental probes.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Josephson Spectroscopy",
+      "Cuprate Superconductors",
+      "d-wave Pairing"
+    ],
+    "summary": "The predominantly $d_{x^2-y^2}$-wave pairing symmetry of cuprate superconductors is well established, yet its microscopic manifestation in local Cooper-pair tunneling remains less explored. Here, we investigate Bi$_{1.2}$Pb$_{0.8}$Sr$_2$CaCu$_2$O$_{8+δ}$, using Josephson scanning tunneling spectroscopy with a conventional $s$-wave superconducting Pb tip. We observe a zero-bias conductance enhancement whose approximately quadratic dependence on junction conductance is consistent with phase-diffusive Josephson tunneling. Atomic-resolution conductance maps and site-resolved spectra reveal a pronounced intra-unit-cell modulation, with enhanced Josephson response near oxygen sites and strong suppression near copper sites and along diagonal directions. Microscopic calculations incorporating the bilayer electronic structure and realistic Wannier-based tunneling matrix elements reproduce the observed spatial pattern through interference between pairing contributions of opposite signs. Our results reveal how the sign-changing $d$-wave superconducting order parameter manifests itself in atomic-scale Josephson tunneling, providing complementary evidence for unconventional pairing symmetry in cuprates.",
+    "title": "Intra-unit-cell Josephson scanning tunneling spectroscopy of the cuprate Bi$_{1.2}$Pb$_{0.8}$Sr$_2$CaCu$_2$O$_{8+δ}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.5995374321937561
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5981885194778442
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.5821857452392578
+      }
+    ]
+  },
+  "2611.04845v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yu-Bo Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhen Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Shufan Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Xinyang Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinsheng Wen"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.04845v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "It investigates a hidden multipolar order in a triangular-lattice magnet, which relates to strongly correlated electron systems and novel quantum phases, similar to the general themes of the liked papers.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum Spin Liquid",
+      "Multipolar Order",
+      "Triangular Lattice Magnet"
+    ],
+    "summary": "The absence of magnetic Bragg peaks and a broad excitation continuum are commonly recognized experimental features of a quantum spin liquid. The Ce-based triangular-lattice hexaaluminate CeMgAl$_{11}$O$_{19}$ exhibits both signatures, yet its effective model and ground state remain under debate. Experiments have variously suggested a quantum spin liquid, proximate umbrella point, and disorder-suppressed magnetic order. Here we trace these contradictions to an overlooked multipolar degree of freedom: the transverse pseudospin of the $|\\pm5/2\\rangle$ Kramers doublet is a rank-5 triakontadipole rather than an ordinary dipole. Analyzing the magnetization, neutron spectra, and thermodynamics on equal footing, we establish a dipole-triakontadipole XXZ model with $J_{\\perp} \\simeq 0.65$ K and $J_c \\simeq -0.13$ K. The resulting planar triakontadipolar superfluid order is hidden from dipolar probes, explaining the absence of a magnetic Bragg peak in neutron scattering. The zero-field excitations separate into a low-energy triakontadipole wave and a broad higher-energy continuum. We further propose nuclear spin-lattice relaxation and spin-current experiments to probe the gapless excitations of this hidden triakontadipole superfluid. Our findings thus open a new avenue for high-rank multipolar physics in rare-earth triangular-lattice magnets.",
+    "title": "Hidden Triakontadipole Order in the Triangular-Lattice Magnet CeMgAl$_{11}$O$_{19}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6006647944450378
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5959520936012268
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5857208967208862
+      }
+    ]
+  },
+  "2611.05174v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zheng-Hang Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Roth"
+      },
+      {
+        "affiliation": [],
+        "name": "Ao Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Heyl"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.05174v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "This paper investigates a Dirac spin liquid in a kagome antiferromagnet using neural-network quantum states, aligning with the user's interest in Dirac fermions, strongly correlated electron systems, and advanced computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Dirac spin liquid",
+      "kagome lattice",
+      "neural-network quantum states"
+    ],
+    "summary": "The spin-1/2 kagome Heisenberg antiferromagnet is a central model in the study of quantum spin liquids, yet its ground-state properties remain unresolved. We perform large-scale variational Monte-Carlo calculations using neural-network quantum states (NQSs) with kagome-geometry-aware message-passing convolution on two-dimensional tori containing up to 300 spins, and achieve exceptionally low variational energies for the kagome model. The spin and dimer structure factors show no evidence of magnetic or valence-bond long-range order. Moreover, the dominant symmetry-resolved spin and dimer correlations exhibit a common scaling behavior consistent with the emergent $SO(6)$ monopole multiplet of the Dirac spin liquid. Finally, the fidelity of the optimized NQSs with Gutzwiller-projected mean-field states increasingly favors the Dirac state over the competing $Z_{2}$ candidates as the system size grows. Together, these complementary results provide evidence for a $U(1)$ Dirac spin-liquid ground state in the kagome Heisenberg antiferromagnet.",
+    "title": "Evidence for a Dirac Spin Liquid in the Kagome Heisenberg Antiferromagnet from High-Precision Neural-Network Quantum States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6805751919746399
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6203964352607727
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6166967749595642
+      }
+    ]
+  },
+  "2611.05185v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hao-En Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhen Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Lin Lin"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mes-hall",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.05185v1",
+    "matching_keywords": [
+      "green's function",
+      "nonequilibrium",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-03",
+    "reasoning": "The paper introduces an efficient, sign-problem-free method for multiorbital quantum impurity calculations to obtain real-frequency spectra and transport, directly addressing an interest in efficient real-frequency solvers for correlated systems.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Quantum Impurity",
+      "Coupled-Cluster",
+      "Nonequilibrium Transport"
+    ],
+    "summary": "Quantum impurity calculations become challenging when multiple correlated orbitals are treated explicitly, particularly in nonequilibrium steady states. We introduce Coupled-Cluster Coupled Lindblad (C$^3$L), a deterministic approach that combines the recently developed coupled-Lindblad compact bath representation with coupled-cluster theory to compute steady states and Green's functions directly in imaginary and real frequency. C$^3$L has favorable polynomial computational complexity and avoids the sign problem of quantum Monte Carlo (QMC). In a real-time multiorbital benchmark, it agrees closely with state-of-the-art QMC while reducing computational cost by four to five orders of magnitude, with a further 10--100-fold speedup on a GPU. Beyond the practical reach of established real-time QMC solvers, four-orbital nonequilibrium impurities with general interactions and biased reservoirs become accessible with C$^3$L. We obtain resonance-resolved transport signatures relevant to scanning tunneling microscopy experiments on molecular junctions.",
+    "title": "Efficient simulations of spectra and transport for multiorbital quantum impurities",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4DMP91E08xMC",
+        "score": 0.5807993412017822
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.5553438663482666
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.5508509278297424
+      }
+    ]
+  },
+  "2611.05273v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andraás Grabarits"
+      },
+      {
+        "affiliation": [],
+        "name": "Lincoln D. Carr"
+      },
+      {
+        "affiliation": [],
+        "name": "Adolfo del Campo"
+      }
+    ],
+    "categories": [
+      "cond-mat.other"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.05273v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-03",
+    "reasoning": "This paper investigates universal dynamics and defect statistics in quantum phase transitions with long-range interactions, utilizing advanced tensor-network methods relevant to strongly correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum Criticality",
+      "Tensor Network States",
+      "Kibble-Zurek Mechanism"
+    ],
+    "summary": "The complete statistical characterization of defects generated in a quantum phase transition has mostly been studied in exactly solvable models, and remains little explored in nonintegrable systems such as long-range interacting spin chains. We characterize the full defect counting statistics in a nonintegrable long-range spin chain, the fractional Ising model, by time-dependent variational-principle simulations within the matrix-product-state and matrix-product-operator formalism. Fractional interactions capture emergent multiscale correlations and long-range effects in nature, governed by the order of the underlying fractional derivative. Such couplings can be approximated on existing quantum simulation platforms, where the full defect statistics can be measured. The defect number cumulants follow power laws in the driving time, with exponents that vary continuously with the fractional order. At low fractional order, deep in the long-range regime, the mean defect number decays more slowly than predicted by the Kibble-Zurek mechanism (KZM), while at intermediate order the KZM holds with the numerically extracted many-body critical exponents. At large fractional order, the exactly solvable free-fermion limit of the model becomes progressively more accurate towards the short-range limit. We derive exact bounds on the kink-number cumulants and on the kink-kink correlations, implying an exact Gaussian limiting distribution for large system sizes. In the many-body simulations, however, kinks are more correlated, consistent with the confinement of domain walls, and these bounds are violated in the long-range regime, also in the bulk of the chain. Nevertheless, the kink distribution still approaches a Gaussian for large defect numbers, with proportionality partially broken between the cumulants.",
+    "title": "Universal dynamics of quantum phase transitions with fractional long-range interactions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5240280628204346
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.516310453414917
+      },
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.4923853278160095
+      }
+    ]
+  },
+  "2611.05284v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Junchen Rong"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.05284v1",
+    "published_date": "2026-11-03",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "We propose a weakly coupled description of the long-range transverse-field Ising chain near its short-range crossover at $s_*=7/4$, where the couplings decay as $r^{-1-s}$. The Ising conformal field theory is coupled to an instantaneous Gaussian field through $σχ$, extending the classical long-range Ising duality to quantum chains. The equal-time interaction generates a stress-tensor deformation that causes the velocity to run and renormalizes the dynamical critical exponent $z$. Conformal perturbation theory gives $z=1-0.720\\,δ+O(δ^2)$, $1/ν=(1+z)/2+O(δ^2)$, and $ω=δ+O(δ^2)$, with $δ=s_*-s$. DMRG calculations on periodic chains of up to $128$ sites provide a consistency test using theoretical inputs for $1/ν$ and $ω$. After accounting for slow finite-size corrections, static and dynamical estimates of $z$ agree, supporting the crossover expansion at $s=1.5$ and a two-sided Padé interpolation at $s=1$, $1.25$, and $1.5$.",
+    "title": "Crossover duality for the quantum long-range Ising chain: perturbation theory around the short-range endpoint and a DMRG test",
     "vector_matches": []
   }
 }
