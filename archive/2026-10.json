@@ -17205,14 +17205,39 @@
         "name": "Adriano Amaricci"
       }
     ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.34470v2",
+    "matching_keywords": [
+      "hubbard model"
+    ],
     "published_date": "2026-10-25",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper directly addresses Mott and pseudogap physics in strongly interacting fermionic systems using a symmetry-resolved entanglement approach within cluster dynamical mean-field theory, aligning perfectly with previous interests.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Quantum entanglement",
+      "Pseudogap",
+      "Cluster DMFT"
+    ],
     "summary": "In order to identify intrinsic quantum resources in strongly interacting fermionic systems, we introduce a symmetry resolution of the parity-superselected two-site entanglement, as measured by both the fermionic negativity and the relative entropy of entanglement. We discuss how the symmetry resolution can be extended also to the full entanglement in pure and mixed two-site states. We apply our recipe to the Hubbard model, first for a dimer, and then for a plaquette cluster dynamical mean-field theory, an established method tailored to accurately capture short-range correlations. Following the evolution of the model through the interaction- and density-driven Mott transitions at zero temperature, we highlight how the three symmetry-resolved components of the two-site entanglement probe different key aspects of Mott and pseudogap physics.",
     "title": "Symmetry-resolved quasilocal entanglement as a key to Mott and pseudogap physics in plaquette CDMFT",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.597898006439209
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5799487233161926
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5787883996963501
+      }
+    ]
   },
   "2610.34551v1": {
     "authors": [
@@ -19924,16 +19949,40 @@
         "name": "Ziqi Xu"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.39392v1",
+    "matching_keywords": [
+      "matrix product state",
+      "variational monte carlo"
+    ],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper discusses matrix product states (a type of tensor network) and their application to quantum states, which is relevant to numerical methods for quantum many-body systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Information",
+      "Tensor Networks",
+      "Neural Quantum States"
+    ],
     "summary": "I study how measurement outcomes can remain conditionally dependent over long distances while the underlying state carries only a small internal memory, using one-dimensional rotated cluster states, whose exact matrix product state (MPS) bond dimension is $D=2$ at every rotation angle. Using exact MPS contraction, I compute the conditional mutual information (CMI) of two readout protocols: the entanglement-swapping endpoint CMI decreases from one bit at $θ=0$ to zero at $θ=π/2$, whereas a stationary bulk readout of the locally equivalent conventional cluster state vanishes at both limits. As an exact control, the spin-1 AKLT chain obeys $I_m=(4/9)\\,3^{-m}$, so its CMI length equals its two-point correlation length, for an identifiable but non-generic reason. I then compare learners on the same $N=64$, $θ=0.35$ target. A positive autoregressive GRU learns the computational-basis Born distribution from a few thousand samples, but an exactly computable Bell-basis readout shows that this distribution does not fix the phases. A complex RBM reaches the $N=8$ ground state under an exact objective, while a short generic recurrent variational Monte Carlo pilot is still improving when its runs end. As a positive control, an MPS-induced recurrent model whose hidden state is the bond vector reaches the ground state to near machine precision at $χ=2$, whereas a $χ=1$ control fails. These results show that long CMI does not require a large bond dimension, and that building the small virtual memory into the architecture greatly eases optimization.",
     "title": "Conditional Information Flow and Neural Representability of One-Dimensional Rotated Cluster States",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.3988756537437439
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3985635042190552
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3850048780441284
+      }
+    ]
   },
   "2610.39513v1": {
     "authors": [
@@ -20039,16 +20088,39 @@
         "name": "Ranjini Bhattacharya"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.39529v1",
+    "matching_keywords": [],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "It investigates interacting Hubbard models with antiferromagnetic order and transport properties using mean-field theory, which is relevant to the user's interest in correlated electron systems and computational methods.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Persistent currents",
+      "Quasiperiodic systems",
+      "Antiferromagnetism"
+    ],
     "summary": "We investigate persistent charge and spin currents in a one-dimensional quantum ring threaded by an Aharonov-Bohm (AB) flux, considering generalized Aubry-André-Harper (AAH) modulation with staggered onsite energies and antiferromagnetic (AFM) ordering in both the noninteracting and interacting regimes, with the latter treated using a self-consistent Hartree-Fock mean field theory (MFT). At half filling, two distinct current-enhancement peaks emerge as the modulation strength increases, with quasiperiodic hopping modulation playing a crucial role in establishing the two-peak structure within a restricted parameter regime. Spin-resolved bond-current profiles reveal a switch in the dominant spin contribution between the two peaks, while the inverse participation ratio (IPR) and flux-dependent spin-resolved ground-state energies provide complementary insights into the spatial characteristics of the eigenstates and their spin-dependent flux sensitivity. At quarter filling, the spin current exhibits a single enhancement peak, in contrast to the two-peak response observed at half filling. The Hubbard interaction affects the two half-filled peaks differently: it suppresses the primary peak, whereas the secondary peak exhibits a nonmonotonic, re-entrant response, with the current recovering at finite interaction strength. The interacting results are further characterized through the Drude weight, and comparisons with exact diagonalization (ED) and density-matrix renormalization group (DMRG) calculations for a finite half-filled system support the reliability of the MFT description. Our findings elucidate how quasiperiodic modulation, AFM order, band filling, and electronic correlations collectively govern the magnitude and spin-resolved character of persistent currents, giving rise to multiple enhancement regimes and interaction-induced re-entrant behavior.",
     "title": "Multiple Current Enhancement Regimes and Interaction Induced Re-entrant Transport in a Quasiperiodic Hubbard Ring with Antiferromagnetic Order",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6676744222640991
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5640246272087097
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5550724267959595
+      }
+    ]
   },
   "2610.39710v1": {
     "authors": [
@@ -20406,16 +20478,41 @@
         "name": "Joe Kileel"
       }
     ],
+    "categories": [
+      "math.NA"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.40450v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper generalizes singular value decomposition and tensor decomposition methods, which are foundational to many numerical techniques, including tensor networks used in condensed matter physics.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Linear Algebra",
+      "Mathematical Physics",
+      "Tensor Algebra"
+    ],
     "summary": "The singular value decomposition (SVD) provides optimal low-rank approximations of real and complex matrices by the Eckart--Young theorem, and SVD-based tensor decomposition algorithms such as the higher-order singular value decomposition (HOSVD) and the tensor train singular value decomposition (TT-SVD) inherit quasi-optimality guarantees from it. We extend the SVD to matrices over a finite-dimensional $\\ast$-algebra $K$. Our main contribution is a characterization of the algebras $K$ for which every matrix admits an SVD, and of the inner products on $K$ for which the Eckart-Young theorem holds. We introduce a notion of ordered SVD, show that ordered SVDs reveal the rank of a matrix over $K$ and yield optimal truncations, and give an explicit algorithm that computes an ordered SVD from the structure of the algebra. We then extend the Tucker, tensor train, and tree tensor network (TTN) decompositions and their SVD-based decomposition algorithms to tensors over $K$, and show that TT-SVD retains a quasi-optimality guarantee over every such $K$, whereas HOSVD, ST-HOSVD, and TTN-SVD do so when $K$ is commutative. Viewed in real or complex coordinates, these constructions give novel decomposition formats of ordinary tensors. We illustrate our new methods by compressing data from a variety of scientific applications, and show that they can achieve lower approximation error than their classical counterparts at equal storage.",
     "title": "Singular value decompositions over $\\ast$-algebras with applications to tensor decompositions",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.32141348719596863
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.29140129685401917
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.2708667516708374
+      }
+    ]
   },
   "2610.40638v1": {
     "authors": [
@@ -20518,14 +20615,40 @@
         "name": "Jan Schultheiß"
       }
     ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [],
+    "doi": null,
     "id": "2610.40755v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
     "published_date": "2026-10-29",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper discusses the Kibble-Zurek mechanism and critical dynamics during phase transitions, aligning well with the user's interest in competing phases and critical behavior in correlated materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Kibble-Zurek mechanism",
+      "Critical dynamics",
+      "Finite-size effects"
+    ],
     "summary": "The Kibble-Zurek mechanism (KZM) predicts the universal scaling of topological defect densities generated during continuous phase transitions, a result derived in the thermodynamic limit of homogeneous systems. Yet real materials are intrinsically finite and heterogeneous, raising the question of how nonequilibrium universality survives outside this idealized limit. Here we establish an ensemble-finite-size extension of the KZM that describes critical dynamics in collections of independent finite subsystems with distributed sizes. We test this framework using a polycrystalline model system undergoing a symmetry-breaking transition. We find that the density of topological vortices follows an apparent power law with an exponent approximately half that observed in single crystals. This reduced exponent emerges quantitatively from averaging over the experimentally measured grain-size distribution, without fitting to the measured vortex densities. Our results demonstrate that finite-size effects do not simply suppress KZ scaling but reorganize it into an emergent statistical scaling regime governed by system-size heterogeneity. This establishes microstructure and geometry as control parameters of nonequilibrium critical dynamics and provides a general strategy to engineer scaling behaviour in complex materials.",
     "title": "Kibble-Zurek dynamics beyond the thermodynamic limit",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.46007007360458374
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4435220956802368
+      },
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.4404750168323517
+      }
+    ]
   },
   "2610.40771v1": {
     "authors": [
@@ -21498,16 +21621,39 @@
         "name": "Niraj Kumar"
       }
     ],
+    "categories": [
+      "q-fin.CP",
+      "math.NA"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2610.42119v1",
+    "matching_keywords": [],
     "published_date": "2026-10-30",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "Although it uses 'functional tensor trains,' the application is exclusively in financial engineering, which is outside the scope of the user's liked physics and materials science topics.",
+    "score": 0.15,
+    "suggested_keywords": [
+      "Financial Mathematics",
+      "Quantitative Finance"
+    ],
     "summary": "Risk management of worst-of autocallables needs price sensitivities (Greeks) up to third order and the potential future exposure, a tail quantile of the note's future value. In Monte Carlo, each order of differentiation multiplies the sampling noise by a factor that grows with the observation frequency, and nested simulation turns the noise of its inner paths into a bias of the quantile. We instead solve the backward pricing recursion, storing the continuation value as an $hp$ functional tensor train (hp-FTT) whose piecewise-polynomial cores are split at the barriers, so that worst-of barrier events act exactly, with rank one. For Gaussian transitions we show that the polynomial degree sufficient for an error $\\varepsilon$ grows only as $\\sqrt{\\log(1/\\varepsilon)}$. One solve then gives every Greek at any spot without sampling noise, by integrating the likelihood-ratio weight against the stored value, and the values it stores at future dates replace inner simulation. Against the strongest Monte Carlo estimators we could build or find published, on worst-of autocallables observed monthly on three to five assets, the order of the Greek and the accuracy decide which method is cheaper. At $1\\%$ accuracy Monte Carlo is more than an order of magnitude cheaper for deltas, second-order Greeks go either way, and hp-FTT is cheaper for every third-order Greek, by up to two orders of magnitude. At $0.1\\%$ hp-FTT is cheaper for every Greek we could check, under geometric Brownian motion and local volatility alike. For the exposure alone Monte Carlo is cheaper at $1\\%$ and hp-FTT at $0.1\\%$, and a solve run for the Greeks yields it for little more than scenario sampling. Sampling pays in variance for each derivative and hp-FTT in rank for each asset, so Monte Carlo keeps low-order Greeks at percent accuracy, rarely observed contracts and many assets.",
     "title": "Functional Tensor Trains for High-Order Greeks and Exposure Tails of Multi-Asset Structured Products",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4058142900466919
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.38707971572875977
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.303849458694458
+      }
+    ]
   },
   "2611.00201v1": {
     "authors": [
