@@ -2486,5 +2486,747 @@
         "score": 0.4184627830982208
       }
     ]
+  },
+  "2611.07021v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Liang-Hong Mo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jerome Lloyd"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuxuan Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitry A. Abanin"
+      },
+      {
+        "affiliation": [],
+        "name": "Biao Lian"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.07021v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-04",
+    "reasoning": "This paper presents novel protocols for ground-state preparation in quantum many-body systems, including the Fermi-Hubbard model, aligning with the user's interest in correlated electron physics.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "quantum simulation",
+      "ground-state preparation",
+      "Fermi-Hubbard model"
+    ],
+    "summary": "Preparing ground and thermal states of quantum many-body systems is a central task in quantum simulation. Dissipative protocols have emerged as a promising solution for both near-term and fault-tolerant hardware, but most constructions rely on weak system-bath coupling, leading to slow cooling. Here, we construct cooling protocols at strong system-bath coupling, and demonstrate accurate state preparation within even a single cooling cycle. Our protocols combine dynamically ramped ancilla energy levels with time-dependent couplings to optimize the trade-off between cooling error and physical time. For a general class of free-fermion systems, we reduce the dynamics exactly to a two-level scattering problem: ground-state cooling becomes a control problem of maximizing resonant excitation transfer while suppressing non-adiabatic heating. We then construct a family of ``Möbius-Ingham'' protocols, which reach optimal error scaling for gapless spectra and almost-exponential suppression of the leading heating error for gapped spectra, as a function of the cycle period. In our free-fermion benchmarks, Möbius-Ingham cooling lies on the Pareto frontier between steady-state error and cooling time among the controls tested. We further demonstrate its effectiveness in interacting Ising and $t$-$V$ chains and the two-dimensional Fermi-Hubbard model. Finally, we extend our construction to Gibbs state preparation, showing how free-fermion thermal states can be prepared in a single cycle.",
+    "title": "Single-shot ground-state preparation via strongly coupled baths",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.5125333070755005
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.49465611577033997
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.48461389541625977
+      }
+    ]
+  },
+  "2611.07030v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexandre Chaduteau"
+      },
+      {
+        "affiliation": [],
+        "name": "Hao Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Juraj Hasik"
+      },
+      {
+        "affiliation": [],
+        "name": "Titus Neupert"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.07030v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-04",
+    "reasoning": "This paper discusses the detection of symmetry-protected topological phases using tensor network states, aligning with previous interest in symmetry and theoretical methods for complex quantum systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Topological Phases",
+      "Tensor Networks",
+      "PEPS"
+    ],
+    "summary": "Symmetry-protected topological (SPT) phases are the simplest example of quantum phases that cannot be detected by local order parameters. Their classification is by now well-established from multiple perspectives, a prominent one being via tensor network states. The practical question, however, is not mere classification, but detection: given the ground state of an interacting Hamiltonian and a symmetry group $G$ along with its representation, is there an efficient way to tell if the state is in a SPT phase with respect to $G$? While there exist such practical tests in one spatial dimension (1D), methods in 2D have so far been restricted to finite-size systems or require an explicit form of virtual symmetries of the tensor networks representing the ground state. Here, we develop an agnostic and efficient method to detect interacting $\\mathbb{Z}_2$ 2D SPT phases, using an infinite projected entangled-pair (PEPS) representation of the ground state. The method is agnostic to the symmetry representation in the virtual space of the PEPS tensor and applicable independent of the bond dimension of the tensors. Moreover, it is efficient as it does not require finite-size scalings: it works directly in the thermodynamic limit. We numerically demonstrate the procedure by mapping out phase boundaries away from fixed-point wavefunctions. We extract the SPT label cocycle data explicitly from the PEPS tensor.",
+    "title": "Agnostic and efficient detection of $\\mathbb{Z}_2$ symmetry-protected topological phases in projected entangled-pair states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.4829273819923401
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.4814625084400177
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4757723808288574
+      }
+    ]
+  },
+  "2611.07129v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Afra Kilic"
+      },
+      {
+        "affiliation": [],
+        "name": "Kim Batselier"
+      }
+    ],
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.07129v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-04",
+    "reasoning": "This paper focuses on Bayesian methods for optimizing tensor network kernel machines in supervised learning, which is a machine learning topic rather than condensed matter physics or materials science.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Bayesian inference",
+      "Tensor train",
+      "Supervised learning"
+    ],
+    "summary": "Tensor Network (TN) kernel machines accelerate supervised learning by using low-rank TNs to reduce computation and memory. However, most TN-based methods are deterministic with manually tuned ranks and feature dimensions, while the existing Bayesian TN kernel machine is restricted to the CANDECOMP/PARAFAC decomposition (CPD), whose single rank is shared by all modes. We extend this framework to the tensor train (TT) and propose Bayesian Tensor Train Kernel Machines (BTT-KM), whose hierarchical ARD-type priors on the TT cores infer the TT ranks and feature dimensions from data. Since each TT core is coupled to the others only through its neighbors, its closed-form posterior update requires propagating the contributions of all other cores along the chain. Mean-field variational inference yields a Bayesian alternating least squares algorithm with the same computational complexity as its deterministic counterpart and a closed-form predictive distribution. A synthetic experiment illustrates that BTT-KM recovers the true TT ranks and feature dimensions from an over-parameterized initialization.",
+    "title": "Bayesian Tensor Train Kernel Machines with Automatic Model Complexity Inference",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3905111849308014
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.37440311908721924
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3496687412261963
+      }
+    ]
+  },
+  "2611.07353v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Siyi Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuzhi Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yi-Ming Ding"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng Yan"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.07353v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper develops a computational framework for learning entanglement Hamiltonians in interacting quantum many-body systems, which is a general method relevant to the study of correlated materials.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "entanglement Hamiltonian",
+      "quantum Monte Carlo",
+      "many-body physics"
+    ],
+    "summary": "Determining the entanglement Hamiltonian (EH) of an interacting quantum many-body system remains a fundamental challenge beyond special analytically tractable cases. Here we develop an observable-matching framework for learning effective EHs, which we demonstrate using response estimates from quantum Monte Carlo. As applications of this framework, we first calibrate the overall prefactor of the lattice Bisognano--Wichmann (LBW) construction using equal-time correlations and then learn spatially resolved couplings beyond its prescribed profile, without assuming a specific functional form for their spatial dependence. Trained solely on local correlations, the learned EHs reproduce benchmarked von Neumann and second Rényi entropies in $1$D and second Rényi entropies in $2$D. For a strong-bond cut associated with special surface criticality at the $(2+1)$D $O(3)$ Wilson--Fisher critical point, free-form learning outperforms the calibrated LBW ansatz in predicting the second Rényi entropy and reveals spatially nonuniform coupling renormalizations. Importantly, the learned EH also provides access to the von Neumann entropy in this setting, revealing a negative subleading correction and extending previous Rényi entropy findings to the von Neumann case. Directly evaluating the von Neumann entropy in such $(2+1)$D interacting quantum many-body systems remains challenging for conventional numerical methods. These results establish observable-based learning as a route to constructing effective entanglement Hamiltonians beyond prescribed spatial profiles in higher-dimensional interacting systems.",
+    "title": "Observable-Based Learning of Effective Entanglement Hamiltonians",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6630070209503174
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5437268018722534
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.5404645204544067
+      }
+    ]
+  },
+  "2611.07400v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tarun Grover"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.07400v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper extends a rigorous proof for spectral gaps to higher dimensions, fermionic systems, and tensor-network states, directly relating to previous interests in symmetry, topological phases, and advanced theoretical methods.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Haldane Gap",
+      "Quantum Gaps",
+      "Fermionic Systems"
+    ],
+    "summary": "A recent remarkable paper by OpenAI showed that the spin-one Heisenberg chain with periodic boundary conditions has a spectral gap in the thermodynamic limit. The proof elegantly deduces this gap from the Hamiltonian's spectrum on a finite system. This basic idea is an inequality involving the purity of the original Gibbs state and a dual Gibbs state that is defined via space-time rotation. Here we consider a few generalizations of this purity bootstrap argument. We first extend it to arbitrary spatial dimensions. Our main result uses the space-time duality between symmetry generators and symmetry twists to obtain upper bounds on the splitting of nearly degenerate low-energy states, together with a nonzero gap above them, from finite-system information. As applications, we show that finite-system calculations for the 2+1-D toric code in a field and the 2+1-D transverse-field Ising model establish parameter regimes with four and two low-lying states whose splittings are bounded from above by $e^{-cL}$ and $e^{-cL^2}$ respectively for arbitrarily large system size $L$, while the gap above these states remains nonzero in the thermodynamic limit. Next, we extend it to fermionic systems and use a finite calculation to establish a symmetric mass generation phase in a $2+1$-D fermionic model. Finally, we apply the bootstrap to tensor-network states and establish exponential decay of connected correlations of all local operators in the symmetric square-lattice spin-one state introduced by Jian and Zaletel.",
+    "title": "Extensions of the Haldane gap proof: higher dimensions, near degeneracy, fermions and tensor-network states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5879051685333252
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5115039348602295
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.48224103450775146
+      }
+    ]
+  },
+  "2611.07410v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiacheng Cen"
+      },
+      {
+        "affiliation": [],
+        "name": "Anyi Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Ning Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Zihe Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Ji-Rong Wen"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenbing Huang"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.07410v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper introduces a method for identifying and analyzing structural symmetry, a core concept underlying symmetry-protected phases and Dirac fermions, through spectral fingerprints.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Symmetry Analysis",
+      "Equivariant GNNs",
+      "Structural Fingerprints"
+    ],
+    "summary": "Symmetry governs the organization of physical structures, while symmetry breaking reveals their transformations. In geometric deep learning, symmetry imposes rank constraints on equivariant representations, limiting the expressive capacity of equivariant graph neural networks (GNNs). Here we show that these constraints can instead be exploited: the singular-value spectra of equivariant representations provide a unified fingerprint of structural symmetry. We introduce spectral symmetry fingerprints (SymFP), which enable discrete point-group identification through rank-template matching and continuous symmetry analysis by quantifying spectral energy beyond target rank constraints. SymFP is orientation invariant and architecture agnostic, enabling a parameter-free GNN implementation. Its spectra can be reused across multiple target groups, and the resulting leakage scores satisfy subgroup monotonicity. Across synthetic structures, molecules, coordination complexes and large biological assemblies, SymFP accurately identifies point groups, tracks controlled symmetry breaking and reveals local and degree-resolved symmetry changes that can be obscured by global geometric measures. These results establish the spectral structure of equivariant representations as a general framework for characterizing symmetry across physical systems.",
+    "title": "Spectral symmetry fingerprints in equivariant representations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4027841091156006
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.3943789601325989
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.3419346511363983
+      }
+    ]
+  },
+  "2611.07681v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "M. Lisiecki"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Werner"
+      },
+      {
+        "affiliation": [],
+        "name": "J. Herbrych"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.07681v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper investigates light-driven control of orbital-selective Mott states, which aligns with the user's interest in strongly correlated electron systems and their exotic phases.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "orbital-selective Mott phase",
+      "ultrafast dynamics",
+      "nonequilibrium states"
+    ],
+    "summary": "We investigate light-driven inversion of orbital selectivity in a two-orbital Hubbard-Kanamori model initially in an orbital-selective Mott phase. Using the matrix-product-state we show that tailored pulse excitations drive interorbital charge transfer that nearly reverses the orbital occupations. Single-particle spectral snapshots exhibit changes consistent with an interchange of the localized and itinerant characters of the orbitals. We analyze the relevant one- and two-photon excitation channels and show that chirping around the lower-frequency resonance enhances the transfer. These results establish a microscopic route to reversing orbital selectivity and accessing long-lived nonequilibrium states in multiorbital systems.",
+    "title": "Photoinduced switching of orbital-selective Mott states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.512793779373169
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.49368515610694885
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.4380713701248169
+      }
+    ]
+  },
+  "2611.07933v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nazzareno Africani"
+      },
+      {
+        "affiliation": [],
+        "name": "Herbert Eßl"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Toschi"
+      },
+      {
+        "affiliation": [],
+        "name": "Michele Fabrizio"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.07933v1",
+    "matching_keywords": [
+      "green's function"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper offers a non-perturbative resolution to violations of Luttinger's theorem in strongly correlated systems, directly addressing fundamental theoretical challenges in the user's preferred field.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Luttinger's theorem",
+      "strongly correlated electrons",
+      "topological invariants"
+    ],
+    "summary": "Many-body physics faces an apparent paradox concerning violations of Luttinger's theorem in strongly correlated systems. The theorem relates the electron number to the Luttinger count -- the monodromy of the logarithm of the imaginary-frequency Green's function $G(iε)$ -- and, at finite magnetic field, connects the Hall conductivity to the magnetic-field derivative of the Luttinger count via the Streda formula. Here, we provide a non-perturbative solution to this paradox. We demonstrate that the reported violations of Luttinger's theorem do not require a breakdown of the skeleton diagram representation of physical quantities, thereby resolving a long-standing point of contention in many-body theory. Furthermore, we show that the Luttinger integral, which accounts for the mismatch between the particle number and the Luttinger count, is itself a genuine topological invariant directly tied to the Luttinger-Ward functional $Φ[G]$ rather than to the Green's function alone. We demonstrate that this invariant, like the monodromy of $\\ln G(iε)$ itself, stems exclusively from the zero-frequency discontinuity of the Matsubara trajectory.",
+    "title": "Non-Perturbative Resolution of Luttinger's Theorem Violations in Strongly Correlated Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.4295579195022583
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4264439344406128
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.42413222789764404
+      }
+    ]
+  },
+  "2611.07960v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Oliver O'Brien"
+      },
+      {
+        "affiliation": [],
+        "name": "Atsushi Ueda"
+      },
+      {
+        "affiliation": [],
+        "name": "Etienne Granet"
+      },
+      {
+        "affiliation": [],
+        "name": "Henrik Dreyer"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Verstraete"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.07960v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper explores generalized symmetries, many-body quantum phenomena, and symmetry-protected topological phases using quantum computing, aligning well with the user's interest in symmetries and topological materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum simulation",
+      "Duality defects",
+      "Quasiparticle wavepacket"
+    ],
+    "summary": "Quantum computers have advanced to the stage that interesting many-body quantum phenomena can be observed. A striking example is the magnetic monopole paradox, a problem that was only solved recently using the language of generalized symmetries. Here we demonstrate a quantum spin chain analogue of magnetic monopole scattering on Quantinuum System Model H2. We implement a novel protocol for preparing a localized quasiparticle wavepacket on top of the ground state. By combining this protocol with time evolution across a duality defect, we efficiently convert local particles into non-local string-like excitations. We demonstrate this particle-to-string conversion in the transverse-field Ising model and a symmetry-protected topological (SPT) phase of the cluster model. Our results establish duality defects and generalized symmetries as practical resources for preparing and probing non-local excitations on quantum hardware.",
+    "title": "Monopoles, Scattering and Generalized Symmetries on a Quantum Computer",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5070031881332397
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.468538761138916
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.46740129590034485
+      }
+    ]
+  },
+  "2611.07998v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Makoto Takamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaitanya Sampara"
+      },
+      {
+        "affiliation": [],
+        "name": "Viktor Zaverkin"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Oñoro-Rubio"
+      },
+      {
+        "affiliation": [],
+        "name": "Mathias Niepert"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.07998v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper focuses on machine learning for polymer property prediction, which is outside the scope of strongly correlated electron systems and condensed matter physics preferred by the user.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "machine learning",
+      "polymer science",
+      "molecular fragmentation"
+    ],
+    "summary": "It is well established that molecular substructures can contribute unequally to chemical and physical properties, with specific motifs or side chains often playing dominant roles. Fragment-based representations have therefore emerged as an effective strategy for incorporating chemically meaningful inductive biases, as exemplified by molecular fingerprints and fragment-based attention mechanisms. However, many existing fragmentation-based machine learning methods rely on predefined chemical rules, which may yield suboptimal fragmentation for previously unseen or chemically unfamiliar structures and often overlook the importance of multiscale molecular representations. To address these limitations, we formulate molecular fragmentation as a radius-constrained optimization problem inspired by the k-center formulation, where the number of clusters is not fixed a priori but emerges from the specified radius, and propose a geometry-based fragmentation method that partitions arbitrary molecular or material structures using largely geometric information, without relying on predefined chemical fragmentation rules. The method provides flexible control over fragment size, enabling the construction of multiscale fragment representations for scale-adaptive modeling. Building on this framework, we develop a geometric fragment-based attention mechanism that integrates multiscale structural information and incorporate it into a multimodal machine learning model combining p-SMILES representations with three-dimensional (3D) conformational information. Experiments on a benchmark polymer dataset show that incorporating 3D conformational information improves prediction accuracy for several properties over models based exclusively on p-SMILES representations. Explainable artificial intelligence analyses further provide insights into the physical relevance of the learned representations.",
+    "title": "Towards Multiscale Molecular Representation Learning through Geometry-Based Fragmentation for Polymer Property Prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3644043803215027
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.34956175088882446
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3089785873889923
+      }
+    ]
+  },
+  "2611.08020v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Irina Kopnina"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergey Matveev"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivan Oseledets"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.08020v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper focuses on a computational method for data representation using tensor decomposition, which does not directly align with the user's interests in condensed matter physics, materials science, or quantum phenomena.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Data compression",
+      "Nonlinear decomposition",
+      "Binary data"
+    ],
+    "summary": "Nonlinear low-rank decompositions are receiving growing attention as a way to represent structured data with fewer parameters than conventional linear methods. Existing nonlinear approaches have focused mainly on matrices, which limits their ability to capture multidimensional structure. We propose a nonlinear tensor decomposition based on sigmoid nonlinearization in the Tucker and tensor-train formats. A binary tensor is represented by a low-rank real-valued score tensor, whose parameters are estimated by minimizing the binary cross-entropy loss. The resulting optimization problem is jointly nonconvex, but becomes convex with respect to one factor or score block when the remaining factors are fixed, as in the corresponding matrix case. We evaluate the method on several structured binary tensors and compare it with conventional Tucker and tensor-train decompositions across a range of common ranks. These results indicate that sigmoid nonlinearization is particularly effective in the low-rank regime, where it can provide more accurate binary reconstructions than conventional linear tensor decompositions at comparable model sizes.",
+    "title": "Sigmoid Tensor Decomposition for Compact Representations of Binary Data",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.35403624176979065
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3167276680469513
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.2661123275756836
+      }
+    ]
+  },
+  "2611.08067v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Edith Simmen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan Amara"
+      },
+      {
+        "affiliation": [],
+        "name": "Philippe Ghosez"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicola A. Spaldin"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.08067v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper focuses on nickelate superlattices, investigating their electronic phases and charge screening via first-principles calculations, directly relating to prior interests in nickelate materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Polar Discontinuity",
+      "First-Principles",
+      "Perovskite Heterostructures"
+    ],
+    "summary": "We present a first-principles study of the formal-charge polar discontinuity in superlattices of BaTiO$_3$ interfaced with SmNiO$_3$ or BiNiO$_3$, comparing the results for the insulating and metallic nickelate phases. Polar discontinuities arising from differently charged layers in perovskites are well-studied in heterostructures such as LaAlO$_3$/SrTiO$_3$, and recently, signatures consistent with such a polar discontinuity have been observed in systems where the formally charged layers would reside in a metal. We first identify signatures of the polar discontinuity in the structure and the density of states of superlattices with BaTiO$_3$ and insulating BiNiO$_3$, and find partial screening by modification of the BiNiO$_3$ charge disproportionation pattern analogous to our previous study on BaTiO$_3$/SmNiO$_3$. We then examine superlattices constructed from the corresponding metallic nickelate phases and find that, despite the presence of screening charges, the qualitative interfacial response is remarkably similar to that of the insulating counterparts. We show that the metallic screening charges have little influence on the apparent formal-charge polar discontinuity and discuss practical limitations of the polar-discontinuity picture when interpreting and quantifying screening at metallic nickelate/ferroelectric interfaces.",
+    "title": "The polar discontinuity picture in nickelate superlattices: comparison of the insulating and metallic phases",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.6204537749290466
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.6158372163772583
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.5720640420913696
+      }
+    ]
+  },
+  "2611.08093v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Albert Saiapin"
+      },
+      {
+        "affiliation": [],
+        "name": "Kim Batselier"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.08093v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper describes a machine learning optimization technique for tensor network kernel machines, which falls outside the user's primary interest in condensed matter physics or materials science.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Machine learning",
+      "Tensor network learning",
+      "Gradient boosting"
+    ],
+    "summary": "Tensor network kernel machines (TNKMs) combine nonlinear features with low-rank tensor representations to model complex relationships efficiently. However, selecting an appropriate tensor rank remains challenging, as conventional rank-search methods require training multiple candidate models, increasing computational costs. In this work, we focus on a canonical polyadic (CP) tensor network parameterization and propose GB-CPKM, a gradient boosting framework that builds a higher-capacity predictor by sequentially adding fixed-rank learners. This approach provides a new perspective on rank selection by incrementally increasing model capacity, with ensemble size selected based on validation performance rather than through explicit rank search. Experiments on real-world regression benchmarks show that GB-CPKM trains up to 6x faster and uses up to 2x less peak memory than a conventional rank-selection method based on cross-validation, while achieving comparable predictive performance. These results highlight the potential of gradient boosting to improve the computational efficiency and scalability of tensor-network learning.",
+    "title": "Gradient Boosting for Efficient Rank Discovery in Tensor Network Kernel Machines",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.33800506591796875
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.30888915061950684
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.2885468602180481
+      }
+    ]
+  },
+  "2611.08293v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dante Bosgoed"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Verstraete"
+      },
+      {
+        "affiliation": [],
+        "name": "Laurens Lootens"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.08293v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper develops a theoretical framework for dualities and symmetry breaking in quantum lattice models using Lie groups and tensor network concepts, resonating with an interest in symmetry and advanced theoretical approaches.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Dualities",
+      "Lie Group Symmetries",
+      "Lattice Models"
+    ],
+    "summary": "We present a systematic framework for gauging continuous symmetries, and show that the Schur-Weyl duality arises naturally as a realization of this construction with open boundary conditions. Restricting to compact Lie group symmetries, we construct dual models for one-dimensional quantum lattice models exhibiting those symmetries. We demonstrate that matrix product operators enable the explicit construction of intertwiners between the dual theories and their (non-invertible) symmetries. With closed boundary conditions, we can relate the full spectrum of these dual theories by considering all possible twisted boundary conditions.We illustrate how the Peter-Weyl transform appears when the duality acts on the boundary Hilbert space of a $G$-symmetric model. The presented framework generalizes previous work on dualities for unitary fusion category symmetric models. It exemplifies how dualities for both finite and continuous symmetries rely on the relation between a bond algebra and a representation of the symmetry in the lattice as double centralizers. We argue that dual non-invertible spontaneous symmetry breaking is the mechanism that underlies symmetric tensor network algorithms. We illustrate these results for $U(1)$- and $SU(2)$-symmetric quantum lattice models.",
+    "title": "Dualities in one-dimensional quantum lattice models: Lie groups, Schur-Weyl duality and symmetry breaking",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:_Qo2XoVZTnwC",
+        "score": 0.446754515171051
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.36959022283554077
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.35898807644844055
+      }
+    ]
   }
 }
