@@ -4955,6 +4955,55 @@
       }
     ]
   },
+  "2610.10027v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matthieu Jeannin"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Chessari"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan Von Delft"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2610.10027v2",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-10-07",
+    "reasoning": "This paper proposes an efficient Ring-DMRG algorithm for optimizing tensor-ring decompositions in periodic quantum many-body systems, directly aligning with interests in advanced computational methods for strongly correlated materials.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Strongly correlated systems",
+      "Periodic boundary conditions"
+    ],
+    "summary": "Tensor-ring (TR) decompositions provide a natural representation of periodic systems but are difficult to optimize because the closed geometry prevents a global canonical form and leads to costly, ill-conditioned environments. Existing periodic Density Matrix Renormalization Group (DMRG) methods alleviate this difficulty by compressing long environments to a low-rank representation, reducing local operations to $\\mathcal{O}(pχ^3)$, where $p$ is the retained environment rank. Here, we extend this approach to an efficient two-site Ring-DMRG algorithm and improve its numerical robustness through appropriate gauge transformations and a generalized Davidson solver. A central challenge in the two-site formulation is the truncation step, which must account for the surrounding environment. When this environment is sufficiently separable, a suitable change of frame reduces the truncation to an ordinary singular value decomposition. When it is not separable, we instead use an alternating optimization that retains the full environment.   The computational advantage of tensor rings over tensor trains depends on the scaling of the required environment rank $p$ with bond dimension and system size. For critical systems, the divergent correlation length makes long-range observables remain sensitive to the periodic geometry as the thermodynamic limit is approached. In this regime, the environment rank required to reach a fixed accuracy in the observable does not grow with the system size. Ring-DMRG therefore retains the same cubic scaling with bond dimension as standard DMRG, but at a substantially smaller bond dimension. The low-rank environment construction also provides a systematic generalization of belief propagation (BP), with standard BP recovered in the rank-one limit.",
+    "title": "Efficient Optimization of Tensor Rings with Low-Rank Environments",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5489777326583862
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.45608973503112793
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.44999855756759644
+      }
+    ]
+  },
   "2610.10048v1": {
     "authors": [
       {
