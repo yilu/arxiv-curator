@@ -3028,6 +3028,65 @@
       }
     ]
   },
+  "2611.07998v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Makoto Takamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaitanya Sampara"
+      },
+      {
+        "affiliation": [],
+        "name": "Viktor Zaverkin"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Oñoro-Rubio"
+      },
+      {
+        "affiliation": [],
+        "name": "Mathias Niepert"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.07998v2",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper focuses on machine learning for polymer property prediction using novel molecular representation techniques, which is outside the scope of condensed matter physics and advanced materials characterization that the user has previously liked.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Polymer Science",
+      "Molecular Representation"
+    ],
+    "summary": "It is well established that molecular substructures can contribute unequally to chemical and physical properties, with specific motifs or side chains often playing dominant roles. Fragment-based representations have therefore emerged as an effective strategy for incorporating chemically meaningful inductive biases, as exemplified by molecular fingerprints and fragment-based attention mechanisms. However, many existing fragmentation-based machine learning methods rely on predefined chemical rules, which may yield suboptimal fragmentation for previously unseen or chemically unfamiliar structures and often overlook the importance of multiscale molecular representations. To address these limitations, we formulate molecular fragmentation as a radius-constrained optimization problem inspired by the k-center formulation, where the number of clusters is not fixed a priori but emerges from the specified radius, and propose a geometry-based fragmentation method that partitions arbitrary molecular or material structures using largely geometric information, without relying on predefined chemical fragmentation rules. The method provides flexible control over fragment size, enabling the construction of multiscale fragment representations for scale-adaptive modeling. Building on this framework, we develop a geometric fragment-based attention mechanism that integrates multiscale structural information and incorporate it into a multimodal machine learning model combining p-SMILES representations with three-dimensional (3D) conformational information. Experiments on a benchmark polymer dataset show that incorporating 3D conformational information improves prediction accuracy for several properties over models based exclusively on p-SMILES representations. Explainable artificial intelligence analyses further provide insights into the physical relevance of the learned representations.",
+    "title": "Towards Multiscale Molecular Representation Learning through Geometry-Based Fragmentation for Polymer Property Prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3644043803215027
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.34956175088882446
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3089785873889923
+      }
+    ]
+  },
   "2611.08020v1": {
     "authors": [
       {
@@ -4264,6 +4323,1189 @@
       {
         "liked_paper_id": "2506.15516v1",
         "score": 0.6396283507347107
+      }
+    ]
+  },
+  "2611.10024v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Bonwook Gu"
+      },
+      {
+        "affiliation": [],
+        "name": "Trinh Ngoc Le"
+      },
+      {
+        "affiliation": [],
+        "name": "Zunair Masroor"
+      },
+      {
+        "affiliation": [],
+        "name": "Minhyeok Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Han-Bo-Ram Lee"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10024v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper applies machine learning to predict chemical outcomes in atomic layer deposition, which is a materials synthesis topic, but it lacks direct connections to the user's specific interests in strongly correlated systems, superconductivity, or topological materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Atomic layer deposition",
+      "Machine learning",
+      "Materials synthesis"
+    ],
+    "summary": "Whether a precursor-substrate-reactant combination yields an atomic layer deposition (ALD) process is still settled by trial-and-error experiments. Here we introduce AJIN (ALD Joint Interpretable Network), a machine-learning framework that learns this decision from experimental outcomes. We compiled 560 experimentally observed ALD and area-selective ALD outcomes spanning 76 precursors, 27 substrates, 20 reactants and 25-620 degrees Celsius. Following the ALD cycle, AJIN predicts adsorption from graph-neural-network embeddings of the precursor and substrate with temperature, and deposition by adding the reactant. The best model (CHGNet-MLP) reaches balanced accuracies of 79.2% for adsorption and 84.8% for deposition and transfers partially to unseen precursors. SHAP and ablation analyses show that substrate chemistry governs adsorption, whereas precursor, substrate and reactant all contribute to deposition. Tested against our laboratory's ALD experiments, AJIN correctly predicted 83% of new-substrate cases and 71% of new precursor-substrate adsorption cases, providing an experimentally grounded tool for prioritizing ALD and area-selective ALD chemistries.",
+    "title": "Experimentally Grounded Machine Learning of PrecursorSurface-Reactant Chemistry in Atomic Layer Deposition",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.43901515007019043
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.4084646999835968
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3698779344558716
+      }
+    ]
+  },
+  "2611.10039v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Chaithanya Rayudu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Takahashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Ojas Parekh"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Zhao"
+      }
+    ],
+    "categories": [
+      "cs.DS",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10039v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-05",
+    "reasoning": "This paper offers an efficient classical simulation method for Fermi-Hubbard models with Kramers symmetry, directly aligning with the user's interest in advanced computational techniques for correlated electron systems and the theoretical understanding of materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Fermi-Hubbard Model",
+      "Quantum Monte Carlo",
+      "Kramers Symmetry"
+    ],
+    "summary": "Quantum Monte Carlo methods are widely used to solve quantum many-body problems. However, rigorous guarantees for their performance are poorly understood, especially for simulating interacting fermions. In this work, we develop a quantum Monte Carlo algorithm for a broad family of fermionic systems exhibiting Kramers time-reversal symmetry, and prove that their partition functions can be estimated in polynomial time. This family, which contains many important classes of Hubbard-type models, is known to both avoid the sign problem and obey a Lee-Yang zero-freeness theorem. Thus our results suggest that these two properties together may enable efficient classical algorithms for quantum many-body systems more broadly.",
+    "title": "Efficient classical simulation of Fermi-Hubbard models with Kramers symmetry",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6440917253494263
+      },
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.6276599168777466
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6217129230499268
+      }
+    ]
+  },
+  "2611.10124v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shuo Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Aman Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuhao Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Philip W. Phillips"
+      },
+      {
+        "affiliation": [],
+        "name": "Hitesh J. Changlani"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Andrei Bernevig"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10124v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-06",
+    "reasoning": "This paper directly investigates charge transport and resistivity in the infinite-U Hubbard model, a fundamental model for strongly correlated electron systems, connecting well with interests in DMFT and cuprate superconductors.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Hubbard Model",
+      "Strongly Correlated Electrons",
+      "Linear-in-T Resistivity"
+    ],
+    "summary": "We study charge transport in the two-dimensional infinite-$U$ Hubbard model with hopping amplitude $t$ using full exact diagonalization (ED) on $N=16$- and $18$-site square clusters with a single doped hole. We first provide a proof, treating degeneracies explicitly, that a constant dc $f_x$ function, defined as the sum of the squared current matrix elements connecting eigenstates at a given energy to eigenstates of nearly the same energy, averaged over degenerate initial states, is necessary and sufficient for strictly linear-in-$T$ resistivity: $ρ_x(T)=αT$ for all $T>0$ with a constant $α$. The numerically extrapolated dc $f_x$ is not exactly constant, but it is approximately flat over a broad region in the interior of the many-body spectrum and varies strongly within a scale $\\varepsilon_{f_x}$ of the spectral edges. This scale $\\varepsilon_{f_x}$ is related to a characteristic temperature $T_{\\mathrm{cr}}$, which quantifies the leading departure of the resistivity from high-temperature linearity upon cooling. Within the studied temperature range $T/t \\geq 0.05$, our ED resistivity results reveal a gradual crossover between high- and low-temperature approximately linear-in-$T$ regimes, with characteristic crossover temperatures $T_{\\mathrm{cr}}/t\\approx0.414$ and $0.467$ for $N=16$ and $18$, respectively. We also find a broad specific-heat peak associated with this gradual crossover, at $T/t \\approx 0.70$ and $0.68$ for $N=16$ and $18$, respectively.",
+    "title": "Energy-resolved current response and the crossover between two approximately linear-in-$T$ resistivity regimes in the infinite-$U$ Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.6280945539474487
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5968495011329651
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5845836400985718
+      }
+    ]
+  },
+  "2611.10473v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Saleh Hasan Naqib"
+      },
+      {
+        "affiliation": [],
+        "name": "Raihana Shams Islam"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10473v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-11-07",
+    "reasoning": "This comprehensive review directly addresses the pseudogap state in hole-doped cuprates, a central topic in the physics of high-temperature superconductivity and strongly correlated systems, aligning perfectly with the user's interests.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate Superconductors",
+      "Pseudogap",
+      "High-Tc Superconductivity"
+    ],
+    "summary": "The pseudogap state, an anomalous momentum dependent partial suppression of low energy electronic excitations persisting well above the superconducting critical temperature in underdoped cuprates, remains one of the most profound enigmas in condensed physics today. This review summarizes over three decades of experimental and theoretical progress. It appears that pseudogap is not a mere precursor to superconductivity, but a distinct, intertwined state of matter characterized by a complex interplay of competing and cooperating electronic orders. We critically examine the bulk probes like resistivity and magnetic susceptibility and the surface hallmark spectroscopic signatures observed via angle resolved photoemission spectroscopy (ARPES) in this review. ARPES reveals a Fermi surface truncated into disconnected segments and scanning tunneling microscopy (STM) visualizes a spatially heterogeneous energy gap around the Fermi level. These observations are contextualized alongside transport anomalies, including resistivity and bulk magnetic susceptibility, to construct a phenomenological portrait of a phase that violates conventional Fermi liquid theory. By mapping the electronic phase diagram, we highlight the abrupt transition at above optimal doping. We conclude with open questions still to be answered. This review underscores the role of the pseudogap as a key to unlocking the unconventional pairing mechanism of hole doped cuprates and the broader physics of strongly correlated electron systems.",
+    "title": "Pseudogap in hole doped cuprates: a status report",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6645920872688293
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6306602954864502
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.6217249035835266
+      }
+    ]
+  },
+  "2611.10636v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhixuan Zhao"
+      },
+      {
+        "affiliation": [],
+        "name": "Sicheng He"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanxiang Di"
+      },
+      {
+        "affiliation": [],
+        "name": "Nayun Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiabai Xiong"
+      },
+      {
+        "affiliation": [],
+        "name": "Guyixue Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Yanling Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Li"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10636v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-07",
+    "reasoning": "This paper explores how strong collective dynamics can be hidden behind a seemingly free single-particle spectrum using quantum Monte Carlo, which relates to fundamental aspects of electronic correlations.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Electronic Correlations",
+      "Single-Particle Spectroscopy",
+      "Quantum Probes"
+    ],
+    "summary": "Single-particle spectroscopy has long served as a criterion for the strength of electronic correlations: strong collective motion is expected to shift and broaden spectral peaks and to renormalize the dispersion. Here we show that this correspondence can fail on the same microscopic orbital. The mechanism relies on local interference between two resonant side orbitals: one suppresses low-energy real transitions into the interacting environment, while the other suppresses spectral-weight backflow to the source orbital; virtual mixing nevertheless transfers the environmental spin polarization to the source. We prove a rigorous relative spectral bound that is uniform in environment size and interaction strength and holds for arbitrary stationary states; the protection becomes stronger as the relative frequency resolution improves. In a fully quantum two-cell device, a collective mode softens by 60%, whereas the particle intensity at the free peak changes by only 3.6 parts per million. Quantum Monte Carlo shows that the transferred spin response grows with spatial correlations and is quantitatively predicted by the free-band polarization. These results recast the meaning of a simple particle spectrum and provide a design principle for quantum probes that combine predictable particle spectra with strong collective sensitivity.",
+    "title": "Strong Collective Dynamics Hidden behind a Nearly Free Single-Particle Spectrum",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.499580442905426
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4964599609375
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.46352535486221313
+      }
+    ]
+  },
+  "2611.10889v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pamela C. Carvalho"
+      },
+      {
+        "affiliation": [],
+        "name": "Asa Marif"
+      },
+      {
+        "affiliation": [],
+        "name": "Erna K. Delczeg-Czirjak"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergei Simak"
+      },
+      {
+        "affiliation": [],
+        "name": "Utkarsh Singh"
+      },
+      {
+        "affiliation": [],
+        "name": "Olle Eriksson"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10889v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-07",
+    "reasoning": "This paper uses machine learning to systematically correct electronic bandgaps from DFT calculations, which directly addresses improving computational methods for electronic structure relevant to materials properties and potentially topological states.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Band gap prediction",
+      "Density functional theory",
+      "Machine learning in materials science"
+    ],
+    "summary": "We demonstrate that a single machine-learning correction, applied to bandgaps from density functional theory calculations with two of the most frequently used energy functionals, results in bandgaps that are close to the experimental values. This solves a classical problem of computationally efficient electronic structure methods, to give reliable bandgaps that can be compared to experiments. The employed approach relies on materials specific feature engineering of machine learning models, and is shown to have close accuracy to that of much more expensive calculations based on the GW-approximation or hybrid functionals. The findings reported here open the possibility to use efficient calculations in materials design workflows that need reliable bandgaps, with implications for investigations targeting large computational databases or for investigations that are entirely predictive in nature.",
+    "title": "A data-driven approach for systematic correction of electronic bandgaps",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.47855624556541443
+      },
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.47663217782974243
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4743887484073639
+      }
+    ]
+  },
+  "2611.11049v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sirui Lu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.11049v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-08",
+    "reasoning": "This paper employs tensor network diagrams to verify and formalize proofs about uniform gaps in strongly correlated spin chains, which strongly aligns with the user's interest in computational methods and theoretical aspects of strongly correlated electron systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Haldane gap",
+      "Strongly correlated systems"
+    ],
+    "summary": "Proofs generated by large language models are often difficult to understand, generalize, or formalize directly. Here we verify, digest, and formalize OpenAI's computer-assisted proof of a uniform gap in the periodic spin-1 Heisenberg chain using tensor-network diagrams and Lean 4. Reading the partition-function network along space and imaginary time shows how finite-ring bounds propagate across doubled lengths and inverse temperatures to all longer even rings, sharpening the spin-1 bound from the same finite inputs by a factor of 19 to $Δ_L > 0.0729$ for all even $L \\geq 36$. We identify reflection positivity as the general condition behind the proof and certify uniform gaps in seven additional spin chains and ladders. More broadly, digesting machine-generated proofs into transparent physical mechanisms yields sharper bounds, broader theorems, and reusable formal verifications.",
+    "title": "Bridging Gaps with Tensor Networks: From the Haldane Gap and Beyond",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4758043587207794
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.47238999605178833
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.42262303829193115
+      }
+    ]
+  },
+  "2611.11070v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Qiang Zhu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.11070v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-08",
+    "reasoning": "This paper introduces a machine learning approach to efficiently predict electronic band structures, a fundamental property governing the behavior of many materials, including superconductors and semimetals, thus resonating with the user's interest in electronic properties and computational methods.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Electronic Structure",
+      "Machine Learning",
+      "Pseudopotential"
+    ],
+    "summary": "Electronic band structures govern how crystals conduct electrons and absorb light. Density-functional theory (DFT) computes them through costly self-consistent iterations, while existing machine-learning models either predict isolated scalar properties or output Hamiltonians that still require DFT solvers. Here we present EpNet, a learned empirical pseudopotential for crystals spanning 63 elements across the \\textit{s}, \\textit{p} and \\textit{d} blocks. An equivariant neural network builds its Hamiltonian from physics-motivated local potentials and nonlocal projectors. Trained solely on band energies, EpNet predicts complete band structures directly from atomic coordinates. On unseen chemical systems, its median errors are \\winAll\\ eV for band energies and \\gapAll\\ eV for band gaps. On 600,000 structures from an independent database, its band-gap errors are overall less than half those of existing models, at about 1\\% of DFT cost. EpNet thus enables fast screening of electronic properties for materials discovery and electronic-structure simulations of large systems.",
+    "title": "Learning Electronic Band Structures Across the s, p, d Blocks with an Empirical Pseudopotential Network",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.5717418193817139
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5459989905357361
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.542607843875885
+      }
+    ]
+  },
+  "2611.11339v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhen Liang"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianheng Wei"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinpeng Lu"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei Ren"
+      },
+      {
+        "affiliation": [],
+        "name": "Takenori Fujii"
+      },
+      {
+        "affiliation": [],
+        "name": "Takao Watanabe"
+      },
+      {
+        "affiliation": [],
+        "name": "Ziqiang Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jian Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.11339v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-11-08",
+    "reasoning": "This paper directly investigates d-wave pairing symmetry in a high-Tc cuprate superconductor using advanced scanning Josephson tunneling microscopy, which strongly aligns with the user's interest in experimental studies and visualization of fundamental properties in superconductors.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Cuprate Superconductors",
+      "d-wave Pairing",
+      "Josephson Tunneling Microscopy"
+    ],
+    "summary": "Superconducting pairing symmetry provides crucial insight into the microscopic mechanisms of Cooper pairing. However, probing the local manifestations of sign-changing superconducting order parameters remains experimentally challenging. Here, we investigate the superconducting condensate in optimally doped (OPT) Bi2Sr2Ca2Cu3O10+δ (Bi-2223) using scanning Josephson tunneling microscopy (SJTM), equipped with an s-wave superconducting tip. Measurements at ultra-low temperatures reveal a pronounced modulation of the Josephson tunneling signal at different locations inside the crystallographic unit cell. A distinct Josephson tunneling signal is detected above O sites in the underlying CuO2 plane, whereas the signal nearly vanishes above the Cu-plaquette diagonals, including Cu sites and plaquette centers. This unique intra-unit-cell spatial pattern agrees with the theoretical prediction for the symmetry-dependent cancellation of Josephson tunneling between an s-wave superconducting tip and a d-wave superconducting sample. Our findings provide atomic-scale, real-space evidence for d-wave pairing symmetry in OPT high-Tc Bi-2223 and establish SJTM as a powerful approach for investigating the pairing symmetry of unconventional superconductors.",
+    "title": "Visualizing d-wave pairing symmetry at the atomic scale in a cuprate high-Tc superconductor by Josephson tunneling",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6480250954627991
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.6311577558517456
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.6282517910003662
+      }
+    ]
+  },
+  "2611.11453v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dexi Shao"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiming Pan"
+      },
+      {
+        "affiliation": [],
+        "name": "Ming Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yupeng Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Lu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.11453v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-08",
+    "reasoning": "This paper studies momentum-dependent phonon effects on spin-fluctuation d-wave pairing in a nickelate, combining themes of correlated electron physics, superconductivity, and nickelate compounds.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Nickelate Superconductors",
+      "Spin Fluctuations",
+      "d-wave Pairing"
+    ],
+    "summary": "We study the effect of electron-phonon coupling on spin-fluctuation-mediated pairing in bulk La$_6$Ni$_5$O$_{12}$. A five-layer Hubbard model treated within the random-phase approximation yields a leading $d_{x^2-y^2}$ pairing state. Two phenomenological couplings motivated by oxygen breathing modes favor $s$-wave pairing when considered alone, while their attractive scattering between opposite-sign regions of the spin-fluctuation-induced gap suppresses $d$-wave pairing. Electronic charge screening strongly reduces this suppression. Comparing the $s$- and $d$-wave pairing strengths with and without screening shows that screening shifts their boundary in favor of $d$-wave pairing. Momentum-resolved projections locate the reduction of the unfavorable scattering processes. At the representative electronic interaction, $d$-wave pairing remains dominant.",
+    "title": "Momentum-dependent phonon effects on spin-fluctuation $d$-wave pairing in bulk La$_6$Ni$_5$O$_{12}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.5873363018035889
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5812029242515564
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.5786716938018799
+      }
+    ]
+  },
+  "2611.11807v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Dazhuo Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Hexuan Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Gong Cheng"
+      },
+      {
+        "affiliation": [],
+        "name": "Ling-Yan Hung"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.11807v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper develops analytical methods for tensor network simulations of fermionic conformal field theories, which is relevant to the user's interest in computational methods for fermions and potentially topological states.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Conformal field theory",
+      "Tensor network simulations",
+      "Majorana fermions"
+    ],
+    "summary": "We extend the exact fixed-point tensor construction of Cheng et al. to fermionic minimal models, providing an analytic construction of fixed-point tensors for fermionic rational conformal field theories. The fermionic fixed-point tensor is defined as a correlation function of boundary-changing operators on a triangle, with careful treatment of fermionic parity and spin structure. Boundary tensors are also constructed and combined with triangle tensors to form strips, enabling the extraction of scaling dimensions for boundary-changing operators. The construction incorporates modified weights for shrinkable boundary conditions, systematic depiction of spin structures, recovering both the Neveu-Schwarz and Ramond sectors. As a benchmark, our tensor with a minimal truncation of descendant levels yields convergence to the exact bulk scaling dimensions of many low energy states for the free Majorana fermion ($c=1/2$), demonstrating the efficiency of approximate fixed point tensors from boundary changing operators. We also make use of a more general description of fermionic CFTs based on fermionisation of rational bosonic CFTs, and make a generic prescription for discretisation making use of their connections to modular tensor categories. We show that the discretised spin structures on a spin surface naturally recover the signs needed to recover the R/NS sectors. We propose that the collection of OPE coefficients of the discretised 2d CFT can be naturally interpreted as a state-sum of spin-TQFTs, analogous to the bosonic case. This work provides analytically computed starting points for tensor network simulations of fermionic critical phenomena.",
+    "title": "Discretising 2D Fermionic CFTs",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.516581654548645
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5056146383285522
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5054301023483276
+      }
+    ]
+  },
+  "2611.12277v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "José Maria Cruz"
+      },
+      {
+        "affiliation": [],
+        "name": "Hidemaro Suwa"
+      },
+      {
+        "affiliation": [],
+        "name": "Masafumi Udagawa"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12277v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper delves into advanced condensed matter theory and computational methods (Quantum Monte Carlo) to explore exotic excitations in quantum spin ice, aligning with interests in complex electronic systems and theoretical modeling.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum Spin Ice",
+      "Electric Monopole",
+      "Quantum Monte Carlo"
+    ],
+    "summary": "Quantum spin ice attracts considerable attention due to its remarkable low-energy properties, described by the effective gauge theory, which mimics the quantum electrodynamics (QED). The ``effective\" QED in quantum spin ice is beyond the ``real\" QED in our universe in many respects. Above all, the effective QED hosts two kinds of gapped particles, the electric monopole, in addition to the magnetic monopole. Among the two monopoles, the electric monopole is of purely quantum origin, and its character has not been well resolved. In this work, we focus on the Rokhsar Kivelson point of the quantum dimer model, as the low-energy description of the quantum XXZ model on a pyrochlore lattice, and address the excitation spectrum of the electric monopoles, by combining the quantum Monte Carlo simulation with the stochastic analytical continuation. Most strikingly, the electric monopole spectrum exhibits clear double-peak structure, corresponding to the bound states and scattering states of electric monopoles. The lower-energy peak is attributed to the exciton-like bound state of an electric monopole pair, a signal of positronium in quantum spin ice. We found that the flippable loop operator serves as a local physical observable to excite a pair of electric monopoles, implying that monopoles can be detected through lattice or optical response.",
+    "title": "Positronium resonance of electric monopoles in quantum spin ice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5583193302154541
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5462344288825989
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.49232709407806396
+      }
+    ]
+  },
+  "2611.12290v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Adam F. Sapnik"
+      },
+      {
+        "affiliation": [],
+        "name": "Philip A. Chater"
+      },
+      {
+        "affiliation": [],
+        "name": "Dean S. Keeble"
+      },
+      {
+        "affiliation": [],
+        "name": "Tobias A. Bird"
+      },
+      {
+        "affiliation": [],
+        "name": "John S. O. Evans"
+      },
+      {
+        "affiliation": [],
+        "name": "Federica Bertolotti"
+      },
+      {
+        "affiliation": [],
+        "name": "Antonietta Guagliardi"
+      },
+      {
+        "affiliation": [],
+        "name": "Norberto Masciocchi"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel T. Bowron"
+      },
+      {
+        "affiliation": [],
+        "name": "Lise J. Støckler"
+      },
+      {
+        "affiliation": [],
+        "name": "Elodie A. Harbourne"
+      },
+      {
+        "affiliation": [],
+        "name": "Anders B. Borup"
+      },
+      {
+        "affiliation": [],
+        "name": "Rebecca S. Silberg"
+      },
+      {
+        "affiliation": [],
+        "name": "Viktoria A. Kaznelson"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefanie Punke"
+      },
+      {
+        "affiliation": [],
+        "name": "Mariia Svyrydenko"
+      },
+      {
+        "affiliation": [],
+        "name": "Maryna I. Bodnarchuk"
+      },
+      {
+        "affiliation": [],
+        "name": "Dmitry N. Dirin"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon C. Boehme"
+      },
+      {
+        "affiliation": [],
+        "name": "Maksym V. Kovalenko"
+      },
+      {
+        "affiliation": [],
+        "name": "Bo B. Iversen"
+      },
+      {
+        "affiliation": [],
+        "name": "Emil S. Bozin"
+      },
+      {
+        "affiliation": [],
+        "name": "Kirsten M. Ø. Jensen"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabriele Ansaldi"
+      },
+      {
+        "affiliation": [],
+        "name": "Karen Appel"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Gierke"
+      },
+      {
+        "affiliation": [],
+        "name": "Jörg Hallmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Aliaksandr Leonau"
+      },
+      {
+        "affiliation": [],
+        "name": "Anders Madsen"
+      },
+      {
+        "affiliation": [],
+        "name": "Johannes Möller"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan-Etienne Pudell"
+      },
+      {
+        "affiliation": [],
+        "name": "Angel Rodriguez-Fernandez"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Schmidt"
+      },
+      {
+        "affiliation": [],
+        "name": "Roman Shayduk"
+      },
+      {
+        "affiliation": [],
+        "name": "Cornelius Strohm"
+      },
+      {
+        "affiliation": [],
+        "name": "Joana Valerio"
+      },
+      {
+        "affiliation": [],
+        "name": "Ulrike Boesenberg"
+      },
+      {
+        "affiliation": [],
+        "name": "David A. Keen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.ins-det"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12290v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper describes advanced ultrafast X-ray total scattering techniques for studying structural dynamics, aligning with the user's interest in X-ray scattering methods for material characterization, even if the specific application differs from previous liked topics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "X-ray Scattering",
+      "Ultrafast Dynamics",
+      "Pair Distribution Function"
+    ],
+    "summary": "X-ray free-electron lasers (XFELs) provide the temporal resolution needed to extend total scattering and pair distribution function (PDF) analysis to investigate structural dynamics on femtosecond-to-picosecond timescales. We recently demonstrated that high-quality total scattering data and PDFs can be obtained from individual XFEL pulses; here, we take the next step towards time-resolved studies of structural dynamics in solution. Using the Materials Imaging and Dynamics (MID) instrument at the European XFEL, we obtain total scattering data up to $Q_{\\max} = 16.4\\,\\mathring{\\mathrm{A}}^{-1}$ from both conventional capillary samples and, critically, from samples delivered by a liquid jet. Despite the large air and solvent backgrounds inherent to this setup, PDFs suitable for quantitative structural analysis are recovered from liquid dispersions and molecular clusters in solution. We further demonstrate pump-probe total scattering from $\\mathrm{CsPbBr}_3$ nanocrystals in a liquid jet, resolving a fluence-dependent photoinduced isotropic lattice strain. Additionally, empirical potential structure refinement (EPSR) of XFEL total scattering data from an aqueous Keggin cluster reveals site-specific hydration environments and enables three-dimensional mapping of the surrounding solvent structure. Together, these advances open the door to tracking not only ultrafast structural changes in solution, but also the evolving solvent environments that govern molecular behaviour and reactivity.",
+    "title": "Ultrafast Liquid Jet X-ray Total Scattering",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.4894773066043854
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.4798296391963959
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.45533454418182373
+      }
+    ]
+  },
+  "2611.12460v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "A. V. Kuzikova"
+      },
+      {
+        "affiliation": [],
+        "name": "S. N. Barilo"
+      },
+      {
+        "affiliation": [],
+        "name": "R. A. Lanovsky"
+      },
+      {
+        "affiliation": [],
+        "name": "A. V. Sadovnikov"
+      },
+      {
+        "affiliation": [],
+        "name": "R. V. Pisarev"
+      },
+      {
+        "affiliation": [],
+        "name": "A. M. Kalashnikova"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12460v1",
+    "matching_keywords": [
+      "pump-probe"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper explores laser-induced spin reorientation and weak ferromagnetism in iron borate using ultrafast experimental techniques, which touches on condensed matter experimental physics but diverges from the user's specific interests in superconductors or topological materials.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Weak Ferromagnetism",
+      "Spin Reorientation",
+      "Ultrafast Magneto-optics"
+    ],
+    "summary": "In the iron oxide Fe$_3$BO$_6$ weak ferromagnetism stems from competing contributions from two-site Dzyaloshinskii-Moriya interactions (DMI) and from on-site anisotropies at the two $4c$ and $8d$ types of nonequivalent Fe$^{3+}$ sites. As a result, spin reorientation (SR) transition $Γ_2$ $\\rightarrow$ $Γ_4$ in Fe$_3$BO$_6$ uniquely comprises 90$^\\circ$ spin switching and a 35% change of weak ferromagnetic moment. We explore ultrafast kinetics of such a transition as a proxy for weak ferromagnetism contributions modified by femtosecond laser pulses. Using magneto-optical pump-probe technique we reveal that the SR transition is triggered by an abrupt decrease of the weak ferromagnetic moment in the $Γ_2$ phase, and relate it to the laser-induced modification of the DMI and anisotropy contributions to the spin canting. By tuning the pump pulse phonon energy between different optical absorption ranges, we show that laser-driven impact on spin canting possesses a nonthermal character and is achieved through the charge-transfer transitions $2p\\rightarrow3d$ within Fe$^{3+}$O$^{2-}_6$ octahedra rather than by localized $3d\\rightarrow3d$ transitions at Fe$^{3+}$. The decreased weak ferromagnetic moment controls the threshold and the latency of the SR transition, as well as a final state. The latter is achieved via the precessional switching to the $Γ_4$ phase activated by the laser-induced heating. Final state is found to be a coexistence of $Γ_4$ and $Γ_2$ phase with modified spin canting persisting even at hundreds of picoseconds.",
+    "title": "Revealing laser-induced modification of weak ferromagnetism through a spin-reorientation phase transition in iron borate Fe$_3$BO$_6$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5229664444923401
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.4996328055858612
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.4963814914226532
+      }
+    ]
+  },
+  "2611.12566v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mojtaba Alaei"
+      },
+      {
+        "affiliation": [],
+        "name": "Ilia Mikhailov"
+      },
+      {
+        "affiliation": [],
+        "name": "Alireza Qaiumzadeh"
+      },
+      {
+        "affiliation": [],
+        "name": "Artem Oganov"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12566v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper assesses quantum Monte Carlo methods for magnetic energies and transition temperatures, which is relevant to understanding correlated materials, and uses inelastic neutron scattering data.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Magnetic Ordering",
+      "Spin Thermodynamics"
+    ],
+    "summary": "Predicting magnetic ordering temperatures requires accurate exchange interactions and an appropriate treatment of spin thermodynamics. Here we assess these requirements through complementary quantum Monte Carlo benchmarks. For five insulating antiferromagnets, we compare ferromagnetic-antiferromagnetic energy differences from diffusion Monte Carlo (DMC) and density functional theory with references reconstructed from inelastic neutron scattering (INS) exchanges. DMC underestimates these references but achieves a mean absolute error comparable to the best-performing functionals tested. Separately, we directly test the previously proposed (S+1)/S rescaling of classical Monte Carlo temperatures against quantum stochastic series expansion simulations for 17 compounds using corresponding INS-derived Heisenberg Hamiltonians. Rescaling reduces the mean absolute classical-quantum temperature difference from 81.7 to 8.2 K, with a mean absolute percentage difference of 5.9 %. These results establish a direct quantum benchmark for the rescaling within the tested models and emphasize that improvements in electronic magnetic energy scales should be accompanied by attention to quantum spin thermodynamics.",
+    "title": "Quantum benchmarks for magnetic energies and transition temperatures",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5965108871459961
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5694031119346619
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5668957233428955
+      }
+    ]
+  },
+  "2611.12569v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Falk Röder. Roman Schuster"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Knupfer"
+      },
+      {
+        "affiliation": [],
+        "name": "Axel Lubk"
+      },
+      {
+        "affiliation": [],
+        "name": "Jörg Fink"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12569v1",
+    "matching_keywords": [
+      "RIXS",
+      "cuprate"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper directly investigates one- and two-particle excitations in cuprate strange metals using techniques like RIXS and EELS, aligning perfectly with interests in momentum-dependent charge correlations and unconventional superconductivity.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Cuprate Superconductors",
+      "Strange Metals",
+      "Resonant Inelastic X-ray Scattering"
+    ],
+    "summary": "In unconventional superconductivity, the pairing mechanism remains one of the central unresolved problems in solid-state physics. Moreover, the normal state shows strong deviations from conventional Fermi-liquid behavior, most notably a scattering rate that is linear in energy and temperature. Here we study the momentum dependence of the energy and damping of collective excitations in optimally doped cuprates in the normal state. In particular, we analyze existing Electron Energy Loss Spectroscopy (EELS) data of Bi2Sr2CaCu2O8 [Phys. Rev. B 44, 7155 (1991)] and new analogous optical plasmon data of Bi2Sr2Ca2Cu3O10. Furthermore, we reanalyze similar Resonant Inelastic Xray Scattering (RIXS) acoustic plasmon data [Phys. Rev. R 6, 043184 (2024)] of La1.84Sr0.16CuO4 and La1.84Ce0.16CuO4. We contrast these two-particle excitation results with one-particle excitations measured by Angle-Resolved Photoemission Spectroscopy (ARPES). Most of the plasmon behavior can be described well by combined self-energies of a hole and an electron. The dispersion of optical plasmons at high energy is only weakly determined by correlation effects, indicating resilient quasiparticles. The damping of the optical plasmons at low energy, however, is strongly influenced by the reduced scattering rates described in the marginal Fermi liquid model for \"strange-metal\" behavior. In addition, the same model describes the linear-in-energy damping of acoustic plasmons. Contrary to some theoretical predictions, we see no overdamped optical plasmons below the classical Lindhard critical wave vector.",
+    "title": "Contrasting one- and two-particle excitations in cuprate strange metals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.74184650182724
+      },
+      {
+        "liked_paper_id": "2506.18363v1",
+        "score": 0.6554964780807495
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.6454256176948547
+      }
+    ]
+  },
+  "2611.12658v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Clement Delcamp"
+      },
+      {
+        "affiliation": [],
+        "name": "Boris Kjær"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12658v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper introduces a theoretical framework for higher tensor network states in two dimensions, which represents a significant methodological advancement in computational physics highly relevant to the user's interest in advanced computational methods.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Tensor network states",
+      "Matrix product states",
+      "Quantum many-body systems"
+    ],
+    "summary": "We introduce a class of two-dimensional tensor network states obtained by categorifying matrix product states. This procedure leads us to consider bond spaces provided by a 2-vector space associated with the 2-cells of the underlying lattice. Tensor network representations are then defined as module categories over the free monoidal category on a monoidal signature encoding the lattice geometry. We prove a fundamental theorem stating that two representations generating the same states with suitable open boundary conditions are equivalent as module categories. Finally, we introduce a notion of 2-injectivity, a categorified analogue of the injectivity condition for matrix product states.",
+    "title": "Higher tensor network states in two spatial dimensions: fundamental theorem for open boundary conditions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.45512527227401733
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.42324674129486084
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.40365684032440186
+      }
+    ]
+  },
+  "2611.12788v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "R. Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Reiss"
+      },
+      {
+        "affiliation": [],
+        "name": "A. Krajewska"
+      },
+      {
+        "affiliation": [],
+        "name": "M. Isobe"
+      },
+      {
+        "affiliation": [],
+        "name": "H. Takagi"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Puphal"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12788v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper reports ambient-pressure superconductivity in a bulk single-crystal nickelate, achieved via topotactic reduction, directly aligning with interests in nickelate superconductors and topotactic reactions.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Ruddlesden-Popper Nickelates",
+      "Topotactic Reduction",
+      "Bulk Superconductivity"
+    ],
+    "summary": "Superconductivity in the Ruddlesden-Popper (RP) nickelates has so far been confined either to multilayer compounds under high pressure or to square-planar infinite-layer-type films stabilized by epitaxial strain. Here we report the high-pressure high-temperature (HPHT) growth of bulk single crystals of the quadruple-layer RP nickelate La$_5$Ni$_4$O$_{13}$ ($n=4$) and reproduce the quintuple-layer La$_6$Ni$_5$O$_{16}$ ($n=5$) synthesis, two members of the series that had previously been accessible only as thin films. Topotactic reduction of La$_5$Ni$_4$O$_{13}$ single crystals with CaH$_2$ yields the square-planar phase La$_5$Ni$_4$O$_{10}$, which we show to be a bulk, ambient-pressure superconductor with $T_\\mathrm{c}^\\mathrm{onset} \\approx 18\\,\\mathrm{K}$, a shielding fraction above 60\\%, and a specific-heat jump that confirms a bulk pairing transition. All crystals show besides superconductivity a coexistence with a density-wave or metal-insulator transition. The upper critical field shows a small anisotropy, $γ\\approx 2.4$, which remains finite as $T \\to T_c$, indicating three-dimensional superconductivity with substantial coupling between the four-layer blocks. These results identify the square-planar nickelates $R_{n+1}$Ni$_n$O$_{2n+2}$ as a bulk platform in which the layer number alone tunes the nickel valence into the superconducting regime, without chemical substitution, pressure, or epitaxial constraint.",
+    "title": "Ambient-pressure superconductivity in bulk single crystals of La$_5$Ni$_4$O$_{10}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.03414v1",
+        "score": 0.6826481819152832
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.6760398149490356
+      },
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.6268527507781982
+      }
+    ]
+  },
+  "2611.12840v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Cameron Ryan"
+      },
+      {
+        "affiliation": [],
+        "name": "Yasantha Pasindu Hetti Kankanamalage"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuai Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.12840v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper presents a machine learning method for material phase identification, which is a general computational approach to materials science, but not directly tied to the strongly correlated electron physics or specific material systems of the user's previous interests.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Phase Classification",
+      "Neural Tangent Kernels"
+    ],
+    "summary": "Phase identification is a computational task involving the classification of material structure using the positions of atoms. Using data from Molecular Dynamics (MD) simulations, our task is to identify the material phase of a set of atoms, based on how the simulations predict their positioning relative to each other. By leveraging existing research on mechanistic neural network theory, particularly Neural Tangent Kernels (NTK), we develop a new and efficient method for classifying simulated material samples. Our method involves defining a set of \"atom detectors\" that are given positions around the origin in cartesian coordinates. The sum of Gaussians centered at each atom is calculated at each atom detector, and is used as the input to a neural network. We present theoretical and experimental evidence to show that this method is highly effective and efficient at the task. Our method obtains better or similar accuracy scores to commonly used methods while having a major computational speedup.",
+    "title": "High Pressure Material Phase Identification with Gaussian Kernel Neural Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.46511131525039673
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.45867520570755005
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4206296503543854
       }
     ]
   }
