@@ -831,15 +831,15 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.21431v1",
-        "score": 0.45560792088508606
+        "score": 0.45560795068740845
       },
       {
         "liked_paper_id": "2506.11227v1",
-        "score": 0.44832080602645874
+        "score": 0.44832083582878113
       },
       {
         "liked_paper_id": "2506.14703v1",
-        "score": 0.4332015812397003
+        "score": 0.43320170044898987
       }
     ]
   },
@@ -4547,6 +4547,71 @@
       }
     ]
   },
+  "2611.10500v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jean Senellart"
+      },
+      {
+        "affiliation": [],
+        "name": "Pierre-Emmanuel Emeriau"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.10500v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-07",
+    "reasoning": "This paper focuses on theoretical aspects of estimating probabilities in boson samplers with entangled inputs, which is not directly related to condensed matter, materials science, or computational methods for material properties.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Boson sampling",
+      "Quantum information theory",
+      "Photonic computation"
+    ],
+    "summary": "Most proposed applications of boson samplers, including photonic machine-learning models, do not use the samples themselves but estimates of output probabilities, marginals or overlaps, obtained to additive precision from a finite number of shots. For product inputs such as single photons, these quantities can already be estimated classically with Gurvits's algorithm and its generalisations. We ask whether entangled inputs change this picture. For any $n$-photon input that is a matrix-product state of bond dimension $χ$, with one photon per site and $L$ modes per site, we give an unbiased estimator of any output amplitude of an $m$-mode interferometer, whose mean-square error after $N$ draws is at most $\\|ψ\\|^2/N$ whatever the interferometer, the output pattern and the entanglement of the state. Each draw costs $O(nLχ^2+nL^3+mn)$ operations after $O(nLχ^3)$ preprocessing, and an additive error $\\varepsilon$ with probability at least $1-δ$ requires $O(\\|ψ\\|^2\\varepsilon^{-2}\\log(1/δ))$ draws, with memory of the order of the input size. The main application is to light emitted sequentially by quantum emitters, such as spin-based sources of photonic cluster states, for which $χ$ is bounded by the dimension of the source's retained quantum memory: one spin gives $χ=2$ at any length, and a memory of $k$ qubits, held in emitters or in photons stored in a delay line, gives $χ\\le2^k$, so the cost stays polynomial as long as $k=O(\\log n)$. The same sampler also estimates traced-memory probabilities, overlaps and individual marginal probabilities. All guarantees are additive: the estimator gives neither relative estimates of exponentially small probabilities nor a sampler of the output distribution.",
+    "title": "On the estimation of linear-optical amplitudes and probabilities with entangled input state",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.43330323696136475
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.43264392018318176
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.36917197704315186
+      }
+    ]
+  },
+  "2611.10593v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Atsushi Iwaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Chisa Hotta"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.10593v1",
+    "published_date": "2026-11-07",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Pure states of quantum many-body systems at thermal equilibrium are known to be typical, in a sense that a randomly chosen pure state from an appropriate energy shell reproduces the Gibbs-state expectation values of most observables acting on a small subsystem. However, such typical states are intrinsically stochastic, conventionally generated from the random high-temperature state, suffer from statistical fluctuations, and do not provide a continuous connection to the ground state. Here, we introduce a deterministic variational framework for constructing a Markov-Shielded Typical (MST) state, a unique thermal pure-state representative whose local reduced density matrices closely approximate those of the Gibbs state, from the ground state up to infinite-temperature limit. Our approach reformulates free-energy minimization by replacing the nonlocal von Neumann entropy with a local, computationally tractable Markov entropy, where we establish rigorous upper and lower bounds of MST free energy to lie in the very vicinity of the thermal free energy. This framework extends the concept of typicality to deterministic pure-state representations of thermal equilibrium, offering a scalable wave-function approach with potential applications to both classical and quantum computing.",
+    "title": "Markov-Shielded Typicality for Thermal Quantum States",
+    "vector_matches": []
+  },
   "2611.10636v1": {
     "authors": [
       {
@@ -4617,6 +4682,54 @@
       }
     ]
   },
+  "2611.10842v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexis de Colnet"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefan Szeider"
+      }
+    ],
+    "categories": [
+      "cs.AI",
+      "cs.LO"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.10842v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-07",
+    "reasoning": "Despite mentioning tensor networks, this paper focuses on theoretical computer science, Boolean function representations, and algorithms, which is distant from the user's apparent interest in condensed matter physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Boolean Algebra",
+      "Formal Verification",
+      "Algorithm Theory"
+    ],
+    "summary": "Tree decision diagrams (TDDs), recently introduced by Capelli et al. (SAT 2026), are representations of Boolean functions. They generalize OBDDs by replacing variable orders with vtrees. The width of a TDD counts the distinct subfunctions across each vtree cut. Counting subfunctions is blind to linear structure. We introduce algebraic tree decision diagrams (ATDDs) by replacing this count with the rank of the cut matrix. The maximum of these ranks over all cuts, the factor rank, is exactly the width of the ATDD. Every TDD can be converted into an ATDD of no greater width. An ATDD is a tree tensor network in canonical form. ATDDs are exponentially more succinct than TDDs, and quasi-polynomially more succinct than structured deterministic DNNFs. Our main result is that this gain in succinctness does not cost canonicity. ATDDs are the first strict canonical form for a rank-based representation over arbitrary vtrees. For each function and vtree there is exactly one ATDD, over the rationals and without any genericity assumption. The canonicity admits a local characterization. Whether a tree tensor network is the ATDD of the Boolean function it computes can be checked in polynomial time from its tensors alone. Equivalence checking becomes a test of syntactic equality. The operation set includes polynomial-time model counting, weighted model counting, and a test whether a tree tensor network represents a Boolean function.   Capelli et al. asked for the complexity of changing the vtree of a TDD and suggested local vtree changes. We answer the question. After a rotation of the vtree at one node, the new ATDD differs from the old one in two tensors only. Vtree change runs in output-polynomial time both for TDDs and for ATDDs.   We formalize and verify our core results in Lean. We provide a prototype implementation of TDD and ATDD compilers as a first empirical validation.",
+    "title": "Factor Rank: A Canonical Algebraic Generalization of Tree Decision Diagrams",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.2743288278579712
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.2687182128429413
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.23613817989826202
+      }
+    ]
+  },
   "2611.10889v1": {
     "authors": [
       {
@@ -4678,6 +4791,53 @@
       }
     ]
   },
+  "2611.11044v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jean Senellart"
+      },
+      {
+        "affiliation": [],
+        "name": "Stephen Wein"
+      },
+      {
+        "affiliation": [],
+        "name": "Pierre-Emmanuel Emeriau"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.11044v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-08",
+    "reasoning": "This work explores exact sampling algorithms for various photonic quantum circuits, remaining within the domain of quantum information theory rather than materials science or condensed matter physics.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum sampling",
+      "Photonic quantum computing",
+      "Algorithm complexity"
+    ],
+    "summary": "Clifford and Clifford's algorithm samples single-photon boson sampling exactly, one output mode at a time, by adding the input photons in a uniformly random order. We extend this construction to other input states and to adaptive and non-linear circuits. It applies whenever non-negative weights on output prefixes and input sets satisfy one marginal identity, a set-chain lemma: the random-order sampler is then exact at one weight evaluation per candidate mode, and it gives the posterior over the hidden input set. We build four exact samplers on it. For sources in a superposition of vacuum and one photon, the weights are rectangular permanents on an offset input set, and the cost has the exponent of single photons under loss. For photonic matrix-product states of bond dimension $χ$, a gap-by-gap Kraus contraction turns each weight into a short sum of squared amplitudes. For adaptive linear optics, the chain starts from the posterior given the adaptive counts and rejects chains that contradict them. For a single-mode non-linear phase the identity fails, and rejection from linear branches is exact with acceptance $1/\\|c\\|_1^2$. All four samplers agree with strong simulation on small instances, and cost models put adaptive sampling with up to three adaptive modes within $10\\%$ of single photons and a non-linear site at $\\varphi=π/2$ at about $4\\times$.",
+    "title": "Exact sampling beyond Fock inputs and linear optics: photon-number superpositions, photonic matrix-product states, adaptive and non-linear circuits",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.47635379433631897
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4106631875038147
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4004204571247101
+      }
+    ]
+  },
   "2611.11049v1": {
     "authors": [
       {
@@ -4688,7 +4848,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2611.11049v1",
     "matching_keywords": [
@@ -4707,11 +4869,11 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.20106v1",
-        "score": 0.4758043587207794
+        "score": 0.47580432891845703
       },
       {
         "liked_paper_id": "2507.00386v1",
-        "score": 0.47238999605178833
+        "score": 0.4723900854587555
       },
       {
         "liked_paper_id": "2508.17292v1",
@@ -4757,6 +4919,45 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
         "score": 0.542607843875885
+      }
+    ]
+  },
+  "2611.11245v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Soi-Chan Lei"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.11245v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-08",
+    "reasoning": "This paper discusses quantum computation using Bose-Einstein condensates and employs tensor-network methods, which shares a methodological connection but diverges in the specific physical systems and applications from the user's primary interests in strongly correlated electron systems.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum computation",
+      "Bose-Einstein condensate",
+      "Wigner negativity"
+    ],
+    "summary": "Continuous-variable (CV) quantum computation in bosonic modes offers a hardware-efficient route toward fault tolerance, yet synthesizing deterministic, macroscopic non-Gaussian gates with Wigner negativity remains challenging. Here, we establish two physical breakthroughs and two tensor-network innovations using a single-cavity 87Rb Bose-Einstein condensate (BEC) as a macroscopic bosonic logical mode. Physically, building on our orthogonal optical dual-driving architecture, we propose deterministic, unitary Floquet-engineered Two-Axis Twisting (TAT) non-Gaussian gates without post-selection, and introduce a paradigm shift from quantum metrology to CV quantum computation: via a normal-ordered Holstein-Primakoff expansion and non-perturbative spin simulations, we show that the over-squeezed regime ($t>t_{opt}$, where Wineland squeezing $ξ_R^2$ degrades) harnesses finite-$N$ Bloch-sphere curvature - manifesting at $O(1/S)$ as cubic shearing and quartic Kerr $(a^\\dagger a)^2$ interactions - to deterministically generate Wigner negativity. Methodologically, we formulate an exact automaton Matrix Product Operator in the compact SU(2) spin basis with an $N$-independent Liouvillian bond dimension ($D_L=6$), bypassing Fock cutoff errors ($N_{max}$) and $O(N^3)$ permutational-invariant scaling. Finally, we decouple $4^N$-dimensional Lindblad evolution from collective observation via an Exact Bilateral Dynamic Programming Dicke Projector with log-gamma normalization, extracting the $(N+1)\\times(N+1)$ symmetric projection $\\tildeρ_{n_L,n_R}$ without moment truncation while tracking symmetry retention $p_{sym}(t)$. Our proof-of-principle $N=50$ benchmark resolves deep Wigner negativity ($W_{min} \\approx -0.214$ at $t=2.00μ$s, after $ξ_R^2 \\approx 0.124$ at $t_{opt} \\approx 0.64μ$s), establishing a scalable architecture for $N \\sim 10^3-10^5$ macroscopic BEC processors.",
+    "title": "Hardware-Efficient Continuous-Variable Quantum Computation: Finite-$N$ Non-Gaussian Gates in a Floquet-Engineered Cavity-BEC",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4847796559333801
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.4011605381965637
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4003792405128479
       }
     ]
   },
@@ -4912,7 +5113,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2611.11807v1",
     "matching_keywords": [
@@ -4935,13 +5138,31 @@
       },
       {
         "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
-        "score": 0.5056146383285522
+        "score": 0.5056147575378418
       },
       {
         "liked_paper_id": "2507.00386v1",
         "score": 0.5054301023483276
       }
     ]
+  },
+  "2611.12049v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pavel Chuklanov"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.12049v1",
+    "published_date": "2026-11-09",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "A generator builds a quantum circuit from the number of qubits and a bit string. We check a generator against a reference for all parameter values under six equivalence relations. For ladder programs, we prove that above a computable threshold the circuit matrices form a uniform matrix product operator, a weighted automaton of dimension independent of the number of qubits. Equivalence reduces to the zeroness of a difference automaton, checked modulo primes. The answer is a counterexample or \"equal\", exact or with a computed error bound. Experimentally, the method found errors missed by fixed-size checks and produced no incorrect verdicts.",
+    "title": "Parameterized equivalence checking of quantum circuit generators via weighted automata",
+    "vector_matches": []
   },
   "2611.12277v1": {
     "authors": [
@@ -5182,6 +5403,51 @@
       }
     ]
   },
+  "2611.12326v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kim Batselier"
+      }
+    ],
+    "categories": [
+      "eess.SY",
+      "cs.LG",
+      "math.OC"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.12326v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper explores Tensor Network Kernel Machines for nonlinear system identification, which applies tensor network techniques relevant to computational physics, though in a machine learning context.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Machine Learning",
+      "Kernel Methods",
+      "System Identification"
+    ],
+    "summary": "Over the past ten years Tensor Network Kernel Machines have enabled efficient nonlinear system identification through the use of low-rank tensor networks. The goal of this article is to provide the reader with a basic understanding of this model class in terms of its two defining properties. Furthermore, both the optimization and regularization of such models are discussed, together with recent developments and starting points for further exploration.",
+    "title": "Tensor Network Kernel Machines for Nonlinear System Identification",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.355002224445343
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.30690574645996094
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.2913948595523834
+      }
+    ]
+  },
   "2611.12460v1": {
     "authors": [
       {
@@ -5243,6 +5509,40 @@
         "score": 0.4963814914226532
       }
     ]
+  },
+  "2611.12546v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zebedeus F. Osseweijer"
+      },
+      {
+        "affiliation": [],
+        "name": "Jagoda Malag"
+      },
+      {
+        "affiliation": [],
+        "name": "Jose L. Lado"
+      },
+      {
+        "affiliation": [],
+        "name": "Tiago V. C. Antão"
+      },
+      {
+        "affiliation": [],
+        "name": "Anouar Moustaj"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.12546v1",
+    "published_date": "2026-11-09",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Tensor network methods have been instrumental in addressing exponentially large many-body problems. Most recently, these techniques have also been applied to single-particle tight-binding Hamiltonians, allowing observables to be evaluated on exponentially large lattices. Here, we show that the scale-separated nature of these methods allows for a natural encoding of self-similar structures, such as the Sierpiński gasket, a scale-invariant fractal with Hausdorff dimension $\\log 3/\\log 2 \\approx 1.58$, yielding an exact and compact representation of Hamiltonians on such lattices. Using this encoding, we study a Chern insulator, the flux kagome model, confined to this fractal geometry, and develop methods to investigate its topological states within a tensor network framework. This allows us to reach much higher fractal generations than would otherwise be possible with dense-matrix methods, resolving the density of states of a deep fractal with over 100 million sites. Furthermore, the larger structures allow us to resolve topology in smaller gaps, suggesting that these methods could be instrumental in understanding the interplay between topology and non-integer dimensionality.",
+    "title": "Topological states in fractals through a self-similar tensor network encoding",
+    "vector_matches": []
   },
   "2611.12566v1": {
     "authors": [
@@ -5366,7 +5666,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2611.12658v1",
     "matching_keywords": [
@@ -5386,15 +5688,119 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.20106v1",
-        "score": 0.45512527227401733
+        "score": 0.4551253020763397
       },
       {
         "liked_paper_id": "2506.23550v1",
-        "score": 0.42324674129486084
+        "score": 0.4232468008995056
       },
       {
         "liked_paper_id": "2506.22574v1",
-        "score": 0.40365684032440186
+        "score": 0.40365689992904663
+      }
+    ]
+  },
+  "2611.12669v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Toshiya Hikihara"
+      },
+      {
+        "affiliation": [],
+        "name": "Nobuya Maeshima"
+      },
+      {
+        "affiliation": [],
+        "name": "Kouichi Okunishi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.12669v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper investigates quantum magnetic phases and transitions in a strongly correlated spin system using advanced computational methods like DMRG, directly aligning with interests in condensed matter theory and simulation techniques.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Quantum Magnetism",
+      "Spin Ladders",
+      "DMRG"
+    ],
+    "summary": "We study the spin-1/2 Heisenberg antiferromagnet with an anisotropic $Γ$ term on a zigzag ladder, which can be exactly mapped to the spin-1/2 XYZ zigzag ladder by a spin rotation. This model has recently attracted considerable interest as an effective model for the quasi-one-dimensional magnetic semiconductor YbCuS$_2$. For the model, the ground-state phase diagram was previously proposed by Saito and Hotta [Phys. Rev. Lett. 132, 166701 (2024); Phys. Rev. B 110, 024409 (2024)]. We systematically reexamine the phase diagram through complementary numerical and analytical approaches, including exact diagonalization, the density-matrix renormalization group method, and low-energy effective theories. We thereby demonstrate that when the anisotropic $Γ$ term is present, the model exhibits the Néel, dimer, ferromagnetic, and double-Néel phases, all of which have a finite excitation gap. The gapless Tomonaga-Luttinger-liquid (TLL) phase appears only in the isotropic case where the $Γ$ term is absent. We also confirm that the transitions between the Néel and dimer phases and between the Néel and ferromagnetic phases are continuous transitions governed by Gaussian criticality with central charge $c=1$. The TLL parameter characterizing the critical states at the Gaussian transitions is estimated numerically.",
+    "title": "Ground-state phase diagram of the spin-1/2 Heisenberg zigzag ladder with anisotropic $Γ$ term revisited",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.6250383853912354
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6197506785392761
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6104678511619568
+      }
+    ]
+  },
+  "2611.12773v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yunchao Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yihui Quek"
+      },
+      {
+        "affiliation": [],
+        "name": "Shreya Vardhan"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianci Zhou"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.12773v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper presents an efficient classical algorithm for computing OTOCs in chaotic quantum dynamics, connecting to the user's interest in advanced computational methods for understanding complex quantum systems.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Quantum Chaos",
+      "OTOC",
+      "Classical Simulation"
+    ],
+    "summary": "Estimating out-of-time-ordered correlators (OTOCs) in individual instances of random quantum circuits has been proposed as a candidate for verifiable quantum advantage, and demonstrated to be hard for conventional classical algorithms such as tensor networks and Monte Carlo. Using insights from quantum chaos, we develop and implement a polynomial-time classical algorithm for the four-point ${\\rm OTOC}^{(1)}$ and the eight-point ${\\rm OTOC}^{(2)}$ in typical instances of one-dimensional (1D) quantum circuits. Our results demonstrate average-case classical tractability of estimating OTOCs in the sensitive regime where circuit-to-circuit fluctuations are large. Our algorithm organizes the OTOC into a rapidly converging series, where the leading term includes contributions from histories within permutation degrees of freedom in the replicated Hilbert space, and subleading terms arise from excursions outside this space. Although chaos is often viewed as an insurmountable barrier to classical simulation, our algorithm exploits a form of dephasing caused by chaos, which suppresses the subleading terms. We provide strong theoretical and numerical evidence to support this suppression. Further, we demonstrate that practical implementations of our algorithm estimate ${\\rm OTOC}^{(1)}$ and ${\\rm OTOC}^{(2)}$ in 1D circuits with high accuracy, achieving higher signal-to-noise ratio at larger circuit depths compared to recent 2D experiments by Google. Extending our algorithm to higher dimensions, and resolving the status of quantum advantage in 2D OTOCs, remain open problems.",
+    "title": "An efficient classical algorithm for OTOCs in chaotic quantum dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5782692432403564
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4501188397407532
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.44603434205055237
       }
     ]
   },
@@ -5506,6 +5912,962 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
         "score": 0.4206296503543854
+      }
+    ]
+  },
+  "2611.13071v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sriram Akella"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13071v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper focuses on quantum information theory and entanglement properties of tripartite states, which does not align with the user's interests in condensed matter physics, correlated materials, or computational methods.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum entanglement",
+      "Tripartite states",
+      "Quantum information"
+    ],
+    "summary": "A tripartite pure state is local-unitary equivalent to a stabilizer state if and only if its marginal, reflected, and negativity spectra (up to signs) are flat. These conditions are quantified using anti-flatness, giving a diagnostic of tripartite nonlocal magic that is computable and experimentally measurable using randomized measurements. In non-abelian quantum doubles, it appears only when the triple points of the tripartition lie on plaquettes. In random tensor networks, it appears exactly when the entanglement wedge of two boundary regions connects.",
+    "title": "Tripartite nonlocal magic from reflected and negativity spectra",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.42890745401382446
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4088974893093109
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.40682563185691833
+      }
+    ]
+  },
+  "2611.13085v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xinyu Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Bowei Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Joshua Yi"
+      },
+      {
+        "affiliation": [],
+        "name": "Biao Lian"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13085v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper explores the concept of time-direction entanglement entropy for free fermion systems and insulators, which aligns with theoretical aspects of quantum states and condensed matter systems relevant to the user's interests.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Entanglement entropy",
+      "Free fermions",
+      "Quantum states"
+    ],
+    "summary": "While the entanglement entropy of a spatial subregion has been extensively studied, a properly defined entanglement entropy of quantum states in a time direction interval remains underexplored. We investigate the scaling behaviors of the recently defined time direction entanglement entropy (TDEE) for free fermion quantum states, which is computed from the reduced density matrix of a sub-Hilbert space that minimally supports all the time-evolved operators in the time direction interval. Based on the Fisher--Hartwig conjecture for Toeplitz matrices, we develop an analytical framework for understanding the TDEE in a time interval with discrete time step $τ$. For disorderless one-dimensional (1D) systems (gapless fermions or band insulators), in different regimes of gap, bandwidth and $τ$, we find the TDEE can exhibit area law (for nonzero gap), logarithmic law or volume law in the length of time. For 1D Anderson insulators, we numerically find the TDEE shows a Page-curve like behavior, growing at short time, and decaying in power-law at long time exceeding the crossover time determined by localization. In the continuum time limit $τ\\rightarrow 0$, the TDEE of disorderless gapless fermions, band insulators and Anderson insulators exhibit logarithmic law, area law and sub-area law, respectively. We also show that the sub-Hilbert space of a time-direction interval stabilizes in the $τ\\rightarrow 0$ limit, which is understandable as a subspace of the Hilbert space of the Lieb-Robinson causal diamond.",
+    "title": "Time Direction Entanglement Entropy of Free Fermion Ground States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5148717164993286
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.4965977966785431
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.45747900009155273
+      }
+    ]
+  },
+  "2611.13091v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jia-Xin Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Wen O. Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Leon Balents"
+      },
+      {
+        "affiliation": [],
+        "name": "Lucile Savary"
+      },
+      {
+        "affiliation": [],
+        "name": "D. N. Sheng"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13091v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "This paper investigates chiral superconductivity emerging from various correlated phases in a Hofstadter-Hubbard model, linking superconductivity with topological order and computational methods.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Chiral Superconductivity",
+      "Hofstadter-Hubbard Model",
+      "Topological Order"
+    ],
+    "summary": "We study a $π$-flux square-lattice $t$-$t'$ Hofstadter-Hubbard model proposed to be realizable in twisted moiré bilayers. By tuning $U$ and $t'$ at half filling, ground-state density-matrix renormalization group simulations (DMRG) and a parton analysis identify an integer quantum Hall (IQH) phase, a chiral spin liquid (CSL), and an antiferromagnet (AFM) in the phase diagram, while charge and spin fluctuations from finite-temperature determinant quantum Monte Carlo (DQMC) suggest a closing charge gap but an open spin gap at the IQH-CSL boundary, consistent with the topological criticality expected there. This model therefore produces a phase diagram hosting weakly correlated band topology (IQH), intrinsic topological order (CSL), and conventional symmetry breaking (AFM) side by side. Upon doping any of these three parent phases, a single chiral topological superconductor with spin Chern number $C_s=-2$ occupies nearly the entire phase diagram. DMRG, DQMC, and weak-coupling perturbation theory agree on its pairing symmetry. This shows that doping the topological band of our model robustly induces the same paired state throughout the phase diagram regardless of the character of the underlying correlated half-filled state and its magnetic fluctuations, whether an IQH, a spin liquid or a weakly fluctuating AFM.",
+    "title": "Chiral Superconductivity Indifferent to Parent Topology in the Square-Lattice Hofstadter-Hubbard Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6498503684997559
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6397668123245239
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5880998373031616
+      }
+    ]
+  },
+  "2611.13166v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "O. R. Hryniv"
+      },
+      {
+        "affiliation": [],
+        "name": "I. V. Lukin"
+      },
+      {
+        "affiliation": [],
+        "name": "A. G. Sotnikov"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13166v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "It employs advanced matrix product state techniques with non-Abelian symmetry to study quantum magnetism, directly relevant to computational methods for strongly correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum magnetism",
+      "Matrix product states",
+      "SU(3) symmetry"
+    ],
+    "summary": "We study the SU(3) Heisenberg chain with nearest- and next-nearest-neighbor antiferromagnetic exchange $J_1$ and $J_2$. Field theory predicts that the trimerized valence-bond solid of this chain has a finite extent in $α=J_2/J_1$, followed by a gapless SU(3)$_1$ phase, but earlier numerical estimates of the upper boundary range from $α\\approx2.1$ (exact diagonalization) to $α\\approx3.8$ (iDMRG). We use the variational uniform matrix product state (VUMPS) algorithm with the full non-Abelian SU(3) symmetry imposed on the virtual bonds, reaching bond dimensions up to $D\\approx8000$, and locate the phase boundaries by finite-entanglement scaling. Resolving the transfer-matrix spectrum and the entanglement spectrum by SU(3) irreducible representation, we find that the trimerized phase extends to $α_{c2}\\gtrsim3.5$ and end below $α\\approx5$, excluding a boundary near $α\\approx2$. At larger $α$ our numerical analysis of the effective central charge is consistent with the predicted massless flow from SU(3)$_2$ to SU(3)$_1$.",
+    "title": "Study of the frustrated SU(3) Heisenberg chain with SU(3)-symmetric matrix product states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6220787167549133
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5784131288528442
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5701040029525757
+      }
+    ]
+  },
+  "2611.13363v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jocelyn L. Mendes-Antaya"
+      },
+      {
+        "affiliation": [],
+        "name": "Ye-Jin Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan M. Michelsen"
+      },
+      {
+        "affiliation": [],
+        "name": "Jessica Yu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shoushou He"
+      },
+      {
+        "affiliation": [],
+        "name": "Xavier Roy"
+      },
+      {
+        "affiliation": [],
+        "name": "Hanzhe Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Scott K. Cushing"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.13363v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-09",
+    "reasoning": "It investigates ultrafast charge dynamics in superatomic crystals, which is a materials science topic, but less directly related to the specific superconductors, topological materials, or theoretical methods previously liked.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Superatomic crystals",
+      "Ultrafast spectroscopy",
+      "Charge transfer"
+    ],
+    "summary": "Van der Waals superatomic crystals represent an intriguing class of materials, exhibiting unique ultrafast electronic and structural responses arising from their hierarchical crystal structure. These materials bridge the properties of semiconductors, molecular solids, and nanocrystal arrays, hosting a range of many-body interactions that can be controlled with atomically precise structures. To establish the structure-function correlation, it is necessary to understand element-specific electronic states arising from complex superatomic unit cells. Here, we use transient XUV spectroscopy to individually probe the dynamics of photoexcited electrons and holes in Re$_{6}$Se$_{8}$Cl$_{2}$ superatomic crystals. We simultaneously measure photodynamics at the Re O$_{2}$ and Se M$_{4,5}$ edges, enabling decomposition of excited-state dynamics into the contributions of electron, hole, band gap, and phonon dynamics occurring around Re and Se atoms. By correlating spectral features at the Re and Se edges, we infer the existence of flat conduction bands and identify hot hole transfer from Re to Se atoms. We observe phonon oscillations driven by hole-mediated displacive excitations. The measurements highlight that the photodynamics are dominated by charge transfer between metallic sites which drives phonon coupling in the nonequilibrium state. This work provides insights into the optoelectronic applications of superatomic crystals for future tuning of emergent material properties.",
+    "title": "Ultrafast Hole Transport and Electron Localization in Superatomic Re$_{6}$Se$_{8}$Cl$_{2}$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:9ZlFYXVOiuMC",
+        "score": 0.5851779580116272
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:cFHS6HbyZ2cC",
+        "score": 0.5767054557800293
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.5750993490219116
+      }
+    ]
+  },
+  "2611.13424v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Emeline Sherman"
+      }
+    ],
+    "categories": [
+      "math.OA",
+      "math.CT",
+      "math.QA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13424v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper is highly theoretical and focuses on abstract mathematical structures like operator algebras and tensor categories, which is too far removed from the specific condensed matter physics and materials science topics of the liked papers.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Operator algebras",
+      "Tensor categories",
+      "Mathematical physics"
+    ],
+    "summary": "We define Hilbert modules for $\\mathrm{C^*}$ and $\\mathrm{W^*}$ algebra objects in the ind-completion of a unitary tensor category. We then prove an operator algebraic Ostrik's theorem in an ind-category: the 2-category of $\\mathrm{C^*}$ or $\\mathrm{W^*}$ algebras objects, their modules, and adjointable intertwiners is $\\dagger$-equivalent to the 2-categories of $\\mathrm{C^*}$ or $\\mathrm{W^*}$ module categories.",
+    "title": "Ostrik's Theorem for Operator Algebras in a Unitary Tensor Category",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.17750397324562073
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.17601296305656433
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.1676105558872223
+      }
+    ]
+  },
+  "2611.13695v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "F. X. Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. Song"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.13695v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper explores interaction-induced topological phases in an extended Hubbard model, aligning with interests in correlated electron systems and topological materials.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantized Zak phase",
+      "Extended Hubbard Model",
+      "Topological phases"
+    ],
+    "summary": "Quantized Zak phases are commonly associated with dimerized systems, such as the noninteracting Su--Schrieffer--Heeger (SSH) model. In interacting systems, however, interactions can induce effective dimerization of particle clusters even in the absence of explicit dimerization in the underlying lattice. In this work, we study a one-dimensional multicomponent fermionic extended Hubbard model under a resonance condition between the on-site and nearest-neighbor interactions. We find that quantized Zak phases emerge for odd fermion numbers $n\\geqslant 3$, protected by the inversion symmetry of the effective Hamiltonian. Furthermore, in the presence of a tilted field, fermion clusters exhibit Bloch oscillations, during which their Zak phases can be extracted from the evolution of a Gaussian wave packet over one Bloch period. Our results reveal an interaction-induced mechanism for realizing quantized Zak phases in multicomponent fermionic systems without explicit lattice dimerization.",
+    "title": "Emergent Quantized Zak Phases without Dimerization in a Multicomponent Fermionic Extended Hubbard Model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.622748851776123
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6060841679573059
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.6044368743896484
+      }
+    ]
+  },
+  "2611.13755v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kunal Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Kimberlee Keithley"
+      },
+      {
+        "affiliation": [],
+        "name": "Toshiya Iwamori"
+      },
+      {
+        "affiliation": [],
+        "name": "Shu Kanno"
+      },
+      {
+        "affiliation": [],
+        "name": "Ikko Hamamura"
+      },
+      {
+        "affiliation": [],
+        "name": "Takao Kobayashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Akira Koseki"
+      },
+      {
+        "affiliation": [],
+        "name": "Qi Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Naoki Yamamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Hiroshi Horii"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuri Kobayashi"
+      },
+      {
+        "affiliation": [],
+        "name": "Borja Peropadre"
+      },
+      {
+        "affiliation": [],
+        "name": "Kouhei Nakaji"
+      },
+      {
+        "affiliation": [],
+        "name": "Toru Imai"
+      },
+      {
+        "affiliation": [],
+        "name": "Takayuki Osogami"
+      }
+    ],
+    "categories": [
+      "cs.AI",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13755v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-10",
+    "reasoning": "It presents a hardware-trained quantum algorithm for electronic structure calculations of molecular systems, which is directly relevant to computational methods for materials science.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Quantum chemistry",
+      "Quantum machine learning",
+      "Electronic structure methods"
+    ],
+    "summary": "Quantum hardware can provide feedback for training circuit generators beyond the reach of exact classical simulation. We train generative quantum eigensolver (GQE) policies, transformers conditioned on molecular descriptors, to generate the state-preparation circuits for sample-based quantum diagonalization (SQD). Training runs first on a noiseless simulator and then with the IBM Heron processor ibm_kobe inside the loop, at 46 and 70 qubits ($1.2 \\times 10^8$ shots for the four main training runs). A classical CCSD(T) reference energy of the training molecules enters only an admission gate and two auxiliary reward terms. During hardware training, a reward penalty prevents collapse to circuits that sample only the Hartree-Fock determinant. Policies trained on transition-metal complexes are applied without retraining to Sn(OH)$_3$-Me and its hydrates, minimal models of organotin photoresists for extreme-ultraviolet lithography, from 32 to 70 qubits. After one round of hardware sampling, followed by classical ranking and recovery of the cached counts with the molecular Hamiltonian and no further QPU calls, 27 of 28 runs at 46-70 qubits are within 15 mHa of the density-matrix renormalization group (DMRG) reference (median 4.5 mHa), and in all eight runs with an untrained control the trained policy is more accurate. At 56-70 qubits the selected circuits use 34-72 times fewer two-qubit gates than the local unitary cluster Jastrow (LUCJ) circuit transpiled for the same device. These results demonstrate that circuit generators can be trained with quantum hardware at 70 qubits.",
+    "title": "A Hardware-Trained Generative Quantum Eigensolver for Sample-Based Quantum Diagonalization of Organotin Hydroxides up to 70 Qubits",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.47994256019592285
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4773101806640625
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4566928744316101
+      }
+    ]
+  },
+  "2611.13852v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Etsuko Itou"
+      },
+      {
+        "affiliation": [],
+        "name": "Tsuyoshi Okubo"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13852v1",
+    "matching_keywords": [
+      "quantum monte carlo",
+      "tensor network",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-11-10",
+    "reasoning": "It applies sophisticated tensor network methods to lattice gauge theories and investigates topological phase transitions and entanglement, aligning with interests in computational techniques for correlated and topological systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Topological phase transition",
+      "Lattice gauge theory"
+    ],
+    "summary": "We investigate the expressive power of the gauged Gaussian fermionic projected entangled pair state (GGFPEPS) ansatz, which is a manifestly gauge-invariant tensor network ansatz for $(2+1)$-dimensional lattice gauge theories. In the GGFPEPS ansatz, the gauge field on each link is represented by coupling its configuration to the fermion number of virtual fermions placed at both ends of the link. This ansatz has been studied by variational Monte Carlo (VMC) methods in previous work~\\cite{Emonts:2022yom}. However, the statistical error of VMC makes a precise determination of the variational parameters difficult, so that the expressive power of the ansatz could not be examined accurately. In this work, we reformulate the computation as a Grassmann tensor network (TN), in which the whole network is contracted deterministically, and introduce the higher-order tensor renormalization group (HOTRG), which allows us to perform calculations in large volumes up to $L=34$. We also evaluate the infinite volume system using the corner transfer matrix renormalization group (CTMRG). We find that the ansatz with only eight complex variational parameters accurately describes the pure $\\mathbb{Z}_2$ gauge theory including the region of the topological phase transition, not only in the energy but also in the topological entanglement entropy. The critical coupling obtained from the peaks of their susceptibilities agrees quantitatively with the one predicted by continuous-time quantum Monte Carlo simulations~\\cite{wu2012phase}. Furthermore, near the transition point, we show that the ansatz represents a state outside the plaquette product family, which is a one-parameter family of states assumed in the construction of the ansatz as a simple interpolation between the strong and weak coupling limits.",
+    "title": "Assessing the expressive power of a gauge-invariant PEPS ansatz across a topological phase transition",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6460912227630615
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5435011982917786
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5326399207115173
+      }
+    ]
+  },
+  "2611.13862v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Samy Badreddine"
+      },
+      {
+        "affiliation": [],
+        "name": "Emile van Krieken"
+      },
+      {
+        "affiliation": [],
+        "name": "Luciano Serafini"
+      },
+      {
+        "affiliation": [],
+        "name": "Antonio Vergari"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.13862v1",
+    "published_date": "2026-11-10",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Probabilistic neurosymbolic methods rely on weighted model counting (WMC) to combine neural predictors with symbolic constraints. Exact WMC is #P-hard and typically scales poorly, so many methods resort to approximations. By unifying existing approaches under a three-step bottom-up approximate compilation pipeline, we study where approximation budget is best allocated. Inspired by tensor networks, we instantiate two steps with tensor train decompositions and derive new pipelines that exactly multiply approximated factors and recompress their products via SVD- or interpolation-based schemes. Across six tasks in Sudoku, arithmetic reasoning, and scene understanding, and across increasing problem sizes, our pipelines produce WMC estimates orders-of-magnitude more accurate than prior methods. This translates into stronger downstream learning on tasks where reasoning relies on tight interactions between symbolic factors, where cruder approximations ignore these dependencies. Our pipelines open novel design space for effective approximate compilation of challenging probabilistic reasoning tasks.",
+    "title": "Where to Approximate in Neurosymbolic Inference?",
+    "vector_matches": []
+  },
+  "2611.13895v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Nobuya Maeshima"
+      },
+      {
+        "affiliation": [],
+        "name": "Toshiya Hikihara"
+      },
+      {
+        "affiliation": [],
+        "name": "Kouichi Okunishi"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13895v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper studies finite-temperature thermodynamic properties and excitations of a quantum spin ladder using advanced tensor network methods and exact diagonalization, directly complementing interests in quantum magnetism and computational physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Finite-Temperature Physics",
+      "Tensor Network",
+      "Spin Excitations"
+    ],
+    "summary": "We investigate finite-temperature properties of the spin-1/2 zigzag Heisenberg ladder with an anisotropic off-diagonal $Γ$ interaction. Thermal states are calculated by an infinite time-evolving block decimation method combined with purification, while exact diagonalization is used to analyze low-lying excitations. The entropy is strongly suppressed at low temperatures inside the gapped phases, whereas it remains enhanced near several ground-state phase boundaries. For the Néel phase at $J_2/J_1=0$, the model can be mapped by spin rotations onto the exactly solvable XYZ chain. The thermal gap extracted from the low-temperature specific heat agrees with the exact one-spinon gap, while the finite-size excitation gap obtained by exact diagonalization is consistent with a two-spinon excitation.",
+    "title": "Thermodynamic Properties of the S=1/2 Zigzag Spin Ladder",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.6303335428237915
+      },
+      {
+        "liked_paper_id": "2508.17834v1",
+        "score": 0.6233198642730713
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.6022159457206726
+      }
+    ]
+  },
+  "2611.13900v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Stuart Flannigan"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13900v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper investigates quantum correlations and entanglement in spin chains using tensor-network simulations, which directly relates to the study of interacting many-body systems and their dynamics, a core interest indicated by the liked papers.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum correlations",
+      "Spin chains",
+      "Tensor network simulations"
+    ],
+    "summary": "An environment can retain quantum information and carry it between spatially separated systems. Describing the combined influence of these processes requires a treatment of both environmental memory and spatial correlations. Here, we formulate a local hierarchy of pure states for quantum systems coupled to spatially correlated, non-Markovian environments whose modes themselves exchange excitations. We use this method to describe the reduced spin dynamics of a chain of locally coupled Rabi spin--cavity pairs motivated by cavity-QED implementations, where photon hopping in the eliminated cavity environment generates correlations and entanglement between otherwise isolated spins. Monitoring intermediate cavities and feeding their measurement records back onto the corresponding spins further enhances correlations between endpoint spins that receive no direct feedback. The delayed response when feedback starts, and continued entanglement growth after it stops, support a mechanism in which coherent environmental dynamics carry the effects of earlier feedback to the endpoint spins. Finally, tensor-network simulations of XXZ and Heisenberg chains show how environmental transport changes many-body correlation patterns. These results show how coupled environments and local feedback can control correlations between distant spins. We provide a numerically exact stochastic pure-state framework for simulating these processes, opening up avenues to explore the coherent and dissipative control of interacting non-Markovian many-body systems.",
+    "title": "Correlations carried and controlled by coupled non-Markovian environments",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5306349992752075
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.47405585646629333
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.4740085303783417
+      }
+    ]
+  },
+  "2611.13938v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wenchao Xie"
+      },
+      {
+        "affiliation": [],
+        "name": "Qingsong Wang"
+      }
+    ],
+    "categories": [
+      "cs.LG"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.13938v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper focuses on tensor decomposition methods for data recovery, which is distinct from the condensed matter physics and quantum many-body problems addressed in the liked papers.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Tensor decomposition",
+      "High-dimensional data",
+      "Computational efficiency"
+    ],
+    "summary": "Tensor wheel decomposition captures complex correlations in high-dimensional data through interactions between outer-ring factors and a high-order central core. However, updating these components requires the explicit construction and manipulation of large-scale matrices, which limits computational efficiency and incurs particularly high computational and memory costs for the central-core update. To address these limitations, we propose dual-core tensor wheel decomposition (DCTW), which factorizes the central core into two lower-order cores linked by a shared latent bond. Each core is coupled to a different group of outer-ring factors. We further propose a structure-cached acceleration strategy that avoids explicit large-scale matrix multi- plications and caches intermediate tensors generated during tensor network contractions for reuse across block updates. This reuse reduces redundant computation and avoids the explicit construction of large matrices. Complexity analysis and experiments show that the strategy based on structural caching accelerates optimization compared with explicit and implicit up- date schemes while limiting the increase in peak memory as the ranks grow. Experiments on color video completion and robust denoising show that DCTW matches or outperforms representative tensor network methods in reconstruction quality, computational efficiency, and scalability.",
+    "title": "Dual-Core Tensor Wheel Decomposition with Structure-Cached Acceleration for Tensor Recovery",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4222199320793152
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.41414889693260193
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4094146490097046
+      }
+    ]
+  },
+  "2611.14072v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "M. M. Ferreira-Carvalho"
+      },
+      {
+        "affiliation": [],
+        "name": "S. H. Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Rößler"
+      },
+      {
+        "affiliation": [],
+        "name": "Fanjun Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "A. T. M. N. Islam"
+      },
+      {
+        "affiliation": [],
+        "name": "B. Lake"
+      },
+      {
+        "affiliation": [],
+        "name": "C. F. Chang"
+      },
+      {
+        "affiliation": [],
+        "name": "C. Y. Kuo"
+      },
+      {
+        "affiliation": [],
+        "name": "S. M. Valvidares"
+      },
+      {
+        "affiliation": [],
+        "name": "P. Gargiani"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. Hu"
+      },
+      {
+        "affiliation": [],
+        "name": "A. C. Komarek"
+      },
+      {
+        "affiliation": [],
+        "name": "M. W. Haverkort"
+      },
+      {
+        "affiliation": [],
+        "name": "L. H. Tjeng"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.14072v1",
+    "matching_keywords": [
+      "XAS",
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper experimentally investigates the local electronic and magnetic structure of Co2+ ions in a disordered perovskite using X-ray absorption and magnetic circular dichroism, aligning with interests in experimental material characterization and correlated oxides.",
+    "score": 0.88,
+    "suggested_keywords": [
+      "X-ray absorption spectroscopy",
+      "Perovskite",
+      "Spin-orbit coupling"
+    ],
+    "summary": "We performed temperature-dependent X-ray absorption spectroscopy (XAS) and X-ray magnetic circular dichroism (XMCD) measurements on the disordered phase of Ba$_3$CoNb$_2$O$_9$ to determine the local electronic structure of the Co$^{2+}$ ions. We employed the line-fitting inverse partial fluorescence yield (iPFY) method to obtain reliable spectra from this insulating material. From the comparison between the experimental spectra and full multiplet cluster calculations we were able to constrain the local crystal-field environment and assess the spin-orbit-entangled nature of the Co$^{2+}$ ground state. In this chemically disordered system, the Co$^{2+}$ ions retain on average an effectively cubic crystal-field environment that supports a $J_\\mathrm{eff} = 1/2$ ground state. These results further establish that Ba$_3$CoNb$_2$O$_9$ is a promising platform for investigating the effect of disorder on $J_\\mathrm{eff} = 1/2$ magnetism.",
+    "title": "Local electronic structure of the Co2+ ions in the disordered perovskite phase of Ba3CoNb2O9: a temperature-dependent X-ray absorption and magnetic circular dichroism study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.5651077032089233
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2osOgNQ5qMEC",
+        "score": 0.562637448310852
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:2P1L_qKh6hAC",
+        "score": 0.5387917757034302
+      }
+    ]
+  },
+  "2611.14101v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hao-Xin Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng-Yuan Yue"
+      },
+      {
+        "affiliation": [],
+        "name": "Wen-Yuan Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zheng-Cheng Gu"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.14101v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper directly addresses particle-hole asymmetry, competing orders (including PDW), and d-wave superconductivity in the t-J model, making it highly relevant to cuprate superconductivity.",
+    "score": 1.0,
+    "suggested_keywords": [
+      "Cuprate superconductivity",
+      "Pair-density wave",
+      "Competing orders"
+    ],
+    "summary": "Whether a lightly doped Mott insulator on the square lattice supports robust $d$-wave superconductivity remains a central question in strongly correlated physics and in the microscopic theory of cuprate superconductivity. Experiments and numerical studies reveal a pronounced particle-hole asymmetry, pointing to a delicate competition among $d$-wave superconductivity, pair-density wave (PDW), stripe, charge-density wave (CDW), and antiferromagnetic correlations. Here we combine large-scale DMRG and finite-size PEPS to study the square-lattice $t$-$J$ model at low doping, $δ\\leq 0.1$, while tuning the next-nearest-neighbor hopping $t'$ from the electron-like ($t'>0$) to the hole-like ($t'<0$) regime. The electron-like side supports robust, nearly uniform $d$-wave pairing, whereas decreasing $t'$ induces a period-two plaquette modulation and ultimately produces, on the hole-like side, a charge-dominated state with a strongly suppressed static pairing amplitude. DMRG calculations on open strips and squares, together with PEPS calculations on open squares up to $16\\times16$ sites, support this evolution. On squares with $C_4$-symmetric Hamiltonians, both methods find that the pair correlations of the hole-like state select the plaquette momenta $(π,0)$ and $(0,π)$ and decay within a few lattice spacings, while the dominant charge-density modulation forms a bidirectional checkerboard whose period extrapolates to about $4a_0$, close to that observed in lightly doped Bi-2201. These observations establish a fluctuating plaquette PDW in the lightly doped hole-like regime, in which local pairs carry finite momentum but lack phase coherence. Our results firmly establish particle-hole asymmetry as a central organizing principle for competing pairing tendencies in the lightly doped $t$-$J$ model.",
+    "title": "Particle-hole asymmetry and a fluctuating pair-density-wave state in a lightly doped Mott insulator on the square lattice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6291786432266235
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.6133830547332764
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5859266519546509
+      }
+    ]
+  },
+  "2611.14261v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pranay Venkatesh"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianchu Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Srijan Bhattacharyya"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrés Montoya-Castillo"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.14261v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-10",
+    "reasoning": "It explores transient anomalous transport and polaron dynamics, which is a general area of condensed matter physics but doesn't directly connect to the specific material classes or computational methods of interest.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Anomalous transport",
+      "Polaron dynamics",
+      "Nonequilibrium physics"
+    ],
+    "summary": "Anomalous transport is ubiquitous across condensed matter, materials science, and biophysics. Yet, in far-from-equilibrium settings, what determines when, how much, and in which direction transport departs from diffusion remains a fundamental open question. By adopting the dispersive Holstein model of small polarons as representative of a wide class of dissipative systems, we show that a signed bath memory time governs the direction and the strength of the transient departure, and that when it vanishes, diffusion emerges without an asymptotic delay. Tuning the dissipative environment from resonant to off-resonant with the carrier density of states, transport turns from subdiffusion to superdiffusion as the memory time changes sign. Microscopically, we trace this memory effect to a competition between polaron formation and coherent polaron motion. These findings establish a unified memory-based description of transient anomalous transport, offering a path to control nonequilibrium quasiparticle flow through environmental tuning.",
+    "title": "Memory-gated transient anomalous transport of quasiparticles out of equilibrium",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:iH-uZ7U-co4C",
+        "score": 0.46075478196144104
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.43388497829437256
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:dhFuZR0502QC",
+        "score": 0.42879584431648254
+      }
+    ]
+  },
+  "2611.14377v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Hannes Hoppe"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.14377v1",
+    "published_date": "2026-11-10",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Tensor network states such as tree tensor network states (TTNS) or matrix product states (MPS) allow very compact representations of high-dimensional wave functions. Using them efficiently relies on a compact representation of the Hamiltonian, and many methods are limited to the sum-of-products (SOP) form. General potential energy surfaces (PESs) do not have this form. To overcome this issue, a stochastic discrete variable representation (SDVR) is presented. The matrix elements of the potential operator in the node-local basis are estimated stochastically by importance sampling of grid configurations. The estimator of the matrix elements is unbiased, and the PES is only evaluated pointwise. The variance is reduced by representing parts of the potential with a 2-mode representation and only sampling the remainder. Sampling noise biases the eigenvalues. A noise-control scheme mitigates this bias. Final energies are obtained from an unbiased variational Monte Carlo estimator. The method is demonstrated by calculating vibrational states of CH3 (6D) and acetonitrile (12D), as well as the zero-point vibrational energy of uracil (30D). For all three systems, the energies agree with the exact references to sub-wavenumber accuracy.",
+    "title": "Stochastic Discrete Variable Representation: Tensor Network Eigenstates on General Potential Energy Surfaces",
+    "vector_matches": []
+  },
+  "2611.14484v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sanziana Stelea"
+      },
+      {
+        "affiliation": [],
+        "name": "Anthony Gandon"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Tacchino"
+      },
+      {
+        "affiliation": [],
+        "name": "Jad C. Halimeh"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivano Tavernelli"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.14484v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-10",
+    "reasoning": "It details a quantum simulation of lattice gauge theory on superconducting qubits, offering insights into nonperturbative string dynamics relevant to confinement and emergent phenomena in condensed matter systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Quantum simulation",
+      "Lattice models",
+      "Emergent phenomena"
+    ],
+    "summary": "Electric flux strings underpin confinement in gauge theories. In two spatial dimensions, their evolution involves competing processes of charge motion, pair creation, and transverse deformation. Accessing these dynamics beyond perturbative limits challenges classical approaches, as entanglement growth restricts the times accessible to tensor-network simulations. Here we use quantum simulation to investigate a (2+1)D Z2 lattice gauge theory with dynamical matter and an explicit magnetic plaquette interaction, spanning strongly confined and nonperturbative deconfined regimes. Using 63 superconducting qubits, including 12 ancillas, we evolve initially localized strings with static or dynamical endpoint charges. Spatially resolved measurements reveal rapid charge and flux spreading in the deconfined regime, enhanced matter occupation in the string interior near the pair-creation resonance, and suppressed spreading at strong electric fields. String-path occupations further probe transverse rearrangements between configurations connected by plaquette operations. Retaining separate matter and gauge degrees of freedom makes local Gauss-law constraints directly accessible for error detection. Combining these constraints with ancilla checks and noise rescaling, we measure dynamics in circuits containing up to 15 second-order Trotter steps. Our results establish quantum simulation as a practical approach to exploring nonperturbative string dynamics in two spatial dimensions, with gauge redundancy serving as an experimental resource.",
+    "title": "Nonperturbative string dynamics in a (2+1)D lattice gauge theory on a superconducting quantum processor",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.16068v1",
+        "score": 0.5172522068023682
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:l7t_Zn2s7bgC",
+        "score": 0.5122837424278259
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5110895037651062
       }
     ]
   }
