@@ -4601,16 +4601,39 @@
         "name": "Chisa Hotta"
       }
     ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2611.10593v1",
+    "matching_keywords": [],
     "published_date": "2026-11-07",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This work on deterministic pure-state representations for thermal quantum many-body systems is highly relevant to theoretical approaches for understanding strongly correlated materials and thermal equilibrium.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Thermal Many-Body States",
+      "Variational Pure States",
+      "Markov Entropy"
+    ],
     "summary": "Pure states of quantum many-body systems at thermal equilibrium are known to be typical, in a sense that a randomly chosen pure state from an appropriate energy shell reproduces the Gibbs-state expectation values of most observables acting on a small subsystem. However, such typical states are intrinsically stochastic, conventionally generated from the random high-temperature state, suffer from statistical fluctuations, and do not provide a continuous connection to the ground state. Here, we introduce a deterministic variational framework for constructing a Markov-Shielded Typical (MST) state, a unique thermal pure-state representative whose local reduced density matrices closely approximate those of the Gibbs state, from the ground state up to infinite-temperature limit. Our approach reformulates free-energy minimization by replacing the nonlocal von Neumann entropy with a local, computationally tractable Markov entropy, where we establish rigorous upper and lower bounds of MST free energy to lie in the very vicinity of the thermal free energy. This framework extends the concept of typicality to deterministic pure-state representations of thermal equilibrium, offering a scalable wave-function approach with potential applications to both classical and quantum computing.",
     "title": "Markov-Shielded Typicality for Thermal Quantum States",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5101423263549805
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5065561532974243
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.47498753666877747
+      }
+    ]
   },
   "2611.10636v1": {
     "authors": [
@@ -5153,16 +5176,37 @@
         "name": "Pavel Chuklanov"
       }
     ],
+    "categories": [],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2611.12049v1",
+    "matching_keywords": [],
     "published_date": "2026-11-09",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "While it mentions matrix product operators (a type of tensor network), the paper's core focus on formal verification of quantum circuit generators is largely outside the user's interest in condensed matter physics and materials science.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum Circuit Verification",
+      "Formal Methods",
+      "Weighted Automata"
+    ],
     "summary": "A generator builds a quantum circuit from the number of qubits and a bit string. We check a generator against a reference for all parameter values under six equivalence relations. For ladder programs, we prove that above a computable threshold the circuit matrices form a uniform matrix product operator, a weighted automaton of dimension independent of the number of qubits. Equivalence reduces to the zeroness of a difference automaton, checked modulo primes. The answer is a counterexample or \"equal\", exact or with a computed error bound. Experimentally, the method found errors missed by fixed-size checks and produced no incorrect verdicts.",
     "title": "Parameterized equivalence checking of quantum circuit generators via weighted automata",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3970041871070862
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.39064598083496094
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.36776793003082275
+      }
+    ]
   },
   "2611.12277v1": {
     "authors": [
@@ -5533,16 +5577,41 @@
         "name": "Anouar Moustaj"
       }
     ],
+    "categories": [
+      "cond-mat.mes-hall"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2611.12546v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-11-09",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "This paper investigates topological states using tensor network methods on fractal geometries, directly linking to the user's interest in both topological materials and advanced computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Fractal Topology",
+      "Tensor Network Simulation",
+      "Non-Euclidean Physics"
+    ],
     "summary": "Tensor network methods have been instrumental in addressing exponentially large many-body problems. Most recently, these techniques have also been applied to single-particle tight-binding Hamiltonians, allowing observables to be evaluated on exponentially large lattices. Here, we show that the scale-separated nature of these methods allows for a natural encoding of self-similar structures, such as the Sierpiński gasket, a scale-invariant fractal with Hausdorff dimension $\\log 3/\\log 2 \\approx 1.58$, yielding an exact and compact representation of Hamiltonians on such lattices. Using this encoding, we study a Chern insulator, the flux kagome model, confined to this fractal geometry, and develop methods to investigate its topological states within a tensor network framework. This allows us to reach much higher fractal generations than would otherwise be possible with dense-matrix methods, resolving the density of states of a deep fractal with over 100 million sites. Furthermore, the larger structures allow us to resolve topology in smaller gaps, suggesting that these methods could be instrumental in understanding the interplay between topology and non-integer dimensionality.",
     "title": "Topological states in fractals through a self-similar tensor network encoding",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5314616560935974
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.49828630685806274
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4968034625053406
+      }
+    ]
   },
   "2611.12566v1": {
     "authors": [
@@ -6446,16 +6515,41 @@
         "name": "Antonio Vergari"
       }
     ],
+    "categories": [
+      "cs.LG"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2611.13862v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
     "published_date": "2026-11-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "Despite using tensor network concepts, the application domain of neurosymbolic AI and machine learning for reasoning tasks is far removed from the user's preferences in condensed matter physics and materials science.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Neurosymbolic AI",
+      "Approximate Reasoning",
+      "Probabilistic Models"
+    ],
     "summary": "Probabilistic neurosymbolic methods rely on weighted model counting (WMC) to combine neural predictors with symbolic constraints. Exact WMC is #P-hard and typically scales poorly, so many methods resort to approximations. By unifying existing approaches under a three-step bottom-up approximate compilation pipeline, we study where approximation budget is best allocated. Inspired by tensor networks, we instantiate two steps with tensor train decompositions and derive new pipelines that exactly multiply approximated factors and recompress their products via SVD- or interpolation-based schemes. Across six tasks in Sudoku, arithmetic reasoning, and scene understanding, and across increasing problem sizes, our pipelines produce WMC estimates orders-of-magnitude more accurate than prior methods. This translates into stronger downstream learning on tasks where reasoning relies on tight interactions between symbolic factors, where cruder approximations ignore these dependencies. Our pipelines open novel design space for effective approximate compilation of challenging probabilistic reasoning tasks.",
     "title": "Where to Approximate in Neurosymbolic Inference?",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.39632630348205566
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3809165060520172
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.3722645938396454
+      }
+    ]
   },
   "2611.13895v1": {
     "authors": [
@@ -6805,16 +6899,43 @@
         "name": "Hannes Hoppe"
       }
     ],
+    "categories": [
+      "physics.chem-ph"
+    ],
     "discovery_sources": [
       "dmrg_preprints"
     ],
+    "doi": null,
     "id": "2611.14377v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network",
+      "variational monte carlo"
+    ],
     "published_date": "2026-11-10",
-    "reasoning": "Could not be analyzed by LLM.",
-    "score": 0,
+    "reasoning": "The paper utilizes tensor network states, a powerful computational method, but applies them to quantum chemistry problems like vibrational states, which is distinct from the user's focus on condensed matter physics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Tensor Network Quantum Chemistry",
+      "Vibrational Spectroscopy",
+      "Stochastic Hamiltonian"
+    ],
     "summary": "Tensor network states such as tree tensor network states (TTNS) or matrix product states (MPS) allow very compact representations of high-dimensional wave functions. Using them efficiently relies on a compact representation of the Hamiltonian, and many methods are limited to the sum-of-products (SOP) form. General potential energy surfaces (PESs) do not have this form. To overcome this issue, a stochastic discrete variable representation (SDVR) is presented. The matrix elements of the potential operator in the node-local basis are estimated stochastically by importance sampling of grid configurations. The estimator of the matrix elements is unbiased, and the PES is only evaluated pointwise. The variance is reduced by representing parts of the potential with a 2-mode representation and only sampling the remainder. Sampling noise biases the eigenvalues. A noise-control scheme mitigates this bias. Final energies are obtained from an unbiased variational Monte Carlo estimator. The method is demonstrated by calculating vibrational states of CH3 (6D) and acetonitrile (12D), as well as the zero-point vibrational energy of uracil (30D). For all three systems, the energies agree with the exact references to sub-wavenumber accuracy.",
     "title": "Stochastic Discrete Variable Representation: Tensor Network Eigenstates on General Potential Energy Surfaces",
-    "vector_matches": []
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5217916965484619
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.5202510356903076
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.45990148186683655
+      }
+    ]
   },
   "2611.14484v1": {
     "authors": [
