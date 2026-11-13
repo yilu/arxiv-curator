@@ -4501,6 +4501,68 @@
       }
     ]
   },
+  "2611.10187v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Reuben Cohn-Gordon"
+      },
+      {
+        "affiliation": [],
+        "name": "Gabriel Pescia"
+      },
+      {
+        "affiliation": [],
+        "name": "Sumner N. Hearth"
+      },
+      {
+        "affiliation": [],
+        "name": "Jakob Robnik"
+      },
+      {
+        "affiliation": [],
+        "name": "Uroš Seljak"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Lunts"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.10187v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-06",
+    "reasoning": "This paper directly addresses the improvement of Quantum Monte Carlo methods for quantum systems, aligning strongly with the user's explicit interest in efficient computational solvers for many-body problems, exemplified by DMFT.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Quantum Monte Carlo",
+      "Hamiltonian Monte Carlo",
+      "Spin-Fermion Model"
+    ],
+    "summary": "In quantum systems, physical quantities of interest can be expressed as expectation values of a probability distribution, which allows their estimation by Markov Chain Monte Carlo (MCMC) methods. This approach, an instance of Quantum Monte Carlo (QMC), plays a central role in obtaining predictions of system properties relevant to condensed matter and high energy physics. The use of Hamiltonian dynamics to design a Markov kernel, known as Hybrid or Hamiltonian Monte Carlo (HMC), is widespread in quantum applications. In this context, it is standard to use an HMC kernel that is ``adjusted'' with the Metropolis-Hastings (MH) criterion, so that estimates of expectations converge to their true value in the limit of infinite sample size. However, recent work in computational statistics suggests that an \\emph{unadjusted} HMC kernel can be significantly more efficient, while safely maintaining an asymptotic bias which is small relative to the error arising from the variance of the finite sample size. We adapt this approach to the QMC setting, focusing on a challenging and high-dimensional \\emph{spin-fermion} model of a quantum phase transition. We find that unadjusted methods outperform adjusted HMC in terms of effective sample size per gradient call, while retaining accurate results.",
+    "title": "Fast Accurate Quantum Monte Carlo without Metropolis Adjustment",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5351788401603699
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.5150262117385864
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4944109320640564
+      }
+    ]
+  },
   "2611.10473v1": {
     "authors": [
       {
@@ -6989,6 +7051,1128 @@
       {
         "liked_paper_id": "2506.14703v1",
         "score": 0.5110895037651062
+      }
+    ]
+  },
+  "2611.14957v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mingde Qu"
+      },
+      {
+        "affiliation": [],
+        "name": "Minghuan Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuxing Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Wudi Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenbo Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jiamin Quan"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhongwei Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jie Chen"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.14957v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper investigates thermal conduction and phonon dynamics, including electron-phonon interactions, which are relevant to condensed matter physics, but its focus on thermal management in optical materials differs from the user's primary interests in correlated electrons, superconductivity, and topological materials.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Phonon bottleneck",
+      "Nonequilibrium thermal conduction",
+      "Phonon engineering"
+    ],
+    "summary": "Heat dissipation in laser optical materials depends not only on their thermal conductivity but also on how absorbed energy is redistributed among various phonon modes. In calcium fluoride (CaF2), rapid energy transfer from hot electrons to weakly propagating longitudinal optical (LO) phonons can create a nonequilibrium phonon bottleneck effect that limits efficient heat removal. Here, we propose selective phonon excitation as an effective strategy to break this bottleneck. Combining electron-phonon scattering calculations, phonon Boltzmann transport analysis, and nonequilibrium molecular dynamics simulations, we identify LO phonons as the primary modes that preferentially receive energy from hot carriers, leading to energy accumulation due to their inefficient transport and relaxation. Guided by three-phonon scattering phase-space analysis, selective excitation of transverse acoustic (TA) modes can accelerate LO relaxation and promote energy transfer toward heat-carrying acoustic modes. While sustained LO-phonon excitation reduces the thermal conductivity by approximately 12%, additional TA-mode excitation improves heat conduction by approximately 21% compared to the state limited by the LO-phonon bottleneck, surpassing the unexcited value. These findings demonstrate that controlling interbranch energy redistribution can counteract phonon-bottleneck-induced heat accumulation and reveal a working route for active thermal management in laser optical materials through selective control of phonon populations.",
+    "title": "Improving Nonequilibrium Thermal Conduction in CaF2 by Breaking the Phonon Bottleneck Effect",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.5055060386657715
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.4635840654373169
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4356116056442261
+      }
+    ]
+  },
+  "2611.15139v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xingmin Huo"
+      },
+      {
+        "affiliation": [],
+        "name": "Xingchuan Zhu"
+      },
+      {
+        "affiliation": [],
+        "name": "Xingyu Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiping Feng"
+      },
+      {
+        "affiliation": [],
+        "name": "Huaiming Guo"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1103/3c12-qwgl",
+    "id": "2611.15139v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper explores the emergence of higher-order topological phases induced by altermagnetism, aligning with the user's interest in topological materials and their underlying symmetries.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Quasicrystals",
+      "Higher-order topological phases"
+    ],
+    "summary": "Altermagnetism (AM), a novel magnetic phase featuring zero net magnetization and momentum-dependent spin splitting, provides a compelling platform for exploring exotic quantum phenomena. While recent studies have extended the concept of AM to quasicrystals, the momentum-dependent spin splitting in the absence of translational symmetry remains inadequately understood. Here, we investigate the emergence of higher-order topological phases (HOTPs) in Thue-Morse and Ammann-Beenker quasicrystals, driven by the coupling between $d$-wave quasicrystal AM orders and a two-dimensional topological insulator. We reveal that the $d_{x^2-y^2}$-wave AM exhibits a ferromagnetism-like aspect in opening edge gaps and inducing zero-energy higher-order topological corner states. In contrast, conventional antiferromagnetic and $d_{xy}$-wave AM configurations are unable to induce the higher-order topological gaps. These findings highlight the pivotal role of altermagnetic symmetry and its alignment with lattice corners in the realization of HOTPs and establish that the emergence of HOTPs can serve as a signature for identifying altermagnetic orders in aperiodic systems.",
+    "title": "Higher-order topology induced by altermagnetism in quasicrystals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.635812520980835
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6014835834503174
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.5895268321037292
+      }
+    ]
+  },
+  "2611.15141v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhan Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Chenrui Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Fang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15141v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper delves into a novel type of magnetism arising from molecular orbitals in correlated systems, directly relevant to the user's interest in strongly correlated electron physics and complex magnetic phases.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Molecular orbital magnetism",
+      "Emergent lattices",
+      "Dynamic structure factor"
+    ],
+    "summary": "In solids, strong hybridization between nearby atomic orbitals forms molecular orbitals (MOs), the range of which covers a cluster of atoms. The centers of molecular orbitals form an emergent lattice generally different from the atomic lattice. For partially filled MOs, electron interaction may induce a new type of magnetism on this emergent lattice where the local moments come from the molecular orbitals instead of single atoms. In this work, we show in a ruby-lattice tight-binding Hubbard model that frustrated and unfrustrated antiferromagnetism may appear on the same atomic lattice and at the same filling, as the emergent molecular-orbital lattice changes from triangular to honeycomb upon changing the hopping parameters. Moreover, we show that general molecular orbital magnetism may be experimentally verified in the low-energy dynamic structure factor: the molecular form factors, as the Fourier transforms of the molecular spin-density, modulate the low-energy dynamic structure factor across different Brillouin zones. Zeros of these form factors suppress low energy spectral weight irrespective of the magnetic order formed by the molecular moments. This is exemplified by random phase approximation calculations for the ruby-lattice model: the structure factor integrated over low energies exhibits minima around molecular form-factor zeros, while its ratios between selected equivalent momenta in different Brillouin zones agree with ratios of squared form factors.",
+    "title": "Magnetism on emergent molecular-orbital lattices",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.701184868812561
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6310709714889526
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.6149289608001709
+      }
+    ]
+  },
+  "2611.15152v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Alexey V. Ushakov"
+      },
+      {
+        "affiliation": [],
+        "name": "Sergey V. Strelsov"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15152v1",
+    "matching_keywords": [
+      "altermagnetism"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This ab initio study investigates Kitaev exchange and altermagnetism in a double perovskite, aligning well with the user's interest in exotic phases, strongly correlated oxides (like nickelates), and computational materials science.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Kitaev Materials",
+      "Altermagnetism",
+      "Double Perovskite"
+    ],
+    "summary": "The Co$^{2+}$-based double perovskite Sr$_2$CoTeO$_6$ attracts attention due to its nontrivial magnetic properties. \\textit{Ab initio} density functional theory calculations reveal a substantial ferromagnetic Kitaev exchange $|K|\\sim J/3$ between nearest neighbors that, combined with the face-centered cubic lattice, leads to pronounced exchange frustration and places Sr$_2$CoTeO$_6$ among Kitaev materials with moderate Kitaev interaction strength. In addition, Sr$_2$CoTeO$_6$ is found to be altermagnetic with a sizable non-relativistic spin splitting, which can give rise to a transverse piezomagnetic effect and a nontrivial magneto-optical response.",
+    "title": "Kitaev Exchange and Altermagnetism in the Double Perovskite Sr$_2$CoTeO$_6$: An Ab Initio Study",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:qjMakFHDy7sC",
+        "score": 0.5181429386138916
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5169380903244019
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.509638786315918
+      }
+    ]
+  },
+  "2611.15409v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Elisa Sabadini"
+      },
+      {
+        "affiliation": [],
+        "name": "Vincenzo Alba"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech",
+      "cond-mat.quant-gas",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15409v1",
+    "matching_keywords": [
+      "density matrix renormalization group"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper focuses on entanglement dynamics and quasiparticle descriptions in 1D spin chains using tDMRG, which is generally distinct from the user's interests in strongly correlated materials, superconductivity, or topological phases.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum Quench",
+      "Entanglement Dynamics",
+      "tDMRG"
+    ],
+    "summary": "The quasiparticle picture provides a quantitative description of entanglement spreading after quantum quenches in integrable systems. In interacting models, however, it relies on the assumption that the quench creates entangled pairs of quasiparticles, which is justified only for the so-called integrable initial states. Here we go beyond this setting by studying quenches in the XXZ spin chain from the $n$-rainbow states, a family of macroscopically homogeneous states formed by increasingly long-range Bell pairs, which are not integrable for $n>1$. The local stationary state after the quench approaches the infinite-temperature state as $n\\to\\infty$, with corrections of order $1/n$, as we show analytically. Nevertheless, in the noninteracting XX chain the quench produces entangled multiplets of $2n$ species of quasiparticles. Although interspecies correlations vanish as $1/n$, they strongly suppress the growth of the entanglement entropy, whose rate vanishes as $n\\to\\infty$. We capture this behaviour within a generalized quasiparticle picture. In the interacting XXZ chain, instead, time-dependent density matrix renormalization group (tDMRG) simulations show that the entanglement entropy grows at the rate at which thermodynamic entropy is exchanged across the cut. Within the time scales accessible to tDMRG, the data show no trace of the multiplet suppression. This holds both after homogeneous quenches and after joining the $n$-rainbow state with an infinite-temperature state, for which we conjecture a formula for the von Neumann entropy.",
+    "title": "Going beyond the standard quasiparticle picture: Entanglement spreading after quenching from highly entangled states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5716592073440552
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5126426219940186
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.47409334778785706
+      }
+    ]
+  },
+  "2611.15451v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Paulo R. Pires"
+      },
+      {
+        "affiliation": [],
+        "name": "Théo Cavignac"
+      },
+      {
+        "affiliation": [],
+        "name": "Tiago F. T. Cerqueira"
+      },
+      {
+        "affiliation": [],
+        "name": "Hai-Chen Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Silvana Botti"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel A. L. Marques"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15451v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "Although this paper covers materials discovery and touches on properties like superconductivity, its primary focus is on an AI agent for materials research, which is a different scope than the user's established interests in fundamental condensed matter physics.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "AI for materials",
+      "Materials discovery agent",
+      "Generative crystal models"
+    ],
+    "summary": "Over the last decade we have built Alexandria, an open database of about 15 million density-functional calculations of crystals. It includes PBE, PBEsol, SCAN and TB-mBJ results, structures relaxed at pressures up to 150 GPa, dielectric tensors and about 145,000 electron-phonon calculations, together with more than 400 million structures relaxed with machine-learned potentials. On these data we trained a generative model for crystal structures, a universal interatomic potential and graph neural networks for more than ten properties, from band gaps to superconducting critical temperatures. From the convex hull we computed a reaction graph of the 17.4 billion reactions between its 193,416 stable compounds. Here we give all of this to a general-purpose language-model agent. Working unattended, the agent screens the database for a solar absorber, drops a candidate whose synthesis releases too little energy, and writes a synthesis plan with precursors, crucible and atmosphere. Asked about the well-studied Ba-Zr-S system, it finds an unreported sulfide and designs the experiment that would confirm or rule it out. Asked for an air-stable alternative, it designs one and tests it against new structures from the generative model. With web search alone, the same agent proposes what the literature already discusses. Put together, the data, the models and the reaction graph let a general agent do what none of them does alone: go from a question in plain words to an experiment that a laboratory can run and test.",
+    "title": "Materials research with a general-purpose agent",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5082769989967346
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.48251503705978394
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.4679550528526306
+      }
+    ]
+  },
+  "2611.15627v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mihir Manium"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin Geisler"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter J. Hirschfeld"
+      },
+      {
+        "affiliation": [],
+        "name": "Amalia I. Coldea"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15627v1",
+    "matching_keywords": [
+      "cuprate",
+      "machine learning"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper leverages machine learning to extract and predict superconducting parameters, including those for cuprates, aligning with the user's interest in novel superconductors and advanced computational techniques.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Superconducting database",
+      "Materials informatics",
+      "Cuprate superconductivity prediction"
+    ],
+    "summary": "New superconductors could unlock next-generation technologies from nuclear fusion to lossless electronics. Machine learning can predict candidate superconductors but lacks validated experimental training data beyond the critical temperature. Here we present AutoSuperCon, a database of eight superconducting parameters, containing 20354 entries for 6793 superconductors. The data were extracted from over 47000 arXiv preprints using a large language model and validated against reference datasets ($R^2 = 0.96$ with NIMS SuperCon). Using AutoSuperCon, we show that median gap ratios rise from 3.6 in conventional superconductors to 6.4 in cuprates, 28% of upper critical fields exceed the Pauli limit, and critical temperatures lie below a ceiling proportional to the superfluid density. Further, we train composition-based predictors for the critical temperature ($R^2_{\\log}=0.83$) and the upper critical field ($R^2_{\\log}=0.69$), boosted by transfer learning. Within known superconducting families, composition alone is sufficient to screen candidates for both parameters. AutoSuperCon thus enables physical insight and data-driven discovery across thousands of superconductors.",
+    "title": "Machine-accelerated extraction of experimental superconducting parameters for physical insight and prediction across thousands of materials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:blknAaTinKkC",
+        "score": 0.48851528763771057
+      },
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.4839838743209839
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.48073485493659973
+      }
+    ]
+  },
+  "2611.15664v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Elisa Petroni"
+      },
+      {
+        "affiliation": [],
+        "name": "Dario Baratella"
+      },
+      {
+        "affiliation": [],
+        "name": "Omar Abou El Kheir"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrea Redaelli"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Bernasconi"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.dis-nn"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15664v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper focuses on aging in amorphous chalcogenide alloys for phase change memories, a material class and application area largely distinct from the user's previously liked topics in strongly correlated oxides or topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Phase Change Materials",
+      "Amorphous Solids",
+      "Molecular Dynamics"
+    ],
+    "summary": "Chalcogenide alloys such as the prototypical Ge$_2$Sb$_2$Te$_5$ compound are used in phase change electronic memories due to their ability to undergo a fast and reversible transition between the amorphous and crystalline phases upon heating. The amorphous phase is subject to aging that leads to an increase in the electrical resistance, which is detrimental to the operation of the devices. Using a machine learning interatomic potential, we have investigated the structural relaxations responsible for aging in amorphous Ge$_2$Sb$_2$Te$_5$ in molecular dynamics simulations at temperatures slightly below the glass transition. The aging simulation, lasting about 100 ns, follows an equilibration of 24 ns at 400 K. During aging we observed an enhancement of the Peierls distortion in axial bonds which is a typical feature of these alloys that we relate to the widening of the electronic band gap computed within Density Functional Theory in smaller aged amorphous models. We also observed a marked reduction of the atomic mobility with an increase of the bond lifetimes during aging. However, we do not see a reduction in homopolar bonds, which are expected to be absent in the ideal aged glass and which should be removed on a much longer time scale.",
+    "title": "Brute-force molecular dynamics simulation of aging in amorphous Ge$_2$Sb$_2$Te$_5$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5881774425506592
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.46757733821868896
+      },
+      {
+        "liked_paper_id": "2507.00542v1",
+        "score": 0.4442893862724304
+      }
+    ]
+  },
+  "2611.15939v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Marialore Sulpizi"
+      },
+      {
+        "affiliation": [],
+        "name": "Jörg Behler"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15939v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper discusses advanced atomistic simulation methods using machine learning potentials, which could be generally applicable to studying complex materials and their properties, including those related to previously liked topics.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "machine learning potentials",
+      "atomistic simulations",
+      "electrified interfaces"
+    ],
+    "summary": "Modern machine learning potentials (MLPs) enable large-scale atomistic simulations at unprecedented accuracy. The incorporation of explicit physical interactions such as long-range electrostatics has continuously broadened their applicability to increasingly complex systems in chemistry and materials science. Extending MLPs to electrochemistry and electrocatalysis, however, is still challenging as it requires the consideration of electrode potentials and electric fields in the atomic interactions. Such approaches have emerged only recently, and although the field is evolving rapidly, further conceptual advances are still needed for carrying out reliable simulations at finite temperature under applied potential. In this review, we provide a comprehensive overview about recent progress in the atomistic simulation of electrified interfaces using MLPs. Current developments fall into three different categories. The first comprises linear response models that describe polarisation, polarisability, and Born effective charges, extending conventional MLPs to finite electric fields. The second includes methods that directly learn a field-dependent potential energy surface. The third consists of a series of hybrid approaches combining classical models with machine learning. Although still under active development, these methods represent a major step toward more realistic simulations approaching the quality of electronic structure calculations. Finally, we discuss open challenges and possible future directions for advancing MLP-based simulations aiming for a bottom-up understanding of atomistic processes at electrified interfaces.",
+    "title": "Atomistic simulations of electrochemical systems with machine learning potentials",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.509834885597229
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.47454333305358887
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4435005784034729
+      }
+    ]
+  },
+  "2611.15940v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Emily Z. Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas P. Devereaux"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.15940v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper develops a theoretical framework to understand Hall transport in strongly correlated metals, a topic highly relevant to the user's interest in complex electronic phenomena in correlated systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Many-body interference",
+      "Liouvillian formulation",
+      "Transverse charge response"
+    ],
+    "summary": "The Hall effect provides a sensitive probe of electronic correlations in strongly interacting metals, yet its microscopic interpretation beyond quasiparticle transport remains poorly understood. Here, we develop a Liouvillian formulation of the Hall conductivity that organizes the response into different classes of flux-sensitive many-body interference operators. Using a Schrieffer-Wolff transformation of the Hubbard model, we identify how projected charge motion and virtual hopping processes contribute to oriented trajectories enclosing magnetic flux. A high-temperature expansion reveals a hierarchy of inverse-temperature contributions associated with these interference processes. This framework provides a possible microscopic interpretation of the integer power laws previously observed in determinant quantum Monte Carlo calculations, which emerge at temperatures below the regime where the expansion is formally controlled. Our results highlight the sensitivity of Hall transport to coherent many-body dynamics and establish a connection between lattice geometry, electronic correlations, and transverse charge response.",
+    "title": "What Hall Measures in Strongly Correlated Metals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5685142278671265
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5678716897964478
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5639700889587402
+      }
+    ]
+  },
+  "2611.16033v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Andressa R. Medeiros-Silva"
+      },
+      {
+        "affiliation": [],
+        "name": "Lucas O. Lima"
+      },
+      {
+        "affiliation": [],
+        "name": "Marcello B. da Silva Neto"
+      },
+      {
+        "affiliation": [],
+        "name": "Fakher F. Assaad"
+      },
+      {
+        "affiliation": [],
+        "name": "Natanael C. Costa"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16033v1",
+    "matching_keywords": [
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper investigates Mott transitions and quantum criticality in Dirac nodal-line semimetals using theoretical and computational methods, aligning with interests in topological materials and strong correlations.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Nodal-line semimetals",
+      "Hubbard model",
+      "Quantum criticality"
+    ],
+    "summary": "Nodal-line semimetals provide a natural setting to investigate how the geometry of a nodal manifold affects interaction-driven quantum phase transitions. Here, we study the Hubbard model on a cubic lattice supporting either nodal-point (cubic $π$-flux model) or nodal-line semimetallic states using mean-field theory, determinant quantum Monte Carlo simulations, and a weak-coupling renormalization-group (RG) analysis. In both cases, antiferromagnetic order develops only above a finite interaction strength, with the nodal-line system exhibiting a smaller critical coupling due to its enhanced low-energy density of states and markedly stronger finite-size effects. For the nodal-point model, the quantum critical behavior is compatible with $(3+1)$-dimensional Gross--Neveu mean-field scaling. In contrast, the weak-coupling RG reveals that the nodal line itself is unstable against interactions: although the Hubbard interaction is perturbatively irrelevant, its second-order self-energy generates a symmetry-allowed relevant term proportional to $U^2\\cos k_z$, reconstructing the nodal line into isolated, strongly anisotropic nodal points. This weak-coupling reconstruction is distinct from the strong-coupling antiferromagnetic transition and highlights the role of nodal-manifold geometry in interacting semimetals.",
+    "title": "Mott transitions in Dirac nodal-line semimetals",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6373483538627625
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6316338777542114
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6035626530647278
+      }
+    ]
+  },
+  "2611.16428v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sergey Syzranov"
+      },
+      {
+        "affiliation": [],
+        "name": "Arthur P. Ramirez"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cond-mat.stat-mech",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16428v1",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper addresses the nature of quantum spin liquids and geometrically frustrated magnets, a topic closely related to exotic phases and strongly correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "quantum spin liquids",
+      "frustrated magnetism",
+      "quantum singlet liquid"
+    ],
+    "summary": "The last couple of decades have seen enormous theoretical and experimental research efforts aimed at finding quantum spin liquids (QSLs) in geometrically frustrated (GF) magnetic materials. Experimental demonstrations of QSLs are challenging due to the indirect character of possible QSL signatures and the presence of impurities in materials, which may destroy or obscure a QSL. At the same time, theoretical literature often lacks consensus about the ground states of quantum spins on even the simplest GF magnetic lattices. We summarize experimental evidence that in the impurity-free limit, available GF magnetic materials that do not develop magnetic order at low temperatures would form {\\it a quantum singlet liquid}, i.e. a disordered state of non-magnetic excitations. We further confirm the existence of such a singlet liquid and its gapless character with theoretical arguments. Such a liquid manifests itself in the thermodynamics of GF magnets while having no magnetic features at low temperatures.",
+    "title": "Why \"quantum spin liquids'' are quantum singlet liquids",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6310924291610718
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.531169056892395
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.4826720356941223
+      }
+    ]
+  },
+  "2611.16430v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Honghui Shang"
+      },
+      {
+        "affiliation": [],
+        "name": "Jinlong Yang"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16430v1",
+    "matching_keywords": [
+      "cuprate",
+      "hubbard model",
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper uses advanced computational methods to investigate stripe phases, d-wave pairing, and antiferromagnetism in the Hubbard model, directly addressing key phenomena in cuprate superconductors.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Hubbard model",
+      "Stripe order",
+      "d-wave superconductivity"
+    ],
+    "summary": "Whether stripes compete with $d$-wave superconductivity or promote pairing through fluctuations remains unsettled in the two-dimensional Hubbard model. Using multi-reference neural variational auxiliary-field quantum Monte Carlo (MR-nVAFQMC) at $U/t=8$, we superpose unpaired Slater determinants across stripe periods and domain-wall positions, reaching variational energies competitive with leading benchmarks on periodic lattices up to $32\\times32$ sites. For cuprate next-nearest-neighbor hopping ($t'/t=-0.2$), diagonal hopping preserves electron-doped antiferromagnetism while kinetically frustrating hole motion into Yamada stripes with a dome of short-range connected $d$-wave pairing. At $1/8$ hole doping, hole delocalization across antiphase spin boundaries outweighs on-site repulsion, splitting the filled stripes of the pure model into half-filled walls with strong local pairing. Coherently delocalizing shifted walls strongly suppresses static charge modulation yet leaves short-range pairing unchanged, showing that local pairing is intrinsic to half-filled walls rather than driven by stripe fluctuations. Across intervening antiferromagnetic domains, however, pairing correlations become unresolved at one stripe period and beyond. Both parameter transfer to larger lattices without reoptimization and deep benchmark checkpoints retain stripe spin order without resolving long-range pairing, within uncertainties allowing weak superconductivity. Half-filled antiphase walls thus generate local $d$-wave pairs, whereas suppressing static stripe order alone yields no resolved coherence across stripes in the states studied.",
+    "title": "Multi-reference variational states resolve stripe selection and local $d$-wave pairing in the Hubbard model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6605148315429688
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.6396065354347229
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.6125002503395081
+      }
+    ]
+  },
+  "2611.16532v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Lei Xu"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhentao Wang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16532v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This theoretical and computational work explores spin-nematic phases and their dynamics in a triangular lattice, fitting the user's interest in exotic magnetic orders and competing phases in condensed matter systems.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Spin Nematic",
+      "Triangular Lattice",
+      "Exotic Magnetism"
+    ],
+    "summary": "The triangular lattice compound Na$_2$BaNi(PO$_4$)$_2$ has been recently established as a strong candidate for realizing the spin-nematic physics. In this theoretical work, we study the finite-temperature properties and the dynamics of a spin-1 triangular lattice model, which reproduces the spin-nematic physics and provides insights relevant to the compound. We show that a small biquadratic interaction can be used for stabilizing the SN phases in the semiclassical approach with SU(3) coherent states, which allows for a mathematical parameterization of the spin-nematic wave functions. With a semiclassical Monte Carlo calculation, the finite temperature transitions into the spin-nematic phases are shown to be related to BKT transitions associated with the proliferation of half vortices in the original spin-1 model. Using quantum Monte Carlo calculations with a low-energy effective model, the phase boundaries are determined and found to agree qualitatively with the semiclassical analysis. Within the spin wave approach, the low-energy spin dynamics can be captured equally well by either the spin-1 model with a small biquadratic term, or the effective spin-$1/2$ model. The accidental degeneracy of the semiclassical approach at zero field is revealed by explicit analytical parameterization, and is shown to be associated with the pseudo-Goldstone mode observed in the spin dynamics.",
+    "title": "Thermal and dynamical behaviors of the spin-nematic phases in a spin-1 triangular lattice",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.663597047328949
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.6249065399169922
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6038938164710999
+      }
+    ]
+  },
+  "2611.16780v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matteo Puviani"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16780v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper explores machine learning for controlling electron-phonon dynamics and manipulating electronic correlations, which is relevant to fundamental processes in strongly correlated materials, including superconductors.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Electron-phonon coupling",
+      "Machine learning control",
+      "Nonequilibrium dynamics"
+    ],
+    "summary": "Driving lattice vibrations provides a direct route to manipulating electronic correlations through nonlinear electron-phonon coupling. Finding suitable driving fields, however, requires control over the coupled dynamics beyond a simple choice of pulse amplitude and frequency. Here we develop a differentiable framework that combines field optimization with neural-network prediction in a two-site electron-phonon model. We compare piecewise-constant, B-spline, feed-forward, and recurrent control parameterizations, optimized to increase the accumulated electronic double occupation. For the dissipation-free model at zero Hubbard interaction, all the methods increase double occupation, with the B-spline raising the mean total double occupation of approximately 30%. Alongside control optimization, a separate recurrent network learns to predict the next-step double occupation and phonon observables from their preceding values and the applied field. These results establish a computational proof of concept for shaping local electronic correlations through a phonon drive and identify a promising route toward learned models for nonequilibrium materials control.",
+    "title": "Learning to control and predict light-driven electron-phonon dynamics",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.14505v1",
+        "score": 0.5555465817451477
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5482429265975952
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.5142577886581421
+      }
+    ]
+  },
+  "2611.16792v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Minh Nghia Nguyen"
+      },
+      {
+        "affiliation": [],
+        "name": "Beate Paulus"
+      },
+      {
+        "affiliation": [],
+        "name": "Akhil S. Nair"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cs.LG"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16792v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper focuses on machine learning data generation strategies, a methodological topic not directly reflected in the user's core interests in strongly correlated materials, topological physics, or specific material systems.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Active learning",
+      "Data acquisition strategies",
+      "Machine learning methodology"
+    ],
+    "summary": "Machine-learning (ML) models for molecular and materials property prediction are often trained on large datasets curated through arbitrary or generic sampling strategies. Such approaches can lead to the over- or under-representation of regions of chemical and materials space that are most relevant to the prediction task. An important challenge is therefore how to efficiently curate training data to maximize predictive performance while minimising the number of labelled examples required. Here, we systematically compare training data acquisition strategies for molecular and materials property prediction, ranging from random sampling to various active learning approaches. We evaluate their performance across different model classes, representations, datasets, and target properties. Our results show that the effectiveness of data acquisition strategies depend strongly on the interplay between the model, dataset, and prediction task, although uncertainty-based sampling generally outperforms alternative strategies. Based on these findings, we derive guidelines for selecting data acquisition strategies under a given labelling budget.",
+    "title": "Systematic Evaluation of Training Data Generation Strategies for Machine Learning-Based Molecular and Materials Property Prediction",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.40111470222473145
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.3634394407272339
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.34140971302986145
+      }
+    ]
+  },
+  "2611.16988v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Welberth Kennedy"
+      },
+      {
+        "affiliation": [],
+        "name": "João C. Inácio"
+      },
+      {
+        "affiliation": [],
+        "name": "Fakher F. Assaad"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.16988v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper directly investigates a Dirac semimetal and superfluidity in a gauge theory on a triangular lattice, aligning with interests in semimetals and superconductors.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Z2 gauge theory",
+      "Dirac semimetal",
+      "superfluidity"
+    ],
+    "summary": "We investigate an unconstrained $\\mathbb{Z}_2$ gauge theory coupled to fermions on the triangular lattice at half filling, using auxiliary field quantum Monte Carlo simulations. The triangular geometry gives rise to a global $\\mathbb{Z}_2$ symmetry that acts as an Ising symmetry on the plaquette fluxes. At weak transverse field $h$, this symmetry is spontaneously broken, stabilizing a vison crystal. We argue that this phase is deconfined: fermions, charged under an emergent $\\mathbb{Z}_2$ gauge field, propagate in an ordered $π$-flux background and form a Dirac semimetal. Increasing the transverse field triggers a first-order quantum phase transition to a confined $s$-wave superfluid, at which confinement and global symmetry breaking occur simultaneously. This contrasts with the square lattice, where the corresponding transition is continuous. We extend our analysis to finite temperature and determine the thermal phase boundaries of both ordered phases. The superfluid melts through a Kosterlitz--Thouless transition, whereas the vison crystal undergoes a thermal Ising transition. Together, our results establish the $T \\times h$ phase diagram and demonstrate how the triangular geometry leads to qualitative changes in both the phases and the criticality of the model.",
+    "title": "Unconstrained $\\mathbb{Z}_2$ gauge theory on a triangular lattice: deconfined fermions in a vison crystal and superfluidity",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.5540421605110168
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5515384078025818
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.53041672706604
+      }
+    ]
+  },
+  "2611.17045v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shinsei Ryu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu-ki Suzuki"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.17045v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper focuses on de Sitter gravity, the SYK model, and high-energy physics, which falls outside the user's primary interests in condensed matter and quantum materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "de Sitter gravity",
+      "SYK model",
+      "quantum gravity"
+    ],
+    "summary": "We propose a quantum-mechanical model dual to two-dimensional de Sitter (dS) gravity. It is a quantum channel, defined by a matrix product state that fuses one spin at each step, and is related to a limit of the Sachdev-Ye-Kitaev model without chord crossings. Its simplest part is a random walk with an emergent $SL(2,\\mathbb R)$ symmetry, which we identify with the symmetry of the future boundary of dS. It selects a time variable in which the walk obeys the Schwarzian action and yields the disk amplitude of dS Jackiw-Teitelboim gravity. As the simplest case, we consider free massless scalar fields in the fixed background of dS$_2$. We find the agreement of the two-point function in the Bunch-Davies vacuum and the matching of symmetry. Our construction provides a concrete model for the dS/CFT correspondence for two-dimensional de Sitter gravity.",
+    "title": "De Sitter Gravity and Emergent Time from Fusion Matrix Product States and SYK",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.39669305086135864
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.38308262825012207
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.37422001361846924
+      }
+    ]
+  },
+  "2611.17144v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Conor Smith"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicolás Morales-Durán"
+      },
+      {
+        "affiliation": [],
+        "name": "Jingtian Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew J. Millis"
+      },
+      {
+        "affiliation": [],
+        "name": "Miguel A. Morales"
+      },
+      {
+        "affiliation": [],
+        "name": "Shiwei Zhang"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.17144v1",
+    "matching_keywords": [
+      "neural quantum state",
+      "variational monte carlo"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper utilizes advanced computational methods to investigate topological phases like fractional Chern insulators and competing crystalline states in moiré materials, aligning with interests in topological and correlated quantum systems.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "fractional Chern insulators",
+      "neural quantum states",
+      "moiré materials"
+    ],
+    "summary": "We use neural-network-based variational Monte Carlo to investigate the competition between fractional Chern insulators and generalized Wigner crystals in the Aharonov-Casher Hamiltonian, a continuum model for moiré materials. We introduce a variational wave function inspired by flux attachment that captures fractionalized phases and, by comparing its energy with that of a Slater--Jastrow ansatz that captures crystalline phases, we determine the phase diagram at fractional fillings in regimes of strong band mixing and for system sizes beyond the reach of other methods. We find that discrete translation symmetry, encoded in a nonuniform quantum geometry, affects fractionalized states at filling fractions $ν=1/3$ and $ν=2/3$ differently, and that band mixing can stabilize incommensurate crystalline ground states. Our results further reveal the delicate competition between topological and non-topological crystalline phases.",
+    "title": "A neural quantum state variational Monte Carlo study of Aharonov-Casher bands",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4969285726547241
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.4938431978225708
+      },
+      {
+        "liked_paper_id": "2506.11222v1",
+        "score": 0.4908066689968109
+      }
+    ]
+  },
+  "2611.17335v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xian P. Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher T. Parzyck"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Cross"
+      },
+      {
+        "affiliation": [],
+        "name": "Ella Blake"
+      },
+      {
+        "affiliation": [],
+        "name": "Octave Duros"
+      },
+      {
+        "affiliation": [],
+        "name": "Yinchuan Lv"
+      },
+      {
+        "affiliation": [],
+        "name": "Hari Paudyal"
+      },
+      {
+        "affiliation": [],
+        "name": "Che-Min Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Sharon S. Philip"
+      },
+      {
+        "affiliation": [],
+        "name": "Lingjia Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniel Jost"
+      },
+      {
+        "affiliation": [],
+        "name": "Giacomo Coslovich"
+      },
+      {
+        "affiliation": [],
+        "name": "Joshua J. Turner"
+      },
+      {
+        "affiliation": [],
+        "name": "Choongwon Seo"
+      },
+      {
+        "affiliation": [],
+        "name": "Elyse Schriber"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael E. Flatté"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaoqin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuri Suzuki"
+      },
+      {
+        "affiliation": [],
+        "name": "Durga Paudyal"
+      },
+      {
+        "affiliation": [],
+        "name": "Harold Y. Hwang"
+      },
+      {
+        "affiliation": [],
+        "name": "Georgi L. Dakovski"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthias C. Hoffmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei-Sheng Lee"
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander H. Reid"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.mtrl-sci",
+      "physics.optics"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.17335v1",
+    "matching_keywords": [
+      "RIXS",
+      "resonant inelastic x-ray scattering"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper employs time-resolved RIXS, a technique used in a previously liked paper, to study long-lived magnetic excitations (bimagnons) in an antiferromagnet, which is relevant to understanding correlated magnetic phases in materials like cuprates.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Ultrafast magnetism",
+      "Bimagnons",
+      "Time-resolved RIXS"
+    ],
+    "summary": "Light can manipulate magnetic order and its excitations on ultrafast timescales, including through resonantly driven phonons. In antiferromagnets, light can also create correlated magnon pairs, or bimagnons. Unlike single magnons, whose damping has been measured and modeled in detail, little is known about the lifetime, interactions and decay of such correlated pairs: prior two-magnon measurements show broad linewidths or coherences that dephase within 200 fs. Here we pump the phonon-assisted two-magnon absorption of NiO with mid-infrared pulses, far below its bandgap, and probe the resulting magnetic dynamics at finite momentum with time-resolved resonant inelastic X-ray scattering (RIXS). Upon photoexcitation, the one-magnon linewidth and energy are essentially unchanged, indicating that the long-range magnetic order is preserved without the photocarrier-induced demagnetization characteristic of above-bandgap excitation. A pump-induced two-magnon signal appears on the energy-gain (anti-Stokes) side of the spectrum. Its spectral weight peaks 4 ps after the pump, well beyond our 0.5 ps time resolution, indicative of a delayed growth likely due to momentum redistribution of the light-induced magnon pairs across the Brillouin zone. This two-magnon signal decays with a time constant of $28\\pm11$ ps, exceeding the previously reported two-magnon dephasing time by more than two orders of magnitude. These results establish long-lived light-driven bimagnon correlations beyond the one-magnon state, akin to the higher-order correlations measured in ultracold gases.",
+    "title": "Long-lived light-driven bimagnons at finite momentum in NiO",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.6519808769226074
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:ldfaerwXgEUC",
+        "score": 0.571794867515564
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:NMxIlDl6LWMC",
+        "score": 0.5715650320053101
       }
     ]
   }
