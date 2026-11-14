@@ -7054,6 +7054,53 @@
       }
     ]
   },
+  "2611.14797v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Francisco Belchí"
+      },
+      {
+        "affiliation": [],
+        "name": "Nahuel Statuto"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.14797v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-10",
+    "reasoning": "This paper uses density-matrix renormalization group (DMRG) to study quantum critical points and ground-state correlations in an Ising chain, with a novel application of persistent homology.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Persistent homology",
+      "Quantum critical phenomena",
+      "Density-matrix renormalization group"
+    ],
+    "summary": "The antiferromagnetic Ising chain in transverse and longitudinal fields exhibits a continuous critical point, a mixed-order transition line and, with quenched disorder, an infinite-disorder fixed point and reentrant order. Using exact free-fermion solutions and the density-matrix renormalization group, we examine what the zeroth persistent homology of staggered ground-state correlations adds to conventional responses. Its barcode records the merge scales of the single-linkage hierarchy, and the maximum of its persistence-landscape velocity defines a threshold-free pseudocritical point. This point locates the clean critical point and the mixed-order line with an accuracy comparable to conventional responses. In the reentrant regime, the global velocity misplaces the entry, which is recovered only by restricting the filtration to the ordering scale, and none of the tested estimators locates the exit. A domain wall forced by the boundary conditions suppresses the disorder-averaged reentrant lobe. For individual disordered realizations, the labelled merge tree recovers most strong-disorder renormalization-group clusters, including noncontiguous ones missed by lattice-restricted hierarchies, with increasing agreement at stronger disorder. This information resides in the full correlation matrix, while zeroth homology provides a stable, threshold-free hierarchy.",
+    "title": "Zeroth persistent homology of ground-state correlations at clean and disordered quantum transitions",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.49846944212913513
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.49222448468208313
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.4706137180328369
+      }
+    ]
+  },
   "2611.14957v1": {
     "authors": [
       {
@@ -7125,6 +7172,104 @@
       {
         "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
         "score": 0.4356116056442261
+      }
+    ]
+  },
+  "2611.15076v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "David Raveh"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Sornborger"
+      },
+      {
+        "affiliation": [],
+        "name": "Yiğit Subaşı"
+      },
+      {
+        "affiliation": [],
+        "name": "Lukasz Cincio"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.15076v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "The paper focuses on optimizing quantum computing algorithms and circuit compilation for phase estimation, which does not align with the user's previously liked topics concerning strongly correlated electron systems, superconductivity, or topological materials.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Quantum Computing",
+      "Quantum Algorithms",
+      "Circuit Optimization"
+    ],
+    "summary": "Quantum phase estimation is a key component of many quantum algorithms. Recently, high-confidence, tapered QPE (tQPE) has been introduced, significantly reducing the number of ancilla qubits necessary for a given failure probability, $ε$. We consider tQPE with $p = l+m$ ancillas, where $l$ represents the number of ancillas necessary to estimate a phase to a given resolution and $m$ represents the number of ''confidence'' qubits added to ensure a desired success probability. With tQPE the failure probability decays double exponentially in $m$, implying that only a few confidence qubits suffice for virtually any problem of interest. A key challenge for tQPE is the construction of the quantum circuit for preparing the taper state on the ancilla register. Here, we develop scalable tensor network methods (previous work was limited to ($l + m = 24$)) giving highly optimized state preparation circuits for optimally concentrated DPSS (Slepian) tapers. We provide an accompanying database of resource-efficient state preparation circuits for $l = 1, \\dots, 50$ and $m = 1, \\dots, 4$. Our circuits are shallow enough for a demonstration on near-term devices for small values of $l$. We run tQPE circuits for a 1-qubit system initialized in the ground state on Quantinuum's H2-2 quantum computer, demonstrating a $3\\times$ to $18\\times$ reduction in failure probability for $l=1,\\ldots,10$ on a noisy device.",
+    "title": "Scalable Compilation of Resource-Efficient Tapers for High-Confidence Quantum Phase Estimation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4795984625816345
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4403136968612671
+      },
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.4254536032676697
+      }
+    ]
+  },
+  "2611.15092v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gautami Sanjay Naik"
+      },
+      {
+        "affiliation": [],
+        "name": "Ashwanth Krishnan"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.15092v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper applies tensor network and quantum circuit concepts to molecular graphs for quantum natural language processing, a domain significantly different from condensed matter physics or strongly correlated materials.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Quantum natural language processing",
+      "Molecular graphs",
+      "Quantum circuits"
+    ],
+    "summary": "Quantum natural language processing (QNLP) turns the grammar of a sentence into a tensor network and then into a quantum circuit with trainable angles. We build such a model for molecules: each heavy atom is a word with one wire per bond, and each bond is a ``cup'' joining two wires, so the circuit's wiring is the molecular graph. We work out exactly what these circuits keep. With the typed angle sharing of lambeq, the circuits separate every isomer pair we tested. Yet for isomers that simpler sharing confuses, the output states stay almost the same, before and after training. On 7 Tox21 pairs and 1,988 MOSES pairs, nearly all the difference lies in how often the measurements succeed, which a standard readout ignores. Simpler sharing, by element and bond type, shows why: the output then depends only on a graph whose vertices are the bonds. This explains all but one of the identical-output pairs we certify, including 1.19\\% of 232{,}191 MOSES molecules, and for alkyl side chains it reduces to a tree shape that tells chains apart up to 15 atoms but not from 16. On small pairs, this circuit and the 1-WL graph test each separate pairs the other misses. We also show that SMILES writing order can change the output, that a run succeeds with probability at most $2^{-n}$ for $n$ bonds, and that a cup-free design avoids this cost. No circuit beats a simple atom-count model on Tox21, and we claim no quantum advantage.",
+    "title": "One molecule, many outputs; many molecules, one output: exact diagnostics for atom-level compositional quantum encoders",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.3583559989929199
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.35792142152786255
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.35137179493904114
       }
     ]
   },
@@ -7295,7 +7440,9 @@
       "cond-mat.quant-gas",
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2611.15409v1",
     "matching_keywords": [
@@ -7384,6 +7531,45 @@
       {
         "liked_paper_id": "2511.03782v1",
         "score": 0.4679550528526306
+      }
+    ]
+  },
+  "2611.15484v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kazumi Okuyama"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.15484v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper explores the 2d Ising model using topological quantum field theory and holographic principles, which conceptually connects to the study of phase transitions and topological phenomena often encountered in strongly correlated and topological materials from the liked papers.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Statistical Mechanics",
+      "Topological Phases",
+      "Holographic Duality"
+    ],
+    "summary": "We propose a holographic dual of the 2d Ising model on a torus as the Turaev-Viro TQFT on a solid torus. The bulk spacetime is divided into the ``core'' region and the ``sandwich'' region. The core region prepares a defect state $|\\mathcal{D}\\rangle$ on the topological boundary $\\mathbb{D}$. The sandwich region computes the Turaev-Viro state sum $\\langle\\mathcal{D}|Π|\\mathcal{F}\\rangle$ between the state $|\\mathcal{D}\\rangle$ on $\\mathbb{D}$ and the state $|\\mathcal{F}\\rangle$ on the physical boundary $\\mathbb{B}$. The fusion diagram (or string-net) $\\mathcal{F}$ on $\\mathbb{B}$ is given by the Aasen-Fendley-Mong construction. There is also a ``bedding surface'' $\\mathbb{S}$ between $\\mathbb{D}$ and $\\mathbb{B}$, and the height variables (or Ising spins inside/outside of the domain wall) are naturally living on $\\mathbb{S}$. The bulk spacetime is discretized by the 2-skeleton $P$ which interpolates $\\mathcal{D}$ and $\\mathcal{F}$. When the defect $\\mathcal{D}$ is absent, the 2-skeleton $P$ ends on the bedding surface $\\mathbb{S}$ and $P$ is interpreted as the bulk worldsheet of the string-net $\\mathcal{F}$.",
+    "title": "Holographic dual of the 2d Ising model",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.4237265884876251
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.38638627529144287
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.3742868900299072
       }
     ]
   },
@@ -7498,6 +7684,59 @@
       {
         "liked_paper_id": "2507.00542v1",
         "score": 0.4442893862724304
+      }
+    ]
+  },
+  "2611.15896v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shiyong Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Enrico Rinaldi"
+      },
+      {
+        "affiliation": [],
+        "name": "Jad C. Halimeh"
+      },
+      {
+        "affiliation": [],
+        "name": "Brian Swingle"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.15896v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper investigates a U(1)-symmetric spin Sachdev-Ye-Kitaev (SYK) model, a significant paradigm for understanding strongly interacting quantum dynamics, quantum chaos, and transport in strongly correlated systems.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Sachdev-Ye-Kitaev (SYK) model",
+      "Strongly correlated quantum matter",
+      "Quantum chaos"
+    ],
+    "summary": "The Sachdev--Ye--Kitaev (SYK) model provides an analytically controlled setting for strongly interacting quantum dynamics and holography, but its fermionic formulation leads to nonlocal encoding overheads on qubit-based quantum processors. We study a U(1)-symmetric spin analogue of the complex SYK model, constructed from random charge-conserving $q$-spin interactions that are native to a qubit Hilbert space. In the large-$N$, large-$q$ limit, the model reproduces the leading saddle-point structure of complex fermionic SYK under the identification of chemical potential with magnetic field and charge density with magnetization. We investigate the finite-$N$, finite-$q$ regime using exact diagonalization. A U(1)-invariant ordering susceptibility increases with system size for $q = 2, 4$ but decreases for $q = 6$, while bulk-spectrum level statistics are consistent with the Gaussian orthogonal ensemble at half filling and the Gaussian unitary ensemble in the adjacent magnetization sector. We further construct coupled-cluster chains and obtain domain-wall dynamics consistent with diffusive magnetization transport in a small-cluster regime accessible to matrix-product-state simulations. These results establish analytical benchmarks and finite-size signatures of ordering, quantum chaos, and magnetization transport in U(1)-symmetric spin-SYK models, and they motivate quantum simulation of the low-temperature, large-system regime, which remains difficult for classical methods.",
+    "title": "U(1)-Symmetric Spin SYK Models: Ordering, Chaos, and Transport",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5698815584182739
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.5204402208328247
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.506834864616394
       }
     ]
   },
@@ -7648,6 +7887,47 @@
       {
         "liked_paper_id": "2506.16503v1",
         "score": 0.6035626530647278
+      }
+    ]
+  },
+  "2611.16092v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Takuya Okuda"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.16092v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-11-11",
+    "reasoning": "This paper employs the uniform matrix product state (VUMPS) algorithm, a tensor network method, to study the critical behavior of the bosonized Schwinger model, a technique applicable to various quantum many-body systems.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Uniform matrix product states",
+      "Schwinger model",
+      "Bosonization"
+    ],
+    "summary": "Quantum electrodynamics in two spacetime dimensions, also known as the Schwinger model, admits a dual formulation in terms of a non-compact boson field. Using a Hamiltonian lattice discretization of the bosonized model, we compute the critical mass of the continuum Schwinger model at $θ=π$. We numerically obtain the ground state on an infinite chain by the variational uniform matrix product state (VUMPS) algorithm, preserving charge conjugation exactly. As a truncated basis for the local Hilbert space, we employ the oscillator basis that diagonalizes the one-site reduced density matrix of the free limit. We constrain the fitting functions for the continuum extrapolation using the Symanzik effective theory for lattice corrections. Our result for the critical mass, $(m/g)_c = 0.333\\,555(5)$, agrees with recent staggered-fermion determinations at comparable precision.",
+    "title": "Critical behavior of the bosonized Schwinger model with uniform matrix product states",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.6079732179641724
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5848719477653503
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.5556420087814331
       }
     ]
   },
@@ -7947,7 +8227,9 @@
     "categories": [
       "cond-mat.str-el"
     ],
-    "discovery_sources": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
     "doi": null,
     "id": "2611.17045v1",
     "matching_keywords": [
@@ -8037,6 +8319,55 @@
       {
         "liked_paper_id": "2506.11222v1",
         "score": 0.4908066689968109
+      }
+    ]
+  },
+  "2611.17158v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Illia Lukin"
+      },
+      {
+        "affiliation": [],
+        "name": "Vladyslav Bohun"
+      },
+      {
+        "affiliation": [],
+        "name": "Maciej Koch-Janusz"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.17158v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-12",
+    "reasoning": "This paper develops an efficient method for gradient optimization of 2D projected entangled pair states (PEPS), a tensor network approach highly relevant for simulating strongly correlated electron systems in two dimensions.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Projected entangled pair states (PEPS)",
+      "Quantum state preparation",
+      "Tensor network optimization"
+    ],
+    "summary": "Quantum state preparation is a fundamental subroutine for quantum computation. For complex, entangled initial states it is, however, difficult to prepare shallow quantum circuits approximating the state with sufficient accuracy. Tensor networks provide a promising avenue of synthesis of such circuits, but most approaches employ 1D Matrix Products States, which struggle to accurately express entangled states in higher dimensions. Here we present a hardware topology-aware quantum state preparation method based on gradient optimization of 2D projected entangled pair states (PEPS). Our approach combines local disentanglement, with global fine tuning based on PEPS gradient optimization. Towards this end we describe an efficient procedure for PEPS gradient computation. We test the convergence and performance of our method in numerical simulations.",
+    "title": "Efficient computation of PEPS gradients for optimized quantum state preparation on 2D topologies",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.6309419274330139
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5295894742012024
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.49695807695388794
       }
     ]
   },
