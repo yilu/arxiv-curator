@@ -12185,6 +12185,30 @@
       }
     ]
   },
+  "2611.22140v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Aamod Varma"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuyi Jia"
+      },
+      {
+        "affiliation": [],
+        "name": "Victor Fung"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.22140v2",
+    "published_date": "2026-11-17",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Diffusion-based pretraining has emerged as a powerful strategy for learning transferable representations in graph neural networks for materials property prediction without requiring quantum-mechanical labels such as energies, forces, and stresses for every pretraining structure. However, the method retains a critical dependency: it requires structures residing near local minima of a potential energy surface, which have traditionally been obtained through costly DFT relaxations of known or physically synthesized compounds. This reliance constrains both the scale and the structural diversity of available pretraining data, leaving large regions of crystal structure space unexplored. In this work, we connect diffusion-based pretraining with synthetic structure generation to reduce this bottleneck. We introduce a synthetic data generation pipeline combining three complementary strategies: perturb-and-relax, generative sampling via MatterGen, and protostructure enumeration. Where structural relaxation is required, we use fast machine-learned interatomic potentials instead of performing a new DFT relaxation for each generated structure. We further compare a coordinate-denoising control with continuous-time variance-preserving (VP) and sub-VP diffusion objectives using a randomly initialized Orb-v2 backbone. The source comparison covers seven MatBench property-prediction tasks, and an eighth task, \\texttt{mp\\_gap}, is included in the protostructure scaling study. Every synthetic-pretraining condition numerically outperforms random initialization on all seven source-comparison tasks. Scaling the protostructure corpus from 20k to 165k under a fixed 400-epoch schedule numerically matches or exceeds MP-20k pretraining on most tasks; because this protocol increases both data diversity and optimization updates, the result reflects joint data-and-compute scaling.",
+    "title": "Synthetic Crystal Data Generation for Diffusion Pretraining in Material Property Prediction",
+    "vector_matches": []
+  },
   "2611.22444v1": {
     "authors": [
       {
@@ -12770,5 +12794,1036 @@
         "score": 0.46529215574264526
       }
     ]
+  },
+  "2611.23342v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sihan Liaing"
+      },
+      {
+        "affiliation": [],
+        "name": "Ji Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Kehan Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zihao Gao"
+      },
+      {
+        "affiliation": [],
+        "name": "Wei Ma"
+      },
+      {
+        "affiliation": [],
+        "name": "Yangang Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zongguo Wang"
+      }
+    ],
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci",
+      "cs.AI"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.23342v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-17",
+    "reasoning": "This paper presents a machine learning framework for assessing data quality in materials databases, a topic far removed from the user's expressed interest in specific superconductors, electronic structures, and advanced simulation techniques.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Data quality",
+      "Materials databases",
+      "Graph neural networks"
+    ],
+    "summary": "The rapid development of materials machine learning relies on large-scale, heterogeneous datasets, yet model reliability is often compromised by imperfect data from diverse experiments, simulations, and database integration. Real-world materials databases may contain measurement errors, failed calculations, missing or duplicate records, and hidden violations of physicochemical constraints. Such problems are difficult to identify because corrupted samples may remain statistically plausible rather than appearing as explicit outliers. In this paper, we propose a confidence-based materials data quality assessment framework that integrates domain knowledge with graph-structured learning. Data quality is formulated as a continuous confidence estimation problem rather than a binary anomaly identification task, enabling sample-level assessment and historical-reference-based batch comparison. A nine-dimensional feature-quality prior and duplicate-aware sample initialization are calibrated using materials domain rules and statistical evidence. Confidence is further refined through sample-feature bipartite graph propagation and weakly supervised graph attention, while a Memory-GAT module provides historical reference scoring. Experiments on 23 ODDS benchmark datasets show that the generic module achieves an average AUC-ROC of 0.866. In five repeated mixed-contamination experiments on mp\\_20, rule calibration improves HistGradientBoostingRegressor test $R^2$ from $0.538\\pm0.008$ to $0.616\\pm0.014$. Graph refinement increases average precision from $0.943\\pm0.004$ to 0.953\\pm0.004$, while the rule-calibrated configuration has the highest mean test $R^2$ among the evaluated screening configurations. Five repeated MACE subset experiments further show an increase in $R^2$ from $0.590\\pm0.053$ to $0.880\\pm0.027$ after rule-based screening.",
+    "title": "Confidence-Based Materials Data Quality Assessment via Domain Knowledge and Graph-Structured Learning",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2511.03782v1",
+        "score": 0.35244646668434143
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.3513182997703552
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.313218891620636
+      }
+    ]
+  },
+  "2611.23514v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Naga Dileep Varikuti"
+      },
+      {
+        "affiliation": [],
+        "name": "Leela Ganesh Chandra Lakkaraju"
+      },
+      {
+        "affiliation": [],
+        "name": "Philipp Hauke"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.23514v1",
+    "published_date": "2026-11-17",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "The Monte Carlo sign problem poses a fundamental obstacle to classical simulation of quantum many-body systems, yet its connection to quantum resources remains poorly understood. We probe this connection by systematically tuning the degree of nonstoquasticity in random k-local Hamiltonians. In numerical tensor-network studies, we find the sign complexity and the quantum resources of entanglement and nonstabilizerness of the ground state to be strongly suppressed in a broad regime up to substantial nonstoquasticity. As nonstoquasticity is further increased, the considered quantum resources experience sharp crossovers into a regime where they are strongly enhanced. Surprisingly, numerical quantum Monte Carlo (QMC) simulations drastically deteriorate in the same region, even though the Hamiltonian is already considerably nonstoquastic well before it, indicating that the failure of ground-state QMC is correlated more with the resource content of the state than the sign structure of the Hamiltonian. We corroborate these findings analytically by constructing an approximate ground state of k-local Hamiltonians in the stoquastic limit. Moreover, we identify a distinct behaviour in graph states. Their nonstabilizerness always vanishes, but, as we demonstrate analytically, on bipartite graphs the sign can be easily cured while in multipartite graph states it cannot. Our results thus shed light on the highly subtle interplay between quantum resources and the computational difficulty encountered by QMC methods.",
+    "title": "Quantum resources and the onset of the quantum Monte Carlo sign problem",
+    "vector_matches": []
+  },
+  "2611.23535v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Rajan Khadka"
+      },
+      {
+        "affiliation": [],
+        "name": "Axel van de Walle"
+      },
+      {
+        "affiliation": [],
+        "name": "Patrick Tepesch"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.23535v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-17",
+    "reasoning": "This paper uses machine learning force fields for phase transition predictions in general oxides, which is a different domain than the user's focus on quantum correlated electrons, superconductivity, or topological materials, despite the use of ML.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Machine Learning Force Fields",
+      "Phase Transitions",
+      "Molecular Dynamics"
+    ],
+    "summary": "Pretrained universal machine-learning force fields can reduce the cost of finite-temperature molecular dynamics relative to density functional theory. However, most benchmarks test only static properties and do not assess whether these models reproduce the correct phase-transition sequence. Here, we benchmark ten open-source universal machine-learning force fields for zirconia (ZrO$_2$) using phonon dispersion calculations and variable-cell isothermal-isobaric molecular dynamics. Zirconia is a useful test because it has three thermodynamically stable crystalline phases prior to melting, following the sequence monoclinic-tetragonal-cubic. Four models reproduce this sequence: 7net-l3i5, MatterSim-v1.0.0-1M, MACE-mpa, and MACE-D3. Models with orthorhombic-tetragonal energy errors above about 10 meV/atom (7net-0, CHGNet, and MACE) instead produce an orthorhombic intermediate and predict monoclinic-orthorhombic-tetragonal-cubic-liquid upon heating. ORB-based models fail to sustain stable variable-cell dynamics because their phonon frequencies are compressed by 30-60% relative to the density functional theory reference. Across all ten models, two ground-state diagnostics predict finite-temperature behavior. Relative polymorph energetics should agree with the matched density functional theory reference within about 6 meV/atom, and the phonon spectrum should not show systematic softening. These diagnostics are practical screening metrics for assessing pretrained force fields for phase-transition predictions.",
+    "title": "Application of Pretrained Universal Machine Learning Force-Fields for Phase Transitions Prediction in ZrO2",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.6345331072807312
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4951290488243103
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.445656955242157
+      }
+    ]
+  },
+  "2611.23595v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yang Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Philip M. Dee"
+      },
+      {
+        "affiliation": [],
+        "name": "Ling-Fang Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Adriana Moreo"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas A. Maier"
+      },
+      {
+        "affiliation": [],
+        "name": "Elbio Dagotto"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.23595v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-11-17",
+    "reasoning": "This paper investigates superconducting pairing and electronic properties in La3Ni2O7 thin films, a material precisely matching a previously liked topic, and uses an advanced computational method related to dynamical mean-field theory.",
+    "score": 0.98,
+    "suggested_keywords": [
+      "La3Ni2O7",
+      "s± superconductivity",
+      "Dynamical Cluster Approximation"
+    ],
+    "summary": "Motivated by recent advances in ambient-pressure superconducting La$_3$Ni$_2$O$_7$ (LNO) thin films, we theoretically investigate these films by explicitly incorporating the realistic LaSrAlO$_4$ (LSAO) substrate. The Fermi-surface topology of the nickelate thin film closely resembles that of the high-pressure bulk phase, with similar $α$ and $β$ sheets and a small hole-like $γ$ pocket originating from the surface bilayer (BL3). The bonding $d_{3z^2-r^2}$ state of the interfacial bilayer (BL1, adjacent to the LSAO substrate) lies only $\\sim 5$ meV below the Fermi level, giving rise to an incipient $γ$ band, while for the middle bilayer (BL2) its energy is much lower ($\\sim 95$ meV). Remarkably, no significant spontaneous charge transfer from the LSAO substrate to the LNO film is found. Instead, {\\it symmetry-allowed charge disproportionation} occurs between the BLs, with hole doping in BL3 and electron doping in BL1 and BL2. Via the weak-coupling Random Phase Approximation, we find a strong $s^{\\pm}$-wave superconducting pairing instability in BL3, while $d_{x^2-y^2}$ and $s^{\\pm}$ are nearly degenerate in the other bilayers BL1 and BL2. Including the incipient $γ$ band via the Dynamical Cluster Approximation beyond weak coupling, robust $s^{\\pm}$-wave pairing is observed in all three layers",
+    "title": "Layer-dependent $s^{\\pm}$ superconducting pairing and influence of incipient bands in La$_3$Ni$_2$O$_7$ thin films on real LaSrAlO$_4$ substrate",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20727v1",
+        "score": 0.7817567586898804
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:XiSMed-E-HIC",
+        "score": 0.7245354652404785
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.724361002445221
+      }
+    ]
+  },
+  "2611.23873v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Daiki Shintani"
+      },
+      {
+        "affiliation": [],
+        "name": "Shigeru Iwase"
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Oshiki"
+      },
+      {
+        "affiliation": [],
+        "name": "Kohei Shinohara"
+      },
+      {
+        "affiliation": [],
+        "name": "Nontawat Charoenphakdee"
+      },
+      {
+        "affiliation": [],
+        "name": "Makoto Hiramatsu"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuta Tsuboi"
+      },
+      {
+        "affiliation": [],
+        "name": "Yusuke Asano"
+      },
+      {
+        "affiliation": [],
+        "name": "Hirotaka Akita"
+      },
+      {
+        "affiliation": [],
+        "name": "Yong-Bin Zhuang"
+      },
+      {
+        "affiliation": [],
+        "name": "So Takamoto"
+      },
+      {
+        "affiliation": [],
+        "name": "Chikashi Shinagawa"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.23873v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper focuses on the technical development of a universal machine learning interatomic potential (uMLIP) and extends its training data, which is tangential to the user's previously liked specific material systems, quantum phenomena, and DMFT-focused computational methods.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Machine learning potentials",
+      "Atomistic simulations",
+      "Materials informatics"
+    ],
+    "summary": "Universal machine learning interatomic potentials (uMLIPs) make atomistic simulations possible at scales beyond the reach of density functional theory (DFT). Matlantis PFP is a uMLIP that treats a variety of domains, including crystals, molecules, and surfaces, with a single model. PFP v8 incorporated a training dataset computed with the r2SCAN functional, chosen for its good agreement with experiment, but the elements and domains covered by that dataset were limited. Here we present Matlantis PFP v9, in which the training data computed with the r2SCAN functional are extended to the lanthanides from Pr to Lu and to the elements from Po to Cm, for a total of 96 elements, and to additional domains such as clusters and adsorption structures. The formation energies of crystals containing the newly supported elements reproduce experimental standard enthalpies of formation with the same level of accuracy as crystals composed only of previously supported elements, and the adsorption energies of molecules on transition-metal surfaces have an overall error against experiment comparable to that of DFT-PBE, although chemisorbed species are overbound. On the same type of GPU (A100), the inference speed and the maximum system size exceed those of SevenNet-Omni, a public uMLIP trained on r2SCAN data: forces are evaluated three to four times faster, and five to ten times as many atoms can be handled. As a result, PFP-R2SCAN is now applicable to systems containing rare-earth and actinide elements and to adsorption on surfaces.",
+    "title": "Technical Note on Matlantis PFP v9: Extending the Element and Domain Coverage of the r2SCAN Training Data",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.5061676502227783
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:bEWYMUwI8FkC",
+        "score": 0.45984911918640137
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.45479509234428406
+      }
+    ]
+  },
+  "2611.23975v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Zhangyu Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Xingyao Wu"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuo Sun"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Weitang Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan von Delft"
+      },
+      {
+        "affiliation": [],
+        "name": "Christian B. Mendl"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhigang Shuai"
+      }
+    ],
+    "categories": [
+      "physics.chem-ph",
+      "cond-mat.other"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.23975v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper presents an efficient computational method for obtaining spectra and dynamics in quantum many-body systems, aligning with the user's interest in efficient real-frequency solvers, although it uses a different methodology (tensor networks) than DMFT.",
+    "score": 0.5,
+    "suggested_keywords": [
+      "Tensor network states",
+      "Quantum many-body systems",
+      "Spectra calculations"
+    ],
+    "summary": "We present a tangent-space Chebyshev method (TaChe), which combines tree tensor network states with Chebyshev recursion and maximum entropy spectral analysis in a tree tensor network tangent space, for quantum many-body spectra and dynamics. Implemented tensor network state calculations in the tangent space of the ground state, the core advantage of TaChe is that it can substantially reduce the computational complexity, memory usage, and numerical instability associated with tensor network state compression. Implemented on the GPU platform, it produces accurate spectra with speedups of up to $46.8$ over the previous Chebyshev tensor network method and $13.7$ over one-site time-dependent variational principle propagation in the reported benchmarks. Applications to acetonitrile, thermal aggregate emission, finite-temperature charge transport on a \\(6\\times6\\) lattice, and internal conversion in aggregates of up to 100 molecules demonstrate the efficiency and versatility of TaChe in simulating complex molecular systems.",
+    "title": "Efficient Spectra and Dynamics with Tangent-Space Chebyshev Tree Tensor Networks",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.6429288983345032
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:g5m5HwL7SMYC",
+        "score": 0.5539491176605225
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.5408547520637512
+      }
+    ]
+  },
+  "2611.24041v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jun Song"
+      },
+      {
+        "affiliation": [],
+        "name": "Hua Xiang"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.24041v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper introduces an efficient numerical solver based on quantized tensor train representation, aligning with the interest in advanced computational methods for complex problems like those encountered in condensed matter physics.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Tensor networks",
+      "Numerical solvers",
+      "High-dimensional PDEs"
+    ],
+    "summary": "We introduce an isogeometric collocation framework based on the quan tized tensor train (QTT) representation to solve partial differential equa tions. The proposed method constructs isogeometric collocation operators directly in the QTT format using only a few sampled entries, enabling ef ficient compression and computation. The vectors of the geometry-derived coefficients at the collocation points are represented in the QTT format using the TT-cross approximation. We conduct numerical experiments using the proposed QTT-based isogeometric collocation framework for the convection diffusion-reaction problems in different spatial dimensions and for the Poisson problems on three-dimensional nontrivial geometries, showing significant re ductions in memory usage and computational cost while preserving solution accuracy.",
+    "title": "An Isogeometric Collocation Solver Based on the Quantized Tensor Train Representation",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.13359v1",
+        "score": 0.5006614923477173
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.3611096739768982
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.35485559701919556
+      }
+    ]
+  },
+  "2611.24044v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jiale Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yaojian Chen"
+      },
+      {
+        "affiliation": [],
+        "name": "Ke Liu"
+      },
+      {
+        "affiliation": [],
+        "name": "Dingshun Lv"
+      },
+      {
+        "affiliation": [],
+        "name": "Mingpu Qin"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.24044v1",
+    "matching_keywords": [
+      "matrix product state",
+      "tensor network"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper utilizes tensor networks (MPS) for simulating quantum error correction under noise, which is a methodological connection but diverges significantly in its primary application domain from previous interests.",
+    "score": 0.4,
+    "suggested_keywords": [
+      "Quantum error correction",
+      "Tensor network simulations",
+      "Coherent noise"
+    ],
+    "summary": "Reliable assessment of quantum error correction requires understanding how coherent errors affect logical performance. Although tensor networks naturally capture coherent interference, entanglement growth and large qubit counts make repeated sampling costly. Here we develop a compiled Clifford-Augmented Matrix Product State (CAMPS) framework that reuses Clifford transformations across shots, recycles qubits released by measurements, evolves a compressed residual state, and accelerates sampling through rotation fusion and compilation tailored to the MPS layout. Surface-code benchmarks under fixed-sign coherent noise yield accurate logical error estimates at small bond dimensions, while random-sign simulations up to distance $d=9$ and on the $[[72,12,6]]$ bivariate bicycle code match the Pauli-twirling approximation results. Compared with uncompiled CAMPS, compiled CAMPS converges at smaller bond dimensions and achieves order-of-magnitude sampling speedups at equal bond dimension, opening a scalable route to studying coherent error propagation in larger fault-tolerant circuits.",
+    "title": "Accelerating Quantum Error Correction Simulations under Coherent Noise with Compiled Clifford-Augmented Matrix Product States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4944109320640564
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.4666772484779358
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4453870356082916
+      }
+    ]
+  },
+  "2611.24130v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ransell D'Souza"
+      },
+      {
+        "affiliation": [],
+        "name": "Austin Zadoks"
+      },
+      {
+        "affiliation": [],
+        "name": "Riccardo Dal Molin"
+      },
+      {
+        "affiliation": [],
+        "name": "Nataliia Manko"
+      },
+      {
+        "affiliation": [],
+        "name": "Junfeng Qiao"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicola Marzari"
+      },
+      {
+        "affiliation": [],
+        "name": "Antimo Marrazzo"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.24130v1",
+    "matching_keywords": [
+      "neural network"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "While it uses machine learning and discusses response functions, its focus on electronic polarization and localization in insulating materials is distinct from the user's interest in strongly correlated systems or topological matter.",
+    "score": 0.2,
+    "suggested_keywords": [
+      "Graph Neural Networks",
+      "Electronic Polarization",
+      "Wannier Centers"
+    ],
+    "summary": "The quantum position operator and its response to perturbations underpin the functional properties of insulating materials. In the modern theory of polarization, Wannier charge centres encode Berry-phase polarization, while their structural derivatives determine key response functions. Here we introduce a universal diffusion model based on E(3)-equivariant graph neural networks for moments of the position operator, with the first moment defining Wannier centres and the second central moment their real-space localization. We demonstrate the framework for liquid water, amorphous silicon and crystalline BaTiO$_3$, and train a universal model that generalizes to 100 unseen crystals spanning a 67-species chemical space. The predicted centres reproduce infrared spectra in large liquid and amorphous cells beyond routine first-principles reach and enable finite-difference calculations of Born effective charges and piezoelectric tensors. This framework provides a scalable route to electronic polarization and localization in complex materials, supporting high-throughput screening and finite-temperature simulations.",
+    "title": "A Universal Diffusion Model for the Quantum Position Operator",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.50308758020401
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.45163804292678833
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.4475342333316803
+      }
+    ]
+  },
+  "2611.24147v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Honghong Lin"
+      },
+      {
+        "affiliation": [],
+        "name": "Yun Shang"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.24147v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper proposes a quantum algorithm for multivariate trace estimation and spectral sums using a tensor-network representation, offering a new computational approach for problems relevant to condensed matter physics.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Quantum algorithms",
+      "Tensor network representation",
+      "Spectral estimation"
+    ],
+    "summary": "Estimating multivariate traces Tr(A1A2......Ak) is a fundamental task arising across diverse fields. In this paper, We develop a quantum algorithm for this problem tailored to near-term quantum devices. We access matrices by preparing their vectorized states. This access mode yields a tensor-network representation of the multivariate trace, which in turn guides the design of a parallel algorithm. The resulting circuit has depth dominated solely by that of the input oracle and independent of the number of matrices k, at the cost of a qubit count scaling as Θ(k)-a trade-off between circuit depth and circuit size. Moreover, the circuit exhibits a simple modular structure that allows explicit distribution over O(k) devices. We further establish efficient preparation circuits for a broad range of matrix classes, demonstrating the wide applicability of our approach. we present two applications: spectral sum estimation and a quantum implementation of the classical Lanczos method. Both reduce the target problem to sums of multivariate traces, thereby avoiding the construction of matrix polynomial transformations and achieving two levels of parallelism. For certain matrix classes, the resulting algorithms reduce circuit depth by a factor equal to the degree of the approximating polynomial. The shallow circuit depth and distributed implementation make our algorithms particularly suitable for near-term devices.",
+    "title": "Quantum Parallel Algorithm for Multivariate Trace Estimation with Applications",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.4806631803512573
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4803014099597931
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4577668607234955
+      }
+    ]
+  },
+  "2611.24148v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Arnold Kiv"
+      },
+      {
+        "affiliation": [],
+        "name": "Volodymyr Soloviev"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrii Tuzhykov"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrii Bielinskyi"
+      },
+      {
+        "affiliation": [],
+        "name": "Taras Kavetskyy"
+      },
+      {
+        "affiliation": [],
+        "name": "Nataliia Hoivanovych"
+      },
+      {
+        "affiliation": [],
+        "name": "Ondrej Šauša"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaroslav Rusnák"
+      },
+      {
+        "affiliation": [],
+        "name": "Helena Švajdlenková"
+      },
+      {
+        "affiliation": [],
+        "name": "Jolita Ostrauskaite"
+      },
+      {
+        "affiliation": [],
+        "name": "Mykola Slusarenko"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.soft",
+      "physics.chem-ph"
+    ],
+    "discovery_sources": [],
+    "doi": "10.1007/978-94-024-2316-7_6",
+    "id": "2611.24148v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper is about machine learning potentials for polymers and soft matter, which is entirely outside the scope of the user's interests in quantum materials and strong correlations.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Polymer Physics",
+      "Soft Matter",
+      "Orientational Defects"
+    ],
+    "summary": "Photopolymerization of acrylated epoxidized soybean oil (AESO) is a convenient model of a self-organizing process in a soft, bio-based material: ultraviolet light starts a free-radical chain reaction, the growing network releases heat, and the mobility of molecular groups changes on several time scales at once. We follow this process from two sides. Experimentally, the real and imaginary parts of the dielectric permittivity of an AESO:VDM (1:0.5) mixture with 3 mol% of the photoinitiator DMPA were recorded at 500-5000 Hz under an intermittent on/off illumination protocol, and the resulting time series were analysed with a sliding-window Shannon entropy and the Grassberger-Procaccia correlation integral. Both measures show that short light pulses at the start of curing trigger strongly correlated, collective relaxation, which fades as the network forms, leaving only localized reorientations active. We describe these reorientations as orientational defects and quantify their energetics with the MACE-OFF23 machine learning interatomic potential, using relaxed dihedral scans of five rotational modes ($α$, $α/β$, $β$, $γ$, $δ$) of an AESO fragment. Compared with density functional theory (DFT) reference profiles, MACE reproduces the shape of all five profiles (Pearson $r=0.95$-$0.98$) and the hierarchy of barriers - from 2.9 eV for the constrained main-chain rotation, through 0.54-0.81 eV for the acrylate rotations, to 0.16-0.18 eV for the methyl and 0.06 eV for the hydroxyl rotation - while underestimating the barrier heights by 3-20%. A simple Arrhenius estimate shows that the acrylate rotations are the modes closest to the frequency window of the dielectric measurement.",
+    "title": "Machine learning interatomic potentials and orientational defects in polymers",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:4fKUyHm3Qg0C",
+        "score": 0.36407458782196045
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.3301606774330139
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.32454806566238403
+      }
+    ]
+  },
+  "2611.24288v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ao Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Chao Deng"
+      },
+      {
+        "affiliation": [],
+        "name": "Leonard M. Verhoff"
+      },
+      {
+        "affiliation": [],
+        "name": "Mi Jiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Run Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhixiang Shi"
+      },
+      {
+        "affiliation": [],
+        "name": "Karsten Held"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Si"
+      }
+    ],
+    "categories": [
+      "cond-mat.supr-con",
+      "cond-mat.mtrl-sci",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.24288v1",
+    "matching_keywords": [
+      "nickelate"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper directly addresses the electronic structure and theoretical models for infinite-layer nickelate superconductors, leveraging DFT+DMFT, which aligns perfectly with previous interests in nickelates and computational methods.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Infinite-layer nickelates",
+      "DFT+DMFT",
+      "Electronic structure models"
+    ],
+    "summary": "Understanding the minimal model that captures the essential physics of infinite-layer nickelate superconductors remains a central challenge. Using first-principles density-functional theory combined with dynamical mean-field theory (DFT+DMFT), we compute and compare the strongly correlated electronic structures and optical spectra of various effective models for the infinite-layer nickelate LaNiO$_2$, ranging from a $d_{x^2-y^2}$ 1-band model to a full 6-band model with all Ni-$3d$ plus an interstitial-$s$ orbital. The results demonstrate that Ni-$3d$ 5-band models overestimate the Hundness picture, whereas 6-band models, which explicitly include the interstitial-$s$ band and have an $A$-pocket, recover the characteristic Mottness physics. Importantly, the influence of the interstitial-$s$ band on the correlations of the $d_{x^2-y^2}$ band is negligible. Thus, superconductivity in infinite-layer nickelates can be reliably described within a single-band Hubbard framework, while the accurate description of inter-orbital properties such as (optical) conductivities requires the inclusion of at least the interstitial-$s$ band.",
+    "title": "Reconciling Models for Infinite-Layer Nickelate Superconductors: Role of Interstitial-$s$ Band or $A$-Pocket",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:738O_yMBCRsC",
+        "score": 0.7115300297737122
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:3s1wT3WcHBgC",
+        "score": 0.6936178207397461
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.659930944442749
+      }
+    ]
+  },
+  "2611.24444v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Vojtěch Novák"
+      },
+      {
+        "affiliation": [],
+        "name": "Radovan Rečka"
+      },
+      {
+        "affiliation": [],
+        "name": "Ondřej Knebl"
+      },
+      {
+        "affiliation": [],
+        "name": "Ivan Zelinka"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.24444v1",
+    "published_date": "2026-11-18",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Classical circuit simulation supports quantum software development and verification and provides a baseline for assessing quantum advantage. We compare gate-based statevector simulation, direct Pauli evolution and matrix product states for molecular and spin Variational Hamiltonian Ansatze and hardware-efficient ansatze on CPU/GPU systems, varying width, depth, precision and resource allocation. In the tested implementations, direct Pauli evolution benefits complex molecular VHA, whereas GPUs accelerate wider spin and hardware efficient circuits. Matrix product state is useful when limited entanglement permits accurate compression; corrected CPU FP32 can meet the tested tolerance while costing more than FP64. Workload size, startup, worker memory and task-specific profiling can change the preferred allocation. Matched NumPy Pauli updates accelerate two-layer full LiH by 3.45-fold; the GPU gives approximately 30-fold acceleration over 18-thread Aer for 28-qubit, four-layer TFIM, both in FP64. We provide a procedure for choosing representation, precision and worker allocation jointly, comparing the cost of complete energy evaluations under accuracy, memory and core constraints.",
+    "title": "Efficient simulation of variational quantum circuits: representation, accuracy and CPU/GPU allocation",
+    "vector_matches": []
+  },
+  "2611.24448v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Atsushi Iwaki"
+      },
+      {
+        "affiliation": [],
+        "name": "Hideaki Hakoshima"
+      },
+      {
+        "affiliation": [],
+        "name": "Nobuyuki Yoshioka"
+      }
+    ],
+    "categories": [
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.24448v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper introduces a resource-efficient method for purifying translationally invariant quantum states, a technique potentially valuable for studying strongly correlated systems and their properties.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum state purification",
+      "Translationally invariant systems",
+      "Quantum many-body physics"
+    ],
+    "summary": "We introduce virtual autopurification (VAP), a protocol for virtual purification that operates entirely within a single translationally invariant system. Virtual purification suppresses thermal fluctuations and decoherence noise by amplifying the dominant pure component of a mixed state, but its standard implementation requires multiple copies of the state and global entangled measurements. VAP avoids the multiple-copy overhead by constructing virtual copies from spatially separated subregions and performing entangled measurements only between them. Assuming clustering of correlations, we show that VAP reproduces the expectation values of the standard virtual purification protocol, with discrepancies that decay exponentially in both the buffer length and the inter-subregion distance. Numerical simulations support the theoretical predictions and demonstrate accurate implementation of virtual cooling with reduced resource requirements. Our results establish VAP as a resource-efficient and scalable approach to quantum-state purification in near-term devices.",
+    "title": "Virtual Autopurification in Translationally Invariant Quantum States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4276181757450104
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u9iWguZQMMsC",
+        "score": 0.41900280117988586
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.40459099411964417
+      }
+    ]
+  },
+  "2611.24531v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Yongwei Guo"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhijin Li"
+      },
+      {
+        "affiliation": [],
+        "name": "Ke Ren"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.24531v1",
+    "matching_keywords": [
+      "cuprate"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper is highly relevant due to its explicit mentions of \"cuprate superconductivity\" and \"Dirac spin liquids,\" along with the study of correlation functions in strongly coupled gauge theories and quantum critical points, all central to the user's interests.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "QED3",
+      "Quantum Criticality",
+      "Conformal Bootstrap"
+    ],
+    "summary": "Three-dimensional Abelian gauge theories have broad applications in deconfined quantum criticality, Dirac spin liquids and cuprate superconductivity. Correlation functions of conserved currents $J$ and the stress tensor $T$ carry fundamental information about these theories. We compute the first subleading large-flavor corrections to the parity-even three-point functions $\\langle TJJ\\rangle$ and $\\langle TTT\\rangle$ in QED$_3$, QED$_3$--Gross--Neveu--Yukawa, and critical scalar QED$_3$. For $\\langle TJJ\\rangle$, we study both global flavor currents and the topological $U(1)$ current, which measures the magnetic flux of the dynamical gauge field. We evaluate the flat-space energy flux in directions where the leading free-field profile vanishes. At first subleading order the flux in these directions is determined by four-particle production, yielding analytic corrections to the conformal collider parameters. We reproduce the corrections independently from squashed-sphere free-energy derivatives. Together with known two-point normalizations, the collider parameters fix the coefficients of both independent tensor structures in each correlator. Our results are useful for studying conductivity and shear response near quantum critical points and for conformal bootstrap studies of conserved-current and stress-tensor correlators in strongly coupled gauge theories.",
+    "title": "$1/N$ corrections to $\\langle TJJ\\rangle$ and $\\langle TTT\\rangle$ in QED$_3$, QED$_3$--GNY and scalar QED$_3$",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.547152578830719
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.4885480999946594
+      },
+      {
+        "liked_paper_id": "2506.16360v1",
+        "score": 0.46460503339767456
+      }
+    ]
+  },
+  "2611.24592v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Joshua Aftergood"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniele Guerci"
+      },
+      {
+        "affiliation": [],
+        "name": "Jacob Brunton"
+      },
+      {
+        "affiliation": [],
+        "name": "Feng Zhang"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Iadecola"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter P. Orth"
+      },
+      {
+        "affiliation": [],
+        "name": "Cai-Zhuang Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicola Lanatà"
+      },
+      {
+        "affiliation": [],
+        "name": "Yong-Xin Yao"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "physics.comp-ph"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.24592v1",
+    "matching_keywords": [
+      "hubbard model",
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper directly addresses dynamics simulations of strongly correlated electron systems using the Gutzwiller approximation and explicitly mentions connections to nonequilibrium dynamical mean-field theory and the Hubbard model, all highly relevant to the user's interests.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Quantum-Classical Embedding",
+      "Nonequilibrium DMFT",
+      "Hubbard Model Dynamics"
+    ],
+    "summary": "Simulating the real-time dynamics of correlated electron systems requires a nonperturbative treatment of local correlations over long times, a challenge for classical methods. We present the time-dependent Gutzwiller quantum-classical embedding framework, t-GQCE, for generic multi-orbital lattice models with time-dependent Hamiltonians. Within the time-dependent ghost Gutzwiller approximation, the lattice dynamics is mapped onto a noninteracting quasiparticle lattice, propagated classically, coupled to finite interacting embedding models propagated on quantum processors. The two parts exchange only embedding Hamiltonian parameters and single-particle density matrices, and the framework is agnostic to the quantum dynamics solver. We demonstrate it with adaptive variational quantum dynamics simulations of interaction quenches in the Hubbard model on the Bethe lattice. Without ghost orbitals, the embedding problem reduces to a single qubit, simulated on IBM quantum hardware with two qubits, including an ancilla. With more ghost orbitals, t-GQCE suppresses the artificial undamped oscillations of the conventional Gutzwiller approximation and approaches nonequilibrium dynamical mean-field theory results for weak and strong quenches. Statevector simulations with 2, 4 and 6 ghost orbitals per spin, or 8, 12 and 16 qubits, give adaptive circuits that follow the embedding states with infidelities below $5\\times10^{-4}$. Under trapped-ion noise models, circuit compression, measurements in rotated orbital bases with post-selection, and noise mitigation reduce the measurement errors severalfold. At one third of the error rates of a hardware-benchmarked noise model, they reach an accuracy of $0.01$ for the single-particle density matrix and the double occupancy with $10^5$ shots per time step, and the Quantinuum H2-Emulator gives similar accuracy.",
+    "title": "Gutzwiller Quantum-Classical Embedding for Dynamics Simulations of Correlated Electron Systems",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.6923930644989014
+      },
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.576554000377655
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5611531734466553
+      }
+    ]
+  },
+  "2611.24624v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Gerhard Hellstern"
+      },
+      {
+        "affiliation": [],
+        "name": "Marc Maussner"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.24624v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-18",
+    "reasoning": "This paper focuses on benchmarking digital quantum simulations and hardware reproducibility, which is distinct from the previously liked topics in condensed matter and materials science.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Quantum computing",
+      "Quantum benchmarks",
+      "Instanton physics"
+    ],
+    "summary": "We use instanton-mediated tunnelling in the quartic double well as a benchmark for digital quantum simulation that is checkable against an exact answer at every step. The instanton enters through the classical analysis; the hardware tests the dynamics of the lattice model. A unary (single-excitation) encoding maps N lattice sites to N qubits, with the single-excitation dynamics as a reference that remains classically cheap at any N. For a second-order Trotter circuit with adjacent, equal-angle XX/YY pairs on each bond, we prove that the Schmidt rank across any cut is at most four at every gate boundary and at most two after each pair, independently of N. Matrix-product-state simulations of this gate list reproduce the exact splitting up to N = 48. For this bond-wise formula the admissible Trotter step shrinks roughly as N^-2, so one tunnelling period costs about N^3.3 two-qubit gates; a kinetic/potential splitting keeps the step near 0.065 up to N=128, so this scaling belongs to splitting the kinetic term bond by bond. At a coarser, separately bounded step we measure the full transfer at N=8 on two superconducting processors, recovering the lattice splitting to a few percent and its dependence on the barrier height, which at this resolution is set by the lattice rather than by the instanton. Over 9 repetitions, runs taken minutes apart agree to shot noise, while runs hours to weeks apart differ by up to 6.1%, also on a fixed set of qubits; with sessions as the sampling unit, the processors differ in the damping, while a difference in the splitting is not established. Normalising by the measured single-excitation population extends the usable depth about 4-fold but does not improve the splitting. A Gaussian start state, which needs no diagonalisation, reproduces the splitting of the eigenvector-based start to within 1.6 percentage points.",
+    "title": "Instanton tunnelling as a verifiable benchmark for digital quantum simulation: circuit structure, classical simulability and hardware reproducibility",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.4791145622730255
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.44916588068008423
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.43305933475494385
+      }
+    ]
+  },
+  "2611.24710v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matias Karjula"
+      },
+      {
+        "affiliation": [],
+        "name": "Vilma Nieminen"
+      },
+      {
+        "affiliation": [],
+        "name": "Teemu Ojanen"
+      },
+      {
+        "affiliation": [],
+        "name": "Tapio Ala-Nissila"
+      },
+      {
+        "affiliation": [],
+        "name": "Moein N. Ivaki"
+      }
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "id": "2611.24710v1",
+    "published_date": "2026-11-18",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "How much quantum memory is needed to faithfully retain the entanglement spectrum of a bipartite pure state after separating out Bell pairs through local unitaries? We derive the exact tradeoff between Bell-pair yield, residual memory, and reconstruction fidelity under local unitaries, defining an operational measure of entanglement-spectrum complexity. Smoothed entanglement spread bounds this memory cost from below, while diverging nonlocal magic forces unbounded memory at any fixed positive fidelity. Chaotic circuit dynamics exhibit a transient memory peak whose height increases with system size, followed by declining cost despite continued entropy growth. A large typical Haar-random state requires only an accuracy-dependent memory, whereas stationary fermionic Gaussian states retain a growing cost with size. In the circuits studied, the multiscale spectral structure associated with entanglement catalysis also has a practical consequence for matrix product state compression, yielding a multiplicative overhead not captured by the conventional entropy-based bond dimension estimate.",
+    "title": "The magical memory cost of entanglement spectrum compression",
+    "vector_matches": []
+  },
+  "2611.24935v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Xin Shen"
+      },
+      {
+        "affiliation": [],
+        "name": "Guangyue Ji"
+      },
+      {
+        "affiliation": [],
+        "name": "Jie Wang"
+      }
+    ],
+    "discovery_sources": [],
+    "id": "2611.24935v1",
+    "published_date": "2026-11-18",
+    "reasoning": "Could not be analyzed by LLM.",
+    "score": 0,
+    "summary": "Chiral spin liquids (CSLs) are paradigmatic fractionalized phases, yet simple exact parent Hamiltonians for them remain scarce. In this work, we construct exact spin parent Hamiltonians for partially magnetized CSLs realizing various bosonic topological orders. Our construction relies on an exact Hubbard-type parent Hamiltonian for bosonic lattice fractional quantum Hall (FQH) states, valid at arbitrary repulsive interaction strengths. Taking the on-site repulsion to infinity and applying local boson-spin mappings yields exact parent Hamiltonians for the CSLs. Our two-spin construction generalizes the Kalmeyer-Laughlin spin Hamiltonian to a broader class of bosonic FQH model states, including Abelian states and non-Abelian parton states. We derive controlled microscopic realizations of these two-spin Hamiltonians via second-order superexchange in generalized spinful Hofstadter-Hubbard models with tailored hoppings and interactions. With more general local constraints and interactions, boson-spin mappings yield exact higher-spin and multispin parent Hamiltonians for partially magnetized CSLs.",
+    "title": "Exact Parent Hamiltonians for Partially Magnetized Chiral Spin Liquids",
+    "vector_matches": []
   }
 }
