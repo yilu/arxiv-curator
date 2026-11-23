@@ -831,15 +831,15 @@
     "vector_matches": [
       {
         "liked_paper_id": "2506.21431v1",
-        "score": 0.45560792088508606
+        "score": 0.45560795068740845
       },
       {
         "liked_paper_id": "2506.11227v1",
-        "score": 0.44832080602645874
+        "score": 0.44832083582878113
       },
       {
         "liked_paper_id": "2506.14703v1",
-        "score": 0.4332015812397003
+        "score": 0.43320170044898987
       }
     ]
   },
@@ -11687,6 +11687,47 @@
       }
     ]
   },
+  "2611.21720v2": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Subir Sachdev"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.21720v2",
+    "matching_keywords": [
+      "quantum spin liquid"
+    ],
+    "published_date": "2026-11-16",
+    "reasoning": "This paper deeply explores fundamental theoretical concepts of Fermi liquids and fractionalized Fermi liquids in strongly correlated electron systems, aligning with interests in many-body physics and exotic quantum states.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Fractionalized Fermi liquid",
+      "Luttinger theorem",
+      "Quantum spin liquid"
+    ],
+    "summary": "A fundamental property of a Fermi liquid (FL) is that the volume enclosed by the Fermi surface is determined by $ρ$, the total density of electrons. In a fractionalized Fermi liquid (FL*), the volume enclosed by the Fermi surface is determined by the same expression after $ρ$ has been shifted by a quantized amount, most commonly to $ρ-1$ (we assume spin rotation invariance, for simplicity). The FL* shift is related to the quantized symmetry fractionalization data of a quantum spin liquid, whose fractionalized spinon excitations are present alongside the Fermi surface quasiparticles. In this review article, we establish the FL* Fermi volume by generalizing the original Luttinger proof for FL to parton gauge theories of the quantum spin liquid and FL*. We also discuss Oshikawa's flux insertion arguments for FL, and their extension to FL*, including a discussion of gapless spin liquids.",
+    "title": "Constraints on the volume enclosed by Fermi surfaces",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.6190738677978516
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5135233402252197
+      },
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.4021875262260437
+      }
+    ]
+  },
   "2611.21723v1": {
     "authors": [
       {
@@ -15145,6 +15186,845 @@
       {
         "liked_paper_id": "2506.14703v1",
         "score": 0.5094507932662964
+      }
+    ]
+  },
+  "2611.26690v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Matthew D. Thomson"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon M. Martin"
+      },
+      {
+        "affiliation": [],
+        "name": "Frank Marsiglio"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph Maciejko"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.26690v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-19",
+    "reasoning": "This paper investigates unconventional p-wave superconductivity mediated by critical density fluctuations in a 1D correlated system using numerical methods, directly aligning with the user's interest in the mechanisms of unconventional superconductivity in quantum materials.",
+    "score": 0.95,
+    "suggested_keywords": [
+      "Unconventional superconductivity",
+      "p-wave pairing",
+      "Luttinger liquid"
+    ],
+    "summary": "A central theme in the theory of unconventional superconductivity is that Cooper pairing can be mediated by bosonic collective modes other than lattice vibrations. However, collective fluctuations in reduced dimensions can also have a destabilizing effect on superconductivity, by suppressing long-range order or by destroying Fermi-liquid quasiparticles in the normal state. In this work, we study a one-dimensional (1D) model of spinless fermions with local interactions that exhibits a continuous quantum phase transition from a Luttinger liquid to a phase-separated state. Combining field-theoretic arguments with numerical exact diagonalization and matrix-product-state methods, we find that the quantum critical point exhibits two-particle off-diagonal long-range order and $p$-wave pairing. Our work shows that critical density fluctuations at a phase-separation instability can act as pairing glue for unconventional superconductivity in 1D, overcoming the disordering effect of phase fluctuations and the absence of long-lived fermionic quasiparticles in the normal state.",
+    "title": "Off-diagonal long-range order and $p$-wave pairing in one dimension from critical density fluctuations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.6240279674530029
+      },
+      {
+        "liked_paper_id": "2506.21480v1",
+        "score": 0.6108433604240417
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5985220670700073
+      }
+    ]
+  },
+  "2611.26720v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Di Fang"
+      },
+      {
+        "affiliation": [],
+        "name": "Yu Tong"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.26720v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-19",
+    "reasoning": "This paper contributes to advanced computational methods for quantum many-body systems, specifically lattice gauge theories using quantum computers and tensor networks, which aligns with an interest in efficient solvers for complex quantum problems like DMFT.",
+    "score": 0.65,
+    "suggested_keywords": [
+      "Quantum Simulation",
+      "Lattice Gauge Theory",
+      "Digitization Error"
+    ],
+    "summary": "Simulating lattice gauge theories on a digital quantum computer or using tensor network methods requires a finite-dimensional approximation of the gauge field, a process often called digitization. Controlling the resulting error is essential for assessing the accuracy and resource requirements of these simulations. In this work, we derive a digitization error bound for low-lying eigenstates of the Kogut--Susskind Hamiltonian for pure U(1) gauge theory and translate it into a bound on time-evolution error. Compared with existing bounds, our result achieves exponentially improved dependence on the inverse lattice spacing $1/a$ and evolution time $T$, together with improved dependence on the inverse coupling $1/g$. The key idea is to identify a small parameter in the Kogut--Susskind Hamiltonian and apply tools from semiclassical analysis. Specifically, we adapt Agmon's method to establish exponential decay of the error with the truncation threshold. These results sharpen estimates of the local Hilbert space dimension and qubit resources needed to simulate gauge theories near the continuum limit, at weak coupling, and over long times.",
+    "title": "Improved Digitization Bounds for U(1) Lattice Gauge Theory via Semiclassical Analysis",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.5221484899520874
+      },
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.4948667287826538
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4629039168357849
+      }
+    ]
+  },
+  "2611.26725v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Sourav Chakraborty"
+      },
+      {
+        "affiliation": [],
+        "name": "Manoranjan Kumar"
+      },
+      {
+        "affiliation": [],
+        "name": "Arun Paramekanti"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.26725v1",
+    "matching_keywords": [
+      "altermagnetism",
+      "hubbard model"
+    ],
+    "published_date": "2026-11-19",
+    "reasoning": "This paper investigates spin fluctuations, spectral functions, and transport in strongly correlated altermagnets using computational methods, aligning well with interests in correlated quantum materials and computational physics.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Altermagnetism",
+      "Spin-dependent transport",
+      "Fermion Monte Carlo"
+    ],
+    "summary": "Understanding spin dependent transport in altermagnets is important for incorporating them in next generation spintronic technologies. Motivated by the discovery of altermagnetism in strongly correlated quantum materials, we explore this physics in the checkerboard lattice Hubbard model using a fermion Monte Carlo approach which tracks the full spatial dependence of spin fluctuations as a function of temperature. We present results for the evolution of the spin-dependent single particle spectral functions and transport as we go from the ordered ground state into the high temperature disordered paramagnetic phase. Our results could be tested in future spin-selective angle-resolved photoemission spectroscopy (ARPES) and spin transport experiments in candidate altermagnets realized in solid state quantum materials or in proposed ultracold atomic systems.",
+    "title": "Impact of spin fluctuations on spectral functions and transport in a model altermagnet",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6458635330200195
+      },
+      {
+        "liked_paper_id": "2506.16503v1",
+        "score": 0.6217383742332458
+      },
+      {
+        "liked_paper_id": "2506.15770v1",
+        "score": 0.5925248861312866
+      }
+    ]
+  },
+  "2611.26741v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anthony Balchin"
+      },
+      {
+        "affiliation": [],
+        "name": "Eytan Grosfeld"
+      },
+      {
+        "affiliation": [],
+        "name": "Eran Ginossar"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.26741v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-19",
+    "reasoning": "This paper explores emergent phenomena like long-range entanglement and novel gapless phases in quantum spin chains with competing orders, aligning with interests in quantum many-body physics and exotic quantum states.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Quantum spin chain",
+      "Long-range entanglement",
+      "Competing orders"
+    ],
+    "summary": "Competition between short-range and long-range interactions is a largely unexplored route to one-dimensional quantum matter. We introduce a spin-1/2 XXZ chain with ferromagnetic nearest-neighbour and antiferromagnetic power-law couplings. Using DMRG and spin-wave theory, we show this competition stabilises a gapless phase with central charge $c=0.997(17)$, a twofold-degenerate ground state and entanglement spectrum, absent in nearest-neighbour models, and is long-range entangled as diagnosed by finite quantum conditional mutual information. The model also generates a unique gapped quantum phase and gapless antiphase with non-decaying correlations.",
+    "title": "Emergent Long-Range Entanglement in the XXZ Quantum Spin Chain with Competing Orders",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.6115416288375854
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5695468187332153
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5539865493774414
+      }
+    ]
+  },
+  "2611.26788v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Shivam Randive"
+      },
+      {
+        "affiliation": [],
+        "name": "Ojaswini Randive"
+      },
+      {
+        "affiliation": [],
+        "name": "Heet Lungaria"
+      },
+      {
+        "affiliation": [],
+        "name": "Himanshu Pandey"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.26788v1",
+    "matching_keywords": [
+      "machine learning"
+    ],
+    "published_date": "2026-11-19",
+    "reasoning": "Its focus on machine learning and first-principles prediction of thermal conductivity in half-Heusler thermoelectrics deviates significantly from the user's primary interest in strongly correlated electron systems and magnetism.",
+    "score": 0.1,
+    "suggested_keywords": [
+      "Thermoelectrics",
+      "Machine Learning",
+      "Lattice Thermal Conductivity"
+    ],
+    "summary": "High-throughput searches for half-Heusler thermoelectrics increasingly rely on lattice thermal conductivity ($κ_L$) from first-principles calculations, or from machine-learning models trained on them. These calculations describe an ideal single crystal, whereas measurements are made on polycrystalline samples, in which grain boundaries and defects scatter heat as well. The resulting gap between calculated and measured $κ_L$ has been noted for individual compounds but not, to our knowledge, quantified across a materials class, so the values used for screening carry an unknown, systematic bias. Here we quantify and correct this bias for cubic half-Heusler compounds with 18 valence electrons. Using a curated literature corpus that keeps calculated and measured values apart, we show that calculations overestimate measured $κ_L$ in most bonding families, and that the excess shrinks with temperature. Scattering by defects, added to the intrinsic scattering between lattice vibrations, would give such a trend, but the data do not single out one cause. A simple transfer function with this temperature dependence removes the median offset, and refitting its magnitude within a bonding family lowers the median error further, though not consistently compound by compound. Combined with a machine-learning model that predicts the calculated value from crystal structure, and tested on chemistries withheld from all fitting, the method predicts measured $κ_L$ in this class about as closely as independent laboratories agree with one another, and provides testable predictions for compounds not yet measured.",
+    "title": "Prediction of lattice thermal conductivity of half-Heusler compounds by machine learning and transfer-function calibration",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.11227v1",
+        "score": 0.48590853810310364
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.48422300815582275
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.41999682784080505
+      }
+    ]
+  },
+  "2611.27076v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Suhwan Yoo"
+      },
+      {
+        "affiliation": [],
+        "name": "Jeehoon Choi"
+      },
+      {
+        "affiliation": [],
+        "name": "Chaeyeon Kim"
+      },
+      {
+        "affiliation": [],
+        "name": "Hee Young Kwon"
+      },
+      {
+        "affiliation": [],
+        "name": "Changyeon Won"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27076v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper explores quantum magnetism, quantum fluctuations, and uses Quantum Monte Carlo methods to study complex magnetic phases, aligning with the user's interest in correlated electron systems and advanced simulation techniques.",
+    "score": 0.7,
+    "suggested_keywords": [
+      "Quantum Order by Disorder",
+      "Lieb Ferrimagnetism",
+      "Quantum Monte Carlo"
+    ],
+    "summary": "Lozenge tilings of the triangular lattice define an exponentially large family of bipartite networks, from the dice lattice, a Lieb ferrimagnet with the largest sublattice imbalance, to square-type tilings, which are compensated antiferromagnets. For the classical Heisenberg antiferromagnet all of them are degenerate. We show that quantum fluctuations lift this degeneracy through a local mechanism: the zero-point energy is, to leading order, a sum of site terms that are convex in the coordination $z$, so that Jensen's inequality at fixed $\\langle z\\rangle=4$ selects the square-type tiling. An expansion about the Ising limit explains the convexity: a site with more bonds has more channels for quantum fluctuations, but each fluctuation frustrates more bonds. A magnetic field couples to the Lieb moment and competes with this selection. Because the moment is carried most cheaply by threefold and fivefold sites, sixfold hubs are avoided, and bond counting together with the Lieb--Mattis theorem limits hub-free tilings to $3/5$ of the dice moment. Quantum Monte Carlo and a complete enumeration of periodic tilings with small unit cells show that the classical jump is replaced by a staircase of periodic crystals. Its widest step is a hub-free crystal that saturates the bound; below it, threefold and fivefold defects pack ever more densely in a shallow sequence of crystals, controlled by a short-ranged attraction between defects of equal curvature and a repulsion between defects of opposite curvature. Selection energies scale as $JS$. In the height representation the coordination is the discrete Gaussian curvature and the Lieb moment its sublattice-staggered part. We give spectroscopic signatures and discuss realizations in nanographenes, atomic spin arrays and quantum simulators.",
+    "title": "Quantum order by disorder among lozenge tilings: a staircase of hub-free crystals between the Lieb ferrimagnet and the antiferromagnet",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.14703v1",
+        "score": 0.5952898859977722
+      },
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5740138292312622
+      },
+      {
+        "liked_paper_id": "2507.00386v1",
+        "score": 0.5492499470710754
+      }
+    ]
+  },
+  "2611.27103v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Wenwu Jiang"
+      },
+      {
+        "affiliation": [],
+        "name": "Hekai Bu"
+      }
+    ],
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27103v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "While involving transition metals and computational methods, the primary focus is on thermal transport in nanowires using machine-learning molecular dynamics, which deviates significantly from the user's core interests in strongly correlated electronic phenomena or superconductivity.",
+    "score": 0.3,
+    "suggested_keywords": [
+      "Thermal conductivity",
+      "Chalcogenide nanowires",
+      "Machine-learning MD"
+    ],
+    "summary": "Transition metal chalcogenide M6X6 nanowires (M = Mo or W; X = S, Se, or Te) are promising one-dimensional (1D) building blocks for nanowire bundles and arrays, but how elemental composition controls their intrinsic axial heat transport remains unclear. Here we develop a multicomponent neuroevolution potential (NEP) from first-principles reference data and use homogeneous nonequilibrium molecular dynamics (HNEMD) simulations to quantify the thermal conductivity of six MX6 nanowires. The Mo6X6 series show a nonmonotonic composition dependence, whereas the thermal conductivity of the W6X6 series decreases monotonically with increasing chalcogen mass. Frequency-resolved thermal conductivity and phonon mean-free path analyses show that axial heat conduction is dominated by low-frequency phonons. Vibrational density of states and spectral energy density analyses further reveal that the contrasting trends arise from a competition between metal-chalcogen vibrational matching and phonon softening induced by heavier chalcogen atoms. A phenomenological model incorporating the combined atomic mass and the relative mass difference between the metal and chalcogen atoms reproduces these trends. These results link elemental composition, phonon characteristics and axial thermal conductivity in M6X6 nanowires, providing an atomistic basis for selecting heat-conducting units in nanowire bundles and arrays.",
+    "title": "Axial Thermal Transport in Transition Metal Chalcogenide Nanowires from Machine-Learning Molecular Dynamics Simulations",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:u_35RYKgDlwC",
+        "score": 0.4523969292640686
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M05iB0D1s5AC",
+        "score": 0.40924155712127686
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:fPk4N6BV_jEC",
+        "score": 0.40296775102615356
+      }
+    ]
+  },
+  "2611.27134v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Ross Dempsey"
+      },
+      {
+        "affiliation": [],
+        "name": "Anna-Maria E. Glück"
+      },
+      {
+        "affiliation": [],
+        "name": "Silviu S. Pufu"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin T. Søgaard"
+      }
+    ],
+    "categories": [],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.27134v1",
+    "matching_keywords": [
+      "tensor network"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper delves into high-energy physics phenomena, specifically string breaking in (1+1)-dimensional gauge theories, which is conceptually distinct from the user's condensed matter and materials science interests.",
+    "score": 0.05,
+    "suggested_keywords": [
+      "Schwinger Model",
+      "Tensor Networks",
+      "String Breaking"
+    ],
+    "summary": "In this paper, we develop a framework for studying solitons in $(1+1)$-dimensional gauge theories using tensor networks, and we apply it to simulate $e^+e^-$ collisions in the massive Schwinger model. We work at $θ= π$ and at a bare fermion mass exceeding the critical value; in this regime, there are two degenerate vacua, and the $e^+$ and $e^-$ particles are realized as soliton states interpolating between them. We carefully explain how to find and characterize such soliton states using infinite tensor network methods, and then exhibit real-time simulations of their collisions. These collisions involve the formation of an energetic flux string, and we demonstrate that our final states are superpositions of elastic and string-breaking trajectories.",
+    "title": "String breaking in a (1+1)-dimensional $e^+e^-$ collider",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.4588969349861145
+      },
+      {
+        "liked_paper_id": "2506.22574v1",
+        "score": 0.4272441864013672
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.3977701961994171
+      }
+    ]
+  },
+  "2611.27247v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Raymond Hmuifoo"
+      },
+      {
+        "affiliation": [],
+        "name": "Edwin W. Huang"
+      },
+      {
+        "affiliation": [],
+        "name": "Annabelle Ancheta"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard T. Scalettar"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27247v1",
+    "matching_keywords": [
+      "quantum monte carlo"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper directly investigates electronic and magnetic correlations in multiorbital systems on a Lieb lattice using determinant quantum Monte Carlo, strongly matching the user's focus on strongly correlated electron physics and related computational methods.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Magnetic Correlations",
+      "Determinant Quantum Monte Carlo",
+      "Lieb Lattice"
+    ],
+    "summary": "The interplay between electronic correlations and lattice geometry can strongly modify the competition between magnetic correlations and local singlet formation in multiorbital Hamiltonians. Here we use determinant quantum Monte Carlo simulations to investigate two periodic Anderson-like models constructed by selectively hybridizing localized orbitals to the inequivalent sites of a Lieb lattice. The resulting geometries possess partially filled flat bands and different sublattice imbalances. We examine the evolution of local spin correlations and orbital-resolved magnetic structure factors as the hybridization is increased. Although correlations between hybridized orbitals evolve relatively smoothly toward local singlet formation, the longer-range magnetic correlations exhibit a striking nonmonotonic dependence on hybridization. In particular, we observe a pronounced suppression at intermediate hybridization followed by a substantial recovery on undecorated lattice sites. We discuss these results in relation to earlier studies of depleted periodic Anderson models and the constraints imposed by Lieb's theorem. Our findings illustrate how selective hybridization and flat-band structure can produce unusual redistributions of magnetic correlations in strongly interacting multiorbital systems.",
+    "title": "Nonmonotonic Magnetic Correlations in Decorated Lieb-Lattice Anderson Models",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.6481755971908569
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:pyW8ca7W8N0C",
+        "score": 0.5632112622261047
+      },
+      {
+        "liked_paper_id": "2506.13431v1",
+        "score": 0.5600476264953613
+      }
+    ]
+  },
+  "2611.27334v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Anyesh Saraswati"
+      },
+      {
+        "affiliation": [],
+        "name": "Sourav Kanthal"
+      },
+      {
+        "affiliation": [],
+        "name": "Subhajit Nandy"
+      },
+      {
+        "affiliation": [],
+        "name": "Jhuma Sannigrahi"
+      },
+      {
+        "affiliation": [],
+        "name": "Matthias Gutmann"
+      },
+      {
+        "affiliation": [],
+        "name": "Nitesh Kumar"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27334v1",
+    "matching_keywords": [
+      "x-ray absorption spectroscopy"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "It examines the role of chemical disorder and crystalline electric fields in determining magnetic ground states in rare-earth intermetallics, employing experimental techniques like neutron diffraction that are relevant to correlated materials.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Antisite Disorder",
+      "Crystalline Electric Field",
+      "Magnetic Ground States"
+    ],
+    "summary": "Single-ion anisotropy and exchange interactions together set the magnetic ground state of rare-earth intermetallics, yet the role of chemical disorder on the ligand sublattice remains little explored. Here, we show that Ga/Si antisite disorder in NdGaSi stabilises the centrosymmetric $I4_1/amd$ structure and raises the Nd$^{3+}$ site symmetry to $D_{2d}$, which forbids all $m=\\pm2$ Stevens operators in the crystalline electric field (CEF) Hamiltonian. Magnetization, specific heat, single-crystal neutron diffraction, and x-ray absorption spectroscopy establish the disordered structure and a collinear ferromagnetic order below $T_\\mathrm{C}\\approx11$~K with Ising anisotropy along $c$. A CEF analysis that fits the susceptibilities along both axes and the magnetic specific heat simultaneously yields a ground-state doublet that is $\\sim97\\%$ pure, in contrast to the strongly mixed ground state of the Al/Si-ordered NdAlSi ($C_{2v}$ site symmetry of Nd$^{3+}$). We argue that this ground-state purity makes the ordered moment rigid against the modulation due to frustrated exchange, selecting a $\\mathbf{k}=0$ ferromagnet in NdGaSi instead of the incommensurate ferrimagnet of NdAlSi. Antisite disorder, thus, acts as a handle on CEF ground-state purity and can, thereby, select between fundamentally different magnetic ground states.",
+    "title": "Role of antisite disorder in dictating the Ising anisotropy and ferromagnetic ground state of NdGaSi",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:M3NEmzRMIkIC",
+        "score": 0.5639632940292358
+      },
+      {
+        "liked_paper_id": "2506.23823v1",
+        "score": 0.5632972121238708
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RHpTSmoSYBkC",
+        "score": 0.5519824028015137
+      }
+    ]
+  },
+  "2611.27391v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Mahmoud Zeer"
+      },
+      {
+        "affiliation": [],
+        "name": "Dongwook Go"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuriy Mokrousov"
+      }
+    ],
+    "categories": [
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27391v1",
+    "matching_keywords": [
+      "nonequilibrium"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper explores novel Hall responses and torques driven by orbital exchange fields in 2D materials, which relates to transport and electronic phenomena in quantum materials, even though its focus on 'pure orbitronics' and spinless systems presents a new direction.",
+    "score": 0.75,
+    "suggested_keywords": [
+      "Orbitronics",
+      "Orbital exchange",
+      "Anomalous Hall conductivity"
+    ],
+    "summary": "Recent studies have identified orbital exchange fields as a novel mechanism for controlling electronic and magnetic phenomena through the orbital degree of freedom. In contrast to conventional spin exchange fields, orbital exchange fields couple directly to orbital angular momentum and can emerge from purely orbital interactions or dynamically through couplings to chiral excitations such as phonons and magnons. Motivated by these developments, we investigate the transport and torque responses generated by orbital exchange fields in two-dimensional materials. Using monolayer H-phase MoS$_2$ as a prototypical transition-metal dichalcogenide, we introduce a Zeeman-like orbital exchange field that breaks time-reversal symmetry in orbital space while leaving the spin degree of freedom inactive. We demonstrate that this perturbation induces a sizable intrinsic anomalous Hall conductivity even in the absence of spin magnetism and spin--orbit coupling driven mechanisms. Simultaneously, the orbital Hall response remains robust in the weak-field regime and undergoes substantial reconstruction at larger exchange strengths due to pronounced band modifications. In addition, we show that currents can generate sizable current-induced orbital torques on the orbital magnetization. Our results establish orbital exchange fields as an effective route toward Hall transport and nonequilibrium torque phenomena driven purely by orbital physics, opening new perspectives for orbitronics and orbitally engineered quantum functionalities.",
+    "title": "Pure Orbitronics: Hall Responses and Torques by Orbital Exchange in Spinless Transition-Metal Dichalcogenides",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:YFjsv_pBGBYC",
+        "score": 0.6416662931442261
+      },
+      {
+        "liked_paper_id": "2506.18973v1",
+        "score": 0.6185249090194702
+      },
+      {
+        "liked_paper_id": "2506.16362v1",
+        "score": 0.553467869758606
+      }
+    ]
+  },
+  "2611.27408v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Pouriya Ghadimi"
+      },
+      {
+        "affiliation": [],
+        "name": "Maximilian Fröhlich"
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Sander"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Eigel"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard M. Milbradt"
+      }
+    ],
+    "categories": [
+      "math.NA"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.27408v1",
+    "matching_keywords": [
+      "matrix product state"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper focuses on improving the accuracy and conservation of Matrix Product State (MPS) simulations, a crucial tensor network method for studying strongly correlated electron systems, aligning with an interest in advanced computational techniques for such problems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Matrix Product States",
+      "Tensor Networks",
+      "Conservation Laws"
+    ],
+    "summary": "Matrix product state time evolution relies on compression to control the growth of bond dimensions, but compression can break the conservation laws of the equation being solved. A truncation is not the flow of a Hermitian generator, so even a small truncation error can violate exact algebraic identities of the Schrödinger equation. For any matrix product state integrator that leaves the state in canonical form with an orthogonality center, a scalar correction restores an admissible global invariant after compression whenever the resulting scalar quadratic constraint equation admits a real root, without enlarging any bond dimension. Rank-preserving recovery searches other canonical centers when that correction fails. The geometry of the low-rank manifold provides sufficient conditions for conservation by the fixed-rank projected flow and bounds what corrections within a frozen center frame can achieve. Numerical experiments demonstrate that recovery can be required even along accurate truncated trajectories.",
+    "title": "Structure-preserving compression of Matrix Product States",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.21431v1",
+        "score": 0.3549518883228302
+      },
+      {
+        "liked_paper_id": "2506.23550v1",
+        "score": 0.3471410870552063
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:GnPB-g6toBAC",
+        "score": 0.3357589840888977
+      }
+    ]
+  },
+  "2611.27707v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Jorge Acuña Flores"
+      },
+      {
+        "affiliation": [],
+        "name": "Joscha Henheik"
+      },
+      {
+        "affiliation": [],
+        "name": "Marius Lemm"
+      },
+      {
+        "affiliation": [],
+        "name": "Daniele Toniolo"
+      }
+    ],
+    "categories": [
+      "cond-mat.dis-nn",
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27707v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper focuses on the theoretical analysis of quantum dynamics and transport in weakly interacting Fermi-Hubbard systems using Lieb-Robinson bounds, which has a connection to many-body physics but diverges from the strong correlation and material-specific focus of prior interests.",
+    "score": 0.6,
+    "suggested_keywords": [
+      "Lieb-Robinson bounds",
+      "Quantum dynamics",
+      "Out-of-time-ordered correlator"
+    ],
+    "summary": "Lieb-Robinson bounds (LRBs) have become a standard tool for perturbative results in quantum many-body physics, including gap stability and many-body adiabatic theory. Here, we use LRBs to locally approximate weakly interacting many-body dynamics with one-body dynamics on large, perturbative time scales. This allows us to use one-body transport results to establish the expected many-body transport behavior on finite time scales in the following two illustrative settings: (i) We prove quantum diffusion, as quantified by a certain operator spreading diagnostic, in weakly interacting and weakly disordered Fermi systems in dimensions $D\\geq2$ on large finite time scales based on the non-interacting diffusion result of Black, Drogin, and Hernández [arXiv:2506.06468]. (ii) We show for Fermi-Hubbard models with initially low spin-down density, that all local multi-time spin-up correlation functions are approximated by their free counterparts. In particular, we obtain an OTOC (out-of-time-ordered correlator) counterpart to the patterns of short-time entanglement related to lattice path counts observed numerically by Bippus et al. [Phys. Rev. B 113, 035152 (2026)].",
+    "title": "Comparing weakly interacting and free quantum dynamics locally",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5217387676239014
+      },
+      {
+        "liked_paper_id": "2506.22302v1",
+        "score": 0.5193932056427002
+      },
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:tOudhMTPpwUC",
+        "score": 0.4961877167224884
+      }
+    ]
+  },
+  "2611.27749v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Takayuki Yokoyama"
+      },
+      {
+        "affiliation": [],
+        "name": "Yasuhiro Tada"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.stat-mech",
+      "cond-mat.supr-con"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.27749v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "Although focusing on bosons, the paper investigates the fundamental Type-I/Type-II response to magnetic flux, a core concept in superconductivity, and uses DMRG for strongly correlated lattice systems, which is a relevant computational technique.",
+    "score": 0.8,
+    "suggested_keywords": [
+      "Magnetic flux response",
+      "Strongly correlated bosons",
+      "DMRG"
+    ],
+    "summary": "Superfluids and superconductors are classified into Type-I and Type-II according to their response to a magnetic flux, but this classification has hardly been addressed for lattice bosons under magnetic flux, where the Meissner and vortex phases have been studied mostly in ladder geometries. Here, we study the flux response of the extended Bose-Hubbard model with nearest-neighbor interaction $V$ at half filling on square and triangular ladders with two to four legs by using the density-matrix renormalization group. On the square ladders, the vortex phase is confined to a region near $V=0$. At finite $V$, a magnetic flux-induced charge-density-wave (CDW) order replaces it, and the response becomes Type-I-like. In contrast, on the triangular ladders, the vortex phase persists over the whole range of $V$ studied, and the response remains Type-II-like. By extrapolating the ladder results to two dimensions, we argue that the Type-I or Type-II character of the flux response depends on the lattice geometry, which suggests a role of geometric frustration.",
+    "title": "Lattice-geometry dependence of Type-I and Type-II magnetic flux responses in strongly correlated bosons",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2507.00837v1",
+        "score": 0.5690255165100098
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5631915330886841
+      },
+      {
+        "liked_paper_id": "2507.01280v1",
+        "score": 0.5614495277404785
+      }
+    ]
+  },
+  "2611.27768v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Kenji Fukushima"
+      },
+      {
+        "affiliation": [],
+        "name": "Friederike Ihssen"
+      },
+      {
+        "affiliation": [],
+        "name": "Renzo Kapust"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan M. Pawlowski"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [],
+    "doi": null,
+    "id": "2611.27768v1",
+    "matching_keywords": [
+      "hubbard model"
+    ],
+    "published_date": "2026-11-20",
+    "reasoning": "This work addresses the significant challenge of fermionic sign problems in complex quantum systems, which is directly relevant to computational methods for strongly correlated electrons like those explored in dynamical mean-field theory.",
+    "score": 0.9,
+    "suggested_keywords": [
+      "Fermionic sign problem",
+      "Physics-informed kernels",
+      "Hubbard model"
+    ],
+    "summary": "We extend the generative sampling approach with physics-informed kernels (PIKs) [1,2] to a general class of physics systems with complex distributions and a structure also encountered in fermionic systems. The resolution of sign problems of generic weighted sums of complex Gaußian distributions with the PIK approach is central to this application. In a first step, PIKs map a real normal distribution to such a weighted sum, and this procedure is called the PIKfan. The PIKfan has the sampling cost of a real normal distribution. In a second step, this weighted sum is evolved with a second PIK into the distribution of the theory at hand. In combination, we reduce the sampling task for a general class of complex systems to a Gaußian one, and the main computational task is that of computing the PIK. We illustrate the approach with the one-site Hubbard model at arbitrary chemical potential and with $φ^4$-deformed extensions of it.",
+    "title": "Solving fermionic sign problems with physics-informed kernels",
+    "vector_matches": [
+      {
+        "liked_paper_id": "2506.17015v1",
+        "score": 0.5538525581359863
+      },
+      {
+        "liked_paper_id": "2506.20106v1",
+        "score": 0.5464807748794556
+      },
+      {
+        "liked_paper_id": "2507.01856v1",
+        "score": 0.4914221465587616
+      }
+    ]
+  },
+  "2611.27819v1": {
+    "authors": [
+      {
+        "affiliation": [],
+        "name": "Tao Yang"
+      },
+      {
+        "affiliation": [],
+        "name": "Baigeng Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Rui Wang"
+      },
+      {
+        "affiliation": [],
+        "name": "Z. Y. Xie"
+      }
+    ],
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "discovery_sources": [
+      "dmrg_preprints"
+    ],
+    "doi": null,
+    "id": "2611.27819v1",
+    "matching_keywords": [],
+    "published_date": "2026-11-20",
+    "reasoning": "This paper investigates the magnetic field response and fractionalized states of Kitaev spin liquids using advanced tensor network methods, aligning with interests in exotic quantum states, topological features, and sophisticated computational approaches in correlated systems.",
+    "score": 0.85,
+    "suggested_keywords": [
+      "Kitaev spin liquid",
+      "Majorana fermions",
+      "Tensor network methods"
+    ],
+    "summary": "Hyperbolic geometry can give rise to Kitaev spin liquids with distinct flux structures and Majorana spectra, raising the question of how these fractionalized states respond beyond exactly solvable limits. We address this question on the Kekulé-colored hyperbolic {8,3} lattice by developing an infinite projected entangled-pair-state approach with flux-resolved loop-gas initialization and geometry-adapted tensor-network contraction. Under uniform and staggered [111] magnetic fields, we find markedly different many-body responses. The uniform field induces a sharp change between competing variational branches at weak field, whereas the polarization and mean plaquette flux evolve over a much broader field range under the staggered field. Exchange-energy competition helps explain the different response scales, while third-order effective Majorana models in a fixed-flux background exhibit contrasting low-energy spectra. Our results connect the geometry-dependent fractionalized structure of a solvable hyperbolic spin liquid to its many-body response under physical perturbations that break flux conservation.",
+    "title": "Magnetic-Field Response of a Hyperbolic Kitaev Spin Liquid",
+    "vector_matches": [
+      {
+        "liked_paper_id": "yBtX0C4AAAAJ:RGFaLdJalmkC",
+        "score": 0.5929837822914124
+      },
+      {
+        "liked_paper_id": "2508.17292v1",
+        "score": 0.5737946033477783
+      },
+      {
+        "liked_paper_id": "2506.15516v1",
+        "score": 0.5395686626434326
       }
     ]
   }
