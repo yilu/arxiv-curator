@@ -36,7 +36,7 @@ RECOMMENDATION_LIMIT = 150
 ARCHIVE_START_DATE = '2024-01-01'
 
 # Gemini model and limits
-GEMINI_MODEL = 'gemini-2.5-flash'
+GEMINI_MODEL = 'gemini-3.8-flash'
 # The Requests Per Minute (RPM) limit for your Gemini API tier.
 LLM_RPM_LIMIT = 5
 # The Requests Per Day (RPD) limit for your Gemini API tier.
