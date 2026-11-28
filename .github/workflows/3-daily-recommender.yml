@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     # Fail fast instead of burning minutes on a hung network request.
     timeout-minutes: 25
+    outputs:
+      published_commit: ${{ steps.publication.outputs.commit }}
 
     steps:
       - name: Checkout Repository
@@ -42,10 +44,26 @@ jobs:
           pip_no_cache: 'true'
 
       - name: Run Recommender Script
+        id: recommend
         env:
+          CURATOR_NEW_PAPERS_PATH: ${{ runner.temp }}/new-arxiv-papers.json
           GITHUB_REPOSITORY: ${{ github.repository }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/recommend.py
+        run: |
+          python scripts/recommend.py
+          if [[ -s "$CURATOR_NEW_PAPERS_PATH" ]]; then
+            echo "has_papers=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Save papers for Feishu delivery
+        if: steps.recommend.outputs.has_papers == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: new-arxiv-papers
+          path: ${{ runner.temp }}/new-arxiv-papers.json
+          if-no-files-found: error
+          overwrite: true
+          retention-days: 7
 
       - name: Commit Updated Archive
         uses: stefanzweifel/git-auto-commit-action@v7
@@ -64,4 +82,67 @@ jobs:
           publish_branch: main
           publish_dir: ./dist
           destination_dir: ./arxiv
-          commit_message: 'docs: Update daily arXiv recommendations'
+          commit_message: 'docs: Update daily arXiv recommendations (run ${{ github.run_id }}.${{ github.run_attempt }})'
+
+      - name: Identify the new publication
+        shell: bash
+        id: publication
+        if: steps.recommend.outputs.has_papers == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: |
+          marker="(run $GITHUB_RUN_ID.$GITHUB_RUN_ATTEMPT)"
+          for attempt in {1..5}; do
+            commit=$(gh api -X GET repos/yilu/yilu.github.io/commits \
+              -f sha=main -f path=arxiv -f per_page=10 |
+              jq -r --arg marker "$marker" '[.[] | select(.commit.message | contains($marker))] | first | .sha // empty')
+            [[ -n "$commit" ]] && break
+            sleep 2
+          done
+          echo "commit=$commit" >> "$GITHUB_OUTPUT"
+
+  notify-feishu:
+    needs: build-and-deploy
+    if: needs.build-and-deploy.outputs.published_commit != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: new-arxiv-papers
+          path: ${{ runner.temp }}
+
+      - name: Wait for the arXiv update to go live
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+          PUBLISHED_COMMIT: ${{ needs.build-and-deploy.outputs.published_commit }}
+        run: |
+          for attempt in {1..36}; do
+            status=$(gh api -X GET repos/yilu/yilu.github.io/pages/builds -f per_page=10 |
+              jq -r --arg commit "$PUBLISHED_COMMIT" '[.[] | select(.commit == $commit)] | first | .status // empty')
+            if [[ "$status" == "built" ]]; then
+              exit 0
+            fi
+            if [[ "$status" == "errored" ]]; then
+              echo "GitHub Pages failed to publish the arXiv update."
+              exit 1
+            fi
+            sleep 10
+          done
+          echo "Timed out waiting for GitHub Pages to publish the arXiv update."
+          exit 1
+
+      - name: Send ranked papers to Feishu
+        env:
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_RECIPIENT_OPEN_ID: ${{ secrets.FEISHU_RECIPIENT_OPEN_ID }}
+          PUBLISHED_COMMIT: ${{ needs.build-and-deploy.outputs.published_commit }}
+        run: python3 scripts/feishu_notify.py "$RUNNER_TEMP/new-arxiv-papers.json" "$PUBLISHED_COMMIT"

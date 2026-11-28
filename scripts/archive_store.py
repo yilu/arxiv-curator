@@ -22,6 +22,14 @@ ARCHIVE_DIR = 'archive'          # directory of monthly shards
 LEGACY_ARCHIVE_PATH = 'archive.json'  # pre-sharding single file (fallback/backup)
 
 
+def paper_rank_key(paper):
+    return (
+        -paper.get('score', 0),
+        -sum(match['score'] for match in paper.get('vector_matches', [])),
+        paper.get('id', ''),
+    )
+
+
 def month_key(paper):
     """Return the ``YYYY-MM`` shard key for a paper record.
 

@@ -5,6 +5,7 @@ import json
 import shutil
 import time
 import re
+from pathlib import Path
 from datetime import datetime, timezone
 from collections import defaultdict
 from jinja2 import Environment, FileSystemLoader
@@ -14,7 +15,7 @@ from config import (
     DMRG_URL, DMRG_SOURCE_TAG, DMRG_SITE_LIMIT, ARCHIVE_START_DATE,
     GEMINI_MODEL
 )
-from archive_store import load_archive, save_archive
+from archive_store import load_archive, paper_rank_key, save_archive
 
 # Heavy data-fetching/ML deps (arxiv, requests, bs4, torch, sentence-transformers)
 # are imported lazily inside the functions that use them. This lets generate_site
@@ -434,7 +435,7 @@ def update_archive():
         print(f"  -> ({i+1}/{len(papers_to_analyze)}) Analyzing '{paper.title[:50]}...' ({paper_id})")
 
         existing_data = archive.get(paper_id)
-        is_new_paper = paper_id not in archive
+        is_new_recommendation = existing_data is None or existing_data.get('reasoning') == LLM_FAILURE_REASON
 
         discovery_sources = existing_data.get('discovery_sources', []) if existing_data else []
         if base_id in dmrg_paper_ids and DMRG_SOURCE_TAG not in discovery_sources:
@@ -458,7 +459,7 @@ def update_archive():
         pending_entries.append({
             "paper": paper,
             "discovery_sources": discovery_sources,
-            "is_new_paper": is_new_paper
+            "is_new_recommendation": is_new_recommendation
         })
 
     flush_batch()
@@ -508,7 +509,7 @@ def update_archive():
                 'vector_matches': vector_matches,
                 'discovery_sources': entry["discovery_sources"]
             }
-            if entry["is_new_paper"]:
+            if entry["is_new_recommendation"]:
                 newly_added_ids.append(paper_id)
         else:
             archive[paper_id] = {
@@ -609,11 +610,7 @@ def generate_site(new_paper_ids, archive=None):
     for month in sorted_months:
         papers_of_month = sorted(
             papers_by_month[month],
-            key=lambda p: (
-                -p.get('score', 0),
-                -sum(match['score'] for match in p.get('vector_matches', [])),
-                p.get('id', ''),
-            ),
+            key=paper_rank_key,
         )
         total_in_month = len(papers_of_month)
         latest_paper_date = max(p.get('published_date') or '' for p in papers_of_month)
@@ -648,3 +645,7 @@ def generate_site(new_paper_ids, archive=None):
 if __name__ == "__main__":
     newly_added_ids, archive = update_archive()
     generate_site(newly_added_ids, archive)
+    notification_path = os.environ.get('CURATOR_NEW_PAPERS_PATH')
+    if notification_path and newly_added_ids:
+        papers = [archive[paper_id] for paper_id in dict.fromkeys(newly_added_ids)]
+        Path(notification_path).write_text(json.dumps(papers, ensure_ascii=False), encoding='utf-8')
