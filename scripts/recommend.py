@@ -549,7 +549,7 @@ def generate_site(new_paper_ids, archive=None):
     Parameters
     ----------
     new_paper_ids : list
-        IDs newly added this run (used to badge them in the UI).
+        IDs newly added this run, reported in the build log.
     archive : dict, optional
         The in-memory archive from ``update_archive``. When omitted (e.g. the
         standalone "regenerate site" workflow) it is loaded from the monthly
@@ -596,39 +596,39 @@ def generate_site(new_paper_ids, archive=None):
             reverse=True
         )
     ]
-    latest_month = sorted_months[0] if sorted_months else None
-
     env = Environment(loader=FileSystemLoader('templates'))
     env.filters['format_byl_authors'] = format_authors_filter
     template = env.get_template('index.html')
     github_repo = os.environ.get('GITHUB_REPOSITORY', 'yilu/arxiv-curator')
 
-    generation_date_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')
-
     output_dir = 'dist'
     if os.path.exists(output_dir): shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
 
-    print("📄 Generating monthly archive pages...")
+    print(f"📄 Generating monthly archive pages ({len(new_paper_ids)} papers added this run)...")
     for month in sorted_months:
         papers_of_month = sorted(
             papers_by_month[month],
-            key=lambda p: (p.get('score', 0), sum(match['score'] for match in p.get('vector_matches', []))),
-            reverse=True
+            key=lambda p: (
+                -p.get('score', 0),
+                -sum(match['score'] for match in p.get('vector_matches', [])),
+                p.get('id', ''),
+            ),
         )
         total_in_month = len(papers_of_month)
+        latest_paper_date = max(p.get('published_date') or '' for p in papers_of_month)
         papers_to_render = papers_of_month[:RECOMMENDATION_LIMIT] if RECOMMENDATION_LIMIT > 0 else papers_of_month
 
         unique_categories_in_month = sorted(list(set(cat for p in papers_to_render for cat in p.get('categories', []))))
         unique_keywords_in_month = sorted(list(set(kw for p in papers_to_render for kw in p.get('matching_keywords', []))))
 
         html_content = template.render(
-            papers=papers_to_render, current_month=month, latest_month=latest_month, year_sections=year_sections,
-            github_repo=github_repo, new_paper_ids=new_paper_ids,
+            papers=papers_to_render, current_month=month, year_sections=year_sections,
+            github_repo=github_repo,
             liked_paper_ids=liked_paper_ids,
             liked_paper_details=liked_paper_details, # Pass the lookup map to the template
-            generation_date=generation_date_str,
-            num_added=len(new_paper_ids), num_not_shown=max(0, total_in_month - len(papers_to_render)),
+            latest_paper_date=latest_paper_date,
+            num_not_shown=max(0, total_in_month - len(papers_to_render)),
             total_in_month=total_in_month,
             filter_categories=unique_categories_in_month,
             filter_keywords=unique_keywords_in_month,
@@ -639,7 +639,9 @@ def generate_site(new_paper_ids, archive=None):
         print(f"  -> Created {output_dir}/{month}.html")
 
     if sorted_months:
-        shutil.copyfile(f"{output_dir}/{sorted_months[0]}.html", f"{output_dir}/index.html")
+        redirect = env.get_template("redirect.html").render(latest_month=sorted_months[0])
+        with open(f"{output_dir}/index.html", 'w', encoding='utf-8') as f:
+            f.write(redirect)
 
     print("✅ Site generation complete.")
 

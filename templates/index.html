@@ -90,7 +90,7 @@
                         <ul class="space-y-1 px-2 pb-2 pt-1">
                             {% for month in year_group.months %}
                             <li>
-                                <a href="{{ 'index.html' if month == latest_month else month + '.html' }}" class="block px-3 py-2 rounded-md text-sm font-medium
+                                <a href="{{ month }}.html" class="block px-3 py-2 rounded-md text-sm font-medium
                                     {% if month == current_month %}
                                         bg-blue-100 text-blue-700 font-semibold
                                     {% else %}
@@ -117,11 +117,7 @@
                     <header class="mb-8">
                         <h2 class="text-3xl font-bold text-gray-900">Papers for {{ current_month }}</h2>
                         <div class="text-sm text-gray-500 mt-2 space-y-1">
-                            <p>Last updated: {{ generation_date }}.
-                               {% if num_added > 0 %}
-                                    <span class="text-green-600 font-semibold">Added {{ num_added }} new paper{{'s' if num_added > 1}}.</span>
-                               {% endif %}
-                            </p>
+                            <p>Latest submission: <time datetime="{{ latest_paper_date }}">{{ latest_paper_date }}</time></p>
                             {% if num_not_shown > 0 %}
                                  <p>Displaying top {{ papers|length }} of {{ total_in_month }} papers for this month.</p>
                             {% endif %}
@@ -180,7 +176,7 @@
 
                     <div id="papers-list" class="space-y-8">
                         {% for paper in papers %}
-                        <article class="paper-article bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative overflow-hidden {% if paper.id in new_paper_ids %} border-l-4 border-l-green-400 {% endif %}"
+                        <article class="paper-article bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative overflow-hidden"
                                  data-categories="{{ paper.categories | join(',') }}"
                                  data-keywords="{{ paper.matching_keywords | join(',') }}"
                                  data-score="{{ paper.score }}"
